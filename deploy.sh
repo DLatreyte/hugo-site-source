@@ -11,20 +11,33 @@ hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
 # Go To Public folder
 cd public
 
-# Add changes to git.
+# Add changes to git dlatreyte.GitHub.io
 git add .
 
-# Commit changes.
-msg="rebuilding site $(date)"
+# Commit changes to git dlatreyte.gitHub.io
+msg="rebuilding dlatreyte.gitHub.io $(date)"
 if [ -n "$*" ]; then
 	msg="$*"
 fi
 git commit -m "$msg"
 
-# Push source and build repos.
-github push origin master
+printf "\033[0;32m# Commit changes to git dlatreyte.gitHub.io...\033[0m\n"
 
-# Remarque sur la création du submodule pour git
-# La procédure du site n'a pas fonctionné
-# Commande utilisée : 
-# git submodule add -f https://github.com/Dlatreyte/dlatreyte.github.io.git public
+# Return to base folder
+cd ..
+
+# Add changes to git hugo-site-source
+git add .
+
+# Commit changes to git hugo-site-source
+msg="rebuilding hugo-site-source $(date)"
+if [ -n "$*" ]; then
+	msg="$*"
+fi
+git commit -m "$msg"
+
+printf "\033[0;32m# Commit changes to git hugo-site-source...\033[0m\n"
+
+# Push source and build repos.
+git push -u origin master --recurse-submodules=on-demand
+

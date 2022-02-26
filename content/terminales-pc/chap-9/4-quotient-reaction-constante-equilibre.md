@@ -11,6 +11,7 @@ categories: ["Chimie", "Terminale Spé PC"]
 image: ""
 solution_est_visible: true
 auto_numbering: true
+mathjax: false
 ---
 
 ## Quotient de réaction
@@ -56,14 +57,12 @@ Soit l'équation de la réaction d'oxydation des ions thiosulfate $\ce{S2O3^{2-}
 2. Donner l'expression du quotient de réaction pour un état quelconque d'une transformation modélisée par la réaction étudiée.
 {{% /note %}}
 
-{{% solution "Réponses" %}}
-1. 
-$$
-    \ce{ I2 (aq) + 2 S2O3^{2-} (aq) <=> 2 I- (aq) +  S4O6^{2-} (aq)  }
-$$
 
-2. 
-$$
+{{% solution "Réponses" %}}
+
+1. $$ \ce{ I2 (aq)  + 2 S2O3^{2-} (aq) <=> 2 I- (aq) +  S4O6^{2-} (aq)  } $$
+
+2. $$
     Q\_r = \dfrac{\left( \dfrac{[\ce{I-}]}{C^o} \right)^2 \cdot \left( \dfrac{[\ce{S4O6^{2-}}]}{C^o} \right)}{\left( \dfrac{[\ce{I2}]}{C^o} \right) \cdot \left( \dfrac{[\ce{S2O3^{2-}}]}{C^o} \right)^2}
 $$
 soit
@@ -81,13 +80,11 @@ Soit la réaction acide-base entre l'acide éthanoïque et l'eau.
 {{% /note %}}
 
 {{% solution "Réponses" %}}
-1. 
-$$
+1. $$
     \ce{CH3CO2H (aq) + H2O <=> CH3CO2- (aq) + H3O+}
 $$
 
-2. 
-$$
+2. $$
     Q\_r = \dfrac{\left( \dfrac{[\ce{CH3CO2-}]}{C^o} \right) \cdot \left( \dfrac{[\ce{H3O+}]}{C^o} \right)}{\left( \dfrac{[\ce{CH3CO2H}]}{C^o} \right)}
 $$
 soit
@@ -131,13 +128,11 @@ Soit la réaction d'oxydoréduction du cuivre $\ce{Cu}$ avec les ions argent I $
 {{% /note %}}
 {{% solution "Réponses" %}}
 
-1. 
-$$
+1.  $$
     \ce{ Cu (s) + 2 Ag^+ (aq) <=> Cu^{2+} (aq) + 2 Ag (s)   }
 $$
 
-2. 
-$$
+2.  $$
     Q\_r = \dfrac{\left( \dfrac{[\ce{Cu^{2+}}]}{C^o} \right) }{\left( \dfrac{[\ce{Ag+}]}{C^o} \right)^2}
 $$
 soit
@@ -154,13 +149,9 @@ Soit la réaction de précipitation entre les ions fer III $\ce{Fe^{3+}}$ et les
 2. Donner l'expression du quotient de réaction pour un état quelconque d'une transformation chimique modélisée par cette réaction.
 {{% /note %}}
 {{% solution "Réponses" %}}
-1. 
-$$
-    \ce{ Fe^{3+} (aq) + 3 OH^- (aq) <=> Fe(OH)3 (s) }
-$$
+1.  $$ \ce{ Fe^{3+} (aq) + 3 OH^- (aq) <=> Fe(OH)3 (s) } $$
 
-2. 
-$$
+2. $$
     Q\_r = \dfrac{1}{\left( \dfrac{[\ce{OH^-}]}{C^o} \right)^3 \cdot \left( \dfrac{[\ce{Fe^{3+}}]}{C^o} \right)}
 $$
 soit 
@@ -178,13 +169,11 @@ Soit la réaction de précipitation du phosphate de calcium $\ce{Ca3(PO4)2}$ en 
 {{% /note %}}
 
 {{% solution "Réponses" %}}
-1. 
-$$
+1.  $$
     \ce{ 3 Ca^{2+} (aq) + 2 PO4^{3-} (aq) <=> Ca3(PO4)2 (s) }
 $$
 
-2. 
-$$
+2.  $$
     Q\_r = \dfrac{1}{\left( \dfrac{[\ce{Ca^{2+}}]}{C^o} \right)^3 \cdot \left( \dfrac{[\ce{PO4^{3-}}]}{C^o} \right)^2}
 $$
 soit
