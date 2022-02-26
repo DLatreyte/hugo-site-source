@@ -106,7 +106,7 @@ La valeur de la conductivité de la solution diluée $S$ est $\sigma = \pu{8,52e
 13. Déterminer alors la valeur du $\text{pH}$ de la solution $S$. Ce résultat est-il en accord avec les données expérimentales ?
 
 
-## Correction
+## Corrigé
 
 {{% solution "Correction" %}}
 {{< remote "Corrigé au format pdf" "/terminales-pc/chap-11/chap-11-7/chap-11-7-2.pdf" >}}
