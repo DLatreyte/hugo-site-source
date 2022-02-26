@@ -34,7 +34,7 @@ layout: "single"
 
 - **Chap. 12,3 :** [*Détermination de la constante d'acidité du couple acide/base de l'acide méthanoïque*](3-determination-pka)
 
-- **Chap. 12,4 :** [*Tracé d'un diagramme de distribution à l'aide du langage Python*](2-trace-diagramme-predominance)
+- **Chap. 12,4 :** [*Tracé d'un diagramme de distribution à l'aide du langage Python*](4-trace-diagramme-predominance)
 
 - **Chap. 12,5 :** [*L'acide benzoïque, un conservateur alimentaire*](3-determination-avancement-final)
 
@@ -44,7 +44,7 @@ layout: "single"
 
 - **Chap. 12,8 :** [*Annale : Le bleu de bromophénol*](6-annale-bleu-de-bromophenol)
 
-- **Chap. 12,9 :** [*Annale : Propriétés des solutions d'ammoniac*](7-annale-solutions-ammoniac)
+- **Chap. 12,9 :** [*Annale : Propriétés des solutions d'ammoniac*](9-annale-solutions-ammoniac)
 
 
 
