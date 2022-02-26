@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Version>4.10.0-2063</Version>
+  <charset>utf-8</charset>
+  <ApplicationBuildDateTime>16-10-2019</ApplicationBuildDateTime>
+  <Copyright>Copyright (c) 2007-2020 Vernier Software &amp; Technology and its licensors</Copyright>
+  <FileName>chap-6-7-1.ambl</FileName>
+  <CreatorOS>1</CreatorOS>
+  <CreatorApp>4</CreatorApp>
+  <AbsoluteVersion>4.10.0-2063</AbsoluteVersion>
+  <DataWorld>
+    <DataWorldRunPrefix>Run</DataWorldRunPrefix>
+    <MatrixDefaultPref>0</MatrixDefaultPref>
+    <UDMSessionType>2</UDMSessionType>
+    <UDMExperimentName>chap-6-7-1.ambl</UDMExperimentName>
+  </DataWorld>
+  <Page>
+    <ID>102</ID>
+    <BroadcastTo>0</BroadcastTo>
+    <PageTable>
+      <ID>101</ID>
+      <BroadcastTo>0</BroadcastTo>
+      <Visible>1</Visible>
+      <TableColumn>105 0.9</TableColumn>
+      <TableColumn>107 0.9</TableColumn>
+    </PageTable>
+    <PageGraphCartesian>
+      <ID>108</ID>
+      <BroadcastTo>0</BroadcastTo>
+      <Visible>1</Visible>
+      <GraphPlotXMin>0.000000000000</GraphPlotXMin>
+      <GraphPlotXMax>19.000000000000</GraphPlotXMax>
+      <GraphPlotYMin>0.000000000000</GraphPlotYMin>
+      <GraphPlotYMax>9.000000000000</GraphPlotYMax>
+      <UDMGraphPlotRightYMin>0.000000000000</UDMGraphPlotRightYMin>
+      <UDMGraphPlotRightYMax>0.000000000000</UDMGraphPlotRightYMax>
+      <UDMGraphPlotRightYEnabled>0</UDMGraphPlotRightYEnabled>
+      <GraphConnectLines>0</GraphConnectLines>
+      <GraphShowPointProtectors>1</GraphShowPointProtectors>
+      <GraphDrawRainbow>0</GraphDrawRainbow>
+      <GraphPlotXAutoscale>0</GraphPlotXAutoscale>
+      <GraphPlotYAutoscale>0</GraphPlotYAutoscale>
+      <UDMGraphPlotRightYAutoscale>0</UDMGraphPlotRightYAutoscale>
+      <GraphPlotBaseColumnID>105</GraphPlotBaseColumnID>
+      <GraphInterpolate>0</GraphInterpolate>
+      <GraphTitle></GraphTitle>
+      <GraphPlotTraceIDPairs>3 105 107 105 111 105 112</GraphPlotTraceIDPairs>
+    </PageGraphCartesian>
+    <PageGraphCartesian>
+      <ID>109</ID>
+      <BroadcastTo>0</BroadcastTo>
+      <Visible>0</Visible>
+      <GraphPlotXMin>0.000000000000</GraphPlotXMin>
+      <GraphPlotXMax>30.000000000000</GraphPlotXMax>
+      <GraphPlotYMin>0.000000000000</GraphPlotYMin>
+      <GraphPlotYMax>1.000000000000</GraphPlotYMax>
+      <UDMGraphPlotRightYMin>0.000000000000</UDMGraphPlotRightYMin>
+      <UDMGraphPlotRightYMax>0.000000000000</UDMGraphPlotRightYMax>
+      <UDMGraphPlotRightYEnabled>0</UDMGraphPlotRightYEnabled>
+      <GraphConnectLines>0</GraphConnectLines>
+      <GraphShowPointProtectors>1</GraphShowPointProtectors>
+      <GraphDrawRainbow>0</GraphDrawRainbow>
+      <GraphPlotXAutoscale>0</GraphPlotXAutoscale>
+      <GraphPlotYAutoscale>0</GraphPlotYAutoscale>
+      <UDMGraphPlotRightYAutoscale>0</UDMGraphPlotRightYAutoscale>
+      <GraphPlotBaseColumnID>105</GraphPlotBaseColumnID>
+      <GraphInterpolate>0</GraphInterpolate>
+      <GraphTitle></GraphTitle>
+    </PageGraphCartesian>
+    <PageGraphCartesian>
+      <ID>110</ID>
+      <BroadcastTo>0</BroadcastTo>
+      <Visible>0</Visible>
+      <GraphPlotXMin>0.000000000000</GraphPlotXMin>
+      <GraphPlotXMax>30.000000000000</GraphPlotXMax>
+      <GraphPlotYMin>0.000000000000</GraphPlotYMin>
+      <GraphPlotYMax>1.000000000000</GraphPlotYMax>
+      <UDMGraphPlotRightYMin>0.000000000000</UDMGraphPlotRightYMin>
+      <UDMGraphPlotRightYMax>0.000000000000</UDMGraphPlotRightYMax>
+      <UDMGraphPlotRightYEnabled>0</UDMGraphPlotRightYEnabled>
+      <GraphConnectLines>0</GraphConnectLines>
+      <GraphShowPointProtectors>1</GraphShowPointProtectors>
+      <GraphDrawRainbow>0</GraphDrawRainbow>
+      <GraphPlotXAutoscale>0</GraphPlotXAutoscale>
+      <GraphPlotYAutoscale>0</GraphPlotYAutoscale>
+      <UDMGraphPlotRightYAutoscale>0</UDMGraphPlotRightYAutoscale>
+      <GraphPlotBaseColumnID>105</GraphPlotBaseColumnID>
+      <GraphInterpolate>0</GraphInterpolate>
+      <GraphTitle></GraphTitle>
+    </PageGraphCartesian>
+    <PageHelperDataCurveFit>
+      <ID>114</ID>
+      <BroadcastTo>0</BroadcastTo>
+      <Visible>1</Visible>
+      <SubordinateToID>108</SubordinateToID>
+      <GUIHelperRangeMin>0.000000000000</GUIHelperRangeMin>
+      <GUIHelperRangeMax>19.000000000000</GUIHelperRangeMax>
+      <GUIHelperTraceColumnID>107</GUIHelperTraceColumnID>
+      <GUIHelperBaseColumnID>105</GUIHelperBaseColumnID>
+      <CurveFitFunctionID>112</CurveFitFunctionID>
+      <CurveFitMethod>1</CurveFitMethod>
+    </PageHelperDataCurveFit>
+  </Page>
+  <DataSet>
+    <ID>103</ID>
+    <BroadcastTo>1 101</BroadcastTo>
+    <DataSetName>Série 1</DataSetName>
+    <DataSetLatest>0</DataSetLatest>
+    <DataSetMatrixLatest>0</DataSetMatrixLatest>
+    <DataColumn>
+      <ID>105</ID>
+      <ColumnGroupID>104</ColumnGroupID>
+      <UDMVertexID>0</UDMVertexID>
+      <BroadcastTo>2 101 108</BroadcastTo>
+      <DataObjectName>t</DataObjectName>
+      <ColumnUnits>min</ColumnUnits>
+      <ColumnProtected>0</ColumnProtected>
+      <ColumnUserEditable>1</ColumnUserEditable>
+      <ColumnDataType>0</ColumnDataType>
+      <StartTime>1605957224</StartTime>
+      <ColumnStartCollectTime>1605957224</ColumnStartCollectTime>
+      <ColumnUserCreated>1</ColumnUserCreated>
+      <ColumnAllowUserDelete>1</ColumnAllowUserDelete>
+      <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>0</DataObjectPrecision>
+      <ColumnForceScientific>0</ColumnForceScientific>
+      <UDMAutomaticPrecision>1</UDMAutomaticPrecision>
+      <ColumnMatrixStyleNum>0</ColumnMatrixStyleNum>
+      <ColumnPPStyle>2</ColumnPPStyle>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <ColumnSensorColumn>0</ColumnSensorColumn>
+      <ColumnSensorInputColumn>0</ColumnSensorInputColumn>
+      <ColumnShowLiveReadout>0</ColumnShowLiveReadout>
+      <ColumnCells>
+0
+0.5
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</ColumnCells>
+    </DataColumn>
+    <DataColumn>
+      <ID>107</ID>
+      <ColumnGroupID>106</ColumnGroupID>
+      <UDMVertexID>0</UDMVertexID>
+      <BroadcastTo>2 101 108</BroadcastTo>
+      <DataObjectName>[Cl-]</DataObjectName>
+      <ColumnUnits>mmol/L</ColumnUnits>
+      <ColumnProtected>0</ColumnProtected>
+      <ColumnUserEditable>1</ColumnUserEditable>
+      <ColumnDataType>0</ColumnDataType>
+      <StartTime>1605957224</StartTime>
+      <ColumnStartCollectTime>1605957224</ColumnStartCollectTime>
+      <ColumnUserCreated>1</ColumnUserCreated>
+      <ColumnAllowUserDelete>1</ColumnAllowUserDelete>
+      <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>0</DataObjectPrecision>
+      <ColumnForceScientific>0</ColumnForceScientific>
+      <UDMAutomaticPrecision>1</UDMAutomaticPrecision>
+      <ColumnMatrixStyleNum>0</ColumnMatrixStyleNum>
+      <ColumnPPStyle>3</ColumnPPStyle>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <ColumnSensorColumn>0</ColumnSensorColumn>
+      <ColumnSensorInputColumn>0</ColumnSensorInputColumn>
+      <ColumnShowLiveReadout>0</ColumnShowLiveReadout>
+      <DataObjectColor>0xd8d8 0x2626 0x2f2f</DataObjectColor>
+      <ColumnCells>
+0
+1.7
+3
+4.4
+5.6
+6.5
+7.1
+7.6
+8
+8.2
+8.4
+8.55
+8.7
+8.8
+8.9
+8.9
+8.95
+8.95
+9
+9
+9
+</ColumnCells>
+    </DataColumn>
+  </DataSet>
+  <DataSet>
+    <ID>113</ID>
+    <BroadcastTo>0</BroadcastTo>
+    <Visible>1</Visible>
+    <DataSetName>&amp;#38;&amp;#38;^% CurveFitFunctions %^&amp;#38;&amp;#38;</DataSetName>
+    <DataSetCurveFit>1</DataSetCurveFit>
+    <DataSetShowInDataBrowser>0</DataSetShowInDataBrowser>
+    <FunctionModel>
+      <ID>112</ID>
+      <BroadcastTo>1 108</BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <FunctionModelString>%A*exp(-%C*%X)+%B</FunctionModelString>
+      <FunctionModelType>24</FunctionModelType>
+      <FunctionCoefficientArray>3 -8.672862833024 8.982912751684 0.315624764976</FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 0.000000000000 0.000000000000 0.000000000000</FunctionCoefficientUncertaintyArray>
+      <FunctionModelRMSE>0.115100000000</FunctionModelRMSE>
+      <FunctionModelCorrelation>0.000000000000</FunctionModelCorrelation>
+      <FunctionModelDegree>1</FunctionModelDegree>
+    </FunctionModel>
+  </DataSet>
+</Document>

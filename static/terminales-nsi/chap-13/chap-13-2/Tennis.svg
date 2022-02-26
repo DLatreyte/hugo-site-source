@@ -1,0 +1,91 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="284" height="179" view_box="0 0 284 179"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:link="http://www.w3.org/1999/xlink">\n\n<desc>Généré par Mocodo 2.3.7 le Mon, 01 Feb 2021 18:58:58</desc>
+
+<rect id="frame" x="0" y="0" width="284" height="179" fill="#f5f5f5" stroke="none" stroke-width="0"/>
+
+<!-- Association Joue -->
+<line x1="240" y1="136" x2="152" y2="136" stroke="#35978f" stroke-width="2"/>
+<text x="179" y="153.0" fill="#8c510a" font-family="Verdana" font-size="12">2,2</text>
+<line x1="152" y1="43" x2="152" y2="136" stroke="#35978f" stroke-width="2"/>
+<text x="157.0" y="94" fill="#8c510a" font-family="Verdana" font-size="12">0,*</text>
+<g id="association-Joue">
+	<path d="M 159 111 a 14 14 90 0 1 14 14 V 136 h -42 V 125 a 14 14 90 0 1 14 -14" fill="#80cdc1" stroke="#80cdc1" stroke-width="0"/>
+	<path d="M 173 136.0 v 11 a 14 14 90 0 1 -14 14 H 145 a 14 14 90 0 1 -14 -14 V 136.0 H 42" fill="#c7eae5" stroke="#c7eae5" stroke-width="0"/>
+	<rect x="131" y="111" width="42" height="50" fill="none" rx="14" stroke="#35978f" stroke-width="2"/>
+	<line x1="131" y1="136" x2="173" y2="136" stroke="#35978f" stroke-width="1"/>
+	<text x="138" y="128.7" fill="#000000" font-family="Verdana" font-size="12">Joue</text>
+</g>
+
+<!-- Association Gagne -->
+<line x1="240" y1="136" x2="240" y2="43" stroke="#35978f" stroke-width="2"/>
+<text x="245.0" y="94" fill="#8c510a" font-family="Verdana" font-size="12">1,1</text>
+<line x1="152" y1="43" x2="240" y2="43" stroke="#35978f" stroke-width="2"/>
+<text x="184" y="60.0" fill="#8c510a" font-family="Verdana" font-size="12">0,*</text>
+<g id="association-Gagne">
+	<path d="M 253 18 a 14 14 90 0 1 14 14 V 43 h -54 V 32 a 14 14 90 0 1 14 -14" fill="#80cdc1" stroke="#80cdc1" stroke-width="0"/>
+	<path d="M 267 43.0 v 11 a 14 14 90 0 1 -14 14 H 227 a 14 14 90 0 1 -14 -14 V 43.0 H 54" fill="#c7eae5" stroke="#c7eae5" stroke-width="0"/>
+	<rect x="213" y="18" width="54" height="50" fill="none" rx="14" stroke="#35978f" stroke-width="2"/>
+	<line x1="213" y1="43" x2="267" y2="43" stroke="#35978f" stroke-width="1"/>
+	<text x="220" y="35.7" fill="#000000" font-family="Verdana" font-size="12">Gagne</text>
+</g>
+
+<!-- Association Se joue sur -->
+<line x1="152" y1="43" x2="51" y2="43" stroke="#35978f" stroke-width="2"/>
+<text x="99" y="60.0" fill="#8c510a" font-family="Verdana" font-size="12">0,*</text>
+<line x1="51" y1="136" x2="51" y2="43" stroke="#35978f" stroke-width="2"/>
+<text x="56.0" y="94" fill="#8c510a" font-family="Verdana" font-size="12">1,1</text>
+<g id="association-Se joue sur">
+	<path d="M 79 18 a 14 14 90 0 1 14 14 V 43 h -84 V 32 a 14 14 90 0 1 14 -14" fill="#80cdc1" stroke="#80cdc1" stroke-width="0"/>
+	<path d="M 93 43.0 v 11 a 14 14 90 0 1 -14 14 H 23 a 14 14 90 0 1 -14 -14 V 43.0 H 84" fill="#c7eae5" stroke="#c7eae5" stroke-width="0"/>
+	<rect x="9" y="18" width="84" height="50" fill="none" rx="14" stroke="#35978f" stroke-width="2"/>
+	<line x1="9" y1="43" x2="93" y2="43" stroke="#35978f" stroke-width="1"/>
+	<text x="16" y="35.7" fill="#000000" font-family="Verdana" font-size="12">Se joue sur</text>
+</g>
+
+<!-- Entity Joueur -->
+<g id="entity-Joueur">
+	<g id="frame-Joueur">
+		<rect x="205" y="102" width="70" height="25" fill="#dfc27d" stroke="#dfc27d" stroke-width="0"/>
+		<rect x="205" y="127.0" width="70" height="43" fill="#f6e8c3" stroke="#f6e8c3" stroke-width="0"/>
+		<rect x="205" y="102" width="70" height="68" fill="none" stroke="#bf812d" stroke-width="2"/>
+		<line x1="205" y1="127" x2="275" y2="127" stroke="#bf812d" stroke-width="1"/>
+	</g>
+	<text x="219" y="119.7" fill="#000000" font-family="Verdana" font-size="12">Joueur</text>
+	<text x="210" y="144.8" fill="#000000" font-family="Verdana" font-size="12">numCarte</text>
+	<line x1="210" y1="147" x2="270" y2="147" stroke="#000000" stroke-width="1"/>
+	<text x="210" y="161.8" fill="#000000" font-family="Verdana" font-size="12">nom</text>
+</g>
+
+<!-- Entity Terrain -->
+<g id="entity-Terrain">
+	<g id="frame-Terrain">
+		<rect x="23" y="102" width="56" height="25" fill="#dfc27d" stroke="#dfc27d" stroke-width="0"/>
+		<rect x="23" y="127.0" width="56" height="43" fill="#f6e8c3" stroke="#f6e8c3" stroke-width="0"/>
+		<rect x="23" y="102" width="56" height="68" fill="none" stroke="#bf812d" stroke-width="2"/>
+		<line x1="23" y1="127" x2="79" y2="127" stroke="#bf812d" stroke-width="1"/>
+	</g>
+	<text x="29" y="119.7" fill="#000000" font-family="Verdana" font-size="12">Terrain</text>
+	<text x="28" y="144.8" fill="#000000" font-family="Verdana" font-size="12">num</text>
+	<line x1="28" y1="147" x2="56" y2="147" stroke="#000000" stroke-width="1"/>
+	<text x="28" y="161.8" fill="#000000" font-family="Verdana" font-size="12">surface</text>
+</g>
+
+<!-- Entity Match -->
+<g id="entity-Match">
+	<g id="frame-Match">
+		<rect x="125" y="9" width="54" height="25" fill="#dfc27d" stroke="#dfc27d" stroke-width="0"/>
+		<rect x="125" y="34.0" width="54" height="43" fill="#f6e8c3" stroke="#f6e8c3" stroke-width="0"/>
+		<rect x="125" y="9" width="54" height="68" fill="none" stroke="#bf812d" stroke-width="2"/>
+		<line x1="125" y1="34" x2="179" y2="34" stroke="#bf812d" stroke-width="1"/>
+	</g>
+	<text x="133" y="26.7" fill="#000000" font-family="Verdana" font-size="12">Match</text>
+	<text x="130" y="51.8" fill="#000000" font-family="Verdana" font-size="12">id</text>
+	<line x1="130" y1="54" x2="142" y2="54" stroke="#000000" stroke-width="1"/>
+	<text x="130" y="68.8" fill="#000000" font-family="Verdana" font-size="12">horaire</text>
+</g>
+</svg>

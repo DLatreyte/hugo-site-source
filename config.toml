@@ -1,0 +1,202 @@
+baseurl = "https://dlatreyte.github.io"
+relativeURLs = true
+canonifyURLs = true
+DefaultContentLanguage = "fr"
+title = "Accueil"
+theme = "beautifulhugo"
+metaDataFormat = "yaml"
+#pygmentsStyle = "tango"
+pygmentsUseClasses = true    # Ancien : commenté
+pygmentsCodeFences = true    # Ancien : commenté
+#pygmentsCodefencesGuessSyntax = true
+#pygmentsUseClassic = true
+#pygmentOptions = "linenos=inline"
+#disqusShortname = "XXX"
+#googleAnalytics = "XXX"
+
+[markup]
+    defaultMarkdownHandler = "goldmark"
+    [markup.goldmark]
+        [markup.goldmark.extensions]
+            definitionList = true
+            footnote = true
+            linkify = true
+            strikethrough = true
+            table = true
+            taskList = true
+            typographer = true
+        [markup.goldmark.parser]
+            attribute = true
+                block = true
+                title = true
+            autoHeadingID = true
+            autoHeadingIDType = "github"
+        [markup.goldmark.renderer]
+            hardWraps = false
+            unsafe = true
+            xhtml = false
+    [markup.blackFriday]
+        angledQuotes = false
+        footnoteAnchorPrefix = ""
+        footnoteReturnLinkContents = ""
+        fractions = true
+        hrefTargetBlank = false
+        latexDashes = true
+        nofollowLinks = false
+        noreferrerLinks = false
+        plainIDAnchors = true
+        skipHTML = false
+        smartDashes = true
+        smartypants = true
+        smartypantsQuotesNBSP = false
+        taskLists = true
+    [markup.highlight]
+        codeFences = true
+        guessSyntax = true
+        hl_Lines = ""
+        lineNoStart = 1
+        lineNos = true
+        lineNumbersInTable = true
+        noClasses = false # Ancien : true
+        style = "perldoc"
+        tabWidth = 4
+    [markup.tableOfContents]
+        endLevel = 3
+        ordered = false
+        startLevel = 2
+
+[Params]
+homeTitle = "Physique, Chimie et Informatique" # Set a different text for the header on the home page
+subtitle = "Cours de Physique, de Chimie et d'Informatique pour le secondaire"
+mainSections = ["post","posts"]
+logo = "first_page.jpg" # Expecting square dimensions
+favicon = "img/favicon.ico"
+dateFormat = "January 2, 2006"
+commit = false
+rss = true
+comments = true
+readingTime = true
+wordCount = true
+useHLJS = false
+socialShare = true
+delayDisqus = true
+showRelatedPosts = true
+enableEmoji = true
+#  hideAuthor = true
+#  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
+
+#[[Params.bigimg]]
+#  src = "img/triangle.jpg"
+#  desc = "Triangle"
+#[[Params.bigimg]]
+#  src = "img/sphere.jpg"
+#  desc = "Sphere"
+#  # position: see values of CSS background-position.
+#  position = "center top"
+#[[Params.bigimg]]
+#  src = "img/hexagon.jpg"
+#  desc = "Hexagon"
+
+[Author]
+  name = "David Latreyte"
+  website = "https://dlatreyte.github.io"
+  email = "david.latreyte@louismassignon.com"
+  #facebook = "username"
+  github = "DLatreyte"
+  #gitlab = "username"
+  #bitbucket = "username"
+  twitter = "@DLatreyte"
+  #reddit = "username"
+  linkedin = "latreyte-david-917852b2"
+  #xing = "username"
+  #stackoverflow = "users/XXXXXXX/username"
+  #snapchat = "username"
+  instagram = "agdavgablou"
+  #youtube = "user/username" # or channel/channelname
+  #soundcloud = "username"
+  #spotify = "username"
+  #bandcamp = "username"
+  #itchio = "username"
+  #vk = "username"
+  #paypal = "username"
+  #telegram = "username"
+  #500px = "username"
+  #weibo = "username"
+
+[[menu.main]]
+    name = "Infos"
+    url = "about/infos"
+    weight = 1
+	
+[[menu.main]]
+    name = "Blog"
+    url = ""
+    weight = 2
+
+[[menu.main]]
+    identifier = "cours"
+    name = "Cours"
+    weight = 3
+
+[[menu.main]]
+    parent = "cours"
+    name = "1ère Spé. PC"
+    url = "premieres-pc"
+    weight = 1
+
+[[menu.main]]
+    parent = "cours"
+    name = "1ère Spé. NSI"
+    url = "premieres-nsi"
+    weight = 2
+
+[[menu.main]]
+    parent = "cours"
+    name = "Terminale Spé. PC"
+    url = "terminales-pc"
+    weight = 3
+
+[[menu.main]]
+    parent = "cours"
+    name = "Terminale Spé. NSI"
+    url = "terminales-nsi"
+    weight = 4
+
+[[menu.main]]
+    parent = "cours"
+    name = "Terminale Ens. Scientifique"
+    url = "terminales-es"
+    weight = 5
+
+[[menu.main]]
+    parent = "cours"
+    name = "... dans le supérieur"
+    url = "superieur"
+    weight = 6
+
+[[menu.main]]
+    identifier = "culture"
+    name = "Culture"
+    weight = 4
+
+[[menu.main]]
+    parent = "culture"
+    name = "Articles"
+    url = "culture"
+    weight = 1
+
+[[menu.main]]
+    parent = "culture"
+    name = "Programmation"
+    url = "programmation"
+    weight = 2
+
+[[menu.main]]
+    name = "Tags"
+    url = "tags"
+    weight = 6
+
+[[menu.main]]
+    name = "Catégories"
+    url = "categories"
+    weight = 6

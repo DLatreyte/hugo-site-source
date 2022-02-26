@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="https://www.texmacs.org/2002/extensions" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <title>Dynamique des fluides</title>
+    <meta content="TeXmacs 1.99.20" name="generator"></meta>
+    <link href="https://dlatreyte.github.io/texmacs-styles/texmacs-base.css" type="text/css" rel="stylesheet"></link>
+    <link href="https://dlatreyte.github.io/texmacs-styles/blog-icon.png" rel="icon"></link>
+    <link href="https://www.texmacs.org/css/tmfold.css" type="text/css" rel="stylesheet"></link>
+    <script src="https://www.texmacs.org/javascript/texmacs_fold.js" language="javascript" defer></script>
+    <script language="javascript"
+    defer>"https://dlatreyte.github.io/texmacs-styles/highlight.pack.js"</script>
+    <script language="javascript"
+    defer>"https://dlatreyte.github.io/texmacs-styles/texmacs-base.js"</script>
+  </head>
+  <body>
+    <table class="title-block" style="margin-bottom: 2em">
+      <tr>
+        <td><table class="title-block">
+          <tr>
+            <td><font color="#1c8acf"><b><font style="font-size: 168.0%"><class style="font-variant: small-caps">Dynamique des
+            fluides</class></font></b></font></td>
+          </tr>
+        </table><table class="title-block" style="margin-top: 0.25em; margin-bottom: 0.5em">
+          <tr>
+            <td><font style="font-size: 129.7%"><strong>Chapitre 20,2</strong></font></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+    <h2 id="auto-1">1<span style="margin-left: 1em"></span>On ne peut pas &eacute;tudier le mouvement
+    d'un fluide comme celui d'un solide<span style="margin-left: 1em"></span></h2>
+    <p>
+      La m&eacute;canique des fluides est tr&egrave;s diff&eacute;rente de la
+      m&eacute;canique du solide dont une introduction a &eacute;t&eacute;
+      formul&eacute;e cette ann&eacute;e. 
+    </p>
+    <font color="black"><div class="ornament" style="background-color:#e1f4fd;border-width:0px;border-radius:15px">
+      <p>
+        Un fluide est constitu&eacute; d'<em>un tr&egrave;s grande nombre
+        d'entit&eacute;s microscopiques</em> qui entrent en collision les unes
+        avec les autres sans cesse. Une application sans adaptation des lois
+        de la m&eacute;canique, introduites cette ann&eacute;e, &agrave;
+        chacune de ces entit&eacute;s n&eacute;cessiterait donc de
+        r&eacute;soudre <strong>&agrave; chaque instant</strong> environ <img
+        src="chap-20-2-dynamique-fluides-1.png" style="margin-left: -0.0244976076555024em; margin-bottom: -0.0122966507177033em; margin-right: -0.0244976076555024em; margin-top: -0.0489952153110048em; vertical-align: -0.012200956937799em; height: 0.983971291866029em"></img> &eacute;quations diff&eacute;rentielles, ce qui est
+        impossible.
+      </p>
+      <p>
+        Un fluide doit donc &ecirc;tre abord&eacute; diff&eacute;remment : on
+        se place &agrave; <em>une &eacute;chelle interm&eacute;diaire entre le
+        monde microscopique et le monde macroscopique,
+        l'<strong>&eacute;chelle m&eacute;soscopique</strong>.</em> &Agrave;
+        cette &eacute;chelle, la mati&egrave;re est toujours
+        consid&eacute;r&eacute;e comme continue, mais on isole, par la
+        pens&eacute;e, des <strong>particules de fluide</strong>.
+      </p>
+    </div></font>
+    <p>
+      L'objet de la m&eacute;canique des fluides est d'&eacute;tudier et de
+      pr&eacute;dire le comportement des particules de fluide.
+    </p>
+    <h2 id="auto-2">2<span style="margin-left: 1em"></span>Qu'est-ce qu'une ligne de courant ?<span
+    style="margin-left: 1em"></span></h2>
+    <font color="black"><div class="ornament" style="background-color:#f7f2e0;border-width:0px;border-radius:15px">
+      <p>
+        <div style="display: inline">
+          <a id="auto-3"></a>
+        </div>
+        <h5>En pratique, comment suivre le mouvement d'une particule de fluide
+        ?<span style="margin-left: 1em"></span></h5>
+      </p>
+      <p>
+        On peut injecter dans le liquide quelque gouttes d'un colorant (ou de
+        la fum&eacute;e si le fluide est un gaz) et prendre une photographie
+        avec un <strong>temps de pose tr&egrave;s long</strong> (on laisse
+        s'&eacute;couler le temps).
+      </p>
+    </div></font>
+    <font color="black"><div class="ornament" style="background-color:#e1f4fd;border-width:0px;border-radius:15px">
+      <p>
+        <em>Une <strong>ligne de courant</strong> est la trajectoire d'une
+        particule de fluide</em>.
+      </p>
+      <p>
+        En chaque point de l'espace la droite tangente &agrave; la ligne de
+        courant est la direction du <strong>vecteur vitesse en ce
+        point</strong>. <em>Un vecteur vitesse <span class="no-breaks"><img src="chap-20-2-dynamique-fluides-2.png" style="margin-left: -0.0244976076555024em; margin-bottom: -0.0122966507177033em; margin-right: -0.118612440191388em; margin-top: -0.0307655502392344em; vertical-align: -0.012200956937799em; height: 0.862535885167464em"></img>,</span>
+        en m&eacute;canique des fluides, n'est pas attach&eacute; &agrave; une
+        particule de fluide mais repr&eacute;sente la vitesse, &agrave;
+        l'instant <span class="no-breaks"><img src="chap-20-2-dynamique-fluides-3.png" style="margin-left: -0.0244976076555024em; margin-bottom: -0.0122966507177033em; margin-right: -0.0857416267942584em; margin-top: -0.0367464114832535em; vertical-align: -0.012200956937799em; height: 0.698181818181818em"></img>,</span> de toute
+        particule de fluide se trouvant en ce point de l'espace.</em>
+        <strong>L'ensemble des vecteurs vitesses forme le champ des vecteurs
+        vitesses.</strong>
+      </p>
+    </div></font>
+    <p>
+      Le point de vue d&eacute;velopp&eacute; en m&eacute;canique est donc
+      tr&egrave;s diff&eacute;rent de celui utilis&eacute; en m&eacute;canique
+      du solide ;
+    </p>
+    <center>
+      <img src="chap-20-2-dynamique-fluides-4.png" style="margin-left: 0em; margin-bottom: 0.0211961722488039em; margin-right: 0em; margin-top: -0.040909090909091em; vertical-align: -0.778899521531101em; height: 1.98172248803828em"></img>
+    </center>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Note. </strong>En fait, le formalisme de la m&eacute;canique des
+      fluides est identique au formalisme utilis&eacute; en
+      &eacute;lectromagn&eacute;tisme. La plupart des op&eacute;rateurs
+      math&eacute;matique utilis&eacute;s en &eacute;lectromagn&eacute;tisme
+      ont un nom qui traduit cette similitude.
+    </p>
+    <p>
+      
+    </p>
+    <center>
+      <p style="margin-top: 0.5em; margin-bottom: 0.5em">
+        <img class="image" src="chap-20-2-dynamique-fluides-5.png" width="100%"></img>
+      </p>
+    </center>
+    <font color="black"><div class="ornament" style="background-color:#f7f2e0;border-width:0px;border-radius:15px">
+      <p>
+        <div style="display: inline">
+          <a id="auto-4"></a>
+        </div>
+        <h5>En pratique, comment peut-on visualiser le champ des vitesses
+        ?<span style="margin-left: 1em"></span></h5>
+      </p>
+      <p>
+        On peut injecter dans le liquide quelque gouttes d'un colorant (ou de
+        la fum&eacute;e si le fluide est un gaz) en plusieurs endroits du
+        fluide et prendre une photographie avec un <strong>temps de pose
+        court</strong>.
+      </p>
+    </div></font>
+    <h2 id="auto-5">3<span style="margin-left: 1em"></span>&Eacute;coulement d'un fluide<span style="margin-left: 1em"></span></h2>
+    <p>
+      L'&eacute;coulement d'un fluide peut-&ecirc;tre :
+    </p>
+    <ul>
+      <li>
+        <p>
+          <strong>stationnaire</strong> ou <strong>non stationnaire</strong> ;
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong>laminaire</strong> ou <strong>turbulent</strong>.
+        </p>
+      </li>
+    </ul>
+    <h3 id="auto-6">3.1<span style="margin-left: 1em"></span>&Eacute;coulement stationnaire<span style="margin-left: 1em"></span></h3>
+    <font color="black"><div class="ornament" style="background-color:#e1f4fd;border-width:0px;border-radius:15px">
+      <p>
+        <em>Un &eacute;coulement est dit stationnaire si ses
+        caract&eacute;ristiques ne varient pas au cours du temps</em>. Les
+        <em>lignes de courant</em> n'&eacute;voluent alors pas au cours du
+        temps.
+      </p>
+    </div></font>
+    <font color="black"><div class="ornament" style="background-color:#f7f2e0;border-width:0px;border-radius:15px">
+      <p>
+        <strong>Un &eacute;coulement stationnaire n'implique pas que la
+        vitesse d'une particule de fluide soit constante au cours du
+        temps.</strong> Par contre, toutes les particules de fluide passant au
+        m&ecirc;me point de l'espace poss&egrave;dent alors le m&ecirc;me
+        vecteur vitesse.
+      </p>
+    </div></font>
+    <h3 id="auto-7">3.2<span style="margin-left: 1em"></span>&Eacute;coulements laminaires,
+    turbulents<span style="margin-left: 1em"></span></h3>
+    <font color="black"><div class="ornament" style="background-color:#e1f4fd;border-width:0px;border-radius:15px">
+      <p>
+        Un &eacute;coulement est dit <strong>laminaire</strong> si <em>deux
+        particules de fluide voisines &agrave; un instant donn&eacute; restent
+        voisines aux instants suivants</em>. L'ensemble du fluide
+        s'&eacute;coule alors plus ou moins dans la m&ecirc;me direction
+      </p>
+      <p>
+        Les lignes de courant d'un &eacute;coulement laminaire sont &laquo;
+        parall&egrave;les &raquo; et la vitesse de l'&eacute;coulement est
+        g&eacute;n&eacute;ralement petite.
+      </p>
+    </div></font>
+    <div style="margin-top: 1em; margin-bottom: 1em">
+      <table style="width: 100%">
+        <tbody><tr>
+          <td style="text-align: center; padding-left: 0em; padding-right: 0em"><img class="image" src="chap-20-2-dynamique-fluides-6.png" width="100%"></img></td>
+        </tr><tr>
+          <td style="text-align: center; padding-left: 0em; padding-right: 0em; height: 0.5em"></td>
+        </tr><tr>
+          <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-left: 1.5em; padding-right: 1.5em"><div class="caption">
+            <font style="font-size: 90.0%"><p>
+              <b>Figure 1. </b><a id="auto-8"></a>&Eacute;coulement laminaire autour
+              d'un obstacle.
+            </p></font>
+          </div></td>
+        </tr></tbody>
+      </table>
+    </div>
+    <div style="margin-top: 1em; margin-bottom: 1em">
+      <table style="width: 100%">
+        <tbody><tr>
+          <td style="text-align: center; padding-left: 0em; padding-right: 0em"><img class="image" src="chap-20-2-dynamique-fluides-7.png" height="423.1575992" width="662.1502632"></img></td>
+        </tr><tr>
+          <td style="text-align: center; padding-left: 0em; padding-right: 0em; height: 0.5em"></td>
+        </tr><tr>
+          <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-left: 1.5em; padding-right: 1.5em"><div class="caption">
+            <font style="font-size: 90.0%"><p>
+              <b>Figure 2. </b><a id="auto-9"></a>&Eacute;coulement laminaire autour
+              d'un obstacle.
+            </p></font>
+          </div></td>
+        </tr></tbody>
+      </table>
+    </div>
+    <div style="margin-top: 1em; margin-bottom: 1em">
+      <table style="width: 100%">
+        <tbody><tr>
+          <td style="text-align: center; padding-left: 0em; padding-right: 0em"><img class="image" src="chap-20-2-dynamique-fluides-8.png" height="246.02186" width="655.1210672"></img></td>
+        </tr><tr>
+          <td style="text-align: center; padding-left: 0em; padding-right: 0em; height: 0.5em"></td>
+        </tr><tr>
+          <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-left: 1.5em; padding-right: 1.5em"><div class="caption">
+            <font style="font-size: 90.0%"><p>
+              <b>Figure 3. </b><a id="auto-10"></a>&Eacute;coulement laminaire autour
+              d'une aile. Les lignes de courant &eacute;pousent la forme de
+              l'obstacle.
+            </p></font>
+          </div></td>
+        </tr></tbody>
+      </table>
+    </div>
+    <font color="black"><div class="ornament" style="background-color:#e1f4fd;border-width:0px;border-radius:15px">
+      <p>
+        Un &eacute;coulement <strong>turbulent</strong> correspond &agrave; un
+        mouvement irr&eacute;gulier, chaotique et variable. Si les
+        mol&eacute;cules d'un fluide ont une grande vitesse et rencontre un
+        obstacle, elles tournoient en petits tourbillons ; les lignes de
+        courant forment alors des boucles. L'&eacute;coulement ne suit plus
+        les contours de l'obstacle.
+      </p>
+    </div></font>
+    <div style="margin-top: 1em; margin-bottom: 1em">
+      <table style="width: 100%">
+        <tbody><tr>
+          <td style="text-align: center; padding-left: 0em; padding-right: 0em"><img class="image" src="chap-20-2-dynamique-fluides-9.png" height="340.2130864" width="726.8188664"></img></td>
+        </tr><tr>
+          <td style="text-align: center; padding-left: 0em; padding-right: 0em; height: 0.5em"></td>
+        </tr><tr>
+          <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-left: 1.5em; padding-right: 1.5em"><div class="caption">
+            <font style="font-size: 90.0%"><p>
+              <b>Figure 4. </b><a id="auto-11"></a>&Eacute;coulement turbulent en
+              arri&egrave;re de l'obstacle. Les lignes de courant
+              n'&eacute;pousent pas la forme de l'obstacle.
+            </p></font>
+          </div></td>
+        </tr></tbody>
+      </table>
+    </div>
+    <div style="margin-top: 1em; margin-bottom: 1em">
+      <table style="width: 100%">
+        <tbody><tr>
+          <td style="text-align: center; padding-left: 0em; padding-right: 0em"><img class="image" src="chap-20-2-dynamique-fluides-10.png" width="100%"></img></td>
+        </tr><tr>
+          <td style="text-align: center; padding-left: 0em; padding-right: 0em; height: 0.5em"></td>
+        </tr><tr>
+          <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-left: 1.5em; padding-right: 1.5em"><div class="caption">
+            <font style="font-size: 90.0%"><p>
+              <b>Figure 5. </b><a id="auto-12"></a>Fum&eacute;e &agrave;
+              l'arri&egrave;re d'un obstacle elliptique.
+            </p></font>
+          </div></td>
+        </tr></tbody>
+      </table>
+    </div>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Note. </strong>Dans la suite de ce chapitre <em>tous les
+      &eacute;coulements seront consid&eacute;r&eacute;s stationnaires et
+      laminaires</em>.
+    </p>
+    <h2 id="auto-13">4<span style="margin-left: 1em"></span>Quelle grandeur se conserve lors de
+    l'&eacute;coulement stationnaire d'un fluide ?<span style="margin-left: 1em"></span></h2>
+    <font color="black"><div class="ornament" style="background-color:#e1f4fd;border-width:0px;border-radius:15px">
+      <p>
+        En m&eacute;canique des fluides, comme en m&eacute;canique des
+        solides, la masse se conserve.
+      </p>
+    </div></font>
+    <p>
+      <img src="chap-20-2-dynamique-fluides-11.png" style="margin-left: -0.0244976076555024em; margin-bottom: 0em; margin-right: -0.0244976076555012em; margin-top: 0em; vertical-align: -8.99253588516746em; height: 17.9850717703349em"></img>
+    </p>
+    <p>
+      On isole par la pens&eacute;e un tube de courant <img src="chap-20-2-dynamique-fluides-12.png" style="margin-left: -0.0244976076555024em; margin-bottom: -0.0244976076555024em; margin-right: -0.0244976076555021em; margin-top: -0.0489952153110048em; vertical-align: 0em; height: 0.922727272727273em"></img>
+      dans un fluide en &eacute;coulement. Puisque la masse se conserve, la
+      masse <img src="chap-20-2-dynamique-fluides-13.png" style="margin-left: -0.0244976076555024em; margin-bottom: 0em; margin-right: -0.0244976076555024em; margin-top: -0.0122488038277512em; vertical-align: -0.163301435406699em; height: 0.959473684210526em"></img> de fluide qui entre dans le tube pendant
+      <img src="chap-20-2-dynamique-fluides-14.png" style="margin-left: -0.0244976076555024em; margin-bottom: -0.0122966507177033em; margin-right: -0.0857416267942583em; margin-top: 0em; vertical-align: -0.012200956937799em; height: 0.759425837320574em"></img> secondes doit &ecirc;tre &eacute;gale &agrave;
+      la masse <img src="chap-20-2-dynamique-fluides-15.png" style="margin-left: -0.0244976076555024em; margin-bottom: 0.012200956937799em; margin-right: -0.0244976076555024em; margin-top: -0.0122488038277512em; vertical-align: -0.175502392344498em; height: 0.959473684210526em"></img> de fluide qui quitte le tube pendant
+      ces m&ecirc;mes <img src="chap-20-2-dynamique-fluides-14.png" style="margin-left: -0.0244976076555024em; margin-bottom: -0.0122966507177033em; margin-right: -0.0857416267942583em; margin-top: 0em; vertical-align: -0.012200956937799em; height: 0.759425837320574em"></img> secondes.<br />On a 
+    </p>
+    <center>
+      <img src="chap-20-2-dynamique-fluides-16.png" style="margin-left: -0.0244976076555024em; margin-bottom: 0.0244497607655503em; margin-right: -0.024497607655503em; margin-top: -0.0122488038277512em; vertical-align: -0.269425837320574em; height: 1.04114832535885em"></img>
+    </center>
+    <p>
+      o&ugrave; <img src="chap-20-2-dynamique-fluides-17.png" style="margin-left: -0.0244976076555024em; margin-bottom: 0.0244497607655503em; margin-right: -0.0734928229665072em; margin-top: -0.0489952153110047em; vertical-align: -0.269425837320574em; height: 0.796172248803828em"></img> est la masse volumique du fluide au
+      point consid&eacute;r&eacute; et <img src="chap-20-2-dynamique-fluides-18.png" style="margin-left: -0.0244976076555024em; margin-bottom: -4.78468899521543e-5em; margin-right: -0.183732057416268em; margin-top: -0.0122488038277512em; vertical-align: -0.0244497607655502em; height: 0.759425837320574em"></img> le volume
+      occup&eacute; par la masse de fluide entrant ou sortant du tube. Comme
+      ce dernier volume forme un parall&eacute;l&eacute;pip&egrave;de
+      rectangle pour une dur&eacute;e <img src="chap-20-2-dynamique-fluides-14.png" style="margin-left: -0.0244976076555024em; margin-bottom: -0.0122966507177033em; margin-right: -0.0857416267942583em; margin-top: 0em; vertical-align: -0.012200956937799em; height: 0.759425837320574em"></img> suffisamment
+      petite, 
+    </p>
+    <center>
+      <img src="chap-20-2-dynamique-fluides-19.png" style="margin-left: -0.0244976076555024em; margin-bottom: -4.78468899521543e-5em; margin-right: -0.0367464114832536em; margin-top: 0em; vertical-align: -0.0244497607655502em; height: 0.759425837320574em"></img>
+    </center>
+    <p>
+      o&ugrave; <img src="chap-20-2-dynamique-fluides-20.png" style="margin-left: -0.0244976076555024em; margin-bottom: -0.0122966507177033em; margin-right: -0.0857416267942583em; margin-top: -0.0179425837320574em; vertical-align: -0.012200956937799em; height: 0.532392344497608em"></img> est le module de la vitesse du fluide
+      au point consid&eacute;r&eacute;. On a donc
+    </p>
+    <center>
+      <img src="chap-20-2-dynamique-fluides-21.png" style="margin-left: -0.0244976076555024em; margin-bottom: 0.0244497607655503em; margin-right: -0.0244976076555012em; margin-top: -0.0122488038277512em; vertical-align: -0.269425837320574em; height: 1.04114832535885em"></img>
+    </center>
+    <font color="black"><div class="ornament" style="background-color:#f7f2e0;border-width:0px;border-radius:15px">
+      <p>
+        <div style="display: inline">
+          <a id="auto-14"></a>
+        </div>
+        <h5>Attention ! <span style="margin-left: 1em"></span></h5>
+        <div style="display: inline">
+          Lorsque l'&eacute;coulement est simplement stationnaire, <span
+          class="no-breaks"><img src="chap-20-2-dynamique-fluides-22.png" style="margin-left: -0.0244976076555024em; margin-bottom: 0.012200956937799em; margin-right: -0.0244976076555026em; margin-top: 0em; vertical-align: -0.175502392344498em; height: 0.89822966507177em"></img>,</span> <span class="no-breaks"><img src="chap-20-2-dynamique-fluides-23.png" style="margin-left: -0.0244976076555024em; margin-bottom: 0.012200956937799em; margin-right: -0.0244976076555026em; margin-top: -0.0122488038277512em; vertical-align: -0.175502392344498em; height: 0.89822966507177em"></img>,</span>
+          <img src="chap-20-2-dynamique-fluides-24.png" style="margin-left: -0.0244976076555024em; margin-bottom: 0.012200956937799em; margin-right: -0.0244976076555026em; margin-top: -0.030622009569378em; vertical-align: -0.175502392344498em; height: 1.0411004784689em"></img> et <span class="no-breaks"><img src="chap-20-2-dynamique-fluides-25.png" style="margin-left: -0.0244976076555024em; margin-bottom: 0.0244497607655503em; margin-right: -0.0244976076555021em; margin-top: -0.0244976076555024em; vertical-align: -0.269425837320574em; height: 0.91866028708134em"></img>.</span>
+        </div>
+      </p>
+    </div></font>
+    <font color="black"><div class="ornament" style="background-color:#e1f4fd;border-width:0px;border-radius:15px">
+      <p>
+        On appelle <strong>d&eacute;bit massique</strong> la grandeur
+      </p>
+      <center>
+        <img src="chap-20-2-dynamique-fluides-26.png" style="margin-left: -0.0244976076555024em; margin-bottom: 0.0244497607655503em; margin-right: -0.0367464114832536em; margin-top: 0em; vertical-align: -0.269425837320574em; height: 0.979904306220096em"></img>
+      </center>
+      <p>
+        <em>Elle repr&eacute;sente la masse qui traverse la surface S chaque
+        seconde.</em>
+      </p>
+    </div></font>
+    <p>
+      <img src="chap-20-2-dynamique-fluides-13.png" style="margin-left: -0.0244976076555024em; margin-bottom: 0em; margin-right: -0.0244976076555024em; margin-top: -0.0122488038277512em; vertical-align: -0.163301435406699em; height: 0.959473684210526em"></img> et <img src="chap-20-2-dynamique-fluides-15.png" style="margin-left: -0.0244976076555024em; margin-bottom: 0.012200956937799em; margin-right: -0.0244976076555024em; margin-top: -0.0122488038277512em; vertical-align: -0.175502392344498em; height: 0.959473684210526em"></img> peuvent donc
+      s'&eacute;crire 
+    </p>
+    <center>
+      <img src="chap-20-2-dynamique-fluides-27.png" style="margin-left: -0.0244976076555024em; margin-bottom: 0.012200956937799em; margin-right: -0.0857416267942597em; margin-top: -0.0122488038277512em; vertical-align: -0.29799043062201em; height: 1.08196172248804em"></img>
+    </center>
+    <p>
+      La conservation de la masse implique donc
+    </p>
+    <center>
+      <img src="chap-20-2-dynamique-fluides-28.png" style="margin-left: -0.0796172248803828em; margin-bottom: -0.0796172248803828em; margin-right: -0.0796172248803826em; margin-top: -0.0796172248803827em; vertical-align: -0.420478468899522em; height: 1.52688995215311em"></img>
+    </center>
+    <font color="black"><div class="ornament" style="background-color:#e1f4fd;border-width:0px;border-radius:15px">
+      <p>
+        <em><p>
+          Lors de l'&eacute;coulement stationnaire d'un fluide, il y a
+          conservation du d&eacute;bit massique.
+        </p><center>
+          <img src="chap-20-2-dynamique-fluides-29.png" style="margin-left: -0.0244976076555024em; margin-bottom: 0.012200956937799em; margin-right: -0.0244976076555021em; margin-top: -0.0122488038277512em; vertical-align: -0.175502392344498em; height: 0.89822966507177em"></img>
+        </center></em>
+      </p>
+    </div></font>
+    <p>
+      Si le fluide est incompressible, sa masse volumique est constante en
+      tout point, donc <span class="no-breaks"><img src="chap-20-2-dynamique-fluides-30.png" style="margin-left: -0.0244976076555024em; margin-bottom: 0.0244497607655503em; margin-right: -0.0244976076555026em; margin-top: -0.0489952153110047em; vertical-align: -0.269425837320574em; height: 0.796172248803828em"></img>.</span> On
+      constate alors que non seulement 
+    </p>
+    <center>
+      <img src="chap-20-2-dynamique-fluides-31.png" style="margin-left: -0.0244976076555024em; margin-bottom: 0.0244497607655503em; margin-right: -0.0244976076555021em; margin-top: 0em; vertical-align: -0.269425837320574em; height: 0.979904306220096em"></img>
+    </center>
+    <p>
+      mais
+    </p>
+    <center>
+      <img src="chap-20-2-dynamique-fluides-32.png" style="margin-left: -0.0244976076555024em; margin-bottom: 0.012200956937799em; margin-right: -0.0244976076555021em; margin-top: 0em; vertical-align: -0.175502392344498em; height: 0.89822966507177em"></img>
+    </center>
+    <font color="black"><div class="ornament" style="background-color:#e1f4fd;border-width:0px;border-radius:15px">
+      <p>
+        On appelle <strong>d&eacute;bit volumique</strong> la grandeur
+      </p>
+      <center>
+        <img src="chap-20-2-dynamique-fluides-33.png" style="margin-left: -0.0244976076555024em; margin-bottom: 0.012200956937799em; margin-right: -0.0367464114832536em; margin-top: 0em; vertical-align: -0.175502392344498em; height: 0.89822966507177em"></img>
+      </center>
+      <p>
+        <em>Elle repr&eacute;sente le volume qui traverse la surface S chaque
+        seconde.</em>
+      </p>
+    </div></font>
+    <p>
+      La relation pr&eacute;c&eacute;dente s'&eacute;crit, en utilisant le
+      d&eacute;bit volumique
+    </p>
+    <center>
+      <img src="chap-20-2-dynamique-fluides-34.png" style="margin-left: -0.0796172248803828em; margin-bottom: -0.0796172248803828em; margin-right: -0.0796172248803826em; margin-top: -0.0796172248803827em; vertical-align: -0.420478468899522em; height: 1.52688995215311em"></img>
+    </center>
+    <font color="black"><div class="ornament" style="background-color:#e1f4fd;border-width:0px;border-radius:15px">
+      <p>
+        <em><p>
+          Lors de l'&eacute;coulement <strong>stationnaire</strong> d'un
+          fluide <strong>incompressible</strong>, il y a conservation du
+          d&eacute;bit volumique.
+        </p><center>
+          <img src="chap-20-2-dynamique-fluides-35.png" style="margin-left: -0.0244976076555024em; margin-bottom: 0.012200956937799em; margin-right: -0.0244976076555021em; margin-top: -0.0122488038277512em; vertical-align: -0.175502392344498em; height: 0.89822966507177em"></img>
+        </center></em>
+      </p>
+    </div></font>
+    <p>
+      Ces relations impliquent que lorsque la section d'une canalisation
+      augmente, la vitesse du fluide diminue. De m&ecirc;me, si la vitesse
+      d'un fluide augmente, la section du tube de courant diminue.
+    </p>
+    <center>
+      
+    </center>
+  </body>
+</html>

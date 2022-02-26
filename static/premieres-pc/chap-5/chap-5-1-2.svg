@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="-1170 -1840 2048 2048">
+ <title>Human photoreceptor distribution</title>
+ <desc>Density of rod (dotted line) and cone (solid line) photoreceptors along a line passing through the fovea and the blind spot of a human eye vs the angle measured from the fovea, drawn by CMG Lee based on http://stanford.edu/group/vista/cgi-bin/FOV/chapter-3-the-photoreceptor-mosaic .</desc>
+ <defs>
+  <clipPath id="clip_frame"><use xlink:href="#frame"/></clipPath>
+  <rect id="frame" x="-700" y="-1800" width="1500" height="1800"/>
+  <path id="grid_x_1" d="M 0,-9999 V 9999"/>
+  <g id="grid_x_5" stroke-opacity="0.125">
+   <use xlink:href="#grid_x_1" stroke-opacity="0.25"/>
+   <use xlink:href="#grid_x_1" transform="translate(100,0)"/>
+   <use xlink:href="#grid_x_1" transform="translate(200,0)"/>
+   <use xlink:href="#grid_x_1" transform="translate(300,0)"/>
+   <use xlink:href="#grid_x_1" transform="translate(400,0)"/>
+  </g>
+  <use id="grid_y_1" xlink:href="#grid_x_1" transform="rotate(90)"/>
+  <use id="grid_y_5" xlink:href="#grid_x_5" transform="rotate(90)"/>
+  <g id="main" font-family="sans-serif" font-size="80" letter-spacing="-4" text-anchor="middle" stroke="none" stroke-width="5" stroke-linejoin="round" fill="none">
+   <g id="grid">
+    <g stroke="#000000" clip-path="url(#clip_frame)">
+     <use xlink:href="#grid_y_5" transform="translate(0,-2000)"/>
+     <use xlink:href="#grid_y_5" transform="translate(0,-1500)"/>
+     <use xlink:href="#grid_y_5" transform="translate(0,-1000)"/>
+     <use xlink:href="#grid_y_5" transform="translate(0,-500)"/>
+     <use xlink:href="#grid_x_5" transform="translate(-1000,0)"/>
+     <use xlink:href="#grid_x_5" transform="translate(-500,0)"/>
+     <use xlink:href="#grid_x_5" transform="translate(0,0)"/>
+     <use xlink:href="#grid_x_5" transform="translate(500,0)"/>
+     <use xlink:href="#frame"/>
+     <path d="M -200,-410 L 5,-50"/>
+     <path d="M  350,-410 L 160,-50"/>
+    </g>
+    <g fill="#000000">
+     <text transform="translate(-880,-1800)" x="0" y="0.7ex">180 000</text>
+     <text transform="translate(-880,-1600)" x="0" y="0.7ex">160 000</text>
+     <text transform="translate(-880,-1400)" x="0" y="0.7ex">140 000</text>
+     <text transform="translate(-880,-1200)" x="0" y="0.7ex">120 000</text>
+     <text transform="translate(-880,-1000)" x="0" y="0.7ex">100 000</text>
+     <text transform="translate(-880, -800)" x="0" y="0.7ex">80 000</text>
+     <text transform="translate(-880, -600)" x="0" y="0.7ex">60 000</text>
+     <text transform="translate(-880, -400)" x="0" y="0.7ex">40 000</text>
+     <text transform="translate(-880, -200)" x="0" y="0.7ex">20 000</text>
+     <text transform="translate(-880,    0)" x="0" y="0.7ex">0</text>
+     <text transform="translate(-600,60)" x="0" y="0.7ex">-60&#176;</text>
+     <text transform="translate(-400,60)" x="0" y="0.7ex">-40&#176;</text>
+     <text transform="translate(-200,60)" x="0" y="0.7ex">-20&#176;</text>
+     <text transform="translate(0,   60)" x="0" y="0.7ex">  0&#176;</text>
+     <text transform="translate(200, 60)" x="0" y="0.7ex"> 20&#176;</text>
+     <text transform="translate(400, 60)" x="0" y="0.7ex"> 40&#176;</text>
+     <text transform="translate(600, 60)" x="0" y="0.7ex"> 60&#176;</text>
+     <text transform="translate(800, 60)" x="0" y="0.7ex"> 80&#176;</text>
+     <text transform="translate(0,150)" x="0" y="0.7ex">Angle from fovea</text>
+     <text transform="translate(-1120,-1000) rotate(-90)" x="0" y="0.7ex">Number of receptors per mm&#178;</text>
+     <text transform="translate(-200,-450)" x="0" y="0.7ex">Fovea</text>
+     <text transform="translate(490, -450)" x="0" y="0.7ex">Blind spot</text>
+    </g>
+   </g>
+   <g id="rod" stroke="#cc0000" fill="#cc0000">
+    <path d="M -695,-310 C -670,-600 -630,-800 -500,-802 C -400,-950 -430,-1050 -380,-1112 C -180,-1220 -250,-1400 -170,-1535 C -90,-1535 -65,-1000 -20,-500 C -3,-400 -20,-400 -3,-5 H 10 C 20,-400 0,-500 40,-640 C 55,-800 50,-1200 120,-1430 C 160,-1300 120,-1000 140,0 H 185 C 200,-1400 150,-1550 230,-1610 C 270,-1410 410,-1400 440,-1300 C 500,-1200 500,-1000 800,-750" fill="none" stroke-width="10" stroke-dasharray="10,5"/>
+    <text transform="translate(650,-750)" x="0" y="0.7ex" stroke="none">Rods</text>
+   </g>
+   <g id="cone" stroke="#0066cc" fill="#0066cc">
+    <path d="M -695,-55 C -150,-55 -400,-20 -200,-80 C -120,-50 -120,-80 -60,-150 C -50,-200 0,0 0,-1500 C -10,0 60,-120 140,-80 V 0 H 185 L 200,-80 C 400,-30 600,-55 780,-48" fill="none"/>
+    <text transform="translate(650,-150)" x="0" y="0.7ex" stroke="none">Cones</text>
+   </g>
+  </g>
+ </defs>
+ <use xlink:href="#main"/>
+</svg>

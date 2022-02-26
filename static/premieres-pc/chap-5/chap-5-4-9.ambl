@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Version>4.9.0-1317</Version>
+  <charset>utf-8</charset>
+  <ApplicationBuildDateTime>23-05-2019</ApplicationBuildDateTime>
+  <Copyright>Copyright (c) 2007-2019 Vernier Software &amp; Technology and its licensors</Copyright>
+  <FileName>relation de conjugaison.ambl</FileName>
+  <CreatorOS>1</CreatorOS>
+  <CreatorApp>4</CreatorApp>
+  <AbsoluteVersion>4.9.0-1317</AbsoluteVersion>
+  <DataWorld>
+    <DataWorldRunPrefix>Run</DataWorldRunPrefix>
+    <MatrixDefaultPref>0</MatrixDefaultPref>
+    <UDMSessionType>2</UDMSessionType>
+    <UDMExperimentName>relation de conjugaison.ambl</UDMExperimentName>
+  </DataWorld>
+  <Page>
+    <ID>102</ID>
+    <BroadcastTo>0</BroadcastTo>
+    <PageTable>
+      <ID>101</ID>
+      <BroadcastTo>0</BroadcastTo>
+      <Visible>1</Visible>
+      <TableColumn>105 0.9</TableColumn>
+      <TableColumn>107 0.9</TableColumn>
+    </PageTable>
+    <PageGraphCartesian>
+      <ID>108</ID>
+      <BroadcastTo>0</BroadcastTo>
+      <Visible>1</Visible>
+      <GraphPlotXMin>-4.000000000000</GraphPlotXMin>
+      <GraphPlotXMax>-1.818181818180</GraphPlotXMax>
+      <GraphPlotYMin>0.903954802255</GraphPlotYMin>
+      <GraphPlotYMax>3.615819209035</GraphPlotYMax>
+      <UDMGraphPlotRightYMin>0.000000000000</UDMGraphPlotRightYMin>
+      <UDMGraphPlotRightYMax>0.000000000000</UDMGraphPlotRightYMax>
+      <UDMGraphPlotRightYEnabled>0</UDMGraphPlotRightYEnabled>
+      <GraphConnectLines>0</GraphConnectLines>
+      <GraphShowPointProtectors>1</GraphShowPointProtectors>
+      <GraphDrawRainbow>0</GraphDrawRainbow>
+      <GraphPlotXAutoscale>0</GraphPlotXAutoscale>
+      <GraphPlotYAutoscale>0</GraphPlotYAutoscale>
+      <UDMGraphPlotRightYAutoscale>0</UDMGraphPlotRightYAutoscale>
+      <GraphPlotBaseColumnID>116</GraphPlotBaseColumnID>
+      <GraphInterpolate>0</GraphInterpolate>
+      <GraphTitle></GraphTitle>
+    </PageGraphCartesian>
+    <PageGraphCartesian>
+      <ID>109</ID>
+      <BroadcastTo>0</BroadcastTo>
+      <Visible>0</Visible>
+      <GraphPlotXMin>0.000000000000</GraphPlotXMin>
+      <GraphPlotXMax>30.000000000000</GraphPlotXMax>
+      <GraphPlotYMin>0.000000000000</GraphPlotYMin>
+      <GraphPlotYMax>1.000000000000</GraphPlotYMax>
+      <UDMGraphPlotRightYMin>0.000000000000</UDMGraphPlotRightYMin>
+      <UDMGraphPlotRightYMax>0.000000000000</UDMGraphPlotRightYMax>
+      <UDMGraphPlotRightYEnabled>0</UDMGraphPlotRightYEnabled>
+      <GraphConnectLines>0</GraphConnectLines>
+      <GraphShowPointProtectors>1</GraphShowPointProtectors>
+      <GraphDrawRainbow>0</GraphDrawRainbow>
+      <GraphPlotXAutoscale>0</GraphPlotXAutoscale>
+      <GraphPlotYAutoscale>0</GraphPlotYAutoscale>
+      <UDMGraphPlotRightYAutoscale>0</UDMGraphPlotRightYAutoscale>
+      <GraphPlotBaseColumnID>105</GraphPlotBaseColumnID>
+      <GraphInterpolate>0</GraphInterpolate>
+      <GraphTitle></GraphTitle>
+    </PageGraphCartesian>
+    <PageGraphCartesian>
+      <ID>110</ID>
+      <BroadcastTo>0</BroadcastTo>
+      <Visible>0</Visible>
+      <GraphPlotXMin>0.000000000000</GraphPlotXMin>
+      <GraphPlotXMax>30.000000000000</GraphPlotXMax>
+      <GraphPlotYMin>0.000000000000</GraphPlotYMin>
+      <GraphPlotYMax>1.000000000000</GraphPlotYMax>
+      <UDMGraphPlotRightYMin>0.000000000000</UDMGraphPlotRightYMin>
+      <UDMGraphPlotRightYMax>0.000000000000</UDMGraphPlotRightYMax>
+      <UDMGraphPlotRightYEnabled>0</UDMGraphPlotRightYEnabled>
+      <GraphConnectLines>0</GraphConnectLines>
+      <GraphShowPointProtectors>1</GraphShowPointProtectors>
+      <GraphDrawRainbow>0</GraphDrawRainbow>
+      <GraphPlotXAutoscale>0</GraphPlotXAutoscale>
+      <GraphPlotYAutoscale>0</GraphPlotYAutoscale>
+      <UDMGraphPlotRightYAutoscale>0</UDMGraphPlotRightYAutoscale>
+      <GraphPlotBaseColumnID>105</GraphPlotBaseColumnID>
+      <GraphInterpolate>0</GraphInterpolate>
+      <GraphTitle></GraphTitle>
+    </PageGraphCartesian>
+  </Page>
+  <DataSet>
+    <ID>103</ID>
+    <BroadcastTo>1 101</BroadcastTo>
+    <DataSetName>Série 1</DataSetName>
+    <DataSetLatest>0</DataSetLatest>
+    <DataSetMatrixLatest>0</DataSetMatrixLatest>
+    <DataColumn>
+      <ID>105</ID>
+      <ColumnGroupID>104</ColumnGroupID>
+      <UDMVertexID>0</UDMVertexID>
+      <BroadcastTo>1 101</BroadcastTo>
+      <DataObjectName>OA'</DataObjectName>
+      <ColumnUnits>m</ColumnUnits>
+      <ColumnProtected>0</ColumnProtected>
+      <ColumnUserEditable>1</ColumnUserEditable>
+      <ColumnDataType>0</ColumnDataType>
+      <StartTime>1572845968</StartTime>
+      <ColumnStartCollectTime>1572845968</ColumnStartCollectTime>
+      <ColumnUserCreated>1</ColumnUserCreated>
+      <ColumnAllowUserDelete>1</ColumnAllowUserDelete>
+      <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>0</DataObjectPrecision>
+      <ColumnForceScientific>0</ColumnForceScientific>
+      <UDMAutomaticPrecision>1</UDMAutomaticPrecision>
+      <ColumnMatrixStyleNum>0</ColumnMatrixStyleNum>
+      <ColumnPPStyle>2</ColumnPPStyle>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <ColumnSensorColumn>0</ColumnSensorColumn>
+      <ColumnSensorInputColumn>0</ColumnSensorInputColumn>
+      <ColumnShowLiveReadout>0</ColumnShowLiveReadout>
+      <ColumnCells>
+0.885
+0.543
+0.43
+0.379
+0.34
+0.312
+0.295
+Z1 1:
+</ColumnCells>
+      <DataObjectColor>0x3b3b 0x8b8b 0xcccc</DataObjectColor>
+    </DataColumn>
+    <DataColumn>
+      <ID>107</ID>
+      <ColumnGroupID>106</ColumnGroupID>
+      <UDMVertexID>0</UDMVertexID>
+      <BroadcastTo>1 101</BroadcastTo>
+      <DataObjectName>OA</DataObjectName>
+      <ColumnUnits>m</ColumnUnits>
+      <ColumnProtected>0</ColumnProtected>
+      <ColumnUserEditable>1</ColumnUserEditable>
+      <ColumnDataType>0</ColumnDataType>
+      <StartTime>1572845968</StartTime>
+      <ColumnStartCollectTime>1572845968</ColumnStartCollectTime>
+      <ColumnUserCreated>1</ColumnUserCreated>
+      <ColumnAllowUserDelete>1</ColumnAllowUserDelete>
+      <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>0</DataObjectPrecision>
+      <ColumnForceScientific>0</ColumnForceScientific>
+      <UDMAutomaticPrecision>1</UDMAutomaticPrecision>
+      <ColumnMatrixStyleNum>0</ColumnMatrixStyleNum>
+      <ColumnPPStyle>3</ColumnPPStyle>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <ColumnSensorColumn>0</ColumnSensorColumn>
+      <ColumnSensorInputColumn>0</ColumnSensorInputColumn>
+      <ColumnShowLiveReadout>0</ColumnShowLiveReadout>
+      <DataObjectColor>0xd8d8 0x2626 0x2f2f</DataObjectColor>
+      <ColumnCells>
+-0.25
+-0.3
+-0.35
+-0.4
+-0.45
+-0.5
+-0.55
+Z1 1:
+</ColumnCells>
+    </DataColumn>
+  </DataSet>
+  <DataSourceServer>
+    <CalcColumnSource2>
+      <ID>118</ID>
+      <BroadcastTo>0</BroadcastTo>
+      <CalcOutColumnID>112</CalcOutColumnID>
+      <CalcFunctionColumnArray>105</CalcFunctionColumnArray>
+      <CalcFunctionCoefficientArray>1</CalcFunctionCoefficientArray>
+      <CalcFunction>AdivX()</CalcFunction>
+    </CalcColumnSource2>
+    <CalcColumnSource2>
+      <ID>119</ID>
+      <BroadcastTo>0</BroadcastTo>
+      <CalcOutColumnID>116</CalcOutColumnID>
+      <CalcFunctionColumnArray>107</CalcFunctionColumnArray>
+      <CalcFunctionCoefficientArray>1</CalcFunctionCoefficientArray>
+      <CalcFunction>AdivX()</CalcFunction>
+    </CalcColumnSource2>
+  </DataSourceServer>
+</Document>

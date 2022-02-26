@@ -1,0 +1,36 @@
+---
+title: "Avant propos"
+subtitle: ""
+author: "D. Sivoukhine"
+type: ""
+date: 2020-08-25T22:26:18+04:00
+draft: false
+toc: false
+tags: []
+categories: []
+image: ""
+solution_est_visible: true
+auto_numbering: false
+---
+
+Le présent ouvrage est le développement d'un cours que nous avons exposé pendant près de vingt ans aux étudiants de l'Institut de Physique technique de Moscou. Pendant cette période ni le plan général du cours, ni l'approche de l'exposé des questions fondamentales n'ont subi de modifications importantes. Mais chaque année nous éprouvions le besoin d'y inclure de nouvelles questions et de nouveaux exemples se substituant aux précédents que nous étions obligés d'éliminer par manque de temps. Le lecteur trouvera dans cet ouvrage la presque totalité des questions abordées au cours de ces années, ainsi que d'autres qui ne l'ont pas été. On y a inclus aussi nombre de problèmes avec indication des réponses ou des procédés de résolution. Nous estimons que tout cela sera utile aux étudiants désireux d'approfondir leurs connaissances en physique et contribuera à leur formation de physicien. L'objectif est de les conduire à formuler et à résoudre eux-mêmes les questions de principe et les problèmes d'application. Il est bien évident que tout ce que nous avons jugé utile d'inclure dans cet ouvrage ne saurait faire partie du programme obligatoire. Pour la commodité du lecteur les questions les plus importantes sont imprimées en caractères courants et les autres en petits caractères.
+
+L'enseignement oral était toujours complété par des démonstrations qui sont, avec les travaux pratiques, le moyen le plus efficace d'initier les étudiants aux phénomènes physiques. Aucune description, aussi précise et aussi imagée soit-elle, ne saurait les remplacer. Les démonstrations en salle de cours fournissant les premières données expérimentales permettent d'introduire de nouvelles notions, de procéder à des généralisations, de formuler les lois et les principes de la Physique. De plus, elles rompent la monotonie des exposés oraux et rendent les cours plus attrayants.
+
+Dans cet ouvrage le but est tout autre&nbsp;; les descriptions des expériences de démonstration y sont moins nombreuses et notablement plus schématiques. Ce qui importe ici c'est de bien dégager la signification physique et le contenu des principaux concepts et propositions de la physique. Une attention particulière est accordée à la fixation des limites de validité des lois physiques et des modèles idéalisés.
+
+Dans le premier tome de notre ouvrage le lecteur trouvera un exposé systématique des fondements physiques de la mécanique classique non relativiste. Mais comme il est impossible d'exposer les fondements physiques de la mécanique sans établir de lien avec les autres parties de cette science, nous donnerons dès le premier tome quelques notions de la théorie de la relativité et de la mécanique quantique. On ne saurait autrement préciser la limite de validité de la mécanique classique non relativiste. Les quelques notions de mécanique quantique sont données très brièvement et sans aucune justification. Nous serons plus précis sur la mécanique relativiste ou mécanique de la théorie de la relativité. Ces exposés se fondent sur la variation de la masse avec la vitesse, que nous présentons comme un fait expérimental. Cela nous paraît être suffisant non seulement pour une étude qualitative, mais aussi pour l'étude quantitative des problèmes simples dont des exemples sont donnés ici. Les exposés systématiques des mécaniques relativiste et quantique seront présentés dans les autres tomes de notre ouvrage, à la suite de l'étude des phénomènes électriques et optiques.
+
+Les tomes suivants seront consacrés à la thermodynamique, à la physique moléculaire, à l'électricité, à l'optique et à la physique atomique et nucléaire.
+
+Nous avons adopté en qualité d'unités de mesure celles du système C.G.S. En mécanique, ces unités ne se distinguent pratiquement pas des unités du système international SI. La différence uniquement quantitative est déterminée par une différence des unités de longueur et de masse (dans le système SI le centimètre fait place au mètre et le gramme fait place au kilogramme). Ces différences n'affectent ni le sens des concepts ni la forme des formules physiques&nbsp;; en mécanique les deux systèmes sont aussi commodes l'un que l'autre. Il en va tout autrement dans l'électrodynamique. Dans le système SI l'état électrique du vide est caractérisé par quatre vecteurs&nbsp;: l'intensité $\mathbf{E}$ et l'induction $\mathbf{D}$ du champ électrique, l'intensité $\mathbf{H}$ et l'induction $\mathbf{B}$ du champ magnétique. Du point de vue de la physique c'est une complication inutile et contre nature. Pour caractériser le vide, deux vecteurs suffisent — ceux que l'on introduit dans le système C.G.S. Dans ce système les quatre vecteurs $\mathbf{E}$, $\mathbf{D}$, $\mathbf{H}$, $\mathbf{B}$ ont les mêmes dimensions tandis que dans le système SI leurs dimensions sont différentes, ce qui est aussi contre nature, puisque les champs électrique et magnétique sont intimement liés entre eux. C'est en électrodynamique relativiste que ce lien se trouve établi sous la forme la plus générale, puisqu'elle associe les vecteurs $\mathbf{E}$ et $\mathbf{B}$, ainsi que les vecteurs $\mathbf{D}$ et $\mathbf{H}$ dans des tenseurs antisymétriques. Pour composer ces tenseurs dans le système SI, on est obligé de recourir à des facteurs dimensionnels pour homogénéiser les équations aux dimensions de leurs composantes. C'est une complication inutile. Le seul avantage du système SI par rapport au système physique C.G.S. est l'inclusion organique dans ce système de l'ampère, du volt, de l'ohm et de toutes les dérivées de ces unités qui, par suite d'aléas historiques, sont largement utilisées en électrotechnique. Mais c'est là un avantage pratique et non de principe. Comme les questions de mesures ne jouent dans notre cours qu'un rôle secondaire, il nous a paru indu de sacrifier à des besoins purement pratiques l'élégance et la logique des concepts et des formules de la physique tels qu'ils apparaissent dans le système C.G.S.
+
+Cet ouvrage n'aurait, jamais vu le jour si le professeur G. Gorélik, dirigeant la chaire de physique de l'Institut de physique technique de Moscou, ne m'avait chargé du cours de physique générale.
+
+Les expériences de démonstration ont été conçues et réalisées par nos assistants à qui nous tenons à adresser nos remerciements.
+
+Une partie notable des problèmes donnés dans ce cours sont au programme des examens et ont été conçus par mes collègues.
+
+Le manuscrit du présent tome a été relu par les académiciens V. Ginzburg, B. Kadomtsev, M. Léontovitch, R. Sagdéev et les professeurs S. Guerstein et I. Iakovlev. Il a également fait l'objet d'une analyse approfondie à la chaire de physique générale de la faculté de mécanique et des mathématiques de l'Université de Moscou, dirigée par le professeur S. Strelkov.
+
+Les remarques critiques, les conseils et les suggestions de toutes les personnes citées dans cet avant-propos ont grandement contribué à la mise au point de notre ouvrage. L'auteur tient à leur exprimer ici sa profonde gratitude.

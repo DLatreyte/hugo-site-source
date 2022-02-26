@@ -1,0 +1,986 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>chap-12</title><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.701961); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+
+
+.CodeMirror { height: auto; }
+.CodeMirror.cm-s-inner { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+.CodeMirror-scroll { overflow-y: hidden; overflow-x: auto; z-index: 3; }
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
+.CodeMirror-gutters { border-right-width: 1px; border-right-style: solid; border-right-color: rgb(221, 221, 221); background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; white-space: nowrap; background-position: inherit inherit; background-repeat: inherit inherit; }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: 700; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: red; }
+.cm-invalidchar { color: red; }
+.cm-constant { color: rgb(38, 139, 210); }
+.cm-defined { color: rgb(181, 137, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: hidden; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 30px; z-index: 3; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; border: none !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width: 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; word-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; background-position: 0px 0px; background-repeat: initial initial; }
+.CodeMirror-wrap pre { word-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right-width: 30px; border-right-style: solid; border-right-color: transparent; width: fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right-style: none; width: auto; }
+.CodeMirror-linebackground { position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right-style: none; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.cm-searching { background-color: rgba(255, 255, 0, 0.4); background-position: initial initial; background-repeat: initial initial; }
+@media print { 
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fff;
+    --control-text-color: #777;
+}
+
+/* cyrillic-ext */
+/* cyrillic */
+/* greek-ext */
+/* greek */
+/* vietnamese */
+/* latin-ext */
+/* latin */
+/* cyrillic-ext */
+/* cyrillic */
+/* greek-ext */
+/* greek */
+/* vietnamese */
+/* latin-ext */
+/* latin */
+/* cyrillic-ext */
+/* cyrillic */
+/* greek-ext */
+/* greek */
+/* vietnamese */
+/* latin-ext */
+/* latin */
+/* cyrillic-ext */
+/* cyrillic */
+/* greek-ext */
+/* greek */
+/* vietnamese */
+/* latin-ext */
+/* latin */
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif !important;
+    color: #34495e;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.6rem;
+    letter-spacing: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#write {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 20px 30px 100px;
+}
+
+#write p {
+    line-height: 1.6rem;
+    word-spacing: .05rem;
+}
+
+#write ol li {
+    text-indent: 0.5rem;
+}
+
+#write > ul:first-child,
+#write > ol:first-child {
+    margin-top: 30px;
+}
+
+body > *:first-child {
+    margin-top: 0 !important;
+}
+
+body > *:last-child {
+    margin-bottom: 0 !important;
+}
+
+a {
+    color: #42b983;
+    font-weight: 600;
+    padding: 0 2px;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+
+h1 tt,
+h1 code {
+    font-size: inherit !important;
+}
+
+h2 tt,
+h2 code {
+    font-size: inherit !important;
+}
+
+h3 tt,
+h3 code {
+    font-size: inherit !important;
+}
+
+h4 tt,
+h4 code {
+    font-size: inherit !important;
+}
+
+h5 tt,
+h5 code {
+    font-size: inherit !important;
+}
+
+h6 tt,
+h6 code {
+    font-size: inherit !important;
+}
+
+h2 a,
+h3 a {
+    color: #34495e;
+}
+
+h1 {
+    padding-bottom: .4rem;
+    font-size: 2.2rem;
+    line-height: 1.3;
+}
+
+h2 {
+    font-size: 1.75rem;
+    line-height: 1.225;
+    margin: 35px 0 15px;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #ddd;
+}
+
+h3 {
+    font-size: 1.4rem;
+    line-height: 1.43;
+    margin: 20px 0 7px;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 1rem;
+    color: #777;
+}
+
+p,
+blockquote,
+ul,
+ol,
+dl,
+table {
+    margin: 0.8em 0;
+}
+
+li > ol,
+li > ul {
+    margin: 0 0;
+}
+
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+body > h2:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body > h1:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body > h3:first-child,
+body > h4:first-child,
+body > h5:first-child,
+body > h6:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+a:first-child h1,
+a:first-child h2,
+a:first-child h3,
+a:first-child h4,
+a:first-child h5,
+a:first-child h6 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h1 p,
+h2 p,
+h3 p,
+h4 p,
+h5 p,
+h6 p {
+    margin-top: 0;
+}
+
+li p.first {
+    display: inline-block;
+}
+
+ul,
+ol {
+    padding-left: 30px;
+}
+
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+
+blockquote {
+    border-left: 4px solid #42b983;
+    padding: 10px 15px;
+    color: #777;
+    background-color: rgba(66, 185, 131, .1);
+}
+
+table {
+    padding: 0;
+    word-break: initial;
+}
+
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+
+table tr:nth-child(2n),
+thead {
+    background-color: #fafafa;
+}
+
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+
+table tr td {
+    border: 1px solid #dfe2e5;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+#write strong {
+    padding: 0 1px;
+}
+
+#write em {
+    padding: 0 5px 0 2px;
+}
+
+#write table thead th {
+    background-color: #f2f2f2;
+}
+
+#write .CodeMirror-gutters {
+    border-right: none;
+}
+
+#write .md-fences {
+    border: 1px solid #F4F4F4;
+    -webkit-font-smoothing: initial;
+    margin: 0.8rem 0 !important;
+    padding: 0.3rem 0 !important;
+    line-height: 1.43rem;
+    background-color: #F8F8F8 !important;
+    border-radius: 2px;
+    font-family: Roboto Mono, Source Sans Pro, Monaco, courier, monospace !important;
+    font-size: 0.85rem;
+    word-wrap: normal;
+}
+
+#write .CodeMirror-wrap .CodeMirror-code pre {
+    padding-left: 12px;
+}
+
+#write code, tt {
+    margin: 0 2px;
+    padding: 2px 4px;
+    border-radius: 2px;
+    font-family: Roboto Mono, Source Sans Pro, Monaco, courier, monospace !important;
+    font-size: 0.92rem;
+    color: #e96900;
+    background-color: #f8f8f8;
+}
+
+#write .md-footnote {
+    background-color: #f8f8f8;
+    color: #e96900;
+}
+
+/* heighlight. */
+#write mark {
+    background-color: #EBFFEB;
+    border-radius: 2px;
+    padding: 2px 4px;
+    margin: 0 2px;
+    color: #222;
+    font-weight: 500;
+}
+
+#write del {
+    padding: 1px 2px;
+}
+
+.cm-s-inner .cm-link,
+.cm-s-inner.cm-link {
+    color: #22a2c9;
+}
+
+.cm-s-inner .cm-string {
+    color: #22a2c9;
+}
+
+.md-task-list-item > input {
+    margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+    background-color: #f8f8f8;
+}
+
+#write pre.md-meta-block {
+    padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block > .code-tooltip {
+    bottom: .375rem;
+}
+
+#write > h3.md-focus:before {
+    left: -1.5625rem;
+    top: .375rem;
+}
+
+#write > h4.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+#write > h5.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+#write > h6.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+.md-image > .md-meta {
+    border-radius: 3px;
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+    padding: 2px 0 0 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: inherit;
+}
+
+.md-toc {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#md-notification:before {
+    top: 10px;
+}
+
+/** focus mode */
+
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header,
+.context-menu,
+.megamenu-content,
+footer {
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state {
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+/** Customization **/
+div[style^='callout:'] {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 6px !important;
+    border-radius: 3px;
+}
+div[style^='callout:'] h4 {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+div[style^='callout:'] p:last-child {
+    margin-bottom: 0;
+}
+div[style^='callout:'] code {
+    border-radius: 3px;
+}
+div[style^='callout:']+div[style^='callout:'] {
+    margin-top: -5px;
+}
+div[style='callout:default'] {
+    border-left-color: #777 !important;
+}
+div[style='callout:default'] h4 {
+    color: #777 !important;
+}
+div[style='callout:primary'] {
+    border-left-color: #428bca !important;
+}
+div[style='callout:primary'] h4 {
+    color: #428bca !important;
+}
+div[style='callout:success'] {
+    border-left-color: #5cb85c !important;
+}
+div[style='callout:success'] h4 {
+    color: #5cb85c !important;
+}
+div[style='callout:danger'] {
+    border-left-color: #d9534f !important;
+}
+div[style='callout:danger'] h4 {
+    color: #d9534f !important;
+}
+div[style='callout:warning'] {
+    border-left-color: #f0ad4e !important;
+}
+div[style^='callout:warning'] h4 {
+    color: #f0ad4e !important;
+}
+div[style^='callout:info'] {
+    border-left-color: #5bc0de !important;
+}
+div[style^='callout:info'] h4 {
+    color: #5bc0de !important;
+}
+/** Environnements **/
+div[style^='callout:'] {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 6px !important;
+    border-radius: 3px;
+}
+div[style^='callout:'] h4 {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+div[style^='callout:'] p:last-child {
+    margin-bottom: 0;
+}
+div[style^='callout:'] code {
+    border-radius: 3px;
+}
+div[style^='callout:']+div[style^='callout:'] {
+    margin-top: -5px;
+}
+div[style='callout:default'] {
+    border-left-color: #777 !important;
+}
+div[style='callout:default'] h4 {
+    color: #777 !important;
+}
+div[style='callout:primary'] {
+    border-left-color: #428bca !important;
+}
+div[style='callout:primary'] h4 {
+    color: #428bca !important;
+}
+div[style='callout:success'] {
+    border-left-color: #5cb85c !important;
+}
+div[style='callout:success'] h4 {
+    color: #5cb85c !important;
+}
+div[style='callout:danger'] {
+    border-left-color: #d9534f !important;
+}
+div[style='callout:danger'] h4 {
+    color: #d9534f !important;
+}
+div[style='callout:warning'] {
+    border-left-color: #f0ad4e !important;
+}
+div[style^='callout:warning'] h4 {
+    color: #f0ad4e !important;
+}
+div[style^='callout:info'] {
+    border-left-color: #5bc0de !important;
+}
+div[style^='callout:info'] h4 {
+    color: #5bc0de !important;
+}
+
+/** initialize css counter */
+#write {
+    counter-reset: h1
+}
+
+h1 {
+    counter-reset: h2
+}
+
+h2 {
+    counter-reset: h3
+}
+
+h3 {
+    counter-reset: h4
+}
+
+h4 {
+    counter-reset: h5
+}
+
+h5 {
+    counter-reset: h6
+}
+
+/** put counter result into headings */
+/**
+#write h1:before {
+    counter-increment: h1;
+    content: counter(h1) ". "
+}
+*/
+
+#write h2:before {
+    counter-increment: h2;
+/**    content: counter(h1) "." counter(h2) ". " */
+	content: counter(h2) ". "
+}
+
+#write h3:before,
+h3.md-focus.md-heading:before /** override the default style for focused headings */ {
+    counter-increment: h3;
+/**    content: counter(h1) "." counter(h2) "." counter(h3) ". " */
+	content: counter(h2) "." counter(h3) ". "
+}
+
+#write h4:before,
+h4.md-focus.md-heading:before {
+    counter-increment: h4;
+/**    content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) ". " */
+	content: counter(h2) "." counter(h3) "." counter(h4) ". "
+}
+
+/**
+#write h5:before,
+h5.md-focus.md-heading:before {
+    counter-increment: h5;
+    content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". "
+}
+
+#write h6:before,
+h6.md-focus.md-heading:before {
+    counter-increment: h6;
+    content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". "
+}
+*/
+
+/** override the default style for focused headings */
+#write>h3.md-focus:before,
+#write>h4.md-focus:before,
+h3.md-focus:before,
+h4.md-focus:before {
+    color: inherit;
+    border: inherit;
+    border-radius: inherit;
+    position: inherit;
+    left:initial;
+    float: none;
+    top:initial;
+    font-size: inherit;
+    padding-left: inherit;
+    padding-right: inherit;
+    vertical-align: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+/** TOC */
+.md-toc-h1 {
+  display: none;
+}
+.md-toc-h5 {
+  display: none;
+}
+.md-toc-h6 {
+  display: none;
+}
+
+/** Perso */
+p {
+  text-align: justify;
+}
+html {
+    font-size: 16px;
+}
+.MathJax_SVG {
+    display: inline;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    zoom: 100%;
+    text-indent: 0px;
+    text-align: left;
+    text-transform: none;
+    letter-spacing: normal;
+    word-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    float: none;
+    direction: ltr;
+    max-width: none;
+    max-height: none;
+    min-width: 0px;
+    min-height: 0px;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+</style>
+</head>
+<body class='typora-export' >
+<div  id='write'  class = 'is-mac'><h1><a name="chap-12-----structures-de-données--les-dictionnaires" class="md-header-anchor"></a><span>Chap. 12 — Structures de données : les dictionnaires</span></h1><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n0"><a class="md-toc-inner" style="" href="#chap-12-----structures-de-données--les-dictionnaires">Chap. 12 — Structures de données : les dictionnaires</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n8"><a class="md-toc-inner" style="" href="#création-de-dictionnaires">Création de dictionnaires</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n11"><a class="md-toc-inner" style="" href="#quest-ce-quune-table-de-hachage-et-quel-est-le-rapport-avec-un-dictionnaire-">Qu'est-ce qu'une table de hachage et quel est le rapport avec un dictionnaire ?</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n29"><a class="md-toc-inner" style="" href="#comment-créer-un-dictionnaire-">Comment créer un dictionnaire ?</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n39"><a class="md-toc-inner" style="" href="#comment-accéder-aux-valeurs-dun-dictionnaire-">Comment accéder aux valeurs d'un dictionnaire ?</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n41"><a class="md-toc-inner" style="" href="#accès-à-un-seul-élément">Accès à un seul élément</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n45"><a class="md-toc-inner" style="" href="#parcours-dun-dictionnaire">Parcours d'un dictionnaire</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n60"><a class="md-toc-inner" style="" href="#comment-modifier-un-dictionnaire-">Comment modifier un dictionnaire ?</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n67"><a class="md-toc-inner" style="" href="#modification">Modification</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n65"><a class="md-toc-inner" style="" href="#ajout">Ajout</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n70"><a class="md-toc-inner" style="" href="#destruction">Destruction</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n73"><a class="md-toc-inner" style="" href="#quelques-opérateurs-et-méthodes-à-connaître">Quelques opérateurs et méthodes à connaître</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n75"><a class="md-toc-inner" style="" href="#la-clé-existe-t-elle-dans-le-dictionnaire-">La clé existe-t-elle dans le dictionnaire ?</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n80"><a class="md-toc-inner" style="" href="#combien-déléments-le-dictionnaire-renferme-t-il-">Combien d'éléments le dictionnaire renferme-t-il ?</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n83"><a class="md-toc-inner" style="" href="#listes-des-valeurs-et-des-clés">Listes des valeurs et des clés</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n91"><a class="md-toc-inner" style="" href="#exercices">Exercices</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n93"><a class="md-toc-inner" style="" href="#exercice-1-première-utilisation-des-dictionnaires">Exercice 1. Première utilisation des dictionnaires</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n108"><a class="md-toc-inner" style="" href="#exercice-2-inversion-dun-dictionnaire">Exercice 2. Inversion d'un dictionnaire</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n112"><a class="md-toc-inner" style="" href="#exercice-3-annuaire-téléphonique">Exercice 3. Annuaire téléphonique</a></span></p></div><hr /><h2><a name="création-de-dictionnaires" class="md-header-anchor"></a><span>Création de dictionnaires</span></h2><p><span>Les </span><strong><span>dictionnaires</span></strong><span> constituent le seul type associatif de Python : ils permettent de réaliser une </span><em><span>correspondance 1 à n entre </span><strong><span>valeurs de hachage</span></strong><span> (ou </span><strong><span>clés</span></strong><span>) et </span><strong><span>objets associés</span></strong><span> (</span><strong><span>valeurs</span></strong><span>)</span></em><span>.</span></p><h3><a name="quest-ce-quune-table-de-hachage-et-quel-est-le-rapport-avec-un-dictionnaire-" class="md-header-anchor"></a><span>Qu&#39;est-ce qu&#39;une table de hachage et quel est le rapport avec un dictionnaire ?</span></h3><p><span>Les </span><strong><span>types séquences</span></strong><span> utilisent des </span><em><span>clés numériques consécutives en tant qu&#39;indices</span></em><span> permettant de ranger des valeurs dans des tableaux. </span><strong><span>L&#39;indice n&#39;a en général rien à voir avec l&#39;objet rangé</span></strong><span>. Il peut cependant être utile de disposer également d&#39;une manière de ranger les objets en utilisant </span><strong><span>une valeur associée, telle qu&#39;une chaîne de caractères, à l&#39;objet rangé</span></strong><span> — c&#39;est ce que nous faisons tous les jours : on enregistre des numéros de téléphones en leur associant le nom de la personne, on crée des évènements dans un calendrier en y associant leur nom, ...</span></p><blockquote><p><span>Les tables de hachage sont des structures de données permettant de réaliser exactement ce qui est écrit ci-dessus. Elles permettent de ranger chaque objet, appelée </span><strong><span>valeur</span></strong><span>, en se basant sur une donnée associée, appelée </span><strong><span>clé</span></strong><span>. L&#39;ensemble de ces deux éléments constitue </span><strong><span>une paire clé-valeur</span></strong><span>. </span></p></blockquote><p><span>L&#39;algorithme de hachage applique sur la clé une fonction de hachage qui retourne une valeur. En fonction de ce résultat l&#39;objet est rangé à un endroit bien précis de la structure de données. </span></p><blockquote><p><em><span>Comme l&#39;endroit où est rangé l&#39;objet dépend de la clé,</span></em><span> </span><strong><span>celle-ci doit être unique dans le dictionnaire</span></strong><span>.</span></p></blockquote><p><span>Il n&#39;existe donc </span><strong><span>aucun ordre des valeurs dans une table de hachage :</span></strong><span> </span><strong><span>c&#39;est un ensemble non ordonné de valeurs</span></strong><span>.</span></p><blockquote><p><span>Les dictionnaires, en Python, sont des </span><strong><span>structures modifiables</span></strong><span>.</span></p></blockquote><h3><a name="comment-créer-un-dictionnaire-" class="md-header-anchor"></a><span>Comment créer un dictionnaire ?</span></h3><pre spellcheck="false" class="md-fences md-end-block ty-contain-cm modeLoaded" lang="python"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="python"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 11.999998092651367px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: none;" role="presentation"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;" class="CodeMirror-activeline"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-operator">&gt;&gt;&gt;</span> <span class="cm-variable">dict1</span> = {} &nbsp;<span class="cm-comment"># création d'un dictionnaire vide et affectation à la variable dict1</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-operator">&gt;&gt;&gt;</span> <span class="cm-variable">dict2</span> = {<span class="cm-string">"nom"</span>: <span class="cm-string">"mars"</span>, <span class="cm-string">"type"</span>: <span class="cm-string">"planète"</span>} &nbsp;<span class="cm-comment"># création d'un dictionnaire contenant deux élements</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-operator">&gt;&gt;&gt;</span> <span class="cm-variable">dict1</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation">{}</span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-operator">&gt;&gt;&gt;</span> <span class="cm-variable">dict2</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation">{<span class="cm-string">'nom'</span>: <span class="cm-string">'mars'</span>, <span class="cm-string">'type'</span>: <span class="cm-string">'planète'</span>}</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 157px;"></div><div class="CodeMirror-gutters" style="display: none; height: 157px;"></div></div></div></pre><p><strong><span>Remarque.</span></strong><span> Il est aussi possible d&#39;utiliser la fonction intégrée </span><code>dict</code><span>(même si son utilisation n&#39;est pas forcément intuitive) :</span></p><pre spellcheck="false" class="md-fences md-end-block ty-contain-cm modeLoaded" lang="python"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="python"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 11.999998092651367px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: none;" role="presentation"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;" class="CodeMirror-activeline"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-operator">&gt;&gt;&gt;</span> <span class="cm-variable">liste1</span> = [<span class="cm-string">'x'</span>, <span class="cm-number">1</span>]</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-operator">&gt;&gt;&gt;</span> <span class="cm-variable">liste2</span> = [<span class="cm-string">'y'</span>, <span class="cm-number">2</span>]</span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-operator">&gt;&gt;&gt;</span> <span class="cm-variable">dict3</span> = <span class="cm-builtin">dict</span>((<span class="cm-variable">liste1</span>, <span class="cm-variable">liste2</span>))</span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-operator">&gt;&gt;&gt;</span> <span class="cm-variable">dict3</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation">{<span class="cm-string">'x'</span>: <span class="cm-number">1</span>, <span class="cm-string">'y'</span>: <span class="cm-number">2</span>}</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 112px;"></div><div class="CodeMirror-gutters" style="display: none; height: 112px;"></div></div></div></pre><h3><a name="comment-accéder-aux-valeurs-dun-dictionnaire-" class="md-header-anchor"></a><span>Comment accéder aux valeurs d&#39;un dictionnaire ?</span></h3><h4><a name="accès-à-un-seul-élément" class="md-header-anchor"></a><span>Accès à un seul élément</span></h4><p><span>La syntaxe de l&#39;accès à un seul élément ressemble beaucoup à celle de l&#39;accès à un élément d&#39;une séquence, il suffit de </span><em><span>remplacer l&#39;indice par la clé</span></em><span> :</span></p><pre spellcheck="false" class="md-fences md-end-block ty-contain-cm modeLoaded" lang="python"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="python"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 11.999998092651367px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: none;" role="presentation"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div style="position: relative;" class="CodeMirror-activeline"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-operator">&gt;&gt;&gt;</span> <span class="cm-variable">dict2</span>[<span class="cm-string">"nom"</span>]</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-string">'mars'</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-operator">&gt;&gt;&gt;</span> <span class="cm-variable">dict2</span>[<span class="cm-string">"type"</span>]</span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-string">'planète'</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 90px;"></div><div class="CodeMirror-gutters" style="display: none; height: 90px;"></div></div></div></pre><h4><a name="parcours-dun-dictionnaire" class="md-header-anchor"></a><span>Parcours d&#39;un dictionnaire</span></h4><p><span>Pour parcourir un dictionnaire, il faut </span><em><span>parcourir les clés une à une</span></em><span> :</span></p><pre spellcheck="false" class="md-fences md-end-block ty-contain-cm modeLoaded" lang="python"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="python"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 11.999998092651367px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: none;" role="presentation"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;" class="CodeMirror-activeline"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-operator">&gt;&gt;&gt;</span> <span class="cm-keyword">for</span> <span class="cm-variable">cle</span> <span class="cm-keyword">in</span> <span class="cm-variable">dict2</span>.<span class="cm-property">keys</span>():</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"> &nbsp; &nbsp;<span class="cm-builtin">print</span>(<span class="cm-string">"Clé : {}, valeur : {}"</span>.<span class="cm-property">format</span>(<span class="cm-variable">cle</span>, <span class="cm-variable">dict2</span>[<span class="cm-variable">cle</span>]))</span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"> &nbsp; &nbsp;</span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-variable">Clé</span> : <span class="cm-variable">nom</span>, <span class="cm-variable">valeur</span> : <span class="cm-variable">mars</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-variable">Clé</span> : <span class="cm-builtin">type</span>, <span class="cm-variable">valeur</span> : <span class="cm-variable">planète</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 112px;"></div><div class="CodeMirror-gutters" style="display: none; height: 112px;"></div></div></div></pre><p><span>On voit encore une fois que la boucle </span><code>for</code><span> en Python est une boucle </span><strong><span>Pour chaque</span></strong><span>. Il faut lire ci-dessus : </span><em><span>« Pour chaque clé dans la liste des clés ... »</span></em><span>.</span></p><p><strong><span>Remarque.</span></strong><span> Pour simplifier l&#39;accès aux éléments d&#39;un dictionnaire, les créateurs du langage ont permis qu&#39;il ne soit pas nécessaire d&#39;utiliser la méthode </span><code>keys</code><span> pour extraire une liste de clés. Il est ainsi possible d&#39;écrire :</span></p><pre spellcheck="false" class="md-fences md-end-block ty-contain-cm modeLoaded" lang="python"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="python"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 11.999998092651367px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: none;" role="presentation"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;" class="CodeMirror-activeline"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-operator">&gt;&gt;&gt;</span> <span class="cm-keyword">for</span> <span class="cm-variable">cle</span> <span class="cm-keyword">in</span> <span class="cm-variable">dict2</span>:</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"> &nbsp; &nbsp;<span class="cm-builtin">print</span>(<span class="cm-string">"Clé : {}, valeur : {}"</span>.<span class="cm-property">format</span>(<span class="cm-variable">cle</span>, <span class="cm-variable">dict2</span>[<span class="cm-variable">cle</span>]))</span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"> &nbsp; &nbsp;</span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-variable">Clé</span> : <span class="cm-variable">nom</span>, <span class="cm-variable">valeur</span> : <span class="cm-variable">mars</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-variable">Clé</span> : <span class="cm-builtin">type</span>, <span class="cm-variable">valeur</span> : <span class="cm-variable">planète</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 112px;"></div><div class="CodeMirror-gutters" style="display: none; height: 112px;"></div></div></div></pre><p><span>Lorsqu&#39;on débute, il est tout de même plus clair d&#39;utiliser la méthode </span><code>keys</code><span>, c&#39;est donc ce que vous ferez.</span></p><h3><a name="comment-modifier-un-dictionnaire-" class="md-header-anchor"></a><span>Comment modifier un dictionnaire ?</span></h3><p><span>On peut mettre à jour un dictionnaire en lui ajoutant une nouvelle entrée, en modifiant une valeur ou en supprimant une valeur.</span></p><h4><a name="modification" class="md-header-anchor"></a><span>Modification</span></h4><pre spellcheck="false" class="md-fences md-end-block ty-contain-cm modeLoaded" lang="python"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="python"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 11.999998092651367px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: none;" role="presentation"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div style="position: relative;" class="CodeMirror-activeline"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-operator">&gt;&gt;&gt;</span> <span class="cm-variable">dict2</span>[<span class="cm-string">'nom'</span>] = <span class="cm-string">"soleil"</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-operator">&gt;&gt;&gt;</span> <span class="cm-variable">dict2</span>[<span class="cm-string">"type"</span>] = <span class="cm-string">"étoile"</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-operator">&gt;&gt;&gt;</span> <span class="cm-variable">dict2</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation">{<span class="cm-string">'nom'</span>: <span class="cm-string">'soleil'</span>, <span class="cm-string">'type'</span>: <span class="cm-string">'étoile'</span>}</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 90px;"></div><div class="CodeMirror-gutters" style="display: none; height: 90px;"></div></div></div></pre><h4><a name="ajout" class="md-header-anchor"></a><span>Ajout</span></h4><pre spellcheck="false" class="md-fences md-end-block ty-contain-cm modeLoaded" lang="python"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="python"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 11.999998092651367px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: none;" role="presentation"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div style="position: relative;" class="CodeMirror-activeline"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-operator">&gt;&gt;&gt;</span> <span class="cm-variable">dict2</span>[<span class="cm-string">"masse"</span>] = <span class="cm-number">1.989E30</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-operator">&gt;&gt;&gt;</span> <span class="cm-variable">dict2</span>[<span class="cm-string">"rayon"</span>] = <span class="cm-number">695510000</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-operator">&gt;&gt;&gt;</span> <span class="cm-variable">dict2</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation">{<span class="cm-string">'nom'</span>: <span class="cm-string">'soleil'</span>, <span class="cm-string">'type'</span>: <span class="cm-string">'étoile'</span>, <span class="cm-string">'masse'</span>: <span class="cm-number">1.989e+30</span>, <span class="cm-string">'rayon'</span>: <span class="cm-number">695510000</span>}</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 90px;"></div><div class="CodeMirror-gutters" style="display: none; height: 90px;"></div></div></div></pre><h4><a name="destruction" class="md-header-anchor"></a><span>Destruction</span></h4><pre spellcheck="false" class="md-fences md-end-block ty-contain-cm modeLoaded" lang="python"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="python"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 11.999998092651367px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: none;" role="presentation"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div style="position: relative;" class="CodeMirror-activeline"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-operator">&gt;&gt;&gt;</span> <span class="cm-keyword">del</span> <span class="cm-variable">dict2</span>[<span class="cm-string">"nom"</span>] &nbsp;<span class="cm-comment"># supprime la valeur de clé "nom"</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-operator">&gt;&gt;&gt;</span> <span class="cm-variable">dict2</span>.<span class="cm-property">clear</span>() &nbsp; &nbsp; <span class="cm-comment"># supprime toutes les valeurs de dict2 (le dictionnaire existe toujours)</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-operator">&gt;&gt;&gt;</span> <span class="cm-keyword">del</span> <span class="cm-variable">dict2</span> &nbsp; &nbsp; &nbsp; &nbsp; <span class="cm-comment"># supprime le dictionnaire en entier</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 67px;"></div><div class="CodeMirror-gutters" style="display: none; height: 67px;"></div></div></div></pre><h2><a name="quelques-opérateurs-et-méthodes-à-connaître" class="md-header-anchor"></a><span>Quelques opérateurs et méthodes à connaître</span></h2><h3><a name="la-clé-existe-t-elle-dans-le-dictionnaire-" class="md-header-anchor"></a><span>La clé existe-t-elle dans le dictionnaire ?</span></h3><pre spellcheck="false" class="md-fences md-end-block ty-contain-cm modeLoaded" lang="python"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="python"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 11.999998092651367px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: none;" role="presentation"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div style="position: relative;" class="CodeMirror-activeline"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-operator">&gt;&gt;&gt;</span> <span class="cm-string">"rayon"</span> <span class="cm-keyword">in</span> <span class="cm-variable">dict2</span>.<span class="cm-property">keys</span>() &nbsp;<span class="cm-comment"># "rayon" appartient-elle à la liste des clés ?</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-keyword">True</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-operator">&gt;&gt;&gt;</span> <span class="cm-string">"rayon"</span> <span class="cm-keyword">in</span> <span class="cm-variable">dict2</span> &nbsp; &nbsp; &nbsp; &nbsp; <span class="cm-comment"># version plus concise</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-keyword">True</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 90px;"></div><div class="CodeMirror-gutters" style="display: none; height: 90px;"></div></div></div></pre><pre spellcheck="false" class="md-fences md-end-block ty-contain-cm modeLoaded" lang="python"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="python"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 11.999998092651367px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: none;" role="presentation"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;" class="CodeMirror-activeline"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-operator">&gt;&gt;&gt;</span> <span class="cm-string">"masse"</span> <span class="cm-keyword">not</span> <span class="cm-keyword">in</span> <span class="cm-variable">dict2</span>.<span class="cm-property">keys</span>() &nbsp;<span class="cm-comment"># "masse" n'apartient pas à la liste de clés ?</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-keyword">False</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-operator">&gt;&gt;&gt;</span> <span class="cm-string">"masse"</span> <span class="cm-keyword">not</span> <span class="cm-keyword">in</span> <span class="cm-variable">dict2</span> &nbsp; &nbsp; &nbsp; &nbsp; <span class="cm-comment"># idem</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-keyword">False</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-operator">&gt;&gt;&gt;</span> <span class="cm-string">"température"</span> <span class="cm-keyword">not</span> <span class="cm-keyword">in</span> <span class="cm-variable">dict2</span>.<span class="cm-property">keys</span>()</span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-keyword">True</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 134px;"></div><div class="CodeMirror-gutters" style="display: none; height: 134px;"></div></div></div></pre><h4><a name="combien-déléments-le-dictionnaire-renferme-t-il-" class="md-header-anchor"></a><span>Combien d&#39;éléments le dictionnaire renferme-t-il ?</span></h4><pre spellcheck="false" class="md-fences md-end-block ty-contain-cm modeLoaded" lang="python"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="python"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 11.999998092651367px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: none;" role="presentation"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;" class="CodeMirror-activeline"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-operator">&gt;&gt;&gt;</span> <span class="cm-builtin">len</span>(<span class="cm-variable">dict2</span>) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="cm-comment"># le dictionnaire comme argument à la fonction len</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-number">4</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-operator">&gt;&gt;&gt;</span> <span class="cm-builtin">len</span>(<span class="cm-variable">dict2</span>.<span class="cm-property">keys</span>()) &nbsp; &nbsp;<span class="cm-comment"># la liste des clés comme argument à la fonction len</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-number">4</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-operator">&gt;&gt;&gt;</span> <span class="cm-builtin">len</span>(<span class="cm-variable">dict2</span>.<span class="cm-property">values</span>()) &nbsp;<span class="cm-comment"># la liste des valeurs comme argument à la fonction len</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-number">4</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 134px;"></div><div class="CodeMirror-gutters" style="display: none; height: 134px;"></div></div></div></pre><h4><a name="listes-des-valeurs-et-des-clés" class="md-header-anchor"></a><span>Listes des valeurs et des clés</span></h4><pre spellcheck="false" class="md-fences md-end-block ty-contain-cm modeLoaded" lang="python"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="python"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 11.999998092651367px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: none;" role="presentation"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;" class="CodeMirror-activeline"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-operator">&gt;&gt;&gt;</span> <span class="cm-variable">dict2</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation">{<span class="cm-string">'nom'</span>: <span class="cm-string">'soleil'</span>, <span class="cm-string">'type'</span>: <span class="cm-string">'étoile'</span>, <span class="cm-string">'masse'</span>: <span class="cm-number">1.989e+30</span>, <span class="cm-string">'rayon'</span>: <span class="cm-number">695510000</span>}</span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-operator">&gt;&gt;&gt;</span> <span class="cm-variable">dict2</span>.<span class="cm-property">keys</span>()</span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-variable">dict_keys</span>([<span class="cm-string">'nom'</span>, <span class="cm-string">'type'</span>, <span class="cm-string">'masse'</span>, <span class="cm-string">'rayon'</span>])</span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-operator">&gt;&gt;&gt;</span> <span class="cm-variable">dict2</span>.<span class="cm-property">values</span>()</span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-variable">dict_values</span>([<span class="cm-string">'soleil'</span>, <span class="cm-string">'étoile'</span>, <span class="cm-number">1.989e+30</span>, <span class="cm-number">695510000</span>])</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 134px;"></div><div class="CodeMirror-gutters" style="display: none; height: 134px;"></div></div></div></pre><p><strong><span>Remarque.</span></strong><span> Les méthodes </span><code>values</code><span> et </span><code>keys</code><span> ne retournent en fait pas des listes mais des itérateurs. La différence n&#39;est pas importante </span><em><span>tant que vous vous utilisez le résultat de leur appel dans des instructions comme</span></em><span> </span><code>for</code><span> ou </span><code>in</code><span> :</span></p><pre spellcheck="false" class="md-fences md-end-block ty-contain-cm modeLoaded" lang="python"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="python"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 11.999998092651367px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: none;" role="presentation"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;" class="CodeMirror-activeline"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-operator">&gt;&gt;&gt;</span> <span class="cm-string">'étoile'</span> <span class="cm-keyword">in</span> <span class="cm-variable">dict2</span>.<span class="cm-property">values</span>()</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-keyword">True</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-operator">&gt;&gt;&gt;</span> <span class="cm-keyword">for</span> <span class="cm-variable">valeur</span> <span class="cm-keyword">in</span> <span class="cm-variable">dict2</span>.<span class="cm-property">values</span>():</span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"> &nbsp; &nbsp;<span class="cm-builtin">print</span>(<span class="cm-variable">valeur</span>, <span class="cm-variable">end</span>=<span class="cm-string">" "</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"> &nbsp; &nbsp;</span></pre><pre class=" CodeMirror-line " role="presentation"><span style="padding-right: 0.1px;" role="presentation"><span class="cm-variable">soleil</span> <span class="cm-variable">étoile</span> <span class="cm-number">1.989e+30</span> <span class="cm-number">695510000</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 134px;"></div><div class="CodeMirror-gutters" style="display: none; height: 134px;"></div></div></div></pre><h2><a name="exercices" class="md-header-anchor"></a><span>Exercices</span></h2><h5><a name="exercice-1-première-utilisation-des-dictionnaires" class="md-header-anchor"></a><span>Exercice 1. Première utilisation des dictionnaires</span></h5><ol><li><span>Créer un dictionnaire contenant quelques valeurs et afficher ses clés par ordre alphabétique.</span>
+<strong><span>Remarque :</span></strong><span> le langage Python possède une fonction nommée </span><code>sorted</code><span>. Lire sa documentation à l&#39;aide de la fonction </span><code>help</code><span> pour en savoir plus sur son utilisation.</span></li><li><span>Afficher maintenant à la fois les clés et les valeurs, triées dans l&#39;ordre alphabétique des clés.</span></li><li><span>Afficher maintenant à la fois les clés et les valeurs, triées dans l&#39;ordre alphabétique des valeurs.</span>
+<span>On notera que cela n&#39;a pas un grand intérêt pratique en général puisque l&#39;accès et le tri éventuel s&#39;effectuent généralement sur les clés.</span></li></ol><h5><a name="exercice-2-inversion-dun-dictionnaire" class="md-header-anchor"></a><span>Exercice 2. Inversion d&#39;un dictionnaire</span></h5><p><span>Définir une fonction qui prend un dictionnaire en argument et qui retourne un nouveau dictionnaire, les clés du premiers dictionnaire étant devenues les valeurs du nouveau dictionnaire et les valeurs du premier dictionnaire étant devenues les clés du nouveau dictionnaire : </span><span style="font-size: 100%; display: inline-block;" class="MathJax_SVG" tabindex="-1"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="28.723ex" height="2.713ex" style="vertical-align: -0.777ex;" viewBox="0 -833.5 12366.9 1168.2" role="img" focusable="false"><defs><path stroke-width="0" id="E1-MJMAIN-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path><path stroke-width="0" id="E1-MJMAIN-63" d="M370 305T349 305T313 320T297 358Q297 381 312 396Q317 401 317 402T307 404Q281 408 258 408Q209 408 178 376Q131 329 131 219Q131 137 162 90Q203 29 272 29Q313 29 338 55T374 117Q376 125 379 127T395 129H409Q415 123 415 120Q415 116 411 104T395 71T366 33T318 2T249 -11Q163 -11 99 53T34 214Q34 318 99 383T250 448T370 421T404 357Q404 334 387 320Z"></path><path stroke-width="0" id="E1-MJMAIN-6C" d="M42 46H56Q95 46 103 60V68Q103 77 103 91T103 124T104 167T104 217T104 272T104 329Q104 366 104 407T104 482T104 542T103 586T103 603Q100 622 89 628T44 637H26V660Q26 683 28 683L38 684Q48 685 67 686T104 688Q121 689 141 690T171 693T182 694H185V379Q185 62 186 60Q190 52 198 49Q219 46 247 46H263V0H255L232 1Q209 2 183 2T145 3T107 3T57 1L34 0H26V46H42Z"></path><path stroke-width="0" id="E1-MJMAIN-65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z"></path><path stroke-width="0" id="E1-MJMAIN-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path stroke-width="0" id="E1-MJMAIN-76" d="M338 431Q344 429 422 429Q479 429 503 431H508V385H497Q439 381 423 345Q421 341 356 172T288 -2Q283 -11 263 -11Q244 -11 239 -2Q99 359 98 364Q93 378 82 381T43 385H19V431H25L33 430Q41 430 53 430T79 430T104 429T122 428Q217 428 232 431H240V385H226Q187 384 184 370Q184 366 235 234L286 102L377 341V349Q377 363 367 372T349 383T335 385H331V431H338Z"></path><path stroke-width="0" id="E1-MJMAIN-61" d="M137 305T115 305T78 320T63 359Q63 394 97 421T218 448Q291 448 336 416T396 340Q401 326 401 309T402 194V124Q402 76 407 58T428 40Q443 40 448 56T453 109V145H493V106Q492 66 490 59Q481 29 455 12T400 -6T353 12T329 54V58L327 55Q325 52 322 49T314 40T302 29T287 17T269 6T247 -2T221 -8T190 -11Q130 -11 82 20T34 107Q34 128 41 147T68 188T116 225T194 253T304 268H318V290Q318 324 312 340Q290 411 215 411Q197 411 181 410T156 406T148 403Q170 388 170 359Q170 334 154 320ZM126 106Q126 75 150 51T209 26Q247 26 276 49T315 109Q317 116 318 175Q318 233 317 233Q309 233 296 232T251 223T193 203T147 166T126 106Z"></path><path stroke-width="0" id="E1-MJMAIN-75" d="M383 58Q327 -10 256 -10H249Q124 -10 105 89Q104 96 103 226Q102 335 102 348T96 369Q86 385 36 385H25V408Q25 431 27 431L38 432Q48 433 67 434T105 436Q122 437 142 438T172 441T184 442H187V261Q188 77 190 64Q193 49 204 40Q224 26 264 26Q290 26 311 35T343 58T363 90T375 120T379 144Q379 145 379 161T380 201T380 248V315Q380 361 370 372T320 385H302V431Q304 431 378 436T457 442H464V264Q464 84 465 81Q468 61 479 55T524 46H542V0Q540 0 467 -5T390 -11H383V58Z"></path><path stroke-width="0" id="E1-MJMAIN-72" d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z"></path><path stroke-width="0" id="E1-MJMAIN-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path><path stroke-width="0" id="E1-MJMAIN-27F6" d="M84 237T84 250T98 270H1444Q1328 357 1301 493Q1301 494 1301 496T1300 499Q1300 511 1317 511H1320Q1329 511 1332 510T1338 506T1341 497T1344 481T1352 456Q1374 389 1425 336T1544 261Q1553 258 1553 250Q1553 244 1548 241T1524 231T1486 212Q1445 186 1415 152T1370 85T1349 35T1341 4Q1339 -6 1336 -8T1320 -11Q1300 -11 1300 0Q1300 7 1305 25Q1337 151 1444 230H98Q84 237 84 250Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#E1-MJMAIN-28" x="0" y="0"></use><g transform="translate(389,0)"><use xlink:href="#E1-MJMAIN-63"></use><use xlink:href="#E1-MJMAIN-6C" x="444" y="0"></use><use xlink:href="#E1-MJMAIN-65" x="722" y="0"></use></g><use xlink:href="#E1-MJMAIN-2C" x="1555" y="0"></use><g transform="translate(1999,0)"><use xlink:href="#E1-MJMAIN-76"></use><use xlink:href="#E1-MJMAIN-61" x="528" y="0"></use><use xlink:href="#E1-MJMAIN-6C" x="1028" y="0"></use><use xlink:href="#E1-MJMAIN-65" x="1306" y="0"></use><use xlink:href="#E1-MJMAIN-75" x="1750" y="0"></use><use xlink:href="#E1-MJMAIN-72" x="2306" y="0"></use></g><use xlink:href="#E1-MJMAIN-29" x="4697" y="0"></use><use xlink:href="#E1-MJMAIN-27F6" x="5364" y="0"></use><use xlink:href="#E1-MJMAIN-28" x="7280" y="0"></use><g transform="translate(7669,0)"><use xlink:href="#E1-MJMAIN-76"></use><use xlink:href="#E1-MJMAIN-61" x="528" y="0"></use><use xlink:href="#E1-MJMAIN-6C" x="1028" y="0"></use><use xlink:href="#E1-MJMAIN-65" x="1306" y="0"></use><use xlink:href="#E1-MJMAIN-75" x="1750" y="0"></use><use xlink:href="#E1-MJMAIN-72" x="2306" y="0"></use></g><use xlink:href="#E1-MJMAIN-2C" x="10367" y="0"></use><g transform="translate(10811,0)"><use xlink:href="#E1-MJMAIN-63"></use><use xlink:href="#E1-MJMAIN-6C" x="444" y="0"></use><use xlink:href="#E1-MJMAIN-65" x="722" y="0"></use></g><use xlink:href="#E1-MJMAIN-29" x="11977" y="0"></use></g></svg></span><script type="math/tex">(\text{cle}, \text{valeur}) \longrightarrow (\text{valeur}, \text{cle})</script><span>.</span></p><h5><a name="exercice-3-annuaire-téléphonique" class="md-header-anchor"></a><span>Exercice 3. Annuaire téléphonique</span></h5><ol><li><span>Commenter chaque ligne du programme en </span><a href='./agenda_telephonique_eleves.py'><span>pièce jointe</span></a><span>.</span></li><li><span>Relever les points faibles de ce programme et essayer de les corriger.</span></li></ol></div>
+</body>
+</html>

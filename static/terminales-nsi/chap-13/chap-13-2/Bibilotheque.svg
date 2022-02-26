@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4f, 2020-05-01)"
+   sodipodi:docname="Bibilotheque.svg"
+   id="svg132"
+   version="1.1"
+   view_box="0 0 364 212"
+   height="212"
+   width="364"><metadata
+   id="metadata138">
+  <rdf:RDF>
+    <cc:Work
+       rdf:about="">
+      <dc:format>image/svg+xml</dc:format>
+      <dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    </cc:Work>
+  </rdf:RDF>
+</metadata>
+<defs
+   id="defs136" />
+<sodipodi:namedview
+   inkscape:current-layer="svg132"
+   inkscape:window-maximized="0"
+   inkscape:window-y="25"
+   inkscape:window-x="0"
+   inkscape:cy="106"
+   inkscape:cx="182"
+   inkscape:zoom="3.3928571"
+   showgrid="false"
+   id="namedview134"
+   inkscape:window-height="926"
+   inkscape:window-width="1493"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0"
+   guidetolerance="10"
+   gridtolerance="10"
+   objecttolerance="10"
+   borderopacity="1"
+   bordercolor="#666666"
+   pagecolor="#ffffff" />
+\n\n<desc
+   id="desc10">Généré par Mocodo 2.3.7 le Mon, 01 Feb 2021 19:15:11</desc>
+<rect
+   stroke-width="0"
+   stroke="none"
+   fill="#f5f5f5"
+   height="212"
+   width="364"
+   y="0"
+   x="0"
+   id="frame" />
+<!-- Association Emprunte -->
+<line
+   id="line13"
+   stroke-width="2"
+   stroke="#35978f"
+   y2="60"
+   x2="192"
+   y1="60"
+   x1="71" />
+<line
+   id="line17"
+   stroke-width="2"
+   stroke="#35978f"
+   y2="60"
+   x2="192"
+   y1="60"
+   x1="313" />
+<g
+   id="association-Emprunte">
+  <path
+     id="path21"
+     stroke-width="0"
+     stroke="#80cdc1"
+     fill="#80cdc1"
+     d="M 225 35 a 14 14 90 0 1 14 14 V 60 h -94 V 49 a 14 14 90 0 1 14 -14" />
+  <path
+     id="path23"
+     stroke-width="0"
+     stroke="#c7eae5"
+     fill="#c7eae5"
+     d="M 239 60.0 v 11 a 14 14 90 0 1 -14 14 H 159 a 14 14 90 0 1 -14 -14 V 60.0 H 94" />
+  <rect
+     id="rect25"
+     stroke-width="2"
+     stroke="#35978f"
+     rx="14"
+     fill="none"
+     height="50"
+     width="94"
+     y="35"
+     x="145" />
+  <line
+     id="line27"
+     stroke-width="1"
+     stroke="#35978f"
+     y2="60"
+     x2="239"
+     y1="60"
+     x1="145" />
+  <text
+     id="text29"
+     font-size="12"
+     font-family="Verdana"
+     fill="#000000"
+     y="52.7"
+     x="162">Emprunte</text>
+  <text
+     id="text31"
+     font-size="12"
+     font-family="Verdana"
+     fill="#000000"
+     y="77.8"
+     x="152">dateEmprunt</text>
+</g>
+<!-- Association A écrit -->
+<line
+   id="line34"
+   stroke-width="2"
+   stroke="#35978f"
+   y2="161"
+   x2="313"
+   y1="161"
+   x1="192" />
+<line
+   id="line38"
+   stroke-width="2"
+   stroke="#35978f"
+   y2="161"
+   x2="313"
+   y1="60"
+   x1="313" />
+<text
+   id="text40"
+   font-size="12"
+   font-family="Verdana"
+   fill="#8c510a"
+   y="128"
+   x="318.0">*,*</text>
+<g
+   id="association-A écrit">
+  <path
+     id="path42"
+     stroke-width="0"
+     stroke="#80cdc1"
+     fill="#80cdc1"
+     d="M 326 136 a 14 14 90 0 1 14 14 V 161 h -54 V 150 a 14 14 90 0 1 14 -14" />
+  <path
+     id="path44"
+     stroke-width="0"
+     stroke="#c7eae5"
+     fill="#c7eae5"
+     d="M 340 161.0 v 11 a 14 14 90 0 1 -14 14 H 300 a 14 14 90 0 1 -14 -14 V 161.0 H 54" />
+  <rect
+     id="rect46"
+     stroke-width="2"
+     stroke="#35978f"
+     rx="14"
+     fill="none"
+     height="50"
+     width="54"
+     y="136"
+     x="286" />
+  <line
+     id="line48"
+     stroke-width="1"
+     stroke="#35978f"
+     y2="161"
+     x2="340"
+     y1="161"
+     x1="286" />
+  <text
+     id="text50"
+     font-size="12"
+     font-family="Verdana"
+     fill="#000000"
+     y="153.7"
+     x="293">A écrit</text>
+</g>
+<!-- Association Est un exemplaire -->
+<line
+   id="line53"
+   stroke-width="2"
+   stroke="#35978f"
+   y2="161"
+   x2="71"
+   y1="60"
+   x1="71" />
+<line
+   id="line57"
+   stroke-width="2"
+   stroke="#35978f"
+   y2="161"
+   x2="71"
+   y1="161"
+   x1="192" />
+<g
+   id="association-Est un exemplaire">
+  <path
+     id="path61"
+     stroke-width="0"
+     stroke="#80cdc1"
+     fill="#80cdc1"
+     d="M 119 136 a 14 14 90 0 1 14 14 V 161 h -124 V 150 a 14 14 90 0 1 14 -14" />
+  <path
+     id="path63"
+     stroke-width="0"
+     stroke="#c7eae5"
+     fill="#c7eae5"
+     d="M 133 161.0 v 11 a 14 14 90 0 1 -14 14 H 23 a 14 14 90 0 1 -14 -14 V 161.0 H 124" />
+  <rect
+     id="rect65"
+     stroke-width="2"
+     stroke="#35978f"
+     rx="14"
+     fill="none"
+     height="50"
+     width="124"
+     y="136"
+     x="9" />
+  <line
+     id="line67"
+     stroke-width="1"
+     stroke="#35978f"
+     y2="161"
+     x2="133"
+     y1="161"
+     x1="9" />
+  <text
+     id="text69"
+     font-size="12"
+     font-family="Verdana"
+     fill="#000000"
+     y="153.7"
+     x="16">Est un exemplaire</text>
+</g>
+<!-- Entity Livre -->
+<g
+   id="entity-Livre">
+  <g
+     id="frame-Livre">
+    <rect
+       id="rect72"
+       stroke-width="0"
+       stroke="#dfc27d"
+       fill="#dfc27d"
+       height="25"
+       width="54"
+       y="119"
+       x="165" />
+    <rect
+       id="rect74"
+       stroke-width="0"
+       stroke="#f6e8c3"
+       fill="#f6e8c3"
+       height="59"
+       width="54"
+       y="144.0"
+       x="165" />
+    <rect
+       id="rect76"
+       stroke-width="2"
+       stroke="#bf812d"
+       fill="none"
+       height="84"
+       width="54"
+       y="119"
+       x="165" />
+    <line
+       id="line78"
+       stroke-width="1"
+       stroke="#bf812d"
+       y2="144"
+       x2="219"
+       y1="144"
+       x1="165" />
+  </g>
+  <text
+     id="text81"
+     font-size="12"
+     font-family="Verdana"
+     fill="#000000"
+     y="136.7"
+     x="177">Livre</text>
+  <text
+     id="text83"
+     font-size="12"
+     font-family="Verdana"
+     fill="#000000"
+     y="161.8"
+     x="170">ISBN</text>
+  <line
+     id="line85"
+     stroke-width="1"
+     stroke="#000000"
+     y2="164"
+     x2="202"
+     y1="164"
+     x1="170" />
+  <text
+     id="text87"
+     font-size="12"
+     font-family="Verdana"
+     fill="#000000"
+     y="178.8"
+     x="170">titre</text>
+  <text
+     id="text89"
+     font-size="12"
+     font-family="Verdana"
+     fill="#000000"
+     y="195.8"
+     x="170">éditeur</text>
+</g>
+<!-- Entity Personne -->
+<g
+   id="entity-Personne">
+  <g
+     id="frame-Personne">
+    <rect
+       id="rect92"
+       stroke-width="0"
+       stroke="#dfc27d"
+       fill="#dfc27d"
+       height="25"
+       width="84"
+       y="9"
+       x="271" />
+    <rect
+       id="rect94"
+       stroke-width="0"
+       stroke="#f6e8c3"
+       fill="#f6e8c3"
+       height="77"
+       width="84"
+       y="34.0"
+       x="271" />
+    <rect
+       id="rect96"
+       stroke-width="2"
+       stroke="#bf812d"
+       fill="none"
+       height="102"
+       width="84"
+       y="9"
+       x="271" />
+    <line
+       id="line98"
+       stroke-width="1"
+       stroke="#bf812d"
+       y2="34"
+       x2="355"
+       y1="34"
+       x1="271" />
+  </g>
+  <text
+     id="text101"
+     font-size="12"
+     font-family="Verdana"
+     fill="#000000"
+     y="26.7"
+     x="285">Personne</text>
+  <text
+     id="text103"
+     font-size="12"
+     font-family="Verdana"
+     fill="#000000"
+     y="51.7"
+     x="276">numLecteur</text>
+  <line
+     id="line105"
+     stroke-width="1"
+     stroke="#000000"
+     y2="54"
+     x2="349"
+     y1="54"
+     x1="276" />
+  <text
+     id="text107"
+     font-size="12"
+     font-family="Verdana"
+     fill="#000000"
+     y="68.8"
+     x="276">nom</text>
+  <text
+     id="text109"
+     font-size="12"
+     font-family="Verdana"
+     fill="#000000"
+     y="85.8"
+     x="276">prénom</text>
+  <text
+     id="text111"
+     font-size="12"
+     font-family="Verdana"
+     fill="#000000"
+     y="102.8"
+     x="276">adresse</text>
+</g>
+<!-- Entity Ouvrage -->
+<g
+   id="entity-Ouvrage">
+  <g
+     id="frame-Ouvrage">
+    <rect
+       id="rect114"
+       stroke-width="0"
+       stroke="#dfc27d"
+       fill="#dfc27d"
+       height="25"
+       width="62"
+       y="26"
+       x="40" />
+    <rect
+       id="rect116"
+       stroke-width="0"
+       stroke="#f6e8c3"
+       fill="#f6e8c3"
+       height="43"
+       width="62"
+       y="51.0"
+       x="40" />
+    <rect
+       id="rect118"
+       stroke-width="2"
+       stroke="#bf812d"
+       fill="none"
+       height="68"
+       width="62"
+       y="26"
+       x="40" />
+    <line
+       id="line120"
+       stroke-width="1"
+       stroke="#bf812d"
+       y2="51"
+       x2="102"
+       y1="51"
+       x1="40" />
+  </g>
+  <text
+     id="text123"
+     font-size="12"
+     font-family="Verdana"
+     fill="#000000"
+     y="43.7"
+     x="45">Ouvrage</text>
+  <text
+     id="text125"
+     font-size="12"
+     font-family="Verdana"
+     fill="#000000"
+     y="68.8"
+     x="45">code</text>
+  <line
+     id="line127"
+     stroke-width="1"
+     stroke="#000000"
+     y2="71"
+     x2="74"
+     y1="71"
+     x1="45" />
+  <text
+     id="text129"
+     font-size="12"
+     font-family="Verdana"
+     fill="#000000"
+     y="85.8"
+     x="45">ISBN</text>
+</g>
+</svg>

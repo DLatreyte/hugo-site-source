@@ -1,0 +1,56 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="304" height="136" view_box="0 0 304 136"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:link="http://www.w3.org/1999/xlink">\n\n<desc>Généré par Mocodo 2.3.7 le Mon, 01 Feb 2021 18:44:49</desc>
+
+<rect id="frame" x="0" y="0" width="304" height="136" fill="#f5f5f5" stroke="none" stroke-width="0"/>
+
+<!-- Association Réalise -->
+<line x1="63" y1="68" x2="178" y2="68" stroke="#35978f" stroke-width="2"/>
+<text x="122" y="85.0" fill="#8c510a" font-family="Verdana" font-size="12">0,1</text>
+<line x1="267" y1="68" x2="178" y2="68" stroke="#35978f" stroke-width="2"/>
+<text x="213" y="85.0" fill="#8c510a" font-family="Verdana" font-size="12">0,*</text>
+<g id="association-Réalise">
+	<path d="M 193 43 a 14 14 90 0 1 14 14 V 68 h -58 V 57 a 14 14 90 0 1 14 -14" fill="#80cdc1" stroke="#80cdc1" stroke-width="0"/>
+	<path d="M 207 68.0 v 11 a 14 14 90 0 1 -14 14 H 163 a 14 14 90 0 1 -14 -14 V 68.0 H 58" fill="#c7eae5" stroke="#c7eae5" stroke-width="0"/>
+	<rect x="149" y="43" width="58" height="50" fill="none" rx="14" stroke="#35978f" stroke-width="2"/>
+	<line x1="149" y1="68" x2="207" y2="68" stroke="#35978f" stroke-width="1"/>
+	<text x="156" y="60.7" fill="#000000" font-family="Verdana" font-size="12">Réalise</text>
+</g>
+
+<!-- Entity Artiste -->
+<g id="entity-Artiste">
+	<g id="frame-Artiste">
+		<rect x="9" y="17" width="108" height="25" fill="#dfc27d" stroke="#dfc27d" stroke-width="0"/>
+		<rect x="9" y="42.0" width="108" height="77" fill="#f6e8c3" stroke="#f6e8c3" stroke-width="0"/>
+		<rect x="9" y="17" width="108" height="102" fill="none" stroke="#bf812d" stroke-width="2"/>
+		<line x1="9" y1="42" x2="117" y2="42" stroke="#bf812d" stroke-width="1"/>
+	</g>
+	<text x="43" y="34.7" fill="#000000" font-family="Verdana" font-size="12">Artiste</text>
+	<text x="14" y="59.7" fill="#000000" font-family="Verdana" font-size="12">id</text>
+	<line x1="14" y1="62" x2="26" y2="62" stroke="#000000" stroke-width="1"/>
+	<text x="14" y="76.8" fill="#000000" font-family="Verdana" font-size="12">nom</text>
+	<text x="14" y="93.8" fill="#000000" font-family="Verdana" font-size="12">prénom</text>
+	<text x="14" y="110.8" fill="#000000" font-family="Verdana" font-size="12">annéeNaissance</text>
+</g>
+
+<!-- Entity Film -->
+<g id="entity-Film">
+	<g id="frame-Film">
+		<rect x="239" y="9" width="56" height="25" fill="#dfc27d" stroke="#dfc27d" stroke-width="0"/>
+		<rect x="239" y="34.0" width="56" height="93" fill="#f6e8c3" stroke="#f6e8c3" stroke-width="0"/>
+		<rect x="239" y="9" width="56" height="118" fill="none" stroke="#bf812d" stroke-width="2"/>
+		<line x1="239" y1="34" x2="295" y2="34" stroke="#bf812d" stroke-width="1"/>
+	</g>
+	<text x="254" y="26.7" fill="#000000" font-family="Verdana" font-size="12">Film</text>
+	<text x="244" y="51.7" fill="#000000" font-family="Verdana" font-size="12">id</text>
+	<line x1="244" y1="54" x2="256" y2="54" stroke="#000000" stroke-width="1"/>
+	<text x="244" y="68.8" fill="#000000" font-family="Verdana" font-size="12">titre</text>
+	<text x="244" y="85.8" fill="#000000" font-family="Verdana" font-size="12">année</text>
+	<text x="244" y="102.8" fill="#000000" font-family="Verdana" font-size="12">genre</text>
+	<text x="244" y="119.8" fill="#000000" font-family="Verdana" font-size="12">résumé</text>
+</g>
+</svg>

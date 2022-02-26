@@ -1,0 +1,129 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="373" height="346" view_box="0 0 373 346"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:link="http://www.w3.org/1999/xlink">\n\n<desc>Généré par Mocodo 2.3.7 le Mon, 01 Feb 2021 18:15:01</desc>
+
+<rect id="frame" x="0" y="0" width="373" height="346" fill="#f5f5f5" stroke="none" stroke-width="0"/>
+
+<!-- Association Donne une note -->
+<line x1="205" y1="169" x2="205" y2="278" stroke="#35978f" stroke-width="2"/>
+<text x="210.0" y="245" fill="#8c510a" font-family="Verdana" font-size="12">0,*</text>
+<line x1="63" y1="278" x2="205" y2="278" stroke="#35978f" stroke-width="2"/>
+<text x="122" y="295.0" fill="#8c510a" font-family="Verdana" font-size="12">0,*</text>
+<g id="association-Donne une note">
+	<path d="M 247 253 a 14 14 90 0 1 14 14 V 278 h -112 V 267 a 14 14 90 0 1 14 -14" fill="#80cdc1" stroke="#80cdc1" stroke-width="0"/>
+	<path d="M 261 278.0 v 11 a 14 14 90 0 1 -14 14 H 163 a 14 14 90 0 1 -14 -14 V 278.0 H 112" fill="#c7eae5" stroke="#c7eae5" stroke-width="0"/>
+	<rect x="149" y="253" width="112" height="50" fill="none" rx="14" stroke="#35978f" stroke-width="2"/>
+	<line x1="149" y1="278" x2="261" y2="278" stroke="#35978f" stroke-width="1"/>
+	<text x="156" y="270.7" fill="#000000" font-family="Verdana" font-size="12">Donne une note</text>
+	<text x="156" y="295.8" fill="#000000" font-family="Verdana" font-size="12">note</text>
+</g>
+
+<!-- Association Réalise -->
+<line x1="63" y1="60" x2="63" y2="169" stroke="#35978f" stroke-width="2"/>
+<text x="68.0" y="128" fill="#8c510a" font-family="Verdana" font-size="12">0,1</text>
+<line x1="205" y1="169" x2="63" y2="169" stroke="#35978f" stroke-width="2"/>
+<text x="151" y="186.0" fill="#8c510a" font-family="Verdana" font-size="12">0,*</text>
+<g id="association-Réalise">
+	<path d="M 78 144 a 14 14 90 0 1 14 14 V 169 h -58 V 158 a 14 14 90 0 1 14 -14" fill="#80cdc1" stroke="#80cdc1" stroke-width="0"/>
+	<path d="M 92 169.0 v 11 a 14 14 90 0 1 -14 14 H 48 a 14 14 90 0 1 -14 -14 V 169.0 H 58" fill="#c7eae5" stroke="#c7eae5" stroke-width="0"/>
+	<rect x="34" y="144" width="58" height="50" fill="none" rx="14" stroke="#35978f" stroke-width="2"/>
+	<line x1="34" y1="169" x2="92" y2="169" stroke="#35978f" stroke-width="1"/>
+	<text x="41" y="161.7" fill="#000000" font-family="Verdana" font-size="12">Réalise</text>
+</g>
+
+<!-- Association Joue -->
+<line x1="63" y1="60" x2="205" y2="60" stroke="#35978f" stroke-width="2"/>
+<text x="122" y="77.0" fill="#8c510a" font-family="Verdana" font-size="12">0,*</text>
+<line x1="205" y1="169" x2="205" y2="60" stroke="#35978f" stroke-width="2"/>
+<text x="210.0" y="102" fill="#8c510a" font-family="Verdana" font-size="12">0,*</text>
+<g id="association-Joue">
+	<path d="M 212 35 a 14 14 90 0 1 14 14 V 60 h -42 V 49 a 14 14 90 0 1 14 -14" fill="#80cdc1" stroke="#80cdc1" stroke-width="0"/>
+	<path d="M 226 60.0 v 11 a 14 14 90 0 1 -14 14 H 198 a 14 14 90 0 1 -14 -14 V 60.0 H 42" fill="#c7eae5" stroke="#c7eae5" stroke-width="0"/>
+	<rect x="184" y="35" width="42" height="50" fill="none" rx="14" stroke="#35978f" stroke-width="2"/>
+	<line x1="184" y1="60" x2="226" y2="60" stroke="#35978f" stroke-width="1"/>
+	<text x="191" y="52.7" fill="#000000" font-family="Verdana" font-size="12">Joue</text>
+	<text x="191" y="77.8" fill="#000000" font-family="Verdana" font-size="12">rôle</text>
+</g>
+
+<!-- Association Appartient à -->
+<line x1="205" y1="169" x2="319" y2="169" stroke="#35978f" stroke-width="2"/>
+<text x="238" y="186.0" fill="#8c510a" font-family="Verdana" font-size="12">0,*</text>
+<line x1="319" y1="278" x2="319" y2="169" stroke="#35978f" stroke-width="2"/>
+<text x="324.0" y="228" fill="#8c510a" font-family="Verdana" font-size="12">1,1</text>
+<g id="association-Appartient à">
+	<path d="M 350 144 a 14 14 90 0 1 14 14 V 169 h -90 V 158 a 14 14 90 0 1 14 -14" fill="#80cdc1" stroke="#80cdc1" stroke-width="0"/>
+	<path d="M 364 169.0 v 11 a 14 14 90 0 1 -14 14 H 288 a 14 14 90 0 1 -14 -14 V 169.0 H 90" fill="#c7eae5" stroke="#c7eae5" stroke-width="0"/>
+	<rect x="274" y="144" width="90" height="50" fill="none" rx="14" stroke="#35978f" stroke-width="2"/>
+	<line x1="274" y1="169" x2="364" y2="169" stroke="#35978f" stroke-width="1"/>
+	<text x="281" y="161.7" fill="#000000" font-family="Verdana" font-size="12">Appartient à</text>
+</g>
+
+<!-- Entity Pays -->
+<g id="entity-Pays">
+	<g id="frame-Pays">
+		<rect x="293" y="236" width="52" height="25" fill="#dfc27d" stroke="#dfc27d" stroke-width="0"/>
+		<rect x="293" y="261.0" width="52" height="59" fill="#f6e8c3" stroke="#f6e8c3" stroke-width="0"/>
+		<rect x="293" y="236" width="52" height="84" fill="none" stroke="#bf812d" stroke-width="2"/>
+		<line x1="293" y1="261" x2="345" y2="261" stroke="#bf812d" stroke-width="1"/>
+	</g>
+	<text x="304" y="253.7" fill="#000000" font-family="Verdana" font-size="12">Pays</text>
+	<text x="298" y="278.8" fill="#000000" font-family="Verdana" font-size="12">code</text>
+	<line x1="298" y1="281" x2="327" y2="281" stroke="#000000" stroke-width="1"/>
+	<text x="298" y="295.8" fill="#000000" font-family="Verdana" font-size="12">nom</text>
+	<text x="298" y="312.8" fill="#000000" font-family="Verdana" font-size="12">langue</text>
+</g>
+
+<!-- Entity Artiste -->
+<g id="entity-Artiste">
+	<g id="frame-Artiste">
+		<rect x="9" y="9" width="108" height="25" fill="#dfc27d" stroke="#dfc27d" stroke-width="0"/>
+		<rect x="9" y="34.0" width="108" height="77" fill="#f6e8c3" stroke="#f6e8c3" stroke-width="0"/>
+		<rect x="9" y="9" width="108" height="102" fill="none" stroke="#bf812d" stroke-width="2"/>
+		<line x1="9" y1="34" x2="117" y2="34" stroke="#bf812d" stroke-width="1"/>
+	</g>
+	<text x="43" y="26.7" fill="#000000" font-family="Verdana" font-size="12">Artiste</text>
+	<text x="14" y="51.7" fill="#000000" font-family="Verdana" font-size="12">id</text>
+	<line x1="14" y1="54" x2="26" y2="54" stroke="#000000" stroke-width="1"/>
+	<text x="14" y="68.8" fill="#000000" font-family="Verdana" font-size="12">nom</text>
+	<text x="14" y="85.8" fill="#000000" font-family="Verdana" font-size="12">prénom</text>
+	<text x="14" y="102.8" fill="#000000" font-family="Verdana" font-size="12">annéeNaissance</text>
+</g>
+
+<!-- Entity Film -->
+<g id="entity-Film">
+	<g id="frame-Film">
+		<rect x="177" y="110" width="56" height="25" fill="#dfc27d" stroke="#dfc27d" stroke-width="0"/>
+		<rect x="177" y="135.0" width="56" height="93" fill="#f6e8c3" stroke="#f6e8c3" stroke-width="0"/>
+		<rect x="177" y="110" width="56" height="118" fill="none" stroke="#bf812d" stroke-width="2"/>
+		<line x1="177" y1="135" x2="233" y2="135" stroke="#bf812d" stroke-width="1"/>
+	</g>
+	<text x="192" y="127.7" fill="#000000" font-family="Verdana" font-size="12">Film</text>
+	<text x="182" y="152.7" fill="#000000" font-family="Verdana" font-size="12">id</text>
+	<line x1="182" y1="155" x2="194" y2="155" stroke="#000000" stroke-width="1"/>
+	<text x="182" y="169.8" fill="#000000" font-family="Verdana" font-size="12">titre</text>
+	<text x="182" y="186.8" fill="#000000" font-family="Verdana" font-size="12">année</text>
+	<text x="182" y="203.8" fill="#000000" font-family="Verdana" font-size="12">genre</text>
+	<text x="182" y="220.8" fill="#000000" font-family="Verdana" font-size="12">résumé</text>
+</g>
+
+<!-- Entity Internaute -->
+<g id="entity-Internaute">
+	<g id="frame-Internaute">
+		<rect x="9" y="219" width="108" height="25" fill="#dfc27d" stroke="#dfc27d" stroke-width="0"/>
+		<rect x="9" y="244.0" width="108" height="93" fill="#f6e8c3" stroke="#f6e8c3" stroke-width="0"/>
+		<rect x="9" y="219" width="108" height="118" fill="none" stroke="#bf812d" stroke-width="2"/>
+		<line x1="9" y1="244" x2="117" y2="244" stroke="#bf812d" stroke-width="1"/>
+	</g>
+	<text x="30" y="236.7" fill="#000000" font-family="Verdana" font-size="12">Internaute</text>
+	<text x="14" y="261.7" fill="#000000" font-family="Verdana" font-size="12">email</text>
+	<line x1="14" y1="264" x2="48" y2="264" stroke="#000000" stroke-width="1"/>
+	<text x="14" y="278.8" fill="#000000" font-family="Verdana" font-size="12">nom</text>
+	<text x="14" y="295.8" fill="#000000" font-family="Verdana" font-size="12">prénom</text>
+	<text x="14" y="312.8" fill="#000000" font-family="Verdana" font-size="12">motDePasse</text>
+	<text x="14" y="329.8" fill="#000000" font-family="Verdana" font-size="12">annéeNaissance</text>
+</g>
+</svg>

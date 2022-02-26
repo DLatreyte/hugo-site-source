@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Version>4.10.0-2063</Version>
+  <charset>utf-8</charset>
+  <ApplicationBuildDateTime>16-10-2019</ApplicationBuildDateTime>
+  <Copyright>Copyright (c) 2007-2020 Vernier Software &amp; Technology and its licensors</Copyright>
+  <FileName>titrage_acide_nitrique.ambl</FileName>
+  <CreatorOS>1</CreatorOS>
+  <CreatorApp>4</CreatorApp>
+  <AbsoluteVersion>4.10.0-2063</AbsoluteVersion>
+  <DataWorld>
+    <DataWorldRunPrefix>Run</DataWorldRunPrefix>
+    <MatrixDefaultPref>0</MatrixDefaultPref>
+    <UDMSessionType>2</UDMSessionType>
+    <UDMExperimentName>titrage_acide_nitrique.ambl</UDMExperimentName>
+  </DataWorld>
+  <Page>
+    <ID>102</ID>
+    <BroadcastTo>0</BroadcastTo>
+    <PageTable>
+      <ID>101</ID>
+      <BroadcastTo>0</BroadcastTo>
+      <Visible>1</Visible>
+      <TableColumn>105 0.9</TableColumn>
+      <TableColumn>107 0.9</TableColumn>
+    </PageTable>
+    <PageGraphCartesian>
+      <ID>108</ID>
+      <BroadcastTo>0</BroadcastTo>
+      <Visible>1</Visible>
+      <GraphPlotXMin>0.000000000000</GraphPlotXMin>
+      <GraphPlotXMax>40.700000000000</GraphPlotXMax>
+      <GraphPlotYMin>1.300000000000</GraphPlotYMin>
+      <GraphPlotYMax>11.790000000000</GraphPlotYMax>
+      <UDMGraphPlotRightYMin>0.000000000000</UDMGraphPlotRightYMin>
+      <UDMGraphPlotRightYMax>0.000000000000</UDMGraphPlotRightYMax>
+      <UDMGraphPlotRightYEnabled>0</UDMGraphPlotRightYEnabled>
+      <GraphConnectLines>1</GraphConnectLines>
+      <GraphShowPointProtectors>1</GraphShowPointProtectors>
+      <GraphDrawRainbow>0</GraphDrawRainbow>
+      <GraphPlotXAutoscale>0</GraphPlotXAutoscale>
+      <GraphPlotYAutoscale>0</GraphPlotYAutoscale>
+      <UDMGraphPlotRightYAutoscale>0</UDMGraphPlotRightYAutoscale>
+      <GraphPlotBaseColumnID>105</GraphPlotBaseColumnID>
+      <GraphInterpolate>0</GraphInterpolate>
+      <GraphTitle>Titrage de l'acide nitrique par la soude</GraphTitle>
+      <GraphPlotTraceIDPairs>1 105 107</GraphPlotTraceIDPairs>
+    </PageGraphCartesian>
+    <PageGraphCartesian>
+      <ID>109</ID>
+      <BroadcastTo>0</BroadcastTo>
+      <Visible>0</Visible>
+      <GraphPlotXMin>0.000000000000</GraphPlotXMin>
+      <GraphPlotXMax>30.000000000000</GraphPlotXMax>
+      <GraphPlotYMin>0.000000000000</GraphPlotYMin>
+      <GraphPlotYMax>1.000000000000</GraphPlotYMax>
+      <UDMGraphPlotRightYMin>0.000000000000</UDMGraphPlotRightYMin>
+      <UDMGraphPlotRightYMax>0.000000000000</UDMGraphPlotRightYMax>
+      <UDMGraphPlotRightYEnabled>0</UDMGraphPlotRightYEnabled>
+      <GraphConnectLines>0</GraphConnectLines>
+      <GraphShowPointProtectors>1</GraphShowPointProtectors>
+      <GraphDrawRainbow>0</GraphDrawRainbow>
+      <GraphPlotXAutoscale>0</GraphPlotXAutoscale>
+      <GraphPlotYAutoscale>0</GraphPlotYAutoscale>
+      <UDMGraphPlotRightYAutoscale>0</UDMGraphPlotRightYAutoscale>
+      <GraphPlotBaseColumnID>105</GraphPlotBaseColumnID>
+      <GraphInterpolate>0</GraphInterpolate>
+      <GraphTitle></GraphTitle>
+    </PageGraphCartesian>
+    <PageGraphCartesian>
+      <ID>110</ID>
+      <BroadcastTo>0</BroadcastTo>
+      <Visible>0</Visible>
+      <GraphPlotXMin>0.000000000000</GraphPlotXMin>
+      <GraphPlotXMax>30.000000000000</GraphPlotXMax>
+      <GraphPlotYMin>0.000000000000</GraphPlotYMin>
+      <GraphPlotYMax>1.000000000000</GraphPlotYMax>
+      <UDMGraphPlotRightYMin>0.000000000000</UDMGraphPlotRightYMin>
+      <UDMGraphPlotRightYMax>0.000000000000</UDMGraphPlotRightYMax>
+      <UDMGraphPlotRightYEnabled>0</UDMGraphPlotRightYEnabled>
+      <GraphConnectLines>0</GraphConnectLines>
+      <GraphShowPointProtectors>1</GraphShowPointProtectors>
+      <GraphDrawRainbow>0</GraphDrawRainbow>
+      <GraphPlotXAutoscale>0</GraphPlotXAutoscale>
+      <GraphPlotYAutoscale>0</GraphPlotYAutoscale>
+      <UDMGraphPlotRightYAutoscale>0</UDMGraphPlotRightYAutoscale>
+      <GraphPlotBaseColumnID>105</GraphPlotBaseColumnID>
+      <GraphInterpolate>0</GraphInterpolate>
+      <GraphTitle></GraphTitle>
+    </PageGraphCartesian>
+  </Page>
+  <DataSet>
+    <ID>103</ID>
+    <BroadcastTo>1 101</BroadcastTo>
+    <DataSetName>Série 1</DataSetName>
+    <DataSetLatest>0</DataSetLatest>
+    <DataSetMatrixLatest>0</DataSetMatrixLatest>
+    <DataColumn>
+      <ID>105</ID>
+      <ColumnGroupID>104</ColumnGroupID>
+      <UDMVertexID>0</UDMVertexID>
+      <BroadcastTo>2 101 108</BroadcastTo>
+      <DataObjectName>Vb</DataObjectName>
+      <ColumnUnits>mL</ColumnUnits>
+      <ColumnProtected>0</ColumnProtected>
+      <ColumnUserEditable>1</ColumnUserEditable>
+      <ColumnDataType>0</ColumnDataType>
+      <StartTime>1603568237</StartTime>
+      <ColumnStartCollectTime>1603568237</ColumnStartCollectTime>
+      <ColumnUserCreated>1</ColumnUserCreated>
+      <ColumnAllowUserDelete>1</ColumnAllowUserDelete>
+      <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>0</DataObjectPrecision>
+      <ColumnForceScientific>0</ColumnForceScientific>
+      <UDMAutomaticPrecision>1</UDMAutomaticPrecision>
+      <ColumnMatrixStyleNum>0</ColumnMatrixStyleNum>
+      <ColumnPPStyle>2</ColumnPPStyle>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <ColumnSensorColumn>0</ColumnSensorColumn>
+      <ColumnSensorInputColumn>0</ColumnSensorInputColumn>
+      <ColumnShowLiveReadout>0</ColumnShowLiveReadout>
+      <ColumnCells>
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+23.1
+23.2
+23.3
+23.4
+23.5
+23.6
+23.7
+23.8
+23.9
+24
+24.1
+24.2
+24.3
+24.4
+24.5
+24.6
+24.7
+24.8
+24.9
+25
+25.1
+25.2
+25.3
+25.4
+25.5
+25.6
+25.7
+25.8
+25.9
+26
+26.1
+26.2
+26.3
+26.4
+26.5
+26.6
+26.7
+26.8
+26.9
+27
+27.1
+27.2
+27.3
+27.4
+27.5
+27.6
+27.7
+28.7
+29.7
+30.7
+31.7
+32.7
+33.7
+34.7
+35.7
+36.7
+37.7
+38.7
+39.7
+40.7
+</ColumnCells>
+    </DataColumn>
+    <DataColumn>
+      <ID>107</ID>
+      <ColumnGroupID>106</ColumnGroupID>
+      <UDMVertexID>0</UDMVertexID>
+      <BroadcastTo>2 101 108</BroadcastTo>
+      <DataObjectName>pH</DataObjectName>
+      <ColumnUnits></ColumnUnits>
+      <ColumnProtected>0</ColumnProtected>
+      <ColumnUserEditable>1</ColumnUserEditable>
+      <ColumnDataType>0</ColumnDataType>
+      <StartTime>1603568237</StartTime>
+      <ColumnStartCollectTime>1603568237</ColumnStartCollectTime>
+      <ColumnUserCreated>1</ColumnUserCreated>
+      <ColumnAllowUserDelete>1</ColumnAllowUserDelete>
+      <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>0</DataObjectPrecision>
+      <ColumnForceScientific>0</ColumnForceScientific>
+      <UDMAutomaticPrecision>1</UDMAutomaticPrecision>
+      <ColumnMatrixStyleNum>0</ColumnMatrixStyleNum>
+      <ColumnPPStyle>3</ColumnPPStyle>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <ColumnSensorColumn>0</ColumnSensorColumn>
+      <ColumnSensorInputColumn>0</ColumnSensorInputColumn>
+      <ColumnShowLiveReadout>0</ColumnShowLiveReadout>
+      <DataObjectColor>0xd8d8 0x2626 0x2f2f</DataObjectColor>
+      <ColumnCells>
+1.3
+1.36
+1.41
+1.47
+1.52
+1.57
+1.62
+1.67
+1.72
+1.77
+1.82
+1.87
+1.92
+1.98
+2.03
+2.09
+2.15
+2.22
+2.3
+2.38
+2.47
+2.58
+2.72
+2.91
+2.94
+2.96
+2.99
+3.01
+3.04
+3.07
+3.11
+3.14
+3.18
+3.23
+3.27
+3.32
+3.38
+3.45
+3.53
+3.63
+3.76
+3.93
+4.24
+7
+9.75
+10.05
+10.23
+10.35
+10.44
+10.52
+10.59
+10.65
+10.7
+10.74
+10.78
+10.82
+10.85
+10.88
+10.91
+10.94
+10.96
+10.99
+11.01
+11.03
+11.05
+11.07
+11.09
+11.1
+11.12
+11.14
+11.15
+11.28
+11.37
+11.44
+11.5
+11.55
+11.6
+11.63
+11.67
+11.69
+11.72
+11.75
+11.77
+11.79
+</ColumnCells>
+    </DataColumn>
+  </DataSet>
+</Document>
