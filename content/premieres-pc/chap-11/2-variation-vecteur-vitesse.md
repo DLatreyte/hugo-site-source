@@ -1,6 +1,6 @@
 ---
 title: "Pourquoi s'intéresser au vecteur « Variation de vitesse » ?"
-subtitle: "Chapitre 11,2"
+subtitle: "Chapitre 10,2"
 author: ""
 type: ""
 date: 2021-04-11T12:41:38+04:00

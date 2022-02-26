@@ -1,6 +1,6 @@
 ---
 title: "Les vecteurs en Physique : application au vecteur vitesse"
-subtitle: "Chapitre 11,1"
+subtitle: "Chapitre 10,1"
 author: ""
 type: ""
 date: 2021-03-17T08:33:45+04:00

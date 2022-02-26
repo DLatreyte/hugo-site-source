@@ -1,6 +1,6 @@
 ---
 title: "Mouvement d’un système"
-subtitle: "Chapitre 11"
+subtitle: "Chapitre 10"
 author: ""
 type: ""
 date: 2021-03-17T08:27:57+04:00
@@ -28,9 +28,9 @@ layout: "single"
 
 ----
 
-- **Chap. 11,1 :** [*Les vecteurs en Physique : application au vecteur vitesse*](1-vecteurs)
+- **Chap. 10,1 :** [*Les vecteurs en Physique : application au vecteur vitesse*](1-vecteurs)
 
-- **Chap. 11,2 :** [*Pourquoi s'intéresser au vecteur « Variation de vitesse » ?*](2-variation-vecteur-vitesse)
+- **Chap. 10,2 :** [*Pourquoi s'intéresser au vecteur « Variation de vitesse » ?*](2-variation-vecteur-vitesse)
 
 
 
