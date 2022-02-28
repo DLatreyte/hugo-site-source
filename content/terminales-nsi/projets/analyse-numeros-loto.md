@@ -36,4 +36,4 @@ Le programme devra être découpé en fonctions. **Chaque fonction devra être a
 
 ## Le site n'est pas accessible depuis les Émirats
 
-- {{< remote "Accès au fichier" "/terminales-nsi/projets/analyse-loto/loto.csv" >}}
+- {{< remote "Accès aux fichiers" "https://www.icloud.com/iclouddrive/055KuFqez6KEpvHJ3t4S0I9Ww#Loto" >}}
