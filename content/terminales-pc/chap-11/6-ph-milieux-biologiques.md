@@ -26,7 +26,7 @@ Certains couples acide/base jouent un rôle essentiel dans la régulation du pH 
 - le *tampon plasmatique* avec, d'une part, le couple ion dihydrogénophosphate/ion hydrogénophosphate, $\ce{H2PO4-/HPO4^{2-}}$, et, d'autre part, des couples acide/base des protéines ;
 - les *tampons érythrocytaires* faisant intervenir l'hémoglobine ;
 - le tampon formé par le couple acide/base : $\ce{CO2,H2O/HCO3^-}$. Ce dernier assure la fonction essentielle de régulation du pH du sang.
-Par exemple, lors d'un effort prolongé ou violent, il y a formation d'acide lactique $\ce{C3H6O3}$, présent dans le sang sous forme d'ions lactate et hydronium. Mais la concentration en ion hydronium augmente peu, car il réagit, entre autres, avec l' ion hydrogénocarbonate $\ce{HCO3^-}$ pour produire du dioxyde de carbone dissous. Cet excès de dioxyde de carbone est ensuite éliminé par la voie respiratoire.\
+Par exemple, lors d'un effort prolongé ou violent, il y a formation d'acide lactique $\ce{C3H6O3}$, présent dans le sang sous forme d'ions lactate et hydronium. Mais la concentration en ion hydronium augmente peu, car il réagit, entre autres, avec l'ion hydrogénocarbonate $\ce{HCO3^-}$ pour produire du dioxyde de carbone dissous. Cet excès de dioxyde de carbone est ensuite éliminé par la voie respiratoire.\
 La respiration est donc indirectement un élément de contrôle important du pH du sang.
 
 ### pH et digestion
@@ -53,4 +53,10 @@ Données
 
 3. Écrire l'équation de la réaction entre l'ion oxonium et l'ion hydrogénocarbonate.
 
-4. justifier, à l'aide d'une équation de réaction, le rôle des médicaments antiacides contenant l'ion hydrogénocarbonate.
+4. Justifier, à l'aide d'une équation de réaction, le rôle des médicaments antiacides contenant l'ion hydrogénocarbonate.
+
+{{% solution "Corrigé" %}}
+
+{{% remote "Corrigé au format pdf" "/terminales-pc/chap-11/chap-11-6/milieu-biologique.pdf" %}}
+
+{{% /solution %}}
