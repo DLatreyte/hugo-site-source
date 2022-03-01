@@ -7,7 +7,7 @@ date: 2021-01-31T18:45:28+04:00
 draft: false
 toc: true
 tags: []
-categories: ["Chimie", "Terminale Spé PC"]
+categories: ["Terminale Spé PC"]
 image: ""
 solution_est_visible: true
 auto_numbering: true
@@ -16,13 +16,13 @@ auto_numbering: true
 > De nombreux phénomènes biologiques ne peuvent se produire que dans des milieux
 de pH bien déterminé. Ainsi dans l'organisme humain, certaines fonctions ne sont correctement assurées que pour des valeurs bien précises du pH.
 
-## Documents 
+## Documents
 
 ### pH du sang
 
-
 Le pH du sang humain est voisin de 7,4. Il varie très peu : *le sang constitue une solution tampon*.\
 Certains couples acide/base jouent un rôle essentiel dans la régulation du pH du sang. Ils sont appelés systèmes tampons. On distingue ainsi :
+
 - le *tampon plasmatique* avec, d'une part, le couple ion dihydrogénophosphate/ion hydrogénophosphate, $\ce{H2PO4-/HPO4^{2-}}$, et, d'autre part, des couples acide/base des protéines ;
 - les *tampons érythrocytaires* faisant intervenir l'hémoglobine ;
 - le tampon formé par le couple acide/base : $\ce{CO2,H2O/HCO3^-}$. Ce dernier assure la fonction essentielle de régulation du pH du sang.
@@ -34,6 +34,7 @@ La respiration est donc indirectement un élément de contrôle important du pH 
 Au cours de leur digestion, les aliments traversent des milieux dont les pH sont très différents.\
 La salive a un pH compris entre 6,8 et 7,2. C'est dans ce domaine de pH qu'une *enzyme*, l'amylase salivaire, qui catalyse la réaction d'hydrolyse de l'amidon en maltose, molécule plus petite, a une efficacité maximale.\
 Dans l'estomac, milieu très acide, le pH est compris entre 1 et 2. La *paroi stomacale* est en effet tapissée de cellules dont certaines produisent de l'acide chlorhydrique. La présence de cet acide permet :
+
 - d'obtenir une enzyme, la pepsine, très active et efficace en milieu acide pour la digestion des *protéines* ;
 - de favoriser l'hydrolyse du saccharose en glucose et fructose ;
 - d'assurer un rôle *antiseptique* contre les bactéries.
