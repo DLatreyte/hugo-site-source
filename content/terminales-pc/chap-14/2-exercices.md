@@ -7,7 +7,7 @@ date: 2021-02-27T19:18:00+04:00
 draft: false
 toc: true
 tags: []
-categories: []
+categories: ["Terminale Spé PC"]
 image: ""
 solution_est_visible: true
 auto_numbering: true
@@ -48,10 +48,11 @@ La canette est en aluminium, sa masse est $m_{\ce{Al}} = \pu{14 g}$. Les $\pu{30
 3. Calculer la variation d'énergie interne de la canette et du liquide entre sa sortie du réfrigérateur et la stabilisation de sa température.
 
 Données
-: 
+:
+
 - $c(\ce{H2O}) = \pu{4,18e3 J.K-1.kg-1}$ ;
 - $c(\ce{Al}) = \pu{897 J.K-1.kg-1}$ ;
-- $\rho_{\ce{H2O}} = \pu{1,00 kg.L-1}$. 
+- $\rho_{\ce{H2O}} = \pu{1,00 kg.L-1}$.
 
 {{% solution "Corrigé" %}}
 {{< remote "Corrigé au format pdf" "/terminales-pc/chap-14/chap-14-2/chap-14-2-1.pdf" >}}
@@ -74,7 +75,7 @@ Dans une étuve, on chauffe un bloc de cuivre solide de masse $m_2 = \pu{62,3 g}
 
 5. La valeur de $c_2$, lue dans les tables thermodynamiques est $\pu{0,390 J.g-1.°C-1}$. Identifier toutes les sources d'erreur lors de sa détermination. Comment améliorer le résultat ?
 
-Données: 
+Données:
 : Pour l'eau liquide $c_1 = \pu{4,18 J.g-1.°C-1}$ ; pour le calorimètre et ses accessoires $C_{cal} = \pu{8,5 J.°C-1}$.
 
 {{% solution "Corrigé" %}}
@@ -93,8 +94,6 @@ Un **calorimètre** constitue un système thermodynamique isolé, ce qui impliqu
 2. Le même calorimètre contient maintenant $m'_1 = \pu{100 g}$ d'eau à $\theta'_1 = \pu{15 °C}$. On y plonge un échantillon métallique de masse $m = \pu{25 g}$ sortant d'une étuve à $\theta'_2 = \pu{95 °C}$. La température d'équilibre est $\theta = \pu{16,7 °C}$. Calculer la capacité thermique massique $c$ du métal.
 
 La capacité thermique massique de l'eau est $c_0 = \pu{4,18 J.g-1.K-1}$.
-
-
 
 ## Équivalence travail - chaleur
 
@@ -184,7 +183,7 @@ Ce circuit de refroidissement a un débit massique de $\pu{4,2e4 kg.s-1}$.
 
 7. Quel est l'effet d'une augmentation du débit de l'eau dans le circuit de refroidissement sur la température de cette eau ?
 
-Donnée : 
+Donnée :
 : $c(\ce{H2O (liq)}) = \pu{4,18 kJ.kg-1.K-1}$.
 
 {{% solution "Corrigé" %}}
@@ -240,6 +239,7 @@ $$
 $$
 
 - Résistance thermique d'une paroi de $\pu{2,4 m2}$ :
+
 <center>
 
 | Matériau | $R_{th} (\pu{K.W-1})$ |
@@ -253,7 +253,6 @@ $$
 {{% solution "Corrigé" %}}
 {{< remote "Corrigé au format pdf" "/terminales-pc/chap-14/chap-14-2/chap-14-2-7.pdf" >}}
 {{% /solution %}}
-
 
 ## Échauffement d'une bille en mouvement dans l'air (Difficile)
 
@@ -279,7 +278,6 @@ Données :
 {{% /solution %}}
 
 ## Apport d'énergie thermique par une résistance électrique
-
 
 Un cylindre fermé horizontal est divisé en deux compartiments $A$ et $B$ de même volume $V_0$ par un piston coulissant librement sans frottement. $A$ et $B$ contiennent chacun une mole de gaz parfait à la pression $P_0$ et à la température $T_0$. On note $c_{V,m}$ la capacité thermique molaire volumique du gaz parfait dans l'enceinte (un gaz parfait n'est pas incompressible mais on peut écrire $\Delta U = n\\, c_{V,m}\\, \Delta T$).\
 Le piston, la surface latérale du cylindre et la surface de base $S_A$ du compartiment $A$ sont **athermanes** (*ne transmet pas l'énergie thermique*). La surface de base $S_B$ du compartiment $B$ est **diathermane** (*transmet l'énergie thermique*).

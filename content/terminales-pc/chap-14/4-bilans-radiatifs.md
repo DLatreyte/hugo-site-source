@@ -7,7 +7,7 @@ date: 2022-03-02T06:10:40+04:00
 draft: false
 toc: true
 tags: []
-categories: []
+categories: ["Terminale Spé PC"]
 image: ""
 solution_est_visible: true
 auto_numbering: true
