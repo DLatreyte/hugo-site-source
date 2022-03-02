@@ -159,15 +159,15 @@ Si on considère, paar exemple, le soleil, l'étude du rayonnement qu'il émet m
 
 ## Effet de serre
 
-On étudie l'effet de serre produit par l'interposition d'une vitre au-dessus d'une plaque qui reçoit le rayonnement solaire. La plaque est noircie et assimilée à un corps noir. Le verre est supposé totalement transparent au rayonnement solaire. La vitre est en revanche totalement absorbante pour le rayonnement infrarouge émis par la plaque (et l'atmosphère) qui absorbe le rayonnement solaire. On désigne par $\varphi_s$ le flux solaire surfacique supposé arriver normalement à la vitre et à la plaque, par $\varphi_{CN}$ le rayonnement émis par la plaque et par $\varphi_1$ le rayonnement émis par la vitre.
+On étudie l'effet de serre produit par l'interposition d'une vitre au-dessus d'une plaque qui reçoit le rayonnement solaire. La plaque est noircie et assimilée à un corps noir. Le verre est supposé totalement transparent au rayonnement solaire. La vitre est en revanche totalement absorbante pour le rayonnement infrarouge émis par la plaque (et l'atmosphère) qui absorbe le rayonnement solaire. On désigne par $\varphi_s$ le flux solaire surfacique supposé arriver normalement à la vitre et à la plaque, par $\varphi_{CN}$ le rayonnement émis par la plaque et par $\varphi_1$ le rayonnement émis par la vitre.
 
-#### Donnée
+#### Donnée
 
 - $\varphi_s = \pu{0,600 kW⋅m−2}$.
 
 <img src="/terminales-pc/chap-14/chap-14-3/chap-14-3-1.png" alt="" width="80%" />
 
-1. On suppose l'équilibre radiatif de la plaque. Écrire l'équation qui traduit
+1. On suppose l'équilibre radiatif de la plaque. écrire l'équation qui traduit
 cet équilibre.
 
 {{% solution "Réponse" %}}
@@ -185,7 +185,7 @@ $$
 
 {{% /solution %}}
 
-2. On suppose l'équilibre radiatif de la vitre. Écrire l'équation qui traduit cet
+2. On suppose l'équilibre radiatif de la vitre. écrire l'équation qui traduit cet
 équilibre.
 
 {{% solution "Réponse" %}}
