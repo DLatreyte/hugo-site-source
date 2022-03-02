@@ -15,7 +15,7 @@ auto_numbering: true
 
 ## Rayonnement électromagnétique et transfert thermique
 
-### émission, absorption, réflexion, diffusion
+### Émission, absorption, réflexion, diffusion
 
 {{% note warning %}}
 
