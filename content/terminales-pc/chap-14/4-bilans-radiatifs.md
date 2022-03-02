@@ -56,7 +56,7 @@ À l'inverse un milieu est dit totalement **opaque** s'*il ne transmet aucune f
 Remarque
 : En fait, on n'observe jamais une transparence ou une opacité totale sur l'ensemble des fréquences du spectre. Pour un milieu donné, il convient de définir les intervalles de fréquences (ou de longueur d'onde), pour lesquelles on pourra considérer le milieu comme à peu près transparent ou opaque. Ainsi le verre, par exemple, pourra être considéré comme transparent dans l'intervalle $\pu{0,3 \mu m} < \lambda < \pu{3 \mu m}$ et opaque au contraire dans l'intervalle $\pu{4 \mu m} < \lambda < \pu{30 \mu m}$.
 
-### équilibre radiatif
+### Équilibre radiatif
 
 {{% note warning %}}
 
@@ -167,7 +167,7 @@ On étudie l'effet de serre produit par l'interposition d'une vitre au-dessus d'
 
 <img src="/terminales-pc/chap-14/chap-14-3/chap-14-3-1.png" alt="" width="80%" />
 
-1. On suppose l'équilibre radiatif de la plaque. écrire l'équation qui traduit
+1. On suppose l'équilibre radiatif de la plaque. Écrire l'équation qui traduit
 cet équilibre.
 
 {{% solution "Réponse" %}}
@@ -185,7 +185,7 @@ $$
 
 {{% /solution %}}
 
-2. On suppose l'équilibre radiatif de la vitre. écrire l'équation qui traduit cet
+2. On suppose l'équilibre radiatif de la vitre. Écrire l'équation qui traduit cet
 équilibre.
 
 {{% solution "Réponse" %}}
