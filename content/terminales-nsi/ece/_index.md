@@ -21,3 +21,4 @@ layout: "single"
 - [*ECE 5*](sujet_13)
 - [*ECE 6*](sujet_28)
 - [*ECE 7*](sujet_23)
+- [*ECE 8*](sujets_14_25)
