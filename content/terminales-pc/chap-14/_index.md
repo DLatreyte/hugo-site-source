@@ -34,4 +34,8 @@ layout: "single"
 
 - **Chap. 14,2 :** [*Premier principe de la thermodynamique : exercices*](2-exercices)
 
+<!--
 - **Chap. 14,3 :** [*Bilans radiatifs*](3-bilans-radiatifs)
+-->
+
+- **Chap. 14,3 :** [*Bilans radiatifs*](4-bilans-radiatifs)
