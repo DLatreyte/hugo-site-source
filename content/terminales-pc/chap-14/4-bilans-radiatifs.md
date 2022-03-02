@@ -294,3 +294,9 @@ soit maximale.
 ## Bilan radiatif de la Terre
 
 {{% remote "Activité du Livre scolaire." "https://www.lelivrescolaire.fr/page/15701179" %}}
+
+{{% solution "Corrigé" %}}
+
+{{< remote "Corrigé de l'activité au format pdf" "/terminales-pc/chap-14/chap-14-3/chap-14-3-3.pdf" >}}
+
+{{% /solution %}}
