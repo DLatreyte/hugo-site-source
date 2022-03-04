@@ -228,8 +228,7 @@ Les fonctions anonymes sont limitées à une expression en Python.
 {{% solution "Solution" %}}
 
 ```python
-list(filter(lambda n: n % 2 == 0,\
-                 collatz(7)))
+list(filter(lambda n: n % 2 == 0, collatz(7)))
 ```
 
 {{% /solution %}}
