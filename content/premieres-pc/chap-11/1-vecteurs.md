@@ -302,50 +302,6 @@ Un mobile autoporteur relié à un point fixe $O$ par un fil inextensible, est l
 
 {{% remote "Accès à l'activité" "https://dlatreyte.github.io/jupyter-lite/lab?path=prem-pc%2Fmecanique%2Fviaduc-millau-eleves.ipynb" %}}
 
-<!--
-On lance horizontalement une pierre dense et de petit volume du haut du viaduc de Millau, en France. La chute est filmée à l'aide d'une caméra. À l'aide d'un logiciel de pointage on obtient les valeurs suivantes pour l'altitude et la distance parcourue horizontalement par l'objet au cours du temps&nbsp;:
-
-| **Date (s)** | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| **Altitude (m)** |343|338|323|299|265|220|166|103|29|
-| **Distance horizontale parcourue (m)** | 0 | 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 |
-
-On code un programme dans le langage Python afin de pouvoir répondre aux questions suivantes&nbsp;:
-
-1. Quelle est la hauteur du parapet du pont de Millau&nbsp;?
-2. Avec quelle vitesse la pierre a-t-elle été lancée&nbsp;?
-
-Une partie du code nécessaire à l'étude de ce mouvement se trouve {{< remote "à cet emplacement" "https://repl.it/@dlatreyte/Trace-de-vecteurs-vitesses-Eleves" >}}
-
-3. Compléter les lignes 47 à 50.
-
-4. Quels arguments (type et signification) la fonction `affichage` attend-elle&nbsp;? Quels sont ceux qui sont obligatoires, optionnels&nbsp;?
-
-5. Quelle instruction permet de réaliser l'affichage $y=f(x)$&nbsp;?
-
-5. Retirer le commentaire de la ligne 55 et lancer le programme.    
-Caractériser l'évolution de l'altitude $z$ au cours du temps.
-
-6. Sur le modèle de la question précédente, afficher et caractériser l'évolution de la distance parcourue horizontalement, $x$, au cours du temps.
-
-7. Toujours sur le même modèle (on pourra aussi étudier la ligne 66), afficher la trajectoire $z=f(x)$.
-
-8. Retirer les commentaires des lignes 41 à 44.
-
-9. Compléter la ligne 42. Il s'agit ici d'entrer l'instruction qui permet de calculer une valeur approchée de la vitesse.
-
-10. Détailler l'instruction à la ligne 41.
-
-11. Compléter les lignes 59 et 60, de façon à posséder les listes des valeurs des vitesses $v_x$ et $v_z$ (à l'éxception de la dernière valeur).
-
-12. Retirer les commentaires des lignes 62 et 63 et lancer le programme.
-
-13. Comment évoluent les vitesses $v_x$ et $v_z$ au cours du temps&nbsp;? Était-ce prévisible&nbsp;?
-
-14. Retirer le commentaire de la ligne 66. Les vecteurs vitesse affichés présentent-ils bien les caractéristiques annoncées dans la section 4. de ce document&nbsp;?
-
--->
-
 {{% /note %}}
 
 {{% solution "Corrigé" %}}
