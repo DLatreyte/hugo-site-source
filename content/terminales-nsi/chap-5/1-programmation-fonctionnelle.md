@@ -197,7 +197,7 @@ list(filter(est_pair, collatz(7)))
 
 {{% /solution %}}
 
-Programmer la fonction `est_pair` avec le mot-clé `def` nécessite d'entrer de nombreuses lignes de code pour, au final, ne nécessiter qu'une seule instruction&nbsp;: `n % 2 == 0`. Les langages fonctionnels permettent généralement de définir des **fonctions anonymes** (**lambda expressions**).  
+Programmer la fonction `est_pair` avec le mot-clé `def` nécessite d'entrer de nombreuses lignes de code pour, au final, ne nécessiter qu'une seule expression&nbsp;: `n % 2 == 0`. Les langages fonctionnels permettent généralement de définir des **fonctions anonymes** (**lambda expressions**).  
 En Python, l'expression
 
 ```python
