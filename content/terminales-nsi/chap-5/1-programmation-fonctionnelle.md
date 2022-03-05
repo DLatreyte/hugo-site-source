@@ -257,8 +257,7 @@ Utiliser une fonction anonyme.
 {{% solution "Solution" %}}
 
 ```python
-list(map(lambda x: 3 * x,\
-            collatz(7)))
+list(map(lambda x: 3 * x, collatz(7)))
 ```
 
 {{% /solution %}}

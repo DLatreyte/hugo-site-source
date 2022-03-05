@@ -13,12 +13,12 @@ solution_est_visible: true
 auto_numbering: true
 ---
 
-> Dans le document précédent ([chap. 11,01]({{< ref "./1-vecteurs.md" >}})) nous avons précisé la notion de
-vitesse et nous sommes intéressés au vecteur « variation de vitesse ».
-Pourquoi avoir introduit ce vecteur ? Et pourquoi ne pas introduire le
-vecteur « variation de variation de vitesse » ? Ce document a pour
-objectif de vous faire réaliser l'importance du vecteur « variation de
-vitesse ».
+> Dans le document précédent ([chap. 10,01]({{< ref "./1-vecteurs.md" >}})) nous avons précisé la notion de
+vitesse et nous sommes intéressés au vecteur «&nbsp;variation de vitesse&nbsp;».
+Pourquoi avoir introduit ce vecteur&nbsp;? Et pourquoi ne pas introduire le
+vecteur «&nbsp;variation de variation de vitesse&nbsp;»&nbsp;? Ce document a pour
+objectif de vous faire réaliser l'importance du vecteur «&nbsp;variation de
+vitesse&nbsp;».
 
 ## Lancer et réception d'un médecine -- ball
 
@@ -51,12 +51,14 @@ La première phase ayant une influence très importante sur la seconde, on prend
 <img src="/premieres-pc/chap-11/chap-11-2/chap-09-03-1.png" alt="" width="60%" />
 
 Le système interagit :
--  avec la Terre : on modélise l'action de la Terre sur tout système proche de sa surface par une force appelée poids du système $\vec{P}$ dont les caractéristiques sont : {*direction :* droite verticale, *sens :* vers la Terre, *valeur :* $P=m\\,g$}.
--  avec l'air : le mouvement du médecine – ball étant assez bref dans le temps, nous considérerons que cette interaction n'agit pas significativement sur ce mouvement et nous la négligerons.
+
+- avec la Terre : on modélise l'action de la Terre sur tout système proche de sa surface par une force appelée poids du système $\vec{P}$ dont les caractéristiques sont : {*direction :* droite verticale, *sens :* vers la Terre, *valeur :* $P=m\\,g$}.
+- avec l'air : le mouvement du médecine – ball étant assez bref dans le temps, nous considérerons que cette interaction n'agit pas significativement sur ce mouvement et nous la négligerons.
 {{% /solution %}}
 
 5. Repérer différentes phases lors du mouvement du système et les décrire (on se contente d'étudier le mouvement du centre d'inertie). Pour chacune de ces phases, préciser la direction, le sens et l'évolution du vecteur « variation de vitesse » du système.
 {{% solution "Solution" %}}
+
 > *Phase d'ascension*
 <img src="/premieres-pc/chap-11/chap-11-2/chap-09-03-2.png" alt="" width="" />
 
@@ -81,7 +83,6 @@ Il n'existe pas de **lien direct** entre la vitesse est la force à laquelle est
 
 ## Première approche des lois de la mécanique (lois de Newton)
 
-
 Toute la « mécanique classique »[^2] repose sur trois lois publiées par
 Newton en 1687. **Ces lois sont des généralisations de
 faits expérimentaux**. Elles forment un tout : toute vérification
@@ -92,46 +93,43 @@ expérimentale doit porter sur l'ensemble.
 seront les seuls étudiés cette année.
 {{% /note %}}
 
-
 ### (Histoire des sciences) Les lois de la mécanique selon Newton
-
 
 Newton a précédé l'énoncé des trois lois par celui de 8
 définition dont seules trois sont nécessaires à la compréhension des
 lois[^3].
 
 {{% note tip %}}
-Définition 1. 
+Définition 1.
 : *La quantité de matière (masse) en est la mesure
 définie comme une quantité proportionnelle à la densité et au volume de
 la matière.*
 
-Définition 2. 
+Définition 2.
 : *La force innée de la matière est son aptitude
 inhérente à la résistance grâce à laquelle tout corps isolé, abandonné à
 lui-même, garde son état de repos ou de mouvement rectiligne uniforme.*
 
-Définition 3. 
+Définition 3.
 : *L'application d'une force est une action à laquelle
 on soumet un corps pour modifier son état de repos ou de mouvement
 rectiligne uniforme.*
 
-Théorème 1. 
+Théorème 1.
 : *Tout corps garde son état de repos ou de mouvement
 rectiligne uniforme, tant qu'il n'est pas astreint à modifier cet état
 par application de forces.*
 
-Théorème 2. 
+Théorème 2.
 : *La variation de la vitesse est proportionnelle à la
 force motrice appliquée ; sa direction est celle de la droite suivant
 laquelle s'exerce la force appliquée au corps.*
 
-Théorème 3. 
+Théorème 3.
 : *À toute action correspond toujours une réaction qui lui
 est égale et opposée ou, ce qui revient au même, les interactions de
 deux corps sont toujours égales et opposées.*
 {{% /note %}}
-
 
 {{% note normal %}}
 « Aristote et ses disciples considéraient la force comme cause du
@@ -145,10 +143,10 @@ comme la cause déterminant une variation de la vitesse d'un corps. »
 *Sivoukhine, Cours de Physique, Édition Mir.*
 {{% /note %}}
 
-
 ### Première et troisième lois de Newton
 
 {{% note tip %}}
+
 #### Première loi : principe de l'inertie
 
 La première loi de Newton n'est autre que le principe d'inertie : «
@@ -171,7 +169,6 @@ En première approximation, on peut considérer le référentiel
 héliocentrique comme étant galiléen.
 {{% /note %}}
 
-
 - Un système est dit (mécaniquement) isolé lorsqu'aucune force ne
     s'exerce sur lui ;
 
@@ -179,6 +176,7 @@ héliocentrique comme étant galiléen.
     s'exercent sur lui se compensent à chaque instant.
 
 {{% note tip %}}
+
 #### Troisième loi : principe des actions réciproques
 
 $A$ et $B$ étant deux corps en interaction, la force $\vec{F}\_{A / B}$
@@ -189,10 +187,10 @@ $$\vec{F}\_{A / B} = - \vec{F}\_{B / A}$$ Ce principe reste vrai quel que
 soit le type de référentiel.
 {{% /note %}}
 
-
 ### Deuxième loi de Newton dans le cas des forces constantes
 
 {{% note tip %}}
+
 #### Deuxième loi de Newton dans le cas des forces constantes
 
 *Dans un référentiel galiléen, **si le système est soumis à un ensemble
@@ -210,6 +208,7 @@ forme approchée **entre deux dates proches*** de celle qui est
 mathématiquement correcte (et qui sera introduite l'année prochaine).
 
 {{% note normal %}}
+
 #### De quoi dépend le coefficient de colinéarité de la deuxième loi de Newton ?
 
 Expérimentalement, **si les forces sont constantes**, on constate que :
@@ -227,14 +226,19 @@ $$\Delta \vec{v}\_G = \dfrac{\Delta t}{m}\\,  \sum \vec{F}^{\text{ext}}
 
 {{% /note %}}
 
-### Exemple du mouvement parabolique d'un ballon de basket
+### Exemple du mouvement parabolique d'une balle
 
 <img src="/premieres-pc/chap-11/chap-11-2/chap-09-03-13.png" alt="" width="" />
 
-## Détermination de la valeur de l'accélération de la pesanteur
+## Étude du mouvement parabolique d'une balle
 
-Ressource : {{< remote "https://share.lls.fr/page/6849915" "https://share.lls.fr/page/6849915" >}}
+{{< remote "Ressource en ligne" "https://dlatreyte.github.io/jupyter-lite/lab?path=prem-pc%2Fmecanique%2Ftrace-vecteurs-eleves.ipynb" >}}
 
+{{% solution "Corrigé" %}}
+
+{{< remote "Corrigé en ligne" "https://dlatreyte.github.io/jupyter-lite/lab?path=prem-pc%2Fmecanique%2Ftrace-vecteurs.ipynb" >}}
+
+{{% /solution %}}
 
 [^2]: À la fin du 19<sup>ème</sup> siècle, on s'est rendu compte que les lois de
     la « mécanique classique » ne décrivaient pas correctement le
