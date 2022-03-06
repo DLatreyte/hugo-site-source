@@ -13,10 +13,10 @@ solution_est_visible: true
 auto_numbering: true
 ---
 
-- {{% remote "Accès au document de travail" "https://dlatreyte.github.io/jupyter-lite/lab?path=term-pc%2FMecanique%2Ftrace-vecteurs-eleves.ipynb" %}}
+{{< remote "Accès au document de travail" "https://dlatreyte.github.io/jupyter-lite/lab?path=term-pc%2FMecanique%2Ftrace-vecteurs-eleves.ipynb" >}}
 
 {{% solution "Corrigé" %}}
 
-- {{% remote "Corrigé en ligne" "https://dlatreyte.github.io/jupyter-lite/lab?path=term-pc%2FMecanique%2Ftrace-vecteurs.ipynb" %}}
+{{< remote "Corrigé en ligne" "https://dlatreyte.github.io/jupyter-lite/lab?path=term-pc%2FMecanique%2Ftrace-vecteurs.ipynb" >}}
 
 {{% /solution %}}
