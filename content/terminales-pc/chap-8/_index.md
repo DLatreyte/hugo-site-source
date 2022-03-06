@@ -22,7 +22,6 @@ layout: "single"
 |:-:|:-:|
 | - Mouvement dans un champ de pesanteur uniforme.<br />- Champ électrique créé par un condensateur plan.<br />- Mouvement d’une particule chargée dans un champ électrique uniforme.<br />- Principe de l’accélérateur linéaire de particules chargées.<br />- Aspects énergétiques.    |  - Montrer que le mouvement dans un champ uniforme est plan.<br />- Établir et exploiter les équations horaires du mouvement.<br />- Établir l’équation de la trajectoire.<br />- Discuter de l’influence des grandeurs physiques sur les caractéristiques du champ électrique créé par un condensateur plan, son expression étant donnée.<br />- Décrire le principe d’un accélérateur linéaire de particules chargées.<br />- Exploiter la conservation de l’énergie mécanique ou le théorème de l’énergie cinétique dans le cas du mouvement dans un champ uniforme.<br />- Utiliser des capteurs ou une vidéo pour déterminer les équations horaires du mouvement du centre de masse d’un système dans un champ uniforme.<br />- Étudier l’évolution des énergies cinétique, potentielle et mécanique.<br />- **Capacité numérique :** Représenter, à partir de données expérimentales variées, l’évolution des grandeurs énergétiques d’un système en mouvement dans un champ uniforme à l’aide d’un langage de programmation ou d’un tableur.<br />- **Capacités mathématiques :** Résoudre une équation différentielle, déterminer la primitive d’une fonction, utiliser la représentation paramétrique d’une courbe.    |
 
-
 ### Documents
 
 ----
@@ -44,8 +43,6 @@ layout: "single"
 - **Chap. 9,12 :** [*Annale : Les débuts de l'électron en physique*](12-annale-thomson)
 
 - **Chap. 9,13 :** [*Annale : Particule $\alpha$ dans un champ électrostatique uniforme*](13-annale-particule-alpha)
-
-
 
 ## Mouvements dans un champ gravitationnel non uniforme
 
@@ -80,3 +77,5 @@ layout: "single"
 - **Chap. 9,14 :** [*Détermination de la masse du Soleil à l'aide de Python*](14-troisieme-loi-kepler-python)
 
 - **Chap. 9,15 :** [*TP : Chute d'une goutte d'eau dans différents milieux*](15-chute-eau)
+
+- **Chap. 9,15 :** [*TP : Étude d'un mouvement et tracé de vecteurs*](16-trace-de-vecteurs)
