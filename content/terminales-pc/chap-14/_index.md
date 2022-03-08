@@ -40,4 +40,4 @@ layout: "single"
 
 - **Chap. 14,3 :** [*Bilans radiatifs*](4-bilans-radiatifs)
 
-- **Chap. 14,4 :** [*Détermination de la capacité thermique de différents matériaux*](5-calorimetrie)
+- **Chap. 14,4 :** [*Détermination de la capacité thermique massique du granite*](5-calorimetrie)
