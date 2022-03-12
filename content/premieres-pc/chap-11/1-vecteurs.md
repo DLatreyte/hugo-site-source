@@ -310,7 +310,7 @@ Un mobile autoporteur relié à un point fixe $O$ par un fil inextensible, est l
 
 {{% /note %}}
 
-{{% solution "Corrigé" %}}
+{{% solution "Correction" %}}
 {{< remote "Corrigé en ligne" "https://dlatreyte.github.io/jupyter-lite/lab?path=prem-pc%2Fmecanique%2Fviaduc-millau.ipynb" >}}
 {{% /solution %}}
 
