@@ -7,7 +7,7 @@ date: 2021-03-17T08:33:45+04:00
 draft: false
 toc: true
 tags: ["Vecteur", "Composantes d'un vecteur", "Projection", "Produit scalaire", "Addition de deux vecteurs", "Approximation d'une dérivée", "Tracé de vecteurs vitesses", "Simulation en Python", "Trajectoire"]
-categories: ["Premières Spé PC", "Physique"]
+categories: ["Premières Spé PC"]
 image: ""
 solution_est_visible: true
 auto_numbering: true
@@ -265,7 +265,7 @@ $$
 
 <img src="/terminales-pc/chap-7/chap-7-1-10.png" alt="" width="100%" />
 
-{{% solution "Solution" %}}
+{{% solution "Correction" %}}
 {{< remote "Solution sous forme de simulation" "https://www.geogebra.org/m/atg9wdgv" >}}
 {{% /solution %}}
 
@@ -296,9 +296,15 @@ Un mobile autoporteur relié à un point fixe $O$ par un fil inextensible, est l
 11. Qualifier le mouvement.
 {{% /note %}}
 
+{{% solution "Correction" %}}
+
+{{< remote "Toutes les constructions de l'exercice." "/premieres-pc/chap-11/chap-11-1/chap-11-1-4.pdf">}}
+
+{{% /solution %}}
+
 {{% note exercise %}}
 
-#### Exercice 7
+#### Exercice 7 : Viaduc de Millau
 
 {{% remote "Accès à l'activité" "https://dlatreyte.github.io/jupyter-lite/lab?path=prem-pc%2Fmecanique%2Fviaduc-millau-eleves.ipynb" %}}
 
