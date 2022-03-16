@@ -9,7 +9,7 @@ toc: true
 tags: []
 categories: ["Chimie", "Terminale Spé PC"]
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 
@@ -24,7 +24,8 @@ Les savons, obtenus par précipitation de l'ion carboxylate formé, sont des car
 L'objectif de l'exercice est d'étudier les propriétés de ces différentes réactions.
 L'éthanoate de benzyle $\ce{CH_3-CO_2-CH_2-C_6H_5}$ est un ester très parfumé extrait du jasmin. On recueille un échantillon presque pur qu'on fractionne en deux parties égales.
 
-#### Données.
+#### Données
+
 - Formule semi-développée de l'alcool benzylique : <img src="/terminales-pc/chap-16/chap-16-5/chap-16-5-2.png" alt="" width="30%" />
 
 - Masse molaire de l'éthanoate de benzyle : $\pu{150 g⋅mol-1}$.
@@ -66,6 +67,7 @@ On note $n_0$ les quantités de matière initiales de réactifs et $x_f$ l'avanc
 
 5. Établir le tableau d'avancement de la transformation.
 {{% solution "Solution" %}}
+
 <center>
 
 | État | Av. | Ester | Eau || Acide | Alcool |
@@ -97,11 +99,11 @@ On a donc aussi
 $$
     K = \dfrac{x_f^2}{\left(n_0 - x_f \right)^2}
 $$
-Comme $x_f = \tau \\, x_{\text{max}}$ et $x_{\text{max}} = n_0$, 
+Comme $x_f = \tau \\, x_{\text{max}}$ et $x_{\text{max}} = n_0$,
 $$
     x_f = \tau \\, n_0
 $$
-Finalement 
+Finalement
 $$
     K = \dfrac{\left(\tau \\, n_0 \right)^2}{\left(n_0 - \tau \\, n_0 \right)^2}
     \iff  K = \dfrac{\tau^2}{\left(1 - \tau \right)^2}
@@ -131,8 +133,6 @@ On fait réagir la deuxième moitié de l’échantillon précédent avec une so
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | $n(\ce{HO-})\_{\text{restant}}$ $(10^{-3}\\ \text{mol})$ | 10 | 8,8 | 7,3 | 5,8 | 5,0 | 4,4 | 4,2 | 4,0 | 3,8 |
 | $x (10^{-3}\\ \text{mol})$ | 0 | 1,2 | | | 5,0 | 5,6 | 5,8 | 6,0 | 6,2 |
-
-            
 
 </center>
 
@@ -176,7 +176,7 @@ $$
 
 14. Définir et déterminer le temps de demi-réaction à partir du graphique ci-dessus.
 {{% solution "Solution" %}}
-Le temps de demi-réaction correspond à la durée au bout de laquelle l’avancement a atteint la moitié de sa valeur finale. Donc 
+Le temps de demi-réaction correspond à la durée au bout de laquelle l’avancement a atteint la moitié de sa valeur finale. Donc
 $$
     x(t\_{1/2}) = \dfrac{x_f}{2} = \dfrac{\pu{6,67 mmol}}{2} = \pu{3,33 mmol}
 $$
