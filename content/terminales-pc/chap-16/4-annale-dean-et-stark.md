@@ -9,7 +9,7 @@ toc: true
 tags: []
 categories: ["Chimie", "Terminale Spé PC"]
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 
@@ -45,7 +45,7 @@ auto_numbering: true
 1. Sachant que le cyclohexane n'a qu'un rôle de solvant, écrire l'équation de l'estérification étudiée.\
 Citer le nom de l'ester formé.
 {{% solution "Solution" %}}
-L'acide éthanoïque a pour formule $\ce{CH3-CO2H}$. L'équation de l'estérification s'écrit donc 
+L'acide éthanoïque a pour formule $\ce{CH3-CO2H}$. L'équation de l'estérification s'écrit donc
 $$\ce{CH3-CO2H (l) + C6H5-CH2-OH (l) <=> CH3-CO2-CH2-C6H5 (l) + H2O}$$
 L'ester formé est l'éthanoate de phénylméthyle (ou acétate de benzyle).
 {{% /solution %}}
@@ -69,6 +69,7 @@ Ce dispositif permet de retirer progressivement l'eau du mélange réactionnel. 
 
 5. Quelle masse maximale d'eau peut-on ainsi recueillir ?
 {{% solution "Solution" %}}
+
 <center>
 
 | État | Avancement | acide | alcool || ester | eau |
@@ -107,7 +108,6 @@ $$
 $$
 {{% /solution %}}
 
-
 9. De quel constituant la phase organique est-elle ainsi débarrassée ? Pourquoi ce constituant quitte-t-il la phase organique ?
 {{% solution "Solution" %}}
 Cette question est très liée à la précédente. On élimine l'acide éthanoïque en excès. Le problème avec cette entité est qu'elle est totalement soluble dans l'eau et soluble dans le cyclohexane. Le premier lavage à l'aide d'une solution de chlorure de sodium ne permet pas de l'évacuer de la phase organique.\
@@ -138,7 +138,7 @@ $$
     \eta = \dfrac{n(\text{ester})}{n\_{\text{max}}(\text{ester})} = \dfrac{n(\text{ester})}{n(\text{réactif limitant})}
 $$
 puisque les nombres stœchiométriques sont tous égaux à 1.\
-**Attention.** La dernière égalité n'est vraie que dans le cas de l'estérification, elle ne fait pas partie de la définition. 
+**Attention.** La dernière égalité n'est vraie que dans le cas de l'estérification, elle ne fait pas partie de la définition.
 
 - On sait déjà que $n(\text{réactif limitant}) = \pu{1,00e-1 mol}$ (question 5).
 - $n(\text{ester}) = \dfrac{m(\text{ester})}{M(\text{ester})}$. **A.N.** $n(\text{ester}) = \dfrac{\pu{13,5 g}}{\pu{150,2 g.mol-1}} = \pu{9,00e-2 mol}$.
