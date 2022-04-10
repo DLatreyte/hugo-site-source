@@ -7,7 +7,7 @@ date: 2021-02-22T05:15:40+04:00
 draft: false
 toc: true
 tags: ["Énergie mécanique", "Énergie interne", "Capacité thermique"]
-categories: ["Physique", "Terminale Spé PC"]
+categories: ["Terminale Spé PC"]
 image: ""
 solution_est_visible: true
 auto_numbering: true
@@ -44,7 +44,7 @@ $\Delta E_M = E_M (t_{\infty}) - E_M(t = 0) = - \dfrac{1}{2}\\, m\\, v_0^2 < 0$.
 
 2. Donner, après application du théorème de l'énergie cinétique, l'expression de la valeur de la force de frottements solides (force non conservative constante) dans le cas de l'expérience proposée.
 {{% solution "Réponse" %}}
-$\Delta E_M = E_M (t_{\infty}) - E_M(t = 0) = W(\vec{f}) = \vec{f} \cdot \overrightarrow{AB}$ donc $- \dfrac{1}{2}\\, m\\, v_0^2 = -f \cdot d$ où $d = \Vert \overrightarrow{AB} \Vert$. Finalement 
+$\Delta E_M = E_M (t_{\infty}) - E_M(t = 0) = W(\vec{f}) = \vec{f} \cdot \overrightarrow{AB}$ donc $- \dfrac{1}{2}\\, m\\, v_0^2 = -f \cdot d$ où $d = \Vert \overrightarrow{AB} \Vert$. Finalement
 $$
     f = \dfrac{1}{2}\\, \dfrac{m\\, v_0^2}{d}
 $$
@@ -65,7 +65,7 @@ $E_t (t = 0) = E_M (t = 0) + U_1 (t = 0) + U_2 (t = 0)$ et $E_t (t_{\infty}) = E
 Donc
 $\Delta E_t = \Delta E_M + \Delta U_1 + \Delta U_2 = 0$ (puisque l'ensemble est isolé et que l'énergie se conserve).\
 Finalement
-$$\Delta U_1 + \Delta U_2 = - \Delta E_M$$ 
+$$\Delta U_1 + \Delta U_2 = - \Delta E_M$$
 
 *L'énergie mécanique qui a disparu est s'est transformée en énergie interne.*
 {{% /solution %}}
@@ -102,7 +102,7 @@ la **constante d'avogadro** :
 $$\mathcal{N}_A = \pu{6,02e23 mol-1}$$
 
 {{% note normal %}}
-Étant donnée la complexité des interactions au niveau microscopique, l’énergie interne 
+Étant donnée la complexité des interactions au niveau microscopique, l’énergie interne
 $U$ n’est pas calculable et ne peut être connue de façon absolue. *On peut uniquement calculer sa variation*.
 {{% /note %}}
 
@@ -147,7 +147,7 @@ L'énergie de ce système varie (la température s'élève) mais *aucune force n
 {{% /solution %}}
 
 {{% note tip %}}
-On appelle **chaleur** ou **transfert d'énergie thermique**, le transfert d'énergie (algébrique) qui s'effectue sans *déplacement macroscopique* du point d'application d'une force qui agit sur le système. On note $Q$ ce transfert d'énergie.    
+On appelle **chaleur** ou **transfert d'énergie thermique**, le transfert d'énergie (algébrique) qui s'effectue sans *déplacement macroscopique* du point d'application d'une force qui agit sur le système. On note $Q$ ce transfert d'énergie.
 **L'origine de ce transfert d'énergie est microscopique** et sera précisée un peu plus tard dans ce chapitre.
 {{% /note %}}
 
@@ -178,8 +178,8 @@ $$
 {{% note tip %}}
 On appelle *capacité thermique*, l'énergie thermique qu'il faut fournir à un système qui *ne reçoit aucun travail*, dans **des conditions et une température données**, pour élever sa température de 1&nbsp;°C (ou 1K).
 
-Si le **système est incompressible**, 
-$$C = \dfrac{\Delta U}{\Delta T}$$ 
+Si le **système est incompressible**,
+$$C = \dfrac{\Delta U}{\Delta T}$$
 
 *Unité :* Joule par kelvin ou joule par degré celsius, $\pu{J.K-1}$.
 {{% /note %}}
@@ -198,7 +198,7 @@ est la masse du système :
 $$
     \Delta U = m\\, c\\, \Delta T = m\\, c\\, (T_f - T_i) = W \left( \text{forces non
      conservatives} \right) + Q
-$$ 
+$$
 
 *Unité de la capacité thermique massique :* joule par kelvin et par kilogramme ($\pu{J.K-1.kg-1}$).
 {{% /note %}}
@@ -228,13 +228,11 @@ Rayonnement
 
 {{% /note %}}
 
-
 *Les transferts d'énergie d'origine thermique (la chaleur) se font
 **spontanément** toujours du corps de température la plus élevée (corps
 « chaud ») vers le corps de température la plus basse (corps « froid »)
 ; jamais dans l'autre sens. L'échange d'énergie est donc
 **irréversible**.*
-
 
 Fondamentalement, cette irréversibilité a pour source le comportement de
 la nature à l'échelle microscopique : *le désordre au niveau
@@ -246,7 +244,7 @@ diminuer* (si on considère les systèmes dans leur ensemble).
 {{% note tip %}}
 On appelle **flux thermique** l'énergie thermique transférée à travers une paroi par unité de temps.\
 Ce transfert s'effectue toujours depuis le côté de la paroi dont la température est la plus élevée vers le côté de la paroi dont la température est la plus basse.
-$$\varphi = \frac{Q}{\Delta t}$$ 
+$$\varphi = \frac{Q}{\Delta t}$$
 
 *Unité :* joule par seconde, soit watt.
 {{% /note %}}
@@ -273,5 +271,3 @@ où $e$ est l'épaisseur de la paroi, $S$ sa surface et $\lambda$ une constante 
 {{% note warning %}}
 Pour une différence de températures donnée, plus la résistance thermique est grande, plus le flux thermique qui traverse la paroi est petit ; plus le matériau est **bon isolant thermique**.
 {{% /note %}}
-
-
