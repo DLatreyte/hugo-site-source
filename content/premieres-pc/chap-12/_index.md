@@ -36,6 +36,9 @@ layout: "single"
 
 - **Chap. 12,3 :** [*Cohésion des solides*](3-cohesion-solides-old)
 
+<!--
 - **Chap. 12,3 :** [*Cohésion des solides*](3-cohesion-solides)
+
+-->
 
 - **Chap. 12,4 :** [*Propriétés des savons*](4-proprietes-savons)

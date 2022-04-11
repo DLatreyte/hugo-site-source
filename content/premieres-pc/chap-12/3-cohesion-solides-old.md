@@ -16,8 +16,10 @@ auto_numbering: true
 - {{< remote "Document de travail" "/premieres-pc/chap-12/chap-12-3/chap-12-03-Q.pdf" >}}
 - {{< remote "Carte mentale du cours" "/premieres-pc/chap-12/chap-12-3/chap-13-3-plan.pdf" >}}
 
-{{% solution "Solution" %}}
-- {{< remote "Corrigé du cours" "/premieres-pc/chap-12/chap-12-3/chap-12-03-QR.pdf" >}}
-- {{< remote "Corrigé des exercices" "/premieres-pc/chap-12/chap-12-3/chap-12-03-correction-exercices.pdf" >}}
-{{% /solution %}}
+{{% solution "Solutions" %}}
 
+- <a href="/premieres-pc/chap-12/chap-12-3/chap-12-03-QR.pdf" target="_blank">Corrigé du cours</a>
+
+- <a href="/premieres-pc/chap-12/chap-12-3/chap-12-03-correction-exercices.pdf" target="_blank">Corrigé des exercices du cours</a>
+
+{{% /solution %}}
