@@ -4,7 +4,7 @@ subtitle: "Chapitre 14,5"
 author: ""
 type: ""
 date: 2022-04-10T18:20:41+04:00
-draft: true
+draft: false
 toc: true
 tags: ["Loi de Newton", "Transfert thermique"]
 categories: ["Terminale Spé PC"]
