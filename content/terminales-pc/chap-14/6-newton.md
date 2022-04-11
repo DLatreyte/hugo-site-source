@@ -257,3 +257,20 @@ Compléter le tableau suivant :
 </center>
 
 {{% /solution %}}
+
+## Applications
+
+- <a href="https://www.lelivrescolaire.fr/page/16636368?docId=o4OL5F0OfgpSoCEiCFzv8" target="_blank">Yaourt ferme (Livre scolaire)</a>
+{{% solution "Corrigé" %}}
+
+{{% /solution %}}
+
+- <a href="https://www.lelivrescolaire.fr/page/16636368?docId=O_H9BsCNhAcyTTWYhtJZR" target="_blank">Température ressentie (Livre scolaire)</a>
+{{% solution "Corrigé" %}}
+
+{{% /solution %}}
+
+- <a href="https://www.lelivrescolaire.fr/page/16636368?docId=TKOpO5ea93CqN8jqm7AdX" target="_blank">Bouilloire (Livre scolaire)</a>
+{{% solution "Corrigé" %}}
+
+{{% /solution %}}
