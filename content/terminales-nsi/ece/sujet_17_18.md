@@ -32,7 +32,7 @@ def separe(tab):
         else :
             tab[i], tab[j] = ...
             j = ...
-return tab
+    return tab
 ```
 
 Compléter la fonction `separe` ci-dessus.
@@ -57,7 +57,7 @@ def insere(a, tab):
       l[i + 1] = ...
       l[i] = a
       i = ...
-return l
+    return l
 ```
 
 Compléter la fonction `insere` ci-dessus.
