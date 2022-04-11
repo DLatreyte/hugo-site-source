@@ -4,7 +4,7 @@ subtitle: "Partie pratique"
 author: ""
 type: ""
 date: 2022-04-10T22:33:49+04:00
-draft: true
+draft: false
 toc: true
 tags: []
 categories: []
