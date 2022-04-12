@@ -32,4 +32,6 @@ layout: "single"
 
 - **Chap. 16,2 :** [*Protection/déprotection de fonctions*](2-protection-fonctions)
 
+- **Chap. 16,3 :** [*Techniques expérimentales en chimie de synthèse*](3-techniques-experimentales)
 
+- **Chap. 16,4 :** [*Une étape dans la synthèse d’un médicament, le paracétamol*](4-synthese-paracetamol)

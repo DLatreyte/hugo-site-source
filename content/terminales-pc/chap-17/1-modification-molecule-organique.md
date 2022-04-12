@@ -7,7 +7,7 @@ date: 2021-04-19T11:24:32+04:00
 draft: false
 toc: true
 tags: []
-categories: []
+categories: ["Terminale Spé PC"]
 image: ""
 solution_est_visible: true
 auto_numbering: true
@@ -42,10 +42,10 @@ https://fr.wikipedia.org/wiki/Chimie_organique
 transformations de structure en chimie organique, vous devrez être
 capables :
 
--   de distinguer une modification de chaîne d'une modification de
+- de distinguer une modification de chaîne d'une modification de
     groupe caractéristique ;
 
--   de déterminer la catégorie d'une réaction (*substitution*,
+- de déterminer la catégorie d'une réaction (*substitution*,
     *addition*, *élimination*) à partir de l'examen de la nature des
     réactifs et des produits.
 
@@ -56,11 +56,12 @@ Les mécanismes réactionnels ne sont pas utilisés.
 
 ## Modifications de la chaîne carbonée
 
-
 ### Raccourcissement de la chaîne carbonée
 
 {{% note normal %}}
+
 #### Craquage
+
 Le **craquage** désigne, en pétrochimie, la *thermolyse* du pétrole et
 de ses dérivés liquides. L'opération consiste à *casser une molécule
 organique complexe en éléments plus petits*, notamment des alcanes et
@@ -69,8 +70,6 @@ des alcènes.
 
 Les conditions de *température et de pression*, ainsi que la *nature du
 catalyseur* sont des éléments déterminants du craquage.
-
-
 
 {{% note exercise %}}
 
@@ -81,7 +80,9 @@ propène. Écrire l'équation de la réaction.*
 {{% /note %}}
 
 {{% note normal %}}
+
 #### Vapocraquage (craquage à la vapeur)
+
 Le **vapocraquage** est un procédé pétrochimique qui consiste à obtenir,
 à partir d'alcanes lourds ou légers, des *alcènes* (éthylène, propylène)
 *en présence d'eau*.
@@ -93,7 +94,6 @@ production de bien d'autres produits dans les domaines de la cosmétique,
 la pharmacie, la construction, les industries électrique, électronique,
 le textile, l'aéronautique, etc.
 
-
 {{% note exercise %}}
 **Exercice 2**. *Sous la pression atmosphérique, à la température de
 800 °C et en présence de vapeur d'eau, le butane se décompose en éthène
@@ -103,9 +103,10 @@ et dihydrogène. Écrire l'équation de la réaction.*
 
 ### Modification de la structure de la chaîne carbonée
 
-
 {{% note normal %}}
+
 #### Reformage catalytique
+
 Le reformage catalytique est une famille d'opérations chimiques,
 effectuées sous *haute pression* et à *haute température* (de l'ordre de
 550 °C) en présence d'un *catalyseur*, au cours desquelles des
@@ -125,9 +126,11 @@ cycloalcane et benzène. Donner leurs formules chimiques générale.*
 {{% /note %}}
 
 #### Exemples de reformage
- 
+
 {{% note normal %}}
+
 #### Isomérisation
+
 Une **isomérisation** est la transformation d'un *alcane à chaîne
 linéaire en un isomère de constitution ramifié, à température modérée
 (120 °C à 200 °C)*.
@@ -139,13 +142,14 @@ linéaire en un isomère de constitution ramifié, à température modérée
 {{% /note %}}
 
 {{% note normal %}}
+
 #### Cyclisation
+
 Une **cyclisation** est la transformation d'*un alcane linéaire en
 cyclane, souvent ramifiés, à température modérée (120 °C à 200 °C)*.
 Cette transformation n'est possible que pour des alcanes possédant au
 moins cinq atomes de carbone.
 {{% /note %}}
-
 
 Remarque.
 
@@ -157,9 +161,10 @@ méthylcyclopentane.*
 
 {{% /note %}}
 
-
 {{% note normal %}}
+
 #### Déshydrocyclisation
+
 La **déshydrocyclisation** permet d'obtenir des dérivés benzéniques et
 du dihydrogène en réalisant la cyclisation à une température plus élevée
 (voisine de 500 °C) et en présence d'un catalyseur (exemple le platine
@@ -168,7 +173,6 @@ d'une molécule de dihydrogène) et conduit à l'apparition d'un cycle
 benzénique.
 {{% /note %}}
 
-
 {{% note exercise %}}
 **Exercice 6**. *Écrire l'équation de la réaction de déshydrocyclisation
 de l'hexane en benzène.*
@@ -176,9 +180,10 @@ de l'hexane en benzène.*
 
 ### Allongement de la chaîne carbonée
 
-
 {{% note normal %}}
+
 #### Alkylation
+
 L'alkylation consiste à substituer (remplacer) un atome d'hydrogène
 d'une chaîne carbonée par un groupe alkyle. On allonge la chaîne d'un
 alcane en le faisant réagir avec un alcène (opération inverse du
@@ -188,21 +193,20 @@ alcane en le faisant réagir avec un alcène (opération inverse du
 Son intérêt est de produire des espèces chimiques à fort indice
 d'octane.
 
-
 {{% note exercise %}}
 **Exercice 7**. *La réaction entre le méthylpropène et le méthylpropane
 donne du 2,2,4-triméthylpentane. Écrire l'équation de cette réaction.*
 {{% /note %}}
 
-
 {{% note normal %}}
+
 #### Polymérisation par polyaddition
+
 La **polymérisation par polyaddition** permet de rallonger la chaîne
 carbonée principale en réalisant une *addition répétée d'un très grand
 nombre de molécules insaturées appelées **monomères**.* Elle conduit à
 une macromolécule appelée **polymère**.
 {{% /note %}}
-
 
 Exemple.
 
@@ -264,7 +268,9 @@ https://fr.wikipedia.org/wiki/Chimie_organique
 ### Réactions de substitution
 
 {{% note tip %}}
+
 #### Substitution
+
 Une réaction de **substitution** est une réaction chimique *au cours de
 laquelle un atome ou groupe d'atomes, lié à un carbone par une liaison
 simple, est remplacé par un autre atome ou groupe d'atomes*.
@@ -276,7 +282,6 @@ l'eau est une réaction de substitution. Il se forme du
 2-méthylpropan-2-ol et de l'acide chlorhydrique. Écrire l'équation de
 cette réaction.*
 {{% /note %}}
-
 
 {{% note exercise %}}
 
@@ -295,11 +300,12 @@ réaction.*
 
 {{% /note %}}
 
-
 ### Réactions d'addition
 
 {{% note tip %}}
+
 #### Addition
+
 Une réaction **d'addition** est une réaction chimique *au cours de
 laquelle un atome ou un groupe d'atomes vient se fixer sur des atomes
 initialement liés par une double ou une triple liaison*.
@@ -317,11 +323,10 @@ est une réaction d'addition. Écrire l'équation de la réaction et donner
 le nom du produit formé.*
 {{% /note %}}
 
-
 ### Réactions d'élimination
 
-
 {{% note tip %}}
+
 #### Élimination
 
 Une réaction d'**élimination** est une réaction chimique *au cours de
@@ -345,5 +350,3 @@ qui donne du 2 méthylbut-2-ène et de l'eau.*
 **Exercice 15**. *Écrire la réaction d'élimination du cyclohexanol qui
 donne du cyclohexène et de l'eau.*
 {{% /note %}}
-
-

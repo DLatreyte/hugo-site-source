@@ -7,7 +7,7 @@ date: 2021-04-19T18:07:58+04:00
 draft: false
 toc: true
 tags: ["Réactif polyfonctionnel", "réactif chimiosélectif", "réaction sélective", "Groupe protecteur"]
-categories: ["Chimie", "Terminale Spé PC"]
+categories: ["Terminale Spé PC"]
 image: ""
 solution_est_visible: true
 auto_numbering: true
@@ -23,6 +23,7 @@ Une molécule est dite **polyfonctionnelle** si elle possède plusieurs groupes 
 
 {{% note exercise %}}
 Entourer et nommer les groupes caractéristiques des molécules suivantes :
+
 - para-aminophénol : <img src="/terminales-pc/chap-17/chap-17-2/para-aminophenol.png" alt="" width="40%" />
 - paracétamol : <img src="/terminales-pc/chap-17/chap-17-2/paracetamol.png" alt="" width="40%" />
 - acide salicylique : <img src="/terminales-pc/chap-17/chap-17-2/acide-salicylique.png" alt="" width="25%" />
@@ -38,18 +39,20 @@ Entourer et nommer les groupes caractéristiques des molécules suivantes :
 ## Réactifs chimiosélectifs
 
 {{% note tip %}}
-- Une réaction est **sélective** lorsque, parmi plusieurs fonctions d’une même molécule, l’une d’elles réagit *préférentiellement* avec le réactif considéré. 
+
+- Une réaction est **sélective** lorsque, parmi plusieurs fonctions d’une même molécule, l’une d’elles réagit *préférentiellement* avec le réactif considéré.
 - Le réactif avec lequel la fonction réagit préférentiellement est dit **chimiosélectif**.
 
 {{% /note %}}
 
 {{% note exercise %}}
-#### Synthèse du paracétamol
 
+#### Synthèse du paracétamol
 
 <img src="/terminales-pc/chap-17/chap-17-2/synthese-paracetamol.png" alt="" width="" />
 
 L'équation de la réaction de synthèse du paracétamol s'écrit :
+
 1. Cette réaction est-elle sélective ? Justifier la réponse.
 2. Quel est le réactif chimiosélectif ?
 {{% /note %}}
@@ -59,6 +62,7 @@ L'équation de la réaction de synthèse du paracétamol s'écrit :
 {{% /solution %}}
 
 {{% note exercise %}}
+
 #### Réaction de l'aspirine (acide acétylsalicylique) avec la soude - Première partie
 
 Lorsqu’on fait réagir de l’aspirine avec de la soude à température ambiante, seule la fonction acide carboxylique réagit.
@@ -73,6 +77,7 @@ Les ions hydroxyle sont chimiosélectifs.
 {{% /solution %}}
 
 {{% note exercise %}}
+
 #### Réaction de l’aspirine (acide acétylsalicylique) avec la soude — Deuxième partie
 
 Lorsqu’on fait réagir de l’aspirine chauffée à reflux avec un excès de soude, les deux fonctions réagissent.
@@ -99,7 +104,6 @@ Lorsqu’il n’existe pas de réaction sélective permettant de choisir laquell
 Un **groupe protecteur** est un groupe caractéristique, *volontairement créé dans la molécule d’une molécule polyfonctionnelle afin de bloquer la réactivité de l’une de ses fonctions*. Cette fonction est temporairement transformée en une autre fonction.
 {{% /note %}}
 
-
 ### Annale : Réduction avec protection de fonction
 
 On souhaite préparer la molécule $B$ à partir de la molécule $A$. On propose le schéma de synthèse suivant :
@@ -120,6 +124,7 @@ Expliquer pourquoi il aurait été préférable de privilégier ce réaction com
 11. Le DIBAL peut-il alors être qualifié de chimiosélectif pour cette réaction ?
 
 {{% solution "Solution" %}}
+
 1. $A$ : <img src="/terminales-pc/chap-17/chap-17-2/reactif-a-reduction.png" alt="" width="30%" />
 2. $B$ : <img src="/terminales-pc/chap-17/chap-17-2/produit-b-reduction.png" alt="" width="30%" />
 3. $\ce{R-CO-R'}/\ce{R-CHOH-R'}$ : $\ce{2H^+ + R-CO-R' + 2e^- = R-CHOH-R'}$
@@ -133,17 +138,17 @@ $\ce{LiAlH4}$ est un réactif non chimiosélectif.
 L'étape 3 est l'étape de déprotection : on fait réagir le groupe protecteur afin de retrouver le groupe carbonyle initial.
 10. L'utilisation du DIBAL aurait beaucoup simplifié la synthèse : une seule étape aurait remplacé les 3 étapes. Les quantités de matière mises en jeu auraient donc été moins importantes.\
 Le processus aurait donc été plus simple, plus rapide, moins onéreux.
-11. Le DIBAL est un réactif chimiosélectif pour la synthèse envisagée. 
+11. Le DIBAL est un réactif chimiosélectif pour la synthèse envisagée.
 {{% /solution %}}
 
 {{% note tip %}}
 Le groupe protecteur utilisé doit :
+
 - Réagir de manière sélective avec la fonction à protéger ;
 - Ne pas réagir lors des réactions suivantes ;
 - Pouvoir être retiré facilement et sélectivement, une fois la réaction souhaitée achevée.
 
 {{% /note %}}
-
 
 ### Annale : Synthèse peptidique
 
@@ -193,14 +198,15 @@ Chaque acide α-aminé ($A$ et $B$ par exemple) possède deux groupes caractéri
 
 #### Dernière étape de synthèse de la Met-enképhaline
 
-On envisage la dernière étape de la synthèse de la Met-enképhaline à partir des deux réactifs suivants : 
+On envisage la dernière étape de la synthèse de la Met-enképhaline à partir des deux réactifs suivants :
+
 - Réactif $A$ : <img src="/terminales-pc/chap-17/chap-17-2/reactif-a.png" alt="" width="60%" />
 que l’on notera :<img src="/terminales-pc/chap-17/chap-17-2/reactif-a-bis.png" alt="" width="25%" />
 
 - Réactif $B$ :  <img src="/terminales-pc/chap-17/chap-17-2/reactif-b.png" alt="" width="40%" />
 que l’on notera :<img src="/terminales-pc/chap-17/chap-17-2/reactif-b-bis.png" alt="" width="20%" />
 
-5. Il est possible d'obtenir 4 polypeptides à partir de ces deux réactifs. Les formules topologiques de deux d'entre eux sont données ci-dessous (la première est la Met-enképhaline). Donner celles des deux autres. 
+5. Il est possible d'obtenir 4 polypeptides à partir de ces deux réactifs. Les formules topologiques de deux d'entre eux sont données ci-dessous (la première est la Met-enképhaline). Donner celles des deux autres.
 {{< columns >}}
 <img src="/terminales-pc/chap-17/chap-17-2/polypeptide-1.png" alt="" width="60%" />
 {{< column >}}
