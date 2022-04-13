@@ -4,7 +4,7 @@ subtitle: "Chapitre 16,4"
 author: ""
 type: ""
 date: 2022-04-12T13:41:04+04:00
-draft: true
+draft: false
 toc: true
 tags: []
 categories: ["Terminale Spé PC"]
@@ -14,3 +14,10 @@ auto_numbering: true
 ---
 
 
+{{% remote "Énoncé du TP au format PDF" "/terminales-pc/chap-17/chap-17-4/chap-17-04.pdf" %}}
+
+{{% solution "Correction" %}}
+
+{{% remote "Corrigé du TP au format PDF" "/terminales-pc/chap-17/chap-17-4/chap-17-04-QR.pdf" %}}
+
+{{% /solution %}}
