@@ -19,7 +19,6 @@ layout: "single"
 - {{< remote "Planning prévisionnel jusqu'aux épreuves (écrit + ECE)" "planning-previsionnel" >}}
 -->
 
-
 ## Documents ##
 
 - **Chapitre 0 :** [*Mesures et incertitudes*](chap-0)
@@ -64,9 +63,11 @@ layout: "single"
 
 - **Chapitre 20 :** [*Modéliser l’écoulement d’un fluide*](chap-20)
 
-
+<!--
 ## Devoirs
 
 ### 2020 - 2021
 
 - [*Devoir n°6*](devoirs/2020-2021/ds-5)
+
+-->
