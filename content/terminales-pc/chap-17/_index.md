@@ -35,3 +35,5 @@ layout: "single"
 - **Chap. 16,3 :** [*Techniques expérimentales en chimie de synthèse*](3-techniques-experimentales)
 
 - **Chap. 16,4 :** [*Une étape dans la synthèse d’un médicament, le paracétamol*](4-synthese-paracetamol)
+
+- **Chap. 16,5 :** [*Entraînement*](5-annale)
