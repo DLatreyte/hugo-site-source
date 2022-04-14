@@ -1,6 +1,6 @@
 ---
-title: "Devoir n°6"
-subtitle: "04 mai 2021"
+title: "Exercices d'entraînement"
+subtitle: Chapitre 16,5"
 author: ""
 type: ""
 date: 2021-05-04T04:08:47+04:00
@@ -26,6 +26,7 @@ Une molécule polyfonctionnelle possède plusieurs groupes caractéristiques. Le
 
 2. Recopier les molécules $A$ à $E$ sur votre copie. Entourer et nommer les différents *groupes* présents. Nommer ensuite les *fonctions chimiques* correspondantes (changer de couleur pour bien distinguer le nom du groupe de celui de la fonction).
 {{% solution "Solution" %}}
+
 - **A :** groupe carboxyle, fonction acide carboxylique ;
 - **B :** groupe hydroxyle, fonction alcool ; groupe carbonyle, fonction cétone ; groupe carboxyle, fonction acide carboxylique ;
 - **C :** groupe amide, fonction amide ;
@@ -36,6 +37,7 @@ Une molécule polyfonctionnelle possède plusieurs groupes caractéristiques. Le
 3. Nommer les molécules $A$, $C$, $D$ et $E$.\
 Le nom de la molécules $E$ est en bonus.
 {{% solution "Solution" %}}
+
 - **A :** acide éthanoïque
 - **C :** propanamide
 - **D :** pentanoate de méthyle
@@ -78,7 +80,7 @@ Substitution -- méthoxypropane $\ce{CH3-CH2-CH2-O-CH3}$
 
 ## La vanillline
 
-La vanille contient de nombreux composés aromatiques. La note dominante de son parfum est due à la molécule de vanilline (4-hydroxy-3-méthoxybenzaldéhyde) représentée ci-dessous. Depuis plus d'un siècle, la vanilline est essentiellement produite artificiellement. Elle est très utilisée en parfumerie. 
+La vanille contient de nombreux composés aromatiques. La note dominante de son parfum est due à la molécule de vanilline (4-hydroxy-3-méthoxybenzaldéhyde) représentée ci-dessous. Depuis plus d'un siècle, la vanilline est essentiellement produite artificiellement. Elle est très utilisée en parfumerie.
 
 <img src="/terminales-pc/devoirs/2020-2021/ds-5/vanilline.png" alt="" width="20%" />
 
@@ -99,9 +101,10 @@ On se propose d'étudier la première et la dernière étape de ce procédé chi
 Les parties $A$ et $B$ sont indépendantes.
 </center>
 
-#### Données :
+#### Données
 
 - Entités chimiques :
+
 <center>
 
 | Entité chimique | Masse molaire <br /> ($\pu{g.mol-1}$) | Quelques propriétés |
@@ -116,7 +119,8 @@ Les parties $A$ et $B$ sont indépendantes.
 
 ### Partie A : Première étape : Synthèse de l'acétate d'isoeugénol
 
-#### Mode opératoire:
+#### Mode opératoire
+
 - Dans un ballon de $\pu{250 mL}$, introduire $\pu{10,0 g}$ d'isoeugénol, $\pu{20,0 mL}$ d'anhydride acétique (anhydride éthanoïque) et quelques gouttes d'acide orthophosphorique.
 - Chauffer en utilisant un montage à reflux et maintenir une ébullition douce pendant
 30 minutes.
@@ -126,13 +130,15 @@ Les parties $A$ et $B$ sont indépendantes.
 
 1. Pourquoi réalise-t-on un montage à reflux et chauffe-t-on ?
 {{% solution "Solution" %}}
+
 - On élève la température de façon à accélérer la réaction car la température est un facteur cinétique.
 - Lorsqu'on élève la température, les liquides passent à l'état gazeux et quittent le milieu réactionnel. Le montage à reflux permet de condenser ces vapeurs, les liquides retournent alors dans le ballon.
 {{% /solution %}}
 
 2. Quelles précautions faut-il prendre pour manipuler l'anhydride éthanoïque ?
 {{% solution "Solution" %}}
-- L'anhydride acétique doit être manipulé avec des gants et des lunettes puisqu'il est corrosif et provoque des brûlures. 
+
+- L'anhydride acétique doit être manipulé avec des gants et des lunettes puisqu'il est corrosif et provoque des brûlures.
 - L'anhydride acétique doit être manipulé loin d'une flamme puisqu'il est inflammable.
 - On ne doit pas respirer au-dessus d'une bouteille d'anhydride acétique dont le bouchon serait ouvert puisqu'il réagit facilement avec l'eau, il se forme alors des vapeurs d'acide acétique.
 {{% /solution %}}
@@ -153,6 +159,7 @@ Cette réaction est une substitution.
     Expliquer pourquoi la transformation n'est pas totale et justifier l'utilisation de l'anhydride éthanoïque dans le protocole à la place de l'acide éthanoïque.
 
 {{% solution "Solution" %}}
+
 - La réaction présentée dans cette question conduit à des équilibres chimiques car en fait, il existe deux réaction inverses l'une de l'autre : l'estérification mais aussi l'hydrolyse de l'ester formé car cet ester peut réagir avec l'eau (formée elle aussi).
 - La réaction proposée dans le protocole conduit à des transformations totales car l'ester formé ne peut pas réagir avec l'acide acétique (formé lui aussi).
 {{% /solution %}}
@@ -164,6 +171,7 @@ D'après les données, l'acétate d'isoeugénol est insoluble dans l'eau glacée
 
 7. Calculer la quantité de matière initiale de chacun des réactifs.
 {{% solution "Solution" %}}
+
 - Isoeugénol : $n_1 = \dfrac{m_1}{M_1}$. **A.N.** $n_1 = \dfrac{\pu{10,0 g}}{\pu{164 g.mol-1}}=\pu{6,10e-2 mol}$
 - Anhydride éthanoïque : $n_2 = \dfrac{m_2}{M_2} = \dfrac{\rho_2 \\, V_2}{M_2}$ avec $\rho_2 = d_2 \\, \rho_{\text{eau}}$. Donc $n_2 = \dfrac{d_2 \\, \rho_{\text{eau}} \\, V_2}{M_2}$.\
 <strong>$n_2 = \dfrac{\pu{1,08} \times \pu{1,00 g.mL-1} \times \pu{20,0 mL}}{\pu{102 g.mol-1}} = \pu{0,212 mol}$</strong>
