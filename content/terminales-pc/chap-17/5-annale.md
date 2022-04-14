@@ -1,6 +1,6 @@
 ---
 title: "Exercices d'entraînement"
-subtitle: Chapitre 16,5"
+subtitle: "Chapitre 16,5"
 author: ""
 type: ""
 date: 2021-05-04T04:08:47+04:00
