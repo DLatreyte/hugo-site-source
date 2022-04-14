@@ -37,3 +37,5 @@ layout: "single"
 - **Chap. 16,4 :** [*Une étape dans la synthèse d’un médicament, le paracétamol*](4-synthese-paracetamol)
 
 - **Chap. 16,5 :** [*Exercices d'entraînement*](5-annale)
+
+- **Chap. 16,6 :** [*Annale : Le nylon*](6-annale-nylon)
