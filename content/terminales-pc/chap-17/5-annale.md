@@ -46,7 +46,7 @@ Le nom de la molécules $E$ est en bonus.
 
 4. Donner la formule semi-développée de la molécule $B$.
 {{% solution "Solution" %}}
-$\ce{CH3-CH(OH)-CH2-C(O)-CO2H}$
+$\ce{CH3-CH(OH)-CH2-CO-CO2H}$
 {{% /solution %}}
 
 ## Catégories de réactions
