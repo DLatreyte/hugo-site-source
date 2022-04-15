@@ -1,6 +1,6 @@
 ---
 title: "Simulation de réseaux"
-subtitle: "Chapitre 10,4"
+subtitle: "Chapitre 10,1,4"
 author: ""
 type: ""
 date: 2020-12-06T04:35:41+04:00
@@ -16,6 +16,7 @@ auto_numbering: true
 > L'objectif de cette séance est de mettre en pratique les concepts rappelés lors des séances précédentes et d'introduire la notion de routage.
 
 {{% note normal %}}
+
 - Télécharger le logiciel {{< remote "Filius" "https://www.lernsoftware-filius.de/Herunterladen" >}}
 - Choisir le paquet « Zip » pour OSX ou Linux (hors Ubuntu). Pour Windows, on peut choisir « Windows » ou « Zip ».
 {{% /note %}}
@@ -33,13 +34,14 @@ auto_numbering: true
 
 1. Sur l'ordinateur portable installer les outils en ligne de commande : `Clic gauche` $\longrightarrow$ `Installation des logiciels` $\longrightarrow$ `Ligne de commande` $\longrightarrow$ `Appliquer les modifications`.
 
-1. À quoi correspond la table `arp` ? 
+1. À quoi correspond la table `arp` ?
 {{% solution "Réponse" %}}
 La table `arp` donne la correspondance entre les adresses MAC, seules utilisées sur un réseau local, et les adresses IP, définies par les administrateurs réseau.
 {{% /solution %}}
 
 7. Lancer la commande `arp -a` et examiner son retour. Que nous apprend-elle ?
 {{% solution "Réponse" %}}
+
 <center>
 
 | Adresse IP | Adresse MAC |
@@ -57,12 +59,14 @@ La commande `ping` permet de tester si une liaison réseau vers une machine que 
 
 9. Décrire la circulation des segments observable lors de la simulation.
 {{% solution "Réponse" %}}
+
 - Dans un premier temps tous les cables s'allument, ce qui témoigne d'un mécanisme de **diffusion**.
 - Par la suite, seuls les cables reliant les deux machines qui dialoguent au switch s'allument. **Le switch (commutateur) permet un dialogue direct entre ces machines**.
 {{% /solution %}}
 
 9. Lancer à nouveau la commande `arp -a`. Quelle information supplémentaire la table `arp` contient-elle ?
 {{% solution "Réponse" %}}
+
 <center>
 
 | Adresse IP | Adresse MAC |
@@ -76,7 +80,7 @@ Remarque.
 : Vous n'obtiendrez pas forcément les mêmes entrées lors de votre simulation.
 {{% /solution %}}
 
-10. Visualiser l'historique du traffic : `Clic droit` sur l'ordinateur $\longrightarrow$ `Afficher les échanges de données`. 
+10. Visualiser l'historique du traffic : `Clic droit` sur l'ordinateur $\longrightarrow$ `Afficher les échanges de données`.
 
 11. Pourquoi voit-on, dans certains messages, une adresse MAC valant FF:FF:FF:FF:FF:FF  ?
 {{% solution "Réponse" %}}
@@ -93,7 +97,7 @@ Niveau 2, couche de liaison.
 Le protocole ICMP intervient au niveau 3, couche réseau.
 {{% /solution %}}
 
-14. Examiner la table SAT du switch : `Clic gauche` sur le switch.    
+14. Examiner la table SAT du switch : `Clic gauche` sur le switch.
 Que nous apprend cette table ?
 {{% solution "Réponse" %}}
 Cette table indique sur quel port se trouve chaque ordinateur (repéré par son adresse MAC).
@@ -102,6 +106,7 @@ Cette table indique sur quel port se trouve chaque ordinateur (repéré par son 
 15. Expliquer pourquoi on dit qu'« **un commutateur (switch) limite le domaine de collision mais pas le domaine de diffusion** ».
 {{% solution "Réponse" %}}
 {{% note tip %}}
+
 - Au niveau de la couche 2 du modèle OSI, aucune notion de connexion entre deux machines n'existe ; les segments sont diffusés sur tout le réseau et sont reçus aussi bien par la machine destinataire (qui traite alors l'information) que par celles qui ne le sont pas.
 - Le processus de découverte de l'adresse MAC de la machine destinataire se fait forcément par diffusion. Un commutateur doit permettre ce mécanisme.
 - Par la suite, le switch s'assure que les segments destinés à une machine soient directement dirigés vers le port qui conduit à la machine destinataire ; il évite donc une diffusion à tout le réseau et les éventuelles collisions entre segments qui pourraient intervenir.
@@ -114,12 +119,13 @@ Cette table indique sur quel port se trouve chaque ordinateur (repéré par son 
 
 17. Créer le réseau local suivant :
 <img src="/terminales-nsi/chap-11/chap-11-4-2.png" alt="" width="" />
-Les masques de sous-réseau sont : 
+Les masques de sous-réseau sont :
     - 255.255.255.0 pour le sous-réseau connecté au switch A ;
     - 255.255.0.0 pour le sous-réseau connecté au switch B.
 
 {{% note tip %}}
-- Pour pouvoir communiquer sur un même réseau, deux hôtes doivent avoir la même adresse réseau (IP). 
+
+- Pour pouvoir communiquer sur un même réseau, deux hôtes doivent avoir la même adresse réseau (IP).
 - Pour pouvoir communiquer entre deux réseaux différents, il faut passer par une passerelle, qui elle possède plusieurs cartes réseau, et donc plusieurs adresses IP.
 {{% /note %}}
 
@@ -130,7 +136,7 @@ Il est impossible d'atteindre un ordinateur du sous-réseau B depuis un ordinate
 
 19. Configurer le routeur afin qu'il route les paquets entre les deux sous-réseaux et tenter à nouveau l'expérience de la question 18. La communication est-elle bien établie ?
 {{% solution "Réponse" %}}
-La communication est toujours impossible. 
+La communication est toujours impossible.
 {{% /solution %}}
 
 20. Afin de comprendre pourquoi la communication entre les machines des deux sous-réseaux est toujours impossible, sur l'ordinateur du sous-réseau A, lancer la commande `route`. Examiner le résultat et identifier le problème.
@@ -158,7 +164,6 @@ La couche de liaison ne définit **aucune connexion directe entre deux ordinateu
 `traceroute` donne le chemin suivi par les paquets.
 {{% /solution %}}
 
-
 ## Réseaux étendus
 
 {{% note normal %}}
@@ -173,7 +178,3 @@ Remarque.
 : Cela peut ne pas fonctionner du premier coup, car la mise à jour des tables de routage n’est pas immédiate. Pour remédier à cela, faire un `ping` entre M14 et M9, si cela ne fonctionne pas (timeout), attendre quelques secondes et recommencer.
 
 27. Ouvrir les tables de routage de tous les routeurs qui sont intervenus dans la communication et expliquer le fonctionnement de ces tables.
-
-
-
-
