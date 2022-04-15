@@ -17,7 +17,7 @@ auto_numbering: true
 
 ## Principe de la méthode
 
-1. Rechercher le codage binaire du mot `papa`. C'est le message à chiffrer.
+1. Rechercher le codage binaire du mot `mon papa`. C'est le message à chiffrer.
 {{% solution "Réponse" %}}
 
 `01101101 01101111 01101110 00100000 01110000 01100001 01110000 01100001`
