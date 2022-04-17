@@ -34,11 +34,10 @@ layout: "single"
 
 - **Chap. 11,2 :** [*Structure, schéma de Lewis et géométrie des entités microscopiques*](2-schema-lewis-geometrie)
 
-- **Chap. 11,3 :** [*Cohésion des solides*](3-cohesion-solides-old)
-
 <!--
-- **Chap. 11,3 :** [*Cohésion des solides*](3-cohesion-solides)
-
+- **Chap. 11,3 :** [*Cohésion des solides*](3-cohesion-solides-old)
 -->
+
+- **Chap. 11,3 :** [*Cohésion des solides*](3-cohesion-solides)
 
 - **Chap. 11,4 :** [*Propriétés des savons*](4-proprietes-savons)
