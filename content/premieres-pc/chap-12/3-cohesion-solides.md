@@ -425,16 +425,20 @@ On fait dissoudre $m = \pu{51,3 g}$ de sulfate d'aluminium $\ce{Al2(SO4)3 (s)}$ 
 1. Rappeler, en s'aidant d'exemples, ce qui distingue, dans une molécule
    diatomique, un dipôle électrique permanent d'un dipôle électrique
    induit.
-1. On considère les molécules suivantes $\text{N}\_{2}$, $\text{Cl}\_{2}$,
-   $\text{H}\_{2} \text{S}$, $\operatorname{CBe}\_{2}$,
-   $\operatorname{CS}\_{2}$, $\operatorname{Cl}\_{2} \text{O}$,
-   $\operatorname{IBr}$ et $\operatorname{HI}$.
+1. On considère les molécules suivantes $\ce{N2}$, $\ce{Cl2}$,
+   $\ce{H2S}$, $\ce{CBe2}$,
+   $\ce{CS2}$, $\ce{Cl2O}$,
+   $\ce{IBr}$ et $\ce{HI}$.
    1. Repérer celles dont le moment dipolaire est nul.
    1. En déduire celles qui ont un dipôle électrique permanent et celles qui
       ne peuvent présenter qu'un dipôle électrique instantané.
+{{% /note %}}
 
-Le méthylpropan-2-ol, $\left( \text{CH}\_{3} \right)\_{3} \text{C} -
-\text{OH}$, ou alcool tertiobutylique, est un alcool.
+{{% note exercise %}}
+
+#### Exercice (Interactions de Van Der Waals)
+
+Le méthylpropan-2-ol, $\ce{(CH3)\_{3}C - OH}$, ou alcool tertiobutylique, est un alcool.
 
 1. Cette molécule possède-t-elle une ou plusieurs liaisons polarisées ?
 1. Cette molécule est-elle polaire ?
@@ -447,10 +451,10 @@ Le méthylpropan-2-ol, $\left( \text{CH}\_{3} \right)\_{3} \text{C} -
 
 #### Exercice (Recherches la présence de liaisons hydrogène)
 
-1. Donner les schémas de Lewis des molécules d'iodure d'hydrogène HI, du
-   sulfure d'hydrogène $\text{H}\_{2} \text{S}$, du peroxyde d'hydrogène
-   $\text{H}\_{2} \text{O}\_{2}$, du fluorure d'hydrogène HF, du méthane
-   $\text{CH}\_{4}$ et du chloroforme $\text{CH}\_{3} \text{Cl}$.
+1. Donner les schémas de Lewis des molécules d'iodure d'hydrogène $\ce{HI}$, du
+   sulfure d'hydrogène $\ce{H2S}$, du peroxyde d'hydrogène
+   $\ce{H2O2}$, du fluorure d'hydrogène $\ce{HF}$, du méthane
+   $\ce{CH4}$ et du chloroforme $\ce{CH3Cl}$.
 1. Indiquer si, parmi les molécules proposées, certaines sont polaires.
 1. Parmi ces molécules, quelles sont celles qui peuvent participer à des
    liaisons hydrogène ?
@@ -468,8 +472,7 @@ introduite dans un bécher rempli d'eau, sans agitation.
 1. Quelles sont, schématiquement, les trois étapes de la dissolution d'un
    solide ionique dans l'eau ?
 1. Lors de la dissolution, les ions potassium
-   $\text{K}^+\_{(\operatorname{aq})}$ et les ions permanganate
-   $\operatorname{MnO}\_{4 (\operatorname{aq})}^-$ sont « hydratés ».
+   $\ce{K+ (aq)}$ et les ions permanganate $\ce{MnO4^- (aq)}$ sont « hydratés ».
    Qu'est-ce que cela signifie ?
 1. Écrire l'équation de dissolution de ce solide dans l'eau.
 
@@ -479,8 +482,7 @@ introduite dans un bécher rempli d'eau, sans agitation.
 
 #### Exercice (Expliquer la dissolution d'un solide moléculaire dans l'eau)
 
-L'acétone a pour formule $\operatorname{CH}\_{3}
--\operatorname{CO}-\operatorname{CH}\_{3}$.
+L'acétone a pour formule $\ce{CH3-CO-CH_{3}}$.
 
 1. Ce solvant est-il polaire ?
 1. Justifier que l'acétone est miscible en toutes proportions dans l'eau.
