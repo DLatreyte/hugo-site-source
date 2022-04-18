@@ -123,16 +123,15 @@ def codage(a: int) -> str:
     """
     inv_chaine_bin = ""  # Chaîne binaire inversée
 
-    while a // 2 != 0:
+    while a != 0:
         inv_chaine_bin += str(a % 2)
         a = a // 2
-    inv_chaine_bin += str(a % 2)  # Dernière valeur
 
-    octet = 8            # Formation d'octets
+    octet = 8  # Formation d'octets
     if len(inv_chaine_bin) < octet:
         inv_chaine_bin += "0" * (octet - len(inv_chaine_bin))
 
-    chaine_bin = ""      # Inversion de la chaîne
+    chaine_bin = ""  # Inversion de la chaîne
     for i in range(len(inv_chaine_bin) - 1, -1, -1):
         chaine_bin += inv_chaine_bin[i]
 
@@ -208,27 +207,29 @@ if __name__ == "__main__":
 11. Définir la fonction `ajustement_cle` dont la spécification est
 
 ```python
-def ajustement_cle(cle: str, longueur_chaine: int) -> str:
+def ajustement_cle(code_cle: str, longueur_chaine: int) -> str:
     """
-    Ajuste la longueur de la clé à celle de la
-    chaîne à chiffrer, de longueur longueur_chaine.
+    Ajuste la longueur du code de la clé à celle du
+    code de la chaîne à chiffrer, de longueur 
+    longueur_chaine.
     """
 ```
 
 {{% solution "Réponse" %}}
 
 ```python
-def ajustement_cle(cle: str, longueur_chaine: int) -> str:
+def ajustement_cle(code_cle: str, longueur_chaine: int) -> str:
     """
-    Ajuste la longueur de la clé à celle de la
-    chaîne à chiffrer, de longueur longueur_chaine.
+    Ajuste la longueur du code de la clé à celle du
+    code de la chaîne à chiffrer, de longueur 
+    longueur_chaine.
     """
-    if len(cle) >= longueur_chaine:
-        rep = cle[:longueur_chaine]
+    if len(code_cle) >= longueur_chaine:
+        rep = code_cle[:longueur_chaine]
     else:
-        rapport = longueur_chaine // len(cle)
-        rep = cle * rapport
-        rep += cle[:longueur_chaine - len(rep)]
+        rapport = longueur_chaine // len(code_cle)
+        rep = code_cle * rapport
+        rep += code_cle[:longueur_chaine - len(rep)]
 
     return rep
 ```
