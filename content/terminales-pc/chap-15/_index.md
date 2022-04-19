@@ -34,7 +34,7 @@ layout: "single"
 
 - **Chap. 17,3 :** [*Décroissance radioactive*](3-decroissance-radioactive)
 
-- **Chap. 17,4 :** [*Origine microscopique de la loi de décroissance radioactive*](https://mybinder.org/v2/gh/DLatreyte/Python-PC/22878225354251bfafcec98b89baa84047519d1a?urlpath=lab%2Ftree%2FTerminale%2FRadioactivit%C3%A9%2FD%C3%A9croissance%20radioactive%20%C3%A9l%C3%A8ves.ipynb)
+- **Chap. 17,4 :** [*Origine microscopique de la loi de décroissance radioactive*](6-origine-microscopique-decroissance-radioactive)
 
 - **Chap. 17,5 :** [*Applications de la radioactivité à la datation*](4-datation)
 
