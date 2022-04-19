@@ -34,11 +34,12 @@ layout: "single"
 
 - **Chap. 17,3 :** [*Décroissance radioactive*](3-decroissance-radioactive)
 
-- **Chap. 17,4 :** [*Applications de la radioactivité à la datation*](4-datation)
+- **Chap. 17,4 :** [*Décroissance radioactive : activité expérimentale*](https://mybinder.org/v2/gh/DLatreyte/Python-PC/22878225354251bfafcec98b89baa84047519d1a?urlpath=lab%2Ftree%2FTerminale%2FRadioactivit%C3%A9%2FD%C3%A9croissance%20radioactive%20%C3%A9l%C3%A8ves.ipynb)
 
-- **Chap. 17,5 :** [*Doses de radiations*](5-radiations)
+- **Chap. 17,5 :** [*Applications de la radioactivité à la datation*](4-datation)
 
-- **Chap. 17,6 :** <a href="/terminales-pc/chap-15/chap-15-6/chap-15-6.html" target="_blank">Décroissance radioactive, exercices</a>
+- **Chap. 17,6 :** [*Doses de radiations*](5-radiations)
 
+- **Chap. 17,7 :** <a href="/terminales-pc/chap-15/chap-15-6/chap-15-6.html" target="_blank">Décroissance radioactive, exercices</a>
 
-- **Chap. 17,7 :** <a href="/terminales-pc/chap-15/chap-15-7/chap-15-07.html" target="_blank">Annale : La médecine nucléaire</a>
+- **Chap. 17,8 :** <a href="/terminales-pc/chap-15/chap-15-7/chap-15-07.html" target="_blank">Annale : La médecine nucléaire</a>
