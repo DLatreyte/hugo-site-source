@@ -400,7 +400,7 @@ concentration molaire apportée $C$ en soluté (dont est issu l'ion) se trouve
 On dissout $n = \pu{0,10 mol}$ de sulfate de sodium dans
 de l'eau. La solution a un volume $V = \pu{0,50 L}$.
 
-1. Déterminer la concentration molaire $C$ en soluté apporté.
+1. Déterminer la concentration molaire $C_0$ en soluté apporté.
 2. Déterminer la concentration effective de chacun des ions en solution.
 
 {{% /note %}}
@@ -411,7 +411,7 @@ de l'eau. La solution a un volume $V = \pu{0,50 L}$.
 
 On fait dissoudre $m = \pu{51,3 g}$ de sulfate d'aluminium $\ce{Al2(SO4)3 (s)}$ dans $\pu{500 mL}$ d'eau.
 
-1. Déterminer la concentration molaire $C$ en soluté apporté.
+1. Déterminer la concentration molaire $C_0$ en soluté apporté.
 2. Déterminer la concentration effective de chacun des ions en solution.
 
 {{% /note %}}
@@ -431,7 +431,7 @@ On fait dissoudre $m = \pu{51,3 g}$ de sulfate d'aluminium $\ce{Al2(SO4)3 (s)}$ 
    $\ce{IBr}$ et $\ce{HI}$.
    1. Repérer celles dont le moment dipolaire est nul.
    1. En déduire celles qui ont un dipôle électrique permanent et celles qui
-      ne peuvent présenter qu'un dipôle électrique instantané.
+      ne peuvent présenter qu'un dipôle électrique induit.
 {{% /note %}}
 
 {{% note exercise %}}
