@@ -1,6 +1,6 @@
 ---
 title: "Études énergétiques en mécanique"
-subtitle: "Chapitre 14"
+subtitle: "Chapitre 13"
 author: ""
 type: ""
 date: 2021-05-29T16:08:53+04:00
@@ -29,20 +29,20 @@ layout: "single"
 
 ----
 
-- **Chap. 14,1 :** [*Théorème de l'énergie cinétique*](https://www.icloud.com/keynote/0vrdVPsTvTz1BqyCbzXIC6aKw)
+- **Chap. 13,1 :** [*Théorème de l'énergie cinétique*](https://www.icloud.com/keynote/0vrdVPsTvTz1BqyCbzXIC6aKw)
 
-- **Chap. 14,1 (bis) :** [*Théorème de l'énergie cinétique, cours au format pdf*](/premieres-pc/chap-14/chap-14-1/chap-14-01.pdf)
+- **Chap. 13,1 (bis) :** [*Théorème de l'énergie cinétique, cours au format pdf*](/premieres-pc/chap-14/chap-14-1/chap-14-01.pdf)
 
-- **Chap. 14,2 :** [*Théorème de l'énergie cinétique, correction des exercices du chap. 14,1*](/premieres-pc/chap-14/chap-14-2/chap-14-02.pdf)
+- **Chap. 13,2 :** [*Théorème de l'énergie cinétique, correction des exercices du chap. 14,1*](/premieres-pc/chap-14/chap-14-2/chap-14-02.pdf)
 
-- **Chap. 14,3 :** [*Titanic, le défaut de la cuirasse*](/premieres-pc/chap-14/chap-14-3/Chap-14-03.html)
+- **Chap. 13,3 :** [*Titanic, le défaut de la cuirasse*](/premieres-pc/chap-14/chap-14-3/Chap-14-03.html)
 
-- **Chap. 14,4 :** [*Théorème de l'énergie mécanique*](https://www.icloud.com/keynote/0--YjnLfb46br8c5mueM11SjQ)
+- **Chap. 13,4 :** [*Théorème de l'énergie mécanique*](https://www.icloud.com/keynote/0--YjnLfb46br8c5mueM11SjQ)
 
-- **Chap. 14,4 (bis) :** [*Théorème de l'énergie mécanique, cours au format pdf*](/premieres-pc/chap-14/chap-14-4/Chap-14-04.pdf)
+- **Chap. 13,4 (bis) :** [*Théorème de l'énergie mécanique, cours au format pdf*](/premieres-pc/chap-14/chap-14-4/Chap-14-04.pdf)
 
-- **Chap. 14,5 :** [*Oscillations d'un pendule*](/premieres-pc/chap-14/chap-14-5/Chap-14-05.html)
+- **Chap. 13,5 :** [*Oscillations d'un pendule*](/premieres-pc/chap-14/chap-14-5/Chap-14-05.html)
 
-- **Chap. 14,6 :** [*Le saut à l'élastique*](/premieres-pc/chap-14/chap-14-6/Chap-14-06.html)
+- **Chap. 13,6 :** [*Le saut à l'élastique*](/premieres-pc/chap-14/chap-14-6/Chap-14-06.html)
 
-- **Chap. 14,7 :** [*Considérations sur l'énergie*](/premieres-pc/chap-14/chap-14-7/Chap-14-07.html)
+- **Chap. 13,7 :** [*Considérations sur l'énergie*](/premieres-pc/chap-14/chap-14-7/Chap-14-07.html)
