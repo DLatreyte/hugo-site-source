@@ -65,7 +65,7 @@ Identifier des étapes de protection/déprotection et justifier leur intérêt, 
 Mettre en œuvre un protocole de synthèse conduisant à la modification d'un groupe caractéristique ou d'une chaîne carbonée. |
 | Synthèses écoresponsables. | Discuter l'impact environnemental d'une synthèse et proposer des améliorations à l'aide de données fournies, par exemple en termes d'énergie, de formation et valorisation de sous-produits et de choix des réactifs et solvants.  |  
 
-## 2. Épreuve de capacités expérimentales
+## 3. Épreuve de capacités expérimentales
 
 Les notions et capacités expérimentales suivantes sont exclues du programme de la partie pratique de l'épreuve :
 
