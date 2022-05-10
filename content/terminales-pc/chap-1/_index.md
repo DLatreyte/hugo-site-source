@@ -23,7 +23,9 @@ layout: "single"
 ## Documents
 
 ----
+
 - {{< remote "Chapitre du Livre Scolaire" "http://LLS.fr/PCTP465" >}}
+
 ----
 
 - **Chap. 2,0 :** [*Qu'est-ce qu'une onde progressive - carte mentale*](/terminales-pc/chap-1/ondes_progressives_carte_mentale.svg)
@@ -40,5 +42,4 @@ layout: "single"
 
 - **Chap. 2,6 :** [*Utiliser le réseau téléphonique pour surfer sur Internet*](5-reseau-telephonique)
 
-
-
+- **Chap. 2,7 :** [*Annale : Nos oreilles, on y tient !*](7-annale-attenuation)
