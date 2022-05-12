@@ -397,18 +397,37 @@ concentration molaire apportée $C$ en soluté (dont est issu l'ion) se trouve
 
 #### Exercice
 
-On dissout $n = \pu{0,10 mol}$ de sulfate de sodium dans
+On dissout $n_0 = \pu{0,10 mol}$ de sulfate de sodium dans
 de l'eau. La solution a un volume $V = \pu{0,50 L}$.
 
 1. Déterminer la concentration molaire $C_0$ en soluté apporté.
-2. Déterminer la concentration effective de chacun des ions en solution.
+2. Déterminer la concentration effective de chacun des ions en solution en fonction de la solution $C_0$ en soluté apporté.
 
 {{% /note %}}
 
 {{% solution "Correction" %}}
 
-1. La concentration en soluté apporté est la concentration dans l'état initial de la transformation de ce soluté (même si la dissolution n'a pas encore été effectuée). On a donc $C_0 = \dfrac{n}{V} = \dfrac{\pu{0,10 mol}}{\pu{0,50 L}} = \pu{0,20 mol.L-1}$.
+1. La concentration en soluté apporté est la concentration de ce soluté dans l'état initial de la transformation (même si la dissolution n'a pas encore débuté). On a donc $C_0 = \dfrac{n_0}{V} = \dfrac{\pu{0,10 mol}}{\pu{0,50 L}} = \pu{0,20 mol.L-1}$.
 
+1. L'équation de la réaction est $$\ce{Na2SO4 (s) ->[H2O] 2 Na^+ (aq) + SO4^{2-} (aq)}$$ donc
+
+<center>
+
+| État | Avancement | $\ce{Na2SO4 (s)}$ | $\ce{->[H2O]}$ | $\ce{2 Na^+ (aq)}$ | $+$ |$\ce{SO4^{2-} (aq)}$ |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Initial | 0 | $n_0$ |  | 0 |  | 0 |
+| Final | $x_{max}$ | $n_0 - x_{max}$ |  | $2x_{max}$ |  | $x_{max}$ |
+
+</center>
+
+La transformation est totale, donc $n_0 - x_{max} = 0 \iff x_{max} = n_0$. On en déduit donc que :
+
+- $n_f(\ce{Na^+}) = 2x_{max} = 2 n_0$ et donc $[\ce{Na^+}] = \dfrac{2 n_0}{V} = 2C_0$ ;
+- $n_f(\ce{SO4^{2-}}) = x_{max} = n_0$ et donc $[\ce{SO4^{2-}}] = \dfrac{n_0}{V} = C_0$.
+
+#### Remarque
+
+On peut aussi raisonner directement en utilisant la stœchiométrie de la réaction : chaque mole de sulfate de sodium dissoute fait apparaître deux moles d'ions sodium et une mole d'ions sulfate dans la solution ; $C_0$ moles de sulfate de sodium dissoutes font donc apparaître $2C_0$ moles d'ions sodium et $C_0$ moles d'ions sulfate dans la solution.
 {{% /solution %}}
 
 {{% note exercise %}}
