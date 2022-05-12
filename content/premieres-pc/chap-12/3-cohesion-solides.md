@@ -466,7 +466,7 @@ Le méthylpropan-2-ol, $\ce{(CH3)\_{3}C - OH}$, ou alcool tertiobutylique, est u
 #### Exercice (Expliquer la dissolution d'un solide ionique dans l'eau)
 
 Le permanganate de potassium est un solide ionique violet de formule
-$\operatorname{KMnO}\_{4 (s)}$. Une paillette de permanganate de potassium est
+$\ce{KMnO4 (s)}$. Une paillette de permanganate de potassium est
 introduite dans un bécher rempli d'eau, sans agitation.
 
 1. Quelles sont, schématiquement, les trois étapes de la dissolution d'un
@@ -478,6 +478,20 @@ introduite dans un bécher rempli d'eau, sans agitation.
 
 {{% /note %}}
 
+{{% solution "Correction" %}}
+
+1. Les trois étapes sont :
+
+   - Dissociation du solide ionique
+   - Hydratation des ions
+   - Dispersion des ions
+
+1. Des molécules du solvant, attirées par l’interaction électrostatique, entourent les ions. Dans le solvant les ions ne sont donc pas seuls mais forment un édifice avec quelques molécules du solvant.
+
+1. $$\ce{KMnO4 (s) ->[H2O] K^+ (aq) + MnO4^- (aq)}$$
+
+{{% /solution %}}
+
 {{% note exercise %}}
 
 #### Exercice (Expliquer la dissolution d'un solide moléculaire dans l'eau)
@@ -485,10 +499,25 @@ introduite dans un bécher rempli d'eau, sans agitation.
 L'acétone a pour formule $\ce{CH3-CO-CH_{3}}$.
 
 1. Ce solvant est-il polaire ?
+
 1. Justifier que l'acétone est miscible en toutes proportions dans l'eau.
+
 1. Quelle interaction est responsable de cette miscibilité ?
 
 {{% /note %}}
+
+{{% solution "Correction" %}}
+
+1. L'acétone possède une unique liaison polarisée, c'est donc une molécule polaire.
+
+1. L'eau est un solvant polaire. À ce titre, elle solubilise très bien les solides ioniques ou les solides moléculaires constitués par des molécules polaires.
+
+1. Deux interactions sont responsables de la solubilisation de l'acétone dans l'eau :
+
+- l'interaction de Van Der Waals (dipôle permanent - dipôle permanent)&nbsp;;
+- la liaison hydrogène. En effet, l'atome d'oxygène de l'acétone, chargé $\delta^-$, comporte des doublets non liants capables d'interagir avec les atomes d'hydrogène, chargés $\delta^+$, des molécules d'eau.
+
+{{% /solution %}}
 
 {{% note exercise %}}
 
@@ -511,3 +540,20 @@ agitation et décantation, le contenu du tube présente l'aspect (b).
    solubilité du diiode ? Était-ce prévisible ?
 
 {{% /note %}}
+
+{{% solution "Correction" %}}
+
+1. Le diiode est une molécule apolaire puisque la seule liaison présente est non polarisée.
+
+1. Le cyclohexane, composé uniquement d'atomes de carbone et d'hydrogène d'électronégativités voisines, est une molécule apolaire puisqu'aucune des liaisons n'est polarisée.
+
+1.
+
+- Le tube (b) comporte deux phases puisque l'eau (solvant polaire) et le cyclohexane (solvant apolaire) ne sont pas miscibles.
+- La solution aqueuse compose la phase inférieure car l'eau est plus dense que le cyclohexane.
+- On remarque que la phase aqueuse, initialement colorée en jaune orangé, est désormais quasimment incolore. Le diiode qui était solubilisé dans cette phase l'a quitté.
+- Parallèlement, on constate que la phase organique (le cyclohexane) initialement incolore s'est colorée en rose fuscia. Une nouvelle espèce chimique y est solubilisée.
+
+En conclusion, le diiode, très peu soluble dans l'eau car apolaire, a migré dans la phase organique apolaire elle-aussi.
+
+{{% /solution %}}

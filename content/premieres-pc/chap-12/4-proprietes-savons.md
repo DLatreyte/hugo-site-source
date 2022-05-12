@@ -4,7 +4,7 @@ subtitle: "Chapitre 12,04"
 author: ""
 type: ""
 date: 2021-05-15T16:29:07+04:00
-draft: true
+draft: false
 toc: true
 tags: ["Hydrophile", "Hydrophobe", "Lipophile", "Lipophobe", "Polaire", "Liaison polarisée"]
 categories: ["Premières Spé PC", "Chimie"]
@@ -15,7 +15,7 @@ auto_numbering: true
 
 ## Caractère amphiphile des savons et solubilité dans l'eau
 
-Les savons sont des sels alcalins d'acides gras de formule semi-développée $\ce{R-CO2^- (aq) + Na^+ (aq)}$ ou $\ce{R-CO2^- (aq) + K^+ (aq)}$ au sein desquels 
+Les savons sont des sels alcalins d'acides gras de formule semi-développée $\ce{R-CO2^- (aq) + Na^+ (aq)}$ ou $\ce{R-CO2^- (aq) + K^+ (aq)}$ au sein desquels
 $ce{R}$ est une longue chaîne carbonée.\
 Par exemple, le savon de Marseille a pour formule $\ce{CH3-(CH2)7-CH=CH-(CH2)7-CO2^- (aq) + Na^+ (aq)}$, l'ion oléate $\ce{CH3-(CH2)7-CH=CH-(CH2)7-CO2^- (aq)}$ ayant pour structure spatiale :
 <img src="/premieres-pc/chap-12/chap-12-4/chap-12-4-1.png" alt="" width="70%" />
@@ -45,6 +45,7 @@ On peut donc en conclure que le point d'équilibre des charges négatives et cel
 
 3. Que signifient «&nbsp;hydrophile&nbsp;» ? «&nbsp;hydrophobe&nbsp;» ?
 {{% solution "Solution" %}}
+
 - «&nbsp;hydrophile&nbsp;» : qui présente une certaine affinité vis à vis de l'eau. D'un point de vue chimique, **soluble dans l'eau**.
 - «&nbsp;hydrophobe&nbsp;» : qui ne présente aucune affinité vis à vis de l'eau. D'un point de vue chimique, **insoluble dans l'eau**.
 {{% /solution %}}
