@@ -407,7 +407,7 @@ de l'eau. La solution a un volume $V = \pu{0,50 L}$.
 
 {{% solution "Correction" %}}
 
-1. La concentration en soluté apporté est la concentration dans l'état initial de la transformation de ce soluté (même si la dissolution n'a pas encore été effectuée). On a donc $C_0 = \dfrac{n}{V} = \dfrac{\pu{0,10 mol}}{\pu{0,50 L}} = \pu{0,10 mol.L-1}$.
+1. La concentration en soluté apporté est la concentration dans l'état initial de la transformation de ce soluté (même si la dissolution n'a pas encore été effectuée). On a donc $C_0 = \dfrac{n}{V} = \dfrac{\pu{0,10 mol}}{\pu{0,50 L}} = \pu{0,20 mol.L-1}$.
 
 {{% /solution %}}
 
