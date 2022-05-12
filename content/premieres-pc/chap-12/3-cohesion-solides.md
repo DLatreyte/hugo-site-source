@@ -505,7 +505,13 @@ Les molécules apolaires peuvent posséder un moment dipôlaire temporaire (on d
    - $\ce{H2S}$, $\ce{CS2}$ sont diatomiques et ne possède aucune liaison polarisée car les électronégativités des atomes sont proches. Ces molécules ne sont pas polaires.
    - $\ce{HI}$, $\ce{HBr}$ sont diatomiques et possèdent une liaison polarisée. Ces molécules sont polaires.
    - $\ce{CBe2}$ présente des liaisons polarisées mais est une molécule linéaire. Cette géométrie ne permet pas à la molécules d'être polaire.
+   <center>
+   <iframe style="width: 500px; height: 300px;" frameborder="0" src="https://embed.molview.org/v1/?mode=balls&cid=68173"></iframe>
+   </center>
    - $\ce{Cl2O}$ présente des liaisons polarisées mais aussi une géométrie coudée. Cette géométrie permet à la molécules d'être polaire.
+   <center>
+   <iframe style="width: 500px; height: 300px;" frameborder="0" src="https://embed.molview.org/v1/?mode=balls&cid=24646"></iframe>
+   </center>
 
 {{% /solution %}}
 
