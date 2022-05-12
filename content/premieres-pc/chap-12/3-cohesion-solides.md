@@ -502,7 +502,7 @@ Les molécules apolaires peuvent posséder un moment dipôlaire temporaire (on d
 1. **Remarque :** utiliser le résumé et les valeurs d'électronégativité du cours, ci-dessus. Pour accéder facilement à la géométrie de la molécules, utiliser [ce site](https://molview.org).
 
    - $\ce{N2}$, $\ce{Cl2}$ ne peuvent pas être polaires puisque les liaisons s'effectuent entre atomes identiques.
-   - $\ce{H2S}$, $\ce{CS2}$ sont diatomiques et ne possède aucune liaison polarisée car les électronégativités des atomes sont proches. Ces molécules ne sont pas polaires.
+   - $\ce{CS2}$ ne possède aucune liaison polarisée car les électronégativités des atomes sont proches. Cette molécule n'est pas polaire.
    - $\ce{HI}$, $\ce{HBr}$ sont diatomiques et possèdent une liaison polarisée. Ces molécules sont polaires.
    - $\ce{CBe2}$ présente des liaisons polarisées mais est une molécule linéaire. Cette géométrie ne permet pas à la molécules d'être polaire.
    <center>
@@ -511,6 +511,10 @@ Les molécules apolaires peuvent posséder un moment dipôlaire temporaire (on d
    - $\ce{Cl2O}$ présente des liaisons polarisées mais aussi une géométrie coudée. Cette géométrie permet à la molécules d'être polaire.
    <center>
    <iframe style="width: 500px; height: 300px;" frameborder="0" src="https://embed.molview.org/v1/?mode=balls&cid=24646"></iframe>
+   </center>
+   - $\ce{H2S}$ présente des liaisons polarisées mais aussi une géométrie coudée. Cette géométrie permet à la molécules d'être polaire.
+   <center>
+   <iframe style="width: 500px; height: 300px;" frameborder="0" src="https://embed.molview.org/v1/?mode=balls&cid=402"></iframe>
    </center>
 
 {{% /solution %}}
@@ -553,6 +557,34 @@ Le méthylpropan-2-ol, $\ce{(CH3)\_{3}C - OH}$, ou alcool tertiobutylique, est u
    liaisons hydrogène ?
 
 {{% /note %}}
+
+{{% solution "Correction" %}}
+
+1. <img src="/premieres-pc/chap-12/chap-12-3/mol_lewis.png" alt="" width="70%" />
+
+2.
+   - $\ce{HI}$, $\ce{HF}$ contiennent une liaison polarisée. Comme ces molécules sont diatomiques, elles sont donc polaires.
+
+   - $\ce{H2S}$ présente des liaisons polarisées mais aussi une géométrie coudée. Cette géométrie permet à la molécules d'être polaire.
+   <center>
+   <iframe style="width: 500px; height: 300px;" frameborder="0" src="https://embed.molview.org/v1/?mode=balls&cid=402"></iframe>
+   </center>
+
+   - $\ce{H2O2}$ présente des liaisons polarisées mais aussi une géométrie qui ne permet pas aux barycentres des charges positives et négatives d'être superposés. Cette molécule est polaire.
+   <center>
+   <iframe style="width: 500px; height: 300px;" frameborder="0" src="https://embed.molview.org/v1/?mode=balls&cid=784"></iframe>
+   </center>
+
+   - $\ce{CH4}$ ne présente aucune liaison polarisée. La molécule est apolaire.
+
+   - $\ce{CH3Cl}$ possède une liaison polarisée. Cette molécule est polaire.
+   <center>
+   <iframe style="width: 500px; height: 300px;" frameborder="0" src="https://embed.molview.org/v1/?mode=balls&cid=6327"></iframe>
+   </center>
+
+3. Une liaison hydrogène peut s'établir entre *un atome d'hydrogène lié par covalence à un atome $A$ très électronégatif* -- comme le fluor (F), l'oxygène (O) ou l'azote (N) -- et *un atome $B$ très électronégatif porteur d'un doublet non liant*.
+
+{{% /solution %}}
 
 {{% note exercise %}}
 
