@@ -517,10 +517,22 @@ Le méthylpropan-2-ol, $\ce{(CH3)\_{3}C - OH}$, ou alcool tertiobutylique, est u
 
 1. Cette molécule possède-t-elle une ou plusieurs liaisons polarisées ?
 1. Cette molécule est-elle polaire ?
-1. Quelles interactions assurent la cohésion de cet alcool à l'état solide
-   ou liquide ?
+1. Quelles interactions assurent la cohésion de cet alcool à l'état solide ou liquide ?
 
 {{% /note %}}
+
+{{% solution "Correction" %}}
+<center>
+<iframe style="width: 500px; height: 300px;" frameborder="0" src="https://embed.molview.org/v1/?mode=balls&cid=6386"></iframe>
+</center>
+
+1. Les liaisons $\ce{C-O}$ et $\ce{O-H}$ sont polarisées.
+1. La géométrie de cette molécule est telle que les barycentres des charges positives et négatives ne se superposent pas. La molécule est polaire.
+1. Deux types d'interactions assurent la cohésion de cet alcool à l'état solide ou liquide :
+   - Les interactions de Van Der Waals puisque la molécule est polaire ;
+   - La liaison hydrogène puisque la molécule possède un atome d'oxygène électronégatif propriétaire de deux doublets non liants.
+
+{{% /solution %}}
 
 {{% note exercise %}}
 
