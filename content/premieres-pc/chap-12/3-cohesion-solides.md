@@ -375,6 +375,16 @@ $\ce{NaCl (s)}$, du sulfate d'aluminium $\ce{Al2(SO4)3 (s)}$, du diiode $\ce{I2 
 
 {{% /note %}}
 
+{{% solution "Correction" %}}
+
+$$\ce{NaCl (s) ->[H2O] Na^+ (aq) + Cl^- (aq)}$$
+$$\ce{Al2(SO4)3 (s) ->[H2O] 2 Al^{3+} (aq) + 3 SO4^{2-} (aq)}$$
+$$\ce{I2 (s) ->[H2O] I2 (aq)}$$
+$$\ce{Na2SO4 (s) ->[H2O] 2 Na^{+} (aq) + SO4^{2-} (aq)}$$
+$$\ce{C_{12}H_{22}O_{11} (s) ->[H2O] C_{12}H_{22}O_{11} (aq)}$$
+
+{{% /solution %}}
+
 ### Concentration molaire effective d'un ion en solution
 
 {{% note tip %}}
@@ -440,6 +450,10 @@ On fait dissoudre $m = \pu{51,3 g}$ de sulfate d'aluminium $\ce{Al2(SO4)3 (s)}$ 
 2. Déterminer la concentration effective de chacun des ions en solution.
 
 {{% /note %}}
+
+{{% solution "Correction" %}}
+
+{{% /solution %}}
 
 ## Exercices
 
