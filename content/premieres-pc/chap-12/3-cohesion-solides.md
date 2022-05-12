@@ -125,8 +125,9 @@ Plus l'*électronégativité d'un atome est grande*, plus il *attire à lui les 
 
 {{% /solution %}}
 
-<img src="/premieres-pc/chap-12/chap-12-3/electronegativite.gif" />
-> Évolution de l'électronégativité des atomes dans la classification périodique [Wikipedia](https://fr.wikipedia.org/wiki/Électronégativité).
+<img src="/premieres-pc/chap-12/chap-12-3/electronegativite.svg" alt="" width="100%" />
+
+> Évolution de l'électronégativité des atomes dans la classification périodique.
 
 ### Électronégativité et liaison chimique
 
@@ -197,6 +198,26 @@ L'atome le plus électronégatif porte la charge $-e$. L'atome le moins électro
 Plus la différence d'électronégativité entre les deux atomes est grande, *plus la liaison se rapproche d'une liaison ionique et perd son caractère covalent*.
 
 {{% /solution %}}
+
+#### Résumé
+
+{{% note warning %}}
+
+**Ne pas apprendre le tableau ci-dessous !**
+
+{{% /note %}}
+
+<center>
+
+| Type de liaison | Différence d’électronégativité | Exemples de molécules |
+| :----: | :----: | :----: |
+| **Covalente pure** | 0 | Dihydrogène gazeux $\ce{H2}$ |
+| **Covalente non polarisée** | Inférieure à 0,4 | Méthane $\ce{CH4}$ |
+| **Covalente polarisée** | Entre 0,4 et 1,7 | Fluorure d’hydrogène $\ce{HF}$ |
+| **Ionique** | Supérieure à 1,7 | Fluorure de sodium $\ce{NaF}$ |
+
+</center>
+{{% remote "Consulter cette page pour de plus amples informations" "https://www.nagwa.com/fr/explainers/896120791760/" %}}
 
 ### Molécules polaires, molécules apolaires
 
@@ -447,7 +468,7 @@ On peut aussi raisonner directement en utilisant la stœchiométrie de la réact
 On fait dissoudre $m = \pu{51,3 g}$ de sulfate d'aluminium $\ce{Al2(SO4)3 (s)}$ dans $\pu{500 mL}$ d'eau.
 
 1. Déterminer la concentration molaire $C_0$ en soluté apporté.
-2. Déterminer la concentration effective de chacun des ions en solution.
+2. Déterminer la concentration effective de chacun des ions en solution en fonction de $C_0$.
 
 {{% /note %}}
 
@@ -467,11 +488,26 @@ On fait dissoudre $m = \pu{51,3 g}$ de sulfate d'aluminium $\ce{Al2(SO4)3 (s)}$ 
 1. On considère les molécules suivantes $\ce{N2}$, $\ce{Cl2}$,
    $\ce{H2S}$, $\ce{CBe2}$,
    $\ce{CS2}$, $\ce{Cl2O}$,
-   $\ce{IBr}$ et $\ce{HI}$.
+   $\ce{HBr}$ et $\ce{HI}$.
    1. Repérer celles dont le moment dipolaire est nul.
    1. En déduire celles qui ont un dipôle électrique permanent et celles qui
       ne peuvent présenter qu'un dipôle électrique induit.
 {{% /note %}}
+
+{{% solution "Correction" %}}
+
+1. Les molécules polaires présentent un dipôle permanent. Ce terme traduit le fait que les barycentres des charges positives et des charges négatives ne se supperposent pas dans l'espace. Du point de vue électrique, il existe donc deux pôles de charges opposées au sein de la molécule (qui reste globalement électriquement neutre). Pour qu'une molécule diatomique soit polaire, il faut que les deux atomes qui la composent possèdent des électronégativités différentes, la liaison entre eux est alors polarisée.
+Les molécules apolaires peuvent posséder un moment dipôlaire temporaire (on dit induit) pendant une fraction de seconde, en fonction des mouvement des électrons (qui sont beaucoup plus mobiles que les noyaux) mais pas de dipôle permanent. Pour une molécule diatomique, il faut que les deux atomes aient des électronégativités égales ou proches, la liaison entre eux n'est alors pas polarisée.
+
+1. **Remarque :** utiliser le résumé et les valeurs d'électronégativité du cours, ci-dessus. Pour accéder facilement à la géométrie de la molécules, utiliser [ce site](https://molview.org).
+
+   - $\ce{N2}$, $\ce{Cl2}$ ne peuvent pas être polaires puisque les liaisons s'effectuent entre atomes identiques.
+   - $\ce{H2S}$, $\ce{CS2}$ sont diatomiques et ne possède aucune liaison polarisée car les électronégativités des atomes sont proches. Ces molécules ne sont pas polaires.
+   - $\ce{HI}$, $\ce{HBr}$ sont diatomiques et possèdent une liaison polarisée. Ces molécules sont polaires.
+   - $\ce{CBe2}$ présente des liaisons polarisées mais est une molécule linéaire. Cette géométrie ne permet pas à la molécules d'être polaire.
+   - $\ce{Cl2O}$ présente des liaisons polarisées mais aussi une géométrie coudée. Cette géométrie permet à la molécules d'être polaire.
+
+{{% /solution %}}
 
 {{% note exercise %}}
 
