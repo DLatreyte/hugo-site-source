@@ -30,7 +30,7 @@ layout: "single"
 
 - **Chap. 17,1 :** [*Introduction (Intérêt documentaire)*](1-introduction)
 
-- **Chap. 17,2 :** [*Radioactivité et physique nucléaire*](2-radioactivite-physique-nucleaire)
+- **Chap. 17,2 :** [*Radioactivité et physique nucléaire*](2-radioactivite-physique-nucleaire-old)
 
 - **Chap. 17,3 :** [*Décroissance radioactive*](3-decroissance-radioactive)
 
