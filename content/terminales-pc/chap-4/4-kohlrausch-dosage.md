@@ -17,18 +17,22 @@ auto_numbering: true
 
 ### Solution physiologique
 
+{{% note normal %}}
+
 Une **solution physiologique** est un *liquide isotonique* au sang, c’est-à-dire exerçant la même pression osmotique sur les membranes cellulaires que les principaux fluides corporels, en particulier le sang humain. Une telle solution est également nommée liquide physiologique ou, improprement, sérum physiologique (en fait il ne s'agit pas d'un sérum car il ne provient pas directement du sang).
 
 La solution est généralement composée d'eau distillée et de chlorure de sodium ($\ce{NaCl}$) dilué à 9 pour $1\\,000$ (c'est-à-dire une solution à 0,9&nbsp;% de masse/volume de $\ce{NaCl}$, soit $\pu{9 g.L-1}$).
 
 Certaines solutions physiologiques d'usage commun sont commercialement disponibles à diverses concentrations à des fins différentes.
-<div style="text-align: right;"> 
+<div style="text-align: right;">
 <a href="https://fr.wikipedia.org/wiki/Solution_physiologique">Wikipedia</a>
 </div>
 
+{{% /note %}}
+
 ### Conductivité et concentration molaire
 
-La conductivité $\sigma$ d’une solution ionique caractérise sa *capacité à conduire le courant électrique*. Elle s’exprime en Siemens par mètre ($\pu{S.m-1}$). *La conductivité d’une solution ionique dépend de la nature et de la concentration des ions présents* et de la température. 
+La conductivité $\sigma$ d’une solution ionique caractérise sa *capacité à conduire le courant électrique*. Elle s’exprime en Siemens par mètre ($\pu{S.m-1}$). *La conductivité d’une solution ionique dépend de la nature et de la concentration des ions présents* et de la température.
 
 **Remarque.** En pratique, on mesure souvent $\sigma$ en $\pu{mS.cm-1}$ : $\pu{1 mS.cm-1} = \pu{1e-1 S.m-1}$.
 
@@ -50,7 +54,7 @@ Un dosage par étalonnage consiste à déterminer la concentration d’une espè
 
 ## Matériel à disposition
 
-- Solution de chlorure de sodium de concentration apportée    
+- Solution de chlorure de sodium de concentration apportée
 $C_0 = \pu{1e-2 mol.L^-1}$ ;
 - Conductimètre ;
 - Fiole jaugée de $\pu{50 mL}$ ;
@@ -70,7 +74,6 @@ $C_0 = \pu{1e-2 mol.L^-1}$ ;
 $\sigma = \pu{0,971 mS·cm-1}$
 
 {{% /solution %}}
-
 
 - Conductivités des solutions étalons
 
@@ -100,7 +103,6 @@ $\sigma = \pu{0,971 mS·cm-1}$
 
 ### Questions
 
-
 1. Pourquoi a-t-on dilué la solution de sérum physiologique 20 fois ?
 {{% solution "Solution" %}}
 La proportionnalité entre la conductivité de la solution et la concentration en chlorure de sodium n'est valable que pour les solutions diluées. Grâce au document 1 on sait qu'il faut s'attendre à une concentration apportée en chlorure de sodium $\ce{NaCl}$ de l'ordre de $\pu{9 g.L-1}$, ce qui n'est pas suffisamment dilué.
@@ -108,7 +110,7 @@ La proportionnalité entre la conductivité de la solution et la concentration e
 
 2. Comment a-t-on choisi les valeurs des concentrations molaires des solutions étalons ?
 {{% solution "Solution" %}}
-**Les valeurs des concentrations des solutions étalons doivent encadrer la concentration recherchée lors du dosage.**   
+**Les valeurs des concentrations des solutions étalons doivent encadrer la concentration recherchée lors du dosage.**
 Le document 1 nous apprend que la concentration en chlorure de sodium $\ce{NaCl}$ est $C_{\text{sérum}} \approx \pu{9 g.L-1} = \pu{1,5e-1 mol.L-1}$. Comme le sérum physiologique a été dilué 20 fois, $C_{\text{expé}} \approx \pu{7,7e-3 mol.L-1}$. Les valeurs choisies conviennent donc bien.
 {{% /solution %}}
 
