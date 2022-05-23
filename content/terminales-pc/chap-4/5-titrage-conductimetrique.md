@@ -48,7 +48,7 @@ L'acide acétique ou acide éthanoïque est un acide carboxylique avec une chaî
 
 ### Données
 
-- Conductivités molaires ioniques : $\lambda _{\ce{OH^-}} = \pu{19,8 mS.m2.mol-1}$, $\lambda_{\ce{H3O^+}} = \pu{35,0 mS.m2.mol-1}$, $\lambda _{\ce{CH3COO^-}} = \pu{4,1 mS.m2.mol-1}$, $\lambda_{\ce{Na^+}} = \pu{5,0 mS.m2.mol-1}$.
+- Conductivités molaires ioniques : $\lambda\_{\ce{OH^-}} = \pu{19,8 mS.m2.mol-1}$, $\lambda\_{\ce{H3O^+}} = \pu{35,0 mS.m2.mol-1}$, $\lambda\_{\ce{CH3COO^-}} = \pu{4,1 mS.m2.mol-1}$, $\lambda\_{\ce{Na^+}} = \pu{5,0 mS.m2.mol-1}$.
 
 - Masse volumique du vinaigre commercial : $\rho = \pu{1,01 kg.L-1}$.
 
