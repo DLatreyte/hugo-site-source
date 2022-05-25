@@ -26,15 +26,15 @@ layout: single
 
 ## Quelques références
 
-### Livres ou fascicules 
+### Livres ou fascicules
 
 - *Numérique et sciences informatiques, terminale*, édition Ellipses
 - *Premier cours de programmation avec Scheme*, Jean-Paul Roy
 - *Programmation récursive (avec Scheme)*, Christian Queinnec
 - *Apprendre à programmer avec Python 3*, Gérard Swinnen
-    - [Fichier au format pdf](/pdf/apprendre_python3_5.pdf)
-    - [Fichier au format epub](/pdf/apprendre_python3_5.epub)
-- ["*Introduction à la science informatique*"](/pdf/Introduction-a-la-science-informatique.pdf), Gilles Dowek 
+  - [Fichier au format pdf](/pdf/apprendre_python3_5.pdf)
+  - [Fichier au format epub](/pdf/apprendre_python3_5.epub)
+- ["*Introduction à la science informatique*"](/pdf/Introduction-a-la-science-informatique.pdf), Gilles Dowek
 
 ### Sites Web
 
@@ -48,8 +48,8 @@ layout: single
 
 - {{< remote "Interstices" "https://interstices.info" >}}
 
-    - {{< remote "L’informatique de A à Z" "https://interstices.info/linformatique-de-a-a-z/" >}}
-    - {{< remote "Sciences Numériques et Technologie au lycée" "https://interstices.info/sciences-numeriques-et-technologie-au-lycee/" >}}
+  - {{< remote "L’informatique de A à Z" "https://interstices.info/linformatique-de-a-a-z/" >}}
+  - {{< remote "Sciences Numériques et Technologie au lycée" "https://interstices.info/sciences-numeriques-et-technologie-au-lycee/" >}}
 
 - {{< remote "Éduscol" "https://eduscol.education.fr/cid144156/nsi-bac-2021.html#lien2" >}}
 
@@ -95,9 +95,8 @@ layout: single
 
 - **Chapitre 11 :** [*Les systèmes d'exploitation*](chap-12)
 
-
 ### Bases de données
- 
+
 - **Chapitre 12 :** [*Bases de données*](chap-13)
 
 <!-- - **Chapitre 14 :** [**](chap-14)  -->
@@ -106,6 +105,9 @@ layout: single
 
 - [*Page des projets*](projets)
 
+<!--
 ## Épreuves pratiques (NSI)
 
 - [*Sujets des épreuves pratiques*](ece)
+
+-->
