@@ -18,7 +18,8 @@ auto_numbering: true
 - {{< remote "Exercices complémentaires" "/premieres-pc/chap-13/Chap-13-02-02.pdf" >}}
 
 {{% solution "Solution" %}}
-- {{< remote "Première série d'exercices - COORECTION" "/premieres-pc/chap-13/Chap-13-02-01-R.pdf" >}}
+
+- {{< remote "Première série d'exercices - CORRECTION" "/premieres-pc/chap-13/Chap-13-02-01-R.pdf" >}}
 
 - {{< remote "Exercices complémentaires - CORRECTION" "/premieres-pc/chap-13/Chap-13-02-02-R.pdf" >}}
 {{% /solution %}}

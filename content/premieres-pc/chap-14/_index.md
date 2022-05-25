@@ -46,3 +46,5 @@ layout: "single"
 - **Chap. 13,6 :** [*Le saut à l'élastique*](/premieres-pc/chap-14/chap-14-6/Chap-14-06.html)
 
 - **Chap. 13,7 :** [*Considérations sur l'énergie*](/premieres-pc/chap-14/chap-14-7/Chap-14-07.html)
+
+- **Chap. 13,8 :** [*Exercices de synthèse*](7-exercices.md)
