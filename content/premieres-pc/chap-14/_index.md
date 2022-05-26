@@ -47,4 +47,4 @@ layout: "single"
 
 - **Chap. 13,7 :** [*Considérations sur l'énergie*](/premieres-pc/chap-14/chap-14-7/Chap-14-07.html)
 
-- **Chap. 13,8 :** [*Exercices de synthèse*](8-exercices.md)
+- **Chap. 13,8 :** [*Exercices de synthèse*](8-exercices)
