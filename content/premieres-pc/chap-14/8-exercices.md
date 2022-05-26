@@ -23,12 +23,28 @@ auto_numbering: true
 
 {{% /solution %}}
 
+<!-- -->
+
 {{% remote "Exercice C : Énergie et force de freinage" "https://www.lelivrescolaire.fr/page/7113118?docId=Hq7J585g-uoAdSE57kA_" %}}
+
+{{% solution "Corrigé" %}}
+
+{{% remote "Corrigé au format pdf" "/premieres-pc/chap-14/chap-14-8/Exercice_C.pdf" %}}
+
+{{% /solution %}}
+
+<!-- -->
 
 {{% remote "Exercice 17 : Mise en application de l'exercice « Un atterrissage réussi ! »" "https://www.lelivrescolaire.fr/page/7113041?docId=NMU9zdtsnSu9X2RtQpJn6" %}}
 
+<!-- -->
+
 {{% remote "Exercice 23 : Exploiter le théorème de l’énergie cinétique" "https://www.lelivrescolaire.fr/page/7113118?docId=e3FzNTAupj2eyEjYWPCiG" %}}
 
+<!-- -->
+
 {{% remote "Exercice 30 : Hauteur d’un jet d’eau" "https://www.lelivrescolaire.fr/page/7113118?docId=o4OL5F0OfgpSoCEiCFzv8" %}}
+
+<!-- -->
 
 {{% remote "Exercice n°24 : Exploiter la non-conservation de l’énergie mécanique" "https://www.lelivrescolaire.fr/page/7113118?docId=krWmatMXDxfUt9txQ2nzb" %}}
