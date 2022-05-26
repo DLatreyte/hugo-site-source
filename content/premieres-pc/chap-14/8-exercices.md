@@ -17,6 +17,12 @@ auto_numbering: true
 
 {{% remote "Exercice B : Déterminer le travail d’une force" "https://www.lelivrescolaire.fr/page/7113118?docId=64W-JYNBEf0yzwTwu6ijH" %}}
 
+{{% solution "Corrigé" %}}
+
+{{% remote "Corrigé au format pdf" "/premieres-pc/chap-14/chap-14-8/Exercice_B.pdf" %}}
+
+{{% /solution %}}
+
 {{% remote "Exercice C : Énergie et force de freinage" "<https://www.lelivrescolaire.fr/page/7113118?docId=Hq7J585g-uoAdSE57kA_>-" %}}
 
 {{% remote "Exercice 17 : Mise en application de l'exercice « Un atterrissage réussi ! »" "https://www.lelivrescolaire.fr/page/7113041?docId=NMU9zdtsnSu9X2RtQpJn6" %}}
