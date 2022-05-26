@@ -47,6 +47,12 @@ auto_numbering: true
 
 {{% remote "Exercice 23 : Exploiter le théorème de l’énergie cinétique" "https://www.lelivrescolaire.fr/page/7113118?docId=e3FzNTAupj2eyEjYWPCiG" %}}
 
+{{% solution "Corrigé" %}}
+
+{{% remote "Corrigé au format pdf" "/premieres-pc/chap-14/chap-14-8/Exercice_23.pdf" %}}
+
+{{% /solution %}}
+
 <!-- -->
 
 {{% remote "Exercice 30 : Hauteur d’un jet d’eau" "https://www.lelivrescolaire.fr/page/7113118?docId=o4OL5F0OfgpSoCEiCFzv8" %}}
