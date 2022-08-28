@@ -4,7 +4,7 @@ subtitle: "Année 2021-2022"
 author: ""
 type: ""
 date: 2021-09-13T16:42:39+04:00
-draft: false
+draft: true
 toc: true
 tags: []
 categories: []
@@ -26,24 +26,23 @@ auto_numbering: true
     - *AED :* Mme Pouligny
     - *PRIO :* Mme Simon
 
-
 3. BAC
     - [**Évolution des coefficients du baccalauréat**]({{< relref "./2021-08-29-bac-2022" >}})
     - **Certification PIX est désormais obligatoire**
     - **Grand Oral** ([modalités]({{% relref "../terminales-pc/grand_oral" %}}))
     - **Attestations de langues vivantes** (les modalités vont être précisées aux élèves par les enseignants très rapidement)
 
-4. BAC - Calendrier    
+4. BAC - Calendrier
     - *Spécialités :* fin du mois de mars
     - *Philosophie, Grand Oral :* juin
-    
+
 {{% note warning %}}
 
 *Attention au rythme effréné cette année !!!*
 
 {{% /note %}}
 
-5. Orientation   
-    - *Septembre :* Constitution des dossiers UCAS    
+5. Orientation
+    - *Septembre :* Constitution des dossiers UCAS
     [**Attention aux dates limites !**]({{% relref "./UCAS_2022" %}})
     - *Janvier, Février, mars* : création du profil par chaque élève, sélection et confirmation des vœux sur la plateforme **Parcoursup**.
