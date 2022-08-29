@@ -1,6 +1,6 @@
 ---
 title: "Exercices du chapitre 1"
-subtitle: "Document 1,4"
+subtitle: "Document 1,3"
 author: ""
 type: ""
 date: 2020-09-15T21:38:59+04:00

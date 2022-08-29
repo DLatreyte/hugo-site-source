@@ -1,6 +1,6 @@
 ---
 title: "L’unité de quantité de matière : la mole"
-subtitle: "Document 1,3"
+subtitle: "Document 1,2"
 author: ""
 type: ""
 date: 2020-09-09T05:51:05+04:00
@@ -22,7 +22,7 @@ a) un petit nombre, &nbsp;&nbsp;&nbsp;b) un grand nombre, &nbsp;&nbsp;&nbsp;c) u
 d’entités microscopiques (atomes, molécules, ions) ?
 {{% solution "Réponse" %}}
 Un nombre inimaginablement grand
-{{% /solution %}} 
+{{% /solution %}}
 
 2. L’ordre de grandeur du nombre d’entités microscopiques manipulées est :  
 a) 10 &nbsp;&nbsp;&nbsp;&nbsp;b) $10^6$ &nbsp;&nbsp;&nbsp;&nbsp;c) $10^9$ &nbsp;&nbsp;&nbsp;&nbsp;d) $10^{12}$  &nbsp;&nbsp;&nbsp;&nbsp;e) $10^{18}$ &nbsp;&nbsp;&nbsp;&nbsp;f) $10^{24}$&nbsp;?
