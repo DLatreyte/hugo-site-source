@@ -4,7 +4,7 @@ subtitle: "Année 2021-2022"
 author: ""
 type: ""
 date: 2021-09-01T06:25:29+04:00
-draft: false
+draft: true
 toc: true
 tags: []
 categories: []
@@ -76,4 +76,4 @@ auto_numbering: true
     - **vos notes des EC et du français en première** ;
     - votre numéro de téléphone pour que je puisse créer le groupe WhatsApp.
 
-Faites l’effort de rédiger quelques lignes, dans quelques mois vous aurez des lettres de motivation à écrire, autant s’entraîner dès à présent ! 
+Faites l’effort de rédiger quelques lignes, dans quelques mois vous aurez des lettres de motivation à écrire, autant s’entraîner dès à présent !
