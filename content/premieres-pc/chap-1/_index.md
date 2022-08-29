@@ -22,10 +22,10 @@ layout: "single"
 
 ## Documents
 
-- **Chap. 1,1 :** [*Espèces chimiques*](1-1-especes_chimiques)
+- **Doc. 1,1 :** [*Espèces chimiques*](1-1-especes_chimiques)
 
-- **Chap. 1,2 :** [*Pourquoi créer une nouvelle grandeur pour exprimer le nombre d’objets ?*](1-2-pourquoi-nouvelle-unite)
+- **Doc. 1,2 :** [*Pourquoi créer une nouvelle grandeur pour exprimer le nombre d’objets ?*](1-2-pourquoi-nouvelle-unite)
 
-- **Chap. 1,3 :** [*L’unité de quantité de matière : la mole*](1-3-mole)
+- **Doc. 1,3 :** [*L’unité de quantité de matière : la mole*](1-3-mole)
 
-- **Chap. 1,4 :** [*Exercices du chapitre*](1-4-exercices)
+- **Doc. 1,4 :** [*Exercices du chapitre*](1-4-exercices)
