@@ -18,14 +18,15 @@ layout: "single"
 
 | Notions au programme | Capacités exigibles |
 |:---|:---|
-| - Relation entre masse molaire d’une espèce, masse des entités et constante d’Avogadro. <br />- Masse molaire atomique d’un élément. <br />- Volume molaire d’un gaz.    | - Déterminer la masse molaire d’une espèce à partir des masses molaires atomiques des éléments qui la composent. <br />- Déterminer la quantité de matière contenue dans un échantillon de corps pur à partir de sa masse et du tableau périodique. <br />- Utiliser le volume molaire d’un gaz pour déterminer une quantité de matière. <br />- Déterminer la quantité de matière de chaque espèce dans un mélange (liquide ou solide) à partir de sa composition.                    |
+| - Relation entre masse molaire d’une espèce, masse des entités et constante d’Avogadro. <br />- Masse molaire atomique d’un élément. <br />- Volume molaire d’un gaz. | - Déterminer la masse molaire d’une espèce à partir des masses molaires atomiques des éléments qui la composent. <br />- Déterminer la quantité de matière contenue dans un échantillon de corps pur à partir de sa masse et du tableau périodique. <br />- Utiliser le volume molaire d’un gaz pour déterminer une quantité de matière. <br />- Déterminer la quantité de matière de chaque espèce dans un mélange (liquide ou solide) à partir de sa composition. |
 
 ## Documents
 
 - **Doc. 1,1 :** [*Espèces chimiques*](1-1-especes_chimiques)
 
+<!--
 - **Doc. 1,2 :** [*Pourquoi créer une nouvelle grandeur pour exprimer le nombre d’objets ?*](1-2-pourquoi-nouvelle-unite)
+-->
+- **Doc. 1,2 :** [*L’unité de quantité de matière : la mole*](1-3-mole)
 
-- **Doc. 1,3 :** [*L’unité de quantité de matière : la mole*](1-3-mole)
-
-- **Doc. 1,4 :** [*Exercices du chapitre*](1-4-exercices)
+- **Doc. 1,3 :** [*Exercices du chapitre*](1-4-exercices)
