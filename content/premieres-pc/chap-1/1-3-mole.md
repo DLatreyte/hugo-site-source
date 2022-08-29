@@ -1,6 +1,6 @@
 ---
 title: "L’unité de quantité de matière : la mole"
-subtitle: "Chapitre 1,3"
+subtitle: "Document 1,3"
 author: ""
 type: ""
 date: 2020-09-09T05:51:05+04:00
@@ -19,10 +19,10 @@ auto_numbering: true
 
 1. En chimie, *lorsqu’on pèse par exemple $\pu{1 g}$ de solide ou qu’on mesure $\pu{10 mL}$ d’une solution*, manipule-t-on&nbsp;:  
 a) un petit nombre, &nbsp;&nbsp;&nbsp;b) un grand nombre, &nbsp;&nbsp;&nbsp;c) un très grand nombre, &nbsp;&nbsp;&nbsp;d) un nombre inimaginablement grand  
-d’entités microscopiques (atomes, molécules, ions) ? 
+d’entités microscopiques (atomes, molécules, ions) ?
 {{% solution "Réponse" %}}
 Un nombre inimaginablement grand
-{{% /solution %}}	
+{{% /solution %}} 
 
 2. L’ordre de grandeur du nombre d’entités microscopiques manipulées est :  
 a) 10 &nbsp;&nbsp;&nbsp;&nbsp;b) $10^6$ &nbsp;&nbsp;&nbsp;&nbsp;c) $10^9$ &nbsp;&nbsp;&nbsp;&nbsp;d) $10^{12}$  &nbsp;&nbsp;&nbsp;&nbsp;e) $10^{18}$ &nbsp;&nbsp;&nbsp;&nbsp;f) $10^{24}$&nbsp;?
@@ -37,7 +37,8 @@ Non.
 
 4. En s'appuyant sur le travail réalisé dans le document **Chap. 1,2**, qu'est-il utile de faire en chimie&nbsp;?
 {{% solution "Réponse" %}}
-Il est très utile en chimie de définir une nouvelle grandeur pour toutes les raisons évoquées à l'issue du document **Chap. 1,2**&nbsp;: 
+Il est très utile en chimie de définir une nouvelle grandeur pour toutes les raisons évoquées à l'issue du document **Chap. 1,2**&nbsp;:
+
 - difficultés à manipuler des entités microscopiques isolées&nbsp;;
 - matériel d'usage courant dans les laboratoires pas adapté à la mesure des caractéristiques des entités microscopiques.
 
@@ -89,6 +90,7 @@ $$N_A = \pu{6,02214076e23 mol-1}$$
 {{% /note %}}
 
 #### Remarque
+
  En pratique, on utilise dans les calculs $N_A = \pu{6,02e23 mol-1}$.
 
 10. Reformuler la définition d'une **mole d'entités microscopiques** (*toutes identiques*) donnée à la question 9 en y incluant la constante d'Avogadro.
@@ -98,10 +100,9 @@ Une **mole** d’entités microscopiques (atomes, molécules, ions) est un « p
 {{% /note %}}
 {{% /solution %}}
 
-
 ## Comment obtenir la quantité de matière à partir du nombre d’entités microscopiques&nbsp;?
 
-11. Un mousqueton d’alpiniste contient $N = \pu{9,1e23}$ atomes d’aluminium. À combien de moles d’atomes d’aluminium correspond ce nombre d’atomes ? 
+11. Un mousqueton d’alpiniste contient $N = \pu{9,1e23}$ atomes d’aluminium. À combien de moles d’atomes d’aluminium correspond ce nombre d’atomes ?
 {{% solution "Réponse" %}}
 $n(\ce{Al}) = \dfrac{ \pu{9,1e23} }{ \pu{6,02e23 mol-1} } = \pu{1,5 mol}$.
 {{% /solution %}}
@@ -124,6 +125,7 @@ La masse molaire atomique s’exprime, en pratique, en **gramme par mole** ($\pu
 {{% /note %}}
 
 #### Remarque
+
 Les masses molaires atomiques figurent dans la *classification périodique*. Elle ne doivent donc pas être apprises.
 
 ### Masse molaire moléculaire
@@ -131,13 +133,15 @@ Les masses molaires atomiques figurent dans la *classification périodique*. Ell
 13. À partir de la définition de la masse molaire atomique, donner la définition de la masse molaire moléculaire.
 {{% solution "Réponse" %}}
 {{% note tip %}}
-La **masse molaire moléculaire** $M$ d’une molécule est la *masse d’une mole de ces molécules*.   
+La **masse molaire moléculaire** $M$ d’une molécule est la *masse d’une mole de ces molécules*.
 Elle s’exprime en, en pratique, en **gramme par mole** ($\pu{g/mol}$ ou $\pu{g.mol-1}$).
 {{% /note %}}
 {{% /solution %}}
 
 {{% note exercise %}}
+
 #### Comment déterminer la masse molaire d’une molécule&nbsp;?
+
 1. Combien d’atomes de carbone comporte une molécule de dioxyde de carbone $\ce{CO2}$&nbsp;? Combien d’atomes d’oxygène&nbsp;?
 2. Comment peut-on calculer la masse d’une molécule de dioxyde de carbone $\ce{CO2}$&nbsp;?
 3. Combien de moles d'atomes de carbone trouve-t-on dans une mole de molécules de dioxyde de carbone $\ce{CO2}$&nbsp;? Combien de moles d’atomes d’oxygène&nbsp;?
@@ -147,7 +151,7 @@ Elle s’exprime en, en pratique, en **gramme par mole** ($\pu{g/mol}$ ou $\pu{g
 1. Une molécule de dioxyde de carbone comporte 1 atome de carbone et 2 atomes d'oxygène.
 2. $m(\ce{CO2}) = m(\ce{C}) + 2 m(\ce{O})$
 3. Dans une mole de molécules de dioxyde de carbone on trouve une mole d'atomes de carbone et 2 moles d'atomes d'oxygène.
-4.  $M(\ce{CO2}) = m(\ce{CO2}) \cdot N_A$ donc $M(\ce{CO2}) = (m(\ce{C}) + 2 m(\ce{O}))\cdot N_A = m(\ce{C}) \cdot N_A + 2 m(\ce{O}) \cdot N_A = M(\ce{C}) + 2 M(\ce{O})$.
+4. $M(\ce{CO2}) = m(\ce{CO2}) \cdot N_A$ donc $M(\ce{CO2}) = (m(\ce{C}) + 2 m(\ce{O}))\cdot N_A = m(\ce{C}) \cdot N_A + 2 m(\ce{O}) \cdot N_A = M(\ce{C}) + 2 M(\ce{O})$.
 {{% /solution %}}
 
 14. Expliquer comment on peut calculer la masse molaire moléculaire d'une molécule à partir des masses molaires atomiques des atomes qui constituent la molécule.
@@ -166,7 +170,6 @@ $M(\ce{H2O}) = 2 M(\ce{H}) + M(\ce{O}) = 2 \times \pu{1,0 g/mol} + \pu{16,0 g/mo
 {{% solution "Réponse" %}}
 $M(\ce{C10H16O}) = 10 M(\ce{C}) + 16 M(\ce{H}) + M(\ce{O}) = 10 \times \pu{12,0 g/mol} + 16 \times \pu{1,0 g/mol} + \pu{16,0 g/mol} = \pu{152,0 g/mol}$.
 {{% /solution %}}
-
 
 ### Quantité de matière et masse
 
@@ -196,7 +199,7 @@ On appelle **volume molaire** d'un **gaz** le *volume occupé par une mole de ce
 {{% /note %}}
 
 {{% note tip %}}
-Sous la pression atmosphérique et à la température de $\pu{20 °C}$, $$V_m = \pu{24,0 L/mol}$$ 
+Sous la pression atmosphérique et à la température de $\pu{20 °C}$, $$V_m = \pu{24,0 L/mol}$$
 {{% /note %}}
 
 ### Quantité de matière et volume d'un gaz
@@ -242,6 +245,7 @@ La **masse molaire ionique d'un ion polymonoatomique** est égale à la *somme d
 
 {{% note exercise %}}
 Les bougies sont constituées de molécules d’acide stéarique de formule $\ce{C18H36O2}$.
+
 1. Quelle est la masse molaire de l’acide stéarique&nbsp;?
 2. Combien y a-t-il de moles d’acide stéarique dans une bougie de masse $m=\pu{150 g}$&nbsp;?
 3. Combien y a-t-il de molécules d’acide stéarique dans une bougie de masse $m=\pu{150 g}$&nbsp;?
@@ -258,11 +262,12 @@ Les bougies sont constituées de molécules d’acide stéarique de formule $\ce
 La masse volumique de l’eau liquide est $\rho = \pu{1,0 kg/L}$.
 
 1. Combien y a-t-il de moles d’eau dans un litre d’eau pure&nbsp;?
-2. Combien y a-t-il de molécules d’eau dans un litre d’eau&nbsp;? 
+2. Combien y a-t-il de molécules d’eau dans un litre d’eau&nbsp;?
 {{% /note %}}
 
 {{% solution "Réponses" %}}
-1. 
+1.
+
 - Masse molaire moléculaire de l'eau&nbsp;: $M(\ce{H20}) = 2 M(\ce{H}) + M{\ce{O}} = 2 \times \pu{1,0 g/mol} + \pu{16,0 g/mol} = \pu{18,0 g/mol}$.
 - $n = \dfrac{m}{M}$ et $\rho = \dfrac{m}{V} \Leftrightarrow m = \rho V$ donc $n = \dfrac{\rho V}{M}$.  
 **A.N.** $n = \dfrac{\pu{1,0e3 g/L} \times \pu{1,0 L}}{\pu{18,0 g/mol}} = \pu{56 mol}$.

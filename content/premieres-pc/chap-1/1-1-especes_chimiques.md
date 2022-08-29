@@ -1,6 +1,6 @@
 ---
 title: "Espèces chimiques"
-subtitle: "Chapitre 1,1"
+subtitle: "Document 1,1"
 author: ""
 type: ""
 date: 2020-09-05T15:15:16+04:00
@@ -48,7 +48,9 @@ Une espèce chimique synthétique peut exister dans la nature. Elle est alors **
 {{% /note %}}
 
 {{% note exercise %}}
+
 #### Exercice
+
 Classer les exemples suivants en deux catégories : corps purs ou mélanges. L’eau minérale, le jus d’orange, la vitamine C, le fer, l’acier.
 {{% /note %}}
 
@@ -92,7 +94,9 @@ La solubilité d'une espèce chimique dans un solvant dépend de la **températu
 {{% /solution %}}
 
 {{% note exercise %}}
+
 #### Exercice
+
 La solubilité du chlorure de sodium (sel de cuisine) est de $\pu{359 g/L}$ dans l’eau à 20&nbsp;°C, de $\pu{391 g/L}$ dans l’eau à 100&nbsp;°C, de $\pu{0,513 g/L}$ dans l’éthanol à 25&nbsp;°C.
 
 1. Quelle masse maximale de chlorure de sodium peut-on introduire dans un litre d’eau à 100&nbsp;°C si l’on veut obtenir une solution homogène ? Dans deux litres d’eau à la même température ?
@@ -101,6 +105,7 @@ La solubilité du chlorure de sodium (sel de cuisine) est de $\pu{359 g/L}$ dan
 {{% /note %}}
 
 {{% solution "Réponses" %}}
+
 1. Dans un litre d'eau à 100&nbsp;°C on peut dissoudre $\pu{391 g}$ de chlorure de sodium et obtenir une solution homogène. Au delà de cette valeur, le mélange obtenu est hétérogène, il reste du chlorure de sodium solide.  
 Dans deux litres d'eau on peut dissoudre le double de cette valeur et toujours obtenir une solution homogène. La relation mathématique utilisée est la **proportionnalité**.
 2. La solubilité augmente manifestement avec la température.
@@ -128,6 +133,7 @@ Il ne faut pas croire que la masse volumique se limite aux liquides et au gaz. O
 {{% /note %}}
 
 {{% note normal %}}
+
 #### Équivalences à connaître
 
 $$
@@ -146,6 +152,7 @@ $$\rho = \dfrac{m}{V}$$
 {{% /solution %}}
 
 {{% note exercise %}}
+
 #### Exercice
 
 1. La masse volumique de l’éthanol est $\rho = \pu{0,79 kg/L}$. Exprimer cette masse volumique en $\pu{g/L}$, en $\pu{g/mL}$ puis en $\pu{g/cm3}$.
@@ -153,6 +160,7 @@ $$\rho = \dfrac{m}{V}$$
 {{% /note %}}
 
 {{% solution "Réponses" %}}
+
 1. $\rho = \pu{0,79 kg/L} = \dfrac{\pu{0,79 kg}}{\pu{1 L}} \times \dfrac{\pu{1e3 g}}{\pu{1 kg}} = \pu{7,9e2 g/L}$.  
 $\rho = \dfrac{\pu{7,9e2 g}}{\pu{1 L}} \times \dfrac{1}{\dfrac{\pu{1e3 mL}}{\pu{1 L}}} = \pu{0,79 g/mL}$.  
 $\rho = \pu{0,79 g/mL} = \pu{0,79 g/cm3}$ puisque $\pu{1 mL} = \pu{1 cm3}$.
@@ -160,7 +168,6 @@ $\rho = \pu{0,79 g/mL} = \pu{0,79 g/cm3}$ puisque $\pu{1 mL} = \pu{1 cm3}$.
 2. $\rho(\text{éthanol}) = \dfrac{m(\text{éthanol})}{V(\text{éthanol})}$ donc $m(\text{éthanol}) = \rho(\text{éthanol}) \times V(\text{éthanol})$.  
 **A.N.** $m(\text{éthanol}) = \pu{0,79 kg/L} \times \pu{2,0e3 L} = \pu{1,6e3 kg}$
 {{% /solution %}}
-
 
 ## Densité
 
@@ -195,17 +202,18 @@ $d = \dfrac{\pu{0,87 kg/L}}{\pu{1,00 kg/L}} = \pu{0,87}$.
 15. Le dichlorométhane a une densité $d = \pu{1,33}$. Déterminer sa masse volumique $\rho$.
 
 {{% solution "Réponse" %}}
-$d(\text{dichlorométhane}) = \dfrac{\rho(\text{dichlorométhane})}{\rho(\text{eau})}$ donc 
+$d(\text{dichlorométhane}) = \dfrac{\rho(\text{dichlorométhane})}{\rho(\text{eau})}$ donc
 $\rho(\text{dichlorométhane}) = d(\text{dichlorométhane}) \times \rho(\text{eau})$.  
 **A.N.** $\rho(\text{dichlorométhane}) = \pu{1,33} \times \pu{1,00 kg/L} = \pu{1,33 kg/L}$
 {{% /solution %}}
 
 {{% note exercise %}}
+
 #### Exercice
 
 L’eau et le cyclohexane sont deux liquides non miscibles. On introduit ces deux liquides dans un tube à essais.
 
-Données : 
+Données :
 : $d(\text{eau}) = \pu{1,0}$ et $d(\text{cyclohexane}) = \pu{0,78}$.
 
 1. Combien de phases observe-t-on dans le tube à essais ?
@@ -215,6 +223,7 @@ Données :
 {{% /note %}}
 
 {{% solution "Réponses" %}}
+
 1. Puisque les liquides ne sont pas miscibles, le mélange est hétérogène. On observe donc deux phases dans le tube à essais.
 2. $d(\text{cyclohexane}) < d(\text{eau})$. Le cyclohexane constitue donc la phase supérieure du mélange.
 3. Pour déterminer *expérimentalement* quelle phase est constituée d'eau (ou de cyclohexane) il suffit d'ajouter de l'eau au mélange. La phase dont le volume augmente est la phase aqueuse.
@@ -222,7 +231,7 @@ Données :
 donc $\rho(\text{cyclohexane}) = d(\text{cyclohexane}) \times \rho(\text{eau})$.  
 $\rho(\text{cyclohexane}) = \dfrac{m(\text{cyclohexane})}{V(\text{cyclohexane})}$  
 donc $m(\text{cyclohexane}) = \rho(\text{cyclohexane}) \times V(\text{cyclohexane})$.  
-Finalement $m(\text{cyclohexane}) = d(\text{cyclohexane}) \times \rho(\text{eau}) \times V(\text{cyclohexane})$. 
+Finalement $m(\text{cyclohexane}) = d(\text{cyclohexane}) \times \rho(\text{eau}) \times V(\text{cyclohexane})$.
 
 **A.N.** $m(\text{cyclohexane}) = \pu{0,78} \times \pu{1,00 kg/L} \times \pu{2,0 L} = \pu{1,6 kg}$
 {{% /solution %}}
