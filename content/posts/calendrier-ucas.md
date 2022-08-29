@@ -14,6 +14,3 @@ Pour les études dans le domaine de la santé en Angleterre la date limite est l
 
 - {{< remote "Site officiel" "https://www.ucas.com/events/completed-2020-entry-ucas-undergraduate-applications-can-be-submitted-ucas-348811" "Le site officiel" >}}
 - ![Calendrier](pdf/Calendrier_UCAS_2019_2020.pdf)
-
-
-[1]: https://www.ucas.com/events/completed-2020-entry-ucas-undergraduate-applications-can-be-submitted-ucas-348811
