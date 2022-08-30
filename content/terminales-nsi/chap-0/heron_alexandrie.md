@@ -295,6 +295,8 @@ def racine_carree(x: float) -> float:
 
 8. Définir la fonction `main` qui affiche à l'écran la liste des racines carrées de tous les nombres pairs compris dans l'intervalle $[1; 100]$.
 
+Ajouter l'appel de la fonction `main` à la fin du fichier.
+
 {{% solution "Réponse" %}}
 
 ```python
