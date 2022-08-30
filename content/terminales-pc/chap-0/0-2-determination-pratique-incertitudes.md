@@ -19,7 +19,9 @@ Comment détermine-t-on $U(m)$  en pratique&nbsp;?
 {{% /note %}}
 
 {{% note warning %}}
-#### Avertissement. 
+
+#### Avertissement
+
 Aucune des formules présentées dans ce document ne doit être apprise par cœur car **elles seront systématiquement données si nécessaire**.
 
 En revanche, il faudra être capable de choisir la formule à utiliser et il sera impératif de savoir l'utiliser.
@@ -30,42 +32,43 @@ En revanche, il faudra être capable de choisir la formule à utiliser et il ser
 {{% note tip %}}
 Lors du calcul d'une incertitude trois cas de figure peuvent se présenter&nbsp;:
 
-1. L'incertitude porte sur une **mesure expérimentale que l'on peut répéter 
+1. L'incertitude porte sur une **mesure expérimentale que l'on peut répéter
   plusieurs fois** &nbsp;;
-2. L'incertitude porte sur une **mesure expérimentale que l'on ne peut pas 
+2. L'incertitude porte sur une **mesure expérimentale que l'on ne peut pas
   répéter** plusieurs fois&nbsp;;
-3. L'incertitude est celle du **résultat d'un calcul effectué à partir de 
-  grandeurs pour lesquelles les incertitudes sont connues** [^1].
+3. L'incertitude est celle du **résultat d'un calcul effectué à partir de
+  grandeurs pour lesquelles les incertitudes sont connues**.
 {{% /note %}}
 
-*Illustration du point n° 3 ci-dessus*&nbsp;: en électricité, $v = d / \Delta t$ avec $d = d\_{m} \pm U (d)$ et $\Delta t = \Delta t\_{m} \pm U (\Delta t)$. Comment déterminer $U (v)$&nbsp;?
+**Illustration du point n° 3 ci-dessus :** en électricité, $v = d / \Delta t$ avec $d = d\_{m} \pm U (d)$ et $\Delta t = \Delta t\_{m} \pm U (\Delta t)$. Comment déterminer $U (v)$&nbsp;?
 
 {{% note normal %}}
-Votre travail consiste à être capable de reconnaître ces différentes situations et 
+Votre travail consiste à être capable de reconnaître ces différentes situations et
 ensuite mettre en œuvre les techniques décrites dans la suite de ce document.
 {{% /note %}}
 
 ## Détermination de l'incertitude lorsqu'on peut effectuer une série de mesures
 
-Lorsqu'un même opérateur répète plusieurs fois la mesure de la même 
-grandeur dans les mêmes conditions expérimentales, il trouve généralement des 
-résultats différents. Il en est de même lorsque des opérateurs différents 
-réalisent simultanément le mesurage de la même grandeur avec du matériel 
+Lorsqu'un même opérateur répète plusieurs fois la mesure de la même
+grandeur dans les mêmes conditions expérimentales, il trouve généralement des
+résultats différents. Il en est de même lorsque des opérateurs différents
+réalisent simultanément le mesurage de la même grandeur avec du matériel
 similaire.
 
 {{% note tip %}}
-Lorsqu'un expérimentateur peut réaliser plusieurs fois un mesurage, il utilise des notions de statistiques pour déterminer la valeur du résultat&nbsp;: 
+Lorsqu'un expérimentateur peut réaliser plusieurs fois un mesurage, il utilise des notions de statistiques pour déterminer la valeur du résultat&nbsp;:
+
 - *La **valeur estimée** est assimilée à la valeur moyenne de la série de mesures*&nbsp;;
 - *L'**incertitude** est calculée en utilisant l'écart-type de la série de mesures.*
 {{% /note %}}
 
 ### La valeur moyenne d'une série de mesures est une grandeur aléatoire
 
-Un corrigé de cette activité se trouve à l'adresse&nbsp;: 
+Un corrigé de cette activité se trouve à l'adresse&nbsp;:
 [https://repl.it/@dlatreyte/incertitudes](https://repl.it/@dlatreyte/incertitudes).
 
-La mesure $\Delta t$ de la durée de chute d'un objet depuis une fenêtre a 
-été répétée 16 fois avec un chronomètre de qualité. Les résultats 
+La mesure $\Delta t$ de la durée de chute d'un objet depuis une fenêtre a
+été répétée 16 fois avec un chronomètre de qualité. Les résultats
 obtenus, exprimés en seconde, sont les suivants&nbsp;:
 <center>
 
@@ -85,27 +88,31 @@ obtenus, exprimés en seconde, sont les suivants&nbsp;:
 La valeur de la moyenne est $\Delta t\_{m} = \pu{1,4225 s}$.
 {{% /solution %}}
 
-3. À quoi servent les instructions du programme qui s'étendent de la ligne 6 à 
+3. À quoi servent les instructions du programme qui s'étendent de la ligne 6 à
 la ligne 8&nbsp;?
 {{% solution "Résultat" %}}
-Les instructions réalisent le calcul de la somme de tous les éléments de la 
-liste de valeurs passée en argument. La variable `somme` contient tout 
-d'abord l'élément neutre de l'addition. À chaque tour de boucle on 
-récupère une nouvelle valeur dans la liste et on l'ajoute à la valeur 
+Les instructions réalisent le calcul de la somme de tous les éléments de la
+liste de valeurs passée en argument. La variable `somme` contient tout
+d'abord l'élément neutre de l'addition. À chaque tour de boucle on
+récupère une nouvelle valeur dans la liste et on l'ajoute à la valeur
 référencée par la variable `somme`.
 {{% /solution %}}
 
 {{% note important %}}
-#### Point Python 
+
+#### Point Python
+
 L'instruction
+
 ```python
 for elt in une_liste:
 ```
- doit être lue de la façon suivante&nbsp;: «&nbsp;*Pour chaque élément `elt` de la liste 
+
+ doit être lue de la façon suivante&nbsp;: «&nbsp;*Pour chaque élément `elt` de la liste
 `une_liste` faire ...*&nbsp;».
 {{% /note %}}
 
-4. Modifier l'instruction `moyenne = calcul_moyenne(valeurs)` de façon à ce 
+4. Modifier l'instruction `moyenne = calcul_moyenne(valeurs)` de façon à ce
 qu'elle ne calcule la moyenne que des 6 première valeurs. Noter cette valeur.
 
 {{% solution "Réponse" %}}
@@ -115,13 +122,14 @@ La valeur de la moyenne est $\Delta t\_{m} = \pu{1,4216666666666666 s}$.
 {{% /solution %}}
 
 {{% note important %}}
+
 #### Point Python
 
-Une liste est une **structure de données indicées** &nbsp;: on *accède/manipule 
-les éléments d'une liste à partir de leur position dans la liste (la 
-première position a 0 pour indice)* . Il est possible de ne prendre en compte 
-qu'un nombre restreint d'éléments dans une liste (*Attention&nbsp;:* en Python les 
-intervalles sont toujours du type $[a, b [$ c'est à dire fermé pour la borne 
+Une liste est une **structure de données indicées** &nbsp;: on *accède/manipule
+les éléments d'une liste à partir de leur position dans la liste (la
+première position a 0 pour indice)* . Il est possible de ne prendre en compte
+qu'un nombre restreint d'éléments dans une liste (*Attention&nbsp;:* en Python les
+intervalles sont toujours du type $[a, b [$ c'est à dire fermé pour la borne
 inférieure, ouvert pour la borne supérieure)&nbsp;:
 
 ```python
@@ -130,17 +138,18 @@ inférieure, ouvert pour la borne supérieure)&nbsp;:
 >>> liste[len(liste) - 1]  # Dernier élément (len donne le nombre d'éléments)
 >>> liste[:3]  # Trois premiers éléments (d'indices 0, 1 et 2) [1, 2, 3]
 ```
+
 {{% /note %}}
 
-5. Pourquoi les deux moyennes calculées aux questions précédentes ne 
+5. Pourquoi les deux moyennes calculées aux questions précédentes ne
 sont-elles pas égales&nbsp;?
 
 {{% solution "Réponse" %}}
-On a calculé des moyennes de séries différentes, il est donc normal que ces 
+On a calculé des moyennes de séries différentes, il est donc normal que ces
 moyennes soient différentes.
 {{% /solution %}}
 
-6. Comment faire en sorte que la valeur moyenne caractérise au mieux «&nbsp;la chute 
+6. Comment faire en sorte que la valeur moyenne caractérise au mieux «&nbsp;la chute
 de l'objet depuis la fenêtre&nbsp;»&nbsp;?
 
 {{% solution "Réponse" %}}
@@ -149,23 +158,24 @@ Il faut considérer le plus grand nombre d'expériences possible.
 
 ### Incertitude de répétabilité
 
-L'incertitude de mesure correspondant à des mesures répétées d'une même 
-grandeur est appelée **incertitude de répétabilité** . Elle est liée à 
+L'incertitude de mesure correspondant à des mesures répétées d'une même
+grandeur est appelée **incertitude de répétabilité** . Elle est liée à
 l'**écart-type** de la série de mesures.
 
 {{% note tip %}}
-* Pour une série de $n$ *mesures indépendantes* donnant des valeurs 
+
+- Pour une série de $n$ *mesures indépendantes* donnant des valeurs
   mesurées $m\_{k}$ l'écart-type de la série de mesures est donné par la formule&nbsp;:
 $$ \sigma \_{n - 1} = \sqrt{\dfrac{\sum\_{k = 1}^n (m\_{k} -
    \overline{m})^2}{n - 1}} $$
 où $\overline{m}$ est la valeur moyenne de la série de mesures.  
 L'écart type est obtenu en utilisant les fonctions statistiques d'une calculatrice, d'un tableur ou d'un programme écrit en Python.
 
-* L'**incertitude de répétabilité**  associée à la mesure se calcule alors grâce à la formule&nbsp;:
+- L'**incertitude de répétabilité**  associée à la mesure se calcule alors grâce à la formule&nbsp;:
 $$ U (m) = k \hspace{0.17em} \dfrac{\sigma \_{n - 1}}{\sqrt{n}} $$
 Elle dépend du nombre $n$ de mesures indépendantes réalisées, de l'écart type de la série de mesures et d'un coefficient $k$ appelé **facteur d'élargissement**  (ou coefficient de Student).
 
-* Le **facteur d'élargissement**  $k$ dépend du *nombre de mesures réalisées*  $n$ et du *niveau de confiance* choisi.
+- Le **facteur d'élargissement**  $k$ dépend du *nombre de mesures réalisées*  $n$ et du *niveau de confiance* choisi.
 {{% /note %}}
 
 **Exemple de valeurs de $k$&nbsp;:**
@@ -178,20 +188,20 @@ Elle dépend du nombre $n$ de mesures indépendantes réalisées, de l'écart ty
 7. Pour un *même nombre de mesures*, comment évolue $k$ avec le niveau de confiance&nbsp;? Qu'est-ce que cette évolution traduit&nbsp;?
 
 {{% solution "Réponse" %}}
-Pour un même nombre de mesures, $k\_{95 \, \text{\%}} < k\_{99 \, 
-\text{\%}}$. Plus grande est l'incertitude $U (m)$, plus grande est la 
-probabilité que la «&nbsp;valeur vraie&nbsp;» se trouve dans l'intervalle 
+Pour un même nombre de mesures, $k\_{95 \, \text{\%}} < k\_{99 \,
+\text{\%}}$. Plus grande est l'incertitude $U (m)$, plus grande est la
+probabilité que la «&nbsp;valeur vraie&nbsp;» se trouve dans l'intervalle
 $\overline{m} \pm U (m)$.
 {{% /solution %}}
 
-8. Pour un *même niveau de confiance* , comment évolue $k$ avec le nombre de 
+8. Pour un *même niveau de confiance* , comment évolue $k$ avec le nombre de
 mesures réalisées&nbsp;? Qu'est-ce que cette évolution traduit&nbsp;?
 
 {{% solution "Réponse" %}}
-$k$ diminue lorsque le nombre de mesures augmente. Plus le nombre de mesures 
-est grand, plus la valeur moyenne de la série est représentative de la valeur 
-mesurée et plus petit peut donc être l'intervalle autour de cette valeur 
-moyenne. On retrouve l'idée qu'il est préférable de faire un grand nombre de 
+$k$ diminue lorsque le nombre de mesures augmente. Plus le nombre de mesures
+est grand, plus la valeur moyenne de la série est représentative de la valeur
+mesurée et plus petit peut donc être l'intervalle autour de cette valeur
+moyenne. On retrouve l'idée qu'il est préférable de faire un grand nombre de
 mesures.
 {{% /solution %}}
 
@@ -208,44 +218,52 @@ $$ \sum\_{k = 1}^n (m\_{k} - \overline{m}) $$
 9. Faire en sorte que le programme appelle la fonction `calcul_ecarts_a_moyenne` et calcule ainsi la somme des écarts à la moyenne. Que penser de la valeur obtenue&nbsp;? Était-ce prévisible&nbsp;?
 
 {{% solution "Réponse" %}}
+
 ```python
 ecart = calcul_ecarts_a_moyenne(valeurs)
 print("Écart à la valeur moyenne&nbsp;: {}".format(ecart))
 ```
-La valeur obtenue est $\pu{-2,6645352591003757e{- 15}}$, soit 0. 
-C'était tout à fait prévisible puisque la valeur moyenne est le point 
+
+La valeur obtenue est $\pu{-2,6645352591003757e{- 15}}$, soit 0.
+C'était tout à fait prévisible puisque la valeur moyenne est le point
 d'équilibre de la série de valeurs&nbsp;: *les écarts positifs sont donc compensés par les écarts négatifs.*
 {{% /solution %}}
 
-10. L'écart-type ne considère pas les écarts à la valeur moyenne mais les 
-carrés de ces écarts (cf. formule ci-dessus). Ils ne peuvent donc pas se 
+10. L'écart-type ne considère pas les écarts à la valeur moyenne mais les
+carrés de ces écarts (cf. formule ci-dessus). Ils ne peuvent donc pas se
 compenser. Après analyse du code de la fonction `calcul_ecarts_a_moyenne`, compléter le code de la fonction `calcul_ecart_type`.
 
 {{% solution "Réponse" %}}
+
 ```python
 somme = 0
 for valeur in liste_valeurs:
     somme = somme + (valeur - moyenne)**2
 ```
+
 {{% /solution %}}
 
 {{% note important %}}
+
 #### Point Python
+
 L'élévation à la puissance s'effectue à l'aide de l'opérateur `**`.
 {{% /note %}}
 
-11. Faire en sorte que le programme appelle la fonction `calcul_ecart_type` et 
+11. Faire en sorte que le programme appelle la fonction `calcul_ecart_type` et
 qu'il affiche cette valeur. La noter.
 
 {{% solution "Réponse" %}}
+
 ```python
 ecart_type = calcul_ecart_type(valeurs)
 print("Écart type&nbsp;: {}".format(ecart_type))
 ```
+
 $\sigma \_{n - 1} = \pu{0,030000000000000023 s}$.
 {{% /solution %}}
 
-12. Compléter le code de la fonction `calcul_incertitude` à partir de la 
+12. Compléter le code de la fonction `calcul_incertitude` à partir de la
 formule de l'incertitude donnée ci-dessus.
 
 {{% solution "Réponse" %}}
@@ -253,61 +271,68 @@ formule de l'incertitude donnée ci-dessus.
 {{% /solution %}}
 
 {{% note important %}}
+
 #### Point Python
-Lorsqu'on veut utiliser une fonction présente dans un module importé, il 
+
+Lorsqu'on veut utiliser une fonction présente dans un module importé, il
 faut précéder ce nom par celui du module&nbsp;:
 
 ```python
 import math as m
 print(m.sin(m.pi))
 ```
+
 {{% /note %}}
 
-
-13. Faire en sorte que le programme appelle la fonction `calcul_incertitude` avec 
-la valeur de $k$ pour un niveau de confiance à 95 % et qu'il affiche cette 
+13. Faire en sorte que le programme appelle la fonction `calcul_incertitude` avec
+la valeur de $k$ pour un niveau de confiance à 95 % et qu'il affiche cette
 valeur. La noter.
 
 {{% solution "Réponse" %}}
+
 ```python
 incertitude_95 = calcul_incertitude(valeurs, 2.13)
 print("Incertitude à 95 %&nbsp;: {}".format(incertitude_95))
 ```
+
 $U (\Delta t) = \pu{0,01597500000000001 s}$.
 {{% /solution %}}
 
-14. Faire en sorte que le programme appelle la fonction `calcul_incertitude` avec 
-la valeur de $k$ pour un niveau de confiance à 95 % et qu'il affiche cette 
+14. Faire en sorte que le programme appelle la fonction `calcul_incertitude` avec
+la valeur de $k$ pour un niveau de confiance à 95 % et qu'il affiche cette
 valeur. La noter.
 
 {{% solution "Réponse" %}}
+
 ```python
 incertitude_99 = calcul_incertitude(valeurs, 2.95)
 print("Incertitude à 95 %&nbsp;: {}".format(incertitude_99))
 ```
+
 $U (\Delta t) = 0 {,} 02212500000000002 \text{s}$
 {{% /solution %}}
 
-15. Écrire le résultat de la mesure de la chute de l'objet depuis la fenêtre, 
+15. Écrire le résultat de la mesure de la chute de l'objet depuis la fenêtre,
 avec un niveau de confiance à 95 % puis avec un niveau de confiance à 99 %.
 
 {{% solution "Réponse" %}}
 $\Delta t\_{95} = \pu{(1,43 \pm 0,02)  s}$ et $\Delta t\_{99} = \pu{(1,43 \pm 0,03) s}$.
 {{% /solution %}}
 
-
 ## Détermination de l'incertitude lorsqu'on n'effectue qu'une seule mesure
 
-Lorsqu'une mesure ne peut pas être reproduite plusieurs fois, il est **impossible d'estimer une incertitude de répétabilité**. ll est alors nécessaire d'analyser les différentes sources d'erreurs liées à l'instrument de mesure. 
+Lorsqu'une mesure ne peut pas être reproduite plusieurs fois, il est **impossible d'estimer une incertitude de répétabilité**. ll est alors nécessaire d'analyser les différentes sources d'erreurs liées à l'instrument de mesure.
 
 {{% note warning %}}
 On rappelle qu'il ne faut surtout pas apprendre par cœur les expressions mais savoir les utiliser.
 {{% /note %}}
- 
+
 ### Utilisation d'un appareil gradué
- 
+
  {{% note tip %}}
- #### Cas d'une lecture simple sur une échelle graduée
+
+#### Cas d'une lecture simple sur une échelle graduée
+
  <a href="" id="simple_mesure"> </a>
  Lorsque la mesure est obtenue par **une seule lecture sur une échelle ou un cadran**, pour un niveau de confiance de 95 %, l'incertitude de cette mesure a pour expression&nbsp;:
 $$
@@ -322,9 +347,10 @@ Déterminer la valeur de l'incertitude $U(m)$ et écrire le résultat de la pes�
  Cette balance étant graduée à $\pu{0,01 g}$ près, $U = \dfrac{2\times \pu{0,01 g}}{\sqrt{12}} = \pu{0,00577 g}$ et le résultat de la mesure s'écrit $m = \pu{(38,450 \pm 0,006) g}$.
 {{% /solution %}}
 
-
 {{% note tip %}}
+
 #### Cas d'une double lecture sur une échelle graduée
+
 <a href="" id="double_mesure"> </a>
  Lorsque la mesure nécessite une double lecture, les incertitudes liées à la lecture peuvent se cumuler ou se compenser, totalement ou partiellement. Pour un niveau de confiance de 95 %, l'incertitude de cette mesure a pour expression&nbsp;:
  $$
@@ -347,10 +373,12 @@ La plus petite graduation, sur l'écran de l'oscilloscope, étant égale à $\pu
 $U = \sqrt{2}\\;\times\dfrac{2\times \pu{0,2 division}}{\sqrt{12}} = \pu{0,163 division}$. *Pour obtenir l'incertitude en secondes, il ne reste plus alors qu'à multiplier par la base de temps*.
  {{% /solution %}}
 
- ### Utilisation d'un appareil dont le constructeur a indiqué la tolérance
+### Utilisation d'un appareil dont le constructeur a indiqué la tolérance
 
  {{% note tip %}}
+
 #### Cas d'une mesure obtenue avec un appareil de tolérance connue
+
 Lorsque la mesure est obtenue avec un appareil pour lequel le constructeur indique la tolérance $t$ (notée $\pm t$), l'incertitude liée à la tolérance de cet appareil a pour expression&nbsp;:
 $$
 U = \dfrac{2\\, t}{\sqrt{3}}
@@ -371,14 +399,14 @@ Déterminer l'incertitude sur la mesure du volume d'eau.
 L'incertitude $U$ vaut donc $U = \dfrac{2 \times \pu{0,05 mL}}{\sqrt{3}} = \pu{0,0577 mL}$ et le volume mesuré est $\pu{(40,00 \pm 0,06) mL}$.
 {{% /solution %}}
 
-
 ## évaluation d'une incertitude sur une mesure dans laquelle interviennent plusieurs sources d'erreurs
 
 Lors d'un mesurage, il est fréquent d'avoir plusieurs sources d'erreurs à prendre en compte.
 
 C'est notamment le cas lorsque&nbsp;:
-* le mesurage fait intervenir une ou plusieurs lectures avec un appareil de tolérance donnée&nbsp;;
-* le mesurage fait intervenir un **calcul** avec des valeurs dont les incertitudes sont connues.
+
+- le mesurage fait intervenir une ou plusieurs lectures avec un appareil de tolérance donnée&nbsp;;
+- le mesurage fait intervenir un **calcul** avec des valeurs dont les incertitudes sont connues.
 
 {{% note warning %}}
 On rappelle qu'il ne faut surtout pas apprendre par cœur les expressions mais savoir les utiliser.
@@ -386,17 +414,19 @@ On rappelle qu'il ne faut surtout pas apprendre par cœur les expressions mais s
 
 {{% note tip %}}
 Lorsque la grandeur évaluée est le résultat d’un calcul où interviennent plusieurs mesures, on peut évaluer l’incertitude  $U(m)$ en utilisant les relations suivantes&nbsp;:
+
 - Si $m=x+y+z+\ldots$, alors $U(m)^2 = U(x)^2+U(y)^2+U(z)^2+\ldots$&nbsp;;
 - Si $m = x\cdot \dfrac{y}{z}$, alors $\left(\dfrac{U(m)}{m}\right)^2 = \left(\dfrac{U(x)}{x}\right)^2 + \left(\dfrac{U(y)}{y}\right)^2 + \left(\dfrac{U(z)}{z}\right)^2$
 {{% /note %}}
 
 21. On cherche à déterminer la valeur d'une résistance électrique $R$ par mesures de la tension $U$ à ses bornes et de l'intensité $I$ du courant qui la traverse. On obtient les valeurs suivantes&nbsp;: $U=\pu{(19,8 \pm 0,3) V}$ et $I=\pu{(0,120\pm 0,005) A}$. La loi d'ohm se traduit mathématiquement par la relation $R = \dfrac{U}{I}$.  
-Déterminer la valeur $R$ de cette résistance électrique sachant que 
+Déterminer la valeur $R$ de cette résistance électrique sachant que
 $$
 \left(\dfrac{U(R)}{R}\right)^2 = \left(\dfrac{U(U)}{U}\right)^2 + \left(\dfrac{U(I)}{I}\right)^2
 $$
 
 {{% solution "Réponse" %}}
+
 - $R = \dfrac{\pu{19,8 V}}{\pu{0,120 A}} = \pu{165 \Omega}$&nbsp;;
 
 - $\left(\dfrac{U(R)}{R}\right)^2 = \left(\dfrac{\pu{0,3 V}}{\pu{19,8 V}}\right)^2 + \left(\dfrac{\pu{0,005 A}}{\pu{0,120 A}}\right)^2 = \pu{0,002}$&nbsp;;
@@ -413,10 +443,11 @@ Finalement, $R = \pu{(165 \pm 8) \Omega}$.
     3. Déterminer l'incertitude finale associée au mesurage.
 
 {{% solution "Réponses" %}}
-1. 
+1.
 $$ U_{\text{lecture}} = \sqrt{2} \times \dfrac{2\times \pu{0,1mL}}{\sqrt{12}} = \pu{0,0816 mL} $$
 
-2. 
+2.
+
 $$ U_{\text{tolérance}} = \dfrac{2\times \pu{0,05 mL}}{\sqrt{3}} = \pu{0,0577 mL} $$
 
 3. L'incertitude finale est a pour expression ici&nbsp;: $ U(V) = \sqrt{U_{\text{lecture}}^2 + U_{\text{tolérance}}^2}$
@@ -426,7 +457,9 @@ $$ U(V) = \sqrt{(\pu{0,0816 mL})^2 + (\pu{0,0577 mL})^2} = \pu{0,1 mL} $$
 ## Extraits d'annales
 
 {{% note exercise %}}
+
 #### Antilles 2013 — Ex.3
+
 Lors des questions précédentes, dans cet exercice, l'étude du mouvement d'un électron dans un champ électrique a permis de déterminer que le rapport $e/m$ --- valeur absolue de la charge électrique de l'électron sur sa masse --- vaut $\pu{1,76e11 C/kg}$.
 
 On donne les valeur numériques suivantes pour le problème&nbsp;: $v_0 = \pu{(2,27 \pm 0,02)e7 m/s}$ (vitesse de l'électron lorsqu'il entre dans le champ), $E = \pu{(15,0 \pm 0,1) kV/m}$ (valeur du champ électrique), $L = \pu{(8,50 \pm 0,05) cm}$ (largeur de la zone dans laquelle existe le champ électrique) et $h = \pu{(1,85 \pm 0,05) cm}$ (hauteur de l'électron à sa sortie de la zone dans laquelle existe le champ électrique).
@@ -440,6 +473,7 @@ Calculer l'incertitude $U(e/m)$, puis exprimer correctement le résultat du rapp
 {{% /note %}}
 
 #### Accès à une animation en ligne
+
 {{% remote "Mouvement d'un électron dans un oscilloscope" "https://www.geogebra.org/m/xvpkgaxz" %}}
 
 {{% solution "Solution" %}}
@@ -452,12 +486,12 @@ $$
 $e/m = \pu{(1,76 \pm 0,07)e11 C/kg}$
 {{% /solution %}}
 
-
 {{% note exercise %}}
+
 #### Annales 0 — Ex.3
 
 Lors des questions précédentes, dans cet exercice, il a été montré que, *dans le cadre non relativiste*, l'expression de la vitesse $v$ d'une galaxie a pour expression $v = c\\, \left( \dfrac{\lambda\rq}{\lambda} -1 \right)$ (application de l'effet Doppler).
-	
+
 1. Pour la galaxie TGS153Z170, on a $\lambda\rq= \pu{507 nm}$ et $\lambda = \pu{486 nm}$ ($c$ est la célérité de la lumière dans le vide).  
 Calculer la valeur $v$ de la vitesse de la galaxie.
 2. On donne la relation d’incertitude suivante pour la vitesse&nbsp;:
@@ -470,6 +504,7 @@ Donner la valeur de la vitesse de la galaxie prenant en compte les différentes 
 {{% /note %}}
 
 {{% solution "Solution" %}}
+
 1. $v = \pu{3,00e8 m/s} \times \left( \dfrac{\pu{507 nm}}{\pu{486 nm}} -1 \right) = \pu{1,296e7 m/s}$.
 2. $U(v) = \sqrt{2} \times \pu{3,00e8 m/s} \times \dfrac{\pu{1 nm}}{\pu{486 nm}} = \pu{8,7e5 m/s}$.
 3. $v = \pu{(1,30 \pm 0,09)e7 m/s}$.
