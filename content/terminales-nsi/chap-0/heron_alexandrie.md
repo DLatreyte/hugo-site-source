@@ -52,9 +52,15 @@ Le fichier réponse devra se terminer par les instructions&nbsp; afin de pouvoir
 if __name__ == "__main__":
 ```
 
-*De plus, chaque fonction devra incorporer dans sa documentation les informations qui vous permettront de tester sa validité (reprendre donc systématiquement les spécifications que je vous donne)*.
+1. Qu'appelle-t-on la **documentation** d'une fonction ? La **spécification** d'une fonction ?
 
-1. Définir la fonction `moyenne` dont la spécification est
+{{% note warning %}}
+
+Toute fonction doit être accompagnée de sa spécification !
+
+{{% /note %}}
+
+2. Définir la fonction `moyenne` dont la spécification est
 
 ```python
 def moyenne(a: float, b: float) -> float: 
@@ -83,7 +89,7 @@ def moyenne(a: float, b: float) -> float:
 
 {{% /solution %}}
 
-2. Définir la fonction `valeur_absolue` dont la spécification est&nbsp;:
+3. Définir la fonction `valeur_absolue` dont la spécification est&nbsp;:
 
 ```python
 def valeur_absolue(x: float) -> float: 
@@ -119,7 +125,7 @@ def valeur_absolue(x: float) -> float:
 
 {{% /solution %}}
 
-3. Définir la fonction `puissance` dont la spécification est&nbsp;:
+4. Définir la fonction `puissance` dont la spécification est&nbsp;:
 
 ```python
 def puissance(x: float, n: int) -> float: 
@@ -155,7 +161,7 @@ def puissance(x: float, n: int) -> float:
 
 {{% /solution %}}
 
-4. Définir la fonction `amelioration_essai` dont la spécification est&nbsp;:
+5. Définir la fonction `amelioration_essai` dont la spécification est&nbsp;:
 
 ```python
 def amelioration_essai(essai: float, x: float) -> float: 
@@ -186,7 +192,7 @@ def amelioration_essai(essai: float, x: float) -> float:
 
 {{% /solution %}}
 
-5. Définir le prédicat `est_suffisamment_bon` dont la spécification est&nbsp;:
+6. Définir le prédicat `est_suffisamment_bon` dont la spécification est&nbsp;:
 
 ```python
 def est_suffisamment_bon(essai: float, x: float) -> float: 
@@ -224,7 +230,7 @@ def est_suffisamment_bon(essai: float, x: float) -> float:
 
 {{% /solution %}}
 
-6. Définir la fonction `test` qui implémente l'algorithme de Héron d'Alexandrie. La spécification de la fonction est&nbsp;:
+7. Définir la fonction `test` qui implémente l'algorithme de Héron d'Alexandrie. La spécification de la fonction est&nbsp;:
 
 ```python
 def test(essai: float, x: float) -> float: 
@@ -261,7 +267,7 @@ def test(essai: float, x: float) -> float:
 
 {{% /solution %}}
 
-7. Définir la fonction `racine_carree` dont la spécification est&nbsp;:
+8. Définir la fonction `racine_carree` dont la spécification est&nbsp;:
 
 ```python
 def racine_carree(x: float) -> float: 
@@ -292,7 +298,7 @@ def racine_carree(x: float) -> float:
 
 {{% /solution %}}
 
-8. Définir la fonction `main` qui affiche à l'écran la liste des racines carrées de tous les nombres pairs compris dans l'intervalle $[1; 100]$.
+9. Définir la fonction `main` qui affiche à l'écran la liste des racines carrées de tous les nombres pairs compris dans l'intervalle $[1; 100]$.
 
 Ajouter l'appel de la fonction `main` à la fin du fichier.
 
