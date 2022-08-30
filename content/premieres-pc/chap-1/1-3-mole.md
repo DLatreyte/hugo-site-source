@@ -9,7 +9,7 @@ toc: true
 tags: ["mole", "Quantité de matière", "Masse molaire", ]
 categories: ["Premières Spé PC", "Chimie"]
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 
