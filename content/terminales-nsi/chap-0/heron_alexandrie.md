@@ -64,14 +64,14 @@ def moyenne(a: float, b: float) -> float:
     """
 ```
 
-{{% solution "Réponse" %}}
-
 Ajouter le jeu de test suivant à la fin du fichier :
 
 ```python
 assert moyenne(12, 16) == 14
 assert moyenne(0, 8) == 4
 ```
+
+{{% solution "Réponse" %}}
 
 ```python
 def moyenne(a: float, b: float) -> float:
