@@ -288,7 +288,7 @@ def racine_carree(x: float) -> float:
     Retourne le résultat de l'appel de la fonction test avec la valeur 1 pour l'argument essai.
     """
 
-    return test(1, x)
+    return test(x, 1)
 ```
 
 {{% /solution %}}
