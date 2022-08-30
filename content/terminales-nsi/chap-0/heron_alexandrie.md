@@ -46,13 +46,12 @@ positif&nbsp;:
 
 ## Travail à réaliser
 
-Le fichier réponse devra se terminer par les instructions&nbsp; afin de pouvoir y placer les jeux de tests pour les différentes fonctions.
+Le fichier réponse devra se terminer par les instructions&nbsp; afin de pouvoir y placer les jeux de tests pour les différentes fonctions (on découvrira la signification de cette instruction dans quelques jours).
 
 ```python
 if __name__ == "__main__":
 ```
 
-(utilisation du module `doctest`) ou comporter des **assertions**.\
 *De plus, chaque fonction devra incorporer dans sa documentation les informations qui vous permettront de tester sa validité (reprendre donc systématiquement les spécifications que je vous donne)*.
 
 1. Définir la fonction `moyenne` dont la spécification est
