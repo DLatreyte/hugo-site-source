@@ -168,7 +168,7 @@ def arrangement(n: int) -> int:
     Détermination du nombre de quilles dans un 
     arrangement à n lignes.
     
-    HYPOTHÈSE&nbsp;: n entier naturel.
+    HYPOTHÈSE : n entier naturel.
     """
     if n == 1:                          # cas de base
         return 1
@@ -253,7 +253,7 @@ La **définition récursive** d'une fonction doit être formée&nbsp;:
 - Il est impératif que le cas de base soit réalisé à une étape du processus, sous peine d'obtenir une récursion infinie.
 - Les appels récursifs n'apparaissent pas de façon évidente dans le cas de la *récursivité croisée* (cf. exercices).
 
-{{% note tip %}}
+{{% note info %}}
 
 #### Ensembles bien fondés
 
@@ -314,7 +314,7 @@ Les **langages fonctionnels** modernes possèdent des compilateurs ou des interp
 {{% note tip %}}
 Si un problème est facile à résoudre, le résoudre immédiatement.
 : *C'est le cas de base*.
-     
+
 Si un problème n'est pas facile à résoudre, le découper en problèmes plus petits. Résoudre les plus petits problèmes.
 : *Ce sont les appels récursifs*.
 {{% /note %}}
