@@ -322,7 +322,7 @@ $\Delta t\_{95} = \pu{(1,43 \pm 0,02)  s}$ et $\Delta t\_{99} = \pu{(1,43 \pm 0,
 
 -->
 
-Consulter le document 0,3, sur Google Classroom.
+Consulter le **document 0,3**, sur Google Classroom.
 
 ## Détermination de l'incertitude lorsqu'on n'effectue qu'une seule mesure
 
