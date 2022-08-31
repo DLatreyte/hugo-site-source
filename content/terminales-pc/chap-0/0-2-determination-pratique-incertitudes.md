@@ -47,8 +47,9 @@ Votre travail consiste à être capable de reconnaître ces différentes situati
 ensuite mettre en œuvre les techniques décrites dans la suite de ce document.
 {{% /note %}}
 
-## Détermination de l'incertitude lorsqu'on peut effectuer une série de mesures
+## Détermination pratique d'une incertitude lorsqu'on peut effectuer une série de mesures
 
+<!--
 Lorsqu'un même opérateur répète plusieurs fois la mesure de la même
 grandeur dans les mêmes conditions expérimentales, il trouve généralement des
 résultats différents. Il en est de même lorsque des opérateurs différents
@@ -318,6 +319,10 @@ avec un niveau de confiance à 95 % puis avec un niveau de confiance à 99 %.
 {{% solution "Réponse" %}}
 $\Delta t\_{95} = \pu{(1,43 \pm 0,02)  s}$ et $\Delta t\_{99} = \pu{(1,43 \pm 0,03) s}$.
 {{% /solution %}}
+
+-->
+
+Consulter le document 0,3, sur Google Classroom.
 
 ## Détermination de l'incertitude lorsqu'on n'effectue qu'une seule mesure
 
