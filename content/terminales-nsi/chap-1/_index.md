@@ -22,12 +22,12 @@ layout: "single"
 
 ## Documents
 
-- **Chap. 1,1 :** [*Récursivité sur les entiers*](1-1-recursivite-sur-entiers)
+- **Doc. 1,1 :** [*Récursivité sur les entiers*](1-1-recursivite-sur-entiers)
 
-- **Chap. 1,2 :** [*Récursivité sur les chaînes de caractères et les listes*](1-2-recursivite-chaines-listes)
+- **Doc. 1,2 :** [*Récursivité sur les chaînes de caractères et les listes*](1-2-recursivite-chaines-listes)
 
-- **Chap. 1,3 :** [*Recherche d'un élément dans un tableau : algorithmes itératifs et récursifs*](1-3-recursivite-recherches)
+- **Doc. 1,3 :** [*Recherche d'un élément dans un tableau : algorithmes itératifs et récursifs*](1-3-recursivite-recherches)
 
-- **Chap. 1,4 :** [*Rappels d'algorithmique : variant de boucle, invariant de boucle, complexité*](1-4-rappels-algorithmique)
+- **Doc. 1,4 :** [*Rappels d'algorithmique : variant de boucle, invariant de boucle, complexité*](1-4-rappels-algorithmique)
 
-- **Chap. 1,5 :** [*Dessin de figures fractales*](5-fractales)
+- **Doc. 1,5 :** [*Dessin de figures fractales*](5-fractales)

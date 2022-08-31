@@ -1,6 +1,6 @@
 ---
 title: "La récursivité appliquée aux chaînes de caractères et aux listes"
-subtitle: "Chapitre 1,2"
+subtitle: "Document 1,2"
 author: ""
 type: ""
 date: 2020-09-08T04:53:31+04:00
@@ -16,6 +16,7 @@ auto_numbering: true
 Penser à écrire, pour chacune des fonctions ci-dessous, sa spécification ainsi qu'un jeu de tests.
 
 {{% note exercise %}}
+
 #### Recherche dans une chaîne de caractères
 
 Écrire une fonction récursive nommée `est_dans`, qui, à partir d'un caractère `e` et d'une chaîne de caractères `c`, détermine si ce caractère appartient à la chaîne.
@@ -26,6 +27,7 @@ Tester cette fonction.
 {{% /note %}}
 
 {{% solution "Solution" %}}
+
 ```python
 def est_dans(e: str, c: str) -> bool:
     """
@@ -65,10 +67,11 @@ def main():
 
 main()
 ```
+
 {{% /solution %}}
 
-
 {{% note exercise %}}
+
 #### Recherche de la position d'un caractère dans une chaîne de caractères
 
 Écrire une fonction récursive nommée `rang`, qui, à partir d'un caractère `e` et d'une chaîne de caractères `c`, détermine la (première) position de ce caractère dans la chaîne. Si le caractère n'est pas présent, retourner un entier négatif.
@@ -77,6 +80,7 @@ Tester cette fonction dans un programme.
 {{% /note %}}
 
 {{% solution "Solution" %}}
+
 ```python
 def rang(e: str, c: str, i: int) -> int:
     """
@@ -104,9 +108,11 @@ def main():
 
 main()
 ```
+
 {{% /solution %}}
 
 {{% note exercise %}}
+
 #### Inversion d'une chaîne de caractères
 
 Écrire une fonction récursive nommée `inversion`, qui, à partir d'une chaîne de caractères `c`, retourne la chaîne « mirroir », c'est à dire la chaîne égale à celle passée en argument quand on la lit de droite à gauche.
@@ -115,6 +121,7 @@ Tester cette fonction dans un programme.
 {{% /note %}}
 
 {{% solution "Solution" %}}
+
 ```python
 def inversion(c: str) -> str:
     """
@@ -174,17 +181,20 @@ def main():
 
 main()
 ```
+
 {{% /solution %}}
 
 {{% note exercise %}}
+
 #### Détecteur de palindrome
 
-Un palindrome est un mot (ou une phrase) qui se lit aussi bien de la gauche vers la droite que de la droite vers la gauche : par exemple « radar », « kayak », ou bien la phrase « esope reste et se repose » (si l'on ne tient pas compte des espaces). 
+Un palindrome est un mot (ou une phrase) qui se lit aussi bien de la gauche vers la droite que de la droite vers la gauche : par exemple « radar », « kayak », ou bien la phrase « esope reste et se repose » (si l'on ne tient pas compte des espaces).
 
 Écrire une fonction récursive nommée `est_palindrome` qui reçoit comme argument une chaîne de caractères contenant le mot (ou la phrase). Cette fonction doit tester si les deux caractères opposés sont identiques, puis appeler récursivement la fonction sur la partie de la chaîne qui ne contient pas ces deux caractères (les espaces sont ignorés).
 {{% /note %}}
 
 {{% solution "Solution" %}}
+
 ```python
 def est_palindrome(c: str) -> bool:
     """
@@ -223,9 +233,11 @@ def main():
 
 main()
 ```
+
 {{% /solution %}}
 
 {{% note exercise %}}
+
 #### Travail sur les listes
 
 1. Écrire une fonction nommée `longueur_liste`, récursive, qui, à partir d'une liste passée en argument, détermine sa longueur.
@@ -238,10 +250,12 @@ main()
 
 5. Écrire une fonction nommée `somme_listes_imbriquees`, récursive, qui additionne tous les entiers des listes.  
 Exemple de listes imbriquées :
+
 ```python
 l1 = [1, [2, [3, 4], 5], 6, [7, 8]]
 l2 = [1, [2, [3, [4, [5]]]]]
 ```
+
 Remarque.
 : Cette question peut illustrer, par exemple, la recherche de l'occupation disque de tous les fichiers dans la structure arborescente d'un système de fichiers à partir d'un point de cette structure.
 
@@ -249,7 +263,7 @@ Remarque.
 
 ```python
 assert duplique(5, 3) == [5, 5, 5]
-``` 
+```
 
 7. Écrire une fonction nommée `extrait`, récursive, qui, à partir d'une liste `l` et d'un entier `n`, retourne une liste constituée par les `n` premiers éléments de `l`.
 
@@ -263,13 +277,14 @@ assert extrait([5, 4, 3, 2, 1], 3) == [5, 4, 3]
 
 ```python
 assert creation_liste_filtree(1, 10) == [3, 5, 6, 9, 10]
-``` 
+```
 
 10. Modifier la fonction précédente afin que le filtre « entiers multiples de 3 ou de 5 » soit passé en argument.
 
 {{% /note %}}
 
 {{% solution "Solutions" %}}
+
 ```python
 def plus_grand_element(liste: list) -> float:
 
@@ -391,4 +406,5 @@ def main():
 
 main()
 ```
+
 {{% /solution %}}

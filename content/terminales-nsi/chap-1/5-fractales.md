@@ -1,6 +1,6 @@
 ---
 title: "Dessin de figures fractales"
-subtitle: "Chapitre 1,5"
+subtitle: "Document 1,5"
 author: ""
 type: ""
 date: 2021-01-26T06:16:46+04:00
@@ -92,7 +92,6 @@ central. On réitère le processus $n$ fois, $n$ étant appelé l'**ordre**.
 
 > Ordres 0, 1, 2 et 3 de la fractale.
 
-
 Si on trace trois fois cette figure, on obtient successivement un
 triangle, une étoile, puis un flocon de plus en plus complexe.
 
@@ -107,7 +106,6 @@ triangle, une étoile, puis un flocon de plus en plus complexe.
 <img src="/terminales-nsi/chap-1/chap-1-5/flocon_3.png" alt="" width="60%" />
 {{% endcolumns %}}
 > Figures successives (ordre 0, 1, 2 et 4).
-
 
 ### Principe de la construction
 
@@ -124,13 +122,14 @@ La méthode de construction utilise un algorithme récursif :
     partie de segment en sous-parties*.
 {{% /note %}}
 
-
 ### Travail
 
-1. Définir la fonction de signature 
+1. Définir la fonction de signature
+
 ```python
 koch_1(t: turtle, l: int) -> None
 ```
+
 qui dessine un segment de Koch à l'ordre 1, de longueur $l$, à l'aide de l'objet de type Turtle `t`. Les sous-segments de la figure sont de longueur $l/3$ et les angles
     sont de 60 ou 120 degrés.
 
@@ -146,10 +145,12 @@ Remarque.
 
     - cacher le symbole représentant la tortue à l'écran : `t.hideturtle`.
 
-3. Définir la fonction de signature 
+3. Définir la fonction de signature
+
 ```python
 koch(t: turtle, n: int, l: int) -> None
 ```
+
 qui dessine à l'écran un segment de
     Koch d'ordre 0 ou 1, de longueur $l$, à l'aide de l'objet de type
     Turtle `t`.\
@@ -174,6 +175,7 @@ qui dessine à l'écran un segment de
     longueur $l$.
 
 {{% solution "Solution" %}}
+
 ```python
 """
 Tracé du flocon de Von Koch
@@ -262,6 +264,7 @@ def main():
 
 main()
 ```
+
 {{% /solution %}}
 
 ## Arbre fractal
@@ -292,7 +295,7 @@ Pour transformer un segment non-terminal de longueur $l$, on trace un
 segment terminal de longueur $l/3$, puis deux segments non-terminaux de
 longueur $2l/3$ à un angle $\theta$ du premier segment.
 
-### Travail.
+### Travail
 
 Suivre la même démarche que pour le flocon de Koch pour écrire une
 fonction de signature qui trace l'arbre, et *repositionne la tortue à
@@ -310,6 +313,7 @@ son point de départ*.
     profondeur 10 ou 11 donne un résultat assez joli.
 
 {{% solution "Solution" %}}
+
 ```python
 """
 Programme qui dessine un arbre fractal.
@@ -353,5 +357,6 @@ def main():
     turtle.mainloop()
 
 main()
-``` 
+```
+
 {{% /solution %}}

@@ -443,14 +443,12 @@ Finalement, $R = \pu{(165 \pm 8) \Omega}$.
     3. Déterminer l'incertitude finale associée au mesurage.
 
 {{% solution "Réponses" %}}
-1.
-$$ U_{\text{lecture}} = \sqrt{2} \times \dfrac{2\times \pu{0,1mL}}{\sqrt{12}} = \pu{0,0816 mL} $$
 
-2.
+1. $$ U_{\text{lecture}} = \sqrt{2} \times \dfrac{2\times \pu{0,1mL}}{\sqrt{12}} = \pu{0,0816 mL} $$
 
-$$ U_{\text{tolérance}} = \dfrac{2\times \pu{0,05 mL}}{\sqrt{3}} = \pu{0,0577 mL} $$
+2. $$ U_{\text{tolérance}} = \dfrac{2\times \pu{0,05 mL}}{\sqrt{3}} = \pu{0,0577 mL} $$
 
-3. L'incertitude finale est a pour expression ici&nbsp;: $ U(V) = \sqrt{U_{\text{lecture}}^2 + U_{\text{tolérance}}^2}$
+3. L'incertitude finale est a pour expression ici&nbsp;: $$ U(V) = \sqrt{U_{\text{lecture}}^2 + U_{\text{tolérance}}^2} $$
 $$ U(V) = \sqrt{(\pu{0,0816 mL})^2 + (\pu{0,0577 mL})^2} = \pu{0,1 mL} $$
 {{% /solution %}}
 
@@ -483,7 +481,10 @@ $$
             &= \pu{6,2e9 C/kg}
     \end{aligned}
 $$
-$e/m = \pu{(1,76 \pm 0,07)e11 C/kg}$
+
+donc
+
+$$ e/m = \pu{(1,76 \pm 0,07)e11 C/kg}$$
 {{% /solution %}}
 
 {{% note exercise %}}

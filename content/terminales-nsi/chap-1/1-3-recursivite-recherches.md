@@ -1,6 +1,6 @@
 ---
 title: "Recherche d'un élément dans un tableau : algorithmes itératifs et récursifs"
-subtitle: "Chapitre 1,3"
+subtitle: "Document 1,3"
 author: ""
 type: ""
 date: 2020-09-09T21:33:15+04:00
@@ -17,6 +17,7 @@ auto_numbering: true
 
 La recherche d'éléments dans un tableau a déjà été évoquée en classe de première. Les deux algorithmes mis en œuvre à cette occasion, la **recherche linéaire** et la **recherche dichotomique**, utilisaient des boucles.  
 L'objectif de cette séance est de rapidement revoir ces algorithmes et de mettre en œuvres des algorithmes récursifs de même complexité. Quatre algorithmes de recherche vont donc être implémentés&nbsp;:
+
 - *La recherche linéaire itérative*&nbsp;;
 - *La recherche linéaire récursive*&nbsp;;
 - *La recherche dichotomique itérative*&nbsp;;
@@ -24,7 +25,7 @@ L'objectif de cette séance est de rapidement revoir ces algorithmes et de mettr
 
 ## Travail à faire
 
-- Implémenter en Python les cinq algorithmes suivants et répondre aux questions. 
+- Implémenter en Python les cinq algorithmes suivants et répondre aux questions.
 {{% note warning %}}
 Penser à donner la **spécification** de chacune des fonctions et écrire une **série des tests** pour chacune d'elles.
 {{% /note %}}
@@ -33,18 +34,19 @@ Penser à donner la **spécification** de chacune des fonctions et écrire une *
 ## Recherche séquentielle (ou linéaire)
 
 {{% note tip %}}
-La **recherche séquentielle (ou linéaire)**  consiste à 
+La **recherche séquentielle (ou linéaire)**  consiste à
 *comparer la valeur recherchée à toutes les valeurs présentes dans le tableau*.  
 {{% /note %}}
 
 ### Recherche séquentielle itérative
 
 {{% note normal %}}
+
 #### Algorithme 1
 
 **Fonction&nbsp;:** recherche(tab, valeur)  
 **Action&nbsp;:** recherche la valeur «&nbsp;valeur&nbsp;» dans le tableau «&nbsp;tab&nbsp;»  
-**Début**    
+**Début**
 <span style="margin-left: 2em">i ⟵ 0  </span><br />
 <span style="margin-left: 2em">i_val ⟵ -1  </span><br />
 <span style="margin-left: 2em">nb ⟵ Longueur(tab)  </span><br />
@@ -63,28 +65,28 @@ La **recherche séquentielle (ou linéaire)**  consiste à
 
 {{% /solution %}}
 
-2.  Démontrer que l'algorithme se termine.
+2. Démontrer que l'algorithme se termine.
 {{% solution "Réponse" %}}
 
 {{% /solution %}}
 
-3.  Démontrer que l'algorithme est correct.
+3. Démontrer que l'algorithme est correct.
 {{% solution "Réponse" %}}
 
 {{% /solution %}}
 
-4.  Démontrer que l'algorithme est en O(N).
+4. Démontrer que l'algorithme est en O(N).
 {{% solution "Réponse" %}}
 
 {{% /solution %}}
 
-5.  Comment pourrait-on améliorer l'efficacité de cet algorithme&nbsp;?
+5. Comment pourrait-on améliorer l'efficacité de cet algorithme&nbsp;?
 {{% solution "Réponse" %}}
 
 {{% /solution %}}
-
 
 {{% note normal %}}
+
 ##### Algorithme 2
 
 **Fonction&nbsp;:** recherche(tab, valeur)  
@@ -111,11 +113,12 @@ La **recherche séquentielle (ou linéaire)**  consiste à
 ### Recherche séquentielle récursive
 
 {{% note normal %}}
+
 #### Algorithme 3
 
 **Fonction&nbsp;:** recherche(tab, valeur, i)  
 **Action&nbsp;:** recherche la valeur «&nbsp;valeur&nbsp;» dans le tableau «&nbsp;tab&nbsp;» à l'aide de l'indice i.  
-**Début**    
+**Début**
 <span style="margin-left: 2em">nb ⟵ **Longueur**(tab)  </span><br />
 <span style="margin-left: 2em">**Si** i == nb **Alors**  </span><br />
 <span style="margin-left: 4em">**Renvoyer** -1  </span><br />
@@ -134,7 +137,7 @@ La **recherche séquentielle (ou linéaire)**  consiste à
 
 ## Recherche dichotomique
 
-Dès que le nombre de données devient important, la recherche séquentielle n'est plus envisageable. Sa complexité en $O(N)$ pénalise les autres traitements qui l'utilisent. Il faut diminuer le temps de traitement par l'emploi d'algorithmes plus performants, comme celui de la **recherche dichotomique**. 
+Dès que le nombre de données devient important, la recherche séquentielle n'est plus envisageable. Sa complexité en $O(N)$ pénalise les autres traitements qui l'utilisent. Il faut diminuer le temps de traitement par l'emploi d'algorithmes plus performants, comme celui de la **recherche dichotomique**.
 
 {{% note tip %}}
 La **recherche dichotomique** est basée sur le principe de «&nbsp;diviser pour régner&nbsp;». On divise l'ensemble de recherche en deux sous-ensembles égaux. On détermine ensuite dans quel sous-ensemble doit se trouver la valeur recherchée, puis on poursuit la recherche dans ce sous-ensemble.
@@ -151,11 +154,12 @@ La division par deux de l'ensemble de données de recherche à chaque appel indi
 ### Recherche dichotomique itérative
 
 {{% note normal %}}
+
 #### Algorithme 4
 
 **Fonction&nbsp;:** recherche(tab, valeur)  
 **Action&nbsp;:** recherche la valeur «&nbsp;valeur&nbsp;» dans le tableau «&nbsp;tab&nbsp;»  
-**Début**    
+**Début**
 <span style="margin-left: 2em">trouvé ⟵ FAUX  </span><br />
 <span style="margin-left: 2em">résultat ⟵ -1  </span><br />
 <span style="margin-left: 2em">gauche ⟵ 0  </span><br />
@@ -180,17 +184,17 @@ La division par deux de l'ensemble de données de recherche à chaque appel indi
 
 {{% /solution %}}
 
-9.  Démontrer que l'algorithme se termine.
+9. Démontrer que l'algorithme se termine.
 {{% solution "Réponse" %}}
 
 {{% /solution %}}
 
-10.  Démontrer que l'algorithme est correct.
+10. Démontrer que l'algorithme est correct.
 {{% solution "Réponse" %}}
 
 {{% /solution %}}
 
-11.  Démontrer que l'algorithme est en $O(\log_2 N)$.
+11. Démontrer que l'algorithme est en $O(\log_2 N)$.
 {{% solution "Réponse" %}}
 
 {{% /solution %}}
@@ -198,11 +202,12 @@ La division par deux de l'ensemble de données de recherche à chaque appel indi
 ### Recherche dichotomique récursive
 
 {{% note normal %}}
+
 #### Algorithme 5
 
 **Fonction&nbsp;:** recherche(tab, valeur, gauche, droite)  
 **Action&nbsp;:** recherche la valeur «&nbsp;valeur&nbsp;» dans le tableau «&nbsp;tab&nbsp;»  
-**Début**    
+**Début**
 <span style="margin-left: 2em">**Si** gauche > droite **Alors**  </span><br />
 <span style="margin-left: 4em">**Renvoyer** -1  </span><br />
 <span style="margin-left: 2em">**Sinon**  </span><br />
