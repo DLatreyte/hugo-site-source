@@ -1,6 +1,6 @@
 ---
 title: "Exercices d'optique géométrique"
-subtitle: "Chapitre 19,2"
+subtitle: "Document 1,3"
 author: ""
 type: ""
 date: 2021-05-16T03:45:12+04:00
@@ -20,9 +20,10 @@ On dispose d'un banc d'optique, d'un objet lumineux $AB$ de hauteur $\pu{3,5 cm}
 1. L'objet lumineux est placé à une distance de $\pu{15,0 cm}$ de la lentille $L_1$.\
 Où doit-on placer l'écran afin de visualiser une image nette de AB à travers la lentille $L_1$ ?
 {{% solution "Solution" %}}
+
 - Relation de Descartes :
 $$
-    \dfrac{1}{\overline{O_1A' }} - \dfrac{1}{\overline{O_1A}} = \dfrac{1}{f'_1} 
+    \dfrac{1}{\overline{O_1A' }} - \dfrac{1}{\overline{O_1A}} = \dfrac{1}{f'_1}
     \iff
     \overline{O_1A' } = \dfrac{f'_1 \cdot \overline{O_1A}}{\overline{O_1A} + f'_1}
 $$
@@ -34,6 +35,7 @@ L'écran doit être placé $\pu{30,0 cm}$ derrière la lentille $L_1$.
 
 2. Dans ces conditions, quelle est la valeur du grandissement de la lentille $L_1$ ?
 {{% solution "Solution" %}}
+
 - Le grandissement est défini par :
 $$
     \gamma = \dfrac{\overline{A' B'}}{\overline{AB}}
@@ -47,12 +49,14 @@ donc $\gamma = \dfrac{\pu{30,0 cm}}{\pu{-15,0 cm}} = \pu{-2,0}$
 
 3. L'image est-elle droite ou renversée ? Est-elle plus grande ou plus petite que l'objet ?
 {{% solution "Solution" %}}
+
 - L'image est renversée car le grandissement est négatif.
 - L'image est plus grande que l'objet car $\lvert \gamma \rvert > 1$.
 {{% /solution %}}
 
 4. En déduire la dimension de l'image.
 {{% solution "Solution" %}}
+
 - Si on utilise la définition du grandissement on obtient
 $$
     \overline{A' B'} = \gamma \cdot \overline{AB}
@@ -65,14 +69,14 @@ L'image a pour dimension $A' B' = \pu{7,0 cm}$.
 5. On remplace la lentille $L_1$ par une lentille convergente $L_2$ de vergence $V_2$ inconnue. Sur le banc d'optique, l'objet est placé à $\pu{40,0 cm}$ de la lentille. On visualise une image nette lorsque l'écran se situe $\pu{66,7 cm}$ derrière la lentille.\
 Calculer la vergence $V_2$ de la lentille.
 {{% solution "Solution" %}}
+
 - La relation de conjugaison permet d'écrire
 $$
-    V_2 = \dfrac{1}{f'_2} = \dfrac{1}{\overline{O_2A' }} - \dfrac{1}{\overline{O_2A}} 
+    V_2 = \dfrac{1}{f'_2} = \dfrac{1}{\overline{O_2A' }} - \dfrac{1}{\overline{O_2A}}
         = \dfrac{\overline{O_2A} - \overline{O_2A' }}{\overline{O_2A' } \cdot \overline{O_2A}}
 $$
 - **A.N.** $V_2 = \dfrac{\pu{-40,0 cm} - \pu{66,7 cm}}{\pu{66,7 cm} \times \pu{-40,0 cm}} = \pu{4,0 \delta}$.
 {{% /solution %}}
-
 
 ## Où est passée la lentille ?
 
@@ -89,7 +93,6 @@ L'image $A' B'$ d'un objet $AB$ donnée par une lentille est renversée et deux 
 5. Déterminer graphiquement le grandissement de la lentille $L$ dans les conditions d'utilisation.
 
 6. Retrouver la valeur du grandissement par le calcul en mesurant $\overline{OA}$ et $\overline{OA' }$.
-
 
 ## La loupe
 
@@ -117,20 +120,20 @@ Sur certaines montres indiquant le jour du mois, on place devant ce nombre une l
 
 7. Quelle est la distance focale de la lentille ? Le nombre se situe à $\pu{2 mm}$ de la lentille, l'observation de ce nombre à travers la lentille doit se faire sans effort pour l'œil.
 
-
 ## Principe du vidéo-projecteur
 
 {{% note normal %}}
+
 #### Caractéristiques
 
 - Format : 16/9
 - Résolution : W-XGA 1280x768
 - Taille image: 0,75 m - 7,5 m
 - Luminosité : 110 ANSI Lumens
-- Niveau sonore : 25 dB (mode silencieux)/30 dB (mode normal) 
+- Niveau sonore : 25 dB (mode silencieux)/30 dB (mode normal)
 - Distance : 0,9 m à 10 m
 - Contraste: > 2500:1
-- Optique : Lentille de projection : 22 à 27 mm 
+- Optique : Lentille de projection : 22 à 27 mm
 - Lampe : Durée de vie 4 000 heures
 {{% /note %}}
 
@@ -160,12 +163,12 @@ Le vidéo-projecteur décrit ci-dessus a une lentille $L_2$ dont la focale $f'_2
 
 7. Le conseil d'utiliser une focale courte est-il justifié ?
 
-
 ## Une carte plein cadre
 
 Un appareil photographique comporte deux éléments essentiels : l'objectif et la pellicule.
 
 On modélise :
+
 - l'objectif par une lentille mince convergente $L$ de centre optique $O$ ; on appelle $F$ et $F'$ les foyers principaux, respectivement objet et image, de cette lentille, dont la distance focale est :
 $$
     f' = OF' = \pu{+50 mm}
@@ -207,7 +210,6 @@ Disposant de bagues allonges de longueurs $\pu{5 mm}$, $\pu{10 mm}$ et $\pu{20 m
 
 <img src="/terminales-pc/chap-19/chap-19-2/chap-19-2-3.png" alt="" width="70%" />
 
-
 ## Observation de la Lune
 
 1. La distance moyenne Terre-Lune est de $\pu{384e3 km}$. Le diamètre de la Lune est environ $\pu{3500 km}$. Quel est le diamètre apparent de la
@@ -227,6 +229,7 @@ Quelle est la distance séparant les centres optiques de l'objectif et de l'ocul
 En 1611, KEPLER propose le principe de la lunette astronomique, avec des lentilles convergentes pour l'oculaire et l'objectif. Il améliore la lunette de GALILÉE, mais l'image est renversée. KEPLER ne mettra cependant pas son idée en pratique ; il faudra attendre 1617 pour voir apparaître les premières lunettes astronomiques.
 
 On se propose de modéliser une lunette astronomique à l'aide de deux lentilles convergentes :
+
 - une lentille $L_1$ de distance focale $f'_1 = \pu{60 cm}$ ;
 - une lentille $L_2$ de distance focale $f'_2 = \pu{10 cm}$.
 

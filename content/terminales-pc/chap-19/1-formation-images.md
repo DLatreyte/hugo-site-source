@@ -1,6 +1,6 @@
 ---
 title: "Formation d'une image par une lentille mince convergente"
-subtitle: "Chapitre 1,1"
+subtitle: "Document 1,1"
 author: ""
 type: ""
 date: 2021-08-31T21:33:32+04:00
@@ -14,7 +14,7 @@ auto_numbering: true
 ---
 
 > L'objectif de cette séance est de se remettre en mémoire les conditions d'obtention et les caractéristiques d'une image formée par une lentille mince convergente en fonction de la position de l'objet.
-> Dans un second temps, on rappellera comment on peut déterminer la distance focale d'une lentille expérimentalement. 
+> Dans un second temps, on rappellera comment on peut déterminer la distance focale d'une lentille expérimentalement.
 
 ## Différentes méthodes d'obtention des position, taille et sens d'une image selon la distance entre l'objet et la lentille
 
@@ -43,9 +43,10 @@ Même question pour le rayon de lumière qui passe par le foyer image d'une lent
 Quelle est la particularité du rayon de lumière qui passe par le centre optique d'une lentille mince convergente ?
 
 4. Vérifier les conclusions des observations pour les distances objet-lentille de $\pu{30 cm}$, $\pu{20 cm}$ et $\pu{150 cm}$ à l'aide de cette application&nbsp;:
+
 <iframe scrolling="no" title="Lentilles minces, constructions d'images" src="https://www.geogebra.org/material/iframe/id/hjdfjwty/width/1431/height/779/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="800px" height="779px" style="border:0px;"> </iframe>
 
-5. Télécharger ce [document](/terminales-pc/chap-19/chap-19-1/constructions.pdf) et tracer les images pour toutes les situations proposées. 
+5. Télécharger ce [document](/terminales-pc/chap-19/chap-19-1/constructions.pdf) et tracer les images pour toutes les situations proposées.
 
 {{% note tip %}}
 
@@ -56,7 +57,7 @@ $$
     \dfrac{1}{\overline{OA'}} - \dfrac{1}{\overline{OA}} = \dfrac{1}{f'}
 $$
 
-{{% /note %}} 
+{{% /note %}}
 
 {{% note warning %}}
 
@@ -96,7 +97,6 @@ Placer une lentille inconnue (tenue à la main) de manière à obtenir l'image d
 
 ### Détermination de la distance focale en utilisant la relation de conjugaison
 
-
 {{% note normal %}}
 
 - Placer l'objet lumineux, la lentille et l'écran sur le banc d'optique.
@@ -104,6 +104,7 @@ Placer une lentille inconnue (tenue à la main) de manière à obtenir l'image d
 Mesurer alors la distance entre la lentille et l'écran.
 - Choisir six à huit distances différentes entre l'objet et la lentille et mesurer à chaque fois la distance entre la lentille et l'écran.
 - Rassembler ces mesures dans un tableau tel que celui-ci :
+
 <center>
 
 | Mesure | $\overline{OA}$ | $\overline{OA'}$ | $1/\overline{OA}$ | $1/\overline{OA'}$ |

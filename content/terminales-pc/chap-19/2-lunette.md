@@ -1,6 +1,6 @@
 ---
 title: "Construction d'une lunette afocale"
-subtitle: "Chapitre 1,2"
+subtitle: "Document 1,2"
 author: ""
 type: ""
 date: 2021-08-31T21:26:53+04:00
@@ -22,7 +22,7 @@ Un œil humain parfait étant fait pour observer un objet situé à l'infini, il
 
 {{% /note %}}
 
-> À l'issue de cette séance vous devrez être capables de construire et d'expliquer le principe d'une lunette afocale. 
+> À l'issue de cette séance vous devrez être capables de construire et d'expliquer le principe d'une lunette afocale.
 
 {{% note warning %}}
 
@@ -32,11 +32,9 @@ Sans cette étape préalable d'analyse vous ne parviendrez pas à l'objectif fin
 
 {{% /note %}}
 
-
 ## Création d'un objet situé à l'infini
 
 > Une lunette est un instrument d'optique utile pour observer un objet situé très loin, ce qui n'existe pas dans une salle de TP. Cette partie a donc pour vocation de simuler un objet situé à l'infini.
-
 
 1. Qu'est ce qui caractérise les rayons de lumière provenant d'un objet situé à l'infini ?
 {{% solution "Réponse" %}}
@@ -79,14 +77,9 @@ On doit donc placer la lentille $L\_1$ de telle sorte que l'objet $AB$ soit situ
 
 5. Sur une feuille de papier, représenter à l'échelle 1 verticalement et 1/10 horizontalement, la lentille $L\_1$, et ses foyers et l'objet $AB$.
 
-6. Construire de *deux couleurs différentes* les faisceaux lumineux issus de $A$ et de $B$. 
+6. Construire de *deux couleurs différentes* les faisceaux lumineux issus de $A$ et de $B$.
 
 7. Noter l'angle $\theta$ sur le schéma et calculer sa valeur.
-
-
-
-
-
 
 ## Construction et étude du principe d'une lunette afocale
 
@@ -100,14 +93,13 @@ Pour résumer, *la lumière entre dans la lunette par l'objectif et en ressort p
 
 ### Étude des positions relatives de l’objectif et de l’oculaire dans une lunette afocale
 
-
 - L'objet $AB$ situé à l'infini simule un couple d'étoiles : l'étoile $A$ est située sur l'axe optique et l'étoile $B$ est éloignée d'un angle $\theta$.
 
-
 {{% note normal %}}
-- La lunette astronomique est modélisée par deux lentilles minces convergentes : 
-    - une lentille $L_2$ de vergence $V\_2 = \pu{4,0 \delta}$ en face de la graduation $\pu{200 mm}$ du banc optique ;
-    - une lentille $L_3$ de vergence $V\_3 = \pu{5,0 \delta}$ en face de la graduation $\pu{650 mm}$ du banc optique.
+
+- La lunette astronomique est modélisée par deux lentilles minces convergentes :
+  - une lentille $L_2$ de vergence $V\_2 = \pu{4,0 \delta}$ en face de la graduation $\pu{200 mm}$ du banc optique ;
+  - une lentille $L_3$ de vergence $V\_3 = \pu{5,0 \delta}$ en face de la graduation $\pu{650 mm}$ du banc optique.
 {{% /note %}}
 
 8. À partir du document de présentation des lunettes, expliquer pourquoi dans le montage la lentille $L_2$ simule l'objectif.{{% solution "Réponse" %}}
@@ -191,7 +183,7 @@ l’image définitive.
 
 {{% /note %}}
 
-15. L’image intermédiaire $A\_1B\_1$ est-elle droite ou renversée ? 
+15. L’image intermédiaire $A\_1B\_1$ est-elle droite ou renversée ?
 {{% solution "Réponse" %}}
 
 $A\_1B\_1$ est inversée.
@@ -201,11 +193,9 @@ $A\_1B\_1$ est inversée.
 16. Mesurer la taille de l'image intermédiaire $A\_1B\_1$.
 {{% solution "Réponse" %}}
 
-
-
 {{% /solution %}}
 
-17. L’image finale $A'B'$ est-elle droite ou renversée ? 
+17. L’image finale $A'B'$ est-elle droite ou renversée ?
 
 {{% solution "Réponse" %}}
 
@@ -213,12 +203,10 @@ Une lunette afocale donne une image renversée d'un objet.
 
 {{% /solution %}}
 
-
 ## Étude du grossissement
 
 18. Sur le schéma de la lunette, sur lequel les images $A'B'\_1'$ et $A'B'$ ont déjà été tracée, placer les angles $\theta$ et $\theta'$.\
 $\theta'$ est l'angle sous lequel on voit l'image $A'B'$ depuis la lentille $L\_3$.
-
 
 19. Calculer les valeurs de ces angles. Vérifier en particulier que la valeur de θ correspond bien à celle calculée à la question 7.\
 *Attention, il faut calculer ces angles, ils ne sont pas mesurables directement sur le schéma car les échelles verticale et horizontale sont différentes.*
@@ -235,11 +223,9 @@ $G$ est donc une grandeur sans dimension.
 20. Calculer la valeur du grossissement de la lunette.
 {{% solution "Réponse" %}}
 
-
-
 {{% /solution %}}
 
-21. Montrer, que dans le cas de la lunette afocale, le grossissement $G$ a aussi pour expression 
+21. Montrer, que dans le cas de la lunette afocale, le grossissement $G$ a aussi pour expression
 $$
     G = \dfrac{f'\_{\text{objectif}}}{f'\_{\text{oculaire}}}
 $$

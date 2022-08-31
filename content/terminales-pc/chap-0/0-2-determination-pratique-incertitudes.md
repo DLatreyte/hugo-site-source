@@ -404,7 +404,7 @@ Déterminer l'incertitude sur la mesure du volume d'eau.
 L'incertitude $U$ vaut donc $U = \dfrac{2 \times \pu{0,05 mL}}{\sqrt{3}} = \pu{0,0577 mL}$ et le volume mesuré est $\pu{(40,00 \pm 0,06) mL}$.
 {{% /solution %}}
 
-## évaluation d'une incertitude sur une mesure dans laquelle interviennent plusieurs sources d'erreurs
+## Évaluation d'une incertitude sur une mesure dans laquelle interviennent plusieurs sources d'erreurs
 
 Lors d'un mesurage, il est fréquent d'avoir plusieurs sources d'erreurs à prendre en compte.
 
@@ -415,14 +415,17 @@ C'est notamment le cas lorsque&nbsp;:
 
 {{% note warning %}}
 On rappelle qu'il ne faut surtout pas apprendre par cœur les expressions mais savoir les utiliser.
+*Les expressions à utiliser sont systématiquement donnée dans les énoncés.*
 {{% /note %}}
 
+<!--
 {{% note tip %}}
 Lorsque la grandeur évaluée est le résultat d’un calcul où interviennent plusieurs mesures, on peut évaluer l’incertitude  $U(m)$ en utilisant les relations suivantes&nbsp;:
 
 - Si $m=x+y+z+\ldots$, alors $U(m)^2 = U(x)^2+U(y)^2+U(z)^2+\ldots$&nbsp;;
 - Si $m = x\cdot \dfrac{y}{z}$, alors $\left(\dfrac{U(m)}{m}\right)^2 = \left(\dfrac{U(x)}{x}\right)^2 + \left(\dfrac{U(y)}{y}\right)^2 + \left(\dfrac{U(z)}{z}\right)^2$
 {{% /note %}}
+-->
 
 21. On cherche à déterminer la valeur d'une résistance électrique $R$ par mesures de la tension $U$ à ses bornes et de l'intensité $I$ du courant qui la traverse. On obtient les valeurs suivantes&nbsp;: $U=\pu{(19,8 \pm 0,3) V}$ et $I=\pu{(0,120\pm 0,005) A}$. La loi d'ohm se traduit mathématiquement par la relation $R = \dfrac{U}{I}$.  
 Déterminer la valeur $R$ de cette résistance électrique sachant que
@@ -443,9 +446,9 @@ Finalement, $R = \pu{(165 \pm 8) \Omega}$.
 
 22. Un élève manipule une burette graduée de tolérance $t=\pu{\pm 0,05 mL}$. On suppose qu'il utilise une méthode de lecture du volume correcte. On ne prend donc en compte que l'incertitude de lecture sur l'échelle graduée de la burette.
 
-    1. Pour faire une mesure de volume versé, il doit faire deux lectures de volume successives&nbsp;: *le zéro et le volume versé*. Déterminer l'incertitude associée à chaque lecture.
-    2. Déterminer l'incertitude liée à la tolérance indiquée par le constructeur.
-    3. Déterminer l'incertitude finale associée au mesurage.
+    1. Pour faire une mesure de volume versé, il doit faire deux lectures de volume successives&nbsp;: *le zéro et le volume versé*. Déterminer l'incertitude $U_{\text{lecture}}$ associée à ces deux repérages.
+    2. Déterminer l'incertitude $U_{\text{tolérance}}$ liée à la tolérance indiquée par le constructeur.
+    3. Déterminer l'incertitude finale associée au mesurage, sachant qu'elle a pour expression $$ U(V) = \sqrt{U_{\text{lecture}}^2 + U_{\text{tolérance}}^2} $$
 
 {{% solution "Réponses" %}}
 
