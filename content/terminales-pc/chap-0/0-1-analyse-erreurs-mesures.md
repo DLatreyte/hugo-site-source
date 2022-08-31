@@ -9,7 +9,7 @@ toc: true
 tags: ["Erreurs", "Incertitudes"]
 categories: ["Physique", "Terminale Spé PC"]
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 La physique est une *science naturelle*. *Les lois qui décrivent et qui
@@ -291,6 +291,7 @@ valeur attendue. En fait, on ne peut pas dire grand chose tellement cette
 ## En résumé
 
 {{% note tip %}}
+
 - *Le résultat d'une mesure n'est **pas une valeur mais un intervalle**  de
   valeurs dans lequel on peut considérer, **avec une certaine confiance** ,
   que la «&nbsp;valeur vraie&nbsp;» se trouve* .
