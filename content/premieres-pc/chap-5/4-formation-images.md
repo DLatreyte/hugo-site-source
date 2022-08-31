@@ -181,7 +181,7 @@ point sur le schéma de la question 6.
 ### Modélisation d'une lentille convergente
 
 {{% note tip %}}
-*Si une lentille convergent est suffisamment mince*, on peut *négliger
+*Si une lentille convergente est suffisamment mince*, on peut *négliger
 l'épaisseur de sa partie centrale* qui se réduit alors à un point, noté
 $O$ et appelé **centre optique**.
 Dans ce cas, l'axe optique se confond avec la droite perpendiculaire à la lentille passant par $O$.
