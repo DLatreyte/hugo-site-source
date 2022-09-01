@@ -9,7 +9,7 @@ toc: true
 tags: ["Lentille mince convergente", "Formation image", "Geogebra", "Rayons particuliers", "Lentille", "Lentille convergente", "Distance focale", "Foyer image", "Foyer objet", "Axe optique", "Centre optique"]
 categories: ["Physique", "Premières Spé PC"]
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 
