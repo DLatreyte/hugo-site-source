@@ -23,16 +23,17 @@ layout: "single"
 ## Ressources
 
 ----
+
 - {{< remote "Chapitre sur le Livre Scolaire" "https://www.lelivrescolaire.fr/page/6562916" >}}
+
 ----
 
-- **Chap. 2,1 :** [*Composition chimique des solutions*](1-composition-chimique-solutions)
+- **Doc. 2,1 :** [*Composition chimique des solutions*](1-composition-chimique-solutions)
 
-- **Chap. 2,2 :** [*Détermination de la composition d'une solution colorée, loi de Beer-Lambert*](2-beer-lambert)
+- **Doc. 2,2 :** [*Détermination de la composition d'une solution colorée, loi de Beer-Lambert*](2-beer-lambert)
 
-- **Chap. 2,3 :** [*Le design culinaire*](3-design-culinaire)
+- **Doc. 2,3 :** [*Le design culinaire*](3-design-culinaire)
 
-- **Chap. 2,4 :** [*Dosage d'un antiseptique : l'eau de Dakin*](4-eau-dakin)
+- **Doc. 2,4 :** [*Dosage d'un antiseptique : l'eau de Dakin*](4-eau-dakin)
 
-- **Chap. 2,5 :** [*Exercices du chapitre*](5-exercices)
-
+- **Doc. 2,5 :** [*Exercices du chapitre*](5-exercices)
