@@ -1,6 +1,6 @@
 ---
 title: "Détermination de la composition d'une solution colorée, loi de Beer-Lambert"
-subtitle: "Chapitre 2,2"
+subtitle: "Document 2,2"
 author: ""
 type: ""
 date: 2020-09-15T23:41:11+04:00
@@ -25,6 +25,7 @@ auto_numbering: true
 ### Lumière blanche
 
 {{% note tip %}}
+
 - La **lumière blanche** contient toutes les radiations visibles par l'œil.
 - Ces différentes radiations sont caractérisées par leur **longueur d'onde**[^1] $\lambda$ et *perçues comme des lumières de couleurs différentes*. *À chaque longueur d'onde correspond une couleur*.
 {{% /note %}}
@@ -35,7 +36,6 @@ auto_numbering: true
 | Couleur | Violet | Bleu | Vert | Jaune | Orange | Rouge |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | $\lambda$ (m) | 400 -- 424 | 424 -- 491 | 491 -- 575 | 575 -- 585 | 585 -- 647 | 647 -- 750 |
-
 
 ### Lumière colorée
 
@@ -59,9 +59,9 @@ Une lumière, dite **incidente**, qui entre en contact avec une solution, peut �
 
 <img src="/premieres-pc/chap-2/chap-2-2-4.png" alt="" width="60%" />
 
-
 {{% note tip %}}
-- Une solution est colorée si *elle absorbe une partie des radiations de la lumière incidente*.   
+
+- Une solution est colorée si *elle absorbe une partie des radiations de la lumière incidente*.
 - *La solution soustrait à la lumière incidente les couleurs qu’elle absorbe.*
 - La **couleur de la solution** est alors la *couleur complémentaire de la couleur absorbée*.
 {{% /note %}}
@@ -76,7 +76,7 @@ L'**absorbance** $A$ d'une solution colorée est *une grandeur **sans unité** q
 
 <img src="/premieres-pc/chap-2/chap-2-2-5.png" alt="" width="60%" />
 
-L'expression mathématique de l'absorbance $A$ (**qu'il ne faut pas apprendre&nbsp;!**) est 
+L'expression mathématique de l'absorbance $A$ (**qu'il ne faut pas apprendre&nbsp;!**) est
 
 $$A_{\lambda} = \log \left( \dfrac{I_0}{I_{\lambda_{\lambda} }}  \right)$$
 
@@ -96,7 +96,8 @@ Le coefficient de proportionnalité $k$ a pour unité $\pu{L/mol}$.
 {{% /note %}}
 
 {{% note warning %}}
-La loi de Beer-Lambert n'est cependant valable que sous certaines conditions&nbsp;: 
+La loi de Beer-Lambert n'est cependant valable que sous certaines conditions&nbsp;:
+
 - *la lumière doit être monochromatique*&nbsp;;
 - *les solutions doivent être homogènes*&nbsp;;
 - *la concentration de la solution en soluté doit être faible (inférieure à $\pu{1e-2 mol/L}$)*&nbsp;;
@@ -106,14 +107,13 @@ La loi de Beer-Lambert n'est cependant valable que sous certaines conditions&nbs
 ## Dosage spectrophotométrique (ou colorimétrique)
 
 {{% note tip %}}
-- **Doser une solution** consiste à *déterminer la concentration (molaire) d'une espèce chimique en solution*. 
+
+- **Doser une solution** consiste à *déterminer la concentration (molaire) d'une espèce chimique en solution*.
 - Un dosage colorimétrique est un type de dosage possible lorsque l'espèce chimique colore la solution et que la loi de Beer-Lambert peut être utilisée.
 {{% /note %}}
 
 {{% note normal %}}
+
 - Il est nécessaire de réaliser, dans un premier temps, une **courbe d'étalonnage** à l'aide d'une **échelle de teinte** dont *les concentrations encadrent la concentration recherchée*.
 - *La longueur d'onde du filtre choisi doit correspondre au rayonnement pour lequel l'absorbance de la solution est maximale*.
 {{% /note %}}
-
-
-

@@ -1,6 +1,6 @@
 ---
 title: "Le design Culinaire"
-subtitle: "Chapitre 2,3"
+subtitle: "Document 2,3"
 author: ""
 type: ""
 date: 2020-09-15T21:32:22+04:00
@@ -30,15 +30,15 @@ auto_numbering: true
 
 ## Exploitation des données
 
-- Télécharger le logiciel {{< remote "Spectral Analysis" "https://www.vernier.com/product/spectral-analysis/" >}} du fabriquant Vernier.   
+- Télécharger le logiciel {{< remote "Spectral Analysis" "https://www.vernier.com/product/spectral-analysis/" >}} du fabriquant Vernier.
 Il existe des versions pour tous les systèmes d'exploitations.
 
 - Télécharger les fichiers résultats suivants (clic droit et enregistrer) et les ouvrir à tour de rôle à l'aide du logiciel juste téléchargé :
-    - {{< remote "Spectre tube 1" "/premieres-pc/chap-2/Spectre_choux_rouge_tube_1.smbl" >}}
-    - {{< remote "Spectre tube 2" "/premieres-pc/chap-2/Spectre_choux_rouge_tube_2.smbl" >}}
-    - {{< remote "Spectre tube 3" "/premieres-pc/chap-2/Spectre_choux_rouge_tube_3.smbl" >}}
-    - {{< remote "Spectre tube 4" "/premieres-pc/chap-2/Spectre_choux_rouge_tube_4.smbl" >}}
-    - {{< remote "Spectre tube 5" "/premieres-pc/chap-2/Spectre_choux_rouge_tube_5.smbl" >}}
+  - {{< remote "Spectre tube 1" "/premieres-pc/chap-2/Spectre_choux_rouge_tube_1.smbl" >}}
+  - {{< remote "Spectre tube 2" "/premieres-pc/chap-2/Spectre_choux_rouge_tube_2.smbl" >}}
+  - {{< remote "Spectre tube 3" "/premieres-pc/chap-2/Spectre_choux_rouge_tube_3.smbl" >}}
+  - {{< remote "Spectre tube 4" "/premieres-pc/chap-2/Spectre_choux_rouge_tube_4.smbl" >}}
+  - {{< remote "Spectre tube 5" "/premieres-pc/chap-2/Spectre_choux_rouge_tube_5.smbl" >}}
 
 ## Questions
 

@@ -1,6 +1,6 @@
 ---
 title: "Exercices du chapitre"
-subtitle: "Chapitre 2,5"
+subtitle: "Document 2,5"
 author: ""
 type: ""
 date: 2020-09-15T21:35:00+04:00
@@ -16,31 +16,33 @@ auto_numbering: true
 ## Concentrations molaires et dilution
 
 {{% note exercise %}}
+
 #### Exercice 1 : Solution de réhydratation
 
 On peut effectuer des injections de solution aqueuse de fructose, de
 formule $\ce{C6H12O6}$, pour prévenir la déshydratation. De telles solutions sont
 obtenues en dissolvant une masse $m = \pu{25,0 g}$ de fructose pour $\pu{500 mL}$ de solution finale.
 
-1.  Déterminer la quantité de matière de fructose correspondant à la
+1. Déterminer la quantité de matière de fructose correspondant à la
     masse indiquée dans l'énoncé.
 
-2.  En déduire la concentration molaire de ces solutions en fructose.
+2. En déduire la concentration molaire de ces solutions en fructose.
 {{% /note %}}
 
 {{% solution "Réponse" %}}
-1.  $n(\ce{C6H12O6}) = \dfrac{m(\ce{C6H12O6})}{M(\ce{C6H12O6})}$
 
-    **A.N.** $n(\ce{C6H12O6}) = 
+1. $n(\ce{C6H12O6}) = \dfrac{m(\ce{C6H12O6})}{M(\ce{C6H12O6})}$
+
+    **A.N.** $n(\ce{C6H12O6}) =
         \dfrac{\pu{25,0 g}}{(\pu{6} \times \pu{12,0} + 12 \times \pu{1,0} + 6 \times \pu{16,0})\\, \pu{g.mol-1}} = \pu{1,39e-1 mol}$
 
-2.  $C(\ce{C6H12O6}) = \dfrac{n(\ce{C6H12O6})}{V_{\text{solution}}}$   
+2. $C(\ce{C6H12O6}) = \dfrac{n(\ce{C6H12O6})}{V_{\text{solution}}}$
 
     **A.N.** $C(\ce{C6H12O6}) = \dfrac{\pu{1,39e-1 mol}}{\pu{500e-3 L}} = \pu{2,78e-1 mol.L-1}$
 {{% /solution %}}
 
-
 {{% note exercise %}}
+
 #### Exercice 2 : Vitamine C
 
 La vitamine C, ou acide ascorbique $\ce{C6H8O6}$, est souvent prescrite en cas de
@@ -57,7 +59,7 @@ ces solutés dans la solution.
 {{% solution "Réponse" %}}
 $C(\text{espèce}) = \dfrac{n(\text{espèce})}{V_{\text{solution}})}$ et $n(\text{espèce}) = \dfrac{m(\text{espèce})}{M(\text{espèce})}$, donc $$C(\text{espèce}) = \dfrac{m(\text{espèce})}{M(\text{espèce}) V_{\text{solution}}}$$
 
-- Pour la vitamine C : 
+- Pour la vitamine C :
 
 $C(\ce{C6H8O6}) = \dfrac{ \pu{1,0 g} }{ \pu{ (6 \times \pu{12,0} + 8 \times \pu{1,0} + 6 \times \pu{16,0} ) \\, \pu{g.mol-1}} \times \pu{125e-3 L} } = \pu{4,5e-2 mol.L-1}$
 
@@ -68,6 +70,7 @@ $C(\ce{C12H22O11}) = \dfrac{ \pu{6,05 g} }{ \pu{ (12 \times \pu{12,0} + 22 \time
 {{% /solution %}}
 
 {{% note exercise %}}
+
 #### Exercice 3 : Préparation d’une limonade
 
 La limonade est une boisson contenant du dioxyde de carbone, du glucose,
@@ -81,6 +84,7 @@ Quelles sont les masses de glucose et de saccharose qu'un volume $V = \pu{1,5 L}
 {{% /note %}}
 
 {{% solution "Réponse" %}}
+
 - $C = \dfrac{n(\text{soluté})}{V_{\text{solution}}}$ et $n(\text{soluté}) = \dfrac{m(\text{soluté})}{M(\text{soluté})}$ donc $C = \dfrac{m(\text{soluté})}{M(\text{soluté}) V_{\text{solution}}} \Leftrightarrow m(\text{soluté}) = C M(\text{soluté}) V_{\text{solution}}$.
 
 - **A.N.** $m(\ce{C6H12O6}) = \pu{5,6e-2 mol.L-1} \times \pu{1,5 L} \pu{180 g.mol-1} = \pu{1,5e1 g}$.
@@ -89,6 +93,7 @@ Quelles sont les masses de glucose et de saccharose qu'un volume $V = \pu{1,5 L}
 {{% /solution %}}
 
 {{% note exercise %}}
+
 #### Exercice 4 : Un peu de sirop
 
 Un sirop de menthe doit sa couleur à deux colorants : le *bleu patenté*
@@ -104,12 +109,14 @@ Quelle est la concentration molaire du colorant dans cette solution ?
 {{% /note %}}
 
 {{% solution "Réponse" %}}
+
 - Avant de pouvoir déterminer la concentration molaire du colorant dans la solution finale, il faut déterminer la quantité de matière prélevée lorsqu'on récupère un volume $V_1 = \pu{40 mL}$ : $n_1 = C_1 V_1$.
 - La concentration finale est alors $C_2 = \dfrac{n_1}{V_2} = \dfrac{C_1 V_1}{V_2}$ où $V_2$ est le volume final de la solution.
 - **A.N.** $C_2 = \dfrac{\pu{7,7e-5 mol.L-1} \pu{40 mL}}{\pu{250 mL}} = \pu{1,2e-5 mol.L-1}$.
 {{% /solution %}}
 
 {{% note exercise %}}
+
 #### Exercice 5 : Dilution d’une solution
 
 Un laboratoire dispose d'une solution de Lugol de concentration
@@ -121,6 +128,7 @@ Quel volume $V_p$ de solution de Lugol le laborantin doit-il prélever ?
 {{% /note %}}
 
 {{% solution "Réponse" %}}
+
 - Si le laborantin prélève le volume $V_p$ de solution mère à la concentration $C_0$, il prélève la quantité de matière $n_p = C_0 V_p$.
 
 - La quantité de matière en Lugol présente dans la solution fille à la concentration $C_1$ a pour origine la quantité de matière prélevée dans la solution mère, donc $n_1 = n_p$.
@@ -131,6 +139,7 @@ Quel volume $V_p$ de solution de Lugol le laborantin doit-il prélever ?
 {{% /solution %}}
 
 {{% note exercise %}}
+
 #### Exercice 6 : Échelle de teintes
 
 On prépare une [échelle de teintes](https://youtu.be/gApSW_bniIk) à partir d'une solution mère $S_0$ de permanganate de potassium de concentration
@@ -147,9 +156,9 @@ Compléter le tableau ci-dessous.
 | **Solution fille** | $S_1$ | $S_2$ | $S_3$ | $S_4$ | $S_5$ | $S_6$ |
 | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
 | $F_i$ | 5/4 | 5/3 | 5/2 | 5 | 10 | 20 |
-| $V_{ip} (S_0)$ (mL) | | | | | | |                                              
-| $V_i (\text{eau})$ (mL) |  |  |  |  |  |  |                                         
-| $C_i$ (mol/L) |  |  |  |  |  |  | 
+| $V_{ip} (S_0)$ (mL) | | | | | | |
+| $V_i (\text{eau})$ (mL) |  |  |  |  |  |  |
+| $C_i$ (mol/L) |  |  |  |  |  |  |
 
 </center>
 {{% /note %}}
@@ -160,9 +169,9 @@ Compléter le tableau ci-dessous.
 | **Solution fille** | $S_1$ | $S_2$ | $S_3$ | $S_4$ | $S_5$ | $S_6$ |
 | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
 | $F_i$ | 5/4 | 5/3 | 5/2 | 5 | 10 | 20 |
-| $V_{ip} (S_0)$ (mL) | $\pu{8,0}$ | $\pu{6,0}$ | $\pu{4,0}$ | $\pu{2,0}$ | $\pu{1,0}$ | $\pu{0,5}$ |                                              
-| $V_i (\text{eau})$ (mL) | $\pu{2,0}$ | $\pu{4,0}$ | $\pu{6,0L}$ | $\pu{8,0}$ | $\pu{9,0}$ | $\pu{9,5}$ |                                         
-| $C_i$ (mol/L) | $\pu{8,0e-3}$ | $\pu{6,0e-3}$ | $\pu{4,0e-3}$ | $\pu{2,0e-3}$ | $\pu{1,0e-3}$ | $\pu{0,5e-3}$ | 
+| $V_{ip} (S_0)$ (mL) | $\pu{8,0}$ | $\pu{6,0}$ | $\pu{4,0}$ | $\pu{2,0}$ | $\pu{1,0}$ | $\pu{0,5}$ |
+| $V_i (\text{eau})$ (mL) | $\pu{2,0}$ | $\pu{4,0}$ | $\pu{6,0L}$ | $\pu{8,0}$ | $\pu{9,0}$ | $\pu{9,5}$ |
+| $C_i$ (mol/L) | $\pu{8,0e-3}$ | $\pu{6,0e-3}$ | $\pu{4,0e-3}$ | $\pu{2,0e-3}$ | $\pu{1,0e-3}$ | $\pu{0,5e-3}$ |
 
 </center>
 
@@ -180,6 +189,7 @@ Exemple de calcul : $V_1 (\text{eau}) = \pu{10 mL} - \pu{8,0 mL} = \pu{2,0 mL}$.
 {{% /solution %}}
 
 {{% note exercise %}}
+
 #### Exercice 6 : Glycérotone
 
 Le glycérotone est un médicament permettant de lutter contre les
@@ -201,7 +211,6 @@ Lorsqu'on remet tout en place, on obtient : $V_{\text{à prélever}} = \dfrac{n 
 **A.N.** $V_{\text{à prélever}} = \dfrac{\pu{6,89 mol.L-1} \times \pu{50,0e-3 L} \times (3 \times \pu{12,0} + 8 \times \pu{1,0} + 3 \times \pu{16,0})\pu{g.mol-1}}{\pu{1,26 g.mL-1}} = \pu{25,2 mL}$.
 
 {{% /solution %}}
-
 
 ## Exercices sur le Livre Scolaire
 
