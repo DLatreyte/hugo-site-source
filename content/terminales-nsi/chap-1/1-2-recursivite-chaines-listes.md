@@ -10,8 +10,34 @@ tags: ["Chaînes de caractères", "Listes", "Récursivité"]
 categories: ["Informatique", "Terminales Spé NSI"]
 image: ""
 solution_est_visible: true
-auto_numbering: true
+auto_numbering: false
 ---
+
+## Introduction
+
+Une chaîne de caractère est une **structure de données** qui permet de rassembler en un *unique objet* une **succession ordonnée** de caractères. Ainsi, une *définition récursive d'une chaîne de caractères* pourrait être :
+
+{{% note tip %}}
+
+Une chaîne de caractères est :
+
+- soit la chaîne de caractères vide ;
+- soit constituée de son premier caractère et du reste des caractères qui forment aussi une chaîne de caractères (éventuellement vide).
+
+{{% /note %}}
+
+Une liste est une **structure de données** qui permet de rassembler en un *unique objet* une **succession ordonnée** d'objets (ou de valeurs). Ainsi, une *définition récursive d'une liste* pourrait être :
+
+{{% note tip %}}
+
+Une liste est :
+
+- soit la liste vide ;
+- soit constituée de son premier élément et du reste des éléments qui forment aussi une liste (éventuellement vide).
+
+{{% /note %}}
+
+## Exercices
 
 Penser à écrire, pour chacune des fonctions ci-dessous, sa spécification ainsi qu'un jeu de tests.
 
