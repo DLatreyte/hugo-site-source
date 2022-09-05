@@ -35,18 +35,18 @@ def est_dans(e: str, c: str) -> bool:
     Version utilisant une sous-chaîne.
     Récursivité terminale.
     """
-    if len(c) == 0:
+    if c == "":
         return False
-    elif e == c[0]:
+    elif c[0] == e:
         return True
-    else:
-        return est_dans(e, c[1:])
+    return est_dans(e, c[1:])
 
 
 def est_dans_02(e: str, c: str, i: int) -> bool:
     """
     Détermine si le caractère e est dans la chaîne c.
     Version utilisant un indice et toujours la même chaîne.
+    Il s'agit toujours d'une récursivité terminale.
     """
     if i == len(c):
         return False
@@ -87,12 +87,12 @@ def rang(e: str, c: str, i: int) -> int:
     Retourne l'indice de la première position du caractère e dans la
     chaîne c ou -1 si le caractère n'est pas présent dans la chaîne.
     """
-    if i == len(c):
+    if c == "":
         return -1
-    elif e == c[i]:
+    elif c[0] == e:
         return i
     else:
-        return rang(e, c, i + 1)
+        return rang(e, c[1:], i + 1)
 
 
 def main():
@@ -128,7 +128,7 @@ def inversion(c: str) -> str:
     Inverse une chaîne de caractères.
     Version avec sous-chaîne et récursivité enveloppée.
     """
-    if len(c) == 0:
+    if c == "":
         return ''
     else:
         return inversion(c[1:]) + c[0]
@@ -139,7 +139,7 @@ def inversion_02(c: str, c_inv: str) -> str:
     Inverse une chaîne de caractères.
     Version avec sous-chaîne et récursivité terminale.
     """
-    if len(c) == 0:
+    if c == "":
         return c_inv
     else:
         return inversion_02(c[1:], c[0] + c_inv)
