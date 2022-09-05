@@ -32,9 +32,9 @@ layout: "single"
 - **Chapitre 1,1 :** {{< remote "Cours" "https://www.icloud.com/keynote/0c26OAX1gOKDcglzaaff0TrKw#Optique" >}}
 -->
 
-- **Doc 1,0 :** [Révisions de 1ère]({{% relref "../../premieres-pc/chap-5/4-formation-images" %}})
+- **Doc 1,0 :** [Révisions]({{% relref "../../premieres-pc/chap-5/4-formation-images" %}})
 
-- **Doc 1,0 (Bis) :** [Révisions de 1ère - Carte mentale](/terminales-pc/chap-19/chap-19-1/optique-geometrique-carte-mentale.svg)
+- **Doc 1,0 (Bis) :** [Révisions - Carte mentale](/terminales-pc/chap-19/chap-19-1/optique-geometrique-carte-mentale.svg)
 
 - **Doc 1,1 :** {{< remote "Formation d'une image par une lentille mince convergente" "1-formation-images" >}}
 
