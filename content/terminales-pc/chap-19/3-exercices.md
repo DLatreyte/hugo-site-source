@@ -1,6 +1,6 @@
 ---
 title: "Exercices d'optique géométrique"
-subtitle: "Document 1,3"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-05-16T03:45:12+04:00

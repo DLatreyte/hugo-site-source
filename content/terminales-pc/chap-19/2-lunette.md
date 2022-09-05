@@ -1,6 +1,6 @@
 ---
 title: "Construction d'une lunette afocale"
-subtitle: "Document 1,2"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-08-31T21:26:53+04:00
