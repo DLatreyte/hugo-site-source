@@ -32,14 +32,14 @@ layout: "single"
 - **Chapitre 1,1 :** {{< remote "Cours" "https://www.icloud.com/keynote/0c26OAX1gOKDcglzaaff0TrKw#Optique" >}}
 -->
 
-- **Doc 1,0 :** [Révisions]({{% relref "../../premieres-pc/chap-5/4-formation-images" %}})
+- **Doc :** [Révisions]({{% relref "../../premieres-pc/chap-5/4-formation-images" %}})
 
-- **Doc 1,0 (Bis) :** [Révisions - Carte mentale](/terminales-pc/chap-19/chap-19-1/optique-geometrique-carte-mentale.svg)
+- **Doc :** [Révisions - Carte mentale](/terminales-pc/chap-19/chap-19-1/optique-geometrique-carte-mentale.svg)
 
-- **Doc 1,1 :** {{< remote "Formation d'une image par une lentille mince convergente" "1-formation-images" >}}
+- **Doc :** {{< remote "Formation d'une image par une lentille mince convergente" "1-formation-images" >}}
 
-- **Doc 1,2 :** {{< remote "Construction d'une lunette afocale" "2-lunette" >}}
+- **Doc :** {{< remote "Construction d'une lunette afocale" "2-lunette" >}}
 
-- **Doc 1,3 :** <a href="/terminales-pc/chap-19/chap-19-2/chap-19-2.html">Exercices d'optique géométrique</a>
+- **Doc :** <a href="/terminales-pc/chap-19/chap-19-2/chap-19-2.html">Exercices d'optique géométrique</a>
 
-- **Doc 1,4 :** [Formation d'une image à l'aide d'une lunette - Carte mentale](/terminales-pc/chap-19/lunette-carte-mentale.svg)
+- **Doc :** [Formation d'une image à l'aide d'une lunette - Carte mentale](/terminales-pc/chap-19/lunette-carte-mentale.svg)
