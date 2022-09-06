@@ -313,7 +313,9 @@ assert creation_liste_filtree(1, 10) == [3, 5, 6, 9, 10]
 
 ```python
 def plus_grand_element(liste: list) -> float:
-
+    """
+    Retourne le plus grand éléments de la liste.
+    """
     if liste == []:
         raise Exception("La liste est vide.")
     elif len(liste) == 1:
@@ -324,7 +326,9 @@ def plus_grand_element(liste: list) -> float:
 
 
 def plus_petit_element(liste: list) -> float:
-
+    """
+    Retourne le plus petit élément de la liste.
+    """
     if liste == []:
         raise Exception("La liste est vide")
     elif len(liste) == 1:
