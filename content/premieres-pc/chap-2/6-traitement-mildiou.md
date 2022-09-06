@@ -78,8 +78,41 @@ On a déjà préparé une solution de chaux pour $\pu{250 mL}$ de bouillie borde
 l'aide de toutes les informations fournies, préparer un volume $V_0$ (valeur à
 déterminer) d'une solution de sulfate de cuivre pentahydraté (solution $S_0$).
 
+{{% solution "Réponse" %}}
+
+- Dans la recette de la bouillie bordelaise on constate que le volume de
+la solution de sulfate de cuivre pentahydraté est 5 fois plus petit que le
+volume de la solution finale de bouillie bordelaise.
+On en déduit que
+$$
+V_0 = \dfrac{V_{\text{bouillie}}}{5} = \dfrac{\pu{250 mL}}{5} =
+   \pu{50 mL}
+$$
+
+- Toujours dans la recette, on apprend que la concentration en soluté de
+la solution de sulfate de cuivre pentahydraté est $C = \pu{0,40}{mol.L^{-1}}$. La quantité de matière $n_0$ de sulfate de cuivre pentahydraté à prélever est donc
+$$
+n_0 = CV_0
+$$
+et la masse
+$$
+m_0 = n_0 M = C V_0 M
+$$
+**A.N.** $m_0 = \pu{0,40}{mol.L^{- 1}} \times \pu{50e-3 L} \times \pu{249,68 g.mol^{-1}} = \pu{5 g}$.
+
+{{% /solution %}}
+
 #### Question 2
 
 La solution préparée à la question précédente s'avère trop concentrée.
 Préparer un volume $V_1= \pu{50 mL}$ d'une solution $S_1$ de concentration $C_1= \pu{0,08
 mol.L^{-1}}$ en sulfate de cuivre pentahydraté, à partir de la solution $S_0$.
+
+{{% solution "Réponse" %}}
+
+La concentration $C_1$ est 5 fois moins importante que la concentration $C_0$. Il
+faut donc prélever $\pu{10 mL}$ de la solution $S_0$ à l'aide d'une pipette jaugée, et
+d'introduire cette solution dans une fiole jaugée de $\pu{10 mL}$. Pour finir, il faut
+compléter jusqu'au trait de jauge avec de l'eau distillée.
+
+{{% /solution %}}

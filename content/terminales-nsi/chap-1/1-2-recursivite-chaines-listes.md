@@ -314,11 +314,9 @@ assert creation_liste_filtree(1, 10) == [3, 5, 6, 9, 10]
 ```python
 def plus_grand_element(liste: list) -> float:
 
-    longueur = len(liste)
-
-    if longueur == 0:
+    if liste == []:
         raise IndexError("La liste est vide.")
-    elif longueur == 1:
+    elif len(liste) == 1:
         return liste[0]
     else:
         val_max = plus_grand_element(liste[1:])
@@ -327,47 +325,53 @@ def plus_grand_element(liste: list) -> float:
 
 def plus_petit_element(liste: list) -> float:
 
-    longueur = len(liste)
-
-    if longueur == 0:
+    if liste == []:
         raise IndexError("La liste est vide")
-    elif longueur == 1:
+    elif len(liste) == 1:
         return liste[0]
     else:
         val_min = plus_petit_element(liste[1:])
         return (liste[0] if liste[0] < val_min else val_min)
 
 
-def longueur_liste(liste: list) -> int:
-    """ Récursivité enveloppée. """
-    if len(liste) == 0:
+def longueur_liste(l: List) -> int:
+    """
+    Détermine le nombre d'éléments dans une liste.
+    """
+    if l == []:
         return 0
     else:
-        return 1 + longueur_liste(liste[1:])
+        return 1 + longueur_liste(l[1:])
 
 
-def longueur_liste_02(liste: list, l: int) -> int:
+def longueur_liste_02(liste: list, l: int = 0) -> int:
     """ Récursivité terminale. """
-    if len(liste) == 0:
+    if liste == []:
         return l
     else:
         return longueur_liste_02(liste[1:], l + 1)
 
 
-def somme_elements(liste: list) -> float:
-    """ Récursivité enveloppée. """
-    if len(liste) == 0:
+def somme_elements(l: List[float]) -> float:
+    """
+    Retourne la somme des éléments de la liste.
+    Récursivité enveloppée.
+    """
+    if l == []:
         return 0
     else:
-        return liste[0] + somme_elements(liste[1:])
+        return l[0] + somme_elements(l[1:])
 
 
-def somme_elements_02(liste: list, s: float) -> float:
-    """ Récursivité terminale. """
-    if len(liste) == 0:
+def somme_elements_2(l: List[float], s: int = 0) -> float:
+    """
+    Retourne la somme des éléments de la liste.
+    Récursivité terminale.
+    """
+    if l == []:
         return s
     else:
-        return somme_elements_02(liste[1:], s + liste[0])
+        return somme_elements_2(l[1:], s + l[0])
 
 
 def somme_listes_imbriquees(liste: list, s: float) -> float:
@@ -382,20 +386,30 @@ def somme_listes_imbriquees(liste: list, s: float) -> float:
             return somme_listes_imbriquees(liste[1:], somme_avec_sous_listes)
 
 
-def produit_elements(liste: list) -> float:
-    """ Récursivité enveloppée. """
-    if len(liste) == 0:
-        return 1
+def produit_elements(l: List[float]) -> float:
+    """
+    Retourne le produit de tous les éléments de la liste.
+    Récursivité enveloppée.
+    """
+    if l == []:
+        raise IndexError("La liste est vide.")
+    elif len(l) == 1:
+        return l[0]
     else:
-        return liste[0] * produit_elements(liste[1:])
+        return l[0] * produit_elements(l[1:])
 
 
-def produit_elements_02(liste: list, m: float) -> float:
-    """ Récursivité terminale. """
-    if len(liste) == 0:
-        return m
+def produit_elements_2(l: List[float], p: float = 1) -> float:
+    """
+    Retourne le produit de tous les éléments de la liste.
+    Récursivité terminale.
+    """
+    if l == []:
+        raise IndexError("La liste est vide.")
+    elif len(l) == 1:
+        return l[0] * p
     else:
-        return produit_elements_02(liste[1:], liste[0] * m)
+        return produit_elements_2(l[1:], l[0] * p)
 
 
 def recherche_element(liste: list, val_rech: int, i: int) -> int:
