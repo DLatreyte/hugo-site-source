@@ -340,7 +340,8 @@ def plus_petit_element(liste: list) -> float:
 
 def longueur_liste(l: List) -> int:
     """
-    Détermine le nombre d'éléments dans une liste.
+    Retourne le nombre d'éléments dans une liste.
+    Récursivité enveloppée.
     """
     if l == []:
         return 0
@@ -349,7 +350,10 @@ def longueur_liste(l: List) -> int:
 
 
 def longueur_liste_02(liste: list, l: int = 0) -> int:
-    """ Récursivité terminale. """
+    """
+    Retourne le nombre d'éléments dans une liste.
+    Récursivité terminale.
+    """
     if liste == []:
         return l
     else:
@@ -379,7 +383,9 @@ def somme_elements_2(l: List[float], s: int = 0) -> float:
 
 
 def somme_listes_imbriquees(liste: list, s: float) -> float:
-
+    """
+    Retourne la somme des éléments de listes imbriquées.
+    """
     if len(liste) == 0:
         return s
     else:
@@ -388,6 +394,19 @@ def somme_listes_imbriquees(liste: list, s: float) -> float:
         else:
             somme_avec_sous_listes = somme_listes_imbriquees(liste[0], s)
             return somme_listes_imbriquees(liste[1:], somme_avec_sous_listes)
+
+
+def somme_listes_imbriquees(l: List) -> float:
+    """
+    Retourne la somme de tous les éléments d'une liste,
+    même si elle contient des sous-listes imbriquées.
+    """
+    if l == []:
+        return 0
+    elif isinstance(l[0], list):
+        return somme_listes_imbriquees(l[0])
+    else:
+        return l[0] + somme_listes_imbriquees(l[1:])
 
 
 def produit_elements(l: List[float]) -> float:
