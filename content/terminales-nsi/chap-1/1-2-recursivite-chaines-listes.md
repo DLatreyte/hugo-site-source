@@ -404,7 +404,7 @@ def somme_listes_imbriquees(l: List) -> float:
     if l == []:
         return 0
     elif isinstance(l[0], list):
-        return somme_listes_imbriquees(l[0])
+        return somme_listes_imbriquees(l[0]) + somme_listes_imbriquees(l[1:])
     else:
         return l[0] + somme_listes_imbriquees(l[1:])
 
