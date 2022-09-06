@@ -208,8 +208,13 @@ Une lunette afocale donne une image renversée d'un objet.
 18. Sur le schéma de la lunette, sur lequel les images $A\_1B\_1$ et $A'B'$ ont déjà été tracée, placer les angles $\theta$ et $\theta'$.\
 $\theta'$ est l'angle sous lequel on voit l'image $A'B'$ depuis la lentille $L\_3$.
 
-19. Calculer les valeurs de ces angles. Vérifier en particulier que la valeur de θ correspond bien à celle calculée à la question 7.\
+19. Calculer les valeurs de ces angles. Vérifier en particulier que la valeur de θ correspond bien à celle calculée à la question 7.
+
+{{% note warning %}}
+
 *Attention, il faut calculer ces angles, ils ne sont pas mesurables directement sur le schéma car les échelles verticale et horizontale sont différentes.*
+
+{{% /note %}}
 
 {{% note tip %}}
 
