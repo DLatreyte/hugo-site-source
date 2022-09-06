@@ -9,7 +9,7 @@ toc: true
 tags: ["Soluté", "Concentration molaire", "Concentration massique", "Beer Lambert", "Dilution", "Couleur", "Absorption"]
 categories: ["Premières Spé PC", "Chimie"]
 image: ""
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: true
 ---
 
