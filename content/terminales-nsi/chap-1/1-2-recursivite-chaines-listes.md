@@ -382,7 +382,7 @@ def somme_elements_2(l: List[float], s: int = 0) -> float:
         return somme_elements_2(l[1:], s + l[0])
 
 
-def somme_listes_imbriquees(liste: list, s: float) -> float:
+def somme_listes_imbriquees(liste: list, s: float = 0) -> float:
     """
     Retourne la somme des éléments de listes imbriquées.
     """
