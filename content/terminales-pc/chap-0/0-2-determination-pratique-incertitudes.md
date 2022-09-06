@@ -1,6 +1,6 @@
 ---
 title: "Détermination pratique des incertitudes"
-subtitle: "Document 0,2"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-09-03T16:34:54+04:00

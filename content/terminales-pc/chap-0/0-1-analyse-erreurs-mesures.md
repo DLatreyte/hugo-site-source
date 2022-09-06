@@ -1,6 +1,6 @@
 ---
 title: "Incertitudes et analyse des erreurs dans les mesures physiques"
-subtitle: "Document 0,1"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-08-30T16:37:33+04:00

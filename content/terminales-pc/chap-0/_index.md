@@ -23,9 +23,9 @@ layout: "single"
 
 ## Documents
 
-- **Doc. 0,1 :** [*Incertitudes et analyse des erreurs dans les mesures physiques*](0-1-analyse-erreurs-mesures)
+- **Doc. :** [*Incertitudes et analyse des erreurs dans les mesures physiques*](0-1-analyse-erreurs-mesures)
 
-- **Doc. 0,2 :** [*Détermination pratique des incertitudes*](0-2-determination-pratique-incertitudes)
+- **Doc. :** [*Détermination pratique des incertitudes*](0-2-determination-pratique-incertitudes)
 
 ## Ressource
 
