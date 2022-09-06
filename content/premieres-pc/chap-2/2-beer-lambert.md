@@ -1,6 +1,6 @@
 ---
 title: "Détermination de la composition d'une solution colorée, loi de Beer-Lambert"
-subtitle: "Document 2,2"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-09-15T23:41:11+04:00

@@ -1,6 +1,6 @@
 ---
-title: "Exercices du chapitre"
-subtitle: "Document 2,5"
+title: "Exercices du chapitre (Livre Scolaire)"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-09-15T21:35:00+04:00

@@ -1,6 +1,6 @@
 ---
 title: "La composition d'une pièce de 10 centimes"
-subtitle: "Document 2,4"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-09-15T21:34:22+04:00

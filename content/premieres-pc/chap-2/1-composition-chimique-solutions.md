@@ -1,6 +1,6 @@
 ---
 title: "Composition Chimique des Solutions"
-subtitle: "Document 2,1"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-09-15T21:26:21+04:00

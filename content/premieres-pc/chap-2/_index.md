@@ -28,12 +28,14 @@ layout: "single"
 
 ----
 
-- **Doc. 2,1 :** [*Composition chimique des solutions*](1-composition-chimique-solutions)
+- [*Composition chimique des solutions*](1-composition-chimique-solutions)
 
-- **Doc. 2,2 :** [*Détermination de la composition d'une solution colorée, loi de Beer-Lambert*](2-beer-lambert)
+- [*Détermination de la composition d'une solution colorée, loi de Beer-Lambert*](2-beer-lambert)
 
-- **Doc. 2,3 :** [*Le design culinaire*](3-design-culinaire)
+- [*Le design culinaire*](3-design-culinaire)
 
-- **Doc. 2,4 :** [*Dosage d'un antiseptique : l'eau de Dakin*](4-eau-dakin)
+- [*Dosage d'un antiseptique : l'eau de Dakin*](4-eau-dakin)
 
-- **Doc. 2,5 :** [*Exercices du chapitre*](5-exercices)
+- [*Traitement du mildiou*](6-traitement-mildiou)
+
+- [*Exercices du chapitre*](5-exercices)

@@ -1,6 +1,6 @@
 ---
 title: "Dosage d'un antiseptique : l'eau de Dakin"
-subtitle: "Document 2,4"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-09-30T04:39:57+04:00

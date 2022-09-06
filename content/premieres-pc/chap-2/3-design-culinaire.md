@@ -1,6 +1,6 @@
 ---
 title: "Le design Culinaire"
-subtitle: "Document 2,3"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-09-15T21:32:22+04:00
