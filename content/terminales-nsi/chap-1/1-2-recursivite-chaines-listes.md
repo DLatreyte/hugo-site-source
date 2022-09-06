@@ -315,7 +315,7 @@ assert creation_liste_filtree(1, 10) == [3, 5, 6, 9, 10]
 def plus_grand_element(liste: list) -> float:
 
     if liste == []:
-        raise IndexError("La liste est vide.")
+        raise Exception("La liste est vide.")
     elif len(liste) == 1:
         return liste[0]
     else:
@@ -326,7 +326,7 @@ def plus_grand_element(liste: list) -> float:
 def plus_petit_element(liste: list) -> float:
 
     if liste == []:
-        raise IndexError("La liste est vide")
+        raise Exception("La liste est vide")
     elif len(liste) == 1:
         return liste[0]
     else:
@@ -392,7 +392,7 @@ def produit_elements(l: List[float]) -> float:
     Récursivité enveloppée.
     """
     if l == []:
-        raise IndexError("La liste est vide.")
+        raise Exception("La liste est vide.")
     elif len(l) == 1:
         return l[0]
     else:
@@ -405,7 +405,7 @@ def produit_elements_2(l: List[float], p: float = 1) -> float:
     Récursivité terminale.
     """
     if l == []:
-        raise IndexError("La liste est vide.")
+        raise Exception("La liste est vide.")
     elif len(l) == 1:
         return l[0] * p
     else:
