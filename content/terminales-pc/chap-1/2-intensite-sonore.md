@@ -1,6 +1,6 @@
 ---
 title: "Intensité sonore, niveau sonore"
-subtitle: "Chapitre 1,2"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-09-06T15:39:08+04:00
@@ -16,17 +16,18 @@ auto_numbering: true
 ## Point mathématique&nbsp;: le logarithme décimal
 
 {{% note tip %}}
-#### Logarithme 
+
+#### Logarithme
 
 Le **logarithme décimal** est la **fonction réciproque** de la fonction $f$ telle que $f(x) = 10^x$&nbsp;:
 $$
-	\forall x>0, y = \log (x) \Leftrightarrow x = 10^y
+ \forall x>0, y = \log (x) \Leftrightarrow x = 10^y
 $$
-Le logarithme décimal est une fonction **croissante** et **continue**. De plus, 
+Le logarithme décimal est une fonction **croissante** et **continue**. De plus,
 $$
-	\lim_{x \to 0^+} = -\infty
-	\text{ et }
-	\lim_{x \to \infty} = +\infty 
+ \lim_{x \to 0^+} = -\infty
+ \text{ et }
+ \lim_{x \to \infty} = +\infty
 $$
 {{% /note %}}
 
@@ -40,21 +41,23 @@ La pente, ou coefficient directeur, de la tangente diminue lorsque la variable $
 
 2. En déduire comment compléter la phrase suivante&nbsp;: *«&nbsp;Pour une variation $\Delta x$ donnée, plus $x$ est grand ........................... augmente $\log(x)$ (ou plus $\Delta\log (x)$ est ....................)&nbsp;»*.
 {{% solution "Réponse" %}}
-La pente de la tangente est égale à la valeur de la dérivée de la fonction au point considéré, donc&nbsp;: 
+La pente de la tangente est égale à la valeur de la dérivée de la fonction au point considéré, donc&nbsp;:
+
 - moins vite
 - petit
 {{% /solution %}}
 
 {{% note tip %}}
+
 #### Propriétés du logarithme décimal
 
 Le logarithme (décimal) est la fonction qui **transforme un produit en somme** et qui **vaut 1 en 10**. Ainsi,
 $$
-	\log(a\cdot b) = \log(a) + \log(b)
+ \log(a\cdot b) = \log(a) + \log(b)
 $$
 
 $$
-	\log(10^1) = 1
+ \log(10^1) = 1
 $$
 {{% /note %}}
 
@@ -122,11 +125,12 @@ $\log (\pu{0,00314}) = \log (\pu{3,14e-3}) = \log (\pu{3,14}) + \log (10^{-3}) =
 ## Intensité sonore, niveau sonore
 
 {{% note tip %}}
+
 #### Intensité sonore
 
 L'**intensité sonore** caractérise la *puissance énergétique* de l'onde en un point de l'espace, c'est à dire l'énergie que peut transmettre, chaque seconde, l'onde à un récepteur placé en ce point.  
 L'intensité sonore est donc une puissance surfacique et elle s'exprime en *watt par mètre carré* ($\pu{W/m2})$.
-        
+
 L'intensité sonore perceptible par l'oreille humaine est comprise entre une *valeur minimale* $I_0 = \pu{1,00e-12 W/m2}$ (**seuil d'audition**) et une valeur maximale (**seuil de douleur**) $I_{\text{max}} = \pu{25 W/m2}$.
 
 #### Niveau d'intensité sonore
@@ -134,40 +138,39 @@ L'intensité sonore perceptible par l'oreille humaine est comprise entre une *va
 *La sensation physiologique au niveau de l'oreille n'évolue pas proportionnellement à l'intensité sonore*, car l'oreille n'est pas un récepteur linéaire.
 
 Pour traduire correctement cette sensation physiologique, on définit donc une grandeur appelée **niveau d'intensité sonore** $L$ telle que&nbsp;:
-$$ 
-    L = 10 \log \left( \dfrac{I}{I_0} \right) 
+$$
+    L = 10 \log \left( \dfrac{I}{I_0} \right)
 $$
 avec $I_0 = \pu{1,00e-12 W/m2}$. L'unité de $L$ est le **décibel**, de symbole $\pu{dB}$.
 {{% /note %}}
 
-Le niveau sonore présente donc deux particularités&nbsp;: 
+Le niveau sonore présente donc deux particularités&nbsp;:
+
 - Il est relatif à la sensibilité de l'oreille humaine&nbsp;;
 - Son évolution est logarithmique.
-
 
 14. Si $I$ est multipliée par 100, alors le niveau sonore ...................... ................. dB.
 {{% solution "Réponse" %}}
 Si $I' = 100\\, I$, $L' = 10 \log \left( \dfrac{100\\, I}{I_0} \right) = 10 \log (100) + 10 \log \left( \dfrac{I}{I_0} \right) = 20 + L$. Le niveau sonore augmente donc de $\pu{20 dB}$.
 {{% /solution %}}
 
-15.  Si $I$ est multipliée par 2, alors le niveau sonore ...................... ................. dB.
+15. Si $I$ est multipliée par 2, alors le niveau sonore ...................... ................. dB.
 {{% solution "Réponse" %}}
 Si $I' = 2\\, I$, $L' = 10 \log \left( \dfrac{2\\, I}{I_0} \right) = 10 \log (2) + 10 \log \left( \dfrac{I}{I_0} \right) = 3,0 + L$. Le niveau sonore augmente donc de $\pu{3,0 dB}$.
 {{% /solution %}}
 
-16.  Au bord d'une voie ferrée, on mesure un niveau d'intensité sonore égal à $\pu{100 dB}$ au passage d'un train. Quelle est l'intensité sonore correspondante&nbsp;?
+16. Au bord d'une voie ferrée, on mesure un niveau d'intensité sonore égal à $\pu{100 dB}$ au passage d'un train. Quelle est l'intensité sonore correspondante&nbsp;?
 {{% solution "Réponse" %}}
 $L = 10 \log \left( \dfrac{I}{I_0} \right) \Harr I = I_0 \times 10^{L/10}$.  
 **A.N.** $ I = \pu{1,00e-12 W/m2} \times 10^{100/10} = \pu{1,00e-2 W/m2}$.
 {{% /solution %}}
 
-
 {{% note warning %}}
 **Les intensités sonores s'ajoutent mais pas les niveaux sonores&nbsp;!**
 {{% /note %}}
 
-
 ## Atténuation de l'intensité d'une onde sonore
+
 Dans le cas d'une onde à la surface de l'eau, l'énergie fournie par la source se répartit sur des rides circulaires de rayon croissant. La hauteur des ondulations diminue progressivement.  
 Cette atténuation de l'amplitude de la perturbation existe, dans les milieux à deux ou trois dimensions, alors que l'énergie transportée par la perturbation peut rester constante.
 
@@ -179,6 +182,7 @@ Cette atténuation de l'amplitude de la perturbation existe, dans les milieux à
 ## Entraînement
 
 {{% note exercise %}}
+
 #### Le son d'un diapason
 
 Un son pur est un son qui ne possède pas d'harmonique, c'est à dire une onde sinusoïdale. Un diapason émet un son pur de fréquence $f = \pu{880 Hz}$.
@@ -193,10 +197,11 @@ Donnée&nbsp;:
 {{% /note %}}
 
 {{% solution "Réponses" %}}
-1. La longueur d'onde d'une onde sinusoïdale est la distance parcourue par cette onde pendant la durée $T$, donc $\lambda_{\text{son}} = v_{\text{son}} \cdot T_{\text{son}}$. Comme $T = \dfrac{1}{f}$, $\lambda_{\text{son}} = \dfrac{v_{\text{son}}}{f_{\text{son}}}$. 
+
+1. La longueur d'onde d'une onde sinusoïdale est la distance parcourue par cette onde pendant la durée $T$, donc $\lambda_{\text{son}} = v_{\text{son}} \cdot T_{\text{son}}$. Comme $T = \dfrac{1}{f}$, $\lambda_{\text{son}} = \dfrac{v_{\text{son}}}{f_{\text{son}}}$.
 <b>A.N.</b> $\lambda_{\text{son}} = \dfrac{\pu{340 m/s}}{\pu{880 Hz}} = \pu{3,86e-1 m}$.
 
-2. L'onde parvient au niveau avec un certain **retard** $\tau$&nbsp;: durée nécessaire à la propagation du signal, $\tau = \dfrac{d}{v_{\text{son}}}$.   
+2. L'onde parvient au niveau avec un certain **retard** $\tau$&nbsp;: durée nécessaire à la propagation du signal, $\tau = \dfrac{d}{v_{\text{son}}}$.
  <b>A.N.</b> $\tau = \dfrac{\pu{10 m}}{\pu{340 m/s}} = \pu{2,9e-2 s} = \pu{29 ms}$.
 
 3. **A.N.** $L = 10 \log \left( \dfrac{\pu{1,0e-10 W/m2}}{\pu{1,00e-12 W/m2}} \right) = \pu{20 dB}$.
@@ -206,6 +211,7 @@ Si $I' = 3\\, I$, $L' = 10 \log \left( \dfrac{3\\, I}{I_0} \right) = 10 \log (3)
 {{% /solution %}}
 
 {{% note exercise %}}
+
 #### L'oreille humaine en concert
 
 Pour régler le niveau sonore de la salle de concert, un ingénieur du son connaît certaines règles. Par exemple, s'il fait ses réglages pour avoir un son de $\pu{98 dB}$ pour des spectateurs situés à $\pu{16 m}$ d'une enceinte, il sait que l'intensité sonore sera quatre fois plus grande pour les spectateurs situés à $\pu{8 m}$ de l'enceinte. Il sait aussi que l'intensité sonore est doublée s'il place à côté de deux enceintes identiques. Pour ces réglages cet ingénieur doit tenir compte des seuils de risque, de danger et de douleur. En effet l'exposition à un niveau sonore trop élevé peut provoquer des acouphènes. L'acouphène est un bourdonnement ou sifflement parasite qu'une personne entend sans que ce bruit existe réellement.
@@ -214,11 +220,12 @@ Pour régler le niveau sonore de la salle de concert, un ingénieur du son conna
 
 1. Montrer que l'intensité $I_1$, du son à 16 mètres de l'enceinte vaut $I_1 = \pu{6.3e-3 W/m2}$.
 2. Si l'ingénieur place dix enceintes identiques côte à côte sur la scène, quel est le niveau d'intensité sonore $L_2$ à $\pu{16 m}$&nbsp;?
-3. Montrer que le niveau d'intensité sonore augmente de $\pu{6 dB}$ chaque fois que l'on divise la distance par deux. 
+3. Montrer que le niveau d'intensité sonore augmente de $\pu{6 dB}$ chaque fois que l'on divise la distance par deux.
 4. À partir de quelle distance des enceintes le son est-il douloureux à écouter&nbsp;?
 {{% /note %}}
 
 {{% solution "Réponses" %}}
+
 1. $L_1 = 10 \log \left( \dfrac{I_1}{I_0} \right) \Harr I_1 = I_0\\, 10^{L_1/10}$.  
 **A.N.** $ I_1 = \pu{1,00e-12 W/m2} \times 10^{98/10} = \pu{6,3e-3 W/m2}$.
 
@@ -231,7 +238,7 @@ $L_2 = 10 \log \left( \dfrac{I_2}{I_0} \right) = 10 \log \left( \dfrac{4\\, I_1}
 
 4. À $d=\pu{16,0 m}$, on a calculé que le niveau sonore est égal à $L_2 = \pu{108 dB}$. De plus, à la question précédente, on a démontré que chaque fois qu'on divise la distance la distance par 2, le niveau sonore augmente de $\pu{6,0 dB}$, donc à $\pu{8,0 m}$ le niveau sonore vaut $\pu{108 dB} + \pu{6,0 dB} = \pu{114 dB}$ et à $\pu{4,0 m}$ le niveau sonore vaut $\pu{114 dB} + \pu{6,0 dB} = \pu{120 dB}$. C'est le seuil de douleur ; personne ne doit donc se rapprocher à moins de $\pu{4,0 m}$ des enceintes.
 
-**Autre démonstration :** puisque $\dfrac{I_1}{I_2} = \dfrac{r_2^2}{r_1^2}$, $I_2 = I_1 \\, \left( \dfrac{r_1}{r_2} \right)^2$ et $L_2 = 10 \log \left( \dfrac{I_2}{I_0} \right) = 10 \log \left( \dfrac{I_1 \\, \left( \dfrac{r_1}{r_2} \right)^2}{I_0} \right) = 10 \log \left( \dfrac{I_1}{I_0} \right) + 20 \log \left( \dfrac{r_1}{r_2} \right)$. 
+**Autre démonstration :** puisque $\dfrac{I_1}{I_2} = \dfrac{r_2^2}{r_1^2}$, $I_2 = I_1 \\, \left( \dfrac{r_1}{r_2} \right)^2$ et $L_2 = 10 \log \left( \dfrac{I_2}{I_0} \right) = 10 \log \left( \dfrac{I_1 \\, \left( \dfrac{r_1}{r_2} \right)^2}{I_0} \right) = 10 \log \left( \dfrac{I_1}{I_0} \right) + 20 \log \left( \dfrac{r_1}{r_2} \right)$.
 
 Finalement $ L_2 = L_1 + 20 \log \left( \dfrac{r_1}{r_2} \right) \Leftrightarrow r_2 = r_1 \times 10^{\frac{-(L_2 - L_1)}{20}}$.
 

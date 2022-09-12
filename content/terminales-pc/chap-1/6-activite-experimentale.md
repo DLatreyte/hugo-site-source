@@ -1,6 +1,6 @@
 ---
 title: "Intensité sonore, niveau d'intensité sonore : activités expérimentales"
-subtitle: "Chapitre 2,4"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-09-14T04:49:07+04:00
@@ -27,40 +27,38 @@ Cette activité expérimentale s'appuie sur l'utilisation du logiciel [Phyphox](
 
 {{% /note %}}
 
-
 ## Le niveau d'intensité sonore : une grandeur non linéaire
-
 
 Cette partie nécessite au minimum trois téléphones : deux premiers téléphones pour émettre des sons et un dernier téléphone pour les mesures de niveau d'intensité sonore.
 
 {{% note normal %}}
 
 - **Téléphone 1**
-    - Dans la partie «&nbsp;Acoustique&nbsp;», sélectionner le module «&nbsp;Générateur de son&nbsp;»
-    - Sélectionner une fréquence 
-    - Générer le son
-    - **Ne plus déplacer ce téléphone pour le reste de l'activité**
+  - Dans la partie «&nbsp;Acoustique&nbsp;», sélectionner le module «&nbsp;Générateur de son&nbsp;»
+  - Sélectionner une fréquence
+  - Générer le son
+  - **Ne plus déplacer ce téléphone pour le reste de l'activité**
 
 - **Téléphone 3**
-    - Mesurer le niveau d'intensité sonore $L_1$ du son émis par le téléphone 1
-    - **Ne plus déplacer ce téléphone pour le reste de l'activité**
+  - Mesurer le niveau d'intensité sonore $L_1$ du son émis par le téléphone 1
+  - **Ne plus déplacer ce téléphone pour le reste de l'activité**
 
 - Cesser de générer un son à l'aide du téléphone 1.
 
 - **Téléphone 2**
-    - Dans la partie «&nbsp;Acoustique&nbsp;», sélectionner le module «&nbsp;Générateur de son&nbsp;»
-    - Sélectionner une fréquence (pas forcément identique à celle du son émis par le téléphone 1)
-    - Générer le son
-    - **Ne plus déplacer ce téléphone pour le reste de l'activité**
+  - Dans la partie «&nbsp;Acoustique&nbsp;», sélectionner le module «&nbsp;Générateur de son&nbsp;»
+  - Sélectionner une fréquence (pas forcément identique à celle du son émis par le téléphone 1)
+  - Générer le son
+  - **Ne plus déplacer ce téléphone pour le reste de l'activité**
 
 - **Téléphone 3**
-    - Mesurer le niveau d'intensité sonore $L_2$ du son émis par le téléphone 2
+  - Mesurer le niveau d'intensité sonore $L_2$ du son émis par le téléphone 2
 
 - **Téléphone 1**
-    - Générer à nouveau le son
+  - Générer à nouveau le son
 
 - **Téléphone 3**
-    - Mesurer le niveau d'intensité sonore $L_3$ des sons émis par les téléphones 1 et 2
+  - Mesurer le niveau d'intensité sonore $L_3$ des sons émis par les téléphones 1 et 2
 
 {{% /note %}}
 
@@ -76,17 +74,17 @@ Cette activité nécessite l'utilisation de deux téléphones : le premier émet
 {{% note normal %}}
 
 - **Téléphone 1**
-    - Dans la partie «&nbsp;Acoustique&nbsp;», sélectionner le module «&nbsp;Générateur de son&nbsp;»
-    - Sélectionner une fréquence 
-    - Générer le son
-    - **Ne plus déplacer ce téléphone pour le reste de l'activité**
+  - Dans la partie «&nbsp;Acoustique&nbsp;», sélectionner le module «&nbsp;Générateur de son&nbsp;»
+  - Sélectionner une fréquence
+  - Générer le son
+  - **Ne plus déplacer ce téléphone pour le reste de l'activité**
 
 - **Téléphone 2**
-    - Mesurer la distance entre ce téléphone et le téléphone 1
-    - Mesurer le niveau d'intensité sonore $L$ du son émis par le téléphone 1
-    - Déplacer le téléphone 2 jusqu'à ce qu'une évolution sensible du niveau sonore apparaisse à l'écran
-    - Noter la valeur du niveau sonore et la nouvelle distance entre l'émetteur et le récepteur. 
-    - Déplacer à nouveau le téléphone 2 et reprendre les mesures de façon à obtenir cinq ou six couples (distance, niveau sonore)
+  - Mesurer la distance entre ce téléphone et le téléphone 1
+  - Mesurer le niveau d'intensité sonore $L$ du son émis par le téléphone 1
+  - Déplacer le téléphone 2 jusqu'à ce qu'une évolution sensible du niveau sonore apparaisse à l'écran
+  - Noter la valeur du niveau sonore et la nouvelle distance entre l'émetteur et le récepteur.
+  - Déplacer à nouveau le téléphone 2 et reprendre les mesures de façon à obtenir cinq ou six couples (distance, niveau sonore)
 {{% /note %}}
 
 1. Tracer, à l'aide du logiciel Graphical Analysis, l'évolution du niveau sonore en fonction la distance du récepteur à la source sonore.

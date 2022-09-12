@@ -1,6 +1,6 @@
 ---
 title: "Caractéristiques des ondes mécaniques progressives"
-subtitle: "Chapitre 1,1"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-09-04T14:00:38+04:00
@@ -31,25 +31,30 @@ Une **perturbation/déformation** correspond à la *modification d'une propriét
 On appelle **onde mécanique progressive** le *phénomène de propagation d'une perturbation dans un milieu matériel, de proche en proche, sans transport de matière mais avec transport d'énergie*.
 {{% /note %}}
 
-#### Onde progressive longitudinale.
+#### Onde progressive longitudinale
+
 Une onde progressive est dite longitudinale lorsqu'elle se propage selon une direction parallèle à la direction de la déformation.
 <img src="/terminales-pc/chap-1/Chap-3-2-cours-1.png" width="70%" alt="Onde longitudinale le long d'un ressort" />
 
-#### Onde progressive transversale.
+#### Onde progressive transversale
+
 :Une onde progressive est dite transversale (ou transverse) lorsqu'elle se propage selon une direction perpendiculaire à la direction de la déformation.
 <img src="/terminales-pc/chap-1/Chap-3-2-cours-2.png" width="70%" alt="Onde transverale le long d'une corde" />
 
+#### Une onde mécanique se transmet de proche en proche
 
-#### Une onde mécanique se transmet de proche en proche.
 Une onde mécanique se propage de « proche en proche », chaque point du milieu reproduit le mouvement de son voisin immédiat avec un léger retard.
 
-#### Une onde mécanique se propage sans transport de matière.
+#### Une onde mécanique se propage sans transport de matière
+
 Chaque point du milieu dans lequel se propage l'onde reprend sa position initiale après le passage de l'onde.
 
-#### Transport d'énergie.
+#### Transport d'énergie
+
 Une onde transporte l'énergie fournie par la source de proche en proche.
 
-#### Atténuation d'une onde.
+#### Atténuation d'une onde
+
 Dans le cas d'une onde à la surface de l'eau, l'énergie fournie par la source se répartit sur des rides circulaires de rayon croissant. La hauteur des ondulations diminue progressivement.  
 Cette atténuation de l'amplitude de la perturbation existe, dans les milieux à deux ou trois dimensions, alors que l'énergie transportée par la perturbation peut rester constante.
 
@@ -58,7 +63,8 @@ Cette atténuation de l'amplitude de la perturbation existe, dans les milieux à
 <img src="/terminales-pc/chap-1/Chap-3-2-cours-3.png" width="60%" alt="" />
 {{% /note %}}
 
-#### Remarques.
+#### Remarques
+
 - Seules les ondes progressives longitudinales se propagent dans les fluides.
 - Les solides transmettent les ondes progressives longitudinales et transversales.
 - Les ondes mécaniques nécessitent la présence d'un milieu et ne peuvent donc pas se propager dans le vide.
@@ -68,30 +74,37 @@ Cette atténuation de l'amplitude de la perturbation existe, dans les milieux à
 Pour bien souligner que les caractéristiques d'une onde ne sont pas celles d'un objet matériel, on appelle **célérité** la *vitesse de déplacement de la déformation* d'un milieu. C'est aussi la *vitesse de déplacement de l'énergie*.
 
 {{% note tip %}}
+
 #### De quoi dépend la célérité d'une onde ?
+
 - La célérité d'une onde qui se propage dans un *milieu non dispersif* est **caractéristique de ce milieu**.
 - La célérité d'une onde progressive *ne dépend pas (sauf cas particulier) de la valeur de l'élongation* (*importance de la déformation*) de cette onde.
 {{% /note %}}
 
-#### Remarques :
+#### Remarques
+
 - *Plus le milieu est rigide, plus la célérité est grande.*
-    - Sur une corde, la célérité d'une onde est d'autant plus grande que la corde est tendue.
-    - La célérité du son est plus grande dans un solide que dans l'eau et elle est plus grande dans l'eau que dans l'air.
+  - Sur une corde, la célérité d'une onde est d'autant plus grande que la corde est tendue.
+  - La célérité du son est plus grande dans un solide que dans l'eau et elle est plus grande dans l'eau que dans l'air.
 
 - *Plus l'inertie du milieu est grande, plus la célérité diminue.*
-    - Sur une corde, la célérité est d'autant plus grande que la masse linéique est faible.
-    - Sur une échelle de perroquet, la célérité est d'autant plus petite que la longueur des barreaux est grande.
+  - Sur une corde, la célérité est d'autant plus grande que la masse linéique est faible.
+  - Sur une échelle de perroquet, la célérité est d'autant plus petite que la longueur des barreaux est grande.
 
 ### Notion de retard
 
 {{% note tip %}}
-#### Retard d'une onde 
+
+#### Retard d'une onde
+
 Dans un *milieu non absorbant et non dispersif*, **chaque point de l'espace atteint par une onde progressive reproduit exactement le mouvement de la source un peu plus tard dans le temps**.  
 On appelle **retard** la *durée nécessaire à la propagation de l'onde entre deux points étudiés*.
 {{% /note %}}
 
 {{% note tip %}}
+
 #### Expression du retard
+
 <img src="/terminales-pc/chap-1/Chap-3-2-cours-4.png" alt="" />
 - Le retard avec lequel l'onde atteint le point d'abscisse $x_2$ est, si on note $v$ la célérité de l'onde :
 $$ \tau = \dfrac{x_2 - x_1}{v}$$
@@ -109,7 +122,8 @@ Un phénomène est dit **périodique** (dans *le temps*) s'il se reproduit ident
 <img src="/terminales-pc/chap-1/Chap-3-2-cours-5.png" alt="" width="80%" />
 > **Fig. 1** — Mouvement dans le temps d'une source $S$ (à la position $x=0$, par exemple). Bien remarquer que l'axe des abscisses représente le temps.
 
-#### Remarque :
+#### Remarque
+
 *Un phénomène périodique n'a ni début ni fin* ; c'est un **modèle**.
 
 {{% note tip %}}
@@ -125,7 +139,8 @@ $$f = \dfrac{1}{T}$$
 avec $f$ en hertz (Hz) et $T$ en seconde (s).
 {{% /note %}}
 
-#### Remarque :
+#### Remarque
+
 $$\pu{1 Hz} = \pu{1 s-1}$$
 
 ### Périodicité temporelle d'une onde progressive périodique
@@ -140,24 +155,31 @@ La période temporelle d'une onde progressive est identique à celle de la sourc
 > **Fig. 3** — Mouvement dans le temps d'un point quelconque $M$ atteint par l'onde (à la position $x=a$ par exemple). Noter le **déphasage** par rapport au mouvement de la source (en $x=0$), sur la figure 1. Bien remarquer que l'axe des abscisses représente le temps.
 
 {{% note warning %}}
+
 #### Comment déterminer la période temporelle d'une onde ?
+
 Rester immobile, *ce qui revient à fixer les coordonnées d'espace*, et laisser s'écouler le temps.
 {{% /note %}}
 
 ### Périodicité spatiale d'une onde progressive périodique
 
 {{% note tip %}}
-#### Déphasage entre le mouvement de deux points distincts.
+
+#### Déphasage entre le mouvement de deux points distincts
+
 Deux points matériels situés à des distances différentes de la source, atteints par une onde progressive, le sont avec des *retards différents*.
 Les mouvements dans le temps de ces deux points sont **déphasés** — *les valeurs des élongations de l'onde en chacun des points sont différentes.*
 {{% /note %}}
 
 {{% note tip %}}
-#### Période spatiale.
+
+#### Période spatiale
+
 Lorsqu'on prend une *photo instantanée du milieu*, l'image obtenue présente un **motif (spatial)** qui *se répète, identique à lui-même*. Le milieu dans lequel l'onde se propage présente une **périodicité spatiale**.
 {{% /note %}}
 
-#### Remarques :
+#### Remarques
+
 - C'est le déphasage entre tous les points que l'onde périodique atteint qui est à l'origine de la périodicité spatiale.
 - *La périodicité spatiale d'une onde périodique non sinusoïdale (cf. section suivante) ne porte aucun nom.*
 
@@ -165,7 +187,9 @@ Lorsqu'on prend une *photo instantanée du milieu*, l'image obtenue présente un
 > **Fig. 4** — Cartographie de l'espace à une date quelconque. Bien remarquer que l'**axe des abscisses représente l'espace**. La période spatiale s'exprime en mètre (m).
 
 {{% note warning %}}
+
 #### Comment déterminer la période spatiale d'une onde ?
+
 Prendre une photo instantanée du milieu, *ce qui revient à fixer les coordonnées de temps*, et explorer l'espace.
 {{% /note %}}
 

@@ -28,18 +28,18 @@ layout: "single"
 
 ----
 
-- **Doc. 2,0 :** [*Qu'est-ce qu'une onde progressive - carte mentale*](/terminales-pc/chap-1/ondes_progressives_carte_mentale.svg)
+- [*Qu'est-ce qu'une onde progressive - carte mentale*](/terminales-pc/chap-1/ondes_progressives_carte_mentale.svg)
 
-- **Doc. 2,1 :** [*Qu'est-ce qu'une onde progressive ?*](1-rappels-ondes-progressives)
+- [*Qu'est-ce qu'une onde progressive ?*](1-rappels-ondes-progressives)
 
-- **Doc. 2,2 :** [*Intensité sonore, niveau d'intensité sonore*](2-intensite-sonore)
+- [*Intensité sonore, niveau d'intensité sonore*](2-intensite-sonore)
 
-- **Doc. 2,3 :** [*Exercices de révision de 1ère*](3-exercices-revisions)
+- [*Exercices de révision de 1ère*](3-exercices-revisions)
 
-- **Doc. 2,4 :** [*Intensité sonore, niveau d'intensité sonore : activités expérimentales*](6-activite-experimentale)
+- [*Intensité sonore, niveau d'intensité sonore : activités expérimentales*](6-activite-experimentale)
 
-- **Doc. 2,5 :** [*Évaluer l'atténuation du signal dans une fibre optique*](4-attenuation-fibre-optique)
+- [*Évaluer l'atténuation du signal dans une fibre optique*](4-attenuation-fibre-optique)
 
-- **Doc. 2,6 :** [*Utiliser le réseau téléphonique pour surfer sur Internet*](5-reseau-telephonique)
+- [*Utiliser le réseau téléphonique pour surfer sur Internet*](5-reseau-telephonique)
 
-- **Doc. 2,7 :** [*Annale : Nos oreilles, on y tient !*](7-annale-attenuation)
+- [*Annale : Nos oreilles, on y tient !*](7-annale-attenuation)

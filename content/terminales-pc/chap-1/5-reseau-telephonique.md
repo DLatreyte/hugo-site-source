@@ -1,6 +1,6 @@
 ---
 title: "Utiliser le réseau téléphonique pour surfer sur Internet"
-subtitle: "Chapitre 1,5"
+subtitle: ""
 author: "Hachette, TS"
 type: ""
 date: 2020-09-18T16:43:15+04:00
@@ -30,7 +30,8 @@ Extrait de {{< remote "www.ant.developpement-durable.gouv.fr" "http://www.ant.de
 
 ### Atténuation du signal sur une fibre optique
 
-L'atténuation du signal sur une fibre optique qui se mesure en $\pu{dB.km-1}$ est due à plusieurs phénomènes dont : 
+L'atténuation du signal sur une fibre optique qui se mesure en $\pu{dB.km-1}$ est due à plusieurs phénomènes dont :
+
 - la **diffusion Rayleigh** : c'est le résultat de l'interaction entre la lumière et la matière. Elle est d'autant plus grande que la longueur d'onde $\lambda$ est petite ;
 - l'**absorption** : elle recouvre principalement trois causes : la *présence d'impuretés dans la fibre*, les *vibrations moléculaires*, les *transitions électroniques dans l'ultraviolet* ;
 - les **connexions** : la mise bout à bout des fibres nécessite un alignement des axes parfait, au risque de produire des pertes.
@@ -75,4 +76,3 @@ Que doit-on faire pour transmettre un signal sur une longue distance ?
 {{% solution "Réponse" %}}
 
 {{% /solution %}}
-

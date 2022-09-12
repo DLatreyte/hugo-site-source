@@ -1,6 +1,6 @@
 ---
 title: "Annale : Nos oreilles, on y tient !"
-subtitle: "Chapitre 2,7"
+subtitle: ""
 author: ""
 type: ""
 date: 2022-05-10T09:32:18+04:00
