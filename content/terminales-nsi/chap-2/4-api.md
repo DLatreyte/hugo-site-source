@@ -25,6 +25,7 @@ Par exemple, pour utiliser une fonction il suffit de connaître sa **spécificat
 ## Travail à réaliser
 
 1. Créer un module dont l'API est la suivante :
+
 ```python
 >>> help(aires)
 Help on module aires:
@@ -60,13 +61,16 @@ FILE
 3. Écrire un programme principal qui utilise ce module.
 
 4. Expliquer quelle est la différence entre les deux spécifications suivantes :
+
 ```python
 def disque(rayon: float) -> float:
     """
     Renvoie l'aire du disque de rayon r.
     """
 ```
-et 
+
+et
+
 ```python
 def disque(rayon: float) -> float:
     """
@@ -75,6 +79,7 @@ def disque(rayon: float) -> float:
     HYPOTHÈSE: r > 0
     """
 ````
+
 5. On souhaite prendre en charge les cas où l'utilisateur fournirait une dimension négative (erronée donc).  
 Modifier le code des fonctions de telle sorte qu'une exception de type `ValueError` soit levée chaque fois qu'une valeur négative est passée en argument.
 
@@ -82,13 +87,14 @@ Modifier le code des fonctions de telle sorte qu'une exception de type `ValueErr
 
 ## Stabilité d'une API
 
-Il est important, lorsqu'on souhaite faire évoluer une API, de faire en sorte que les utilisateurs qui l'utilisaient déjà, avant la modification, puisse toujours le faire sans avoir à modifier le programme ou voir celui-ci ne plus fonctionner.   
+Il est important, lorsqu'on souhaite faire évoluer une API, de faire en sorte que les utilisateurs qui l'utilisaient déjà, avant la modification, puissent toujours le faire sans avoir à modifier le programme ou voir celui-ci ne plus fonctionner.
 *Sauf décision volontaire qu'**il faudra communiquer aux utilisateurs**, l'évolution d'une API doit apporter de nouvelles fonctionnalités sans en retirer.*
 
-Par exemple, on pourrait vouloir proposer aux utilisateurs la possibilité d'arrondir le résultat du calcul d'une aire. 
+Par exemple, on pourrait vouloir proposer aux utilisateurs la possibilité d'arrondir le résultat du calcul d'une aire.
 
-6. Modifier le code des différentes fonctions de façon à ce qu'il ressemble à celui de la fonction `disque` ci-dessous (la partie sur la levée de l'exception `ValueError` n'est pas insérée dans le code proposé).   
-Vérifier que le programme écrit à la question 3. fonctionne toujours sans aucune modification. 
+6. Modifier le code des différentes fonctions de façon à ce qu'il ressemble à celui de la fonction `disque` ci-dessous (la partie sur la levée de l'exception `ValueError` n'est pas insérée dans le code proposé).
+Vérifier que le programme écrit à la question 3. fonctionne toujours sans aucune modification.
+
 ```python
 def disque(rayon: float, dec: int = -1) -> float:
     """
@@ -106,4 +112,3 @@ def disque(rayon: float, dec: int = -1) -> float:
 
 9. Le code utilise la fonction intégrée au langage Python `round` pour arrondir un `float` à un certain nombre de chiffres après la virgule.  
 Écrire sa propre fonction `round` en n'utilisant que les opérateurs `*`, `/`, `+`, `**` et la fonction `int`.
-
