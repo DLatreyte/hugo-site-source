@@ -23,10 +23,10 @@ layout: "single"
 
 ## Documents
 
-- **Chap. 2,1 :** [*Modules et exceptions*](1-modules)
+- **Doc. :** [*Modules et exceptions*](1-modules)
 
-- **Chap. 2,2 :** [*Capitalisation d'une valeur*](2-capitalisation)
+- **Doc. :** [*Capitalisation d'une valeur*](2-capitalisation)
 
-- **Chap. 2,3 :** [*Exercices*](3-exercices)
+- **Doc. :** [*Exercices*](3-exercices)
 
-- **Chap. 2,4 :** [*Utilisation et fourniture d'une API*](4-api)
+- **Doc. :** [*Utilisation et fourniture d'une API*](4-api)

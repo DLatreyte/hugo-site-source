@@ -1,6 +1,6 @@
 ---
 title: "Fourniture et utilisation d'une API"
-subtitle: "Chapitre 2,4"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-09-22T05:15:58+04:00
