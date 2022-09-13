@@ -1,6 +1,6 @@
 ---
 title: "La récursivité appliquée aux chaînes de caractères et aux listes"
-subtitle: "Document 1,2"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-09-08T04:53:31+04:00

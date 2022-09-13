@@ -1,6 +1,6 @@
 ---
 title: "Dessin de figures fractales"
-subtitle: "Document 1,5"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-01-26T06:16:46+04:00

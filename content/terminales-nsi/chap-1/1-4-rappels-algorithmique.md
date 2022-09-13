@@ -1,6 +1,6 @@
 ---
 title: "Introduction à l'algorithmique, recherche d'un élément dans un tableau"
-subtitle: "Document 1,4"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-09-12T17:46:07+04:00

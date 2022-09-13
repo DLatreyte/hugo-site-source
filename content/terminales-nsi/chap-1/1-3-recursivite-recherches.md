@@ -1,6 +1,6 @@
 ---
 title: "Recherche d'un élément dans un tableau : algorithmes itératifs et récursifs"
-subtitle: "Document 1,3"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-09-09T21:33:15+04:00

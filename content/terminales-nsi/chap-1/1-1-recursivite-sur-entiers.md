@@ -1,6 +1,6 @@
 ---
 title: "Récursivité sur les entiers"
-subtitle: "Document 1,1"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-09-05T18:34:00+04:00
