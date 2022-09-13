@@ -108,7 +108,7 @@ nombre 1 en argument).
 3. Incorporer à ce module un bloc `if __name__ == '__main__':` permettant de
    tester ces fonctions.  
     Choisir les valeurs suivantes pour les variables de test&nbsp;: `C = 2.2133983053266699`,
-   `C0 = 2.0`, `t = 5.0`, `n = 730` et vérifier que chacune des fonctions
+   `C0 = 2.0`, `t = 5.000000000000782`, `n = 730` et vérifier que chacune des fonctions
    donne le bon résultat.
 
 4. Écrire un programme qui importe le module créé.
@@ -196,7 +196,7 @@ def taux_annuel(C0: float, C: float, n: int) -> float:
 if __name__ == "__main__":
     C = 2.2133983053266699
     C0 = 2.0
-    t = 5.0
+    t = 5.000000000000782
     n = 730
     # Test des fonctions
     assert C == montant_actuel(C0, t, n)
