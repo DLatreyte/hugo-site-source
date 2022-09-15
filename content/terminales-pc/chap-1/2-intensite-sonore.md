@@ -190,7 +190,7 @@ Lorsqu'une onde sonore se propage dans un milieu absorbant, on définit l'attté
 $$
     A = L_{\text{sortie}} - L_{\text{entrée}} = 10\, \log \left(  \dfrac{I_{\text{sortie}}}{I_{\text{entrée}}} \right)
 $$
-avec
+avec $L_{\text{sortie}}$ le niveau d’intensité sonore en sortie (dB), $L_{\text{entrée}}$ le niveau d’intensité sonore en entrée (dB), $I_{\text{sortie}}$ l'intensité sonore en sortie ($\pu{W.m^{-2}}$) et $I_{\text{entrée}}$ l'intensité sonore en entrée  ($\pu{W.m^{-2}}$).
 {{% /note %}}
 
 ## Entraînement
