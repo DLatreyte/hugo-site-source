@@ -258,3 +258,18 @@ Finalement $ L_2 = L_1 + 20 \log \left( \dfrac{r_1}{r_2} \right) \Leftrightarrow
 
 **A.N.** $r_2 = \pu{16,0 m} \times 10^{\frac{-(120 - 108)}{20}} = \pu{4,0 m}$.
 {{% /solution %}}
+
+### Casque anti-bruit
+
+Sur un chantier de travaux publics, un ouvrier est placé à une distance $d=\pu{1,0 m}$ d’un engin émettant un bruit dont la puissance sonore est $P=\pu{15 mW}$.
+
+#### Données
+
+- Expression de l'atténuation géométrique : $I = \dfrac{P}{4\pi\,d^2}$ ;
+- Seuil de danger pour le système auditif : $L_{\text{danger}} = \pu{85 dB}$.
+
+1. Vérifier si le bruit perçu par cet ouvrier présente un danger pour son système auditif.
+
+2. L’ouvrier met un casque anti-bruit dont l’atténuation est de $\pu{−20 dB}$. Préciser si le danger persiste.
+
+3. L’ouvrier retire son casque et s’éloigne pour se positionner à 10 m de l’engin. Conclure quant à la dangerosité de cette exposition au bruit.
