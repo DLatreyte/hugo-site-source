@@ -174,9 +174,23 @@ $L = 10 \log \left( \dfrac{I}{I_0} \right) \Harr I = I_0 \times 10^{L/10}$.
 Dans le cas d'une onde à la surface de l'eau, l'énergie fournie par la source se répartit sur des rides circulaires de rayon croissant. La hauteur des ondulations diminue progressivement.  
 Cette atténuation de l'amplitude de la perturbation existe, dans les milieux à deux ou trois dimensions, alors que l'énergie transportée par la perturbation peut rester constante.
 
+### Dans un milieu non absorbant
+
 {{% note tip %}}
-**L'atténuation d'une onde n'est pas forcément due à une absorption de l'énergie par le milieu dans lequel l'onde se propage.** Au fur et à mesure de la propagation, l'énergie fournie par la source se répartit sur un front d'onde de plus en plus grand. L'énergie reçue en chaque point de chacun de ces fronts d'onde diminue donc et l'amplitude de l'onde diminue.
+**L'atténuation d'une onde n'est pas forcément due à une absorption de l'énergie par le milieu dans lequel l'onde se propage.** Au fur et à mesure de la propagation, l'énergie fournie par la source se répartit sur un front d'onde de plus en plus grand. L'énergie reçue en chaque point de chacun de ces fronts d'onde diminue donc et l'amplitude de l'onde diminue ; on parle d'**atténuation géométrique**.
 <img src="/terminales-pc/chap-1/Chap-3-2-cours-3.png" width="60%" alt="" />
+{{% /note %}}
+
+### Dans un milieu absorbant
+
+Lorsqu’une onde sonore se propage dans un milieu absorbant, une partie de l’énergie est transférée au milieu. Ainsi, *l’intensité sonore décroît entre l’entrée de l’onde dans le milieu et sa sortie*. **Cette atténuation s'ajoute à l'atténuation géométrique**.
+
+{{% note tip %}}
+Lorsqu'une onde sonore se propage dans un milieu absorbant, on définit l'attténuation de l'onde par :
+$$
+    A = L_{\text{sortie}} - L_{\text{entrée}} = 10\, \log \left(  \dfrac{I_{\text{sortie}}}{I_{\text{entrée}}} \right)
+$$
+avec
 {{% /note %}}
 
 ## Entraînement
