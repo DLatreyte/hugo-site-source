@@ -35,6 +35,7 @@ def approxpi(n: int) -> float:
 {{< /highlight >}}
 
 1. Lors de l’exécution de `approxpi(1000)` une exception est levée à l’exécution de la ligne 5. Quel est le type d’exception ?
+
     a. `ValueError`  
     b. `SyntaxError`  
     c. `TypeError`
