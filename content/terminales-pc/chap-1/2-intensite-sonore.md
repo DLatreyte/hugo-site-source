@@ -61,7 +61,7 @@ $$
 $$
 {{% /note %}}
 
-En utilisant seulement les propriétés du logarithm décimal énoncées ci-dessus, développer les expressions suivantes&nbsp;:
+En utilisant seulement les propriétés du logarithme décimal énoncées ci-dessus, développer les expressions suivantes&nbsp;:
 
 3. $\log(a^n) = \ldots$
 {{% solution "Réponse" %}}
