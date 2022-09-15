@@ -34,7 +34,7 @@ def approxpi(n: int) -> float:
     return math.sqrt(s * 6)
 {{< /highlight >}}
 
-1. Lors de l’exécution de `approxpi(1000)` une exception est levée à l’exécution de la ligne 5. Quel est le type d’exception ?
+1. Lors de l’exécution de `approxpi(1000)` une exception est levée à l’exécution de la ligne 4. Quel est le type d’exception ?
 
     a. `ValueError`  
     b. `SyntaxError`  
@@ -49,16 +49,16 @@ def approxpi(n: int) -> float:
 >>> approxpi(1000)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-  File "main.py", line 12, in approxpi
+  File "main.py", line 10, in approxpi
     s = s + terme(k)
-  File "main.py", line 5, in terme
+  File "main.py", line 4, in terme
     return 1 / (k**2)
 ZeroDivisionError: division by zero
 ```
 
 {{% /solution %}}
 
-2. Bien que l’exécution soit interrompue ligne 5, la source de l’erreur est ailleurs  
+2. Bien que l’exécution soit interrompue ligne 4, la source de l’erreur est ailleurs  
 Expliquer d’où provient l’erreur et proposer un correctif.
 {{% solution "Réponse" %}}
 
