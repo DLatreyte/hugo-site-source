@@ -1,5 +1,5 @@
 ---
-title: "Introduction à l'algorithmique, recherche d'un élément dans un tableau"
+title: "Rappels d'algorithmique"
 subtitle: ""
 author: ""
 type: ""
@@ -98,7 +98,7 @@ néanmoins regrouper les algorithmes en quelques grandes familles&nbsp;:
 - **Complexité constante&nbsp;:** Leur notation est de la forme $O(1)$. Ces algorithmes sont indépendants du nombre de données à traiter.
 {{% note normal %}}
 La **complexité constante** apparaît dans la *recherche par index dans un tableau*.  
-*La complexité  constante est la plus «&nbsp;rapide&nbsp;».*
+*La complexité  constante est la plus «&nbsp;performante&nbsp;».*
 {{% /note %}}
 
 - **Les algorithmes logarithmiques&nbsp;:** Leur notation est de la forme $O(\log N)$. Ces
