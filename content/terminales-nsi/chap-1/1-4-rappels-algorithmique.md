@@ -141,7 +141,7 @@ opération (recherche d'une valeur, par exemple).
 {{% note normal %}}
 La **complexité linéaire et logarithmique** apparaît dans des problèmes dans lesquels on *découpe répétitivement les données en deux parties, que l'on parcourt
 séquentiellement* ensuite (tri Quicksort par exemple).  
-*La complexité quasi-linéaire est considérée comme «&nbsp;assez rapide&nbsp;».*
+*La complexité quasi-linéaire est considérée comme «&nbsp;assez efficace&nbsp;».*
 {{% /note %}}
 
 - **Les algorithmes de type polynomiale&nbsp;:** Leur notation est de la forme $O(N^k)$ où
@@ -150,7 +150,7 @@ $k$ est la puissance.
 {{% note normal %}}
 Une complexité **quadratique** apparaît, par exemple, lorsqu'on parcourt un
 *tableau à deux dimensions*, lorsqu'on effectue un tri par comparaison, etc.  
-*La complexité polynomiale est considérée comme «&nbsp;moyennement rapide&nbsp;».*
+*La complexité polynomiale est considérée comme «&nbsp;moyennement efficace&nbsp;».*
 {{% /note %}}
 
 - **Les algorithmes exponentiels ou factoriels&nbsp;:** Leur notation est de la forme $O(e^N)$ ou $O(N!)$. Ce sont les algorithmes les plus complexes.  
@@ -170,7 +170,8 @@ formes ou l'intelligence artificielle.
 <img src="/premieres-nsi/chap-16/fig-16-1.png" alt="" width="80%" />
 <img src="/premieres-nsi/chap-16/fig-16-2.png" alt="" width="80%" />
 
-<!-- <div style="text-align: center;"> -->
+<div style="text-align: center;">
+
 | Complexité | Durée pour N = 10^6 |
 |:-:|:-:|
 | Logarithmique&nbsp;: $O(log N)$ | 10 ns |
@@ -178,7 +179,8 @@ formes ou l'intelligence artificielle.
 | Quadratique&nbsp;: $O(N^2)$ | 1/4 heure |
 | Polynomiale&nbsp;: $O(N ^k)$ | 30 ans si $k=3$ |
 | Exponentielle&nbsp;: $O(2^N)$  | plus de $10^300000$ milliards d'années |
-<!-- </div> -->
+
+</div>
 
 > Ordres de grandeur des durées d'exécution d'un problème de taille $10^6$ sur un ordinateur à un milliard d'opérations par seconde («&nbsp;Informatique pour tous en CPGE&nbsp;», éditions Eyrolles).
 
