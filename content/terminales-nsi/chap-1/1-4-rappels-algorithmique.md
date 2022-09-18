@@ -16,7 +16,9 @@ auto_numbering: true
 
 ## Algorithmique
 
+<!--
 ### Introduction
+-->
 
 {{% note tip %}}
 Un **algorithme** est une *suite finie et non ambiguë
@@ -55,7 +57,9 @@ une gestion de la mémoire optimale.
 
 Conformément au programme, on limite la *performance algorithmique*  à la **complexité algorithmique**.
 
-### Notion de complexité algorithmique
+## Notion de complexité algorithmique
+
+### Introduction
 
 {{% note tip %}}
 La **complexité algorithmique** donne des informations
@@ -281,7 +285,7 @@ Tant que n >= 0 Faire
 
 {{% /note %}}
 
-### Terminaison d'un algorithme&nbsp;: variant de boucle
+## Terminaison d'un algorithme itératif&nbsp;: variant de boucle
 
 La structure qui généralement doit retenir l'attention lors de l'analyse de
 la terminaison d'un algorithme est la **structure de boucle**.
@@ -296,7 +300,7 @@ la boucle*.
 termine** puisqu'un entier positif ne peut décroître infiniment.
 {{% /note %}}
 
-#### Exemple 1&nbsp;: Calcul de la plus petite puissance de deux supérieure ou égale à un entier $n$  
+### Exemple 1&nbsp;: Calcul de la plus petite puissance de deux supérieure ou égale à un entier $n$  
 
 -----
 
@@ -325,7 +329,7 @@ La fonction $f$ d'expression $f(p) = n - p$ est-elle un variant de boucle&nbsp;?
 La fonction $f$ est un variant de boucle et la boucle se termine donc bien.
 {{% /note %}}
 
-#### Exemple 2&nbsp;: Palindrome
+### Exemple 2&nbsp;: Palindrome
 
 -----
 
@@ -381,7 +385,7 @@ $f(i, j) = j - i$ est-elle un variant de boucle&nbsp;?
 La fonction $f$ est un variant de boucle. La boucle se termine donc bien.
 {{% /solution %}}
 
-### Correction d'un algorithme&nbsp;: invariant de boucle
+## Correction d'un algorithme itératif&nbsp;: invariant de boucle
 
 {{% note tip %}}
 On appelle **invariant d'une boucle**  une *propriété qui
@@ -396,7 +400,7 @@ Les boucles et la récursivité étant fondamentalement similaire, il y a peu de
 différence entre démontrer un invariant de boucles et prouver qu'un programme
 est correct en utilisant un raisonnement par récurrence.
 
-#### Exemple 3&nbsp;: Calcul de $2^n$
+### Exemple 3&nbsp;: Calcul de $2^n$
 
 -----
 
@@ -429,7 +433,7 @@ boucle. En effet&nbsp;:
 La proposition est donc bien un invariant de boucle et on peut conclure que l'algorithme est correct.
 {{% /note %}}
 
-#### Exemple 4&nbsp;: Quotient et reste de la division euclidienne d'un entier positif par un entier strictement
+### Exemple 4&nbsp;: Quotient et reste de la division euclidienne d'un entier positif par un entier strictement
 
 -----
 
