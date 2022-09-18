@@ -115,7 +115,7 @@ d'importance.
 La **complexité logarithmique** apparaît dans les problèmes dans lesquels
 l'ensemble des données peut être décomposé en deux parties égales, qui
 sont elles-mêmes décomposées en 2 (recherche par dichotomie, recherche dans un arbre binaire, etc.).  
-*La **complexité logarithmique** est très «&nbsp;rapide&nbsp;».*
+*La **complexité logarithmique** est très «&nbsp;performante&nbsp;».*
 {{% /note %}}
 
 {{% note warning %}}
