@@ -133,7 +133,7 @@ du nombre de données initiales à traiter*.
 La **complexité linéaire** apparaît dans les problèmes dans lesquels *on
 parcourt séquentiellement l'ensemble des données* pour réaliser une
 opération (recherche d'une valeur, par exemple).  
-*La complexité linéaire est considérée comme «&nbsp;rapide&nbsp;».*
+*La complexité linéaire est considérée comme «&nbsp;efficace&nbsp;».*
 {{% /note %}}
 
 - **Les algorithmes linéaires et logarithmiques (quasi-linéaire)&nbsp;:** Leur notation est de la forme $O(N \log N)$.
