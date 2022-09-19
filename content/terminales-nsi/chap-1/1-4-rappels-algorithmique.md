@@ -174,17 +174,17 @@ formes ou l'intelligence artificielle.
 <img src="/premieres-nsi/chap-16/fig-16-1.png" alt="" width="80%" />
 <img src="/premieres-nsi/chap-16/fig-16-2.png" alt="" width="80%" />
 
-<div style="text-align: center;">
+<center>
 
-| Complexité | Durée pour N = 10^6 |
+| Complexité | Durée pour $N = 10^6$ |
 |:-:|:-:|
 | Logarithmique&nbsp;: $O(log N)$ | 10 ns |
 | Linéaire&nbsp;: $O(N)$ | 1 ms |
 | Quadratique&nbsp;: $O(N^2)$ | 1/4 heure |
 | Polynomiale&nbsp;: $O(N ^k)$ | 30 ans si $k=3$ |
-| Exponentielle&nbsp;: $O(2^N)$  | plus de $10^300000$ milliards d'années |
+| Exponentielle&nbsp;: $O(2^N)$  | plus de $10^{300000}$ milliards d'années |
 
-</div>
+</center>
 
 > Ordres de grandeur des durées d'exécution d'un problème de taille $10^6$ sur un ordinateur à un milliard d'opérations par seconde («&nbsp;Informatique pour tous en CPGE&nbsp;», éditions Eyrolles).
 
@@ -285,6 +285,22 @@ Tant que n >= 0 Faire
 
 {{% /note %}}
 
+### Comment illustrer l'influence du nombre d'éléments passés en entrée
+
+{{% note exercise %}}
+
+#### Quelques complexités à tout de suite identifier
+
+En utilisant la fonction `time` du module `time`, écrire le code de fonctions qui :
+
+1. montre que le temps d'accès à un élément d'une liste est en $O(1)$ ;
+2. montre que la recherche linéaire dans une liste est en $O(N)$ ;
+3. met en évidence la complexité de l'opérateur Python `in` ;
+4. montre que la recherche linéaire dans une liste à deux dimensions est en $O(N^2)$ ;
+5. montre que la recherche dichotomique dans une liste triée est en $O(\log(N))$.
+
+{{% /note %}}
+
 ## Terminaison d'un algorithme itératif&nbsp;: variant de boucle
 
 La structure qui généralement doit retenir l'attention lors de l'analyse de
@@ -292,12 +308,13 @@ la terminaison d'un algorithme est la **structure de boucle**.
 
 {{% note tip %}}
 On appelle **variant** d'une boucle une *fonction qui a
-pour variables les variables du problème, qui retourne une valeur positive et
+pour variables les variables du problème, qui retourne une valeur entière positive et
 qui décroît à chacune des itérations de la boucle, jusqu'à s'annuler ou
 prendre une valeur constante négative qui dépend de la condition d'arrêt de
 la boucle*.
+
 **La découverte d'un variant de boucle permet de conclure que la boucle se
-termine** puisqu'un entier positif ne peut décroître infiniment.
+termine** puisqu'il n'existe aucune suite infinie strictement décroissante d'entiers naturels.
 {{% /note %}}
 
 ### Exemple 1&nbsp;: Calcul de la plus petite puissance de deux supérieure ou égale à un entier $n$  
@@ -309,7 +326,7 @@ termine** puisqu'un entier positif ne peut décroître infiniment.
 **Fonction&nbsp;:** *plusPetitePuissance(n)*  
 **Entrée&nbsp;:** *entier naturel n*  
 **Sortie&nbsp;:** *entier naturel $p$ dont la valeur est égale à la plus petite
-puissance de deux supérieure ou égale à $n$.*
+puissance de deux supérieure ou égale à $n$.*<br />
 **Début**  
 <span style="margin-left: 2em;">$p \longleftarrow 1$</span><br />
 <span style="margin-left: 2em;">**TantQue**  $p < n$ **Faire**</span><br />
@@ -322,9 +339,10 @@ puissance de deux supérieure ou égale à $n$.*
  {{% note normal %}}
 La fonction $f$ d'expression $f(p) = n - p$ est-elle un variant de boucle&nbsp;?
 
+- $f(p)$ est un entier.
 - Tant que $p < n$, $f(p) > 0$
-- $f$ décroît sur l'ensemble des valeurs de $p$.  
-- *Condition d'arrêt&nbsp;:* $p \geqslant n$, donc $f (p) \leqslant 0$.
+- $f$ décroît sur l'ensemble des valeurs de $p$ puisque $$f(p_{i+1}) - f(p) = n - p_{i+1} - n + p_{i} = p_{i} - p_{i+1} = p_{i} - 2p_{i} = - p_{i} <0$$
+- *Condition d'arrêt&nbsp;:* $p_{max} \geqslant n$, donc $f (p_{max}) \leqslant 0$.
 
 La fonction $f$ est un variant de boucle et la boucle se termine donc bien.
 {{% /note %}}
@@ -335,21 +353,21 @@ La fonction $f$ est un variant de boucle et la boucle se termine donc bien.
 
 ##### Algorithme 2
 
-**Fonction&nbsp;:** *palindrome(m)*  
-**Entrée&nbsp;:** *chaîne de caractères m*
-**Sortie&nbsp;:** *booléen Vrai si la chaîne de caractères m est un palindrome, Faux sinon*  
+**Fonction&nbsp;:** *palindrome(m)*<br />
+**Entrée&nbsp;:** *chaîne de caractères m*<br />
+**Sortie&nbsp;:** *booléen Vrai si la chaîne de caractères m est un palindrome, Faux sinon* <br />
 **Début**  
 <span style="margin-left: 2em;">$i \longleftarrow 0$</span><br />
-<span style="margin-left: 2em;">$j \longleftarrow \text{longueur} (m) - 1$</span>
-<span style="margin-left: 2em;">**TantQue**  $i \leqslant j$ **Faire**</span>
-<span style="margin-left: 4em;">**Si**  $m[i] = m[j]$ **Alors**</span>
-<span style="margin-left: 6em;">$i \longleftarrow i + 1$</span>
-<span style="margin-left: 6em;">$j \longleftarrow j - 1$</span>
-<span style="margin-left: 4em;">**Sinon**</span>
-<span style="margin-left: 6em;">**Renvoyer**  Faux</span>
-<span style="margin-left: 4em;">**FinSi**</span>
-<span style="margin-left: 2em;">**FintantQue**</span>
-<span style="margin-left: 2em;">**Renvoyer**  Vrai</span>
+<span style="margin-left: 2em;">$j \longleftarrow \text{longueur} (m) - 1$</span><br />
+<span style="margin-left: 2em;">**TantQue**  $i \leqslant j$ **Faire**</span><br />
+<span style="margin-left: 4em;">**Si**  $m[i] = m[j]$ **Alors**</span><br />
+<span style="margin-left: 6em;">$i \longleftarrow i + 1$</span><br />
+<span style="margin-left: 6em;">$j \longleftarrow j - 1$</span><br />
+<span style="margin-left: 4em;">**Sinon**</span><br />
+<span style="margin-left: 6em;">**Renvoyer**  Faux</span><br />
+<span style="margin-left: 4em;">**FinSi**</span><br />
+<span style="margin-left: 2em;">**FintantQue**</span><br />
+<span style="margin-left: 2em;">**Renvoyer**  Vrai</span><br />
 **Fin**
 
 -----
@@ -366,8 +384,8 @@ $j$&nbsp;: 5, 4, 3
 La fonction retourne `Faux`.
 
 - Pour l'entrée «&nbsp;radar&nbsp;»&nbsp;:  
-$i$&nbsp;: 0, 1, 2, 3
-$j$&nbsp;: 4, 3, 2, 1
+$i$&nbsp;: 0, 1, 2, 3  
+$j$&nbsp;: 4, 3, 2, 1  
 La fonction retourne `Vrai`.
 {{% /solution %}}
 
@@ -375,8 +393,9 @@ La fonction retourne `Vrai`.
 {{% solution "Réponse" %}}
 $f(i, j) = j - i$ est-elle un variant de boucle&nbsp;?
 
-- Tant que $j > i$, $f(i, j) = j - i > 0$.
-- $f (i+1, j-1) = j - 1 - (i + 1) = j - 1 - i - 1 = j - i - 2 = f(i, j) - 2 < f(i, j)$. La fonction est donc décroissante sur l'ensemble des valeurs de $i$ et de $j$.
+- Tant que $j > i$, $f(i, j)$ est un entier et $f(i, j) = j - i > 0$.
+- $f (i+1, j-1) = j - 1 - (i + 1) = j - 1 - i - 1 = j - i - 2 = f(i, j) - 2 < f(i, j)$.  
+La fonction est donc décroissante sur l'ensemble des valeurs de $i$ et de $j$.
 - *Condition d'arrêt&nbsp;:* $i > j$, donc $f(i, j) = j - i < 0$
 {{% /solution %}}
 
@@ -388,8 +407,8 @@ La fonction $f$ est un variant de boucle. La boucle se termine donc bien.
 ## Correction d'un algorithme itératif&nbsp;: invariant de boucle
 
 {{% note tip %}}
-On appelle **invariant d'une boucle**  une *propriété qui
-si elle est vraie avant l'exécution d'une itération le demeure après
+On appelle **invariant d'une boucle**  une *propriété qui,
+si elle est vraie avant l'exécution d'une itération, le demeure après
 l'exécution de l'itération*.
 *Un invariant de boucle doit être vrai avant de commencer la boucle* et est
 alors garanti de *rester correct après chaque itération* de la boucle. En
@@ -410,10 +429,10 @@ est correct en utilisant un raisonnement par récurrence.
 **Entrée&nbsp;:** *entier naturel $n$*  
 **Sortie&nbsp;:** *entier naturel $p$ dont la valeur est égale à $2^n$*  
 **Début**  
-<span style="margin-left: 2em;">$p \longleftarrow 1$</span>  
-<span style="margin-left: 2em;">**Pour**  $k$ **allant de**  1 à $n$ **faire**</span>  
-<span style="margin-left: 4em;">$p \longleftarrow 2 p$</span>  
-<span style="margin-left: 2em;">**FinPour**</span>  
+<span style="margin-left: 2em;">$p \longleftarrow 1$</span><br />
+<span style="margin-left: 2em;">**Pour**  $k$ **allant de**  1 à $n$ **faire**</span><br />
+<span style="margin-left: 4em;">$p \longleftarrow 2 p$</span> <br />
+<span style="margin-left: 2em;">**FinPour**</span>  <br />
 **Fin**
 
 -----
@@ -444,13 +463,13 @@ La proposition est donc bien un invariant de boucle et on peut conclure que l'al
 **Sortie&nbsp;:** *Quotient $q$ et reste $r$ de la division euclidienne
 de l'entier naturel $a$ par l'entier naturel $b$*  
 **Début**  
-<span style="margin-left: 2em;">$q \longleftarrow 0$</span>
-<span style="margin-left: 2em;">$r \longleftarrow a$</span>  
-<span style="margin-left: 2em;">**TantQue**  $r \geqslant b$ **Faire**</span>
-<span style="margin-left: 4em;">$q \longleftarrow q + 1$</span>
-<span style="margin-left: 4em;">$r \longleftarrow r - b$</span>
-<span style="margin-left: 2em;">**FinTantQue**</span>
-<span style="margin-left: 2em;">**Renvoyer**  $q, r$</span>
+<span style="margin-left: 2em;">$q \longleftarrow 0$</span><br />
+<span style="margin-left: 2em;">$r \longleftarrow a$</span>  <br />
+<span style="margin-left: 2em;">**TantQue**  $r \geqslant b$ **Faire**</span><br />
+<span style="margin-left: 4em;">$q \longleftarrow q + 1$</span><br />
+<span style="margin-left: 4em;">$r \longleftarrow r - b$</span><br />
+<span style="margin-left: 2em;">**FinTantQue**</span><br />
+<span style="margin-left: 2em;">**Renvoyer**  $q, r$</span><br />
 **Fin**  
 
 -----
@@ -460,7 +479,7 @@ de l'entier naturel $a$ par l'entier naturel $b$*
    au fil des itérations.
 {{% solution "Réponse" %}}
 $$
-\begin{array}{c&nbsp;: c&nbsp;: c&nbsp;: c&nbsp;: c}
+\begin{array}{c : c : c : c : c}
 a & 17 & 17 & 17 & 17\cr \hdashline
 b & 5 & 5 & 5 & 5 \cr \hdashline
 q & 9 & 1 & 2 & 3 \cr \hdashline
@@ -472,10 +491,13 @@ $$
 2. Montrer que la boucle **TantQue**  se termine en utilisant un *variant de
    boucle*.
 {{% solution "Réponse" %}}
-La fonction $f(r, b) = r - b$ peut-elle être un variant de boucle&nbsp;?
+La fonction $f(r) = r - b$ peut-elle être un variant de boucle&nbsp;?
 
-- Pour n'importe quel tour de boucle $r \geqslant b$, donc $f(r, b) = r -b \geqslant 0$.
-- Soit $r_2 = r_1 - b$. $f(r_2, b) = r_2 - b = r_1 - b - b = f(r_1, b) - b \leqslant f(r_1, b)$. Au fur et à mesure que la boucle progresse la fonction $f$ diminue.
+- $f(r) = r -b$ est un entier.
+- Pour n'importe quel tour de boucle $r \geqslant b$, donc $f(r) = r -b \geqslant 0$.
+- Soit $r_2 = r_1 - b$.  
+$f(r_2) = r_2 - b = r_1 - b - b = f(r_1) - b \leqslant f(r_1)$.  
+La fonction $f$ est décroissante.
 - *Condition d'arrêt&nbsp;:* $r < b$, donc $f(r, b) = r - b < 0$.
 
 La fonction $f$ est bien un variant de boucle et cette boucle se termine.
@@ -495,6 +517,7 @@ Au rang $k+1$, $q_{k+1} = q_{k} + 1$ et $r_{k+1} = r_k - b$. Donc $a = b q_{k+1}
 La propriété $a =bq+ r$ est bien un invariant de boucle et le programme est correct.
 {{% /solution %}}
 
+<!--
 4. Montrer que la propriété $0 \leqslant r < b$ est un invariant de boucle.
 {{% solution "Réponse" %}}
 Si la propriété $0 \leqslant r$ est un invariant de boucle, elle doit être vraie avant d'entrer dans la boucle, à chaque tour de boucle et une fois la boucle terminée.
@@ -507,7 +530,9 @@ Au rang $k+1$, $r_{k+1} = r_k - b > 0$. On sait que $r_{k+1} > 0$ car on passe a
 La propriété $0 \leqslant r$ est bien un invariant de la boucle **TantQue** et en déduire que le programme est correct.
 {{% /solution %}}
 
-5. Écrire le code Python implémentant l'algorithme 4. La spécification de la fonction est la suivante&nbsp;:
+-->
+
+4. Écrire le code Python implémentant l'algorithme 4. La spécification de la fonction est la suivante&nbsp;:
 
 ```python
 def division_euclidienne(a: int, b: int) -> Tuple[int, int]:
@@ -552,7 +577,110 @@ assert division_euclidienne(17, 5) == (3, 2)
 
 {{% /solution %}}
 
-## Application
+## Exercices
+
+{{% note exercise %}}
+
+#### Exercice
+
+On considère la fonction suivante :
+
+```python
+def power(n: int) -> int:
+    p = 1
+    i = 0
+    while i < n:
+        p = p * 2
+        i = i + 1
+    return p
+```
+
+1. Quelle opération ce code réalise-t-il ?
+
+2. Écrire un jeu de test pour cette fonction.
+
+3. Démontrer que l'algorithme se termine.
+
+4. Démontrer que l'algorithme est correct.
+
+5. Déterminer la complexité de cet algorithme.
+
+{{% /note %}}
+
+{{% solution "Réponses" %}}
+
+1. `power` calcule $2^n$.
+
+2.
+
+```python
+assert power(0) == 0
+assert power(1) == 2
+assert power(10) == 1024
+```
+
+3. $f(i) = n - i$ est-il un variant de boucle ?  
+    - $f(0) = n$ est un entier naturel.
+    - $f(i+1) - f(i) = n - i - 1 - n + i = -1$  
+    La suite est strictement décroissante.
+    - $i_{max} = n$ donc $f(i_{max}) = n - i_{max} = n - n = 0$.  
+$f(i)$ est un variant de boucle, l'algorithme se termine.
+
+4. Invariant de boucle : "À l'issue de chaque itération, $p=2^i$."  
+    - **Initialisation :** À l'entrée de la boucle, $i=0$, $2^i = 2^0 = 1 = p$.
+    - **Conservation :** On suppose qu'à l'issue du tour de boucle de compteur $k$, $p_k = 2^k$.  
+    $p_{k+1} = p_k \times 2 = 2^k \times 2 = 2^{k+1}$.
+    - **Terminaison :** Lors du dernier tour de boucle, $i = n - 1$, le calcul effectué est donc $p = 2^{n-1} \times 2= 2^n$.  
+    L'algorithme est correct.
+
+{{% /solution %}}
+
+{{% note exercise %}}
+
+#### Exercice
+
+On considère la suivante :
+
+```python
+def maxer(s: List[float]) -> float:
+    while len(s) > 1:
+        if s[0] > s[1]:
+            s.pop(1)
+        else:
+            s.pop(0)
+    return s.pop(0)
+```
+
+1. Quelle opération ce code réalise-t-il ?
+
+2. Écrire un jeu de test pour cette fonction.
+
+3. Démontrer que l'algorithme se termine.
+
+4. Démontrer que l'algorithme est correct.
+
+5. Déterminer la complexité de cet algorithme.
+
+6. Existe-t-il un ou des algorithmes qui réalisent la même opération plus efficacement ?
+
+{{% /note %}}
+
+{{% solution "Réponses" %}}
+
+1. la fonction trouve le plus grand élément dans la liste passée en argument.
+
+2.
+
+3. $f(i) = i - 1$ avec $i=\text{len}(s)$ est-il un variant de boucle ?  
+    - $f(i_0) = len(s) - 1$ est un entier naturel si la liste `s` n'est pas vide.
+    - $f(i_{k+1}) - f(i_k) = len(s[1:]) - 1 - len(s) + 1 = len(s[1:]) - len(s) < 0$  
+    La fonction $f$ est strictement décroissante.  
+    - $i_{der} = 1$, $f(i_{der}) = 1 - 1 = 0$.  
+    $f$ est un variant de boucle et la boucle se termine.
+
+4. Invariant de boucle :
+
+{{% /solution %}}
 
 {{% note exercise %}}
 
@@ -562,17 +690,17 @@ On considère la fonction `somme_premiers_entiers` qui implémente l'algorithme&
 
 ##### Algorithme 5
 
-**Fonction&nbsp;:**  *somme_premiers_entiers(n)*
-**Entrée&nbsp;:** *entier naturel $n$*
-**Sortie&nbsp;:** *somme des n premiers entiers naturels*
+**Fonction&nbsp;:**  *somme_premiers_entiers(n)*  
+**Entrée&nbsp;:** *entier naturel $n$*  
+**Sortie&nbsp;:** *somme des n premiers entiers naturels*  
 **Début**  
-<span style="margin-left: 2em;">$\text{somme} \longleftarrow 0$</span>
-<span style="margin-left: 2em;">$i \longleftarrow 1$</span>  
-<span style="margin-left: 2em;">**TantQue**  $i \leqslant n$ **Faire**</span>
-<span style="margin-left: 4em;">$\text{somme} \longleftarrow somme + 1$</span>
-<span style="margin-left: 4em;">$i \longleftarrow i + 1$</span>
-<span style="margin-left: 2em;">**FinTantQue**</span>
-<span style="margin-left: 2em;">**Renvoyer**  somme</span>
+<span style="margin-left: 2em;">$\text{somme} \longleftarrow 0$</span><br />
+<span style="margin-left: 2em;">$i \longleftarrow 1$</span><br />
+<span style="margin-left: 2em;">**TantQue**  $i \leqslant n$ **Faire**</span><br />
+<span style="margin-left: 4em;">$\text{somme} \longleftarrow somme + 1$</span><br />
+<span style="margin-left: 4em;">$i \longleftarrow i + 1$</span><br />
+<span style="margin-left: 2em;">**FinTantQue**</span><br />
+<span style="margin-left: 2em;">**Renvoyer**  somme</span><br />
 **Fin**  
 
 1. Implémenter en Python l'algorithme proposé. Ne pas oublier la spécification de la fonction.
