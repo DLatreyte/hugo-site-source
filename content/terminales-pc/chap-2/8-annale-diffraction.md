@@ -1,6 +1,6 @@
 ---
 title: "Caractère ondulatoire de la lumière d’après Huyghens"
-subtitle: "Chapitre 3,2,4"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-09-14T22:51:28+04:00
@@ -22,9 +22,10 @@ Le texte ci-dessous retrace succinctement l’évolution de quelques idées à p
 ----
 Huyghens (1629-1695) donne à la lumière un caractère ondulatoire par analogie à la propagation des ondes à la surface de l’eau et à la propagation du son.  
 Pour Huyghens, le caractère ondulatoire de la lumière est fondé sur les faits suivants&nbsp;:
+
 - «&nbsp;le son ne se propage pas dans une enceinte vide d’air tandis que la lumière se propage dans cette même enceinte. La lumière consiste dans un mouvement de la matière qui se trouve entre nous et le corps lumineux, matière qu’il nomme éther&nbsp;»&nbsp;;
 - «&nbsp;la lumière s’étend de toutes parts[^1] et, quand elle vient de différents endroits, même de tout opposés[^2], les ondes lumineuses se traversent l’une l’autre sans s’empêcher[^3]&nbsp;»&nbsp;;
-- «&nbsp;la propagation de la lumière depuis un objet lumineux ne saurait être[^4] par le transport d’une matière qui depuis cet objet s’en vient jusqu’à nous ainsi qu’une balle ou une flèche traverse l’air&nbsp;». 
+- «&nbsp;la propagation de la lumière depuis un objet lumineux ne saurait être[^4] par le transport d’une matière qui depuis cet objet s’en vient jusqu’à nous ainsi qu’une balle ou une flèche traverse l’air&nbsp;».
 
 Fresnel (1788-1827) s’attaque au problème des ombres et de la propagation rectiligne de la lumière. Avec des moyens rudimentaires, il découvre et exploite le phénomène de diffraction. Il perce un petit trou dans une plaque de cuivre. Grâce à une lentille constituée par une goutte de miel déposée sur le trou, il concentre les rayons solaires sur un fil de fer.
 
@@ -40,6 +41,7 @@ La théorie de la relativité d'Einstein a éliminé la possibilité d'existence
 
 2. Citer deux propriétés générales des ondes qu’on peut retrouver dans le texte de Huyghens.
 {{% solution "Réponse" %}}
+
 - Les ondes peuvent se croiser sans se perturber.
 - Les ondes se propagent sans transport de matière.
 - Les ondes se propagent dans toutes les directions accessibles.
@@ -66,8 +68,9 @@ On réalise une expérience de diffraction à l’aide d’un laser émettant un
 
 5. L’angle $\theta$ étant petit, on considère que $\tan \theta \simeq \theta$. Donner la relation entre $L$ et $D$ qui permet de calculer $\theta$ pour chacun des fils.
 {{% solution "Réponse" %}}
+
 - $L$ et $D$ sont des dimensions caractéristiques du montage expérimental.  
-- Le montage fait apparaître le triangle rectangle tel $\tan \theta = \dfrac{L/2}{D} = \dfrac{L}{2D}$. 
+- Le montage fait apparaître le triangle rectangle tel $\tan \theta = \dfrac{L/2}{D} = \dfrac{L}{2D}$.
 - Comme l’angle $\theta$ est petit, $\tan \theta \simeq \theta$ et $\theta \simeq \dfrac{L}{2D}$. Une mesure de $L$ et de $D$ permet de calculer la valeur de l'angle $\theta$ (en radians).
 {{% /solution %}}
 
@@ -77,11 +80,12 @@ La relation liant l'angle $\theta$ et $a$ la dimension de l'objet diffractant es
 Dans cette relation $\theta$ doit être exprimé en radians, $\lambda$ et $a$ en mètres (ou tout au moins dans la même unité de longueur).
 {{% /solution %}}
 
-On trace la courbe $\theta = f(1/a)$ (les ordonnées sont exprimées en radian et les abscisses en «&nbsp;par mètre&nbsp;»).   
+On trace la courbe $\theta = f(1/a)$ (les ordonnées sont exprimées en radian et les abscisses en «&nbsp;par mètre&nbsp;»).
 <img src="/terminales-pc/chap-2/fig-2-2-4-2.jpg" alt="" width="80%" />
 
 7. Montrer que cette courbe est en accord avec l’expression de $\theta$ donnée à la question 6.
 {{% solution "Réponse" %}}
+
 - La relation $$\theta = \dfrac{\lambda}{a}$$ montre que $theta$ est inversement proportionnel à $a$.  
 - Si on effectue le changement de variable $u = \dfrac{1}{a}$, la relation précédente devient&nbsp;: $$\theta = \lambda u$$ $\theta$ est proportionnel à $u$.  
 - Lorsqu'on trace $\theta$ en fonction de $\dfrac{1}{a}$, comme sur le graphique, on trace en fait $\theta$ en fonction de $u$. C'est donc normal de parvenir à une relation linéaire après traitement des résultats.
@@ -97,4 +101,3 @@ Dans la relation $\theta = \lambda u$, $\lambda$ est le *coefficient de proporti
 $\theta = \pu{1,5e-2 rad}$ lorsque $u = \dfrac{1}{a} = \pu{2,6e4 m-1}$ donc comme $\lambda = \dfrac{\theta}{u}$, $ \lambda =  \dfrac{\pu{1,5e-2 rad}}{\pu{2,6e4 m-1}} = \pu{5,8e-7 m}$.  
 La longueur d'onde du laser est donc $\lambda = \pu{560 nm}$.
 {{% /solution %}}
-
