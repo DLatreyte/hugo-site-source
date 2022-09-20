@@ -482,7 +482,7 @@ $$
 \begin{array}{c : c : c : c : c}
 a & 17 & 17 & 17 & 17\cr \hdashline
 b & 5 & 5 & 5 & 5 \cr \hdashline
-q & 9 & 1 & 2 & 3 \cr \hdashline
+q & 0 & 1 & 2 & 3 \cr \hdashline
 r & 17 & 12 & 7 & 2 \cr
 \end{array}
 $$
