@@ -349,7 +349,7 @@ $$
 Déterminer la valeur de l'incertitude $U(m)$ et écrire le résultat de la pesée.
 
 {{% solution "Réponse" %}}
- Cette balance étant graduée à $\pu{0,01 g}$ près, $U = \dfrac{2\times \pu{0,01 g}}{\sqrt{12}} = \pu{0,00577 g}$ et le résultat de la mesure s'écrit $m = \pu{(38,450 \pm 0,006) g}$.
+ Cette balance étant graduée à $\pu{0,01 g}$ près, $U = \dfrac{\pu{0,01 g}}{\sqrt{3}} = \pu{0,00577 g}$ et le résultat de la mesure s'écrit $m = \pu{(38,450 \pm 0,006) g}$.
 {{% /solution %}}
 
 {{% note tip %}}
