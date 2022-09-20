@@ -359,7 +359,7 @@ Déterminer la valeur de l'incertitude $U(m)$ et écrire le résultat de la pes�
 <a href="" id="double_mesure"> </a>
  Lorsque la mesure nécessite une double lecture, les incertitudes liées à la lecture peuvent se cumuler ou se compenser, totalement ou partiellement. Pour un niveau de confiance de 95 %, l'incertitude de cette mesure a pour expression&nbsp;:
  $$
- U_{\text{double lecture}} = \sqrt{2\\, \left(\dfrac{2\times \text{Valeur Plus Petite Graduation}}{\sqrt{12}}\right)^2} = \sqrt{2}\\;U_{\text{lecture}}
+ U_{\text{double lecture}} = \sqrt{2\\, \left(\dfrac{\text{Valeur Plus Petite Graduation}}{\sqrt{3}}\right)^2} = \sqrt{2}\\;U_{\text{lecture}}
  $$
  {{% /note %}}
 
