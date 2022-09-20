@@ -375,7 +375,7 @@ Déterminer la valeur de l'incertitude $U(m)$ et écrire le résultat de la pes�
 La plus petite graduation, sur l'écran de l'oscilloscope, étant égale à $\pu{0,2 division}$, déterminer l'incertitude associée à toute mesure à l'écran d'un oscilloscope.
 
 {{% solution "Réponse" %}}
-$U = \sqrt{2}\\;\times\dfrac{2\times \pu{0,2 division}}{\sqrt{12}} = \pu{0,163 division}$. *Pour obtenir l'incertitude en secondes, il ne reste plus alors qu'à multiplier par la base de temps*.
+$U = \sqrt{2}\\;\times\dfrac{\pu{0,2 division}}{\sqrt{3}} = \pu{0,163 division}$. *Pour obtenir l'incertitude en secondes, il ne reste plus alors qu'à multiplier par la base de temps*.
  {{% /solution %}}
 
 ### Utilisation d'un appareil dont le constructeur a indiqué la tolérance
