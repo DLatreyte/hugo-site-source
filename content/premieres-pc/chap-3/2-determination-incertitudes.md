@@ -15,12 +15,13 @@ auto_numbering: true
 [^1]: $U(m)$ est l'incertitude sur la mesure.
 
 {{% note warning %}}
-#### Avertissement. 
+
+#### Avertissement
+
 Aucune des formules présentées dans ce document ne doit être apprise par cœur car **elles seront systématiquement données si nécessaire**.
 
 En revanche, il faudra être capable de choisir la formule à utiliser et il sera impératif de savoir l'utiliser.
 {{% /note %}}
-
 
 Le résultat d'une mesure *n'est pas une valeur mais un intervalle de valeurs*, que l'on note $\pu{m±U(m)}$[^1], dans lequel on peut considérer, *avec un certain niveau de confiance*, que la «&nbsp;valeur vraie&nbsp;» se trouve.
 
@@ -33,31 +34,32 @@ Comment détermine-t-on $U(m)$ en pratique&nbsp;?
 {{% note tip %}}
 Lors du calcul d'une incertitude trois cas de figure peuvent se présenter&nbsp;:
 
-1. L'incertitude porte sur une **mesure expérimentale que l'on peut répéter 
+1. L'incertitude porte sur une **mesure expérimentale que l'on peut répéter
   plusieurs fois**&nbsp;: *on parle d'incertitude de **type A***&nbsp;;
-2. L'incertitude porte sur une **mesure expérimentale que l'on ne peut pas 
+2. L'incertitude porte sur une **mesure expérimentale que l'on ne peut pas
   répéter** plusieurs fois&nbsp;: *on parle d'incertitude de **type B***&nbsp;;
-3. L'incertitude est celle du **résultat d'un calcul effectué à partir de 
+3. L'incertitude est celle du **résultat d'un calcul effectué à partir de
   grandeurs pour lesquelles les incertitudes sont connues**.
 {{% /note %}}
 
 Le point n°1 ci-dessus a été abordé en classe de seconde, le point n°2 sera abordé cette année, le dernier point sera étudié en classe de terminale.
 
 {{% note normal %}}
-Votre travail consiste à être capable de reconnaître ces différentes situations et 
+Votre travail consiste à être capable de reconnaître ces différentes situations et
 ensuite à mettre en œuvre les techniques décrites dans la suite de ce document.
 {{% /note %}}
 
 ## Détermination de l'incertitude lorsqu'on peut effectuer une série de mesures
 
-Lorsqu'un *même opérateur répète plusieurs fois la mesure de la même 
-grandeur dans les mêmes conditions expérimentales*, il trouve généralement des 
-résultats différents. Il en est de même lorsque des opérateurs différents 
-réalisent simultanément le mesurage de la même grandeur avec du matériel 
+Lorsqu'un *même opérateur répète plusieurs fois la mesure de la même
+grandeur dans les mêmes conditions expérimentales*, il trouve généralement des
+résultats différents. Il en est de même lorsque des opérateurs différents
+réalisent simultanément le mesurage de la même grandeur avec du matériel
 similaire.
 
 {{% note tip %}}
-Lorsqu'on peut réaliser plusieurs fois un mesurage, on utilise des notions de statistiques pour déterminer la valeur du résultat&nbsp;: 
+Lorsqu'on peut réaliser plusieurs fois un mesurage, on utilise des notions de statistiques pour déterminer la valeur du résultat&nbsp;:
+
 - *La **valeur estimée** est assimilée à la valeur moyenne de la série de mesures*&nbsp;;
 - *L'**incertitude** est calculée à partir de l'écart-type de la série de mesures.*
 {{% /note %}}
@@ -269,7 +271,6 @@ print(m.sin(m.pi))
 ```
 {{% /note %}}
 
-
 13. Faire en sorte que le programme appelle la fonction `calcul_incertitude` (prendre les lignes 60 et 61 comme exemple), avec la valeur de $k$ correspondant à un niveau de confiance de 95&nbsp;%, et qu'il affiche cette valeur. La noter.
 
 {{% solution "Réponse" %}}
@@ -302,20 +303,22 @@ Ce type d'incertitude est étudié dans l'activité [Chap. 3,3 : Utilisation d'u
 
 ## Détermination de l'incertitude lorsqu'on n'effectue qu'une seule mesure
 
-Lorsqu'une mesure ne peut pas être reproduite plusieurs fois, il est **impossible d'estimer une incertitude de répétabilité**. Il est alors nécessaire d'analyser les différentes sources d'erreurs liées à l'instrument de mesure. 
+Lorsqu'une mesure ne peut pas être reproduite plusieurs fois, il est **impossible d'estimer une incertitude de répétabilité**. Il est alors nécessaire d'analyser les différentes sources d'erreurs liées à l'instrument de mesure.
 
 {{% note warning %}}
 On rappelle qu'il ne faut surtout pas apprendre par cœur les expressions mais savoir les utiliser&nbsp;!
 {{% /note %}}
- 
+
 ### Utilisation d'un appareil gradué
- 
+
  {{% note tip %}}
- #### Cas d'une lecture simple sur une échelle graduée
+
+#### Cas d'une lecture simple sur une échelle graduée
+
  <a href="" id="simple_mesure"> </a>
  Lorsque la mesure est obtenue par **une seule lecture sur une échelle ou un cadran**, pour un niveau de confiance de 95 %, l'incertitude de cette mesure a pour expression&nbsp;:
 $$
-U_{\text{lecture}} = \dfrac{2\times \text{Valeur Plus Petite Graduation}}{\sqrt{12}}
+U_{\text{lecture}} = \dfrac{\text{Valeur Plus Petite Graduation}}{\sqrt{3}}
 $$
 {{% /note %}}
 
@@ -323,16 +326,17 @@ $$
 Déterminer la valeur de l'incertitude $U(m)$ et écrire le résultat de la pesée.
 
 {{% solution "Réponse" %}}
- Cette balance étant graduée à $\pu{0,01 g}$ près, $U = \dfrac{2\times \pu{0,01 g}}{\sqrt{12}} = \pu{0,00577 g}$ et le résultat de la mesure s'écrit $m = \pu{(38,450 \pm 0,006) g}$.
+ Cette balance étant graduée à $\pu{0,01 g}$ près, $U = \dfrac{\pu{0,01 g}}{\sqrt{3}} = \pu{0,00577 g}$ et le résultat de la mesure s'écrit $m = \pu{(38,450 \pm 0,006) g}$.
 {{% /solution %}}
 
-
 {{% note tip %}}
+
 #### Cas d'une double lecture sur une échelle graduée
+
 <a href="" id="double_mesure"> </a>
  Lorsque la mesure nécessite une double lecture, les incertitudes liées à la lecture peuvent se cumuler ou se compenser, totalement ou partiellement. Pour un niveau de confiance de 95 %, l'incertitude de cette mesure a pour expression&nbsp;:
  $$
- U_{\text{double lecture}} = \sqrt{2\\, \left(\dfrac{2\times \text{Valeur Plus Petite Graduation}}{\sqrt{12}}\right)^2} = \sqrt{2}\\;U_{\text{lecture}}
+ U_{\text{double lecture}} = \sqrt{2\\, \left(\dfrac{\text{Valeur Plus Petite Graduation}}{\sqrt{3}}\right)^2} = \sqrt{2}\\;U_{\text{lecture}}
  $$
  {{% /note %}}
 
@@ -340,7 +344,7 @@ Déterminer la valeur de l'incertitude $U(m)$ et écrire le résultat de la pes�
  Déterminer l'incertitude associée à toute mesure utilisant une règle graduée jusqu'au millimètre.
 
  {{% solution "Réponse" %}}
- La règle étant graduée au millimètre, $U = \sqrt{2}\times\dfrac{2\times \pu{1 mm}}{\sqrt{12}} = \pu{0,82 mm}$.  
+ La règle étant graduée au millimètre, $U = \sqrt{2}\times\dfrac{\pu{1 mm}}{\sqrt{3}} = \pu{0,82 mm}$.  
  **Remarque&nbsp;:** En pratique, on peut arrondir cette incertitude à $U = \pu{1 mm}$.
  {{% /solution %}}
 
@@ -348,13 +352,15 @@ Déterminer la valeur de l'incertitude $U(m)$ et écrire le résultat de la pes�
 La plus petite graduation, sur l'écran de l'oscilloscope, étant égale à $\pu{0,2 division}$, déterminer l'incertitude associée à toute mesure à l'écran d'un oscilloscope.
 
 {{% solution "Réponse" %}}
-$U = \sqrt{2}\\;\times\dfrac{2\times \pu{0,2 division}}{\sqrt{12}} = \pu{0,163 division}$. *Pour obtenir l'incertitude en secondes, il ne reste plus alors qu'à multiplier par la base de temps*.
+$U = \sqrt{2}\\;\times\dfrac{\pu{0,2 division}}{\sqrt{3}} = \pu{0,163 division}$. *Pour obtenir l'incertitude en secondes, il ne reste plus alors qu'à multiplier par la base de temps*.
  {{% /solution %}}
 
- ### Utilisation d'un appareil dont le constructeur a indiqué la tolérance
+### Utilisation d'un appareil dont le constructeur a indiqué la tolérance
 
  {{% note tip %}}
+
 #### Cas d'une mesure obtenue avec un appareil de tolérance connue
+
 Lorsque la mesure est obtenue avec un appareil pour lequel le constructeur indique la tolérance $t$ (notée $\pm t$), l'incertitude liée à la tolérance de cet appareil a pour expression&nbsp;:
 $$
 U = \dfrac{2\\, t}{\sqrt{3}}
@@ -374,5 +380,3 @@ Déterminer l'incertitude sur la mesure du volume d'eau.
 {{% solution "Réponse" %}}
 L'incertitude $U$ vaut donc $U = \dfrac{2 \times \pu{0,05 mL}}{\sqrt{3}} = \pu{0,0577 mL}$ et le volume mesuré est $\pu{(40,00 \pm 0,06) mL}$.
 {{% /solution %}}
-
-
