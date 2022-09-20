@@ -341,7 +341,7 @@ On rappelle qu'il ne faut surtout pas apprendre par cœur les expressions mais s
  <a href="" id="simple_mesure"> </a>
  Lorsque la mesure est obtenue par **une seule lecture sur une échelle ou un cadran**, pour un niveau de confiance de 95 %, l'incertitude de cette mesure a pour expression&nbsp;:
 $$
-U_{\text{lecture}} = \dfrac{2\times \text{Valeur Plus Petite Graduation}}{\sqrt{12}}
+U_{\text{lecture}} = \dfrac{\text{Valeur Plus Petite Graduation}}{\sqrt{3}}
 $$
 {{% /note %}}
 
