@@ -9,7 +9,7 @@ toc: true
 tags: ["Annale", "Diffraction", "Célérité"]
 categories: ["Physique", "Terminale Spé PC", "Annale"]
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 
@@ -95,7 +95,7 @@ On constate, dans cette expression, que la *célérité de l'onde ne dépend pas
 
 Près de la plage, la profondeur devient petite devant la longueur d’onde de la houle.
 
-9. On considère la vague représentée sur la figure ci-dessous. Donner l’expression de la célérité de cette vague au point $A$ et celle au point $B$.   
+9. On considère la vague représentée sur la figure ci-dessous. Donner l’expression de la célérité de cette vague au point $A$ et celle au point $B$.
 En quel point la célérité est la plus grande&nbsp;?
 
 <img src="/terminales-pc/chap-2/fig-2-2-3-2.png" alt="" width="40%" />
