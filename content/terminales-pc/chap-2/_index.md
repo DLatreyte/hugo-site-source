@@ -26,10 +26,10 @@ layout: "single"
 
 ----
 
-- **Chap. 3,1,1 :** [*Un effet lié au mouvement relatif de l’émetteur et du récepteur : l’effet Doppler*](1-effet-doppler-introduction)
-- **Chap. 3,1,2 :** [*L'Univers en expansion*](2-univers)
-- **Chap. 3,1,3 :** [*Détermination par effet Doppler de la vitesse d'un émetteur sonore*](3-doppler-demo)
-- **Chap. 3,1,4 :** [*Annale : L'effet doppler en astrophysique*](4-doppler-astrophysique)
+- **Doc :** [*Un effet lié au mouvement relatif de l’émetteur et du récepteur : l’effet Doppler*](1-effet-doppler-introduction)
+- **Doc :** [*L'Univers en expansion*](2-univers)
+- **Doc :** [*Détermination par effet Doppler de la vitesse d'un émetteur sonore*](3-doppler-demo)
+- **Doc :** [*Annale : L'effet doppler en astrophysique*](4-doppler-astrophysique)
 
 ## Diffraction
 
@@ -63,10 +63,10 @@ layout: "single"
 
 ----
 
-- **Chap. 3,3,1 :** [*Retard, déphasage d'une onde sonore sinusoïdale*](9-retard-dephasage)
+- **Doc :** [*Retard, déphasage d'une onde sonore sinusoïdale*](9-retard-dephasage)
 
-- **Chap. 3,3,2 :** [*Notion de différence de marche*](10-difference-marche)
+- **Doc :** [*Notion de différence de marche*](10-difference-marche)
 
-- **Chap. 3,3,3 :** [*Conditions d’interférence de deux ondes sinusoïdales*](11-interferences)
+- **Doc :** [*Conditions d’interférence de deux ondes sinusoïdales*](11-interferences)
 
-- **Chap. 3,3,4 :** [*Exercices et annale*](12-exercices)
+- **Doc :** [*Exercices et annale*](12-exercices)
