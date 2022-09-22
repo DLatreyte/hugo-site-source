@@ -1,6 +1,6 @@
 ---
 title: "Exercices et Annale"
-subtitle: "Chapitre 3,3,4"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-09-28T12:01:30+04:00
@@ -14,6 +14,7 @@ auto_numbering: true
 ---
 
 ## Livre scolaire
+
 - {{< remote "32, 34, 33 pages 509 et 510" "https://www.lelivrescolaire.fr/page/16301719" >}}
 
 {{% solution "Solutions" %}}
@@ -21,6 +22,7 @@ auto_numbering: true
 {{% /solution %}}
 
 ## Annale
+
 - {{< remote "Autour du papillon" "/terminales-pc/chap-2/chap-2-12-2.pdf" >}}
 
 *Ne pas traiter les première et deuxième partie (seulement la partie 3).*
@@ -32,7 +34,7 @@ auto_numbering: true
 
 **1.1.2.** Les ondes sonores sont la propagation de la « déformation » de l'air. Elle nécessitent donc un milieu matériel pour se déplacer : ce sont des ondes mécaniques.
 
-**1.1.3.** Les ondes sonores sont des ondes de compression : le milieu est déformé selon la même direction que la direction de propagation de l'onde.   
+**1.1.3.** Les ondes sonores sont des ondes de compression : le milieu est déformé selon la même direction que la direction de propagation de l'onde.
 Les ondes sonores sont des ondes longitudinales.
 
 **1.2.1.** $f_r = f_e \\, \dfrac{v_{\text{onde}}}{v_{\text{onde}} - v_{\text{émetteur}}}$ donc $f_r = f_e \\, \dfrac{1}{1 - \dfrac { v_{\text{émetteur}} }{ v_{\text{onde}} }} \Leftrightarrow 1 - \dfrac { v_{\text{émetteur}} }{ v_{\text{onde}} } = \dfrac{f_e}{f_r}\Leftrightarrow \dfrac { v_{\text{émetteur}} }{ v_{\text{onde}} } = 1 - \dfrac{f_e}{f_r} \Leftrightarrow v_{\text{émetteur}} = v_{\text{onde}} \left( 1 - \dfrac{f_e}{f_r} \right)$.
@@ -54,11 +56,12 @@ La distance $2d$ est parcourue à la célérité $v_{\text{onde}}$ par l'onde, d
 
 **A.N.** $d = \dfrac{1}{2} \times (\pu{5,35 m.s-1} + \pu{340 m.s-1}) \times \pu{16,7e-3 s} = \pu{ 2,9 m } $.
 
-**3.1.** 
+**3.1.**
+
 - Pour que les interférences soient constructives, il faut que les ondes arrivent en phase dans l'œil de l'observateur. Le retard doit donc être tel que $\tau = 0 + k T = k T$ avec $k$ un entier.
 - Pour que les interférences soient destructives, il faut que les ondes arrivent en opposition de phase dans l'œil de l'observateur. Le retard doit donc être tel que $\tau = \dfrac{T}{2} + k T = (k + \dfrac{1}{2}) T$ avec $k$ un entier.
 
-**3.2.1.** Lorsque l'incidence est normale, $\tau = \dfrac{2ne}{c} + \dfrac{T}{2}$. Or on sait que les interférences sont constructives si $\tau = k T$, donc $\dfrac{2ne}{c} + \dfrac{T}{2} = k T \Leftrightarrow \dfrac{2ne}{c} = (2k -1) \dfrac{T}{2} \Leftrightarrow T = \dfrac{4 n e}{(2k - 1) c}$.   
+**3.2.1.** Lorsque l'incidence est normale, $\tau = \dfrac{2ne}{c} + \dfrac{T}{2}$. Or on sait que les interférences sont constructives si $\tau = k T$, donc $\dfrac{2ne}{c} + \dfrac{T}{2} = k T \Leftrightarrow \dfrac{2ne}{c} = (2k -1) \dfrac{T}{2} \Leftrightarrow T = \dfrac{4 n e}{(2k - 1) c}$.
 Comme $T = \dfrac{\lambda}{c}$, la relation précédente s'écrit $\dfrac{\lambda}{c} = \dfrac{4 n e}{(2k - 1) c}  \Leftrightarrow \lambda = \dfrac{4 n e}{(2k - 1)}$
 
 - Pour $k = 0$, on obtient une longueur d'onde négative, ce qui est impossible.
