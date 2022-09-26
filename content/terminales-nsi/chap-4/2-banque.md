@@ -19,7 +19,9 @@ L'objectif de ce document est de simuler (sommairement bien sûr) le fonctionnem
 - La création de comptes bancaires ;
 - La création de personnes propriétaires de ces comptes bancaires.
 
+<!--
 Une correction se trouve à cette adresse : {{< remote "https://repl.it/@dlatreyte/banque" "https://repl.it/@dlatreyte/banque" >}}
+-->
 
 ## Classe Personne
 
