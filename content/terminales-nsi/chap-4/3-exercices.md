@@ -1,6 +1,6 @@
 ---
 title: "Méthodes spéciales"
-subtitle: "Chapitre 4,3"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-09-29T09:51:52+04:00

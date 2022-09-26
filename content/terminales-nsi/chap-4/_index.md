@@ -20,17 +20,16 @@ layout: "single"
 |:-:|:-:|:-:|
 |  Vocabulaire de la programmation objet : **classes**, **attributs**, **méthodes**, **objets**. |  - **Écrire** la définition d’une classe. <br />- Accéder aux attributs et méthodes d’une classe. |  On n’aborde pas ici tous les aspects de la programmation objet comme le polymorphisme et l’héritage. |
 
-
 ## Documents
 
-- **Chap. 4,1 :** [*Programmation objet*](1-programmation-objet)
+- **Doc. :** [*Programmation objet*](1-programmation-objet)
 
-- **Chap. 4,2 :** [*Simulation du fonctionnement d'une banque*](2-banque)
+- **Doc. :** [*Simulation du fonctionnement d'une banque*](2-banque)
 
-- **Chap. 4,3 :** [*Fonctions spéciales en Python*](3-exercices)
+- **Doc. :** [*Fonctions spéciales en Python*](3-exercices)
 
-- **Chap. 4,4 :** [*Résoudre un problème grâce aux paradigmes objet et fonctionnel*](4-fonction)
+- **Doc. :** [*Résoudre un problème grâce aux paradigmes objet et fonctionnel*](4-fonction)
 
-- **Chap. 4,5 :** [*Jeu de la vie*](5-jeu-vie)
+- **Doc. :** [*Jeu de la vie*](5-jeu-vie)
 
-- **Chap. 4,6 :** [*Exercices*](6-exercices)
+- **Doc. :** [*Exercices*](6-exercices)

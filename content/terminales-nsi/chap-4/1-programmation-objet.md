@@ -1,6 +1,6 @@
 ---
 title: "Programmation Objet"
-subtitle: "Chapitre 4,1"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-09-23T21:07:12+04:00
@@ -22,14 +22,16 @@ auto_numbering: true
 {{% /note %}}
 
 L'un des objectifs principaux de la notion d'objet est d'organiser des programmes complexes grâce aux notions :
-- d'**encapsulation** ; 
-- d'**abstraction** ; 
-- d'**héritage** ; 
-- de **polymorphisme** ; 
+
+- d'**encapsulation** ;
+- d'**abstraction** ;
+- d'**héritage** ;
+- de **polymorphisme** ;
 
 **Remarque :** Seules les deux premières notions apparaissent dans le programme de NSI.
 
 {{% note tip %}}
+
 #### Encapsulation
 
 Le principe de l'encapsulation est de *regrouper dans le même objet, les données (attributs) et les traitements (méthodes)* qui lui sont spécifiques. Ainsi un objet est défini par ses attributs et ses méthodes.
@@ -38,6 +40,7 @@ Le principe de l'encapsulation est de *regrouper dans le même objet, les donné
 {{% /note %}}
 
 {{% note tip %}}
+
 #### Abstraction
 
 L'intérêt de la POO est qu'elle permet de créer des objets possédant un certain degré d'abstraction.
@@ -51,6 +54,7 @@ Méthodes
 {{% /note %}}
 
 {{% note tip %}}
+
 #### Héritage
 
 Le concept d'**héritage** permet de créer des **sous-classes plus spécialisées** à partir de classes plus générales (appelées super-classe).
@@ -60,9 +64,10 @@ Le concept d'**héritage** permet de créer des **sous-classes plus spécialisé
 {{% /note %}}
 
 {{% note tip %}}
+
 #### Polymorphisme
 
-Le **polymorphisme** est la faculté pour une **méthode** *portant le même nom mais appartenant à des classes distinctes héritées d'effectuer un travail différent*. 
+Le **polymorphisme** est la faculté pour une **méthode** *portant le même nom mais appartenant à des classes distinctes héritées d'effectuer un travail différent*.
 Cette propriété est acquise par la technique de la **surcharge**.
 {{% /note %}}
 
@@ -70,7 +75,7 @@ Cette propriété est acquise par la technique de la **surcharge**.
 
 {{% note normal %}}
 
-Toute cette partie doit être réalisée en utilisant le logiciel [Python Tutor](https://pythontutor.com).   
+Toute cette partie doit être réalisée en utilisant le logiciel [Python Tutor](https://pythontutor.com).
 Sélectionner [Start visualizing your code now](https://pythontutor.com/visualize.html#mode=edit) puis [Live Programming mode](https://pythontutor.com/live.html#code=&cumulative=false&heapPrimitives=nevernest&mode=edit&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false).
 
 {{% /note %}}
@@ -80,18 +85,19 @@ Dans ce premier exemple, on considère une classe qui modélise un compte bancai
 ### Une classe est un nouveau type et un objet est une instance de classe
 
 1. Taper et exécuter le code suivant :
+
 ```python
 class Compte:
     """
     Modélisation d'un compte bancaire.
     """
     pass
-``` 
+```
 
 {{% note normal %}}
 
 - Un nom de classe commence toujours (c'est une convention) par une lettre capitale ;
--  `pass` est l'instruction Python qui indique de ne rien faire.
+- `pass` est l'instruction Python qui indique de ne rien faire.
 
 {{% /note %}}
 
@@ -104,6 +110,7 @@ Quelles actions a déclenché le code précédent ?
 {{% /solution %}}
 
 2. À la suite, taper et exécuter le code suivant :
+
 ```python
 compte_1 = Compte()
 ```
@@ -117,20 +124,23 @@ Quelle action a déclenché le code précédent ?
 {{% /solution %}}
 
 3. Afin d'en découvrir davantage sur `compte_1`, taper et exécuter l'instruction suivante :
+
 ```python
 print(compte_1)
-``` 
+```
 
 Que nous apprend l'affichage à l'écran ?
 {{% solution "Réponse" %}}
+
 ```bash
 <__main__.Compte object at 0x7f7cc89bec88>
 ```
+
 `compte_1` appartient à l'espace de nom global et référence un objet de type `Compte` situé à l'adresse 0x7f7cc89bec88.
 {{% /solution %}}
 
-4. *«&nbsp;Définir une classe est équivalent à définir un nouveau type.&nbsp;»*   
-Quelle instruction Python pourrait démontrer cette affirmation ? 
+4. *«&nbsp;Définir une classe est équivalent à définir un nouveau type.&nbsp;»*
+Quelle instruction Python pourrait démontrer cette affirmation ?
 {{% solution "Réponse" %}}
 
 ```python
@@ -142,6 +152,7 @@ print(type(compte_1))
 ### Un objet possède des attributs dont les valeurs lui sont propres
 
 5. Un compte bancaire possède généralement un propriétaire et un solde. Taper et exécuter les lignes de code suivantes :
+
 ```python
 compte_1.proprietaire = "Pascal"
 compte_1.solde = 1000
@@ -156,7 +167,6 @@ Les attributs sont des **variables locales à l'objet**.
 
 {{% /note %}}
 
-
 {{% /solution %}}
 
 6. Taper et exécuter les instructions qui permettent de créer un objet `compte_2` dont le propriétaire se nomme «&nbsp;Natacha&nbsp;» et dont le solde est de 2000.
@@ -166,7 +176,7 @@ Les attributs sont des **variables locales à l'objet**.
 compte_2 = Compte()
 compte_2.proprietaire = "Natacha"
 compte_2.solde = 2000
-``` 
+```
 
 {{% /solution %}}
 
@@ -188,6 +198,7 @@ Deux instances d'une même classe ne partagent pas leurs attributs.
 ### Un objet possède un comportement
 
 8. Modifier le code de définition de la classe de façon à ce qu'il soit :
+
 ```python
 class Compte:
     """
@@ -198,7 +209,7 @@ class Compte:
         Retire valeur au solde.
         """
         self.solde = self.solde - valeur
-``` 
+```
 
 La fonction `retrait` est appelée **méthode**. Quelle est sa particularité ?
 {{% solution "Réponse" %}}
@@ -220,10 +231,12 @@ Les objets instances d'une même classe **partagent les méthodes**.
 
 {{% /solution %}}
 
-10. Natacha vient de retirer 50. Le code qui permet de prendre en compte ce retrait dans le programme est 
+10. Natacha vient de retirer 50. Le code qui permet de prendre en compte ce retrait dans le programme est
+
 ```python
 compte_2.retrait(50)
 ```
+
 - Observer l'effet de l'instruction.
 - N'y a-t-il rien de surprenant dans l'appel de la méthode `retrait`&nbsp;?
 
@@ -240,10 +253,13 @@ La définition de la méthode `retrait` fait apparaître deux paramètres : `sel
 
 Les méthodes étant partagées par les différentes instances (objets) d'une classe, elle ne peuvent à priori pas savoir sur quel objet elle doivent agir.  
 L'information sur cet objet est donc passée automatiquement par Python à la méthode. Pour être plus clair, l'instruction
+
 ```python
 compte_2.retrait(50)
 ```
+
 est équivalente à
+
 ```python
 Compte.retrait(compte_2, 50)
 ```
@@ -278,6 +294,7 @@ C'est tout à fait normal car l'objet `compte_3` ne possède par d'attribut `sol
 ### Les attributs d'un objet doivent être initialisés à la création de cet objet
 
 13. Modifier le code de la classe `Compte` :
+
 ```python
 class Compte:
     """
@@ -313,6 +330,7 @@ L'idéal serait qu'un compteur compte soit incrémenté chaque fois qu'un compte
 {{% /solution %}}
 
 16. Modifier le code de la classe `Compte` :
+
 ```python
 class Compte:
     """
@@ -345,6 +363,7 @@ Les variables de classe sont partagées par tous les objets.
 {{% /solution %}}
 
 17. Modifier le code de la classe `Compte` :
+
 ```python
 class Compte:
     """
@@ -362,7 +381,8 @@ class Compte:
         Retire valeur au solde.
         """
         self.solde = self.solde - valeur
-``` 
+```
+
 - Comment manipule-t-on une variable de classe ?
 
 {{% solution "Réponse" %}}

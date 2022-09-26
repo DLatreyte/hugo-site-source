@@ -1,6 +1,6 @@
 ---
 title: "Simulation du fonctionnement d'une banque"
-subtitle: "Chapitre 4,2"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-09-26T20:06:58+04:00
@@ -13,7 +13,8 @@ solution_est_visible: true
 auto_numbering: true
 ---
 
-L'objectif de ce document est de simuler (sommairement bien sûr) le fonctionnement d'une banque. Le programme doit permettre : 
+L'objectif de ce document est de simuler (sommairement bien sûr) le fonctionnement d'une banque. Le programme doit permettre :
+
 - La création d'une banque ;
 - La création de comptes bancaires ;
 - La création de personnes propriétaires de ces comptes bancaires.
@@ -23,6 +24,7 @@ Une correction se trouve à cette adresse : {{< remote "https://repl.it/@dlatrey
 ## Classe Personne
 
 Dans un module nommé `personne`, créer la classe `Personne` dont la spécification est la suivante :
+
 ```python
 class Personne():
     """
@@ -50,6 +52,7 @@ class Personne():
 ```
 
 Les spécifications des méthodes sont les suivantes :
+
 ```python
 def __init__(self, nom: str, prenom: str) -> None:
     """
@@ -111,7 +114,7 @@ def renseigner_telephone(self, telephone: str) -> None:
         """
         Renseigne l'attribut telephone de la personne.
         """
-``` 
+```
 
 ```python
 def renseigner_date_naissance(self, date: str) -> None:
@@ -141,6 +144,7 @@ def obtenir_age(self, annee_en_cours: int) -> int:
 ```
 
 La méthode `infos` suivante doit aussi faire parti de cette classe :
+
 ```python
 def infos(self) -> str:
         """
@@ -167,6 +171,7 @@ Tester la classe en instanciant au moins un objet de type `Personne` et en utili
 ## Classe Compte_bancaire
 
 Dans un module nommé `compte_bancaire` créer la classe `Compte_bancaire` dont la spécification est la suivante :
+
 ```python
 class Compte_bancaire():
     """
@@ -181,13 +186,14 @@ class Compte_bancaire():
     - solde : float
         Solde du compte. Initialisé à la création de l'objet.
 ```
+
 Les spécifications des méthodes sont les suivantes :
 
 {{% note warning %}}
 Ne pas oublier d'importer la classe `Personne` du module `personne` au début du fichier.
 {{% /note %}}
 
-```python 
+```python
 def __init__(self, proprietaire: Personne, montant_initial: float) -> None:
     """
     Initialisation des attributs.
@@ -210,7 +216,7 @@ def obtenir_solde(self) -> float:
     """
     Retourne le solde du compte.
     """
-``` 
+```
 
 ```python
 def depot(self, montant: float) -> None:
@@ -228,6 +234,7 @@ def retrait(self, montant: float) -> None:
 ```
 
 La méthode `infos` suivante fait aussi partie de la classe :
+
 ```python
 def infos(self) -> str:
     """
@@ -252,6 +259,7 @@ Tester la classe en instanciant au moins un objet de type `Compte_bancaire` et e
 Cette classe est de loin la moins développée du document, vous pourrez ajouter des méthodes selon vos idées.
 
 Dans un module nommé `banque`, créer la classe `Banque` dont la spécification est la suivante :
+
 ```python
 class Banque():
     """
@@ -267,6 +275,7 @@ class Banque():
 ```
 
 {{% note warning %}}
+
 - Ne pas oublier d'importer la classe `Personne` du module `personne` au début du fichier.
 - Ne pas oublier d'importer la classe `Compte_bancaire` du module `compte_bancaire` au début du fichier.
 {{% /note %}}
@@ -279,7 +288,9 @@ def __init__(self, nom: str) -> None:
     Initialisation de l'objet
     """
 ```
+
 Incorporer les méthodes suivantes dans la classe :
+
 ```python
 def creation_compte(self) -> None:
     """
@@ -313,10 +324,8 @@ def infos(self) -> str:
         """
     
     return chaine
-``` 
+```
 
 ## Programme principal
 
 Dans le fichier nommé `main`, instancier un objet de type `Banque` et créer quelques comptes bancaires.
-
-

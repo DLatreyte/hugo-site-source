@@ -1,6 +1,6 @@
 ---
 title: "Exercices de programmation objet"
-subtitle: "Chapitre 4,6"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-01-13T19:12:34+04:00
@@ -20,6 +20,7 @@ Chaque méthode définie devra être accompagnée de sa spécification.
 ## Manipulation de points
 
 On considère la classe nommée `Point` ayant les attributs suivants :
+
 - `__abs` : attribut privé de type `float` pour représenter l'abscisse du point ;
 - `__ord` : attribut privé de type `float` pour représenter l'ordonnée du point.
 
@@ -31,6 +32,7 @@ L'**encapsulation** est un concept fondamental de la conception objet. L'idée e
 
 En pratique
 :
+
 ```python
 p1 = Point()
 p1.__abs = 1     # Interdit
@@ -63,6 +65,7 @@ On rappelle que la point situé à égale distance de deux points $A(x\_1, y\_1)
 {{% /note %}}
 
 On considère maintenant la classe nommée `TroisPoints` ayant les attributs suivants :
+
 - `__premier` : attribut privé de type `Point` ;
 - `__deuxieme` : attribut privé de type `Point` ;
 - `__troisieme` : attribut privé de type `Point` ;
