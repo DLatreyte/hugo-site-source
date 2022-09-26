@@ -1,6 +1,6 @@
 ---
 title: "Paradigmes de programmation"
-subtitle: "Chapitre 3"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-09-21T20:58:45+04:00
@@ -16,13 +16,15 @@ auto_numbering: true
 ## Langages de programmation
 
 {{% note tip %}}
-Un *langage de programmation* a besoin&nbsp;: 
+Un *langage de programmation* a besoin&nbsp;:
+
 - des règles de **grammaire** qui définissent la **syntaxe** des expressions&nbsp;;
 - d'une **sémantique** qui définit le sens des expressions.
 {{% /note %}}
 
 {{% note tip %}}
 Un langage peut être&nbsp;:
+
 - **interprété**&nbsp;: un interpréteur *lit et analyse le code **séquentiellement**,* *le traduit en langage machine* et *lance son exécution*.
 - **compilé**&nbsp;: un compilateur *lit et analyse le code* puis *le traduit en langage machine*. Par la suite l'exécutable généré peut être lancé.
 
@@ -44,12 +46,13 @@ Le paradigme choisi a une très grande influence sur la manière de concevoir un
 Il existe un grand nombre de paradigmes de programmation, le programme de la NSI se concentre sur la **programmation impérative**, la **programmation fonctionnelle** et la **programmation objet**.
 
 Certains langages sont très liés à certains paradigmes mais la plupart permettent de mettre en œuvre plusieurs paradigmes&nbsp;; c'est le cas de Python&nbsp;:
+
 - **Impératif&nbsp;:** [Simple statements](https://docs.python.org/3/reference/simple_stmts.html) et [Compound statements](https://docs.python.org/3/reference/compound_stmts.html)&nbsp;;
 - **Fonctionnel&nbsp;:** [Functional Programming HOWTO](https://docs.python.org/3/howto/functional.html)&nbsp;;
 - **Objet&nbsp;:** [Classes](https://docs.python.org/3/tutorial/classes.html).
 
+## Programmation impérative
 
-## Programmation impérative 
 {{< remote "Wikipedia" "https://fr.wikipedia.org/wiki/Programmation_impérative" >}}
 
 {{% note tip %}}
@@ -60,11 +63,12 @@ Les «&nbsp;langages impératifs&nbsp;» sont les plus répandus parmi l'ensembl
 
 {{% note normal %}}
 Les instructions de base de ce paradigme sont&nbsp;:
+
 - la **séquence d'instructions**&nbsp;: les instructions sont exécutées les unes après les autres&nbsp;;
 - l'**assignation** ou **affectation**&nbsp;: on stocke ou on modifie une information en mémoire (dans une variable)&nbsp;;
 - l'**instruction conditionnelle**&nbsp;: un bloc d'instruction n'est effectué que si une certaine condition est réalisée&nbsp;;
 - la **boucle**&nbsp;: une séquence d'instructions est répétée un certain nombre de fois (boucle `Pour`) ou jusqu'à ce qu'une condition soit réalisée.
-- les **branchements**&nbsp;: la séquence d'instruction est transférée à un autre endroit dans le code.   
+- les **branchements**&nbsp;: la séquence d'instruction est transférée à un autre endroit dans le code.
 De nombreux langages incluent un `goto` permettant de réaliser un branchement ou la possibilité d'écrire des **fonctions** — qui ne sont dans ce cas qu'une suite d'instructions (et donc n'ont aucun sens mathématique).
 {{% /note %}}
 
@@ -73,16 +77,20 @@ La programmation impérative s'appuie sur le modèle des machines à états, ave
 {{% /note %}}
 
 #### Mots clés pour repérer un langage impératif
+
 - affectation, mémoire, instruction, boucle, mutabilité, effets de bord, ...
 
 #### Exemples de langages impératifs
+
 - Langage machine, C, Bash, Perl, Tcl, Python, PHP, Java, JavaScript, ...
 
 #### Usage typique
+
 - Lorsque le programme à réaliser s’exprime sous forme d’actions à réaliser. Les actions reflètent les changements dans l’environnement (mémoire) du programme.
 - Dans le cadre de la programmation système, pour une gestion manuelle, potentiellement fine, de l’allocation mémoire.
 
-## Programmation fonctionnelle 
+## Programmation fonctionnelle
+
 {{< remote "Wikipedia" "https://fr.wikipedia.org/wiki/Programmation_fonctionnelle" >}}
 
 {{% note tip %}}
@@ -90,7 +98,8 @@ En *programmation fonctionnelle* un programme est considéré comme l'**applicat
 {{% /note %}}
 
 {{% note normal %}}
-- La programmation fonctionnelle s'affranchit de façon radicale des effets de bord en **interdisant toute opération d'affectation**. 
+
+- La programmation fonctionnelle s'affranchit de façon radicale des effets de bord en **interdisant toute opération d'affectation**.
 - La manipulation de variables est remplacée par la **composition de fonctions** (boîtes noires imbriquées les unes dans les autres).
 - Les langages purement fonctionnels remplacent les boucles par la **récursivité**.
 - Les langages fonctionnels mettent tous en œuvre une *gestion automatique de l'allocation mémoire*.
@@ -98,27 +107,33 @@ En *programmation fonctionnelle* un programme est considéré comme l'**applicat
 {{% /note %}}
 
 #### Remarque
+
 - La mise en œuvre des langages fonctionnels fait un usage sophistiqué de la **pile** (cf. chapitre 1 sur la [récursivité]({{% ref "../chap-1/1-1-recursivite-sur-entiers.md" %}}) et chapitre 8 sur la [structure de pile]({{% relref "../chap-8/_index.md" %}})) car, *afin de s'affranchir de la nécessité de stocker des données temporaires dans des tableaux*, ils font largement appel à la **récursivité**. L'une des multiples techniques pour rendre la compilation de la récursivité plus efficace est une technique dénommée **récursion terminale** (en anglais&nbsp;: **tail-recursion**), qui consiste à *accumuler les résultats intermédiaires dans une case mémoire de la pile et à la passer en paramètre dans l'appel récursif*. Ceci permet d'*éviter d'empiler les appels récursifs dans la pile en les remplaçant par une simple succession de sauts*. Le code généré par le compilateur est alors similaire à celui généré par une boucle en impératif.
 
 - La programmation fonctionnelle éliminant les effets de bord (*fonctions pures*), il est plus facile de faire effectuer des calculs en parallèle aux programmes développés dans un style fonctionnel pur.
 
 #### Mots clés pour repérer un langage impératif
+
 - déclaratif, expressions, immutabilité, ordre supérieur, $\lambda$-calcul, fonction pure, ...
 
 #### Exemples de langages fonctionnels
+
 - Haskell, Lisp, Scheme, OCaml, ...
 
 #### Usage typique
+
 - Manipulations de haut niveau&nbsp;;
-- Calculs algébriques, abstraits&nbsp;; 
+- Calculs algébriques, abstraits&nbsp;;
 - Écriture de compilateurs.
 
 ## Comparaison des deux styles de programmation
 
 {{% note exercise %}}
+
 #### Exercice 1&nbsp;: illustration des différences entre les style impératif et fonctionnel
 
 Définir une fonction qui réalise la somme des nombres d'une liste passée en argument,
+
 1. En style impératif.
 2. En style fonctionnel.
 {{% /note %}}
@@ -151,7 +166,7 @@ def somme(liste: List[float]) -> float:
     else:
         return liste[0] + somme(liste[1:])
 {{< /highlight >}}
-Cette fonction ne manipule aucune variable et n'utilise pas de boucle mais la récursivité. *Le paradigme employé est bien fonctionnel.*   
+Cette fonction ne manipule aucune variable et n'utilise pas de boucle mais la récursivité. *Le paradigme employé est bien fonctionnel.*
 
 **Remarque :** `liste[1:]` est une sous-liste de `liste` dans laquelle le premier élément de `liste` n'est pas présent.
 
@@ -174,15 +189,18 @@ def somme(liste: List[float], total: float = 0) -> float:
 {{% /note %}}
 
 {{% note exercise %}}
+
 #### Exercice 2&nbsp;: un exemple de fonction non pure
 
 Écrire une fonction (sans grand intérêt !!!) dont la spécification est la suivante :
+
 ```python
 def elevation_puissance(n: int) -> float:
     """
     Retourne le nombre demandé à l'utilisateur à la puissance n.
     """
 ```
+
 {{% /note %}}
 
 {{< highlight py3 "linenos=table" >}}
@@ -197,11 +215,12 @@ def elevation_puissance(n: int) -> float:
 
 Il est évident que deux appels successifs à la fonction `elevation_puissance` avec le même argument (2 par exemple) pourront renvoyer des valeurs différentes puisque celles-ci dépendent de la valeur entrée par l'utilisateur. *Cette fonction n'est pas une fonction pure ; sa définition n'est pas acceptable du point de vue de la programmation fonctionnelle*.
 
-
 {{% note exercise %}}
+
 #### Exercice 3&nbsp;: illustration d'un effet de bord
 
 Définir une fonction qui élève au carré chaque élément d'une liste.
+
 1. En style impératif (avec effet de bord possible).
 2. En style fonctionnel (sans effet de bord).
 {{% /note %}}
@@ -230,7 +249,7 @@ def liste_carre(liste: List[float]) -> List[float]:
     Élève au carré chaque élément de la liste liste.
     """
     newList = liste[:]
-    
+
     def eleve_carre(liste: List[float]) -> List[float]:
         if len(liste) == 0:
             return liste
@@ -239,9 +258,8 @@ def liste_carre(liste: List[float]) -> List[float]:
     
     return eleve_carre(newList)
 {{< /highlight >}}
-On copie dans un premier temps la liste et on agit sur cette nouvelle liste.   
+On copie dans un premier temps la liste et on agit sur cette nouvelle liste.
 À noter que cette copie n'était dans l'absolu pas nécessaire car l'opérateur `+` appliqué à des opérandes du type «&nbsp;séquence&nbsp;» génère une nouvelle liste en Python.
-
 
 ## Programmation objet
 
@@ -251,16 +269,20 @@ Mettre en œuvre ce paradigme nécessite donc de **modéliser le problème** *pa
 {{% /note %}}
 
 {{% note tip %}}
+
 - Un **objet** possède un **état** (des **champs** ou **attributs**) et un **comportement** (des **méthodes**).
-- Une **classe** est un **patron** permettant de fabriquer des objets.   
+- Une **classe** est un **patron** permettant de fabriquer des objets.
     Une **classe** est aussi la définition d'un **nouveau type** de données.
 {{% /note %}}
 
 #### Mots clés pour repérer un langage objet
+
 - classes ou prototype, objet, méthode, attribut, champ, statique, encapsulation, héritage, polymorphisme, ...
 
 #### Exemples de langage orientés objets
+
 - C++, Java, Python, OCaml, ...
 
 #### Usage typique
+
 - Développement en équipe de logiciels comportant un très grand nombre de lignes de code.
