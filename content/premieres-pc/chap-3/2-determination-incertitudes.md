@@ -1,6 +1,6 @@
 ---
 title: "Détermination pratique des incertitudes"
-subtitle: "Chapitre 3,2"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-10-07T07:51:11+04:00

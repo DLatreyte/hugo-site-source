@@ -22,8 +22,8 @@ layout: "single"
 
 ## Documents
 
-- **Chap. 3,1 :** [*Incertitudes et analyse des erreurs dans les mesures physiques*](1-analyse-erreurs-mesure)
+- **Doc. :** [*Incertitudes et analyse des erreurs dans les mesures physiques*](1-analyse-erreurs-mesure)
 
-- **Chap. 3,2 :** [*Détermination pratique des incertitudes*](2-determination-incertitudes)
+- **Doc. :** [*Détermination pratique des incertitudes*](2-determination-incertitudes)
 
-- **Chap. 3,3 :** [*Utilisation d'un tableur pour déterminer une incertitude de mesure de type A*](3-utilisation-tableur)
+- **Doc. :** [*Utilisation d'un tableur pour déterminer une incertitude de mesure de type A*](3-utilisation-tableur)

@@ -1,6 +1,6 @@
 ---
 title: "Utilisation d'un tableur pour déterminer une incertitude de mesure de type A"
-subtitle: "Chapitre 3,3"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-10-08T16:43:09+04:00
@@ -13,7 +13,7 @@ solution_est_visible: true
 auto_numbering: true
 ---
 
-## Problème 
+## Problème
 
 Un groupe d'élèves effectue la mesure de la célérité des ultrasons dans l'air dans une pièce à $\pu{20 °C}$.
 Leurs résultats sont regroupés dans le tableau ci-dessous&nbsp;:
@@ -68,20 +68,22 @@ $v=\pu{338 m/s}$
 
 4. Dans la cellule <kbd>C2</kbd>, faire calculer par le tableur la moyenne de la série de mesures.
 {{% solution "Réponse" %}}
+
 - Formule à entrer&nbsp;: <kbd>=MOYENNE(B2:B21)</kbd>
 - Valeur&nbsp;: $v=\pu{339,2 m/s}$
 {{% /solution %}}
 
 5. Dans la cellule <kbd>D2</kbd>, faire calculer par le tableur la moyenne des six premiers termes de la série de mesures.
 {{% solution "Réponse" %}}
+
 - Formule à entrer&nbsp;: <kbd>=MOYENNE(B2:B7)</kbd>
 - Valeur&nbsp;: $v=\pu{338,8 m/s}$
 {{% /solution %}}
 
 6. Pourquoi les deux moyennes calculées aux questions précédentes ne sont-elles pas égales&nbsp;?
 {{% solution "Réponse" %}}
-On a calculé des moyennes de séries différentes, il est donc normal que ces 
-moyennes soient différentes.   
+On a calculé des moyennes de séries différentes, il est donc normal que ces
+moyennes soient différentes.
 **La valeur moyenne est une grandeur aléatoire.**
 {{% /solution %}}
 
@@ -96,14 +98,15 @@ La valeur moyenne, *si le nombre de mesures est suffisamment grand*, est une bon
 
 ### Incertitude de répétabilité
 
-L'incertitude de mesure $U(m)$ correspondant à des mesures répétées d'une même 
-grandeur est appelée **incertitude de répétabilité** . Elle est liée à 
+L'incertitude de mesure $U(m)$ correspondant à des mesures répétées d'une même
+grandeur est appelée **incertitude de répétabilité** . Elle est liée à
 l'**écart-type** de la série de mesures.
 
 {{% note tip %}}
+
 - Pour une série de $n$ *mesures indépendantes* donnant des valeurs mesurées $m_{k}$ l'écart-type de la série de mesures est donné par la formule&nbsp;:
 $$ \sigma_{n - 1} = \sqrt{\dfrac{\sum_{k = 1}^n (m_{k} - \overline{m})^2}{n - 1}} $$
-où $\overline{m}$ est la valeur moyenne de la série de mesures.   
+où $\overline{m}$ est la valeur moyenne de la série de mesures.
 L'écart type est obtenu en utilisant les fonctions statistiques d'une calculatrice, d'un tableur ou d'un programme écrit en Python.
 
 - L'**incertitude de répétabilité**  associée à la mesure se calcule alors grâce à la formule&nbsp;:
@@ -124,19 +127,19 @@ Elle dépend du nombre $n$ de mesures indépendantes réalisées, de l'écart ty
 8. Pour un *même nombre de mesures*, comment évolue $k$ avec le niveau de confiance&nbsp;? Qu'est-ce que cette évolution traduit&nbsp;?
 
 {{% solution "Réponse" %}}
-Pour un même nombre de mesures, $k_{\pu{95 }} < k_{\pu{99}}$. Plus grande est l'incertitude $U (m)$, plus grande est la 
-probabilité que la «&nbsp;valeur vraie&nbsp;» se trouve dans l'intervalle 
+Pour un même nombre de mesures, $k_{\pu{95 }} < k_{\pu{99}}$. Plus grande est l'incertitude $U (m)$, plus grande est la
+probabilité que la «&nbsp;valeur vraie&nbsp;» se trouve dans l'intervalle
 $\overline{m} \pm U (m)$.
 {{% /solution %}}
 
-9. Pour un *même niveau de confiance*, comment évolue $k$ avec le nombre de 
+9. Pour un *même niveau de confiance*, comment évolue $k$ avec le nombre de
 mesures réalisées&nbsp;? Qu'est-ce que cette évolution traduit&nbsp;?
 
 {{% solution "Réponse" %}}
-$k$ diminue lorsque le nombre de mesures augmente. Plus le nombre de mesures 
-est grand, plus la valeur moyenne de la série est représentative de la valeur 
-mesurée et plus petit peut donc être l'intervalle autour de cette valeur 
-moyenne. On retrouve l'idée qu'il est préférable de faire un grand nombre de 
+$k$ diminue lorsque le nombre de mesures augmente. Plus le nombre de mesures
+est grand, plus la valeur moyenne de la série est représentative de la valeur
+mesurée et plus petit peut donc être l'intervalle autour de cette valeur
+moyenne. On retrouve l'idée qu'il est préférable de faire un grand nombre de
 mesures.
 {{% /solution %}}
 
@@ -150,23 +153,25 @@ On cherche maintenant à calculer la somme des écarts à la valeur moyenne&nbsp
 
 $$ \sum\_{k = 1}^n (m\_{k} - \overline{m}) $$
 
-10. Dans la colonne <kbd>E</kbd> faire calculer par le tableur l'écart de toutes les mesures à la moyenne.   
+10. Dans la colonne <kbd>E</kbd> faire calculer par le tableur l'écart de toutes les mesures à la moyenne.
 Pourquoi certaines valeurs sont-elles négatives ?
 {{% solution "Réponse" %}}
+
 - Dans la cellule <kbd>E2</kbd>, entrer la formule <kbd>=B2-$C$2</kbd> puis «&nbsp; tirer&nbsp;» vers le bas.
-- L'écart à la moyenne est une grandeur algébrique, parfois $m_k > \bar{m}$, parfois $m_k < \bar{m}$. 
+- L'écart à la moyenne est une grandeur algébrique, parfois $m_k > \bar{m}$, parfois $m_k < \bar{m}$.
 {{% /note %}}
 
-11. Dans la cellule <kbd>F2</kbd>, calculer la somme des écarts à la moyenne.   
+11. Dans la cellule <kbd>F2</kbd>, calculer la somme des écarts à la moyenne.
 Le résultat obtenu était-il prévisible ?
 {{% solution "Réponse" %}}
+
 - Entrer la formule <kbd>=SOMME(E2:E21)</kbd>.
 - On obtient une valeur nulle (aux arrondis près). Ce résultat était tout à fait prévisible puisque la valeur moyenne est le point d'équilibre de la série de valeurs&nbsp;: *les écarts positifs sont donc compensés par les écarts négatifs.*
 {{% /solution %}}
 
-12. L'écart-type ne considère pas les écarts à la valeur moyenne mais les 
-carrés de ces écarts (cf. formule ci-dessus). Ils ne peuvent donc pas se 
-compenser.   
+12. L'écart-type ne considère pas les écarts à la valeur moyenne mais les
+carrés de ces écarts (cf. formule ci-dessus). Ils ne peuvent donc pas se
+compenser.
 Dans la colonne <kbd>G</kbd>, faire calculer par le tableur le carré des écarts à la moyenne.
 
 {{% solution "Réponse" %}}
@@ -185,24 +190,26 @@ Dans la cellule <kbd>H2</kbd>, entrer la formule <kbd>=RACINE(SOMME(G2:G21)/19)<
 Dans la cellule <kbd>I2</kbd>, entrer la formule <kbd>=ECARTYPE(B2:B21)</kbd>.
 {{% /solution %}}
 
-15. Dans les cellules <kbd>J2</kbd> et <kbd>K2</kbd>, calculer les incertitudes $U_95$ et $U_99$ associées à la série de mesure.   
+15. Dans les cellules <kbd>J2</kbd> et <kbd>K2</kbd>, calculer les incertitudes $U_95$ et $U_99$ associées à la série de mesure.
 Pour une série de $n$ échantillons, $k_{95} = \pu{2,09}$ et $k_{99} = \pu{2,85}$.
 
 {{% solution "Réponse" %}}
+
 - Dans la cellule <kbd>J2</kbd>, entrer la formule <kbd>=I2*2,09/RACINE(20)</kbd>&nbsp;;
 - Dans la cellule <kbd>K2</kbd>, entrer la formule <kbd>=I2*2,85/RACINE(20)</kbd>.
 {{% /solution %}}
 
 16. Donner la célérité des ultrasons pour une confiance de 95&nbsp;% puis pour une confiance de 99&nbsp;%.
 {{% solution "Réponse" %}}
+
 - Pour une confiance de 95&nbsp;%, $v = \pu{339 \pm 1) m.s-1}$&nbsp;;
 - Pour une confiance de 99&nbsp;%, $v = \pu{339 \pm 2) m.s-1}$&nbsp;;
 {{% /solution %}}
 
 ## Application
 
-La mesure $\Delta t$ de la durée de chute d'un objet depuis une fenêtre a 
-été répétée 16 fois avec un chronomètre de qualité. Les résultats 
+La mesure $\Delta t$ de la durée de chute d'un objet depuis une fenêtre a
+été répétée 16 fois avec un chronomètre de qualité. Les résultats
 obtenus, exprimés en seconde, sont les suivants&nbsp;:
 <center>
 
