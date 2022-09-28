@@ -1,5 +1,5 @@
 ---
-title: "Méthodes spéciales"
+title: "Méthodes spéciales en Python"
 subtitle: ""
 author: ""
 type: ""

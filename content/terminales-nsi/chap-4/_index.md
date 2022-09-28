@@ -26,7 +26,7 @@ layout: "single"
 
 - **Doc. :** [*Simulation du fonctionnement d'une banque*](2-banque)
 
-- **Doc. :** [*Fonctions spéciales en Python*](3-exercices)
+- **Doc. :** [*Méthodes spéciales en Python*](3-exercices)
 
 - **Doc. :** [*Résoudre un problème grâce aux paradigmes objet et fonctionnel*](4-fonction)
 
