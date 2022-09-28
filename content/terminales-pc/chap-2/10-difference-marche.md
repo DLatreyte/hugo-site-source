@@ -9,7 +9,7 @@ toc: true
 tags: ["Différence de marche", "Superposition", "Période temporelle", "Longueur d'onde", "Retard", "Déphasage", "Ondes"]
 categories: ["Physique", "Terminale Spé PC"]
 image: ""
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: true
 ---
 
