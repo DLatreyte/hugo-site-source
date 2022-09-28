@@ -1,6 +1,6 @@
 ---
 title: "Programmation objet"
-subtitle: "Chapitre 4"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-09-23T21:06:48+04:00
