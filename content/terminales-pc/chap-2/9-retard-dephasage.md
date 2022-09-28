@@ -9,7 +9,7 @@ toc: true
 tags: ["Période temporelle", "Longueur d'onde", "Retard", "Déphasage", "Ondes"]
 categories: ["Physique", "Terminale Spé PC"]
 image: ""
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: true
 ---
 
@@ -39,7 +39,7 @@ Puisqu'il s'agit d'une onde sinusoïdale, $\lambda = v T$.
 **A.N.** $\lambda = \pu{340 m/s} \times \pu{0,8e-3 s} = \pu{0,272 m} = \pu{0,3 m}$
 {{% /solution %}}
 
-3. Sur la *Figure 1*, les signaux sont-ils en phase&nbsp;? Justifier la réponse.    
+3. Sur la *Figure 1*, les signaux sont-ils en phase&nbsp;? Justifier la réponse.
 Que peut-on dire de la distance $d$ séparant $M_1$ et $M_2$&nbsp;?
 {{% solution "Réponse" %}}
 {{% note tip %}}
@@ -60,7 +60,7 @@ La longueur d'onde est la période spatiale. Après un déplacement dans l'espac
 
 Les élèves éloignent le microphone $M_2$ afin d’obtenir *pour la première fois* les deux courbes de la *Figure 2*. Ils cesse alors de déplacer $M_2$.
 
-4.  Quels renseignements permettent d’affirmer que $M_1$ n’a pas été déplacé et que $M_2$ est plus loin du haut-parleur que lors de la première acquisition&nbsp;?
+4. Quels renseignements permettent d’affirmer que $M_1$ n’a pas été déplacé et que $M_2$ est plus loin du haut-parleur que lors de la première acquisition&nbsp;?
 {{% solution "Réponse" %}}
 L'amplitude du signal capté par $M_1$ n'a pas varié, tandis que celle du signal capté par $M_2$ a diminué. $M_1$ est donc resté immobile et $M_2$ a reculé (puisqu'on sait que l'intensité d'une onde diminue au cours de sa propagation).
 {{% /solution %}}
