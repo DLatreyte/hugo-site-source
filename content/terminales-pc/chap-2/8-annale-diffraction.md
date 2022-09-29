@@ -9,7 +9,7 @@ toc: true
 tags: ["Annale", "Diffraction"]
 categories: ["Physique", "Terminale Spé PC", "Annale"]
 image: ""
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: true
 ---
 [^1]: de toutes parts = dans toutes les directions.
