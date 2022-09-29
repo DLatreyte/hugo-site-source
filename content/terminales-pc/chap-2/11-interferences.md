@@ -178,6 +178,7 @@ $$ i = \dfrac{\lambda D}{a} $$
 
 <img src="/terminales-pc/chap-2/chap-2-11-9.png" alt="" width="80%" />
 Les lieux où les ondes interférent constructivement (respectivement destructivement) ne sont pas identiques lorsqu’on change de longueur d’onde.  
+
 **Chaque longueur d’onde conduit à une figure d’interférence spécifique.**
 
 ### Interférence en lumière blanche
