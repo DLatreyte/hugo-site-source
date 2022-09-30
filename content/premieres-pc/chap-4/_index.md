@@ -1,6 +1,6 @@
 ---
 title: "Ondes mécaniques"
-subtitle: "Chapitre 4"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-10-25T12:26:15+04:00
@@ -23,17 +23,19 @@ layout: "single"
 ## Ressources
 
 ----
+
 - {{< remote "Chapitre sur le Livre Scolaire" "https://www.lelivrescolaire.fr/page/7227370" >}}
+
 ----
 
-- **Chap. 4,1 :** [*Qu'est-ce qu'une onde mécanique progressive ?*](1-onde-mecanique-progressive)
+- **Doc. :** [*Qu'est-ce qu'une onde mécanique progressive ?*](1-onde-mecanique-progressive)
 
-- **Chap. 4,2 :** [*Caractéristiques des ondes mécaniques progressives*](2-cours-ondes-progressives)
+- **Doc. :** [*Caractéristiques des ondes mécaniques progressives*](2-cours-ondes-progressives)
 
-- **Chap. 4,3 :** [*Exercices*](3-exercices)
+- **Doc. :** [*Exercices*](3-exercices)
 
-- **Chap. 4,4 :** [*Simulation d'une onde mécanique*](4-modele-mathematique)
+- **Doc. :** [*Simulation d'une onde mécanique*](4-modele-mathematique)
 
-- **Chap. 4,5 :** [*Deux smartphones pour mesurer une célérité*](5-mesure-celerité)
+- **Doc. :** [*Deux smartphones pour mesurer une célérité*](5-mesure-celerité)
 
-- **Chap. 4,6 :** [*Exercices de synthèse*](6-exercices-supplementaires)
+- **Doc. :** [*Exercices de synthèse*](6-exercices-supplementaires)

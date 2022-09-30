@@ -1,6 +1,6 @@
 ---
 title: "Simulation d'une onde mécanique"
-subtitle: "Chapitre 4,4"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-11-01T15:10:54+04:00

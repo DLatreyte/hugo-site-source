@@ -1,6 +1,6 @@
 ---
 title: "Deux smartphones pour mesurer une célérité"
-subtitle: "Chapitre 4,5"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-11-05T17:30:20+04:00
