@@ -85,7 +85,7 @@ On rappelle que trois points $A$, $B$ et $C$ sont alignés si $AB=AC+BC$, $AC=AB
 9. Définir la méthode `est_isocele` qui retourne `True` si les trois points forment un triangle isocèle et `False` sinon.
 
 {{% note normal %}}
-On rappelle qu'un triangle est isocèle si$AB=AC$ ou $AB=BC$ ou $AC=BC$ ($AB$, $AC$ et $BC$ sont des distances).
+On rappelle qu'un triangle est isocèle si $AB=AC$ ou $AB=BC$ ou $AC=BC$ ($AB$, $AC$ et $BC$ sont des distances).
 {{% /note %}}
 
 10. **(Facultatif car HP)** Implémenter une version statique (méthodes décorées par le décorateur `@staticmethod`) des deux méthodes `calcul_distance` et `calcul_milieu`.
