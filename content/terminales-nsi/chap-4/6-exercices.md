@@ -79,7 +79,7 @@ Modifier la méthode `__init__` de façon à ce qu'elle utilise les setters.
 La signature de la fonction est `sont_alignes(self) -> True`.
 
 {{% note normal %}}
-On rappelle que trois points $A$, $B$ et $C$ sont alignés si $AB=AC+BC$, $AC=AB+BC$ ou $BC=AC+AB$ ($AB$, $AC$ et $BC$ sont des distances).
+On rappelle que trois points $A$, $B$ et $C$ sont alignés si $AB=AC+BC$ ou si $AC=AB+BC$ ou si $BC=AC+AB$ ($AB$, $AC$ et $BC$ sont des distances).
 {{% /note %}}
 
 9. Définir la méthode `est_isocele` qui retourne `True` si les trois points forment un triangle isocèle et `False` sinon.
