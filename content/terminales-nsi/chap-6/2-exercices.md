@@ -10,7 +10,7 @@ tags: ["Dictionnaire", "Liste"]
 categories: ["Terminales Spé NSI", "Informatique"]
 image: ""
 solution_est_visible: false
-auto_numbering: true
+auto_numbering: false
 ---
 
 
