@@ -88,27 +88,27 @@ Expliquer brièvement l’utilité d’une telle méthode `__str__` en Python.
 
 #### La classe `Grille`
 
-5. Créer la classe `Grille` et y placer les attributs suivants :
+5. Créer la classe `Grille` et y définir les attributs suivants :
     - `largeur` (passé en argument) ;
     - `hauteur` (passé en argument) ;
-    - `matrix` : un tableau de cellules à 2 dimensions (implémenté en Python par une liste de listes).
-    Fournir une méthode `__init__()` permettant l’initialisation d’une Grille de Cellules avec une largeur et une hauteur (une nouvelle Cellule sera créée par l’appel Cellule()).
+    - `matrix` : un tableau de cellules à 2 dimensions implémenté en Python par une liste de listes.
 
-**Remarque** Définir la méthode `set_matrix` pour construire le tableau.
+**Remarque :** Définir la méthode `set_matrix` pour construire le tableau.
+**Remarque :** Une nouvelle Cellule sera créée par l’appel `Cellule()`.
 
 6. Ajouter les méthodes :
-    - `dans_grille()` qui indique si un point de coordonnées $i$ et $j$ est bien dans la grille ;
-    - `setXY()` qui permet d’affecter une nouvelle valeur à la case $(i,j)$ de la grille ;
-    - `getXY()` qui permet de récupérer la cellule située dans la case $(i,j)$ de la grille ;
-    - `get_largeur()` qui permet de récupérer la largeur de la grille ;
-    - `get_hauteur()` qui permet de récupérer la hauteur de la grille ;
-    - `est_voisin()` une *méthode statique* qui vérifie si les cases $(i,j)$ et $(x,y)$ sont voisines dans la grille.
+    - `dans_grille` qui indique si un point de coordonnées $i$ et $j$ est bien dans la grille ;
+    - `set_cell_xy` qui permet d’affecter une nouvelle cellule à la case $(i,j)$ de la grille, si $(i,j)$ est bien dans la grille ;
+    - `get_cell_xy` qui permet de récupérer la cellule située dans la case $(i,j)$ de la grille, si $(i,j)$ est bien dans la grille ;
+    - `get_largeur` qui permet de récupérer la largeur de la grille ;
+    - `get_hauteur` qui permet de récupérer la hauteur de la grille ;
+    - `est_voisin` une *méthode statique* qui vérifie si les cases $(i,j)$ et $(x,y)$ sont voisines dans la grille.
 
-7. Ajouter une méthode `get_voisins()` qui renvoie la liste des voisins d’une cellule.
+7. Ajouter une méthode `get_voisins` qui renvoie la liste des voisins d’une cellule.
 
-8. Fournir une méthode `affecte_voisins()` qui affecte à chaque cellule de la grille la liste de ses voisins.
+8. Fournir une méthode `set_voisins` qui affecte à chaque cellule de la grille la liste de ses voisins.
 
-9. Donner une méthode `__str__()` qui permet d’afficher la grille sur un terminal.
+9. Donner une méthode `__str__` qui permet d’afficher la grille sur un terminal.
 
 10. On veut remplir aléatoirement la Grille avec un certain taux de Cellule vivantes. Fournir à cet effet, une méthode `remplir_alea()` avec le taux (en pourcentage) en paramètre.
 
