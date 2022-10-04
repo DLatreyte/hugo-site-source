@@ -56,7 +56,7 @@ Une cellule qui n’est pas au bord possède 8 voisins. Une cellule qui est en b
 Nous pourrions considérer que le voisin de la cellule en haut et à droite de la grille est la cellule en haut et à gauche. De même le voisin du haut de la case en haut à droite pourrait être la cellule en bas à droite de la grille (grille torique).
 {{% /solution %}}
 
-## Implémentation des structures
+## Implémentation du jeu
 
 {{% note warning %}}
 
