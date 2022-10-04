@@ -30,12 +30,12 @@ Chaque fonction/méthode devra posséder une spécification.
 
 ## Modélisation objet
 
-1. Quelles classes peut-on dégager de ce problème au premier abord ?
+1. Quelles classes peut-on envisager au premier abord pour implémenter ce problème ?
 {{% solution "Réponse" %}}
 Les classes `Grille` et `Cellule` viennent facilement à l’esprit, on peut penser à une classe `Etat` représentant l’état d’une cellule si l’on veut pousser la modélisation un peu plus loin.
 {{% /solution %}}
 
-2. Quelles sont quelques-unes des méthodes qu’on pourrait leur donner ?
+2. Quelles méthodes pourrait-on imaginer pour chaque classe ?
 {{% solution "Réponse" %}}
 Nous retrouverons ces méthodes dans l’implémentation, mais il faut au moins songer ici aux méthodes qui permettent de récupérer l’état interne des attributs et de les modifier. Il faut aussi penser à la représentation du voisinage d’une cellule et aux méthodes permettant de le modifier ou de le récupérer.
 {{% /solution %}}
