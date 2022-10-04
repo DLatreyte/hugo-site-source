@@ -25,8 +25,8 @@ Le **jeu de la vie** a été inventé par le mathématicien britannique John H. 
 
 Une cellule peut être dans deux états : **vivante** ou **morte**. La dynamique du jeu s’exprime par les règles de transition suivantes :
 
-- *une cellule vivante reste vivante si elle est entourée de 2 ou 3 voisines vivantes et meurt sinon* ;
-- *une cellule morte devient vivante si elle possède exactement 3 voisines vivantes*.
+- *une cellule vivante reste vivante à la génération suivante si elle est entourée de 2 ou 3 voisines vivantes et meurt sinon* ;
+- *une cellule morte devient vivante à la génération suivante si elle possède exactement 3 voisines vivantes*.
 
 La notion de « voisinage » dans le jeu de la vie est celle des 8 cases qui peuvent entourer une case donnée (on parle de voisinage de Moore).
 
