@@ -220,7 +220,7 @@ def __init__(self: Grille, largeur: int, hauteur: int) -> None:
 ```
 
 ```python
-def set_matrix(self: Grille) -> None:
+def set_matrix(self: Grille) -> List[List[Cellule]]:
     """
     Construction de la grille de cellules
     """
