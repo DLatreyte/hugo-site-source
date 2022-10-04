@@ -56,7 +56,13 @@ Une cellule qui n’est pas au bord possède 8 voisins. Une cellule qui est en b
 Nous pourrions considérer que le voisin de la cellule en haut et à droite de la grille est la cellule en haut et à gauche. De même le voisin du haut de la case en haut à droite pourrait être la cellule en bas à droite de la grille (grille torique).
 {{% /solution %}}
 
-## Implémentation des cellules
+## Implémentation des structures
+
+{{% note warning %}}
+
+Chaque classe sera définie dans un fichier différent.
+
+{{% /note %}}
 
 #### La classe `Cellule`
 
@@ -78,7 +84,7 @@ Nous pourrions considérer que le voisin de la cellule en haut et à droite de l
 3. Ajouter à la classe Cellule une méthode `__str__` qui retourne le caractère `"X"` si la cellule est vivante et un tiret `"-"` sinon.  
 Expliquer brièvement l’utilité d’une telle méthode `__str__` en Python.
 
-4. Ajouter une méthode `calcule_etat_futur()` dans la classe `Cellule` qui permet d’implémenter les règles d’évolution du jeu de la vie en préparant l’état futur à sa nouvelle valeur.
+4. Ajouter une méthode `calcule_etat_futur` dans la classe `Cellule` qui permet d’implémenter les règles d’évolution du jeu de la vie en préparant l’état futur à sa nouvelle valeur.
 
 #### La classe `Grille`
 
