@@ -1,6 +1,6 @@
 ---
 title: "Structures de données fournies avec le langage Python"
-subtitle: "Chapitre 6,1"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-10-13T05:25:49+04:00
@@ -16,7 +16,7 @@ Python possède dans la bibliothèque standard un grand nombre de structures de 
 
 ## Pourquoi différentes structures de données ?
 
-Les **structures de données** *organisent différemment les données que le programme traite*. Le langage Python fournissant le type `list`, on pourrait se demander pourquoi ne pas *systématiquement* l'utiliser et pourquoi devoir apprendre de nouveaux types.   
+Les **structures de données** *organisent différemment les données que le programme traite*. Le langage Python fournissant le type `list`, on pourrait se demander pourquoi ne pas *systématiquement* l'utiliser et pourquoi devoir apprendre de nouveaux types.
 En fait, *la spécialisation des structures de données rend la programmation plus simple (utilisation de l'**API**) et plus efficace (**complexité**).*
 
 {{% note warning %}}
@@ -35,7 +35,7 @@ On parle donc de **type abstrait**.
 
 ## Liste : `list`
 
-Le type `list` de Python n'est pas implémeté à l'aide de **listes chaînées** (que nous étudierons au [chapitre 7](../../chap-7)), car *la suppression ou l’ajout ailleurs qu’en fin de liste nécessite de décaler les valeurs de fin de liste, et n’est donc pas réalisé en temps constant*. D’autre part, *l’accès à un élément quelconque est réalisé en temps constant*, ce qui n’est pas le cas avec une liste chaînée. 
+Le type `list` de Python n'est pas implémeté à l'aide de **listes chaînées** (que nous étudierons au [chapitre 7](../../chap-7)), car *la suppression ou l’ajout ailleurs qu’en fin de liste nécessite de décaler les valeurs de fin de liste, et n’est donc pas réalisé en temps constant*. D’autre part, *l’accès à un élément quelconque est réalisé en temps constant*, ce qui n’est pas le cas avec une liste chaînée.
 
 Le type `list` de Python est implémenté à l'aide de *tableaux dynamiques*.
 
@@ -45,7 +45,7 @@ Le type `dict` de Python est une implémentation du type abstrait **tableau asso
 
 Une caractéristique essentielle des dictionnaires est que *la récupération d’une valeur associée à une clé se fait en un temps constant, indépendant de la taille du dictionnaire*. De même, *savoir si une clé fait partie du dictionnaire prend un temps constant* (alors que vérifier si un élément est dans une liste prend un temps proportionnel à la taille de la liste).
 
-## Ensemble : `set` 
+## Ensemble : `set`
 
 Un ensemble Python (`set`) est *équivalent à un dictionnaire ne contenant que des clés*. Par construction, *chaque élément est donc unique*. De plus, avec le type `set` on dispose déjà des opérations ensemblistes habituelles, implémentées de manière très efficace : **union**, **intersection**, **différence**, etc.
 

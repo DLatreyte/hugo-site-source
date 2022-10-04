@@ -1,6 +1,6 @@
 ---
 title: "Structures de données fournies avec le langage Python"
-subtitle: "Chapitre 6"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-10-12T21:18:41+04:00
@@ -23,9 +23,8 @@ layout: "single"
 
 ## Documents
 
-- **Chap. 6,1 :** [*Structures de données fournies avec le langage Python*](1-structures-integrees)
+- **Doc. :** [*Structures de données fournies avec le langage Python*](1-structures-integrees)
 
-- **Chap. 6,2 :** [*Exercices*](2-exercices)
+- **Doc. :** [*Exercices*](2-exercices)
 
-- **Chap. 6,3 :** [*Annale*](3-annale)
-
+- **Doc. :** [*Annale*](3-annale)

@@ -1,6 +1,6 @@
 ---
 title: "Modéliser les notes des élèves"
-subtitle: "Chapitre 6,3"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-10-13T05:06:51+04:00

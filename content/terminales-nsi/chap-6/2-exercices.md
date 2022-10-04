@@ -1,6 +1,6 @@
 ---
 title: "Exercices"
-subtitle: "Chapitre 6,2"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-10-13T05:08:27+04:00
