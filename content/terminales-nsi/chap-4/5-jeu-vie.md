@@ -42,18 +42,18 @@ Nous retrouverons ces méthodes dans l’implémentation, mais il faut au moins 
 
 3. Dans quelle classe pouvons-nous représenter simplement la notion de voisinage d’une cellule ? Et le calculer ?
 {{% solution "Réponse" %}}
-Il peut être commode qu’une Cellule connaisse ses voisins, mais une Grille est plus à même de calculer les voisinages. On peut donc mettre une méthode de calcul de voisinage dans la Grille et des méthodes pour affecter ou lire la liste des voisins dans la Cellule, ce qui lui permettra de calculer son état futur selon les règles du jeu de la vie.
+Il peut être commode qu’une `Cellule` connaisse ses voisins, mais une `Grille` est plus à même de calculer les voisinages. On peut donc définir une méthode de calcul de voisinage dans la `Grille` et des méthodes pour affecter ou lire la liste des voisins dans la `Cellule`, ce qui lui permettra de calculer son état futur selon les règles du jeu de la vie.
 {{% /solution %}}
 
-4. Une cellule est au bord si $0=x$, $x=L-1$, $0=y$ ou $y=H-1$. Combien de voisins possède une cellule qui n’est pas au bord ?
+4. Une cellule est au bord si $x=0$, $x=L-1$, $y=0$ ou $y=H-1$. Combien de voisins possède une cellule qui n’est pas au bord ?
 Combien de voisins possède une cellule qui est au bord ?
 {{% solution "Réponse" %}}
 Une cellule qui n’est pas au bord possède 8 voisins. Une cellule qui est en bordure en possède 3 dans les angles ou 5 ailleurs sur les bords.
 {{% /solution %}}
 
-5. Que pourrions-nous aussi considérer comme voisin de droite de la case en haut à droite de la grille ? Et comme voisin du haut ?
+5. Que pourrions-nous aussi considérer comme voisin de droite de la case en haut et à droite de la grille ? Et comme voisin du haut ?
 {{% solution "Réponse" %}}
-Nous pourrions considérer comme voisin de droite de la case en haut à droite de la grille la cellule en haut à gauche. De même le voisin du haut de la case en haut à droite pourrait être la cellule en bas à droite de la grille (grille torique).
+Nous pourrions considérer que le voisin de la cellule en haut et à droite de la grille est la cellule en haut et à gauche. De même le voisin du haut de la case en haut à droite pourrait être la cellule en bas à droite de la grille (grille torique).
 {{% /solution %}}
 
 ## Implémentation des cellules
@@ -68,12 +68,12 @@ Nous pourrions considérer comme voisin de droite de la case en haut à droite d
 **Remarque.** La valeur `False` signifie que la cellule est morte et `True` qu’elle est vivante.
 
 2. Ajouter les méthodes suivantes :
-    - `est_vivant()` qui renvoie l’état actuel (vrai ou faux) ;
-    - `set_voisins()` qui permet d’affecter comme voisins la liste passée en paramètre ;
-    - `get_voisins()` qui renvoie la liste des voisins de la cellule ;
-    - `naitre()` qui met l’état futur de la cellule à `True` ;
-    - `mourir()` qui permet l’opération inverse ;
-    - `basculer()` qui fait passer l’état futur de la cellule dans l’état actuel.
+    - `est_vivant` qui renvoie l’état actuel (vrai ou faux) ;
+    - `set_voisins` qui permet d’affecter comme voisins la liste passée en paramètre ;
+    - `get_voisins` qui renvoie la liste des voisins de la cellule ;
+    - `naitre` qui met l’état futur de la cellule à `True` ;
+    - `mourir` qui permet l’opération inverse ;
+    - `basculer` qui fait passer l’état futur de la cellule dans l’état actuel.
 
 3. Ajouter à la classe Cellule une méthode `__str__()` qui affiche une croix (un X) si la cellule est vivante et un tiret (-) sinon.  
 Expliquer brièvement l’utilité d’une telle méthode `__str__()` en Python.
