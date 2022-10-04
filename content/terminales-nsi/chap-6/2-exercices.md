@@ -9,15 +9,16 @@ toc: true
 tags: ["Dictionnaire", "Liste"]
 categories: ["Terminales Spé NSI", "Informatique"]
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 
 
 ## Itérer sur les éléments d'un dictionnaire
 
-Au zoo de Beauval, il y a 5 éléphants d'Asie, 17 écureuils d'Asie, 2 pandas d'Asie, etc.    
+Au zoo de Beauval, il y a 5 éléphants d'Asie, 17 écureuils d'Asie, 2 pandas d'Asie, etc.
 On représente cet inventaire à l'aide d'un dictionnaire, de façon suivante :
+
 ```python
 zoo_Beauval={
     'éléphant': ('Asie', 5),
@@ -26,8 +27,10 @@ zoo_Beauval={
     'hippopotame': ('Afrique', 7),
     'girafe': ('Afrique', 4)
     }
-``` 
+```
+
 On représente de la même façon le zoo de La Flèche :
+
 ```python
 zoo_LaFleche = {
     'ours': ('Europe', 4),
@@ -36,28 +39,32 @@ zoo_LaFleche = {
     'hippopotame': ('Afrique', 3)
     }
 ```
+
 On souhaite se doter d'une fonction `plus_grand_nombre()` qui prend un zoo en paramètre et qui renvoie le nom de l'animal le plus représenté dans ce zoo.  
 Par exemple
+
 ```python
 assert plus_grand_nombre(zoo_LaFleche) == 'girafe'
 assert plus_grand_nombre(zoo_Beauval) == 'écureuil'
-``` 
+```
 
 1. Quel type de boucle peut-on envisager pour le code de cette fonction ?
-    - `for cle in dico.keys()` 
+    - `for cle in dico.keys()`
     - `for valeur in dico.values()`
-    - `for (cle, valeur) in dico.items()` 
+    - `for (cle, valeur) in dico.items()`
     - Aucune boucle.
 
 2. Écrire le corps de cette fonction.
 
-On souhaite se doter d'une fonction `nombre_total` qui prend un zoo en paramètre ainsi que le nom d'un continent, et qui renvoie le nombre d'animaux originaires de ce continent dans le zoo.    
+On souhaite se doter d'une fonction `nombre_total` qui prend un zoo en paramètre ainsi que le nom d'un continent, et qui renvoie le nombre d'animaux originaires de ce continent dans le zoo.
 Par exemple :
-```python 
+
+```python
 assert nombre_total(zoo_LaFleche, 'Afrique') == 14
 assert nombre_total(zoo_Beauval, 'Asie') == 24
-``` 
-3. Quel type de boucle peut-on envisager pour le code de cette fonction ? 
+```
+
+3. Quel type de boucle peut-on envisager pour le code de cette fonction ?
     - `for cle in dico.keys()`
     - `for valeur in dico.values()`
     - `for (cle,valeur) in dico.items()`
@@ -65,22 +72,24 @@ assert nombre_total(zoo_Beauval, 'Asie') == 24
 
 4. Écrire le code de cette fonction.
 
-On souhaite se doter d’une fonction nombre qui prend un zoo en paramètre ainsi que le nom d’un animal, et qui renvoie le nombre de représentants de cet animal dans le zoo.   
+On souhaite se doter d’une fonction nombre qui prend un zoo en paramètre ainsi que le nom d’un animal, et qui renvoie le nombre de représentants de cet animal dans le zoo.
 Par exemple :
+
 ```python
 assert nombre(zoo_LaFleche, 'panda') == 0
 assert nombre(zoo_Beauval, 'panda') == 2
 ```
 
-5. Quel type de boucle peut-on envisager pour le code de cette fonction ? 
-    - `for cle in dico.keys()` 
-    - `for valeur in dico.values()` 
+5. Quel type de boucle peut-on envisager pour le code de cette fonction ?
+    - `for cle in dico.keys()`
+    - `for valeur in dico.values()`
     - `for (cle,valeur) in dico.items()`
     - Aucune boucle.
 
 6. Écrire le code de cette fonction.
 
 {{% solution "Solution" %}}
+
 ```python
 from typing import Dict, Tuple
 
@@ -148,4 +157,5 @@ if __name__ == "__main__":
     assert nbre_pour_animal(zoo_Beauval, 'panda') == 2
     assert nbre_pour_animal(zoo_LaFleche, 'panda') == 0
 ```
+
 {{% /solution %}}
