@@ -15,14 +15,22 @@ auto_numbering: true
 
 > Le but de ce sujet est de réaliser en Python une implémentation du jeu de la vie en utilisant la programmation objet.
 
-Le jeu de la vie a été inventé par le mathématicien britannique John H. Conway (1937-2020). C’est un exemple de ce qu’on appelle un **automate cellulaire**. Il se déroule sur un tableau rectangulaire $(L \times H)$ de cellules. Une cellule est représentée par ses coordonnées $x$ et $y$ qui vérifient $0 \leqslant x < L$ et $0 \leqslant y < H$.
+{{% note normal %}}
+
+Un **automate cellulaire** consiste en une grille régulière de « cellules » contenant chacune un « état » choisi parmi un ensemble fini et qui peut évoluer au cours du temps. L'état d'une cellule au temps $t+1$ est fonction de l'état au temps $t$
+ d'un nombre fini de cellules appelé son « voisinage ». À chaque nouvelle unité de temps, les mêmes règles sont appliquées simultanément à toutes les cellules de la grille, produisant une nouvelle « génération » de cellules dépendant entièrement de la génération précédente.
+
+{{% /note %}}
+Le **jeu de la vie** a été inventé par le mathématicien britannique John H. Conway (1937-2020). C’est un exemple de ce qu’on appelle un **automate cellulaire**. Il se déroule sur un tableau rectangulaire $(L \times H)$ de cellules. Une cellule est représentée par ses coordonnées $x$ et $y$ qui vérifient $0 \leqslant x < L$ et $0 \leqslant y < H$.
 
 Une cellule peut être dans deux états : **vivante** ou **morte**. La dynamique du jeu s’exprime par les règles de transition suivantes :
 
 - *une cellule vivante reste vivante si elle est entourée de 2 ou 3 voisines vivantes et meurt sinon* ;
 - *une cellule morte devient vivante si elle possède exactement 3 voisines vivantes*.
 
-La notion de « voisinage » dans le jeu de la vie est celle des 8 cases qui peuvent entourer une case donnée (on parle de voisinage de Moore). Pour implémenter la simulation, on va tout d’abord donner une modélisation objet du problème, puis procéder à son implémentation.
+La notion de « voisinage » dans le jeu de la vie est celle des 8 cases qui peuvent entourer une case donnée (on parle de voisinage de Moore).
+
+Pour implémenter la simulation, on va tout d’abord rechercher une modélisation objet du problème, puis procéder à son implémentation.
 
 {{% note warning %}}
 Chaque fonction/méthode devra posséder une spécification.
