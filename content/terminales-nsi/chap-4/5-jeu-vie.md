@@ -75,8 +75,8 @@ Nous pourrions considérer que le voisin de la cellule en haut et à droite de l
     - `mourir` qui permet l’opération inverse ;
     - `basculer` qui fait passer l’état futur de la cellule dans l’état actuel.
 
-3. Ajouter à la classe Cellule une méthode `__str__()` qui affiche une croix (un X) si la cellule est vivante et un tiret (-) sinon.  
-Expliquer brièvement l’utilité d’une telle méthode `__str__()` en Python.
+3. Ajouter à la classe Cellule une méthode `__str__` qui retourne le caractère `"X"` si la cellule est vivante et un tiret `"-"` sinon.  
+Expliquer brièvement l’utilité d’une telle méthode `__str__` en Python.
 
 4. Ajouter une méthode `calcule_etat_futur()` dans la classe `Cellule` qui permet d’implémenter les règles d’évolution du jeu de la vie en préparant l’état futur à sa nouvelle valeur.
 
