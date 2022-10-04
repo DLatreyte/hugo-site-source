@@ -9,7 +9,7 @@ toc: true
 tags: ["Onde mécanique progressive", "Déformation d'un milieu"]
 categories: ["Premières Spé PC", "Physique"]
 image: ""
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: true
 ---
 
