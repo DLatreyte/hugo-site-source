@@ -110,18 +110,37 @@ Expliquer brièvement l’utilité d’une telle méthode `__str__` en Python.
 
 9. Donner une méthode `__str__` qui permet d’afficher la grille sur un terminal.
 
-10. On veut remplir aléatoirement la Grille avec un certain taux de Cellule vivantes. Fournir à cet effet, une méthode `remplir_alea()` avec le taux (en pourcentage) en paramètre.
+10. On veut remplir aléatoirement la Grille avec un certain taux de Cellule vivantes. Définir une méthode `remplir_alea` avec le taux (en pourcentage) en argument.
 
 #### Le jeu
 
-11. Concevoir une méthode `jeu()` permettant de passer en revue toutes les Cellules de la Grille, de calculer leur état futur, puis une méthode `actualise()` qui bascule toutes les cellules de la Grille dans leur état futur.
+11. Définir une méthode `jeu` permettant de passer en revue toutes les Cellules de la Grille, de calculer leur état futur, puis une méthode `actualise` qui bascule toutes les cellules de la Grille dans leur état futur.
 
-12. Programme principal : définir enfin une fonction `main` pour terminer l’implémentation du jeu de la vie avec un affichage en console en utilisant les méthodes précédentes.  
-On donne la méthode suivante qui permet d’effacer l’écran dans un terminal ANSI :
+12. Dans le fichier principal, entrer le code suivant afin de lancer le jeu :
 
 ```python
+from grille import Grille
+import time
+
+
 def effacer_ecran():
     print("\u001B[H\u001B[J")
+
+
+def main():
+    plateau = Grille(20, 30)
+    plateau.remplir_alea(55)
+    plateau.set_voisins()
+    while True:
+        effacer_ecran()
+        print(plateau)
+        print("\n")
+        time.sleep(0.5)
+        plateau.jeu()
+        plateau.actualise()
+
+
+main()
 ```
 
 ## Spécifications
