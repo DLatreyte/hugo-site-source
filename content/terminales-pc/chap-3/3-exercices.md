@@ -1,6 +1,6 @@
 ---
 title: "Exercices du chapitre 3"
-subtitle: "Chapitre 4,3"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-10-03T20:42:34+04:00
