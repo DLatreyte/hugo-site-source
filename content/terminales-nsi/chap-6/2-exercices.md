@@ -1,5 +1,5 @@
 ---
-title: "Exercices"
+title: "Itérer sur les éléments d'un dictionnaire"
 subtitle: ""
 author: ""
 type: ""
@@ -13,8 +13,6 @@ solution_est_visible: false
 auto_numbering: false
 ---
 
-
-## Itérer sur les éléments d'un dictionnaire
 
 Au zoo de Beauval, il y a 5 éléphants d'Asie, 17 écureuils d'Asie, 2 pandas d'Asie, etc.
 On représente cet inventaire à l'aide d'un dictionnaire, de façon suivante :

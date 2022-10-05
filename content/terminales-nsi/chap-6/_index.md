@@ -25,7 +25,7 @@ layout: "single"
 
 - **Doc. :** [*Structures de données fournies avec le langage Python*](1-structures-integrees)
 
-- **Doc. :** [*Exercices*](2-exercices)
+- **Doc. :** [*Itérer sur les éléments d'un dictionnaire*](2-exercices)
 
 <!--
 - **Doc. :** [*Annale*](3-annale)
