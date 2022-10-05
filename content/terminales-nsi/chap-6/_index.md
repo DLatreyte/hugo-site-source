@@ -27,4 +27,6 @@ layout: "single"
 
 - **Doc. :** [*Exercices*](2-exercices)
 
+<!--
 - **Doc. :** [*Annale*](3-annale)
+-->
