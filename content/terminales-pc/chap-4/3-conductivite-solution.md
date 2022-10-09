@@ -51,6 +51,7 @@ On peut aussi écrire cette relation sous la forme $I = G \cdot U$ où $G = 1/R$
 #### En chimie
 
 <img src="/terminales-pc/chap-4/chap-4-3-1.png" alt="" width="45%" />
+
 Deux plaques conductrices reliées à un générateur basse fréquence (**courant alternatif**) et plongées dans une *solution aqueuse diluée* ont un comportement électrique que l'on peut **modéliser** comme étant celui d'un *conducteur ohmique*&nbsp;: *une solution ionique possède une résistance (ou une conductance)[^1].*
 
 ### Influence de différents paramètres expérimentaux sur la conductance d'une solution ionique
