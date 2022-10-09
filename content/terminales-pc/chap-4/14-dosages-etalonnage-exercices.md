@@ -1,6 +1,6 @@
 ---
 title: "Dosages par étalonnage : exercices"
-subtitle: "Chapitre 5,15"
+subtitle: "5"
 author: ""
 type: ""
 date: 2021-10-25T09:17:28+04:00
@@ -9,7 +9,7 @@ toc: true
 tags: ["Dosage", "Étalonnage", "Conductimétrie", "Kohlrausch", "Beer-Lambert"]
 categories: ["Chimie", "Terminale Spé PC"]
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 
@@ -43,7 +43,6 @@ On dispose d'une échelle de teinte en diiode dont les concentrations $C_i$ sont
 3. Comment doit-on choisir la longueur d'onde de travail&nbsp;?
 4. La loi de Beer-Lambert est-elle vérifiée&nbsp;?
 5. Sans modifier les réglages du spectrophotomètre, on mesure l'absorbance $A_S = \pu{0,64}$ d'une solution $S$ d'eau iodée. En déduire la concentration $C$, en diiode de la solution $S$.
-
 
 ## Retrouver la loi de Kohlrausch
 

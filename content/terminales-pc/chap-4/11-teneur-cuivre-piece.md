@@ -1,6 +1,6 @@
 ---
 title: "Annale : Quelle teneur en cuivre dans une pièce de 5 centimes d'euro&nbsp;?"
-subtitle: "Chapitre 5,12"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-10-28T09:20:44+04:00
@@ -9,7 +9,7 @@ toc: true
 tags: ["Beer-Lambert", "Dosage par étalonnage", "Incertitudes"]
 categories: ["Chimie", "Terminale Spé PC", "Annale"]
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 
@@ -31,8 +31,8 @@ L’absorbance de la solution $S_2$ à $\pu{800 nm}$ est mesurée, elle vaut $A 
 1. Déterminer, en argumentant votre réponse, les couleurs attendues pour une solution d’ions cuivre(II) et pour une solution d’ions fer (III). Pour quelle raison choisit-on de travailler à une longueur d’onde de 800&nbsp;nm&nbsp;?
 
 {{% solution "Réponse" %}}
-*Dans le cas où une solution absorbe dans un seul domaine de longueur d’onde*, sa couleur perçue est la couleur complémentaire de celle des radiations absorbées.    
-Ainsi, une solution d’ions cuivre (II) est de couleur bleu-vert car elle absorbe principalement dans le rouge (entre 647 et 850&nbsp;nm).      
+*Dans le cas où une solution absorbe dans un seul domaine de longueur d’onde*, sa couleur perçue est la couleur complémentaire de celle des radiations absorbées.
+Ainsi, une solution d’ions cuivre (II) est de couleur bleu-vert car elle absorbe principalement dans le rouge (entre 647 et 850&nbsp;nm).
 De même, une solution d’ions fer (III) est de couleur jaune-vert car elle absorbe principalement dans le violet (entre 400 et 424&nbsp;nm).
 
 En travaillant à 800 nm, on est sûr que les ions fer (III) n’absorbent pas la lumière et donc que l’absorbance mesurée est uniquement due aux ions cuivre (II).
@@ -43,7 +43,7 @@ En travaillant à 800 nm, on est sûr que les ions fer (III) n’absorbent pas l
 Montrer, en utilisant le document 2 et en complétant l’ANNEXE À RENDRE AVEC LA COPIE, que la loi de Beer-Lambert est vérifiée pour ces solutions d’ions cuivre (II).
 
 {{% solution "Réponse" %}}
-Lorsque la loi de Beer-Lambert est vérifiée, l’absorbance de la solution est proportionnelle à la concentration de l’espèce colorée : $A = k \cdot c$.   
+Lorsque la loi de Beer-Lambert est vérifiée, l’absorbance de la solution est proportionnelle à la concentration de l’espèce colorée : $A = k \cdot c$.
 En traçant la courbe $A=f(\text{concentration})$, on obtient une droite passant par l’origine, ce qui correspond bien à une situation de proportionnalité.
 <img src="/terminales-pc/chap-4/chap-4-11-3.png" alt="" width="60%" />
 
@@ -58,10 +58,11 @@ En traçant la courbe $A=f(\text{concentration})$, on obtient une droite passant
 On constate donc que $[ \ce{Cu^{2+}} ]_f = \pu{4,2e-2 mol.L-1}$.
 
 Comme la transformation chimique est totale, un bilan de matière, *à l'aide d'un tableau d'avancement*, donne :
+
 - $n_f (\ce{Cu}) = n_0 (\ce{Cu}) - 3 x_{text{max}} = 0$ ;
 - $n_f (\ce{Cu^{2+}}) = 3 x_{text{max}} =  [ \ce{Cu^{2+}} ]_f \cdot V_{\text{sol}} $ où $V_{\text{sol}}$ est le volume de la solution $S_2$.
 
-Donc $n_0 (\ce{Cu}) = [ \ce{Cu^{2+}} ]\_f \cdot V\_{\text{sol}} $ et $m_0 (\ce{Cu}) = [ \ce{Cu^{2+}} ]\_f \cdot V_{\text{sol}} \cdot M(\ce{Cu}) $.    
+Donc $n_0 (\ce{Cu}) = [ \ce{Cu^{2+}} ]\_f \cdot V\_{\text{sol}} $ et $m_0 (\ce{Cu}) = [ \ce{Cu^{2+}} ]\_f \cdot V_{\text{sol}} \cdot M(\ce{Cu}) $.
 <strong>A.N.</strong> $m_0 (\ce{Cu}) = \pu{4,2e-2 mol.L-1} \times \pu{100e-3 L} \times \pu{63,5 g.mol-1} = \pu{2,7e-1 g}$.
 {{% /solution %}}
 
@@ -79,13 +80,12 @@ $t = \dfrac{m(\ce{Cu})}{m_{\text{pièce}}}$. Donc $t = \dfrac{ \pu{2,7e-1 g} }{ 
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | Masse de cuivre (mg) | 260 | 270 | 265 | 263 | 264 | 265 | 262 | 261 | 269 | 267 |
 
-
-
 5. Déterminer, grâce aux valeurs trouvées par les élèves, l’incertitude élargie $U(m)$ (pour un niveau de confiance de 95&nbsp;%) sur la mesure de la masse de cuivre dans une pièce.
 
 {{% solution "Réponse" %}}
+
 - La moyenne des dix mesures vaut $\bar{m} = \pu{264,6 mg}$ ;
-- L'écart-type des 10 mesures vaut $\sigma_{n-1} = \pu{3,31 mg}$. Comme $U(m) = k \dfrac{\sigma_{n-1}}{\sqrt{n}}$, avec $k$ le coefficient d'élargissement pour un niveau de confiance de 95&nbsp;%, $U(m) = \pu{2,26} \times \dfrac{\pu{3,31 mg}}{\sqrt{10}} = \pu{2,4 mg} = \pu{3 mg}$. 
+- L'écart-type des 10 mesures vaut $\sigma_{n-1} = \pu{3,31 mg}$. Comme $U(m) = k \dfrac{\sigma_{n-1}}{\sqrt{n}}$, avec $k$ le coefficient d'élargissement pour un niveau de confiance de 95&nbsp;%, $U(m) = \pu{2,26} \times \dfrac{\pu{3,31 mg}}{\sqrt{10}} = \pu{2,4 mg} = \pu{3 mg}$.
 {{% /solution %}}
 
 6. En déduire l’intervalle dans lequel devrait se situer le résultat du mesurage de la masse de cuivre avec un niveau de confiance de 95&nbsp;%.
@@ -102,16 +102,16 @@ On donne ci-dessous les spectres d’absorption d’une solution d’ions cuivre
 
 > Solution aqueuse d’ions cuivre (II) $\ce{Cu^{2+}}$ de concentration $\pu{7,5e-3 mol.L-1}$.
 
-<img src="/terminales-pc/chap-4/chap-4-11-1.png" alt="" width="80%" /> 
+<img src="/terminales-pc/chap-4/chap-4-11-1.png" alt="" width="80%" />
 
 > Solution aqueuse d’ions fer (III) $\ce{Fe^{3+}}$ de concentration $\pu{5,0e-2 mol.L-1}$.
 
-<img src="/terminales-pc/chap-4/chap-4-11-2.png" alt="" width="80%" /> 
+<img src="/terminales-pc/chap-4/chap-4-11-2.png" alt="" width="80%" />
 
 | Couleur absorbée | violet | bleu | vert | jaune | orange | Rouge |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **Longueur d’onde d’absorption (nm)** | 400-424 | 424-491 | 491-575 | 575-585 | 585-647 |  647-850 |
-| **Couleur complémentaire** | jaune-vert | jaune | pourpre	 | bleu | vert-bleu | bleu-vert |
+| **Couleur complémentaire** | jaune-vert | jaune | pourpre  | bleu | vert-bleu | bleu-vert |
 
 ### Courbe d’étalonnage
 
@@ -126,14 +126,14 @@ Tableau donnant l’absorbance $A$ à $\pu{800 nm}$ de solutions aqueuses conten
 ### Incertitude sur un mesurage
 
 On rappelle les différentes formules intervenant dans la détermination de l‘incertitude sur le résultat du mesurage d’un ensemble de $n$ valeurs ${x_1, x_2, \ldots, x_n}$&nbsp;:
+
 - Écart-type&nbsp;: $\sigma_{n-1} = \sqrt{ \dfrac{ \sum_{i=1}^{n} (x_i - \bar{x})^2 }{ n-1 }  }$
 - Incertitude-type sur la moyenne&nbsp;: $ u(\bar{x}) = \dfrac{ \sigma_{n-1} }{ \sqrt{n} }$
 - Incertitude élargie sur la moyenne&nbsp;: $ U(\bar{x}) = k\\, u(\bar{x}) $ avec&nbsp;:
-    - $k = 1$ pour un niveau de confiance de 68&nbsp;%&nbsp;;
-    - $k = 2$ pour un niveau de confiance de 95&nbsp;%&nbsp;;
-    - $k = 3$ pour un niveau de confiance de 98&nbsp;%.
+  - $k = 1$ pour un niveau de confiance de 68&nbsp;%&nbsp;;
+  - $k = 2$ pour un niveau de confiance de 95&nbsp;%&nbsp;;
+  - $k = 3$ pour un niveau de confiance de 98&nbsp;%.
 
 ### Annexe de l'exercice à rendre avec la copie
 
 - {{< remote "Fichier de travail à télécharger" "/terminales-pc/chap-4/chap-4-11-3.pdf" >}}
-

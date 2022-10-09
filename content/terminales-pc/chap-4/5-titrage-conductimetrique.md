@@ -1,6 +1,6 @@
 ---
 title: "Titrage d'une solution de vinaigre par conductimétrie"
-subtitle: "Chapitre 5,5"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-10-10T21:25:36+04:00

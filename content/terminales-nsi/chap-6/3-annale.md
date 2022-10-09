@@ -15,7 +15,7 @@ auto_numbering: true
 
 ## Partie 1 : Modélisation simpliste
 
-On modélise les notes d'une élève de la faon suivante :
+On modélise les notes d'une élève de la façon suivante :
 
 ```python
 notes_de_lea = [12, 14, 3, 16, 17, 2, 13, 19]

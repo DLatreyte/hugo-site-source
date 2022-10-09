@@ -1,6 +1,6 @@
 ---
 title: "Annale : Titrage indirect d'une eau de Javel"
-subtitle: "Chapitre 5,9"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-10-26T15:41:44+04:00
@@ -14,14 +14,14 @@ auto_numbering: true
 ---
 
 - Lors d'un *titrage direct*, une entité, le *titrant*, *située dans la burette*, réagit **directement** avec le *titré*.
-- Lors d’un *titrage indirect*, on titre une espèce chimique **après avoir réalisé une réaction chimique**.   
+- Lors d’un *titrage indirect*, on titre une espèce chimique **après avoir réalisé une réaction chimique**.
 
 {{% note normal %}}
-Charles Guillaume Scheele, pharmacien suédois, découvrit le dichlore au XVIII<sup>ème</sup> siècle.   
+Charles Guillaume Scheele, pharmacien suédois, découvrit le dichlore au XVIII<sup>ème</sup> siècle.
 Ce gaz intervient dans la fabrication de l'eau de Javel&nbsp;; celle-ci doit son nom à un ancien village qui est aujourd'hui un quartier de Paris. C'est à Javel que Claude Louis Berthollet, directeur à la manufacture des Gobelins, fabriqua ce produit décolorant et désinfectant et l'employa en 1785 au blanchiment des toiles textiles.
 
 L'eau de Javel est obtenue par action du dichlore $\ce{Cl2(g)}$ sur l'hydroxyde de sodium ou soude et contient des ions $\ce{Cl^–(aq)}$, $\ce{ClO^–(aq)}$, $\ce{Na^+(aq)}$  ainsi que $\ce{H2O(l)}$.  
-C'est donc une solution aqueuse constituée entre autres d'ions chlorure $\ce{Cl–(aq)}$ et d'ions hypochlorite $\ce{ClO–(aq)}$.   
+C'est donc une solution aqueuse constituée entre autres d'ions chlorure $\ce{Cl–(aq)}$ et d'ions hypochlorite $\ce{ClO–(aq)}$.
 En milieu acide, l'eau de Javel subit une transformation complète représentée par la réaction d'équation&nbsp;:
 $$\ce{ ClO^–(aq)  +  Cl^–(aq)  + 2H^+(aq)  ->  H2O(l) +   Cl2(g) }$$
 Cette transformation permet de définir le *degré chlorométrique*. Celui-ci est *égal au volume, exprimé en litres, de dichlore produit par un litre d'eau de Javel*. Ce volume est mesuré à une température de $\pu{0 °C}$ sous une pression de $\pu{1,013 bar}$.
@@ -30,11 +30,12 @@ Cette transformation permet de définir le *degré chlorométrique*. Celui-ci es
 Pour vérifier l'indication portée sur une bouteille commerciale d'eau de Javel, 12°&nbsp;chl (12 degrés chlorométriques), on réalise un titrage.
 
 ## Principe de la manipulation
+
 On ajoute un excès d'ions iodure à un volume connu de solution d'eau de Javel.
-Les ions hypochlorite $\ce{ClO–(aq)}$ oxydent en milieu acide les ions iodure $\ce{I^–(aq)}$.   
+Les ions hypochlorite $\ce{ClO–(aq)}$ oxydent en milieu acide les ions iodure $\ce{I^–(aq)}$.
 L'équation de la réaction (référencée comme **équation 1** par la suite) modélisant la transformation est&nbsp;:
-$$\ce{ClO^–(aq)  + 2 I^–(aq)  +  2H+(aq) ->  H2O(l) +  I2(aq)  + Cl–(aq)}$$  	
-On considérera la transformation chimique modélisée par cette réaction comme totale.   
+$$\ce{ClO^–(aq)  + 2 I^–(aq)  +  2H+(aq) ->  H2O(l) +  I2(aq)  + Cl–(aq)}$$   
+On considérera la transformation chimique modélisée par cette réaction comme totale.
 
 Le diode formé appartenant au couple $\ce{I2(aq) / I^–(aq)}$ est titré par les ions thiosulfate, réducteurs du couple $\ce{S4O6^{2–}(aq) /S2O3^{2–}(aq)}$. On en déduit alors la quantité d'ions hypochlorite, puis le degré chlorométrique.
 
@@ -44,11 +45,12 @@ Le diode formé appartenant au couple $\ce{I2(aq) / I^–(aq)}$ est titré par l
 Décrire une méthode qui permet d'effectuer cette dilution. On précisera la verrerie nécessaire (noms et volumes).
 
 2. Dans un erlenmeyer, on introduit dans cet ordre&nbsp;:
+
 - $\pu{V = 10,0 mL}$ de solution $S$&nbsp;;
-- $\pu{V' = 20 mL}$ de la solution d'iodure de potassium $(\ce{K+(aq) + I^–(aq)})$   
+- $\pu{V' = 20 mL}$ de la solution d'iodure de potassium $(\ce{K+(aq) + I^–(aq)})$
 Quelle verrerie faut-il utiliser pour prélever les volumes&nbsp;:
-    - $\pu{V = 10,0 mL}$ de solution $S$&nbsp;?
-    - $\pu{V' = 20 mL}$ de la solution d'iodure de potassium&nbsp;?
+  - $\pu{V = 10,0 mL}$ de solution $S$&nbsp;?
+  - $\pu{V' = 20 mL}$ de la solution d'iodure de potassium&nbsp;?
 
 ## Titrage
 
@@ -74,7 +76,3 @@ Commenter le résultat.
 {{% solution "Corrigé" %}}
 {{< remote "Corrigé au format pdf" "/terminales-pc/chap-4/chap-4-8-2.pdf" >}}
 {{% /solution %}}
-
-
-
-

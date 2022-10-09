@@ -1,6 +1,6 @@
 ---
 title: "Titrages par suivi pH-métrique"
-subtitle: "Chapitre 5,7"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-10-24T17:31:05+04:00
@@ -16,22 +16,28 @@ auto_numbering: true
 ## Rappels
 
 {{% note tip %}}
+
 #### Dosage, titrage
+
 - **Doser** une espèce chimique dans une solution consiste à *déterminer expérimentalement la concentration molaire* de cette espèce chimique dans la solution.
 - Lorsqu'un dosage s'appuie sur une *réaction chimique* on parle de **titrage**.
 {{% /note %}}
 
 {{% note tip %}}
+
 #### Conditions à remplir pour qu'une réaction chimique puisse être utilisée lors d'un titrage
 
 Pour pouvoir être utilisée lors d'un titrage, une réaction chimique doit être :
+
 - **rapide** ;
-- **unique** dans le milieu (*elle seule doit consommer l'entité dosée*) ; 
+- **unique** dans le milieu (*elle seule doit consommer l'entité dosée*) ;
 - la modélisation d'une **transformation chimique totale**.
 {{% /note %}}
 
 {{% note tip %}}
+
 #### Point équivalence
+
 - Le **point d'équivalence** (ou **équivalence**) d'un titrage est le point où **on change de réactif limitant**.
 - À l'équivalence, *l'entité titrée et l'entité titrante ont été introduites dans les **proportions stœchiométriques**.*
 Ces deux entités (titrée et titrante) sont donc absentes dans le milieu au point d'équivalence.
@@ -41,7 +47,7 @@ Ces deux entités (titrée et titrante) sont donc absentes dans le milieu au poi
 
 ### Titrage d'une solution d'acide nitrique (acide fort) par une solution de soude (base forte)
 
-On réalise le titrage d'une solution d'acide nitrique $\ce{HNO3}$ de volume $V_A = \pu{10 mL}$ et de concentration $C_A$ inconnue, par une solution de soude de concentration $C_B = \pu{0,02 mol.L-1}$.   
+On réalise le titrage d'une solution d'acide nitrique $\ce{HNO3}$ de volume $V_A = \pu{10 mL}$ et de concentration $C_A$ inconnue, par une solution de soude de concentration $C_B = \pu{0,02 mol.L-1}$.
 On réalise un suivi pH-métrique et on traite les {{< remote "données expérimentales" "/terminales-pc/chap-4/chap-4-7-1.ambl" >}} grâce au logiciel {{< remote "Graphical Analysis" "https://www.vernier.com/product/graphical-analysis-4/" >}} de Vernier.
 
 1. Lors de ce titrage, quel est le titrant ? Le titré ?
@@ -61,11 +67,10 @@ La solution d'acide nitrique est donc $(\ce{H3O+ + NO3- (aq)})$.
 2. Écrire l'équation du titrage.
 {{% solution "Réponse" %}}
 
-
 $$\ce{H3O+ + HO^- (aq) -> 2 H2O (l) }$$
 
 Remarque
-: **La réaction chimique précédente est la réaction de titrage de n'importe quel acide fort par n'importe quelle base forte**. 
+: **La réaction chimique précédente est la réaction de titrage de n'importe quel acide fort par n'importe quelle base forte**.
 {{% /solution %}}
 
 *Lors d'un suivi pH-métrique on verse progressivement le titrant initialement contenu dans une burette dans le bécher (ou l'erlenmeyer) contenant le titré et on mesure la valeur du pH après chacun de ces ajouts*.
@@ -77,6 +82,7 @@ Remarque
 Cette courbe présente trois parties distinctes et caractéristiques, les identifier et les commenter.
 {{% solution "Réponse" %}}
 La courbe présente :
+
 - une première partie, dans le domaine acide, dans laquelle le pH croit assez peu lorsqu'on introduit le titrant dans la solution ;
 - une deuxième partie dans laquelle un faible ajout de titrant fait brutalement basculer le milieu d'une solution acide à une solution basique . On dit que le **saut de pH** est *très important* ;
 - une troisième et dernière partie, dans le domaine basique, dans laquelle le pH croit à nouveau assez peu lorsqu'on introduit le titrant dans la solution.
@@ -84,6 +90,7 @@ La courbe présente :
 
 5. Pourquoi la solution passe-t-elle du domaine acide au domaine basique lors de ce titrage ?
 {{% solution "Réponse" %}}
+
 - Dans un premier temps, le titrant (ion hydroxyde) est le réactif limitant. La solution contient donc de l'eau, des ions nitrates $\ce{NO3^-}$, *base indifférente dans l'eau*, des ions sodium $\ce{Na^+}$, introduits avec les ions hydroxyde et des ions oxonium $\ce{H3O+}$. *Elle est donc acide et le pH inférieur à 7,0*.
 - Au delà de l'équivalence, le titré (ions oxonium) est le réactif limitant. La solution contient donc de l'eau, des ions nitrates $\ce{NO3^-}$, *base indifférente dans l'eau*, des ions sodium $\ce{Na^+}$, introduits avec les ions hydroxyde et des ions hydroxyde $\ce{OH-}$, base forte. *Elle est donc basique et le pH supérieur à 7,0*.
 {{% /solution %}}
@@ -95,6 +102,7 @@ L'équivalence est l'instant du titrage où on change de réactif limitant. Les 
 
 7. Placer le point d'ordonnée $pH = \pu{7,0}$ sur la courbe. Quelle particularité mathématique présente ce point ?
 {{% solution "Réponse" %}}
+
 - Ce point est un point d'**inflexion** ; c'est l'*endroit où la courbe change de courbure*.
 - Lorsque le volume de titrant versé **augmente**, en amont du point d'inflexion, le coefficient directeur de la tangente, *positif car la fonction est croissante*, **augmente**.
 - Au-delà du point d'inflexion, lorsque le volume de titrant versé **augmente**, le coefficient directeur de la tangente, *positif car la fonction est croissante*, **diminue**.
@@ -102,18 +110,20 @@ L'équivalence est l'instant du titrage où on change de réactif limitant. Les 
 
 8. À partir de la réponse à la question précédente, indiquer quel outil mathématique permettrait de repérer facilement le point d'équivalence.
 {{% solution "Réponse" %}}
-Le coefficient directeur de la tangente évolue autour du point d'équivalence.   
+Le coefficient directeur de la tangente évolue autour du point d'équivalence.
 *Le coefficient directeur de la tangente à une courbe en un point étant le nombre dérivé de la fonction en ce point*, il semble donc logique de calculer la dérivée du pH par rapport au volume de titrant versé : $\dfrac{\mathrm{d\\,pH}}{\mathrm{dV_B}}$
 {{% /solution %}}
 
 {{% note tip %}}
+
 #### Repérage de l'équivalence lors d'un titrage par suivi pH-métrique
 
-Lors d'un suivi pH-métrique, *deux méthodes permettent de déterminer la position du point d'équivalence* : 
+Lors d'un suivi pH-métrique, *deux méthodes permettent de déterminer la position du point d'équivalence* :
+
 1. On détermine l'*allure de la fonction dérivée* à la fonction $pH = f(V)$ où $V$ est le volume de titrant introduit dans la solution :
     - L'abscisse du maximum de la fonction dérivée $\dfrac{\mathrm{d\\,pH}}{\mathrm{dV_B}}$ est identique à l'abscisse du point d'équivalence.
 
-ou 
+ou
 
 2. On utilise la méthode des tangentes :
     - On trace une *tangente à la courbe* $pH = f(V)$ *en amont du point d'équivalence* ;
@@ -135,15 +145,14 @@ $(V_{BE} = \pu{25 mL}; pH = \pu{7,0})$
 **A.N.** $C_A = \pu{0,02 mol.L-1} \times \dfrac{\pu{25 mL}}{\pu{10 mL}} = \pu{0,05 mol.L-1}$
 {{% /solution %}}
 
-
-
 ### Titrage d'une solution d'acide méthanoïque (acide faible) par une solution de soude (base forte)
 
-On réalise le titrage d'une solution d'acide méthanoïque de volume $V_A = \pu{10 mL}$ et de concentration $C_A$ inconnue, par une solution de soude de concentration $C_B = \pu{0,05 mol.L-1}$.   
+On réalise le titrage d'une solution d'acide méthanoïque de volume $V_A = \pu{10 mL}$ et de concentration $C_A$ inconnue, par une solution de soude de concentration $C_B = \pu{0,05 mol.L-1}$.
 On réalise un suivi pH-métrique et on traite les {{< remote "données expérimentales" "/terminales-pc/chap-4/chap-4-7-4.ambl" >}} grâce au logiciel {{< remote "Graphical Analysis" "https://www.vernier.com/product/graphical-analysis-4/" >}} de Vernier.
 
 1. Lors de ce titrage, quel est le titrant ? Le titré ?
 {{% solution "Réponse" %}}
+
 - Le titré est l'acide méthanoïque $\ce{HCO_2H}$.
 - Le titrant est l'ion hydroxyde présent dans la solution de soude $(\ce{Na^+ + HO^-})$.
 {{% /solution %}}
@@ -161,6 +170,7 @@ $\ce{HCO_2H + HO^- -> HCO_2^- + H2O  }$
 <img src="/terminales-pc/chap-4/chap-4-7-5.png" alt="" width="80%" />
 Cette courbe présente quelques différences avec la courbe correspondant au suivi pH-métrique du titrage d'un acide fort par une base forte. Les identifier.
 {{% solution "Réponse" %}}
+
 - Dans la première partie, dans le domaine acide, le pH varie un peu plus lorsqu'on introduit le titrant dans la solution ;
 - Le **saut de pH** est *moins important* (**et ce d'autant plus que l'acide faible est dilué**) dans la deuxième partie ;
 {{% /solution %}}
@@ -184,14 +194,14 @@ La solution contient une base, le milieu est basique.
 **A.N.** $C_A = \pu{0,05 mol.L-1} \times \dfrac{\pu{28 mL}}{\pu{10 mL}} = \pu{0,14 mol.L-1}$.
 {{% /solution %}}
 
-
 ### Titrage d'une solution de soude (base forte) par une solution d'acide chlorhydrique (acide fort)
 
-On réalise le titrage d'une solution de soude de volume $V_B = \pu{10 mL}$ et de concentration $C_B$ inconnue, par une solution d'acide chlorhydrique de concentration $C_A = \pu{0,1 mol.L-1}$.   
+On réalise le titrage d'une solution de soude de volume $V_B = \pu{10 mL}$ et de concentration $C_B$ inconnue, par une solution d'acide chlorhydrique de concentration $C_A = \pu{0,1 mol.L-1}$.
 On réalise un suivi pH-métrique et on traite les {{< remote "données expérimentales" "/terminales-pc/chap-4/chap-4-7-7.ambl" >}} grâce au logiciel {{< remote "Graphical Analysis" "https://www.vernier.com/product/graphical-analysis-4/" >}} de Vernier.
 
 1. Lors de ce titrage, quel est le titrant ? Le titré ?
 {{% solution "Réponse" %}}
+
 - Le titrant est l'ion oxonium $\ce{H3O^+}$ présent dans la solution d'acide chlorhydrique $(\ce{H3O^+ + Cl^-})$.
 - Le titré est l'ion hydroxyde présent dans la solution de soude $(\ce{Na^+ + HO^-})$.
 {{% /solution %}}
@@ -201,7 +211,7 @@ On réalise un suivi pH-métrique et on traite les {{< remote "données expérim
 $\ce{HO^- + H3O^+ -> 2 H2O  }$
 
 Remarque
-: **La réaction chimique précédente est la réaction de titrage de n'importe quelle base forte par n'importe quel acide fort**. 
+: **La réaction chimique précédente est la réaction de titrage de n'importe quelle base forte par n'importe quel acide fort**.
 {{% /solution %}}
 
 *Lors d'un suivi pH-métrique on verse progressivement le titrant initialement contenu dans une burette dans le bécher (ou l'erlenmeyer) contenant le titré et on mesure la valeur du pH après chacun de ces ajouts*.
@@ -213,6 +223,7 @@ Remarque
 Cette courbe présente trois parties distinctes et caractéristiques, les identifier et les commenter.
 {{% solution "Réponse" %}}
 La courbe présente :
+
 - une première partie, dans le domaine basique, dans laquelle le pH décroît assez peu lorsqu'on introduit le titrant dans la solution ;
 - une deuxième partie dans laquelle un faible ajout de titrant fait brutalement basculer le milieu d'une solution basique à une solution acide. Le **saut de pH** est *très important* ;
 - une troisième et dernière partie, dans le domaine acide, dans laquelle le pH décroît à nouveau assez peu lorsqu'on introduit le titrant dans la solution.
@@ -220,8 +231,9 @@ La courbe présente :
 
 <img src="/terminales-pc/chap-4/chap-4-7-9.png" alt="" width="80%" />
 
-5.  Justifier l'allure de la fonction $\dfrac{\mathrm{d\\,pH}}{\mathrm{dV_A}}$.
+5. Justifier l'allure de la fonction $\dfrac{\mathrm{d\\,pH}}{\mathrm{dV_A}}$.
 {{% solution "Réponse" %}}
+
 - Lorsque le volume de titrant versé **augmente**, en amont du point d'inflexion, le coefficient directeur de la tangente, *négatif car la fonction est décroissante*, **augmente en valeur absolue**.
 - Au-delà du point d'inflexion, lorsque le volume de titrant versé **augmente**, le coefficient directeur de la tangente, *négatif car la fonction est décroissante*, **diminue en valeur absolue**.
 {{% /solution %}}
@@ -244,14 +256,14 @@ $(V_{BE} = \pu{21,6 mL}; pH = \pu{7,0})$
 **A.N.** $C_A = \pu{0,1 mol.L-1} \times \dfrac{\pu{21,6 mL}}{\pu{10 mL}} = \pu{0,2 mol.L-1}$.
 {{% /solution %}}
 
-
 ### Titrage d'une solution d'ammoniac (base faible) par une solution d'acide chlorhydrique (acide fort)
 
-On réalise le titrage d'une solution d'ammoniac de volume $V_B = \pu{10 mL}$ et de concentration $C_B$ inconnue, par une solution d'acide chlorhydrique de concentration $C_A = \pu{0,04 mol.L-1}$.   
+On réalise le titrage d'une solution d'ammoniac de volume $V_B = \pu{10 mL}$ et de concentration $C_B$ inconnue, par une solution d'acide chlorhydrique de concentration $C_A = \pu{0,04 mol.L-1}$.
 On réalise un suivi pH-métrique et on traite les {{< remote "données expérimentales" "/terminales-pc/chap-4/chap-4-7-10.ambl" >}} grâce au logiciel {{< remote "Graphical Analysis" "https://www.vernier.com/product/graphical-analysis-4/" >}} de Vernier.
 
 1. Lors de ce titrage, quel est le titrant ? Le titré ?
 {{% solution "Réponse" %}}
+
 - Le titrant est l'ion oxonium $\ce{H3O^+}$ présent dans la solution d'acide chlorhydrique $(\ce{H3O^+ + Cl^-})$.
 - Le titré est l'ammoniac $(\ce{NH3})$.
 {{% /solution %}}
@@ -269,14 +281,16 @@ $\ce{NH3 + H3O^+ -> NH4^+ + H2O  }$
 <img src="/terminales-pc/chap-4/chap-4-7-11.png" alt="" width="80%" />
 Cette courbe présente quelques différences avec la courbe correspondant au suivi pH-métrique du titrage d'une base forte par un acide fort. Les identifier.
 {{% solution "Réponse" %}}
+
 - Dans la première partie, dans le domaine basique, le pH diminue un peu plus lorsqu'on introduit le titrant dans la solution. De plus, le pH initial est plus petit ;
 - Le **saut de pH** est *moins important* (**et ce d'autant plus que la base faible est diluée**) dans la deuxième partie ;
 {{% /solution %}}
 
 <img src="/terminales-pc/chap-4/chap-4-7-12.png" alt="" width="80%" />
 
-5.  Justifier l'allure de la fonction $\dfrac{\mathrm{d\\,pH}}{\mathrm{dV_A}}$.
+5. Justifier l'allure de la fonction $\dfrac{\mathrm{d\\,pH}}{\mathrm{dV_A}}$.
 {{% solution "Réponse" %}}
+
 - Lorsque le volume de titrant versé **augmente**, en amont du point d'inflexion, le coefficient directeur de la tangente, *négatif car la fonction est décroissante*, **augmente en valeur absolue**.
 - Au-delà du point d'inflexion, lorsque le volume de titrant versé **augmente**, le coefficient directeur de la tangente, *négatif car la fonction est décroissante*, **diminue en valeur absolue**.
 {{% /solution %}}
@@ -298,8 +312,5 @@ $(V_{BE} = \pu{25 mL}; pH = \pu{5,5})$
 
 **A.N.** $C_A = \pu{0,04 mol.L-1} \times \dfrac{\pu{25 mL}}{\pu{10 mL}} = \pu{0,1 mol.L-1}$.
 {{% /solution %}}
-
-
-
 
 [^1]: Utiliser le logiciel et les données expérimentales pour parvenir à cette courbe.

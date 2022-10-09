@@ -1,6 +1,6 @@
 ---
 title: "Titrage de l'acide éthanoïque présent dans un vinaigre"
-subtitle: "Chapitre 5,17"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-11-01T07:50:56+04:00
@@ -9,7 +9,7 @@ toc: true
 tags: ["Tableau d'avancement", "Équivalence", "Titrage", "pH-mètre", "Suivi pH-métrique"]
 categories: ["Chimie", "Terminale Spé PC"]
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: false
 ---
 
@@ -37,16 +37,16 @@ Lors d'un suivi pH-métrique on mesure le pH de la solution après différents a
 *Il est souvent nécessaire d'ajouter de l'eau dans la solution contenant le titré afin de pouvoir bien immerger la sonde du pH mètre*.
 {{% /note %}}
 
-
 {{% note normal %}}
 
 #### Indicateur coloré
 
-- Un indicateur coloré est une entité chimique dont les formes acide et basique colorent différemment les solutions.     
+- Un indicateur coloré est une entité chimique dont les formes acide et basique colorent différemment les solutions.
 - Un indicateur coloré s'ajoute en petite quantité : entre 1 et 3 gouttes dans le réactif titré. - Un indicateur coloré est choisi de telle sorte que *sa zone de virage contienne la valeur du pH à l'équivalence*.
 
 Quelques indicateurs colorés
-: 
+:
+
 - **Hélianthine** : Rouge -- 3,1 -- Orange -- 4,4 -- Jaune
 - **B.B.T.** : Jaune -- 6,0 -- Vert -- 7,6 -- Bleu
 - **Phénolphtaléine** : Incolore -- 8,2 -- Rose pâle -- 10 -- Rose fuchsia
@@ -67,9 +67,8 @@ Quelques indicateurs colorés
 - Verre à pied (poubelle)&nbsp;;
 - Logiciel Graphical Analysis.
 
-
 ## Travail à réaliser
 
 1. Proposer *deux protocoles expérimentaux* détaillés permettant de réaliser l'objectif. Le protocole devra préciser la réaction de titrage et contenir un schéma du montage à réaliser.
 
-2.	Pour chaque méthode, faire les calculs permettant de déterminer la concentration en acide éthanoïque du vinaigre, puis le degré d'acidité. Comparer avec le degré indiqué par l'étiquette.
+2. Pour chaque méthode, faire les calculs permettant de déterminer la concentration en acide éthanoïque du vinaigre, puis le degré d'acidité. Comparer avec le degré indiqué par l'étiquette.

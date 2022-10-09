@@ -1,6 +1,6 @@
 ---
 title: "Annale : Ammoniac"
-subtitle: "Chapitre 5,11"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-10-26T18:56:00+04:00
@@ -9,7 +9,7 @@ toc: true
 tags: ["Titrage", "Suivi conductimétrique", "Suivi pH-métrique", "Conductivité", "Base", "Acide", "Équivalence"]
 categories: ["Chimie", "Terminale Spé PC", "Annale"]
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 $\gdef\barcirc{{\mathrlap{\mathchoice{\kern{0.145em}}{\kern{0.145em}}{\kern{0.1015em}}{\kern{0.1015em}}\circ}{-}}}$
@@ -17,10 +17,12 @@ $\gdef\barcirc{{\mathrlap{\mathchoice{\kern{0.145em}}{\kern{0.145em}}{\kern{0.10
 L’ammoniac $\ce{NH3}$ est un gaz qui, dissous dans l’eau, donne une solution basique d’ammoniaque. Des solutions d’ammoniaque sont vendues dans le commerce. Ces solutions, après dilution, sont utilisées comme produit nettoyant et détachant.
 
 ## L'ammoniac, une base
-On prélève un volume gazeux d'ammoniac $V = \pu{2,4e–1 L}$, sous la pression $\pu{1 015 hPa}$ à la température de $\pu{20 °C}$, que l’on dissout dans de l’eau distillée pour obtenir $V_{S1} = \pu{1,0 L}$ de solution aqueuse d’ammoniac $S_1$.   
+
+On prélève un volume gazeux d'ammoniac $V = \pu{2,4e–1 L}$, sous la pression $\pu{1 015 hPa}$ à la température de $\pu{20 °C}$, que l’on dissout dans de l’eau distillée pour obtenir $V_{S1} = \pu{1,0 L}$ de solution aqueuse d’ammoniac $S_1$.
 Le pH de la solution $S_1$ est mesuré et a pour valeur 10,6.
 
-#### Données 
+#### Données
+
 - Volume molaire&nbsp;: $V_m = \pu{24,1 L.mol–1}$.
 - Produit ionique de l’eau&nbsp;: $K_e = \dfrac{[\ce{H3O^+}] \cdot [\ce{HO^-}]}{(C^\barcirc)^2} = \pu{1,0e–14}$ avec $C^\barcirc = \pu{1,0 mol.L-1}$.
 - Numéros atomiques&nbsp;: azote $\ce{N}$, $Z = 7$&nbsp;; hydrogène $\ce{H}$, $Z = 1$.
@@ -41,6 +43,7 @@ Identifier les couples acide-base qui interviennent.
 Un laborantin retrouve dans une armoire une bouteille qui semble assez ancienne d’un produit ménager d’une solution commerciale d’ammoniaque. Sur l’étiquette, on lit «&nbsp;titre massique 12&nbsp;%&nbsp;».
 
 #### Données
+
 - Densité de la solution commerciale&nbsp;: $d = 0,923$.
 - Masse molaire de l’ammoniac&nbsp;: $M(\ce{NH3}) = \pu{17 g.mol–1}$.
 
@@ -49,6 +52,7 @@ Un laborantin retrouve dans une armoire une bouteille qui semble assez ancienne 
 7. Le laborantin prépare une solution $S$ diluée au 50<sup>ème</sup> de la solution commerciale. Indiquer le protocole suivi par le laborantin, ainsi que le matériel nécessaire pour la réalisation de $\pu{500 mL}$ de cette solution.
 
 ## Titrages conductimétrique et pH-métrique
+
 Le laborantin souhaite réaliser un suivi conductimétrique en titrant $\pu{10,0 mL}$ de la solution commerciale d’ammoniaque diluée 50 fois, mélangée à $\pu{200 mL}$ d’eau distillée, par une solution d’acide chlorhydrique $(\ce{H3O^+(aq) + Cl^–(aq)})$ de concentration $C_A = \pu{1,00e–1 mol.L–1}$.
 
 8. Quelles sont les caractéristiques d’une réaction support d’un titrage&nbsp;?
@@ -62,7 +66,9 @@ Faire un choix et rédiger une réponse en justifiant.
 <img src="/terminales-pc/chap-4/chap-4-10-1.png" alt="" width="80%" />
 
 #### Données
+
 - Conductivités molaires ioniques à $\pu{25 °C}$&nbsp;:
+
 <center>
 
 | Ion | $\ce{H3O^+}$ | $\ce{HO^–}$ | $\ce{Cl^−}$ | $\ce{NH4^+}$ |
