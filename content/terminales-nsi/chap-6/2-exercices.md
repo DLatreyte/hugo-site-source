@@ -9,10 +9,9 @@ toc: true
 tags: ["Dictionnaire", "Liste"]
 categories: ["Terminales Spé NSI", "Informatique"]
 image: ""
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: false
 ---
-
 
 Au zoo de Beauval, il y a 5 éléphants d'Asie, 17 écureuils d'Asie, 2 pandas d'Asie, etc.
 On représente cet inventaire à l'aide d'un dictionnaire, de façon suivante :
