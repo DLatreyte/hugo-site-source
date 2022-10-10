@@ -22,4 +22,4 @@ layout: "single"
 
 ## Documents
 
-- **Chap. 7,1 :** [*Listes chaînées*](1-listes-chainees)
+- **Doc. :** [*Listes chaînées*](1-listes-chainees)

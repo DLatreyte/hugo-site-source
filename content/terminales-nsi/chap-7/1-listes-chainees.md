@@ -1,6 +1,6 @@
 ---
 title: "Listes Chaînées"
-subtitle: "Chapitre 7,1"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-10-14T18:01:18+04:00
@@ -13,6 +13,7 @@ solution_est_visible: true
 auto_numbering: true
 ---
 {{% note normal %}}
+
 - Un corrigé de la **section 1** se trouve {{< remote "ici" "https://repl.it/@dlatreyte/tableaux" >}}
 - Un corrigé des **sections suivantes** se trouve {{< remote "ici" "https://repl.it/@dlatreyte/listeschainees" >}}
 {{% /note %}}
@@ -20,7 +21,8 @@ auto_numbering: true
 ## Tableaux
 
 {{% note tip %}}
-- Un **tableau** est une *structure de données* dans laquelle *les éléments, de même type, occupent des positions contiguës en mémoire*.   
+
+- Un **tableau** est une *structure de données* dans laquelle *les éléments, de même type, occupent des positions contiguës en mémoire*.
 - Le nombre d'éléments qu'un tableau peut contenir est déterminé à la création d'un tableau.
 {{% /note %}}
 
@@ -33,6 +35,7 @@ auto_numbering: true
 | |  | Recherche d'un élément | `est_dans(tab, x)` | $O(n)$ |
 
 {{% note normal %}}
+
 - La structure de données appelée « liste » dans le langage Python est en fait un **tableau dynamique**.
 {{% /note %}}
 
@@ -41,6 +44,7 @@ auto_numbering: true
 ### Pourquoi la recherche d'un élément dans un tableau quelconque (non trié donc) est en $O(N)$ ?
 
 1. Écrire le prédicat `est_dans` de spécification :
+
 ```python
 def est_dans(tab: List[int], n: int) -> bool:
     """
@@ -53,6 +57,7 @@ def est_dans(tab: List[int], n: int) -> bool:
 2. Écrire un jeu de tests.
 
 3. (Facultatif) Écrire le prédicat `est_dans_rec` de spécification :
+
 ```python
 def est_dans_rec(tab: List[int], n: int, i: int = 0) -> bool:
     """
@@ -64,6 +69,7 @@ def est_dans_rec(tab: List[int], n: int, i: int = 0) -> bool:
 
 4. Quelle est la complexité des algorithmes précédents en fonction de $N$, la taille du tableau ?
 {{% solution "Réponse" %}}
+
 - Dans l'algorithme itératif, dans le pire des cas (valeur absente du tableau) $N$ tours de boucle sont effectués.
 - Dans l'algorithme récursif, $N$ appels récursifs sont effectués.
 
@@ -96,6 +102,7 @@ Toute fonction permettant l'insertion de valeurs doit donc avertir un utilisateu
 **Remarque :** Dans le code ci-dessous, les cellules seront considérées vides si elles contiennent la valeur `None`.
 
 5. Écrire la fonction `insere` dont la spécification est :
+
 ```python
 def insere(tab: List[int], n: int, i: int) -> None:
     """
@@ -108,9 +115,10 @@ def insere(tab: List[int], n: int, i: int) -> None:
     l'algorithme se contente de décaler les valeurs vers 
     la droite.
     """
-``` 
+```
 
 6. (Facultatif) Écrire la fonction `insere_rec` dont la spécification est :
+
 ```python
 def insere_rec(tab: List[int], n: int, i: int, k: int) -> None:
     """
@@ -123,10 +131,11 @@ def insere_rec(tab: List[int], n: int, i: int, k: int) -> None:
     l'algorithme se contente de décaler les valeurs vers 
     la droite.
     """
-``` 
+```
 
 7. Quelle est la complexité des algorithmes précédents en fonction de $N$, la taille du tableau ?
 {{% solution "Réponse" %}}
+
 - Dans le pire des cas (insertion à la première place du tableau), on déplace $N-1$ valeurs.
 
 L'algorithme est donc en $O(N)$.
@@ -136,6 +145,7 @@ L'algorithme est donc en $O(N)$.
 
 {{% note tip %}}
 Les **listes chaînées** constituent une structure de données :
+
 - de *longueur modifiable* ;
 - *plus efficace que les tableaux lorsqu'il s'agit d'ajouter ou de retirer un élément* (il n'est pas nécessaire de faire de la place en déplaçant les éléments) ;
 - qui servira de brique à l'élaboration d'autres structures de données.
@@ -143,6 +153,7 @@ Les **listes chaînées** constituent une structure de données :
 
 {{% note tip %}}
 Une **liste chaînée** permet de représenter une liste ; *chaque élément de cette liste est une **cellule*** contenant :
+
 - la **valeur** de l'élément à stocker ;
 - l'**adresse mémoire de la cellule** représentant l'élément suivant.
 {{% /note %}}
@@ -156,6 +167,7 @@ Une **liste chaînée** permet de représenter une liste ; *chaque élément de 
 En langage Python, on peut implémenter une cellule à l'aide d'une classe, de listes ou de tuples.
 
 8. Définir la classe `Cellule` dont la spécification est :
+
 ```python
 class Cellule():
     """
@@ -175,20 +187,21 @@ class Cellule():
 La *dernière cellule d'une liste chaînée devra pointer vers l'objet* `None` *qui représente donc une **cellule vide**.*
 {{% /note %}}
 
-9. Instancier 3 objets `c1`, `c2`, `c3`, de type `Cellule`, dont les valeurs sont 1, 2, 3.   
+9. Instancier 3 objets `c1`, `c2`, `c3`, de type `Cellule`, dont les valeurs sont 1, 2, 3.
 Tous ces objets sont pour l'instant isolés (ils ne pointent vers aucune autre cellule si ce n'est la cellule vide `None`).
 
 10. Créer la liste `lst` à l'aide de ces trois objets.
 
-11. Comment aurait-on pu créer la liste `lst` en une seule instruction ?   
+11. Comment aurait-on pu créer la liste `lst` en une seule instruction ?
 <img src="/terminales-nsi/chap-7/chap-7-1-2.png" alt="" width="65%" />
 
 ### Les listes chaînées sont des structures fondamentalement récursives
 
 {{% note tip %}}
 Une liste chaînée est :
+
 - *soit la liste vide* (objet `None`) ;
-- *soit constituée de son premier élément* (objet de type `Cellule`) et *du reste des éléments qui forment aussi une liste*.    
+- *soit constituée de son premier élément* (objet de type `Cellule`) et *du reste des éléments qui forment aussi une liste*.
 Une liste chaînée est donc une **structure récursive**.
 {{% /note %}}
 
@@ -201,6 +214,7 @@ Tout au long de ce document nous allons uniquement envisager des listes chaîné
 ### Longueur d'une liste chaînée
 
 12. Écrire la fonction `longueur` dont la spécification est :
+
 ```python
 def longueur(lst: Cellule) -> int:
     """
@@ -208,9 +222,10 @@ def longueur(lst: Cellule) -> int:
 
     Algorithm récursif.
     """
-``` 
+```
 
 13. Écrire la fonction `longueur_iter` dont la spécification est :
+
 ```python
 def longueur_iter(lst: Cellule) -> int:
     """
@@ -218,7 +233,7 @@ def longueur_iter(lst: Cellule) -> int:
 
     Algorithm itératif.
     """
-``` 
+```
 
 14. Déterminer la complexité du calcul de la longueur d'une liste.
 {{% solution "Réponse" %}}
@@ -229,6 +244,7 @@ La complexité est donc en $O(N)$.
 ### Affichage de tous les éléments d'une liste
 
 15. Écrire la fonction `affichage_elements_liste` dont la spécification est :
+
 ```python
 def affichage_elements_liste(lst: Cellule) -> None:
     """
@@ -240,6 +256,7 @@ def affichage_elements_liste(lst: Cellule) -> None:
 ### Valeur du n-ième élément d'une liste
 
 16. Écrire la fonction `n_ieme_element` dont la spécification est :
+
 ```python
 def n_ieme_element(lst: Cellule, i: int) -> int:
     """
@@ -251,9 +268,10 @@ def n_ieme_element(lst: Cellule, i: int) -> int:
 
     Lève une exception si l'indice de la liste est trop grand.
     """
-``` 
+```
 
 17. Écrire la fonction `n_ieme_element_iter` dont la spécification est :
+
 ```python
 def n_ieme_element_iter(lst: Cellule, i: int) -> int:
     """
@@ -265,19 +283,20 @@ def n_ieme_element_iter(lst: Cellule, i: int) -> int:
 
     Lève une exception si l'indice de la liste est trop grand.
     """
-``` 
+```
 
 18. Déterminer la complexité de la recherche du n-ième élément d'une liste.
 {{% solution "Réponse" %}}
+
 - Si l'élément dont on cherche la valeur est le dernier de la liste il est nécessaire de faire $N$ appels récursifs (ou tours de boucles).
 - Si l'indice est hors des limites, il est ici aussi nécessaire de parcourir toute la liste avant de s'en rendre compte.
 L'algorithm est donc en $O(N)$.
 {{% /solution %}}
 
-
 ### Modification de la valeur d'une cellule sans modifier la structure de la liste
 
-19. Écrire la fonction `modifier_n_ieme_element` dont la spécification est : 
+19. Écrire la fonction `modifier_n_ieme_element` dont la spécification est :
+
 ```python
 def modifier_n_ieme_element(lst: Cellule, i: int, valeur: int) -> None:
     """
@@ -294,6 +313,7 @@ def modifier_n_ieme_element(lst: Cellule, i: int, valeur: int) -> None:
 ### Ajout d'une valeur à la fin de la liste
 
 20. Écrire la fonction `ajout_fin_liste` dont la spécification est :
+
 ```python
 def ajout_fin_liste(lst: Cellule, valeur: Cellule) -> None:
     """
@@ -302,7 +322,7 @@ def ajout_fin_liste(lst: Cellule, valeur: Cellule) -> None:
 
     Algorithme récursif.
     """
-``` 
+```
 
 21. Quelle est la complexité de la fonction `ajout_fin_liste` ?
 {{% solution "Réponse" %}}
@@ -310,6 +330,7 @@ On doit parcourir toute la liste pour ajouter un élément à la fin. La complex
 {{% /solution %}}
 
 22. Écrire la fonction `ajout_debut_liste` dont la spécification est :
+
 ```python
 def ajout_debut_liste(lst: Cellule, valeur: Cellule) -> Cellule:
     """
@@ -327,6 +348,7 @@ $O(1)$
 ### Retrait du dernier élément d'une liste
 
 24. Écrire la fonction `retrait_dernier_element` dont la spécification est :
+
 ```python
 def retrait_dernier_element(lst: Cellule) -> int:
     """
@@ -343,6 +365,7 @@ On appelle **concaténation** de deux listes l'opération consistant à mettre b
 {{% /note %}}
 
 25. Écrire la fonction `concatener` dont la spécification est :
+
 ```python
 def concatener(lst1: Cellule, lst2: Cellule) -> Cellule:
     """
@@ -356,10 +379,12 @@ def concatener(lst1: Cellule, lst2: Cellule) -> Cellule:
     
     Algorithme récursif.
     """
-``` 
+```
+
 <img src="/terminales-nsi/chap-7/chap-7-1-3.png" alt="" width="100%" />
 
 26. Écrire la fonction `copie` dont la spécification est :
+
 ```python
 def copie(lst: Cellule) -> Cellule:
     """
@@ -367,10 +392,12 @@ def copie(lst: Cellule) -> Cellule:
 
     Algorithme récursif.
     """
-``` 
+```
+
 <img src="/terminales-nsi/chap-7/chap-7-1-4.png" alt="" width="75%" />
 
-27. Se servir de la fonction `copie` pour écrire la fonction `concatener_avec_copie_integrale` dont la spécification est : 
+27. Se servir de la fonction `copie` pour écrire la fonction `concatener_avec_copie_integrale` dont la spécification est :
+
 ```python
 def concatener_avec_copie_integrale(lst1: Cellule, lst2: Cellule) -> Cellule:
     """
@@ -380,17 +407,20 @@ def concatener_avec_copie_integrale(lst1: Cellule, lst2: Cellule) -> Cellule:
     Algorithme récursif.
     """
 ```
+
 <img src="/terminales-nsi/chap-7/chap-7-1-5.png" alt="" width="100%" />
 
 28. Quelle est la complexité de la fonction `concatener` ? Même question pour la fonction `concatener_avec_copie_integrale`.
 {{% solution "Réponse" %}}
+
 - Dans le premier cas, il est nécessaire de recopier tous les éléments de `lst1`. La complexité est donc linéaire et dépend du nombre d'élements de `lst1`.
 - Dans le second cas, on recopie tous les éléments de `lst1` et de `lst2`. La complexité est donc linéaire et est la somme du nombre d'éléments de `lst1` et de `lst2`.
 {{% /solution %}}
 
 ### Renverser une liste
 
-29. Écrire la fonction `renverser` dont la spécification est : 
+29. Écrire la fonction `renverser` dont la spécification est :
+
 ```python
 def renverser(lst: Cellule) -> Cellule:
     """
@@ -400,21 +430,21 @@ def renverser(lst: Cellule) -> Cellule:
     Algorithme récursif.
     """
 ```
+
 **Remarque.** Cette fonction doit s'appuyer sur les fonctions `concatener` ou `concatener_avec_copie_integrale`.
 
 <img src="/terminales-nsi/chap-7/chap-7-1-6.png" alt="" width="85%" />
 
 **Remarque.** Cet algorithme est particulièrement inefficace.
 
-
 ## Conclusion
 
 {{% note tip %}}
-- Une **liste chaînée** est une structure de données utile pour représenter une *séquence finie d'éléments*. 
-- Chaque élément est contenu dans une **cellule**, qui fournit, en plus de la **valeur**, un moyen pour accéder à la **cellule suivante**. 
+
+- Une **liste chaînée** est une structure de données utile pour représenter une *séquence finie d'éléments*.
+- Chaque élément est contenu dans une **cellule**, qui fournit, en plus de la **valeur**, un moyen pour accéder à la **cellule suivante**.
 - Les opérations sur les listes chaînées se programment sous la forme de **parcours qui suivent ces liaisons**, en utilisant la récursivité ou des boucles.
 {{% /note %}}
-
 
 ## Tests possibles
 
