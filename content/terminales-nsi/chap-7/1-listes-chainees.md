@@ -492,4 +492,4 @@ if __name__ == "__main__":
     dernier = retrait_dernier_element(lst)
     print(dernier)
     affichage_elements_liste(lst)
-    ```
+```
