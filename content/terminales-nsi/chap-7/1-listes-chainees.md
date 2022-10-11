@@ -220,7 +220,7 @@ def longueur(lst: Cellule) -> int:
     """
     Détermine la longueur de la liste lst.
 
-    Algorithm récursif.
+    Algorithme récursif.
     """
 ```
 
@@ -231,7 +231,7 @@ def longueur_iter(lst: Cellule) -> int:
     """
     Détermine la longueur de la liste lst.
 
-    Algorithm itératif.
+    Algorithme itératif.
     """
 ```
 
