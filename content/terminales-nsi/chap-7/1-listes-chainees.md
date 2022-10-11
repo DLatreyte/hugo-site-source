@@ -253,9 +253,22 @@ def affichage_elements_liste(lst: Cellule) -> None:
     """
 ```
 
+16. Définir la fonction `list_to_str` dont la spécification est :
+
+```python
+def list_to_str(lst: Cellule, premier: bool = True) -> str:
+    """
+    Retourne une chaîne de caractères constituée de toutes
+    les valeurs, sous la forme : "[valeur1, valeur2, ...]".
+
+    premier est positionné à True si la valeur est la première
+    de la liste et à False pour toutes les autres valeurs.
+    """
+```
+
 ### Valeur du n-ième élément d'une liste
 
-16. Écrire la fonction `n_ieme_element` dont la spécification est :
+17. Écrire la fonction `n_ieme_element` dont la spécification est :
 
 ```python
 def n_ieme_element(lst: Cellule, i: int) -> int:
@@ -270,7 +283,7 @@ def n_ieme_element(lst: Cellule, i: int) -> int:
     """
 ```
 
-17. Écrire la fonction `n_ieme_element_iter` dont la spécification est :
+18. Écrire la fonction `n_ieme_element_iter` dont la spécification est :
 
 ```python
 def n_ieme_element_iter(lst: Cellule, i: int) -> int:
@@ -285,7 +298,7 @@ def n_ieme_element_iter(lst: Cellule, i: int) -> int:
     """
 ```
 
-18. Déterminer la complexité de la recherche du n-ième élément d'une liste.
+19. Déterminer la complexité de la recherche du n-ième élément d'une liste.
 {{% solution "Réponse" %}}
 
 - Si l'élément dont on cherche la valeur est le dernier de la liste il est nécessaire de faire $N$ appels récursifs (ou tours de boucles).
@@ -295,7 +308,7 @@ L'algorithm est donc en $O(N)$.
 
 ### Modification de la valeur d'une cellule sans modifier la structure de la liste
 
-19. Écrire la fonction `modifier_n_ieme_element` dont la spécification est :
+20. Écrire la fonction `modifier_n_ieme_element` dont la spécification est :
 
 ```python
 def modifier_n_ieme_element(lst: Cellule, i: int, valeur: int) -> None:
@@ -312,7 +325,7 @@ def modifier_n_ieme_element(lst: Cellule, i: int, valeur: int) -> None:
 
 ### Ajout d'une valeur à la fin de la liste
 
-20. Écrire la fonction `ajout_fin_liste` dont la spécification est :
+21. Écrire la fonction `ajout_fin_liste` dont la spécification est :
 
 ```python
 def ajout_fin_liste(lst: Cellule, valeur: Cellule) -> None:
@@ -324,12 +337,12 @@ def ajout_fin_liste(lst: Cellule, valeur: Cellule) -> None:
     """
 ```
 
-21. Quelle est la complexité de la fonction `ajout_fin_liste` ?
+22. Quelle est la complexité de la fonction `ajout_fin_liste` ?
 {{% solution "Réponse" %}}
 On doit parcourir toute la liste pour ajouter un élément à la fin. La complexité est donc linéaire.
 {{% /solution %}}
 
-22. Écrire la fonction `ajout_debut_liste` dont la spécification est :
+23. Écrire la fonction `ajout_debut_liste` dont la spécification est :
 
 ```python
 def ajout_debut_liste(lst: Cellule, valeur: Cellule) -> Cellule:
@@ -340,14 +353,14 @@ def ajout_debut_liste(lst: Cellule, valeur: Cellule) -> Cellule:
     """
 ````
 
-23. Quelle est la complexité de cette fonction ?
+24. Quelle est la complexité de cette fonction ?
 {{% solution "Réponse" %}}
 $O(1)$
 {{% /solution %}}
 
 ### Retrait du dernier élément d'une liste
 
-24. Écrire la fonction `retrait_dernier_element` dont la spécification est :
+25. Écrire la fonction `retrait_dernier_element` dont la spécification est :
 
 ```python
 def retrait_dernier_element(lst: Cellule) -> int:
@@ -364,7 +377,7 @@ def retrait_dernier_element(lst: Cellule) -> int:
 On appelle **concaténation** de deux listes l'opération consistant à mettre bout à bout les deux listes.
 {{% /note %}}
 
-25. Écrire la fonction `concatener` dont la spécification est :
+26. Écrire la fonction `concatener` dont la spécification est :
 
 ```python
 def concatener(lst1: Cellule, lst2: Cellule) -> Cellule:
@@ -383,7 +396,7 @@ def concatener(lst1: Cellule, lst2: Cellule) -> Cellule:
 
 <img src="/terminales-nsi/chap-7/chap-7-1-3.png" alt="" width="100%" />
 
-26. Écrire la fonction `copie` dont la spécification est :
+27. Écrire la fonction `copie` dont la spécification est :
 
 ```python
 def copie(lst: Cellule) -> Cellule:
@@ -396,7 +409,7 @@ def copie(lst: Cellule) -> Cellule:
 
 <img src="/terminales-nsi/chap-7/chap-7-1-4.png" alt="" width="75%" />
 
-27. Se servir de la fonction `copie` pour écrire la fonction `concatener_avec_copie_integrale` dont la spécification est :
+28. Se servir de la fonction `copie` pour écrire la fonction `concatener_avec_copie_integrale` dont la spécification est :
 
 ```python
 def concatener_avec_copie_integrale(lst1: Cellule, lst2: Cellule) -> Cellule:
@@ -410,7 +423,7 @@ def concatener_avec_copie_integrale(lst1: Cellule, lst2: Cellule) -> Cellule:
 
 <img src="/terminales-nsi/chap-7/chap-7-1-5.png" alt="" width="100%" />
 
-28. Quelle est la complexité de la fonction `concatener` ? Même question pour la fonction `concatener_avec_copie_integrale`.
+29. Quelle est la complexité de la fonction `concatener` ? Même question pour la fonction `concatener_avec_copie_integrale`.
 {{% solution "Réponse" %}}
 
 - Dans le premier cas, il est nécessaire de recopier tous les éléments de `lst1`. La complexité est donc linéaire et dépend du nombre d'élements de `lst1`.
@@ -419,7 +432,7 @@ def concatener_avec_copie_integrale(lst1: Cellule, lst2: Cellule) -> Cellule:
 
 ### Renverser une liste
 
-29. Écrire la fonction `renverser` dont la spécification est :
+30. Écrire la fonction `renverser` dont la spécification est :
 
 ```python
 def renverser(lst: Cellule) -> Cellule:
@@ -475,6 +488,7 @@ if __name__ == "__main__":
     lst2 = Cellule(5, Cellule(6, Cellule(7, None)))
     lst3 = concatener_avec_copie_integrale(lst1, lst2)
     print(lst3)
+    print(list_to_str(lst3))
 
     # Modification de la liste
     modifier_n_ieme_element(lst, 0, 12)
@@ -483,6 +497,7 @@ if __name__ == "__main__":
     # Ajout en fin de liste
     ajout_fin_liste(lst, Cellule(25, None))
     affichage_elements_liste(lst)
+    print(list_to_str(lst))
 
     # Ajout en début de liste
     lst = ajout_debut_liste(lst, Cellule(34, None))
