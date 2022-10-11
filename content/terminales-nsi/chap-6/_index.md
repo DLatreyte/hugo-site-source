@@ -27,6 +27,4 @@ layout: "single"
 
 - **Doc. :** [*Itérer sur les éléments d'un dictionnaire*](2-exercices)
 
-<!--
 - **Doc. :** [*Annale*](3-annale)
--->
