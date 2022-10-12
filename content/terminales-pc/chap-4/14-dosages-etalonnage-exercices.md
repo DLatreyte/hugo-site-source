@@ -1,6 +1,6 @@
 ---
 title: "Dosages par étalonnage : exercices"
-subtitle: "5"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-10-25T09:17:28+04:00
@@ -9,7 +9,7 @@ toc: true
 tags: ["Dosage", "Étalonnage", "Conductimétrie", "Kohlrausch", "Beer-Lambert"]
 categories: ["Chimie", "Terminale Spé PC"]
 image: ""
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: true
 ---
 
