@@ -1,6 +1,6 @@
 ---
 title: "Transformation de la matière, transformations chimiques"
-subtitle: "Chapitre 6,1"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-01-05T18:19:27+04:00
@@ -22,9 +22,7 @@ mathjax: true
 Un **système chimique** est un *échantillon de matière, décrit par différents paramètres*, auquel on s'intéresse.
 {{% /note %}}
 
-
 ### Description d'un système chimique : État du système
-
 
 {{% note tip %}}
 En théorie, lorsqu'on décrit l'état d'un système, il est nécessaire de préciser :
@@ -38,10 +36,10 @@ En théorie, lorsqu'on décrit l'état d'un système, il est nécessaire de pré
 - La valeur des **paramètres physiques** (*pression* et *température*).
 {{% /note %}}
 
-
 ### Évolution d'un système chimique
 
 {{% note tip %}}
+
 - Un système chimique évolue *lorsque l'une quelconque de ses propriétés est modifiée*.
 
 - L'état du système avant toute évolution constitue l'**état initial**.
@@ -51,10 +49,10 @@ En théorie, lorsqu'on décrit l'état d'un système, il est nécessaire de pré
 - On nomme **transformation** *le passage d'un système chimique de l'état initial à l'état final*.
 {{% /note %}}
 
-
 ### Transformation physique, transformation chimique, transformation nucléaire
 
 {{% note tip %}}
+
 - Lorsque l'évolution d'un système chimique s'accompagne de l'*apparition de nouvelles espèces chimiques*, le passage de l'état initial à l'état final est une **transformation chimique**.
 
 - Lorsque l'évolution d'un système chimique est due à la *modification d'un paramètre physique du milieu extérieur au système (température, pression, ...)*, le passage de l'état initial à l'état final est une **transformation physique**.
@@ -62,7 +60,6 @@ En théorie, lorsqu'on décrit l'état d'un système, il est nécessaire de pré
 - Lorsque l'évolution d'un système chimique s'accompagne de la *modification de la composition de noyaux et/ou l'apparition de nouveaux noyaux*, le passage de l'état initial à l'état final est une transformation nucléaire.\
     Parmi les processus nucléaires on trouve la *radioactivité*, la *fusion nucléaire* et la *fission*.
 {{% /note %}}
-
 
 ### Effets thermiques accompagnant la transformation d'un système
 
@@ -74,7 +71,6 @@ La transformation d'un système **peut** s'accompagner d'effets thermiques :
 - *Si lors de sa transformation le système cède de l'énergie au milieu extérieur*, la transformation est dite **exothermique**.
 {{% /note %}}
 
-
 ## Transformations chimiques
 
 > *Une transformation peut être qualifiée de chimique lorsque l'évolution du système est provoquée par la réaction entre certaines des espèces chimiques qui le constituent.*
@@ -85,12 +81,12 @@ La transformation d'un système **peut** s'accompagner d'effets thermiques :
 La description à l'*échelle macroscopique* de l'évolution d'un système chimique est modélisée par un processus appelé **réaction chimique**.
 {{% /note %}}
 
-
 > La réaction chimique est le « moteur de la transformation », c'est à cause/grâce d'elle que le système évolue.
 
 ### Réactifs et produits
 
 {{% note tip %}}
+
 - Une espèce chimique dont la *quantité de matière diminue lors de la transformation* (elle peut s'annuler) est appelée un **réactif**.
 
 Remarque
@@ -99,25 +95,24 @@ Remarque
 - Une espèce chimique dont la *quantité de matière augmente lors d'une transformation* est appelée un **produit**.
 {{% /note %}}
 
-
 ### Équation d'une réaction chimique
 
 {{% note tip %}}
+
 - L'équation chimique est l'écriture symbolique, **à l'échelle macroscopique**, de la réaction chimique.
 
 - L'équation d'une réaction chimique traduit **un bilan en quantité de matière**.
 
 - L'écriture d'une réaction chimique doit respecter :
 
-    - La loi de conservation **de la charge électrique**.
+  - La loi de conservation **de la charge électrique**.
 
     **Remarque :** *Cette loi est une loi fondamentale de la nature jamais mise en défaut.*
 
-    - La **conservation des noyaux**, appelée **conservation des éléments chimiques**).
+  - La **conservation des noyaux**, appelée **conservation des éléments chimiques**).
 
     **Remarque :** *Cette loi est propre à la chimie, elle ne s'applique bien sur pas en physique nucléaire.*
 {{% /note %}}
-
 
 ### Méthode pour ajuster les nombres stœchiométriques
 
@@ -126,6 +121,7 @@ Remarque
 {{% /note %}}
 
 {{% note normal %}}
+
 1. Identifier réactifs et produits en précisant leur état physique.
 
 2. Écrire les formules brutes des différents constituants à gauche (réactifs) et à droite (produits).
@@ -138,4 +134,3 @@ Remarque
 
 4. Réécrire l'équation de la réaction avec les nombres stœchiométriques ajustés, puis vérifier la loi de conservation des charges électriques.
 {{% /note %}}
-

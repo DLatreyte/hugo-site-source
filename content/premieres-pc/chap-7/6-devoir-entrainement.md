@@ -1,6 +1,6 @@
 ---
 title: "Devoir d'entraînement"
-subtitle: "Chapitre 6,6"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-02-19T22:06:36+04:00
@@ -20,4 +20,3 @@ auto_numbering: true
 - {{< remote "Correction au format pdf" "/premieres-pc/chap-7/chap-7-6/chap-7-6-2.pdf" >}}
 
 {{% /solution %}}
-

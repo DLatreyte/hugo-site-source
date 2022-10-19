@@ -1,6 +1,6 @@
 ---
 title: "Une transformation chimique n'est pas toujours totale"
-subtitle: "Chapitre 6,5"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-01-09T21:55:40+04:00
@@ -14,6 +14,7 @@ auto_numbering: true
 ---
 
 > Objectifs
+>
 >- Mesurer le pH de différentes solutions.
 >- Effectuer des dilutions.
 >- Déterminer si des transformations chimiques sont totales ou limitées.
@@ -22,7 +23,7 @@ auto_numbering: true
 
 {{% note normal %}}
 
-#### Concentration molaire apportée en soluté.
+#### Concentration molaire apportée en soluté
 
 La concentration molaire apportée en soluté est la *quantité de matière
 de soluté dissoute par unité de volume de solution*. Elle est notée $C$
@@ -34,7 +35,7 @@ $$
 
 {{% note normal %}}
 
-#### Concentration molaire effective en espèces dissoutes.
+#### Concentration molaire effective en espèces dissoutes
 
 Pour chaque espèce chimique $X$ dissoute en solution, la concentration
 molaire effective en espèce dissoute est la **quantité de matière de
@@ -46,6 +47,7 @@ $$
 {{% /note %}}
 
 {{% note normal %}}
+
 #### Potentiel hydrogène (ou pH)
 
 Le **potentiel hydrogène** (ou **pH**) est une mesure de l'activité
@@ -64,6 +66,7 @@ solution. Ainsi, dans un milieu aqueux à 25&nbsp;°C :
 {{% /note %}}
 
 {{% note normal %}}
+
 #### Relation entre le pH et la concentration en ions oxonium
 
 *Lorsque les solutions aqueuses sont diluées* ($\left[ \text{H}_3 \text{O}^+ \right] < 1 {,}0 \cdot 10^{- 1} \text{mol} \cdot \text{L}^{- 1}$), la valeur du pH peut être déterminée à l'aide de l'expression :
@@ -81,6 +84,7 @@ Remarque
 {{% /note %}}
 
 {{% note normal %}}
+
 #### Différents types d'acides
 
 Un **acide**, au sens de Brönsted, est un composé chimique, soit
@@ -100,13 +104,11 @@ est capable de libérer l'ion oxonium $\ce{H3O+}$.
     $$
 {{% /note %}}
 
-
 ## Travail à réaliser
 
 ### Solution d'acide chlorhydrique
 
 #### Préparation de solutions
-
 
 On dispose d'une solution $S\_0$ d'acide chlorhydrique $\left( \ce{H3O+ + Cl- (aq)} \right)$ de *concentration apportée* $\pu{0,10 mol.L-1}$.
 
@@ -121,7 +123,6 @@ Il faut donc prélever $\pu{10,0 mL}$ de la solution $S_0$ à l'aide d'une pipe
 
 2. Toujours à partir de la solution $S\_0$, préparer une autre solution $S\_2$ d'acide chlorhydrique de concentration $\pu{1,0e-3 mol.L-1}$.\
     Pourquoi vaut-il mieux utiliser la solution $S\_0$ et non pas la solution $S\_1$ ?
-
 
 - Maintenant que la technique est maîtrisée, préparer les solution $S\_3$, $S\_4$, d'acide chlorhydrique de concentrations $\pu{1,0e-4 mol.L-1}$, $\pu{1,0e-5 mol.L-1}$.\
     Bien réfléchir à chaque fois à la manière d'effectuer ces dilutions.
@@ -149,7 +150,6 @@ solutions étalons (aussi appelées *solutions tampons*), c'est à dire
 deux solutions dont le pH est déterminé et constant à température
 donnée.
 {{% /note %}}
-
 
 3. Mesurer le pH des solutions $S\_4$, $S\_3$, $S\_2$, $S\_1$, $S\_0$.\
     Pourquoi est-il conseillé de procéder dans ce sens ?
@@ -192,12 +192,9 @@ Remplir le tableau :
 
 7. Ces transformations peuvent-elles être considérées totales ?
 
-
 ### Acide éthanoïque
 
-
 #### Préparation de solutions
-
 
 On dispose d'une solution $S'\_0$ d'acide éthanoïque $\ce{CH3COOH (aq)}$ de *concentration apportée* $\pu{0,10 mol.L-1}$.\
 Comme précédemment, préparer des solutions $S'\_1$, $S'\_2$, $S'\_3$, $S'\_4$ d'acide éthanoïque de concentration molaire $\pu{1,0e-2 mol.L-1}$ ; $\pu{1,0e-3 mol.L-1}$ ; $\pu{1,0e-4 mol.L-1}$ ; $\pu{1,0e-5 mol.L-1}$.

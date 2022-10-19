@@ -1,6 +1,6 @@
 ---
 title: "Bilan quantitatif des transformations chimiques"
-subtitle: "Chapitre 6,3"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-01-05T21:39:20+04:00
@@ -29,7 +29,6 @@ L'évolution d'un système chimique peut conduire à deux situations différente
 - *Dans l'état final, aucun des réactifs n'a totalement disparu mais le système chimique a atteint un **état d'équilibre chimique***&nbsp;: la transformation chimique est alors dite **limitée** et l'état final est un état d'équilibre.
 {{% /note %}}
 
-
 ## Mélange dans les proportions stœchiométriques
 
 {{% note tip %}}
@@ -37,6 +36,7 @@ L'évolution d'un système chimique peut conduire à deux situations différente
 {{% /note %}}
 
 #### Exercice 1. Réaction du monoxyde de carbone et du dioxygène
+
 Le monoxyde de carbone $\ce{CO}$ peut réagir avec le dioxygène pour former du dioxyde de carbone.
 
 1. Écrire l'équation de cette réaction en utilisant les nombres stœchiométriques entiers les plus petits possibles.
@@ -46,7 +46,7 @@ $$
     CO (g) + 1/2 O2 (g) --> CO2 (g)
 }
 $$
-donc 
+donc
 $$
 \ce{
     2 CO (g) + O2 (g) --> 2 CO2 (g)
@@ -56,10 +56,10 @@ $$
 
 2. Quelle quantité de matière de dioxygène est nécessaire pour faire réagir 2 moles de monoxyde de carbone&nbsp;? Pour faire réagir 6 moles de monoxyde de carbone&nbsp;?
 {{% solution "Réponse" %}}
-D'après l'équation de la réaction, 
+D'après l'équation de la réaction,
 $$
-    \dfrac{n(\ce{CO})\_{\text{qui réagit}}}{n (\ce{O2})\_{\text{qui réagit}}} 	= \dfrac{2}{1} 
-    \iff 
+    \dfrac{n(\ce{CO})\_{\text{qui réagit}}}{n (\ce{O2})\_{\text{qui réagit}}}  = \dfrac{2}{1}
+    \iff
     n (\ce{O2})\_{\text{qui réagit}} = \dfrac{1}{2} n(\ce{CO})\_{\text{qui réagit}}
 $$
 
@@ -73,7 +73,7 @@ Pour faire réagir $\pu{2 mol}$ de monoxyde de carbone, il faut $\pu{1 mol}$ de 
 D'après l'équation de la réaction,
 $$
     \dfrac{n(\ce{CO})\_{\text{qui réagit}}}{n (\ce{CO2})\_{\text{qui se forme}}} = \dfrac{2}{2} = 1
-    \iff 
+    \iff
     n (\ce{CO2})\_{\text{qui se forme}} = n(\ce{CO})\_{\text{qui réagit}}
 $$
 
@@ -84,10 +84,9 @@ $$
 4. Déterminer l'expression littérale indiquant quelles sont « les proportions données par les nombres stœchiométriques » pour la réaction étudiée dans cet exercice.
 {{% solution "Réponse" %}}
 $$
-    \dfrac{n(\ce{CO})\_{\text{qui réagit}}}{2} = \dfrac{n (\ce{O2})\_{\text{qui réagit}}}{1} = \dfrac{n (\ce{CO2})\_{\text{qui se forme}}}{2} 
-$$ 
+    \dfrac{n(\ce{CO})\_{\text{qui réagit}}}{2} = \dfrac{n (\ce{O2})\_{\text{qui réagit}}}{1} = \dfrac{n (\ce{CO2})\_{\text{qui se forme}}}{2}
+$$
 {{% /solution %}}
-
 
 #### Exercice 2. Synthèse du nitrobenzène
 
@@ -110,7 +109,6 @@ $$
 $$
 ce qui n'est pas le cas ici puisque $\pu{2 mol} \neq \pu{3 mol}$.
 {{% /solution %}}
- 
 
 #### Exercice 3. Combustion du propane
 
@@ -136,7 +134,6 @@ $$
 ce qui n'est pas le cas ici puisque $\pu{2 mol} \neq \dfrac{\pu{3 mol}}{5} = \pu{0,6 mol}$.
 {{% /solution %}}
 
- 
 ## Transformation chimique totale
 
 {{% note tip %}}
@@ -145,7 +142,7 @@ Ce réactif est alors appelé **réactif limitant**.
 {{% /note %}}
 
 {{% note tip %}}
-On appelle **avancement maximal** $x\_{\text{max}}$ *l'avancement final d'une transformation chimique totale* : 
+On appelle **avancement maximal** $x\_{\text{max}}$ *l'avancement final d'une transformation chimique totale* :
 $$
     x_f = x_{\text{max}} \iff \text{la transformation chimique est totale}$$
 {{% /note %}}
@@ -174,6 +171,7 @@ $$
 
     3. La composition de l'état final.
 {{% solution "Réponse" %}}
+
 <center>
 
 | État | Avancement | $\ce{2 H2S}$ | $+$ | $\ce{SO2}$ | $\ce{-->}$ | $\ce{3 S}$ | $+$ | $\ce{2 H2O}$ |
@@ -203,8 +201,8 @@ $$
 
 2. Pour $\pu{x = 1,25 mol}$,
     - $n (\ce{H2S}) = n_0 (\ce{H2S}) - 2 x = \pu{5,0 mol} - 2 \times \pu{1,25 mol} = \pu{2,5 mol}$
-    
-    - $ n (\ce{SO2}) = n_0 (\ce{SO2}) - x = \pu{4,0 mol}- \pu{1,25 mol} = \pu{2,75 mol} $ 
+
+    - $ n (\ce{SO2}) = n_0 (\ce{SO2}) - x = \pu{4,0 mol}- \pu{1,25 mol} = \pu{2,75 mol} $
 
     - $ n (\ce{S}) = 3 x = 3 \times \pu{1,25 mol} = \pu{3,75 mol} $
 
@@ -212,7 +210,7 @@ $$
 
 3. Dans l'état final,
     - $n_f(\ce{H2S}) = \pu{0 mol}$
-    
+
     - $n (\ce{SO2}) = \pu{4 mol} - \pu{2,5 mol} = \pu{1,5 mol}$
 
     - $n (\ce{S}) = 3 \times \pu{2,5 mol} = \pu{7,5 mol}$
@@ -220,7 +218,7 @@ $$
     - $n (\ce{H2O}) = 2 \times \pu{2,5 mol} = \pu{5,0 mol}$
 {{% /solution %}}
 
-3.  On considère à présent un mélange initial contenant 3,5 moles de dioxyde de soufre et $n$ moles de sulfure d'hydrogène.
+3. On considère à présent un mélange initial contenant 3,5 moles de dioxyde de soufre et $n$ moles de sulfure d'hydrogène.
 
     1. Déterminer la valeur de $n$ pour que le mélange initial soit dans les proportions stœchiométriques.
 
@@ -246,7 +244,7 @@ $$
 
     Lorsque le mélange des réactifs est préparé dans les proportions stœchiométriques il ne reste aucun des réactifs dans l'état final.
 {{% /solution %}}
- 
+
 #### Exercice 5. Obtention du monoxyde d'azote
 
 La réaction de l'ammoniac $\ce{NH3}$ avec le dioxygène, pour donner de l'eau et du monoxyde d'azote $\ce{NO}$, est l'une des étapes de la synthèse industrielle de l'acide nitrique.
@@ -255,13 +253,13 @@ La réaction de l'ammoniac $\ce{NH3}$ avec le dioxygène, pour donner de l'eau e
 {{% solution "Réponse" %}}
 $$
 \ce{
-    NH3 + 5/4 O2 --> NO + 3/2 H2O 
+    NH3 + 5/4 O2 --> NO + 3/2 H2O
 }
 $$
 donc
 $$
 \ce{
-    4 NH3 + 5 O2 --> 4 NO + 6 H2O 
+    4 NH3 + 5 O2 --> 4 NO + 6 H2O
 }
 $$
 
@@ -357,7 +355,6 @@ $m_f (\ce{NH3}) + m_f (\ce{O2}) + m_f (\ce{NO}) + m_f (\ce{H2O}) = \pu{136 g} + 
 La masse totale du système est conservée lors d'une transformation chimique.
 {{% /solution %}}
 
- 
 #### Exercice 6. Combustion de l'aluminium
 
 Le métal aluminium Al brûle dans le dioxygène pour donner de l'alumine $\ce{Al2O3}$ solide.
@@ -380,9 +377,7 @@ Donnée
 On ne retrouve des réactifs dans l'état final si ces réactifs sont introduits dans les proportions stœchiométriques et si la transformation chimique est totale.
 {{% /note %}}
 
-
 ## Une transformation chimique n'est pas toujours totale
-
 
 {{% note tip %}}
 

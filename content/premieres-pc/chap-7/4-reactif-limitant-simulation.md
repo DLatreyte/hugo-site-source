@@ -1,6 +1,6 @@
 ---
 title: "Recherche d'un réactif limitant à l'aide d'un programme écrit en Python"
-subtitle: "Chapitre 6,4"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-01-09T21:54:37+04:00
