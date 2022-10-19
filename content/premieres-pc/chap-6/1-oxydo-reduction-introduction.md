@@ -1,6 +1,6 @@
 ---
 title: "Qu'est-ce qu'une réaction d'oxydo-réduction ?"
-subtitle: "Chapitre 5,1"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-11-29T04:20:35+04:00
@@ -121,25 +121,25 @@ Préciser quel test permet de mettre en évidence l'ion spectateur.
 
 ## Réaction du fer en présence de diiode
 
-### Expérience 5 
+### Expérience 5
 
 - Dans un tube à essai, verser environ $\pu{2 mL}$ d'une solution de diiode $\ce{I2 (aq)}$.
 - Ajouter environ $\pu{2 mL}$ d'une solution de cyclohexane.
-- Boucher, agiter puis laisser décanter. 
+- Boucher, agiter puis laisser décanter.
 - Observer.
 
-### Interprétation 5 
+### Interprétation 5
 
 1. Comment interpréter l'évolution des teintes&nbsp;?
 
-### Expérience 6 
+### Expérience 6
 
 - Dans un tube à essai, verser environ $\pu{2 mL}$ d'une solution de diiode $\ce{I2 (aq)}$.
 - Ajouter une spatule de limaille de fer.
 - Boucher, agiter puis laisser décanter.
 - Observer.
-- Proposer un protocole permettant de vérifier&nbsp;:    
-    a) que le diiode $\ce{I2 (aq)}$ a été consommé&nbsp;;     
+- Proposer un protocole permettant de vérifier&nbsp;:
+    a) que le diiode $\ce{I2 (aq)}$ a été consommé&nbsp;;
     b) qu'il s'est formé des ions fer (II) ou (III).
 
 ### Interprétation 6
@@ -149,7 +149,6 @@ Préciser quel test permet de mettre en évidence l'ion spectateur.
 3. Élément fer : écrire l'*équation formelle* permettant de traduire la transformation.
 4. Élément iode : écrire l'équation formelle permettant de traduire la transformation.
 5. Quelle particule a été transférée lors de cette réaction chimique ?
-
 
 ## Réaction de l'aluminium en présence de diiode
 
@@ -172,6 +171,5 @@ Préciser quel test permet de mettre en évidence l'ion spectateur.
 3. Considérons le diiode $\ce{I2}$ : écrire l'équation formelle permettant de traduire la transformation.
 
 ## Conclusion
-Toutes les réactions chimiques mises en œuvre dans ce document sont des réactions d'oxydoréduction. Qu'est-ce qu'une réaction d'oxydoréduction ?
 
- 
+Toutes les réactions chimiques mises en œuvre dans ce document sont des réactions d'oxydoréduction. Qu'est-ce qu'une réaction d'oxydoréduction ?

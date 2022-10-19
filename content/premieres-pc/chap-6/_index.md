@@ -1,6 +1,6 @@
 ---
 title: "Transformations modélisées par une réaction d'oxydo-réduction"
-subtitle: "Chapitre 5"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-11-28T23:23:21+04:00
@@ -28,10 +28,10 @@ layout: "single"
 
 ----
 
-- **Chap. 5,1 :** [*Qu'est-ce qu'une réaction d'oxydo-réduction ?*](1-oxydo-reduction-introduction)
+- **Doc. :** [*Qu'est-ce qu'une réaction d'oxydo-réduction ?*](1-oxydo-reduction-introduction)
 
-- **Chap. 5,2 :** [*Réaction d'oxydo-réduction*](2-cours)
+- **Doc. :** [*Réaction d'oxydo-réduction*](2-cours)
 
-- **Chap. 5,3 :** [*Mise en équation des réactions d'oxydoréduction*](3-exercices)
+- **Doc. :** [*Mise en équation des réactions d'oxydoréduction*](3-exercices)
 
-- **Chap. 5,4 :** [*Bilans de matière et réactions d'oxydo-réduction*](4-exercices-quantite-de-matiere)
+- **Doc. :** [*Bilans de matière et réactions d'oxydo-réduction*](4-exercices-quantite-de-matiere)
