@@ -73,7 +73,7 @@ L'onde met donc en mouvement le point $A$ pendant $\Delta t = \pu{0,25 s} - \pu{
 
 {{% note exercise %}}
 
-#### Déterminer une vitesse de propagation
+#### Déterminer une vitesse de propagation (suite)
 
 Choisir l'allure de la corde à la date $t = \pu{0,20 s}$ dans l'expérience de l'exercice précédent parmi les propositions suivantes :
 
