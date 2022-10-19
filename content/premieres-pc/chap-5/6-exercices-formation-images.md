@@ -1,6 +1,6 @@
 ---
 title: "Exercices sur la formation des images par les lentilles minces convergentes"
-subtitle: "Chapitre 5,6"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-11-25T08:13:16+04:00

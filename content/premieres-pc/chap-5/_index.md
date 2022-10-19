@@ -1,6 +1,6 @@
 ---
 title: "Images et couleurs"
-subtitle: "Chapitre 5"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-11-08T12:44:17+04:00
@@ -30,11 +30,11 @@ layout: "single"
 
 ----
 
-- **Chap. 5,1 :** [*Vision et couleurs*](1-vision-couleurs)
+- **Doc. :** [*Vision et couleurs*](1-vision-couleurs)
 
-- **Chap. 5,2 :** [*Couleur des objets*](2-couleur-objets)
+- **Doc. :** [*Couleur des objets*](2-couleur-objets)
 
-- **Chap. 5,3 :** [*Exercices*](3-exercices)
+- **Doc. :** [*Exercices*](3-exercices)
 
 ## Formation des images
 
@@ -52,11 +52,8 @@ layout: "single"
 
 ----
 
-- **Chap. 5,4 :** [*Formation d'une image par une lentille mince convergente*](4-formation-images)
+- **Doc. :** [*Formation d'une image par une lentille mince convergente*](4-formation-images)
 
-- **Chap. 5,5 :** [*Constructions des images produites par une lentille mince convergente*](5-constructions-geometriques)
+- **Doc. :** [*Constructions des images produites par une lentille mince convergente*](5-constructions-geometriques)
 
-- **Chap. 5,6 :** [*Exercices sur la construction des images par les lentilles minces convergentes*](6-exercices-formation-images)
-
-
-
+- **Doc. :** [*Exercices sur la construction des images par les lentilles minces convergentes*](6-exercices-formation-images)

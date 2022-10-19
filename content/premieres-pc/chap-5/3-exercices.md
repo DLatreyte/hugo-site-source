@@ -1,6 +1,6 @@
 ---
 title: "Exercices"
-subtitle: "Chapitre 5,3"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-11-11T09:32:04+04:00
@@ -14,6 +14,7 @@ auto_numbering: true
 ---
 
 ## Obtenir des couleurs
+
 - {{< remote "n° 10, 14, 16" "https://www.lelivrescolaire.fr/page/6903085?goTo=x0yFPCkmUyVyouvbhCIpy" >}}
 
 ## La couleur des objets

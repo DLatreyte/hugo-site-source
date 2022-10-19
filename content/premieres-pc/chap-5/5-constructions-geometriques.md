@@ -1,6 +1,6 @@
 ---
 title: "Constructions des images produites par une lentille mince convergente"
-subtitle: "Document 5,5"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-11-18T08:00:21+04:00

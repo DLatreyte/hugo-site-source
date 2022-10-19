@@ -1,6 +1,6 @@
 ---
 title: "Formation d'une image à l'aide d'une lentille mince convergente"
-subtitle: "Document 5,4"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-11-18T08:01:16+04:00

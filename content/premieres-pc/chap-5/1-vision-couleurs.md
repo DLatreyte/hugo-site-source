@@ -1,6 +1,6 @@
 ---
 title: "Vision et couleurs"
-subtitle: "Chapitre 5,1"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-11-08T12:54:05+04:00
@@ -18,6 +18,7 @@ auto_numbering: true
 <img src="/premieres-pc/chap-5/chap-5-1-1.png" alt="" width="60%" style="float: right;" />
 
 Quelques zones de la rétine&nbsp;:
+
 - **Macula&nbsp;:** région centrale, située proche de l’axe optique&nbsp;;
 - **Fovéa&nbsp;:** région centrale de la macula&nbsp;;
 - **Papille&nbsp;:** région d’émergence du nerf optique.
@@ -28,8 +29,8 @@ Quelques zones de la rétine&nbsp;:
 
 <img src="/premieres-pc/chap-5/chap-5-1-2.svg" alt="" width="60%" style="float: right;" />
 
-- La fovéa est formée par des photorécepteurs appelés **cônes** ($\approx \pu{5 millions}$)&nbsp;; 
-- Le reste de la macula et la périphérie de la rétine sont composées de photorécepteurs appelés **bâtonnets** ($\approx \pu{120 millions}$)&nbsp;; 
+- La fovéa est formée par des photorécepteurs appelés **cônes** ($\approx \pu{5 millions}$)&nbsp;;
+- Le reste de la macula et la périphérie de la rétine sont composées de photorécepteurs appelés **bâtonnets** ($\approx \pu{120 millions}$)&nbsp;;
 - La papille ne comporte aucun photorécepteur&nbsp;: c’est le **point aveugle** (*Blind Spot* sur le graphique).
 
 <div style="clear: both; "> </div>
@@ -43,15 +44,15 @@ Quelques zones de la rétine&nbsp;:
 
 <img src="/premieres-pc/chap-5/chap-5-1-4.png" alt="" width="40%" style="float: right;" />
 
-#### Remarque&nbsp;:
-- Comparer le nombre de R et de B. 
+#### Remarque&nbsp
+
+- Comparer le nombre de R et de B.
+
 <div style="clear: both; "> </div>
 
 {{% note normal %}}
 En vision photopique, l’œil est peu sensible au bleu.
 {{% /note %}}
-
-
 
 ## Répartition des bâtonnets sur la rétine
 
@@ -80,6 +81,7 @@ La densité de bâtonnets est maximale pour une direction correspondant à un an
 - Sont sensibles à la couleur&nbsp;;
 - Sont très sensibles lorsque la luminosité est forte&nbsp;;
 - Permettent une vision très précise.
+
 <div style="clear: both; "> </div>
 
 ## Utilisation des photorécepteurs
@@ -87,7 +89,6 @@ La densité de bâtonnets est maximale pour une direction correspondant à un an
 - Aux faibles luminosité, la vision est essentiellement due aux bâtonnets&nbsp;: **vision scotopique**&nbsp;;
 - Aux luminosités moyennes ou forte, la vision est essentiellement due aux cônes&nbsp;: vision photopique&nbsp;;
 - Aux luminosités intermédiaires, les deux catégories de photorécepteurs interviennent&nbsp;: **vision mésopique**.
-
 
 ## Réflexion&nbsp;: Justifier ces affirmations
 
@@ -98,5 +99,3 @@ La densité de bâtonnets est maximale pour une direction correspondant à un an
 5. Pour percevoir le mouvement d’un objet il ne faut pas le regarder directement&nbsp;;
 6. Si on fixe son attention sur un objet rouge et que l’on regarde ensuite une surface blanche, celle-ci paraît légèrement cyan&nbsp;;
 7. Dans les « blocs » de chirurgie, les vêtements du personnel sont bleu ou vert.
-
-

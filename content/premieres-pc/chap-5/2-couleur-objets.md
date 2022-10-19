@@ -1,6 +1,6 @@
 ---
 title: "Couleur des objets"
-subtitle: "Chapitre 5,2"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-11-08T13:59:35+04:00
@@ -17,7 +17,7 @@ auto_numbering: true
 
 ### Spectre de couleur d’une lumière
 
-- On appelle spectre de couleur d’une lumière le résultat de l’analyse de cette lumière par un **spectroscope** (ou **spectromètre**). 
+- On appelle spectre de couleur d’une lumière le résultat de l’analyse de cette lumière par un **spectroscope** (ou **spectromètre**).
 - Un spectroscope, composé de prismes, **dévie différemment les différentes radiations de la lumière en fonction de leur longueur d’onde** car l’indice de réfraction d’un milieu transparent homogène est différent pour chacune de ces radiations.
 
 ### Spectre de la lumière blanche
@@ -70,7 +70,7 @@ La lumière émise par du magnésium est une lumière **polychromatique**, elle 
 <img src="/premieres-pc/chap-5/chap-5-2-5.jpg" alt="" width="80%" />
 
 {{% note tip %}}
-La **couleur perçue** d’une lumière est *l’impression visuelle qu’elle nous laisse*. Ce n’est pas une propriété intrinsèque de la lumière.	
+La **couleur perçue** d’une lumière est *l’impression visuelle qu’elle nous laisse*. Ce n’est pas une propriété intrinsèque de la lumière. 
 {{% /note %}}
 
 ### Couleur spectrale
@@ -80,12 +80,12 @@ On appelle **couleur spectrale**, la couleur de la radiation monochromatique pr�
 {{% /note %}}
 
 {{% note warning %}}
+
 - À toute couleur spectrale correspond une couleur perçue.
 - Toute couleur perçue *ne correspond pas forcément à une couleur spectrale* (le magenta, le marron par exemple).
 {{% /note %}}
 
 - {{< remote "Animation pour illustrer la notion de couleur perçue" "https://phet.colorado.edu/sims/html/color-vision/latest/color-vision_fr.html" >}}
-
 
 ## Synthèse additive des couleurs
 
@@ -100,7 +100,7 @@ On appelle **couleur spectrale**, la couleur de la radiation monochromatique pr�
 Une radiation, même monochromatique (couleur spectrale), peut exciter les trois cônes.
 {{% /note %}}
 
-### Exemple 
+### Exemple
 
 Le spectre de gauche est celui d'une lumière polychromatique, formée d'une radiation «&nbsp; rouge&nbsp;» et d'une radiation «&nbsp; bleu&nbsp;». Le spectre de droite est celui d'une lumière monochromatique, formée d'une radiation «&nbsp; jaune&nbsp;». **Ces deux lumières génèrent la même sensation au niveau du cerveau.**
 
@@ -115,14 +115,13 @@ Le spectre de gauche est celui d'une lumière polychromatique, formée d'une rad
 </div>
 
 - *Spectre à gauche&nbsp;:*
-    - **S&nbsp;:** très peu stimulé (juste par V)&nbsp;;
-    - **M&nbsp;:** très stimulé (V et un peu R)&nbsp;;
-    - **L&nbsp;:** très stimulé (V et dans moindre mesure R).
+  - **S&nbsp;:** très peu stimulé (juste par V)&nbsp;;
+  - **M&nbsp;:** très stimulé (V et un peu R)&nbsp;;
+  - **L&nbsp;:** très stimulé (V et dans moindre mesure R).
 - *Spectre à droite&nbsp;:*
-    - **S&nbsp;:** très très peu stimulé&nbsp;;
-    - **M&nbsp;:** très stimulé&nbsp;;
-    - **L&nbsp;:** très stimulé (V et dans moindre mesure R).
-
+  - **S&nbsp;:** très très peu stimulé&nbsp;;
+  - **M&nbsp;:** très stimulé&nbsp;;
+  - **L&nbsp;:** très stimulé (V et dans moindre mesure R).
 
 ### Couleurs primaires, couleurs secondaires
 
@@ -130,6 +129,7 @@ Le spectre de gauche est celui d'une lumière polychromatique, formée d'une rad
 - Pour diverses raisons, les trois couleurs primaires choisies pour cette synthèse sont&nbsp;: **rouge (R)**, **vert (V)** et **bleu (B)**.
 
 {{% note tip %}}
+
 - Trois couleurs sont mutuellement **primaires** s’il est impossible de reconstituer l’une d'entre elles à partir des deux autres.
 
 - Le mélange de deux couleurs primaires donne une **couleur secondaire**.
@@ -178,7 +178,7 @@ R + \\{ V + B \\} & \longrightarrow \text{blanc}\cr
 R + C & \longrightarrow \text{blanc}
 \end{aligned}
 $$
-$\rArr$ 
+$\rArr$
 
 - **Jaune et Bleu sont complémentaires&nbsp;:**
 $$
@@ -218,20 +218,21 @@ Un filtre coloré réalise la synthèse soustractive des couleurs.
 ### Quelques Filtres
 
 - Filtres primaires :
-    - Un **filtre vert** «&nbsp; soustrait&nbsp;» le bleu et le rouge et laisse passer le vert&nbsp;;
-    - Un **filtre bleu** «&nbsp; soustrait&nbsp;» le vert et le rouge et laisse passer le bleu&nbsp;;
-    - Un **filtre rouge** «&nbsp; soustrait&nbsp;» le bleu et le vert et laisse passer le rouge&nbsp;;
+  - Un **filtre vert** «&nbsp; soustrait&nbsp;» le bleu et le rouge et laisse passer le vert&nbsp;;
+  - Un **filtre bleu** «&nbsp; soustrait&nbsp;» le vert et le rouge et laisse passer le bleu&nbsp;;
+  - Un **filtre rouge** «&nbsp; soustrait&nbsp;» le bleu et le vert et laisse passer le rouge&nbsp;;
 
 - Filtres secondaires :
-    - Le **filtre magenta** «&nbsp; soustrait&nbsp;» le vert et transmet le (rouge + bleu)&nbsp;;
-    - Le **filtre jaune** «&nbsp; soustrait&nbsp;» le bleu et laisse passer le (rouge + vert)&nbsp;;
-    - Le **filtre cyan** «&nbsp; soustrait&nbsp;» le rouge et transmet le (bleu + vert).
+  - Le **filtre magenta** «&nbsp; soustrait&nbsp;» le vert et transmet le (rouge + bleu)&nbsp;;
+  - Le **filtre jaune** «&nbsp; soustrait&nbsp;» le bleu et laisse passer le (rouge + vert)&nbsp;;
+  - Le **filtre cyan** «&nbsp; soustrait&nbsp;» le rouge et transmet le (bleu + vert).
 
 ## Couleur des objets
 
 ### Rappels
 
 Lorsque la lumière éclaire un objet,
+
 - une partie est **transmise** à travers le second milieu (*si l'objet est transparent*)&nbsp;;
 - une partie est **absorbée** (*si le milieu absorbe à cette fréquence*)&nbsp;;
 - une partie est **diffusée**.
@@ -241,16 +242,14 @@ Lorsque la lumière éclaire un objet,
 ### Interaction lumière - matière
 
 {{% note tip %}}
-La couleur des objets dépend de la lumière qu’ils **diffusent**.	
+La couleur des objets dépend de la lumière qu’ils **diffusent**. 
 {{% /note %}}
 
 #### Quelle est la couleur d’un objet éclairé par une lumière blanche&nbsp;?
+
 Lors de la diffusion une partie de la lumière blanche reçue est absorbée tandis que l’autre est diffusée et *donne sa couleur à l’objet* : un objet vert absorbe toutes les couleurs de la lumière blanche, sauf le vert.
 
 #### Quelle est la couleur d’un objet éclairé par une lumière colorée&nbsp;?
 
 - Si un objet n’est éclairé que par des lumières qu’il absorbe il semble noir.
 - Si un objet est éclairé par une lumière qui comporte des couleurs qu’il n’absorbent pas, sa couleur sera celle de la synthèse additive des couleurs diffusées.
-
-
-
