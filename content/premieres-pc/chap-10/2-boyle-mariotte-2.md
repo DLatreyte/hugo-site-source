@@ -1,6 +1,6 @@
 ---
 title: "Vérification de la loi de Boyle-Mariotte"
-subtitle: "Chapitre 9,2"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-02-28T13:36:55+04:00
@@ -41,9 +41,11 @@ Relever à chaque fois la valeur de la pression (en Pa).
 10. Pourquoi la proportionnalité n'intervient-elle que pour les faibles pressions ?
 
 {{% note tip %}}
+
 #### Modèle du gaz parfait
 
 Le modèle du gaz parfait est constitue une tentative de description du comportement d'un gaz réel. Lors de cette modèlisation :
+
 - *on néglige la structure interne des entités qui constituent le gaz ; elles sont considérées comme étant de points matériels*.
 - *on néglige les interactions qui existent entre les entités qui constituent le gaz*. Ces entités n'interagissent donc qu'avec les parois du récipient qui contient le gaz.
 
@@ -55,7 +57,6 @@ Le modèle du gaz parfait ne décrit fidèlement le comportement d'un gaz réel 
 On utilise cependant régulièrement ce modèle en chimie.
 {{% /note %}}
 
-
 {{% note tip %}}
 La loi de Boyle-Mariotte relie la *pression* et le *volume* d'un **gaz parfait** *à température constante*. Son expression mathématique est :
 $$
@@ -64,6 +65,6 @@ $$
 En d'autres termes, *maintenir la température constante pendant une augmentation de pression d'un gaz exige une diminution de volume*. Inversement, *la réduction de la pression du gaz passe par une augmentation de volume*.\
 La valeur exacte de la constante n'a pas besoin d'être connue pour appliquer la loi entre deux volumes de gaz sous des pressions différentes, à la même température :
 $$
-    P_1\\, V_1 = P_2\\, V_2 
+    P_1\\, V_1 = P_2\\, V_2
 $$
 {{% /note %}}

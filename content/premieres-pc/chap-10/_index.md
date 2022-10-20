@@ -1,6 +1,6 @@
 ---
 title: "Description d’un fluide au repos"
-subtitle: "Chapitre 9"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-02-24T04:32:22+04:00
@@ -29,10 +29,10 @@ layout: "single"
 
 ----
 
-- **Chap. 9,1 :** [*Description d'un fluide au repos*](1-description-fluide)
+- **Doc. :** [*Description d'un fluide au repos*](1-description-fluide)
 
-- **Chap. 9,2 :** [*Vérification de la loi de Boyle-Mariotte*](2-boyle-mariotte)
+- **Doc. :** [*Vérification de la loi de Boyle-Mariotte*](2-boyle-mariotte)
 
-- **Chap. 9,3 :** [*Pression dans un fluide*](3-pression-fluide)
+- **Doc. :** [*Pression dans un fluide*](3-pression-fluide)
 
-- **Chap. 9,4 :** [*Exercices du chapitre*](4-exercices)
+- **Doc. :** [*Livre Scolaire : Exercices du chapitre*](4-exercices)

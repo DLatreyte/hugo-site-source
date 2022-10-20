@@ -1,6 +1,6 @@
 ---
 title: "Propriétés des savons"
-subtitle: "Chapitre 12,04"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-05-15T16:29:07+04:00

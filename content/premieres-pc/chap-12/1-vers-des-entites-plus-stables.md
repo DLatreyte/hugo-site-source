@@ -1,6 +1,6 @@
 ---
 title: "Vers des entités plus stables"
-subtitle: "Chapitre 12,1"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-04-14T09:54:06+04:00

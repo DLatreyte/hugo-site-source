@@ -1,6 +1,6 @@
 ---
 title: "Utilisation des propriétés des espèces chimiques en synthèse organique"
-subtitle: "Chapitre 13"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-05-09T12:44:17+04:00
@@ -29,8 +29,8 @@ layout: "single"
 
 ----
 
-- **Chap. 13,1 :** [*Structure des entités organiques*](https://www.icloud.com/keynote/0W6rfe277tTD7XdunN8szkwDg)
+- **Doc. :** [*Structure des entités organiques*](https://www.icloud.com/keynote/0W6rfe277tTD7XdunN8szkwDg)
 
-- **Chap. 13,2 :** [*Nomenclature : exercices*](2-exercices)
+- **Doc. :** [*Nomenclature : exercices*](2-exercices)
 
-- **Chap. 13,3 :** [*Groupes caractéristiques*](https://www.icloud.com/keynote/04FOMNt0QbMNejuH3XfDBF8pQ)
+- **Doc. :** [*Groupes caractéristiques*](https://www.icloud.com/keynote/04FOMNt0QbMNejuH3XfDBF8pQ)

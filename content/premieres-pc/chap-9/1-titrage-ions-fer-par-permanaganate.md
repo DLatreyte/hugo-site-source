@@ -1,6 +1,6 @@
 ---
 title: "L’élément fer dans l’anti-mousse"
-subtitle: "Chapitre 8,1"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-02-03T08:41:20+04:00
@@ -18,7 +18,6 @@ auto_numbering: true
 <img src="/premieres-pc/chap-9/chap-9-1/chap-9-1-1.png" alt="" width="" />
 > Gazon envahi par la mousse
 
-
 ## Données
 
 - Ion permanganate : $\ce{MnO4^− (aq)}$ solution violette ;
@@ -27,7 +26,6 @@ auto_numbering: true
 - Ion fer (III) : $\ce{Fe^{3+} (aq)}$ solution jaune pâle ;
 - Couples redox : $\ce{Fe^{3+}/Fe^{2+}}$ et $\ce{MnO4^−/Mn^{2+}}$.
 - La solution commerciale d'anti-mousse est trop concentrée. On divise donc pas 10 la concentration en ions fer (II).
-
 
 ## Protocole
 
@@ -62,7 +60,6 @@ auto_numbering: true
 {{% solution "Corrigé" %}}
 {{< remote "Corrigé au format pdf" "/premieres-pc/chap-9/chap-9-1/chap-9-1-3.pdf" >}}
 {{% /solution %}}
-
 
 ## Synthèse
 
@@ -109,6 +106,7 @@ Plusieurs méthodes permettent de repérer l'équivalence, en fonction des réac
 {{% solution "Réponse" %}}
 {{% note tip %}}
 La réaction chimique support d'un titrage doit être :
+
 - **rapide** ;
 - **unique**, de façon à ce que le titrant soit le seul à consommer le titré ;
 - la modélisation d'une **transformation chimique totale**.

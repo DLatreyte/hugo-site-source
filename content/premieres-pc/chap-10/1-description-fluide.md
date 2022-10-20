@@ -1,6 +1,6 @@
 ---
 title: "Description d'un fluide au repos"
-subtitle: "Chapitre 9,1"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-02-24T05:06:35+04:00
@@ -19,7 +19,7 @@ auto_numbering: true
 
 Visionner les deux vidéos suivantes en prenant des notes :
 
-{{% youtube UDj7BXA1CHU %}} 
+{{% youtube UDj7BXA1CHU %}}
 
 {{% youtube gPMVaAnij88 %}}
 
@@ -67,7 +67,7 @@ Ce point commun est suffisamment important pour que l'on puisse regrouper les é
 9. Quel phénomène permet de valider le modèle microscopique d'un gaz ? Décrire ce phénomène (on pourra visionner la deuxième vidéo si la première n'est pas suffisamment claire).
 {{% solution "Réponse" %}}
 C'est le mouvement brownien.\
-Brown, un botaniste, en 1827, alors qu'il étudiait des grains de pollen dans une goutte d'eau, au microscope, s'est rendu compte que ceux-ci n'était pas immobiles mais possédaient un mouvement erratique. L'explication théorique de ce phénomène a été donnée par Einstein en 1905, des molécules d'eau, invisibles au microscope, entrent à chaque instant en collision avec les grains de pollen. Ceux-ci sont donc projetés dans toutes les direction de façon complètement aléatoire. 
+Brown, un botaniste, en 1827, alors qu'il étudiait des grains de pollen dans une goutte d'eau, au microscope, s'est rendu compte que ceux-ci n'était pas immobiles mais possédaient un mouvement erratique. L'explication théorique de ce phénomène a été donnée par Einstein en 1905, des molécules d'eau, invisibles au microscope, entrent à chaque instant en collision avec les grains de pollen. Ceux-ci sont donc projetés dans toutes les direction de façon complètement aléatoire.
 {{% /solution %}}
 
 ### Simulation d'une marche au hazard à deux dimensions
@@ -83,6 +83,7 @@ La simulation s'arrête lorsqu'une tortue atteint le cadre qui délimite le plan
 {{% solution "Réponse" %}}
 Le bloc constitue une boucle `TantQue` qui se répète deux fois.\
 Les instructions du bloc font :
+
 - avancer la tortue de 400 pixels ;
 - tourner à gauche de 90° la tortue ;
 - avancer la tortue de 400 pixels ;
@@ -115,10 +116,11 @@ L'instruction déplace la tortue jusqu'au nouveau point.
 
 17. En quoi ce programme simule-t-il le mouvement brownien.
 {{% solution "Réponse" %}}
-À chaque tour de boucle la nouvelle position de la tortue est déterminée aléatoirement. C'est une situation comparable à celle d'une molécule percutée aléatoirement par d'autres molécules. 
+À chaque tour de boucle la nouvelle position de la tortue est déterminée aléatoirement. C'est une situation comparable à celle d'une molécule percutée aléatoirement par d'autres molécules.
 {{% /solution %}}
 
 ### À retenir
+
 - **Solides :** <img src="/premieres-pc/chap-10/chap-10-1/chap-10-1-1.png" alt="" width="20%" />
 - **Liquides :** <img src="/premieres-pc/chap-10/chap-10-1/chap-10-1-2.png" alt="" width="20%" />
 - **Gaz :** <img src="/premieres-pc/chap-10/chap-10-1/chap-10-1-3.png" alt="" width="20%" />
@@ -126,7 +128,6 @@ L'instruction déplace la tortue jusqu'au nouveau point.
 {{% note tip %}}
 Un gaz est dans un état dispersé. Ses molécules sont en mouvement permanent et désordonné. Cet état dispersé permet aussi d'interpréter la compressibilité des gaz.
 {{% /note %}}
-
 
 ## Quels sont les paramètres qui permettent de décrire le comportement d'un gaz
 
@@ -171,5 +172,3 @@ La pression et le nombre de collisions sont des grandeurs corrélées puisqu'ell
 {{% note tip %}}
 L'état d'un gaz peut être décrit par les paramètres **volume**, **pression**, **température** et **quantité de matière**.
 {{% /note %}}
-
-

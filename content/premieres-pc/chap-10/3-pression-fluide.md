@@ -1,6 +1,6 @@
 ---
 title: "Pression dans un fluide"
-subtitle: "Chapitre 9,3"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-03-03T08:55:04+04:00
@@ -36,9 +36,9 @@ La force pressante s'exerce selon une *direction perpendiculaire à la surface*.
 Il est ici question de se demander quelle est l'origine physique de la force de pressante. Au niveau microscopique chaque millimètre-carré d'une paroi en contact avec un fluide subit des milliards de **collisions** chaque seconde. Lors de chacune de ces collisions les particules du fluide exercent une force sur cette paroi.
 {{% /solution %}}
 
-
 {{% solution "Synthèse" %}}
 {{% note tip %}}
+
 - Un fluide exerce des forces pressantes, réparties sur la surface des objets avec lesquels il est en contact.
 - Un gaz exerce sur une petite portion de paroi **une force pressante perpendiculaire à la surface, et dirigée du gaz vers la paroi**.
 - Soit $F$ la *valeur de la force pressante* s'exerçant sur une surface plane d'aire $S$.\
@@ -51,6 +51,7 @@ avec $p$ en pascal (Pa), $F$ en newton (N) et $S$ en mètre-carré ($\pu{m2}$).
 {{% /note %}}
 
 On emploie couramment d'autres unités de pression :
+
 - Le bar : $\pu{1 bar} = \pu{1e5 Pa}$ ;
 - L'hectopascal : $\pu{1 hPa} = \pu{1e2 Pa} = \pu{1 mbar}$ ;
 - L'atmosphère : $\pu{1 atm} = \pu{1,013e5 Pa}$.
@@ -64,8 +65,8 @@ Dire ce qu'est la pression atmosphérique et donner une image qui permet d'illus
 
 {{< youtube "PmbNWJY6yQk" >}}
 
-
 {{% solution "Synthèse" %}}
+
 - L'air exerce des forces pressantes sur toutes les surfaces avec lesquelles il est en contact. *En tout point de l'atmosphère*, il existe une pression exercée par l'air appelée **pression atmosphérique**. Elle est de l'ordre de $\pu{1 atm}$ (elle varie en fonction de la météorologie) au niveau de la mer et diminue avec l'altitude.
 - Les baromètres mesurent la pression atmosphérique.
 {{% /solution %}}
@@ -97,7 +98,7 @@ Dans cette section, le fluide est considéré **incompressible** : *sa masse vol
 {{% /note %}}
 
 {{% note tip %}}
-Pour un *fluide incompressible* dans un *champ de pesanteur uniforme*, la **loi fondamentale de la statique des fluides** s’écrit : 
+Pour un *fluide incompressible* dans un *champ de pesanteur uniforme*, la **loi fondamentale de la statique des fluides** s’écrit :
 $$
     P + \rho \\, g\\, z = \text{cste}
 $$

@@ -1,6 +1,6 @@
 ---
 title: "Exercices du chapitre"
-subtitle: "Chapitre 13,8"
+subtitle: ""
 author: ""
 type: ""
 date: 2022-05-25T18:07:02+04:00

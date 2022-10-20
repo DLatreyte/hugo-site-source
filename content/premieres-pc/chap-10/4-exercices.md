@@ -1,6 +1,6 @@
 ---
-title: "Exercices du chapitre"
-subtitle: "Chapitre 9,4"
+title: "Livre Scolaire : Exercices du chapitre"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-03-03T08:53:58+04:00
@@ -26,7 +26,6 @@ $$
 **A.N.** $P_f = \pu{1,013e5 Pa} \times \dfrac{\pu{5,0e-6 m3}}{\pu{3,0e-6 m3}} = \pu{1,7e5 Pa}$
 {{% /solution %}}
 
-
 - {{< remote "n° 9" "https://www.lelivrescolaire.fr/page/7101624" >}}
 
 {{% solution "Réponse" %}}
@@ -38,11 +37,11 @@ $$
 **A.N.** $P_f = \pu{1,013e5 Pa} \times \dfrac{\pu{50 cm3}}{\pu{70 cm3}} = \pu{7,2e4 Pa}$
 {{% /solution %}}
 
-
 ## Force pressante et pression
 
 - {{< remote "n° 10" "https://www.lelivrescolaire.fr/page/7101624" >}}
 {{% solution "Réponse" %}}
+
 1. $P = \dfrac{F}{S} \iff F = P \cdot S$.\
     <strong>A.N.</strong> $F = \pu{1,013e5 Pa} \times \pu{1 m2} = \pu{1e5 N}$.
 
@@ -51,6 +50,7 @@ $$
 
 - {{< remote "n° 11" "https://www.lelivrescolaire.fr/page/7101624" >}}
 {{% solution "Réponse" %}}
+
 1. On suppose que la pression est nulle à l'extérieur de la station, et qu’elle est égale à la pression atmosphérique $P_0$ dans la station. La seule force pressante s’exerce donc de l'intérieur de la station vers l'extérieur, perpendiculairement à la surface de la fenêtre.\
 Puisque $P = \dfrac{F}{S}$, alors $F = P \cdot S$. **A.N.** $F = \pu{1,013e5 Pa} \times \pu{0,13 m2} = \pu{1,3e4 N}$.
 
@@ -69,16 +69,18 @@ Les volumes sont identiques, le nombre de molécules est le même dans les deux 
 
 - {{< remote "n° 20" "https://www.lelivrescolaire.fr/page/7108661" >}}
 {{% solution "Réponse" %}}
+
 1. Une fois le vide fait, la pression dans la sphère est essentiellement nulle, les forces pressantes de l'intérieur vers l'extérieur de la sphère sont alors inexistantes. En revanche, la pression de l’air à l'extérieur de la sphère est inchangée et exerce une force pressante de l'extérieur vers l'intérieur de la sphère. Il faudrait une force supérieure à cette force pressante pour détacher les hémisphères.
 2. Surface $S$ de la surface : $S = \pi R^2 = \pi \times (\pu{28e-2 m})^2 = \pu{2,5e-1 m2}$. La valeur de la force $F$ est alors $F = \pu{1,013e5 Pa} \times \pu{2,5e-1 m2} = \pu{2,5e4 N}$.
 {{% /solution %}}
 
 - {{< remote "n° 26" "https://www.lelivrescolaire.fr/page/7108661" >}}
 {{% solution "Réponse" %}}
-1. Les forces s’appliquant sur le piston sont : 
-    - la force pressante de l’air à l'intérieur du piston (dirigée vers le haut) ; 
-    - le poids de la masse (dirigée vers le bas) ; 
-    - la force pressante de l’air à l'extérieur du piston (dirigée également vers le bas). 
+
+1. Les forces s’appliquant sur le piston sont :
+    - la force pressante de l’air à l'intérieur du piston (dirigée vers le haut) ;
+    - le poids de la masse (dirigée vers le bas) ;
+    - la force pressante de l’air à l'extérieur du piston (dirigée également vers le bas).
 On néglige le poids du piston lui-même. Au point d’équilibre la somme de ces forces est nulle.
 
 2. La pression de la masse sur l’air à l'intérieur du piston est donnée par $P_{\text{masse}} = \dfrac{m \cdot g}{S}$. La pression d’équilibre $P_1$ à l'intérieur du piston est égale à $P_1 = P_0 + P_{\text{masse}}$.\
@@ -115,6 +117,7 @@ Sans apport d’énergie (pompage), l’eau ne peut pas monter plus haut dans l�
 
 - {{< remote "n° 24" "https://www.lelivrescolaire.fr/page/7108661" >}}
 {{% solution "Réponse" %}}
+
 1. Pour repérer les altitudes, on choisit un axe vertical dirigé vers le haut. L'origine du repère de projection est situé au niveau du sol.\
 On note $O$ un point au niveau du sol et $S$ le sommet du Mont Blanc.\
 <strong>Si on considère l'air comme étant un fluide incompressible</strong>, $P + \rho \\, g\\, z = \text{cste}$, donc $P_S + \rho \\, g\\, z_S = P_0 + \rho \\, g\\, z_0 \iff P_S = P_0 + \rho \\, g\\, (z_0 - z_S) = P_0 - \rho \\, g\\, z_S$.\
@@ -126,6 +129,7 @@ On note $O$ un point au niveau du sol et $S$ le sommet du Mont Blanc.\
 
 - {{< remote "n° 25" "https://www.lelivrescolaire.fr/page/7108661" >}}
 {{% solution "Réponse" %}}
+
 1. Si la pression du nitrox est plus faible que celle de l’eau, la force pressante de l’eau sur la cage thoracique est supérieure à la force pressante de l’air dans les poumons. Le plongeur risque alors d’avoir une cage thoracique trop compressée pour respirer.
 
 2. À $\pu{5 m}$ de profondeur, $V_1 = \pu{5,0 L}$ de gaz subit une pression $P_1 = \pu{1,5 bar}$. La loi de Boyle-Mariotte implique que le produit $P\\, V$ soit constant, donc que $P_0\\, V_0 = P_1\\, V_1$. FInalement, le volume $V_0$ occupé à la surface est tel que :
@@ -133,7 +137,7 @@ $$
     V_0 = V_1 \\, \dfrac{P_1}{P_0}
 $$
 <strong>A.N.</strong> $V_0 = \pu{5,0 L} \times \dfrac{\pu{1,5 bar}}{\pu{1,013 bar}} = \pu{7,4 L}$\
-Le gaz respiré à $\pu{5 m}$ de profondeur occuperait $\pu{7,4 L}$ à la surface. 
+Le gaz respiré à $\pu{5 m}$ de profondeur occuperait $\pu{7,4 L}$ à la surface.
 
 3. Si le plongeur retient sa respiration lors des 5 derniers mètres de sa remontée, le gaz emprisonné dans ses poumons ayant initialement une pression supérieure à celle de l’atmosphère, il occuperait un volume plus grand lors de la remontée, ce qui endommagerait les poumons qui risquent de trop se dilater.
 {{% /solution %}}
@@ -142,7 +146,7 @@ Le gaz respiré à $\pu{5 m}$ de profondeur occuperait $\pu{7,4 L}$ à la surfac
 {{% solution "Réponse" %}}
 Pour repérer les altitudes, on choisit un axe vertical dirigé vers le haut. L'origine du repère de projection est situé au niveau du sol.\
 Deux points, $A$ et $B$, sont situés à la surface du liquide de deux bouteilles ouvertes. La pression du liquide à leur surface est donc égale à la pression $P_0$ de l’atmosphère. Le principe fondamental de l’hydrostatique s’écrit alors : $P_A + \rho \\, g\\, z_A = P_B + \rho \\, g\\, z_B$. Comme $p_A = P_B = P_0$, alors $z_A = z_B$.\
-Les surfaces des liquides sont à la même altitude. 
+Les surfaces des liquides sont à la même altitude.
 
 {{% /solution %}}
 
@@ -167,7 +171,6 @@ Les surfaces des liquides sont à la même altitude.
 {{% solution "Réponse" %}}
 {{< remote "Correction au format pdf" "/premieres-pc/chap-10/chap-10-4/exo-34.pdf" >}}
 {{% /solution %}}
-
 
 - {{< remote "n° 35" "https://www.lelivrescolaire.fr/page/7127263" >}}
 {{% solution "Réponse" %}}

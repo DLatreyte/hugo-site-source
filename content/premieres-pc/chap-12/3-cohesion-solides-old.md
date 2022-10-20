@@ -1,6 +1,6 @@
 ---
 title: "Cohésion des solides"
-subtitle: "Chapitre 12,3"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-04-21T10:10:28+04:00

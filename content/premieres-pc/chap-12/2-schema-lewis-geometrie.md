@@ -1,6 +1,5 @@
 ---
 title: "Structure, schéma de Lewis et géométrie des entités microscopiques"
-subtitle: "Chapitre 12,2"
 author: ""
 type: ""
 date: 2021-04-14T10:05:10+04:00

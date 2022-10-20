@@ -1,6 +1,6 @@
 ---
 title: "Nomenclature : exercices"
-subtitle: "Chapitre 13,2"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-05-19T09:06:27+04:00

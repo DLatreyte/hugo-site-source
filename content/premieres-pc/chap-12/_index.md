@@ -1,6 +1,6 @@
 ---
 title: "De la structure à l'interprétation des propriétés d'une espèce chimique"
-subtitle: "Chapitre 11"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-04-13T20:42:54+04:00
@@ -30,14 +30,14 @@ layout: "single"
 
 ----
 
-- **Chap. 11,1 :** [*Vers des entités plus stables*](1-vers-des-entites-plus-stables)
+- **Doc. :** [*Vers des entités plus stables*](1-vers-des-entites-plus-stables)
 
-- **Chap. 11,2 :** [*Structure, schéma de Lewis et géométrie des entités microscopiques*](2-schema-lewis-geometrie)
+- **Doc. :** [*Structure, schéma de Lewis et géométrie des entités microscopiques*](2-schema-lewis-geometrie)
 
 <!--
 - **Chap. 11,3 :** [*Cohésion des solides*](3-cohesion-solides-old)
 -->
 
-- **Chap. 11,3 :** [*Cohésion des solides*](3-cohesion-solides)
+- **Doc. :** [*Cohésion des solides*](3-cohesion-solides)
 
-- **Chap. 11,4 :** [*Propriétés des savons*](4-proprietes-savons)
+- **Doc. :** [*Propriétés des savons*](4-proprietes-savons)

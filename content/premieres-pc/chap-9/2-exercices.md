@@ -1,6 +1,6 @@
 ---
-title: "Exercices du chapitre"
-subtitle: "Chapitre 8,2"
+title: "Livre Scolaire : Exercices du chapitre"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-02-10T08:37:37+04:00

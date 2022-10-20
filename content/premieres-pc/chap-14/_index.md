@@ -1,6 +1,6 @@
 ---
 title: "Études énergétiques en mécanique"
-subtitle: "Chapitre 13"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-05-29T16:08:53+04:00

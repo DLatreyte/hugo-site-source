@@ -1,6 +1,6 @@
 ---
 title: "Loi de Boyle-Mariotte"
-subtitle: "Chapitre 9,2"
+subtitle: ""
 author: ""
 type: ""
 date: 2022-02-03T17:59:51+04:00
@@ -19,10 +19,9 @@ auto_numbering: true
 
 {{% /note %}}
 
-
 > L'objectif de cette séance est de *mettre en évidence la relation qui existe entre la pression au sein d'un gaz et son volume, la température et la quantité de matière restant constantes*. Cette relation porte le nom de **loi de Boyle-Mariotte**.
 
-## Manipulations 
+## Manipulations
 
 - Choisir pour la seringue à disposition le volume le plus grand possible.
 - Connecter la seringue au pressiomètre.
@@ -45,6 +44,7 @@ Le fichier de travail se trouve à cette {{% remote "adresse" "https://dlatreyte
 {{% /note %}}
 
 1. Compléter les instructions suivantes :
+
 ```python
 V = [....]  # cm³
 P = [....]  # hPa
@@ -60,6 +60,7 @@ P = [1935, 1680, 1521, 1338, 1218, 1093, 1004]  # hPa
 {{% /solution %}}
 
 2. Convertir les volumes en $\pu{m3}$.
+
 ```python
 for i in range(len(V)):
     V[i] = ....
@@ -75,6 +76,7 @@ for i in range(len(V)):
 {{% /solution %}}
 
 3. De la même façon, convertir les pressions en Pa (pascal).
+
 ```python
 .... :
     ....
@@ -92,6 +94,7 @@ for i in range(len(P)):
 ## Évolution de la pression en fonction du volume
 
 4. Compléter les instructions suivantes de façon à afficher l'évolution de la pression lorsque le volume varie.
+
 ```python
 sns.set()
 plt.figure()
@@ -127,6 +130,7 @@ $P$ n'est pas proportionnel à $V$.
 {{% /solution %}}
 
 6. La variable `invV` doit référencer une liste dont les valeurs sont les inverses des valeurs de la liste référencée par la variable `V`. Écrire le code qui réalise cette opération.
+
 ```python
 invV = []
 for elt in V:
@@ -144,6 +148,7 @@ for elt in V:
 {{% /solution %}}
 
 7. Compléter les instructions suivantes de façon à afficher l'évolution de la pression P en focntion de `invV`.
+
 ```python
 plt.plot(...., ...., 'o', label="Pression (Pa)")
 plt.xlabel(r"$1/V\ (\mathrm{m}^{-3})$")
@@ -174,8 +179,9 @@ $P$ et $\dfrac{1}{V}$ sont proportionnels.
 
 On effectue dans cette partie une modélisation, en postulant que la relation qui existe entre $P$ et $\dfrac{1}{V}$ est une relation de linéarité.
 
-9. Compléter le code de la fonction `modele` de façon à ce qu'elle traduise le comportement recherché.    
+9. Compléter le code de la fonction `modele` de façon à ce qu'elle traduise le comportement recherché.
 Compléter aussi le code des deux instructions qui réalisent le tracé.
+
 ```python
 # Fonction modèle
 def modele(x, a):
@@ -245,9 +251,11 @@ print("a = {}".format(a_mod))
 ## À retenir
 
 {{% note tip %}}
+
 #### Modèle du gaz parfait
 
 Le modèle du gaz parfait est constitue une tentative de description du comportement d'un gaz réel. Lors de cette modèlisation :
+
 - *on néglige la structure interne des entités qui constituent le gaz ; elles sont considérées comme étant de points matériels*.
 - *on néglige les interactions qui existent entre les entités qui constituent le gaz*. Ces entités n'interagissent donc qu'avec les parois du récipient qui contient le gaz.
 
@@ -259,7 +267,6 @@ Le modèle du gaz parfait ne décrit fidèlement le comportement d'un gaz réel 
 On utilise cependant régulièrement ce modèle en chimie.
 {{% /note %}}
 
-
 {{% note tip %}}
 La loi de Boyle-Mariotte relie la *pression* et le *volume* d'un **gaz parfait** *à température constante*. Son expression mathématique est :
 $$
@@ -268,6 +275,6 @@ $$
 En d'autres termes, *maintenir la température constante pendant une augmentation de pression d'un gaz exige une diminution de volume*. Inversement, *la réduction de la pression du gaz passe par une augmentation de volume*.\
 La valeur exacte de la constante n'a pas besoin d'être connue pour appliquer la loi entre deux volumes de gaz sous des pressions différentes, à la même température :
 $$
-    P_1\\, V_1 = P_2\\, V_2 
+    P_1\\, V_1 = P_2\\, V_2
 $$
 {{% /note %}}
