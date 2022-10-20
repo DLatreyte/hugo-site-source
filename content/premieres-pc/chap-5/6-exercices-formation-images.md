@@ -1,5 +1,5 @@
 ---
-title: "Exercices sur la formation des images par les lentilles minces convergentes"
+title: "Livre scolaire : Exercices sur la formation des images par les lentilles minces convergentes"
 subtitle: ""
 author: ""
 type: ""

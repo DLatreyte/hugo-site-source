@@ -34,7 +34,7 @@ layout: "single"
 
 - **Doc. :** [*Couleur des objets*](2-couleur-objets)
 
-- **Doc. :** [*Exercices*](3-exercices)
+- **Doc. :** [*Livre scolaire : Exercices*](3-exercices)
 
 ## Formation des images
 
@@ -56,4 +56,4 @@ layout: "single"
 
 - **Doc. :** [*Constructions des images produites par une lentille mince convergente*](5-constructions-geometriques)
 
-- **Doc. :** [*Exercices sur la construction des images par les lentilles minces convergentes*](6-exercices-formation-images)
+- **Doc. :** [*Livre scolaire : Exercices sur la construction des images par les lentilles minces convergentes*](6-exercices-formation-images)

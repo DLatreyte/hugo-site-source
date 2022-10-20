@@ -1,5 +1,5 @@
 ---
-title: "Exercices"
+title: "Livre scolaire : Exercices"
 subtitle: ""
 author: ""
 type: ""
