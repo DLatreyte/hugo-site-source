@@ -80,7 +80,7 @@ $C_0 = \pu{1e-2 mol.L^-1}$ ;
 
 ### Résultats expérimentaux
 
-- Conductivité d'une solution de sérum physiologique dilué 20 fois : $\sigma = \ldots$
+- Mesure de la conductivité d'une solution de sérum physiologique dilué 20 fois : $\sigma = \ldots$
 {{% solution "Résultat expérimental" %}}
 
 $\sigma = \pu{0,971 mS·cm-1}$
@@ -136,6 +136,7 @@ Le document 1 nous apprend que la concentration en chlorure de sodium $\ce{NaCl}
 
 {{% /solution %}}
 
+<!--
 ## Exploitation des données avec Python
 
 {{% note normal %}}
@@ -146,3 +147,5 @@ Le document 1 nous apprend que la concentration en chlorure de sodium $\ce{NaCl}
 {{% /note %}}
 
 Remplacer les .......... dans le code source de façon à déterminer la concentration en chlorure de sodium dans le sérum physiologique.
+
+-->
