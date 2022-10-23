@@ -162,3 +162,21 @@ $$
 - En haute mer, la profondeur de l'eau est supérieure à la profondeur de l'eau près de la côte donc le tsunami a une célérité supérieure en haute mer par rapport à la célérité près de la côte.
 
 {{% /solution %}}
+
+#### N°53, page 347
+
+{{% solution "Corrigé à venir" %}}
+
+{{% /solution %}}
+
+#### N°54, page 347
+
+{{% solution "Corrigé à venir" %}}
+
+{{% /solution %}}
+
+#### Activité, page 334
+
+{{% solution "Corrigé à venir" %}}
+
+{{% /solution %}}
