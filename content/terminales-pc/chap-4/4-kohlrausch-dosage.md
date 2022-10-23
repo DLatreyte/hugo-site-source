@@ -32,11 +32,17 @@ Certaines solutions physiologiques d'usage commun sont commercialement disponibl
 
 ### Conductivité et concentration molaire
 
+{{% note normal %}}
+
 La conductivité $\sigma$ d’une solution ionique caractérise sa *capacité à conduire le courant électrique*. Elle s’exprime en Siemens par mètre ($\pu{S.m-1}$). *La conductivité d’une solution ionique dépend de la nature et de la concentration des ions présents* et de la température.
 
 **Remarque.** En pratique, on mesure souvent $\sigma$ en $\pu{mS.cm-1}$ : $\pu{1 mS.cm-1} = \pu{1e-1 S.m-1}$.
 
+{{% /note %}}
+
 ### Conductimètre
+
+{{% note normal %}}
 
 La cellule de mesure est constituée d’un corps en plastique et de 2 plaques de platine platiné parallèles (surface $S$ et distantes de $L$). Pour chaque cellule, la constante de cellule est définie par $K_{\text{cell}} = S / L$.
 
@@ -44,9 +50,15 @@ Le conductimètre est un ohmmètre alimenté en courant alternatif. On mesure la
 
 La conductance $G$, en Siemens ($\pu{S}$), dépend de la *nature de la solution*, de la *constante de cellule* et de la température. Pour s’en affranchir, on utilise plutôt la conductivité $\sigma$ : $$\sigma = G/K_{\text{cell}}$$
 
+{{% /note %}}
+
 ### Dosage par étalonnage
 
-Un dosage par étalonnage consiste à déterminer la concentration d’une espèce chimique en comparant une grandeur physique caractéristique de la solution, à la même grandeur physique mesurée pour des solutions étalon. La détermination de la concentration se fait alors par la lecture sur le graphe de la courbe d’étalonnage.
+{{% note normal %}}
+
+Un dosage par étalonnage consiste à déterminer la concentration d’une espèce chimique en comparant une grandeur physique caractéristique de la solution, à la même grandeur physique mesurée pour des solutions étalons. La détermination de la concentration se fait alors par la lecture sur le graphe de la courbe d’étalonnage.
+
+{{% /note %}}
 
 ## Objectif
 

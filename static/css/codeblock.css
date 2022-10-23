@@ -4,11 +4,13 @@
   margin-right: 0.8em;
   padding: 0 0.4em 0 0.4em;
 }
+
 pre code.hljs {
   padding: 9.5px;
 }
 
-.highlight tr, .highlight pre {
+.highlight tr,
+.highlight pre {
   border: none;
 }
 
@@ -16,20 +18,23 @@ pre code.hljs {
   border-radius: 4px;
 }
 
-.highlight td:first-child pre, .highlight pre {
+.highlight td:first-child pre,
+.highlight pre {
   border-top-left-radius: 4px;
   border-top-right-radius: unset;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: unset;
-  white-space:nowrap;
+  white-space: nowrap;
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
 }
 
-.highlight td:last-child pre, .highlight pre {
+.highlight td:last-child pre,
+.highlight pre {
   border-radius: unset;
 }
 
-.highlight td:last-child pre code, .highlight pre code {
+.highlight td:last-child pre code,
+.highlight pre code {
   white-space: pre;
 }
