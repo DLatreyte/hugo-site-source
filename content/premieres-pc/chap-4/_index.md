@@ -39,3 +39,5 @@ layout: "single"
 - **Doc. :** [*Deux smartphones pour mesurer une célérité*](5-mesure-celerité)
 
 - **Doc. :** [*Exercices de synthèse*](6-exercices-supplementaires)
+
+- **Doc. :** [*Livre numérique Hatier : exercices*](7-exercices)
