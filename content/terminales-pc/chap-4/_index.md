@@ -34,6 +34,8 @@ layout: "single"
 
 - **Doc. :** [*Dosage par étalonnage d'un antiseptique : l'eau de Dakin*](2-eau-dakin)
 
+- **Doc. :** [*Dosage par étalonnage d'un antiseptique : la Bétadine*](19-dosage-conductimetrique-betadine)
+
 - **Doc. :** [*Conductimétrie (cours)*](3-conductivite-solution)
 
 - **Doc. :** [*Dosage par étalonnage d'un sérum physiologique*](4-kohlrausch-dosage)
