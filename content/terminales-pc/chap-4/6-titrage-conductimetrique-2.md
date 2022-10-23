@@ -69,7 +69,8 @@ $\lambda_{\ce{Na^+}} = \pu{5,0e-3 S.m2.mol-1}$ ; $\lambda_{\ce{Cl^-}} = \pu{7,6e
 
 - Solution de nitrate d’argent $\ce{ Ag^+(aq) + NO^-_3(aq) }$ de concentration $C_2 = \pu{2,0e-2 mol.L-1}$&nbsp;;
 
-- Indicateur de fin de réaction : solution jaune de chromate de potassium $\ce{2 K^+(aq) + CrO^2-_4(aq) }$ (**Nous n'avons malheureusement pas ce produit à disposition, cette partie du TP ne sera pas réalisée**)&nbsp;;
+- Indicateur de fin de réaction : solution jaune de chromate de potassium $\ce{2 K^+(aq) + CrO^2-_4(aq) }$&nbsp;;  
+ **Nous n'avons malheureusement pas ce produit à disposition, cette partie du TP ne sera pas réalisée**&nbsp;;
 
 - Conductimètre et sonde, agitateur et barreau aimanté, burette graduée $\pu{25 mL}$, pipette jaugée $\pu{10 mL}$ et propipette, éprouvette graduée, béchers, erlenmeyer, eau distillée.
 
