@@ -6,8 +6,8 @@ type: ""
 date: 2022-10-23T16:06:55+04:00
 draft: false
 toc: true
-tags: []
-categories: []
+tags: ["Ondes", "Période", "Fréquence", "Longueur d'onde", "Onde progressive", "Onde mécanique", "Onde sinusoïdale", "Célérité"]
+categories: ["Physique", "Premières Spé PC"]
 image: ""
 solution_est_visible: true
 auto_numbering: true

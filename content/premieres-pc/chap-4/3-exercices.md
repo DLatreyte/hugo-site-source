@@ -1,6 +1,6 @@
 ---
-title: "Exercices"
-subtitle: ""
+title: "Exercices du chapitre"
+subtitle: "Livre numérique Le Livre Scolaire"
 author: ""
 type: ""
 date: 2020-10-28T08:01:22+04:00

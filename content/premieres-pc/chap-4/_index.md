@@ -1,5 +1,5 @@
 ---
-title: "Ondes mécaniques"
+title: "Ondes mécaniques progressives"
 subtitle: ""
 author: ""
 type: ""
@@ -32,12 +32,12 @@ layout: "single"
 
 - **Doc. :** [*Caractéristiques des ondes mécaniques progressives*](2-cours-ondes-progressives)
 
-- **Doc. :** [*Exercices*](3-exercices)
-
 - **Doc. :** [*Simulation d'une onde mécanique*](4-modele-mathematique)
 
 - **Doc. :** [*Deux smartphones pour mesurer une célérité*](5-mesure-celerité)
 
 - **Doc. :** [*Exercices de synthèse*](6-exercices-supplementaires)
+
+- **Doc. :** [*Livre numérique Le Livre Scolaire : exercices*](3-exercices)
 
 - **Doc. :** [*Livre numérique Hatier : exercices*](7-exercices)
