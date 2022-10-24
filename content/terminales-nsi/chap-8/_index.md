@@ -1,6 +1,6 @@
 ---
 title: "Piles et Files"
-subtitle: "Chapitre 8"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-10-26T22:58:14+04:00
@@ -22,6 +22,6 @@ layout: "single"
 
 ## Documents
 
-- **Chap. 8,1 :** [Les Piles](1-piles) 
+- **Doc. :** [Les Piles](1-piles)
 
-- **Chap. 8,2 :** [Les Files](2-files) 
+- **Doc. :** [Les Files](2-files)

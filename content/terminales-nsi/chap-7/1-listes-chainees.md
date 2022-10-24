@@ -459,7 +459,43 @@ def renverser(lst: Cellule) -> Cellule:
 - Les opérations sur les listes chaînées se programment sous la forme de **parcours qui suivent ces liaisons**, en utilisant la récursivité ou des boucles.
 {{% /note %}}
 
-## Tests possibles
+{{% note tip %}}
+
+Une liste chaînée est un **type abstrait de données** qui doit, au minimum, fournir les fonctions suivantes :
+
+- `insère` : insère un élément dans la liste ;
+- `supprime` : supprime et renvoie l'élément de position spécifié de la liste ;
+- `longueur` : renvoie le nombre d'éléments de la liste ;
+- `est_vide` : détermine si la liste est vide ou pas ;
+- `nième_élément` : retourne la valeur du nième élément depuis le début.
+
+{{% /note %}}
+
+| Action | Liste chaînée | Tableau | Tableau dynamique |
+| :--: | :--: | :--: | :--: |
+| Accès à un élément | $O(n)$ | $O(1)$ | $O(1)$ |
+| Insertion/suppression du 1er élément | $O(1)$ | $O(n)$ (si place) | $O(n)$ |
+| Insertion à la fin | $O(n)$ | $O(1)$ (si place) | $O(1)$ (si place)<br />$O(n)$ (si pas de place) |
+| Suppression du dernier élément | $O(n)$ | $O(1)$ | $O(1)$ |
+| Insertion/suppression au milieu | $O(n)$ | $O(n)$ (si place) | $O(n)$ |
+
+## Quelques exemples d'utilisation des listes chaînées
+
+- Les logiciels de visualisation d'images utilisent parfois une liste chaînée pour afficher les images précédentes et suivantes à l'aide des boutons « précédent » et « suivant ».
+
+- Des navigateurs Web peuvent utiliser une liste chaînée pour accéder aux pages à l'aide des boutons « précédent » et « suivant ».
+
+- Les boutons « précédent » et « suivant » des lecteurs de musique peuvent utiliser une liste chaînée doublement/circulaire.
+
+- Les tracés et les forme,s sur le canevas, de MS-Paint sont connectés via une liste chaînée.
+
+- Le balayage « gauche/droite » sur Tinder utilise une liste doublement chaînée.
+
+- On peut garder la trace des tours dans un jeu multi-joueurs à l'aide d'une liste chaînée circulaire.
+
+- Les lignes de code dans un IDE peuvent être enregistrées dans une liste doublement chaînée.
+
+## Annexe : Tests possibles pour les fonctions codées
 
 ```python
 if __name__ == "__main__":
