@@ -73,6 +73,12 @@ La valeur dépilée est toujours la dernière valeur à avoir intégré la pile&
 
 {{% note exercise %}}
 
+#### Exemple d'utilisation d'une pile
+
+Tout navigateur possède un bouton permettant de retourner sur des pages que l'on a déjà consultées.  
+Expliquer quelle structure de données permet de réaliser cette opération simplement et décrire les opérations en jeu.
+{{% /note %}}
+
 ## Implémentation d'une structure de Pile à l'aide d'une liste Python
 
 L'idée est de définir le type `Pile` à l'aide d'une classe ne possédant qu'un seul attribut nommé `contenu`, qui référence une liste, puis de créer les méthodes de la spécification.
