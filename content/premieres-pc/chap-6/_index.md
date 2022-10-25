@@ -30,7 +30,7 @@ layout: "single"
 
 - **Doc. :** [*Qu'est-ce qu'une réaction d'oxydo-réduction ?*](1-oxydo-reduction-introduction)
 
-- **Doc. :** [*Réaction d'oxydo-réduction*](2-cours)
+- **Doc. :** [*Réaction d'oxydo-réduction (cours)*](2-cours)
 
 - **Doc. :** [*Mise en équation des réactions d'oxydoréduction*](3-exercices)
 

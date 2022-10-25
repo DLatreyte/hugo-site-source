@@ -20,14 +20,12 @@ auto_numbering: true
 {{% note normal %}}
 On introduit, dans un verre à pied contenant une solution de sulfate de cuivre $\ce{Cu^{2+}(aq) + SO4^{2-}(aq) }$, de la poudre de zinc $\ce{Zn(s)}$. On agite pendant quelques minutes, jusqu'à ce que la solution devienne incolore. On réalise la filtration du milieu afin de récupérer le filtrat et le solide.
 
-Observations&nbsp;:
-:
+#### Observations
 
 - On constate que la poudre de zinc est recouverte d'un solide rouge à l'éclat métallique.
 - Après avoir ajouté quelques gouttes d'une solution diluée d'hydroxyde de sodium $(\ce{Na+(aq) + HO-(aq)})$ dans le filtrat on constate la formation d'un précipité blanc (soluble dans un excès de solution d'hydroxyde de sodium).
 
-Interprétation&nbsp;:
-:
+#### Interprétation
 
 - La décoloration de la solution indique que les ions cuivre II, $\ce{Cu^{2+}(aq)}$, ont disparu.
 - Le solide rouge à l'éclat métallique déposé sur le zinc en poudre laisse penser que du cuivre métallique, $\ce{Cu (s)}$, s'est formé au cours de la transformation.
@@ -86,11 +84,13 @@ L'équation d'une réaction chimique d'oxydoréduction apparaît donc comme la �
 {{% note normal %}}
 On place un morceau de cuivre $\ce{Cu (s)}$ dans une solution aqueuse d'acide nitrique $(\ce{H+ (aq) + NO3- (aq)})$ contenue dans un bécher.
 
-Observations&nbsp;:
-: Des bulles de gaz se forment à la surface du métal, un gaz roux se dégage dans l'air et la solution se colore en bleu. À la fin de la transformation le cuivre métallique a disparu.
+#### Observations
 
-Interprétation&nbsp;:
-: La couleur du gaz dégagé fait immédiatement penser à du dioxyde d'azote $\ce{NO2(g)}$&nbsp;; la coloration bleue de la solution traduit l'apparition d'ions cuivre (II) $\ce{Cu^{2+}(aq)}$.
+Des bulles de gaz se forment à la surface du métal, un gaz roux se dégage dans l'air et la solution se colore en bleu. À la fin de la transformation le cuivre métallique a disparu.
+
+#### Interprétation
+
+La couleur du gaz dégagé fait immédiatement penser à du dioxyde d'azote $\ce{NO2(g)}$&nbsp;; la coloration bleue de la solution traduit l'apparition d'ions cuivre (II) $\ce{Cu^{2+}(aq)}$.
 {{% /note %}}
 
 Lors de la réaction, le cuivre métallique $\ce{Cu (s)}$ a disparu et donné naissance à des ions cuivre II hydratés $\ce{Cu^{2+}(aq)}$&nbsp;:
@@ -115,11 +115,13 @@ Remarque&nbsp;:
 {{% note normal %}}
 On place une lame de zinc $\ce{Zn (s)}$ bien décapée dans une solution de sulfate de cuivre II $(\ce{Cu^{2+}(aq) + SO4^{2-} (aq)})$ contenue dans un bécher.
 
-Observations&nbsp;:
-: La lame de zinc se recouvre d'un dépôt rouge à l'éclat métallique alors que la solution se décolore.
+#### Observations
 
-Interprétation&nbsp;:
-: La décoloration de la solution indique que les ions cuivre II, $\ce{Cu^{2+}(aq)}$, ont disparu.
+La lame de zinc se recouvre d'un dépôt rouge à l'éclat métallique alors que la solution se décolore.
+
+#### Interprétation
+
+La décoloration de la solution indique que les ions cuivre II, $\ce{Cu^{2+}(aq)}$, ont disparu.
 
 Le solide rouge à l'éclat métallique déposé sur le zinc en poudre laisse penser que du cuivre métallique, $\ce{Cu (s)}$, s'est formé au cours de la transformation.
 {{% /note %}}
@@ -207,4 +209,9 @@ $$ \text{oxydant} + n e^- = \text{réducteur}$$
 dans laquelle $n$ représente le nombre de moles d'électrons captés par l'oxydant ou cédés par le réducteur.
 
 - Les deux espèces chimiques constituant un couple sont appelées **oxydant et réducteur conjugués**.
+
+- Une **réaction d'oxydoréduction** est la *réaction entre un oxydant et un réducteur*.  
+
+- Au cours d'une réaction d'oxydoréduction, **tous les électrons cédés par le réducteurs sont captés par l'oxydant**.  
+Il faut donc s'assurer, lors de l'écriture de l'équation d'une réaction d'oxydoréduction, que *les quantités de matière d'électrons captés ou cédés sont bien identiques*.
 {{% /note %}}

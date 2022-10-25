@@ -17,12 +17,12 @@ auto_numbering: true
 
 #### Couples oxydant/réducteur)
 
-Soit les demi-équations d'oxydoréduction&nbsp;:
+Soit les demi-équations d'oxydoréduction suivantes&nbsp;:
 
 - $\ce{Co^{2+}(aq) + 2 e^- = Co (s) }$
-- $\ce{AgI (s)  + e^- = Ag (s) + I- (aq)  }$
 - $\ce{ S2O8^{2-} (aq) + 2 e^- = 2 SO4^{2-} (aq) }$
 - $\ce { 2 HBrO(aq)  + 2 H+ (aq)  + 4 e^- = 2 Br- (aq) + 2 H2O}$
+- $\ce{ Hg2^{2+} (aq) + 2 e^- = 2 Hg^{2+} (aq) }$
 
 1. Repérer les oxydants et les réducteurs mis en jeu.
 
@@ -40,10 +40,10 @@ Préciser quelles sont les espèces qui sont réduites et celles qui sont oxydé
 
 {{% solution "Réponses" %}}
 
-1. $\ce{ Co^{2+}/Co }$&nbsp;; $\ce{ Ag+ / Ag}$&nbsp;; $\ce{ S2O8^{2-}/SO4^{2-} }$&nbsp;; $\ce{ HBrO/Br- }$.
+1. Voici les couples oxydant/réducteur mis en jeu : $\ce{ Co^{2+}/Co }$&nbsp;; $\ce{ S2O8^{2-}/SO4^{2-} }$&nbsp;; $\ce{ HBrO/Br- }$ ; $\ce{ Hg2^{2+} / Hg^{2+}}$.
 
-2. Réduction de $\ce{ HBrO }$ et oxydation simultanée de $\ce{Co}$.
-Réduction de $\ce{ S2O8^{2-}}$ et oxydation simultanée de $\ce{Hg2^{2+}}$.
+2. Réduction de l'oxydant $\ce{ HBrO }$ et oxydation simultanée du réducteur $\ce{Co}$. Il se forme le réducteur $\ce{Br-}$ et l'oxydant $\ce{Co^{2+}}$.  
+    Réduction de l'oxydant $\ce{ S2O8^{2-}}$ et oxydation simultanée du réducteur $\ce{Hg2^{2+}}$. Il se forme le réducteur $\ce{SO4^{2-}}$ et l'oxydant $\ce{Hg^{2+}}$.
 {{% /solution %}}
 
 {{% note exercise %}}
@@ -59,14 +59,19 @@ $$
 1. Quelles sont les transformations subies par les réactifs&nbsp;?
 2. Identifier l'oxydant et le réducteur qui réagissent.
 3. Quels sont les couples Ox/Red mis en jeu&nbsp;?
-
+4. Écrire les demi-équations électroniques.
 {{% /note %}}
 
 {{% solution "Réponses" %}}
 
-1. Passage de l'ion argent (I) à l'atome d'argent et passage de l'atome de plomb à l'ion plomb (II).
-2. L'argent capte des électrons, c'est l'oxydant. Le plomb cède des électrons, c'est le réducteur.
-1. $\ce{Ag+ / Ag}$ et $\ce{Pb^{2+} / Pb}$.
+1. Lors de la réaction, l'ion argent (I) se transforme en atome d'argent et l'atome de plomb se transforme en ion plomb (II).
+
+2. L'ion argent (I) capte des électrons, c'est l'oxydant. Le plomb cède des électrons, c'est le réducteur.
+
+3. $\ce{Ag+ / Ag}$ et $\ce{Pb^{2+} / Pb}$.
+
+4. Pour le couple $\ce{Ag+ / Ag}$ : $\ce{ Ag+ + e^- = Ag}$  
+Pour le couple $\ce{Pb^{2+} / Pb}$ : $\ce{Pb^{2+} + 2 e^- = 2 Pb}$
 {{% /solution %}}
 
 {{% note exercise %}}
@@ -80,17 +85,16 @@ $$
 $$
 
 1. Cette réaction est-elle une réaction d'oxydoréduction&nbsp;? Justifier.
-1. Écrire les demi-équations d'oxydoréduction correspondant aux couples
-oxydant/réducteur mis en jeu.
-1. Identifier l'oxydant et le réducteur qui réagissent. Ont-ils été
-oxydés ou réduits&nbsp;?
+1. Les couples couples oxydant/réducteur mis en jeu sont $\ce{ I2/I-}$ et $\ce{ S4O6^{2-}/ S2O3^{2-} }$.\
+Écrire les demi-équations d'oxydoréduction de ces couples.
+1. Identifier l'oxydant et le réducteur qui réagissent dans l'équationd d'oxydoréduction.
 {{% /note %}}
 
 {{% solution "Réponses" %}}
 
-1. Le diiode devient l'ion iodure, il y a donc eu échange d'électrons.
-1. $\ce{ I2/I-}$&nbsp;: $\ce{ I2 + 2e- = 2 I-}$
-$\ce{ S4O6^{2-}/ S2O3^{2-} }$&nbsp;: $\ce{ S4O6^{2-} + 2e- = 2 S2O3^{2-}  }$
+1. La molécule de diiode se transforme en ion iodure, il y a donc eu échange d'électrons.
+1. Pour le couple $\ce{ I2/I-}$ : $\ce{ I2 + 2e- = 2 I-}$  
+Pour le couple $\ce{ S4O6^{2-}/ S2O3^{2-} }$ : $\ce{ S4O6^{2-} + 2e- = 2 S2O3^{2-}  }$
 1. Le diiode, oxydant, est réduit et l'ion thiosulfate, réducteur, est oxydé.
 {{% /solution %}}
 
@@ -107,17 +111,19 @@ Les ions or (III) $\ce{Au^{3+} (s)}$ réagissent avec le zinc métallique pour d
 
 {{% solution "Réponses" %}}
 
-1. $\ce{ Au^{3+}/Au }$ et $\ce{Zn^{2+}/Zn }$.
-1. $\ce{ \boxed{Au} + 3e- = Au}$ et $\ce{ Zn^{2+} + 2e- = \boxed{Zn}}$ (les réactifs sont encadrés).
-On constate que la seconde demi-équation électronique n'est pas écrite dans le bon sens. De plus, si l'on se contente de retourner cette demi-équation on constate que plus d'électrons sont captés que libérés.
+1. Les deux couples sont : $\ce{ Au^{3+}/Au }$ et $\ce{Zn^{2+}/Zn }$.
+
+1. Les deux demi-équations sont $\ce{ \boxed{\ce{ Au^{3+} }} + 3e- = Au}$ et $\ce{ Zn^{2+} + 2e- = \boxed{Zn}}$ (les réactifs sont encadrés).  
+On constate que la seconde demi-équation électronique n'est pas écrite dans le bon sens puisque le réactif apparaît à gauche du symbole $=$. De plus, si l'on se contente de retourner cette demi-équation on constate que plus d'électrons sont captés que libérés.
 $$
 \begin{aligned}
-( \ce{ Au^{3+} + 3e-} &= \ce{ Au } ) \times (2)\cr
-( \ce{ Zn^{2+} + 2e-} &= \ce{Zn} ) \times (-3) \cr
+( \ce{ Au^{3+} + 3e-} &= \ce{ Au } ) \times (2)\\\\
+( \ce{ Zn^{2+} + 2e-} &= \ce{ Zn } ) \times (-3) \\\\
 \hline
-\ce{2 Au^{3+}(aq) + 3 Zn(s)} &\longrightarrow \ce{ 2 Au(s) + 3 Zn^{2+}(aq) }
+\ce{2 Au^{3+}(aq) + 3 Zn(s)} &\longrightarrow \ce{ 2 Au(s) + 3 Zn^{2+}(aq) }\\\\
 \end{aligned}
 $$
+
 1. Oxydant&nbsp;: $\ce{ Au^{3+} }$, réducteur&nbsp;: $\ce{Zn}$.
 {{% /solution %}}
 
@@ -147,8 +153,8 @@ $\ce{ Al^{3+} / Al}$&nbsp;: $\ce{ Al^{3+} + 3e- = Al}$
 1. Réaction entre $\ce{ Cl2}$ et $\ce{Sn}$&nbsp;:
 $$
 \begin{aligned}
-( \ce{ Cl2 + 2e-} &= \ce{ 2 Cl- } ) \times (1)\cr
-( \ce{ Sn^{2+} + 2e-} &= \ce{Sn} ) \times (-1) \cr
+( \ce{ Cl2 + 2e-} &= \ce{ 2 Cl- } ) \times (1)\\\\
+( \ce{ Sn^{2+} + 2e-} &= \ce{Sn} ) \times (-1) \\\\
 \hline
 \ce{Cl2(aq) + Sn(s)} &\longrightarrow \ce{ 2 Cl-(aq) + Sn^{2+}(aq) }
 \end{aligned}
@@ -156,8 +162,8 @@ $$
 Réaction entre $\ce{Al}$ et $\ce{Sn^{2+}}$&nbsp;:
 $$
 \begin{aligned}
-( \ce{ Al^{3+} + 3e- } &= \ce{ Al } ) \times (-2)\cr
-( \ce{ Sn^{2+} + 2e-} &= \ce{Sn} ) \times (3) \cr
+( \ce{ Al^{3+} + 3e- } &= \ce{ Al } ) \times (-2)\\\\
+( \ce{ Sn^{2+} + 2e-} &= \ce{Sn} ) \times (3) \\\\
 \hline
 \ce{2 Al(s) + 3 Sn^{2+}(aq)} &\longrightarrow \ce{ 2 Al^{3+}(aq) + 3 Sn(s) }
 \end{aligned}
@@ -207,8 +213,8 @@ $$
 
 1. $$
 \begin{aligned}
-( \ce{ 8 H+ + MnO4- + 5e- } &= \ce{ Mn^{2+} + 4 H2O } ) \times (2)\cr
-( \ce{ 4 H+ + SO4^{2-} + 2e-} &= \ce{SO2 + 2 H2O} ) \times (-5) \cr
+( \ce{ 8 H+ + MnO4- + 5e- } &= \ce{ Mn^{2+} + 4 H2O } ) \times (2)\\\\
+( \ce{ 4 H+ + SO4^{2-} + 2e-} &= \ce{SO2 + 2 H2O} ) \times (-5) \\\\
 \hline
 \ce{ 5 SO2(aq) + 2 H2O + 2 MnO4-(aq) } &\longrightarrow \ce{ 4 H+(aq) + 5 SO4^{2-}(aq) + 2 Mn^{2+}(aq) }
 \end{aligned}
@@ -216,8 +222,8 @@ $$
 
 1. $$
 \begin{aligned}
-( \ce{ I2 + 2e- } &= \ce{ 2 I- } ) \times (-5)\cr
-( \ce{ 6 H+ + IO3- + 5e-} &= \ce{1/2 I2 + 3 H2O} ) \times (2) \cr
+( \ce{ I2 + 2e- } &= \ce{ 2 I- } ) \times (-5)\\\\
+( \ce{ 6 H+ + IO3- + 5e-} &= \ce{1/2 I2 + 3 H2O} ) \times (2) \\\\
 \hline
 \ce{ 5 I-(aq) + 6 H+(aq) + IO3-(aq) } &\longrightarrow \ce{ 3 I2(aq) + 3 H2O }
 \end{aligned}
@@ -244,13 +250,13 @@ chlorure $\ce{Cl- (aq)}$.
 
 {{% solution "Réponses" %}}
 
-1. $\ce{ClO3-/ClO-}$&nbsp;: $\ce{ 4 H+ + ClO3- + 4 e- = ClO- + 2 H2O }$&nbsp;;
-$\ce{ClO- / Cl-}$&nbsp;: $\ce{ 2 H+ + ClO- + 2e- = Cl- + H2O  }$.
+1. $\ce{ClO3-/ClO-}$ : $\ce{ 4 H+ + ClO3- + 4 e- = ClO- + 2 H2O }$ ;  
+$\ce{ClO- / Cl-}$ : $\ce{ 2 H+ + ClO- + 2e- = Cl- + H2O  }$.
 
 1. $$
 \begin{aligned}
-( \ce{ 4 H+ + ClO3- + 4 e- } &= \ce{ ClO- + 2 H2O } ) \times (-1)\cr
-( \ce{ 2 H+ + ClO- + 2e-} &= \ce{Cl- + H2O} ) \times (2) \cr
+( \ce{ 4 H+ + ClO3- + 4 e- } &= \ce{ ClO- + 2 H2O } ) \times (-1)\\\\
+( \ce{ 2 H+ + ClO- + 2e-} &= \ce{Cl- + H2O} ) \times (2) \\\\
 \hline
 \ce{ 3 ClO-(aq) } &\longrightarrow \ce{ ClO3-(aq) + 2 Cl-(aq) }
 \end{aligned}
