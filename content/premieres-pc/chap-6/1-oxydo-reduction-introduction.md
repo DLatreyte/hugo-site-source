@@ -1,5 +1,5 @@
 ---
-title: "Qu'est-ce qu'une réaction d'oxydo-réduction ?"
+title: "Qu'est-ce qu'une réaction d'oxydoréduction ?"
 subtitle: ""
 author: ""
 type: ""

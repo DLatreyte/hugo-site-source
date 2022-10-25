@@ -1,5 +1,5 @@
 ---
-title: "Les réactions d'oxydo-réduction"
+title: "Les réactions d'oxydoréduction"
 subtitle: ""
 author: ""
 type: ""

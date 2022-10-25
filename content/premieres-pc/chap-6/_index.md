@@ -1,5 +1,5 @@
 ---
-title: "Transformations modélisées par une réaction d'oxydo-réduction"
+title: "Transformations modélisées par une réaction d'oxydoréduction"
 subtitle: ""
 author: ""
 type: ""
@@ -30,8 +30,8 @@ layout: "single"
 
 - **Doc. :** [*Qu'est-ce qu'une réaction d'oxydo-réduction ?*](1-oxydo-reduction-introduction)
 
-- **Doc. :** [*Réaction d'oxydo-réduction (cours)*](2-cours)
+- **Doc. :** [*Réaction d'oxydoréduction (cours)*](2-cours)
 
 - **Doc. :** [*Mise en équation des réactions d'oxydoréduction*](3-exercices)
 
-- **Doc. :** [*Bilans de matière et réactions d'oxydo-réduction*](4-exercices-quantite-de-matiere)
+- **Doc. :** [*Bilans de matière et réactions d'oxydoréduction*](4-exercices-quantite-de-matiere)

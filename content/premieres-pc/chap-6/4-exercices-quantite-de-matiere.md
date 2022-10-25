@@ -1,5 +1,5 @@
 ---
-title: "Bilans de matière et réactions d'oxydo-réduction"
+title: "Bilans de matière et réactions d'oxydoréduction"
 subtitle: ""
 author: ""
 type: ""
@@ -9,7 +9,7 @@ toc: true
 tags: ["Oxydant", "Réducteur", "Couple oxydant/réducteur", "Réaction d'oxydo-réduction", "Équation de réaction chimique","Tableau d'avancement", "Quantité de matière", "Concentration"]
 categories: ["Chimie", "Premières Spé PC"]
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 
