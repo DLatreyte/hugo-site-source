@@ -162,7 +162,7 @@ Une file est vide lorsque les deux piles sont vides.
 3. Ajouter un nouvel élément à la file consiste à empiler cet élément sur la pile d'entrée.
 Écrire le code de la méthode `enfiler` de la spécification.
 
-Pour retirer la première valeur de la pile deux cas sont à considérer :
+Pour retirer la valeur la plus ancienne dans la file deux cas sont à considérer :
 
 - la pile de sortie n'est pas vide : la valeur est la dernière de cette pile. Il suffit donc de dépiler la pile de sortie.
 - la pille de sortie est vide : il faut d'abord dépiler la pile d'entrée dans la pile de sortie puis dépiler cette pile de sortie.
