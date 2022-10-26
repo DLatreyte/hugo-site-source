@@ -32,13 +32,13 @@ layout: "single"
 
 - **Doc. :** [*Détermination de la composition d'une solution colorée, loi de Beer-Lambert*](1-beer-lambert)
 
-- **Doc. :** [*Dosage par étalonnage d'un antiseptique : l'eau de Dakin*](2-eau-dakin)
+- **Doc. :** [*Dosage par étalonnage d'un antiseptique : l'eau de Dakin (TP)*](2-eau-dakin)
 
-- **Doc. :** [*Dosage par étalonnage d'un antiseptique : la Bétadine*](19-dosage-conductimetrique-betadine)
+- **Doc. :** [*Dosage par étalonnage d'un antiseptique : la Bétadine (TP)*](19-dosage-conductimetrique-betadine)
 
 - **Doc. :** [*Conductimétrie (cours)*](3-conductivite-solution)
 
-- **Doc. :** [*Dosage par étalonnage d'un sérum physiologique*](4-kohlrausch-dosage)
+- **Doc. :** [*Dosage par étalonnage d'un sérum physiologique (TP)*](4-kohlrausch-dosage)
 
 - **Doc. :** [*Dosages par étalonnage : exercices*](14-dosages-etalonnage-exercices)
 
@@ -58,17 +58,19 @@ layout: "single"
 
 ### Suivi conductimétrique
 
-- **Doc. :** [*Titrage d'une solution de vinaigre par conductimétrie*](5-titrage-conductimetrique)
+- **Doc. :** [*Titrage d'une solution de vinaigre par conductimétrie (Cours/TD)*](5-titrage-conductimetrique)
 
-- **Doc. :** [*Titrage d'une solution de sérum physiologique par conductimétrie*](6-titrage-conductimetrique-2)
+- **Doc. :** [*Titrage des ions chlorure présents dans une solution de sérum physiologique par suivi conductimétrique (TP)*](6-titrage-conductimetrique-2)
+
+- **Doc. :** [*Titrage des ions hydroxyde présents dans le Destop par suivi conductimétrique (TP)*](20-destop-conductimetrie)
 
 ### Suivi pH-métrique
 
-- **Doc. :** [*Titrages par suivi pH-métrique*](7-titrage-acide-base)
+- **Doc. :** [*Titrages par suivi pH-métrique (Cours/TD)*](7-titrage-acide-base)
 
-- **Doc. :** [*Titrage de l'acide acétique présent dans un vinaigre*](15-titrage-acide-acetique)
+- **Doc. :** [*Titrage de l'acide acétique présent dans un vinaigre (TP)*](15-titrage-acide-acetique)
 
-- **Doc. :** [*Titrage direct de l'aspirine*](18-titrage-aspirine)
+- **Doc. :** [*Titrage direct de l'aspirine (TP)*](18-titrage-aspirine)
 
 ## Spectroscopie
 
@@ -92,14 +94,14 @@ layout: "single"
 
 ## Annales
 
-- **Doc. :** [*Annale : Titrage indirect d'une eau de Javel*](8-titrage-indirect)
+- **Annale :** [*Titrage indirect d'une eau de Javel*](8-titrage-indirect)
 
-- **Doc. :** [*Annale : Chaufferette chimique*](9-chaufferette-chimique)
+- **Annale :** [*Chaufferette chimique*](9-chaufferette-chimique)
 
-- **Doc. :** [*Annale : Ammoniac*](10-ammoniac)
+- **Annale :** [*Ammoniac*](10-ammoniac)
 
-- **Doc. :** [*Annale : Quelle teneur en cuivre dans une pièce de 5 centimes d'euro ?*](11-teneur-cuivre-piece)
+- **Annale :** [*Quelle teneur en cuivre dans une pièce de 5 centimes d'euro ?*](11-teneur-cuivre-piece)
 
-- **Doc. :** [*Annale : Les dangers de l'alcool*](12-alcool)
+- **Annale :** [*Les dangers de l'alcool*](12-alcool)
 
-- **Doc. :** [*Annale : Acide ascorbique*](13-acide-ascorbique)
+- **Annale :** [*Acide ascorbique*](13-acide-ascorbique)

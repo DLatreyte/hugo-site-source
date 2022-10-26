@@ -1,5 +1,5 @@
 ---
-title: "Titrage conductimétrique d'une solution de sérum physiologique"
+title: "Titrage des ions chlorure présents dans une solution de sérum physiologique par suivi conductimétrique"
 subtitle: ""
 author: ""
 type: ""

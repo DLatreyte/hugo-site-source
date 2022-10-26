@@ -9,7 +9,7 @@ toc: true
 tags: ["Titrage indirect", "Titrage en retour", "Réaction d'oxydo-réduction", "Équivalence", "Volume molaire"]
 categories: ["Chimie", "Terminale Spé PC", "Annale"]
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 
@@ -34,7 +34,7 @@ Pour vérifier l'indication portée sur une bouteille commerciale d'eau de Javel
 On ajoute un excès d'ions iodure à un volume connu de solution d'eau de Javel.
 Les ions hypochlorite $\ce{ClO–(aq)}$ oxydent en milieu acide les ions iodure $\ce{I^–(aq)}$.
 L'équation de la réaction (référencée comme **équation 1** par la suite) modélisant la transformation est&nbsp;:
-$$\ce{ClO^–(aq)  + 2 I^–(aq)  +  2H+(aq) ->  H2O(l) +  I2(aq)  + Cl–(aq)}$$   
+$$\ce{ClO^–(aq)  + 2 I^–(aq)  +  2H+(aq) ->  H2O(l) +  I2(aq)  + Cl–(aq)}$$
 On considérera la transformation chimique modélisée par cette réaction comme totale.
 
 Le diode formé appartenant au couple $\ce{I2(aq) / I^–(aq)}$ est titré par les ions thiosulfate, réducteurs du couple $\ce{S4O6^{2–}(aq) /S2O3^{2–}(aq)}$. On en déduit alors la quantité d'ions hypochlorite, puis le degré chlorométrique.
