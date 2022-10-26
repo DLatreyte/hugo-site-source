@@ -9,7 +9,7 @@ toc: true
 tags: ["Pile", "Liste", "Liste chaînée", "Complexité", "Classe"]
 categories: ["Terminales Spé NSI", "Informatique"]
 image: ""
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: true
 ---
 
