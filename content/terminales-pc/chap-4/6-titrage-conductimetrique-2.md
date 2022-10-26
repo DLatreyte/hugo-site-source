@@ -65,18 +65,18 @@ $\lambda_{\ce{Na^+}} = \pu{5,0e-3 S.m2.mol-1}$ ; $\lambda_{\ce{Cl^-}} = \pu{7,6e
 
 <img src="/terminales-pc/chap-4/chap-4-6-1.jpg" alt="" width="55%" style="float: right; padding-left: 15px;" />
 
-- Sérum physiologique de concentration $C$ en chlorure de sodium **dilué 10 fois**. On prélève $V=\pu{10 mL}$ de ce sérum dilué 10 fois&nbsp;;
+- Sérum physiologique de concentration $C$ en chlorure de sodium **dilué 10 fois**.
 
-- Solution de nitrate d’argent $\ce{ Ag^+(aq) + NO^-_3(aq) }$ de concentration $C_2 = \pu{2,0e-2 mol.L-1}$&nbsp;;
+- Solution de nitrate d’argent $\ce{ Ag^+(aq) + NO^-_3(aq) }$ de concentration $C_2 = \pu{2,0e-2 mol.L-1}$.
 
-- Indicateur de fin de réaction : solution jaune de chromate de potassium $\ce{2 K^+(aq) + CrO^2-_4(aq) }$&nbsp;;  
+- Indicateur de fin de réaction : solution jaune de chromate de potassium $\ce{2 K^+(aq) + CrO^2-_4(aq) }$.  
  **Nous n'avons malheureusement pas ce produit à disposition, cette partie du TP ne sera pas réalisée**&nbsp;;
 
 - Conductimètre et sonde, agitateur et barreau aimanté, burette graduée $\pu{25 mL}$, pipette jaugée $\pu{10 mL}$ et propipette, éprouvette graduée, béchers, erlenmeyer, eau distillée.
 
 ### Protocole
 
-- Rédiger un protocole permettant de mettre en œuvre simultanément la méthode de Mohr et de réaliser un suivi conductimétrique du titrage.
+- Rédiger un protocole permettant de mettre en œuvre simultanément la méthode de Mohr et de réaliser un suivi conductimétrique du titrage de $V=\pu{10 mL}$ de ce sérum dilué 10 fois.
 - Mettre en œuvre le protocole.
 
 #### Tableau de valeurs envisageable
