@@ -1,5 +1,5 @@
 ---
-title: "Les réactions d'oxydoréduction"
+title: "Les réactions d'oxydoréduction en solution aqueuse"
 subtitle: ""
 author: ""
 type: ""

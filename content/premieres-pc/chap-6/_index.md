@@ -28,9 +28,9 @@ layout: "single"
 
 ----
 
-- **Doc. :** [*Qu'est-ce qu'une réaction d'oxydo-réduction ?*](1-oxydo-reduction-introduction)
+- **Doc. :** [*Qu'est-ce qu'une réaction d'oxydo-réduction en solution aqueuse ?*](1-oxydo-reduction-introduction)
 
-- **Doc. :** [*Réaction d'oxydoréduction (cours)*](2-cours)
+- **Doc. :** [*Réaction d'oxydoréduction en solution aqueuse (cours)*](2-cours)
 
 - **Doc. :** [*Mise en équation des réactions d'oxydoréduction*](3-exercices)
 

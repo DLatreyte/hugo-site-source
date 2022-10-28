@@ -87,21 +87,16 @@ $\lambda_{\ce{Na^+}} = \pu{5,01e-3 S.m2.mol-1}$ ; $\lambda_{\ce{Cl^-}} = \pu{7,6
 
 ### Travail expérimental
 
-1. Quelle est la concentration en ions hydroxyde dans le Destop® ?
-{{% solution "Réponse" %}}
+1. Élaborer un protocole expérimental permettant de titrer $V_B = \pu{10 mL}$ d'une solution de Destop® **diluée 200 fois**.
 
-{{% /solution %}}
-
-2. Élaborer un protocole expérimental permettant de titrer $V_B = \pu{10 mL}$ d'une solution de Destop® **diluée 200 fois**.
-
-3. Écrire l'équation de la réaction de titrage.
+2. Écrire l'équation de la réaction de titrage.
 {{% solution "Réponse" %}}
 
 $$ \ce{ H3O^+ + OH^- (aq) --> 2 H2O } $$
 
 {{% /solution %}}
 
-4. Quelles propriétés doit présenter une réaction chimique utilisée pour réaliser un titrage&nbsp;?
+3. Quelles propriétés doit présenter une réaction chimique utilisée pour réaliser un titrage&nbsp;?
 {{% solution "Réponse" %}}
 
 Une réaction chimique utilisée pour réaliser un titrage doit&nbsp;:
@@ -112,15 +107,70 @@ Une réaction chimique utilisée pour réaliser un titrage doit&nbsp;:
 
 {{% /solution %}}
 
-5. Mettre en œuvre le protocole expérimental.
+4. Mettre en œuvre le protocole expérimental.
 
-6. Justifier l'allure de la courbe $\sigma = f(V_A)$.
+5. Justifier l'allure de la courbe $\sigma = f(V_A)$.
 {{% solution "Réponse" %}}
 
+##### Remarque
+
+L'ajout des $\pu{200 mL}$ d'eau nous permet de considérer que le volume de la solution reste constant tout au long du titrage.
+
+##### Avant l'équivalence
+
+Les ions oxonium, le titrant, sont en défaut. La solution contient donc (hormis l'eau) :
+
+- des ions chlorure dont la concentration augmente ;
+- des ions sodium dont la concentration reste constante ;
+- des ions hydroxyde dont la concentration diminue.
+L'expression de la conductivité de la solution est donc
+$$
+\sigma_{av} = \lambda_{\ce{Na^+}} [\ce{Na^+}] + \lambda_{\ce{Cl^-}} [\ce{Cl^-}] + \lambda_{\ce{OH^-}} [\ce{OH^-}]
+$$
+Comme $\lambda_{\ce{OH^-}} [\ce{OH^-}]$, la partie de la conductivité de la solution due aux ions hydroxyde, est supérieure à $\lambda_{\ce{Cl^-}} [\ce{Cl^-}]$, la partie de la conductivité de la solution due aux ions chlorure, c'est elle qui donne l'allure de l'évolution de la conductivité. La concentration des ions chlorure diminuant, la conductivité de la solution diminue.
+
+##### Après l'équivalence
+
+Les ions hydroxyde, le titré, sont désormais en défaut. La solution contient donc (hormis l'eau) :
+
+- des ions chlorure dont la concentration augmente ;
+- des ions sodium dont la concentration reste constante ;
+- des ions oxonium dont la concentration augmente.
+L'expression de la conductivité de la solution est donc
+$$
+\sigma_{ap} = \lambda_{\ce{Na^+}} [\ce{Na^+}] + \lambda_{\ce{Cl^-}} [\ce{Cl^-}] + \lambda_{\ce{H3O^+}} [\ce{H3O^+}]
+$$
+On constate donc que la conductivité de la solution doit augmenter.
 {{% /solution %}}
 
-7. Quelle est la concentration en ions hydroxyde dans la solution titrée ?  
+6. Quelle est la concentration en ions hydroxyde dans la solution titrée ?  
 {{% solution "Réponse" %}}
+ À l'équivalence, puisqu'on change de réactif limitant,
+
+- $n_0(\ce{OH^-}) - x_E = O$ (tous les ions hydroxyde ont été consommés) ;
+- $n_E(\ce{H3O^+}) - x_E = O$ (tous les ions oxonium ont été consommés).
+
+On a donc la relation
+$$
+    x_E = n_0(\ce{OH^-}) = n_E(\ce{H3O^+}) \iff [\ce{OH^-}] V_B = C_A V_{AE}
+$$
+où $[\ce{OH^-}]$ est la concentration des ions hydroxyde **dans la solution titrée**. Finalement
+$$
+    [\ce{OH^-}] = C_A\\, \dfrac{V_{AE}}{V_B}
+$$
+**A.N.** $\ce{OH^-}] = $
+{{% /solution %}}
+
+7. Quelle est la concentration en ions hydroxyde dans le Destop® ?
+{{% solution "Réponse" %}}
+
+- La masse volumique de la solution de Destop® est $\rho = \pu{1,23e3 g.L^-1}$, la masse d'un litre de solution est donc égale à $m_D = \pu{1,23e3 g}$.
+
+- Selon l'étiquette, la masse d'hydroxyde de sodium représente 20 % de la masse de la solution. La masse d'hydroxyde de sodium dans un litre de solution est donc égale à $m = \pu{0,20} \\; m_D = \pu{0,20} \times \pu{1,23e3 g} = \pu{2,46e2 g}$.
+
+- La quantité de matière d'hydroxyde de sodium vaut alors $n = \dfrac{m_0}{M(\ce{NaOH})} = \dfrac{\pu{2,46e2 g}}{\pu{40,0 g.mol^-1}} = \pu{6,15 mol}$.
+
+- Puisqu'une mole d'hydroxyde de sodium libère une mole d'ions hydroxyde lors de la dissolution, la concentration molaire en ions hydroxyde dans la solution est $[\ce{OH^-}] = \pu{6,15 mol.L^-1}$.
 
 {{% /solution %}}
 

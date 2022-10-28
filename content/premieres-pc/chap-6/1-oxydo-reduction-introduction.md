@@ -1,5 +1,5 @@
 ---
-title: "Qu'est-ce qu'une réaction d'oxydoréduction ?"
+title: "Qu'est-ce qu'une réaction d'oxydoréduction en solution aqueuse ?"
 subtitle: ""
 author: ""
 type: ""
