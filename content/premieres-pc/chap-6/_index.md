@@ -1,5 +1,5 @@
 ---
-title: "Transformations modélisées par une réaction d'oxydoréduction"
+title: "Transformations modélisées par une réaction d'oxydoréduction  en solution aqueuse"
 subtitle: ""
 author: ""
 type: ""
