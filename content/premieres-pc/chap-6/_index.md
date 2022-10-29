@@ -18,7 +18,7 @@ layout: "single"
 
 | Notions et contenus | Capacités exigibles |
 |:----|:----|
-| - Transformation modélisée par une réaction d’oxydo-réduction : oxydant, réducteur, couple oxydant-réducteur, demi-équation électronique. | - À partir de données expérimentales, identifier le transfert d’électrons entre deux réactifs et le modéliser par des demi-équations électroniques et par une réaction d’oxydo-réduction.<br />- Établir une équation de la réaction entre un oxydant et un réducteur, les couples oxydant-réducteur étant donnés.<br />- Mettre en œuvre des transformations modélisées par des réactions d’oxydo-réduction.|
+| - Transformation modélisée par une réaction d’oxydoréduction : oxydant, réducteur, couple oxydant/réducteur, demi-équation électronique. | - À partir de données expérimentales, identifier le transfert d’électrons entre deux réactifs et le modéliser par des demi-équations électroniques et par une réaction d’oxydoréduction.<br />- Établir une équation de la réaction entre un oxydant et un réducteur, les couples oxydant-réducteur étant donnés.<br />- Mettre en œuvre des transformations modélisées par des réactions d’oxydoréduction.|
 
 ## Documents
 
@@ -28,7 +28,7 @@ layout: "single"
 
 ----
 
-- **Doc. :** [*Qu'est-ce qu'une réaction d'oxydo-réduction en solution aqueuse ?*](1-oxydo-reduction-introduction)
+- **Doc. :** [*Qu'est-ce qu'une réaction d'oxydoréduction en solution aqueuse ?*](1-oxydo-reduction-introduction)
 
 - **Doc. :** [*Réaction d'oxydoréduction en solution aqueuse (cours)*](2-cours)
 

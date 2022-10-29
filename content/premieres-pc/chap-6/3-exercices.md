@@ -22,7 +22,7 @@ Soit les demi-équations d'oxydoréduction suivantes&nbsp;:
 - $\ce{Co^{2+}(aq) + 2 e^- = Co (s) }$
 - $\ce{ S2O8^{2-} (aq) + 2 e^- = 2 SO4^{2-} (aq) }$
 - $\ce { 2 HBrO(aq)  + 2 H+ (aq)  + 4 e^- = 2 Br- (aq) + 2 H2O}$
-- $\ce{ Hg2^{2+} (aq) + 2 e^- = 2 Hg^{2+} (aq) }$
+- $\ce{ 2 Hg^{2+} (aq) + 2 e^- = Hg_2^{2+} (aq) }$
 
 1. Repérer les oxydants et les réducteurs mis en jeu.
 

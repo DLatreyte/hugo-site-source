@@ -20,3 +20,5 @@ layout: "single"
 - <a href="/culture/principe-du-laser/principe-laser.html" >*Le principe de fonctionnement d'un laser*</a>
 
 - <a href="/culture/satellite-et-frottements/Satellite-et-frottements.html">*Satellite et frottements*</a>
+
+- [*Les nombres d'oxydation d'un élément*](nombres_d_oxydation)
