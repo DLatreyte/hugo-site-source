@@ -4,7 +4,7 @@ subtitle: ""
 author: ""
 type: ""
 date: 2021-02-19T22:06:36+04:00
-draft: false
+draft: true
 toc: true
 tags: ["Tableau d'avancement", "Transformation totale", "Transformation limitée", "Avancement"]
 categories: ["Premières Spé PC", "Chimie"]
