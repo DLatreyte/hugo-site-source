@@ -25,6 +25,8 @@ layout: single
 
 - [*Transformations modélisées par une réaction d'oxydoréduction*](chap-6)
 
+- [*Évolution d'un système chimique*](chap-7)
+
 - [*Vision et couleurs*](chap-5)
 
 - [*Évolution d'un système chimique*](chap-7)
