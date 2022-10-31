@@ -13,7 +13,8 @@ solution_est_visible: true
 auto_numbering: true
 layout: "single"
 ---
-
+- [*ECE 1*](sujet_6)
+<!--
 - [*ECE 1*](sujet_10)
 - [*ECE 2*](sujet_9)
 - [*ECE 3*](sujet_21)
@@ -23,3 +24,5 @@ layout: "single"
 - [*ECE 7*](sujet_23)
 - [*ECE 8*](sujet_14_25)
 - [*ECE 9*](sujet_17_18)
+
+-->
