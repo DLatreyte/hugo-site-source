@@ -9,7 +9,7 @@ toc: true
 tags: []
 categories: []
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 
@@ -21,6 +21,7 @@ Remarque
 : L'utilisation de la fonction `max` fournie avec le langage Python n'est pas autorisée.
 
 Exemple :
+
 ```python
 if __name__ == "__main__":
     assert maxi([1, 5, 6, 9, 1, 2, 3, 7, 9, 8]) == (9, 3)
@@ -73,7 +74,8 @@ def positif(T):
 return T2
 ```
 
-Exemple : 
+Exemple :
+
 ```python
 if __name__ == "__main__":
     T = [-1, 0, 5, -3, 4, -6, 10, 9, -8]
@@ -106,6 +108,6 @@ def positif(T: List[int]) -> List[int]:
 if __name__ == "__main__":
     T = [-1, 0, 5, -3, 4, -6, 10, 9, -8]
     assert positif(T) == [0, 5, 4, 10, 9]
-``` 
+```
 
 {{% /solution %}}
