@@ -16,24 +16,35 @@ auto_numbering: true
 {{% note normal %}}
 Le corrigé de l'activité se trouve {{< remote "ici" "https://repl.it/@dlatreyte/arbres" >}}
 {{% /note %}}
+
 ## Arbres binaires
 
 ### Définition
 
 {{% note tip %}}
-- Un **arbre binaire** est un arbre de degré 2 (dont les nœuds sont au plus de degré 2).
 
-- Les enfants d’un nœud sont lus de gauche à droite et sont appelés : *fils gauche* et *fils droit*.
+Un **arbre binaire** est un ensemble de nœuds organisés hiérarchiquement selon la définition récursive suivante : «  
+Un arbre binaire est :
+
+- soit vide ;
+- soit un nœud, appelé **racine**, relié à exactement deux arbres binaires $l$ et $r$, respectivement appelés sous-arbre gauche et sous arbre droit. »
+
 {{% /note %}}
+
+#### Remarques
+
+- On note généralement $E$ *l'arbre binaire vide* et $N(x,l,r)$ *l'arbre binaire dont la racine porte l'étiquette* $x$.
+- Un *arbre binaire* est un arbre dont *les nœuds sont au plus de degré 2*.
 
 {{% note warning %}}
 Pour simplifier la présentation, on va considérer que chaque nœud possède exactement deux fils mais que **ceux-ci peuvent être vides** (`None` par exemple).
 {{% /note %}}
 
 {{% note normal %}}
-Les arbres binaires forment une *structure de données abstraite qui peut se définir de façon récursive*. 
+Les arbres binaires forment une *structure de données abstraite qui peut se définir de façon récursive*.
 
 Un arbre binaire est :
+
 - Soit vide.
 - Soit composé d’une racine portant une étiquette (valeur) et d’une paire d’arbres binaires, appelés sous-arbres gauche et droit.
 {{% /note %}}
@@ -41,7 +52,7 @@ Un arbre binaire est :
 ### Relation entre nombre de nœuds et hauteur dans le cas des arbres binaires
 
 {{% note tip %}}
-Si $N$ désigne la taille d'un arbre binaire --- c'est à dire son nombre de nœuds non vides --- et $h$ sa hauteur, alors 
+Si $N$ désigne la taille d'un arbre binaire --- c'est à dire son nombre de nœuds non vides --- et $h$ sa hauteur, alors
 $$h \leqslant N \leqslant 2^h - 1$$
 {{% /note %}}
 
@@ -58,32 +69,33 @@ On a $N = 2^h - 1$ lorsque l'arbre binaire est parfait, c'est à dire lorsque to
 ## Spécification des arbres binaires
 
 {{% note tip %}}
-- **Créer** un nœud (type)&nbsp;: 
-    - fonction&nbsp;: `creer_nœud()` $\longrightarrow$ retourne un nœud &nbsp;;
-    - `fils_gauche` et `fils_droit` sont automatiquement initialisés à `None`&nbsp;;;
-    - complexité&nbsp;: $O(0)$ (pas tout à fait vrai mais suffisant pour comprendre la suite).
+
+- **Créer** un nœud (type)&nbsp;:
+  - fonction&nbsp;: `creer_nœud()` $\longrightarrow$ retourne un nœud &nbsp;;
+  - `fils_gauche` et `fils_droit` sont automatiquement initialisés à `None`&nbsp;;;
+  - complexité&nbsp;: $O(0)$ (pas tout à fait vrai mais suffisant pour comprendre la suite).
 - **Lire** dans le champ `valeur`&nbsp;:
-    - fonction&nbsp;: `lire_valeur(n: Noeud[T])` $\longrightarrow$ `T`&nbsp;;
-    - complexité&nbsp;: 1 opération élémentaire.
+  - fonction&nbsp;: `lire_valeur(n: Noeud[T])` $\longrightarrow$ `T`&nbsp;;
+  - complexité&nbsp;: 1 opération élémentaire.
 - **Écrire** dans le champ `valeur`&nbsp;:
-    - fonction&nbsp;: `modifier_valeur(n: Noeud[T], valeur: T)` $\longrightarrow$ `None`&nbsp;;
-    - complexité&nbsp;: 1 opération élémentaire.
+  - fonction&nbsp;: `modifier_valeur(n: Noeud[T], valeur: T)` $\longrightarrow$ `None`&nbsp;;
+  - complexité&nbsp;: 1 opération élémentaire.
 - **Lire** dans le champ `fils_gauche`&nbsp;:
-    - fonction&nbsp;: `lire_filsG(n: Noeud[T])` $\longrightarrow$ `Noeud[T]`&nbsp;;
-    - complexité&nbsp;: 1 opération élémentaire.
+  - fonction&nbsp;: `lire_filsG(n: Noeud[T])` $\longrightarrow$ `Noeud[T]`&nbsp;;
+  - complexité&nbsp;: 1 opération élémentaire.
 - **Écrire** dans le champ `fils_gauche`&nbsp;:
-    - fonction&nbsp;: `modifier_filsG(n: Noeud[T], m: Noeud[T])` $\longrightarrow$ `None`&nbsp;;
-    - complexité&nbsp;: 1 opération élémentaire.
+  - fonction&nbsp;: `modifier_filsG(n: Noeud[T], m: Noeud[T])` $\longrightarrow$ `None`&nbsp;;
+  - complexité&nbsp;: 1 opération élémentaire.
 - **Lire** dans le champ `fils_droit`&nbsp;:
-    - fonction&nbsp;: `lire_filsD(n: Noeud[T])` $\longrightarrow$ `Noeud[T]`&nbsp;;
-    - complexité&nbsp;: 1 opération élémentaire.
+  - fonction&nbsp;: `lire_filsD(n: Noeud[T])` $\longrightarrow$ `Noeud[T]`&nbsp;;
+  - complexité&nbsp;: 1 opération élémentaire.
 - **Écrire** dans le champ `fils_droit`&nbsp;:
-    - fonction&nbsp;: `modifier_filsD(n: Noeud[T], m: Noeud[T])` $\longrightarrow$ `None`&nbsp;;
-    - complexité&nbsp;: 1 opération élémentaire.
+  - fonction&nbsp;: `modifier_filsD(n: Noeud[T], m: Noeud[T])` $\longrightarrow$ `None`&nbsp;;
+  - complexité&nbsp;: 1 opération élémentaire.
 {{% /note %}}
 
 {{% note warning %}}
-*Tout comme on a désigné les listes chaînées par leur première cellule, on va désigner les arbres par leur nœud racine.* 
+*Tout comme on a désigné les listes chaînées par leur première cellule, on va désigner les arbres par leur nœud racine.*
 {{% /note %}}
 
 ## Implémentation de la spécification en Python
@@ -119,17 +131,20 @@ arbre_1 = Noeud('A',
 {{% /solution %}}
 
 4. Quel arbre correspond à ce code ?
+
 ```python
 Noeud('r', Noeud('a', Noeud('c', None, Noeud('h')), Noeud('d', Noeud('i'),
  Noeud('j', Noeud('m'), None))), Noeud('b', Noeud('e', Noeud('k', None, None),
   None), Noeud('f')))
-``` 
+```
+
 {{% solution "Réponse" %}}
 <img src="/terminales-nsi/chap-9/chap-9-2-1.svg" alt="" width="100%" />
 <img src="/terminales-nsi/chap-9/chap-9-2-2.png" alt="" width="100%" />
 {{% /note %}}
 
 5. Écrire la spécification et le code de la fonction `est_vide` dont la spécification est&nbsp;:
+
 ```python
 def est_vide(n: Noeud) -> bool:
     """
@@ -138,6 +153,7 @@ def est_vide(n: Noeud) -> bool:
 ```
 
 6. Écrire la spécification et le code de la fonction `ajoute_filsG` dont la spécification est&nbsp;:
+
 ```python
 def ajoute_filsG(n: Noeud, valeur: str) -> None:
     """
@@ -146,28 +162,31 @@ def ajoute_filsG(n: Noeud, valeur: str) -> None:
 ```
 
 7. Écrire la spécification et le code de la fonction `ajoute_filsD` dont la spécification est&nbsp;:
+
 ```python
 def ajoute_filsD(n: Noeud, valeur: str) -> None:
     """
     Ajoute un noeud d'étiquette valeur comme fils droit. 
     """
-``` 
+```
 
 8. Écrire la spécification et le code de la fonction `est_feuille` dont la spécification est&nbsp;:
+
 ```python
 def est_feuille(n: Noeud) -> bool:
     """
     Teste si un noeud est une feuille.
     """
-``` 
+```
 
 9. Écrire la spécification et le code de la fonction `degre_noeud` dont la spécification est&nbsp;:
+
 ```python
 def degre_noeud(n: Noeud) -> int:
     """
     Détermine le degré du noeud passé en argument.
     """
-``` 
+```
 
 {{% solution "Réponses aux questions précédentes" %}}
 
@@ -254,17 +273,19 @@ if __name__ == "__main__":
 ```
 
 {{% /solution %}}
+
 ## Quelques algorithmes de manipulation des arbres binaires
 
 ### Algorithmes récursifs
 
 10. Écrire la spécification et le code de la fonction `taille` dont la spécification est&nbsp;:
+
 ```python
 def taille(n: Noeud) -> int:
     """
     Retourne le nombre de noeud dans l'arbre.
     """
-``` 
+```
 
 {{% solution "Réponse" %}}
 
@@ -277,17 +298,18 @@ def taille(n: Noeud) -> int:
         return 0
     else:
         return 1 + taille(n.gauche) + taille(n.droit)
-``` 
+```
 
 {{% /solution %}}
 
 11. Écrire la spécification et le code de la fonction `profondeur` dont la spécification est&nbsp;:
+
 ```python
 def profondeur(n: Noeud) -> int:
     """
     Retourne la profondeur de l'arbre. 
     """
-``` 
+```
 
 {{% solution "Réponse" %}}
 
@@ -305,16 +327,17 @@ def profondeur(n: Noeud) -> int:
 {{% /solution %}}
 
 12. Écrire la spécification et le code de la fonction `nbre_feuilles` dont la spécification est&nbsp;:
+
 ```python
 def nbre_feuilles(n: Noeud) -> int:
     """
     Détermine le nombre de feuilles dans l'arbre. 
     """
-``` 
+```
 
 {{% solution "Réponse" %}}
 
-```python 
+```python
 def nbre_feuilles(n: Noeud) -> int:
     """
     Détermine le nombre de feuilles dans l'arbre. 
@@ -325,8 +348,7 @@ def nbre_feuilles(n: Noeud) -> int:
         return 1
     else:
         return 0 + nbre_feuilles(n.gauche) + nbre_feuilles(n.droit)
-``` 
-
+```
 
 {{% /solution %}}
 
@@ -342,6 +364,7 @@ Les fonction écrites jusqu'à présent parcourent en profondeur tous les nœuds
 {{% note tip %}}
 
 Si on souhaite donner un affichage de l'arbre, la façon dont on le parcourt prend alors une grande importance. On peut :
+
 - Parcourir le sous-arbre gauche, afficher la valeur du nœud puis enfin parcourir le sous-arbre droit. On parle d'un **parcours infixe**.
 - Afficher la valeur de chaque nœud avant de parcourir les sous-arbres. On parle d'un **parcours préfixe**.
 - Parcourir les sous-arbres puis afficher les valeurs. On parle d'un **parcours suffixe**.
@@ -349,27 +372,27 @@ Si on souhaite donner un affichage de l'arbre, la façon dont on le parcourt pre
 {{% /note %}}
 
 14. Écrire les spécifications et le code des fonctions `affiche_infixe`, `affiche_prefixe` et `affiche_suffixe` dont les spécifications sont :
+
 ```python
 def affiche_infixe(n: Noeud) -> None:
     """
     Parcourt le sous-arbre gauche, affiche la valeur du nœud puis parcourt le sous-arbre droit.
     """
-``` 
+```
 
 ```python
 def affiche_prefixe(n: Noeud) -> None:
     """
     Parcourt le sous-arbre gauche, affiche la valeur du nœud puis parcourt le sous-arbre droit.
     """
-``` 
+```
 
 ```python
 def affiche_suffixe(n: Noeud) -> None:
     """
     Parcourt le sous-arbre gauche, affiche la valeur du nœud puis parcourt le sous-arbre droit.
     """
-``` 
-
+```
 
 ### Algorithmes itératifs
 
@@ -380,6 +403,7 @@ def affiche_suffixe(n: Noeud) -> None:
 ### Parcours en largeur d'un arbre
 
 16. Décrire le fonctionnement de l'algorithme suivant et montrer qu'il réalise un parcours en largeur d'un arbre.
+
 ```shell
 Fonction parcours_largeur(noeud racine):
     File f = newFile()
@@ -400,10 +424,9 @@ FinFonction
 
 17. Implémenter en Python l'algorithme précédent.
 
-
 ### Parcours en profondeur d'un arbre
 
-18. Décrire le fonctionnement de l'algorithme suivant et montrer qu'il réalise un parcours en profondeur d'un arbre.   
+18. Décrire le fonctionnement de l'algorithme suivant et montrer qu'il réalise un parcours en profondeur d'un arbre.
 De quel type de parcours en profondeur s'agit-il ?
 
 ```shell
@@ -426,13 +449,9 @@ FinFonction
 
 19. Implémenter en Python l'algorithme précédent.
 
-## À retenir 
+## À retenir
 
 {{% note tip %}}
-Un **arbre binaire** est un ensemble fini de nœuds, qui est soit **vide**, soit structuré à partir d'un nœud particulier, appelé **racine** de l'arbre, et de deux sous-ensembles de nœuds formant récursivement un **sous-arbre gauche** et un **sous-arbre droit**.   
+Un **arbre binaire** est un ensemble fini de nœuds, qui est soit **vide**, soit structuré à partir d'un nœud particulier, appelé **racine** de l'arbre, et de deux sous-ensembles de nœuds formant récursivement un **sous-arbre gauche** et un **sous-arbre droit**.
 Un arbre peut-être implémenté en Python avec un objet par nœud, d'une **classe** qui possède trois attributs : la valeur (ou étiquette) du nœud, le sous-arbre gauche et le sous-arbre droit. La valeur `None` est utilisée pour représenter l'arbre vide.
 {{% /note %}}
-
-
-
-
