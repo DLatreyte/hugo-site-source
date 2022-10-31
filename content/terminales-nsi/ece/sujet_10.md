@@ -71,7 +71,7 @@ def positif(T):
         x = T3.pop()
         ...
     print('T = ',T)
-return T2
+    return T2
 ```
 
 Exemple :
