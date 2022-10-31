@@ -23,7 +23,7 @@ layout: single
 
 - [*Ondes mécaniques*](chap-4)
 
-- [*Transformations modélisées par une réaction d'oxydo-réduction*](chap-6)
+- [*Transformations modélisées par une réaction d'oxydoréduction*](chap-6)
 
 - [*Vision et couleurs*](chap-5)
 
