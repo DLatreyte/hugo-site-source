@@ -9,7 +9,7 @@ toc: true
 tags: []
 categories: []
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 
@@ -64,7 +64,7 @@ main()
 
 ## Exercice 2 (50% des points)
 
-Le jeu du «&nbsp;plus ou moins&nbsp;» consiste à deviner un nombre entier choisi entre 1 et 99. 
+Le jeu du «&nbsp;plus ou moins&nbsp;» consiste à deviner un nombre entier choisi entre 1 et 99.
 
 Un élève de NSI décide de le coder en langage Python de la manière suivante :
 
@@ -77,6 +77,7 @@ Un élève de NSI décide de le coder en langage Python de la manière suivante 
 **Remarque :** La fonction `randint` est utilisée. Si `a` et `b` sont des entiers, `randint(a,b)` renvoie un nombre entier compris entre `a` et `b` (inclus).
 
 Compléter le code ci-dessous et le tester :
+
 ```python
 from random import randint
 
@@ -98,7 +99,7 @@ def plus_ou_moins():
         print("Nombre d'essais: ", ....)
     else:
         print("Perdu ! Le nombre était ", ....)
-``` 
+```
 
 {{% solution "Corrigé" %}}
 
