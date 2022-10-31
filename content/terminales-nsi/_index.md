@@ -105,10 +105,6 @@ layout: single
 
 - [*Page des projets*](projets)
 
-<!--
-
 ## Épreuves pratiques (NSI)
 
 - [*Sujets des épreuves pratiques*](ece)
-
--->
