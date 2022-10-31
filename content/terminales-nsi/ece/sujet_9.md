@@ -9,34 +9,36 @@ toc: true
 tags: []
 categories: []
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 
 ## Exercice 1 (50% des points)
 
 Soit le couple `(note, coefficient)`&nbsp;:
+
 - `note` est un nombre de type flottant (`float`) compris entre 0 et 20&nbsp;;
 - `coefficient` est un nombre entier positif.
 
 Les résultats aux évaluations d'un élève sont regroupés dans une liste composée de
-couples `(note,coefficient)`.       
-Écrire une fonction `moyenne` (*accompagnée de sa spécification*) qui renvoie la moyenne pondérée de cette liste donnée en paramètre.     
+couples `(note,coefficient)`.
+Écrire une fonction `moyenne` (*accompagnée de sa spécification*) qui renvoie la moyenne pondérée de cette liste donnée en paramètre.
 Par exemple, l’expression `moyenne([(15, 2), (9, 1), (12, 3)])` devra renvoyer le résultat du calcul suivant&nbsp;:
 $$
     \dfrac{2 \times 15 + 1 \times 9 + 3 \times 12}{2 + 1 + 3} = \pu{12,5}
 $$
 
-#### Test possible 
+#### Test possible
+
 ```python
 if __name__ == "__main__":
     notes = [(15, 2), (9, 1), (12, 3)]
     assert moyenne(notes) == 12.5
-``` 
+```
 
 {{% solution "Corrigé" %}}
 
-```python 
+```python
 from typing import List, Tuple
 
 def moyenne(notes: List[Tuple[float]]) -> float:
@@ -54,7 +56,7 @@ def moyenne(notes: List[Tuple[float]]) -> float:
         somme_coefs += v_coef
 
     return somme_notes / somme_coefs
-``` 
+```
 
 {{% /solution %}}
 
@@ -89,7 +91,7 @@ def pascal(n: int) -> List[List[int]]:
 if __name__ == "__main__":
     assert pascal(4) == [[1], [1, 1], [1, 2, 1], [1, 3, 3, 1], [1, 4, 6, 4, 1]]
     assert pascal(5) == [[1], [1, 1], [1, 2, 1], [1, 3, 3, 1], [1, 4, 6, 4, 1], [1, 5, 10, 10, 5, 1]]
-``` 
+```
 
 {{% solution "Corrigé" %}}
 

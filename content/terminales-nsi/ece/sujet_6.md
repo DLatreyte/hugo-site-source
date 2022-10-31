@@ -4,12 +4,12 @@ subtitle: "Partie pratique"
 author: ""
 type: ""
 date: 2021-10-27T17:34:19+04:00
-draft: true
+draft: false
 toc: true
 tags: []
 categories: ["Terminales Spé NSI", "Informatique"]
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 
@@ -22,7 +22,8 @@ Le but est d’écrire une fonction nommée `rendu` dont le paramètre est un en
 On utilisera un algorithme glouton : on commencera par rendre le nombre maximal de billets de 5 euros, puis celui des pièces de 2 euros et enfin celui des pièces de 1 euros.
 
 Exemples :
-```python 
+
+```python
 >>> rendu(13)
 [2, 1, 1]
 >>> rendu(64)
@@ -33,13 +34,12 @@ Exemples :
 
 {{% solution "Corrigé" %}}
 
-
-
 {{% /solution %}}
 
 ## Exercice 2 (50% points)
 
 On veut écrire une classe pour gérer une file à l’aide d’une liste chaînée. On dispose d’une classe `Maillon` permettant la création d’un maillon de la chaîne, celui-ci étant constitué d’une valeur et d’une référence au maillon suivant de la chaîne :
+
 ```python
 class Maillon :
     def __init__(self: Maillon, v: int) -> None:
@@ -48,6 +48,7 @@ class Maillon :
 ```
 
 Compléter la classe `File` suivante où l’attribut `dernier_file` contient le maillon correspondant à l’élément arrivé en dernier dans la file :
+
 ```python
 class File :
     def __init__(self: Maillon) -> None:
@@ -82,7 +83,7 @@ class File :
             return resultat
 
         return None
-``` 
+```
 
 On pourra tester le fonctionnement de la classe en utilisant les commandes suivantes dans la console Python :
 
@@ -111,7 +112,4 @@ False
 
 {{% solution "Corrigé" %}}
 
-
-
 {{% /solution %}}
-
