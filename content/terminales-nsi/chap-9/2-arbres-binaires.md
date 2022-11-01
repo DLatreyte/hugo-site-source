@@ -23,7 +23,7 @@ Le corrigé de l'activité se trouve {{< remote "ici" "https://repl.it/@dlatreyt
 
 {{% note tip %}}
 
-Un **arbre binaire** est un ensemble de nœuds organisés hiérarchiquement selon la définition récursive suivante : «  
+Un **arbre binaire** est *structure de données abstraite* formée d'un ensemble de **nœuds organisés hiérarchiquement** selon la définition récursive suivante : «  
 Un arbre binaire est :
 
 - soit vide ;
@@ -40,30 +40,21 @@ Un arbre binaire est :
 Pour simplifier la présentation, on va considérer que chaque nœud possède exactement deux fils mais que **ceux-ci peuvent être vides** (`None` par exemple).
 {{% /note %}}
 
-{{% note normal %}}
-Les arbres binaires forment une *structure de données abstraite qui peut se définir de façon récursive*.
-
-Un arbre binaire est :
-
-- Soit vide.
-- Soit composé d’une racine portant une étiquette (valeur) et d’une paire d’arbres binaires, appelés sous-arbres gauche et droit.
-{{% /note %}}
-
 ### Relation entre nombre de nœuds et hauteur dans le cas des arbres binaires
 
 {{% note tip %}}
 Si $N$ désigne la taille d'un arbre binaire --- c'est à dire son nombre de nœuds non vides --- et $h$ sa hauteur, alors
-$$h \leqslant N \leqslant 2^h - 1$$
+$$h+1 \leqslant N \leqslant 2^{h+1} - 1$$
 {{% /note %}}
 
 1. Dans quel cas a-t-on $N = h$ ?
 {{% solution "Réponse" %}}
-On a $N = h$ lorsque chaque nœud ne possède qu'un seul nœud fils. Il s'agit donc d'une structure linéaire (liste).
+On a $N = h+1$ lorsque chaque nœud ne possède qu'un seul nœud fils. Il s'agit donc d'une structure linéaire (liste).
 {{% /solution %}}
 
-2. Dans quel cas a-t-on $N = 2^h - 1$ ?
+2. Dans quel cas a-t-on $N = 2^{h+1} - 1$ ?
 {{% solution "Réponse" %}}
-On a $N = 2^h - 1$ lorsque l'arbre binaire est parfait, c'est à dire lorsque toutes les feuilles ont la même profondeur.
+On a $N = 2^{h+1} - 1$ lorsque l'arbre binaire est parfait, c'est à dire lorsque toutes les feuilles ont la même profondeur.
 {{% /solution %}}
 
 ## Spécification des arbres binaires
