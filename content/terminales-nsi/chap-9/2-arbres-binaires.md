@@ -1,6 +1,6 @@
 ---
 title: "Les arbres binaires"
-subtitle: "Chapitre 9,2"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-11-05T03:38:41+04:00
