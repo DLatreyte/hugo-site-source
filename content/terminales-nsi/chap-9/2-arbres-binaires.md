@@ -11,6 +11,7 @@ categories: ["Terminales Spé NSI", "Informatique"]
 image: ""
 solution_est_visible: true
 auto_numbering: true
+mathjax: true
 ---
 
 {{% note normal %}}
@@ -23,28 +24,89 @@ Le corrigé de l'activité se trouve {{< remote "ici" "https://repl.it/@dlatreyt
 
 {{% note tip %}}
 
-Un **arbre binaire** est *structure de données abstraite* formée d'un ensemble de **nœuds organisés hiérarchiquement** selon la définition récursive suivante : «  
+Un **arbre binaire** est une  **structure de données abstraite**  formée d'un ensemble de nœuds organisés hiérarchiquement selon la définition inductive suivante :
+
 Un arbre binaire est :
 
-- soit vide ;
-- soit un nœud, appelé **racine**, relié à exactement deux arbres binaires $l$ et $r$, respectivement appelés sous-arbre gauche et sous arbre droit. »
+- soit un arbre vide, noté $E$, ne contenant aucun nœud ;
+- soit un nœud, appelé **racine**, relié à exactement deux arbres binaires $g$ et $d$, respectivement appelés **sous-arbres gauche** et **sous-arbre droit**.
+
+On note $T(r,g,d)$ l'arbre non vide dont la racine $r$ (on peut aussi indiquer l'étiquette de cette racine).
 
 {{% /note %}}
 
-#### Remarques
+### Vocabulaire et remarques
 
-- On note généralement $E$ *l'arbre binaire vide* et $N(x,l,r)$ *l'arbre binaire dont la racine porte l'étiquette* $x$.
-- Un *arbre binaire* est un arbre dont *les nœuds sont au plus de degré 2*.
+- Un nœud dont les **deux sous-arbres sont vides** est appelé une **feuille**.
+- Un nœud qui n'est pas une feuille est un **nœud interne**.
+- Un arbre binaire est dit **parfait** si  **toutes les feuilles sont à la même profondeur** .
+- La racine d'un arbre $T$ est le seul nœud de $T$ sans parent.
+
+### Propriétés
+
+{{% note normal %}}
+
+#### Position des sous-arbres
+
+- La position des sous-arbres gauche et droite est fondamentale : $$T(r,g,d) \neq T(r,d,g)$$
+
+{{% /note %}}
+
+{{% note normal %}}
+
+#### Taille d'un arbre
+
+- La taille d'un arbre est égale **au nombre de nœuds qu'il comporte**.
+- Le **nombre de nœuds** d'un arbre binaire $T$, noté $n(T)$, se calcule récursivement :
+  - $n(E)=0$
+  - $n(T)=1+n(g)+n(d)$
+
+{{% /note %}}
+
+{{% note normal %}}
+
+#### Profondeur d'un nœud
+
+- La profondeur d'un nœud $x$, notée $h(x)$, est la sa **distance à la racine**.
+- La profondeur d'un nœud $x$, notée $h(x)$, est définie récursivement par :
+  - $h(\text{racine})=0$
+  - $h(x)=1+h(\text{parent de }x)$
+- **La hauteur d'un nœud dans un arbre est donc le nombre d'arrêtes qu'il faut parcourir, depuis la racine, pour parvenir au nœud.**  
+
+{{% /note %}}
 
 {{% note warning %}}
-Pour simplifier la présentation, on va considérer que chaque nœud possède exactement deux fils mais que **ceux-ci peuvent être vides** (`None` par exemple).
+
+La définition de la profondeur d'un nœud peut varier !
+
 {{% /note %}}
 
-### Relation entre nombre de nœuds et hauteur dans le cas des arbres binaires
+{{% note normal %}}
 
-{{% note tip %}}
-Si $N$ désigne la taille d'un arbre binaire --- c'est à dire son nombre de nœuds non vides --- et $h$ sa hauteur, alors
-$$h+1 \leqslant N \leqslant 2^{h+1} - 1$$
+#### Hauteur d'un arbre
+
+- La hauteur d'un arbre est la profondeur la plus grande atteinte par ses nœuds.
+- La hauteur d'un arbre binaire $T$, notée $h(T)$ est définie récursivement par :
+  - $h(E)=-1$
+  - $h(T)=1+\mathrm{max}(h(g), h(d))$
+
+{{% /note %}}
+
+{{% note warning %}}
+
+La définition de la hauteur d'un arbre peut varier !
+
+{{% /note %}}
+
+{{% note normal %}}
+
+#### Relation entre le nombre de nœuds $n$ et la hauteur d'un arbre
+
+- Soit $T$ un arbre binaire, $n$ son nombre de nœuds et $h$ sa hauteur. Ces grandeurs sont liées par les relations suivantes :
+- $h + 1 \leq n \leq 2^{h+1} - 1$
+
+- le nombre de sous-arbres vides de $T$ est $n+1$.
+
 {{% /note %}}
 
 1. Dans quel cas a-t-on $N = h+1$ ?
