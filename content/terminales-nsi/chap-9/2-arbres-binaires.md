@@ -47,7 +47,7 @@ Si $N$ désigne la taille d'un arbre binaire --- c'est à dire son nombre de nœ
 $$h+1 \leqslant N \leqslant 2^{h+1} - 1$$
 {{% /note %}}
 
-1. Dans quel cas a-t-on $N = h$ ?
+1. Dans quel cas a-t-on $N = h+1$ ?
 {{% solution "Réponse" %}}
 On a $N = h+1$ lorsque chaque nœud ne possède qu'un seul nœud fils. Il s'agit donc d'une structure linéaire (liste).
 {{% /solution %}}
