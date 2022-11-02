@@ -526,13 +526,12 @@ FinFonction
 De quel type de parcours en profondeur s'agit-il ?
 
 ```shell
-Fonction parcours_profondeur(noeud racine):
+Fonction parcours_profondeur(racine: Noeud):
     Pile p = newPile()
-    empiler(p, racine)
-    Noeud n = newNoeud()
+    p.empiler(racine)
     TantQue non est_vide(p):
-        n = p.valeur
-        print(p.depiler())
+        n = p.depiler()
+        print(n)
         Si non est_vide(n.filsG):
             empiler(n.filsG)
         FinSi
