@@ -502,18 +502,17 @@ def affiche_suffixe(n: Noeud) -> None:
 17. Décrire le fonctionnement de l'algorithme suivant et montrer qu'il réalise un parcours en largeur d'un arbre.
 
 ```shell
-Fonction parcours_largeur(noeud racine):
+Fonction parcours_largeur(racine: Noeud):
     File f = newFile()
-    enfiler(f, racine)
-    Noeud n = newNoeud()
-    TantQue non est_vide(f):
-        n = f.valeur
-        print(f.defiler())
+    f.enfiler(racine)
+    TantQue non f.est_vide():
+        n = f.defiler()
+        print(n.valeur)
         Si non est_vide(n.filsG):
-            enfiler(n.filsG)
+            f.enfiler(n.filsG)
         FinSi
         Si non est_vide(n.filsD):
-            enfiler(n.filsD)
+            f.enfiler(n.filsD)
         FinSi
     FinTantQue
 FinFonction
