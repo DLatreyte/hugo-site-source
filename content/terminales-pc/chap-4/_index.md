@@ -72,6 +72,8 @@ layout: "single"
 
 - **Doc. :** [*Titrage direct de l'aspirine (TP)*](18-titrage-aspirine)
 
+- **Doc. :** [*Titrage de l'acide sulfamique contenu dans un détartrant pour cafetière (TP)*](21-titrage-detartrant)
+
 ## Spectroscopie
 
 ### Au programme

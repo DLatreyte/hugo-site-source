@@ -42,7 +42,8 @@ Lors d'un suivi pH-métrique on mesure le pH de la solution après différents a
 #### Indicateur coloré
 
 - Un indicateur coloré est une entité chimique dont les formes acide et basique colorent différemment les solutions.
-- Un indicateur coloré s'ajoute en petite quantité : entre 1 et 3 gouttes dans le réactif titré. - Un indicateur coloré est choisi de telle sorte que *sa zone de virage contienne la valeur du pH à l'équivalence*.
+- Un indicateur coloré s'ajoute en petite quantité : entre 1 et 3 gouttes dans le réactif titré.
+- Un indicateur coloré est choisi de telle sorte que *sa zone de virage contienne la valeur du pH à l'équivalence*.
 
 Quelques indicateurs colorés
 :
