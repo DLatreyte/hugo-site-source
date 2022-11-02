@@ -160,14 +160,14 @@ Il existe de nombreuses façons de d'implémenter la structure d'arbre en Python
 3. Écrire le code permettant de construire l'arbre :
 {{< mermaid >}}
 graph TD
-  A("A") --> B("B")
-  B --> G(None)
-  B --> C("C")
-  C --> H(None)
-  C --> I(None)
-  A --> D("D")
-  D --> E(None)
-  D --> F(None)
+  A("A") --- B("B")
+  B --- G(None)
+  B --- C("C")
+  C --- H(None)
+  C --- I(None)
+  A --- D("D")
+  D --- E(None)
+  D --- F(None)
 {{< /mermaid >}}
 
 {{% solution "Réponse" %}}
@@ -424,7 +424,51 @@ Si on souhaite donner un affichage de l'arbre, la façon dont on le parcourt pre
 
 {{% /note %}}
 
-14. Écrire les spécifications et le code des fonctions `affiche_infixe`, `affiche_prefixe` et `affiche_suffixe` dont les spécifications sont :
+14. Pour l'arbre ci-dessous, donner les parcours préfixe, infixe et suffixe.
+{{% mermaid %}}
+graph TD
+    0(0) --- 1(1)
+    0 --- 8(8)
+    1 --- 2(2)
+    2 --- 3(3)
+    2 --- A(None)
+    1 --- 4(4)
+    4 --- 5(5)
+    4 --- 6(6)
+    6 --- B(None)
+    6 --- 7(7)
+    8 --- 9(9)
+    8 --- 13(13)
+    9 --- C(None)
+    9 --- 10(10)
+    10 --- 11(11)
+    10 --- 12(12)
+    13 --- 14(14)
+    13 --- 15(15)
+    3 --- D(None)
+    3 --- E(None)
+    5 --- F(None)
+    5 --- G(None)
+    7 --- H(None)
+    7 --- I(None)
+    11 --- J(None)
+    11 --- K(None)
+    12 --- L(None)
+    12 --- M(None)
+    14 --- O(None)
+    14 --- P(None)
+    15 --- Q(None)
+    15 --- R(None)
+{{% /mermaid %}}
+{{% solution "Réponses" %}}
+
+- Préfixe : 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+- Infixe : 3, 2, 1, 5, 4, 6, 7, 0, 9, 11, 10, 12, 8, 14, 13, 15
+- Suffixe : 3, 2, 5, 7, 6, 4, 1, 11, 12, 10, 9, 14, 15, 13, 8, 0
+
+{{% /solution %}}
+
+15. Écrire les spécifications et le code des fonctions `affiche_infixe`, `affiche_prefixe` et `affiche_suffixe` dont les spécifications sont :
 
 ```python
 def affiche_infixe(n: Noeud) -> None:
@@ -449,13 +493,13 @@ def affiche_suffixe(n: Noeud) -> None:
 
 ### Algorithmes itératifs
 
-15. Reprendre les questions précédentes en utilisant des algorithmes itératifs.
+16. Reprendre les questions précédentes en utilisant des algorithmes itératifs.
 
 ## Parcours d'un arbre à l'aide d'une file ou d'une pile
 
 ### Parcours en largeur d'un arbre
 
-16. Décrire le fonctionnement de l'algorithme suivant et montrer qu'il réalise un parcours en largeur d'un arbre.
+17. Décrire le fonctionnement de l'algorithme suivant et montrer qu'il réalise un parcours en largeur d'un arbre.
 
 ```shell
 Fonction parcours_largeur(noeud racine):
@@ -475,11 +519,11 @@ Fonction parcours_largeur(noeud racine):
 FinFonction
 ```
 
-17. Implémenter en Python l'algorithme précédent.
+18. Implémenter en Python l'algorithme précédent.
 
 ### Parcours en profondeur d'un arbre
 
-18. Décrire le fonctionnement de l'algorithme suivant et montrer qu'il réalise un parcours en profondeur d'un arbre.
+19. Décrire le fonctionnement de l'algorithme suivant et montrer qu'il réalise un parcours en profondeur d'un arbre.
 De quel type de parcours en profondeur s'agit-il ?
 
 ```shell
@@ -500,7 +544,7 @@ Fonction parcours_profondeur(noeud racine):
 FinFonction
 ```
 
-19. Implémenter en Python l'algorithme précédent.
+20. Implémenter en Python l'algorithme précédent.
 
 ## À retenir
 

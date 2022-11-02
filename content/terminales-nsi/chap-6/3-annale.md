@@ -29,7 +29,7 @@ notes_de_lea = [12, 14, 3, 16, 17, 2, 13, 19]
     - autre chose
 {{% solution "Réponse" %}}
 
-Type : `int`.
+Type : liste.
 
 {{% /solution %}}
 
@@ -250,7 +250,7 @@ def moins_bon(notes: Dict[str, Tuple[str, int]]) -> List[str]:
 if __name__ == "__main__":
     notes = {'Enzo' : ('Math', 3), 'Emma' : ('Math', 16), 'Lucas' : ('NSI', 14), 'Manon' : ('Math', 3)}
     
-    moins_bon(notes) == ['Enzo', 'Manon']
+    assert moins_bon(notes) == ['Enzo', 'Manon']
 ```
 
 {{% /solution %}}
