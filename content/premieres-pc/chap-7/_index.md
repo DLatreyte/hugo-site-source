@@ -35,6 +35,8 @@ layout: "single"
 
 - **Doc. :** [*Bilan quantitatif des transformations chimiques*](3-bilan-quantitatif)
 
+- **Doc. :** [*Détermination du volume molaire*](7-determination-volume-molaire)
+
 - **Doc. :** [*Recherche d'un réactif limitant à l'aide d'un programme écrit en Python*](4-reactif-limitant-simulation)
 
 - **Doc. :** [*Une transformation chimique n'est pas toujours totale*](5-transformation-limitee)
