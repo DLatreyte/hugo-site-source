@@ -71,7 +71,7 @@ On note $T(r,g,d)$ l'arbre non vide dont la racine $r$ (on peut aussi indiquer l
 - La profondeur d'un nœud $x$, notée $h(x)$, est définie récursivement par :
   - $h(\text{racine})=0$
   - $h(x)=1+h(\text{parent de }x)$
-- **La hauteur d'un nœud dans un arbre est donc le nombre d'arrêtes qu'il faut parcourir, depuis la racine, pour parvenir au nœud.**  
+- **La profondeur d'un nœud dans un arbre est donc le nombre d'arrêtes qu'il faut parcourir, depuis la racine, pour parvenir au nœud.**  
 
 {{% /note %}}
 
@@ -91,6 +91,10 @@ La définition de la profondeur d'un nœud peut varier !
   - $h(T)=1+\mathrm{max}(h(g), h(d))$
 
 {{% /note %}}
+
+#### Remarque
+
+On peut aussi définir la hauteur d'un nœud : *la **hauteur** d'un nœud est la distance entre ce nœud et la feuille la plus profonde ayant une relation de descendance avec ce nœud*.  
 
 {{% note warning %}}
 
