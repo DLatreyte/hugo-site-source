@@ -55,7 +55,7 @@ Si on note $n$ la quantité de matière du gaz et $V$ le volume qu'il occupe, $$
 **On en utilisera entre $\pu{0,020 g}$ et $\pu{0,050 g}$ (à peser).**
 
 - Couples oxydant/réducteur :
-  - $\ce{Mg2+ (aq) / Mg(s)}$
+  - $\ce{Mg^{2+} (aq) / Mg(s)}$
   - $\ce{H+ (aq) /H2 (g)}$
 
 ### Travail à réaliser
