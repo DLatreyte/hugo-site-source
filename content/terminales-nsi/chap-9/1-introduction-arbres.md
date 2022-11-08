@@ -81,10 +81,8 @@ $3 \times 8 + 6$
 <img src="/terminales-nsi/chap-9/chap-9-1-1.svg" alt="" width="">
 {{% /solution %}}
 
- 
+#### Arbre lexicographique
 
-
-#### Arbre lexicographique 
 Un arbre lexicographique, ou arbre en parties communes, ou dictionnaire, représente un ensemble de mots. *Les préfixes communs à plusieurs mots n'apparaissent qu'une seule fois dans l’arbre*.
 
 {{< mermaid >}}
@@ -134,6 +132,7 @@ Ajouter les mots «&nbsp;matériel&nbsp;» et «&nbsp;vallon&nbsp;».
 ### Arbre (enraciné)
 
 {{% note tip %}}
+
 - Un **arbre** (nom complet **arbre enraciné**) est une *structure de données abstraite arborescente dans laquelle les données sont hiérarchisées depuis un **nœud racine**.*
 
 - Un arbre dont tous les nœuds sont nommés est dit **étiqueté**. L’étiquette (ou nom du sommet) représente la «&nbsp;valeur&nbsp;» du nœud ou bien l’information associée au nœud.
@@ -142,12 +141,14 @@ Ajouter les mots «&nbsp;matériel&nbsp;» et «&nbsp;vallon&nbsp;».
 ### Racine, noeud, branche, feuille
 
 {{% note tip %}}
+
 - Un arbre est un ensemble organisé de **nœuds** dans lequel *chaque nœud a un **père**, sauf un nœud que l’on appelle le **nœud racine**.*
 - *Si le nœud n’a pas de fils*, on dit que c’est une **feuille**.
 - Les nœuds sont reliés par des **branches**.
 {{% /note %}}
 
 {{% note exercise %}}
+
 - Nommer les nœuds puis les feuilles dans l'arbre représenté ci-dessous.
 - Compter le nombre de branches.
 {{% /note %}}
@@ -163,58 +164,75 @@ graph TD
   H --> I(i)
 {{< /mermaid >}}
 {{% solution "Réponses" %}}
-- **Nœuds**&nbsp;: a (racine), b, e, h et **feuilles**&nbsp;: c, d, f, g, i.
+- **Nœuds** internes: a (racine), b, e, h et **feuilles** : c, d, f, g, i.
 - 8 branches.
 {{% /solution %}}
 
-### Hauteur d'un nœud, profondeur d'un arbre
+### Profondeur d'un nœud, hauteur d'un nœud
 
 {{% note tip %}}
-La **hauteur** (ou **profondeur** ou **niveau**) d'un nœud est égale au *nombre de nœuds rencontrés en descendant de la racine jusqu'au nœud (**racine et nœud inclus**)*.
+
+La **profondeur** d'un nœud est sa **distance à la racine**.  
+La profondeur d'un nœud dans un arbre est donc **le nombre d'arrêtes qu'il faut parcourir, depuis la racine, pour parvenir au nœud**.
+
 {{% /note %}}
+
+{{% note tip %}}
+La **hauteur** d'un nœud est *sa distance à la feuille la plus profonde ayant une relation de descendance avec lui*.  
+La **hauteur** d'un nœud dans un arbre est donc **le nombre d'arrêtes qu'il faut parcourir, depuis ce nœud jusqu'à la feuille la plus profonde ayant une relation de descendance avec lui**.
+{{% /note %}}
+
+### Profondeur d'un arbre
 
 {{% note tip %}}
 La **hauteur** (ou **profondeur**) d’un *arbre* est égale à *la profondeur du nœud le plus profond*.
 {{% /note %}}
 
 {{% note normal %}}
-La hauteur d'un arbre est très importante. En effet, la plupart des algorithmes que nous verrons dans la suite ont une *complexité qui dépend de la hauteur de l'arbre*. Ainsi plus l'arbre aura une hauteur élevée, plus l'algorithme mettra de temps à s'exécuter. 
+La hauteur d'un arbre est très importante. En effet, la plupart des algorithmes que nous verrons dans la suite ont une *complexité qui dépend de la hauteur de l'arbre*. Ainsi plus l'arbre aura une hauteur élevée, plus l'algorithme mettra de temps à s'exécuter.
 {{% /note %}}
 
 {{% note warning %}}
-Dans notre convention, la hauteur de la racine est égale à 1. *Tous les auteurs n'utilisent pas cette convention !* Pour certains, la **hauteur** d’un *nœud* est égale au *nombre d’arêtes qu’il faut parcourir à partir de la racine pour parvenir au nœud*&nbsp;; la hauteur de la racine est alors de 0.   
+*Tous les auteurs n'utilisent pas la convention choisie dans ce cours !*  
+Pour certains, la **profondeur** d’un *nœud* est égale au *nombre de nœuds qu’il faut parcourir à partir de la racine (incluse) pour parvenir au nœud*&nbsp;; la hauteur de la racine est alors de 1.
 {{% /note %}}
 
 {{% note exercise %}}
+
+- Donner la profondeur du nœud `e` dans l'arbre représenté ci-dessus.
 - Donner la hauteur du nœud `e` dans l'arbre représenté ci-dessus.
 - Quelle est la profondeur de cet arbre&nbsp;?
 {{% /note %}}
 {{% solution "Réponses" %}}
-- Hauteur de `e`&nbsp;: 3.
-- Profondeur de l'arbre&nbsp;: 4.
+- Profondeur de `e` : 2.
+- Hauteur de `e`&nbsp;: 1.
+- Profondeur de l'arbre&nbsp;: 3.
 {{% /solution %}}
 
 ### Taille d'un arbre
 
 {{% note tip %}}
-La **taille** d’un arbre est égale au *nombre de nœuds de l’arbre (nœuds internes et feuilles)*.   
+La **taille** d’un arbre est égale au *nombre de nœuds de l’arbre (nœuds internes et feuilles)*.
 {{% /note %}}
 
 {{% note exercise %}}
+
 - Indiquer la taille de l'arbre représenté ci-dessus.
 {{% /note %}}
 {{% solution "Réponses" %}}
 - Taille de l'arbre&nbsp;: 9.
 {{% /solution %}}
 
-### Degré d’un noeud, degré d’un arbre 
+### Degré d’un noeud, degré d’un arbre
 
 {{% note tip %}}
+
 - Le **degré d’un nœud** est égal au *nombre de ses descendants (fils)*.
 - Le **degré d’un arbre** est égal au *plus grand des degrés de ses nœuds*.
 {{% /note %}}
 
 {{% note exercise %}}
+
 - Quel est le degré du nœud `b` dans l'arbre représenté ci-dessus&nbsp;?
 - Quel est le degré du nœud `a`&nbsp;?
 - Quel est le degré de l'arbre&nbsp;?
@@ -225,7 +243,7 @@ La **taille** d’un arbre est égale au *nombre de nœuds de l’arbre (nœuds 
 - Degré de l'arbre&nbsp;: 3.
 {{% /solution %}}
 
-## Relation entre les liste et les arbres 
+## Relation entre les liste et les arbres
 
 {{% note tip %}}
 Un arbre dont tous les nœuds n’ont qu’un seul fils est en fait une liste.

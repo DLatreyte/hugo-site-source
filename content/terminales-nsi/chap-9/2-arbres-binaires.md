@@ -67,7 +67,7 @@ On note $T(r,g,d)$ l'arbre non vide dont la racine $r$ (on peut aussi indiquer l
 
 #### Profondeur d'un nœud
 
-- La profondeur d'un nœud $x$, notée $h(x)$, est la sa **distance à la racine**.
+- La profondeur d'un nœud $x$, notée $h(x)$, est sa **distance à la racine**.
 - La profondeur d'un nœud $x$, notée $h(x)$, est définie récursivement par :
   - $h(\text{racine})=0$
   - $h(x)=1+h(\text{parent de }x)$
@@ -158,6 +158,13 @@ On a $N = 2^{h+1} - 1$ lorsque l'arbre binaire est parfait, c'est à dire lorsqu
 ## Implémentation de la spécification en Python
 
 Il existe de nombreuses façons de d'implémenter la structure d'arbre en Python. Dans cette partie on va utiliser une classe.
+
+{{% note warning %}}
+
+Le paradigme de programmation utilisé ci-dessous est le paradigme impératif : on crée dans un premier temps une structure élémentaire à l'aide d'une classe et on définit ensuite des fonctions qui manipulent cette structure.  
+On ne crée pas de structure arbre binaire (accompagnée de méthodes).
+
+{{% /note %}}
 
 2. Écrire le code de la classe `Noeud` respectant la spécification. Les trois attributs seront nommés `valeur`, `gauche`, `droit`.
 

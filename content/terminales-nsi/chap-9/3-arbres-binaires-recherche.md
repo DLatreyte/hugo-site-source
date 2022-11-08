@@ -1,6 +1,6 @@
 ---
 title: "Arbres Binaires Recherche"
-subtitle: "Chapitre 9,3"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-11-10T05:04:12+04:00
@@ -19,20 +19,21 @@ auto_numbering: true
 {{% note normal %}}
 
 Quelle structure de données permet :
+
 - d'organiser les données selon un ordre donné (numérique, lexicographique, etc.)&nbsp;;
 - d'effectuer des recherches le plus efficacement possible&nbsp;;
 - d'accéder à, d'insérer ou de supprimer les données le plus efficacement possible.
 
 {{% /note %}}
 
-#### Tableaux 
+#### Tableaux
 
 {{% solution "Propriétés" %}}
 
-- On peut ordonner des données dans un tableau mais l'algorithme de tri le plus rapide est en $O(n \\; \log n)$&nbsp;;
+- On peut ordonner des données dans un tableau mais l'algorithme de tri le plus rapide, pour un jeu de données aléatoires, est en $O(n \\; \log n)$ ;
 - On peut accéder à une donnée en $O(1)$&nbsp;;
-- On peut rechercher une valeur efficacement en utilisant la dichotomie : $O(\log n)$&nbsp;;
-- Supprimer ou insérer une valeur n'est pas très efficace : $O(n)$.
+- On peut rechercher une valeur efficacement en utilisant la dichotomie (si le tableau est trié !) : $O(\log n)$&nbsp;;
+- Supprimer ou insérer une valeur n'est pas très efficace : $O(n)$ (sauf à la fin du tableau).
 
 {{% /solution %}}
 
@@ -45,10 +46,8 @@ Quelle structure de données permet :
 
 {{% /solution %}}
 
-
 Remarque
 : Dans la suite de ce document, on considérera que les valeurs des nœuds sont des entiers.
-
 
 {{% note tip %}}
 Un **arbre binaire de recherche**, ou **ABR**, est un arbre binaire avec la propriété suivante : quel que soit le nœud $x$, **tous les nœuds situés dans le sous-arbre gauche** de $x$ ont une **valeur inférieure à la valeur** du nœud $x$, et **tous ceux situés dans son sous-arbre droit** ont une **valeur supérieure à la valeur** du nœud $x$.
@@ -57,29 +56,120 @@ Remarque
 : La définition précédente est **récursive**.
 {{% /note %}}
 
+1. Cet arbre binaire est-il un arbre binaire de recherche ?
+{{% mermaid %}}
+graph TD
+    A(3) --- B(1)
+    B --- C(None)
+    B --- D(2)
+    D --- E(None)
+    D --- F(None)
+    A --- G(4)
+    G --- H(None)
+    G --- I(None)
+{{% /mermaid %}}
+{{% solution "Réponse" %}}
+
+oui
+
+{{% /solution %}}
+
+2. Cet arbre binaire est-il un arbre binaire de recherche ?
+{{% mermaid %}}
+graph TD
+    A(3) --- B(2)
+    B --- C(1)
+    C --- D(None)
+    C --- E(None)
+    B --- F(None)
+    A --- G(4)
+    G --- H(None)
+    G --- I(None)
+{{% /mermaid %}}
+{{% solution "Réponse" %}}
+
+oui
+
+{{% /solution %}}
+
+3. Cet arbre binaire est-il un arbre binaire de recherche ?
+{{% mermaid %}}
+graph TD
+   A(3) --- B(2)
+    B --- C(None)
+    B --- D(1)
+    D --- E(None)
+    D --- F(None)
+    A --- G(4)
+    G --- H(None)
+    G --- I(None)
+{{% /mermaid %}}
+{{% solution "Réponse" %}}
+
+Non ! La propriété est bien vérifiée pour la racine mais pas pour le sous-arbre gauche.  
+La définition est récurisve !
+
+{{% /solution %}}
+
 {{% note normal %}}
 Les ABR servent à maintenir un ensemble de valeurs ordonnées, avec une meilleure complexité qu’une liste chaînée par exemple. On commence par la recherche d’un élément. La structure de l’ABR permet d’éviter de le parcourir en entier.
 {{% /note %}}
 
-## Un ABR est un arbre
+## Un ABR est un arbre binaire
 
-1. Pour représenter un ABR, on va à nouveau utiliser la classe `Noeud`. Écrire à nouveau le code de cette classe.  
+{{% note warning %}}
+
+Le paradigme de programmation utilisé ci-dessous est le paradigme impératif : on crée dans un premier temps une structure élémentaire à l'aide d'une classe et on définit ensuite des fonctions qui manipulent cette structure.  
+On ne crée pas de structure arbre binaire (accompagnée de méthodes).
+
+{{% /note %}}
+
+4. Pour représenter un ABR, on va à nouveau utiliser la classe `Noeud`. Écrire à nouveau le code de cette classe.  
 **Les contraintes sur les valeurs des nœuds ne sont pas codées dans la classe**.
 
-2. Écrire à nouveau les spécifications des fonctions `taille`, `hauteur` et `parcours_infixe`.
+5. Écrire à nouveau les spécifications des fonctions `taille`, `hauteur` et `parcours` (parcours infixe).
 
-3. Vérifier que la fonction `parcours_infixe` affiche les valeurs dans l'ordre croissant.
+```python
+def est_vide(n: Noeud) -> bool:
+    """
+    Teste si le noeud passé en argument est vide ou pas.
+    """
+```
+
+```python
+def hauteur(a: Noeud) -> int:
+    """
+    Retourne la hauteur de l'arbre binaire de recherche a. 
+    """
+```
+
+```python
+def taille(a: Noeud) -> int:
+    """
+    Retourne le nombre de noeuds dans l'arbre binaire de recherche.
+    """
+```
+
+```python
+def parcours(n: Noeud) -> None:
+    """
+    Parcours infixe de l'arbre
+    """
+```
+
+6. Vérifier que la fonction `parcours` affiche les valeurs dans l'ordre croissant.
 
 {{% note warning %}}
 
 Rappel
-: *On peut voir le **parcours infixe** comme la *projection de l'arbre sur une droite*.*
+: *On peut voir le **parcours infixe** comme la **projection de l'arbre sur une droite**.*
 
 {{% /note %}}
 
 ## Recherche dans un ABR
 
-4. Écrire le code de la fonction `appartient` dont la spécification est 
+7. Écrire le code de la fonction `appartient` dont la spécification est
+
 ```python
 def appartient(a: Noeud, x: int) -> bool:
     """
@@ -87,13 +177,14 @@ def appartient(a: Noeud, x: int) -> bool:
     """
 ```
 
-5. Quelle est la complexité de cette recherche ?
+8. Quelle est la complexité de cette recherche ?
 
 ## Ajout d'une valeur dans un ABR
 
-6. Envisager un ABR et, à la main, ajouter un élément.
+9. Envisager un ABR et, à la main, ajouter un élément.
 
-7. Quel peut-être le code de la fonction `ajoute` dont la spécification est 
+10. Quel peut-être le code de la fonction `ajoute` dont la spécification est
+
 ```python
 def ajoute(a: Noeud, x: int) -> None:
     """
@@ -101,22 +192,25 @@ def ajoute(a: Noeud, x: int) -> None:
 
     HYPOTHÈSE : a n'est pas l'arbre vide.
     """
-``` 
+```
 
-8. Quelle est la complexité de cette fonction ?
+11. Quelle est la complexité de cette fonction ?
 
-9. Pour résoudre le problème de l'ajout d'une valeur à un arbre initialement vide et/ou pour ne pas modifier un arbre déjà constitué, il est possible de programmer la fonction `ajoute_copie` dont la spécification est 
+12. Pour résoudre le problème de l'ajout d'une valeur à un arbre initialement vide et/ou pour ne pas modifier un arbre déjà constitué, il est possible de programmer la fonction `ajoute_copie` dont la spécification est
+
 ```python
 def ajoute_copie(n: Noeud, x: int) -> Noeud:
     """
     Ajoute la valeur x à l'ABR n. Un nouvel arbre est créé.
     """
 ```
+
 Écrire le code de cette fonction.
 
-## Utiliser un arbre binaire de recherche
+## Utilisation d'un arbre binaire de recherche
 
-10. Créer la fonction `plus_petit_element` dont la spécification est 
+13. Créer la fonction `plus_petit_element` dont la spécification est
+
 ```python
 def plus_petit_element(a: Noeud) -> int:
     """
@@ -126,7 +220,8 @@ def plus_petit_element(a: Noeud) -> int:
     """
 ```
 
-11. Créer la fonction `plus_grand_element` dont la spécification est 
+14. Créer la fonction `plus_grand_element` dont la spécification est
+
 ```python
 def plus_grand_element(a: Noeud) -> int:
     """
@@ -136,7 +231,8 @@ def plus_grand_element(a: Noeud) -> int:
     """
 ```
 
-12. Créer la fonction `est_abr` dont la spécification est 
+15. Créer la fonction `est_abr` dont la spécification est
+
 ```python
 def est_abr(a: Noeud) -> bool:
     """
@@ -144,15 +240,13 @@ def est_abr(a: Noeud) -> bool:
     """
 ```
 
-
-### Corrigé
+## Corrigé
 
 {{< remote "Corrigé de l'activité" "https://repl.it/@dlatreyte/Arbre-binaire-de-recherche" >}}
-
 
 ## À retenir
 
 {{% note tip %}}
-Un **arbre binaire de recherche** est un arbre binaire contenant des **valeurs ordonnées**, tel que tout nœud contient une valeur plus grande (respectivement plus grande ou égale) que les valeurs de tous les nœuds situés dans son sous-arbre gauche. Cette organisation permet de procéder par **dichotomie**, en n'ayant à considérer qu'un seul sous-arbre pendant une opération.   
+Un **arbre binaire de recherche** est un arbre binaire contenant des **valeurs ordonnées**, tel que tout nœud contient une valeur plus grande (respectivement plus grande ou égale) que les valeurs de tous les nœuds situés dans son sous-arbre gauche. Cette organisation permet de procéder par **dichotomie**, en n'ayant à considérer qu'un seul sous-arbre pendant une opération.
 Lorsqu'ils sont **équilibrés**, les arbres binaires de recherche constituent une méthode très efficace pour stocker et rechercher de l'information.
 {{% /note %}}
