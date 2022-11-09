@@ -13,13 +13,12 @@ solution_est_visible: true
 auto_numbering: true
 ---
 
-> Cette séance a pour objet l'étude d'une méthode de compression de données inventée par David Albert Huffman en 1952. Cette méthode permet de réduire la longueur du codage d’un alphabet et repose sur la création d’un arbre binaire. 
-
+> Cette séance a pour objet l'étude d'une méthode de compression de données inventée par David Albert Huffman en 1952. Cette méthode permet de réduire la longueur du codage d’un alphabet et repose sur la création d’un arbre binaire.
 
 ## Différents types de codages
 
 {{% note normal %}}
-*On appelle **alphabet** l’ensemble des symboles (caractères) composant la donnée de départ à compresser.* 
+*On appelle **alphabet** l’ensemble des symboles (caractères) composant la donnée de départ à compresser.*
 {{% /note %}}
 
 Dans la suite, nous utiliserons un alphabet composé seulement des 8 lettres A, B, C, D, E, F, G et H.
@@ -45,7 +44,6 @@ Il faut coder 8 caractères, on a donc besoin de 3 bits, puisque $2^3 = 8$.
 {{% solution "Réponse" %}}
 
 A&nbsp;: 000&nbsp;; B&nbsp;: 001&nbsp;; C&nbsp;: 010&nbsp;; D&nbsp;: 011&nbsp;; E&nbsp;: 100&nbsp;; F&nbsp;: 101&nbsp;; G&nbsp;: 110 et H&nbsp;: 111.
-
 
 {{% /solution %}}
 
@@ -97,8 +95,8 @@ Si on utilise 3 bits pour chaque caractère, il faut $1000 \times 3 = 3000$ bits
 8. En utilisant le code de la question 4., quelle est la longueur du même message en bits&nbsp;?
 {{% solution "Réponse" %}}
 
-$N = f(A)\cdot l(A) + f(B)\cdot l(B) + f(C)\cdot l(C) + f(D)\cdot l(D) + f(E)\cdot l(E) + f(F)\cdot l(F) + f(G)\cdot l(G) + f(H)\cdot l(H)$ où $f(x_i)$ est la fréquence du caractère $x_i$ et $l(x_i)$ la longueur (en bits) du codage du caractère $x_i$.      
-**A.N.** $N = 240 \times 2 + 140 \times 3 + 160 \times 3 + 51 \times 4 + 280 \times 2 + 49 \times 4 + 45 \times 4 + 35 \times 4 = 2660$ 
+$N = f(A)\cdot l(A) + f(B)\cdot l(B) + f(C)\cdot l(C) + f(D)\cdot l(D) + f(E)\cdot l(E) + f(F)\cdot l(F) + f(G)\cdot l(G) + f(H)\cdot l(H)$ où $f(x_i)$ est la fréquence du caractère $x_i$ et $l(x_i)$ la longueur (en bits) du codage du caractère $x_i$.
+**A.N.** $N = 240 \times 2 + 140 \times 3 + 160 \times 3 + 51 \times 4 + 280 \times 2 + 49 \times 4 + 45 \times 4 + 35 \times 4 = 2660$
 
 {{% /solution %}}
 
@@ -108,11 +106,11 @@ Ce type de codage réserve le codage le plus court aux caractères les plus fré
 
 ## Codage de Huffman
 
-
-L’objectif du codage de Huffman est de trouver le codage proposé à la question 4. 
+L’objectif du codage de Huffman est de trouver le codage proposé à la question 4.
 
 {{% note normal %}}
 *Le codage de Huffman minimise la taille en nombre de bits du message codé en se basant sur le nombre d’apparition de chaque caractère (un caractère qui apparaît souvent aura un code plutôt court).*
+
 - Pour déterminer le code optimal, on considère 8 arbres, chacun réduit à une racine, contenant le symbole et son nombre d’apparitions.
 {{% /note %}}
 {{< mermaid >}}
@@ -166,45 +164,50 @@ Dans le cas de l’arbre ci-dessus le code de X est 00 (deux fois à gauche), le
 
 11. Sur chaque arête de l’arbre construit à la question 10., inscrire 0 ou 1 selon que l’arête joint un fils gauche ou un fils droit.
 
-12. Quel est le code de F&nbsp;? 
-
+12. Quel est le code de F&nbsp;?
 
 Le code suivant permet, à partir d’un fichier nommé texte.txt, de construire l’arbre de Huffman puis un dictionnaire qui associe à chaque caractère du fichier d’entrée son code sous forme d’une séquence de bits (liste de 0 et de 1).
 
 ## Implémentation en Python de l'algorithme
 
-13. Écrire le code (et la spécification !) de la classe `Noeud`, nœud d'un arbre binaire.   
+13. Écrire le code (et la spécification !) de la classe `Noeud`, nœud d'un arbre binaire.
 Par rapport à l'implémentation réalisée lors des TP précédenrs, ajouter le champ `lettre` initialisé à la chaîne de caractères vide et la méthode suivante :
+
 ```python
 def __lt__(self, n: Noeud):
         """
         Comparaison de deux noeuds = comparaison des valeurs
         """
         return self.valeur < n.valeur
-``` 
+```
 
-14. Écrire les codes (et la spécification !) des fonctions `est_vide`, `est_feuille`, `parcours_prefixe` qui, respectivement  teste si un nœud est vide, teste si un nœud est une feuille et finalement affiche l'arbre. 
+14. Écrire les codes (et la spécification !) des fonctions `est_vide`, `est_feuille`, `parcours_prefixe` qui, respectivement  teste si un nœud est vide, teste si un nœud est une feuille et finalement affiche l'arbre.
 
-15. Écrire le code de la fonction `creation_table_frequences` dont la spécification est 
+15. Écrire le code de la fonction `creation_table_frequences` dont la spécification est
+
 ```python
 def creation_table_frequences(message: str) -> Dict[str, int]:
     """
     Établit la table des fréquences des caractères dans message.
     """
-``` 
-Tester la fonction avec l'instruction : 
+```
+
+Tester la fonction avec l'instruction :
+
 ```python
 assert creation_table_frequences("ABRACADABRA") == {'A': 5, 'B': 2, 'R': 2, 'C': 1, 'D': 1}
-``` 
+```
 
-16. Lire le document sur {{< remote "les files de priorité" "http://pascal.ortiz.free.fr/contents/python/structures_de_donnees/les_files_de_priorite.html" >}}   
-Écrire le code de la fonction `construction_arbre_huffman` dont la spécification est 
+16. Lire le document sur {{< remote "les files de priorité" "http://pascal.ortiz.free.fr/contents/python/structures_de_donnees/les_files_de_priorite.html" >}}
+Écrire le code de la fonction `construction_arbre_huffman` dont la spécification est
+
 ```python
 def construction_arbre_huffman(dic_frequences: Dict[str, int]) -> Noeud:
     """
     Construction de l'arbre de Huffman.
     """
 ```
+
 et l'algorithme (cf. Cormen, *Algorithmes*)
 <img src="/terminales-nsi/chap-9/chap-9-4-1.png" alt="" width="70%" />
 
@@ -213,6 +216,7 @@ Cet algorithm est un exemple d'**algorithme glouton** dans lequel on prend la d�
 {{% /note %}}
 
 17. Écrire une fonction nommée `codes_huffman_parcours` dont la spécification est :
+
 ```python
 def codes_huffman_parcours(a: Noeud, dic: Dict[str, str], code: str) -> None:
     """
@@ -223,6 +227,7 @@ def codes_huffman_parcours(a: Noeud, dic: Dict[str, str], code: str) -> None:
 ```
 
 18. Écrire une fonction nommée `encodage` dont la spécification est :
+
 ```python
 def encodage(message: str, codes: Dict[str, str]) -> str:
     """
@@ -231,6 +236,7 @@ def encodage(message: str, codes: Dict[str, str]) -> str:
 ```
 
 19. Écrire une fonction nommée `decodage` dont la spécification est :
+
 ```python
 def decodage(message_compresse: str, codes: Dict[str, str]) -> str:
     """
@@ -239,6 +245,5 @@ def decodage(message_compresse: str, codes: Dict[str, str]) -> str:
 ```
 
 {{% solution "Corrigé" %}}
-{{% remote "Code Python" "https://repl.it/@dlatreyte/huffman" %}}
+{{% remote "Code Python" "https://replit.com/@dlatreyte/huffman#main.py" %}}
 {{% /solution %}}
-
