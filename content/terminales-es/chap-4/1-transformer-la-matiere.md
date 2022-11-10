@@ -9,7 +9,7 @@ toc: true
 tags: ["Énergie", "Transformation", "Énergie fossile", "PIB"]
 categories: ["Terminale Enseignement Scientifique"]
 image: ""
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: true
 ---
 
@@ -38,12 +38,16 @@ Jacques Treiner<br />
 2. Tenter de définir le concept d'énergie.
 {{% solution "Réponse" %}}
 
+{{% note tip %}}
+
 - *L'énergie est une grandeur physique qui permet de caractériser **quantitativement** la transformation d'un système.*
 - L'énergie est une grandeur conservative : *l'énergie d'un système **isolé** est constante*. **L'énergie ne peut donc être ni créée, ni détruite.**
 - On peut calculer à l'aide de différentes formules l'énergie (échangée) en fonction de la transformation ; on parle alors de **formes d'énergie**. *Mais ce n'est pas l'énergie qui s'est modifiée (c'est toujours une valeur !), c'est l'état du système !*
 - Si le système n'est pas isolé, il peut échanger de l'énergie avec son environnement. Deux types de transferts existent :
   - Le **travail** est un *transfert ordonné d'énergie* entre deux systèmes.
   - La **chaleur** (ou **transfert d'énergie d'origine thermique**) est un *transfert désordonné d'energie* entre deux systèmes.
+
+{{% /note %}}
 
 {{% /solution %}}
 

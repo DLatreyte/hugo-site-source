@@ -23,9 +23,9 @@ auto_numbering: true
 {{% solution "Réponse" %}}
 {{% note normal %}}
 La première loi cardinale qui est très simple à garder en mémoire en ce qui concerne l’énergie – et que vous connaissez tous par cœur évidemment –, c’est le premier principe de la thermodynamique ou «&nbsp; loi de conservation de l’énergie&nbsp;».
-Or, appliquée aux Hommes, la loi de conservation de l’énergie a une conséquence qui est simplissime&nbsp;: les Hommes ne peuvent rien faire d’autre qu’extraire de l’environnement une énergie qui existe déjà et s’en servir à leur profit. C’est tout ce que les Hommes sont capables de faire. Si les Hommes étaient capables de faire apparaître de l’énergie en leur sein sans communiquer avec l’extérieur, on violerait le premier principe de la thermodynamique. Je suis sûr que dans un bon Harry Potter, on arrive à faire ça, mais dans le monde réel c’est plus difficile. . . Donc toute l’énergie que nous utilisons, nous devons la trouver dans l’environnement. Toute.
+Or, appliquée aux Hommes, la loi de conservation de l’énergie a une conséquence qui est simplissime&nbsp;: les Hommes ne peuvent rien faire d’autre qu’extraire de l’environnement une énergie qui existe déjà et s’en servir à leur profit. C’est tout ce que les Hommes sont capables de faire. Si les Hommes étaient capables de faire apparaître de l’énergie en leur sein sans communiquer avec l’extérieur, on violerait le premier principe de la thermodynamique. Je suis sûr que dans un bon Harry Potter, on arrive à faire ça, mais dans le monde réel c’est plus difficile [...] Donc toute l’énergie que nous utilisons, nous devons la trouver dans l’environnement. Toute.
 
-Partout où vous allez voir «&nbsp; consommation d’énergie&nbsp;» – y compris dans mes diapositives parce que de temps en temps, j’utilise ce raccourci même si j’essaie de l’éviter –, vous barrez et vous remplacez par «&nbsp; utilisation de machines&nbsp;». Et partout où vous voyez «&nbsp; Nous consommons de plus en plus d’énergie&nbsp;», vous barrez et vous remplacez par&nbsp;: «&nbsp; Nous utilisons de plus en plus de machines.&nbsp;» C’est ça qu’il faut comprendre.
+Partout où vous allez voir «&nbsp; consommation d’énergie&nbsp;» – y compris dans mes diapositives parce que de temps en temps, j’utilise ce raccourci même si j’essaie de l’éviter, vous barrez et vous remplacez par «&nbsp; utilisation de machines&nbsp;». Et partout où vous voyez «&nbsp; Nous consommons de plus en plus d’énergie&nbsp;», vous barrez et vous remplacez par&nbsp;: «&nbsp; Nous utilisons de plus en plus de machines.&nbsp;» C’est ça qu’il faut comprendre.
 «&nbsp; Consommer de l’énergie&nbsp;», en fait, c’est «&nbsp; domestiquer une machine&nbsp;».
 
 <div style="text-align: right;">
@@ -46,7 +46,7 @@ Partout où vous allez voir «&nbsp; consommation d’énergie&nbsp;» – y co
 
 3. Recherchez sur internet la particularité du jour du dépassement en 2020, commenter.
 {{% solution "Réponse" %}}
-Le jour du dépassement a reculé de trois semaines environ en 2020 grâce/à cause de la pandémie mondiale et des différents confinements.
+Le jour du dépassement a reculé de trois semaines environ en 2020 grâce/à cause de la pandémie mondiale et aux différents confinements.
 Ceci n'est cependant pas une bonne nouvelle à long terme puisque cette évolution ne correspond pas à une modification des habitudes.
 {{% /solution %}}
 
@@ -57,6 +57,12 @@ Les sources d'énergie fossiles représentent encore près de 80 % des sources d
 
 5. Montrer la corrélation entre croissance (économique et démographique) et émissions de dioxyde de carbone, puis conclure sur la viabilité du modèle industriel actuel dans les années à venir.
 {{% solution "Réponse" %}}
+
+{{% note warning %}}
+
+Il est nécessaire de bien distinguer « corrélation » et « causalité ».
+
+{{% /note %}}
 Il est nécessaire de «&nbsp; créer&nbsp;» (terme impropre) de la richesse lorsque la population augmente. Or, comme énoncé dans le document précédent, il faut 1,6 kilowattheure d’énergie pour générer 1 dollar de PIB&nbsp;; l'énergie étant essentiellement d'origine fossile, chaque dollar de PIB généré nécessite la libération de $\pu{CO2}$ dans l'atmosphère.
 {{% /solution %}}
 
