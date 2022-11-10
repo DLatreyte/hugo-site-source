@@ -9,7 +9,7 @@ toc: true
 tags: ["Puissance", "Énergie", "Unités", "Énergie de stock", "Énergie de flux"]
 categories: ["Terminale Enseignement Scientifique"]
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 
