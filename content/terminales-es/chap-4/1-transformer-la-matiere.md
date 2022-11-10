@@ -1,6 +1,6 @@
 ---
 title: "Nous vivons de transformer la matière"
-subtitle: "Chapitre 4,1"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-11-12T06:16:51+04:00
@@ -37,9 +37,14 @@ Jacques Treiner<br />
 
 2. Tenter de définir le concept d'énergie.
 {{% solution "Réponse" %}}
-- *L'énergie est une grandeur physique qui permet de caractériser **quantitativement** une transformation d'un système.*
-- L'énergie est une grandeur conservative : *l'énergie d'un système isolé est constante*. **L'énergie ne peut donc être ni créée, ni détruite.** 
+
+- *L'énergie est une grandeur physique qui permet de caractériser **quantitativement** la transformation d'un système.*
+- L'énergie est une grandeur conservative : *l'énergie d'un système **isolé** est constante*. **L'énergie ne peut donc être ni créée, ni détruite.**
 - On peut calculer à l'aide de différentes formules l'énergie (échangée) en fonction de la transformation ; on parle alors de **formes d'énergie**. *Mais ce n'est pas l'énergie qui s'est modifiée (c'est toujours une valeur !), c'est l'état du système !*
+- Si le système n'est pas isolé, il peut échanger de l'énergie avec son environnement. Deux types de transferts existent :
+  - Le **travail** est un *transfert ordonné d'énergie* entre deux systèmes.
+  - La **chaleur** (ou **transfert d'énergie d'origine thermique**) est un *transfert désordonné d'energie* entre deux systèmes.
+
 {{% /solution %}}
 
 3. Expliquer ce qu'est un combustible fossile. Donner quelques exemples.
@@ -47,7 +52,7 @@ Jacques Treiner<br />
 Lorsqu'on parle de combustible fossile on fait allusion aux hydrocarbures.
 {{% /solution %}}
 
-4. L'auteur annonce « Aujourd’hui, [...] 80% de notre énergie primaire provient des combustibles fossiles [...] ». Se rendre sur le site de RTE, en France et vérifier si cette affirmation est exacte **pour la France**.   
+4. L'auteur annonce « Aujourd’hui, [...] 80% de notre énergie primaire provient des combustibles fossiles [...] ». Se rendre sur le site de RTE, en France et vérifier si cette affirmation est exacte **pour la France**.
 {{< remote "La production d'électricité par filiaire, en direct, en France" "https://www.rte-france.com/eco2mix/la-production-delectricite-par-filiere" >}}
 
 {{% solution "Réponse" %}}

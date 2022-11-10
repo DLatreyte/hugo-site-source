@@ -1,6 +1,6 @@
 ---
 title: "Production et consommation énergétique"
-subtitle: "Chapitre 5,1"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-11-12T05:19:22+04:00
@@ -13,7 +13,7 @@ solution_est_visible: false
 auto_numbering: true
 ---
 
-## Documents 
+## Documents
 
 - {{< remote "Documents sur le Livre Scolaire" "http://LLS.fr/ESTP68" >}}
 
@@ -36,16 +36,17 @@ Partout où vous allez voir «&nbsp; consommation d’énergie&nbsp;» – y co
 
 2. Le jour du dépassement est-il le même pour un indonésien ou pour un canadien&nbsp;? Commenter.
 {{% solution "Réponse" %}}
-- $J_\text{Indonésien} = \dfrac{B}{E_\text{indonésien}} \times 365$.   
+
+- $J_\text{Indonésien} = \dfrac{B}{E_\text{indonésien}} \times 365$.
 <strong>A.N.</strong> $J_\text{Indonésien} = \dfrac{1,7}{1,7} \times 365 = \pu{365 jours}$. Un indonésien consomme donc en un an ce que la planète est capable de produire pendant la même durée.
 
-- $J_\text{Canadien} = \dfrac{B}{E_\text{Canadien}} \times 365$.   
+- $J_\text{Canadien} = \dfrac{B}{E_\text{Canadien}} \times 365$.
 <strong>A.N.</strong> $J_\text{Canadien} = \dfrac{1,7}{7,8} \times 365 = \pu{80 jours}$. Un Canadien consomme donc en moins de trois mois ce que la planète est capable de produire en un an.
 {{% /solution %}}
 
-3. Recherchez sur internet la particularité du jour du dépassement en 2020, commenter. 
+3. Recherchez sur internet la particularité du jour du dépassement en 2020, commenter.
 {{% solution "Réponse" %}}
-Le jour du dépassement a reculé de trois semaines environ en 2020 grâce/à cause de la pandémie mondiale et des différents confinements.   
+Le jour du dépassement a reculé de trois semaines environ en 2020 grâce/à cause de la pandémie mondiale et des différents confinements.
 Ceci n'est cependant pas une bonne nouvelle à long terme puisque cette évolution ne correspond pas à une modification des habitudes.
 {{% /solution %}}
 
@@ -59,14 +60,15 @@ Les sources d'énergie fossiles représentent encore près de 80 % des sources d
 Il est nécessaire de «&nbsp; créer&nbsp;» (terme impropre) de la richesse lorsque la population augmente. Or, comme énoncé dans le document précédent, il faut 1,6 kilowattheure d’énergie pour générer 1 dollar de PIB&nbsp;; l'énergie étant essentiellement d'origine fossile, chaque dollar de PIB généré nécessite la libération de $\pu{CO2}$ dans l'atmosphère.
 {{% /solution %}}
 
-6. Quels sont les 3 secteurs de consommation énergétique les plus importants en France et dans le monde&nbsp;? 
+6. Quels sont les 3 secteurs de consommation énergétique les plus importants en France et dans le monde&nbsp;?
 {{% solution "Réponse" %}}
 Les 3 secteurs les plus consommateurs sont l’industrie, les transports et le résidentiel.
 {{% /solution %}}
 
-7. Calculer le PIB par habitant (PIB/Population) et la consommation énergétique par habitant (consommation/Population) pour les différents pays en 2017 et expliquer pourquoi on peut parler d’inégalités énergétiques à l’échelle mondiale. 
+7. Calculer le PIB par habitant (PIB/Population) et la consommation énergétique par habitant (consommation/Population) pour les différents pays en 2017 et expliquer pourquoi on peut parler d’inégalités énergétiques à l’échelle mondiale.
 {{% solution "Réponse" %}}
-- **Chine&nbsp;:** 	$\text{PIB} / \text{hab}\_\text{Chine} = \dfrac{ \text{PIB}\_\text{Chine} } { \text{population}_\text{Chine} } = \dfrac{\pu{13300e9}}{\pu{1386e6}} = \pu{9600 dollars/hab}$.
+
+- **Chine&nbsp;:**  $\text{PIB} / \text{hab}\_\text{Chine} = \dfrac{ \text{PIB}\_\text{Chine} } { \text{population}_\text{Chine} } = \dfrac{\pu{13300e9}}{\pu{1386e6}} = \pu{9600 dollars/hab}$.
 
 - **Chine&nbsp;:** $\text{cons. en}/\text{hab} = \dfrac{ \pu{1995e6 tep} }{ \pu{1386e6 hab} } = \pu{1,4 tep/hab} $.
 

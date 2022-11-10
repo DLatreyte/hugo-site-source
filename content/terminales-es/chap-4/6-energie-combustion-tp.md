@@ -1,6 +1,6 @@
 ---
 title: "Détermination expérimentale d'une énergie de combustion"
-subtitle: "Chapitre 5,4"
+subtitle: ""
 author: ""
 type: ""
 date: 2022-02-22T05:15:58+04:00
@@ -35,7 +35,7 @@ auto_numbering: true
 - L'**énergie de combustion** est l'*énergie libérée lors de la combustion d'une mole d'un combustible*. Ce transfert thermique s'effectue sous forme de **chaleur** (*transfert d'énergie thermique*) $Q$.
 
 - Lorsqu'un corps incompressible (solide ou liquide) reçoit (algébriquement) la chaleur $Q$, sa température $T$ évolue de telle sorte que $$ Q = m\\; c\\; (T_f - T_i)$$
-où $m$ est la masse du corps, $c$ sa capacité thermique (calorifique) massique, $T_f$ sa température finale et $T_i$ sa température initiale.    
+où $m$ est la masse du corps, $c$ sa capacité thermique (calorifique) massique, $T_f$ sa température finale et $T_i$ sa température initiale.
 La capacité thermique massique de l'eau vaut : $c_{\text{eau}} = \pu{4,18 J.g-1.°C-1}$.
 
 - *L'énergie est une grandeur qui se conserve*&nbsp;: toute perte d'énergie par un système est transférée à son environnement.
@@ -74,8 +74,6 @@ En comparant les énergies de combustion de molécules dont la chaîne carbonée
 2. Calculer l’énergie libérée $E_{lib}$ par la combustion de 10&nbsp;g de bougie.
 {{% solution "Réponse" %}}
 
-
-
 {{% /solution %}}
 
 -->
@@ -97,8 +95,7 @@ En utilisant le principe de conservation de l'énergie, et dans le cas idéal o�
 - La température vaut alors $θ_{fin} = \pu{47,0 °C}$.
 - On peut ainsi connaître la quantité de matière d'acide stéarique qui a été brûlé et grâce à l'élévation de température de l'eau, connaître l'énergie qui a été dégagée.
 
-On cherche d'abord $Q$ gagnée par l'eau, et comme l’énergie reçue par l'eau est égale, aux pertes d'énergie près, à l'énergie de combustion de l’acide stéarique pour la masse de bougie brûlée, on trouve $E_{comb}$ l'énergie de combustion pour une certaine masse de bougie. Il suffit après de trouver l'énergie de combustion de l'acide stéarique $E_{comb,exp} (\text{acide stéarique})$ pour une mole de bougie.     
-
+On cherche d'abord $Q$ gagnée par l'eau, et comme l’énergie reçue par l'eau est égale, aux pertes d'énergie près, à l'énergie de combustion de l’acide stéarique pour la masse de bougie brûlée, on trouve $E_{comb}$ l'énergie de combustion pour une certaine masse de bougie. Il suffit après de trouver l'énergie de combustion de l'acide stéarique $E_{comb,exp} (\text{acide stéarique})$ pour une mole de bougie.
 
 {{% /solution %}}
 
