@@ -129,7 +129,7 @@ Dès l'introduction de soude (réactif alors limitant), il y a, dans la solution
 {{% solution "Réponse" %}}
 - Avant l'équivalence : $\sigma_{\text{av}} =  \lambda_{\ce{Na^+}} [\ce{Na^+}] + \lambda _{\ce{CH3CO2^-}} [\ce{CH3CO2^-}]$
 - À l'équivalence : $\sigma_{\text{E}} = \lambda_{\ce{Na^+}} [\ce{Na^+}] + \lambda _{\ce{CH3CO2^-}} [\ce{CH3CO2^-}]$
-- Après l'équivalence : $\sigma_{\text{ap}} = \lambda_{\ce{Na^+}} [\ce{Na^+}] + \lambda _{\ce{CH3CO2^-}} [\ce{CH3CO2^-}] + \lambda_{\ce{OH^-}} [\ce{OH^-}]$
+- Après l'équivalence : $\sigma_{\text{ap}} = \lambda_{\ce{Na^+}} [\ce{Na^+}] + \lambda_{\ce{CH3CO2^-}} [\ce{CH3CO2^-}] + \lambda_{\ce{OH^-}} [\ce{OH^-}]$
 {{% /solution %}}
 
 8. Justifier l'allure de la courbe $\sigma = f(V_B)$.
@@ -146,36 +146,36 @@ Cependant, si on relit plus attentivement le protocole, on remarque que $V_{\tex
 
 #### Raisonnement qualitatif (celui à préférer)
 
-- Avant l'équivalence : $\sigma_{\text{av}} =  \lambda_{\ce{Na^+}} [\ce{Na^+}] + \lambda _{\ce{CH3CO2^-}} [\ce{CH3CO2^-}]$.
-Dans cette phase du titrage, les quantités de matière de $\ce{Na^+}$ et de $\ce{CH3CO2^-}$ augmentent&nbsp;; la conductivité $\sigma_{\text{av}}$ augmente donc aussi.
-- Après l'équivalence : $\sigma_{\text{ap}} = \lambda_{\ce{Na^+}} [\ce{Na^+}] + \lambda _{\ce{CH3CO2^-}} [\ce{CH3CO2^-}] + \lambda_{\ce{OH^-}} [\ce{OH^-}]$.
-Dans cette phase, les quantités de matières de $\ce{Na^+}$ et $\ce{OH^-}$ augmentent et la quantité de matière de $\ce{CH3CO2^-}$ reste constante&nbsp;; la conductivité $\sigma_{\text{ap}}$ augmente donc aussi.
+- Avant l'équivalence : $\sigma_{\text{av}} =  \lambda_{\ce{Na^+}} [\ce{Na^+}] + \lambda_{\ce{CH3CO2^-}} [\ce{CH3CO2^-}]$.
+Dans cette phase du titrage, les quantités de matière de $\ce{Na^+}$ et de $\ce{CH3CO2^-}$ augmentent ; la conductivité $\sigma_{\text{av}}$ augmente donc aussi.
+- Après l'équivalence : $\sigma_{\text{ap}} = \lambda_{\ce{Na^+}} [\ce{Na^+}] + \lambda_{\ce{CH3CO2^-}} [\ce{CH3CO2^-}] + \lambda_{\ce{OH^-}} [\ce{OH^-}]$.
+Dans cette phase, les quantités de matières de $\ce{Na^+}$ et $\ce{OH^-}$ augmentent et la quantité de matière de $\ce{CH3CO2^-}$ reste constante ; la conductivité $\sigma_{\text{ap}}$ augmente donc aussi.
 - De plus, comme $\lambda_{\ce{OH^-}} \gg \lambda_{\ce{CH3CO2^-}}$, l'augmentation de $\sigma_{\text{ap}}$ se fait avec une pente plus importante que l'augmentation de $\sigma_{\text{av}}$.
 
 #### Raisonnement rigoureux (à lire une fois dans sa vie)
 
 - **Avant l'équivalence :**
 
-$\sigma_{\text{av}} =  \lambda_{\ce{Na^+}} [\ce{Na^+}] + \lambda _{\ce{CH3CO2^-}} [\ce{CH3CO2^-}]$
+$\sigma_{\text{av}} =  \lambda_{\ce{Na^+}} [\ce{Na^+}] + \lambda_{\ce{CH3CO2^-}} [\ce{CH3CO2^-}]$
 
 $\sigma_{\text{av}} =  \lambda_{\ce{Na^+}} \left(\dfrac{C_B V_B}{V_A + V_{\text{eau}} + V_B}\right) + \lambda_{\ce{CH3CO2^-}} \left(\dfrac{x}{V_A + V_{\text{eau}} + V_B}\right)$
 
 Comme $x=C_B V_B$ et $V_A + V_{\text{eau}} + V_B \approx V_{\text{eau}} + V_A = V_{\text{total}}$ est un volume constant,
-$\sigma_{\text{av}} =  \lambda _{\ce{Na^+}} \left(\dfrac{C_B V_B}{V_{\text{total}}}\right) + \lambda _{\ce{CH3CO2^-}} \left(\dfrac{C_B V_B}{V_{\text{total}}}\right)$  
+$\sigma_{\text{av}} =  \lambda_{\ce{Na^+}} \left(\dfrac{C_B V_B}{V_{\text{total}}}\right) + \lambda_{\ce{CH3CO2^-}} \left(\dfrac{C_B V_B}{V_{\text{total}}}\right)$  
 
-$\sigma_{\text{av}} =  (\lambda_{\ce{Na^+}} + \lambda _{\ce{CH3CO2^-}}) \left(\dfrac{C_B V_B}{V_{\text{total}}}\right)$  
+$\sigma_{\text{av}} =  (\lambda_{\ce{Na^+}} + \lambda_{\ce{CH3CO2^-}}) \left(\dfrac{C_B V_B}{V_{\text{total}}}\right)$  
 
-$\sigma_{\text{av}}$ est une fonction linéaire de $V_B$, de pente $(\lambda_{\ce{Na^+}} + \lambda _{\ce{CH3CO2^-}}) \dfrac{C_B}{V_{\text{total}}}$.
+$\sigma_{\text{av}}$ est une fonction linéaire de $V_B$, de pente $(\lambda_{\ce{Na^+}} + \lambda_{\ce{CH3CO2^-}}) \dfrac{C_B}{V_{\text{total}}}$.
 
 - **Après l'équivalence :**
 
-$\sigma_{\text{ap}} = \lambda_{\ce{Na^+}} [\ce{Na^+}] + \lambda _{\ce{CH3CO2^-}} [\ce{CH3CO2^-}] + \lambda_{\ce{OH^-}} [\ce{OH^-}]$
+$\sigma_{\text{ap}} = \lambda_{\ce{Na^+}} [\ce{Na^+}] + \lambda_{\ce{CH3CO2^-}} [\ce{CH3CO2^-}] + \lambda_{\ce{OH^-}} [\ce{OH^-}]$
 
-$\sigma_{\text{ap}} = \lambda_{\ce{Na^+}} \left( \dfrac{C_B V_B}{V_{\text{total}}} \right) + \lambda_{\ce{CH3CO2^-}} \left( \dfrac{C_B V_{BE}}{V_{\text{total}}} \right) + \lambda _{\ce{OH^-}} \left( \dfrac{C_B V_B - C_B V_{BE}}{V_{\text{total}}} \right)$
+$\sigma_{\text{ap}} = \lambda_{\ce{Na^+}} \left( \dfrac{C_B V_B}{V_{\text{total}}} \right) + \lambda_{\ce{CH3CO2^-}} \left( \dfrac{C_B V_{BE}}{V_{\text{total}}} \right) + \lambda_{\ce{OH^-}} \left( \dfrac{C_B V_B - C_B V_{BE}}{V_{\text{total}}} \right)$
 
-$\sigma_{\text{ap}} = (\lambda_{\ce{CH3CO2^-}} - \lambda _{\ce{OH^-}}) \left( \dfrac{C_B V_{BE}}{V_{\text{total}}} \right) + (\lambda_{\ce{Na^+}} + \lambda _{\ce{OH^-}}) \left( \dfrac{C_B V_B}{V_{\text{total}}} \right)$
+$\sigma_{\text{ap}} = (\lambda_{\ce{CH3CO2^-}} - \lambda_{\ce{OH^-}}) \left( \dfrac{C_B V_{BE}}{V_{\text{total}}} \right) + (\lambda_{\ce{Na^+}} + \lambda_{\ce{OH^-}}) \left( \dfrac{C_B V_B}{V_{\text{total}}} \right)$
 
-$\sigma_{\text{ap}}$ est fonction affine de $V_B$, de pente $(\lambda_{\ce{Na^+}} + \lambda _{\ce{OH^-}}) \dfrac{C_B}{V_{\text{total}}}$.
+$\sigma_{\text{ap}}$ est fonction affine de $V_B$, de pente $(\lambda_{\ce{Na^+}} + \lambda_{\ce{OH^-}}) \dfrac{C_B}{V_{\text{total}}}$.
 
 - **Comparaison des pentes :** comme $\lambda_{\ce{OH^-}} \gg \lambda_{\ce{CH3CO2^-}}$, la pente de $\sigma_{\text{ap}}$ est plus importante que celle de $\sigma_{\text{av}}$.
 

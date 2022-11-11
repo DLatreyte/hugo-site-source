@@ -95,8 +95,8 @@ où $\Lambda$ est la **conductivité molaire** de la solution.
 
 {{% note tip %}}
 Dans une *solution ionique diluée* contenant les ions $\ce{M^+}$ et $\ce{X^-}$, dont les concentrations effectives sont notées $[\ce{M^+}]$ et $[\ce{X^-}]$, la conductivité de la solution peut se mettre sous la forme&nbsp:
-$$\sigma = \lambda _{M^+} \\, [\ce{M^+}] + \lambda_{X^-} \\, [\ce{X^-}]$$
-Les quantités $\lambda _{\ce{M^+}}$ et $\lambda_{\ce{X^-}}$ sont appelées **conductivités molaires ioniques** des ions $\ce{M^+}$ et $\ce{X^-}$.
+$$\sigma = \lambda_{M^+} \\, [\ce{M^+}] + \lambda_{X^-} \\, [\ce{X^-}]$$
+Les quantités $\lambda_{\ce{M^+}}$ et $\lambda_{\ce{X^-}}$ sont appelées **conductivités molaires ioniques** des ions $\ce{M^+}$ et $\ce{X^-}$.  
 **Unité :** $\pu{S.m2.mol-1}$.
 {{% /note %}}
 
