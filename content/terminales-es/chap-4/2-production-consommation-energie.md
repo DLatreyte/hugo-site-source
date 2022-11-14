@@ -9,7 +9,7 @@ toc: true
 tags: ["Transformation", "Production", "Consommation", "Énergie fossile"]
 categories: ["Terminale Enseignement Scientifique"]
 image: ""
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: true
 ---
 
