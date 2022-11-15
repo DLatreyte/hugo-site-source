@@ -194,4 +194,4 @@ Le sucre de consommation est principalement constitué de saccharose, une moléc
 10. À l'aide de l'outil tangente, vérifier que la vitesse volumique de disparition est bien proportionnelle à la concentration en saccharose et calculer à nouveau la valeur de la constante $k$.
 -->
 
-10. Tracer la la valeur de la vitesse volumique de disparition en fonction de la concentration en en saccharose. Retrouver que la réaction chimique est d'ordre 1 et calculer à nouveau la valeur de la constante $k$.
+10. Tracer l'évolution de la valeur de la vitesse volumique de disparition en fonction de la concentration en en saccharose. Retrouver que la réaction chimique est d'ordre 1 et calculer à nouveau la valeur de la constante $k$.

@@ -9,7 +9,7 @@ toc: true
 tags: ["Annale", "Courant électrique", "Tension", "Potentiel électrique", "Générateur", "Dipôle", "Branche", "Maille", "Nœud", "Loi des nœuds", "Loi des mailles", "Loi d'Ohm", "Résistance","Condensateur", "Équation différentielle linéaire à coefficients constants"]
 categories: ["Physique", "Terminale Spé PC"]
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 
@@ -68,4 +68,8 @@ $$E = RC \\, \dfrac{ \mathrm{d} u}{ \mathrm{dt} } + u$$
 
 ## Correction
 
-- {{< remote "Correction au format pdf" "/terminales-pc/chap-5/chap-5-3-7.pdf" >}}
+{{% solution "Accès au corrigé" %}}
+
+{{< remote "Correction au format pdf" "/terminales-pc/chap-5/chap-5-3-7.pdf" >}}
+
+{{% /solution %}}

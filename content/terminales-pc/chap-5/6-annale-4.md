@@ -9,7 +9,7 @@ toc: true
 tags: ["Annale", "Courant électrique", "Tension", "Potentiel électrique", "Générateur", "Dipôle", "Branche", "Maille", "Nœud", "Loi des nœuds", "Loi des mailles", "Loi d'Ohm", "Résistance","Condensateur", "Équation différentielle linéaire à coefficients constants"]
 categories: ["Physique", "Terminale Spé PC"]
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 
@@ -58,4 +58,8 @@ $$\dfrac{\mathrm{d}u}{\mathrm{dt}} + \dfrac{1}{rC} u = 0 $$
 
 ## Corrigé
 
+{{% solution "Accès au corrigé" %}}
+
 {{< remote "Corrigé au format pdf" "/terminales-pc/chap-5/chap-5-6-4.pdf" >}}
+
+{{% /solution %}}
