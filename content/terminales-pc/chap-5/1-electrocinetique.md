@@ -1,6 +1,6 @@
 ---
 title: "Électrocinétique"
-subtitle: "Chapitre 6,1"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-10-30T20:15:15+04:00
@@ -13,7 +13,7 @@ solution_est_visible: true
 auto_numbering: true
 ---
 
-L'**électrocinétique** est l'*étude de la circulation des courants électriques dans des dispositifs reliés à une alimentation électrique*&nbsp;: l'étude de l'installation électrique d'une maison ou d'un appartement est typiquement un problème d'électrocinétique. Dans le domaine de l'électrocinétique, les circuits sont en général composés d'éléments simples&nbsp;: un gén*érateur, des *résistances*, des *inductances* et des *capacités*. On peut également y trouver des transformateurs et d'autres machines électriques. *L'essentiel consiste, finalement, à distribuer une certaine **puissance électrique venant de l'alimentation aux différents éléments du circuit**.*
+L'**électrocinétique** est l'*étude de la circulation des courants électriques dans des dispositifs reliés à une alimentation électrique*&nbsp;: l'étude de l'installation électrique d'une maison ou d'un appartement est typiquement un problème d'électrocinétique. Dans le domaine de l'électrocinétique, les circuits sont en général composés d'éléments simples&nbsp;: un gén*érateur, des*résistances*, des*inductances*et des*capacités*. On peut également y trouver des transformateurs et d'autres machines électriques.*L'essentiel consiste, finalement, à distribuer une certaine **puissance électrique venant de l'alimentation aux différents éléments du circuit**.*
 
 > L'objectif de ce document est de rappeler les différentes notions de bases, vues dans les classes antérieures.
 
@@ -30,8 +30,8 @@ Un courant électrique est un **mouvement d'ensemble** (ordonné) de *charges é
 
 2. Indiquer quelles sont les charges électriques qui se déplacent dans les différents milieux considérés&nbsp;:
     1. dans un conducteur solide&nbsp;;
-    2. dans un isolant&nbsp;; 
-    3. dans une solution électrolytique&nbsp;; 
+    2. dans un isolant&nbsp;;
+    3. dans une solution électrolytique&nbsp;;
     4. dans un plasma.
 {{% solution "Réponse" %}}
 {{% note tip %}}
@@ -63,6 +63,7 @@ Le sens du déplacement du courant électrique est le sens de déplacement des c
 <img src="/terminales-pc/chap-5/chap-5-1-1.png" alt="" width="40%">
 {{% solution "Réponse" %}}
 {{% note tip %}}
+
 - L'**intensité du courant électrique** est **la charge électrique qui traverse une section $S$ du circuit chaque seconde**.
 - L'**intensité du courant électrique** est le **débit de charges électriques** à travers une section $S$ du circuit électrique.
 {{% /note %}}
@@ -70,7 +71,8 @@ Le sens du déplacement du courant électrique est le sens de déplacement des c
 
 6. À partir de la définition de l'intensité du courant électrique établir l'expression de l'**intensité moyenne** $I_{\text{moy}}$ si une charge $\Delta q$ traverse une section $S$ du circuit pendant une durée $\Delta t$.
 {{% solution "Réponse" %}}
-- Pendant la durée $\Delta t$, située entre les dates $t$ et $t+\Delta t$, le nombre de charges électriques $q$ qui traversent la section $S$ du conducteur est égal à $\Delta n = n(t + \Delta t) - n(t)$. 
+
+- Pendant la durée $\Delta t$, située entre les dates $t$ et $t+\Delta t$, le nombre de charges électriques $q$ qui traversent la section $S$ du conducteur est égal à $\Delta n = n(t + \Delta t) - n(t)$.
 - La charge électrique qui traverse la section $S$ du conducteur est donc égale à $\Delta q = q\cdot \Delta n = q(t+\Delta t) - q(t)$.
 {{% note tip %}}
 $$ I_{\text{moy}} = \dfrac{q(t+\Delta t) - q(t)}{\Delta t}  = \dfrac{\Delta q}{\Delta t} $$
@@ -89,8 +91,9 @@ $I$ s'exprime en ampère. $$ \pu{1 A} = \pu{1 C.s-1} $$
 8. Comment et avec quel instrument mesure-t-on l'intensité du courant électrique&nbsp;?
 {{% solution "Réponse" %}}
 {{% note tip %}}
+
 - Pour mesurer l'intensité du courant électrique on utilise un **ampèremètre**.
-- L'appareil doit être traversé par le courant électrique pour pouvoir mesurer l'intensité du courant électrique.   
+- L'appareil doit être traversé par le courant électrique pour pouvoir mesurer l'intensité du courant électrique.
 Il doit donc être **placé en série dans la branche** dans laquelle on souhaite mesurer l'intensité du courant électrique.
 {{% /note %}}
 {{% /solution %}}
@@ -101,7 +104,7 @@ Il doit donc être **placé en série dans la branche** dans laquelle on souhait
 
 | Courant | Composants ou appareils |
 | :---: | :---: |
-| 10 mA | DEL commune | 
+| 10 mA | DEL commune |
 | 100 mA | Risque d’électrocution |
 | 0.5 A | Ampoule à incandescence sous 230 V |
 | 10 A | Four/Chauffage/Chauffe-eau sous 230 V |
@@ -122,9 +125,11 @@ L'intensité instantanée est la **dérivée par rapport au temps** de la foncti
 {{% /solution %}}
 
 {{% note exercise %}}
+
 #### Exercice 1
 
-Un courant électrique continu d'intensité $I = \pu{0,50 A}$ circule dans un circuit électrique. 
+Un courant électrique continu d'intensité $I = \pu{0,50 A}$ circule dans un circuit électrique.
+
 1. Quelle charge électrique traverse une section $S$ quelconque du circuit en une minute&nbsp;?
 2. Combien d'électrons traversent une section $S$ quelconque de ce circuit chaque minute&nbsp;?
 {{% /note %}}
@@ -136,7 +141,6 @@ Un courant électrique continu d'intensité $I = \pu{0,50 A}$ circule dans un ci
 **A.N.** $n =\dfrac{\pu{30 C}}{\pu{1,6e-19 C}} = \pu{1,9e20}$.
 {{% /solution %}}
 
-
 ## Qu'est-ce qui donne naissance à un courant électrique&nbsp;?
 
 ### Rôle d'un générateur, potentiel électrique
@@ -145,8 +149,9 @@ Un courant électrique continu d'intensité $I = \pu{0,50 A}$ circule dans un ci
 {{% solution "Réponse" %}}
 {{% note tip %}}
 Un générateur (pile, alternateur, etc.) a pour rôle d'**entretenir une différence de potentiel électrique (exprimé en volt) entre ses bornes**.  
-{{% /note %}} 
-- La borne notée $\oplus$ est le point du circuit où le potentiel électrique est maximal.   
+{{% /note %}}
+
+- La borne notée $\oplus$ est le point du circuit où le potentiel électrique est maximal.
 - La borne notée $\ominus$ est le point du circuit où le potentiel électrique est minimal.
 {{% /solution %}}
 
@@ -155,6 +160,7 @@ Un générateur (pile, alternateur, etc.) a pour rôle d'**entretenir une diffé
 11. Sachant qu'une *charge électrique* $q$ *située en un point où le potentiel électrique est* $V$ *possède l'énergie potentielle électrique* $E_{Pel} = qV$, décrire le rôle d'un générateur d'un point de vue énergétique.
 
 {{% solution "Réponse" %}}
+
 - L'énergie potentielle électrique des charges est plus grande au niveau de la borne $\oplus$ qu'au niveau de la borne $\ominus$.
 - Nous verrons bientôt que l'*intensité du courant électrique (c'est à dire le débit des charges électriques) reste constante lorsque le courant circule dans le circuit*.
 
@@ -164,14 +170,14 @@ Un générateur fournit de l'énergie (d'origine chimique, mécanique, etc.) au 
 {{% /note %}}
 {{% /solution %}}
 
-12. On utilise souvent une {{< remote "analogie hydroélectrique" "https://en.wikipedia.org/wiki/Hydraulic_analogy" >}} (en fait, il en existe plusieurs) pour expliquer aux élèves ce qu'est le potentiel électrique. La figure suivante illustre cette analogie. 
+12. On utilise souvent une {{< remote "analogie hydroélectrique" "https://en.wikipedia.org/wiki/Hydraulic_analogy" >}} (en fait, il en existe plusieurs) pour expliquer aux élèves ce qu'est le potentiel électrique. La figure suivante illustre cette analogie.
 <img src="/terminales-pc/chap-5/chap-5-1-2.png" alt="" width="50%">
 Indiquer quel est le rôle de la pompe et essayer de trouver la grandeur physique qui joue un rôle équivalent au potentiel électrique.
 {{% solution "Réponse" %}}
+
 - La pompe remonte l'eau au niveau d'altitude $h$. À cette altitude l'eau possède l'énergie potentielle de pesanteur $E_{PP} = mgh$.
 - La grandeur physique analogue au potentiel électrostatique est donc l'altitude $h$ (en fait, c'est plutôt le produit $gh$)&nbsp;: *lorsque l'eau s'écoule, son énergie potentielle de pesanteur diminue, tout comme l'énergie potentielle électrique du courant diminue lorsqu'il circule*.
 {{% /solution %}}
-
 
 {{% note warning %}}
 Fondamentalement, une analogie est possible si deux phénomènes *sont liés par des lois de conservations similaires*. Il faut cependant se méfier&nbsp;: une analogie peut être utiles pour expliquer/décrire certains phénomènes d'un domaine (ici ce que représente le potentiel électrique) mais cela ne signifie pas qu'elle décrit correctement tous les phénomènes de ce domaine.
@@ -191,17 +197,17 @@ et elle s’exprime en Volts ($\pu{V}$).
 13. Comment et avec quel instrument mesure-t-on la tension électrique entre deux points d'un circuit&nbsp;?
 {{% solution "Réponse" %}}
 {{% note tip %}}
+
 - Pour mesurer l'intensité la tension électrique entre deux points d'un circuit on utilise un **voltmètre**.
 - L'appareil doit être **placé en dérivation**.
 {{% /note %}}
 {{% /solution %}}
 
-
 > Quelques ordres de grandeurs
 
 <center>
 
-| Tension | Provenance | 
+| Tension | Provenance |
 | :---: | :---: |
 | 230 V | EDF (délivrée) |
 | plusieurs kV | Industrielle |
@@ -227,8 +233,6 @@ On utilise une représentation vectorielle.
 <img src="/terminales-pc/chap-5/chap-5-1-3.png" alt="" width="35%">
 {{% /solution %}}
 
-
-
 ## Énergie et puissance
 
 {{% note normal %}}
@@ -236,7 +240,9 @@ Un courant électrique transporte de l'énergie du générateur jusqu'aux diffé
 {{% /note %}}
 
 {{% note exercise %}}
+
 #### Exercice 2
+
 On suppose qu'une petite quantité de charge électrique $\Delta q$ traverse l'élément de circuit pendant $\Delta t$ secondes et subit une chute de potentiel.
 
 1. Déterminer l'expression de la variation d'énergie potentielle de la quantité de charges $\Delta q$.
@@ -244,16 +250,17 @@ On suppose qu'une petite quantité de charge électrique $\Delta q$ traverse l'�
 3. En déduire l'expression $P$ de la puissance électrique reçue par l'élément de circuit.
 {{% /note %}}
 <img src="/terminales-pc/chap-5/chap-5-1-13.png" alt="" width="60%">
-    
 
 {{% solution "Réponse" %}}
+
 1. $\Delta E_{Pel} = \Delta q\\, (V_B - V_A) = - \Delta q\\, U_{AB}$.
 2. $\Delta E = -\Delta E_{Pel} = \Delta q\\, U_{AB}$.
-3. $P = \dfrac{\Delta E}{\Delta t} = \dfrac{\Delta q\\, U_{AB}}{\Delta t} = \dfrac{\Delta q}{\Delta t}\\, U_{AB}$.   
+3. $P = \dfrac{\Delta E}{\Delta t} = \dfrac{\Delta q\\, U_{AB}}{\Delta t} = \dfrac{\Delta q}{\Delta t}\\, U_{AB}$.
 Comme $\dfrac{\Delta q}{\Delta t} = I_{AB}$, $P = I_{AB}\\, U_{AB}$.
 {{% /solution %}}
 
 {{% note tip %}}
+
 - La puissance électrique reçue par un élément de circuit a pour expression $$P = I_{AB}\\, U_{AB}$$
 - On appelle **convention récepteur** la configuration où les *flèches courant et tension sont de sens opposés*.  
 En convention récepteur, *si $P > 0$, l'énergie est effectivement reçue par l'élément de circuit*.
@@ -271,7 +278,7 @@ Un dipôle électrique est un *composant électrique possédant deux bornes*.
 Les ampoules, les interrupteurs, les générateurs, les piles, les condensateurs, les inductances, les diodes, les DEL, les résistances et les moteurs sont des dipôles.
 {{% /solution %}}
 
-17. Qu'est-ce qu'un **nœud**&nbsp;? 
+17. Qu'est-ce qu'un **nœud**&nbsp;?
 {{% solution "Réponse" %}}
 {{% note tip %}}
 Un **nœud** est un *point du circuit auquel sont connectés au moins trois fils*.
@@ -290,14 +297,16 @@ Une **branche** est une *portion de circuit située entre deux nœuds parcourue 
 19. Qu'est-ce qu'une **maille**&nbsp;?
 {{% solution "Réponse" %}}
 {{% note tip %}}
-Une **maille** est une *portion fermée de circuit* (ensemble de branches qui partent et finissent au même nœud. 
+Une **maille** est une *portion fermée de circuit* (ensemble de branches qui partent et finissent au même nœud.
 {{% /note %}}
 <img src="/terminales-pc/chap-5/chap-5-1-4.png" alt="" width="50%">
-**Remarque. ** Les circuits, hors circuits très simples, sont généralement constitués de plusieurs mailles.
+**Remarque.** Les circuits, hors circuits très simples, sont généralement constitués de plusieurs mailles.
 {{% /solution %}}
 
 {{% note exercise %}}
+
 #### Exercice 3
+
 Pour le circuit suivant&nbsp;:
 <img src="/terminales-pc/chap-5/chap-5-1-7.png" alt="" width="50%">
 
@@ -308,6 +317,7 @@ Pour le circuit suivant&nbsp;:
 {{% /note %}}
 
 {{% solution "Réponses" %}}
+
 1. 4 dipôles.
 2. 2 nœuds.
 3. 3 branches.
@@ -319,6 +329,7 @@ Pour le circuit suivant&nbsp;:
 20. Qu'appelle-t-on **association série** de deux dipôles&nbsp;?
 {{% solution "Réponse" %}}
 {{% note tip %}}
+
 - Deux dipôles *sur une même branches* sont **en série**.
 - *Ces deux dipôles sont parcourus par le même courant*.
 {{% /note %}}
@@ -328,12 +339,12 @@ Pour le circuit suivant&nbsp;:
 21. Qu'appelle-t-on **association parallèle** (ou **en dérivation**) de deux dipôles&nbsp;?
 {{% solution "Réponse" %}}
 {{% note tip %}}
+
 - Deux dipôles *reliés à deux mêmes nœuds* sont en **parallèle** (ou **en dérivation**).
 - *Ces deux dipôles sont soumis à la même tension électrique*.
 {{% /note %}}
 <img src="/terminales-pc/chap-5/chap-5-1-9.png" alt="" width="50%">
 {{% /solution %}}
-
 
 ## Loi d'Ohm, résistance
 
@@ -348,7 +359,6 @@ On appelle **caractéristique d'un dipôle** la relation $i = f(U)$ *entre l'int
 <img src="/terminales-pc/chap-5/chap-5-1-10.png" alt="" width="70%">
 {{% /solution %}}
 
-
 23. Déduire de la forme de la caractéristique d'une résistance la loi d'Ohm.
 {{% solution "Réponse" %}}
 {{% note tip %}}
@@ -356,6 +366,7 @@ On appelle **caractéristique d'un dipôle** la relation $i = f(U)$ *entre l'int
 $$U_{AB} = R I_{AB} $$
 La chute de potentiel aux bornes d'une résistance est proportionnelle à l'intensité du courant électrique qui la traverse.
 {{% /note %}}
+
 - Cette loi est empirique et n'est valable que pour des intensités électrique raisonnables.
 - La loi d'Ohm reste valable lorsque le courant est variable dans le temps.
 {{% /solution %}}
@@ -376,7 +387,7 @@ Puisque $R = \pu{0 \Omega}$, $U = RI = 0$.
 {{% solution "Réponse" %}}
 $P=U_{AB}I_{AB}$ avec $U_{AB}=RI_{AB}$, donc $P=R I_{AB}^2 = \dfrac{U_{AB}^2}{R}$.
 {{% note tip %}}
-La puissance Joule cédée par un courant électrique à une résistance a pour expression 
+La puissance Joule cédée par un courant électrique à une résistance a pour expression
 $$P=R I_{AB}^2 = \dfrac{U_{AB}^2}{R}$$
 {{% /note %}}
 {{% /solution %}}
@@ -410,6 +421,7 @@ La somme des intensités de tous les courants électriques qui arrivent à un n�
 $U_{12} + U_{41} + U_{34} + U_{23} = V_1 - V_2 + V_4 - V_1 + V_3 - V_4 + V_2 - V_3 = 0$
 
 {{% note tip %}}
+
 - La somme algébrique des variations de potentiel électrique le long d'une maille est nulle.
 - La somme algébrique des tensions électriques le long d'une maille est nulle.
 {{% /note %}}
@@ -418,7 +430,9 @@ $U_{12} + U_{41} + U_{34} + U_{23} = V_1 - V_2 + V_4 - V_1 + V_3 - V_4 + V_2 - V
 ## Exercices
 
 {{% note exercise %}}
+
 #### Exercice 4
+
 <img src="/terminales-pc/chap-5/chap-5-1-14.png" alt="" width="45%" style="float: right; margin-left: 10px;" />
 
 1. Que vaut la tension $U_{AC}$&nbsp;?
@@ -435,11 +449,13 @@ $U_{12} + U_{41} + U_{34} + U_{23} = V_1 - V_2 + V_4 - V_1 + V_3 - V_4 + V_2 - V
 {{% /solution %}}
 
 {{% note exercise %}}
+
 #### Exercice 5
+
 <img src="/terminales-pc/chap-5/chap-5-1-15.png" alt="" width="65%" style="float: right; margin-left: 10px;" />
 
 1. Que vaut la tension $U_{AC}$&nbsp;?
-2. Montrer que l'on peut remplacer les deux résistances $R_2$ et $R_3$ placées en parallèle par une résistance unique telle que $$\dfrac{1}{R_{eq}} = \dfrac{1}{R_2} + \dfrac{1}{R_3}$$   
+2. Montrer que l'on peut remplacer les deux résistances $R_2$ et $R_3$ placées en parallèle par une résistance unique telle que $$\dfrac{1}{R_{eq}} = \dfrac{1}{R_2} + \dfrac{1}{R_3}$$
 Calculer la valeur de cette résistance équivalente.
 3. À partir de la réponse à la question précédente, calculer la valeur de l'intensité $I_{AC}$ du courant électrique qui circule dans la branche $AC$.
 4. En déduire la valeur de la tension $U_{AB}$.

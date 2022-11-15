@@ -1,6 +1,6 @@
 ---
 title: "Annale : Le super condensateur prêt à sortir de l'ombre"
-subtitle: "Chapitre 6,3"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-11-06T11:35:19+04:00
@@ -15,7 +15,7 @@ auto_numbering: true
 
 Promis à un grand avenir, les super condensateurs sont des dispositifs de stockage de l’énergie, intermédiaires entre les accumulateurs électrochimiques et les condensateurs traditionnels. Leurs applications, qui n’en sont qu'à leurs débuts, touchent de nombreux domaines tant dans l'électronique de grande diffusion que dans l'électronique de puissance, notamment en ouvrant des perspectives intéressantes dans le domaine des véhicules hybrides.
 
-## Charge d’un condensateur à courant constant 
+## Charge d’un condensateur à courant constant
 
 {{% note warning %}}
 **Partie pas au programme** mais qui peut vous aider à mieux appréhender la relation entre l’intensité du courant électrique et la charge.

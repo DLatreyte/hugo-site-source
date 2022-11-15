@@ -1,6 +1,6 @@
 ---
 title: "Le dipôle (R,C)"
-subtitle: "Chapitre 6,2"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-10-30T20:15:29+04:00
@@ -25,7 +25,7 @@ Le physicien Volta a décrit le fonctionnement de la bouteille de Leyde vers 178
 
 <img src="/terminales-pc/chap-5/chap-5-2-8.png" alt="" width="30%" />
 
-> L'étude du condensateur va bien au-delà de la compréhension du fonctionnement de ce composant. De nombreux dispositifs, capteurs ou phénomènes (les orages par exemples) présentent sur un **comportement capacitif**. 
+> L'étude du condensateur va bien au-delà de la compréhension du fonctionnement de ce composant. De nombreux dispositifs, capteurs ou phénomènes (les orages par exemples) présentent sur un **comportement capacitif**.
 
 ## Les condensateurs
 
@@ -46,6 +46,7 @@ On réalise un circuit électrique comportant, en série, un condensateur, une l
 1. Que se passe-t-il lorsqu'on ferme l'interrupteur $K$ ?
 
 {{% solution "Réponse" %}}
+
 - Lorsqu'on ferme l'interrupteur $K$, la lampe s'éclaire, puis s'éteint progressivement (la durée au bout de laquelle elle s'éteint dépend du condensateur utilisé). Un courant **transitoire** apparaît donc dans le circuit.
 - Le courant électrique ne peu s'établir durablement dans le circuit puisque celui-ci est en fait ouvert (coupé par la présence du diélectrique entre les armatures du condensateur). Le courant, lors du régime **permanent** est nul.
 {{% /solution %}}
@@ -53,6 +54,7 @@ On réalise un circuit électrique comportant, en série, un condensateur, une l
 2. Comment expliquer l'apparition d'un courant transitoire puis l'absence de courant lors du régime permanent ?
 
 {{% solution "Réponse" %}}
+
 - Lorsqu'on ferme l'interrupteur, un courant électrique apparaît dans le circuit : des électrons arrivent au niveau de l'armature $B$ et des électrons quittent l'armature $A$. Comme le circuit est ouvert, *les électrons ne peuvent que s'accumuler* en $B$ ; l'*armature* $B$ *se charge négativement*.  
 Dans le même temps l'*armature $A$ se charge positivement car aucun électron ne vient combler le déficit laissé par ceux qui sont partis*.
 
@@ -61,11 +63,12 @@ Dans le même temps l'*armature $A$ se charge positivement car aucun électron n
 - Les charges électriques opposées, aux bornes du condensateur, donnent naissance à la tension électrique $u_{AB}$.  
 Le courant électrique finit par disparaître dans le circuit : la tension aux bornes de la lampe s'annule donc. Une application de la loi des mailles nous apprend que, dans le régime permanent $u_{AB} = E$.  
 
-- Dans le régime permanent, le générateur entretien donc un déséquilibre électrostatique qui le *maintien de la **charge du condensateur**, c'est à dire le **stockage de l'énergie électrique**.* 
+- Dans le régime permanent, le générateur entretien donc un déséquilibre électrostatique qui le *maintien de la **charge du condensateur**, c'est à dire le **stockage de l'énergie électrique**.*
 <img src="/terminales-pc/chap-5/chap-5-2-3.png" alt="" width="40%" />
 {{% /solution %}}
 
 {{% note tip %}}
+
 - À tout moment, les charges électriques présentes sur les armatures d'un condensateur sont liées : $$q_A(t) = -q_B(t)$$
 **Rappel :** la charge électrique s'exprime en **coulomb** (symbole : C).
 - Un condensateur stockant des charges électriques sur ses armatures est dit **chargé**, ce stockage correspond à un **stockage d'énergie électrique**.
@@ -79,31 +82,34 @@ par les armatures ?
 <img src="/terminales-pc/chap-5/chap-5-2-9.png" alt="" width="35%" />
 
 {{% solution "Réponse" %}}
+
 - L'intensité du courant électrique est la charge électrique qui traverse une section quelconque du circuit chaque seconde, donc $i(t) = \dfrac{\mathrm{d}q(t)}{\mathrm{dt}}$.
 - On **choisit** un sens de circulation pour $i(t)$ et on en déduit la relation : $i(t) = \dfrac{\mathrm{d}q_A(t)}{\mathrm{dt}}$ (les charges positives s'accumulent sur l'armature $A$) et $i(t) = -\dfrac{\mathrm{d}q_B(t)}{\mathrm{dt}}$ puisque $q_B(t) = -q_A(t)$.
 {{% /solution %}}
 
 {{% note tip %}}
-Lorsqu'on souhaite exprimer la relation qui existe entre l'intensité du courant électrique et la charge portée par une armature, 
+Lorsqu'on souhaite exprimer la relation qui existe entre l'intensité du courant électrique et la charge portée par une armature,
+
 1. On choisit un sens de circulation pour le courant électrique.
 2. On écrit la relation entre l'intensité du courant électrique et la charge au niveau de l'armature.
 
-Sur l'exemple choisi, 
+Sur l'exemple choisi,
 $$i(t) = \dfrac{\mathrm{d}q_A(t)}{\mathrm{dt}} = -\dfrac{\mathrm{d}q_B(t)}{\mathrm{dt}}$$
 {{% /note %}}
 
 {{% note normal %}}
+
 - Si après calcul, $i>0$, alors *le courant électrique **circule effectivement dans le sens choisi*** (on a deviné correctement) et la *fonction $q_A$ est **croissante*** : les *charges positives s'accumulent* sur l'armature $A$.
 - Si après calcul, $i<0$, *le courant électrique **circule dans le sens opposé au sens choisi*** et la *fonction $q_A$ est **décroissante*** : les *charges positives quittent* l'armature $A$.
 {{% /note %}}
-
 
 {{% note exercise %}}
 On charge un condensateur (initialement déchargé) à l'aide d'un *générateur de courant* qui délivre un courant continu d'intensité $I$.  
 Exprimer la charge $q_A$ aux bornes de l'armature $A$ après $\Delta t$ secondes.
 {{% /note %}}
 {{% solution "Réponse" %}}
-- $i(t) = I = \dfrac{\mathrm{d}q_A}{\mathrm{dt}}$. 
+
+- $i(t) = I = \dfrac{\mathrm{d}q_A}{\mathrm{dt}}$.
 - L'opération qui consiste à obtenir la fonction $q_A$ à partir de l'expression de sa dérivée s'appelle l'intégration. Ce concept sera développé en cours de mathématique. En Physique, il suffit de se poser la question : ***« Quelle fonction, une fois dérivée par rapport au temps, donne une constante ? »***  
 Ici la réponse est simple $q_a(t) = I t + A$, où $A$ est une constante qui a la dimension d'une intensité, puisque $\dfrac{\mathrm{d}q_A}{\mathrm{dt}} = \dfrac{\mathrm{d}(I t + A))}{\mathrm{dt}} = (I t + A)\rq = I$
 - En fait, $q_a(t) = I t + A$ n'est pas **la solution** mais **une famille de solutions**. Pour trouver la solution, il faut connaître une **valeur particulière** (souvent la *valeur initiale*) : ici on sait que le condensateur était initialement déchargé, donc $q_A(0) = \pu{0 A}$. On en déduit que $A = 0$ et $q_a(t) = I t$.
@@ -161,18 +167,18 @@ On bascule le commutateur en position 2 et on enregistre les tensions $u_{DA}$ e
     - à la tension $u_{DA}$ aux bornes de la résistance ;
     - à la tension $u_{AB}$ aux bornes du condensateur.
 {{% solution "Réponse" %}}
+
 - La tension aux bornes du dipôle $(R, C)$ varie brutalement puisqu'elle passe de la valeur $\pu{0 V}$ à la valeur $E$. Ce comportement correspond à celui de la courbe verte.
 - On sait que le courant électrique finit par disparaître dans le circuit. Comme $u_{DA}$ est la tension aux bornes de la résistance, $u_{DA} = R i_{DA}$. Si l'intensité du courant électrique s'annule, alors la tension $u_{DA}$ doit aussi s'annuler. Ce comportement correspond à celui de la courbe mauve.
 - La loi des mailles nous donne : $-E + u_{DA} + u_{AB} = 0 \iff u_{AB} = E - u_{DA}$. Ce comportement est celui de la courbe orange.
 {{% /solution %}}
 
-
 {{% note tip %}}
+
 - Le condensateur d'un dipôle $(R, C)$ soumis à un échelon de tension ne se charge pas instantanément : *la charge du condensateur est un **phénomène transitoire**.*
 - Une fois la charge achevée, le régime est dit **permanent et constant**.
 - Les tensions aux bornes du dipôle $(R,C)$ et de la résistance sont discontinues en $t=0$ mais **la tension aux bornes du condensateur est continue** à la date $t=0$.
 {{% /note %}}
-
 
 #### Constante de temps
 
@@ -186,6 +192,7 @@ La durée de la charge du condensateur d'un dipôle $(R, C)$ augmente quand la v
 
 6. Démontrer que le produit $R \cdot C$ a la dimension d'un temps.
 {{% solution "Réponse" %}}
+
 - $[R] = \dfrac{U}{I}$ (une résistance est une tension sur une intensité);
 - $[C] = \dfrac{[Q]}{U}$ (une capacité est une charge sur tension). Or $[Q] = I \cdot T$ (intensité fois temps). Donc $[C] = \dfrac{I \cdot T}{U}$.
 - Finalement $[R\cdot C] = \dfrac{U}{I} \times \dfrac{I \cdot T}{U} = T$.
@@ -210,7 +217,8 @@ Toujours se placer en convention récepteur pour le condensateur !
 7. En appliquant la loi des mailles, trouver la relation entre les tensions $E$, $u_{DA}$ et $u_{AB}$.
 {{% solution "Réponse" %}}
 $$-E + u_{DA} + u_{AB} = 0$$
-Cette équation fait intervenir deux fonctions inconnues : 
+Cette équation fait intervenir deux fonctions inconnues :
+
 - celle que l'on cherche $u_{AB} (t)$ ;
 - la fonction $u_{DA} (t)$.
 
@@ -261,7 +269,7 @@ où $A$, $B$ et $\tau$ sont des constantes.
 {{% solution "Réponse" %}}
 On substitue $u_{AB}$ par la famille de solution dans l'équation différentielle.  
 
-Puisque $\dfrac{\mathrm{d}u_{AB}}{\mathrm{dt}} = \dfrac{\mathrm{d}(A + B e^{-t/\tau})}{\mathrm{dt}} = -\dfrac{B}{\tau} \\, e^{-t/\tau}$ l'équation devient $-\dfrac{B}{\tau} \\, e^{-t/\tau} + \dfrac{A}{RC} + \dfrac{B}{RC} e^{-t/\tau} = \dfrac{E}{RC} \iff \left( - \dfrac{1}{\tau} + \dfrac{1}{RC} \right)\\, B e^{-t/\tau} + \dfrac{A}{RC} = \dfrac{E}{RC}$. 
+Puisque $\dfrac{\mathrm{d}u_{AB}}{\mathrm{dt}} = \dfrac{\mathrm{d}(A + B e^{-t/\tau})}{\mathrm{dt}} = -\dfrac{B}{\tau} \\, e^{-t/\tau}$ l'équation devient $-\dfrac{B}{\tau} \\, e^{-t/\tau} + \dfrac{A}{RC} + \dfrac{B}{RC} e^{-t/\tau} = \dfrac{E}{RC} \iff \left( - \dfrac{1}{\tau} + \dfrac{1}{RC} \right)\\, B e^{-t/\tau} + \dfrac{A}{RC} = \dfrac{E}{RC}$.
 
 - Le terme à droite de l'égalité, $\dfrac{E}{RC}$ ne dépend pas du temps. Celui à gauche de cette même égalité ne peut donc pas dépendre du temps. Ceci n'est possible que si $\dfrac{1}{\tau} + \dfrac{1}{RC} = 0 \iff \boxed{\tau = RC}$.
 
@@ -272,6 +280,7 @@ Finalement, la famille de solutions convient à la condition qu'elle s'écrive $
 
 15. À partir des conditions initiales --- le condensateur est initialement déchargé ---, déterminer la fonction solution du problème.
 {{% solution "Réponse" %}}
+
 - $u_{AB}(0) = 0 = E + B e^{-0/\tau}= E + B \iff \boxed{B = -E}$
 
 Finalement
@@ -307,6 +316,7 @@ On peut déterminer graphiquement la valeur de la constante de temps $\tau$ : <s
 
 18. Déterminer l'expression de la fonction $i(t)$ et donner ses caractéristiques.
 {{% solution "Réponse" %}}
+
 - $i(t) = \dfrac{\mathrm{d}q_A}{\mathrm{dt}}$ et $q_A = C\\, u_{AB}$, donc $i(t) = C\\, \dfrac{\mathrm{d}u_{AB}}{\mathrm{dt}}$.
 
 - Si on substitue $u_{AB}$ par son expression, on obtient $i(t) = C\\, \dfrac{\mathrm{d}(E (1 - e^{-t / \tau}) )}{\mathrm{dt}}$ donc $ i(t) = \dfrac{CE}{\tau}\\, e^{-t / \tau}  \iff \boxed{i(t) = \dfrac{E}{R}\\, e^{-t / \tau} }$
@@ -317,7 +327,6 @@ On peut déterminer graphiquement la valeur de la constante de temps $\tau$ : <s
 {{% /solution %}}
 
 19. Démontrer que $i(t_{1/2}) = \dfrac{I_0}{2}$ avec $I_0 = \dfrac{E}{R}$.
-
 
 ## Décharge d'un condensateur dans une résistance
 
@@ -332,11 +341,12 @@ On bascule le commutateur en position 1 et on enregistre les tensions $u_{DA}$ e
     - à la tension $u_{DA}$ aux bornes de la résistance ;
     - à la tension $u_{AB}$ aux bornes du condensateur.
 {{% solution "Réponse" %}}
+
 - La tension aux bornes d'un condensateur est une **fonction continue** : $u_{AB}(O^-) = E$, donc $u_{AB}(O^+) = E$. De plus, les charges électriques quittent l'armature $A$ ; la tension $u_{AB}(t)$ doit donc diminuer au cours du temps jusqu'à s'annuler... tout en restant positive.  
 Ce comportement est celui de la courbe bleu.
 
 - La tension aux bornes de la résistance est l'image de l'intensité du courant qui circule dans le circuit. Comme les charges quittent l'armature $A$, le courant électrique ne circule pas dans le sens **choisi** mais dans le sens opposé. Cette intensité est négative.  
-De plus, le courant électrique finit par disparaître, une fois l'équilibre électrique retrouvé sur les armatures du condensateur. L'intensité de ce courant doit donc s'annuler.   
+De plus, le courant électrique finit par disparaître, une fois l'équilibre électrique retrouvé sur les armatures du condensateur. L'intensité de ce courant doit donc s'annuler.
 Ce comportement est celui de la courbe mauve.
 {{% /solution %}}
 
@@ -355,7 +365,8 @@ Toujours se placer en convention récepteur pour le condensateur !
 21. En appliquant la loi des mailles, trouver la relation entre les tensions $u_{DA}$ et $u_{AB}$.
 {{% solution "Réponse" %}}
 $$u_{DA} + u_{AB} = 0$$
-Cette équation fait intervenir deux fonctions inconnues : 
+Cette équation fait intervenir deux fonctions inconnues :
+
 - celle que l'on cherche $u_{AB} (t)$ ;
 - la fonction $u_{DA} (t)$.
 
@@ -406,7 +417,7 @@ où $A$, $B$ et $\tau$ sont des constantes.
 {{% solution "Réponse" %}}
 On substitue $u_{AB}$ par la famille de solution dans l'équation différentielle.  
 
-Puisque $\dfrac{\mathrm{d}u_{AB}}{\mathrm{dt}} = \dfrac{\mathrm{d}(A + B e^{-t/\tau})}{\mathrm{dt}} = -\dfrac{B}{\tau} \\, e^{-t/\tau}$ l'équation devient $-\dfrac{B}{\tau} \\, e^{-t/\tau} + \dfrac{A}{RC} + \dfrac{B}{RC} e^{-t/\tau} = 0 \iff \left( -\dfrac{1}{\tau} + \dfrac{1}{RC} \right)\\, B e^{-t/\tau} + \dfrac{A}{RC} = 0$. 
+Puisque $\dfrac{\mathrm{d}u_{AB}}{\mathrm{dt}} = \dfrac{\mathrm{d}(A + B e^{-t/\tau})}{\mathrm{dt}} = -\dfrac{B}{\tau} \\, e^{-t/\tau}$ l'équation devient $-\dfrac{B}{\tau} \\, e^{-t/\tau} + \dfrac{A}{RC} + \dfrac{B}{RC} e^{-t/\tau} = 0 \iff \left( -\dfrac{1}{\tau} + \dfrac{1}{RC} \right)\\, B e^{-t/\tau} + \dfrac{A}{RC} = 0$.
 
 - Le terme à droite de l'égalité, $0$ ne dépend pas du temps. Celui à gauche de cette même égalité ne peut donc pas dépendre du temps. Ceci n'est possible que si $\dfrac{1}{\tau} + \dfrac{1}{RC} = 0 \iff \boxed{\tau = RC}$.
 
@@ -417,6 +428,7 @@ Finalement, la famille de solutions convient à la condition qu'elle s'écrive $
 
 29. À partir des conditions initiales déterminer la fonction solution du problème.
 {{% solution "Réponse" %}}
+
 - $u_{AB}(0) = E = B e^{-0/\tau}= B \iff \boxed{B = E}$.
 
 Finalement
@@ -426,6 +438,7 @@ On retrouve donc bien le comportement de l'étude expérimentale. En particulier
 
 30. Déterminer l'expression de la fonction $i(t)$ et donner ses caractéristiques.
 {{% solution "Réponse" %}}
+
 - $i(t) = \dfrac{\mathrm{d}q_A}{\mathrm{dt}}$ et $q_A = C\\, u_{AB}$, donc $i(t) = C\\, \dfrac{\mathrm{d}u_{AB}}{\mathrm{dt}}$.
 
 - Si on substitue $u_{AB}$ par son expression, on obtient $i(t) = C\\, \dfrac{\mathrm{d}(E e^{-t / \tau} )}{\mathrm{dt}} = CE\\, \dfrac{\mathrm{d}(e^{-t / \tau} )}{\mathrm{dt}}$, puisque $E$ est une constante, donc $ i(t) = -\dfrac{CE}{\tau}\\, e^{-t / \tau} \iff \boxed{ i(t) = -\dfrac{E}{R}\\, e^{-t / \tau} }$

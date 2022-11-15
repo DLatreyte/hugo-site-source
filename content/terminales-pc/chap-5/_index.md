@@ -23,19 +23,21 @@ layout: "single"
 ## Documents
 
 ----
+
 - {{< remote "Chapitre du Livre Scolaire" "http://LLS.fr/PCTP549" >}}
+
 ----
 
-- **Chap. 6,1 :** [*Électrocinétique*](1-electrocinetique)
+- **Doc.** [*Électrocinétique*](1-electrocinetique)
 
-- **Chap. 6,2 :** [*Le dipôle (R,C)*](2-dipole-rc)
+- **Doc.** [*Le dipôle (R,C)*](2-dipole-rc)
 
-- **Chap. 6,3 :** [*Annale : Le super condensateur prêt à sortir de l'ombre*](3-annale-1) 
+- **Doc.** [*Étude expérimentale de la charge et de la décharge d'un dipôle $(R,C)$*](7-charge-decharge-tp)
 
-- **Chap. 6,4 :** [*Annale : Airbag et condensateur, quel rapport&nbsp;?*](4-annale-2)
+- **Doc.** [*Annale : Le super condensateur prêt à sortir de l'ombre*](3-annale-1)
 
-- **Chap. 6,5 :** [*Annale : Condensateur et éclairage d'un train miniature*](5-annale-3)
+- **Doc.** [*Annale : Airbag et condensateur, quel rapport ?*](4-annale-2)
 
-- **Chap. 6,6 :** [*Annale : Condensateur d'un flash*](6-annale-4)
+- **Doc.** [*Annale : Condensateur et éclairage d'un train miniature*](5-annale-3)
 
-
+- **Doc.** [*Annale : Condensateur d'un flash*](6-annale-4)
