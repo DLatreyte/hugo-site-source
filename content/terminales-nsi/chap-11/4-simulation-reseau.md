@@ -1,6 +1,6 @@
 ---
 title: "Simulation de réseaux"
-subtitle: "Chapitre 10,1,4"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-12-06T04:35:41+04:00

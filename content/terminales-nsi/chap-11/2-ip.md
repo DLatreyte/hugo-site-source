@@ -1,6 +1,6 @@
 ---
 title: "Adressage IP"
-subtitle: "Chapitre 10,1,2"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-11-26T06:16:49+04:00
