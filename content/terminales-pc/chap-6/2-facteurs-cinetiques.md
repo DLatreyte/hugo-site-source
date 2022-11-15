@@ -1,6 +1,6 @@
 ---
 title: "Facteurs Cinétiques"
-subtitle: "Chapitre 7,2"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-11-09T17:22:01+04:00
@@ -14,10 +14,12 @@ auto_numbering: true
 ---
 
 {{% note normal %}}
+
 #### Cinétique chimique
+
 La **cinétique chimique** est l'étude de la *vitesse des réactions chimiques*.
 
-Certaines réactions sont *très rapides* voire instantanées, comme les *explosions. D'autres sont *tellement lentes qu'elles durent plusieurs années* (comme la formation de la rouille), voire *plusieurs siècles* (comme la formation du charbon ou du pétrole). Certaines sont même *tellement lentes que les réactifs de départ sont considérés comme stables*, par exemple la transformation du diamant en carbone graphite. On parle alors d'états «&nbsp;métastables&nbsp;».
+Certaines réactions sont *très rapides* voire instantanées, comme les *explosions. D'autres sont*tellement lentes qu'elles durent plusieurs années*(comme la formation de la rouille), voire*plusieurs siècles*(comme la formation du charbon ou du pétrole). Certaines sont même*tellement lentes que les réactifs de départ sont considérés comme stables*, par exemple la transformation du diamant en carbone graphite. On parle alors d'états «&nbsp;métastables&nbsp;».
 
 Connaître la vitesse des réactions chimiques et être capable de la calculer est de toute première importance dans toutes les applications de la chimie.
 
@@ -26,9 +28,10 @@ Connaître la vitesse des réactions chimiques et être capable de la calculer e
 </div>
 {{% /note %}}
 
-
 {{% note normal %}}
+
 #### Facteur cinétique
+
 Dans le domaine de la chimie, un <strong>facteur cinétique</strong> désigne un <strong>paramètre physique</strong> capable d'influencer la vitesse d'une transformation chimique. Un facteur cinétique modifie donc la *durée d’évolution d’un système chimique*.
 
 Plusieurs facteurs cinétiques peuvent être envisagés comme la <strong>température</strong>, la <strong>pression</strong>, la <strong>concentration des réactifs</strong>, etc. Il faut cependant noter qu'un facteur cinétique n'a pas systématiquement une influence sur toutes les transformations chimiques.
@@ -39,16 +42,18 @@ Plusieurs facteurs cinétiques peuvent être envisagés comme la <strong>tempér
 {{% /note %}}
 
 {{% note normal %}}
+
 #### Réaction de dismutation
+
 On appelle <strong>réaction de dismutation</strong> une réaction d'oxydoréduction au cours de laquelle une espèce chimique joue à la fois le rôle de l'oxydant et celui du réducteur.
 
-##### Exemple.
+##### Exemple
+
 Le dichlore $\ce{Cl2}$ apparaît dans les deux couples $\ce{Cl2/Cl^-}$ et $\ce{ClO3^-/Cl2}$. En *milieu basique*, le dichlore réagit avec les ions hydroxyde $\ce{HO^-}$&nbsp;:
 $$
 \ce{3 Cl_2(aq) + 6 HO^−(aq) -> 5 Cl^−(aq) + ClO_3^−(aq) + 3 H_2O}
 $$
 {{% /note %}}
-
 
 ## Objectif de la séance
 
@@ -57,13 +62,15 @@ L'objectif de cette séance est d'observer l'influence de certains facteurs cin�
 ## Influence de la concentration des réactifs
 
 {{% note normal %}}
+
 #### Principe de la manipulation
+
 À partir des deux solutions&nbsp;:
 
 - de thiosulfate de sodium notée $S_1$ de concentration $C_1 = \pu{0,10 mol.L-1}$,
 - d’acide chlorhydrique notée $S_2$ de concentration $C_2 = \pu{1,0 mol.L-1}$,
 
-préparer différents mélanges, de même volume final $V_f$ mais ayant des proportions différentes en $S_1$, en eau et en $S_2$. 
+préparer différents mélanges, de même volume final $V_f$ mais ayant des proportions différentes en $S_1$, en eau et en $S_2$.
 
 Pour chaque essai, chronométrer la durée $\Delta t$  <strong>pour qu’une même quantité de soufre se forme</strong>, c'est-à-dire la durée pour obtenir la disparition visuelle d’un repère.
 {{% /note %}}
@@ -90,11 +97,12 @@ En pratique, réaliser les 5 mélanges différents du tableau ci-dessous et
 
 > Tableau 1. Les volumes sont indiqués en $\pu{mL}$, la durée en $\pu{s}$, les quantités de matière en $\pu{mol}$ et les concentrations en $\pu{mol.L-1}$.
 
-
 ## Influence de la température du système
 
 {{% note normal %}}
+
 #### Principe de la manipulation
+
 On élève ou abaisse la température du mélange réactionnel avant que la réaction chimique ne s'amorce et on mesure la durée $\Delta t$ pour qu'une même quantité de soufre se forme, c'est-à-dire la durée pour obtenir la disparition visuelle d’un repère.
 {{% /note %}}
 
@@ -102,7 +110,6 @@ En pratique, reprendre les proportions de réactifs et d'eau de l’essai 1 et p
 
 - $T\rq > T_{\text{ambiante}}$ grâce à un bain marie (environ $\pu{50 °C}$)&nbsp;;
 - $T\rq < T_{\text{ambiante}}$ grâce à un bain réfrigérant (environ $\pu{10 °C}$).
-
 
 | Température | Essai | $V_1$ | $V$ | $V_2$ | $\Delta t$ | $n_0(\ce{S2O3^{2-}})$ | $[\ce{S2O3^{2-}}]_0$ | $n_0(\ce{H3O^+})$ | $[\ce{H3O^+}]_0$ |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
@@ -122,6 +129,7 @@ Essai 1&nbsp;: $\Delta t = \pu{346 s}$&nbsp;; essai 2&nbsp;: $\Delta t = \pu{182
 
 2. Écrire les demi-équations correspondant aux couples mis en jeu.
 {{% solution "Réponse" %}}
+
 - $\ce{SO2 / S2O3^{2-}}$&nbsp;: $$\ce{2H^+ + 2SO2 + 4e^- = S2O3^{2-} + H2O }$$
 
 - $\ce{S2O3^{2-}} / \ce{S}$&nbsp;: $$\ce{ 6H^+ + S2O3^{2-} + 4 e^- = 2\ce{S} + 3 H2O  }$$
@@ -136,14 +144,14 @@ $$
 
 4. Quel est l’oxydant ? Le réducteur ? Justifier l’appellation dismutation de cette réaction.
 {{% solution "Réponse" %}}
-Les ions thiosulfate jouent le rôle de l'oxydant et du réducteur&nbsp;; il s'agit donc bien d'une réaction de dismutation.   
+Les ions thiosulfate jouent le rôle de l'oxydant et du réducteur&nbsp;; il s'agit donc bien d'une réaction de dismutation.
 
 Les ions $\ce{H^+}$ ne sont ni oxydés ni réduits lors de cette réaction. Ils assurent le caractère acide du milieu réactionnel.
 {{% /solution %}}
 
 5. Construire le tableau d'avancement.
 
-6. Compléter les différentes colonnes relatives aux quantités de matière dans les tableaux. 
+6. Compléter les différentes colonnes relatives aux quantités de matière dans les tableaux.
 {{% solution "Réponse" %}}
 {{< remote "Fichier des valeurs au format pdf" "/terminales-pc/chap-6/chap-6-3-1.pdf"  >}}
 {{% /solution %}}
@@ -178,11 +186,12 @@ La relation $\dfrac{n_0( \ce{S2O3^{2-}} )}{1} = \dfrac{ n_0(\ce{H^+}) }{2}$ est 
 12. Quels essais peut-on comparer entre eux ? Préciser à chaque fois quel est le paramètre dont on étudie l'influence.
 {{% solution "Réponse" %}}
 On peut comparer les essais&nbsp;:
+
 - 1, 2, 3, 4, 5 pour étudier l'influence de la concentration des réactifs&nbsp;;
 - 4, 6, 7 pour étudier l'influence de la température.
 {{% /solution %}}
 
-13. En déduire l’influence de la concentration initiale en ion thiosulfate sur la vitesse de réaction. 
+13. En déduire l’influence de la concentration initiale en ion thiosulfate sur la vitesse de réaction.
 {{% solution "Réponse" %}}
 Plus la concentration en ion thiosulfate augmente, plus la durée pour atteindre l'état final diminue.
 {{% /solution %}}

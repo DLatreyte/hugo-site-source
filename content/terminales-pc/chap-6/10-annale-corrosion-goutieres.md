@@ -1,6 +1,6 @@
 ---
 title: "Annale : Corrosion des gouttières"
-subtitle: "Chapitre 7,11"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-11-21T21:52:17+04:00
@@ -13,29 +13,31 @@ solution_est_visible: true
 auto_numbering: true
 ---
 
-Les précipitations sont naturellement acides en raison du dioxyde de carbone présent dans l'atmosphère. Par ailleurs, la combustion des matières fossiles (charbon, pétrole et gaz) produit du dioxyde de soufre et des oxydes d'azote qui s'associent à l'humidité de l'air pour libérer de l'acide sulfurique et de l'acide nitrique. Ces acides sont ensuite transportés loin de leur source avant d'être précipités par les pluies, le brouillard, la neige ou sous forme de dépôts secs.     
+Les précipitations sont naturellement acides en raison du dioxyde de carbone présent dans l'atmosphère. Par ailleurs, la combustion des matières fossiles (charbon, pétrole et gaz) produit du dioxyde de soufre et des oxydes d'azote qui s'associent à l'humidité de l'air pour libérer de l'acide sulfurique et de l'acide nitrique. Ces acides sont ensuite transportés loin de leur source avant d'être précipités par les pluies, le brouillard, la neige ou sous forme de dépôts secs.
 Très souvent, les pluies s'écoulant des toits sont recueillies par des gouttières métalliques, constituées de zinc.
 
 #### Données
+
 - Masse molaire atomique du zinc&nbsp;: $M\ce{(Zn}) = \pu{65,4 g.mol–1}$&nbsp;;
 - Loi des gaz parfaits&nbsp;: $PV = nRT$ (relation entre la pression en pascal (Pa), le volume en mètre-cube ($\pu{m3}$), la quantité de matière en mole (mol) et la température en kelvin (K))&nbsp;;
 - Constante des gaz parfaits&nbsp;: $R = \pu{8,31 J.mol−1.K−1}$&nbsp;;
 - Couples acide / base&nbsp;:
-    - $\ce{H3O+ / H2O}$&nbsp;;
-    - $\ce{H2O / HO– }$&nbsp;; 
-    - $\ce{CO2, H2O / HCO3– }$.
+  - $\ce{H3O+ / H2O}$&nbsp;;
+  - $\ce{H2O / HO– }$&nbsp;;
+  - $\ce{CO2, H2O / HCO3– }$.
 - Le zinc est un métal qui réagit en milieu acide selon la réaction d'équation&nbsp;:
 $$\ce{ Zn(s) + 2 H3O+ --> Zn^{2+} (aq) + H2 (g) + 2 H2O }$$
 
 ## Suivi cinétique de la transformation
+
 Pour étudier cette transformation, considérée comme totale, on réalise l'expérience dont le schéma simplifié est représenté sur la figure 1.
 
 > Figure 1.
 <img src="/terminales-pc/chap-6/chap-6-10-1.png" alt="" width="60%" />
 
-À l'instant de date $t = \pu{0 s}$, on verse rapidement, sur $\pu{0,50 g}$ de poudre de zinc, $\pu{75,0 mL}$ de solution d'acide sulfurique de concentration en ions oxonium $\ce{H3O+}$ égale à $\pu{0,40 mol.L-1}$.    
-La pression mesurée à cet instant par le capteur est $P_i = \pu{1020 hPa}$.     
-La formation de dihydrogène crée une surpression qui s'additionne à la pression de l'air initialement présent.     
+À l'instant de date $t = \pu{0 s}$, on verse rapidement, sur $\pu{0,50 g}$ de poudre de zinc, $\pu{75,0 mL}$ de solution d'acide sulfurique de concentration en ions oxonium $\ce{H3O+}$ égale à $\pu{0,40 mol.L-1}$.
+La pression mesurée à cet instant par le capteur est $P_i = \pu{1020 hPa}$.
+La formation de dihydrogène crée une surpression qui s'additionne à la pression de l'air initialement présent.
 Les valeurs de la pression, mesurée à différentes dates par le capteur de pression, sont reportées dans le tableau page suivante&nbsp;:
 
 |  t (min) | 0 | 1,0 | 3,0 | 5,0 | 7,0 | 9,0 | 11,0 | 15,0 | 20,0 | 25,0 | 30,0 | 35,0 |
@@ -54,7 +56,7 @@ On considère que le dihydrogène libéré par la réaction est un gaz parfait. 
 
 3. Quelle est la relation donnant l'avancement $x$ de la réaction en fonction de $(P – P_i )$, $V_{gaz}$, $R$ et $T$&nbsp;?
 
-4. On note $P_{max}$ la pression mesurée à l'état final.     
+4. On note $P_{max}$ la pression mesurée à l'état final.
 Écrire la relation donnant l'avancement $x_{max}$ en fonction de $P_{max}$, $P_i$, $V_{gaz}$, $R$ et $T$.
 
 5. En déduire la relation donnant l'avancement $x$&nbsp;: $$x = x_{max} \left( \dfrac{P – P_i}{ P_{max} – P_i } \right) $$
@@ -68,7 +70,7 @@ On considère que le dihydrogène libéré par la réaction est un gaz parfait. 
 
 7. À l'aide du tableau des résultats, déterminer la valeur de l'avancement à la date $t = \pu{50,0 min}$. Vérifier cette valeur sur la courbe.
 
-8. Comment peut-on déduire de la figure donnant $x = f(t)$ l'évolution de la vitesse volumique de réaction au cours de la transformation chimique étudiée (le volume est supposé constant lors de cette expérience)&nbsp;?      
+8. Comment peut-on déduire de la figure donnant $x = f(t)$ l'évolution de la vitesse volumique de réaction au cours de la transformation chimique étudiée (le volume est supposé constant lors de cette expérience)&nbsp;?
 Décrire qualitativement cette évolution.
 
 ## Facteurs cinétiques
@@ -95,6 +97,7 @@ Pour chacune des expériences 1, 2 et 3, on a tracé sur la figure 3 ci-dessous 
 ### Influence de la forme du zinc (division et état de surface)
 
 On reprend le montage de la figure 1 et on réalise trois nouvelles expériences&nbsp;:
+
 - avec de la poudre de zinc&nbsp;;
 - avec de la grenaille de zinc récemment fabriquée&nbsp;;
 - avec de la grenaille de zinc de fabrication ancienne.
@@ -115,12 +118,12 @@ On trace les courbes $x = f(t)$ pour les trois expériences et on obtient la fig
 10. À partir des courbes obtenues lors des expériences 4 et 5, indiquer quelle est l'influence de la surface du zinc en contact avec la solution sur la vitesse de réaction.
 
 11. En milieu humide, le zinc se couvre d'une mince couche de carbonate de zinc qui lui
-donne un aspect patiné.     
+donne un aspect patiné.
 À partir des courbes obtenues, indiquer quelle est l'influence de cette couche de carbonate de zinc sur la vitesse de réaction.
 
 ## Pluies acides et gouttières
 
-Les précipitations naturelles et non polluées forment des solutions acides. Leur acidité est due au dioxyde de carbone qui se dissout dans l'eau.     
+Les précipitations naturelles et non polluées forment des solutions acides. Leur acidité est due au dioxyde de carbone qui se dissout dans l'eau.
 L'équation entre l'eau et le dioxyde de carbone s'écrit&nbsp;:
 $$\ce{
 CO2 (aq) + 2 H2O (l) --> HCO3^– (aq) + H3O+
@@ -133,9 +136,4 @@ En France le pH moyen annuel des eaux de pluie est de l'ordre de 5.
 
 ## Corrigé
 
-
 {{< remote "Corrigé au format pdf" "/terminales-pc/chap-6/chap-6-10-6.pdf" >}}
-
-
-
-

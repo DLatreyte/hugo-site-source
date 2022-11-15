@@ -1,6 +1,6 @@
 ---
 title: "Annale : L'eau de Javel"
-subtitle: "Chapitre 7,10"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-11-21T16:28:23+04:00
@@ -13,13 +13,13 @@ solution_est_visible: true
 auto_numbering: true
 ---
 
-Connue depuis plus de deux siècles, l'eau de Javel reste un produit chimique d'utilisation courante, présent dans près de 95&nbsp;% des foyers français. C'est un désinfectant très efficace contre les contaminations bactériennes et virales, en particulier celle du SIDA.     
+Connue depuis plus de deux siècles, l'eau de Javel reste un produit chimique d'utilisation courante, présent dans près de 95&nbsp;% des foyers français. C'est un désinfectant très efficace contre les contaminations bactériennes et virales, en particulier celle du SIDA.
 L'eau de Javel est une solution aqueuse contenant du chlorure de sodium, $\ce{Na+ + Cl-}$, de l'hypochlorite de sodium, $\ce{Na+ + ClO-}$, et de la soude $\ce{Na+ + HO-}$. Elle est fabriquée en dissolvant du dichlore gazeux dans une solution de soude selon la réaction&nbsp;:
 $$\ce{
 Cl2(g) + 2 HO-(aq) --> Cl-(aq) + ClO-(aq) + H2O
 }$$
 
-## Définition du «&nbsp;Degré chlorométrique&nbsp;» 
+## Définition du «&nbsp;Degré chlorométrique&nbsp;»
 
 En France et dans les pays francophones, la concentration d'une eau de Javel est donnée en degrés chlorométriques&nbsp;: le degré chlorométrique d'une eau de Javel est égal au volume de dichlore gazeux, mesuré sous $\pu{101,3 kPa}$ et à $\pu{0 °C}$, nécessaire pour fabriquer un litre de solution.
 
@@ -32,14 +32,15 @@ En France et dans les pays francophones, la concentration d'une eau de Javel est
 On utilise une méthode dite *par retour* décrite ci-après.
 
 Protocole pour déterminer la concentration $C_1$ des ions hypochlorite contenus dans une eau de Javel à 12°&nbsp;:
+
 - Préparer une burette avec une solution titrée de thiosulfate de sodium de concentration $C_2$ égale à $\pu{0,10 mol.L-1}$.
 - Dissoudre $\pu{2 g}$ d'iodure de potassium dans environ $\pu{50 mL}$ d'eau distillée contenue dans un bécher de $\pu{250 mL}$ puis ajouter environ $\pu{10 mL}$ d'acide éthanoïque.
 - Introduire un volume $V_1 = \pu{2,0 mL}$ de l'eau de Javel à doser. Agiter&nbsp;: une coloration brune apparaît.
 - Ajouter progressivement la solution de thiosulfate jusqu'à ce que la solution soit jaune pâle. Ajouter alors quelques grains de thiodène, puis terminer le dosage goutte à goutte jusqu'à décoloration du mélange réactionnel.
 
 ### Analyse du protocole
-La première réaction met en jeu les couples $\ce{ClO- (aq) / Cl-(aq)}$ et $\ce{I2 (aq) / I-(aq)}$.
 
+La première réaction met en jeu les couples $\ce{ClO- (aq) / Cl-(aq)}$ et $\ce{I2 (aq) / I-(aq)}$.
 
 3. Écrire les demi équations d'oxydoréduction correspondantes et établir l'équation de cette réaction. À quoi est due la coloration brune qui apparaît&nbsp;?
 

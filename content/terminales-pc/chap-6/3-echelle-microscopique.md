@@ -1,6 +1,6 @@
 ---
 title: "Réactions chimiques et échelle microscopique"
-subtitle: "Chapitre 7,3"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-11-09T11:25:13+04:00
@@ -14,9 +14,9 @@ auto_numbering: true
 ---
 
 ## Objectifs
+
 - Interpréter une réaction chimique en termes de **chocs efficaces** entre entités microscopiques.
 - Interpréter l’influence des facteurs cinétiques à l’échelle microscopique.
-
 
 ## Quelques définitions
 
@@ -49,10 +49,11 @@ $$ PV = nRT $$
 Dans le modèle du gaz parfait la vitesse des molécules ne dépend que de la température.
 {{% /solution %}}
 
-3. Pour que les liaisons chimiques d’une molécule de dihydrogène $\ce{H−H}$ et d’une molécule de dibrome $\ce{Br−Br}$ se brisent et forment la liaison de la molécule de bromure d’hydrogène $\ce{H−Br}$, il faut fournir environ $\pu{1,3e-19 J}$.   
+3. Pour que les liaisons chimiques d’une molécule de dihydrogène $\ce{H−H}$ et d’une molécule de dibrome $\ce{Br−Br}$ se brisent et forment la liaison de la molécule de bromure d’hydrogène $\ce{H−Br}$, il faut fournir environ $\pu{1,3e-19 J}$.
 Montrer que si la vitesse dans le référentiel du laboratoire, d’une molécule $\ce{Br2}$ avant le choc est égale à $\pu{0,22 km.s-1}$, et que celle d’une molécule $\ce{H2}$ est égale à $\pu{1,97 km.s-1}$, l’énergie cinétique du système $\{\ce{H2 + Br2}\}$ est insuffisante pour que le choc soit efficace.
 
 {{% solution "Réponse" %}}
+
 - $E_C(\ce{Br2}) + E_C(\ce{H2}) = \dfrac{1}{2} m(\ce{Br2}) v(\ce{Br2})^2 + \dfrac{1}{2} m(\ce{H−H}) v(\ce{H−H})^2$
 
 - **A.N.** $ E_C(\ce{Br2}) + E_C(\ce{H2}) =  \dfrac{1}{2} \times \dfrac{ 2 \times \pu{79,904e-3 kg.mol-1} }{ \pu{6,02e23 mol-1} } \times (\pu{0,22e3 m.s-1})^2 +  \dfrac{1}{2} \times \dfrac{ 2 \times \pu{1,008e-3 kg.mol-1} }{ \pu{6,02e23 mol-1} } \times (\pu{1,97e3 m.s-1})^2  = \pu{1,3e-20 J} < \pu{1,3e-19 J}  $
@@ -68,6 +69,7 @@ Une élévation de la température du gaz traduit une énergie cinétique plus g
 **Données.** Énergies molaires de liaison (en $\pu{kJ.mol-1}$) : $\ce{H2}$ ∶ 432, $\ce{Br2}$ ∶ 190, $\ce{H−Br}$ ∶ 362.
 
 {{% solution "Réponse" %}}
+
 - $ \ce{ H2 + BR2 -> 2 H-Br  } $
 
 - $ E_{MI} = E_C(\ce{H2}) + E_C(\ce{Br2}) + E_P(\ce{H-H}) + E_P(\ce{Br-Br}) $ où $E_P$ sont des énergies potentielles d'interaction.
@@ -76,10 +78,10 @@ Une élévation de la température du gaz traduit une énergie cinétique plus g
 
 - Puisque le système est isolé, $\Delta E_M = 0 \iff E_{MF} - E_{MI} = 0 \iff 2 E_C(\ce{H-Br}) - ( E_C(\ce{H2}) + E_C(\ce{Br2}) ) + 2 E_P(\ce{H-Br}) - ( E_P(\ce{H-H}) + E_P(\ce{Br-Br}) )  = 0 \iff \Delta E_C + 2 E_P(\ce{H-Br}) - ( E_P(\ce{H-H}) + E_P(\ce{Br-Br}) ) = 0 $
 
-- $ \Delta E_C = E_P(\ce{H-H}) + E_P(\ce{Br-Br}) - 2 E_P(\ce{H-Br})$   
+- $ \Delta E_C = E_P(\ce{H-H}) + E_P(\ce{Br-Br}) - 2 E_P(\ce{H-Br})$
 **A.N.** $ \Delta E_C = -\pu{432 kJ.mol-1} - \pu{190 kJ.mol-1} + 2 \times \pu{362 kJ.mol-1} = \pu{102 kJ.mol-1}$
 
-**Remarque :** Pourquoi les signes $\ominus$ devant les valeurs des énergies potentielles d'interaction ?   
+**Remarque :** Pourquoi les signes $\ominus$ devant les valeurs des énergies potentielles d'interaction ?
 En fait, les valeurs qui sont données sont les énergies molaires de liaison $D(\ce{H-H})$, c'est à dire les énergies qu'il faut fournir aux molécules pour rompre les liaisons. Donc $ E_P(\ce{H-H}) = - D(\ce{H-H})$.
 {{% /solution %}}
 
@@ -88,18 +90,19 @@ En fait, les valeurs qui sont données sont les énergies molaires de liaison $D
 <img src="/terminales-pc/chap-6/chap-6-3-3.png" alt="" width="70%" />
 
 #### Situation 1
+
 - $E_{C_1} = \frac{1}{2} m_1  v_1^2$ ;
 - De même, $E_{C_2} = \frac{1}{2} m_2 v_2^2$.
 
 #### Situation 2
-- $E_{C_1} = \frac{1}{2} m_1  (\vec{v}_{\perp 1} + \vec{v}_{/ / 1})^2 =
+
+- $E_{C_1} = \frac{1}{2} m_1  (\vec{v}*{\perp 1} + \vec{v}*{/ / 1})^2 =
 \frac{1}{2} m_1  (v_{\perp 1}^2 + v_{/ / 1}^2 + 2 \vec{v}_{\perp 1} \cdot
 \vec{v}_{// 1}) = \frac{1}{2} m_1  (v_{\perp 1}^2 + v_{// 1}^2) = \frac{1}{2} m_1 v_{\perp 1}^2 + \frac{1}{2} m_1 v_{// 1}^2$
 - De même, $E_{C_2} = \frac{1}{2} m_2  (v_{\perp 2}^2 + v_{// 2}^2) = \frac{1}{2} m_2 v_{\perp 2}^2 + \frac{1}{2} m_2 v_{// 2}^2 $
 
 - On voit donc que l'énergie cinétique se décompose en deux composantes. Seule la composante « perpendiculaire » est utile pour le choc. La partie « parallèle » n'apporte rien au choc.
 {{% /solution %}}
-
 
 ## Concentration molaire
 
@@ -108,7 +111,6 @@ On appelle **concentration molaire** d’un gaz le rapport entre la quantité de
 $$C = \dfrac{n}{V}$$
 {{% /solution %}}
 
-
 7. Déduire de cette définition l’unité de concentration molaire d’un gaz.
 {{% solution "Réponse" %}}
 L'unité est la mole par mètre cube (mole par litre en pratique).
@@ -116,6 +118,7 @@ L'unité est la mole par mètre cube (mole par litre en pratique).
 
 8. Exprimer l’expression de cette concentration molaire pour un gaz obéissant au modèle du gaz parfait et en déduire sa valeur à $\pu{400 K}$ et $\pu{1e5 Pa}$.
 {{% solution "Réponse" %}}
+
 - $PV = nRT \iff \dfrac{n}{V} = \frac{P}{RT}$ ;
 
 - **A.N.** $ \dfrac{n}{V} = \dfrac{\pu{1e5 Pa}}{\pu{8,31 J.mol−1.K−1} \times \pu{400 K}} = \pu{3e1 mol.m-3} $.
@@ -123,6 +126,7 @@ L'unité est la mole par mètre cube (mole par litre en pratique).
 
 9. Dans les mêmes conditions, on considère un mélange équimolaire de dihydrogène et de dibrome gazeux. Quelle est la concentration molaire de chacun de ces gaz dans le mélange ?
 {{% solution "Réponse" %}}
+
 - $ n_{\text{total}} = n(\ce{Br2}) + n(\ce{H2})$ avec $n(\ce{Br2}) = n(\ce{H2})$, donc $n(\ce{Br2}) = n(\ce{H2}) = \dfrac{ n_{\text{total}} }{ 2 }$
 
 - Donc $C(\ce{Br2}) = C(\ce{H2}) = \dfrac{ n_{\text{total}} }{ 2 V} = \pu{15,1 mol.m-3}$.
@@ -135,8 +139,8 @@ Si on réduit le volume en conservant la quantité de matière constante, les co
 
 11. Proposer une interprétation microscopique au fait que la concentration des réactifs soit un facteur cinétique.
 {{% solution "Réponse" %}}
+
 - Dans la première partie de cette activité, on a vu qu'une **élévation de température peut augmenter la probabilité** pour qu'un choc soit efficace et conduise à une réaction chimique.
 
 - Dans cette partie, la probabilité pour qu'un choc soit efficace n'est pas modifiée mais une **augmentation de la concentration entraîne une augmentation des chocs** et donc un nombre de cas réussis (réactions chimiques) plus grand.
 {{% /solution %}}
-

@@ -1,6 +1,6 @@
 ---
 title: "Annale : Fabrication d'un alcool"
-subtitle: "Chapitre 7,7"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-11-21T14:54:39+04:00
@@ -21,13 +21,15 @@ $$
 $$
 
 #### Données
+
 - Masse molaire&nbsp;: $M(\ce{(CH3)3C-Cl}) = \pu{92,0 g.mol–1}$.
 - Masse volumique&nbsp;: $\rho = \pu{0,85 g.mL–1}$.
 - La conductivité d’un mélange est donnée par $\sigma = \sum \lambda_i [X_i]$ où $[X_i]$ désigne la concentration des espèces ioniques présentes dans le mélange, exprimée en $\pu{mol.m–3}$.
 - Conductivités molaires ioniques&nbsp;: $\lambda (\ce{H3O+})= \pu{349,8e–4 S.m2.mol–1}$ et $\lambda (\ce{Cl-})= \pu{76,3e–4 S.m2.mol–1}$.
 
 #### Protocole observé
-- Dans une fiole jaugée, on introduit $\pu{1,0 mL}$ de 2-chloro-2-méthyl-propane et de l’acétone afin d’obtenir un volume de $\pu{25,0 mL}$ d’une solution $S$. 
+
+- Dans une fiole jaugée, on introduit $\pu{1,0 mL}$ de 2-chloro-2-méthyl-propane et de l’acétone afin d’obtenir un volume de $\pu{25,0 mL}$ d’une solution $S$.
 - Dans un bécher, on place $\pu{200,0 mL}$ d’eau distillée dans laquelle est immergée la sonde d’un conductimètre. Puis, à l’instant $t = \pu{0 min}$, on déclenche un chronomètre en versant $\pu{5,0 mL}$ de la solution $S$ dans le bécher.
 - Un agitateur magnétique permet d’homogénéiser la solution obtenue, on relève la valeur de la conductivité du mélange au cours du temps.
 
@@ -35,7 +37,7 @@ $$
 
 2. Établir le tableau d’avancement de la transformation. Quelle relation lie $[\ce{H3O+}]$ et $[\ce{Cl–(aq)}]$ à chaque instant&nbsp;?
 
-3. Donner l’expression de la conductivité $\sigma$ du mélange en fonction de $[\ce{H3O+}]$ et des conductivités molaires ioniques. 
+3. Donner l’expression de la conductivité $\sigma$ du mélange en fonction de $[\ce{H3O+}]$ et des conductivités molaires ioniques.
 
 4. Donner l’expression de la conductivité $\sigma$ du mélange en fonction de l’avancement $x$ de la réaction, du volume $V$ du mélange réactionnel et des conductivités molaires ioniques des ions présents dans la solution.
 
@@ -64,7 +66,6 @@ On réalise maintenant la même expérience à une température plus élevée.
 11. Dessiner qualitativement sur le graphique précédent l’allure de la courbe montrant les variations de l’avancement $x$ au cours du temps.
 
 12. La valeur du temps de demi-réaction est-elle identique, inférieure ou supérieure à la valeur précédente&nbsp;? Justifier.
-
 
 ## Corrigé
 

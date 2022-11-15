@@ -1,6 +1,6 @@
 ---
 title: "Suivi temporel et évolution macroscopique d'un système chimique"
-subtitle: "Chapitre 7"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-11-08T19:03:40+04:00
@@ -23,34 +23,29 @@ layout: "single"
 ## Documents
 
 ----
+
 - {{< remote "Chapitre du Livre Scolaire" "http://LLS.fr/PCTP83" >}}
+
 ----
 
-- **Chap. 7,1 :** [*Comment modifier la vitesse d'une réaction chimique ?*](1-modifier-vitesse-reaction)
+- **Doc.** [*Comment modifier la vitesse d'une réaction chimique ?*](1-modifier-vitesse-reaction)
 
-- **Chap. 7,2 :** [*Facteurs cinétiques*](2-facteurs-cinetiques)
+- **Doc.** [*Facteurs cinétiques*](2-facteurs-cinetiques)
 
-- **Chap. 7,3 :** [*Réactions chimiques et échelle microscopique*](3-echelle-microscopique)
+- **Doc.** [*Réactions chimiques et échelle microscopique*](3-echelle-microscopique)
 
-- **Chap. 7,4 :** [*Suivi cinétique et vitesse volumique*](4-vitesse-volumique)
+- **Doc.** [*Suivi cinétique et vitesse volumique*](4-vitesse-volumique)
 
-- **Chap. 7,5 :** [*Réactions chimiques d’ordre 1*](5-ordre-reaction)
+- **Doc.** [*Réactions chimiques d’ordre 1*](5-ordre-reaction)
 
-- **Chap. 7,6 :** [*Introduction aux mécanismes réactionnels*](6-mecanismes-reactionnels)
+- **Doc.** [*Introduction aux mécanismes réactionnels*](6-mecanismes-reactionnels)
 
-- **Chap. 7,7 :** [*Annale : Fabrication d'un alcool*](7-annale-fabrication-alcool)
+- **Doc.** [*Annale : Fabrication d'un alcool*](7-annale-fabrication-alcool)
 
-- **Chap. 7,8 :** [*Annale : Décomposition d'une eau oxygénée*](8-annale-decomposition-eau-oxygenee)
+- **Doc.** [*Annale : Décomposition d'une eau oxygénée*](8-annale-decomposition-eau-oxygenee)
 
-- **Chap. 7,9** [*Annale : Décomposition du protoxyde d’azote*](11-protoxyde-azote)
+- **Doc.** [*Annale : Décomposition du protoxyde d’azote*](11-protoxyde-azote)
 
-- **Chap. 7,10 :** [*Annale : L'eau de Javel*](9-olympiades-eau-de-javel)
+- **Doc.** [*Annale : L'eau de Javel*](9-olympiades-eau-de-javel)
 
-- **Chap. 7,11** [*Annale : Corrosion des gouttières*](10-annale-corrosion-goutieres)
-
-
-
-
-
-
-
+- **Doc.** [*Annale : Corrosion des gouttières*](10-annale-corrosion-goutieres)

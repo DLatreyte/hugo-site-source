@@ -1,6 +1,6 @@
 ---
 title: "Décomposition du protoxyde d’azote"
-subtitle: "Chapitre 7,9"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-11-24T05:27:00+04:00
@@ -24,12 +24,12 @@ Ici, les concentrations correspondent au rapport entre la quantité de gaz et le
 
 - {{< remote "Accès aux données pour traitement avec Graphical Analysis" "/terminales-pc/chap-6/chap-6-11-1.ambl" >}}
 
-1. Identifier les intermédiaires réactionnels apparaissant dans le mécanisme réactionnel. 
+1. Identifier les intermédiaires réactionnels apparaissant dans le mécanisme réactionnel.
 {{% solution "Réponse" %}}
 Le radical $\ce{O^{.}(g)}$ est un intermédiaire réactionnel, car il est formé dans la première étape, puis consommé dans la seconde.
 {{% /solution %}}
 
-2. Écrire l’équation-bilan. 
+2. Écrire l’équation-bilan.
 {{% solution "Réponse" %}}
 $\ce{ 2 N2O(g) -> 2  N2(g) + O2(g)  }$
 {{% /solution %}}
@@ -46,7 +46,7 @@ $ [\ce{N2O}] = C_0 - 2 x $ et $ [\ce{N2}] = 2x $, donc $ [\ce{N2O}] = C_0 - [\ce
 5. Exprimer la vitesse volumique de formation $v\_f$ de $[\ce{N2}]$.
 {{% solution "Réponse" %}}
 $$
-    v\_f (\ce{N2}) = \dfrac{\mathrm{d} [\ce{N2}]}{\mathrm{dt}} 
+    v\_f (\ce{N2}) = \dfrac{\mathrm{d} [\ce{N2}]}{\mathrm{dt}}
 $$
 {{% /solution %}}
 
@@ -71,7 +71,7 @@ $v_f(\ce{N2}) = \dfrac{\mathrm{d} [\ce{N2}]}{\mathrm{dt}}$ donc $v = \dfrac{1}{2
 - $v\_f (\ce{N2}) = \dfrac{\mathrm{d} [\ce{N2}]}{\mathrm{dt}}$
 - $v\_f (\ce{O2}) = \dfrac{\mathrm{d} [\ce{O2}]}{\mathrm{dt}}$
 
-Or, grâce au tableau d'avancement on apprend que $n(\ce{N2})(t) = 2 x(t)$ et $n(\ce{O2})(t) = x(t)$. On en conclut donc que $n(\ce{N2})(t) = 2 n(\ce{O2})(t)$. Il se forme à chaque instant deux fois plus de diazote que de dioxygène. 
+Or, grâce au tableau d'avancement on apprend que $n(\ce{N2})(t) = 2 x(t)$ et $n(\ce{O2})(t) = x(t)$. On en conclut donc que $n(\ce{N2})(t) = 2 n(\ce{O2})(t)$. Il se forme à chaque instant deux fois plus de diazote que de dioxygène.
 
 Finalement, on en déduit que $[\ce{N2}\] (t) = 2 [\ce{O2}\](t)$ et que $v\_f (\ce{N2}) = 2 v\_f (\ce{O2}) $.
 
@@ -87,9 +87,9 @@ $v_d$ est positive et s'exprime en mole par litre par seconde (en pratique).
 
 7. Dans le tableau, dans le {{< remote "fichier des données" "/terminales-pc/chap-6/chap-6-11-1.ambl" >}} ajouter deux colonnes calculées pour calculer les vitesses de formation de $\ce{N2}$ et de $\ce{O2}$.
 
-
 8. Trouver la relation qui existe entre la vitesse volumique de disparition de $\ce{N2O}$, $v_d(\ce{N2O})$, et la vitesse volumique de formation de $\ce{N2}$.
 {{% solution "Réponse" %}}
+
 - $v_d(\ce{N2O}) = - \dfrac{\mathrm{d} [\ce{N2O}]}{\mathrm{dt}}$.
 
 Or, on a démontré à la question 4. que $ [\ce{N2O}] = C_0 - [\ce{N2}] $, on peut donc écrire, après dérivation par rapport au temps de la relation précédente, que $\dfrac{\mathrm{d} [\ce{N2O}]}{\mathrm{dt}} = - \dfrac{\mathrm{d} [\ce{N2}]}{\mathrm{dt}}$, ce qui implique que $v_d(\ce{N2O}) = v_f(\ce{N2})$.

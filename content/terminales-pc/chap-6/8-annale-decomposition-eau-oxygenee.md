@@ -1,6 +1,6 @@
 ---
 title: "Annale : Décomposition d'une eau oxygénée"
-subtitle: "Chapitre 7,8"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-11-21T15:42:36+04:00
@@ -15,7 +15,7 @@ auto_numbering: true
 
 **L'usage des calculatrices n'est pas autorisé**. L'épreuve a été conçue pour être traitée sans calculatrice.
 
-L'eau oxygénée ou solution aqueuse de peroxyde d'hydrogène $\ce{H2O2}$ est une espèce oxydante utilisée au laboratoire. Il s'agit aussi d'une espèce chimique utilisée dans la vie courante&nbsp;: décoloration des cheveux, désinfection des verres de contact, désinfection des plaies.     
+L'eau oxygénée ou solution aqueuse de peroxyde d'hydrogène $\ce{H2O2}$ est une espèce oxydante utilisée au laboratoire. Il s'agit aussi d'une espèce chimique utilisée dans la vie courante&nbsp;: décoloration des cheveux, désinfection des verres de contact, désinfection des plaies.
 Sa décomposition, qui produit un dégagement de dioxygène, est accélérée par certains facteurs comme l'exposition à la lumière, l'ion fer (II), l'ion fer (III), le platine...
 
 On se propose d'étudier la cinétique de la réaction de décomposition du peroxyde d'hydrogène réalisée en présence de l'ion fer (II).
@@ -51,6 +51,7 @@ ion manganèse |  incolore |
 </center>
 
 ## À propos du protocole
+
 1. Quel est le rôle des ions fer (II)&nbsp;?
 2. Quelle verrerie utilise-t-on pour prélever $\pu{10,0 mL}$ de solution de peroxyde d'hydrogène&nbsp;? Justifier.
 3. Quel est le rôle de l'ajout d'eau glacée&nbsp;?
@@ -59,21 +60,19 @@ ion manganèse |  incolore |
 
 ## Préparation préalable de la solution de permanganate de potassium
 
-Un élève doit préparer $\pu{200,0 mL}$ de solution aqueuse de permanganate de potassium de concentration : $C_{\ce{KMnO4}} = \pu{1,0e-2 mol.L-1}$ à partir d'une solution (notée $S$) de permanganate de potassium de concentration $C = \pu{1,0e-1 mol.L-1}$.      
-Pour réaliser cette opération, il prélève $\pu{10,0 mL}$ de solution $S$ contenue dans un verre à pied, à l'aide d'une pipette jaugée.   
+Un élève doit préparer $\pu{200,0 mL}$ de solution aqueuse de permanganate de potassium de concentration : $C_{\ce{KMnO4}} = \pu{1,0e-2 mol.L-1}$ à partir d'une solution (notée $S$) de permanganate de potassium de concentration $C = \pu{1,0e-1 mol.L-1}$.
+Pour réaliser cette opération, il prélève $\pu{10,0 mL}$ de solution $S$ contenue dans un verre à pied, à l'aide d'une pipette jaugée.
 Il verse le prélèvement dans un bécher et complète avec de l'eau distillée jusqu'à la graduation $\pu{200 mL}$.
 
 6. Cet élève a commis deux erreurs. Lesquelles&nbsp;? Comment les corriger&nbsp;?
 
 ## Étude de la réaction de décomposition de l'eau oxygénée à la température $\theta_1 = \pu{20 °C}$
 
-
 Sur le graphe ci-après, on a représenté la concentration en peroxyde d'hydrogène restant en fonction du temps (courbe 1).
 
 <img src="/terminales-pc/chap-6/chap-6-8-2.png" alt="" width="" />
 
 - {{< remote "Fichier des données expérimentales, pour traitement avec Graphical Analysis" "/terminales-pc/chap-6/chap-6-8-1.ambl" >}}
-
 
 7. Identifier les couples d'oxydoréduction mis en jeu et écrire les demi-équations d'oxydoréduction correspondantes.
 
@@ -85,9 +84,9 @@ Sur le graphe ci-après, on a représenté la concentration en peroxyde d'hydrog
 
 ## Étude de la réaction de décomposition de l'eau oxygénée à la température $\theta_2 = \pu{40 °C}$
 
-On recommence les mêmes expériences que précédemment mais l'enceinte thermostatée est maintenue à la température $\theta_2 = \pu{40 °C}$. On obtient la courbe 2 sur le graphe précédent. 
+On recommence les mêmes expériences que précédemment mais l'enceinte thermostatée est maintenue à la température $\theta_2 = \pu{40 °C}$. On obtient la courbe 2 sur le graphe précédent.
 
-11. Déterminer graphiquement le nouveau temps de demi-réaction $t_{1/2}\rq$. 
+11. Déterminer graphiquement le nouveau temps de demi-réaction $t_{1/2}\rq$.
 
 12. Comparer les valeurs de $t_{1/2}$ et $t_{1/2}\rq$. Interpréter.
 
@@ -98,7 +97,6 @@ Pour tracer les courbes 1 et 2, on a dû calculer la concentration $[\ce{H2O2}]$
 13. Écrire les demi-équations d'oxydoréduction correspondantes puis établir l'équation de la réaction de dosage.
 
 14. En déduire l'expression de la concentration $[\ce{H2O2}]$ en peroxyde d'hydrogène restant à une date $t$ en fonction de $C_{\ce{KMnO4}}$, $V_E$ et $V_0$.
-
 
 ## Corrigé
 

@@ -1,6 +1,6 @@
 ---
 title: "Introduction aux mécanismes réactionnels"
-subtitle: "Chapitre 7,6"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-11-16T08:54:31+04:00
@@ -26,8 +26,10 @@ Dans la classification périodique, l'électronégativité augmente de la gauche
 <img src="/terminales-pc/chap-6/chap-6-6-1.png" alt="" width="" />
 
 {{% note tip %}}
+
 #### Polarisation d'une liaison
-Une liaison entre deux atomes $A$ et $B$ est **polarisée** *si les électronégativités de ces deux atomes sont différentes*.     
+
+Une liaison entre deux atomes $A$ et $B$ est **polarisée** *si les électronégativités de ces deux atomes sont différentes*.
 La détermination de la polarisation d'une liaison $\ce{A-B}$ se fait en attribuant à l'*atome le plus électronégatif* une **charge partielle négative** $\delta^-$ et à l'*atome le moins électronégatif* une **charge partielle positive** $\delta^+$. *Plus la différence d'électronégativité entre les atomes liés est importante, plus la liaison est polarisée et plus les charges partielles portées par les atomes liés sont élevées*.
 {{% /note %}}
 
@@ -85,8 +87,8 @@ Une **liaison multiple** constitue également un site donneur de doublet d'élec
 {{% /note %}}
 
 #### Exemples
-<img src="/terminales-pc/chap-6/chap-6-6-5.png" alt="" width="80%" />
 
+<img src="/terminales-pc/chap-6/chap-6-6-5.png" alt="" width="80%" />
 
 ### Sites accepteurs de doublet d'électrons
 
@@ -111,6 +113,7 @@ Dans un édifice, un atome porteur d'**une charge électrique positive élément
 {{% /note %}}
 
 #### Exemples
+
 <img src="/terminales-pc/chap-6/chap-6-6-17.png" alt="" width="70%" />
 
 ## Interactions entre sites donneur et accepteur de doublets d'électrons
@@ -120,9 +123,9 @@ Dans un édifice, un atome porteur d'**une charge électrique positive élément
 À l'**échelle microscopique**, *le passage des réactifs aux produits peut nécessiter plusieurs réactions, ou étapes*. Ces étapes constituent le **mécanisme réactionnel**. *L'étude de l'interaction entre sites donneur et accepteur de doublet d'électrons permet d'interpréter les étapes d'un mécanisme réactionnel.*
 
 {{% note tip %}}
-Lors d'une transformation, l'*ensemble des réactions qui se produisent au niveau microscopique *constitue le **mécanisme réactionnel**.     
-Chacune de ces réactions est une étape du mécanisme réactionnel et résulte de l'*interaction entre un site donneur et un site accepteur de doublet d'électrons*.     
-Le *mouvement de ce doublet d'électrons peut être représenté par une **flèche courbe**, reliant le site donneur au site accepteur de doublet d'électrons*.     
+Lors d'une transformation, l'*ensemble des réactions qui se produisent au niveau microscopique*constitue le **mécanisme réactionnel**.
+Chacune de ces réactions est une étape du mécanisme réactionnel et résulte de l'*interaction entre un site donneur et un site accepteur de doublet d'électrons*.
+Le *mouvement de ce doublet d'électrons peut être représenté par une **flèche courbe**, reliant le site donneur au site accepteur de doublet d'électrons*.
 Ces flèches courbes permettent d'expliquer la formation ou la rupture des liaisons au cours de ces réactions.
 {{% /note %}}
 
@@ -137,6 +140,7 @@ $$\ce{
 
 1. Quel est le groupe caractéristique porté par la molécule $\ce{H3COH}$ ? Quelle est la fonction chimique associée ?
 {{% solution "Réponse" %}}
+
 - Groupe hydroxyle $\ce{-OH}$.
 - Fonction alcool.
 {{% /solution %}}
@@ -156,6 +160,7 @@ $\ce{H+}$ est consommé lors de la première étape mais régénéré lors de la
 
 4. Lors de l'étape une, repérer les sites donneur et accepteur de doublet d'électrons.
 {{% solution "Réponse" %}}
+
 - Méthanol : les doublets non liants de l'oxygène sont donneurs.
 - Ion hydrogène : c'est un accepteur.
 {{% /solution %}}
@@ -169,7 +174,7 @@ $\ce{H+}$ est consommé lors de la première étape mais régénéré lors de la
 
 ### Hydratation de l'hex-1-ène
 
-On chauffe à reflux un mélange obtenu en ajoutant un volume $V = \pu{20 mL}$ d'hex-1-ène, de formule $\ce{CH2 = CH - CH2 - CH2 - CH2 - CH3}$, à une solution aqueuse d'acide sulfurique.    
+On chauffe à reflux un mélange obtenu en ajoutant un volume $V = \pu{20 mL}$ d'hex-1-ène, de formule $\ce{CH2 = CH - CH2 - CH2 - CH2 - CH3}$, à une solution aqueuse d'acide sulfurique.
 Après lavage, séchage et distillation, une masse $m = \pu{8,22 g}$ d'hexan-2-ol est obtenue.
 
 **Remarque.** Une hydratation est une réaction chimique au cours de laquelle les atomes d'une molécule d'eau viennent se greffer sur les atomes participant à une liaison double au sein d'une molécule. La liaison double est rompue et remplacée par deux liaisons simples.
@@ -196,6 +201,7 @@ Le mécanisme réactionnel de l'hydratation de l'hex-1-ène est donné ci-dessou
 
 3. Identifier les sites donneurs et accepteurs de doublet d'électrons dans les réactifs pour les étapes 1 et 2.
 {{% solution "Réponse" %}}
+
 - Dans l’étape (1), le site donneur de doublet d’électrons est la double liaison $\ce{C=C}$. Le site accepteur de doublet d’électrons est l’ion hydrogène $\ce{H+}$ puisqu'il porte une charge positive.
 - Dans l’étape (2), le site donneur de doublet d’électrons est l’atome d’oxygène, car il possède deux doublets non liants (*plus précisément, ce sont les doublets non liants qui sont donneurs*). Le site accepteur de doublet d’électrons est l’atome de carbone porteur d’une charge positive.
 {{% /solution %}}
@@ -211,7 +217,6 @@ Le mécanisme réactionnel de l'hydratation de l'hex-1-ène est donné ci-dessou
 {{% solution "Réponse" %}}
 Les ions hydrogène n’apparaissent pas dans le bilan de la réaction, mais interviennent dans le mécanisme réactionnel : ils catalysent la réaction.
 {{% /solution %}}
-
 
 ### D'une odeur âcre à une odeur fruitée
 
@@ -234,11 +239,12 @@ On donne le mécanisme réactionnel associé à la réaction :
 <img src="/terminales-pc/chap-6/chap-6-6-8.png" alt="" width="100%" />
 {{% /solution %}}
 
-### Étude de la synthèse de la lidocaïne 
+### Étude de la synthèse de la lidocaïne
 
 La lidocaïne est un anesthésique local souvent employé en sirop, spray ou comprimés pour lutter contre les maux de gorge, les aphtes et plaies à la bouche. Il existe aussi en crème pour apaiser les brûlures du Soleil ou les piqûres de moustiques.
 
 #### Étapes de la synthèse de la lidocaïne
+
 Deux étapes de la synthèse de la lidocaïne sont détaillées ci-dessous :
 > Étape 1
 <img src="/terminales-pc/chap-6/chap-6-6-9.png" alt="" width="100%" />
@@ -259,11 +265,13 @@ Deux étapes de la synthèse de la lidocaïne sont détaillées ci-dessous :
 {{% /solution %}}
 
 #### Étude de la cinétique de la synthèse de la lidocaïne
+
 On réalise un suivi temporel de la réaction de l'étape 2 de la synthèse de la lidocaïne (cf. section ci-dessus). À la date $t_1=\pu{0 min}$, on introduit dans un ballon bicol de $\pu{100 mL}$ une masse $m_1=\pu{4,00 g}$ de N-chloroacétyl-2,6-diméthylaniline (molécule $A$ dans l'équation de la réaction) à l'état solide et un volume $V_2=\pu{10,0 mL}$ d'éthyléthanamine. On ajoute un volume $V_3=\pu{50 mL}$ de toluène ; ce solvant permet de favoriser le contact entre les espèces chimiques du mélange réactionnel. On chauffe à reflux le mélange. Le suivi de la réaction de synthèse est réalisé par prélèvements successifs à instants donnés, trempe et dosage de l'acide formé (acide chlorhydrique $\ce{HCl}$). On obtient alors les valeurs de l'avancement de la réaction en fonction du temps de réaction. Une fois la transformation achevée, on extrait la lidocaïne du mélange réactionnel par distillation.
 
 ##### Données
-- **Masses molaires** (en $\pu{g.mol-1}$) : $M(\ce{C})=\pu{12,0}$ ; $M(\ce{H})=\pu{1,0}$ ; $M(\ce{O})=\pu{16,0}$ ; $M(\ce{N})=\pu{14,0}$ ; $M(\ce{Cl})=\pu{35,5}$. 
-- **Masse volumique de l'éthyléthanamine :** $\rho=\pu{0,707 g.mL-1}$. 
+
+- **Masses molaires** (en $\pu{g.mol-1}$) : $M(\ce{C})=\pu{12,0}$ ; $M(\ce{H})=\pu{1,0}$ ; $M(\ce{O})=\pu{16,0}$ ; $M(\ce{N})=\pu{14,0}$ ; $M(\ce{Cl})=\pu{35,5}$.
+- **Masse volumique de l'éthyléthanamine :** $\rho=\pu{0,707 g.mL-1}$.
 - **Formules brutes :** molécule $A$ : $\ce{C10H12NOCl}$ ; éthyléthanamine : $\ce{C4H11N}$ ; lidocaïne : $\ce{C14H22N2O}$.
 
 6. La trempe est une opération qui consiste à placer le prélèvement que l'on souhaite doser dans un erlenmeyer contenant un mélange eau + glace. Dans quel but procède-t-on ainsi ? Quel est le facteur cinétique qui intervient ? Détailler la réponse.
@@ -272,7 +280,7 @@ On réalise un suivi temporel de la réaction de l'étape 2 de la synthèse de l
 
 8. Déterminer la valeur de l'avancement maximal ainsi que le réactif limitant.
 
-9. Après distillation, on récupère une masse $m'=\pu{3,96 g}$ de lidocaïne. Quel est le rendement $r$ de la synthèse ? 
+9. Après distillation, on récupère une masse $m'=\pu{3,96 g}$ de lidocaïne. Quel est le rendement $r$ de la synthèse ?
 
 **Remarque.** On donne l'expression du rendement : $r=\dfrac{x_{exp}}{x_{max}}$.
 
@@ -283,5 +291,3 @@ On trace l'évolution de l'avancement de la réaction $x$ au cours du temps.
 
 11. La réaction est réalisée une seconde fois en ajoutant un catalyseur. Déterminer quelle courbe (a), (b), (c) ou (d) ci-dessous peut alors caractériser l'évolution de l'avancement de la réaction au cours du temps. Justifier la réponse.
 <img src="/terminales-pc/chap-6/chap-6-6-13.png" alt="" width="100%" />
-
-
