@@ -106,7 +106,14 @@ L'échange d'informations entre deux ordinateurs est un processus complexe. **On
 
 ### Hiérarchie des protocoles
 
+<img src="/terminales-nsi/chap-11/chap-11-1/empilement_protocoles.png" alt="" width="90%" />
+<div style="text-align: right;">
+<a href="http://projet.eu.org/pedago/sin/ISN/">http://projet.eu.org/pedago/sin/ISN/</a>
+</div>
+
+<!--
 <img src="/terminales-nsi/chap-11/chap-11-1/reseau3.png" alt="" width="70%" />
+-->
 
 ### Modèle OSI
 
@@ -136,4 +143,131 @@ Transmission de *bout-en-bout* des **segments**, avec fiabilité et efficacité 
 
 ### Encapsulation des protocoles
 
+{{% note normal %}}
+
+L'encapsulation, en informatique et spécifiquement pour les réseaux informatiques, est un procédé consistant À inclure les données d'un protocole dans un autre protocole.
+
+{{% /note %}}
+
+{{% note normal %}}
+
+Lors d’une transmission, les données traversent chacune des couches au niveau de la machine émettrice. À chaque couche, une information est ajoutée au paquet de données, il s’agit d’un en-tête, ensemble d’informations qui garanti la transmission. Au niveau de la machine réceptrice, lors du passage dans chaque couche, l’en-tête est lu, puis supprimé. Ainsi À la réception, le message est dans son état originel.
+
+À chaque niveau, le paquet de données change d’aspect, car on lui ajoute un en-tête, ainsi les appellations changent suivant les couches :
+
+- le *paquet de données* est appelé **message** au niveau de la **couche application** ;
+- le **message** est ensuite encapsulé sous forme de **segment** dans la **couche transport** ;
+- le **segment**, une fois encapsulé, prend le nom de **paquet** dans la **couche réseau** ;
+- enfin on parle de **trame** au niveau de la **couche liaison** ;
+- et de **signal** au niveau de la **couche physique**.
+
+{{% /note %}}
+
 <img src="/terminales-nsi/chap-11/chap-11-1/reseau5.png" alt="" width="110%" />
+
+## Adressage IP
+
+Lorsque l'on veut établir une communication, il est indispensable de posséder trois informations :
+
+1. Le nom de la machine distante,
+2. son adresse,
+3. la route à suivre pour y parvenir.
+Le nom dit « qui » est l'hôte distant, l'adresse nous dit « où » il se trouve et la route « comment » on y parvient.
+
+{{% note normal %}}
+
+Les adresses IP (version 4) sont standardisées sous forme d'un **nombre de 32 bits** (**représenté sous forme de quatre entiers de huit bits, séparés par des points**) qui permet à la fois l'identification de chaque hôte et du réseau auquel il appartient. Le choix des nombres composants une adresse IP n'est pas laissé au hasard, au contraire il fait l'objet d'une attention particulière notamment pour faciliter les **opérations de routage**.  
+Chaque adresse IP contient donc deux informations, une **adresse de réseau** et une **adresse d'hôte**. *La combinaison des deux désigne de manière **unique** une machine et une seule sur l'Internet*.
+
+{{% /note %}}
+
+**Remarque :** la version IPv4 du protocole IP ne permet plus de définir un nombre d'adresses utilisables suffisant. Cette version est progressivement remplacée par la version IPv6 qui ne sera pas abordée ici.
+
+### Deux types d'adressage
+
+#### Par classes
+
+C'est l'adressage historique, il est toujours utilisé sur les réseaux privés mais a disparu dans les réseaux public car il engendre la perte d'un grand nombre d'adresses.
+
+| Classe | Nbre bits du masque de sous réseau | Nbre bits de l'adresse réseau | Adresses réseau |
+| :---: | :---: | :---: | :---: |
+| A | 8 bits commençant obligatoirement par le bit 0 | 24 bits | 1.0.0.0 à 126.0.0.0 |
+| B | 16 bits commençant obligatoirement par les bits 10 | 16 bits | 128.0.0.0 à 191.255.0.0 |
+| C | 24 bits commençant obligatoirement par les bits 110 | 8 bits | 192.0.0.0 à 223.255.255.0 |
+| D | Non défini | Non défini | 224.0.0.0 à 239.255.255.0 |
+| E | Non défini | Non défini | 240.0.0.0 à 255.255.255.0 |
+
+#### Remarques
+
+- L'adresse réseau 0.0.0.0 n’existe pas ;
+- Le NetID « 127 » est réservée pour les communications en boucle locale (loopback) ;
+- La classe D est prévue pour faire du « multicast » ou multipoint.
+- La classe E est une classe expérimentale.
+- Deux adresses hôtes ne sont pas attribuables :
+  - *tous les bits de la partie hôte à 1 : c'est l'**adresse de diffusion** ;*
+  - *tous les bits de la partie hôte à 0 : c'est l'**adresse du réseau**.*
+
+1. Calculer le nombre de réseaux et le nombre d'hôtes pour chaque réseau.
+{{% solution "Réponse" %}}
+
+- Classe A : $2^7 -2 = 126$
+- Classe B : $2^{14} = 16384$
+- Classe C : $2^{21} = 209752$
+
+{{% /solution %}}
+
+2. Calculer le nombre d'hôtes pour chaque réseau.
+{{% solution "Réponse" %}}
+
+- Classe A : $2^{24} -2 = 16277214$
+- Classe B : $2^{16} -2 = 65534$
+- Classe C : $2^{8} -2 = 254$
+
+{{% /solution %}}
+
+### Sans classe (CIDR : classless interdomain routing)
+
+{{% note normal %}}
+
+- Le nombre de bits utilisés pour la partie réseau est accolé à l'adresse IP : $$192.168.0.0/24$$
+
+{{% /note %}}
+
+### Comment différentier les bits utilisés pour la partie réseaux de ceux utilisés pour la partie hôte ?
+
+{{% note normal %}}
+
+Un **masque de sous-réseau** est un masque distinguant les bits d'une adresse IPv4 utilisés pour identifier le sous-réseau de ceux utilisés pour identifier l'hôte.
+
+- *L'adresse du sous-réseau est obtenue en appliquant l'opérateur ET binaire entre l'adresse IPv4 et le masque de sous-réseau*.
+- *L'adresse de l'hôte à l'intérieur du sous-réseau est quant à elle obtenue en appliquant l'opérateur ET entre l'adresse IPv4 et le complément à un du masque*.
+
+*On utilise en pratique des masques constitués (sous leur forme binaire) d'une suite de 1 suivis d'une suite de 0 (il y a donc 32 masques réseau possibles).*
+{{% /note %}}
+
+3. Déterminer les adresses réseau et hôte à partir de l'adresse 192.168.1.2/24.
+{{% solution "Réponse" %}}
+
+- **Adresse réseau :** il faut réaliser l'opération : 192.168.1.2 & 255.255.255.0
+$$
+\def\arraystretch{1.5}
+\begin{array}{cc}
+    & 11000000.10101000.00000001.00000010 \\\\
+   \text{ET} & 11111111.11111111.11111111.00000000 \\\\ \hline
+   \text{=} & 11000000.10101000.00000001.00000000
+\end{array}
+$$
+soit 192.168.1.0
+
+- **Adresse hôte :** soit on effectue un & logique avec le complément à 1 du masque, doit on cherche le nombre formé par les bits non retenus par la partie réseau.
+$$
+\def\arraystretch{1.5}
+\begin{array}{cc}
+    & 11000000.10101000.00000001.00000010 \\\\
+   \text{ET} & 00000000.00000000.00000000.11111111 \\\\ \hline
+   \text{=} & 00000000.00000000.00000000.00000010
+\end{array}
+$$
+soit 0.0.0.2
+
+{{% /solution %}}
