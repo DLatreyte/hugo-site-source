@@ -72,7 +72,7 @@ L'air est essentiellement constitué de diazote. Ce dernier n'apparaît pas dans
 
 4. Démontrer que $\pu{10,0 kg}$ de charbon correspond à $\pu{833 mol}$.
 Remarque
-: Le charbon est uniquement constitué de carbone et la masse molaire du carbone est $M(\ce{C}) = \pu{12,?0 g/mol}$.
+: Le charbon est uniquement constitué de carbone et la masse molaire du carbone est $M(\ce{C}) = \pu{12,0 g/mol}$.
 {{% solution "Réponse" %}}
 
 - $n (\ce{C}) = \dfrac{m(\ce{C})}{M(\ce{C})}$
