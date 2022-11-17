@@ -13,7 +13,7 @@ solution_est_visible: true
 auto_numbering: true
 ---
 
-## Comment suivre l’évolution au cours du temps d’un système formé d'ions iodure et péroxodisulfate&nbsp
+## Comment suivre l’évolution au cours du temps d’un système formé d'ions iodure et péroxodisulfate
 
 {{% note normal %}}
 
@@ -118,7 +118,7 @@ $$
 <img src="/terminales-pc/chap-6/chap-6-4-2.png" alt="" width="100%" />
 {{% /solution %}}
 
-## Comment évaluer la durée nécessaire à l’achèvement de la transformation chimique étudiée&nbsp
+## Comment évaluer la durée nécessaire à l’achèvement de la transformation chimique étudiée
 
 ### Temps de demi-réaction
 
