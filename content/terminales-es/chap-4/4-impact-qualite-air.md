@@ -9,7 +9,7 @@ toc: true
 tags: ["Énergie de combustion", "Réaction de combustion"]
 categories: ["Terminale Enseignement Scientifique"]
 image: ""
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: true
 ---
 
@@ -62,7 +62,7 @@ On parle de combustion, le plus souvent, lorsque l'un des réactifs est le dioxy
 {{% solution "Réponse" %}}
 
 - Réactifs : carbone et dioxygène ;
-- Produits : dioxyde de carbone.
+- Produits : dioxyde de carbone ou monoxyde de carbone.
 {{% /solution %}}
 
 3. Toujours pour la réaction de combustion du carbone, donner un exemple d'entité spectatrice.
