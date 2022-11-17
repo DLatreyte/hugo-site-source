@@ -18,6 +18,7 @@ auto_numbering: true
 
 - {{< remote "Documents sur le Livre Scolaire" "https://www.lelivrescolaire.fr/page/5410148" >}}
 
+<!-- 
 {{% note tip %}}
 
 #### La mole
@@ -27,6 +28,8 @@ auto_numbering: true
 - On appelle **masse molaire** d'une entité microscopique *la masse d'une mole de cette entité*.
 La masse molaire s'exprime, en pratique, en gramme par mole ($\pu{g/mol}$).
 {{% /note %}}
+
+-->
 
 {{% note tip %}}
 
