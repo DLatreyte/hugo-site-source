@@ -45,7 +45,8 @@ On appelle **énergie de combustion** d'une entité microscopique, *l'énergie l
 L'énergie libérée s'exprime donc en joule par mole ($\pu{J/mol}$) ou joule par kilogramme ($\pu{J/kg}$).
 
 Remarque
-: Une **réaction de combustion** est une réaction entre un **combustible** («&nbsp;ce qui brûle&nbsp;») et un **comburant**. *Lorsque cette combustion se déroule à l'air libre, le comburant est le dioxygène*.
+: Une **réaction de combustion** est une réaction entre un **combustible** («&nbsp;ce qui brûle&nbsp;») et un **comburant**. *Lorsque cette combustion se déroule à l'air libre, le comburant est le dioxygène*.  
+Une réaction de combustion est exothermique.
 {{% /note %}}
 
 {{% note tip %}}
