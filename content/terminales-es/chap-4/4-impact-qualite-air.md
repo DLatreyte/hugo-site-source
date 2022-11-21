@@ -9,7 +9,7 @@ toc: true
 tags: ["Énergie de combustion", "Réaction de combustion"]
 categories: ["Terminale Enseignement Scientifique"]
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 
