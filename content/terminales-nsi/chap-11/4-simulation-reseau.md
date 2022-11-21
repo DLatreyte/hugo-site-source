@@ -18,7 +18,7 @@ auto_numbering: true
 {{% note normal %}}
 
 - Télécharger le logiciel {{< remote "Filius" "https://www.lernsoftware-filius.de/Herunterladen" >}}
-- Choisir le paquet « Zip » pour OSX ou Linux (hors Ubuntu). Pour Windows, on peut choisir « Windows » ou « Zip ».
+- **Attention :** Choisir la langue lors de la première ouverture du logiciel. En cas d’erreur, supprimer le dossier `.filius` contenant les paramètres de langues se trouvant dans `C:\Users\nom d’utilisateur sur le réseau\AppData\Local\.filius` (sous windows).
 {{% /note %}}
 
 ## Construction d'un réseau local
