@@ -32,7 +32,7 @@ auto_numbering: true
 
 1. Ralentir les animations de façon à pouvoir visualiser le chemin des segments : ramener le curseur placé juste à droite du bouton `Simulation` à 10 ou 0&nbsp;%.
 
-1. Sur l'ordinateur portable installer les outils en ligne de commande : `Clic gauche` $\longrightarrow$ `Installation des logiciels` $\longrightarrow$ `Ligne de commande` $\longrightarrow$ `Appliquer les modifications`.
+1. Sur l'ordinateur portable installer les outils en ligne de commande : `Mode simulation` $\longrightarrow$ `Clic gauche` $\longrightarrow$ `Installation des logiciels` $\longrightarrow$ `Ligne de commande` $\longrightarrow$ `Appliquer les modifications`.
 
 1. À quoi correspond la table `arp` ?
 {{% solution "Réponse" %}}
