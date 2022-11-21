@@ -89,7 +89,7 @@ Il s'agit de l'adresse de diffusion.
 
 12. À quel niveau du modèle OSI le protocole `arp` intervient-il ?
 {{% solution "Réponse" %}}
-Niveau 2, couche de liaison.
+Niveau 3, couche réseau. Ce protocole fait cependant le lien entre les informations de la couche 2 et celles de la couche 3. On dit parfois que ce protocole appartient à la couche 2,5.
 {{% /solution %}}
 
 13. À quel niveau du modèle OSI intervient la commande `ping` ?
