@@ -1,6 +1,6 @@
 ---
 title: "Modéliser l’écoulement d’un fluide"
-subtitle: "Chapitre 20"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-05-31T05:14:03+04:00
@@ -28,6 +28,6 @@ layout: "single"
 
 ----
 
-- **Chapitre 20,01 :** [*Le ludion*](/terminales-pc/chap-20/chap-20-1/chap-20-1-ludion.html)
+- [*Le ludion*](/terminales-pc/chap-20/chap-20-1/chap-20-1-ludion.html)
 
-- **Chapitre 20,02 :** [*Dynamique des fluides*](/terminales-pc/chap-20/chap-20-2/chap-20-2-dynamique-fluides.html)
+- [*Dynamique des fluides*](/terminales-pc/chap-20/chap-20-2/chap-20-2-dynamique-fluides.html)

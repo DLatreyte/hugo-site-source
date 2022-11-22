@@ -1,6 +1,6 @@
 ---
 title: "Former des images à l'aide d'une lunette"
-subtitle: "Chapitre 1"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-05-09T09:40:35+04:00

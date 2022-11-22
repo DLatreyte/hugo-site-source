@@ -1,6 +1,6 @@
 ---
 title: "Décrire la lumière par un flux de photons"
-subtitle: "Chapitre 18"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-04-26T19:34:21+04:00
@@ -28,16 +28,14 @@ layout: "single"
 
 ----
 
-- **Chap. 18,1 :** [*Diagramme énergétique de l'atome de sodium*](1-atome-sodium)
+- [*Diagramme énergétique de l'atome de sodium*](1-atome-sodium)
 
-- **Chap. 18,2 :** [*L'effet photoélectrique*](2-effet-photoelectrique)
+- [*L'effet photoélectrique*](2-effet-photoelectrique)
 
-- **Chap. 18,3 :** [*Dualité ondes-corpuscules*](3-dualite-ondes-corpuscules)
+- [*Dualité ondes-corpuscules*](3-dualite-ondes-corpuscules)
 
-- **Chap. 18,4 :** [*Étude d’une cellule photovoltaïque*](4-rendement-cellule-photovoltaique)
+- [*Étude d’une cellule photovoltaïque*](4-rendement-cellule-photovoltaique)
 
-- **Chap. 18,5 :** [*Photon : onde ou particule ?*](5-onde-particule) (Pour les plus curieux)
+- [*Photon : onde ou particule ?*](5-onde-particule) (Pour les plus curieux)
 
-- **Chap. 18,6 :** <a href="/terminales-pc/chap-18/chap-18-6/chap-18-6.html" >*Exercices*</a>
-
-
+- <a href="/terminales-pc/chap-18/chap-18-6/chap-18-6.html" >*Exercices*</a>
