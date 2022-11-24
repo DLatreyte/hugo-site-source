@@ -10,7 +10,7 @@ tags: ["Énergie de combustion"]
 categories: ["Terminale Enseignement Scientifique"]
 image: ""
 solution_est_visible: false
-auto_numbering: true
+auto_numbering: false
 ---
 
 {{% note normal %}}
@@ -80,7 +80,7 @@ En comparant les énergies de combustion de molécules dont la chaîne carbonée
 
 ## Protocole expérimental
 
-> Proposer un protocole expérimental soigneusement détaillé pour répondre à la problématique.
+> Proposer et mettre en œuvre un protocole expérimental soigneusement détaillé pour répondre à la problématique.
 
 {{% solution "Réponse" %}}
 
