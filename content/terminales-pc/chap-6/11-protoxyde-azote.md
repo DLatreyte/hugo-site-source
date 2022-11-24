@@ -9,7 +9,7 @@ toc: true
 tags: ["Vitesse de réaction", "Vitesse de formation", "Vitesse de disparition", "Tableau d'avancement", "Ordre 1", "Mécanisme réactionnel"]
 categories: ["Chimie", "Terminale Spé PC"]
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 
