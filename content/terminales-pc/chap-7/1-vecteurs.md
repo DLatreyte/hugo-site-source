@@ -1,6 +1,6 @@
 ---
 title: "Les vecteurs en physique"
-subtitle: "Chapitre 8,1"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-11-27T15:24:37+04:00
@@ -19,18 +19,22 @@ La mécanique, l'étude du mouvement des objets et des objets à l'origine de ce
 ## Vecteurs
 
 {{% note tip %}}
+
 #### Vecteur
 
 Un **vecteur** est un objet mathématique qui possède trois caractéristiques&nbsp;:
+
 - une *direction*&nbsp;;
-- un *sens*&nbsp;; 
+- un *sens*&nbsp;;
 - une *norme* (ou *longueur*).
 
 On peut représenter un vecteur par un segment muni d'une flèche&nbsp;; la longueur du segment étant égale à la norme du vecteur.
 {{% /note %}}
 
 {{% note tip %}}
+
 #### Propriétés des vecteurs
+
 - On peut **sommer deux vecteurs**. *Le résultat est un nouveau vecteur*&nbsp;;
 - On peut **multiplier un vecteur par un scalaire (nombre)**. *Le résultat est un  vecteur*.
 {{% /note %}}
@@ -74,6 +78,7 @@ Pour chacune des situations présentées ci-dessous, construire les vecteurs $\v
 En physique, on *modélise* les grandeurs dont la description nécessite la donnée d'une **direction**, d'un **sens**, d'une **valeur** par un vecteur.
 
 Les grandeurs modélisée étant de *différentes natures*, quelques adaptations sont nécessaires par rapport à une utilisation des vecteurs purement mathématique&nbsp;:
+
 - Il peut être nécessaire de préciser un **point d'application**&nbsp;;
 - On ne parle plus de *norme ou longueur* d'un vecteur mais de **valeur** car cette dernière est **dimensionnée** (**unités&nbsp;:** *mètre pour un vecteur position*, *mètre par seconde pour un vecteur vitesse*, *newton pour un vecteur force*, etc.).
 - La représentation d'un vecteur nécessite la définition et l'affichage de l'**échelle** utilisée.
@@ -83,13 +88,12 @@ Les grandeurs modélisée étant de *différentes natures*, quelques adaptations
 **Attention !** *Il est nécessaire de définir une échelle distincte pour chaque type de grandeur représentée.*
 {{% /note %}}
 
-
 {{% note exercise %}}
 Un solide indéformable de masse $m = \pu{30 kg}$ est posé, immobile, sur le sol. Une étude rapide montre que ce système est soumis à son poids $\overrightarrow{P}$ et à la réaction du sol $\overrightarrow{R}$.
-	
+ 
 On rappelle que le poids est modélisé par un vecteur de direction la verticale du lieu, dirigé vers la Terre et de valeur $P = mg$ où l'intensité du champ de pesanteur sera prise égale à $g = \pu{10 N.kg-1}$.
 
-1. Représenter le vecteur $\overrightarrow{P}$ sur le schéma, sachant que son point d'application est le centre d'inertie de l'objet $G$.       
+1. Représenter le vecteur $\overrightarrow{P}$ sur le schéma, sachant que son point d'application est le centre d'inertie de l'objet $G$.
 **Indiquer l'échelle utilisée.**
 2. L'objet étant immobile dans le référentiel terrestre *que l'on peut ici considérer galiléen*, la première loi de Newton nous indique qu'il est soumis à un ensemble d'interactions qui se compensent (il est **pseudo-isolé**). On peut traduire cette affirmation par la relation mathématique suivante&nbsp;: $$\overrightarrow{P} + \overrightarrow{R} = \overrightarrow{0}$$
 Déterminer les caractéristiques du vecteur $\overrightarrow{R}$.
@@ -105,12 +109,13 @@ Déterminer les caractéristiques du vecteur $\overrightarrow{R}$.
 ## Composantes d'un vecteur
 
 {{% note tip %}}
+
 #### Projection d'un vecteur sur un axe
-La *projection d'un vecteur sur un **axe orienté*** est une opération au cours de laquelle on cherche à déterminer la **longueur algébrique** (**mesure algébrique**) de ce vecteur sur l'axe.       
+
+La *projection d'un vecteur sur un **axe orienté*** est une opération au cours de laquelle on cherche à déterminer la **longueur algébrique** (**mesure algébrique**) de ce vecteur sur l'axe.
 Une projection est dite **orthogonale** *si la droite sur laquelle on projette et la direction de projection sont orthogonales*.
 
 <img src="/terminales-pc/chap-7/chap-7-1-4.png" alt="" width="55%" />
-
 
 L'opérateur mathématique permettant de réaliser une projection est le **produit scalaire**.
 
@@ -143,8 +148,8 @@ $$
 </div>
 {{% /note %}}
 
-
 {{% note tip %}}
+
 #### Composantes d'un vecteur
 
 On appelle composantes (coordonnées) d'un vecteur le doublet (à 2D) ou le triplet (à 3D) de scalaires représentant les valeurs des projections de ce vecteur sur les directions des vecteurs du repère de référence.
@@ -191,10 +196,12 @@ Déterminer les composantes du vecteur accélération dans le repère $(O; \vec{
 ## Vecteur vitesse à partir de données expérimentales
 
 {{% note tip %}}
+
 #### Vecteur vitesse
 
 La vitesse, à la date $t$, d'un système, **dans un référentiel donné**, est définie par $$\vec{v}(t) = \lim_{\Delta t \to 0} \dfrac{\overrightarrow{OM}(t + \Delta t) - \overrightarrow{OM}(t)}{\Delta t}  = \dfrac{\mathrm{d} \overrightarrow{OM} }{ \mathrm{dt} }$$
 C'est donc un vecteur dont les caractéristiques sont&nbsp;:
+
 - **Direction&nbsp;:** droite tangente à la trajectoire, à la position du système à la date $t$&nbsp;;
 - **Sens&nbsp;:** celui du mouvement&nbsp;;
 - **Valeur&nbsp;:** $v(t) = \left\Vert \dfrac{\mathrm{d} \overrightarrow{OM} }{ \mathrm{dt} }   \right\Vert$.
@@ -204,7 +211,7 @@ Lorsque les équations horaires ne sont pas connues --- *c'est le cas pour tous 
 
 Si on observer l'expression du paragraphe précédent, on se rend compte que la difficulté pour calculer la dérivée dans ce cas de figure est l'impossibilité de passer à la limite&nbsp;: **impossible de considérer $\Delta t \to 0$ !**
 
-La première idée consiste à écrire 
+La première idée consiste à écrire
 $$\vec{v}(t) \approx \dfrac{\overrightarrow{OM}(t + \Delta t) - \overrightarrow{OM}(t)}{\Delta t} $$
 soit
 $$\vec{v}(t_i) \approx \dfrac{\overrightarrow{OM_{i+1}} - \overrightarrow{OM_{i}}}{t_{i+1}-t_{i}} = \dfrac{\overrightarrow{M_iM_{i+1}}}{t_{i+1}-t_{i}} $$
@@ -212,11 +219,13 @@ $$\vec{v}(t_i) \approx \dfrac{\overrightarrow{OM_{i+1}} - \overrightarrow{OM_{i}
 On montre cependant que
 
 {{% note tip %}}
+
 #### Détermination du vecteur vitesse à partir de données expérimentales
+
 La meilleure approximation pour le vecteur vitesse au point $M_i$ à la date $t_i$ est&nbsp;:
 $$
 \vec{v}(M_i) \approx \dfrac{\overrightarrow{M_{i-1}M_{i+1}}}{t_{i+1}-t_{i-1}}
-$$	
+$$ 
 Les vecteurs $\vec{v}(M_i)$ et $\overrightarrow{M_{i-1}M_{i+1}}$ sont <strong>colinéaires</strong>, ils ont <strong>même direction</strong> et <strong>même sens</strong> (puisque le coefficient de colinéarité est positif). On peut donc en déduire que&nbsp;:
 $$
 v(M_i) \approx \dfrac{M_{i-1}M_{i+1}}{t_{i+1}-t_{i-1}}
@@ -232,7 +241,7 @@ L'étude menée dans cette partie n'est pas limitée à la vitesse ! **Elle conc
 {{% /note %}}
 
 {{% note exercise %}}
-On a enregistré la position d'un mobile toutes les $\pu{50 ms}$ sur une table à coussin d'air. Une partie de la trajectoire ainsi obtenue est affichée ci-dessous.      
+On a enregistré la position d'un mobile toutes les $\pu{50 ms}$ sur une table à coussin d'air. Une partie de la trajectoire ainsi obtenue est affichée ci-dessous.
 L'échelle des **longueurs** est la suivante (document - réalité)&nbsp;: $\pu{1 cm} \longleftrightarrow \pu{1 cm}$.
 
 1. Est-il possible, en utilisant la formule donnée dans le document ci-dessus, de déterminer les vecteurs vitesses $\vec{v}(A_0)$ et $\vec{v}(A_6)$&nbsp;? Pourquoi&nbsp;?
@@ -277,7 +286,7 @@ Une partie du code nécessaire à l'étude de ce mouvement se trouve {{< remote 
 
 5. Quelle instruction permet de réaliser l'affichage $y=f(x)$&nbsp;?
 
-5. Retirer le commentaire de la ligne 55 et lancer le programme.    
+5. Retirer le commentaire de la ligne 55 et lancer le programme.
 Caractériser l'évolution de l'altitude $z$ au cours du temps.
 
 6. Sur le modèle de la question précédente, afficher et caractériser l'évolution de la distance parcourue horizontalement, $x$, au cours du temps.
@@ -307,6 +316,7 @@ Caractériser l'évolution de l'altitude $z$ au cours du temps.
 
 {{% note exercise %}}
 Un homme tire une valise reposant sur le sol (horizontal), **à vitesse constante** et **en ligne droite**, en tirant sur une corde attachée à cette valise. L'homme exerce une force constante sur la corde de valeur $\pu{300 N}$&nbsp;; la corde fait un angle de $\text{20°}$ avec l'horizontale.
+
 1. Déterminer les composantes horizontale et verticale de la valeur de la force que l'homme exerce sur la valise.
 2. Après analyse du problème et utilisation du principe de l'inertie, déterminer le poids de la valise puis en déduire sa masse.
 

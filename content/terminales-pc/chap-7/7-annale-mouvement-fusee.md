@@ -1,6 +1,6 @@
 ---
 title: "Lancement d'une fusée et retour sur Terre"
-subtitle: "Chapitre 8,7"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-12-18T17:44:22+04:00
@@ -18,17 +18,17 @@ mathjax: true
 
 #### Doc. 1 : Ariane
 
-Ariane est le nom générique d'une famille de lanceurs civils européens de 
-satellites. Le programme Ariane est lancé en 1973 par l'Agence spatiale 
-européenne afin de donner les moyens à l'Europe de mettre en orbite ses 
-satellites sans dépendre des autres puissances spatiales. Ce projet avait 
-été précédé d'un échec avec la fusée Europa. La première version, 
-Ariane 1, effectue son vol inaugural depuis la base de Kourou (Guyane 
-française) le 24 décembre 1979. Elle est rapidement remplacée par des 
-versions plus puissantes, Ariane 2, Ariane 3 et Ariane 4 qui effectuent leur 
-premier vol respectivement en 1984, 1986 et 1988. Pour faire face à 
-l'augmentation de la masse des satellites, le lanceur est complètement 
-refondu, donnant naissance à la version Ariane 5 capable de placer maintenant 
+Ariane est le nom générique d'une famille de lanceurs civils européens de
+satellites. Le programme Ariane est lancé en 1973 par l'Agence spatiale
+européenne afin de donner les moyens à l'Europe de mettre en orbite ses
+satellites sans dépendre des autres puissances spatiales. Ce projet avait
+été précédé d'un échec avec la fusée Europa. La première version,
+Ariane 1, effectue son vol inaugural depuis la base de Kourou (Guyane
+française) le 24 décembre 1979. Elle est rapidement remplacée par des
+versions plus puissantes, Ariane 2, Ariane 3 et Ariane 4 qui effectuent leur
+premier vol respectivement en 1984, 1986 et 1988. Pour faire face à
+l'augmentation de la masse des satellites, le lanceur est complètement
+refondu, donnant naissance à la version Ariane 5 capable de placer maintenant
 plus de $\pu{10,7 t}$ en orbite de transfert géostationnaire. Son premier vol a eu lieu en 1996.
 
 <div style="text-align: right;">
@@ -37,32 +37,32 @@ plus de $\pu{10,7 t}$ en orbite de transfert géostationnaire. Son premier vol a
 
 #### Doc. 2 : Ariane 4
 
-Le lanceur Ariane 4 était commercialisé dans 6 configurations différentes 
-permettant de lancer un ou deux satellites en orbite de transfert 
-géostationnaire (GTO) avec une masse totale de $\pu{2100 kg}$ à $\pu{4950 kg}$. Il possédait 
-selon les versions des propulseurs supplémentaires (zéro, deux ou quatre) de 
-types variables : à propergol liquide  ou bien à propergol solide (également 
+Le lanceur Ariane 4 était commercialisé dans 6 configurations différentes
+permettant de lancer un ou deux satellites en orbite de transfert
+géostationnaire (GTO) avec une masse totale de $\pu{2100 kg}$ à $\pu{4950 kg}$. Il possédait
+selon les versions des propulseurs supplémentaires (zéro, deux ou quatre) de
+types variables : à propergol liquide  ou bien à propergol solide (également
 qualifiés de « à poudre »).
 
 ##### Version Ariane 40
 
 * Masse totale *au décollage*  : $M\_{0} = \pu{210e3 kg}$.
-* Masse totale de propergol contenu dans le premier étage *au décollage*  : 
+* Masse totale de propergol contenu dans le premier étage *au décollage*  :
   $M\_{p} = \pu{147e3 kg}$.
-* Masse de propergol consommé chaque seconde lors du fonctionnement du 
+* Masse de propergol consommé chaque seconde lors du fonctionnement du
   premier étage (c'est aussi le débit d'éjection des gaz) : $D = \pu{1,0e3 kg.s-1}$.
 * Vitesse d'éjection des gaz par rapport à la fusée, *au décollage* : $v\_{g} = \pu{2,5e3 m.s-1}$.
 * Durée de fonctionnement du premier étage : $\pu{147 s}$.
 * Poussée totale moyenne fournie par les moteurs du premier étage : $F = \pu{2,45e6 N}$.
-* Pendant la phase de propulsion du premier étage, la poussée des moteurs 
+* Pendant la phase de propulsion du premier étage, la poussée des moteurs
   reste pratiquement constante et la fusée suit une trajectoire sensiblement rectiligne et verticale.
 
 #### Doc. 3 : Poussée exercée par un moteur à réaction type moteur-fusée
 
-La *poussée*  ou plus exactement la *force de poussée*  $\vec{F}$ est la 
-modélisation de l'action qu'exercent les gaz éjectés vers l'arrière par la 
-fusée, à la vitesse $\vec{v}\_{g}$ *par rapport à la fusée*.    
-Dans les conditions optimales du fonctionnement d'une fusée, on peut définir 
+La *poussée*  ou plus exactement la *force de poussée*  $\vec{F}$ est la
+modélisation de l'action qu'exercent les gaz éjectés vers l'arrière par la
+fusée, à la vitesse $\vec{v}\_{g}$ *par rapport à la fusée*.
+Dans les conditions optimales du fonctionnement d'une fusée, on peut définir
 la force de poussée par la relation
 
 $$
@@ -73,15 +73,15 @@ où $D$ est la masse de gaz éjectée par seconde (débit d'éjection).
 
 ----
 
-Les mesures télémétriques effectuées pendant la phase de fonctionnement du 
-premier étage, ont permis de dresser le tableau donné en **annexe**. Ce 
-tableau indique l'altitude atteinte par la fusée depuis son point de lancement 
-en fonction du temps écoulé depuis l'instant du décollage (dans un 
+Les mesures télémétriques effectuées pendant la phase de fonctionnement du
+premier étage, ont permis de dresser le tableau donné en **annexe**. Ce
+tableau indique l'altitude atteinte par la fusée depuis son point de lancement
+en fonction du temps écoulé depuis l'instant du décollage (dans un
 référentiel terrestre donc).
 
 Remarques.
-: On considère dans cet exercice que l'intensité de la 
-pesanteur reste constante jusqu'à l'altitude maximale considérée : $g = \pu{9,8 N.kg-1}$. On se placera aussi, lors de toutes les 
+: On considère dans cet exercice que l'intensité de la
+pesanteur reste constante jusqu'à l'altitude maximale considérée : $g = \pu{9,8 N.kg-1}$. On se placera aussi, lors de toutes les
 études à suivre, dans le référentiel terrestre supposé galiléen.
 
 <center>
@@ -92,18 +92,18 @@ pesanteur reste constante jusqu'à l'altitude maximale considérée : $g = \pu{9
 
 1. À partir d'un examen rapide du tableau donné en annexe, que peut-on dire de la nature du mouvement de la fusée ?
 
-2. Déterminer la vitesse moyenne de la fusée au cours de la phase de 
+2. Déterminer la vitesse moyenne de la fusée au cours de la phase de
 fonctionnement du premier étage.
 
-On se propose de déterminer des valeurs approchées de la vitesse et de 
+On se propose de déterminer des valeurs approchées de la vitesse et de
 l'accélération à différentes dates.
 
 3. Calculer (en indiquant la méthode employée) la valeur de la vitesse $v\_{9}$ à la date $t = \pu{9 s}$ et la valeur de la vitesse $v\_{11}$ à la date $t = \pu{11 s}$.
 
-4. En déduire (en indiquant la méthode employée) une valeur approchée de 
+4. En déduire (en indiquant la méthode employée) une valeur approchée de
 l'accélération $a\_{10}$ à la date $t = \pu{10 s}$.
 
-Aux dates $t = \pu{70 s}$ et $t = \pu{140 s}$ l'application du 
+Aux dates $t = \pu{70 s}$ et $t = \pu{140 s}$ l'application du
 raisonnement mis en œuvre aux questions précédentes conduit aux valeurs suivantes pour l'accélération : $a\_{70} = \pu{7,50 m.s-2}$ et $a\_{140} = \pu{25,0 m.s-2}$.
 
 5. Le mouvement de la fusée est-il uniformément accéléré ?
@@ -112,16 +112,16 @@ raisonnement mis en œuvre aux questions précédentes conduit aux valeurs suiva
 
 6. Donner toutes les caractéristiques de la force de poussée.
 
-7. Faire un schéma du système fusée et représenter les forces qui 
+7. Faire un schéma du système fusée et représenter les forces qui
 s'appliquent sur ce système *lors de son ascension*.
 
 Remarque.
-: Les mesures télémétriques montrent que l'on peut négliger les 
+: Les mesures télémétriques montrent que l'on peut négliger les
 frottements de la fusée avec l'air.
 
-Le modèle utilisé dans cet exercice permet d'écrire le principe fondamental 
-de la dynamique (2ème loi de Newton) pour la fusée, à la date $t$, sous la 
-forme $M \vec{a}\_{G} = \sum \vec{F}^{ext}$ **bien que sa masse 
+Le modèle utilisé dans cet exercice permet d'écrire le principe fondamental
+de la dynamique (2ème loi de Newton) pour la fusée, à la date $t$, sous la
+forme $M \vec{a}\_{G} = \sum \vec{F}^{ext}$ **bien que sa masse
 varie**.
 
 8. Donner la direction et le sens du vecteur accélération $\vec{a}$. Justifier la réponse.
@@ -136,28 +136,28 @@ $$
 
 11. Calculer la valeur $M\_{70}$ de la masse à la date $t = \pu{70 s}$.
 
-12. À partir des relations établies aux questions précédentes, calculer la 
+12. À partir des relations établies aux questions précédentes, calculer la
 valeur de l'accélération $a\_{70}$ à la date $t = \pu{70 s}$.
 
-13. La valeur de l'accélération à la date $t = \pu{70 s}$ permet-elle de 
+13. La valeur de l'accélération à la date $t = \pu{70 s}$ permet-elle de
 valider l'étude effectuée dans cette partie ?
 
 ## Retour sur Terre
 
-Pour revenir sur Terre, les cosmonautes de Soyouz mettent en route pendant 
-quelques minutes des rétrofusées qui modifient la trajectoire et font 
+Pour revenir sur Terre, les cosmonautes de Soyouz mettent en route pendant
+quelques minutes des rétrofusées qui modifient la trajectoire et font
 pénétrer l'engin dans les couches denses de l'atmosphère à environ $\pu{75 km}$ d'altitude. Les seuls frottements de l'air sur l'engin produisent un important freinage. À $\pu{10800 m}$ d'altitude, alors que la vitesse est de $\pu{250 m.s-1}$, un premier parachute s'ouvre et réduit la vitesse à $\pu{50 m.s-1}$. Vers $\pu{8000 m}$ d'altitude le premier parachute est remplacé par un deuxième plus important qui stabilise la vitesse de descente à $\pu{10 m.s-1}$.
 
-Les deux derniers kilomètres se font sur une trajectoire pratiquement 
+Les deux derniers kilomètres se font sur une trajectoire pratiquement
 rectiligne et verticale à la vitesse constante de $\pu{10 m.s-1}$. Cette trajectoire sera matérialisée par un axe vertical $(z' z)$ *orienté vers le haut* et dont l'origine $O$ se trouvera au niveau du sol. Les frottements de l'air sur la cabine elle-même deviennent négligeables.
 
 Donnée.
 : Masse du vaisseau Soyouz : $m\_{S} = \pu{3,00e3 kg}$.
 
-14. Représenter les forces appliquées sur la cabine. Donner toutes les 
+14. Représenter les forces appliquées sur la cabine. Donner toutes les
 caractéristiques de ces forces.
 
-Lorsque la cabine se trouve à $\pu{1 m}$ au dessus du sol à la vitesse de 
+Lorsque la cabine se trouve à $\pu{1 m}$ au dessus du sol à la vitesse de
 $\pu{10 m.s-1}$, une rétrofusée entre en action pour annuler la vitesse au moment de l'atterrissage. On se propose d'étudier cette dernière phase de freinage.
 
 15. Représenter les forces appliquées sur la cabine.
@@ -170,7 +170,7 @@ $\pu{10 m.s-1}$, une rétrofusée entre en action pour annuler la vitesse au mom
 
 19. Quelle est la durée du freinage ?
 
-**Informations.** Les données numériques concernant le retour sur Terre du 
+**Informations.** Les données numériques concernant le retour sur Terre du
 vaisseau Soyouz sont issues de renseignements fournis par le C.N.E.S.
 
 ## Annexe
