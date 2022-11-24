@@ -9,7 +9,7 @@ toc: true
 tags: ["Tableau d'avancement", "Vitesse volumique", "Temps de demi-réaction", "Conductivité", "Facteurs cinétiques"]
 categories: ["Chimie", "Terminale Spé PC"]
 image: ""
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: true
 ---
 
