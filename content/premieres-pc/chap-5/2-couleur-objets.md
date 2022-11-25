@@ -17,7 +17,12 @@ auto_numbering: true
 
 ### Spectre de couleur d’une lumière
 
+{{% note normal %}}
+
 - On appelle spectre de couleur d’une lumière le résultat de l’analyse de cette lumière par un **spectroscope** (ou **spectromètre**).
+
+{{% /note %}}
+
 - Un spectroscope, composé de prismes, **dévie différemment les différentes radiations de la lumière en fonction de leur longueur d’onde** car l’indice de réfraction d’un milieu transparent homogène est différent pour chacune de ces radiations.
 
 ### Spectre de la lumière blanche
@@ -70,7 +75,7 @@ La lumière émise par du magnésium est une lumière **polychromatique**, elle 
 <img src="/premieres-pc/chap-5/chap-5-2-5.jpg" alt="" width="80%" />
 
 {{% note tip %}}
-La **couleur perçue** d’une lumière est *l’impression visuelle qu’elle nous laisse*. Ce n’est pas une propriété intrinsèque de la lumière. 
+La **couleur perçue** d’une lumière est *l’impression visuelle qu’elle nous laisse*. Ce n’est pas une propriété intrinsèque de la lumière.
 {{% /note %}}
 
 ### Couleur spectrale
@@ -242,7 +247,7 @@ Lorsque la lumière éclaire un objet,
 ### Interaction lumière - matière
 
 {{% note tip %}}
-La couleur des objets dépend de la lumière qu’ils **diffusent**. 
+La couleur des objets dépend de la lumière qu’ils **diffusent**.
 {{% /note %}}
 
 #### Quelle est la couleur d’un objet éclairé par une lumière blanche&nbsp;?

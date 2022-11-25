@@ -44,7 +44,7 @@ Quelques zones de la rétine&nbsp;:
 
 <img src="/premieres-pc/chap-5/chap-5-1-4.png" alt="" width="40%" style="float: right;" />
 
-#### Remarque&nbsp
+#### Remarque
 
 - Comparer le nombre de R et de B.
 
