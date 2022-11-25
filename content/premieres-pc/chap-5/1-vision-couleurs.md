@@ -38,7 +38,7 @@ Quelques zones de la rétine&nbsp;:
 ## Courbes d’absorbance des photorécepteurs
 
 <img src="/premieres-pc/chap-5/chap-5-1-3.png" alt="" width="70%" />
-> Courbe en pointillés&nbsp;: **bâtonnets**, courbes en traits plains&nbsp;: **cônes**
+> Courbe en pointillés : <strong>bâtonnets</strong>, courbes en traits plains : <strong>cônes</strong>.
 
 ## Répartition des cônes dans la fovéa
 
