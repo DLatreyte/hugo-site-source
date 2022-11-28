@@ -31,10 +31,10 @@ Toute machine est dotée d’un système d’exploitation qui a pour fonction de
 
 ## Documents
 
-- **Chap. 11,01 :** [*Système d'exploitation : Principes généraux*](1-os-principes-generaux)
+- **Doc.** [*Système d'exploitation : Principes généraux*](1-os-principes-generaux)
 
-- **Chap. 11,02 :** [*Linux : Navigation dans le système de fichiers en utilisant le shell*](2-navigation-systeme-fichiers)
+- **Doc.** [*Linux : Navigation dans le système de fichiers en utilisant le shell*](2-navigation-systeme-fichiers)
 
-- **Chap. 11,03 :** [*Gestion des processus et des ressources*](3-processus)
+- **Doc.** [*Gestion des processus et des ressources*](3-processus)
 
 <!-- - **Chap. 11,01 :** [*Système d'exploitation et virtualisation*]() -->
