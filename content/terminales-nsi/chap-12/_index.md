@@ -1,6 +1,6 @@
 ---
 title: "Les systèmes d'exploitation"
-subtitle: "Chapitre 11"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-12-09T10:12:03+04:00
@@ -28,7 +28,6 @@ Toute machine est dotée d’un système d’exploitation qui a pour fonction de
 |:----:|:----:|:----:|
 |Composants intégrés d’un système sur puce.|Identifier les principaux composants sur un schéma de circuit et les avantages de leur intégration en termes de vitesse et de consommation.|Le circuit d’un téléphone peut être pris comme un exemple : microprocesseurs, mémoires locales, interfaces radio et filaires, gestion d’énergie, contrôleurs vidéo, accélérateur graphique, réseaux sur puce, etc.|
 |Gestion des processus et des ressources par un système d’exploitation. | - Décrire la création d’un processus, l’ordonnancement de plusieurs processus par le système.<br />- Mettre en évidence le risque de l’interblocage (deadlock). | - À l’aide d’outils standard, il s’agit d’observer les processus actifs ou en attente sur une machine.<br />- Une présentation débranchée de l’interblocage peut être proposée. |
-
 
 ## Documents
 

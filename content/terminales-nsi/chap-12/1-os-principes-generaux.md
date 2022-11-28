@@ -1,6 +1,6 @@
 ---
 title: "Système d'exploitation : Principes généraux"
-subtitle: "Chapitre 11,1"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-01-06T16:24:21+04:00
@@ -16,6 +16,7 @@ auto_numbering: true
 ## Introduction
 
 1. À l'aide d'un éditeur de texte, écrire le programme Python suivant :
+
 ```python
 from os.path import getsize
 from tkinter.filedialog import askopenfilename
@@ -24,11 +25,13 @@ fichier = askopenfilename()
 if fichier:
     print("Fichier a pour taille {} octets".format(str(getsize(fichier))))
 ```
+
 2. Exécuter le programme.
 
 3. À l'aide de la fonction `help` préciser le rôle des fonctions `getsize` du module `os` et `askopenfilename` du module `tkinter.filedialog`.
 
 {{% solution "Réponse" %}}
+
 - `askopenfilename` du module `tkinter.filedialog` crée une boite de dialogue permettant de sélectionner un fichier.\
 Plus précisément, cette fonction retourne une chaîne de caractères contenant le chemin du fichier à ouvrir.\
 La chaîne de caractères est vide si aucun fichier n'est sélectionné.
@@ -73,6 +76,7 @@ Ce petit programme permet d'illustrer les différentes *fonctionnalités* d'un *
 {{% note tip %}}
 Un **système d'exploitation** est *un programme ou un ensemble de programmes dont la fonction est la gestion des ressources matérielles et logicielles d'un ordinateur*.\
 Un système d'exploitation permet :
+
 - l'exécution de **processus** ;
 - la lecture et l'écriture d'informations ;
 - la manipulation de fichiers ;

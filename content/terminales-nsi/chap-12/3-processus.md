@@ -1,6 +1,6 @@
 ---
 title: "Gestion des processus et des ressources"
-subtitle: "Chapitre 11,3"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-01-10T05:10:07+04:00
@@ -13,7 +13,7 @@ solution_est_visible: true
 auto_numbering: true
 ---
 
-> L'objectif de ce document est d'essayer de faire comprendre les idées mises en œuvre lors de l'écriture des système d'exploitation afin qu'**un nombre de programmes plus important que le nombre de processeurs puisse fonctionner « simultanément »**. 
+> L'objectif de ce document est d'essayer de faire comprendre les idées mises en œuvre lors de l'écriture des système d'exploitation afin qu'**un nombre de programmes plus important que le nombre de processeurs puisse fonctionner « simultanément »**.
 
 ## L'ordonnanceur
 
@@ -24,8 +24,8 @@ auto_numbering: true
 - Un programme est un fichier contenant une suite d'instructions écrites en langage machine. C'est une suite d'octets que le processeur que le processeur est capable de décoder et d'exécuter.
 
 - Actions du système d'exploitation au lancement d'un programme :
-    - Le contenu du fichier contenant le programme est copié dans la mémoire vive (RAM), à une certaine adresse $a$.
-    - Le système d'exploitation écrit l'adresse $a$ dans le registre IP (instruction pointer).
+  - Le contenu du fichier contenant le programme est copié dans la mémoire vive (RAM), à une certaine adresse $a$.
+  - Le système d'exploitation écrit l'adresse $a$ dans le registre IP (instruction pointer).
 
 - Au cycle d'horloge du processeur suivant, ce dernier lit l'instruction qui se trouve dans le registre IP et l'exécute. Par la suite, il exécute la deuxième instruction puis les suivantes.
 
@@ -49,7 +49,6 @@ Il existe plusieurs types d'interruptions :
 
 Lorsqu'un processeur reçoit une interruption il interrompt son exécution à la fin de l'instruction courante et exécute un programme se trouvant à une adresse prédéfinie.\
 Ce programme, le **gestionnaire d'interruption**, reçoit une copie des valeurs courante des registres, ainsi qu'un code numérique lui permettant de savoir quel est le type de l'interruption qui a stoppé le processeur.
-
 
 {{% note normal %}}
 On utilise les interruptions, principalement dans deux buts :
@@ -129,7 +128,6 @@ On appelle **commutation de contexte** l'action d'interrompre un processus et de
 Afin de pouvoir décider à quel processus donner la main, l'ordonnanceur utilise une structure de données telle qu'une **file** pour stocker la liste des processus et ainsi partager les tâches.
 {{% /note %}}
 
-
 ### États d'un processus
 
 {{% note normal %}}
@@ -164,7 +162,7 @@ Les états **Nouveau** et **Terminé** sont temporaires. Normalement l'état d'u
 
 ### L'ordonnancement
 
-Plusieurs processus peuvent donc être dans l’état prêt : *comment choisir celui qui sera élu&nbsp;?* 
+Plusieurs processus peuvent donc être dans l’état prêt : *comment choisir celui qui sera élu&nbsp;?*
 {{% note tip %}}
 L’**ordonnanceur** (**scheduler**) classe les processus prêts dans une file et le **répartiteur** (**dispatcher**) alloue quant à lui un processeur à l’élu dans le cas d’une architecture multiprocesseur.
 {{% /note %}}
@@ -235,6 +233,7 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.   1648.7 avail Mem
       6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-kblockd       
       9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq    
 ```
+
 Le processus qui monopolise le plus le processeur apparaît dans la première ligne.
 
 {{% note tip %}}
@@ -269,6 +268,7 @@ systemd─┬─accounts-daemon───2*[{accounts-daemon}]
         ├─systemd-udevd
         └─unattended-upgr───{unattended-upgr}
 ```
+
 L'exemple précédent montre que l'utilisateur **ubuntu** a accédé au serveur **ubuntu** par ssh et a lancé depuis le terminal (en ligne de commande donc) deux commandes qui s'exécutent en parallèle `pstree` et `top`. Les processus ont été créés par le processus `bash`.
 
 {{% note normal %}}
@@ -285,8 +285,8 @@ ubuntu@serveur-ubuntu:~$ kill 8419
 
 **Remarque :** cette partie nécessite une bonne compréhension des sections 1.4, 1.5 et 1.6 de ce document.
 
+1. Écrire le programme Python suivant :
 
-1. Écrire le programme Python suivant : 
 ```python
 from os import getpid
 
@@ -316,9 +316,11 @@ La dernière ligne du même fichier est alors `418 : 999`.
 {{% /solution %}}
 
 5. Depuis la console (shell), lancer trois fois le programme en une commande, en plaçant l'exécution de ces programmes en arrière plan (c'est le rôle de l'esperluette `&`).
+
 ```bash
 python nom_prog.py & python nom_prog.py & python nom_prog.py &
 ```
+
 Relever les PID des processus.
 
 6. Examiner le contenu du fichier `test.txt` et recommencer plusieurs fois l'opération. Quelles remarques peut-on faire ? Essayer de justifier ce comportement.
@@ -337,6 +339,7 @@ Le fonctionnement multitâches d'un système d'exploitation est un avantage la p
 ### Interblocage
 
 {{% note exercise %}}
+
 #### Exemple 1
 
 Trois élèves doivent réaliser lors d'un cours de math un travail à l'aide d'une règle et d'une équerre. Le premier élève n'a apporté qu'une règle, le deuxième qu'une équerre et le troisième a oublié toutes ses affaires.
@@ -353,12 +356,14 @@ Trois élèves doivent réaliser lors d'un cours de math un travail à l'aide d'
 {{% /solution %}}
 
 {{% note exercise %}}
+
 #### Exemple 2
 
 Sur une route à deux sens, des travaux occupent la moitié de la route. Des véhicules roulant dans les deux sens se sont engagés simultanément et se retrouvent face à face. Plusieurs véhicules les ont suivis ; plus personne ne peut reculer. Le véhicule venant de la gauche occupe la partie de la route dont l'accès serait nécessaire au véhicule venant de la droite et inversement.
 {{% /note %}}
 
 {{% note exercise %}}
+
 #### Exercice 3
 
 Le même blocage peut intervenir dans un rond-point lorsque le traffic est dense si personne ne souhaite sortir à la première sortie mais plutôt à la sortie en face de l'entrée.
@@ -366,14 +371,14 @@ Le même blocage peut intervenir dans un rond-point lorsque le traffic est dense
 
 {{% note tip %}}
 *On appelle **interblocage** (**deadlock**) la situation dans laquelle deux processus se bloquent mutuellement : le premier attend l'accès à une ressource mobilisée par le second qui lui-même attend l'accès à une ressource mobilisée par le premier*. \
-L'origine de l'interblocage est l'accès exclusif à certaines ressources. 
+L'origine de l'interblocage est l'accès exclusif à certaines ressources.
 {{% /note %}}
 
-
 {{% note normal %}}
+
 #### Exemple d'interblocage
 
-- Un processus $p\_1$ possède un accès exclusif à la ressource $R\_1$ alors qu'un processus $p\_2$ possède un accès exclusif à une ressource $R\_2$. 
+- Un processus $p\_1$ possède un accès exclusif à la ressource $R\_1$ alors qu'un processus $p\_2$ possède un accès exclusif à une ressource $R\_2$.
 
 - Le processus $p\_1$ a alors besoin d'un accès à la ressource $R\_2$ avant de pouvoir libérer $R\_1$. Comme la ressource $R\_2$ est occupée, ce processus est placé dans l'état **En attente**.
 
@@ -389,6 +394,7 @@ L'origine de l'interblocage est l'accès exclusif à certaines ressources.
 ### Illustration d'une situation d'interblocage en Python
 
 1. Écrire le programme suivant :
+
 ```python
 import threading
 
@@ -413,6 +419,7 @@ Comme pour les processus, les threads alternent leur exécution en fonction des 
 {{% /solution %}}
 
 4. Écrire le programme suivant :
+
 ```python
 import threading
 COMPTEUR = 0
@@ -432,7 +439,7 @@ for n in range(4):
 for t in th:
     t.join()
 print("Valeur finale : {}".format(COMPTEUR))
-``` 
+```
 
 5. Expliquer le rôle de l'instruction `global COMPTEUR`.
 {{% solution "Réponse" %}}
@@ -460,6 +467,7 @@ Un **verrou** est un objet que l'on peut essayer d'acquérir. Si on est le premi
 {{% /note %}}
 
 9. Écrire le programme suivant :
+
 ```python
 import threading
 verrou = threading.Lock()
@@ -487,6 +495,7 @@ print("Valeur finale : {}".format(COMPTEUR))
 10. Expliquer pourquoi on obtient bien maintenant la valeur 400000.
 
 11. Écrire le programme suivant :
+
 ```python
 import threading
 
@@ -519,15 +528,15 @@ t2.start()
 
 13. Exécuter le programme plusieurs fois. La situation prévue à la question précédente intervient-elle vraiment ? Pourquoi ?
 
-14. Ajouter les lignes 
+14. Ajouter les lignes
+
 ```python
 for i in range(100000):
     continue
-``` 
+```
+
 au dessous de l'instruction `print("Section critique 1.1")`. \
 Expliquer pourquoi le comportement du programme a été modifié.
-
-
 
 ## À retenir
 
