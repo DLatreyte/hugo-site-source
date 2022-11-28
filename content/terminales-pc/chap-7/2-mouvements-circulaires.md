@@ -96,7 +96,7 @@ On le représente donc par une flèche parallèle et de même sens que le vecteu
 7. Déterminer $\Vert \Delta \vec{v}(A_3) \Vert$ graphiquement.
 {{% solution "Réponse" %}}
 
-- Graphiquement, on mesure la longueur de la flèche représentant le vecteur $\Delta \vec{v}(A_3)$ : $\pu{4,6 cm}$. Grâce à l'échelle on en déduit que $\Delta v(A_3) = \pu{4,6 cm} \times \pu{1e-1 m.s-1} = \pu{4,6e-1 m.s-1}$.
+- Graphiquement, on mesure la longueur de la flèche représentant le vecteur $\Delta \vec{v}(A_3)$ : $\pu{4,6 cm}$. Grâce à l'échelle on en déduit que $\Delta v(A_3) = \pu{4,6 cm} \times \pu{1e-1 m.s-1/cm} = \pu{4,6e-1 m.s-1}$.
 {{% /solution %}}
 
 8. Au point $A_8$, construire $\Delta \vec{v}(A_8) = \vec{v}(A_9) - \vec{v}(A_7)$ et déterminer $\Vert \Delta \vec{v}(A_8) \Vert$ graphiquement.
