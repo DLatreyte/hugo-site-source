@@ -9,7 +9,7 @@ toc: true
 tags: ["Énergie de combustion"]
 categories: ["Terminale Enseignement Scientifique"]
 image: ""
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: false
 ---
 
@@ -96,6 +96,13 @@ En utilisant le principe de conservation de l'énergie, et dans le cas idéal o�
 - On peut ainsi connaître la quantité de matière d'acide stéarique qui a été brûlé et grâce à l'élévation de température de l'eau, connaître l'énergie qui a été dégagée.
 
 On cherche d'abord $Q$ gagnée par l'eau, et comme l’énergie reçue par l'eau est égale, aux pertes d'énergie près, à l'énergie de combustion de l’acide stéarique pour la masse de bougie brûlée, on trouve $E_{comb}$ l'énergie de combustion pour une certaine masse de bougie. Il suffit après de trouver l'énergie de combustion de l'acide stéarique $E_{comb,exp} (\text{acide stéarique})$ pour une mole de bougie.
+
+Le résultat final est très mauvais car l'hypothèse formulée n'est pas valable : toute l'énergie cédée par la combustion de l'acide stéarique ne sert pas uniquement à chauffer l'eau !  
+En effet,
+
+- une partie de cette énergie chauffe la canette ;
+- une grande partie de cette énergie chauffe l'air ;
+- la canette elle-même perd une partie de l'énergie qu'elle reçoit.
 
 {{% /solution %}}
 

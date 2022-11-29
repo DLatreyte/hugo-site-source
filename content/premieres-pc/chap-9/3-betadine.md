@@ -61,9 +61,9 @@ L'empois d'amidon réagit avec le diiode présent dans une solution. Cette derni
 
 {{% note normal %}}
 
-#### Calcul d'inceritude : cas d'une mesure obtenue avec un appareil de tolérance connue
+#### Calcul d'incertitude : cas d'une mesure obtenue avec un appareil de tolérance connue
 
-Lorsque la mesure est obtenue avec un appareil pour lequel le constructeur indique la tolérance $t$ (notée $\pm t$), l'incertitude liée à la tolérance de cet appareil a pour expression&nbsp;:
+Lorsque la mesure est obtenue avec un appareil pour lequel le constructeur indique la tolérance $t$ (notée $\pm t$), l'incertitude liée à la tolérance de cet appareil a pour expression :
 $$
 U = \dfrac{2\\, t}{\sqrt{3}}
 $$

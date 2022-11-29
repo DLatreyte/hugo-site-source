@@ -30,6 +30,8 @@ layout: "single"
 
 - **Doc. :** [*L’élément fer dans l’anti-mousse*](1-titrage-ions-fer-par-permanaganate)
 
+- **Doc. :** [*Dosage par titrage d'une eau oxygénée*](4-eau-oxygenee)
+
 - **Doc. :** [*Livre Scolaire : Exercices du chapitre*](2-exercices)
 
-- **Doc. :** [*Titrage du diiode dans la Bétadine*](3-betadine)
+- **Doc. :** [*Dosage par titrage du diiode dans la Bétadine*](3-betadine)
