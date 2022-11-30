@@ -186,9 +186,10 @@ Quelques exemples :
 
 {{% note normal %}}
 `ps` (*process status*) est la commande de base pour lister tous les processus en cours. Options utiles :
-    - `a`: tous les processus ;
-    - `u` : nom des utilisateurs qui ont lancé le processus ;
-    - `x` : fait aussi apparaître les processus qui n'ont pas été lancés depuis la ligne de commande.
+
+- `a`: tous les processus ;
+- `u` : nom des utilisateurs qui ont lancé le processus ;
+- `x` : fait aussi apparaître les processus qui n'ont pas été lancés depuis la ligne de commande.
 {{% /note %}}
 
 ```bash
