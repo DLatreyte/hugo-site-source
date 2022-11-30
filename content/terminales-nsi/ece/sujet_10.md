@@ -9,7 +9,7 @@ toc: true
 tags: []
 categories: []
 image: ""
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: true
 ---
 
@@ -102,6 +102,7 @@ def positif(T: List[int]) -> List[int]:
     while T3 != []:
         x = T3.pop()
         T2.append(x)
+    print('T = ',T)
     return T2
 
 
