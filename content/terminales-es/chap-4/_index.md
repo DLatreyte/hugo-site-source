@@ -42,3 +42,5 @@ La consommation mondiale d’énergie fait majoritairement appel aux combustible
 - **Doc. :** [*Climat : l’objectif des 2 °C appartient, hélas, au passé*](5-climat-rechauffement)
 
 - **Doc. :** [*Détermination expérimentale d'une énergie de combustion*](6-energie-combustion-tp)
+
+- **Doc. :** [*Devoir d'entraînement*](7-entrainement)
