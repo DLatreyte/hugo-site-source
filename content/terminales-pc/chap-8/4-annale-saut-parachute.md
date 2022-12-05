@@ -1,6 +1,6 @@
 ---
 title: "Annale : Saut en parachute"
-subtitle: "Chapitre 9,5"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-12-23T17:45:24+04:00
@@ -35,7 +35,7 @@ D'après le site internet :
 L'objectif de cet exercice est d'étudier différentes phases du saut en
 parachute à l'aide de données expérimentales et de modèles.
 
-Données 
+Données
 
 :   -   rayon de la Terre : $R_T = \pu{6,37e6 m}$ ;
 
@@ -45,7 +45,7 @@ Données
     -   masse du tandem avec son équipement :
         $m = \pu{200 kg}$.
 
-## Étude expérimentale du saut 
+## Étude expérimentale du saut
 
 Lors de son saut, un parachutiste a enregistré, à l'aide de sa montre
 connectée, l'altitude $z$ au cours du temps $t$. L'enregistrement des
@@ -179,6 +179,5 @@ Commenter.
 {{% solution "Réponses" %}}
 {{< remote "Corrigé au format pdf" "/terminales-pc/chap-8/chap-8-4-4.pdf" >}}
 {{% /solution %}}
-
 
 [^1]: *tandem :* deux personnes associées.

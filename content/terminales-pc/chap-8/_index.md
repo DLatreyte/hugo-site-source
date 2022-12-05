@@ -1,6 +1,6 @@
 ---
 title: "Applications des lois de Newton"
-subtitle: "Chapitre 9"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-12-08T04:40:59+04:00
@@ -30,19 +30,19 @@ layout: "single"
 
 ----
 
-- **Chap. 9,1 :** [*Rappels de première sur l'énergie*](1-rappels-energie)
+- **Doc.** [*Rappels de première sur l'énergie*](1-rappels-energie)
 
-- **Chap. 9,2 :** [*Cours : Mouvements dans le champ de pesanteur uniforme*](2-mouvement-champ-pesanteur-uniforme)
+- **Doc.** [*Cours : Mouvements dans le champ de pesanteur uniforme*](2-mouvement-champ-pesanteur-uniforme)
 
-- **Chap. 9,3 :** [*Annale : Mécanique du vol d'un ballon sonde*](3-annale-mouvement-ballon-sonde)
+- **Doc.** [*Annale : Mécanique du vol d'un ballon sonde*](3-annale-mouvement-ballon-sonde)
 
-- **Chap. 9,4 :** [*Annale : Saut en parachute*](4-annale-saut-parachute)
+- **Doc.** [*Annale : Saut en parachute*](4-annale-saut-parachute)
 
-- **Chap. 9,5 :** [*Cours : Mouvement d'une particule chargée dans un champ électrique uniforme*](5-mouvement-champ-electrique)
+- **Doc.** [*Cours : Mouvement d'une particule chargée dans un champ électrique uniforme*](5-mouvement-champ-electrique)
 
-- **Chap. 9,12 :** [*Annale : Les débuts de l'électron en physique*](12-annale-thomson)
+- **Doc.** [*Annale : Les débuts de l'électron en physique*](12-annale-thomson)
 
-- **Chap. 9,13 :** [*Annale : Particule $\alpha$ dans un champ électrostatique uniforme*](13-annale-particule-alpha)
+- **Doc.** [*Annale : Particule $\alpha$ dans un champ électrostatique uniforme*](13-annale-particule-alpha)
 
 ## Mouvements dans un champ gravitationnel non uniforme
 
@@ -60,22 +60,22 @@ layout: "single"
 
 ----
 
-- **Chap. 9,6 :** [*Cours : Mouvements dans le champ gravitationnel non uniforme*](6-mouvement-champ-gravitationnel)
+- **Doc.** [*Cours : Mouvements dans le champ gravitationnel non uniforme*](6-mouvement-champ-gravitationnel)
 
-- **Chap. 9,7 :** [*Annale : Exploration du système saturnien*](7-saturne)
+- **Doc.** [*Annale : Exploration du système saturnien*](7-saturne)
 
-- **Chap. 9,8 :** [*Annale : Principe de la spectrométrie de masse*](8-spectrometre-masse)
+- **Doc.** [*Annale : Principe de la spectrométrie de masse*](8-spectrometre-masse)
 
-- **Chap. 9,9 :** [*Annale : Laboratoires en impesanteur*](9-impesanteur)
+- **Doc.** [*Annale : Laboratoires en impesanteur*](9-impesanteur)
 
-- **Chap. 9,10 :** [*Annale : Tomographie par émission de positons (Difficile !)*](10-tomographie)
+- **Doc.** [*Annale : Tomographie par émission de positons (Difficile !)*](10-tomographie)
 
 ## Utilisation de Python
 
-- **Chap. 9,11 :** [*Quelques tracés de courbes à l'aide de Python*](11-traces-de-courbes)
+- **Doc.** [*Quelques tracés de courbes à l'aide de Python*](11-traces-de-courbes)
 
-- **Chap. 9,14 :** [*Détermination de la masse du Soleil à l'aide de Python*](14-troisieme-loi-kepler-python)
+- **Doc.** [*Détermination de la masse du Soleil à l'aide de Python*](14-troisieme-loi-kepler-python)
 
-- **Chap. 9,15 :** [*TP : Chute d'une goutte d'eau dans différents milieux*](15-chute-eau)
+- **Doc.** [*TP : Chute d'une goutte d'eau dans différents milieux*](15-chute-eau)
 
-- **Chap. 9,15 :** [*TP : Étude d'un mouvement et tracé de vecteurs*](16-trace-de-vecteurs)
+- **Doc.** [*TP : Étude d'un mouvement et tracé de vecteurs*](16-trace-de-vecteurs)

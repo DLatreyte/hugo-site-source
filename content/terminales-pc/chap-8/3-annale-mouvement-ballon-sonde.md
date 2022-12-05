@@ -1,6 +1,6 @@
 ---
 title: "Annale : Mécanique du vol d'un ballon sonde"
-subtitle: "Chapitre 9,3"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-12-20T19:27:51+04:00
@@ -41,7 +41,7 @@ ballon.
 Le système {ballon + nacelle} est étudié dans un référentiel terrestre
 considéré comme galiléen.
 
-Données 
+Données
 :   $\rho = \pu{1,22 kg.m-3}$, $V_b = \pu{9,0 m3}$, masse du ballon
     (enveloppe + hélium) : $m = \pu{2,10 kg}$, masse de la nacelle
     vide : $m' = \pu{0,50 kg}$.
@@ -77,7 +77,7 @@ Deuxième loi de Newton
 {{< math >}}
 $$
 M\\, \vec{a} = \vec{P} + \vec{\Pi} = M\\, \vec{g} + \rho_{\text{air}} V_b\\, (- \vec{g})
-$$ 
+$$
 {{< /math >}}
 Donc
 $$\vec{a} = \left( 1 - \frac{\rho_{\text{air}} V_b}{M} \right)\\,  \vec{g}$$
@@ -90,36 +90,36 @@ On pourra projeter la relation obtenue sur un axe vertical $(Oz)$ orienté vers 
 {{% solution "Réponse" %}}
 Le vecteur accélération doit être vertical (ce qui est assuré par la colinéarité avec $\vec{g}$), non nul et dirigé vers le haut. Donc
 $$a_z > 0$$
-{{% /solution %}} 
+{{% /solution %}}
 
 5. En déduire une condition sur $M$ pour que le vol soit possible (on ne demande que l'expression littérale ici).
 
 {{% solution "Réponse" %}}
 $$
 a_z = \left( 1 - \frac{\rho_{\text{air}} V_b}{M} \right) (- g) \Leftrightarrow a_z = \left( \frac{\rho_{\text{air}} V_b}{M} - 1 \right) g
-$$ 
+$$
 donc
 $$
 a_z > 0 \Leftrightarrow \frac{\rho_{\text{air}} V_b}{M} - 1 > 0 \Leftrightarrow M < \rho_{\text{air}} V_b
 $$
-{{% /solution %}} 
+{{% /solution %}}
 
 6. En déduire la masse maximale de matériel scientifique que l'on peut embarquer dans la nacelle.
 
 {{% solution "Réponse" %}}
-$M_{\text{max}} = \pu{1,22 kg.m-3} \times \pu{9,0 m3} = \pu{11,0 kg}$      
+$M_{\text{max}} = \pu{1,22 kg.m-3} \times \pu{9,0 m3} = \pu{11,0 kg}$
 Or
-$M_{\text{max}} = m + m' + m_{\text{science}}$   
+$M_{\text{max}} = m + m' + m_{\text{science}}$
  donc $m_{\text{science}} = M_{\text{max}} - m - m'$.
 
 **A.N.** $m_{\text{science}} = \pu{11,0 kg} - \pu{2,10 kg} - \pu{0,50 kg} = \pu{8,4 kg}$
-{{% /solution %}} 
+{{% /solution %}}
 
 ## Ascension du ballon
 
-7. À partir de la question (3) et en conservant l'axe défini à la question (4), montrer que l'équation différentielle régissant le mouvement du ballon après son décollage peut se mettre sous la forme&nbsp;: 
+7. À partir de la question (3) et en conservant l'axe défini à la question (4), montrer que l'équation différentielle régissant le mouvement du ballon après son décollage peut se mettre sous la forme&nbsp;:
 $$
-Av_z^2 + B = \dfrac{\mathrm{d} v_z}{\mathrm{dt}}$$ 
+Av_z^2 + B = \dfrac{\mathrm{d} v_z}{\mathrm{dt}}$$
 et donner les expressions de $A$ et $B$.\
 La masse de matériel embarqué étant de $\pu{2,0 kg}$, l'application numérique donne $A = - \pu{0,53 m-1}$ et $B = \pu{13,6 m.s-2}$.
 
@@ -128,7 +128,7 @@ Le diagramme objets-interactions est identique à celui introduit à la question
 maintenant différente : il faut prendre en compte la poussée d'Archimède mais aussi la force de frottement fluide.
 $$
 M\\, \vec{a} = \vec{P} + \vec{\Pi} + \vec{f}
-$$ 
+$$
 Comme
 $\vec{P} = M\\, \vec{g} = - Mg\\, \vec{k}$, $\vec{\Pi} = \rho_{\text{air}}
     V_b g\\, \vec{k}$ et $\vec{f} = - K \cdot \rho \cdot v^2\\,  \vec{k}$
@@ -139,7 +139,7 @@ $$
 ou
 $$
 a_z = \left( \dfrac{\rho_{\text{air}} V_b}{M} - 1 \right) g - \dfrac{K \cdot \rho}{M} v_z^2
-$$ 
+$$
 Comme
 $a_z = \dfrac{\mathrm{d}v_z}{\mathrm{dt}}$, l'équation peut s'écrire
 $$
@@ -148,7 +148,7 @@ $$ si
 $A = - \dfrac{K \cdot \rho}{M}$ et
 $B = \left( \dfrac{\rho_{\text{air}}
     V_b}{M} - 1 \right) g$.
-{{% /solution %}} 
+{{% /solution %}}
 
 Une résolution numérique de l'équation différentielle permet de tracer l'évolution de la composante $v_z$ de la vitesse en fonction du temps.
 
@@ -162,13 +162,13 @@ On constate la présence de deux régimes :
 - Un premier régime durant lequel la vitesse augmente mais de moins en moins vite (coefficient directeur des tangentes à la courbe de moins en moins grands) : c'est le *régime variable*.
 
 - Un second régime durant lequel la vitesse n'évolue plus : c'est le *régime permanent constant.*
-{{% /solution %}} 
+{{% /solution %}}
 
 9. Le mouvement est-il uniformément accéléré ?
 
 {{% solution "Réponse" %}}
 La vitesse ne varie pas linéairement, l'accélération n'est donc pas constante et le mouvement n'est pas uniformément accéléré.
-{{% /solution %}} 
+{{% /solution %}}
 
 10. Que peut-on dire des forces auxquelles est soumis le système lorsque ce dernier est dans le régime permanent constant ?
 
@@ -178,7 +178,7 @@ donc alors.
 
 **Remarque :** C'est la force de frottement fluide qui est responsable de la présence du régime permanent constant : lorsque la vitesse augmente, la force de frottement fluide augmente (et plus rapidement puisqu'elle est proportionnelle au carré de la vitesse) jusqu'à
 devenir égale à la poussée d'Archimède (diminuée du poids).
-{{% /solution %}} 
+{{% /solution %}}
 
 ## Vitesse limite du ballon
 
@@ -188,7 +188,7 @@ devenir égale à la poussée d'Archimède (diminuée du poids).
 La vitesse limite $v_l$ est une vitesse constante au cours du temps. Comme c'est une solution de l'équation du mouvement, elle doit la vérifier.
 
 Comme $\dfrac{\mathrm{d}v_l}{\mathrm{dt}} = 0$, l'équation se réduit à $Av_l^2 + B = 0 \Leftrightarrow v_l = \sqrt{\dfrac{- B}{A}}$.
-{{% /solution %}} 
+{{% /solution %}}
 
 12. Calculer la valeur de cette vitesse limite.
 
