@@ -541,7 +541,7 @@ Expliquer pourquoi le comportement du programme a été modifié.
 
 {{% note exercise %}}
 
-#### Exercice
+#### Annale
 
 Dans un bureau d’architectes, on dispose de certaines ressources qui ne peuvent être utilisées simultanément par plus d’un processus, comme l’imprimante, la table traçante, le modem. Chaque programme, lorsqu’il s’exécute, demande l’allocation des ressources qui lui sont nécessaires. Lorsqu’il a fini de s’exécuter, il libère ses ressources.
 
@@ -580,6 +580,62 @@ Justifier qu'une situation d'interblocage peut se produire.
 
 3. Le processus sera bloqué.
 {{% /solution %}}
+
+{{% note exercise %}}
+
+#### Annale
+
+Un constructeur automobile utilise des ordinateurs pour la conception de ses véhicules.
+Ceux-ci sont munis d'un système d'exploitation ainsi que de nombreuses applications parmi lesquelles on peut citer :
+
+- un logiciel de traitement de texte ;
+- un tableur ;
+- un logiciel de Conception Assistée par Ordinateur (CAO) ;
+- un système de gestion de base de donnée (SGBD).
+
+Chaque ordinateur est équipé des périphériques classiques : clavier, souris, écran et est relié à une imprimante réseau.
+
+Ce constructeur automobile intègre à ses véhicules des systèmes embarqués, comme par exemple un système de guidage par satellites (GPS), un système de freinage antiblocage (ABS).  
+Ces dispositifs utilisent des systèmes sur puces (SoC : Système on a Chip).  
+
+1. Citer deux avantages à utiliser ces systèmes sur puces plutôt qu'une architecture classique d'ordinateur.
+
+Un ingénieur travaille sur son ordinateur et utilise les quatre applications citées au début de l'énoncé.  
+Pendant l'exécution de ces applications, des processus mobilisent des données et sont en attente d'autres données mobilisées par d'autres processus.  
+On donne ci-dessous un tableau indiquant à un instant précis l'état des processus en cours
+d'exécution et dans lequel $D_1$, $D_2$, $D_3$, $D_4$ et $D_5$ sont des données.  
+La lettre $M$ signifie que la donnée est mobilisée par l'application ; la lettre $A$ signifie que l'application est en attente de cette donnée.
+Lecture du tableau : le logiciel de traitement de texte mobilise $(M)$ la donnée $D_1$ et est en attente $(A)$ de la donnée $D_2$.
+
+<center>
+
+| | $D_1$ | $D_2$ | $D_3$ | $D_4$ | $D_5$ |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| Traitement de texte | M | A | - | - | - |
+| Tableur | A | - | - | - | M |
+| SGBD | - | M | A | A | - |
+| CAO | - | - | A | M | A |
+
+</center>
+
+2. Montrer que les applications s'attendent mutuellement.  
+Comment s'appelle cette situation ?
+
+Ce constructeur automobile possède six sites de production qui échangent des documents entre eux. Les sites de production sont reliés entre eux par six routeurs $A$, $B$, $C$, $D$, $E$ et $F$.  
+On donne ci dessous les tables de routage des routeurs $A$ à $F$ obtenus avec le protocole RIP :
+
+<img src="/terminales-nsi/chap-12/chap-12-3/table_routage.png" alt="" width="" />
+
+3. Déterminer à l'aide de ces tables le chemin emprunté par un paquet de données envoyé du
+routeur $A$ vers le routeur $F$.
+
+On veut représenter schématiquement le réseau de routeurs à partir des tables de routage.
+Recopier sur la copie le schéma ci-dessous :
+
+<img src="/terminales-nsi/chap-12/chap-12-3/reseau.png" alt="" width="40%" />
+
+4. En s'appuyant sur les tables de routage, tracer les liaisons entre les routeurs.
+{{% /note %}}
 
 ## À retenir
 
