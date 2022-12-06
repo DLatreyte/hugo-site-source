@@ -539,6 +539,48 @@ for i in range(100000):
 au dessous de l'instruction `print("Section critique 1.1")`. \
 Expliquer pourquoi le comportement du programme a été modifié.
 
+{{% note exercise %}}
+
+#### Exercice
+
+Dans un bureau d’architectes, on dispose de certaines ressources qui ne peuvent être utilisées simultanément par plus d’un processus, comme l’imprimante, la table traçante, le modem. Chaque programme, lorsqu’il s’exécute, demande l’allocation des ressources qui lui sont nécessaires. Lorsqu’il a fini de s’exécuter, il libère ses ressources.
+
+| Programme 1 | Programme 2 | Programme 3 |
+| :--- | :--- | :--- |
+| - demander (table traçante)<br />- demander (modem)<br />- exécution<br />- libérer (modem)<br />- libérer (table traçante) | - demander (modem)<br />- demander (imprimante)<br />- exécution<br />- libérer (imprimante)<br />- libérer (modem) | - demander (imprimante)<br />- demander (table traçante)<br />- exécution<br />- libérer (table traçante)<br />- libérer(imprimante) |
+
+On appelle $p_1$, $p_2$ et $p_3$ les processus associés respectivement aux programmes 1, 2 et 3.
+
+1. Les processus s'exécutent de manière concurrente.  
+Justifier qu'une situation d'interblocage peut se produire.
+
+2. Modifier l'ordre des instructions du programme 3 pour qu'une telle situation ne puisse pas se produire. Aucune justification n'est attendue.
+
+3. Supposons que le processus $p_1$ demande la table traçante alors qu'elle est en cours d'utilisation par le processus $p_3$. Parmi les états suivants, quel sera l'état du processus $p_1$ tant que la table traçante n'est pas disponible :  
+    a. élu  
+    b. bloqué  
+    c. prêt  
+    d. terminé
+
+{{% /note %}}
+
+{{% solution "Correction" %}}
+
+1. Si chaque programme est lancé et que la première ligne est exécutée, chaque processus monopolise une ressource. Lors de l’exécution de la seconde ligne, chaque processus demande une ressource qui ne peut pas être libérée. Cette situation est celle d'un interblocage.
+
+2.
+
+<center>
+
+| Programme 3 |
+| :--- |
+| - demander (table traçante)<br />- demander (imprimante)<br />- exécution<br />- libérer (table traçante)<br />- libérer(imprimante) |
+
+</center>
+
+3. Le processus sera bloqué.
+{{% /solution %}}
+
 ## À retenir
 
 {{% note tip %}}
