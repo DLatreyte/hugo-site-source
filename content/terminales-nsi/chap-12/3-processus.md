@@ -571,7 +571,7 @@ Pour passer à l'état exécution, le processus p2 doit pouvoir accéder à l'im
 Pour passer à l'état exécution, le processus p3 doit pouvoir accéder à la table traçante alors que celle-ci est monopolisée par le processus p1. Il doit donc attendre que p1 libère la table traçante, ce qu'il ne fera pas car il est bloqué, dans l'attente d'un accès au modem.  
 La situation décrite constitue donc bien un **interblocage**.
 
-2.
+2. Il faut que le processus p2 puisse achever sa tache et libérer le modem pour que p1 puisse s'executer. Comme p3 a aussi besoin de la table traçante, comme p1, il faut faire en sorte qu'il soit immédiatement bloqué sans monopoliser aucune ressource :
 
 <center>
 
@@ -580,6 +580,8 @@ La situation décrite constitue donc bien un **interblocage**.
 | - demander (table traçante)<br />- demander (imprimante)<br />- exécution<br />- libérer (table traçante)<br />- libérer(imprimante) |
 
 </center>
+
+L'imprimante n'est alors plus bloquée par p3, ce qui permet à p2 de s'exécuter complètement et de libérer les ressources que p1 peut alors utiliser. Pour finir, une fois p1 terminé, p3 peut s'exécuter.
 
 3. Le processus sera bloqué.
 {{% /solution %}}
@@ -642,7 +644,7 @@ Recopier sur la copie le schéma ci-dessous :
 
 {{% solution "Correction" %}}
 
-1.
+1.  
 
 2. Les application SGBD et CAO attendent mutuellement la Donnée $D_3$. Il y a donc un interblocage (deadlock). $D_2$, $D_4$ et $D_5$ ne pourront pas être libérées. Le traitement de texte ne pourra obtenir $D_2$. Le tableur ne pourra obtenir $D_5$.
 
