@@ -566,7 +566,10 @@ Justifier qu'une situation d'interblocage peut se produire.
 
 {{% solution "Correction" %}}
 
-1. Si chaque programme est lancé et que la première ligne est exécutée, chaque processus monopolise une ressource. Lors de l’exécution de la seconde ligne, chaque processus demande une ressource qui ne peut pas être libérée. Cette situation est celle d'un interblocage.
+1. Pour passer à l'état exécution, le processus p1 doit pouvoir accéder au modem alors que celui-ci est monopolisé par le processus p2. Il doit donc attendre que p2 libère le modem.  
+Pour passer à l'état exécution, le processus p2 doit pouvoir accéder à l'imprimante alors que celle-ci est monopolisée par le processus p3. Il doit donc attendre que p3 libère l'imprimante.  
+Pour passer à l'état exécution, le processus p3 doit pouvoir accéder à la table traçante alors que celle-ci est monopolisée par le processus p1. Il doit donc attendre que p1 libère la table traçante, ce qu'il ne fera pas car il est bloqué, dans l'attente d'un accès au modem.  
+La situation décrite constitue donc bien un **interblocage**.
 
 2.
 
@@ -636,6 +639,15 @@ Recopier sur la copie le schéma ci-dessous :
 
 4. En s'appuyant sur les tables de routage, tracer les liaisons entre les routeurs.
 {{% /note %}}
+
+{{% solution "Correction" %}}
+
+1.
+
+2. Les application SGBD et CAO attendent mutuellement la Donnée $D_3$. Il y a donc un interblocage (deadlock). $D_2$, $D_4$ et $D_5$ ne pourront pas être libérées. Le traitement de texte ne pourra obtenir $D_2$. Le tableur ne pourra obtenir $D_5$.
+
+3. $A \ce{->} B \ce{->} E \ce{->} F$.
+{{% /solution %}}
 
 ## À retenir
 
