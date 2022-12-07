@@ -14,11 +14,11 @@ auto_numbering: true
 layout: "single"
 ---
 
+<!--
 - [*ECE 1*](sujet_10)
 
 - [*ECE 2*](sujet_21)
 
-<!--
 - [*ECE 1*](sujet_6)
 - [*ECE 1*](sujet_10)
 - [*ECE 2*](sujet_9)
