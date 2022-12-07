@@ -37,7 +37,7 @@ On se propose d’étudier la part et les impacts de la combustion de carburants
 | :-----: | :-----: | :-----: | :-----: |
 | Energie massique libérée | $\pu{50 MJ.kg-1}$ | $\pu{45 MJ.kg-1}$ | $\pu{17 MJ.kg-1}$ |
 
-##### Masse de $\ce{CO2} produite pour 1 MJ d’énergie obtenue
+##### Masse de $\ce{CO2}$ produite pour 1 MJ d’énergie obtenue
 
 | Combustible | Gaz naturel | Essence | Biomasse |
 | :-----: | :-----: | :-----: | :-----: |
