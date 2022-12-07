@@ -42,7 +42,7 @@ On veut écrire une classe pour gérer une file à l’aide d’une liste chaîn
 
 ```python
 class Maillon :
-    def __init__(self: Maillon, v: int) -> None:
+    def __init__(self: Maillon, v: int, suivant: Maillon) -> None:
         self.valeur = v
         self.suivant = None
 ```
