@@ -15,9 +15,10 @@ layout: "single"
 ---
 
 - [*ECE 1*](sujet_10)
-<!--
-- [*ECE 2*](sujet_6)
 
+- [*ECE 2*](sujet_21)
+
+<!--
 - [*ECE 1*](sujet_6)
 - [*ECE 1*](sujet_10)
 - [*ECE 2*](sujet_9)
@@ -28,5 +29,4 @@ layout: "single"
 - [*ECE 7*](sujet_23)
 - [*ECE 8*](sujet_14_25)
 - [*ECE 9*](sujet_17_18)
-
 -->
