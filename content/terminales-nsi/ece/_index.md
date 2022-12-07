@@ -15,6 +15,7 @@ layout: "single"
 ---
 
 - [*ECE 1*](sujet_10)
+- [*ECE 2*](sujet_6)
 <!--
 - [*ECE 1*](sujet_6)
 - [*ECE 1*](sujet_10)

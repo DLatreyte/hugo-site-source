@@ -9,7 +9,7 @@ toc: true
 tags: []
 categories: []
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 
@@ -18,6 +18,7 @@ auto_numbering: true
 Écrire une fonction python appelée `nb_repetitions` qui prend en paramètres un élément `elt` et une liste `tab` et renvoie le nombre de fois où l’élément apparaît dans la liste.
 
 #### Jeu de tests
+
 ```python
 if __name__ == "__main__":
     assert nb_repetitions(5, [2, 5, 3, 5, 6, 9, 5]) == 3
@@ -46,8 +47,6 @@ if __name__ == "__main__":
 
 {{% /solution %}}
 
-
-
 ## Exercice 2 (50% des points)
 
 Pour rappel, la conversion d’un nombre entier positif en binaire peut s’effectuer à l’aide des divisions successives comme illustré ici&nbsp;:
@@ -67,6 +66,7 @@ def binaire(a: int) -> str:
 ```
 
 #### Jeu de tests
+
 ```python
 if __name__ == "__main__":
     assert binaire(0) == '0'
@@ -97,6 +97,6 @@ if __name__ == "__main__":
     assert binaire(2) == '10'
     assert binaire(4) == '100'
     assert binaire(77) == '1001101'
-``` 
+```
 
 {{% /solution %}}

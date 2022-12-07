@@ -9,7 +9,7 @@ toc: true
 tags: []
 categories: []
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 
@@ -56,11 +56,11 @@ if __name__ == "__main__":
 
 ## Exercice 2 (50% des points)
 
-On définit une classe gérant une adresse IPv4.    
-On rappelle qu’une adresse IPv4 est une adresse de longueur 4 octets, notée en décimale à point, en séparant chacun des octets par un point. 
+On définit une classe gérant une adresse IPv4.
+On rappelle qu’une adresse IPv4 est une adresse de longueur 4 octets, notée en décimale à point, en séparant chacun des octets par un point.
 
-On considère un réseau privé avec une plage d’adresses IP de 192.168.0.0 à 192.168.0.255.    
-On considère que les adresses IP saisies sont valides.    
+On considère un réseau privé avec une plage d’adresses IP de 192.168.0.0 à 192.168.0.255.
+On considère que les adresses IP saisies sont valides.
 Les adresses IP 192.168.0.0 et 192.168.0.255 sont des adresses réservées.
 
 Le code ci-dessous implémente la classe `AdresseIP` :
@@ -107,7 +107,7 @@ if __name__ == "__main__":
     assert adresse1.est_reservee() == False
     assert adresse3.est_reservee() == True
     assert adresse2.adresse_suivante().adresse == '192.168.0.3'
-``` 
+```
 
 {{% solution "Solution" %}}
 

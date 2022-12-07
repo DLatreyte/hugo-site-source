@@ -37,4 +37,6 @@ Toute machine est dotée d’un système d’exploitation qui a pour fonction de
 
 - **Doc.** [*Gestion des processus et des ressources*](3-processus)
 
+- **Doc.** [*Gestion des processus et des ressources : Annales*](4-annales)
+
 <!-- - **Chap. 11,01 :** [*Système d'exploitation et virtualisation*]() -->

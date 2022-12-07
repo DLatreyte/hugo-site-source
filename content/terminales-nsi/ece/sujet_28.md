@@ -9,7 +9,7 @@ toc: true
 tags: []
 categories: []
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 
@@ -21,24 +21,25 @@ Par exemple, l’arbre
 
 {{<mermaid>}}
 graph TD
-    F((F)) --> B((B))
-    F((F)) --> G((G))
-    B((B)) --> A((A))
-    B((B)) --> D((D))
-    G((G)) --> I((I))
-    D((D)) --> C((C))
-    D((D)) --> E((E)) 
-    I((I)) --> H((H))
+    F((F)) --- B((B))
+    F((F)) --- G((G))
+    B((B)) --- A((A))
+    B((B)) --- D((D))
+    G((G)) --- I((I))
+    D((D)) --- C((C))
+    D((D)) --- E((E))
+    I((I)) --- H((H))
 {{</mermaid>}}
 
 est stocké dans
+
 ```python
 a = {'F':['B','G'], 'B':['A','D'], 'A':['',''], 'D':['C','E'], \
      'C':['',''], 'E':['',''], 'G':['','I'], 'I':['','H'], \
      'H':['','']}
 ```
 
-Écrire une fonction récursive `taille` prenant en paramètres un arbre binaire arbre sous la forme d’un dictionnaire et un caractère `lettre` qui est la valeur du sommet de l’arbre, et qui renvoie la taille de l’arbre à savoir le nombre total de nœud.      
+Écrire une fonction récursive `taille` prenant en paramètres un arbre binaire arbre sous la forme d’un dictionnaire et un caractère `lettre` qui est la valeur du sommet de l’arbre, et qui renvoie la taille de l’arbre à savoir le nombre total de nœud.
 On pourra distinguer les 4 cas où les deux « fils » du nœud sont `''`, le fils gauche seulement est `''`, le fils droit seulement est `''`, aucun des deux fils n’est `''`.
 
 #### Test possible
@@ -62,7 +63,7 @@ def taille(arbre,lettre):
 
 
 a= {'F': ['B','G'], 'B': ['A','D'], 'A': ['',''], 'D': ['C','E'], 'C': ['',''], 'E': ['',''], 'G': ['','I'], 'I': ['','H'],'H': ['','']}
-``` 
+```
 
 {{% /solution %}}
 
@@ -71,12 +72,14 @@ a= {'F': ['B','G'], 'B': ['A','D'], 'A': ['',''], 'D': ['C','E'], 'C': ['',''], 
 On considère l'algorithme de tri de tableau suivant : « à chaque étape, on parcourt depuis le début du tableau tous les éléments non rangés et on place en dernière position le plus grand élément ».
 
 Exemple avec le tableau :
+
 ```python
 t = [41, 55, 21, 18, 12, 6, 25]
 ```
 
-Étape 1 
+Étape 1
 : on parcourt tous les éléments du tableau, on permute le plus grand élément avec le dernier. Le tableau devient&nbsp;:
+
 ```python
 t = [41, 25, 21, 18, 12, 6, 55]
 ```
@@ -84,13 +87,15 @@ t = [41, 25, 21, 18, 12, 6, 55]
 Étape 2
 : on parcourt tous les éléments **sauf le dernier**, on permute le plus grand élément
 trouvé avec l'avant dernier. Le tableau devient&nbsp;:
+
 ```python
 t = [6, 25, 21, 18, 12, 41, 55]
 ```
+
 Et ainsi de suite.
 
-
 Le code de la fonction `tri_iteratif` qui implémente cet algorithme est donné ci-dessous.
+
 ```python
 def tri_iteratif(tab):
     for k in range( ... , 0, -1):
@@ -101,9 +106,10 @@ def tri_iteratif(tab):
         if tab[imax] > ... :
             ... , tab[imax] = tab[imax] , ...
     return tab
-``` 
+```
 
 Compléter le code qui doit donner :
+
 ```python
 assert tri_iteratif([41, 55, 21, 18, 12, 6, 25]) == [6, 12, 18, 21, 25, 41, 55]
 ```
@@ -111,13 +117,14 @@ assert tri_iteratif([41, 55, 21, 18, 12, 6, 25]) == [6, 12, 18, 21, 25, 41, 55]
 {{% note normal %}}
 
 On rappelle que l’instruction
+
 ```python
 a, b = b, a
 ```
+
 échange les contenus de `a` et de `b`.
 
 {{% /note %}}
-
 
 {{% solution "Corrigé" %}}
 
