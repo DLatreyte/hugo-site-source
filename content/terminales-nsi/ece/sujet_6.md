@@ -4,7 +4,7 @@ subtitle: "Partie pratique"
 author: ""
 type: ""
 date: 2021-10-27T17:34:19+04:00
-draft: true
+draft: false
 toc: true
 tags: []
 categories: ["Terminales Spé NSI", "Informatique"]
