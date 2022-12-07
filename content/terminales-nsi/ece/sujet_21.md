@@ -15,7 +15,7 @@ auto_numbering: true
 
 ## Exercice 1 (50% des points)
 
-Écrire une fonction python appelée `nb_repetitions` qui prend en paramètres un élément `elt` et une liste `tab` et renvoie le nombre de fois où l’élément apparaît dans la liste. La fonction retourne -1 si l'élément n'est pas dans la liste.
+Écrire une fonction python appelée `nb_repetitions` qui prend en paramètres un élément `elt` et une liste `tab` et renvoie le nombre de fois où l’élément apparaît dans la liste.
 
 #### Jeu de tests
 
@@ -24,7 +24,7 @@ if __name__ == "__main__":
     assert nb_repetitions(5, [2, 5, 3, 5, 6, 9, 5]) == 3
     assert nb_repetitions('A', ['B', 'A', 'B', 'A', 'R']) == 2
     assert nb_repetitions(12, [1, '! ', 7, 21, 36, 44]) == 0
-    assert nb_repetitions(16, [1, 32, 7, 21, 36, 44]) == -1
+    assert nb_repetitions(16, [1, 32, 7, 21, 36, 44]) == 0
 ```
 
 {{% solution "Solution" %}}
