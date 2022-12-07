@@ -137,6 +137,8 @@ Recopier sur la copie le schéma ci-dessous :
 
 {{% solution "Correction" %}}
 
+<img src="/terminales-nsi/chap-12/chap-12-4/exo2-reseau-corrige.png" alt="" width="40%" />
+
 {{% /solution %}}
 
 ## Exercice 3
