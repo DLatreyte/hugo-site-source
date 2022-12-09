@@ -44,7 +44,7 @@ On veut écrire une classe pour gérer une file à l’aide d’une liste chaîn
 class Maillon :
     def __init__(self: Maillon, v: int, suivant: Maillon) -> None:
         self.valeur = v
-        self.suivant = None
+        self.suivant = suivant
 ```
 
 Compléter la classe `File` suivante où l’attribut `dernier_file` contient le maillon correspondant à l’élément arrivé en dernier dans la file :
@@ -111,5 +111,46 @@ False
 ```
 
 {{% solution "Corrigé" %}}
+
+```python
+class Maillon:
+    def __init__(self: Maillon, v: int, suivant: Maillon) -> None:
+        self.valeur = v
+        self.suivant = suivant
+
+class File :
+    def __init__(self: Maillon) -> None:
+        self.dernier_file = None
+
+    def enfile(self: Maillon, element: int) -> None:
+        nouveau_maillon = Maillon(element , self.dernier_file)
+        self.dernier_file = nouveau_maillon
+
+    def est_vide(self: Maillon) -> bool:
+        return self.dernier_file == None
+
+    def affiche(self: Maillon) -> None:
+        maillon = self.dernier_file
+        while maillon != None :
+            print(maillon.valeur)
+            maillon = maillon.suivant
+
+    def defile(self: Maillon) -> int:
+        if not self.est_vide() :
+            if self.dernier_file.suivant == None :
+                resultat = self.dernier_file.valeur
+                self.dernier_file = None
+                return resultat
+            maillon = self.dernier_file.suivant
+
+            while maillon.suivant.suivant != None :
+                maillon = maillon.suivant
+            resultat = maillon.suivant.valeur
+
+            maillon.suivant = None
+            return resultat
+
+        return None
+```
 
 {{% /solution %}}

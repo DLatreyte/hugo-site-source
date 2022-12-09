@@ -31,9 +31,9 @@ layout: single
 
 - [*Évolution d'un système chimique*](chap-7)
 
-- [*Modélisation d’interactions fondamentales*](chap-8)
-
 - [*Détermination d’une quantité de matière par titrage*](chap-9)
+
+- [*Modélisation d’interactions fondamentales*](chap-8)
 
 - [*Description d’un fluide au repos*](chap-10)
 
