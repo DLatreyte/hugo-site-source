@@ -1,5 +1,5 @@
 ---
-title: "Culture Scientifique"
+title: "Physique ⎯ Chimie"
 subtitle: ""
 author: ""
 type: ""
@@ -21,4 +21,8 @@ layout: "single"
 
 - <a href="/culture/satellite-et-frottements/Satellite-et-frottements.html">*Satellite et frottements*</a>
 
+- [*Un glaçon qui fond fait-il déborder un verre plein d'eau ?*](fonte_glacon)
+
+<!--
 - [*Les nombres d'oxydation d'un élément*](nombres_d_oxydation)
+-->

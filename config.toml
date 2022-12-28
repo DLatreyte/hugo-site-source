@@ -181,7 +181,7 @@ enableEmoji = true
 
 [[menu.main]]
     parent = "culture"
-    name = "Articles"
+    name = "Physique-Chimie"
     url = "culture"
     weight = 1
 
