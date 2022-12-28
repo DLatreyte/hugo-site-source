@@ -23,6 +23,4 @@ layout: "single"
 
 - [*Un glaçon qui fond fait-il déborder un verre plein d'eau ?*](fonte_glacon)
 
-<!--
 - [*Les nombres d'oxydation d'un élément*](nombres_d_oxydation)
--->
