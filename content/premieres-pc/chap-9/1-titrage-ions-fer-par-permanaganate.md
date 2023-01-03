@@ -7,7 +7,7 @@ date: 2021-02-03T08:41:20+04:00
 draft: false
 toc: true
 tags: []
-categories: ["Premières Spé PC", "Chimie"]
+categories: ["Premières Spé PC"]
 image: ""
 solution_est_visible: false
 auto_numbering: true

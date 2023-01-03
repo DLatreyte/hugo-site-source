@@ -37,3 +37,5 @@ layout: "single"
 - **Doc. :** [*Dosage par titrage du diiode dans la Bétadine*](3-betadine)
 
 - **Doc. :** [*Détermination du degré d'hydratation du sel de Mohr*](5-sel-de-mohr)
+
+- **Doc. :** [*Titrage par du diiode*](6-diiode)

@@ -7,7 +7,7 @@ date: 2021-02-10T08:37:37+04:00
 draft: false
 toc: true
 tags: []
-categories: []
+categories: ["Premières Spé PC"]
 image: ""
 solution_est_visible: true
 auto_numbering: true

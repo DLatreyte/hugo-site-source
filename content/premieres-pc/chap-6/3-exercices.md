@@ -7,7 +7,7 @@ date: 2020-12-05T12:31:57+04:00
 draft: false
 toc: true
 tags: ["Oxydant", "Réducteur", "Couple oxydant/réducteur", "Réaction d'oxydo-réduction", "Équation de réaction chimique"]
-categories: ["Chimie", "Premières Spé PC"]
+categories: ["Premières Spé PC"]
 image: ""
 solution_est_visible: true
 auto_numbering: true
