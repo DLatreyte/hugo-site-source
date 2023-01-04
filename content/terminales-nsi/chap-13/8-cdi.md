@@ -1,6 +1,6 @@
 ---
 title: "Emprunt de livres dans un CDI"
-subtitle: "Chapitre 12.8"
+subtitle: ""
 author: ""
 type: ""
 date: 2022-01-19T04:45:20+04:00
@@ -45,7 +45,7 @@ FROM auteurs;
 2. Afficher le titre de tous les livres.
 {{% solution "Réponse" %}}
 
-```sql 
+```sql
 SELECT titre FROM livres;
 ```
 
@@ -69,14 +69,14 @@ FROM livres
 ORDER BY annee ASC;
 ```
 
-{{% /solution %}} 
+{{% /solution %}}
 
 5. Quels sont les livres dont le titre contient le mot Astérix&nbsp;?
 {{% solution "Réponse" %}}
 
 ```sql
 
-``` 
+```
 
 {{% /solution %}}
 
@@ -278,11 +278,11 @@ FROM livres
 JOIN ecrire ON livres.isbn = ecrire.isbn
 JOIN auteurs ON ecrire.a_id = auteurs.a_id
 WHERE auteurs.nom = "Isaac Asimov";
-``` 
+```
 
 ou, meilleurs,
 
-```sql 
+```sql
 SELECT COUNT(isbn)
 FROM ecrire
 JOIN auteurs on ecrire.a_id = auteurs.a_id

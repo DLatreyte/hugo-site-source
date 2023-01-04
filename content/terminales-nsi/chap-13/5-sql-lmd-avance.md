@@ -1,6 +1,6 @@
 ---
 title: "Le langage SQL : Le langage de manipulation de données (LMD), Compléments"
-subtitle: "Chapitre 12,5"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-02-09T08:37:37+04:00
@@ -67,7 +67,7 @@ existe entre les champs.
 
 Si l'on examine les données de la relation, on remarque :
 
--   qu'il ne peut y avoir de dépendance fonctionnelle entre les
+- qu'il ne peut y avoir de dépendance fonctionnelle entre les
     ensembles (Ville, Etablissement) et (Nom, Age). En effet, le couple
     (Laurence, 34) correspond aux deux couples (Paris, Université de
     Jussieu) et (Bordeaux, Université Victor Segalen).
@@ -75,14 +75,14 @@ Si l'on examine les données de la relation, on remarque :
     *À un couple (Ville, Etablissement) ne correspond donc pas un unique
     couple (Nom, Age).*
 
--   que si l'on suppose qu'un établissement n'est situé que dans une
+- que si l'on suppose qu'un établissement n'est situé que dans une
     seule ville, il existe une dépendance fonctionnelle entre le champ «
     Etablissement » et le champ « Ville ».
 
     *À une valeur du champ « Etablissement » correspond une et une seule
     valeur du champ « Ville ». Cette valeur n'est cependant pas unique.*
 
--   La valeur du champ « Numero_carte » est unique pour chacun des
+- La valeur du champ « Numero_carte » est unique pour chacun des
     enregistrements. Ses valeurs sont identifiantes pour tous les champs
     de la relation. Chaque champ dépend fonctionnellement de ce champ.
     Ses valeurs ne sont jamais vides, c'est une clé candidate !
@@ -98,7 +98,6 @@ relation possèdent des dépendances fonctionnelles avec cette clé.
 champ, dans le schéma relationnel* : *Relation lecteur(<ins>Numero_carte</ins>, Nom, Age, Ville,
   Etablissement)*
 {{% /note %}}
-
 
 ## Jointure de deux relations
 
@@ -135,7 +134,6 @@ la relation finale*.
 | 1 | Henri | 1 |
 | 2 | Stanislas | 2 |
 | 3 | Henriette  | 1 |
-
 
 > *Relation Lecteur_bis(<ins>Numero_carte</ins>, Nom,
   Numero_Etablissement)*
@@ -203,7 +201,6 @@ appelée *jointure naturelle*.
 Les champs de jointure ne doivent pas nécessairement être nommés à
 l'identique.
 
-
 ### Comment effectuer une jointure en langage SQL ?
 
 Il existe deux façons de réaliser une opération de jointure en SQL :
@@ -211,12 +208,15 @@ Il existe deux façons de réaliser une opération de jointure en SQL :
 - la première est basée sur l'idée qu'*une opération de jointure
         peut être considérée comme une sélection sur le produit
         cartésien des deux relations* :
+
 ```SQL
 SELECT * 
 FROM Lecteur_bis, Etablissement
 WHERE Lecteur_bis.Num_Etablissement = Etablissement.Num_Etablissement ;
 ```
+
 *Avec une projection :*
+
 ```SQL
 SELECT Lecteur_bis.Numero_carte,Lecteur_bis.Nom,Etablissement.Ville, Etablissement.Nom_Etablissement
 FROM Lecteur_bis,Etablissement
@@ -224,21 +224,23 @@ WHERE Lecteur_bis.Num_Etablissement = Etablissement.Num_Etablissement ;
 ```
 
 - la seconde méthode utilise l'opérateur de jointure  :
+
 ```SQL
 SELECT * FROM Lecteur_bis 
 JOIN Etablissement ON Lecteur_bis.Num_Etablissement = Etablissement.Num_Etablissement ;
 ```
+
 *Avec une projection :*
+
 ```SQL
 SELECT Lecteur_bis.Numero_carte, Lecteur_bis.Nom, Etablissement.Ville, Etablissement.Nom_Etablissement
 FROM Lecteur_bis 
 JOIN Etablissement ON Lecteur_bis.Num_Etablissement = Etablissement.Num_Etablissement ;
-``` 
+```
 
 {{% note warning %}}
 On remarque qu'*un champ est défini de façon unique grâce à la concaténation du nom de la relation et de celui du champ*. Si les champs portent des noms différents, il n'est pas nécessaire de préciser de quelle relation ils sont issus.
 {{% /note %}}
-
 
 ## Fonctions de calculs
 
@@ -254,7 +256,6 @@ d'un langage de programmation comme Python).
 
 <center>
 
-
 | Fonction | Opération |
 |:----:|:----:|
 | `COUNT` | Comptage du nombre d'enregistrements de la table |
@@ -263,17 +264,18 @@ d'un langage de programmation comme Python).
 | `AVG` | Moyenne des éléments d'une colonne |
 | `SUM` | Somme des éléments d'une colonne |
 
-
 </center>
 
 #### Exemples
 
 - Détermination de l'age moyen des lecteurs
+
 ```SQL
  SELECT AVG(Age) AS Age_Moyen FROM lecteur ;
  ```
   
 - Comptage du nombre de lecteurs
+
 ```SQL
 SELECT COUNT(*) AS Nombre_Lecteurs FROM lecteur ;
 ```

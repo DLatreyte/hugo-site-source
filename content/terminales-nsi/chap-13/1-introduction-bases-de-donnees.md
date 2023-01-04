@@ -1,6 +1,6 @@
 ---
 title: "Introduction aux bases de données"
-subtitle: "Chapitre 12,1"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-01-31T04:39:04+04:00
@@ -27,7 +27,7 @@ On remarque qu'une caractéristique des données contenues dans une base de donn
 {{% note tip %}}
 *Une base de données est un ensemble d'informations
 **structurées** et **organisées**, mémorisées sur un support permanent.*
-{{% /note %}} 
+{{% /note %}}
 
 {{% note normal %}}
 La définition d'une base de données n'indique pas *comment sont stockées les informations*, *une organisation consistant en l'utilisation de
@@ -162,7 +162,7 @@ Le modèle « relationnel » permet de modéliser les informations contenues d
 ### Qu'est-ce qu'une relation ?
 
 {{% note tip %}}
-*On appelle **relation** un *objet de la vie réelle* auquel on attache un **ensemble d'attributs**.\
+*On appelle **relation** un*objet de la vie réelle*auquel on attache un **ensemble d'attributs**.\
 Par exemple, un employé possède un nom, un prénom, un matricule, travaille dans un service et a été embauché à une certaine date.*
 
 - *Chaque instance d'une relation est appelée un **tuple** ou **n-uplet** (en français).*
@@ -205,7 +205,7 @@ Exemple
 
 1. Quelle est la cardinalité de la relation ``Film`` ?
 {{% solution "Réponse" %}}
-La cardinalité d'une relation est le nombre de tuples (ou de lignes) qu'elle renferme. Ici la cardinalité est égale à 4. 
+La cardinalité d'une relation est le nombre de tuples (ou de lignes) qu'elle renferme. Ici la cardinalité est égale à 4.
 {{% /solution %}}
 
 2. Quel est le degré de la relation `Séance` ?
@@ -223,7 +223,6 @@ Les attributs de la relation `Film` sont : `Titre`, `Directeur`, `Acteur`.
 LA cardinatlité de la relation étant égale à 4, on a le choix entre 4 réponses. `(Casablanca, Lucernaire, 19:00)` fait partie de ces réponses possibles.
 {{% /solution %}}
 
-
 ### Qu'est-ce que le calcul relationnel ?
 
 {{% note normal %}}
@@ -232,8 +231,9 @@ On accède aux données en utilisant comme langage le *calcul relationnel*. Le c
 
 Exemple
 : - Existe-t-il un film ayant pour acteur Humphrey Bogart diffusé au cinéma Studio ?
+
 - Existe-t-il au moins un film de M. Curtiz projeté au cinéma Sel ?
-- F. Truffaut a-t-il fait tourner l'acteur Harrison Ford ? 
+- F. Truffaut a-t-il fait tourner l'acteur Harrison Ford ?
 
 ### Qu'est-ce qu'une vue ?
 
@@ -249,6 +249,7 @@ stockée dans la base de données, est le résultat d'une requête.*
 5. Quelles sont les films, les salles et les horaires des séances dans lesquels on peut trouver l'acteur Humphrey Bogart ?
 {{% solution "Réponse" %}}
 La réponse à cette requête est une vue :
+
 <center>
 
 |  |  |   |
@@ -259,29 +260,28 @@ La réponse à cette requête est une vue :
 </center>
 {{% /solution %}}
 
-
 ### Qu'est-ce que le langage SQL ?
 
 Toujours dans le cadre de sa recherche, Codd a mis au point, en même temps que le modèle de données relationnel, un langage d'interrogation des données `SEQUEL`, qui est par la suite devenu `SQL` (*Structured Query Language*). La normalisation du langage SQL, dès 1986 par l'ANSI (institut de normalisation américain), puis par l'ISO (organisation internationale de la normalisation) a assuré, pour une grande partie, le
 succès du modèle relationnel. Les requêtes écrites pour un SGBD fonctionnent en général sans trop de modifications avec un autre SGBD.
 
 Exemple
-: Traduction en langage `SQL` de l'interrogation de la question 5. 
+: Traduction en langage `SQL` de l'interrogation de la question 5.
+
 ```SQL
 SELECT Titre, Salle, Heure 
 FROM Film F, Séance S
 WHERE  F.Titre = S.Titre AND Acteur = "Humphrey  Bogart";
 ```
 
-
 ## Systèmes de gestion de bases de données
 
 Les SGBD sont des systèmes complexes qu'il n'est pas question de décrire en détail.
 
-### Rendre efficace la recherche d'une information dans un fichier informatique n'est pas simple 
+### Rendre efficace la recherche d'une information dans un fichier informatique n'est pas simple
 
 Comme on l'a déjà vu cette année, lorsqu'on utilise un fichier pour stocker de l'information, il est nécessaire de prévoir un *découpage de celui-ci par **enregistrements**, souvent de taille fixe*.
-Pour passer d'un enregistrement à l'autre, il faut alors avancer la « tête de lecture » de la taille d'un enregistrement. 
+Pour passer d'un enregistrement à l'autre, il faut alors avancer la « tête de lecture » de la taille d'un enregistrement.
 
 <img src="/terminales-nsi/chap-13/chap-13-1/chap-13-1-2.png" alt="" width="80%" />
 
@@ -347,7 +347,7 @@ modification des données dans la base de données.*
 *Une **transaction relationnelle** garantit qu'une
 séquence d'opérations se réalise correctement, par exemple en empêchant qu'une somme d'argent ne s'évanouisse dans la nature (avec un compte en
 banque débité sans qu'un autre ne soit crédité). Même une panne ne doit pas pouvoir conduire à une exécution incorrecte.*
-{{% /note %}} 
+{{% /note %}}
 
 {{% note normal %}}
 Les *transactions* doivent posséder les propriétés suivantes :
@@ -399,7 +399,7 @@ Dans l'architecture à 3 niveaux, chaque serveur (niveaux 1 et 2) ffectue *une t
 L'architecture à deux niveaux est donc une architecture Client/Serveur dans laquelle le serveur est polyvalent, c'est-à-dire qu'il est capable de fournir directement l'ensemble des ressources demandées par le client.
 
 Dans l'architecture à trois niveaux par contre, les applications au niveau serveur sont délocalisées, c'est-à-dire que chaque serveur est spécialisé dans une tâche (serveur web et serveur de base de données par
-exemple). 
+exemple).
 {{% note normal %}}
 Ainsi, l'architecture à trois niveaux permet :
 

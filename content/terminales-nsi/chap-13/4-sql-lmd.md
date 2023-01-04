@@ -1,6 +1,6 @@
 ---
 title: "Le langage SQL : Le langage de manipulation de données (LMD)"
-subtitle: "Chapitre 12,4"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-02-04T04:29:53+04:00
@@ -30,14 +30,14 @@ LCD : Langage de Contrôle des Données (DCL, Data Control Language)
 
 Le programme se limite au sous-ensemble **LMD**. Nous serons tout de même obligés d'utiliser l'ordre de création de table `CREATE TABLE`.
 
-## SQLite 
+## SQLite
 
-Dans ce cours nous utiliserons SQLite depuis l'interface de {{< remote "Repl.it" "https://repl.it/" >}}. 
+Dans ce cours nous utiliserons SQLite depuis l'interface de {{< remote "Repl.it" "https://repl.it/" >}}.
 
 SQLite est un **moteur de base de données relationnelle** (sous-ensemble d'un **SGBD**) accessible par le langage SQL. Contrairement aux serveurs de bases de données traditionnels, comme MySQL ou PostgreSQL, sa particularité est de ne pas reproduire le *schéma habituel client-serveur* mais de *fonctionner sans serveur* (on parle de *base de données « standalone » ou « embarquée »*). L'intégralité de la base de données (déclarations, tables, index et données) est stockée dans un fichier indépendant de la plateforme.
 
 Remarque
-:   On peut accéder à SQLite depuis de nombreux langages de programmation. Nous utiliserons dans un premier temps une *interface en ligne de commande (CLI)* et par la suite *Python*. 
+:   On peut accéder à SQLite depuis de nombreux langages de programmation. Nous utiliserons dans un premier temps une *interface en ligne de commande (CLI)* et par la suite *Python*.
 
 SQLite est le moteur de base de données le plus utilisé au monde.
 
@@ -64,12 +64,12 @@ On possède un fichier tableur contenant des informations sur quelques acteurs, 
 
 </center>
 
-
 On souhaite transformer ce fichier en une base de données contenant, pour l'instant, *une seule relation*.
 
 1. Réaliser une copie de l'{{< remote "environnement de travail sur repl.it" "https://repl.it/@dlatreyte/Celebrites" >}}
 
-L'instruction de création de la table (relation) est 
+L'instruction de création de la table (relation) est
+
 ```SQL
 CREATE TABLE  IF NOT EXISTS "Celebrites" (
     Nom varchar(40),
@@ -84,25 +84,31 @@ CREATE TABLE  IF NOT EXISTS "Celebrites" (
 
 3. Incorporer la commande au fichier `celebrites.sql` et l'exécuter.
 
-4. Afin de vérifier que la commande a bien créé une table dans **la base de données qui réside pour l'instant dans la RAM**, ajouter la commande suivante au fichier `main.sql` 
+4. Afin de vérifier que la commande a bien créé une table dans **la base de données qui réside pour l'instant dans la RAM**, ajouter la commande suivante au fichier `main.sql`
+
 ```SQL
 -- Énumérations des tables
 .tables
 ```
+
 Relancer l'exécution des commandes et observer le résultat dans la console.
 
 5. Afin d'examiner la structure de la table `Celebrites`, ajouter l'une des commandes suivantes au fichier `main.sql`.
+
 ```SQL
 -- Structure de la table Celebrites
 .schema 'Celebrites'
 ```
+
 ou
+
 ```SQL
 -- Structure de la table Celebrites
 pragma table_info('Celebrites');
 ```
 
 La commande permettant d'intégrer le tuple `("Hanks", "Tom", "Homme", "USA", 64)` à la relation `Celebrites` est :
+
 ```SQL
 INSERT INTO Celebrites VALUES ("Hanks", "Tom", "Homme", "USA", 64);
 ```
@@ -113,26 +119,32 @@ La commande, telle qu'elle est donnée ici, impose le respect de l'ordre des inf
 
 6. Intégrer la commande précédente au fichier `celebrites.sql`. Exécuter cette commande. La sortie fait-elle apparaître le résultat de cette commande ?
 
-7. Afin de vérifier que les informations ont bien été ajoutées à la base de données, ajouter la commande suivante dans le fichier `main.sql` 
+7. Afin de vérifier que les informations ont bien été ajoutées à la base de données, ajouter la commande suivante dans le fichier `main.sql`
+
 ```SQL
 SELECT * FROM Celebrites;
 ```
+
 Exécuter cette commande.
 
 8. Ajouter maintenant au fichier `celebrites.sql` toutes les commandes permettant de peupler la base de données.\
 Exécuter ces commandes.
 
 9. La base de données réside toujours en mémoire et n'a, pour l'instant, pas été sauvegardée dans un fichier. Ajouter la commande suivante à la fin du fichier `celebrites.sql`
+
 ```SQL
 .save "cinema.sqlite"
 ```
+
 Vérifier que le fichier `cinema.sqlite` a bien été créé.
 
 {{% note normal %}}
-Désormais, à la prochaine utilisation de la base de données il ne sera plus nécessaire de relancer toute la création de la base de données (ce qui pourrait être très très long dans le cas d'une base conséquente) mais seulement la commande 
+Désormais, à la prochaine utilisation de la base de données il ne sera plus nécessaire de relancer toute la création de la base de données (ce qui pourrait être très très long dans le cas d'une base conséquente) mais seulement la commande
+
 ```SQL
 .open "cinema.sqlite"
 ```
+
 au début du fichier `main.sql` (qui ne devra alors plus lire le fichier `celebrites.sql`).
 {{% /note %}}
 
@@ -155,18 +167,22 @@ attributs d'une relation. Le résultat d'une projection est une relation de
 
 11. Adapter la commande précédente de façon à obtenir tous les noms des acteurs présents dans la base de données.
 {{% solution "Réponse" %}}
+
 ```SQL
 SELECT Nom 
 FROM Celebrites;
-``` 
+```
+
 {{% /solution %}}
 
 12. Adapter la commande précédente de façon à obtenir tous les noms et sexes des acteurs présents dans la base de données.
 {{% solution "Réponse" %}}
+
 ```SQL
 SELECT Nom, Sexe 
 FROM Celebrites;
 ```
+
 {{% /solution %}}
 
 ## Premières requêtes : Sélection
@@ -184,85 +200,103 @@ Une sélection s'effectue en langage SQL à l'aide de la clause `WHERE`.
 
 13. Écrire la commande qui retourne toutes les informations relatives aux femmes présentes dans la base de données.
 {{% solution "Réponse" %}}
+
 ```SQL
 SELECT * 
 FROM Celebrites
 WHERE Sexe = "Femme";
 ```
+
 {{% /solution %}}
 
 14. Adapter la commande précédente de façon à obtenir tous les noms et prénoms des femmes présentes dans la base de données.
 {{% solution "Réponse" %}}
+
 ```SQL
 SELECT Nom, prenom 
 FROM Celebrites
 WHERE Sexe = "Femme";
 ```
+
 {{% /solution %}}
 
 ### Opérateurs de comparaison
 
 15. Quels sont les noms de tous les acteurs (sans distinction de sexe) qui n'ont pas pour pays d'origine les USA.
 {{% solution "Réponse" %}}
+
 ```SQL
 SELECT Nom
 FROM Celebrites
 WHERE Pays != "USA";
 ```
+
 {{% /solution %}}
 
 16. Quels sont les noms des acteurs (sans distinction de sexe) qui ont plus de 40 ans ?
 {{% solution "Réponse" %}}
+
 ```SQL
 SELECT Nom
 FROM Celebrites
 WHERE Age > 40;
 ```
+
 {{% /solution %}}
 
 17. Quels sont les noms et prénoms des acteurs (sans distinction de sexe) qui ont plus de 40 ans ?
 {{% solution "Réponse" %}}
+
 ```SQL
 SELECT Nom, Prenom
 FROM Celebrites
 WHERE Age > 40;
 ```
+
 {{% /solution %}}
 
 18. Quels sont les noms des acteurs (sans distinction de sexe) qui ont au plus 36 ans ?
 {{% solution "Réponse" %}}
+
 ```SQL
 SELECT Nom
 FROM Celebrites
 WHERE Age <= 36;
 ```
+
 {{% /solution %}}
 
 19. Quels sont les noms des actrices françaises ?
 {{% solution "Réponse" %}}
+
 ```SQL
 SELECT Nom
 FROM Celebrites
 WHERE Sexe = "Femme" AND Pays = "France";
 ```
+
 {{% /solution %}}
 
 20. Quels sont les ages des acteurs américains hommes dont le prénom est Tom ?
 {{% solution "Réponse" %}}
+
 ```SQL
 SELECT Age
 FROM Celebrites
 WHERE Sexe = "Homme" AND Prenom = "Tom" AND Pays = "USA";
 ```
+
 {{% /solution %}}
 
 21. Quels sont les prénoms des acteurs (sans distinction de sexe) australiens ou de plus de 40 ans ?
 {{% solution "Réponse" %}}
+
 ```SQL
 SELECT Prenom
 FROM Celebrites
 WHERE Age > 40 OR Pays = "Australie";
 ```
+
 {{% /solution %}}
 
 ## Exercices d'application
@@ -278,7 +312,7 @@ WHERE Age > 40 OR Pays = "Australie";
 5. Afficher le nom des sportifs nés au mois de décembre.
 6. Afficher les noms et prénoms des sportifs nés en juin.
 7. Afficher les noms et prénoms des sportifs nés en 1981.
-8. Afficher les noms et prénoms des sportifs pratiquant le football. 
+8. Afficher les noms et prénoms des sportifs pratiquant le football.
 
 ### Instagram
 
@@ -302,66 +336,77 @@ On reprend, dans cette partie, l'étude de la relation `Celebrites`.
 {{% /note %}}
 
 {{% note tip %}}
-L'opérateur `ORDER BY` est utilisé pour *trier le résultat d'une projection*. Par défaut ce tri s'effectue par *ordre croissant* (lexicographique ou numérique). Pour trier par ordre décroissant, il faut ajouter le mot clé `DESC`, pour trier par ordre croissant on utilise `ASC`. 
+L'opérateur `ORDER BY` est utilisé pour *trier le résultat d'une projection*. Par défaut ce tri s'effectue par *ordre croissant* (lexicographique ou numérique). Pour trier par ordre décroissant, il faut ajouter le mot clé `DESC`, pour trier par ordre croissant on utilise `ASC`.
 {{% /note %}}
 
 22. Rechercher toutes les informations sur les acteurs, triées par age croissant.
 {{% solution "Réponse" %}}
+
 ```SQL
 SELECT *
 FROM Celebrites
 ORDER BY Age;
 ```
+
 {{% /solution %}}
 
 23. Rechercher toutes les informations sur les acteurs, triées par pays d'origine (par ordre décroissant).
 {{% solution "Réponse" %}}
+
 ```SQL
 SELECT *
 FROM Celebrites
 ORDER BY Pays DESC;
 ```
+
 {{% /solution %}}
 
 24. Rechercher les noms et prénoms des acteurs triés par age et nom croissants.
 {{% solution "Réponse" %}}
+
 ```SQL
 SELECT Nom, Prénom
 FROM Celebrites
 ORDER BY Age, Nom;
 ```
+
 {{% /solution %}}
 
 25. Rechercher les noms et prénoms des acteurs triés par age décroissant et nom croissant.
 {{% solution "Réponse" %}}
+
 ```SQL
 SELECT Nom, Prénom
 FROM Celebrites
 ORDER BY Age DESC, Nom ASC;
 ```
+
 {{% /solution %}}
 
 26. Rechercher les ages et sexes des acteurs, triés par age croissant.
 {{% solution "Réponse" %}}
+
 ```SQL
 SELECT Age, Sexe
 FROM Celebrites
 ORDER BY Age;
 ```
+
 {{% /solution %}}
 
-
 {{% note tip %}}
-L'opérateur `BETWEEN` est utilisé pour *sélectionner une valeur numérique dans un intervalle*. 
+L'opérateur `BETWEEN` est utilisé pour *sélectionner une valeur numérique dans un intervalle*.
 {{% /note %}}
 
 27. Écrire une requête qui affiche toutes les informations sur les artistes dont les ages sont compris entre 30 et 60 ans.
 {{% solution "Réponse" %}}
+
 ```SQL
 SELECT Age, Sexe
 FROM Celebrites
 WHERE Age BETWEEN 30 AND 60;
 ```
+
 {{% /solution %}}
 
 ## Première requêtes : recherche de motifs lors d'une sélection
@@ -376,68 +421,82 @@ On reprend, dans cette partie, l'étude de la relation `Celebrites`.
 L'opérateur `LIKE` permet de rechercher un motif lors d'une sélection.
 {{% /note %}}
 
-27. Rechercher les prénoms des acteurs dont le nom commence par la lettre `j`.
+28. Rechercher les prénoms des acteurs dont le nom commence par la lettre `j`.
 {{% solution "Réponse" %}}
+
 ```SQL
 SELECT Prenom
 FROM Celebrites
 WHERE Nom LIKE 'J%';
 ```
+
 {{% /solution %}}
 
-28. Rechercher les noms et prénoms des acteurs dont le sexe commence par la lettre `h`, trié par nom croissant.
+29. Rechercher les noms et prénoms des acteurs dont le sexe commence par la lettre `h`, trié par nom croissant.
 {{% solution "Réponse" %}}
+
 ```SQL
 SELECT Nom, Prenom
 FROM Celebrites
 WHERE Sexe LIKE 'h%'
 ORDER BY Nom;
 ```
+
 {{% /solution %}}
 
-29. Rechercher les noms et prénoms des acteurs dont le prénom se termine par la lettre `t`.
+30. Rechercher les noms et prénoms des acteurs dont le prénom se termine par la lettre `t`.
 {{% solution "Réponse" %}}
+
 ```SQL
 SELECT Nom, Prenom
 FROM Celebrites
 WHERE Prenom LIKE '%t';
 ```
+
 {{% /solution %}}
 
-30. Rechercher les noms et prénoms des acteurs dont le prénom contient la lettre `a`.
+31. Rechercher les noms et prénoms des acteurs dont le prénom contient la lettre `a`.
 {{% solution "Réponse" %}}
+
 ```SQL
 SELECT Nom, Prenom
 FROM Celebrites
 WHERE Prenom LIKE '%a%';
 ```
+
 {{% /solution %}}
 
-31. Rechercher les noms et prénoms des acteurs dont le pays d'origine commence par un `a`.
+32. Rechercher les noms et prénoms des acteurs dont le pays d'origine commence par un `a`.
 {{% solution "Réponse" %}}
+
 ```SQL
 SELECT Nom, Prenom
 FROM Celebrites
 WHERE Pays LIKE 'a%';
 ```
+
 {{% /solution %}}
 
-32. Rechercher les noms et prénoms des acteurs dont le pays d'origine se termine par un `l`.
+33. Rechercher les noms et prénoms des acteurs dont le pays d'origine se termine par un `l`.
 {{% solution "Réponse" %}}
+
 ```SQL
 SELECT Nom, Prenom
 FROM Celebrites
 WHERE Pays LIKE '%l';
 ```
+
 {{% /solution %}}
 
-33. Rechercher les noms et prénoms des acteurs dont le pays d'origine comporte un `a`.
+34. Rechercher les noms et prénoms des acteurs dont le pays d'origine comporte un `a`.
 {{% solution "Réponse" %}}
+
 ```SQL
 SELECT Nom, Prenom
 FROM Celebrites
 WHERE Pays LIKE '%a%';
 ```
+
 {{% /solution %}}
 
 #### Exercice d'application
@@ -470,37 +529,43 @@ On reprend, dans cette partie, l'étude de la relation `Celebrites`.
 L'ordre `UPDATE` permet de modifier un enregistrement dans une table. La clause `WHERE` est utilisée pour sélectionner l'enregistrement.
 {{% /note %}}
 
-34. Faire en sorte que l'age de l'actrice Margot Robbie soit égal à 29 ans.
+35. Faire en sorte que l'age de l'actrice Margot Robbie soit égal à 29 ans.
 {{% solution "Réponse" %}}
+
 ```SQL
 UPDATE Celebrites
 SET Age = 29
 WHERE Nom = "Robbie";
 ```
+
 {{% /solution %}}
 Vérifier que la modification a bien été effectuée.
 
-35. Modifier le fichier contenant la base de données de façon à ce que la modification, uniquement effectuée en mémoire vive pour l'instant, soit enregistrée de façon permanente.
+36. Modifier le fichier contenant la base de données de façon à ce que la modification, uniquement effectuée en mémoire vive pour l'instant, soit enregistrée de façon permanente.
 
-36. Le vrai nom de Tom Cruise est Thomas Cruise Mapother IV. Modifier l'entrée dans la base de données.
+37. Le vrai nom de Tom Cruise est Thomas Cruise Mapother IV. Modifier l'entrée dans la base de données.
 {{% solution "Réponse" %}}
+
 ```SQL
 UPDATE Celebrites
 SET Nom = "Cruise Mapother IV", prenom = "Thomas"
 WHERE Nom = "Cruise";
 ```
+
 {{% /solution %}}
 
 {{% note tip %}}
 L'ordre `DELETE` permet de supprimer un enregistrement d'une table. Si aucune clause `WHERE` n'est utilisée, *tous les enregistrements de la table sont supprimés*.
 {{% /note %}}
 
-37. Supprimer l'acteur Tom Holland de la table Celebrites.
+38. Supprimer l'acteur Tom Holland de la table Celebrites.
 {{% solution "Réponse" %}}
+
 ```SQL
 DELETE FROM Celebrites
 WHERE Nom = "Holland";
 ```
+
 {{% /solution %}}
 
 #### Exercice d'application
@@ -528,7 +593,6 @@ WHERE Nom = "Holland";
 10. Écrire une requête qui modifie le nom du personnage Groot. Le nouveau nom est Baby Groot. Afficher le résultat de cette requête.
 
 11. Écrire une requête qui supprime l'enregistrement dont le nom est Queen of Hearts. Afficher la table pour vérifier le résultat de la requête.
-
 
 ## Exercice d'application à partir de données réelles et conséquentes
 

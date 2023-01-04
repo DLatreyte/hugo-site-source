@@ -1,6 +1,6 @@
 ---
 title: "Le modèle Entités/Associations"
-subtitle: "Chapitre 12,2"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-02-02T05:04:55+04:00
@@ -197,7 +197,6 @@ On ajoute alors un attribut dans la table *Films* :
 > Table des réalisateurs
 {{% endcolumns %}}
 
-
 Cette représentation est correcte : **la redondance est réduite au minimum**
 puisque seule la clé identifiant un réalisateur apparaît dans deux
 tables (on parle de ***clé primaire** dans la cas de la table des
@@ -211,7 +210,6 @@ d'un film sans affecter celle de son réalisateur*.
 ci-dessus sans avoir à écrire les tables, même dans des cas bien plus
 complexes que celui présenté ici.*
 {{% /note %}}
-
 
 ## Le modèle E/A : présentation informelle
 
@@ -249,7 +247,6 @@ d'implémentation. Il n'est pas question de type, de structure de données, d'al
 {{% /note %}}
 
 ## Le modèle
-
 
 Le modèle E/A, conçu en 1976, est à la base de la plupart des méthodes de conception. La syntaxe utilisée ici est celle de la méthode UML.
 
@@ -295,7 +292,7 @@ Un internaute est caractérisé par plusieurs attributs : son email, son nom, s
 des problèmes de performances et complique les manipulations SQL par la suite.
 
 Il est possible d'avoir plusieurs clés pour un même ensemble d'entités.
-Dans ce cas, on en choisit une comme **clé primaire**, et les autres, comme **clés secondaires**. 
+Dans ce cas, on en choisit une comme **clé primaire**, et les autres, comme **clés secondaires**.
 
 {{% note tip %}}
 Les caractéristiques d'une clé primaire devraient être :
@@ -308,6 +305,7 @@ Les caractéristiques d'une clé primaire devraient être :
 {{% /note %}}
 
 #### Remarque
+
 Dans la conception choisie, dans l'exemple de la base *Film*, il a été décidé que deux films ne pouvaient pas avoir le même titre : ce dernier est donc un bon candidat pour être la clé de la table. Quelle clé aurait-il
 fallu choisir si l'on avait accepté que deux films aient le même titre ? Il aurait été nécessaire d'introduire un champ abstrait, nommé par exemple, destiné à tenir le rôle de clé.
 
@@ -318,7 +316,6 @@ fallu choisir si l'on avait accepté que deux films aient le même titre ? Il au
 {{% /note %}}
 
 <img src="/terminales-nsi/chap-13/chap-13-2/Association.png" alt="" width="80%" />
-
 
 On remarque, sur la schéma ci-dessus, que :
 
@@ -351,11 +348,13 @@ l'extrémité du lien allant de $T_B$ vers $T_A$.*
 L'association *Réalise* se lit : un réalisateur réalise zéro, un ou plusieurs films ; un film est réalisé par zéro ou au maximum un réalisateur.
 
 #### Remarque
+
 Le schéma ci-dessus ne fait pas apparaître l'entité *Réalisateur* mais l'entité *Artiste*. De plus deux associations relient ces entités.\
 Quelle conception a pu entraîner un tel schéma ? En réalité, un réalisateur peut être acteur dans un film ; il est donc préférable de regrouper les acteurs et les réalisateurs dans type d'entité plus
 général : *Artiste*. L'association *Réalise* ne peut donc plus modéliser le lien entre les entités *Film* et *Artiste* ; il est alors nécessaire de créer l'association *Joue*. On obtient le schéma ci-dessous :
 
 #### Remarque
+
 Dans le cas d'associations avec des cardinalités multiples de chaque côté, *on peut être obligé de lier des attributs à une association* (par exemple l'association *Joue* a pour attribut le *rôle*). En effet, ***un attribut ne pouvant prendre qu'une et une seule valeur***, on ne peut pas associer l'attribut *rôle* à l'entité *Artiste* puisqu'un acteur
 peut jouer dans plusieurs films (il existe fort peu de chances qu'il tienne toujours le même rôle !). *Seules les associations ayant des cardinalités multiples de chaque côté peuvent porter des attributs*.
 
@@ -380,6 +379,7 @@ Pour résoudre ce problème, il est nécessaire d'introduire des types fictifs e
 ### Exercice 1 : choix d'un identifiant
 
 On considère l'entité ci-après, qui décrit des salles de cinémas. Les attributs de cette entité sont les suivants :
+
 - nom de la salle ;
 - nom du cinéma ;
 - ville du cinéma ;
@@ -404,12 +404,11 @@ Quelle description peut-on faire du lien entre les différentes entités à part
 
 ### Exercice 4 : cardinalités
 
-On donne le schéma E/A d'une bibliothèque. 
+On donne le schéma E/A d'une bibliothèque.
 
 <img src="/terminales-nsi/chap-13/chap-13-2/Bibilotheque.svg" alt="" width="60%" />
 
 Quelles questions faut-il poser aux utilisateurs de la base de données pour déterminer les cardinalités des associations ? Proposer une réponse à ces questions et en déduire les cardinalités pour chaque entité.
-
 
 ### Exercice 5 : tournoi de tennis
 
@@ -417,11 +416,10 @@ Le schéma suivant représente des rencontres dans un tournoi de tennis :
 
 <img src="/terminales-nsi/chap-13/chap-13-2/Tennis.svg" alt="" width="60%" />
 
-1.  Peut-on jouer des matchs de double ?
+1. Peut-on jouer des matchs de double ?
 
-2.  Un joueur peut-il gagner un match sans y avoir participé ?
+2. Un joueur peut-il gagner un match sans y avoir participé ?
 
-3.  Peut-il y avoir deux matchs sur le même terrain à la même heure ?
+3. Peut-il y avoir deux matchs sur le même terrain à la même heure ?
 
-4.  Connaissant un joueur, peut-on découvrir sur quels terrains il a joué ?
-
+4. Connaissant un joueur, peut-on découvrir sur quels terrains il a joué ?

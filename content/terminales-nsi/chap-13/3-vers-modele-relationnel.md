@@ -1,6 +1,6 @@
 ---
 title: "Du schéma entités/associations au schéma relationnel"
-subtitle: "Chapitre 12,3"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-02-02T04:31:48+04:00
@@ -15,9 +15,7 @@ auto_numbering: true
 
 ## Concepts relationnels
 
-
 ### Modèle relationnel
-
 
 Le modèle relationnel tire son nom de la notion de *relation*
 mathématique entre les éléments. Chacun de ces éléments peut prendre des
@@ -54,7 +52,6 @@ les valeurs possibles pour un champ*.
 On voit, à partir de cet exemple, qu'il est nécessaire de préciser les
 concepts qui seront utilisés dans la suite de ce chapitre.
 
-
 {{% note tip %}}
 *Un **schéma relationnel** $R$ est formé par un
 ensemble fini de $n$ attributs $U = \{ u\_1, \ldots, u\_n \}$. On le note
@@ -66,11 +63,9 @@ $R [u_1, \ldots, u_n]$ ou $R [U]$.*
 Le schéma relationnel de la relation `ma_cuisine` est `ma_cuisine(Appareil, Couleur)`.
 {{% /solution %}}
 
-
 {{% note tip %}}
-*L'**arité** (ou **degré**) d'un schéma relationnel $R$ est égale à son *nombre d'attributs*.*
+*L'**arité** (ou **degré**) d'un schéma relationnel $R$ est égale à son*nombre d'attributs*.*
 {{% /note %}}
-
 
 2. Quelle est l'arité du schéma `ma_cuisine(Appareil, Couleur)` ?
 {{% solution "Réponse" %}}
@@ -84,23 +79,24 @@ $R_B \{ R_1 [U_1], \ldots, R_p [U_p] \}$.*
 {{% /note %}}
 
 3. On donne le schéma de base de donnée suivant :\
+
 ```
 Rb { Lecteur(Num_carte, Nom, Num_établissement), 
      Établissement(Num_établissement, Ville, Nom) }
-``` 
+```
 
 3. De combien de schémas relationnels ce schéma de base de données est-il constitué ?
 {{% solution "Réponse" %}}
 Ce schéma de base de donnée et constitué de deux schéma relationnel : `Lecteur` et `Établissement`.
 {{% /solution %}}
 
-4. 
+4.
 
 $$
     \begin{aligned}
         R_B & \{ \text{Lecteur} \left( \text{Numero\_carte}
         , \text{Nom}, \text{Numero\_Etablissement} \right) ,\cr
-        &  \text{Établissement} \left( \text{Num\_Établissement}, \text{Ville}, \text{Nom\_Etablissement} \right) \} 
+        &  \text{Établissement} \left( \text{Num\_Établissement}, \text{Ville}, \text{Nom\_Etablissement} \right) \}
     \end{aligned}
 $$
 
@@ -121,11 +117,11 @@ cardinalité de la relation est égale à celle de l'ensemble $I$.*
 
 *Une **relation** est donc totalement décrite par :*
 
--   *le schéma relationnel ;*
+- *le schéma relationnel ;*
 
--   *les domaines des différents champs ;*
+- *les domaines des différents champs ;*
 
--   *les tuples ou n-uplets qui la constituent.*
+- *les tuples ou n-uplets qui la constituent.*
 
 *On représente une relation par une table, correspondant à la notion de
 tableau. Les tuples correspondent aux lignes et les attributs de la
@@ -176,9 +172,9 @@ pour chacun des enregistrements de la relation*
 Dans l'exemple de la relation , le choix de la clé n'est pas simple
 car :
 
--   Plusieurs appareils différents peuvent être de même couleur ;
+- Plusieurs appareils différents peuvent être de même couleur ;
 
--   Une cuisine peut comporter plusieurs réfrigérateurs, robots, \...
+- Une cuisine peut comporter plusieurs réfrigérateurs, robots, \...
 
 Pourrait-on envisager d'utiliser le couple (appareil, couleur) comme clé
 ? La réponse est toujours négative, les réfrigérateurs présents dans la
@@ -224,7 +220,7 @@ Si l'on examine les données de la relation , **Tableau
 [1](#relation-lecteur){reference-type="ref"
 reference="relation-lecteur"}.**, on remarque :
 
--   qu'il ne peut y avoir de dépendance fonctionnelle entre les
+- qu'il ne peut y avoir de dépendance fonctionnelle entre les
     ensembles (Ville, Etablissement) et (Nom, Age). En effet, le couple
     (Laurence, 34) correspond aux deux couples (Paris, Université de
     Jussieu) et (Bordeaux, Université Victor Segalen).
@@ -232,14 +228,14 @@ reference="relation-lecteur"}.**, on remarque :
     *À un couple (Ville, Etablissement) ne correspond donc pas un unique
     couple (Nom, Age).*
 
--   que si l'on suppose qu'un établissement n'est situé que dans une
+- que si l'on suppose qu'un établissement n'est situé que dans une
     seule ville, il existe une dépendance fonctionnelle entre le champ «
     Etablissement » et le champ « Ville ».
 
     *À une valeur du champ « Etablissement » correspond une et une seule
     valeur du champ « Ville ». Cette valeur n'est cependant pas unique.*
 
--   La valeur du champ « Numero_carte » est unique pour chacun des
+- La valeur du champ « Numero_carte » est unique pour chacun des
     enregistrements. Ses valeurs sont identifiantes pour tous les champs
     de la relation. Chaque champ dépend fonctionnellement de ce champ.
     Ses valeurs ne sont jamais vides, c'est une clé candidate !
@@ -346,7 +342,7 @@ $$\pi_{A_i, \ldots, A_j} (I) = \{ (A_i : t (A_i), \ldots , A_j : t
 
 En langage SQL
 
-:   `SELECT``\ `{=latex}`Nom,Ville``\ `{=latex}`FROM``\ `{=latex}`lecteur``\ `{=latex}`;`
+:   `SELECT``\`{=latex}`Nom,Ville``\`{=latex}`FROM``\`{=latex}`lecteur``\`{=latex}`;`
 
 ### Sélection (ou restriction)
 
@@ -382,11 +378,11 @@ conserve uniquement les enregistrements vérifiant la condition.
 
 En langage SQL
 
-:   `SELECT``\ `{=latex}`*``\ `{=latex}`FROM``\ `{=latex}`lecteur``\ `{=latex}`WHERE``\ `{=latex}`Age``\ `{=latex}`>``\ `{=latex}`50``\ `{=latex}`;`
+:   `SELECT``\`{=latex}`*``\`{=latex}`FROM``\`{=latex}`lecteur``\`{=latex}`WHERE``\`{=latex}`Age``\`{=latex}`>``\`{=latex}`50``\`{=latex}`;`
 
-#### Affichage de tous les enregistrements d'une relation :
+#### Affichage de tous les enregistrements d'une relation
 
-#### Composition d'une sélection et d'une projection :
+#### Composition d'une sélection et d'une projection
 
 Une sélection sur une relation formant une nouvelle relation, il est
 possible de « passer » cette dernière en argument d'une opération de
@@ -405,7 +401,7 @@ $$\pi_{\text{champs}}  (\sigma_{\text{contrainte}}  (\text{relation}))$$
 
 En langage SQL
 
-:   `SELECT``\ `{=latex}`Nom,Ville``\ `{=latex}`FROM``\ `{=latex}`lecteur``\ `{=latex}`WHERE``\ `{=latex}`Age>50``\ `{=latex}`;`
+:   `SELECT``\`{=latex}`Nom,Ville``\`{=latex}`FROM``\`{=latex}`lecteur``\`{=latex}`WHERE``\`{=latex}`Age>50``\`{=latex}`;`
 
 #### Opérateurs de comparaison et connecteurs logiques de SQL
 
@@ -498,7 +494,7 @@ requête. Cette opération se note :
        6       Olivier    Marseille
        5       Isabelle     Nancy
 
-  : *$\rho_{\text{Numero\_carte} \rightarrow \text{Badge}} 
+  : *$\rho_{\text{Numero\_carte} \rightarrow \text{Badge}}
     (\pi_{\text{Numero\_carte}, \text{Nom}, \text{Ville}} (\sigma_{\text{Age} >
     50} (\text{lecteur})))$*
 
@@ -580,7 +576,7 @@ relation l'attribut est une *clé étrangère*.
           3           Henriette             1                       1               Paris      Université Jussieu
 
   : $\text{Lecteur\_bis} \vartriangleright \hspace{-0.5em}
-    \vartriangleleft_{\text{Num\_Etablissement} = \text{Num\_Etablissement}} 
+    \vartriangleleft_{\text{Num\_Etablissement} = \text{Num\_Etablissement}}
     \text{Etablissement}$
 
 Le champ «  » figure deux fois dans la relation résultat de la jointure
@@ -599,7 +595,7 @@ peut réaliser une ***projection*** :
   :  $\pi_{\text{Numero\_carte}, \text{Nom}, \text{Num\_Etablissement},
     \text{Ville}, \text{Nom\_Etablissement}}  \left( \text{Lecteur\_bis}
     \vartriangleright \hspace{-0.5em}
-    \vartriangleleft_{\text{Num\_Etablissement} = \text{Num\_Etablissement}} 
+    \vartriangleleft_{\text{Num\_Etablissement} = \text{Num\_Etablissement}}
     \text{Etablissement} \right)$
 
 Cette opération, $\text{jointure} + \text{projection}$, est parfois
@@ -629,7 +625,7 @@ dont le contenu du champ sur lequel s'effectue la jointure est égal.
           3           Henriette             1                       4               Paris      Université Sorbonne
 
   : *$\text{Lecteur\_bis} \vartriangleright \hspace{-0.5em}
-    \vartriangleleft_{\text{Num\_Etablissement} = \text{Num\_Etablissement}} 
+    \vartriangleleft_{\text{Num\_Etablissement} = \text{Num\_Etablissement}}
     \text{Etablissement}$* *Les lignes grisées sont celles qui sont
   sélectionnées lors d'une jointure.*
 
@@ -684,7 +680,7 @@ d'un langage de programmation comme Python).
 
 Détermination de l'age moyen des lecteurs
 
-:   
+:
 
 Comptage du nombre de lecteurs
 
@@ -721,8 +717,9 @@ Affichage des différentes marques
 
     `SELECT``\ `{=latex}`Marque``\ `{=latex}`FROM``\ `{=latex}`Voiture``\ `{=latex}`GROUP``\ `{=latex}`BY``\ `{=latex}`Marque;`
 
-   **Marque**
+**Marque**
   ------------
+
     Peugeot
     Citroen
       Opel
@@ -746,9 +743,9 @@ Affichage du nombre de voitures des différentes marques
 
   : *Comptage du nombre de voitures, pour chaque marque*
 
-Affichage de l'age moyen des lecteurs, par université de la relation 
+Affichage de l'age moyen des lecteurs, par université de la relation
 
-:   
+:
 
 ### Restriction sur le résultat d'une requête agrégative
 
@@ -758,10 +755,10 @@ obtenues dans la table résultat de la recherche groupée.
 
 Calcul du nombre de voitures par marque dont le nombre est supérieur à 1
 
-:   `SELECT``\ `{=latex}`Marque,``\ `{=latex}`COUNT(*)``\ `{=latex}`AS``\ `{=latex}`Compte`\
-    `FROM``\ `{=latex}`Voiture`\
-    `GROUP``\ `{=latex}`BY``\ `{=latex}`Marque`\
-    `HAVING``\ `{=latex}`Compte``\ `{=latex}`>``\ `{=latex}`1``\ `{=latex}`;`
+:   `SELECT``\`{=latex}`Marque,``\`{=latex}`COUNT(*)``\`{=latex}`AS``\`{=latex}`Compte`\
+    `FROM``\`{=latex}`Voiture`\
+    `GROUP``\`{=latex}`BY``\`{=latex}`Marque`\
+    `HAVING``\`{=latex}`Compte``\`{=latex}`>``\`{=latex}`1``\`{=latex}`;`
 
    **Marque**   **Compte**
   ------------ ------------
@@ -777,14 +774,10 @@ enregistrements de la table avant l'opération de groupage.*
 
 Calcul du nombre de voitures, par marque, dont la couleur n'est pas « Rouge »
 
-:   `SELECT``\ `{=latex}`Marque,``\ `{=latex}`COUNT(*)``\ `{=latex}`AS``\ `{=latex}`Compte`\
-    `FROM``\ `{=latex}`Voiture`\
-    `WHERE``\ `{=latex}`NOT``\ `{=latex}`(Couleur``\ `{=latex}`=``\ `{=latex}`’Rouge’)`\
-    `GROUP``\ `{=latex}`BY``\ `{=latex}`Marque`
+:   `SELECT``\`{=latex}`Marque,``\`{=latex}`COUNT(*)``\`{=latex}`AS``\`{=latex}`Compte`\
+    `FROM``\`{=latex}`Voiture`\
+    `WHERE``\`{=latex}`NOT``\`{=latex}`(Couleur``\`{=latex}`=``\`{=latex}`’Rouge’)`\
+    `GROUP``\`{=latex}`BY``\`{=latex}`Marque`
 
- 
 
-[^1]: *Misc:* *Chapitre S2,07*
-
-[^2]: Un tuple est aussi désigné par les termes ***n-uplets*** ou
     ***enregistrement***.
