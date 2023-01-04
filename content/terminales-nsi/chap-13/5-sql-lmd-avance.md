@@ -18,7 +18,7 @@ auto_numbering: true
 Lorsqu'on utilise une base de données, il est nécessaire d'accéder à un
 enregistrement par le contenu d'un ou de plusieurs champs. On nomme
 ***clé*** d'une relation un champ, ou un ensemble de champs, qui permet
-d'*identifier précisément un enregistrement.* Une relation peut
+d'*identifier de façon unique un enregistrement.* Une relation peut
 comprendre plusieurs clés possibles ; ce sont les *clés candidates*.
 
 {{% note tip %}}
