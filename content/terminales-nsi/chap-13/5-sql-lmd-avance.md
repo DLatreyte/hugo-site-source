@@ -162,7 +162,7 @@ obtenir la liste des lecteurs ainsi que les informations concernant leur
 `Numero_Etablissement`.*
 
 Schéma de la base de données prenant en compte la jointure : Dans la
-relation l'attribut est une *clé étrangère*.
+relation l'attribut est une **clé étrangère**.
 
 <center>
 
@@ -196,7 +196,7 @@ peut réaliser une ***projection*** :
 </center>
 
 Cette opération, $\text{jointure} + \text{projection}$, est parfois
-appelée *jointure naturelle*.
+appelée **jointure naturelle**.
 
 Les champs de jointure ne doivent pas nécessairement être nommés à
 l'identique.

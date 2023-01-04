@@ -31,20 +31,18 @@ Il convient de sensibiliser les élèves à un usage critique et responsable de
 
 ## Documents
 
-- **Chap. 12,1 :** [*Introduction aux bases de données*](1-introduction-bases-de-donnees)
+- **Doc.** [*Introduction aux bases de données*](1-introduction-bases-de-donnees)
 
-- **Chap. 12,2 :** [*Le modèle Entité/Association*](2-entite-association)
+- **Doc.** [*Le modèle Entité/Association*](2-entite-association)
 
-- **Chap. 12,3 :** [*Du schéma entités/associations au schéma relationnel*](3-vers-modele-relationnel)
+- **Doc.** [*Du schéma entités/associations au schéma relationnel*](3-vers-modele-relationnel)
 
-- **Chap. 12,4 :** [*Le langage SQL : Le langage de manipulation de données (LMD)*](4-sql-lmd)
+- **Doc.** [*Le langage SQL : Le langage de manipulation de données (LMD)*](4-sql-lmd)
 
-- **Chap. 12,5 :** [*Le langage SQL : Le langage de manipulation de données (LMD), Compléments*](5-sql-lmd-avance)
+- **Doc.** [*Le langage SQL : Le langage de manipulation de données (LMD), Compléments*](5-sql-lmd-avance)
 
-- **Chap. 12,6 :** [*Gestion d'une salle de cinéma*](6-gestion-cinema)
+- **Doc.** [*Gestion d'une salle de cinéma*](6-gestion-cinema)
 
-- **Chap. 12,7 :** [*SQL Murder Mystery*](7-murder-mystery)
+- **Doc.** [*SQL Murder Mystery*](7-murder-mystery)
 
-- **Chap. 12,8 :** [*Emprunt de livres dans un CDI*](8-cdi)
-
-
+- **Doc.** [*Emprunt de livres dans un CDI*](8-cdi)
