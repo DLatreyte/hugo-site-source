@@ -4,7 +4,7 @@ subtitle: ""
 author: ""
 type: ""
 date: 2023-01-03T21:33:31+04:00
-draft: true
+draft: false
 toc: true
 tags: []
 categories: ["Premières Spé PC"]
