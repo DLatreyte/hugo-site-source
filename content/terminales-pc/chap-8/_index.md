@@ -34,11 +34,15 @@ layout: "single"
 
 - **Doc.** [*Cours : Mouvements dans le champ de pesanteur uniforme*](2-mouvement-champ-pesanteur-uniforme)
 
+- **Doc.** [*Recherche : Le problème du chasseur et du singe*](18-chasseur-singe)
+
 - **Doc.** [*Annale : Mécanique du vol d'un ballon sonde*](3-annale-mouvement-ballon-sonde)
 
 - **Doc.** [*Annale : Saut en parachute*](4-annale-saut-parachute)
 
-- **Doc.** [*Lancer de ballon en GRS*](17-annale-grs)
+- **Doc.** [*Annale : Lancer de ballon en GRS*](17-annale-grs)
+
+----
 
 - **Doc.** [*Cours : Mouvement d'une particule chargée dans un champ électrique uniforme*](5-mouvement-champ-electrique)
 
