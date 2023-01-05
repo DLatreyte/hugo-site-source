@@ -237,7 +237,7 @@ $$
 On constate que la distance parcourue horizontalement pendant la durée $t_V$ dépend des deux composantes de la vitesse initiale communiquée par la gymnaste :
 
 - plus elle va vite plus la distance parcourue est grande ;
-- plus elle lance le ballon rapidement verticalement, plus la distance parcourue est grande.
+- plus elle lance le ballon avec une vitesse verticale élevée, plus la distance parcourue est grande.
 
 {{% /solution %}}
 
