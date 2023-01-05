@@ -38,6 +38,8 @@ layout: "single"
 
 - **Doc.** [*Annale : Saut en parachute*](4-annale-saut-parachute)
 
+- **Doc.** [*Lancer de ballon en GRS*](17-annale-grs)
+
 - **Doc.** [*Cours : Mouvement d'une particule chargée dans un champ électrique uniforme*](5-mouvement-champ-electrique)
 
 - **Doc.** [*Annale : Les débuts de l'électron en physique*](12-annale-thomson)
