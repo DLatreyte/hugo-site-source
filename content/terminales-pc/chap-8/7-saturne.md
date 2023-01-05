@@ -1,6 +1,6 @@
 ---
 title: "Exploration du système saturnien"
-subtitle: "Chapitre 9,7"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-12-29T17:38:14+04:00
@@ -17,7 +17,7 @@ auto_numbering: true
 Cet exercice se propose d'étudier l'une des particularités de la planète Saturne, *ses anneaux*, puis se concentre sur l'étude de deux aspects de la mission Cassini-Huygens : l'*atterrissage en douceur de l'atterrisseur* Huygens sur le sol de la lune la plus grosse de Saturne, Titan et *une erreur de conception qui aurait pu faire échouer la partie la plus importante de la mission*.
 
 <center>
-<strong>Les trois parties de cet exercice (1., 2. et 3.) sont indépendantes.</strong> 
+<strong>Les trois parties de cet exercice (1., 2. et 3.) sont indépendantes.</strong>
 </center>
 
 ## Les anneaux de Saturne
@@ -57,7 +57,7 @@ On considère une planète $S$, de symétrie sphérique, de masse $M$ et un obje
 
 7. En déduire que la valeur $v$ de la vitesse de l'objet reste constante au cours du mouvement.
 
-8. Montrer que la valeur $v$ de la vitesse de l'objet a pour expression 
+8. Montrer que la valeur $v$ de la vitesse de l'objet a pour expression
 $$
  v = \sqrt{\dfrac{GM}{r}}
 $$
@@ -99,19 +99,20 @@ Soient deux objets $A$ et $B$, assimilables à des points matériels, satellisé
 À la fin des années 1980, la NASA et l'Agence spatiale européenne ont planifié une mission conjointe ayant pour objectifs l'étude des principaux corps célestes présents dans le système saturnien : Saturne, ses anneaux, Titan (le plus gros satellite de Saturne),  et leurs interactions. Après des années de recherche et de construction, le 15 octobre 1997 une fusée transportant la sonde spatiale (constituée de l'orbiteur Cassini et l'atterrisseur Huygens) a été lancée. En 2004 cette sonde spatiale s'est placée en orbite autour de Saturne et finalement, en 2005, l'atterrisseur européen Huygens, après s'être détaché de la sonde mère, s'est posé à la surface de la lune Titan, et est parvenu à retransmettre des informations collectées durant la descente et après son atterrissage. L'orbiteur Cassini est resté en orbite autour de Saturne, et a poursuivi l'étude scientifique de la planète géante, en profitant de ses passages à faible distance de ses satellites pour collecter des données détaillées sur ceux-ci, jusqu'en 2017.
 
 ### Atterrissage en douceur de Huygens
- 
-L'atterrisseur Huygens s'est désolidarisé de l'orbiteur à $\pu{1270 km}$ d'altitude au dessus de Titan. Arrivé dans la haute atmosphère de Titan, à plus de $\pu{20000 km.h-1}$ et seulement freiné par ses boucliers thermiques, l'atterrisseur a alors progressivement ralenti grâce à une succession de parachutes. *À $\pu{110 km}$ d'altitude, le parachute final s'est ouvert alors que la vitesse de Huygens était égale à $v\_{0} = \pu{95,0 m.s-1}$ ; le mouvement est alors très rapidement devenu rectiligne et vertical, jusqu'à l'arrivée au sol, sur une surface solide mais molle, à la vitesse $v\_{F} = \pu{6,0 m.s-1}$.* 
+
+L'atterrisseur Huygens s'est désolidarisé de l'orbiteur à $\pu{1270 km}$ d'altitude au dessus de Titan. Arrivé dans la haute atmosphère de Titan, à plus de $\pu{20000 km.h-1}$ et seulement freiné par ses boucliers thermiques, l'atterrisseur a alors progressivement ralenti grâce à une succession de parachutes. *À $\pu{110 km}$ d'altitude, le parachute final s'est ouvert alors que la vitesse de Huygens était égale à $v\_{0} = \pu{95,0 m.s-1}$ ; le mouvement est alors très rapidement devenu rectiligne et vertical, jusqu'à l'arrivée au sol, sur une surface solide mais molle, à la vitesse $v\_{F} = \pu{6,0 m.s-1}$.*
 
 #### Données
+
 - Masse de Huygens : $m = \pu{320 kg}$ ;
 - Masse de Titan : $m\_{T} = \pu{1,35e23 kg}$ ;
 - Champ de pesanteur de Titan : $g\_{T} = \pu{1,35 m.s-2}$.
-- La trajectoire est matérialisée par un axe vertical $(z' Oz)$ orienté vers le haut, dont l'origine $O$ se trouve au niveau du sol de Titan. 
+- La trajectoire est matérialisée par un axe vertical $(z' Oz)$ orienté vers le haut, dont l'origine $O$ se trouve au niveau du sol de Titan.
 - La poussée d'Archimède est négligeable dans ce problème.
 - Le mouvement de Huygens sera étudié dans un référentiel titanocentrique considéré galiléen.
 
 15. Quelles sont les deux forces qui agissent sur l'atterrisseur dans la dernière phase du mouvement (phrase en italique dans le texte ci-dessus).
- 
+
 16. Calculer la valeur de la variation de l'énergie mécanique du système lors de cette dernière phase.
 
 17. On suppose que la force de frottement fluide reste constante lors de cette dernière phase. Déduire de la question précédente la valeur du travail de cette force lors de toute cette phase.
@@ -120,7 +121,7 @@ L'atterrisseur Huygens s'est désolidarisé de l'orbiteur à $\pu{1270 km}$ d'al
 
 ### Défaut de conception du système de communication entre Cassini et Huygens
 
-Comme Huygens n'avait pas la taille nécessaire pour émettre directement ses informations à destination de la Terre, il était prévu qu'il transmette ses données télémétriques, au cours de sa traversée de l'atmosphère de Titan, par radio à Cassini. Ce dernier devait alors relayer les données vers la Terre à l'aide de son antenne principale de $\pu{4 m}$ de diamètre. *Le système de communication entre Huygens et Cassini a été testé sur Terre avant le lancement (émetteur et récepteur étant alors immobiles), sans poser le moindre problème. Le lancement effectué, deux ingénieurs du projet ont cependant très vite découvert que ce système n'avait pas suffisamment bien pris en compte le fait que, lors de la descente, la vitesse de Huygens par rapport à Cassini, importante, entraînerait une modification du signal émis par Huygens.* 
+Comme Huygens n'avait pas la taille nécessaire pour émettre directement ses informations à destination de la Terre, il était prévu qu'il transmette ses données télémétriques, au cours de sa traversée de l'atmosphère de Titan, par radio à Cassini. Ce dernier devait alors relayer les données vers la Terre à l'aide de son antenne principale de $\pu{4 m}$ de diamètre. *Le système de communication entre Huygens et Cassini a été testé sur Terre avant le lancement (émetteur et récepteur étant alors immobiles), sans poser le moindre problème. Le lancement effectué, deux ingénieurs du projet ont cependant très vite découvert que ce système n'avait pas suffisamment bien pris en compte le fait que, lors de la descente, la vitesse de Huygens par rapport à Cassini, importante, entraînerait une modification du signal émis par Huygens.*
 
 19. Expliquer quelle modification sur le signal émis par Huygens pourrait résulter de son mouvement par rapport à Cassini. En particulier, nommer le phénomène et indiquer quelle caractéristique du signal est affectée.\
 Tout élément de réponse sera pris en compte.

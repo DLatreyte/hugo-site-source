@@ -1,6 +1,6 @@
 ---
 title: "Tomographie par émission de positons (Difficile !)"
-subtitle: "Chapitre 9,10"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-12-30T16:56:15+04:00
@@ -16,7 +16,7 @@ auto_numbering: true
 La tomographie par émission de positons (TEP) est un examen reposant sur la détection de positons. Ils sont émis par le $\ce{^{18}F-FDG}$, que l’on injecte au patient et qui doit être produit à l’hôpital. Pour cela, on bombarde au moyen d’un cyclotron des noyaux d’oxygène 18 par des protons dont l’énergie cinétique est de $\pu{16 MeV}$. Les protons placés au point $O$ sont accélérés jusqu’au point $O'$ où ils pénètrent dans le dé $D$.\
 À $t=\pu{0 s}$, un proton est introduit dans le cyclotron au point $O$ sans vitesse initiale. La tension accélératrice $U$ vaut $\pu{30 kV}$. On se place sur l’axe $(Ox)$ horizontal, centré sur $O$ et dirigé vers la droite.
 
-#### Données.
+#### Données
 
 - Masse du proton : $m_p = \pu{1,67e−27 kg}$ ;
 - Charge électrique du proton : $e = \pu{1,60e−19 C}$ ;
@@ -70,7 +70,7 @@ Cette force a pour valeur $F_L = e v B$ et est *dirigée selon le vecteur $\vec{
 
 7. Démontrer à l'aide de la deuxième loi de Newton que, puisque le mouvement des cations est circulaire, il est aussi uniforme.
 
-8. Montrer à l'aide de la deuxième loi de Newton que, puisque le mouvement des cations est circulaire, le rayon $R$ de la trajectoire d’un proton dans un dee est donné par la relation 
+8. Montrer à l'aide de la deuxième loi de Newton que, puisque le mouvement des cations est circulaire, le rayon $R$ de la trajectoire d’un proton dans un dee est donné par la relation
 $$
     R = \dfrac{m_p v}{eB}
 $$
@@ -78,7 +78,7 @@ où $v$ est la vitesse du proton.
 
 9. Donner la relation entre la vitesse $v$ du proton, le rayon $R$ de sa trajectoire et la durée $\Delta t_2$ de ce premier demi-tour.
 
-10. Montrer à partir des résultats des questions précédentes que la durée $\Delta t_2$ peut s’exprimer sous la forme : 
+10. Montrer à partir des résultats des questions précédentes que la durée $\Delta t_2$ peut s’exprimer sous la forme :
 $$
     \Delta t_2 = \dfrac{\pi m_p}{e B}
 $$

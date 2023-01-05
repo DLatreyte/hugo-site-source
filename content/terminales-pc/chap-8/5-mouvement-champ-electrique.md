@@ -1,6 +1,6 @@
 ---
 title: "Mouvement d'une particule chargée dans un champ électrique uniforme"
-subtitle: "Chapitre 9,5"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-12-23T18:19:05+04:00
@@ -18,15 +18,16 @@ mathjax: true
 
 ### Force de Coulomb
 
-
 <img src="/terminales-pc/chap-8/chap-8-5/Chap-8-5-1.png" alt="" width="30%" />
 
 {{% note tip %}}
+
 #### Force de Coulomb
+
 Lorsque deux charges électriques immobiles se trouvent aux points $M_1$ et $M_2$
 de l'espace, on modélise l'action de la charge $q_1$ sur la charge $q_2$ par une force, la force de Coulomb, dont les caractéristiques sont&nbsp;:
 
-$$ \vec{F}\_{q_1 / q_2}  = 
+$$ \vec{F}\_{q_1 / q_2}  =
 \begin{cases}
 \textbf{Point d'application :} & M_2\cr
 \textbf{Direction :} & \text{droite } (M_1 M_2)\cr
@@ -36,6 +37,7 @@ $$ \vec{F}\_{q_1 / q_2}  =
 {{% /note %}}
 
 {{% note normal %}}
+
 #### Principe des actions réciproques
 
 $$
@@ -44,6 +46,7 @@ $$
 {{% /note %}}
 
 {{% note normal %}}
+
 #### Expression vectorielle
 
 On peut exprimer de façon plus condensée la force de Coulomb en utilisant le vecteur unitaire $\vec{u}$ de la droite $(M_1 M_2)$&nbsp;:
@@ -64,6 +67,7 @@ $$
     $\vec{F}\_{q_1 / q_4} = k\\, \dfrac{q_1 \cdot q_4}{d^2}\\,  \vec{u}$ ;
 
 {{% note normal %}}
+
 #### Champ électrique
 
 Quelle que soit la charge qui subit l'action de la charge $q_1$, on constate que&nbsp;:
@@ -71,7 +75,7 @@ $$
 \dfrac{\vec{F}\_{q_1 / q_2}}{q_2} = \dfrac{\vec{F}\_{q_1 / q_3}}{q_3} =
 \dfrac{\vec{F}\_{q_1 / q_4}}{q_4} = \cdots = k\\, \dfrac{q_1}{d^2}\\,  \vec{u} =
 \vec{E} (M_2)
-$$ 
+$$
 $\vec{E} (M_2)$, *champ électrique au point $M_2$ créé par $q_1$*, représente la *force électrique que subirait une charge électrique de valeur $q = 1 \text{C}$, placée au point $M_2$, de la part de la charge $q_1$*.
 {{% /note %}}
 
@@ -79,8 +83,10 @@ La présence de la charge $q_1$ au point $M_1$ « communique » à tout
 point de l'espace la propriété suivante&nbsp;:
 
 {{% note tip %}}
+
 #### Relation entre la force électrique et le champ électrique en un point
-*Toute charge électrique $q$ placée en un point $M$ de l'espace subit de la part de $q_1$ la force&nbsp;:* 
+
+*Toute charge électrique $q$ placée en un point $M$ de l'espace subit de la part de $q_1$ la force&nbsp;:*
 $$
 \vec{F}\_{el} = q \vec{E} (M)
 $$
@@ -106,10 +112,11 @@ En un point de l'espace les champs électriques créés par différentes charges
 <img src="/terminales-pc/chap-8/chap-8-5/Chap-8-5-3.png" alt="" width="80%" />
 
 {{% note tip %}}
+
 #### Relation entre la tension électrique et le champ électrique
 
 *Une tension électrique $U$ entre les deux **armatures conductrices planes** d'un condensateur, séparées par une distance $d$, crée un champ électrique **uniforme** entre ces deux armatures, dirigé de l'armature positive
-vers l'armature négative et ayant pour valeur&nbsp;:* 
+vers l'armature négative et ayant pour valeur&nbsp;:*
 
 $$
 E = \dfrac{U_{AB}}{d} = \dfrac{V_A - V_B}{d} \tag{1}\label{eq:1}
@@ -119,6 +126,7 @@ $$
 {{% /note %}}
 
 {{% note normal %}}
+
 #### Rappel
 
 On appelle *tension électrique* la différence de potentiel entre deux points de l'espace.
@@ -132,6 +140,7 @@ une charge possède une *énergie potentielle électrique* car elle se
 trouve à un certain potentiel électrique.
 
 {{% note normal %}}
+
 #### Rappel : Comment déterminer l'expression de l'énergie potentielle associée à une interaction ?
 
 1. Vérifier que la force $\vec{F}\_{el}$ qui modélise l'interaction est **conservative**.
@@ -173,9 +182,9 @@ Déterminer l'expression du travail de la force électrique lorsque la charge é
 {{% /note %}}
 
 {{% solution "Réponse" %}}
-Puisque le force électrique est une force constante, 
-$$ 
-  W_{AB}(\vec{F}\_{el}) = W\_{AC}(\vec{F}\_{el}) + W\_{CB}(\vec{F}\_{el}) = \vec{F}\_{el} \cdot \overrightarrow{AC} + \vec{F}\_{el} \cdot \overrightarrow{CB} 
+Puisque le force électrique est une force constante,
+$$
+  W_{AB}(\vec{F}\_{el}) = W\_{AC}(\vec{F}\_{el}) + W\_{CB}(\vec{F}\_{el}) = \vec{F}\_{el} \cdot \overrightarrow{AC} + \vec{F}\_{el} \cdot \overrightarrow{CB}
 $$
 
 $$
@@ -196,10 +205,10 @@ Déterminer l'expression du travail qu'exerce un opérateur qui compense à chaq
 {{% /note %}}
 
 {{% solution "Réponse" %}}
-Puisque le force électrique est une force constante, 
+Puisque le force électrique est une force constante,
 $$
   W_{AB}(\vec{F}\_{op}) = \vec{F}\_{op} \cdot \overrightarrow{AB} = - \vec{F}\_{el} \cdot \overrightarrow{AB}
-$$ 
+$$
 puisqu'à chaque instant $\vec{F}\_{op} + \vec{F}\_{el} = \vec{0}$.
 
 Donc  
@@ -207,7 +216,7 @@ $$
   W_{AB}(\vec{F}\_{op}) = -q\\, \vec{E} \cdot \overrightarrow{AB} = -q\\, (-E) \vec{i} \cdot (x_B - x_A) \vec{i} = q E (x_B - x_A)
 $$
 
-La relation $\eqref{eq:1}$ indique que $(x_A - x_B) = E U_{AB} = E (V_A - V_B)$, donc 
+La relation $\eqref{eq:1}$ indique que $(x_A - x_B) = E U_{AB} = E (V_A - V_B)$, donc
 $$
 W_{AB}(\vec{F}_{op}) = q (V_B - V_A) \tag{2}\label{eq:2}
 $$
@@ -231,13 +240,14 @@ $$
 {{% /solution %}}
 
 {{% note tip %}}
-L'énergie potentielle électrique d'une charge électrique $q$ placée en un point de l'espace de potentiel électrique $V_M$ a pour expression 
+L'énergie potentielle électrique d'une charge électrique $q$ placée en un point de l'espace de potentiel électrique $V_M$ a pour expression
 $$
 E_{Pel}(M) = q V_M + \text{cste}
 $$
 {{% /note %}}
 
 {{% note normal %}}
+
 #### Rappels
 
 Seules les variations d'énergies ont un sens physique. Les énergies potentielles d'interactions sont définies à une constante additive près.\
@@ -245,7 +255,6 @@ Lorsqu'on calcule une variation d'énergie potentielle d'interaction l'influence
 {{% /note %}}
 
 ## Mouvement d'un électron dans un oscilloscope
-
 
 <iframe scrolling="no" title="Mouvement d'un électron dans un oscilloscope" src="https://www.geogebra.org/material/iframe/id/vnhvk3ep/width/1272/height/647/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1272px" height="647px" style="border:0px;"> </iframe>
 
@@ -287,7 +296,7 @@ Données
 - *Schématisation&nbsp;:* (pas à l'échelle) <img src="/terminales-pc/chap-8/chap-8-5/Chap-8-5-6.png" alt="" width="25%" style="float: right;" />
 
 - *Deuxième loi de Newton&nbsp;:* *puisque la masse $m_e$ d'un électron est
-    constante*, on peut écrire 
+    constante*, on peut écrire
     $$
     m_e  \vec{a}_1 = \vec{P} + \vec{F}\_1 =  m_e\\,  \vec{g} - e\\, \vec{E}_1
     $$
@@ -305,7 +314,7 @@ Données
 - Comparaison des valeurs du poids et de la force électrique&nbsp;:
 $$
 \dfrac{\Vert - e\\, \vec{E}_1 \Vert}{\Vert m_e\\,  \vec{g} \Vert} \simeq
-      \dfrac{\pu{1e-19 C} \times \pu{1e5 V.m-1}}{\pu{1e-30 kg} \times \pu{10 N.m-1}} = \dfrac{10^{- 14}}{10^{- 29}} = 10^{15}$$ 
+      \dfrac{\pu{1e-19 C} \times \pu{1e5 V.m-1}}{\pu{1e-30 kg} \times \pu{10 N.m-1}} = \dfrac{10^{- 14}}{10^{- 29}} = 10^{15}$$
 La valeur de la force électrique est donc $10^{15}$ fois plus élevée que celle du poids !\
 On peut donc considérer que le poids communique une accélération à l'électron négligeable comparée à celle que la force électrique lui communique.
 
@@ -318,7 +327,7 @@ $$
 \boxed{
 \vec{a}\_1 = - \dfrac{e}{m_e}  \vec{E}\_1
 }
-$$ 
+$$
 
 {{% /solution %}}
 
@@ -364,7 +373,7 @@ $$\overrightarrow{AM} (0) = \left(\begin{array}{c}
          0
        \end{array}\right)$$
 
-- Projection de la deuxième loi de Newton&nbsp;: 
+- Projection de la deuxième loi de Newton&nbsp;:
 $$
 \left(\begin{array}{c}
 a_{1 x}\cr
@@ -379,8 +388,8 @@ a_{1 z}
 0\cr
 0
 \end{array}\right)
-$$ 
-donc 
+$$
+donc
 $$
 \boxed{
 \begin{cases}
@@ -389,7 +398,7 @@ $$
   a_{1 z} &= 0
 \end{cases}
 }
-$$ 
+$$
 
 Le mouvement est donc *uniformément accéléré* selon l'axe $(A x)$. Il n'est *pas possible de conclure* quant à la forme du mouvement selon les axes $(A y)$ et $(A z)$&nbsp;: *mouvements uniformes* ou *pas de mouvement*.
 {{% /solution %}}
@@ -400,15 +409,15 @@ Le mouvement est donc *uniformément accéléré* selon l'axe $(A x)$. Il n'est 
 
 {{% solution "Réponse" %}}
 
-Composantes de la vitesse&nbsp;: 
+Composantes de la vitesse&nbsp;:
 $$
 \begin{cases}
   a_{1 x} &= \dfrac{\mathrm{d}v_{1 x}}{\mathrm{dt}} = \dfrac{eE_1}{m_e}\cr
   a_{1 x} &= \dfrac{\mathrm{d}v_{1 y}}{\mathrm{dt}} = 0\cr
   a_{1 z} &= \dfrac{\mathrm{d}v_{1 z}}{\mathrm{dt}} = 0
 \end{cases}
-$$ 
-donc 
+$$
+donc
 $$
 \begin{cases}
   v_{1 x} (t) &= \dfrac{eE_1}{m_e} t + A\cr
@@ -416,7 +425,7 @@ $$
   v_{1 z} (t) &= C
 \end{cases}
 $$
-Conditions initiales pour la vitesse&nbsp;: 
+Conditions initiales pour la vitesse&nbsp;:
 $$
 \begin{cases}
   v_{1 x} (0) = A = 0\cr
@@ -424,7 +433,7 @@ $$
   v_{1 z} (0) = C = 0
 \end{cases}
 $$
-Finalement 
+Finalement
 $$
 \boxed{
   \begin{cases}
@@ -444,7 +453,7 @@ En déduire les équations horaires du mouvement de l'électron.
 
 {{% solution "Réponse" %}}
 
-Composantes du vecteur position&nbsp;: 
+Composantes du vecteur position&nbsp;:
 
 $$
 \begin{cases}
@@ -453,7 +462,7 @@ $$
    v_{1 z} (t) &= \dfrac{\mathrm{d}z_1}{\mathrm{dt}} = 0
 \end{cases}
 $$
-donc 
+donc
 $$
 \begin{cases}
    x_1 (t) &= \dfrac{1}{2}\\, \dfrac{eE_1}{m_e} t^2 + D\cr
@@ -461,7 +470,7 @@ $$
    z_1 (t) &= F
 \end{cases}
 $$
-Conditions initiales pour la position&nbsp;: 
+Conditions initiales pour la position&nbsp;:
 $$
 \begin{cases}
    x_1 (0) &= D = 0\cr
@@ -528,7 +537,7 @@ La seule force qui s'applique sur l'électron est la force électrique, force co
 
 - Au point $A$ : $E_M(A) = E_C(A) + E_{Pel}(A) = -e V_A + \text{cste}$ puisque l'électron est produit sans vitesse.
 - Au point $B$ : $E_M(B) = E_C(B) + E_{Pel}(B) = \dfrac{1}{2}\\, m_e v_{1 B}^2 - e V_B + \text{cste}$
-- L'énergie mécanique se conserve : $\Delta E_M = 0 \iff E_M(A) = E_M(B)$ donc 
+- L'énergie mécanique se conserve : $\Delta E_M = 0 \iff E_M(A) = E_M(B)$ donc
 $$
 -e V_A + \text{cste} = \dfrac{1}{2}\\, m_e v_{1 B}^2 - e V_B + \text{cste}
 $$
@@ -538,9 +547,9 @@ $$
 v_{1 B} = \sqrt{ \dfrac{2 e}{m_e}\\, (V_B - V_A)  }
 }
 $$
-Ce résultat est-il identique au précédent ? À partir du schéma, on peut écrire 
+Ce résultat est-il identique au précédent ? À partir du schéma, on peut écrire
 $$ E_1 = \dfrac{V_B - V_A}{AB}$$
-donc le résultat précédent s'écrit aussi 
+donc le résultat précédent s'écrit aussi
 $$
 \boxed{
 v_{1 B} = \sqrt{ \dfrac{2 e E_1\\, AB}{m_e}}
@@ -587,7 +596,7 @@ Caractériser le mouvement.
 - *Deuxième loi de Newton&nbsp;:* *puisque la masse $m_e$ d'un électron est constante*, on peut écrire
 $$
 m_e\\, \vec{a}_2 = \vec{F}\_{2 el} = - e \vec{E}\_2
-$$ soit 
+$$ soit
 $$
 \boxed{
   \vec{a}_2 = - \dfrac{e}{m_e}\\, \vec{E}\_2
@@ -606,21 +615,21 @@ Projeter la deuxième loi de Newton sur les trois axes du repère choisi et cara
 
 - Projections des conditions initiales et des grandeurs apparaissant dans la relation de Newton&nbsp;:
 $$
-\overrightarrow{BM} (0) = 
+\overrightarrow{BM} (0) =
   \left(\begin{array}{c}
     0\cr
     0\cr
     0
   \end{array}\right)
-\text{ ; } 
+\text{ ; }
 \vec{v}\_B =
-\vec{v}\_2 (0) = 
+\vec{v}\_2 (0) =
   \left(\begin{array}{c}
     v_B\cr
     0\cr
     0
   \end{array}\right)
-\text{ ; } 
+\text{ ; }
 \vec{a}\_2 =
   \left(\begin{array}{c}
   a_{2 x}\cr
@@ -637,26 +646,26 @@ $$
   \end{array}\right)
 $$
 
-- Composantes de l'accélération&nbsp;: 
+- Composantes de l'accélération&nbsp;:
 $$
 \begin{pmatrix}
  a_{2 x}\cr
  a_{2 y}\cr
  a_{2 z}
-\end{pmatrix} 
+\end{pmatrix}
 = - \dfrac{e}{m_e}\\,
  \begin{pmatrix}
  0\cr
  -E_2\cr
  0
-\end{pmatrix} 
-= 
+\end{pmatrix}
+=
 \begin{pmatrix}
  0\cr
  \dfrac{eE_2}{m_e}\cr
  0
 \end{pmatrix}
-$$ 
+$$
 donc
 $$
 \boxed{
@@ -676,7 +685,7 @@ Le mouvement est donc *uniformément accéléré* selon l'axe $(A y)$. Il n'est 
 
 {{% solution "Réponse" %}}
 
-Composantes de la vitesse&nbsp;: 
+Composantes de la vitesse&nbsp;:
 $$
 \begin{cases}
   a_{2 x} &= \dfrac{\mathrm{d}v_{2 x}}{\mathrm{dt}} = 0\cr
@@ -684,7 +693,7 @@ $$
   a_{2 z} &= \dfrac{\mathrm{d}v_{2 z}}{\mathrm{dt}} = 0
 \end{cases}
 $$
-donc 
+donc
 $$
 \begin{cases}
  v_{2 x} (t) = A\cr
@@ -701,7 +710,7 @@ $$
  v_{2 z} (0) &= C = 0
 \end{cases}
 $$
-Finalement 
+Finalement
 $$
 \boxed{
  \begin{cases}
@@ -714,14 +723,13 @@ $$
 Il n'y a aucun mouvement selon l'axe $(B z)$ alors que le mouvement est uniforme selon l'axe $(B x)$.
 {{% /solution %}}
 
-
 {{% note exercise %}}
 En déduire les équations horaires du mouvement de l’électron.
 {{% /note %}}
 
 {{% solution "Réponse" %}}
 
-- Composantes du vecteur position&nbsp;: 
+- Composantes du vecteur position&nbsp;:
 $$
 \begin{cases}
   v_{2 x} (t) &= \dfrac{\mathrm{d}x_2}{\mathrm{dt}} = v_B\cr
@@ -738,16 +746,16 @@ $$
 \end{cases}
 $$
 
-- Conditions initiales pour la position&nbsp;: 
+- Conditions initiales pour la position&nbsp;:
 $$
 \begin{cases}
   x_2 (0) &= D = 0\cr
   y_{12} (0) &= E = 0\cr
   z_2 (0) &= F = 0
 \end{cases}
-$$ 
+$$
 
-- Finalement 
+- Finalement
 $$
 \boxed{
   \begin{cases}
@@ -770,14 +778,14 @@ $$
 
 {{% solution "Réponse" %}}
 
-Pour obtenir l'équation de la trajectoire, il faut éliminer le temps des équations horaires&nbsp;: 
+Pour obtenir l'équation de la trajectoire, il faut éliminer le temps des équations horaires&nbsp;:
 $$
 t = \dfrac{x_2}{v_B}
-$$ 
+$$
 donc
 $$
 \boxed{
-  y_2 (x) = \dfrac{1}{2}\\, \dfrac{eE_2}{m_e}  \left( \dfrac{x_2}{v_B} \right)^2 
+  y_2 (x) = \dfrac{1}{2}\\, \dfrac{eE_2}{m_e}  \left( \dfrac{x_2}{v_B} \right)^2
 }
 $$
 C'est une parabole orientée vers le haut.
@@ -800,7 +808,7 @@ $$
 soit
 $$
 x_{2 p} = v_B \sqrt{\frac{m_e d}{eE_2}}
-$$ 
+$$
 L'électron ne touche pas l'armature supérieure si $x_{2 p} > BC$, donc si
 $$
 x_{2 p} = v_B  \sqrt{\frac{m_e d}{eE_2}} > BC
@@ -817,7 +825,7 @@ Déterminer la condition sur la tension $U_2$ à observer pour que l'électron p
 
 La question précédente a fourni l'expression suivante :
 $$
-v_B  \sqrt{\frac{m_e d}{eE_2}} > BC 
+v_B  \sqrt{\frac{m_e d}{eE_2}} > BC
 \iff
  v_B  \sqrt{\frac{m_e d^2}{eU_2}} > BC
 $$
@@ -843,7 +851,7 @@ $$
   x_{2 C} = BC
 }
 $$
-donc lorsque 
+donc lorsque
 $$
 \boxed{
   y_2 (x_{2 C}) = \dfrac{1}{2}\\, \dfrac{eE_2}{m_e} \left( \dfrac{BC}{v_B} \right)^2
@@ -863,5 +871,5 @@ Quel est le mouvement de l'électron lorsqu'il a quitté les deux zones dans les
 Au-delà des deux première zones, il n'existe plus de champ électrique et l'on peut toujours négliger le poids de l'électron. Ce dernier n'est donc soumis à aucune force, *son mouvement est rectiligne et uniforme* depuis le point de sortie de la deuxième zone.
 
 {{% /solution %}}
- 
+
 <img src="/terminales-pc/chap-8/chap-8-5/Chap-8-5-14.png" alt="" width="90%" />

@@ -1,6 +1,6 @@
 ---
 title: "Annale : Principe de la spectrométrie de masse"
-subtitle: "Chapitre 9,8"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-12-29T17:03:10+04:00
@@ -33,11 +33,11 @@ Le principe du spectromètre de masse est illustré dans cet exercice dans le ca
 
 - Dans la *chambre de déviation*, on sépare ces ions avant leur entrée dans la *chambre de détection* à l'aide d'un champ magnétique uniforme $\vec{B}$, de direction perpendiculaire au plan de la figure 1.
 
-#### Données.
+#### Données
 
-- Unité de masse atomique : $\pu{1 u} = \pu{1,660538921e27 kg/nucléon}$ ; 
-- Charge électrique fondamentale : $e = \pu{1,6e-19 C}$ 
-- Tension $U$ entre les armatures $P$ et $P'$ : $U = \pu{3,9e3 V}$ ; 
+- Unité de masse atomique : $\pu{1 u} = \pu{1,660538921e27 kg/nucléon}$ ;
+- Charge électrique fondamentale : $e = \pu{1,6e-19 C}$
+- Tension $U$ entre les armatures $P$ et $P'$ : $U = \pu{3,9e3 V}$ ;
 - Longueur de la chambre d'accélération : $d = \pu{0,5 m}$ ;
 - Valeur du champ magnétique : $B = \pu{0,12 T}$.
 
@@ -85,7 +85,6 @@ On cherche à déterminer la durée du parcours des fragments ionisés $i$ depui
 
 15. Ces ions sont-ils détectés en même temps ? Lequel arrive le premier ? Justifier ce résultat.
 
-[^1]: *Subtitle:* DM 02
 
 ## Corrigé
 

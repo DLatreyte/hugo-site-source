@@ -1,6 +1,6 @@
 ---
 title: "TP : Étude d'un mouvement et tracé de vecteurs"
-subtitle: "Chapitre 9,16"
+subtitle: ""
 author: ""
 type: ""
 date: 2022-03-06T21:50:21+04:00

@@ -1,6 +1,6 @@
 ---
 title: "Chute libre verticale dans le champ de pesanteur uniforme, quelques tracés de courbes à l'aide de Python"
-subtitle: "Chapitre 9,11"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-12-22T10:09:39+04:00
@@ -21,7 +21,7 @@ auto_numbering: true
 
 <img src="/terminales-pc/chap-8/chap-8-2-3.png" alt="" width="30%" style="float: left; padding-right: 25px;" />
 
-On lance une balle, de masse $m$, verticalement vers le haut depuis l'altitude 
+On lance une balle, de masse $m$, verticalement vers le haut depuis l'altitude
 $z\_{0}$ au dessus de l'origine choisie.
 
 On a démontré dans [ce document]({{% relref "2-mouvement-champ-pesanteur-uniforme.md" %}}) que les équations horaires du mouvement ont pour expression :
@@ -32,7 +32,7 @@ $$
     z(t) &= -\dfrac{1}{2}\\, gt^2 + v_0t + h_0
 \end{aligned}
 $$
-et que les différentes formes d'énergies ont pour expression : 
+et que les différentes formes d'énergies ont pour expression :
 $$
 \begin{aligned}
     E_C &= \dfrac{1}{2}\\, mv^2\\\\
@@ -46,8 +46,6 @@ Remarque 1
 
 Remarque 2
 : Le système étant en chute libre, l'interaction avec l'air est négligée et l'énergie mécanique se conserve.
-
-
 
 ## Travail à réaliser
 
@@ -66,11 +64,12 @@ Le programme réalise plusieurs tracés **successivement**. Il faut donc fermer 
 
 {{% /note %}}
 
-1. Le fichier de travail se trouve à cette <a href="https://replit.com/@dlatreyte/Chute-libre-verticale-Traces-Eleves" target=_blank>adresse</a>. Cliquez sur le bouton <kbd>Fork repl</kbd> afin de copier la structure du code dans votre profil personnel sur [Replit.com](https://replit.com).     
+1. Le fichier de travail se trouve à cette <a href="https://replit.com/@dlatreyte/Chute-libre-verticale-Traces-Eleves" target=_blank>adresse</a>. Cliquez sur le bouton <kbd>Fork repl</kbd> afin de copier la structure du code dans votre profil personnel sur [Replit.com](https://replit.com).
 Il vous sera demandé de vous connecter si vous ne l'avez pas fait au préalable.
 
 2. Dans la partie `# Définition des paramètres du problème` affecter les valeurs numérique suivantes aux différentes variables, ligne 154 et suivantes, sachant que $g= \pu{9.8 m.s-2}$, $v_0 = \pu{10 m.s-1}$ (vers le haut), $h_0 = \pu{15 m}$, $t_0 = \pu{0 s}$ (première date), $t_{max} = \pu{3 s}$ (dernière date), $dt = \pu{0.01 s}$ (écart entre deux dates successives), $m = \pu{0,2 kg}$ (masse de la balle).
 {{% solution "Solution" %}}
+
 ```python
 g = 9.8  # m.s^{-2}
 v0 = 10  # m.s^{-1}
@@ -80,9 +79,10 @@ tmax = 3  # s
 dt = 0.01  # s
 m = 0.2  # kg
 ```
+
 {{% /solution %}}
 
-2. La fonction `creation_liste_des_dates` crée la liste des dates auxquelles seront calculées les grandeurs physiques. La première date est `t0`, la dernière est inférieure ou égale à `tmax` et le pas entre deux dates est `dt`.    
+2. La fonction `creation_liste_des_dates` crée la liste des dates auxquelles seront calculées les grandeurs physiques. La première date est `t0`, la dernière est inférieure ou égale à `tmax` et le pas entre deux dates est `dt`.
 Compléter les lignes de codes à partir de la ligne 52 qui permettent de construire cette liste.
 {{% solution "Solution" %}}
 

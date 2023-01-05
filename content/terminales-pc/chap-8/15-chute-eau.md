@@ -1,6 +1,6 @@
 ---
 title: "Chute d'une goutte d'eau dans différents milieux"
-subtitle: "Chapitre 9,15"
+subtitle: ""
 author: ""
 type: ""
 date: 2022-02-23T09:18:57+04:00
@@ -22,4 +22,3 @@ auto_numbering: true
 Le corrigé se trouve à {{< remote "cette adresse" "https://dlatreyte.github.io/jupyter-lite/lab?path=term-spe-pc%2FMecanique%2FChute-goutte-eau.ipynb" >}}
 
 {{% /solution %}}
-

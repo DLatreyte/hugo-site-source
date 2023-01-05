@@ -1,6 +1,6 @@
 ---
 title: "Les débuts de l'électron en physique"
-subtitle: "Chapitre 9,12"
+subtitle: ""
 author: ""
 type: ""
 date: 2022-01-06T17:52:17+04:00
@@ -16,8 +16,8 @@ mathjax: true
 
 {{% note normal %}}
 
-Le problème posé par la nature des «&nbsp;rayons cathodiques&nbsp;» à la fin du XIX<sup>ème</sup> siècle fut résolu en 1897 par l'Anglais J.J. Thomson&nbsp;: il s'agissait de particules chargées négativement baptisées par la suite «&nbsp;électrons&nbsp;». La découverte de l'électron valut à Thomson le prix Nobel de physique en 1906.    
-Le défi pour les scientifiques de l'époque fut alors de déterminer les caractéristiques de cette particule&nbsp;: sa charge électrique et sa masse. Dans un premier temps, Thomson lui-même, en étudiant la déviation d'un faisceau d'électrons dans un champ électrique, put obtenir le «&nbsp;rapport $e/m_e$&nbsp;» de ces deux caractéristiques.    
+Le problème posé par la nature des «&nbsp;rayons cathodiques&nbsp;» à la fin du XIX<sup>ème</sup> siècle fut résolu en 1897 par l'Anglais J.J. Thomson&nbsp;: il s'agissait de particules chargées négativement baptisées par la suite «&nbsp;électrons&nbsp;». La découverte de l'électron valut à Thomson le prix Nobel de physique en 1906.
+Le défi pour les scientifiques de l'époque fut alors de déterminer les caractéristiques de cette particule&nbsp;: sa charge électrique et sa masse. Dans un premier temps, Thomson lui-même, en étudiant la déviation d'un faisceau d'électrons dans un champ électrique, put obtenir le «&nbsp;rapport $e/m_e$&nbsp;» de ces deux caractéristiques.
 C'est cependant l'Américain R. Millikan qui, réalisant de multiples expériences entre 1906 et 1913 sur des gouttelettes d'huile, détermina la valeur de la charge de l'électron.
 
 Actuellement, les valeurs admises de la masse et de la charge de l'électron sont&nbsp;:
@@ -52,8 +52,8 @@ $$
     y = \dfrac{e E}{2 m_e v_0^2}\\, x^2
 $$
 
-4. À la sortie de la zone entre les plaques $P_1$ et $P_2$, l'électron a subi une déviation verticale $SH$ comme l'indique la **figure 1**. On mesure $SH = y_S = \pu{(2,00 \pm 0,05)\cdot 10^{-2} m}$.    
-Déterminer, dans cette expérience, la valeur du rapport $e/m_e$ de l'électron.      
+4. À la sortie de la zone entre les plaques $P_1$ et $P_2$, l'électron a subi une déviation verticale $SH$ comme l'indique la **figure 1**. On mesure $SH = y_S = \pu{(2,00 \pm 0,05)\cdot 10^{-2} m}$.
+Déterminer, dans cette expérience, la valeur du rapport $e/m_e$ de l'électron.
 Conclure.
 
 #### Données
@@ -66,8 +66,7 @@ Conclure.
 $$
     U(e/m_e) = \dfrac{e}{m_e}\\, \sqrt{ \left( \dfrac{U(E)}{E} \right)^2 + \left( \dfrac{U(y_S)}{y_S} \right)^2 + 4 \left( \dfrac{U(L)}{L} \right)^2 + 4 \left( \dfrac{U(v_0)}{v_0} \right)^2 }
 $$
-Calculer l'incertitude $U(e/m_e)$, puis exprimer le résultat de $e/m_e$ avec cette incertitude. 
-
+Calculer l'incertitude $U(e/m_e)$, puis exprimer le résultat de $e/m_e$ avec cette incertitude.
 
 ## L'expérience de Millikan
 
@@ -86,29 +85,30 @@ Millikan pulvérise des gouttelettes d'huile chargées par irradiation entre deu
 > **Figure 2**
 
 Un pulvérisateur produit un nuage de gouttelettes d'huile chargées négativement qui tombent dans la chambre supérieure du dispositif. Lorsque l'une d'elles passe à travers le trou $T$, elle tombe verticalement à une vitesse constante $v_1$, son poids étant très vite compensé par la force de frottement exercée par l'air. Lors de cette première étape, la chute verticale de la gouttelette dans l'air en l'absence de champ électrique est observée à l'aide d'un microscope et permet de déterminer le rayon $r$ de la gouttelette qui n'est pas mesurable directement.
-Lors d'une deuxième étape, lorsque la gouttelette parvient en bas du dispositif, un champ électrique uniforme est créé entre les plaques $A$ et $B$. La gouttelette remonte alors verticalement à une vitesse constante $v_2$.    
+Lors d'une deuxième étape, lorsque la gouttelette parvient en bas du dispositif, un champ électrique uniforme est créé entre les plaques $A$ et $B$. La gouttelette remonte alors verticalement à une vitesse constante $v_2$.
 La charge électrique portée par la gouttelette est ensuite déduite des mesures des vitesses $v_1$ et $v_2$.
 
 {{% /note %}}
 
 - Lors de l'expérience menée au laboratoire, une gouttelette de masse $m$ et de charge $q$ négative arrive entre les plaques $A$ et $B$.
-- *La poussée d'Archimède est négligée*. La gouttelette étudiée est soumise à son poids $\vec{P}$ et à la force de frottement $\vec{f}$ exercée par l'air s'exprimant par la relation 
+- *La poussée d'Archimède est négligée*. La gouttelette étudiée est soumise à son poids $\vec{P}$ et à la force de frottement $\vec{f}$ exercée par l'air s'exprimant par la relation
 $$
     \vec{f} = -6\pi\\, \eta\\, r\\, \vec{v}
 $$
 dans laquelle $\eta$ est la viscosité de l'air, $r$ le rayon de la gouttelette et $\vec{v}$ sa vitesse.
 
 #### Données
+
 - Masse volumique de l'huile&nbsp;: $\rho = \pu{890 kg.m-3}$&nbsp;;
 - Valeur du champ de pesanteur&nbsp;: $g = \pu{9,8 N.kg-1}$&nbsp;;
 - Viscosité de l'air&nbsp;: $\eta = \pu{1,8e-5 kg.m-1.s-1}$.
 
 ### Chute verticale de la gouttelette
 
-6. Lors de la chute de la gouttelette en l'absence de champ électrique, écrire *la relation vectorielle* entre la force de frottement fluide et le poids lorsque la vitesse constante $v_1$ est atteinte.   
+6. Lors de la chute de la gouttelette en l'absence de champ électrique, écrire *la relation vectorielle* entre la force de frottement fluide et le poids lorsque la vitesse constante $v_1$ est atteinte.
 En déduire l'expression de $v_1$ en fonction de $\eta$, $r$, $m$ et $g$.
 
-7. Sachant que le volume d'une sphère a pour expression $V = \dfrac{4}{3}\\, \pi r^3$, montrer que la relation précédente peut aussi s'écrire&nbsp;: 
+7. Sachant que le volume d'une sphère a pour expression $V = \dfrac{4}{3}\\, \pi r^3$, montrer que la relation précédente peut aussi s'écrire&nbsp;:
 $$
     v_1 = \dfrac{2}{9}\\, \dfrac{\rho g r^2}{\eta}
 $$
@@ -120,7 +120,7 @@ où $\rho$ est la masse volumique de l'huile.
 
 ### Remontée de la gouttelette
 
-10. Lors de la remontée de la gouttelette entre les plaques $A$ et $B$, en présence du champ électrique, écrire *la relation vectorielle* entre la force de frottement fluide, le poids et la force électrique, lorsque la vitesse constante $v_2$ est atteinte.    
+10. Lors de la remontée de la gouttelette entre les plaques $A$ et $B$, en présence du champ électrique, écrire *la relation vectorielle* entre la force de frottement fluide, le poids et la force électrique, lorsque la vitesse constante $v_2$ est atteinte.
 En déduire l'expression de $v_2$ en fonction de $\eta$, $r$, $m$, $g$, $q$ et $E$.
 
 11. En utilisant les relations démontrées aux questions 5. et 9., montrer que la charge $q$ de la gouttelette est donnée par la relation
@@ -141,14 +141,11 @@ Plusieurs mesures ont été réalisées pour différentes gouttelettes et rassem
 
 </center>
 
-
-
 12. Les gouttelettes n°2 et n°5 ont la même vitesse de descente $v_1$ mais des vitesses de remontée $v_2$ différentes.
     - Déterminer sans calcul le rayon de la gouttelette n°5. Justifier.
     - Pourquoi leurs vitesses de remontée sont-elles différentes ?
 
 13. Montrer, à partir des résultats expérimentaux, que la charge de ces gouttelettes est «&nbsp;quantifiée&nbsp;», c'est-à-dire qu'elle ne prend que des valeurs multiples d'une même charge élémentaire égale à $\pu{1,6e-19 C}$.
-
 
 ## Corrigé
 
