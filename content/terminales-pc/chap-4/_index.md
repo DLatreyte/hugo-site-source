@@ -1,5 +1,5 @@
 ---
-title: "Analyse physique d’un système chimique"
+title: "Analyse d’un système chimique"
 subtitle: ""
 author: ""
 type: ""
@@ -73,6 +73,14 @@ layout: "single"
 - **Doc. :** [*Titrage direct de l'aspirine (TP)*](18-titrage-aspirine)
 
 - **Doc. :** [*Titrage de l'acide sulfamique contenu dans un détartrant pour cafetière (TP)*](21-titrage-detartrant)
+
+----
+
+## Carte mentale sur le dosage
+
+- **Doc. :** [*Dosage en carte mentale*](/terminales-pc/chap-4/carte_mentale/dosage.svg)
+
+----
 
 ## Spectroscopie
 
