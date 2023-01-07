@@ -49,3 +49,5 @@ layout: "single"
 - **Doc.** [*Annale : L'eau de Javel*](9-olympiades-eau-de-javel)
 
 - **Doc.** [*Annale : Corrosion des gouttières*](10-annale-corrosion-goutieres)
+
+- **Doc.** [*Carte mentale du chapitre*](/terminales-pc/chap-6/carte_mentale/cinetique_chimique.svg)
