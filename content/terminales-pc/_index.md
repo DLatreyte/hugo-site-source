@@ -31,7 +31,7 @@ layout: "single"
 
 - [*Modélisation des réactions acide-base*](chap-3)
 
-- [*Analyse physique d’un système chimique*](chap-4)
+- [*Analyse d’un système chimique*](chap-4)
 
 - [*Évolution temporelle dans un circuit capacitif*](chap-5)
 
