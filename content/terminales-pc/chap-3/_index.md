@@ -1,6 +1,6 @@
 ---
 title: "Modélisation des réactions acide-base"
-subtitle: "Chapitre 4"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-09-28T15:33:16+04:00
@@ -23,10 +23,13 @@ layout: "single"
 ## Documents
 
 ----
+
 - {{< remote "Chapitre du Livre Scolaire" "http://LLS.fr/PCTP19" >}}
+
 ----
-- **Chap. 4,1 :** [*Le pH et sa mesure*](1-modelisation_reactions_acides_bases)
 
-- **Chap. 4,2 :** [*Mesures de pH, taux d'avancement final*](2-mesures-ph)
+- **Doc.** [*Le pH et sa mesure*](1-modelisation_reactions_acides_bases)
 
-- **Chap. 4,3 :** [*Exercices du chapitre*](3-exercices)
+- **Doc.** [*Mesures de pH, taux d'avancement final*](2-mesures-ph)
+
+- **Doc.** [*Exercices du chapitre*](3-exercices)

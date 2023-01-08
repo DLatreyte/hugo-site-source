@@ -1,5 +1,5 @@
 ---
-title: "Exercices du chapitre 3"
+title: "Exercices du chapitre"
 subtitle: ""
 author: ""
 type: ""
