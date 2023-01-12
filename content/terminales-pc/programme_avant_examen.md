@@ -1,5 +1,5 @@
 ---
-title: "Parties du programme à l'examen"
+title: "Parties du programme à l'examen (BO n°36, du 30 septembre 2022)"
 subtitle: "Toutes les parties du programmes n'ont pas à être traitées avant l'examen"
 author: ""
 type: ""
@@ -13,81 +13,63 @@ image: ""
 
 ## 1. Partie écrite
 
-Les notions suivantes sont exclues du programme de la partie écrite de l'épreuve :
+Lors de l'épreuve terminale dans l'enseignement de spécialité physique-chimie, les candidats peuvent être évalués sur les parties suivantes du programme de la classe de terminale :
 
-**Thème Constitution et transformations de la matière**
+### Contenu disciplinaire « Constitution et transformations de la matière », uniquement les items suivants
 
-|              |               Notions exclues du programme de la partie écrite de l'épreuve                |
-|:------:|:---:|
-| 2. Modéliser l'évolution temporelle d'un système, siège d'une transformation A) Suivre et modéliser l'évolution temporelle d'un système siège d'une transformation chimique Modélisation microscopique |         Modélisation microscopique |
-| 2. Modéliser l'évolution temporelle d'un système, siège d'une transformation B) Modéliser l'évolution temporelle d'un système, siège d'une transformation nucléaire   |     B) Modéliser l'évolution temporelle d'un système, siège d'une transformation nucléaire |
-| 3. Prévoir l'état final d'un système, siège d'une transformation chimique C) Forcer le sens d'évolution d'un système  |     C) Forcer le sens d'évolution d'un système    |
+- Déterminer la composition d'un système par des méthodes physiques et chimiques (totalité des notions) :
+  - Modéliser des transformations acide-base par des transferts d'ion hydrogène H+
+  - Analyser un système chimique par des méthodes physiques
+  - Analyser un système par des méthodes chimiques
+- Modéliser l'évolution temporelle d'un système, siège d'une transformation (uniquement les notions relevant de la partie suivante) :
+  - Suivre et modéliser l'évolution temporelle d'un système siège d'une transformation chimique (uniquement la partie suivante) :
+  - Suivi temporel et modélisation macroscopique
+- Prévoir l'état final d'un système, siège d'une transformation chimique (uniquement les notions relevant des parties suivantes) :
+  - Prévoir le sens de l'évolution spontanée d'un système chimique (uniquement les parties suivantes) :
+  - État final d'un système siège d'une transformation non totale : état d'équilibre chimique
+  - Modèle de l'équilibre dynamique
+  - Quotient de réaction Qr
+  - Système à l'équilibre chimique : constante d'équilibre K(T)
+  - Critère d'évolution spontanée d'un système hors équilibre chimique
+  - Transformation spontanée modélisée par une réaction d'oxydo-réduction
+  - Oxydants et réducteurs usuels
+  - Comparer la force des acides et des bases
+- Élaborer des stratégies en synthèse organique (uniquement les notions relevant des parties suivantes)
+  - Structure et propriétés
+  - Optimisation d'une étape de synthèse
 
-**Thème Mouvement et interactions**
+### Contenu disciplinaire « Mouvement et interactions », uniquement les items suivants
 
-|             |               Notions exclues du programme de la partie écrite de l'épreuve                |
-|:------:|:---:|
-| 3. Modéliser l'écoulement d'un fluide |        3. Modéliser l'écoulement d'un fluide |
+- Décrire un mouvement
+- Relier les actions appliquées à un système à son mouvement
 
-**Thème Ondes et signaux**
+### Contenu disciplinaire « L'énergie : conversions et transferts », uniquement les items suivants
 
-|              |               Notions exclues du programme de la partie écrite de l'épreuve                |
-|:------:|:---:|
-| 2. Former des images, décrire la lumière par un flux de photons
-B) Décrire la lumière par un flux de photons |        B) Décrire la lumière par un flux de photons |
+- Décrire un système thermodynamique : exemple du modèle du gaz parfait
+- Effectuer des bilans d'énergie sur un système : le premier principe de la thermodynamique (uniquement les notions relevant des parties suivantes)
+  - Énergie interne d'un système. Aspects microscopiques
+  - Premier principe de la thermodynamique. Transfert thermique, travail
+  - Capacité thermique d'un système incompressible. Énergie interne d'un système incompressible
+  - Modes de transfert thermique. Flux thermique. Résistance thermique
 
-## 2. Partie écrite (2022)
+### Contenu disciplinaire « Ondes et signaux », uniquement les items suivants
 
-**Thème : « L'énergie : conversions et transferts »**
+- Caractériser les phénomènes ondulatoires (uniquement les notions relevant des parties suivantes)
+  - Intensité sonore, intensité sonore de référence, niveau d'intensité sonore. Atténuation (en dB)
+  - Diffraction d'une onde par une ouverture : conditions d'observation et caractéristiques. Angle caractéristique de diffraction
+  - Interférences de deux ondes, conditions d'observation. Interférences constructives, Interférences destructives
+  - Interférences de deux ondes lumineuses, différence de chemin optique, conditions d'interférences constructives ou destructives
+- Former des images, décrire la lumière par un flux de photons (uniquement les notions relevant des parties suivantes)
+- Former des images
+- Étudier la dynamique d'un système électrique
 
-*Effectuer des bilans d'énergie sur un système : le premier principe de la thermodynamique*
+## 2. Partie pratique : évaluation des compétences expérimentales
 
-|              |               Notions exclues du programme de la partie écrite de l'épreuve                |
-|:------:|:---:|
-| Bilan thermique du système Terre-atmosphère. Effet de serre. |   Effectuer un bilan quantitatif d'énergie pour estimer la température terrestre moyenne, la loi de Stefan-Boltzmann étant donnée.
-Discuter qualitativement de l'influence de l'albédo et de l'effet de serre sur la température terrestre moyenne. |
+Concernant la partie pratique de l'épreuve terminale, les élèves doivent savoir mobiliser les capacités expérimentales identifiées dans le paragraphe « Capacités expérimentales » en fin du programme de l'enseignement de spécialité physique-chimie de la classe terminale, à l'exception des capacités expérimentales suivantes :
 
-**Thème : « Ondes et signaux »**
-
-|              |               Notions exclues du programme de la partie écrite de l'épreuve                |
-|:------:|:---:|
-| Effet Doppler. Décalage Doppler. |   Décrire et interpréter qualitativement les observations correspondant à une manifestation de l'effet Doppler. Établir l'expression du décalage Doppler dans le cas d'un observateur fixe, d'un émetteur mobile et dans une configuration à une dimension.
-Exploiter l'expression du décalage Doppler dans des situations variées utilisant des ondes acoustiques ou des ondes électromagnétiques.
-Exploiter l'expression du décalage Doppler en acoustique pour déterminer une vitesse. |
-
-**Thème : « Constitution et transformations de la matière »**
-
-|              |               Notions exclues du programme de la partie écrite de l'épreuve                |
-|:------:|:---:|
-| Stratégie de synthèse multi-étapes. Modification de groupe caractéristique, modification de chaîne carbonée, polymérisation. Protection/déprotection. |  Élaborer une séquence réactionnelle de synthèse d'une espèce à partir d'une banque de réactions.
-Identifier des réactions d'oxydo-réduction, acide-base, de substitution, d'addition, d'élimination.
-Identifier des étapes de protection/déprotection et justifier leur intérêt, à partir d'une banque de réactions.
-Mettre en œuvre un protocole de synthèse conduisant à la modification d'un groupe caractéristique ou d'une chaîne carbonée. |
-| Synthèses écoresponsables. | Discuter l'impact environnemental d'une synthèse et proposer des améliorations à l'aide de données fournies, par exemple en termes d'énergie, de formation et valorisation de sous-produits et de choix des réactifs et solvants.  |  
-
-## 3. Épreuve de capacités expérimentales
-
-Les notions et capacités expérimentales suivantes sont exclues du programme de la partie pratique de l'épreuve :
-
-**Thème Constitution et transformations de la matière**
-
-|              |               Notions et capacités exclues du programme de la partie pratique de l'épreuve             |
-|:------:|:---:|
-| 2. Modéliser l'évolution temporelle d'un système, siège d'une transformation  A) Suivre et modéliser l'évolution temporelle d'un système siège d'une transformation chimique  Modélisation microscopique |         Modélisation microscopique |
-| 2. Modéliser l'évolution temporelle d'un système, siège d'une transformation  B) Modéliser l'évolution temporelle d'un système, siège d'une transformation nucléaire   |     B) Modéliser l'évolution temporelle d'un système, siège d'une transformation nucléaire |
-| 3. Prévoir l'état final d'un système, siège d'une transformation chimique C) Forcer le sens d'évolution d'un système  |     C) Forcer le sens d'évolution d'un système    |
-|       | Réaliser une pile et un circuit électrique intégrant un électrolyseur.|
-
-**Thème Mouvement et interactions**
-
-|              |               Notions et capacités exclues du programme de la partie pratique de l'épreuve             |
-|:------:|:---:|
-| 3. Modéliser l'écoulement d'un fluide |         3. Modéliser l'écoulement d'un fluide |
-|    |     Utiliser un dispositif permettant d'étudier la poussée d'Archimède. Mesurer une pression et une vitesse d'écoulement dans un gaz et dans un liquide. |
-
-**Thème Ondes et signaux**
-
-|              |               Notions et capacités exclues du programme de la partie pratique de l'épreuve             |
-|:------:|:---:|
-| 2. Former des images, décrire la lumière par un flux de photons.  B) Décrire la lumière par un flux de photons |         B) Décrire la lumière par un flux de photons |
-|    |     Utiliser une cellule photovoltaïque. |
+- Réaliser une pile et un circuit électrique intégrant un électrolyseur
+- Utiliser un dispositif permettant d'étudier la poussée d'Archimède
+- Mesurer une pression et une vitesse d'écoulement dans un gaz et dans un liquide
+- Suivre l'évolution de la température d'un système
+- Utiliser une cellule photovoltaïque
+- Mettre en œuvre un dispositif permettant d'étudier l'effet Doppler en acoustique

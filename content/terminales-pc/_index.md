@@ -11,7 +11,7 @@ layout: "single"
 
 - {{< remote "Modalités de l'examen" "modalites_examen_pc" >}}
 
-- {{< remote "Parties du programme exclues de l'épreuve écrite" "programme_avant_examen" >}}
+- [<span style="color: red;"><strong>Parties du programme de l'épreuve écrite</strong></span>]({{< ref "programme_avant_examen.md" >}})
 
 - {{< remote "Modalités de l'épreuve du Grand oral" "grand_oral" >}}
 
