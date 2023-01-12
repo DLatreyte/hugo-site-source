@@ -1,6 +1,6 @@
 ---
-title: "Spécialité NSI, Bulletin officiel spécial n° 2 du 13 février 2020"
-subtitle: "Épreuve de l'enseignement de spécialité « numérique et sciences informatiques » de la classe de terminale de la voie générale à compter de la session 2021 de l'examen du baccalauréat"
+title: "Spécialité NSI, Bulletin officiel n°36 du 30 septembre 2022"
+subtitle: "Épreuve de l'enseignement de spécialité « numérique et sciences informatiques » de la classe de terminale de la voie générale à compter de la session 2023 de l'examen du baccalauréat"
 author: ""
 type: ""
 date: 2020-08-21T23:02:16+04:00
@@ -29,9 +29,7 @@ La note globale de l'épreuve est donnée sur 20 points.**
 
 ### Modalités
 
-La partie écrite consiste en la résolution de **trois exercices** permettant d'évaluer *les connaissances et les capacités attendues conformément aux programmes de première et de terminale de la spécialité*. Chaque exercice est noté sur 4 points.
-
-Le sujet propose cinq exercices, parmi lesquels le candidat choisit les trois qu'il traitera. Ces cinq exercices permettent d'aborder les différentes rubriques du programme, sans obligation d'exhaustivité. Le sujet comprend obligatoirement au moins un exercice relatif à chacune des trois rubriques suivantes : **traitement de données en tables et bases de données** ; **architectures matérielles**, **systèmes d'exploitation et réseaux** ; **algorithmique, langages et programmation**.
+Le sujet comporte trois exercices indépendants les uns des autres, qui permettent d'évaluer les connaissances et compétences des candidats.
 
 ## 2. Partie pratique
 
@@ -40,7 +38,7 @@ Le sujet propose cinq exercices, parmi lesquels le candidat choisit les trois qu
 ### Modalités
 
 La partie pratique consiste en la résolution de **deux exercices sur ordinateur**, chacun étant noté sur 4 points.  
-Le candidat est évalué sur la base d'un dialogue avec un professeur-examinateur. Un examinateur évalue au maximum quatre élèves. L'examinateur ne peut pas évaluer un élève qu'il a eu en classe durant l'année en cours.  
+Le candidat est évalué sur la base d'un **dialogue avec un professeur-examinateur**. Un examinateur évalue au maximum quatre élèves. L'examinateur ne peut pas évaluer un élève qu'il a eu en classe durant l'année en cours.  
 L'évaluation de cette partie se déroule au cours du *deuxième trimestre* pendant la période de l'épreuve écrite de spécialité.  
 
 ### Premier exercice
