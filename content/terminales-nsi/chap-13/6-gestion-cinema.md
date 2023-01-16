@@ -405,12 +405,12 @@ WHERE seance = '13h10'
 {{% solution "Réponse" %}}
 
 ```SQL
-UPDATE projection
-SET tarif = tarif+1
+UPDATE Projection
+SET tarif = tarif + 1
 WHERE seance = '14h50';
 
-UPDATE projection
-SET tarif = tarif+2
+UPDATE Projection
+SET tarif = tarif + 2
 WHERE seance = '19h30';
 ```
 
