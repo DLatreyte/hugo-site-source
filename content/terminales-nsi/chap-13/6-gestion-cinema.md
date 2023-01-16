@@ -393,9 +393,10 @@ WHERE salle = 'Sud';
 {{% solution "Réponse" %}}
 
 ```SQL
-UPDATE projection
+UPDATE Projection
 SET seance = '19h30'
-WHERE seance = '13h10';
+WHERE seance = '13h10'
+    AND salle = "Sud";
 ```
 
 {{% /solution %}}
