@@ -15,7 +15,7 @@ auto_numbering: true
 
 ## De Oersted à Ampère
 
-Regardez la vidéo ci-dessous (3 min) puis répondez aux questions sur Socrative (12 min).
+Regardez la vidéo ci-dessous (3 min) puis répondez aux questions (12 min).
 
 {{%youtube "nERpA5ruMOQ" %}}
 
@@ -171,7 +171,7 @@ Ces champs peuvent interagir avec les courants électriques qui circulent dans d
 
 ## Le champ magnétique d'un aimant
 
-Regardez la vidéo ci-dessous (de 0 à 3 min seulement) puis répondez aux questions sur Socrative (5 min).
+Regardez la vidéo ci-dessous (de 0 à 3 min seulement) puis répondez aux questions (5 min).
 
 {{%youtube "9H8gfyBsZzI" %}}
 
@@ -231,7 +231,7 @@ Il est impossible de mettre en évidence une quelconque charge magnétique (mono
 
 ## La découverte du phénomène de l'induction électromagnétique
 
-Regardez la vidéo ci-dessous (10 min) puis répondez aux questions sur Socrative (15 min).
+Regardez la vidéo ci-dessous (10 min) puis répondez aux questions (15 min).
 
 {{%youtube "yU--8Zk57-Y" %}}
 
