@@ -298,7 +298,7 @@ WHERE codecat = (SELECT codecat
 {{% solution "Réponse" %}}
 
 ```SQL
-SELECT titre
+SELECT DISTINCT titre
 FROM film f, projection p
 WHERE f.numfilm = p.numfilm
 AND seance IN ('11h00','13h10','14h50');
@@ -327,7 +327,7 @@ Utiliser une autojointure.
 SELECT DISTINCT p1.numfilm, p1.salle, p1.seance
 FROM projection p1, projection p2
 WHERE p1.seance = p2.seance
-AND p1.numfilm! = p2.numfilm;
+AND p1.numfilm != p2.numfilm;
 ```
 
 {{% /solution %}}
@@ -375,16 +375,16 @@ On fait la supposition que le tarif des films dépend du film, de la salle, de l
 
 ```SQL
 UPDATE projection
-SET tarif = '5.00'
-WHERE sale = 'nord';
+SET tarif = 5.00
+WHERE salle = 'Nord';
 
 UPDATE projection
-SET tarif = '8.00'
-WHERE sale = 'centrale';
+SET tarif = 8.00
+WHERE salle = 'Centrale';
 
 UPDATE projection
-SET tarif = '6.50'
-WHERE sale = 'sud';
+SET tarif = 6.50
+WHERE salle = 'Sud';
 ```
 
 {{% /solution %}}
