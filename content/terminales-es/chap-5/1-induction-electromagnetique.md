@@ -1,6 +1,6 @@
 ---
 title: "La découverte du phénomène de l'induction électromagnétique"
-subtitle: "Chapitre 1,1"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-11-25T19:02:15+04:00
@@ -19,34 +19,33 @@ Regardez la vidéo ci-dessous (3 min) puis répondez aux questions sur Socrative
 
 {{%youtube "nERpA5ruMOQ" %}}
 
-1. En quelle année Ampère a t-il inventé le terme de courant électrique ?    
-    [ ] 1820   
-    [ ] 1900   
-    [ ] 1950   
+1. En quelle année Ampère a t-il inventé le terme de courant électrique ?
+    [ ] 1820
+    [ ] 1900
+    [ ] 1950
     [ ] 1700
 
 {{% solution "Réponse" %}}
-[X] 1820   
-[ ] 1900   
-[ ] 1950   
+[X] 1820
+[ ] 1900
+[ ] 1950
 [ ] 1700
 
 L'électromagnétisme est une branche de la physique qui a débuté à la fin du 18ème siècle mais a essentiellement été développée dans la première moitié du 19ème siècle.
 
 {{% /solution %}}
 
-2. Qui a découvert la pile électrique ?   
-    [ ] Alessandro Volta   
-    [ ] André Marie Ampère   
-    [ ] Isaac Newton   
+2. Qui a découvert la pile électrique ?
+    [ ] Alessandro Volta
+    [ ] André Marie Ampère
+    [ ] Isaac Newton
     [ ] Maxwell
 
 {{% solution "Réponse" %}}
-[X] Alessandro Volta   
-[ ] André Marie Ampère   
-[ ] Isaac Newton   
+[X] Alessandro Volta
+[ ] André Marie Ampère
+[ ] Isaac Newton
 [ ] Maxwell
-
 
 Luigi Galvani avait découvert un phénomène qu’il qualifiait d’« électricité animale » : lorsque l'on connecte deux disques métalliques de métaux différents par une patte de grenouille, celle-ci se contracte, indiquant le passage d'un courant électrique. Volta eut l'idée de substituer à la patte de l’animal un buvard imbibé de saumure, et ses méthodes d’étude de la charge électrique lui permirent de montrer que, dans les deux cas, il y avait échange de charge électrique et apparition d’une tension entre les deux métaux.
 
@@ -54,20 +53,20 @@ En 1800, un différend professionnel à propos de l’interprétation biologique
 
 {{% /solution %}}
 
-3. Qui a découvert qu'il est possible de dévier une boussole qui normalement indique le pôle Nord&nbsp;?   
-    [ ] Alessandro Volta    
-    [ ] André Marie Ampère   
-    [ ] Isaac Newton   
+3. Qui a découvert qu'il est possible de dévier une boussole qui normalement indique le pôle Nord&nbsp;?
+    [ ] Alessandro Volta
+    [ ] André Marie Ampère
+    [ ] Isaac Newton
     [ ] Hans Christian Ørsted
 
 {{% solution "Réponse" %}}
 
-[ ] Alessandro Volta   
-[ ] André Marie Ampère   
-[ ] Isaac Newton   
+[ ] Alessandro Volta
+[ ] André Marie Ampère
+[ ] Isaac Newton
 [X] Hans Christian Ørsted
 
-En avril 1820, lors d'un cours sur l'électricité qu'il faisait à ses étudiants, il découvrit la relation entre l'électricité et le magnétisme dans une expérience qui nous apparaît aujourd'hui comme très simple. 
+En avril 1820, lors d'un cours sur l'électricité qu'il faisait à ses étudiants, il découvrit la relation entre l'électricité et le magnétisme dans une expérience qui nous apparaît aujourd'hui comme très simple.
 
 Il démontra, par l'expérience, qu'un fil transportant du courant était capable de faire bouger l'aiguille aimantée d'une boussole. Il pouvait donc y avoir interaction entre les forces électriques d'une part et les forces magnétiques d'autre part, ce qui était révolutionnaire pour l'époque.
 
@@ -75,51 +74,51 @@ Il démontra, par l'expérience, qu'un fil transportant du courant était capabl
 
 {{% /solution %}}
 
-4. Qu'est-ce que l'électrodynamique ?    
-    [ ] La science des interactions entre courants électriques    
-    [ ] Le mouvement des électrons dans le champ magnétique terrestre   
-    [ ] L'étude du courant électrique   
+4. Qu'est-ce que l'électrodynamique ?
+    [ ] La science des interactions entre courants électriques
+    [ ] Le mouvement des électrons dans le champ magnétique terrestre
+    [ ] L'étude du courant électrique
 
-5. Quelle est l'hypothèse fondamentale d'Ampère pour expliquer l'interaction des courants électriques et des aimants&nbsp;?   
-    [ ] Il existerait des courants électriques dans les aimants comme la Terre    
-    [ ] Il existe deux types de charges électriques    
+5. Quelle est l'hypothèse fondamentale d'Ampère pour expliquer l'interaction des courants électriques et des aimants&nbsp;?
+    [ ] Il existerait des courants électriques dans les aimants comme la Terre
+    [ ] Il existe deux types de charges électriques
     [ ] Le champ magnétique terrestre protège la Terre des particules chargées provenant du Soleil (le vent solaire)
 
 {{% solution "Réponse" %}}
 
-[X] Il existerait des courants électriques dans les aimants comme la Terre   
-[ ] Il existe deux types de charges électriques    
+[X] Il existerait des courants électriques dans les aimants comme la Terre
+[ ] Il existe deux types de charges électriques
 [ ] Le champ magnétique terrestre protège la Terre des particules chargées provenant du Soleil (le vent solaire)
 
-Ampère suppose l'existence de petits courants circulaires à l'intérieur des aimants afin de généraliser l'interaction courant - courant à l'interaction courant - aimant.    
+Ampère suppose l'existence de petits courants circulaires à l'intérieur des aimants afin de généraliser l'interaction courant - courant à l'interaction courant - aimant.
 Cette vision est désormais abandonnée, même si elle permet toujours d'expliquer de nombreux phénomènes.
 
 {{% /solution %}}
 
-6. Comment s'oriente une boussole placée au voisinage d'un fil électrique parcouru par un courant électrique ?   
-    [ ] Perpendiculairement   
-    [ ] Parallèlement   
+6. Comment s'oriente une boussole placée au voisinage d'un fil électrique parcouru par un courant électrique ?
+    [ ] Perpendiculairement
+    [ ] Parallèlement
     [ ] Aucune orientation n'intervient
 
 {{% solution "Réponse" %}}
-    [X] Perpendiculairement    
-    [ ] Parallèlement    
+    [X] Perpendiculairement
+    [ ] Parallèlement
     [ ] Aucune orientation n'intervient
 
 {{% /solution %}}
 
-7. Qu'a inventé François Arago ?    
-    [ ] Rien   
-    [ ] La pile électrique   
-    [ ] Le télégraphe   
+7. Qu'a inventé François Arago ?
+    [ ] Rien
+    [ ] La pile électrique
+    [ ] Le télégraphe
     [ ] L'aimantation temporaire, base de l'électroaimant
 
 {{% solution "Réponse" %}}
 
-[ ] Rien   
-[ ] La pile électrique   
-[ ] Le télégraphe   
-[X] L'aimantation temporaire, base de l'électroaimant     
+[ ] Rien
+[ ] La pile électrique
+[ ] Le télégraphe
+[X] L'aimantation temporaire, base de l'électroaimant
 
 En 1806, Arago est envoyé en Espagne, à Majorque avec Jean-Baptiste Biot pour poursuivre le relevé du méridien de Paris. Pris dans la guerre d'Espagne, alors qu'il pratique seul une opération de triangulation, il est fait prisonnier. Interné au château de Bellver, il s'évade plusieurs fois, et parvient à rejoindre Paris où il entre en héros en 1809. Cela lui permet d'être élu membre de l'Académie des sciences le 18 septembre 1809, à seulement vingt-trois ans.
 
@@ -127,7 +126,7 @@ Touche-à-tout, il se mêle aux expériences de mesure de la vitesse du son et �
 
 {{% /solution %}}
 
-8. En quelle année ont abouti les travaux d'Ampère sur l'électrodynamique ?   
+8. En quelle année ont abouti les travaux d'Ampère sur l'électrodynamique ?
     [ ] 1820
     [ ] 1826
     [ ] 1888
@@ -142,20 +141,20 @@ Touche-à-tout, il se mêle aux expériences de mesure de la vitesse du son et �
 
 {{% /solution %}}
 
-9. Que s'est-il passé en 1881 ?   
-    [ ] Ampère montre que deux fils enroulés parcourus par un aimant se comportent exactement comme deux aimants    
-    [ ] Ampère a découvert la tension et le courant   
-    [ ] Ampère a construit un télégraphe   
-    [ ] Ampère a inventé le code Morse    
-    [ ] Les scientifiques ont décidé de nommer Ampère l'unité internationale de mesure de l'intensité du courant électrique   
+9. Que s'est-il passé en 1881 ?
+    [ ] Ampère montre que deux fils enroulés parcourus par un aimant se comportent exactement comme deux aimants
+    [ ] Ampère a découvert la tension et le courant
+    [ ] Ampère a construit un télégraphe
+    [ ] Ampère a inventé le code Morse
+    [ ] Les scientifiques ont décidé de nommer Ampère l'unité internationale de mesure de l'intensité du courant électrique
 
 {{% solution "Réponse" %}}
 
-[X] Ampère montre que deux fils enroulés parcourus par un aimant se comportent exactement comme deux aimants    
-[ ] Ampère a découvert la tension et le courant   
-[ ] Ampère a construit un télégraphe   
-[ ] Ampère a inventé le code Morse    
-[X] Les scientifiques ont décidé de nommer Ampère l'unité internationale de mesure de l'intensité du courant électrique   
+[X] Ampère montre que deux fils enroulés parcourus par un aimant se comportent exactement comme deux aimants
+[ ] Ampère a découvert la tension et le courant
+[ ] Ampère a construit un télégraphe
+[ ] Ampère a inventé le code Morse
+[X] Les scientifiques ont décidé de nommer Ampère l'unité internationale de mesure de l'intensité du courant électrique
 
 {{% /solution %}}
 
@@ -170,27 +169,26 @@ Ces champs peuvent interagir avec les courants électriques qui circulent dans d
 
 {{% /solution %}}
 
-
 ## Le champ magnétique d'un aimant
 
 Regardez la vidéo ci-dessous (de 0 à 3 min seulement) puis répondez aux questions sur Socrative (5 min).
 
 {{%youtube "9H8gfyBsZzI" %}}
 
-11. Qu'indique la pointe rouge d'une boussole ?    
-    [ ] Le pôle Nord de la boussole    
-    [ ] Le pôle Sud de la boussole     
-    [ ] Le pôle Nord magnétique terrestre     
-    [ ] Le pôle sud magnétique terrestre     
-    [ ] Le pôle Nord    
-    [ ] Le pôle Sud     
+11. Qu'indique la pointe rouge d'une boussole ?
+    [ ] Le pôle Nord de la boussole
+    [ ] Le pôle Sud de la boussole
+    [ ] Le pôle Nord magnétique terrestre
+    [ ] Le pôle sud magnétique terrestre
+    [ ] Le pôle Nord
+    [ ] Le pôle Sud
 
 {{% solution "Réponse" %}}
-[X] Le pôle Nord de la boussole    
-[ ] Le pôle Sud de la boussole     
-[ ] Le pôle Nord magnétique terrestre     
-[X] Le pôle sud magnétique terrestre     
-[ ] Le pôle Nord    
+[X] Le pôle Nord de la boussole
+[ ] Le pôle Sud de la boussole
+[ ] Le pôle Nord magnétique terrestre
+[X] Le pôle sud magnétique terrestre
+[ ] Le pôle Nord
 [ ] Le pôle Sud
 
 - La pointe rouge d'une boussole correspond à son pôle Nord, c'est à dire à l'endroit d'où émergent les lignes de champ magnétique.
@@ -200,8 +198,8 @@ Regardez la vidéo ci-dessous (de 0 à 3 min seulement) puis répondez aux quest
 
 12. Les boussoles, proches d'un aimant, n'indiquent pas le pôle nord terrestre. Cochez les propositions correctes.
 
-    [ ] Elles sont attirées par l'effet de la gravitation de l'aimant   
-    [ ] Elles s'alignent selon les lignes de champ créées par l'aimant    
+    [ ] Elles sont attirées par l'effet de la gravitation de l'aimant
+    [ ] Elles s'alignent selon les lignes de champ créées par l'aimant
     [ ] Les lignes de champ magnétique sont modélisées comme suit pour un aimant droit
     <img src="/terminales-es/chap-5/chap-5-1/aimant-droit-champ.png" alt="" width="50%" />
     [ ] Les lignes de champ magnétique sont modélisées comme suit pour un aimant droit
@@ -209,13 +207,12 @@ Regardez la vidéo ci-dessous (de 0 à 3 min seulement) puis répondez aux quest
 
 {{% solution "Réponse" %}}
 
-[ ] Elles sont attirées par l'effet de la gravitation de l'aimant   
-[X] Elles s'alignent selon les lignes de champ créées par l'aimant    
+[ ] Elles sont attirées par l'effet de la gravitation de l'aimant
+[X] Elles s'alignent selon les lignes de champ créées par l'aimant
 [X] Les lignes de champ magnétique sont modélisées comme suit pour un aimant droit
 <img src="/terminales-es/chap-5/chap-5-1/aimant-droit-champ.png" alt="" width="50%" />
 [ ] Les lignes de champ magnétique sont modélisées comme suit pour un aimant droit
 <img src="/terminales-es/chap-5/chap-5-1/aimant-droit.png" alt="" width="40%" />
-
 
 - Les boussoles s'alignent selon les lignes de champ créées par un aimant.
 - Un aimant droit produit un champ magnétique non homogène, c'est à dire dont le sens, la direction et la valeur varient dans l'espace.
@@ -236,86 +233,85 @@ Il est impossible de mettre en évidence une quelconque charge magnétique (mono
 
 Regardez la vidéo ci-dessous (10 min) puis répondez aux questions sur Socrative (15 min).
 
-
 {{%youtube "yU--8Zk57-Y" %}}
 
-14. Quelle question s'est posée Michael Faraday ?    
-    [ ] Est-il possible d'obtenir un champ magnétique à partir d'un courant électrique ?    
-    [ ] Est-il possible d'obtenir un courant électrique à partir d'un champ magnétique ?    
-    [ ] Est-il possible de créer un courant sans utiliser de piles ?   
+14. Quelle question s'est posée Michael Faraday ?
+    [ ] Est-il possible d'obtenir un champ magnétique à partir d'un courant électrique ?
+    [ ] Est-il possible d'obtenir un courant électrique à partir d'un champ magnétique ?
+    [ ] Est-il possible de créer un courant sans utiliser de piles ?
 
 {{% solution "Réponse" %}}
 
-[ ] Est-il possible d'obtenir un champ magnétique à partir d'un courant électrique ?    
-[X] Est-il possible d'obtenir un courant électrique à partir d'un champ magnétique ?    
+[ ] Est-il possible d'obtenir un champ magnétique à partir d'un courant électrique ?
+[X] Est-il possible d'obtenir un courant électrique à partir d'un champ magnétique ?
 [X] Est-il possible de créer un courant sans utiliser de piles ?
 
 {{% /solution %}}
 
-15. Quelle est la forme d'énergie source de la production d'électricité dans une pile ?    
-    [ ] Énergie cinétique    
-    [ ] Énergie potentielle de pesanteur    
-    [ ] Énergie chimique    
-    [ ] Énergie nucléaire   
+15. Quelle est la forme d'énergie source de la production d'électricité dans une pile ?
+    [ ] Énergie cinétique
+    [ ] Énergie potentielle de pesanteur
+    [ ] Énergie chimique
+    [ ] Énergie nucléaire
 
 {{% solution "Réponse" %}}
-[ ] Énergie cinétique    
-[ ] Énergie potentielle de pesanteur    
-[C] Énergie chimique    
-[ ] Énergie nucléaire   
+[ ] Énergie cinétique
+[ ] Énergie potentielle de pesanteur
+[C] Énergie chimique
+[ ] Énergie nucléaire
 
 Le fonctionnement des piles électrique est basé sur la conversion d'énergie chimique en énergie électrique.
 
 {{% /solution %}}
 
-16. La lampe s'allume lorsque :    
-    [ ] L'aimant est immobile près de la bobine    
-    [ ] L'aimant s'approche de la bobine    
-    [ ] L'aimant est loin de la bobine    
-    [ ] L'aimant s'éloigne de la bobine   
-    [ ] Un champ magnétique agit sur la bobine   
-    [ ] La bobine s'approche de l'aimant    
-    [ ] La bobine s'éloigne de l'aimant    
+16. La lampe s'allume lorsque :
+    [ ] L'aimant est immobile près de la bobine
+    [ ] L'aimant s'approche de la bobine
+    [ ] L'aimant est loin de la bobine
+    [ ] L'aimant s'éloigne de la bobine
+    [ ] Un champ magnétique agit sur la bobine
+    [ ] La bobine s'approche de l'aimant
+    [ ] La bobine s'éloigne de l'aimant
 
 {{% solution "Réponse" %}}
 
-[ ] L'aimant est immobile près de la bobine    
-[X] L'aimant s'approche de la bobine    
-[ ] L'aimant est loin de la bobine    
-[X] L'aimant s'éloigne de la bobine   
-[ ] Un champ magnétique agit sur la bobine   
-[F] La bobine s'approche de l'aimant    
-[ ] La bobine s'éloigne de l'aimant    
+[ ] L'aimant est immobile près de la bobine
+[X] L'aimant s'approche de la bobine
+[ ] L'aimant est loin de la bobine
+[X] L'aimant s'éloigne de la bobine
+[ ] Un champ magnétique agit sur la bobine
+[F] La bobine s'approche de l'aimant
+[ ] La bobine s'éloigne de l'aimant
 
 - Le phénomène d'induction intervient lorsque la distance relative entre l'aimant et la bobine varie (quel que soit ce sens de variation).
 - Plus cette variation est rapide, plus l'intensité du courant induit est grande.
 
 {{% /solution %}}
 
-17. Quel est le secret pour créer un courant dans un fil électrique ?   
-    [ ] Appliquer un champ magnétique à ce fil   
-    [ ] Appliquer un champ magnétique variable à ce fil   
-    [ ] Le brancher sur une prise électrique   
+17. Quel est le secret pour créer un courant dans un fil électrique ?
+    [ ] Appliquer un champ magnétique à ce fil
+    [ ] Appliquer un champ magnétique variable à ce fil
+    [ ] Le brancher sur une prise électrique
 
 {{% solution "Réponse" %}}
 
-[ ] Appliquer un champ magnétique à ce fil   
-[X] Appliquer un champ magnétique variable à ce fil   
-[ ] Le brancher sur une prise électrique   
+[ ] Appliquer un champ magnétique à ce fil
+[X] Appliquer un champ magnétique variable à ce fil
+[ ] Le brancher sur une prise électrique
 
 Le phénomène d'induction intervient aussi lorsqu'un champ magnétique d'intensité variable dans le temps agit sur la bobine.
 
 {{% /solution %}}
 
-18. Quelle est la différence entre un courant induit et un courant électrique simple ?    
-    [ ] le courant électrique simple est produit par une pile alors que le courant induit est produit par un champ magnétique variable    
-    [ ] L'intensité des courants simples est inférieure à l'intensité des courants induits.    
-    [ ] Les deux types de courant sont identiques, c'est la manière de les générer qui est différente.    
+18. Quelle est la différence entre un courant induit et un courant électrique simple ?
+    [ ] le courant électrique simple est produit par une pile alors que le courant induit est produit par un champ magnétique variable
+    [ ] L'intensité des courants simples est inférieure à l'intensité des courants induits.
+    [ ] Les deux types de courant sont identiques, c'est la manière de les générer qui est différente.
 
 {{% solution "Réponse" %}}
 
-[ ] le courant électrique simple est produit par une pile alors que le courant induit est produit par un champ magnétique variable    
-[ ] L'intensité des courants simples est inférieure à l'intensité des courants induits.    
+[ ] le courant électrique simple est produit par une pile alors que le courant induit est produit par un champ magnétique variable
+[ ] L'intensité des courants simples est inférieure à l'intensité des courants induits.
 [X] Les deux types de courant sont identiques, c'est la manière de les générer qui est différente.
 
 Le courant électrique est un déplacement d'ensemble de charges électriques. Que le courant soit produit par une pile ou par le phénomène d'induction ne change rien à cette définition.
@@ -325,7 +321,7 @@ Le courant électrique est un déplacement d'ensemble de charges électriques. Q
 
 {{% solution "Réponse" %}}
 
-Le phénomène d'induction intervient chaque fois que le flux magnétique (comprendre l'ensemble des lignes de champ) qui traverse la surface formée par la bobine varie, que cette variation soit due à un déplacement dans l'espace ou à une variation dans le temps.   
+Le phénomène d'induction intervient chaque fois que le flux magnétique (comprendre l'ensemble des lignes de champ) qui traverse la surface formée par la bobine varie, que cette variation soit due à un déplacement dans l'espace ou à une variation dans le temps.
 Un courant électrique circule alors dans la bobine.
 
 {{% /solution %}}
