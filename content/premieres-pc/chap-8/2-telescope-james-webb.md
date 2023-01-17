@@ -61,9 +61,9 @@ Le point de Lagrange $L_2$ se trouve sur la ligne Terre-Soleil, au-delà de la T
 - Célérité de la lumière dans le vide : $c_0 = \pu{299 792 458 m.s-1}$.
 
 1. Reprendre la figure 2 sur sa feuille et tracer les vecteurs champ gravitationnel créés par le Soleil et par la Terre au point $L_2$.
-2. Donner la relation vectorielle du champ gravitationnel total $\vec{\cal{G}}$ au point $L_2$ en fonction des champs gravitationnels $\vec{\cal{G}}_S$ et $\vec{\cal{G}}_T$ créés par le Soleil et la Terre.
+2. Donner la relation vectorielle du champ gravitationnel total $\vec{\cal{G}}$ au point $L_2$ en fonction des champs gravitationnels $\vec{\cal{G}}_S$ et $\vec{\cal{G}}_T$ créés par le Soleil et la Terre.  
 **Remarque :** on note $d$ la distance entre la Terre et $L_2$.
-3. Donner l'expression de la valeur du champ gravitationnel total au point $L_2$ en fonction de $G$, $M_S$, $M_T$, $R_T$ et $d$.
+3. Donner l'expression de la valeur du champ gravitationnel total au point $L_2$ en fonction de $G$, $M_S$, $M_T$, $R_T$ et $d$.  
 **Remarque :** $R_T$ est la distance Soleil-Terre.
 4. En déduire l'expression de la valeur du champ gravitationnel créé par le Soleil au centre de la Terre en fonction de $G$, $M_S$, $R_T$.
 5. Déterminer, en utilisant les expressions établies aux questions 3. et 4., la relation qui définit le point de Lagrange $L_2$.
