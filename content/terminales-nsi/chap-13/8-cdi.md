@@ -75,7 +75,9 @@ ORDER BY annee ASC;
 {{% solution "Réponse" %}}
 
 ```sql
-
+SELECT titre
+FROM livres
+WHERE titre LIKE "%Astérix%";
 ```
 
 {{% /solution %}}
