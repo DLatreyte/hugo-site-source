@@ -136,7 +136,6 @@ Le document 1 nous apprend que la concentration en chlorure de sodium $\ce{NaCl}
 
 {{% /solution %}}
 
-<!--
 ## Exploitation des données avec Python
 
 {{% note normal %}}
@@ -147,5 +146,3 @@ Le document 1 nous apprend que la concentration en chlorure de sodium $\ce{NaCl}
 {{% /note %}}
 
 Remplacer les .......... dans le code source de façon à déterminer la concentration en chlorure de sodium dans le sérum physiologique.
-
--->
