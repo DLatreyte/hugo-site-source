@@ -1,6 +1,6 @@
 ---
 title: "Invariance de la valeur du quotient de réaction dans l'état d'équilibre"
-subtitle: "Chapitre 10,3"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-01-09T19:11:38+04:00
@@ -19,11 +19,11 @@ Après avoir défini le quotient de réaction, l'objectif est de démontrer que,
 ## Quotient de réaction associé à une réaction chimique acide-base modélisant une transformation chimique non totale
 
 {{% note normal %}}
-Le quotient de réaction associé à la réaction 
+Le quotient de réaction associé à la réaction
 $$
     \ce{ AH (aq) + H2O <=> A- (aq) + H3O+}
 $$
-a pour expression, dans un état quelconque de la transformation, 
+a pour expression, dans un état quelconque de la transformation,
 $$
     Q\_r = \dfrac{ \left( \dfrac{[\ce{A-}]}{C^o} \right) \cdot \left( \dfrac{[\ce{H3O+}]}{C^o} \right)}{ \left( \dfrac{[\ce{AH}]}{C^o} \right)}
 $$
@@ -41,6 +41,7 @@ Remarque
 - Mesurer la conductivité $\sigma$ des solutions d'acides (éthanoïque, méthanoïque ou benzoïque) de concentration molaire apportée $C\_i$ en réalisant les mesures de la solution la plus diluée à la solution la plus concentrée.\
 Les mesures seront effectuées sur le calibre $\pu{2000 \mu S.cm-1}$.
 - Compléter le tableau ci-dessous pour chaque acide (les conductivités doivent être exprimées en $\pu{\mu S.cm-1}$) :
+
 <center>
 
 | $C (\pu{mmol.L-1})$ | 1,00 | 2,00 | 5,00 | 10,00 |
@@ -83,4 +84,3 @@ Que pouvez-vous en conclure ?
 
 10. Comparer les valeurs de ces taux pour les solutions dont les concentrations sont égales à $\pu{1,0e-2 mol.L-1}$.\
 Que peut-on en conclure ?
-

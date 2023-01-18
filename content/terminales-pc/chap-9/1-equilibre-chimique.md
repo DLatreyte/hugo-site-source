@@ -1,6 +1,6 @@
 ---
 title: "Équilibre Chimique"
-subtitle: "Chapitre 10,1"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-01-07T22:24:09+04:00
@@ -120,7 +120,7 @@ Il faut noter que lorsqu'on réalise les étapes 1. et 2. le système est à l'�
 La transformation modélisée par la réaction de l'acide éthanoïque avec l'eau conduit à un équilibre chimique. Ces expériences nous permettent de mettre en évidence que **la transformation chimique n'est en fait pas modélisable par une réaction chimique mais par deux réactions chimiques inverses l'une de l'autre**.
 {{% /solution %}}
 
-## Systèmes chimiques en équilibre 
+## Systèmes chimiques en équilibre
 
 ### Définition
 
@@ -170,7 +170,7 @@ $\tau$ est un *nombre sans dimension* compris entre 0 et 1.
 
 - **Lorsque $\tau = 0$, le système n’a pas du tout évolué.**
 
-- **Lorsque $\tau = 1$, la transformation chimique est totale.** 
+- **Lorsque $\tau = 1$, la transformation chimique est totale.**
 
 {{% /note %}}
 
@@ -184,10 +184,10 @@ Pour une réaction chimique donnée, **le taux d'avancement final dépend de la 
 Un état d’**équilibre chimique** est un **état d’équilibre dynamique** résultant de *deux réactions s’effectuant en **sens inverse** et avec des **vitesses égales**.*
 {{% /note %}}
 
-
 ## Exercices d'application
 
 {{% note exercise %}}
+
 #### Carbonate de magnésium
 
 On mélange une solution aqueuse $A$ contenant, entre autres, $\pu{1,00 mmol}$ d'ions $\ce{Mg^{2+}}$ avec une solution aqueuse $B$ contenant, entre autres, $\pu{1,00 mmol}$ d'ions carbonate $\ce{CO3^{2-}}$.\
@@ -205,6 +205,7 @@ Donnée
 {{% solution "Réponses" %}}
 
 1. $$\ce{ Mg^{2+} (aq) + CO3^{2-} (aq) <=> MgCO3 (s) }$$
+
 <center>
 
 |État|Avancement|$\ce{Mg^{2+}}$|$+$|$\ce{CO3^{2-}}$|$\ce{<-->}$|$\ce{MgCO3}$|
@@ -229,7 +230,7 @@ Les réactifs ont été introduits dans les proportions stœchiométriques ; $x\
     $\tau = \dfrac{x\_f}{x\_{max}} = \dfrac{\pu{0,542 mmol}}{\pu{1,00 mmol}} = \pu{0,542}$\.
     La taux d'avancement final est égal à 54,2&nbsp;%.
 
-3. - $n_f (\ce{MgCO3}) = \pu{0,542 mmol}$ 
+3. - $n_f (\ce{MgCO3}) = \pu{0,542 mmol}$
     - $n_f (\ce{Mg^{2+}}) = n_f (\ce{CO3^{2-}}) = \pu{1,00 mmol} - \pu{0,542 mmol} = \pu{0,458 mmol}$
 
     Produits et réactifs coexistent dans l'état final, c'est un *état d'équilibre*.
@@ -237,6 +238,7 @@ Les réactifs ont été introduits dans les proportions stœchiométriques ; $x\
 {{% /solution %}}
 
 {{% note exercise %}}
+
 #### L'acide lactique
 
 L'acide lactique, de formule $\ce{C3H6O3}$, est utilisé en solution pour ses propriétés bactéricides.
@@ -262,6 +264,7 @@ On verse un volume $V$ dans un bécher et on mesure le $\mathrm{pH}$ de la solut
 {{% /note %}}
 
 {{% solution "Réponses" %}}
+
 1. La base conjuguée de l'acide lactique est l'ion lactate de formule $\ce{C3H5O3^-}$.\
 La demi-équation acido-basique associée s'écrit :
 $$
@@ -281,7 +284,8 @@ $$
 
 3. $$\ce{ C3H6O3 (aq) + H2O <=> C3H5O3^- (aq) + H3O+ }$$
 
-4. 
+4.
+
 <center>
 
 |État|Avancement|$\ce{C3H6O3}$|$+$|$\ce{H2O}$|$\ce{-->}$|$\ce{C3H5O3^-}$|$\ce{H3O^+}$|
@@ -306,8 +310,8 @@ Le taux d'avancement final ne dépend pas du volume $V$.
 5. $\tau = \dfrac{\pu{1,00 mol.L-1} \times 10^{—2,57}}{\pu{0,057 mol.L-1}} = \pu{0,047}$. Le taux d'avancement final vaut 4,7&nbsp;%. La transformation chimique est très limitée.
 {{% /solution %}}
 
-
 {{% note exercise %}}
+
 #### pH et $-\log C$
 
 On mesure le pH de solutions d'acide benzoïque $\ce{C6H5COOH}$ de concentrations apportées $C$. Les résultats des mesures sont regroupés dans le tableau suivant :
@@ -331,10 +335,9 @@ Pour $\pu{1,0e-4} < C < \pu{2,0e-2 mol.L-1}$, vérifier que le graphe est une dr
 5. Calculer pour chaque mesure le taux d'avancement final de la réaction. Dans quel sens évolue-t-il lorsque la concentration en acide diminue ?
 {{% /note %}}
 
-
 {{% note exercise %}}
-#### Iodure de plomb
 
+#### Iodure de plomb
 
 On mélange un volume $V\_A = \pu{50 mL}$ de solution de nitrate de plomb, $(\ce{Pb^{2+} (aq) + 2 N03^- (aq)})$, de concentration $C\_A = \pu{2,00e-2 mol.L-1}$ et un volume $V\_S = \pu{50 mL}$ de solution d'iodure de potassium, $\ce{K^+ (aq) + I^- (aq) })$, de concentration $C\_S = \pu{4,00e-2 mol.L-1}$. On observe l'apparition d'un précipité jaune d'iodure de plomb. On filtre le mélange obtenu et on récupère le précipité. Après rinçage et séchage, on détermine sa masse $m$, on obtient $m = \pu{0,41 g}$.
 
@@ -346,6 +349,7 @@ On mélange un volume $V\_A = \pu{50 mL}$ de solution de nitrate de plomb, $(\ce
 {{% /note %}}
 
 {{% note exercise %}}
+
 #### Solubilité de l'aspirine
 
 L'acide acétylsalicylique, $\ce{C9H8O4}$, plus connu sous le nom d'aspirine est peu soluble dans l'eau.

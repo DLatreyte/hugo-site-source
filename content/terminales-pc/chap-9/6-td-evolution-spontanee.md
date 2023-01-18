@@ -1,6 +1,6 @@
 ---
 title: "Les différentes raisons pour lesquelles un système chimique n'évolue pas"
-subtitle: "Chapitre 10,6"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-01-15T15:34:21+04:00
@@ -14,13 +14,13 @@ auto_numbering: true
 ---
 > Lors de sa constitution, un système chimique peut évoluer ou rester dans l'état initial. L'objectif de ce document est de comprendre que l'absence d'évolution peut correspondre à des situations très diverses.
 
-## Documents 
+## Documents
 
 ### Des évolutions trop limitées
 
 *Certaines des réactions chimiques que l'on peut envisager pour un système ne peuvent pas être observées, car leur **constante d'équilibre est bien trop petite**.*
 
-- La réaction entre les ions zinc (II) et le cuivre dont l'équation s'écrit : 
+- La réaction entre les ions zinc (II) et le cuivre dont l'équation s'écrit :
 $$\ce{ Cu (s) + Zn^{2+} (aq) <=> Cu^{2+} (aq) + Zn(s) }$$ Sa constante d'équilibre $K$ vaut $5.10^{-38}$ à 25 C.
 
     Lorsqu'on introduit de la tournure de cuivre dans une solution de sulfate de zinc (II) à $\pu{1 mol.L-1}$, on n'observe aucun de dépôt métallique de zinc. Le système constitué initialement par les ions zinc (II) et le cuivre n'évolue pas ; le taux d'avancement de la réaction à l'équilibre est extrêmement faible.
@@ -35,9 +35,9 @@ réaction est trop faible pour que l'évolution dans le sens direct soit observa
 
 ### Des évolutions trop lentes
 
-*On peut ne pas observer l'évolution spontanée pour un système alors que celle-ci est prévue par le critère d'évolution **en raison d'un blocage cinétique**.* 
+*On peut ne pas observer l'évolution spontanée pour un système alors que celle-ci est prévue par le critère d'évolution **en raison d'un blocage cinétique**.*
 
-- Ainsi, à 25&nbsp;°C, la constante d'équilibre de la réaction d'équation : 
+- Ainsi, à 25&nbsp;°C, la constante d'équilibre de la réaction d'équation :
 $$\ce{ 2 H2O2 (aq) <=> 2 H2O (l) + O2 (g)}$$ vaut $K''= \pu{9e36}$. On peut donc prévoir la décomposition spontanée d'une solution de péroxyde d'hydrogène, ou eau oxygénée.
 
     Cependant, l'eau oxygénée peut être conservée très longtemps, sa vitesse de décomposition étant extrêmement faible. Il suffit, en revanche, d'ajouter à de l'eau oxygénée, des ions fer (III) ou du platine pour observer un important dégagement de dioxygène. Il en est de même si le flacon est violemment éclairé ou imprudemment chauffé.

@@ -1,6 +1,6 @@
 ---
 title: "Quotient de réaction et constante d'équilibre"
-subtitle: "Chapitre 10,4"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-01-09T18:58:02+04:00
@@ -29,14 +29,14 @@ mathjax: false
 Le quotient de réaction calculé dans **deux états différents** du système aura **deux valeurs différentes** *à moins que ces deux états ne soient des états d’équilibre*.
 {{% /note %}}
 
-### Expression de $Q\_r$ dans le cas de systèmes chimiques uniquement constitués d’espèces dissoutes 
+### Expression de $Q\_r$ dans le cas de systèmes chimiques uniquement constitués d’espèces dissoutes
 
 {{% note tip %}}
-Le **quotient de réaction** $Q\_r$ de la réaction d'équation chimique 
+Le **quotient de réaction** $Q\_r$ de la réaction d'équation chimique
 $$
     \ce{ \alpha{} A (aq) + \beta B (aq) <=> \gamma C (aq) + \delta D (aq)}
 $$
-a pour expression, lorsque toutes les espèces sont dissoutes dans la solution 
+a pour expression, lorsque toutes les espèces sont dissoutes dans la solution
 $$
     Q\_r = \dfrac{\left( \dfrac{[{C}]}{C^o} \right)^\gamma \cdot \left( \dfrac{[{D}]}{C^o} \right)^\delta}{\left( \dfrac{[{A}]}{C^o} \right)^\alpha \cdot \left( \dfrac{[{B}]}{C^o} \right)^\beta}
 $$
@@ -57,7 +57,6 @@ Soit l'équation de la réaction d'oxydation des ions thiosulfate $\ce{S2O3^{2-}
 2. Donner l'expression du quotient de réaction pour un état quelconque d'une transformation modélisée par la réaction étudiée.
 {{% /note %}}
 
-
 {{% solution "Réponses" %}}
 
 1. $$ \ce{ I2 (aq)  + 2 S2O3^{2-} (aq) <=> 2 I- (aq) +  S4O6^{2-} (aq)  } $$
@@ -65,6 +64,7 @@ Soit l'équation de la réaction d'oxydation des ions thiosulfate $\ce{S2O3^{2-}
 2. $$
     Q\_r = \dfrac{\left( \dfrac{[\ce{I-}]}{C^o} \right)^2 \cdot \left( \dfrac{[\ce{S4O6^{2-}}]}{C^o} \right)}{\left( \dfrac{[\ce{I2}]}{C^o} \right) \cdot \left( \dfrac{[\ce{S2O3^{2-}}]}{C^o} \right)^2}
 $$
+
 soit
 $$
     Q\_r = \dfrac{[\ce{I-}]^2 \cdot [\ce{S4O6^{2-}}]}{[\ce{I2}] \cdot [\ce{S2O3^{2-}}]^2}
@@ -72,7 +72,7 @@ $$
 {{% /solution %}}
 
 {{% note exercise %}}
-Soit la réaction acide-base entre l'acide éthanoïque et l'eau. 
+Soit la réaction acide-base entre l'acide éthanoïque et l'eau.
 
 1. Écrire l'équation de la réaction.
 
@@ -80,6 +80,7 @@ Soit la réaction acide-base entre l'acide éthanoïque et l'eau.
 {{% /note %}}
 
 {{% solution "Réponses" %}}
+
 1. $$
     \ce{CH3CO2H (aq) + H2O <=> CH3CO2- (aq) + H3O+}
 $$
@@ -87,6 +88,7 @@ $$
 2. $$
     Q\_r = \dfrac{\left( \dfrac{[\ce{CH3CO2-}]}{C^o} \right) \cdot \left( \dfrac{[\ce{H3O+}]}{C^o} \right)}{\left( \dfrac{[\ce{CH3CO2H}]}{C^o} \right)}
 $$
+
 soit
 $$
     Q\_r = \dfrac{[\ce{CH3CO2-}] \cdot [\ce{H3O+}]}{[\ce{CH3CO2H}] \cdot C^o}
@@ -99,7 +101,6 @@ $$
 
 - Dans le cas des réactions d'estérification l'eau est un produit de la réaction qui ne se fait pas en solution aqueuse. **L'eau doit alors intervenir dans le quotient de réaction**.
 {{% /note %}}
-
 
 ### L’expression de $Q\_r$ dépend-elle du sens d’écriture de l’équation de la réaction ?
 
@@ -128,13 +129,14 @@ Soit la réaction d'oxydoréduction du cuivre $\ce{Cu}$ avec les ions argent I $
 {{% /note %}}
 {{% solution "Réponses" %}}
 
-1.  $$
+1. $$
     \ce{ Cu (s) + 2 Ag^+ (aq) <=> Cu^{2+} (aq) + 2 Ag (s)   }
 $$
 
-2.  $$
+2. $$
     Q\_r = \dfrac{\left( \dfrac{[\ce{Cu^{2+}}]}{C^o} \right) }{\left( \dfrac{[\ce{Ag+}]}{C^o} \right)^2}
 $$
+
 soit
 $$
     Q\_r = \dfrac{[\ce{Cu^{2+}}] \cdot C^o}{ [\ce{Ag+}]^2}
@@ -149,12 +151,13 @@ Soit la réaction de précipitation entre les ions fer III $\ce{Fe^{3+}}$ et les
 2. Donner l'expression du quotient de réaction pour un état quelconque d'une transformation chimique modélisée par cette réaction.
 {{% /note %}}
 {{% solution "Réponses" %}}
-1.  $$ \ce{ Fe^{3+} (aq) + 3 OH^- (aq) <=> Fe(OH)3 (s) } $$
+1. $$ \ce{ Fe^{3+} (aq) + 3 OH^- (aq) <=> Fe(OH)3 (s) } $$
 
 2. $$
     Q\_r = \dfrac{1}{\left( \dfrac{[\ce{OH^-}]}{C^o} \right)^3 \cdot \left( \dfrac{[\ce{Fe^{3+}}]}{C^o} \right)}
 $$
-soit 
+
+soit
 $$
     Q\_r = \dfrac{C^{o4}}{[\ce{OH^-}]^3 \cdot [\ce{Fe^{3+}}]}
 $$
@@ -169,21 +172,20 @@ Soit la réaction de précipitation du phosphate de calcium $\ce{Ca3(PO4)2}$ en 
 {{% /note %}}
 
 {{% solution "Réponses" %}}
-1.  $$
+
+1. $$
     \ce{ 3 Ca^{2+} (aq) + 2 PO4^{3-} (aq) <=> Ca3(PO4)2 (s) }
 $$
 
-2.  $$
+2. $$
     Q\_r = \dfrac{1}{\left( \dfrac{[\ce{Ca^{2+}}]}{C^o} \right)^3 \cdot \left( \dfrac{[\ce{PO4^{3-}}]}{C^o} \right)^2}
 $$
+
 soit
 $$
     Q\_r = \dfrac{C^{o5}}{[\ce{Ca^{2+}}]^3 \cdot [\ce{PO4^{3-}}]^2}
 $$
 {{% /solution %}}
-
-
-
 
 ### Quotient de réaction et avancement de de la réaction
 
@@ -201,16 +203,13 @@ On introduit $\pu{10,0 mmol}$ d’acide benzoïque et $\pu{20,0 mmol}$ d’ions 
 
 {{% /solution %}}
 
-
 {{% note tip %}}
 Le quotient de réaction dépend de l’avancement de la réaction.
 {{% /note %}}
 
-
 ## Quotient de réaction dans l'état d'équilibre : constante d’équilibre
 
 Que vaut le quotient de réaction lorsque l'état d'équilibre est atteint ?
-
 
 ### La valeur de $Q\_{r}$ à l'équilibre dépend-elle de l'état initial ?
 
@@ -277,6 +276,7 @@ On mesure les conductivités $\sigma\_{1} = \pu{343 \mu S.cm-1}$ et $\sigma\_{2}
 
 Données
 : - Acide méthanoïque et eau : $K = \pu{1,6e-4}$ ;
+
 - Acide éthanoïque et eau : $K = \pu{1,6e-5}$.
 
 1. Quelles sont les concentrations des espèces ioniques dans ces deux solutions ?
@@ -299,8 +299,8 @@ On mesure les conductivités de diverses solutions d'acide éthanoïque de conce
 
 <center>
 
-| $C (\pu{mol.L-1})$ |	$\sigma (\pu{mS.cm-1})$ |
-| :----: |	:----: |
+| $C (\pu{mol.L-1})$ | $\sigma (\pu{mS.cm-1})$ |
+| :----: | :----: |
 | $\pu{5,0e-2}$ | 0,343 |
 | $\pu{1,0e-2}$ | 0,153 |
 | $\pu{5,0e-3}$ | 0,107 |
@@ -313,7 +313,6 @@ Que vaut le taux d'avancement final de ces solutions ? Conclure.
 {{% solution "Réponses" %}}
 
 {{% /solution %}}
-
 
 {{% note tip %}}
 Le taux d'avancement final d'une réaction dépend de l'état initial du système.

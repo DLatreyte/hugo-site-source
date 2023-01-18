@@ -1,6 +1,6 @@
 ---
 title: "Simulation d'une transformation chimique (totale ou non totale)"
-subtitle: "Chapitre 10,2"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-01-08T15:02:23+04:00

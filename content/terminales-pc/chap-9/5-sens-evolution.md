@@ -1,6 +1,6 @@
 ---
 title: "Sens d'évolution spontané d'un système chimique"
-subtitle: "Chapitre 10,5"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-01-07T22:36:27+04:00
@@ -27,6 +27,7 @@ mathjax: true
 ## Évolution spontanée d'un système chimique
 
 {{% note exercise %}}
+
 #### Analyse d'une réaction d'oxydoréduction
 
 On dispose de deux solutions aqueuses. La solution (1) contient des ions fer (II) $\ce{Fe^{2+} (aq)}$ et des ions fer (III) $\ce{Fe^{3+} (aq)}$, en concentrations $[\ce{Fe^{2+}}]=[\ce{Fe^{3+}}] = \pu{0,10 mol.L-1}$.\
@@ -60,7 +61,7 @@ $$
     Q\_{r,i} = \dfrac{ [\ce{Fe^{2+}}]\_i^2 \cdot [\ce{I2}]\_i \cdot C^o }{ [\ce{Fe^{3+}}]\_i^2 \cdot [\ce{I-}]\_i^2 }
 $$
 
-Comme 
+Comme
 
 - $[\ce{Fe^{2+}}]\_i = \dfrac{n\_i(\ce{Fe^{2+}})}{V\_S} = \dfrac{[\ce{Fe^{2+}}] \cdot V\_1}{V\_1 + V\_2}$
 
@@ -100,11 +101,12 @@ La transformation s'est déroulée dans le sens d'écriture de la réaction chim
 {{% /solution %}}
 
 {{% note exercise %}}
+
 #### Évolution d'un système d'oxydoréduction
 
 On ajoute de la poudre d'argent en excès à une solution aqueuse de nitrate de fer (III) de concentration égale à $C= \pu{0,0100 mol.L-1}$. On agite le système, à 25&nbsp;°C, jusqu'à ce que l'équilibre soit atteint. Les concentrations des espèces dissoutes valent alors: $[\ce{Fe^{3+}}]\_{eq} = \pu{3,0e-4 mol.L-1}$ ; $[\ce{Fe^{2+}}]\_{eq} = [\ce{Ag+}]\_{eq} = \pu{9,7e-3 mol.L-1}$.
 
-1. Écrire l'équation de la réaction des ions fer III avec l'argent. De quelle nature est-elle&nbsp;? 
+1. Écrire l'équation de la réaction des ions fer III avec l'argent. De quelle nature est-elle&nbsp;?
 
 2. Déterminer la valeur de la constante d'équilibre $K$ associée à cette réaction.
 
@@ -164,7 +166,7 @@ $$
     \ce{ AgNO3 (s) -->[eau] Ag+ (aq) + NO3^- (aq) }
 $$
 
-4. 
+4.
 
 - $Q\_{r,i} = \dfrac{\pu{1,25e-2 mol.L-1} \times \pu{1,51e-2 mol.L-1}}{\pu{1,20e-2 mol.L-1} \times \pu{1,00 mol.L-1}} = \pu{1,6e-2}$.
 
@@ -190,6 +192,7 @@ $$
 
 {{% solution "Réponse" %}}
 {{% note tip %}}
+
 #### Critère d'évolution spontanée d'un système
 
 Pour une réaction chimique donnée :
@@ -199,10 +202,10 @@ Pour une réaction chimique donnée :
 
 - Lorsque le quotient de réaction initial $Q\_{r,i}$ est différent de la constante d'équilibre K, $Q\_{r,i} \neq K$ *le système chimique évolue spontanément vers un état d'équilibre*.
 
-    - Si $Q\_{r,i} < K$, **le système évolue dans le sens direct de l'écriture de l'équation de la réaction**.
+  - Si $Q\_{r,i} < K$, **le système évolue dans le sens direct de l'écriture de l'équation de la réaction**.
     <img src="/terminales-pc/chap-9/chap-9-5/chap-9-5-5.png" alt="" width="60%" />
 
-    - Si $Q\_{r,i} > K$, **le système évolue dans le sens inverse de l'écriture de l'équation de la réaction**.
+  - Si $Q\_{r,i} > K$, **le système évolue dans le sens inverse de l'écriture de l'équation de la réaction**.
     <img src="/terminales-pc/chap-9/chap-9-5/chap-9-5-6.png" alt="" width="60%" />
 
 {{% /note %}}
@@ -228,9 +231,9 @@ La constante d'équilibre $K$ associée à la réaction d'équation écrite à l
 
 {{% solution "Réponses" %}}
 
-1.  $\ce{2 Al (s) + 3 Zn^{2+} (aq) <=> 2 Al^{3+} (aq) + 3 Zn (s)}$
+1. $\ce{2 Al (s) + 3 Zn^{2+} (aq) <=> 2 Al^{3+} (aq) + 3 Zn (s)}$
 
-2.  $ Q\_r = \dfrac{\left( \dfrac{[\ce{Al^{3+}}]}{C^o} \right)^2}{\left( \dfrac{[\ce{Zn^{2+}}]}{C^o} \right)^3} = \dfrac{[\ce{Al^{3+}}]^2 \cdot C^o}{[\ce{Zn^{2+}}]^3} $ avec $C^o = \pu{1,00 mol.L-1}$.
+2. $ Q\_r = \dfrac{\left( \dfrac{[\ce{Al^{3+}}]}{C^o} \right)^2}{\left( \dfrac{[\ce{Zn^{2+}}]}{C^o} \right)^3} = \dfrac{[\ce{Al^{3+}}]^2 \cdot C^o}{[\ce{Zn^{2+}}]^3} $ avec $C^o = \pu{1,00 mol.L-1}$.
 
 3. $Q\_{r,i} = \dfrac{\left( \pu{2,0e-3 mol.L-1} \right)^2 \times \pu{1,00 mol.L-1}}{\left( \pu{1,5e-1 mol.L-1} \right)^3} = \pu{1,2e-3}$\
 $Q\_{r,i} < K$, le système évolue dans le sens d'écriture de la réaction chimique ; l'aluminium métallique est consommé.
