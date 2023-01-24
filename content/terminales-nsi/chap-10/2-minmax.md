@@ -7,7 +7,7 @@ date: 2022-01-26T05:14:44+04:00
 draft: false
 toc: true
 tags: ["Diviser pour régner", "Recherche"]
-categories: ["Terminales Spé NSI", "Informatique"]
+categories: ["Terminales Spé NSI"]
 image: ""
 solution_est_visible: true
 auto_numbering: true

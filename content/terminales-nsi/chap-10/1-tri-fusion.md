@@ -7,9 +7,9 @@ date: 2020-11-18T17:12:24+04:00
 draft: false
 toc: true
 tags: ["Diviser pour régner", "Tri"]
-categories: ["Terminales Spé NSI", "Informatique"]
+categories: ["Terminales Spé NSI"]
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 
@@ -25,7 +25,7 @@ La méthode **« Diviser pour régner »** est une méthode de résolution de pr
 3. **Combiner :** Combiner les solutions des sous-problèmes afin de construire la solution du problème original.
 {{% /note %}}
 
-## Le tri fusion
+## Le tri fusion d'un tableau
 
 ### Description du tri
 
@@ -505,3 +505,128 @@ liste = [randint(1, 400) for i in range(5)]
 {{% /solution %}}
 
 ---
+
+## Le tri fusion d'une liste chaînée
+
+Dans cette section, on cherche à adapter l'algorithme de tri fusion à une liste chaînée.
+
+1. Écrire le code de la classe `Cellule` permettant d'implémenter une liste chaînée. Cette classe sert juste de structure et définit les champs `valeur`, de type `int`, et `suivant`, de type `Cellule`, initialisé à `None`.
+{{% solution "Réponse" %}}
+
+```python
+class Cellule():
+    """
+    Implémentation d'une cellule
+    """
+
+    def __init__(self: Cellule, valeur: int, 
+                 suivant: Cellule = None) -> None:
+        self.valeur = valeur
+        self.suivant = suivant
+```
+
+{{% /solution %}}
+
+2. Dans la partie principale du programme, écrire le code qui crée la liste chaînée `[14, 11, 2, 35, 9, 1]`.
+{{% solution "Réponse" %}}
+
+```python
+if __name__ == "__main__":
+    lst = Cellule(14, Cellule(11, Cellule(2, Cellule(35, Cellule(9, Cellule(1))))))
+```
+
+{{% /solution %}}
+
+3. Définir le code de la fonction `tri_fusion` dont la spécification est
+
+```python
+def tri_fusion(lst: Cellule) -> Cellule:
+    """
+    Implémente l'algorithme de tri-fusion.
+    Une nouvelle liste chaînée est créée.
+    """
+```
+
+Cette fonction doit utiliser la fonction `coupe` (définie un peu plus bas), qui découpe une liste chaînée en deux sous-listes, et la fonction `fusion` (définie elle aussi un peu plus bas) qui réalise la fusion de deux listes triées.  
+
+La fonction `tri_fusion` doit mettre en œuvre le principe « Diviser pour régner ».
+
+{{% solution "Réponse" %}}
+
+```python
+def tri_fusion(lst: Cellule) -> Cellule:
+    """
+    Implémente l'algorithme de tri-fusion.
+    Une nouvelle liste chaînée est créée.
+    """
+    if lst is None or lst.suivant is None:
+        return lst
+
+    l1, l2 = coupe(lst)
+
+    return fusion(tri_fusion(l1), tri_fusion(l2))
+```
+
+{{% /solution %}}
+
+4. Définir la fonction `coupe` dont la spécification est
+
+```python
+def coupe(lst: Cellule) -> Cellule:
+    """
+    Découpe la liste L2 est deux sous-listes de même
+    longueur à un élément près.
+    """
+```
+
+{{% solution "Réponse" %}}
+
+```python
+def coupe(lst: Cellule) -> Cellule:
+    """
+    Découpe la liste L2 est deux sous-listes de même
+    longueur à un élément près.
+    """
+    l1, l2 = None, None
+
+    while lst is not None:
+        l1, l2 = Cellule(lst.valeur, l2), l1
+        lst = lst.suivant
+
+    return l1, l2
+```
+
+{{% /solution %}}
+
+5. Définir la fonction `fusion` dont la spécification est
+
+```python
+def fusion(l1: Cellule, l2: Cellule) -> Cellule:
+    """
+    Réalise la fusion des deux listes l1 et l2 
+    triées.
+
+    Algorithme récursif.
+    """
+```
+
+{{% solution "Réponse" %}}
+
+```python
+def fusion(l1: Cellule, l2: Cellule) -> Cellule:
+    """
+    Réalise la fusion des deux listes l1 et l2 
+    triées.
+    """
+    if l1 is None:
+        return l1
+    if l2 is None:
+        return l2
+
+    if l1.valeur < l2.valeur:
+        return Cellule(l1.valeur, fusion(l1.suivant, l2))
+    else:
+        return Cellule(l2.valeur, fusion(l1, l2.suivant))
+```
+
+{{% /solution %}}

@@ -7,7 +7,7 @@ date: 2020-11-24T04:54:14+04:00
 draft: false
 toc: true
 tags: ["Diviser pour régner", "Récursivité"]
-categories: ["Terminales Spé NSI", "Informatique"]
+categories: ["Terminales Spé NSI"]
 image: ""
 solution_est_visible: true
 auto_numbering: true
