@@ -1,6 +1,6 @@
 ---
 title: "Le tri fusion"
-subtitle: "Chapitre 13,1"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-11-18T17:12:24+04:00
@@ -40,6 +40,7 @@ Le tri fusion s'appuie sur la méthode **Diviser pour régner** pour trier les $
 3. **Combiner :** Reformer la séquence $S$ en combinant, dans l'ordre, les éléments des séquences triées $S_1$ et $S_2$.
 
 {{% note normal %}}
+
 - $\left\lfloor \dfrac{n}{2} \right\rfloor$ est la notation mathématique pour l'opération en Python `n // 2`, c'est à dire *le plus grand entier inférieur au résultat de la division de* $n$ *par 2*.
 - $\left\lceil \dfrac{n}{2} \right\rceil$ est la notation mathématique pour l'opération en Python `n // 2 + 1`, c'est à dire pour *le plus petit entier supérieur au résultat de la division de* $n$ *par 2*.
 {{% /note %}}
@@ -86,14 +87,16 @@ flowchart BT
 
 ### Décomposition de l'exécution de l'algorithme
 
----- 
+----
 
 #### Légende
+
 - *Chaque nœud représente un appel récursif* ;
 - **Nœud avec une bordure en pointilles :** *appels récursifs non encore effectués* ;
 - **Nœud avec une bordure en gras :** *appel récursif en cours* ;
 - **Nœud vide avec une bordure :** *partie déjà traitée* ;
 - **Nœud en partie vide (contenant tout de même des valeurs) :** *appels récursifs en attente*.
+
 ----
 
 {{< mermaid >}}
@@ -402,7 +405,7 @@ flowchart TD
     S2 <--> S22("—  &nbsp;&nbsp; —")
     S22 <--> S221(("—"))
     S22 <--> S222(("—"))
-    
+
     classDef gras stroke-width:3px;
     class S2 gras;
 {{< /mermaid >}}
@@ -423,11 +426,10 @@ flowchart TD
     S2 <--> S22("—  &nbsp;&nbsp; —")
     S22 <--> S221(("—"))
     S22 <--> S222(("—"))
-    
+
     classDef gras stroke-width:3px;
     class S gras;
 {{< /mermaid >}}
-
 
 {{% note normal %}}
 On peut montrer que la *hauteur de l'arbre des appels récursifs* est voisine (en fonction de la définition choisie pour la hauteur) de $\log_2 (n)$ où $n$ est le nombre d'éléments dans la séquence.
@@ -462,6 +464,7 @@ def tri_fusion(S: List[int]) -> None:
 ```
 
 2. Étudier le code suivant et expliquer comment s'effectue la fusion.
+
 ```python
 def fusion(S1: List[int], S2: List[int], S: List[int]) -> None:
     """
@@ -480,10 +483,11 @@ def fusion(S1: List[int], S2: List[int], S: List[int]) -> None:
         else:
             S[i + j] = S2[j]
             j = j + 1
-``` 
+```
 
-3. Étudier le comportement du programme complet à l'aide de pythontutor.   
+3. Étudier le comportement du programme complet à l'aide de pythontutor.
 Construire la liste à l'aide de l'instruction :
+
 ```python
 liste = [randint(1, 400) for i in range(5)]
 ```
@@ -491,7 +495,6 @@ liste = [randint(1, 400) for i in range(5)]
 4. Quelle est la complexité de la fonction `fusion` ?
 
 5. Essayer d'évaluer la complexité de l'algorithme sans faire de calcul.
-
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Recherche des plus grand et petit éléments dans un tableau"
-subtitle: "Chapitre 13,2"
+subtitle: ""
 author: ""
 type: ""
 date: 2022-01-26T05:14:44+04:00
@@ -35,12 +35,13 @@ if __name__ == "__main__":
     val_min, val_max = (min(tab), max(tab))
 
     print("min = {}, max = {}".format(val_min, val_max))
-``` 
+```
 
 {{% /solution %}}
 
-3. Écrire le code de la fonction `maxmin1` qui, à partir d'un algorithme de «&nbsp;brute force&nbsp;», détermine les maximum et minimum dans la liste passée en argument.    
+3. Écrire le code de la fonction `maxmin1` qui, à partir d'un algorithme de «&nbsp;brute force&nbsp;», détermine les maximum et minimum dans la liste passée en argument.
 La spécification de la fonction est&nbsp;:
+
 ```python
 def maxmin1(tab: List[float]) -> Tuple[float, float]:
     """
@@ -119,11 +120,12 @@ Il existe un rapport 2 entre les durées d'exécution des deux fonctions. Elles 
 
 {{% /solution %}}
 
-7. En faisant varier le nombre d'éléments dans le tableau, vérifier si les durées d'exécution de la fonction `maxmin1` correspond bien à la complexité établie à la question 5.    
+7. En faisant varier le nombre d'éléments dans le tableau, vérifier si les durées d'exécution de la fonction `maxmin1` correspond bien à la complexité établie à la question 5.
 La complexité des fonctions `max` et `min` fournies par Python vous semblent-elles être en $O(N)$&nbsp;?
 
-8. À partir de l'algorithme du tri fusion, écrire et implémenter la fonction `maxmin2` qui, dans un premier temps, se contente de déterminer le maximum dans la liste passée en argument.    
+8. À partir de l'algorithme du tri fusion, écrire et implémenter la fonction `maxmin2` qui, dans un premier temps, se contente de déterminer le maximum dans la liste passée en argument.
 La spécification de la fonction est&nbsp;:
+
 ```python
 def maxmin2(tab: List[float]) -> float:
     """
@@ -132,6 +134,7 @@ def maxmin2(tab: List[float]) -> float:
     Paradigme : Diviser pour règner
     """
 ```
+
 {{% solution "Réponse" %}}
 
 ```python
@@ -164,8 +167,9 @@ def maxmin2(tab: List[float]) -> float:
 
 {{% /solution %}}
 
-10. Modifier la fonction `maxmin2` afin qu'elle retourne les maximum et minimum dans la liste.    
+10. Modifier la fonction `maxmin2` afin qu'elle retourne les maximum et minimum dans la liste.
 La spécification de la fonction est&nbsp;:
+
 ```python
 def maxmin2(tab: List[float]) -> Tuple[float, float]:
     """
@@ -197,7 +201,6 @@ def maxmin2(tab: List[float]) -> Tuple[float, float]:
 {{% /solution %}}
 
 11. Quelle est la complexité de cette fonction&nbsp;?
-
 
 12. Vérifier le bon fonctionnement de la fonction à la suite des précédentes vérifications.
 {{% solution "Réponse" %}}

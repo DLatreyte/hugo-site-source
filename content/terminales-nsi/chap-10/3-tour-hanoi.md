@@ -1,6 +1,6 @@
 ---
 title: "Les tours de Hanoï"
-subtitle: "Chapitre 13,3"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-11-24T04:54:14+04:00
@@ -29,6 +29,7 @@ Sous le titre «&nbsp;Les brahmes tombent&nbsp;», Lucas relate que «&nbsp;*N. 
 {{% note normal %}}
 
 Au début du jeu, les disques sont tous positionnés sur la première tige (du plus grand au plus petit) et *l’objectif est de déplacer tous ces disques sur la troisième tige*, en respectant les règles suivantes :
+
 - *Un seul disque peut être déplacé à la fois ;*
 - *On ne peut jamais poser un disque sur un disque de diamètre inférieur.*
 {{% /note %}}
@@ -41,18 +42,19 @@ Au début du jeu, les disques sont tous positionnés sur la première tige (du p
 {{% solution "Réponse" %}}
 Pour pouvoir déplacer le dernier disque (celui du dessous), il est nécessaire de déplacer les $n − 1$ disques qui le couvrent sur la tige centrale. Une fois ces déplacements effectués, on peut le déplacer sur la troisième tige. Il reste alors à déplacer les $n − 1$ autres disques vers la troisième tige.
 
-
 <img src="/terminales-nsi/chap-10/chap-10-3-2.png" alt="" width="" />
 
 {{% /solution %}}
 
 3. Écrire le code de la fonction dont la spécification est
+
 ```python
 def hanoi(n: int, debut: int = 1, milieu: int = 2, fin: int = 3) -> None:
     """
     Fonction qui déplace récursivement les disques selon les règles des tours de Hanoï. 
     """
 ```
+
 Tester cette fonction.
 
 {{% solution "Aide" %}}
@@ -60,12 +62,13 @@ Tester cette fonction.
 {{% note normal %}}
 
 L'algorithme est le suivant :
+
 - Si le nombre de disques est égal à 0, afficher "Aucun disque à déplacer"&nbsp;;
 - Si le nombre de disques est égal à 1, déplacer directement le disque du piquet $A$ au piquet $C$&nbsp;;
 - Si le nombre de disques est supérieur ou égal à 2, enchaîner les étapes suivante :
-    - Déplacer $n-1$ disques du piquet $A$ jusqu'au piquet $B$&nbsp;;
-    - Déplacer le disque qui reste du piquet $A$ au piquet $C$&nbsp;;
-    - Déplacer $n-1$ disques du piquet $B$ au piquet $C$.
+  - Déplacer $n-1$ disques du piquet $A$ jusqu'au piquet $B$&nbsp;;
+  - Déplacer le disque qui reste du piquet $A$ au piquet $C$&nbsp;;
+  - Déplacer $n-1$ disques du piquet $B$ au piquet $C$.
 
 {{% /note %}}
 
@@ -74,36 +77,36 @@ L'algorithme est le suivant :
 4. Indiquer tous les appels de fonctions et toutes les instructions exécutées pour $n=3$.
 {{% solution "Réponse" %}}
 
-- `hanoi(3, "A", "B", "C")` 
-    - `hanoi(2, "A", "C", "B")`
-        - `hanoi(1, "A", "B", "C")`
-            - `hanoi(0, "A", "C", "B")`
-            - Affichage : 1 de A à C
-            - `hanoi(0, "B", "A", "C")`
-        - Affichage : 2 de A à B
-        - `hanoi(1, "C", "A", "B")`
-            - `hanoi(0, "C", "B", "A")`
-            - Affichage : 1 de C à B
-            - `hanoi(0, "A", "C", "B")`
-    - Affichage : 3 de A à C
-    - `hanoi(2, "B", "A", "C")`
-        - `hanoi(1, "B", "C", "A")`
-            - `hanoi(0, "B", "A", "C")`
-            - Affichage : 1 de B à A
-            - `hanoi(0, "C", "B", "A")`
-        - Affichage : 2 de B à C   
-        - `hanoi(1, "A", "B", "C")`
-            - `hanoi(0, "A", "C", "B")`
-            - Affichage : 1 de A vers C
-            - `hanoi(0, "B", "A", "C")`
-        
+- `hanoi(3, "A", "B", "C")`
+  - `hanoi(2, "A", "C", "B")`
+    - `hanoi(1, "A", "B", "C")`
+      - `hanoi(0, "A", "C", "B")`
+      - Affichage : 1 de A à C
+      - `hanoi(0, "B", "A", "C")`
+    - Affichage : 2 de A à B
+    - `hanoi(1, "C", "A", "B")`
+      - `hanoi(0, "C", "B", "A")`
+      - Affichage : 1 de C à B
+      - `hanoi(0, "A", "C", "B")`
+  - Affichage : 3 de A à C
+  - `hanoi(2, "B", "A", "C")`
+    - `hanoi(1, "B", "C", "A")`
+      - `hanoi(0, "B", "A", "C")`
+      - Affichage : 1 de B à A
+      - `hanoi(0, "C", "B", "A")`
+    - Affichage : 2 de B à C
+    - `hanoi(1, "A", "B", "C")`
+      - `hanoi(0, "A", "C", "B")`
+      - Affichage : 1 de A vers C
+      - `hanoi(0, "B", "A", "C")`
 
 {{% /solution %}}
 
 5. Quelle est la complexité de la fonction ?
 {{% solution "Réponse" %}}
 
-#### Récurrence :
+#### Récurrence
+
 Si on note $x_n$ le nombre de mouvement pour déplacer $n$ disques, on obtient la relation de récurrence :
 $$
 \begin{aligned}
@@ -111,7 +114,7 @@ $$
     x_n &= 2 x_{n-1} + 1 \text{ si } n \ge 1\cr
 \end{aligned}
 
-$$ 
+$$
 
 ce qui donne
 $$

@@ -1,6 +1,6 @@
 ---
 title: "Recherche numérique de zéros de fonctions"
-subtitle: "Chapitre 13,5"
+subtitle: ""
 author: ""
 type: ""
 date: 2022-02-03T21:28:05+04:00
@@ -33,7 +33,6 @@ Soit $f: [a,b] \to \mathbb{R}$ une fonction continue sur un segment. Si $f(a) \c
 
 <img src="/terminales-nsi/chap-10/chap-10-5/chap-10-5-1.png" alt="" width=100% />
 
-
 ## Principe de résolution du problème
 
 {{% note normal %}}
@@ -57,24 +56,25 @@ On est donc parvenu, à l'issu de cette étape, à définir un intervalle dans l
 
 1. On construit deux suites $(a_n)$ et $(b_n)$ qui évoluent comme les bornes de l'intervalle, et la suite $(x_n)$, zéro de $f$ pour chaque intervalle.
 
-    - **Au rang 0.** On pose $a_0 = a$, $b_0 = b$. Comme $f (a) \cdot f (b) \leqslant 0$, il existe une solution, notée $x_0$, de l'équation $f (x) = 0$ dans l'intervalle $[a_0, b_0]$. 
+    - **Au rang 0.** On pose $a_0 = a$, $b_0 = b$. Comme $f (a) \cdot f (b) \leqslant 0$, il existe une solution, notée $x_0$, de l'équation $f (x) = 0$ dans l'intervalle $[a_0, b_0]$.
 
-    - **Au rang 1.** Si $f (a_0) \cdot f \left( \dfrac{a_0 + b_0}{2} \right) \leqslant 0$, alors on pose $a_1 = a_0$ et $b_1 = \dfrac{a_0 + b_0}{2}$, sinon on pose $a_1 = \dfrac{a_0 + b_0}{2}$ et $b_1 = b_0$.     
+    - **Au rang 1.** Si $f (a_0) \cdot f \left( \dfrac{a_0 + b_0}{2} \right) \leqslant 0$, alors on pose $a_1 = a_0$ et $b_1 = \dfrac{a_0 + b_0}{2}$, sinon on pose $a_1 = \dfrac{a_0 + b_0}{2}$ et $b_1 = b_0$.
     Comme $f (a_1) \cdot f (b_1) \leqslant 0$, il existe une solution, notée $x_1$, de l'équation $f (x) = 0$ dans l'intervalle $[a_1, b_1]$.
 
-    - **Au rang $n$.** On suppose construit un intervalle $[a_n, b_n]$, de longueur $\dfrac{b_n - a_n}{2^n}$, contenant une solution $x_n$ de l'équation $f (x) = 0$.    
+    - **Au rang $n$.** On suppose construit un intervalle $[a_n, b_n]$, de longueur $\dfrac{b_n - a_n}{2^n}$, contenant une solution $x_n$ de l'équation $f (x) = 0$.
     Si $f (a_n) \cdot f \left( \dfrac{a_n + b_n}{2} \right) \leqslant 0$, alors on pose $a_{n + 1} = a_n$ et $b_{n + 1} = \dfrac{a_n + b_n}{2}$, sinon on pose $a_{n + 1} = \dfrac{a_n + b_n}{2}$ et $b_{n + 1} = b_n$. Comme $f (a_{n + 1}) \cdot f (b_{n + 1}) \leqslant 0$, il existe une solution, notée $x_{n + 1}$, de l'équation $f (x) = 0$ dans l'intervalle $[a_{n + 1}, b_{n + 1}]$.
 
-2. *Étude des suites construites*    
-    Par construction :    
-        - $a_n \leqslant x_n \leqslant b_n$     
-        - $(a_n)$ est une suite croissante, $(b_n)$ une suite décroissante.    
+2. *Étude des suites construites*
+    Par construction :
+        - $a_n \leqslant x_n \leqslant b_n$
+        - $(a_n)$ est une suite croissante, $(b_n)$ une suite décroissante.
     La limite de $(b_n - a_n)$ tend donc vers 0 lorsque $n$ tend vers $+ \infty$&nbsp;: $$\lim (b_n - a_n) \xrightarrow [n \rightarrow + \infty]{} 0$$ Les suites $(a_n)$ et $(b_n)$ sont adjacentes. Elles admettent donc une même limite, $\ell$.
 
     Par application du théorème des gendarmes, on peut aussi en conclure que $$\lim (x_n) \xrightarrow[n \rightarrow + \infty] \ \ell$$ et, comme $f$ est une fonction continue, $$f (\ell) = \lim_{n \rightarrow + \infty} f (x_n) = \lim_{n \rightarrow + \infty} 0 = 0$$
     En conclusion, les suites $(a_n)$ et $(b_n)$ tendent vers la valeur $\ell$, solution de $f (x) = 0$.
 
-#### Remarque.
+#### Remarque
+
 En pratique, on arrête le processus dès que $b_n - a_n = \dfrac{b - a}{2^n}$
 est inférieur à la précision souhaitée.
 
@@ -87,22 +87,22 @@ est inférieur à la précision souhaitée.
   10 = - 1 < 0$ et $f (4) = 4^2 - 10 = 6 > 0$ entraîne $\sqrt{10} \in [3 ; 4]$.
   
 - On écrit le processus itératif :
-    - On pose $a_0 = 3$ et $b_0 = 4$. $f (a_0) \leqslant 0$ et $f (b_0)
-    \geqslant 0$.    
+  - On pose $a_0 = 3$ et $b_0 = 4$. $f (a_0) \leqslant 0$ et $f (b_0)
+    \geqslant 0$.
     $\dfrac{a_0 + b_0}{2} = \pu{3,5}$ donc $f \left( \dfrac{a_0 + b_0}{2}
-    \right) = f (\pu{3,5}) = \pu{3,5}^2 - 10 = \pu{2,25} \geqslant 0$.    
+    \right) = f (\pu{3,5}) = \pu{3,5}^2 - 10 = \pu{2,25} \geqslant 0$.
     $f (a_0) \cdot f \left( \dfrac{a_0 + b_0}{2} \right) \leqslant 0$, on en
     déduit que $\sqrt{10}$ est dans l'intervalle $[3 ; \pu{3,5}]$.
-    
-    - On pose $a_1 = 3$ et $b_1 = \text{3,5}$.     
+
+  - On pose $a_1 = 3$ et $b_1 = \text{3,5}$.
     $\dfrac{a_1 + b_1}{2} = \pu{3,25}$ donc $f \left( \dfrac{a_1 + b_1}{2}
-    \right) = f (\pu{3,25}) = \pu{0,5625} \geqslant 0$.      
+    \right) = f (\pu{3,25}) = \pu{0,5625} \geqslant 0$.
     $f (a_1) \cdot f \left( \dfrac{a_1 + b_1}{2} \right) \leqslant 0$, on en
     déduit que $\sqrt{10}$ est dans l'intervalle $[3 ; \pu{3,25}]$.
-    
-    - On pose $a_2 = 3$ et $b_2 = \pu{3,25}$.     
+
+  - On pose $a_2 = 3$ et $b_2 = \pu{3,25}$.
     $\dfrac{a_2 + b_2}{2} = \pu{3,125}$ donc $f \left( \dfrac{a_2 + b_2}{2}
-    \right) = f (\pu{3,125}) = - \pu{0,23...} \leqslant 0$.      
+    \right) = f (\pu{3,125}) = - \pu{0,23...} \leqslant 0$.
     $f (b_2) \geqslant 0$, $f$ s'annule sur l'intervalle $[\text{3,125} ; \pu{3,25}]$.
 
     À ce stade, on a donc démontré que : $\pu{3,125} \leqslant \sqrt{10} \leqslant \pu{3,25}$.
@@ -153,6 +153,7 @@ $$
 $$
 
 **Exemple.** $\log (2) \simeq \pu{0,3} \iff \dfrac{1}{\log (2)} = \pu{3,3}$ donc si $\log (b - a) \leqslant 1$, une précision de&nbsp;:
+
 - $10^{- 10}$ ($\thicksim$ 10 décimales) nécessite 34 itérations&nbsp;;
   
 - $10^{- 100}$ ($\thicksim$ 100 décimales) nécessite 333 itérations&nbsp;;

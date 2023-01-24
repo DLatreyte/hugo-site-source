@@ -1,6 +1,6 @@
 ---
 title: "Problème de la sous-séquence de somme maximale"
-subtitle: "Chapitre 13,4"
+subtitle: ""
 author: ""
 type: ""
 date: 2022-01-28T06:12:48+04:00
@@ -13,14 +13,14 @@ solution_est_visible: false
 auto_numbering: true
 ---
 
-> Ce document étudie le **problème de la sous-séquence de somme maximale**. Ce problème est intéressant parce qu’il existe nombre d’algorithmes pour le résoudre et la complexité (en nombre d’opérations de somme) de ces algorithmes varie considérablement.     
+> Ce document étudie le **problème de la sous-séquence de somme maximale**. Ce problème est intéressant parce qu’il existe nombre d’algorithmes pour le résoudre et la complexité (en nombre d’opérations de somme) de ces algorithmes varie considérablement.
 Seulement deux algorithmes seront abordés, un prochain document présentera l'algorithme le plus efficace (cf. **programmation dynamique**).
 
 ## Présentation
 
 {{% note normal %}}
 
-Étant donné un tableau `tab[1..n]` d’entiers (**positifs et négatifs**), déterminer la valeur maximale du sous-tableau `tab[g..h]` donnant *la plus grande somme de tous les sous-tableaux contigus* de `tab`.     
+Étant donné un tableau `tab[1..n]` d’entiers (**positifs et négatifs**), déterminer la valeur maximale du sous-tableau `tab[g..h]` donnant *la plus grande somme de tous les sous-tableaux contigus* de `tab`.
 Pour plus de commodité, la sous-séquence de somme maximale est 0 si tous les entiers sont négatifs.
 
 {{% /note %}}
@@ -33,8 +33,9 @@ Pour plus de commodité, la sous-séquence de somme maximale est 0 si tous les e
 
 ## Paradigme « Brute force »
 
-1. On envisage dans un premier temps un algorithme basé sur le paradigme « Brute force »&nbsp;: on évalue la somme de chaque sous-tableau (parmi les $n(n + 1)/2$ sous-tableaux possibles) et à chaque évaluation on mémorise la somme maximale.     
+1. On envisage dans un premier temps un algorithme basé sur le paradigme « Brute force »&nbsp;: on évalue la somme de chaque sous-tableau (parmi les $n(n + 1)/2$ sous-tableaux possibles) et à chaque évaluation on mémorise la somme maximale.
 Écrire le code de la fonction `sous_tab_max` dont la spécification est&nbsp;:
+
 ```python
 def sous_tab_max(tab: List[int]) -> int:
     """
@@ -44,6 +45,7 @@ def sous_tab_max(tab: List[int]) -> int:
     Paradigme : « Brute force ».
     """
 ```
+
 Tester cette fonction.
 
 {{% solution "Réponse" %}}
@@ -64,7 +66,6 @@ def sous_tab_max(tab: List[int]) -> int:
             smax = max(smax, somme)
     return smax
 ```
-
 
 {{% /solution %}}
 
@@ -87,6 +88,7 @@ Le tableau initial est scindé en deux parties de tailles à peu près égales (
 La procédure est récursive. Pour « sortir » des appels récursifs, il est nécessaire de ren- contrer un « couple de données-paramètres » (transmis à l’appel) dont la solution est triviale. C’est le cas si le tableau est composé d’au plus un élément.
 
 3. Écrire le code de la fonction `somme_max` dont la spécification est&nbsp;:
+
 ```python
 def somme_max(tab: List[int]) -> int:
     """
@@ -121,10 +123,10 @@ def somme_max(tab: List[int]) -> int:
     return max(s_max1, s_max2, s_max3)
 ```
 
-
 {{% /solution %}}
 
 4. Écrire le code de la fonction `max_sous_tab` dont la spécification est&nbsp;:
+
 ```python
 def max_sous_tab(tab: List[float], milieu: int) -> float:
     """
