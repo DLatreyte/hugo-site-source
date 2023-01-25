@@ -1,6 +1,6 @@
 ---
 title: "Propriétés des solutions d'ammoniac"
-subtitle: "Chapitre 12,9"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-02-27T11:27:34+04:00
@@ -18,17 +18,18 @@ Une solution commerciale $S_0$ d’ammoniac $\ce{NH3 (aq)}$ de concentration $C_
 On se propose d’étudier la solution $S$ d’ammoniac de concentration $C_S$ : $S$ étant 100 fois plus diluée que $S_0$.
 
 Données
-: 
+:
+
 - Produit ionique de l’eau : $K_e = \pu{1,0e–14}$.
 
 - $\text{pK}_a$ de quelques couples acide/base :
-    - $\ce{H3O+/H2O}$ : $\text{pK}_{a1} = \pu{0,0}$ ;
-    - $\ce{NH4^+/NH3}$ : $\text{pK}_{a2} = \pu{9,2}$ ; 
-    - $\ce{H2O/HO–}$ : $\text{pK}_{a3} = \pu{14,0}$.
+  - $\ce{H3O+/H2O}$ : $\text{pK}_{a1} = \pu{0,0}$ ;
+  - $\ce{NH4^+/NH3}$ : $\text{pK}_{a2} = \pu{9,2}$ ;
+  - $\ce{H2O/HO–}$ : $\text{pK}_{a3} = \pu{14,0}$.
 
 - Valeurs des conductivités molaires ioniques (en $\pu{S.m2.mol-1}$) :
-    - $\lambda(\ce{HO–}) = \pu{199e–4 S.m2.mol-1}$ ;
-    - $\lambda(\ce{NH4^+}) = \pu{73,4e–4 S.m2.mol-1}$.
+  - $\lambda(\ce{HO–}) = \pu{199e–4 S.m2.mol-1}$ ;
+  - $\lambda(\ce{NH4^+}) = \pu{73,4e–4 S.m2.mol-1}$.
 
 ## Préparation de la solution diluée $S$
 
@@ -55,7 +56,7 @@ Préciser la méthode employée.
 Déterminer alors la valeur de la concentration $C_0$ de la solution $S_0$.\
 Comparer la valeur trouvée à la valeur $C_0$ donnée au début de l’énoncé.
 
-Remarque : 
+Remarque :
 : Pour la suite de l’exercice, on utilisera la valeur de $C_0$ donnée au début de l’énoncé et la valeur correspondante de $C_S$.
 
 6. Parmi les indicateurs colorés du tableau ci-dessous, déterminer celui qu’il faut ajouter à la solution pour procéder le plus efficacement possible au titrage précédent par une méthode colorimétrique. Justifier ce choix.\
@@ -89,6 +90,7 @@ Calculer $K$.
 
 Remarques :
 : - À l’état initial, $[\ce{NH3}]\_i = C_S$ (concentration de la solution $S$).
+
 - Le volume de la solution $U_S$ est supposé constant (la dilution est négligée).
 
 10. En supposant que $x_f$ est négligeable par rapport au produit $C_S\cdot U_S$, montrer que :
@@ -104,7 +106,6 @@ La valeur de la conductivité de la solution diluée $S$ est $\sigma = \pu{8,52e
 12. En déduire la valeur commune de la concentration (en $\pu{mol.L-1}$) des ions $\ce{NH4^+ (aq)}$ et $\ce{HO– (aq)}$ dans la solution $S$.
 
 13. Déterminer alors la valeur du $\text{pH}$ de la solution $S$. Ce résultat est-il en accord avec les données expérimentales ?
-
 
 ## Corrigé
 

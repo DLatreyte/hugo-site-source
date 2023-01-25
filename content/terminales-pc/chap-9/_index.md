@@ -1,6 +1,6 @@
 ---
 title: "Prévoir le sens de l’évolution spontanée d’un système chimique"
-subtitle: "Chapitre 10"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-01-07T21:27:50+04:00
@@ -19,7 +19,6 @@ layout: "single"
 | Notions au programme | Capacités exigibles |
 | :---- | :---- |
 | - État final d’un système siège d’une transformation non totale : état d’équilibre chimique.<br />- Modèle de l’équilibre dynamique.<br />- Quotient de réaction Qr.<br />- Système à l’équilibre chimique : constante d’équilibre K(T).<br />- Critère d’évolution spontanée d’un système hors équilibre chimique. | - Relier le caractère non total d’une transformation à la présence, à l’état final du système, de tous les réactifs et de tous les produits.<br />- Mettre en évidence la présence de tous les réactifs dans l’état final d’un système siège d’une transformation non totale, par un nouvel ajout de réactifs.<br />- Déterminer le sens d’évolution spontanée d’un système.<br />- Déterminer un taux d’avancement final à partir de données sur la composition de l’état final et le relier au caractère total ou non total de la transformation.<br />- Déterminer la valeur du quotient de réaction à l’état final d’un système, siège d’une transformation non totale, et montrer son indépendance vis-à-vis de la composition initiale du système à une température donnée. |
-
 
 ## Documents
 

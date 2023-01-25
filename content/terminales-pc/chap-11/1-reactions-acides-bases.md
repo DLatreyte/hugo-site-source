@@ -1,6 +1,6 @@
 ---
 title: "Réactions entre acides et bases"
-subtitle: "Chapitre 12,1"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-01-25T10:12:12+04:00
@@ -19,12 +19,12 @@ Dans ce chapitre, on introduit les outils qui permettent de comparer entre eux l
 
 ## Produit ionique de l'eau
 
-
 ### Réaction d'autoprotolyse de l'eau
 
 #### Constatations expérimentales
 
 {{% note exercise %}}
+
 ##### Conductivité de l'eau liquide
 
 - Lorsqu'on essaie de vérifier, dans un laboratoire spécialisé et
@@ -32,7 +32,7 @@ Dans ce chapitre, on introduit les outils qui permettent de comparer entre eux l
     circuler un courant électrique dans un volume d'eau pure, on
     constate qu'un très faible courant électrique circule.
 
-- À 25 °C, le pH de l'eau pure est égal à 7,0. 
+- À 25 °C, le pH de l'eau pure est égal à 7,0.
 {{% /note %}}
 
 1. À quelle conclusion doit nous mener la première remarque du document ?
@@ -53,14 +53,15 @@ Parmi les ions présents dans l'eau pure, il existe des ions oxonium à la conc
 {{% solution "Réponse" %}}
 La polarisation des liaisons et la présence des doublets d'électrons non liants au niveau de l'atome d'une molécule d'eau permettent d'imaginer que, *sous l'effet d'interactions électriques*, certaines molécules d'eau s'ionisent selon la réaction d'équation&nbsp;:
 $$\ce{H2O + H2O <=> H3O+ + OH- (aq)}$$
-{{% /solution %}} 
+{{% /solution %}}
 
 {{% note tip %}}
-#### Autoprotolyse de l'eau 
+
+#### Autoprotolyse de l'eau
+
 La réaction chimique d'équation
 $$\ce{H2O + H2O <=> H3O+ + OH- (aq)}$$ est appelée **autoprotolyse de l'eau**.
 {{% /note %}}
-
 
 On remarque que la réaction d'autoprotolyse de l'eau, **lorsqu'elle est seule**, impose $[\ce{H3O+}] = [\ce{HO-}]$ dans l'eau.
 
@@ -123,6 +124,7 @@ donc $\text{pK}\_e = 14,0$.
 
 {{% note warning %}}
 Dans toute solution aqueuse, la réaction d'autoprotolyse de l'eau impose&nbsp;:
+
 - la présence d'ions oxonium et d'ions hydroxyde ;
 - la relation $K\_e = \dfrac{[\ce{H3O+}] \cdot [\ce{HO-}]}{C^{o2}}$.
 {{% /note %}}
@@ -131,7 +133,7 @@ Dans toute solution aqueuse, la réaction d'autoprotolyse de l'eau impose&nbsp;:
 {{% solution "Réponse" %}}
 {{% note normal %}}
 
-$$\text{pH} = \text{pK}_e + \log \left( \dfrac{[ \ce{HO^-}]\_{(eq)}}{C^o} \right) \text{ ou } 
+$$\text{pH} = \text{pK}_e + \log \left( \dfrac{[ \ce{HO^-}]\_{(eq)}}{C^o} \right) \text{ ou }
     [ \ce{HO^-}]\_{(eq)} = C^o \\, 10^{(\text{pH} - \text{pK}\_e)}$$
 
 {{% /note %}}
@@ -150,23 +152,21 @@ $$ \text{pH} = \dfrac{1}{2}\\, \text{pK}\_e$$
 
 9. Une **solution acide** est définie par $[\ce{H3O+}] > [\ce{HO-}]$. En déduire la valeur du pH d'une solution neutre.
 {{% solution "Réponse" %}}
-De la même façon, on montre que 
+De la même façon, on montre que
 $$ \text{pH} < \dfrac{1}{2}\\, \text{pK}\_e$$
 {{% /solution %}}
 
 10. Une **solution basique** est définie par $[\ce{H3O+}] < [\ce{HO-}]$. En déduire la valeur du pH d'une solution neutre.
 {{% solution "Réponse" %}}
-De la même façon, on montre que 
+De la même façon, on montre que
 $$ \text{pH} > \dfrac{1}{2}\\, \text{pK}\_e$$
 {{% /solution %}}
-
 
 Remarque&nbsp;:
 
 :   Les limites supérieure et inférieure du pH en solution aqueuse seront démontrées un peu plus loin dans ce document.
 
 ## Constante d'acidité $K_a$
-
 
 ### Définition
 
@@ -182,7 +182,7 @@ $$K\_a = \dfrac{[ \ce{A-}]\_{(eq)} \cdot [ \ce{H3O+} ]\_{(eq)}}{[ \ce{AH}]\_{(eq
 
 **Remarques**
 
-- On définit, par commodité et par analogie avec l'expression du pH, la grandeur&nbsp;: 
+- On définit, par commodité et par analogie avec l'expression du pH, la grandeur&nbsp;:
 $$
    \text{pK}\_a = -\log K_a \qquad \text{ou} \qquad K_a = 10^{-\text{pK}\_a}
 $$
@@ -201,20 +201,20 @@ or
 $$
   -\log \left( \dfrac{[ \ce{A-}]\_{(eq)} \cdot [ \ce{H3O+} ]\_{(eq)}}{[ \ce{AH}]\_{(eq)} \cdot C^o}   \right) = -\log \left( \dfrac{[ \ce{A-}]\_{(eq)} }{[ \ce{AH}]\_{(eq)} }   \right) - log \left( \dfrac{[ \ce{H3O+} ]\_{(eq)}}{C^o}   \right)
 $$
-donc 
+donc
 $$
    \text{pK}\_a = \text{pH} -\log \left( \dfrac{[ \ce{A-}]\_{(eq)} }{[ \ce{AH}]\_{(eq)} }   \right)
 $$
 {{% /solution %}}
 
 {{% note tip %}}
-Le pH d'une solution et la constante d'acidité d'une couple acide-base en solution sont liés par la relation 
+Le pH d'une solution et la constante d'acidité d'une couple acide-base en solution sont liés par la relation
 $$
    \text{pH} = \text{pK}\_a + \log \left( \dfrac{[ \ce{A-}]\_{(eq)} }{[ \ce{AH}]\_{(eq)} }   \right)
 $$
 {{% /note %}}
 
-### Constantes d'acidité des couples de l'eau 
+### Constantes d'acidité des couples de l'eau
 
 12. Déterminer la valeur de la constante d'acidité du couple $\ce{H3O+/H2O}$.
 {{% solution "Réponse" %}}
@@ -222,7 +222,7 @@ Réaction de l'acide du couple avec l'eau&nbsp;:
 $$
  \ce{H3O+ + H2O <=> H2O + H3O+}
 $$
-donc $K = \pu{1,0}$. 
+donc $K = \pu{1,0}$.
 {{% note tip %}}
 Pour le couple $\ce{H3O+ / H2O}$,
 $$ K\_A = \pu{1,0} \iff \text{pK}\_a = \pu{0,0}$$
@@ -235,7 +235,7 @@ Réaction de l'acide du couple avec l'eau&nbsp;:
 $$
  \ce{H2O + H2O <=> OH- + H3O+}
 $$
-donc $K = K\_e$. 
+donc $K = K\_e$.
 {{% note tip %}}
 Pour le couple $\ce{H2O / HO-}$,
 $$ K\_A = K\_e \iff \text{pK}\_a = \text{pK}\_e$$
@@ -243,6 +243,7 @@ $$ K\_A = K\_e \iff \text{pK}\_a = \text{pK}\_e$$
 {{% /solution %}}
 
 {{% note normal %}}
+
 - L'introduction d'un acide fort en solution aqueuse entrainant sa transformation totale en sa base conjuguée et en ions oxonium, *l'ion oxonium $\ce{H3O+}$ est l'acide le plus fort qui puisse exister dans l'eau*.\
 *L'échelle des $\text{pK}\_a$ a pour valeur inférieure 0.*
 
@@ -254,12 +255,11 @@ $$ K\_A = K\_e \iff \text{pK}\_a = \text{pK}\_e$$
 
 ## Diagrammes de prédominance et de distribution
 
-
 ### Diagrammes de prédominance
 
-
 {{% note tip %}}
-#### Espèce chimique prédominante 
+
+#### Espèce chimique prédominante
 
 Lorsqu'on compare deux espèces chimiques, on dit que *celle qui présente la plus grande concentration molaire* est
 **prédominante**.
@@ -268,9 +268,9 @@ Lorsqu'on compare deux espèces chimiques, on dit que *celle qui présente la pl
 14. Montrer que si le pH d'une solution est égal au $\text{pK}\_a$ d'un couple acide/base $\ce{AH/A-}$ présent dans la solution, alors $[\ce{AH}] = [\ce{A-}]$.
 {{% solution "Réponse" %}}
 
-- $\text{pH} = \text{pK}\_a + \log \left( \dfrac{[ \ce{A-}]\_{(eq)} }{[ \ce{AH}]\_{(eq)} }   \right)$ 
+- $\text{pH} = \text{pK}\_a + \log \left( \dfrac{[ \ce{A-}]\_{(eq)} }{[ \ce{AH}]\_{(eq)} }   \right)$
 
-- Si $\text{pH} = \text{pK}\_a$ alors $\log \left( \dfrac{[ \ce{A-}]\_{(eq)} }{[ \ce{AH}]\_{(eq)} }   \right) = 0$ et donc $\dfrac{[ \ce{A-}]\_{(eq)} }{[ \ce{AH}]\_{(eq)} } = 1$. 
+- Si $\text{pH} = \text{pK}\_a$ alors $\log \left( \dfrac{[ \ce{A-}]\_{(eq)} }{[ \ce{AH}]\_{(eq)} }   \right) = 0$ et donc $\dfrac{[ \ce{A-}]\_{(eq)} }{[ \ce{AH}]\_{(eq)} } = 1$.
 
 - Finalement $[ \ce{A-}]\_{(eq)} = [ \ce{AH}]\_{(eq)}$.
 {{% /solution %}}
@@ -278,9 +278,9 @@ Lorsqu'on compare deux espèces chimiques, on dit que *celle qui présente la pl
 15. Montrer que si le pH d'une solution est tel que $\text{pH} < \text{pK}\_a$ avec $K\_a$ la constante d'acidité d'un couple acide/base $\ce{AH/A-}$ présent dans la solution, alors $[\ce{AH}] > [\ce{A-}]$.
 {{% solution "Réponse" %}}
 
-- $\text{pH} = \text{pK}\_a + \log \left( \dfrac{[ \ce{A-}]\_{(eq)} }{[ \ce{AH}]\_{(eq)} }   \right)$ 
+- $\text{pH} = \text{pK}\_a + \log \left( \dfrac{[ \ce{A-}]\_{(eq)} }{[ \ce{AH}]\_{(eq)} }   \right)$
 
-- Si $\text{pH} < \text{pK}\_a$ alors $\log \left( \dfrac{[ \ce{A-}]\_{(eq)} }{[ \ce{AH}]\_{(eq)} }   \right) < 0$ et, comme la fonction logarithme est croissante et prend la valeur 0 en 1, $\dfrac{[ \ce{A-}]\_{(eq)} }{[ \ce{AH}]\_{(eq)} } < 1$. 
+- Si $\text{pH} < \text{pK}\_a$ alors $\log \left( \dfrac{[ \ce{A-}]\_{(eq)} }{[ \ce{AH}]\_{(eq)} }   \right) < 0$ et, comme la fonction logarithme est croissante et prend la valeur 0 en 1, $\dfrac{[ \ce{A-}]\_{(eq)} }{[ \ce{AH}]\_{(eq)} } < 1$.
 
 - Finalement $[ \ce{A-}]\_{(eq)} < [ \ce{AH}]\_{(eq)}$.
 {{% /solution %}}
@@ -288,14 +288,15 @@ Lorsqu'on compare deux espèces chimiques, on dit que *celle qui présente la pl
 16. Montrer que si le pH d'une solution est tel que $\text{pH} > \text{pK}\_a$ avec $K\_a$ la constante d'acidité d'un couple acide/base $\ce{AH/A-}$ présent dans la solution, alors $[\ce{AH}] < [\ce{A-}]$.
 {{% solution "Réponse" %}}
 
-- $\text{pH} = \text{pK}\_a + \log \left( \dfrac{[ \ce{A-}]\_{(eq)} }{[ \ce{AH}]\_{(eq)} }   \right)$ 
+- $\text{pH} = \text{pK}\_a + \log \left( \dfrac{[ \ce{A-}]\_{(eq)} }{[ \ce{AH}]\_{(eq)} }   \right)$
 
-- Si $\text{pH} > \text{pK}\_a$ alors $\log \left( \dfrac{[ \ce{A-}]\_{(eq)} }{[ \ce{AH}]\_{(eq)} }   \right) > 0$ et, comme la fonction logarithme est croissante et prend la valeur 0 en 1, $\dfrac{[ \ce{A-}]\_{(eq)} }{[ \ce{AH}]\_{(eq)} } > 1$. 
+- Si $\text{pH} > \text{pK}\_a$ alors $\log \left( \dfrac{[ \ce{A-}]\_{(eq)} }{[ \ce{AH}]\_{(eq)} }   \right) > 0$ et, comme la fonction logarithme est croissante et prend la valeur 0 en 1, $\dfrac{[ \ce{A-}]\_{(eq)} }{[ \ce{AH}]\_{(eq)} } > 1$.
 
 - Finalement $[ \ce{A-}]\_{(eq)} > [ \ce{AH}]\_{(eq)}$.
 {{% /solution %}}
 
 {{% note tip %}}
+
 #### Concentrations des formes acide et basique d'un couple en fonction du pH
 
 Le relation
@@ -326,16 +327,14 @@ $\ce{AH/A^-}$, permet de vérifier que&nbsp;:
 
 **Remarque**
 
-- Si $\text{pK}\_a < \text{pH}  < \dfrac{1}{2}\\, \text{pK}\_e$, la forme basique du couple prédomine alors que la solution est acide ! 
+- Si $\text{pK}\_a < \text{pH}  < \dfrac{1}{2}\\, \text{pK}\_e$, la forme basique du couple prédomine alors que la solution est acide !
 
 - De même, si $\dfrac{1}{2}\\, \text{pK}_e < \text{pH} < \text{pK}\_a$, la forme acide du couple prédomine alors que la solution est basique.
 
 <!--  -->
 ### Diagrammes de distribution des formes acide et basique
 
-
 <img src="/terminales-pc/chap-11/chap-11-1/chap-11-1-3.png" alt="" width="100%" />
-
 
 {{% note exercise %}}
 Le lait contient, entre autres, de l'acide lactique $\ce{CH3-CHOH-CO2H}$, noté $\ce{HA}$, et l'ion lactate $\ce{CH3-CHOH-CO2-}$, noté $\ce{A-}$. La constante d'acidité du couple est égale à $K\_a = \pu{1,3e-4}$.\
@@ -347,12 +346,14 @@ Un lait a un pH égal à 6,5.
 {{% /note %}}
 
 {{% solution "Réponses" %}}
+
 1. Le $\text{pK}\_a$ du couple vaut&nbsp;: $\text{pK}\_a = -\log K\_a = \pu{3,9}$. Comme $\text{pH} > \text{pK}\_a$, l'espèce chimique prédominante est $\ce{CH3-CHOH-CO2-}$, la forme basique du couple.
 
 2. $$
     K\_a = \dfrac{[\ce{A-}]\_{eq} \cdot [\ce{H3O+}]\_{eq}}{[\ce{AH}]\_{eq} \cdot C^o} \iff \dfrac{[\ce{A-}]\_{eq}}{[\ce{AH}]\_{eq}} = \dfrac{K\_a \cdot C^o}{[\ce{H3O+}]\_{eq}}
 $$
-À partir de la définition du pH, on peut écrire 
+
+À partir de la définition du pH, on peut écrire
 $$
   \dfrac{[\ce{A-}]\_{eq}}{[\ce{AH}]\_{eq}} = \dfrac{\pu{1,3e-4} \times \pu{1,0 mol.L-1}}{10^{-6,5}} = \pu{4,1e2}
 $$
@@ -381,6 +382,7 @@ Si $[\ce{A-}] > 10\\, [\ce{AH}]$, $\dfrac{[\ce{A-}]}{[\ce{AH}]} > 10^{1}$ et $\t
 {{% /solution %}}
 
 {{% note tip %}}
+
 #### Zones de virage, teinte sensible
 
 - Pour $\text{pH} < \text{pK}\_a -1$ l'indicateur coloré a sa **teinte acide**.
@@ -404,23 +406,24 @@ Proposer un encadrement du rapport des concentrations des espèces $\ce{ClO-}$ e
 
 Données
 : - $\text{pK}\_a (\ce{HClO/ClO-}) = \pu{7,3}$.
+
 - BBT&nbsp;:
-    - forme acide&nbsp;: jaune si $\text{pH} < \pu{6,0}$
-    - forme basique&nbsp;: bleu si $\text{pH} > \pu{7,6}$
+  - forme acide&nbsp;: jaune si $\text{pH} < \pu{6,0}$
+  - forme basique&nbsp;: bleu si $\text{pH} > \pu{7,6}$
 - phénolphtaléine&nbsp;:
-    - forme acide&nbsp;: incolore si $\text{pH} < \pu{8,2}$
-    - forme basique&nbsp;: fuschia si $\text{pH} > \pu{10,0}$
+  - forme acide&nbsp;: incolore si $\text{pH} < \pu{8,2}$
+  - forme basique&nbsp;: fuschia si $\text{pH} > \pu{10,0}$
 {{% /note %}}
 
 {{% solution "Réponses" %}}
 
-1. 
+1.
     - La solution contenue dans le bécher $A$ est bleue, donc $\text{pH} > \pu{7,6}$.
     - La solution contenue dans le bécher $B$ est incolore, donc $\text{pH} < \pu{8,2}$.
 Finalement
 $$\pu{7,6} < \text{pH} < \pu{8,2}$$
 
-2. La relation $\text{pH} = \text{pK}\_a + \log \left( \dfrac{[\ce{ClO-}]}{[\ce{HClO}]}   \right)$ conduit à 
+2. La relation $\text{pH} = \text{pK}\_a + \log \left( \dfrac{[\ce{ClO-}]}{[\ce{HClO}]}   \right)$ conduit à
 $$
     \log \left( \dfrac{[\ce{ClO-}]}{[\ce{HClO}]}   \right) = \text{pH} - \text{pK}\_a
 $$
@@ -428,7 +431,7 @@ soit
 $$
     \dfrac{[\ce{ClO-}]}{[\ce{HClO}]} = 10^{\text{pH} - \text{pK}\_a}
 $$
-D'un point de vue numérique, 
+D'un point de vue numérique,
 $$
     10^{\pu{7,6} - \pu{7,3}} < \dfrac{[\ce{ClO-}]}{[\ce{HClO}]} < 10^{\pu{8,2} - \pu{7,3}}
 $$
@@ -440,10 +443,10 @@ $$
 <!-- Acides aminés -->
 ## Acides $\alpha$-aminés
 
-
 ### Définitions
 
 {{% note tip %}}
+
 #### Acide aminé
 
 Un **acide aminé** est un *acide carboxylique* qui possède
@@ -458,7 +461,8 @@ $\alpha$-aminés, $\beta$-aminés, $\gamma$-aminés ou $\delta$-aminés.
 {{% /note %}}
 
 {{% note tip %}}
-#### Acide $\alpha$-aminé 
+
+#### Acide $\alpha$-aminé
 
 Un acide aminé est dit $\alpha$-aminé si le *groupe
 amine* est porté par l'atome de carbone voisin de celui qui porte le
@@ -468,7 +472,8 @@ donc&nbsp;:
 {{% /note %}}
 
 {{% note tip %}}
-#### Amphions, Zwitterions 
+
+#### Amphions, Zwitterions
 
 En solution aqueuse, un acide $\alpha$-aminé
 existe essentiellement sous la forme d'ions dipolaires appelés
@@ -481,11 +486,11 @@ est **une réaction acido-basique intramoléculaire**.
 <img src="/terminales-pc/chap-11/chap-11-1/chap-11-1-5.png" alt="" width="75%" />
 {{% /note %}}
 
-
 ### Couples acide/base
 
 {{% note tip %}}
-#### Couples acide/base 
+
+#### Couples acide/base
 
 L'amphion est un ampholyte. En solution aqueuse, il
 peut être considéré comme&nbsp;:
@@ -501,10 +506,10 @@ peut être considéré comme&nbsp;:
 
 <img src="/terminales-pc/chap-11/chap-11-1/chap-11-1-6.png" alt="" width="100%" />
 
-
 ## Effets thermiques lors du mélange d'un acide et d'une base
 
 {{% note normal %}}
+
 - On mélange $\pu{0,1 mol}$ d'une solution d'acide chlorhydrique ($V\_a = \pu{50 mL}$) et $\pu{0,1 mol}$ d'une solution de soude ($V\_b = \pu{50 mL}$). On observe que la température s'élève d'environ $\pu{10 °C}$.
 
 - Par contre, si on mélange $\pu{0,1 mol}$ d'une solution d'acide chlorhydrique ($V\_a = \pu{50 mL}$) et $\pu{50 mL}$ d'eau, l'élévation de température est très faible.
@@ -513,7 +518,9 @@ peut être considéré comme&nbsp;:
 {{% /note %}}
 
 {{% note tip %}}
+
 #### Réaction entre un acide fort et une base forte
+
 Le mélange d'un acide fort et d'une base forte dans une solution conduit à une **transformation chimique totale** modélisée par la réaction chimique d'équation&nbsp;:
 $$
     \ce{H3O^+  + HO- (aq) --> 2 H2O (l)}
@@ -522,6 +529,7 @@ $$
 {{% /note %}}
 
 {{% note warning %}}
+
 - Il faut toujours prendre beaucoup de précautions lorsqu'on mélange des solutions concentrées de base et d'acides forts.
 - Un mélange trop rapide peut conduire à une ébullition locale et donc à des projections. Il ne faut donc jamais verser brutalement d'eau dans un acide fort concentré, *les projections étant alors acides* !
 {{% /note %}}
@@ -529,6 +537,7 @@ $$
 ## Solution tampon
 
 {{% note tip %}}
+
 #### Solution tampon
 
 On appelle **solution tampon** une solution dont le pH varie peu, *par addition d'un acide, d'une base ou par dilution*.
@@ -537,12 +546,14 @@ On appelle **solution tampon** une solution dont le pH varie peu, *par addition 
 Les solutions tampons sont utilisées lorsqu'une réaction chimique susceptible de libérer ou de consommer des protons doit se faire à un pH sensiblement constant. Il en est souvent ainsi en biologie&nbsp;: les cellules, les enzymes ne peuvent exister que dans une zone de pH bien déterminée (1,5 pour la peptase de l'estomac, 6,5 pour l'amylase de la salive, 7,4 pour le pH du sang).
 
 #### Remarque
+
 Nous utilisons des solutions tampons pour étalonner les pH-mètres.
 
 {{% note normal %}}
+
 #### Réalisation d'une solution tampon
 
 On peut montrer que les solutions constituées d'un **mélange équimolaire (ou de proportions voisines) d'un acide faible et de sa base conjuguée** constitue une solution tampon (il faut bien évidemment que l'ajout d'acide, de base ou la dilution restent modérés).
-    
+
 Ainsi, pour $\text{pH} = \pu{4,8}$, on utilise le couple $\ce{CH3CO2H/CH3CO2^-}$, pour $\text{pH} = \pu{9,2}$, le couple $\ce{NH4^+/NH_3}$, pour $\text{pH} = \pu{7,2}$, le couple $\ce{H2PO4^-/HPO4^{2-}}$, etc.
 {{% /note %}}

@@ -1,6 +1,6 @@
 ---
 title: "pH et milieux biologiques"
-subtitle: "Chapitre 12,6"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-01-31T18:45:28+04:00

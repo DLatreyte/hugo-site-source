@@ -1,6 +1,6 @@
 ---
 title: "L'acide benzoïque, un conservateur alimentaire"
-subtitle: "Chapitre 12,5"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-01-30T21:29:18+04:00
@@ -19,6 +19,7 @@ auto_numbering: true
 
 L'acide benzoïque, de formule chimique $\ce{C6H5COOH}$ est un acide carboxylique aromatique dérivé du benzène. Il est utilisé comme conservateur alimentaire et est naturellement présent dans certaines plantes. C'est par exemple l'un des principaux constituants de la gomme benjoin, utilisée dans des encens dans les églises de Russie et d'autres communautés orthodoxes. Bien qu'étant un acide faible, l'acide benzoïque n'est que peu soluble dans l'eau du fait de la présence du cycle benzénique apolaire.\
 On trouve de l'acide benzoïque dans les plantes alimentaires :
+
 - en quantité notable dans le canneberge d'Amérique11 (Vaccinium macrocarpon) : $\pu{48,10 mg/100 ml}$ ;
 - dans une moindre mesure dans la poudre de cacao (Theobroma cacao) : $\pu{0,06 mg/100 ml}$.
 
@@ -29,6 +30,7 @@ L'acide benzoïque a une odeur forte et est facilement inflammable.
 
 Données
 : - **Solubilité** dans l'eau à 20&nbsp;°C : $\pu{2,9 g.L-1}$, soluble dans le chloroforme, l'éthanol et l'acétone ;
+
 - $\text{pK}\_A (\ce{C6H5CO2H/C6H5CO2^-}) = \pu{4,2}$ ;
 - $M(\ce{C6H5CO2H}) = \pu{122,1 g.mol-1}$.
 
@@ -38,7 +40,7 @@ Données
 
 ## Travail
 
-1. Écrire l’équation de la réaction entre l’acide benzoïque et l’eau. 
+1. Écrire l’équation de la réaction entre l’acide benzoïque et l’eau.
 {{% solution "Réponse" %}}
 $\ce{C6H5CO2H (aq) + H2O <=> C6H5CO2^- (aq) + H3O+ }$
 {{% /solution %}}
@@ -50,7 +52,7 @@ La solubilité $s$ est la masse maximale que l'on peut dissoudre dans un litre d
 **A.N.** $c\_A = \dfrac{\pu{2,9 g.L-1}}{\pu{122,1 g.mol-1}} = \pu{2,4e-2 mol.L-1}$.
 {{% /solution %}}
 
-3. Déterminer l’avancement maximal $x\_{max}$ de la réaction de l’acide benzoïque avec l’eau dans un volume $V = \pu{40 mL}$ de solution saturée. 
+3. Déterminer l’avancement maximal $x\_{max}$ de la réaction de l’acide benzoïque avec l’eau dans un volume $V = \pu{40 mL}$ de solution saturée.
 {{% solution "Réponse" %}}
 L'utilisation d'un tableau d'avancement permet de conclure que $n\_0(\ce{C6H5CO2H}) - x\_{max} = 0 \iff x\_{max} = n\_0(\ce{C6H5CO2H}) = c\_A \cdot V$.
 
@@ -59,18 +61,18 @@ L'utilisation d'un tableau d'avancement permet de conclure que $n\_0(\ce{C6H5CO2
 
 4. Cette solution a un pH de 2,9. Déterminer l’avancement final $x\_f$, puis le taux d’avancement final $\tau$ de la réaction.
 {{% solution "Réponse" %}}
+
 - L'utilisation d'un tableau d'avancement permet de conclure que $x\_f = n\_f(\ce{H3O+}) = C^o \cdot 10^{-\text{pH}} \cdot V$.
 
    **A.N.** $x\_f = \pu{1,0} \times 10^{-\pu{2,9}} \times \pu{40e-3 L} = \pu{5,0e-5 mol}$.
 
 - $\tau = \dfrac{x\_f}{x\_{max}} = \dfrac{\pu{5,0e-5 mol}}{\pu{9,5e-4 mol}} = \pu{5,3e-2}$ L'avancement final ne représente que 5,3% de l'avancement maximal.
-{{% /solution %}} 
+{{% /solution %}}
 
-5. Montrer qu'on peut exprimer la constante d'acidité $K\_A$ sous la forme 
+5. Montrer qu'on peut exprimer la constante d'acidité $K\_A$ sous la forme
 $$
     K\_A = \dfrac{c\_A \cdot \tau^2}{C^o \\, (1 - \tau)}
 $$
-
 
 6. Calculer la valeur de $\tau$ et la comparer le résultat obtenu avec la valeur trouvée à la question 4.
 
@@ -82,11 +84,15 @@ Il doit, en particulier :
    - calculer, en fonction de la valeur du discriminant, la valeur des racines si elles existent.
 
 {{% note normal %}}
+
 - Affichage du contenu d'une variable à l'écran en Python
+
 ```python
 print("Première racine : {}".format(variable))
 ```
+
 - Demande d'une information à l'utilisateur en Python
+
 ```python
 Ka = float(input("Entrer la valeur du Ka : "))
 ```
@@ -94,6 +100,7 @@ Ka = float(input("Entrer la valeur du Ka : "))
 **Remarque :** La fonction `input` retourne toujours une chaîne de caractères. Lorsque l'information est un nombre, il faut transformer la chaîne de caractères. Ici, on utilise la fonction `float`.
 
 - Structure conditionnelle en Python :
+
 ```python
 if condition_1 :
     faire si condition_1 est vérifiée
@@ -102,4 +109,5 @@ elif condition_2:
 else:
     faire si aucune condition n est vérifiée
 ```
+
 {{% /note %}}

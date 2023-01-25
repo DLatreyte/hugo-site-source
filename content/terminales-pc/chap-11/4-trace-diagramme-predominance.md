@@ -1,6 +1,6 @@
 ---
 title: "Tracé d'un diagramme de distribution à l'aide du langage Python"
-subtitle: "Chapitre 12,4"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-01-30T21:28:32+04:00
@@ -19,6 +19,7 @@ auto_numbering: true
 
 Données
 : - $\text{pK}\_a(\ce{NH4^+/NH3}) = \pu{9,24}$ ;
+
 - $\text{pK}\_a(\ce{CH3CO2H/CH3CO2^-}) = \pu{4,70}$.
 
 On introduit un acide faible à la concentration $C$ dans une solution dont on peut faire varier le pH.
@@ -44,15 +45,15 @@ Enregistrer l'image générée.
 
 Données
 : - $\text{pK}\_a(\ce{H2CO3/HCO3^-}) = \pu{6,30}$ ;
+
 - $\text{pK}\_a(\ce{HCO3^-/CO3^{2-}}) = \pu{10,33}$.
 
 10. Reprendre l'étude précédente dans le cas de l'acide carbonique (dihydrogénocarbonate).
-
 
 ## Corrigé de la première partie
 
 {{% solution "Corrigé" %}}
 
-{{< remote "Programme" "https://dlatreyte.github.io/jupyter-lite/lab?path=term-spe-pc%2FAcide-Base%2FDiagramme_predominance.ipynb" >}} 
+{{< remote "Programme" "https://dlatreyte.github.io/jupyter-lite/lab?path=term-spe-pc%2FAcide-Base%2FDiagramme_predominance.ipynb" >}}
 
 {{% /solution %}}

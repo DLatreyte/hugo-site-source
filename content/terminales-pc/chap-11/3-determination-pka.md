@@ -1,6 +1,6 @@
 ---
 title: "Détermination de la constante d'acidité du couple acide/base de l'acide méthanoïque"
-subtitle: "Chapitre 12,3"
+subtitle: ""
 author: ""
 type: ""
 date: 2022-02-05T11:17:34+04:00
@@ -13,9 +13,8 @@ solution_est_visible: true
 auto_numbering: true
 ---
 
-> L'objectif premier de cette séance est la détermination de la constante d'acidité du couple acide/base de l'acide méthanoïque.    
+> L'objectif premier de cette séance est la détermination de la constante d'acidité du couple acide/base de l'acide méthanoïque.
 La méthode utilisée s'appuie sur une mesure de conductivité.
-
 
 {{% note normal %}}
 
@@ -30,25 +29,24 @@ Dans la nature, on le trouve dans les glandes de plusieurs insectes de l'ordre d
 </div>
 {{% /note %}}
 
-
 {{% note normal %}}
 
 #### Constante d'équilibre, constante d'acidité d'un couple acide/base
 
-Pour évaluer l'avancement d'une transformation dont la réaction chimique conduit à un état d'équilibre, on définit et utilise une grandeur **sans dimension** appelée **constante d'équilibre de la réaction** et notée $K$.    
+Pour évaluer l'avancement d'une transformation dont la réaction chimique conduit à un état d'équilibre, on définit et utilise une grandeur **sans dimension** appelée **constante d'équilibre de la réaction** et notée $K$.
 *Pour une concentration apportée donnée, plus la valeur d'une constante d'équilibre est grande, plus l'état d'équilibre --- état final réel de la transformation --- se rapproche de l'état final hypothétique --- état d'avancement maximal dans lequel le réactif limitant a disparu.*
 
-Dans le cas particulier de la réaction d'un acide faible avec l'eau 
-$$ 
-    \ce{AH + H_2O <=> A^- + H3O^+} 
+Dans le cas particulier de la réaction d'un acide faible avec l'eau
 $$
-on appelle **constante d'acidité** $K_A$ la *constante d'équilibre* de cette réaction.   
+    \ce{AH + H_2O <=> A^- + H3O^+}
+$$
+on appelle **constante d'acidité** $K_A$ la *constante d'équilibre* de cette réaction.
 Pour une concentration apportée donnée, plus la constante d'acidité $K_A$ est élevée, plus la dissociation de l'acide en solution est grande, et donc plus son comportement se rapproche de celui d'un acide fort.
 
-Une constante d'acidité est **caractéristique** d'un couple acide/base $\ce{acide/base}$.       
+Une constante d'acidité est **caractéristique** d'un couple acide/base $\ce{acide/base}$.
 
-Remarque 
-: La constante d'équilibre d'une réaction (et donc la constante d'acidité d'un couple acide/base) est *une grandeur qui dépend de la température*. 
+Remarque
+: La constante d'équilibre d'une réaction (et donc la constante d'acidité d'un couple acide/base) est *une grandeur qui dépend de la température*.
 
 {{% /note %}}
 
@@ -67,7 +65,6 @@ Remarque
 {{% /solution %}}
 
 ## Exploitation
-
 
 ### Détermination de la concentration des ions dans la solution
 
@@ -90,13 +87,13 @@ Dans un premier temps, on se concentre sur l'étude de la solution $S_1$.
 
 {{% /solution %}}
 
-2. Écrire l'équation de la réaction entre l'acide méthanoïque et l'eau.   
+2. Écrire l'équation de la réaction entre l'acide méthanoïque et l'eau.
 Cette réaction conduit quasiment instantanément le système à un état d'équilibre.
 
 {{% solution "Réponse" %}}
 
 $$
-    \ce{HCO2H (aq) + H2O <=> HCO2^- (aq) + H3O^+} 
+    \ce{HCO2H (aq) + H2O <=> HCO2^- (aq) + H3O^+}
 $$
 
 {{% /solution %}}
@@ -173,7 +170,7 @@ $ n_{eq}(\ce{HCO2H}) = n_{0}(\ce{HCO2H}) - x_{eq} $ donc $ n_{eq}(\ce{HCO2H}) = 
 12. En déduire la relation entre les concentrations, dans l'état d'équilibre, de l'acide méthanoïque et des ions oxonium.
 {{% solution "Réponse" %}}
 
-$ \dfrac{n_{eq}(\ce{HCO2H})}{V} = \dfrac{C_1 V}{V} -  \dfrac{n_{eq}(\ce{H3O^+})}{V}$, donc 
+$ \dfrac{n_{eq}(\ce{HCO2H})}{V} = \dfrac{C_1 V}{V} -  \dfrac{n_{eq}(\ce{H3O^+})}{V}$, donc
 $ [\ce{HCO2H}]\_{eq} = C_1 - [\ce{H3O^+}]\_{eq} $
 
 {{% /solution %}}
@@ -194,8 +191,7 @@ $ K_A = \dfrac{(\pu{2,75e-3 mol.L-1})^2 }{(\pu{5,0e-2 mol.L-1} - \pu{2,75e-3 mol
 
 {{% /solution %}}
 
-
-15. Mettre en commun l'ensemble des résultats obtenus par les $n$ groupes de la classe, calculer la valeur moyenne $K_{A_{moy}}$ (après avoir supprimé les résultats manifestement aberrants) puis l'incertitude de répétabilité $U(K_A)$.     
+15. Mettre en commun l'ensemble des résultats obtenus par les $n$ groupes de la classe, calculer la valeur moyenne $K_{A_{moy}}$ (après avoir supprimé les résultats manifestement aberrants) puis l'incertitude de répétabilité $U(K_A)$.
 Exprimer finalement le résultat du mesurage sous la forme $K_{A_{moy}} \pm U(K_A)$.
 
 Remarque
@@ -216,7 +212,7 @@ $K_{A_{theo}} = 10^{—\mathrm{pK}_A} = \pu{1,77e-4}$
 L'intervalle trouvé expérimentalement est : $\pu{1,53e-4} \leq K_A \leq \pu{1,57e-4}$. Cet intervalle est trop petit pour contenir la valeur attendue.
 {{% /solution %}}
 
-17. Reprendre entièrement l'étude pour la solution $S_2$.     
+17. Reprendre entièrement l'étude pour la solution $S_2$.
 **La valeur de la constante d'acidité dépend-elle de la concentration initiale en acide ?**
 {{% solution "Réponse" %}}
 
@@ -224,13 +220,11 @@ L'intervalle trouvé expérimentalement est : $\pu{1,53e-4} \leq K_A \leq \pu{1,
 [\ce{H3O^+}]\_{eq} = \dfrac{ \pu{0,3206e-1 S.m-1} }{ \pu{5,46e-3 S.m2.mol-1} + \pu{35,0e-3 S.m2.mol-1} } = \pu{7,93e-1 mol.m-3} = \pu{7,93e-4 mol.L-1}
 $
 
-- $ 
-K_A = \dfrac{(\pu{7,93e-4 mol.L-1})^2 }{(\pu{5,0e-3 mol.L-1} - \pu{7,93e-4 mol.L-1}) \cdot \pu{1,0 mol.L-1}} = \pu{1,49e-4} 
+- $
+K_A = \dfrac{(\pu{7,93e-4 mol.L-1})^2 }{(\pu{5,0e-3 mol.L-1} - \pu{7,93e-4 mol.L-1}) \cdot \pu{1,0 mol.L-1}} = \pu{1,49e-4}
 $
 
-
 {{% note tip %}}
-
 
 **La valeur de la constante d'acidité ne dépend pas de la concentration initiale en acide. Elle est spécifique à l'acide et ne dépend que de la température.**
 

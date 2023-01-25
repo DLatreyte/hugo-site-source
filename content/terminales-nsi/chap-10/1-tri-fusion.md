@@ -596,6 +596,45 @@ def coupe(lst: Cellule) -> Cellule:
     return l1, l2
 ```
 
+ou
+
+```python
+def coupe(lst: "Cellule") -> "Cellule":
+    """
+    Découpe la liste L2 est deux sous-listes de même
+    longueur à un élément près.
+    """
+    l1, l2 = None, None
+
+    i = 0
+    while lst is not None:
+        if i % 2 == 0:
+            l1 = Cellule(lst.valeur, l1)
+        else:
+            l2 = Cellule(lst.valeur, l2)
+        i += 1
+        lst = lst.suivant
+
+    return l1, l2
+```
+
+ou
+
+```python
+def coupe(lst: Cellule, l1: Cellule = None, l2: Cellule = None, i: int = 0) -> Tuple[Cellule, Cellule]:
+    """
+    Découpe la liste L2 est deux sous-listes de même
+    longueur à un élément près.
+    """
+    if lst is None:
+        return l1, l2
+    else:
+        if i % 2 == 0:
+            return coupe(lst.suivant, Cellule(lst.valeur, l1), l2, i + 1)
+        else:
+            return coupe(lst.suivant, l1, Cellule(lst.valeur, l2), i + 1) 
+```
+
 {{% /solution %}}
 
 5. Définir la fonction `fusion` dont la spécification est
@@ -613,17 +652,17 @@ def fusion(l1: Cellule, l2: Cellule) -> Cellule:
 {{% solution "Réponse" %}}
 
 ```python
-def fusion(l1: Cellule, l2: Cellule) -> Cellule:
+def fusion(l1: "Cellule", l2: "Cellule") -> "Cellule":
     """
     Réalise la fusion des deux listes l1 et l2 
     triées.
     """
     if l1 is None:
-        return l1
-    if l2 is None:
         return l2
-
-    if l1.valeur < l2.valeur:
+    if l2 is None:
+        return l1
+        
+    if l1.valeur <= l2.valeur:
         return Cellule(l1.valeur, fusion(l1.suivant, l2))
     else:
         return Cellule(l2.valeur, fusion(l1, l2.suivant))

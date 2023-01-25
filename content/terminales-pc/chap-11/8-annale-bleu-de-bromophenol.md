@@ -1,6 +1,6 @@
 ---
 title: "Annale : Le bleu de bromophénol"
-subtitle: "Chapitre 12,8"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-02-27T10:49:40+04:00
@@ -122,7 +122,6 @@ L’exploitation des données expérimentales a permis de construire le graphiqu
 Donner sa valeur.
 
 19. Vérifier par un calcul que l’hypothèse émise dans la question 12. est légitime.
-
 
 ## Correction
 

@@ -1,6 +1,6 @@
 ---
 title: "Annales"
-subtitle: "Chapitre 12,7"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-02-02T07:51:50+04:00
