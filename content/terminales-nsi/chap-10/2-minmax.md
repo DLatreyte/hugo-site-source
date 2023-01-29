@@ -13,7 +13,7 @@ solution_est_visible: true
 auto_numbering: true
 ---
 
-> L'objectif de cette séance est d'écrire et d'implémenter un algorithme s'appuyant sur le paradigme «&nbsp;Diviser pour régner&nbsp;» qui permet de déterminer le maximum et le minimum des éléments dans un tableau.
+> L'objectif de ce document est d'écrire et d'implémenter un algorithme s'appuyant sur le raisonnement «&nbsp;Diviser pour régner&nbsp;» qui permet de déterminer le maximum et le minimum des éléments dans un tableau.
 
 1. Générer une liste contenant un million de termes choisis aléatoirement entre un et mille milliards.
 {{% solution "Réponse" %}}

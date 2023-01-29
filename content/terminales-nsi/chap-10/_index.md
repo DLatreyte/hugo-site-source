@@ -28,6 +28,8 @@ layout: "single"
 
 - **Doc.** [*Le tri fusion*](1-tri-fusion)
 
+- **Doc.** [*Somme des $n$ nombres d'un tableau*](7-somme-nombres)
+
 - **Doc.** [*Recherche des plus grand et petit éléments dans un tableau*](2-minmax)
 
 - **Doc.** [*Les tours de Hanoï*](3-tour-hanoi)
