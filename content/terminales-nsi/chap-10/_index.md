@@ -22,14 +22,18 @@ layout: "single"
 
 ## Documents
 
-- **Chapitre 13,1 :** [*Le tri fusion*](1-tri-fusion)
+- **Doc.** [*Décomposition d'un problème en sous-problèmes*](0-decomposition-pb)
 
-- **Chapitre 13,2 :** [*Recherche des plus grand et petit éléments dans un tableau*](2-minmax)
+- **Doc.** [*Diviser pour régner*](0-diviser-pour-regner)
 
-- **Chapitre 13,3 :** [*Les tours de Hanoï*](3-tour-hanoi)
+- **Doc.** [*Le tri fusion*](1-tri-fusion)
 
-- **Chapitre 13,4 :** [*Problème de la sous-séquence de somme maximale*](4-max-somme-sous-tableau)
+- **Doc.** [*Recherche des plus grand et petit éléments dans un tableau*](2-minmax)
 
-- **Chapitre 13,5 :** [*Recherche numérique de zéros de fonctions dans $\Reals$*](5-recherche-zero)
+- **Doc.** [*Les tours de Hanoï*](3-tour-hanoi)
 
-- **Chapitre 13,6 :** [*Rotation d'une image bitmap d'un quart de tour*](5-rotation-image)
+- **Doc.** [*Problème de la sous-séquence de somme maximale*](4-max-somme-sous-tableau)
+
+- **Doc.** [*Recherche numérique de zéros de fonctions dans $\Reals$*](5-recherche-zero)
+
+- **Doc.** [*Rotation d'une image bitmap d'un quart de tour*](5-rotation-image)

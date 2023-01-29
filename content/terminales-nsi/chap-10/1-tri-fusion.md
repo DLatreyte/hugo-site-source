@@ -13,17 +13,6 @@ solution_est_visible: false
 auto_numbering: true
 ---
 
-## La méthode « Diviser pour régner »
-
-{{% note tip %}}
-La méthode **« Diviser pour régner »** est une méthode de résolution de problèmes qui consiste à décomposer le problème en trois étapes :
-
-1. **Diviser :** Si la taille de l'ensemble des données à traiter est inférieure à une certaine limite (un ou deux éléments typiquement) résoudre le problème. Si la taille de l'ensemble de données à traiter est supérieur à la limite fixée, diviser cet ensemble en deux sous-ensembles (de tailles inférieures).
-
-2. **Régner :** Résoudre récursivement le problème pour les deux sous-ensembles de données.
-
-3. **Combiner :** Combiner les solutions des sous-problèmes afin de construire la solution du problème original.
-{{% /note %}}
 
 ## Le tri fusion d'un tableau
 
