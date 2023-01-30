@@ -94,3 +94,43 @@ if __name__ == "__main__":
 ```
 
 {{% /solution %}}
+
+3. Décrire le fonctionnement de l'algorithme pour la liste `[1, 2, 3, 4, 5, 6, 7]`.
+{{% solution "Réponse" %}}
+
+```bash
+somme([1, 2, 3, 4, 5, 6, 7])
+    somme_g = somme([1, 2, 3])
+        somme_g = somme([1])
+            retourne 1
+        somme_d = somme([2, 3])
+            somme_g = somme([2])
+                retourne 2
+            somme_d([3])
+                retourne 3
+            total = 5
+            retourne 5
+        total = 6
+        retourne 6
+    somme_d = somme([4, 5, 6, 7])
+        somme_g = somme([4, 5])
+            somme_g = somme([4])
+                retourne 4
+            somme_d = somme([5])
+                retourne 5
+            total = 9
+            retourne 9
+        somme_d = somme([6, 7])
+            somme_g = somme([6])
+                retourne 6
+            somme_d = somme([7])
+                retourne 7
+            total = 13
+            retourne 13
+        total = 22
+        retourne 22
+    total = 28
+    retourne 28
+```
+
+{{% /solution %}}
