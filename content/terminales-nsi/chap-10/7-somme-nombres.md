@@ -67,15 +67,22 @@ def somme2(tab: List[float]) -> float:
 
     Algorithme : Diviser pour Régner.
     """
+    # Cas de base
     if len(tab) == 1:
         return tab[0]
 
+    # Diviser
     m = len(tab) // 2
 
-    nbre1 = somme2(tab[:m])
-    nbre2 = somme2(tab[m:])
+    somme_g = somme2(tab[:m])
+    somme_d = somme2(tab[m:])
 
-    return nbre1 + nbre2
+    # Régner
+    total = somme_g + somme_d
+
+    # Recombiner
+    return total
+
 
 if __name__ == "__main__":
     tab = [1, 2, 3, 4, 5, 6, 7]
