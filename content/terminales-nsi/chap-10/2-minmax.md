@@ -123,7 +123,8 @@ Il existe un rapport 2 entre les durées d'exécution des deux fonctions. Elles 
 7. En faisant varier le nombre d'éléments dans le tableau, vérifier si les durées d'exécution de la fonction `maxmin1` correspond bien à la complexité établie à la question 5.
 La complexité des fonctions `max` et `min` fournies par Python vous semblent-elles être en $O(N)$&nbsp;?
 
-8. À partir de l'algorithme du tri fusion, écrire et implémenter la fonction `maxmin2` qui, dans un premier temps, se contente de déterminer le maximum dans la liste passée en argument.
+8. Écrire et implémenter la fonction `maxmin2` qui implémente le raisonnement «Diviser pour régner » pour résoudre ce problème.
+Dans un premier temps, écrire une fonction qui se contente de déterminer le maximum dans la liste passée en argument. Compléter ensuite le code de façon à ce que le maximum et le minimum soient retournés.
 La spécification de la fonction est&nbsp;:
 
 ```python
@@ -144,15 +145,23 @@ def maxmin2(tab: List[float]) -> float:
     
     Paradigme : Diviser pour régner
     """
+    # Cas de base
     if len(tab) == 1:
         return tab[0]
 
+    # Diviser
     milieu = len(tab) // 2
     max1 = maxmin2(tab[:milieu])
     max2 = maxmin2(tab[milieu:])
 
-    return max(max1, max2)
+    # Régner
+    maximum = max(max1, max2)
+
+    # Combiner
+    return maximum
 ```
+
+**Remarque :** on peut aussi développersa propre fonction `max`.
 
 {{% /solution %}}
 
@@ -188,14 +197,21 @@ def maxmin2(tab: List[float]) -> Tuple[float, float]:
     
     Paradigme : Diviser pour régner
     """
+    # Cas de base
     if len(tab) == 1:
         return (tab[0], tab[0])
 
+    # Diviser
     milieu = len(tab) // 2
     max1, min1 = maxmin2(tab[:milieu])
     max2, min2 = maxmin2(tab[milieu:])
 
-    return (min(min1, min2), max(max1, max2))
+    # Régner
+    maximum = max(max1, max2)
+    minimum = min(min1, min2)
+
+    # Combiner
+    return (minimum, maximum)
 ```
 
 {{% /solution %}}
