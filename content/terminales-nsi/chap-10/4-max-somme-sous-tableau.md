@@ -39,22 +39,20 @@ Pour plus de commodité, la sous-séquence de somme maximale est 0 si tous les e
 ```python
 def sous_tab_max(tab: List[int]) -> int:
     """
-    Recherche du sous tableau de somme 
-    maximale dans un tableau.
+    Recherche de la somme maximale dans un tableau.
     
     Paradigme : « Brute force ».
     """
 ```
 
-Tester cette fonction.
+    Tester cette fonction.
 
 {{% solution "Réponse" %}}
 
 ```python
 def sous_tab_max(tab: List[int]) -> int:
     """
-    Recherche du sous tableau de somme 
-    maximale dans un tableau.
+    Recherche de la somme maximale dans un tableau.
     
     Paradigme : « Brute force ».
     """
