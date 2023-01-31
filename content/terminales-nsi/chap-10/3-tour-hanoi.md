@@ -49,7 +49,7 @@ Pour pouvoir déplacer le dernier disque (celui du dessous), il est nécessaire 
 3. Écrire le code de la fonction dont la spécification est
 
 ```python
-def hanoi(n: int, debut: int = 1, milieu: int = 2, fin: int = 3) -> None:
+def hanoi(n: int, source: str, milieu: str, destination: str) -> None:
     """
     Fonction qui déplace récursivement les disques selon les règles des tours de Hanoï. 
     """
