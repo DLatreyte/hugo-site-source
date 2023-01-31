@@ -9,7 +9,7 @@ toc: true
 tags: ["Constante d'équilibre", "Constante d'acidité"]
 categories: ["Terminale Spé PC"]
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 mathjax: true
 ---

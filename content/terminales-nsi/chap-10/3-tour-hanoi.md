@@ -107,13 +107,12 @@ L'algorithme est le suivant :
 
 #### Récurrence
 
-Si on note $x_n$ le nombre de mouvement pour déplacer $n$ disques, on obtient la relation de récurrence :
+Si on note $x_n$ le nombre de mouvement pour déplacer $n$ disques, on obtient la relation de récurrence :  
 $$
 \begin{aligned}
     x_0 &= 0\cr
     x_n &= 2 x_{n-1} + 1 \text{ si } n \ge 1\cr
 \end{aligned}
-
 $$
 
 ce qui donne
