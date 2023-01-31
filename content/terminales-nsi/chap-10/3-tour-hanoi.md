@@ -63,7 +63,7 @@ Tester cette fonction.
 
 L'algorithme est le suivant :
 
-- Si le nombre de disques est égal à 0, afficher "Aucun disque à déplacer"&nbsp;;
+- Si le nombre de disques est égal à 0, ne rien faire ;
 - Si le nombre de disques est égal à 1, déplacer directement le disque du piquet $A$ au piquet $C$&nbsp;;
 - Si le nombre de disques est supérieur ou égal à 2, enchaîner les étapes suivante :
   - Déplacer $n-1$ disques du piquet $A$ jusqu'au piquet $B$&nbsp;;
