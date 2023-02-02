@@ -100,8 +100,6 @@ On parle de dopage $P$.
 
 ## Cellule photovoltaïque
 
-{{< youtube "oNj42PCNnqw" >}}
-
 {{< youtube "23i-_v_tWTA" >}}
 
 11. Pourquoi dope-t-on le silicium pour créer une cellule photovoltaïque ?
