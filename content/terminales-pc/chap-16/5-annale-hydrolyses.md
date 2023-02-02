@@ -1,6 +1,6 @@
 ---
 title: "Annale : Hydrolyses des esters"
-subtitle: "Chapitre 15,5"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-04-17T16:39:20+04:00

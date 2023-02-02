@@ -1,6 +1,6 @@
 ---
 title: "Décrire un système thermodynamique : exemple du modèle du gaz parfait"
-subtitle: "Chapitre 13,1"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-02-21T04:32:27+04:00
@@ -25,10 +25,12 @@ Le système est défini par séparation avec le reste de l'Univers appelé le mi
 ### Système isolé, ouvert, fermé
 
 {{% note tip %}}
+
 - On dit qu'un système est **isolé** s'*il ne peut échanger quoi que ce soit avec le milieu extérieur*.
 {{% /note %}}
 
 Les échanges d'un système avec l'extérieur peuvent être classés en :
+
 - *échange de matière* ;
 - *échange d'énergie* sous des formes diverses que nous aurons à distinguer et classer en *travail* et *transfert thermique ou « chaleur »* ;
 - *échange de volume*.
@@ -95,11 +97,13 @@ On dit qu'un système est en équilibre lorsque toutes ses variables d'état dem
 ### Équilibre thermique, température
 
 Considérons deux systèmes $A$ et $B$, *à parois fixes*, initialement isolés. Mettons-les en contact par l'intermédiaire d'une cloison commune fixe et imperméable à toute matière. On observe le plus souvent une évolution jusqu'à un nouvel état d'équilibre caractérisé pour $A$ et $B$ par des valeurs finales de leurs paramètres différentes de leurs valeurs initiales.
-- Le système total est isolé ; 
+
+- Le système total est isolé ;
 - Il n'y a pas eu d'échange de travail entre $A$ et $B$ puisque la cloison commune est fixe ;
 - Un échange d'énergie entre eux a eu lieu puisque les variables d'état ont évolué.
 
 {{% note tip %}}
+
 - On appelle **transfert thermique** (ou **chaleur**) *l'échange d'énergie entre deux système qui n'est pas du travail (soit qui n'implique pas le déplacement du point d'application d'une force)*.
 - Lorsque l'équilibre final est atteint par transfert thermique, on dit que les deux systèmes sont en **équilibre thermique**.
 {{% /note %}}
@@ -115,9 +119,8 @@ Deux systèmes en équilibre thermique avec un même troisième sont en équilib
 On dit alors que deux systèmes en équilibre thermique sont à la même température. On peut alors associer à chaque état thermique, donc à chaque température, un nombre. Cela se fait en choisissant un système particulier, le **thermomètre**, puis un paramètre de ce système dépendant de l'état thermique (pression, longueur, résistance électrique, volume, etc.) et enfin en y associant par une loi (comportant un certain degré d'arbitraire) un nombre qui sera la température associée à un état thermique. On a alors construit ce que l'on appelle une *échelle de températures*.
 
 {{% note tip %}}
-La température est ainsi une grandeur macroscopique caractéristique d'un état d'équilibre thermique. 
+La température est ainsi une grandeur macroscopique caractéristique d'un état d'équilibre thermique.
 {{% /note %}}
-
 
 ## Un système modèle : le gaz parfait
 
@@ -143,6 +146,7 @@ Dans le cadre du modèle du gaz parfait la *température est une grandeur macros
 ### Équation d'état des gaz parfaits
 
 {{% note tip %}}
+
 - L'expérience montre que deux variables d'état suffisent pour décrire l'état macroscopique d'un gaz parfait si le système est fermé.
 
 - L'équation d'état des gaz parfaits relie entre elles toutes les variables d'état d'un gaz parfait : pression $P$ (en $\pu{Pa}$, volume $V$ (en $\pu{m3}$), température $T$ (en $\pu{K}$) et quantité de matière $n$ (en $\pu{mol}$) :
@@ -179,7 +183,6 @@ $$V\_m = \dfrac{V}{n} = \dfrac{R\\, T}{P}$$
 **A.N.** $V\_m = \dfrac{\pu{8,31441 J.K-1.mol-1} \times \pu{273,15 K}}{\pu{1,01325e5 Pa}} = \pu{2,2414e-2 m3.mol-1} = \pu{22,414 L.mol-1}$.
 {{% /solution %}}
 
-
 ### Masse volumique et densité des gaz dans le cadre du modèle du gaz parfait
 
 {{% note exercise %}}
@@ -187,7 +190,7 @@ L'équation d'état des gaz parfait permet d'exprimer simplement la masse volumi
 Retrouver cette expression.
 {{% /note %}}
 {{% solution "Réponse" %}}
-$P\\, V = n\\, R\\, T = \dfrac{m}{M}\\, R \\, T$. Comme $\rho = \dfrac{m}{V}$ donc 
+$P\\, V = n\\, R\\, T = \dfrac{m}{M}\\, R \\, T$. Comme $\rho = \dfrac{m}{V}$ donc
 $$\rho = \dfrac{P\\, M}{R\\, T}$$
 {{% /solution %}}
 
@@ -212,7 +215,7 @@ $$
 {{% /solution %}}
 
 {{% note tip %}}
-On appelle densité d'un gaz par rapport à l'air le rapport 
+On appelle densité d'un gaz par rapport à l'air le rapport
 $$
     d = \dfrac{\text{masse d'un certain volume du gaz}}{\text{masse du même volume d'air}}
 $$
@@ -220,7 +223,8 @@ la mesure étant faite dans les mêmes conditions de température et de pression
 {{% /note %}}
 
 {{% note exercise %}}
-Exprimer la densité d'un gaz en fonction 
+Exprimer la densité d'un gaz en fonction
+
 - de sa masse volumique $\rho$ et de la masse volumique $\rho'$ de l'air ;
 - de sa masse molaire $M$ et de la masse molaire $M'$ de l'air.
 {{% /note %}}
@@ -229,10 +233,10 @@ Exprimer la densité d'un gaz en fonction
 - $d = \dfrac{P\\, M}{R\\, T} \cdot \dfrac{R\\, T}{P\\, M'} = \dfrac{M}{M'}$
 {{% /solution %}}
 
-
 ## Limites du modèle du gaz parfait
 
 Le modèle du gaz parfait ne prend pas en compte :
+
 - la structure interne des molécules qui constituent le gaz (en particulier leur volume) ;
 - les interactions entre les molécules.
 
@@ -257,8 +261,6 @@ Le modèle du gaz parfait ne modélise correctement le comportement d'un gaz ré
 Quelle est la masse d'air contenue dans une pièce de $\pu{5 m} \times \pu{3 m} \times \pu{3 m}$ à $\pu{20 °C}$ sous la pression atmosphérique ?
 {{% /note %}}
 
-
-
 {{% note exercise %}}
 Quelle est la densité par rapport à l'air d'un mélange gazeux renfermant $\pu{88 g}$ de $\ce{CO2}$, et $\pu{14 g}$ de $\ce{CO}$ ?
 {{% /note %}}
@@ -266,7 +268,6 @@ Quelle est la densité par rapport à l'air d'un mélange gazeux renfermant $\pu
 {{% note exercise %}}
 La pression d'un pneumatique est ajustée l'hiver à $\pu{-10 °C}$ à $\pu{2 atm}$ (pression préconisée « à froid » par le constructeur). Sachant que le constructeur est capable de ressentir les effets néfastes d'un écart de 10&nbsp;% par rapport à cette pression, sera-t-il nécessaire de corriger celle-ci l'été lorsque la température sera devenue $\pu{30 °C}$.
 {{% /note %}}
-
 
 {{% note exercise %}}
 

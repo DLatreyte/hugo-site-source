@@ -1,6 +1,6 @@
 ---
 title: "Radioactivité et physique nucléaire, introduction"
-subtitle: "Chapitre 17,1"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-03-08T12:09:07+04:00

@@ -1,6 +1,6 @@
 ---
 title: "Premier principe de la thermodynamique : exercices"
-subtitle: "Chapitre 14,2"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-02-27T19:18:00+04:00

@@ -1,6 +1,6 @@
 ---
 title: "Radioactivité et physique nucléaire"
-subtitle: "Chapitre 17,2"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-03-08T11:13:12+04:00
@@ -14,4 +14,3 @@ auto_numbering: true
 ---
 
 {{< remote "Document au format pdf" "/terminales-pc/chap-15/chap-15-2/chap-15-2.pdf" >}}
-

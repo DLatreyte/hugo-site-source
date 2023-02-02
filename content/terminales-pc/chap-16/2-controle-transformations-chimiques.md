@@ -1,6 +1,6 @@
 ---
 title: "Contrôles des transformations chimiques : estérification"
-subtitle: "Chapitre 15,2"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-04-12T09:05:04+04:00
@@ -14,6 +14,7 @@ auto_numbering: true
 ---
 
 > L'objectif de ce document est de présenter à partir de l'exemple de l'équilibre d'estérification-hydrolyse des méthodes généralisables que le chimiste utilise au quotidien pour répondre aux questions :
+
 - Comment accélérer une transformation lente ?
 - Comment augmenter le rendement d'une transformation limitée ?
 
@@ -23,6 +24,7 @@ auto_numbering: true
 
 {{% note exercise %}}
 L'éthanoate de benzyle, un ester à odeur de jasmin, peut être synthétisé par réaction de l'acide éthanoïque (ou acétique) $\ce{CH3-CO2H}$ avec l'alcool benzylique $\ce{C6H5-CH2-OH}$, en présence de traces d'acide sulfurique, Sa formation s'accompagne de celle d'eau.
+
 1. Écrire l'équation de la réaction de synthèse de l'éthanoate de benzyle à l'aide de formules semi-développées.
 2. Écrire l'équation de la réaction de synthèse de l'éthanoate de benzyle à l'aide de formules topologiques.
 3. Quel est le rôle de l'acide sulfurique ?
@@ -38,6 +40,7 @@ Noter qu'il faut écrire $\ce{(liq)}$ et pas $\ce{(aq)}$ car on ne travaille pas
 
 {{% note exercise %}}
 Chauffons à reflux pendant environ trente minutes un mélange constitué de $\pu{10 mL}$ d'éthanoate de benzyle $\ce{CH3-CO2-CH2-C6H5}$, de $\pu{40 mL}$ d'eau et d'une dizaine de gouttes d'acide sulfurique. Il se forme de l'alcool benzylique et de l'acide éthanoïque.
+
 1. Écrire l'équation de la réaction entre l'éthanoate de benzyle et l'eau.
 2. Quel est le rôle de l'acide sulfurique ?
 3. Pourquoi la réaction porte-t-elle le nom d'« hydrolyse » ?
@@ -51,14 +54,17 @@ Chauffons à reflux pendant environ trente minutes un mélange constitué de $\p
 ### Équilibre estérification - hydrolyse
 
 {{% note exercise %}}
+
 1. À partir des deux exemples ci-dessus, expliquer pourquoi toute transformation s'appuyant sur une réaction d'estérification ou sur une réaction d'hydrolyse ne peut pas être totale.
 2. Écrire correctement l'équation de la réaction d'estérification entre l'acide acétique et l'alcool benzylique.
 {{% /note %}}
 {{% solution "Solution" %}}
-1. 
+1.
+
 - La réaction d'estérification conduit à la formation d'un ester et d'eau.
 - La réaction d'hydrolyse est une réaction entre un ester et l'eau. Elle conduit à la formation d'un acide carboxylique et d'un alcool.
 On voit que ces deux réactions conduisent à la formation de produits capables de réagir entre eux. *Les transformations modélisées par ces réactions ne peuvent donc pas être totales.*
+
 2. $ \ce{CH3-CO2H(liq) + C6H5-CH2-OH(liq) <=> CH3-CO2-H2C-C6H5(liq) + H2O(liq)} $
 {{% /solution %}}
 
@@ -66,7 +72,7 @@ On voit que ces deux réactions conduisent à la formation de produits capables 
 
 {{% note tip %}}
 Le rendement $\eta$ d'une transformation chimique est *le rapport de la quantité de produit effectivement obtenue et de la quantité maximale attendue (c'est à dire si la transformation était totale et s'il n'y avait aucune perte expérimentale)*. Il s'exprime en %.\
-Dans le cas de l'estérification, 
+Dans le cas de l'estérification,
 $$
     \eta = \dfrac{n(\text{ester})}{n\_{\text{max}}(\text{ester})} = \dfrac{n(\text{ester})}{n(\text{réactif limitant})}
 $$
@@ -78,6 +84,7 @@ La *valeur maximale* que peut prendre le rendement d'une transformation chimique
 
 {{% note exercise %}}
 On réalise l'hydrolyse, en milieu acide et en présence d'un excès d'eau, d'une quantité $n\_i(\text{ester}) = \pu{0,120 mol}$ d'un ester à odeur de muguet, l'éthanoate de 3-phénylpropyle, de formule : $$\ce{CH3-CO2-CH2-CH2-CH2-C6H5}$$
+
 1. Donner la formule et le nom des produits obtenus.
 2. On recueille, après séparation des produits, une masse $m_f = \pu{4,56 g}$ d'alcool. En déduire le rendement de cette hydrolyse.
 {{% /note %}}
@@ -108,7 +115,7 @@ Pictogrammes présents sur l'étiquette d'un flacon de méthanol :
 
 1. Écrire l'équation de cette estérification.
 2. Pourquoi chauffe-t-on à reflux ?
-3. Pourquoi effectue-t-on cette synthèse sous la hotte? 
+3. Pourquoi effectue-t-on cette synthèse sous la hotte?
 4. Déterminer le rendement de cette synthèse.
 {{% /note %}}
 {{% solution "Solution" %}}
@@ -119,7 +126,8 @@ $$
 2. En chauffant, on accélère la réaction. C'est à l'ébullition, température maximale que peut atteindre le mélange, que la vitesse de la réaction est la plus élevée.
 Le condenseur à eau du montage à reflux refroidit les vapeurs qui s'élèvent et les condense. Le liquide alors obtenu retourne dans le ballon, ce qui permet d'éviter la perte de réactifs et de produits par évaporation.
 3. Le méthanol est un liquide toxique dont il convient d'éviter de respirer les vapeurs ; d'où la nécessité d'effectuer cette synthèse sous la hotte. Inflammable, on devra le manipuler en l'absence de toute flamme.
-4. 
+4.
+
 - La quantité d'acide utilisé pour cette synthèse est :
 $$
     n\_i(\text{acide}) = \dfrac{m\_i (\text{acide})}{M(\text{acide})} = \dfrac{\pu{12,2 g}}{\pu{122,0 g.mol-1}} = \pu{0,100 mol}
@@ -139,13 +147,14 @@ Le rendement vaut 75 %.
 ### Synthèse
 
 {{% note tip %}}
+
 - Un ester peut être obtenu par la réaction d'un acide $\ce{R-CO2-H}$ avec un alcool $\ce{R'-OH}$ suivant l'équation :
 $$
     \ce{R-CO2-H (liq) + R'-OH (liq) <=> R-CO2-R' (liq) + H2O (liq)}
 $$
 Les ions H+ catalysent cette synthèse.
 
-- L'eau hydrolyse l'ester $\ce{R-CO2-R'}$ pour donner l'acide carboxylique $\ce{R-CO2-H}$ et l'alcool $\ce{R'-OH}$ correspondants suivant l'équation : 
+- L'eau hydrolyse l'ester $\ce{R-CO2-R'}$ pour donner l'acide carboxylique $\ce{R-CO2-H}$ et l'alcool $\ce{R'-OH}$ correspondants suivant l'équation :
 $$
     \ce{R-CO2-R' (liq) + H2O (liq) <=> R-CO2-H (liq) + R'-OH (liq)}
 $$
@@ -153,7 +162,6 @@ Les ions H+ catalysent cette synthèse.
 
 - Les réactions d'estérification et d'hydrolyse sont *inverses l'une de l'autre et **ont lieu simultanément**.* *Elles se limitent l'une l'autre et conduisent à un état d'équilibre chimique*.\
 Cet état est atteint lorsque *la vitesse de formation de l'ester par la réaction d'estérification est exactement égale à sa vitesse de disparition par hydrolyse*.
-
 
 - *Toute transformation modélisée par une réaction d'estérification ou d'hydrolyse est **lente** et **limitée**.*
 
@@ -171,6 +179,7 @@ $$
 Le rendement d'estérification *dépend très peu de la nature de l'acide carboxylique utilisé*.\
 Il *dépend par contre beaucoup de la classe de l'alcool utilisé*.\
 Pour des **mélanges équimolaires** en acide carboxylique et en alcool :
+
 - Le rendement est voisin de 67 % si l'alcool est primaire ;
 - Le rendement est compris entre 56 % et 65 % si l'alcool est secondaire ;
 - Le rendement est inférieur à 10 % si l'alcool est tertiaire.
@@ -193,8 +202,10 @@ On peut tracer $n\_{\text{acide}} (t)$ (ou $n\_{\text{alcool}} (t)$) et $n\_{\te
 {{% solution "Solution" %}}
 1. Il s'agit d'une estérification puisque la quantité d'acide diminue. Il s'agit donc d'un réactif.
 2. Deux conclusions se dégagent de ce graphe :
+
 - Une élévation de température permet d'atteindre plus rapidement l'état d'équilibre.
 - La composition à l'équilibre de systèmes résultant de l'évolution de mélanges initiaux identiques est indépendante de la température.
+
 3. Puisque le mélange initial était équimolaire, l'acide est limitant et $\eta = \pu{0,67}$.
 {{% /solution %}}
 
@@ -203,10 +214,11 @@ Une élévation de température permet d'atteindre *plus rapidement l'état d'é
 {{% /note %}}
 
 {{% note warning %}}
-*La dernière partie de la conclusion précédente, n'est pas généralisable à tous les équilibres chimiques !* Ceux-ci doivent être **athermiques**, c'est à dire avoir **une constante d'équilibre indépendant de la température**. 
+*La dernière partie de la conclusion précédente, n'est pas généralisable à tous les équilibres chimiques !* Ceux-ci doivent être **athermiques**, c'est à dire avoir **une constante d'équilibre indépendant de la température**.
 {{% /note %}}
 
 {{% note tip %}}
+
 - Les réactions d'estérification et d'hydrolyse sont athermiques.
 - Le chauffage n'a aucune influence sur l'état final de l'équilibre d'estérification-hydrolyse, donc sur le rendement.
 {{% /note %}}
@@ -216,6 +228,7 @@ Une élévation de température permet d'atteindre *plus rapidement l'état d'é
 {{% note exercise %}}
 En réalisant les réactions d'estérification et d'hydrolyse en présence ou en absence d'ions hydronium $\ce{H^+}$, il est possible d'étudier le rôle du catalyseur sur la composition du mélange réactionnel.\
 L'influence de la quantité de catalyseur utilisé peut aussi être étudiée.
+
 - Que peut-on conclure ?
 {{% /note %}}
 {{% solution "Solution" %}}
@@ -239,6 +252,7 @@ On considère un système chimique constitué d'acide, d'alcool, d'ester et d'ea
 Si on fait varier les concentrations des différents constituants du mélange, par exemple en rajoutant de l'eau. *L'expérience montre que le système évolue alors vers un nouvel état d'équilibre*.
 
 {{% note tip %}}
+
 - Pour un **système en phase liquide**, les paramètres pouvant faire évoluer l'état d'équilibre du système sont les **concentrations des différents constituants** et la **température**. On les appelle les **facteurs d'équilibre**.
 - La **pression** est aussi un facteur d'équilibre, mais essentiellement en **phase gazeuse**.
 {{% /note %}}
@@ -254,6 +268,7 @@ Comment le système chimique réagit-il à une modification de l'un des facteurs
 ### Influence de l'excès d'un des réactifs
 
 {{% note exercise %}}
+
 1. Écrire l'expression du quotient de réaction d'une réaction d'estérification alors que l'état d'équilibre de la transformation est atteint.
 2. On ajoute alors de l'acide (ou de l'alcool) dans le système. Comment évolue le quotient de réaction ?
 3. Appliquer le critère d'évolution et indiquer l'évolution du système.
@@ -270,13 +285,11 @@ Le système consomme les réactifs et évolue dans le sens direct.
 4. La loi de modération est appliquée puisqu'en réponse à un ajout d'un réactif le système consomme les réactifs.
 {{% /solution %}}
 
-
 {{% note tip %}}
+
 - Si, dans l'état initial d'une transformation modélisée par une réaction d'estérification, on utilise un excès d'acide ou d'alcool au lieu d'un mélange stœchiométrique --- équimolaire donc ici (On choisit en général le moins coûteux), la loi de modération indique que l'état final de la transformation est déplacé (par rapport à celui correspondant à un mélange stœchiométrique) dans le sens de la consommation du réactif en excès (donc de l'estérification).
 - Le rendement étant calculé par rapport au réactif limitant, dont la quantité de matière ne varie pas, augmente donc puisque la quantité de matière d'ester produit est plus grande.
 {{% /note %}}
-
-
 
 ### Influence de l'élimination de l'un des produits
 
@@ -285,7 +298,6 @@ Le système consomme les réactifs et évolue dans le sens direct.
 On peut cependant aussi voir, en appliquant le même critère, que diminuer la quantité d'eau ou d'ester présents dans le système à l'équilibre conduit au même résultat.\
 (On peut aussi considérer que l'eau et l'ester sont les réactifs de la réaction qui limite l'estérification, leur élimination ne peut que favoriser le rendement de cette dernière)
 {{% /note %}}
-
 
 ## Exercices
 
@@ -298,17 +310,19 @@ Toutes les 10 minutes, on prélève un volume $V_a = \pu{2 mL}$ du mélange et o
 3. Écrire l'équation de la réaction support du titrage.
 4. Exprimer, en fonction de $V$, $V_a$, $V_{b,0}$, $V_{b,E}$ et $C_b$ la quantité d'ester formé à l'instant $t$ du prélèvement.
 
-Donnée 
+Donnée
 : pour $t = \pu{10 min}$, $V_b = \pu{3,4 mL}$.
 {{% /note %}}
 {{% solution "Solution" %}}
+
 1. $\ce{CH3-CH2-CH2-CO2H (liq) + CH3-CH2-OH (liq) <=> CH3-CH2-CH2-CO2-CH2-CH3 (liq) + H2O} (liq)$\
 L'ester se nomme le butanoate d'éthyle.
 2. On plonge le prélèvement dans de l'eau glacée de façon à diminuer très fortement la vitesse de réaction ; on le « fige ». Cette opération se nomme une trempe.
 3. $\ce{CH3-CH2-CH2-CO2H (aq) + OH^- (aq) -> CH3-CH2-CH2-CO2^- (aq) + H2O}$
-4. 
+4.
+
 - **Étape 1.**\
-Un tableau d'avancement pour **le titrage** du prélèvement, à la date $t$, nous apprend que $n\_{\text{acide}}(t) - x_E (t) = 0$ et $n\_{\text{base versée}}(t) - x_E (t) = 0$. Donc 
+Un tableau d'avancement pour **le titrage** du prélèvement, à la date $t$, nous apprend que $n\_{\text{acide}}(t) - x_E (t) = 0$ et $n\_{\text{base versée}}(t) - x_E (t) = 0$. Donc
 $$n\_{\text{acide}}(t) = n\_{\text{base versée}}(t) = C_b \cdot V_{b,E} (t)$$
 Comme $n\_{\text{acide}}(t) = n\_{\text{acide}}(0) - n\_{\text{acide}}(\text{qui a réagi à t})$,
 $$n\_{\text{acide}}(0) - n\_{\text{acide}}(\text{qui a réagi à t}) = C_b \cdot V_{b,E} (t)$$
@@ -316,21 +330,20 @@ ou
 $$n\_{\text{acide}}(\text{qui a réagi à t}) = n\_{\text{acide}}(0) - C_b \cdot V_{b,E} (t)$$
 On peut déterminer $n\_{\text{acide}}(0)$ grâce au premier titrage (à la date $t=0$) :
 $$n\_{\text{acide}}(0) = C_b \cdot V_{b,0}$$
-Finalement 
+Finalement
 $$n\_{\text{acide}}(\text{qui a réagi à t}) = C_b \cdot V_{b,0} - C_b \cdot V_{b,E} (t) = C_b\\, \left( V_{b,0} - V_{b,E} (t) \right)$$
 - **Étape 2**\
 Un tableau d'avancement pour **l'estérification**, à la date $t$, nous apprend que
 $$n\_{\text{ester}}(\text{qui s'est formé à t}) = n\_{\text{acide}}(\text{qui a réagi à t})$$
 
-Finalement, pour le prélèvement, 
+Finalement, pour le prélèvement,
 $$n\_{\text{ester}}(\text{qui s'est formé à t}) = C_b\\, \left( V_{b,0} - V_{b,E} (t) \right)$$
 Cette quantité de matière n'est cependant pas toute la quantité de matière formée puisque le prélèvement ne correspond qu'à la fraction $\dfrac{V_a}{V}$ du mélange.\
-<strong>Pour tout le mélange</strong>, 
+<strong>Pour tout le mélange</strong>,
 $$n\_{\text{ester}}(\text{qui s'est formé à t}) = C_b\\, \left( V_{b,0} - V_{b,E} (t) \right) \\, \dfrac{V}{V_a}$$
 
 **A.N.** $n\_{\text{ester}}(\text{qui s'est formé à t}) = \pu{2 mol·L-1} \times \left(\pu{6,7e-3 L} - \pu{3,4e-3 L} \right) \times \dfrac{\pu{151 mL}}{\pu{2 mL}} = \pu{0,50 mol}$
 {{% /solution %}}
-
 
 {{% note exercise %}}
 On introduit dans un ballon $\pu{0,200 mol}$ d'acide éthanoïque, $\pu{0,500 mol}$ d'éthanol et 4 gouttes d'acide sulfurique concentré. On chauffe le mélange à reflux pendant une heure.\
@@ -374,6 +387,7 @@ Le rendement vaut donc 88 %. L'introduction de l'alcool en excès a bien amélio
 {{% /solution %}}
 
 {{% note exercise %}}
+
 #### Analyse élémentaire d'un ester
 
 Un composé organique de formule brute $\ce{C_nH_{2n}O2}$ contient 27,6 % d'oxygène en masse.
@@ -394,7 +408,8 @@ Ce composé est un ester naturel possédant une odeur agréable. On le note $E$.
 5. Quelle est la formule brute de la molécule correspondant à $B$ ?
 
 Pour préciser la structure de $B$, on effectue une oxydation ménagée qui conduit à la formation d'un composé $C$. Puis on soumet $C$ aux tests suivants :
-- *Premier test :* une solution de $C$ additionnée de DNPH conduit à la formation d'un précipité de couleur jaune ; 
+
+- *Premier test :* une solution de $C$ additionnée de DNPH conduit à la formation d'un précipité de couleur jaune ;
 - Deuxième test : une solution de $C$, additionnée de liqueur de Fehling et chauffée, ne provoque aucun changement de coloration de la liqueur.
 
 6. Déduire de ces expériences la formule semi-développée et le nom la molécule correspondant au corps $B$. Justifier la réponse.
@@ -406,4 +421,3 @@ Pour préciser la structure de $B$, on effectue une oxydation ménagée qui cond
 - La 2,4-dinitrophénylhydrazine (ou 2,4-DNPH ou réactif de Brady) est utilisée comme test caractéristique du groupe carbonyle.
 
 {{% /note %}}
-

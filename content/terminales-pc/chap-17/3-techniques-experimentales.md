@@ -1,6 +1,6 @@
 ---
 title: "Techniques expérimentales en chimie de synthèse"
-subtitle: "Chapitre 16,3"
+subtitle: ""
 author: ""
 type: ""
 date: 2022-04-12T13:56:56+04:00

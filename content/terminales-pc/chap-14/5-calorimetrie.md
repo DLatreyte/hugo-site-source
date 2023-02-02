@@ -1,6 +1,6 @@
 ---
 title: "Détermination de la capacité thermique massique du granite"
-subtitle: "Chapitre 14,4"
+subtitle: ""
 author: ""
 type: ""
 date: 2022-03-06T17:40:40+04:00

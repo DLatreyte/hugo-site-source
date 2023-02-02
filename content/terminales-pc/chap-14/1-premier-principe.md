@@ -1,6 +1,6 @@
 ---
 title: "Premier principe de la thermodynamique"
-subtitle: "Chapitre 14,1"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-02-22T05:15:40+04:00

@@ -1,6 +1,6 @@
 ---
 title: "Origine microscopique de la décroissance radioactive"
-subtitle: "Chapitre 17,4"
+subtitle: ""
 author: ""
 type: ""
 date: 2022-04-19T18:42:26+04:00

@@ -1,6 +1,6 @@
 ---
 title: "Structure et optimisation en chimie organique"
-subtitle: "Chapitre 15"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-03-22T18:40:33+04:00
@@ -28,16 +28,16 @@ layout: single
 
 ----
 
-- **Chap. 15,1 :** [*Quelques familles de molécules et leur représentation en chimie organique*](1-familles-nomenclature)
+- **Doc.** [*Quelques familles de molécules et leur représentation en chimie organique*](1-familles-nomenclature)
 
-- **Chap. 15,2 :** [*Contrôle des transformations chimiques*](2-controle-transformations-chimiques)
+- **Doc.** [*Contrôle des transformations chimiques*](2-controle-transformations-chimiques)
 
-- **Chap. 15,3 :** [*Déplacement d'équilibre et principe de Le Chatelier*](3-principe-le-chatelier)
+- **Doc.** [*Déplacement d'équilibre et principe de Le Chatelier*](3-principe-le-chatelier)
 
-- **Chap. 15,4 :** [*Annale : Synthèse d'un ester à l'aide d'un appareil de Dean et Stark*](4-annale-dean-et-stark)
+- **Doc.** [*Annale : Synthèse d'un ester à l'aide d'un appareil de Dean et Stark*](4-annale-dean-et-stark)
 
-- **Chap. 15,5 :** [*Annale : Hydrolyses des esters*](5-annale-hydrolyses)
+- **Doc.** [*Annale : Hydrolyses des esters*](5-annale-hydrolyses)
 
-- **Chap. 15,6 :** [*Le cycle de vie du plastique*](6-plastique)
+- **Doc.** [*Le cycle de vie du plastique*](6-plastique)
 
-- **Chap. 15,7 :** [*Les polymères*](7-polymeres)
+- **Doc.** [*Les polymères*](7-polymeres)

@@ -1,6 +1,6 @@
 ---
 title: "Bilans Radiatifs"
-subtitle: "Chapitre 14,3"
+subtitle: ""
 author: ""
 type: ""
 date: 2022-03-02T06:10:40+04:00

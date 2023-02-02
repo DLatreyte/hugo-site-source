@@ -1,6 +1,6 @@
 ---
 title: "Les polymères"
-subtitle: "Chapitre 15,6"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-04-26T07:43:08+04:00
@@ -22,7 +22,7 @@ Le nombre $n$ de monomères que comporte le polymère est son **degré de polym�
 
 ![Structure du caoutchouc naturel](/terminales-pc/chap-16/chap-16-7/caoutchouc.png)
 
->   Le caoutchouc naturel est un polymère du 2-méthylbuta-1,3-diène.
+> Le caoutchouc naturel est un polymère du 2-méthylbuta-1,3-diène.
 
 On trouve dans la nature de nombreuses macromolécules que l’homme utilise : cellulose, soie, caoutchouc, etc. Les chimistes ont donc essayé de fabriquer des macromolécules pouvant se substituer aux polymères naturels et présentant même des propriétés plus intéressantes que les leurs. Il existe deux grands types de réactions permettant d’obtenir des polymères : les **réactions de condensation** et les **réactions d’addition**.
 
@@ -48,17 +48,17 @@ Lorsqu’on chauffe un polymère vinylique, les différentes chaînes peuvent gl
 
 Le monomère est l’**éthylène (éthène)** dont l’industrie pétrolière fournit de grandes quantités par craquage à la vapeur des fuels lourds. La polymérisation a lieu vers 100 °C, mais, selon la pression utilisée, on obtient des polymères de propriétés légèrement différentes :
 
--   Sous des pressions peu élevées (quelques dizaines de bars), on obtient du polyéthylène « haute densité ». Sa masse molaire moyenne est de $\pu{30000 g.mol-1}$, ce qui correspond à plus de 20 000 chaînons $\ce{-CH2}$ !
+- Sous des pressions peu élevées (quelques dizaines de bars), on obtient du polyéthylène « haute densité ». Sa masse molaire moyenne est de $\pu{30000 g.mol-1}$, ce qui correspond à plus de 20 000 chaînons $\ce{-CH2}$ !
     À la température ordinaire, c’est un solide blanchâtre qui fond à 129 °C. Cette température de fusion assez élevée, ainsi que les bonnes propriétés mécaniques, sont dues à l’existence, au sein du solide, de zones où les chaînes sont arrangées régulièrement. Facile à mouler, résistant bien à l’eau et à de nombreux produits chimiques, le polyéthylène est très utilisé : des emballages rigides, du matériel de laboratoire, des jouets sont fabriqués en polyéthylène « haute densité ».
     <img src="/terminales-pc/chap-16/chap-16-7/polyethylene-haute-densite.png" alt="" width="60%" />
 
     >   Les chaînes non ramifiées de polyéthylène peuvent s’arranger régulièrement pour donner des cristallites.
 
--   Si la pression de polymérisation est plus élevée ($\pu{2000 bar}$), la réaction de polymérisation est un peu plus complexe et donne naissance à des chaînes ramifiées. Il est plus difficile de ranger régulièrement des chaînes ramifiées que des chaînes non ramifiées : le polymère obtenu est donc moins dense. C’est du polyéthylène « basse densité » ($\pu{0,92 kg.dm-3}$). À la température ordinaire, il est plus souple que le polyéthylène « haute densité », et il est surtout utilisé pour fabriquer des emballages souples (sacs, feuilles, etc.).
+- Si la pression de polymérisation est plus élevée ($\pu{2000 bar}$), la réaction de polymérisation est un peu plus complexe et donne naissance à des chaînes ramifiées. Il est plus difficile de ranger régulièrement des chaînes ramifiées que des chaînes non ramifiées : le polymère obtenu est donc moins dense. C’est du polyéthylène « basse densité » ($\pu{0,92 kg.dm-3}$). À la température ordinaire, il est plus souple que le polyéthylène « haute densité », et il est surtout utilisé pour fabriquer des emballages souples (sacs, feuilles, etc.).
 
-**Ce plastique représente un enjeu majeur de gestion des déchets non seulement en raison de son abondance mais aussi parce qu'il est considéré comme très stable et quasiment non-biodégradable, il tend donc à s'accumuler dans l'environnement.** Il est cependant possible, *en laboratoire*, de partiellement biodégrader le PE par l'intermédiaire de bactéries présentes dans l'intestin de la larve d'une mite alimentaire. 
+**Ce plastique représente un enjeu majeur de gestion des déchets non seulement en raison de son abondance mais aussi parce qu'il est considéré comme très stable et quasiment non-biodégradable, il tend donc à s'accumuler dans l'environnement.** Il est cependant possible, *en laboratoire*, de partiellement biodégrader le PE par l'intermédiaire de bactéries présentes dans l'intestin de la larve d'une mite alimentaire.
 
--   [Informations supplémentaires sur Wikipedia](https://fr.wikipedia.org/wiki/Polyéthylène)
+- [Informations supplémentaires sur Wikipedia](https://fr.wikipedia.org/wiki/Polyéthylène)
 
 ### Le polypropylène
 
@@ -68,15 +68,15 @@ On trouve de nombreuses pièces moulées en polypropylène pour la construction 
 
 **Le polypropylène de grade « injection » est très facilement recyclable. Le polypropylène de grade « film » est au contraire beaucoup plus délicat à recycler.**
 
--   [Informations supplémentaires sur Wikipedia](https://fr.wikipedia.org/wiki/Polypropylène)
+- [Informations supplémentaires sur Wikipedia](https://fr.wikipedia.org/wiki/Polypropylène)
 
 ### Le polychlorure de vinyle
 
 Le monomère est le chlorure de vinyle (chloroéthène). On peut l’obtenir de plusieurs façons. Par exemple,
 
--   Par addition du chlorure d’hydrogène sur l’acétylène (éthyne). 
+- Par addition du chlorure d’hydrogène sur l’acétylène (éthyne).
     La réaction est catalysée par du chlorure de mercure sur charbon actif.
--   Par addition de dichlore sur l’éthylène (éthène), suivie d’une élimination de chlorure d’hydrogène.
+- Par addition de dichlore sur l’éthylène (éthène), suivie d’une élimination de chlorure d’hydrogène.
     La première étape se déroule à basse température dans un solvant liquide car elle est exothermique. La deuxième a lieu à température élevée car elle est endothermique. L’énergie thermique nécessaire à la deuxième étape peut être fournie par la première réaction.
 
 Le chlorure de vinyle se polymérise facilement : la masse molaire du polymère peut atteindre $\pu{1e6 g.mol-1}$ !!! Le polymère obtenu (P.V.C.) est un matériau rigide de grande importance industrielle : tuyaux de canalisation, sols plastiques, film étirable pour emballage, etc.
@@ -84,20 +84,21 @@ Le chlorure de vinyle se polymérise facilement : la masse molaire du polymère 
 La polymérisation du PVC est **irréversible**. Il est soupçonné de contribuer à la formation de pluies acides (lorsqu’on brûle du P.V.C. il se dégage du chlorure d’hydrogène), au rejet de [dioxines](https://fr.wikipedia.org/wiki/Dioxine) et à la formation de cancers.
 Avant les années 2000, le P.V.C. était perçu comme un matériau non recyclable, destiné à finir en décharge ou à être incinéré. La recherche a cependant effectué de grands progrès et, depuis 2010, plusieurs centaine de milliers de tonnes de P.V.C. sont recyclées en Europe.
 
--   [Informations supplémentaires sur Wikipedia](https://fr.wikipedia.org/wiki/Polychlorure_de_vinyle)
+- [Informations supplémentaires sur Wikipedia](https://fr.wikipedia.org/wiki/Polychlorure_de_vinyle)
 
 ### Le polytétrafluoroéthylène
 
 Ce polymère est plus connu sous son nom commercial : le téflon. Le monomère $\ce{C2F4}$ est préparé par décomposition du difluorochlorométhane (fréon 22) à  250 °C. Il se forme aussi du chlorure d’hydrogène.
 Le polymère, formé de maillons $\ce{-CF2-}$ possède des propriétés remarquables dues à la très grande solidité de la liaison carbone-fluor. Il résiste à la plupart des produits chimiques, même les plus corrosifs, il est stable jusqu’à des températures supérieures à 300 °C. C’est donc un matériau très intéressant mais son prix de fabrication est assez élevé et on le réserver à des emplois particuliers, comme la fabrication de tuyaux et de joints pour les usines de l’industrie chimique ou celle de prothèses. Enfin, les surfaces de polytétrafluoroéthylène possèdent une très faible adhérence, ce qui les fait utiliser comme revêtements d’ustensiles de cuisine.
 
--   [Informations supplémentaires sur Wikipedia](https://fr.wikipedia.org/wiki/Polytétrafluoroéthylène)
+- [Informations supplémentaires sur Wikipedia](https://fr.wikipedia.org/wiki/Polytétrafluoroéthylène)
 
-## Exemple d’une polycondensation :
+## Exemple d’une polycondensation
 
 {{% note normal %}}
--   Une **réaction de condensation** est une *réaction chimique au cours de laquelle deux molécules, ou deux parties d'une même molécule, se combinent pour former une molécule (le condensat) en éliminant une molécule simple (le sous-produit), telle l'eau (le plus souvent), le sulfure d'hydrogène, le méthanol ou l'acide acétique*.
--   Dans le cas d'une **polycondensation**, *les monomères initiaux ne sont pas identiques aux motifs de répétition du polymère final, à cause de la perte des petites molécules dans les étapes de condensation*.
+
+- Une **réaction de condensation** est une *réaction chimique au cours de laquelle deux molécules, ou deux parties d'une même molécule, se combinent pour former une molécule (le condensat) en éliminant une molécule simple (le sous-produit), telle l'eau (le plus souvent), le sulfure d'hydrogène, le méthanol ou l'acide acétique*.
+- Dans le cas d'une **polycondensation**, *les monomères initiaux ne sont pas identiques aux motifs de répétition du polymère final, à cause de la perte des petites molécules dans les étapes de condensation*.
     Les molécules initiales réagissent pour donner de plus grosses molécules qui elles-mêmes pourront réagir et former des chaînes de plus en plus longues.
 {{% /note %}}
 
@@ -105,52 +106,49 @@ Le polymère, formé de maillons $\ce{-CF2-}$ possède des propriétés remarqua
 
 ![](/terminales-pc/chap-16/chap-16-7/formation-nylon.svg)
 
-
-
 ## Exercices
 
-1.  Le 1,2-dichloroéthane élimine par chauffage une molécule de chlorure d’hydrogène. Écrire l’équation de la réaction et nommer le produit supplémentaire.
+1. Le 1,2-dichloroéthane élimine par chauffage une molécule de chlorure d’hydrogène. Écrire l’équation de la réaction et nommer le produit supplémentaire.
 {{% solution "Solution" %}}
 <img src="/terminales-pc/chap-16/chap-16-7/q1.png" alt="" width="70%" />
 L’élimination forme donc du chlorure d’hydrogène et du chloroéthène.
 {{% /solution %}}
 
-2.  Écrire l’équation de la polymérisation du polyéthylène.
+2. Écrire l’équation de la polymérisation du polyéthylène.
 {{% solution "Solution" %}}
 <img src="/terminales-pc/chap-16/chap-16-7/q2.png" alt="" width="60%" />
 {{% /solution %}}
 
-3.  Écrire l’équation de la polymérisation du polypropylène.
+3. Écrire l’équation de la polymérisation du polypropylène.
 {{% solution "Solution" %}}
 <img src="/terminales-pc/chap-16/chap-16-7/q3.png" alt="" width="80%" />
 {{% /solution %}}
 
-4.  Écrire l’équation de la fabrication du monomère du polychlorure de vinyle par addition du chlorure d’hydrogène sur l’acétylène.
+4. Écrire l’équation de la fabrication du monomère du polychlorure de vinyle par addition du chlorure d’hydrogène sur l’acétylène.
 {{% solution "Solution" %}}
 <img src="/terminales-pc/chap-16/chap-16-7/q4.png" alt="" width="60%" />
 {{% /solution %}}
 
-5.  Écrire l’équation de la fabrication du monomère du polychlorure de vinyle par addition de dichlore sur l’éthylène, suivie d’une élimination de chlorure d’hydrogène.
+5. Écrire l’équation de la fabrication du monomère du polychlorure de vinyle par addition de dichlore sur l’éthylène, suivie d’une élimination de chlorure d’hydrogène.
 {{% solution "Solution" %}}
 <img src="/terminales-pc/chap-16/chap-16-7/q5.png" alt="" width="80%" />
 {{% /solution %}}
 
-6.  Écrire l’équation de la polymérisation du polychlorure de vinyle.
+6. Écrire l’équation de la polymérisation du polychlorure de vinyle.
 {{% solution "Solution" %}}
 <img src="/terminales-pc/chap-16/chap-16-7/q6.png" alt="" width="70%" />
 {{% /solution %}}
 
-7.  Donner la formule et le nom des produits obtenus au cours des réactions suivantes :
+7. Donner la formule et le nom des produits obtenus au cours des réactions suivantes :
 
-    1.  propène + dichlore → ...
-    2.  but-2-yne + eau → ...
-    3.  but-2-ène + chlorure d’hydrogène → ...
-    4.  4-méthylpent-2-ène + dihydrogène → ...
-    5.  éthylène + eau → ...
+    1. propène + dichlore → ...
+    2. but-2-yne + eau → ...
+    3. but-2-ène + chlorure d’hydrogène → ...
+    4. 4-méthylpent-2-ène + dihydrogène → ...
+    5. éthylène + eau → ...
 
     Nommer les produits.
 {{% solution "Solution" %}}
 <img src="/terminales-pc/chap-16/chap-16-7/q7.png" alt="" width="70%" />
 Les produits sont, dans l’ordre, le 1,2-dichloropropène, le 2-hydroxybut-2-ène, le 2-chlorobut-2-ène, le 2-méthylpentane, l’éthanol.
 {{% /solution %}}
-

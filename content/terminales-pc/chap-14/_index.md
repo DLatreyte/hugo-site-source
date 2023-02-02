@@ -1,6 +1,6 @@
 ---
 title: "Effectuer des bilans d’énergie sur un système : le premier principe de la thermodynamique"
-subtitle: "Chapitre 14"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-02-22T04:30:56+04:00
@@ -30,18 +30,18 @@ layout: "single"
 
 ----
 
-- **Chap. 14,1 :** [*Premier principe de la thermodynamique*](1-premier-principe)
+- **Doc.** [*Premier principe de la thermodynamique*](1-premier-principe)
 
-- **Chap. 14,2 :** [*Premier principe de la thermodynamique : exercices*](2-exercices)
+- **Doc.** [*Premier principe de la thermodynamique : exercices*](2-exercices)
 
 <!--
-- **Chap. 14,3 :** [*Bilans radiatifs*](3-bilans-radiatifs)
+- **Doc.** [*Bilans radiatifs*](3-bilans-radiatifs)
 -->
 
-- **Chap. 14,3 :** [*Bilans radiatifs*](4-bilans-radiatifs)
+- **Doc.** [*Bilans radiatifs*](4-bilans-radiatifs)
 
-- **Chap. 14,4 :** [*Détermination de la capacité thermique massique du granite*](5-calorimetrie)
+- **Doc.** [*Détermination de la capacité thermique massique du granite*](5-calorimetrie)
 
-- **Chap. 14,5 :** [*Transferts thermiques : loi de Newton*](6-newton)
+- **Doc.** [*Transferts thermiques : loi de Newton*](6-newton)
 
-- **Chap. 14,6 :** {{% remote "Annale : Puissance rayonnée par la Lune" "/terminales-pc/chap-14/chap-14-6/chap-14-6-annale.html" %}}
+- **Doc.** {{% remote "Annale : Puissance rayonnée par la Lune" "/terminales-pc/chap-14/chap-14-6/chap-14-6-annale.html" %}}

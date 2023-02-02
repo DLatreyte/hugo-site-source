@@ -1,6 +1,6 @@
 ---
 title: "Stratégies de synthèse"
-subtitle: "Chapitre 16"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-04-19T11:05:56+04:00
@@ -28,14 +28,14 @@ layout: "single"
 
 ----
 
-- **Chap. 16,1 :** [*Comment peut-on modifier la structure d'une molécule ?*](1-modification-molecule-organique)
+- **Doc.** [*Comment peut-on modifier la structure d'une molécule ?*](1-modification-molecule-organique)
 
-- **Chap. 16,2 :** [*Protection/déprotection de fonctions*](2-protection-fonctions)
+- **Doc.** [*Protection/déprotection de fonctions*](2-protection-fonctions)
 
-- **Chap. 16,3 :** [*Techniques expérimentales en chimie de synthèse*](3-techniques-experimentales)
+- **Doc.** [*Techniques expérimentales en chimie de synthèse*](3-techniques-experimentales)
 
-- **Chap. 16,4 :** [*Une étape dans la synthèse d’un médicament, le paracétamol*](4-synthese-paracetamol)
+- **Doc.** [*Une étape dans la synthèse d’un médicament, le paracétamol*](4-synthese-paracetamol)
 
-- **Chap. 16,5 :** [*Exercices d'entraînement*](5-annale)
+- **Doc.** [*Exercices d'entraînement*](5-annale)
 
-- **Chap. 16,6 :** [*Annale : Le nylon*](6-annale-nylon)
+- **Doc.** [*Annale : Le nylon*](6-annale-nylon)

@@ -1,6 +1,6 @@
 ---
 title: "Une étape dans la synthèse d’un médicament, le paracétamol"
-subtitle: "Chapitre 16,4"
+subtitle: ""
 author: ""
 type: ""
 date: 2022-04-12T13:41:04+04:00

@@ -1,6 +1,6 @@
 ---
 title: "Annale : Le nylon"
-subtitle: "Chapitre 16,6"
+subtitle: ""
 author: ""
 type: ""
 date: 2022-04-14T17:19:18+04:00

@@ -1,6 +1,6 @@
 ---
 title: "Forcer le sens d’évolution d’un système"
-subtitle: "Chapitre 12"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-02-06T18:48:02+04:00
@@ -34,7 +34,3 @@ layout: "single"
 - **Chap. 12,2 :** [*Une transformation forcée, l'électrolyse*](2-electrolyse-cours)
 
 - **Chap. 12,3 :** [*Exercices*](3-annales)
-
-
-
-

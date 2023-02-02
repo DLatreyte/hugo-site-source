@@ -1,6 +1,6 @@
 ---
 title: "Déplacement d'équilibre et principe de Le Chatelier"
-subtitle: "Chapitre 15,3"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-04-12T16:33:33+04:00
@@ -46,6 +46,7 @@ Le texte définit l'étherification : réaction entre un alcool et un acide se t
 
 2. Donner un exemple de système mécanique qui mis « hors d'équilibre se déplace pour arriver à une position d'équilibre stable ».
 {{% solution "Solution" %}}
+
 - Une bille dans une cuvette finit toujours par s'immobiliser au fond de la cuvette.
 - Un pendule simple écarté de sa position d'équilibre oscille jusqu'à s'immobiliser directement au dessous de son point d'attache.
 - ...
@@ -63,7 +64,7 @@ Cette phrase définit les transformations non totales ; l'état final, état d'�
 
 5. Montrer que les conséquences d'un excès d'alcool ou d'acide et l'élimination de l'ester ou de l'eau formés sont en accord avec le principe de Le Chatelier.
 {{% solution "Solution" %}}
-L'idée est de réfléchir en décomposant le processus en deux phases : 
+L'idée est de réfléchir en décomposant le processus en deux phases :
 1. Le mélange initial est stœchiométrique (équimolaire ici). On laisse le système atteindre un équilibre.
 2. On ajoute la quantité de réactif en excès manquante. Et on applique le principe afin de déterminer dans quel sens le système évolue.
 

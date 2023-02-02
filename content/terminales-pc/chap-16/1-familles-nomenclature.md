@@ -1,6 +1,6 @@
 ---
 title: "Quelques familles de molécules et leur représentation en chimie organique"
-subtitle: "Chapitre 15,1"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-03-22T19:03:52+04:00

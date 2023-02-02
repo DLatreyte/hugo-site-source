@@ -1,6 +1,6 @@
 ---
 title: "Décrire un système thermodynamique : exemple du modèle du gaz parfait"
-subtitle: "Chapitre 13"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-02-21T04:21:36+04:00
@@ -28,4 +28,4 @@ layout: "single"
 
 ----
 
-- **Chap. 13,1 :** [*Modèle du gaz parfait*](1-cours)
+- **Doc.** [*Modèle du gaz parfait*](1-cours)
