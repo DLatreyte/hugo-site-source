@@ -31,8 +31,12 @@ layout: "single"
 
 - **Doc. :** [*Description d'un fluide au repos*](1-description-fluide)
 
-- **Doc. :** [*Vérification de la loi de Boyle-Mariotte*](2-boyle-mariotte)
+- **Doc. :** [*TP : Vérification de la loi de Boyle-Mariotte*](2-boyle-mariotte)
+
+- **Doc. :** [*TP/simulation : Vérification de la loi de Boyle-Mariotte*](2-boyle-mariotte-2)
 
 - **Doc. :** [*Pression dans un fluide*](3-pression-fluide)
 
 - **Doc. :** [*Livre Scolaire : Exercices du chapitre*](4-exercices)
+
+- **Doc. :** [*Manuel numérique Hatier : Exercices du chapitre*](5-exercices)
