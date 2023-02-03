@@ -81,7 +81,7 @@ $$
 
     La force pressante qu'exerce l'eau sur la barrage est plus de 7 fois plus grande que la force pressante qu'exerce l'air sur le barrage (ces deux forces ont des sens opposés). Cette dernière n'est donc pas suffisante pour compenser la force qu'exerce l'eau ; le barrage doit posséder une structure suffisamment solide pour résister à l'action de l'eau.
 
-4. **A.N.** $p(z_2) = \pu{1,013e5 Pa} + \pu{1,0e3 kg.m-3} \times \pu{9,81 N.kg-1} \times (\pu{70 m} - \pu{35 m}) = \pu{4,4e5 Pa}$.
+4. **A.N.** $p(z_3) = \pu{1,013e5 Pa} + \pu{1,0e3 kg.m-3} \times \pu{9,81 N.kg-1} \times (\pu{70 m} - \pu{35 m}) = \pu{4,4e5 Pa}$.
 
 5. **A.N.** $F = \pu{4,4e5 Pa} \times (\pu{70 m} \times \pu{120 m}) = \pu{3,7e9 Pa}$.
 
