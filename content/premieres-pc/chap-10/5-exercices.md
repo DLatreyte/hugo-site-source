@@ -175,7 +175,7 @@ $$ p(z_2) = p_0 + \rho_{\text{eau}}\\, g h_2$$
 
 3. L'application de la loi de Boyle-Mariotte permet d'écrire
 $$p(z_2) \\, V_2 = p_0 \\, V_0 \iff V_2 = V_0\\, \dfrac{p_0}{p(z_2)}$$
-**A.N.** $V_2 = \pu{6,0 L} \times \dfrac{\pu{1,013e5 Pa}}{\pu{2,1e6 Pa}} = \pu{2,9e-1 m3}$.
+**A.N.** $V_2 = \pu{6,0 L} \times \dfrac{\pu{1,013e5 Pa}}{\pu{2,1e6 Pa}} = \pu{2,9e-1 L}$.
 
 4. D'après l'énoncé, le sang, liquide incompressible, assure le maintien du volume pulmonaire.
 
