@@ -178,3 +178,53 @@ $$p(z_2) \\, V_2 = p_0 \\, V_0 \iff V_2 = V_0\\, \dfrac{p_0}{p(z_2)}$$
 **A.N.** $V_2 = \pu{6,0 L} \times \dfrac{\pu{1,013e5 Pa}}{\pu{2,1e6 Pa}} = \pu{2,9e-1 m3}$.
 
 4. D'après l'énoncé, le sang, liquide incompressible, assure le maintien du volume pulmonaire.
+
+## Exercice n°49, page 234 : Presse hydraulique
+
+1. Au sein d'un liquide la pression ne dépend que de l'altitude. Les deux pistons étant à la même altitude, la pression est identique à leur niveau.
+
+2. **Remarque :** les pistons sont considérés sans masse, ils n'interagissent donc pas avec la Terre.
+
+- **Grand piston**
+  - Le piston est soumis à l'action de l'huile : $\overrightarrow{F}_{\text{huile}/\text{piston}}$ :
+    - *Direction :* droite perpendiculaire au piston
+    - *Sens :* de l'huile vers le piston (vers le haut donc)
+    - *Valeur :* $F_{\text{huile}/\text{piston}} = p_{\text{huile}} S$
+  - Le piston est soumis à l'action de l'air : $\overrightarrow{F}_{\text{air}/\text{piston}}$ :
+    - *Direction :* droite perpendiculaire au piston
+    - *Sens :* de l'air vers le piston (vers le bas donc)
+    - *Valeur :* $F_{\text{air}/\text{piston}} = p_{\text{air}} S$
+  - Le piston est soumis au poids de la masse $\overrightarrow{P}$ :
+    - *Direction :* droite perpendiculaire au piston
+    - *Sens :* vers le centre de la Terre (vers le bas donc)
+    - *Valeur :* $P = M g$
+  - Puisque le piston est immobile, les actions qui s'exercent sur lui se compensent :
+    $$
+    \overrightarrow{F}\_{\text{huile}/\text{piston}} + \overrightarrow{F}\_{\text{air}/\text{piston}} + \overrightarrow{P} = \vec{0}
+    $$
+    soit, si on projette sur un axe vertical orienté vers le haut,
+    $$
+    F_{\text{huile}/\text{piston}} - F_{\text{air}/\text{piston}} - P = 0 \iff
+    F_{\text{huile}/\text{piston}} = F_{\text{air}/\text{piston}} + P
+    $$
+    Finalement
+    $$
+    p_{\text{huile}} S = p_{\text{air}} S + M g \iff
+    p_{\text{huile}} = p_{\text{air}} + \dfrac{M g}{S}
+    $$
+  - **Petit piston**
+    - À l'aide du même raisonnement, on montre qu'au niveau du petit piston,
+    $$
+    p_{\text{huile}} s = p_{\text{air}} s + m g \iff
+    p_{\text{huile}} = p_{\text{air}} + \dfrac{m g}{s}
+    $$
+  - **Synthèse :** dans les deux sections précédentes, on a obtenu deux expressions différentes d'une même grandeur, la pression de l'huile à l'altitude des pistons ; ces expressions sont forcément identiques :
+  $$
+    p_{\text{air}} + \dfrac{m g}{s} = p_{\text{air}} + \dfrac{M g}{S} \iff \dfrac{m}{s} = \dfrac{M}{S}
+  $$
+
+3. $$M = m \\, \dfrac{S}{s}$$
+    **A.N.** $M = \pu{50 kg} \times \dfrac{100 s}{s} = \pu{5,0e3 kg}$. Grâce à la presse il est possible de compenser le poids d'une masse de 5,0 t à l'aide d'une masse de 50 kg !
+
+4. On a démontré que $$p_{\text{huile}} = p_{\text{air}} + \dfrac{M g}{S}$$  
+    **A.N.** $p_{\text{huile}} = \pu{1,013e5 Pa} + \dfrac{\pu{5,0e3 kg} \times \pu{9,81 N.kg-1}}{100 \times \pu{1,0e-4 m2}} = \pu{5,0e6 Pa}$.
