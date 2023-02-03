@@ -157,7 +157,7 @@ $$
 
 1.
 
-- On considère que l'air emprisonné dans les poumons est un gaz parfait ; on peut donc appliquer la loi de Boyle-Mariotte $$p\\, V = \text{cste}$$
+- On considère que l'air emprisonné dans les poumons est un gaz parfait et que la transformation se fait à température et quantité de matière constantes. On peut donc appliquer la loi de Boyle-Mariotte $$p\\, V = \text{cste}$$
 $$p_0\\, V_0 = p_1\\, V_R \iff p_1 = p_0 \\, \dfrac{V_0}{V_R}$$
 **A.N.** $p_1 = \pu{1,013e5 Pa} \times \dfrac{\pu{6,0 L}}{\pu{1,5 L}} = \pu{4,1e5 Pa}$.
 
