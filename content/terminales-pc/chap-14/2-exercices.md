@@ -19,7 +19,7 @@ auto_numbering: true
 Différents corps placés longtemps au contact Ies uns des autres, finissent par atteindre un état d'équilibre thermique caractérisé par une même température $T_e$.\
 Pourtant, lorsque l'on touche un objet en marbre ou un objet en bois placés tous deux depuis longtemps dans une même pièce, la sensation est différente : sensation de froid dans le cas du marbre qui n'existe pas pour le contact avec le bois.
 
-1. Si un thermomètre placé dans une pièce indique depuis longtemps $\pu{18 °C}$, quelles sont les températures des objets en marbre et en bois évoqués ci-dessus ? Quelle est la température du corps humain ? Dans quel sens a lieu l'échange de chaleur lors du contact du doigt avec un objet ?
+1. Si un thermomètre placé dans une pièce indique depuis longtemps $\pu{18 °C}$, quelles sont les températures des objets en marbre et en bois évoqués ci-dessus ? Quelle est la température du corps humain ? Dans quel sens a lieu l'échange d'énergie lors du contact du doigt avec un objet ?
 
 2. Expliquer qualitativement pourquoi une pièce de métal paraît plus froide au contact qu'un objet en bois.
 
