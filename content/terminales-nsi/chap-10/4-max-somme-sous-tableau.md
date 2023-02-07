@@ -45,7 +45,7 @@ def sous_tab_max(tab: List[int]) -> int:
     """
 ```
 
-    Tester cette fonction.
+Tester cette fonction.
 
 {{% solution "Réponse" %}}
 
