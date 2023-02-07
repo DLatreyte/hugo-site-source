@@ -9,7 +9,7 @@ toc: true
 tags: []
 categories: ["Terminales Spé NSI"]
 image: ""
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: true
 ---
 
@@ -109,16 +109,22 @@ def somme_max(tab: List[int]) -> int:
     sous-tableau en appliquant le paradigme
     « Diviser pour régner ».
     """
+    # Cas de base
     if len(tab) == 1:
         return max(0, tab[0])
 
+    # Diviser
     milieu = len(tab) // 2
 
     s_max1 = somme_max(tab[:milieu])
     s_max2 = somme_max(tab[milieu:])
     s_max3 = max_sous_tab(tab, milieu)
 
-    return max(s_max1, s_max2, s_max3)
+    # Régner
+    s_max = max(s_max1, s_max2, s_max3)
+
+    # Combiner
+    return s_max
 ```
 
 {{% /solution %}}
