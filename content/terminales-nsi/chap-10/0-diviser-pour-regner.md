@@ -176,3 +176,13 @@ Il reste un appel récursif supplémentaire à effectuer pour arriver au cas de 
 La complexité de l'algorithme est donc en $O(\log_2 n)$ ; elle est bien meilleure que celle de l'algorithme 1.
 
 {{% /solution %}}
+
+## Conclusion
+
+{{% note tip %}}
+
+- La méthode « Diviser pour régner » est le paradigme naturel de la récursivité.
+- La complexité d'un algorithme qui s'appuit sur le paradigme « Diviser pour régner » est parfois optimale (exponentiation rapide, recherche dichotomique, tri fusion, etc.) mais pas toujours (recherche du minimum et du maximum dans une liste, somme des éléments d'une liste, recherche dans une liste non triée, etc.).
+- L'efficacité d'un algorithme qui s'appuit sur le paradigme « Diviser pour régner » dépend de l'implémentation de la récursivité par le langage choisi.
+
+{{% /note %}}

@@ -217,6 +217,40 @@ def maxmin2(tab: List[float]) -> Tuple[float, float]:
 {{% /solution %}}
 
 11. Quelle est la complexité de cette fonction&nbsp;?
+{{% solution "Réponse" %}}
+
+Si on note $C(n)$ la complexité en nombre de comparaisons à effectuer pour résoudre le problème en fonction de la taille du tableau, on obtient la relation suivante :
+$$
+C(n) = \begin{cases}
+   0 &\text{si } n = 1 \\\\
+   2 &\text{si } n = 2 \\\\
+   2\\, C(n//2) + 2 &\text{si } n > 2
+\end{cases}
+$$
+Dans la suite de cette partie, pour résoudre cette récurrence, on simplifie le problème en posant $n = 2^k$ (on ne restreint pas la généralité de la conclusion en effectuant cette hypothèse).
+On a alors
+
+$$
+\begin{array}{rl}
+   C(n) &= 2 \times C \left(\dfrac{2^k}{2} \right) + 2 \\\\
+    &= 2 \times \left[ 2 \times C\left(\dfrac{2^k}{2\times 2}\right) + 2  \right] + 2 \\\\
+    &= 2 \times 2 \times C\left(\dfrac{2^k}{2\times 2}\right) + 4 + 2 \\\\
+\end{array}
+$$
+il faut diviser $k-1$ fois pour parvenir au cas de base, on a alors
+$$
+C(n) = 2^{k-1}\times C(2) + \sum_{i=1}^{k-1} 2^i
+$$
+Comme $C(2)=1$ et $\sum_{i=1}^{k-1} 2^i = 2^k - 2$,
+$$
+C(n) = 2^{k-1} + 2^k - 2 = \dfrac{2^k}{2} + 2^k - 2
+$$
+Finalement
+$$
+    C(n) = \dfrac{n}{2} + n - 2 = \dfrac{3n}{2} - 2
+$$
+Il faut donc $\dfrac{3n}{2} - 2$ comparaisons pour résoudre le problème. La complexité est donc linéaire.
+{{% /solution %}}
 
 12. Vérifier le bon fonctionnement de la fonction à la suite des précédentes vérifications.
 {{% solution "Réponse" %}}
@@ -233,3 +267,9 @@ print("Diviser pour régner")
 {{% /solution %}}
 
 13. La fonction `maxmin2` est-elle, théoriquement, plus efficace que la fonction `maxmin1`&nbsp;? Dans la pratique&nbsp;? Comment expliquer ce comportement&nbsp;?
+{{% solution "Réponse" %}}
+
+La fonction `maxmin2` n'est théoriquement pas plus efficace que la fonction `maxmin1` puisque dans les deux cas, la complexité est linéaire.  
+En pratique, la fonction `maxmin2` peut même être moins efficace que la fonction `maxmin1` ! Tout dépend de l'implémentation de la récursivité par le langage.
+
+{{% /solution %}}
