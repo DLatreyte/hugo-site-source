@@ -38,4 +38,4 @@ layout: "single"
 
 - **Doc.** [*Recherche numérique de zéros de fonctions dans $\Reals$*](5-recherche-zero)
 
-- **Doc.** [*Rotation d'une image bitmap d'un quart de tour*](5-rotation-image)
+- **Doc.** [*Rotation d'une image bitmap d'un quart de tour*](6-rotation-image)
