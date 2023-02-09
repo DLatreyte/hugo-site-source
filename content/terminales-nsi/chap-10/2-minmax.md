@@ -241,15 +241,15 @@ il faut diviser $k-1$ fois pour parvenir au cas de base, on a alors
 $$
 C(n) = 2^{k-1}\times C(2) + \sum_{i=1}^{k-1} 2^i
 $$
-Comme $C(2)=1$ et $\sum_{i=1}^{k-1} 2^i = 2^k - 2$,
+Comme $C(2)=2$ et $\sum_{i=1}^{k-1} 2^i = 2^k - 2$,
 $$
-C(n) = 2^{k-1} + 2^k - 2 = \dfrac{2^k}{2} + 2^k - 2
+C(n) = 2^{k-1}\times 2 + 2^k - 2 = 2^k + 2^k - 2
 $$
 Finalement
 $$
-    C(n) = \dfrac{n}{2} + n - 2 = \dfrac{3n}{2} - 2
+    C(n) = 2n - 2
 $$
-Il faut donc $\dfrac{3n}{2} - 2$ comparaisons pour résoudre le problème. La complexité est donc linéaire.
+Il faut donc $2n - 2$ comparaisons pour résoudre le problème. La complexité est donc linéaire.
 {{% /solution %}}
 
 12. Vérifier le bon fonctionnement de la fonction à la suite des précédentes vérifications.
