@@ -60,8 +60,8 @@ Lors de l'épreuve terminale dans l'enseignement de spécialité physique-chimie
   - Interférences de deux ondes, conditions d'observation. Interférences constructives, Interférences destructives
   - Interférences de deux ondes lumineuses, différence de chemin optique, conditions d'interférences constructives ou destructives
 - Former des images, décrire la lumière par un flux de photons (uniquement les notions relevant des parties suivantes)
-- Former des images
-- Étudier la dynamique d'un système électrique
+  - Former des images
+  - Étudier la dynamique d'un système électrique
 
 ## 2. Partie pratique : évaluation des compétences expérimentales
 
