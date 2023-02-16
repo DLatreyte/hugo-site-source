@@ -82,6 +82,19 @@ Données:
 {{< remote "Corrigé au format pdf" "/terminales-pc/chap-14/chap-14-2/chap-14-2-4.pdf" >}}
 {{% /solution %}}
 
+## Détermination de la capacité thermique massique d'un solide
+
+{{% note normal %}}
+Un **calorimètre** constitue un système thermodynamique isolé, ce qui implique qu'il n'y a pas d'échange de matière et d'énergie (travail ou chaleur) avec le milieu extérieur.
+{{% /note %}}
+
+1. Un calorimètre contient $m_1 = \pu{95 g}$ d'eau à $\theta_1 = \pu{20 °C}$. On ajoute $m_2 = \pu{71 g}$ d'eau à $\theta_2 = \pu{50 °C}$. Quelle est la température d'équilibre $\theta_e$ ?\
+**Remarque :** on néglige la capacité thermique du vase et de ses accessoires.
+
+2. Le même calorimètre contient maintenant $m'_1 = \pu{100 g}$ d'eau à $\theta'_1 = \pu{15 °C}$. On y plonge un échantillon métallique de masse $m = \pu{25 g}$ sortant d'une étuve à $\theta'_2 = \pu{95 °C}$. La température d'équilibre est $\theta = \pu{16,7 °C}$. Calculer la capacité thermique massique $c$ du métal.
+
+La capacité thermique massique de l'eau est $c_0 = \pu{4,18 J.g-1.K-1}$.
+
 ## Four à micro-ondes
 
 Dans un four à micro-ondes, le magnétron émet des ondes de $\pu{2450 MHz}$ dans la cavité du four où sont placés les aliments.\
@@ -259,19 +272,6 @@ Données :
 {{% solution "Corrigé" %}}
 {{< remote "Corrigé au format pdf" "/terminales-pc/chap-14/chap-14-2/chap-14-2-9.pdf" >}}
 {{% /solution %}}
-
-## Détermination de la capacité thermique massique d'un solide
-
-{{% note normal %}}
-Un **calorimètre** constitue un système thermodynamique isolé, ce qui implique qu'il n'y a pas d'échange de matière et d'énergie (travail ou chaleur) avec le milieu extérieur.
-{{% /note %}}
-
-1. Un calorimètre contient $m_1 = \pu{95 g}$ d'eau à $\theta_1 = \pu{20 °C}$. On ajoute $m_2 = \pu{71 g}$ d'eau à $\theta_2 = \pu{50 °C}$. Quelle est la température d'équilibre $\theta_e$ ?\
-**Remarque :** on néglige la capacité thermique du vase et de ses accessoires.
-
-2. Le même calorimètre contient maintenant $m'_1 = \pu{100 g}$ d'eau à $\theta'_1 = \pu{15 °C}$. On y plonge un échantillon métallique de masse $m = \pu{25 g}$ sortant d'une étuve à $\theta'_2 = \pu{95 °C}$. La température d'équilibre est $\theta = \pu{16,7 °C}$. Calculer la capacité thermique massique $c$ du métal.
-
-La capacité thermique massique de l'eau est $c_0 = \pu{4,18 J.g-1.K-1}$.
 
 ## Équivalence travail - chaleur (difficile)
 
