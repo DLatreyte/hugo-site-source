@@ -82,23 +82,6 @@ Données:
 {{< remote "Corrigé au format pdf" "/terminales-pc/chap-14/chap-14-2/chap-14-2-4.pdf" >}}
 {{% /solution %}}
 
-## Détermination de la capacité thermique massique d'un solide
-
-{{% note normal %}}
-Un **calorimètre** constitue un système thermodynamique isolé, ce qui implique qu'il n'y a pas d'échange de matière et d'énergie (travail ou chaleur) avec le milieu extérieur.
-{{% /note %}}
-
-1. Un calorimètre contient $m_1 = \pu{95 g}$ d'eau à $\theta_1 = \pu{20 °C}$. On ajoute $m_2 = \pu{71 g}$ d'eau à $\theta_2 = \pu{50 °C}$. Quelle est la température d'équilibre $\theta_e$ ?\
-**Remarque :** on néglige la capacité thermique du vase et de ses accessoires.
-
-2. Le même calorimètre contient maintenant $m'_1 = \pu{100 g}$ d'eau à $\theta'_1 = \pu{15 °C}$. On y plonge un échantillon métallique de masse $m = \pu{25 g}$ sortant d'une étuve à $\theta'_2 = \pu{95 °C}$. La température d'équilibre est $\theta = \pu{16,7 °C}$. Calculer la capacité thermique massique $c$ du métal.
-
-La capacité thermique massique de l'eau est $c_0 = \pu{4,18 J.g-1.K-1}$.
-
-## Équivalence travail - chaleur
-
-Une auto de masse $M = \pu{836 kg}$ roule à la vitesse $v = \pu{20 m.s-1}$ (72&nbsp;km/h) et s'arrête brusquement à l'aide de ses quatre freins à disques. En assimilant ces derniers à des cylindres de rayon $R = \pu{10 cm}$, d'épaisseur $e = \pu{1 cm}$, de masse volumique $\rho = \pu{8 g.cm-3}$ et de capacité thermique massique $c = \pu{0,42 J.g-1.K-1}$, calculer leur élévation de température en supposant que toute l'énergie thermique est absorbée par les disques.
-
 ## Four à micro-ondes
 
 Dans un four à micro-ondes, le magnétron émet des ondes de $\pu{2450 MHz}$ dans la cavité du four où sont placés les aliments.\
@@ -275,6 +258,61 @@ Données :
 
 {{% solution "Corrigé" %}}
 {{< remote "Corrigé au format pdf" "/terminales-pc/chap-14/chap-14-2/chap-14-2-9.pdf" >}}
+{{% /solution %}}
+
+## Détermination de la capacité thermique massique d'un solide
+
+{{% note normal %}}
+Un **calorimètre** constitue un système thermodynamique isolé, ce qui implique qu'il n'y a pas d'échange de matière et d'énergie (travail ou chaleur) avec le milieu extérieur.
+{{% /note %}}
+
+1. Un calorimètre contient $m_1 = \pu{95 g}$ d'eau à $\theta_1 = \pu{20 °C}$. On ajoute $m_2 = \pu{71 g}$ d'eau à $\theta_2 = \pu{50 °C}$. Quelle est la température d'équilibre $\theta_e$ ?\
+**Remarque :** on néglige la capacité thermique du vase et de ses accessoires.
+
+2. Le même calorimètre contient maintenant $m'_1 = \pu{100 g}$ d'eau à $\theta'_1 = \pu{15 °C}$. On y plonge un échantillon métallique de masse $m = \pu{25 g}$ sortant d'une étuve à $\theta'_2 = \pu{95 °C}$. La température d'équilibre est $\theta = \pu{16,7 °C}$. Calculer la capacité thermique massique $c$ du métal.
+
+La capacité thermique massique de l'eau est $c_0 = \pu{4,18 J.g-1.K-1}$.
+
+## Équivalence travail - chaleur (difficile)
+
+Une auto de masse $M = \pu{836 kg}$ roule à la vitesse $v = \pu{20 m.s-1}$ (72&nbsp;km/h) et s'arrête brusquement à l'aide de ses quatre freins à disques. En assimilant ces derniers à des cylindres de rayon $R = \pu{10 cm}$, d'épaisseur $e = \pu{1 cm}$, de masse volumique $\rho = \pu{8 g.cm-3}$ et de capacité thermique massique $c = \pu{0,42 J.g-1.K-1}$, calculer leur élévation de température en supposant que toute l'énergie thermique est absorbée par les disques.
+
+{{% solution "Réponse" %}}
+
+On suppose le système {voiture + environnement} isolé. On a donc :
+$$
+\Delta E_t = \Delta E_M(\text{voiture}) + \Delta U(\text{voiture}) + \Delta U(\text{environnement}) = 0
+$$
+
+**Remarque :** on considère que $\Delta E_M(\text{environnement}) = 0$ car macroscopiquement rien n'est modifié au niveau de l'environnement.
+
+Le freinage ne dure pas très longtemps, on peut donc supposer que les échanges thermiques entre la voiture et l'environnement ne sont pas importants (la conduction n'est pas très efficace et la convection limitée ici). On en déduit donc que $\Delta U(\text{environnement}) = 0$.
+
+Finalement,
+$$
+\Delta E_M(\text{voiture}) + \Delta U(\text{voiture}) = 0 \iff \Delta U(\text{voiture}) = -\Delta E_M(\text{voiture})
+$$
+L'énergie mécanique perdue par la voiture est transformée en énergie interne.
+
+Au niveau de la voiture, ce sont les disques qui voient leur énergie interne augmenter, on peut donc écrire
+$$
+\Delta U(\text{voiture}) = \Delta U(\text{4 disques})
+$$
+
+Finalement,
+$$
+m c \Delta \theta = - (0 - \dfrac{1}{2} Mv_0^2 )
+$$
+où $m$ est la masse des 4 disques. Si on utilise les données de l'exercice, $m = 4 \pi R^2 e \rho$ (où $\pi R^2 e$ est le volume de chaque disque et $\pi R^2 e \rho$ la masse de chaque disque) et
+$$
+\Delta \theta = \dfrac{Mv_0^2}{2 \times 4 \pi R^2 e \rho c}
+$$
+
+**A.N.** $\Delta \theta = \dfrac{\pu{836 kg} \times (\pu{20 m.s-1})^2}{2 \times 4 \times \pi \times (\pu{10 cm})^2 \times \pu{1 cm} \times \pu{8 g.cm-3} \times \pu{0,42 J.g-1.K-1}} = \pu{4e1 K} = \pu{4e1 °C}
+$
+
+Cette élévation de température n'est pas très importante.  
+En fait, si le freinage est brusque, l'élévation l'énergie ne se propage pas dans toute la masse des disques (faute de temps) et, localement, l'élévation de température peut être beaucoup plus importante.
 {{% /solution %}}
 
 ## Apport d'énergie thermique par une résistance électrique
