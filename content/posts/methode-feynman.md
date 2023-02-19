@@ -58,13 +58,10 @@ Vous pouvez connaître le nom d’un oiseau dans toutes les langues du monde, ma
 
 {{% note normal %}}
 
-Rendez les choses aussi simples que possible, 
+Rendez les choses aussi simples que possible,
 mais pas plus simples. --- Albert Einstein
 
 {{% /note %}}
-
-- [Référence](https://www.mieuxpenser.com/articles/la-meilleure-maniere-dapprendre-la-methode-feynman)
-
 
 ## La répétition espacée
 
@@ -73,5 +70,3 @@ mais pas plus simples. --- Albert Einstein
 ![Courbe de l'ouli](/pdf/courbe_de_l_oubli.png)
 
 - Article sur [Wikipedia](https://fr.wikipedia.org/wiki/Courbe_de_l%27oubli)
-
-
