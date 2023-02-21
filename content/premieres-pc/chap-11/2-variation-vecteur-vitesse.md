@@ -13,7 +13,7 @@ solution_est_visible: true
 auto_numbering: true
 ---
 
-> Dans le document précédent ([chap. 10,01]({{< ref "./1-vecteurs.md" >}})) nous avons précisé la notion de
+> Dans les documents précédents nous avons précisé la notion de
 vitesse et nous sommes intéressés au vecteur «&nbsp;variation de vitesse&nbsp;».
 Pourquoi avoir introduit ce vecteur&nbsp;? Et pourquoi ne pas introduire le
 vecteur «&nbsp;variation de variation de vitesse&nbsp;»&nbsp;? Ce document a pour
@@ -136,7 +136,7 @@ deux corps sont toujours égales et opposées.*
 mouvement, mais estimaient que dès que cesse l'action de la force, cesse
 le mouvement. Autrement dit, la force est nécessaire pour maintenir le
 mouvement. La découverte de la première loi de Newton signifiait que
-cette conception était erronée puisqu'*aucune « force » n'est nécessaire
+cette conception était erronée puisque *aucune « force » n'est nécessaire
 pour maintenir un mouvement uniforme*. La force fut dès lors considérée
 comme la cause déterminant une variation de la vitesse d'un corps. »
 
