@@ -32,10 +32,6 @@ layout: "single"
 
 - **Doc.** [*Protection/déprotection de fonctions*](2-protection-fonctions)
 
-- **Doc.** [*Techniques expérimentales en chimie de synthèse*](3-techniques-experimentales)
-
-- **Doc.** [*Une étape dans la synthèse d’un médicament, le paracétamol*](4-synthese-paracetamol)
-
 - **Doc.** [*Exercices d'entraînement*](5-annale)
 
 - **Doc.** [*Annale : Le nylon*](6-annale-nylon)

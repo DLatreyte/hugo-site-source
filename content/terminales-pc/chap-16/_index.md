@@ -34,6 +34,10 @@ layout: single
 
 - **Doc.** [*Déplacement d'équilibre et principe de Le Chatelier*](3-principe-le-chatelier)
 
+- **Doc.** [*Techniques expérimentales en chimie de synthèse*](3-techniques-experimentales)
+
+- **Doc.** [*Une étape dans la synthèse d’un médicament, le paracétamol*](4-synthese-paracetamol)
+
 - **Doc.** [*Annale : Synthèse d'un ester à l'aide d'un appareil de Dean et Stark*](4-annale-dean-et-stark)
 
 - **Doc.** [*Annale : Hydrolyses des esters*](5-annale-hydrolyses)
