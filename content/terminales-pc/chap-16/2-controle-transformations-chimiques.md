@@ -1,5 +1,5 @@
 ---
-title: "Contrôles des transformations chimiques : estérification"
+title: "Contrôles des transformations chimiques, exemple de l'estérification"
 subtitle: ""
 author: ""
 type: ""
