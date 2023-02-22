@@ -137,6 +137,49 @@ L’**identification** est faite par mesure de la température de fusion. La pur
 
 ## Questions (toutes les séances)
 
+### Étude de la réaction
+
+<img src="/terminales-pc/chap-16/chap-16-4-bis/montage-reflux.png" alt="" width="22%" style="float: right;" />
+
+1. Donner la formule brute de toutes les molécules.
+
+2. Donner la formule semi-développée de toutes les molécules.
+
+3. Sur toutes les molécules, entourer les groupes caractéristiques. Nommer ces groupes et donner le nom de la famille correspondante.
+
+4. Seul le paracétamol est obtenu lors de la mise en œuvre de ce protocole de synthèse. Quelle propriété possède la réaction entre le para-aminophénol et l’anhydride éthanoïque ?
+
+### Synthèse
+
+1. Légender le schéma du montage du chauffage à reflux.
+2. Quel est l'intérêt du chauffage à reflux?
+3. Quel est le rôle de l’acide éthanoïque ?
+4. Pourquoi doit-on chauffer le mélange 4-aminophénol/solution d’acide éthanoïque ?
+
+<img src="/terminales-pc/chap-16/chap-16-4-bis/trompe-a-vide.png" alt="" width="35%" style="float: right;" />
+
+### Extraction du produit
+
+1. Légender le schéma du montage pour la filtration sous pression réduite.
+2. Pourquoi ne procède-t-on pas à une filtration simple ? Quel est l’intérêt de la trompe à eau ?
+3. Après la filtration, pourquoi faut-il laver les cristaux à l’eau avec un minimum d’eau ? Pourquoi de l’eau glacée ?
+
+### Recristallisation et rendement
+
+1. Quel est le but d’une recristallisation ?
+2. Écrire l'équation de la réaction de synthèse.
+3. À l'aide d'un tableau d'avancement, déterminer l'avancement maximal de la transformation.
+4. En déduire la masse de paracétamol obtenu théoriquement ?
+5. Indiquer la masse de votre produit obtenu après recristallisation.
+6. Définir le rendement.
+7. Calculer le rendement de votre synthèse. Conclure.
+
+### Identification et pureté
+
+1. Citer différentes techniques d'identification.
+2. Comparer le résultat de votre température de fusion à la valeur théorique. Conclure.
+3. Schématiser et interpréter le chromatogramme obtenu.
+
 {{% solution "Correction" %}}
 
 {{% remote "Corrigé du TP au format PDF" "/terminales-pc/chap-17/chap-17-4/chap-17-04-QR.pdf" %}}
