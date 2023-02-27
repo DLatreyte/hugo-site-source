@@ -49,6 +49,6 @@ La négociation de la méthode chiffrement du protocole SSL (Secure Sockets La
 
 ### Documents
 
-- **Chap. 10,2,1 :** [*Cours*]()
+- **Doc.** [*Cours*]()
 
-- **Chap. 10,2,2 :** [*Réalisation d'un chiffrement symétrique*](7-chiffrement-symétrique)
+- **Doc.** [*Réalisation d'un chiffrement symétrique*](7-chiffrement-symétrique)
