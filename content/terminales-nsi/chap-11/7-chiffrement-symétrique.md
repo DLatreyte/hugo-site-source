@@ -1,6 +1,6 @@
 ---
 title: "Réalisation d'un chiffrement symétrique"
-subtitle: "Chapitre 10,2,2"
+subtitle: ""
 author: ""
 type: ""
 date: 2022-04-15T06:36:15+04:00
