@@ -33,3 +33,5 @@ layout: "single"
 - **Doc. :** [*Jeu de la vie*](5-jeu-vie)
 
 - **Doc. :** [*Exercices*](6-exercices)
+
+- **Doc. :** [*Les dominos*](7-dominos)
