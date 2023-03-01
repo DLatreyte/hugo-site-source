@@ -39,3 +39,5 @@ La Terre est habitée par une grande diversité d’êtres vivants. Cette biodiv
 Les mathématiques permettent de modéliser la dynamique des systèmes vivants afin de décrire leur évolution. La démarche de modélisation mathématique comporte plusieurs étapes : identification du type de modèle le mieux adapté pour traduire la réalité, détermination des paramètres du modèle, confrontation des résultats du modèle à des observations, qui peut conduire à limiter son domaine de validité ou à le modifier.
 
 L’être humain a construit des machines pour traiter l’information et a créé des langages pour les commander. Avec les méthodes de l’intelligence artificielle, il continue d’étendre les capacités de traitement de données et les domaines d’application de l’informatique.
+
+- [L’être humain peut-il externaliser son « intelligence » ?](chap-ia)
