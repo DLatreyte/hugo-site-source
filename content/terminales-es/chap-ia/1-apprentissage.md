@@ -61,4 +61,6 @@ Lancer l'enregistrement et effectuer des petits mouvement en se penchant vers la
 
 15. Se faire remplacer par une autre personne. Le modèle fonctionne-t-il toujours aussi bien ?
 
+## Ouverture
+
 16. Expliquer comment on pourrait utiliser ce logiciel pour lui apprendre à déterminer si une banane est trop verte pour être mangée, est mûre ou est sur le point de ne plus être comestible. Donner en particulier les classes d'apprentissage qu'il faudrait utiliser.
