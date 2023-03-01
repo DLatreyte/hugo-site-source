@@ -11,6 +11,7 @@ categories: []
 image: ""
 solution_est_visible: true
 auto_numbering: true
+layout: "single"
 ---
 
 - **Doc. :** [*Cours IA*](https://www.remnote.com/a/intelligence-artificielle-introduction/63fe14481b724daa608c4a84)
