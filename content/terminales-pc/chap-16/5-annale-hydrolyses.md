@@ -156,7 +156,7 @@ $n(\ce{HO-})\_{\text{restant}} = n(\ce{HO-})\_0 - x(t)$
 À partir de la question précédente, on peut déterminer que $x(t) = n(\ce{HO-})\_0 - n(\ce{HO-})\_{\text{restant}}$.
 
 - $x(\pu{4 min}) = \pu{10e-3 mol} - \pu{7,3e-3 mol} = \pu{2,7e-3 mol}$
-- $x(\pu{4 min}) = \pu{10e-3 mol} - \pu{5,8e-3 mol} = \pu{4,2e-3 mol}$
+- $x(\pu{6 min}) = \pu{10e-3 mol} - \pu{5,8e-3 mol} = \pu{4,2e-3 mol}$
 {{% /solution %}}
 
 13. Sachant que la masse d’éthanoate de benzyle utilisée pour le mélange réactionnel de volume $V = \pu{200 mL}$, est égale à $\pu{10,0 g}$, déterminer la valeur finale de l’avancement, notée $x_f$.
@@ -167,7 +167,7 @@ $$
     n_0 − x_f = 0 \iff x_f = n_0 = \dfrac{m}{M}
 $$
 
-**A.N.** $x_f = \dfrac{\pu{10,0 g}}{\pu{150 g⋅mol-1}} = \pu{6,67 mmol}$.
+**A.N.** $x_f = \dfrac{\pu{1,00 g}}{\pu{150 g⋅mol-1}} = \pu{6,67 mmol}$.
 {{% /solution %}}
 
 ### Étude de la cinétique de la réaction
