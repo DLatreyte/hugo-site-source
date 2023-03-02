@@ -190,7 +190,7 @@ $$
 $$
 {{% /solution %}}
 
-16. Comment varie la vitesse de formation de l'alccol au cours du temps ? Justifier la réponse ?
+16. Comment varie la vitesse de formation de l'alcool au cours du temps ? Justifier la réponse ?
 {{% solution "Solution" %}}
 À partir de la question précédente, on peut conclure que la vitesse de formation de l'alcool à une date donnée est proportionnelle à la valeur du coefficient directeur de la tangente à cette date.\
 On constate sur le graphique que les valeurs des coefficients directeurs des tangentes à la courbe diminue au cours du temps, la vitesse de formation de l'alcool diminue donc aussi.
