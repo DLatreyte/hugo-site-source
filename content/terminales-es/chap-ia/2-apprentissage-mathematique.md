@@ -4,7 +4,7 @@ subtitle: ""
 author: ""
 type: ""
 date: 2023-03-06T14:01:18+04:00
-draft: true
+draft: false
 toc: true
 tags: []
 categories: []
