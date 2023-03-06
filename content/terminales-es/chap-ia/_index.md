@@ -15,4 +15,7 @@ layout: "single"
 ---
 
 - **Doc. :** [*Cours IA*](https://www.remnote.com/a/intelligence-artificielle-introduction/63fe14481b724daa608c4a84)
+
 - **Doc. :** [*Comment apprendre à une machine ?*](1-apprentissage)
+
+- **Doc. :** [*Exemples de méthodes d'apprentissage*](2-apprentissage-mathematique)
