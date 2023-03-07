@@ -458,8 +458,8 @@ def tri_fusion(S: List[int]) -> None:
 def fusion(S1: List[int], S2: List[int], S: List[int]) -> None:
     """
     Combine les éléments des deux listes S1 et S2 dans la liste S (en place).
-    i est le nombre d'élément(s) de S1 copié(s) dans S1. 
-    j est le nombre d'élément(s) de S2 copié(s) dans S2. 
+    i est le nombre d'élément(s) de S1 copié(s) dans S. 
+    j est le nombre d'élément(s) de S2 copié(s) dans S. 
     On doit donc avoir i + j <= len(S).
     """
     i = 0
