@@ -207,10 +207,10 @@ C'est l'adressage historique, il est toujours utilisé sur les réseaux privés 
   - *tous les bits de la partie hôte à 1 : c'est l'**adresse de diffusion** ;*
   - *tous les bits de la partie hôte à 0 : c'est l'**adresse du réseau**.*
 
-1. Calculer le nombre de réseaux et le nombre d'hôtes pour chaque réseau.
+1. Calculer le nombre de réseaux différents que l'on peut définir en fonctiond des classes.
 {{% solution "Réponse" %}}
 
-- Classe A : $2^7 -2 = 126$
+- Classe A : $2^7 = 128$
 - Classe B : $2^{14} = 16384$
 - Classe C : $2^{21} = 209752$
 
