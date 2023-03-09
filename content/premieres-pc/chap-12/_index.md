@@ -41,3 +41,5 @@ layout: "single"
 - **Doc. :** [*Cohésion des solides*](3-cohesion-solides)
 
 - **Doc. :** [*Propriétés des savons*](4-proprietes-savons)
+
+- **Doc. :** [*Un tour de magie*](5-tour-de-magie)
