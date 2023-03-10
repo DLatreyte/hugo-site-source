@@ -49,11 +49,15 @@ auto_numbering: true
 | Ion chlorure, $\ce{Cl^{-}}$ | Nitrate d'argent | Formation d'un précipité blanc de chlorure d'argent, $\ce{AgCl}$, qui noircit à la lumière |
 | Ion sulfate, $\ce{SO_4^{2-}}$ | Chlorure de baryum | Formation d'un précipité blanc de sulfate de baryum, $\ce{BaSO4}$ |
 
-**Remarque :**  
+**Remarques :**  
 
 - Solution de soude : $\ce{Na^+ (aq) + OH^- (aq)}$
 - Solution de nitrate d'argent : $\ce{Ag^+ (aq) + NO3^- (aq)}$
 - Solution de chlorure de baryum : $\ce{Ba^{2+} (aq) + 2 Cl^- (aq)}$
+
+----
+
+- En présence d'ions baryum $\ce{Ba^{2+}$ le diiode en solution aqueuse forme un solide blanc d'iodure de baryum $\ce{BaI2}$.
 
 {{% /note %}}
 
