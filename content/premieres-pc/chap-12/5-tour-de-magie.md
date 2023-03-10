@@ -57,7 +57,7 @@ auto_numbering: true
 
 ----
 
-- En présence d'ions baryum $\ce{Ba^{2+}$ le diiode en solution aqueuse forme un solide blanc d'iodure de baryum $\ce{BaI2}$.
+- En présence d'ions baryum $\ce{Ba^{2+}}$ le diiode en solution aqueuse forme un solide blanc d'iodure de baryum $\ce{BaI2}$.
 
 {{% /note %}}
 
