@@ -30,7 +30,7 @@ auto_numbering: true
 | Eau | Ion cobalt $\ce{Co^{2+}}$ | Rose |
 | Cyclohexane | Diiode $\ce{I2}$ | Rose |
 | Eau | Diiode $\ce{I2}$ | Jaune orangé |
-| Eau | Ion fer III $\ce{Fe^{3+}}$ | Bleu |
+| Eau | Ion fer III $\ce{Fe^{3+}}$ | Orange |
 
 </center>
 
