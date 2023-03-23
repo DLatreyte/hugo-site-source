@@ -270,22 +270,21 @@ Un hydrocarbure est une molécule **apolaire** puisqu'aucune des laisons n'est p
 ### Cohésion des solides moléculaires
 
 - De nombreux solides ne sont pas ioniques. Ils sont constitués de
-  molécules. Si ces molécules sont rangées de façon ordonnée ce solide est
-  dit *cristallin* (exemple : le diiode). Dans le cas contraire, il est dit
-  *amorphe* (exemple : le plexiglass).
+  molécules. Si ces molécules sont rangées de façon ordonnée ce solide est dit *cristallin* (exemple : le diiode). Dans le cas contraire, il est dit *amorphe* (exemple : le plexiglass).
 
-- Les interactions entre ces molécules sont de 2 types : interactions de **Van
-  der Waals** et **liaisons hydrogène**.
+- Les interactions entre ces molécules sont de 2 types : interactions de **Van der Waals** et **liaisons hydrogène**.
 
 #### Les interactions de Van Der Waals
 
 {{% note tip %}}
 
-Les forces de Van Der Waals ne sont pas des forces de Coulomb mais elles
-expliquent néanmoins les interactions entre les molécules. *Elles font
-intervenir des interactions entre les **dipôles des molécules**, qu'ils soient
-**permanents** comme dans les molécules polaires ou **induits** comme dans les
-molécules de diiode ou de dichlore*.
+Les forces de Van Der Waals ne sont pas des forces de Coulomb mais elles expliquent néanmoins les interactions entre les molécules. *Elles font intervenir des interactions entre les **dipôles des molécules**, qu'ils soient **permanents** comme dans les molécules polaires ou **induits** comme dans les molécules de diiode ou de dichlore*.
+
+{{% /note %}}
+
+{{% note normal %}}
+
+Les interactions de Van Der Waals sont toujours attractives.
 
 {{% /note %}}
 
@@ -304,12 +303,11 @@ molécule voisine*.
 
 {{% /note %}}
 
-<img src="/premieres-pc/chap-12/chap-12-3/liaison-hydrogene.png" alt="" width="" />
+<img src="/premieres-pc/chap-12/chap-12-3/liaison-hydrogene.png" alt="" width="100%" />
 
 #### Remarque
 
-Les liaisons hydrogène sont à la base de la cohésion de l'eau solide ou de
-l'eau liquide.
+Les liaisons hydrogène sont à la base de la cohésion de l'eau solide ou de l'eau liquide.
 
 ## Dissolution dans un solvant
 
@@ -325,21 +323,27 @@ pour affaiblir et vaincre les interactions au sein du solide*.
 
 ### Étapes successives (pour un composé ionique)
 
-{{% note tip %}}
+On peut décomposer le phénomène de dissolution d'un **soluté** dans un **solvant** en trois étapes successives :
 
-On peut décomposer le phénomène de dissolution d'un **soluté** dans un
-**solvant** en trois étapes successives :
+{{% note tip %}}
 
 #### Dissociation du solide ionique
 
-Les forces électrostatiques entre les ions à la surface du solide et les
-charges partielles du solvant (*qui doit donc être polaire*) affaiblissent
-les forces électrostatiques entre les ions, au sein du solide.
+Les forces électrostatiques entre les ions à la surface du solide et les charges partielles du solvant (*qui doit donc être polaire*) affaiblissent les forces électrostatiques entre les ions, au sein du solide.
+{{% /note %}}
 
-#### Hydratation des ions
+<img src="/premieres-pc/chap-12/chap-12-3/dissolution_1.png" alt="Image issue de Maxicours" width="70%" />
 
-Les molécules du solvant, attirées par l'interaction électrostatique,
-entourent les ions.
+{{% note tip %}}
+
+#### Hydratation (ou solvatation) des ions
+
+Les molécules du solvant, attirées par l'interaction électrostatique, entourent les ions.
+{{% /note %}}
+
+<img src="/premieres-pc/chap-12/chap-12-3/dissolution_2.png" alt="Image issue de Maxicours" width="50%" />
+
+{{% note tip %}}
 
 #### Dispersion des ions
 
@@ -347,8 +351,13 @@ Les ions hydratés se dispersent de façon homogène dans la solution.
 
 {{% /note %}}
 
-On utilise l'indice $(\text{aq})$ pour indiquer qu'un ion est solvaté :
-$\ce{Na+ (aq)}$.
+<img src="/premieres-pc/chap-12/chap-12-3/dissolution_3.png" alt="Image issue de Maxicours" width="70%" />
+
+{{% note normal %}}
+
+On utilise l'indice $(\text{aq})$ pour indiquer qu'un ion est solvaté : $\ce{Na+ (aq)}$.
+
+{{% /note %}}
 
 **Remarque.**  On arrive, de nos jours, à déterminer le nombre moyen de
 molécules d'eau autour des ions solvatés :
@@ -382,7 +391,7 @@ glucose et l'éthanol, sont solubles dans l'eau.
 
 {{% note tip %}}
 
-- L'équation de la réaction de dissolution modélise, *à l'échelle
+L'équation de la réaction de dissolution modélise, *à l'échelle
   macroscopique*, les deux étapes de la dissolution.
 
 {{% /note %}}
@@ -418,7 +427,7 @@ $$ [X] = \dfrac{n (X)}{V} $$
 
 {{% /note %}}
 
-##### Remarque
+#### Remarque
 
 Le lien entre la concentration molaire effective d'un ion en solution et la
 concentration molaire apportée $C$ en soluté (dont est issu l'ion) se trouve
