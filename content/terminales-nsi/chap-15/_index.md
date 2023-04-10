@@ -1,6 +1,6 @@
 ---
 title: "Les graphes"
-subtitle: "Chapitre 15"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-04-20T04:18:36+04:00
@@ -26,14 +26,12 @@ layout: "single"
 |:-|:-|:-|
 | Algorithmes sur les graphes. | - Parcourir un graphe en profondeur d’abord, en largeur d’abord.<br />- Repérer la présence d’un cycle dans un graphe.<br />- Chercher un chemin dans un graphe. | - Le parcours d’un labyrinthe et le routage dans internet sont des exemples d’algorithme sur les graphes.<br />- L’exemple des graphes permet d’illustrer l’utilisation des classes en programmation. |
 
-
 ## Documents
 
-- **Chapitre 15,1 :** [Les graphes : structure de données](1-graphes-structure-de-donnees)
+- **Doc.** [Les graphes : structure de données](1-graphes-structure-de-donnees)
 
-- **Chapitre 15,2 :** [Représentation d'un graphe en informatique](2-representation-graphe)
+- **Doc.** [Représentation d'un graphe en informatique](2-representation-graphe)
 
-- **Chapitre 15,3 :** [Parcours de graphes](3-parcours-graphes)
+- **Doc.** [Parcours de graphes](3-parcours-graphes)
 
-- **Chapitre 15,4 :** [Parcours en profondeur : programme en Python](4-parcours-profondeur-python)
-
+- **Doc.** [Parcours en profondeur : programme en Python](4-parcours-profondeur-python)

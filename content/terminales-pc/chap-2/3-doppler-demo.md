@@ -1,6 +1,6 @@
 ---
 title: "Détermination par effet Doppler de la vitesse d'un émetteur sonore"
-subtitle: "Chapitre 2,1,3"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-09-07T23:47:35+04:00
@@ -32,11 +32,11 @@ Les formules démontrées ci-dessous ne sont valables que pour les ondes acousti
 La valeur de la vitesse d'un émetteur ($E$) s'approchant d'un observateur immobile ($A$) peut être calculée par effet Doppler. L'étude est effectuée dans le **référentiel dans lequel l'observateur est immobile**.
 
 On se propose de retrouver la relation liant les diverses grandeurs mises en jeu&nbsp;:
-- $f_E$ est la fréquence du signal produit par l'émetteur&nbsp;; 
-- $f_A$ est la fréquence du signal reçu par l'observateur&nbsp;; 
+
+- $f_E$ est la fréquence du signal produit par l'émetteur&nbsp;;
+- $f_A$ est la fréquence du signal reçu par l'observateur&nbsp;;
 - $V$ est la valeur de la vitesse de l'onde *par rapport à l'observateur immobile*&nbsp;;
 - $V_E$ est la valeur de la vitesse de l'émetteur *par rapport à l'observateur immobile*.
-
 
 1. À la date $t= 0$, $E$ est à la distance $d$ de $A$ et émet une onde.  
 Exprimer littéralement la date $t_1$ au bout de laquelle le signal est perçu par $A$.
@@ -47,7 +47,7 @@ La date $t_1$ est le retard avec lequel l'onde parvient en $A$, donc $t_1 = \dfr
 2. Déterminer l'expression de la distance $d_E$ parcourue par l'émetteur pendant la période $T_E$ du signal émis.
 {{% solution "Réponse" %}}
 L'émetteur se déplace à la vitesse $V_E$, donc au bout de $T_E$ secondes $d_E = V_E T_E$.
-{{% /solution %}} 
+{{% /solution %}}
 
 3. À la date $T_E$, quelle est la distance $d_2$ entre $E$ et $A$&nbsp;?
 {{% solution "Réponse" %}}
@@ -65,8 +65,8 @@ Que représente $T_A$&nbsp;?
 {{% solution "Réponse" %}}
 Si on note $\Delta t$ la durée qui sépare deux signaux consécutifs captés par l'observateur, $\Delta t = t_3 - t_1 = T_E + \dfrac{d - V_E T_E}{V} - \dfrac{d}{V} = T_E (1 - \dfrac{V_E}{V})$.
 
-$\Delta t = T_A$ est la période du signal perçue par l'observateur, donc 
-$$ T_A = T_E (1 - \dfrac{V_E}{V})$$ 
+$\Delta t = T_A$ est la période du signal perçue par l'observateur, donc
+$$ T_A = T_E (1 - \dfrac{V_E}{V})$$
 {{% /solution %}}
 
 6. Exprimer la relation liant $f_A$, $f_E$, $V$ et $V_E$ dans cette situation.
@@ -83,15 +83,16 @@ $V_E < V$ donc $\dfrac{V_E}{V} < 1$ et $0 < 1 - \dfrac{V_E}{V} < 1$. On en dédu
 
 8. Quelle est l'expression littérale de la valeur de la vitesse $V_E$, de l'émetteur&nbsp;?
 {{% solution "Réponse" %}}
-On déduit de l'expression précédente que 
+On déduit de l'expression précédente que
 $$V_E = V \left(1 - \dfrac{f_E}{f_A} \right)$$
 {{% /solution %}}
 
 {{% note tip %}}
 Lorsque qu'un émetteur sonore $E$ s'approche d'un observateur $A$, la fréquence du signal perçu par cet observateur est $$f_A = \dfrac{f_E}{1 - \dfrac{V_E}{V}} > f_E$$
-où 
-- $f_E$ est la fréquence du signal produit par l'émetteur&nbsp;; 
-- $f_A$ est la fréquence du signal reçu par l'observateur&nbsp;; 
+où
+
+- $f_E$ est la fréquence du signal produit par l'émetteur&nbsp;;
+- $f_A$ est la fréquence du signal reçu par l'observateur&nbsp;;
 - $V$ est la valeur de la vitesse de l'onde *par rapport à l'observateur immobile*&nbsp;;
 - $V_E$ est la valeur de la vitesse de l'émetteur *par rapport à l'observateur immobile*.
 
@@ -103,8 +104,9 @@ où
 La valeur de la vitesse d'un émetteur ($E$) s'éloignant d'un observateur immobile ($B$) peut être calculée par effet Doppler. L'étude est effectuée dans le **référentiel dans lequel l'observateur est immobile**.
 
 On se propose de retrouver la relation liant les diverses grandeurs mises en jeu&nbsp;:
-- $f_E$ est la fréquence du signal produit par l'émetteur&nbsp;; 
-- $f_B$ est la fréquence du signal reçu par l'observateur&nbsp;; 
+
+- $f_E$ est la fréquence du signal produit par l'émetteur&nbsp;;
+- $f_B$ est la fréquence du signal reçu par l'observateur&nbsp;;
 - V est la valeur de la vitesse de l'onde *par rapport à l'observateur immobile*&nbsp;;
 - $V_E$ est la valeur de la vitesse de l'émetteur *par rapport à l'observateur immobile*.
 Les valeurs des vitesses sont mesurées dans un référentiel terrestre et $V_E \ll V$.
@@ -114,7 +116,7 @@ Les valeurs des vitesses sont mesurées dans un référentiel terrestre et $V_E 
 La date $t_1$ est le retard avec lequel l'onde parvient en $B$, donc $t_1 = \dfrac{d}{V}$.
 {{% /solution %}}
 
-2. Déterminer l'expression de la distance $d_E$ parcourue par l'émetteur pendant la période $T_E$ du signal émis. 
+2. Déterminer l'expression de la distance $d_E$ parcourue par l'émetteur pendant la période $T_E$ du signal émis.
 {{% solution "Réponse" %}}
 L'émetteur se déplace à la vitesse $V_E$, donc au bout de $T_E$ secondes $d_E = V_E T_E$.
 {{% /solution %}}
@@ -134,8 +136,8 @@ L'onde que reçoit l'observateur à la date $t_3$ a été émise à la date $t_2
 {{% solution "Réponse" %}}
 Si on note $\Delta t$ la durée qui sépare deux signaux consécutifs captés par l'observateur, $\Delta t = t_3 - t_1 = T_E + \dfrac{d + V_E T_E}{V} - \dfrac{d}{V} = T_E (1 + \dfrac{V_E}{V})$.
 
-$\Delta t = T_B$ est la période du signal perçue par l'observateur, donc 
-$$ T_B = T_E (1 + \dfrac{V_E}{V})$$ 
+$\Delta t = T_B$ est la période du signal perçue par l'observateur, donc
+$$ T_B = T_E (1 + \dfrac{V_E}{V})$$
 {{% /solution %}}
 
 6. Exprimer la relation liant $f_B$, $f_E$, V et $V_E$ dans cette situation.
@@ -151,15 +153,16 @@ $1 + \dfrac{V_E}{V}} > 1$. On en déduit que $f_B = \dfrac{f_E}{1 + \dfrac{V_E}{
 
 8. Quelle est l'expression littérale de la valeur de la vitesse $V_E$ de l'émetteur&nbsp;?
 {{% solution "Réponse" %}}
-On déduit de l'expression précédente que 
+On déduit de l'expression précédente que
 $$V_E = V \left( \dfrac{f_E}{f_B} - 1 \right)$$
 {{% /solution %}}
 
 {{% note tip %}}
 Lorsque qu'un émetteur sonore $E$ s'éloigne d'un observateur $B$, la fréquence du signal perçu par cet observateur est $$f_B = \dfrac{f_E}{1 + \dfrac{V_E}{V}} < f_E$$
-où 
-- $f_E$ est la fréquence du signal produit par l'émetteur&nbsp;; 
-- $f_B$ est la fréquence du signal reçu par l'observateur&nbsp;; 
+où
+
+- $f_E$ est la fréquence du signal produit par l'émetteur&nbsp;;
+- $f_B$ est la fréquence du signal reçu par l'observateur&nbsp;;
 - $V$ est la valeur de la vitesse de l'onde *par rapport à l'observateur immobile*&nbsp;;
 - $V_E$ est la valeur de la vitesse de l'émetteur *par rapport à l'observateur immobile*.
 
@@ -207,15 +210,14 @@ $ f_A = \dfrac{f_E}{1 - \dfrac{V_E}{V}} \Leftrightarrow f_E = f_A \left( 1 - \df
 **A.N.** $V_E = \pu{340 m/s} \times \dfrac{\pu{248 Hz} - \pu{221 Hz}}{\pu{248 Hz} + \pu{221 Hz}} = \pu{19,6 m/s} = \pu{70,5 km/h}$.
 {{% /solution %}}
 
-
-
-
 ## Culture&nbsp;: Le bang supersonique
 
 ### L'explication
+
 {{% youtube "JO4_VHM69oI" %}}
 
 ### Des exemples spectaculaires
+
 {{% youtube "/gWGLAAYdbbc" %}}
 
 ### Le double bang

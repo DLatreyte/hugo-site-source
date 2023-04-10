@@ -1,6 +1,6 @@
 ---
 title: "Un effet lié au mouvement relatif de l’émetteur et du récepteur : l’effet Doppler"
-subtitle: "Chapitre 2,1,1"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-09-07T20:46:27+04:00
@@ -15,7 +15,7 @@ auto_numbering: true
 
 L'objectif de cette activité est la découverte de l'impact sur l'une des caractéristiques des ondes périodiques du mouvement relatif de l'émetteur et du récepteur.
 
-## Animation 
+## Animation
 
 Une animation liée à cette activité se trouve à cette adresse&nbsp;: [https://ggbm.at/tbchtyzv](https://ggbm.at/tbchtyzv). Elle est utilisable en ligne ou directement depuis l'application GeoGebra sur votre smartphone.
 
@@ -32,6 +32,7 @@ L’avertisseur à l’avant d’une voiture à l’arrêt émet des «&nbsp;bip
 3. Comparer la fréquence de réception des bips par la personne à celle de la fréquence d’émission des bips par la voiture.
 
 {{% solution "Réponses" %}}
+
 1. Les fronts d'onde sont des sphères centrées sur l'endroit où se trouve l'émetteur.
 2. <img src="/terminales-pc/chap-2/chap-2-1-1-corrige.jpg" width="" alt="" />
 3. Sur le schéma, la distance entre deux fronts d’onde consécutifs est constante, depuis la voiture jusqu’à l’observateur. L’observateur reçoit donc le même nombre de bips par unité de temps qu’il y a eu de bips émis par unité de temps. *Les fréquences $f_r$ de réception et d’émission $f_e$ des bips sont les mêmes.*
@@ -45,12 +46,12 @@ La voiture émet toujours les mêmes «&nbsp;bips&nbsp;» à intervalle de temps
 
 4. À l’instant $t=0$, l’avant de la voiture émet un bip depuis le point $O$, origine de l’axe $(Ox)$. On suppose, là encore, que, sur le schéma, le front d’onde émis à l’instant $t=0$ s’est déplacé d’une distance de $\pu{3 cm}$ sur le papier pendant une période $T_e=\pu{1 s}$. {{< remote "Document à télécharger" "/terminales-pc/chap-2/EffetDoppler.pdf" >}}
     1. Représenter sur la **Figure 3-1**, à $t=T_e$ ce premier front d’onde.
-	2. En supposant que la vitesse de la voiture est 3 fois moins grande que celle de la propagation du son (une voiture ne peut pas aller aussi vite mais on fait cette supposition pour que l’effet Doppler soit bien «&nbsp;visible&nbsp;» sur le schéma), indiquer sur le schéma précédent la position de l’avant de la voiture à l’instant $t=T_e=\pu{1 s}$.
+    2. En supposant que la vitesse de la voiture est 3 fois moins grande que celle de la propagation du son (une voiture ne peut pas aller aussi vite mais on fait cette supposition pour que l’effet Doppler soit bien «&nbsp;visible&nbsp;» sur le schéma), indiquer sur le schéma précédent la position de l’avant de la voiture à l’instant $t=T_e=\pu{1 s}$.
 5. Tracer sur les **Figures 3-2**, **Figures 3-3**, **Figures 3-4**, les différentes positions de la voiture aux dates $t=2\,T_e=\pu{2 s}$&nbsp;; $t=3\,T_e=\pu{3 s}$&nbsp;; $t=4\,T_e=\pu{4 s}$ et les différents fronts d’onde.
 6. L’observateur reçoit-il le même nombre de bips par unité de temps que dans le cas où la voiture est immobile&nbsp;?
 7. Comparer la fréquence de réception des bips perçue par l’observateur et celle des bips émis par la voiture.
-8.  Comment évolueraient les cercles tracés si la voiture allait encore plus vite&nbsp;? Quelle serait l’évolution de la perception&nbsp;?
-9.  La fréquence de perception des bips dépend-elle uniquement de la vitesse $\overrightarrow{V_e}$ ou varie-telle avec la distance qui sépare l’émetteur du récepteur&nbsp;?
+8. Comment évolueraient les cercles tracés si la voiture allait encore plus vite&nbsp;? Quelle serait l’évolution de la perception&nbsp;?
+9. La fréquence de perception des bips dépend-elle uniquement de la vitesse $\overrightarrow{V_e}$ ou varie-telle avec la distance qui sépare l’émetteur du récepteur&nbsp;?
 
 {{% solution "Réponses" %}}
 4. <img src="/terminales-pc/chap-2/fig-3-1.jpg" width="100%" alt="" />
@@ -69,7 +70,7 @@ La voiture émet toujours les mêmes «&nbsp;bips&nbsp;» à intervalle de temps
 Sur le schéma de la situation à la date $t=4\,Te=\pu{4 s}$, dessiner un observateur situé à gauche de $O$ le plus loin possible sur l’axe.
 
 10. Pour cet observateur, que fait la voiture&nbsp;?
-11.  L’observateur reçoit-il le même nombre de bips par unité de temps que dans la situation statique (section 1 de ce document)&nbsp;? Comparer la fréquence de réception des bips perçue par l’observateur et celle des bips émis par la voiture.
+11. L’observateur reçoit-il le même nombre de bips par unité de temps que dans la situation statique (section 1 de ce document)&nbsp;? Comparer la fréquence de réception des bips perçue par l’observateur et celle des bips émis par la voiture.
 
 {{% solution "Réponses" %}}
 10. Pour cet observateur, la voiture s’éloigne.
