@@ -91,3 +91,63 @@ auto_numbering: true
 2. Réaliser le tour de magie.  
 Noter toutes les observations.
 3. Justifier les résultats obtenus.
+
+{{% solution "Corrigé" %}}
+
+#### Observations
+
+1. Solution aqueuse verte + eau ↓
+    - Aucune modification visible, si ce n'est une coloration moins prononcée
+2. Solution aqueuse verte + éthanol ↓
+    - Aucune modification dans un premier temps
+    - Après décantation :
+        - cristaux bleu au fond du tube
+        - La solution se colore en jaune en haut du tube
+3. Solution aqueuse verte + chlorure de baryum ↓
+    - Un précipité blanc s'est formé
+4. Solution aqueuse verte + cyclohexane ↓
+    - Apparition de deux phases
+        - Le mélange est hétérogène
+    - Phase supérieure→Se colore en rose/fuchsia
+    - Phase inférieure→Se colore en bleu
+5. Solution aqueuse verte + soude (hydroxyde de sodium) ↓
+    - Formation d'un précipité bleu
+
+#### Interprétations
+
+1. Normal car le solvant est l'eau
+2.  
+3. Formation du précipité blanc : présence soit de **diiode**, soit d'ions sulfate dans la solution verte
+4. Mélange hétérogène : l'eau et le cyclohexane ne sont pas miscibles
+    - Liquides non miscibles↔Leur mélange est hétérogène
+    1. Le cyclohexane est moins dense que l'eau, il constitue la phase supérieure
+        1. Comment le déterminer expérimentalement : ajouter de l'eau et regarder quelle phase voit son volume augmenter
+    2. Couleur de la phase supérieure : présence de **diiode**
+    3. Couleur de la phase inférieure : présence d'**ions cuivre** ou d'ions manganate
+5. Formation du précipité bleu : présence d'**ions cuivre** dans la solution verte.
+
+#### Conclusion(s)
+
+- La solution verte est formée d'ions cuivre et de diiode
+- Justification à partir des spectres d'absorption
+  - <img src="/premieres-pc/chap-12/chap-12-5/im1.png" alt="" width="" />
+  - <img src="/premieres-pc/chap-12/chap-12-5/im2.png" alt="" width="" />
+- Le diiode est plus soluble dans le cyclohexane que dans l'eau
+- Les ions cuivre sont plus solubles dans l'eau que dans le cyclohexane
+
+### Extraction par solvant
+
+{{% note tip %}}
+
+#### Extraction liquide-liquide
+
+- **Objectif :** Séparer deux entités **solubilisées dans un mélange homogène**
+- Comment ? ↓
+  - On choisit un solvant extracteur ↓
+    - Non miscible avec l'eau
+    - Dans lequel l'entité à extraire est très soluble
+  - On utilise une ampoule à décanter
+
+{{% /note %}}
+
+{{% /solution %}}
