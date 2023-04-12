@@ -43,3 +43,5 @@ layout: "single"
 - **Doc. :** [*Propriétés des savons*](4-proprietes-savons)
 
 - **Doc. :** [*Un tour de magie*](5-tour-de-magie)
+
+- **Doc. :** [*Exercices, livre Hatier*](6-exercices)
