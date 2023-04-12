@@ -1,6 +1,6 @@
 ---
 title: "Parcours de graphes"
-subtitle: "Chapitre 15,3"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-04-29T09:18:21+04:00
