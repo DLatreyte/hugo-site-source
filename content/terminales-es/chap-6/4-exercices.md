@@ -1,6 +1,6 @@
 ---
 title: "Exercices"
-subtitle: "Chapitre 2,4"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-01-21T08:21:54+04:00
@@ -17,19 +17,21 @@ auto_numbering: false
 
 - {{< remote "Accès à l'énoncé sur le Livre Scolaire" "https://www.lelivrescolaire.fr/page/10535966?docId=LMh9LX3YdkeHCOd21ne09" >}}
 {{% solution "Réponse" %}}
-Soient $r\_1$, $r\_2$ et $r\_3$ les rendements de conversion des centrales nucléaires, d'acheminement de l'électricité et de conversion de l'énergie par la bouilloire. Alors, 
+Soient $r\_1$, $r\_2$ et $r\_3$ les rendements de conversion des centrales nucléaires, d'acheminement de l'électricité et de conversion de l'énergie par la bouilloire. Alors,
 - $r\_1 = \dfrac{E\_{\text{sortie centrale}}}{E\_{\text{nucléaire}}}$
-- $r\_2 = \dfrac{E\_{\text{sortie prise élec}}}{E\_{\text{sortie centrale}}}$ 
+- $r\_2 = \dfrac{E\_{\text{sortie prise élec}}}{E\_{\text{sortie centrale}}}$
 - $r\_3 = \dfrac{E\_{\text{thermique}}}{E\_{\text{sortie prise élec}}}$.
 
-On donc 
+On donc
+
 - $E\_{\text{sortie centrale}} = r\_1 \\, E\_{\text{nucléaire}}$
 - $E\_{\text{sortie prise élec}} = r\_2 \\, E\_{\text{sortie centrale}}$
-- $E\_{\text{thermique}} = r\_3 \\, E\_{\text{sortie prise élec}}$. 
+- $E\_{\text{thermique}} = r\_3 \\, E\_{\text{sortie prise élec}}$.
 
-Ces relations entraînent 
+Ces relations entraînent
+
 - $E\_{\text{thermique}} = r\_3 \\, E\_{\text{sortie prise élec}}$
-- puis $ E\_{\text{thermique}} = r\_3 \\, r\_2 \\, E\_{\text{sortie centrale}}$ 
+- puis $ E\_{\text{thermique}} = r\_3 \\, r\_2 \\, E\_{\text{sortie centrale}}$
 - et finalement $ E\_{\text{thermique}} = r\_3 \\, r\_2 \\, r\_1 \\, E\_{\text{nucléaire}}$.
 
 Comme le rendement global a pour définition : $r = \dfrac{r\_3 \\, E\_{\text{sortie prise élec}}}{E\_{\text{nucléaire}}}$, $$r = r\_3 \\, r\_2 \\, r\_1$$
@@ -37,7 +39,6 @@ Comme le rendement global a pour définition : $r = \dfrac{r\_3 \\, E\_{\text{so
 **A.N.** $r = \pu{0,30} \times \pu{0,94} \times \pu{0,85} = \pu{0,24}$. Le rendement global est de 24&nbsp;%.
 
 {{% /solution %}}
-
 
 ## Exercice n° 6 -- La pile à combustible
 
@@ -60,7 +61,6 @@ Comme le rendement global a pour définition : $r = \dfrac{r\_3 \\, E\_{\text{so
 4. Une pile à combustible a tout de même un impact écologique lors de sa fabrication. Mais le dihydrogène doit surtout être synthétisé pour alimenter la pile et cela nécessite plus d'énergie que ce que peut fournir la pile. Il peut aussi être produit par électrolyse de l’eau, mais c’est très énergivore. D’autres inconvénients sont la pollution entraînée lors de la synthèse à partir d’hydrocarbures, avec rejets de gaz à effets de serre, mais aussi le caractère très explosif de ce gaz. De plus, la taille de ces dispositifs reste également un frein à leur utilisation.
 {{% /solution %}}
 
-
 ## Exercice n° 10, A -- Condensateur, un réservoir d’énergie électromagnétique
 
 - {{< remote "Accès à l'énoncé sur le Livre Scolaire" "https://www.lelivrescolaire.fr/page/10536398?goTo=n1rin3C_SpSyFjywyUxU7" >}}
@@ -76,7 +76,6 @@ Comme le rendement global a pour définition : $r = \dfrac{r\_3 \\, E\_{\text{so
 
 5. La différence entre un supercondensateur et un accumulateur est la forme d’énergie qui est stockée. Il s’agit d’énergie électromagnétique pour un supercondensateur, mais d’énergie chimique pour un accumulateur. De plus, dans un accumulateur, les électrodes sont consommées lors de la décharge et reconstituées lors de la charge, alors que les électrodes ne sont pas modifiées dans un supercondensateur.
 {{% /solution %}}
-
 
 ## Exercice n° 10, B -- Usine marémotrice
 

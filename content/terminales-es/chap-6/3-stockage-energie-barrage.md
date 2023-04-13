@@ -1,6 +1,6 @@
 ---
 title: "Énergie stockée dans un barrage"
-subtitle: "Chapitre 2,3"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-01-14T08:14:58+04:00
@@ -20,13 +20,13 @@ auto_numbering: true
 - {{< remote "Accès aux documents sur le Livre Scolaire" "https://www.lelivrescolaire.fr/page/5413672" >}}
 
 - Quelques ressources supplémentaires (pas indispensables pour répondre aux questions) :
-    - Principes des batteries Lithium-Ion :
+  - Principes des batteries Lithium-Ion :
     {{< youtube "VQyooUrr5B8">}}
 
-    - Usages des batteries au Lithium-Ion
+  - Usages des batteries au Lithium-Ion
     {{< youtube "n4PzflXG3Rk" >}}
 
-    - Les voitures du futur au Lithium-ion
+  - Les voitures du futur au Lithium-ion
     {{< youtube "Ln7m3_mquY0" >}}
 
 ## Exploitation
@@ -48,7 +48,8 @@ Les pertes énergétiques au niveau de la centrale hydroélectrique viennent de 
 
 4. Calculer le rendement de la centrale hydroélectrique.
 {{% solution "Réponse" %}}
-- Rappel : Rendement 
+
+- Rappel : Rendement
 $$ r = \dfrac{E\_{\text{utile}}}{E\_{\text{fournie}}}  $$
 
 - $r = \dfrac{\pu{2080 MJ}}{\pu{3600 MJ} - \pu{1270 MJ} - \pu{60 MJ}} = \pu{0,92}$\
