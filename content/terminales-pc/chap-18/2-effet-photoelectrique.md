@@ -1,6 +1,6 @@
 ---
 title: "L'effet photoélectrique"
-subtitle: "Chapitre 18,2"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-04-26T21:33:12+04:00
@@ -43,12 +43,12 @@ Un grain d'énergie est un photon. Les photons peuvent être absorbés par les a
 Il faut $E_{r_0} = W_{\text{extraction}}$. Comme $E_{r_0}= h\\, \nu_0$,
 $$
     h\\, \nu_0 = W_{\text{extraction}} \iff \nu_0 =\dfrac{W_{\text{extraction}}}{h}
-$$ 
+$$
 {{% /solution %}}
 
 4. Justifier l'expression de l'énergie cinétique d'un électron émis par effet photoélectrique :
 $$
-    E_C= h\\, \nu - W_{\text{extraction}} 
+    E_C= h\\, \nu - W_{\text{extraction}}
 $$
 Indiquer comment Millikan a pu en déduire une valeur précise de la constante de Planck.
 

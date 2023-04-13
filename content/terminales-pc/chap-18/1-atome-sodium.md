@@ -1,6 +1,6 @@
 ---
 title: "Diagramme énergétique de l'atome de sodium"
-subtitle: "Chapitre 18,1"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-04-26T19:51:00+04:00
@@ -16,15 +16,17 @@ auto_numbering: true
 ## Documents
 
 {{% note normal %}}
+
 #### Caractéristiques d'une onde électromagnétique sinusoïdale
 
-Une onde électromagnétique sinusoïdale est caractérisée par sa fréquence $\nu$ (en hertz) et sa longueur d'onde $\lambda$ (en mètre). La relation entre ces deux grandeurs est : 
+Une onde électromagnétique sinusoïdale est caractérisée par sa fréquence $\nu$ (en hertz) et sa longueur d'onde $\lambda$ (en mètre). La relation entre ces deux grandeurs est :
 $$
     \lambda= \dfrac{c}{\nu}
 $$ où $c$ est la célérité de l'onde dans le milieu dans lequel elle se propage ($c = \pu{3,0e8 m.s-1}$ dans le vide).
 {{% /note %}}
 
 {{% note normal %}}
+
 #### Photon
 
 En 1900, pour comprendre comment la matière et les ondes
@@ -36,15 +38,16 @@ En 1926, Gilbert Newton Lewis invente le mot **photon** pour nommer les particul
 
 Il existe donc deux modèles **complémentaires** pour décrire le comportement d'un rayonnement :
 
--   *ondulatoire* : un rayonnement est une *onde périodique sinusoïdale* de fréquence $\nu$ se propageant à la célérité $c$ dans le milieu ;
+- *ondulatoire* : un rayonnement est une *onde périodique sinusoïdale* de fréquence $\nu$ se propageant à la célérité $c$ dans le milieu ;
 
--   *corpusculaire* : un rayonnement est constitué par des *photons*, *particules sans masse* se propageant à la célérité $c$ dans le milieu et possédant l'énergie (en joule J) : $$E_r = h \nu$$ où $\nu$ est la fréquence de l'onde associée au photon et $h$ la constante de Planck ($h = \pu{6,63e-34 J.s}$).
+- *corpusculaire* : un rayonnement est constitué par des *photons*, *particules sans masse* se propageant à la célérité $c$ dans le milieu et possédant l'énergie (en joule J) : $$E_r = h \nu$$ où $\nu$ est la fréquence de l'onde associée au photon et $h$ la constante de Planck ($h = \pu{6,63e-34 J.s}$).
 
 <img src="/terminales-pc/chap-18/chap-18-1/chap-18-1-1.png" alt="" width="50%" />
 > En fonction des problèmes, il peut être plus pratique de considérer un rayonnement soit comme une onde, soit comme un corpuscule : **dualité onde-particule**.
 {{% /note %}}
 
 {{% note normal %}}
+
 #### Quantification de l'énergie des atomes
 
 Les physiciens de la première partie du XX^ème^ siècle ont montré qu'un atome, *comme tous les édifices microscopiques*, ne peut se trouver que dans des **états d'énergie bien déterminés**. Les électrons s'organisent
@@ -53,6 +56,7 @@ L'atome est alors dans son **état fondamental**.
 {{% /note %}}
 
 {{% note normal %}}
+
 #### Échanges d'énergie entre un atome et son environnement
 
 Lorsqu'un atome reçoit de l'énergie de l'environnement, les électrons (préférentiellement les électrons de valence) peuvent « sauter » vers des niveaux d'énergie supérieure. L'atome est alors dans un **état excité** (ou plus simplement : **est excité**).
@@ -65,6 +69,7 @@ Un atome finit toujours par restituer l'énergie reçue au milieu extérieur. *L
 {{% /note %}}
 
 {{% note normal %}}
+
 #### Diagramme de Gotrian du sodium
 
 Un diagramme de Gotrian indique les niveaux d'énergie d'un atome et les transitions possibles pour les électrons dans son cortège électronique.\
@@ -124,6 +129,7 @@ Conversion de l'énergie : $\Delta E(eV)= \dfrac{\Delta E(J)}{\pu{1,6e-19 J⋅eV
 
 9. Quelles sont les radiations, présentes dans ce diagramme, qui appartiennent au domaine de l'ultraviolet ? À quel domaine appartiennent les autres raies citées ?
 {{% solution "Solution" %}}
+
 - UV : toutes les radiations de longueur d'onde inférieure à $\pu{4000 Å}$.
 - Les radiations de longueur d'onde supérieure à $\pu{8000 Å}$ se situent dans le domaine des IR.
 {{% /solution %}}

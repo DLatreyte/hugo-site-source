@@ -1,6 +1,6 @@
 ---
 title: "Étude d’une cellule photovoltaïque"
-subtitle: "Chapitre 18,4"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-05-03T12:33:36+04:00
@@ -15,4 +15,3 @@ auto_numbering: true
 
 
 {{< remote "Activité sur le Livre Scolaire" "https://www.lelivrescolaire.fr/page/82985" >}}
-

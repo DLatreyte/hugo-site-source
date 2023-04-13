@@ -1,6 +1,6 @@
 ---
 title: "Photon : onde ou particule ?"
-subtitle: "Chapitre 18,5"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-05-03T12:44:46+04:00
