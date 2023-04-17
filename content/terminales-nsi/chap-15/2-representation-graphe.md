@@ -27,6 +27,8 @@ def __init__(self: GrapheM, mat: List[List[int]]) -> None:
         """
 ```
 
+**Remarque :** cette classe possède l'attribut `mat` qui référence la matrice d'adjacence.
+
 {{% solution "Solution" %}}
 
 ```python
@@ -206,11 +208,13 @@ Dans cette partie, on implémente la liste d'adjacence (liste des voisins) d'un 
 La spécification du constructeur de la classe est :
 
 ```python
-def __init__(self: GrapheM, lst: List[List[int]]) -> None:
+def __init__(self: GrapheL, lst: List[List[int]]) -> None:
         """
         Constructeur de la classe.
         """
 ```
+
+**Remarque :** cette classe possède l'attribut `lst` qui référence une liste d'adjacence.
 
 {{% solution "Solution" %}}
 
@@ -371,18 +375,22 @@ print(graph23)
 ```python
 def lst_to_mat(self: GrapheL) -> GrapheM:
     """
-    Génère la matrice sommet-sommet à partir de la liste des voisins/successeurs.
+    Génère la matrice sommet-sommet à partir de la liste des 
+    voisins/successeurs.
     """
-    liste = []  # liste des relations pour tous les sommets
-    for i in range(len(self.lst)):
-        rel = []  # relations pour un sommet donné
-        for j in range(len(self.lst)):
+    mat = []
+    n = len(self.lst)
+
+    for i in range(n):
+        ligne = []
+        for j in range(n):
             if j in self.lst[i]:
-                rel.append(1)
+                ligne.append(1)
             else:
-                rel.append(0)
-        liste.append(rel)
-    return GrapheM(liste)
+                ligne.append(0)
+        mat.append(ligne)
+
+    return GrapheM(mat)
 ```
 
 {{% /solution %}}
@@ -390,7 +398,7 @@ def lst_to_mat(self: GrapheL) -> GrapheM:
 16. Ajouter à la classe `GrapheM` la méthode `mat_to_lst` dont la spécification est :
 
 ```python
-def mat_to_lst(self) -> GrapheL:
+def mat_to_lst(self: GrapheM) -> GrapheL:
     """
     Génère la liste des voisins/successeurs à partir de la matrice sommet-sommet.
     """
@@ -408,7 +416,7 @@ print(graph24)
 {{% solution "Solution" %}}
 
 ```python
-def mat_to_lst(self) -> GrapheL:
+def mat_to_lst(self: GrapheM) -> GrapheL:
     """
     Génère la liste des voisins/successeurs à partir de la matrice sommet-sommet.
     """
