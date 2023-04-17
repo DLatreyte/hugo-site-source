@@ -129,7 +129,8 @@ def nbre_sommets(self: GrapheM) -> int:
 ```python
 def est_lie(self: GrapheM, i: int, j: int) -> bool:
     """
-    Retourne True s'il existe une relation (arête ou arc) entre les sommets i et j, False sinon.
+    Retourne True s'il existe une relation (arête ou arc) 
+    entre les sommets i et j, False sinon.
     """
 ```
 
@@ -146,9 +147,10 @@ assert graph11.est_lie(2, 0) == False
 ```python
 def est_lie(self: GrapheM, i: int, j: int) -> bool:
     """
-    Retourne True s'il existe une relation (arête ou arc) entre les sommets i et j, False sinon.
+    Retourne True s'il existe une relation (arête ou arc) 
+    entre les sommets i et j, False sinon.
     """
-    return self.mat[i][j] == 1
+    return self.mat[i][j] != 0 
 ```
 
 {{% /solution %}}
@@ -162,9 +164,11 @@ def est_lie(self: GrapheM, i: int, j: int) -> bool:
 
 ```python
 def est_non_oriente(self: GrapheM) -> bool:
-    """
-    Retourne True si le graphe est non orienté (si la matrice est symétrique) et False si le graphe est orienté.
-    """
+        """
+        Retourne True si le graphe est non orienté 
+        (si la matrice est symétrique) et False si le 
+        graphe est orienté.
+        """
 ```
 
 Jeu de tests :
@@ -178,14 +182,18 @@ assert graph21.est_non_oriente() == True
 
 ```python
 def est_non_oriente(self: GrapheM) -> bool:
-    """
-    Retourne True si le graphe est non orienté (si la matrice est symétrique) et False si le graphe est orienté.
-    """
-    for i in range(len(self.mat)):
-        for j in range(len(self.mat[i])):
-            if self.mat[i][j] != self.mat[j][i]:
-                return False
-    return True
+        """
+        Retourne True si le graphe est non orienté 
+        (si la matrice est symétrique) et False si le 
+        graphe est orienté.
+        """
+        n = len(self.mat)
+
+        for i in range(n):
+            for j in range(i+1, n):
+                if self.mat[i][j] != self.mat[j][i]:
+                    return False
+        return True
 ```
 
 {{% /solution %}}
