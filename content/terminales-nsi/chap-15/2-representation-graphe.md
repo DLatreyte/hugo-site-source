@@ -160,6 +160,7 @@ def est_lie(self: GrapheM, i: int, j: int) -> bool:
 7. Quelle est la particularité de la matrice sommet-sommet d'un graphe non orienté ?
 
 {{% solution "Solution" %}}
+La matrice est symétrique par rapport à la diagonale.
 {{% /solution %}}
 
 8. Écrire le code de la fonction `est_non_oriente` dont la spécification est
