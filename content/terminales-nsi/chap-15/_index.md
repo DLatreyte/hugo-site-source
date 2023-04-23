@@ -28,10 +28,16 @@ layout: "single"
 
 ## Documents
 
-- **Doc.** [Les graphes : structure de données](1-graphes-structure-de-donnees)
+- **Doc.** [*Les graphes : structure de données*](1-graphes-structure-de-donnees)
 
-- **Doc.** [Représentation d'un graphe en informatique](2-representation-graphe)
+- **Doc.** [*Représentation d'un graphe en informatique*](2-representation-graphe)
 
+<!--
 - **Doc.** [Parcours de graphes](3-parcours-graphes)
+-->
 
+- **Doc.** <a href="/terminales-nsi/chap-15/chap-15-3/Parcours-graphes-html.html" target="_blank">*Parcours de graphes*</a>
+
+<!--
 - **Doc.** [Parcours en profondeur : programme en Python](4-parcours-profondeur-python)
+-->
