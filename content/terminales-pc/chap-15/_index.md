@@ -36,14 +36,18 @@ layout: "single"
 - **Doc.** [*Décroissance radioactive*](3-decroissance-radioactive)
 -->
 
-- **Doc.** <a href="/terminales-pc/chap-15/chap-15-3/chap-15-3-html.html" target="_blank">Décroissance radioactive</a>
+- **Doc.** <a href="/terminales-pc/chap-15/chap-15-3/chap-15-3-html.html" target="_blank">*Décroissance radioactive*</a>
 
-- **Doc.** <a href="/terminales-pc/chap-15/chap-15-6/chap-15-6.html" target="_blank">Décroissance radioactive, exercices</a>
+- **Doc.** <a href="/terminales-pc/chap-15/chap-15-6/chap-15-6.html" target="_blank">*Décroissance radioactive, exercices*</a>
 
 - **Doc.** [*Origine microscopique de la loi de décroissance radioactive*](6-origine-microscopique-decroissance-radioactive)
 
+<!--
 - **Doc.** [*Applications de la radioactivité à la datation*](4-datation)
+-->
+
+- **Doc.** <a href="/terminales-pc/chap-15/chap-15-4/chap-15-4-datation.html" target="_blank">*Applications de la radioactivité à la datation*</a>
 
 - **Doc.** [*Doses de radiations*](5-radiations)
 
-- **Doc.** <a href="/terminales-pc/chap-15/chap-15-7/chap-15-07.html" target="_blank">Annale : La médecine nucléaire</a>
+- **Doc.** <a href="/terminales-pc/chap-15/chap-15-7/chap-15-07-medecine-nucleaire.html" target="_blank">*Annale : La médecine nucléaire*</a>
