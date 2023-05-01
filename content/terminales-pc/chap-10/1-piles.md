@@ -1,6 +1,6 @@
 ---
 title: "Réalisation d'une pile électrochimique"
-subtitle: "Chapitre 11,1"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-01-18T21:52:27+04:00
@@ -15,15 +15,15 @@ auto_numbering: true
 
 ## Transfert spontané direct d'électrons
 
-### Manipulations 
+### Manipulations
 
 {{% note exercise %}}
 
 - Dans deux tubes à essais, notés 1 et 2, verser quelques mL de solution aqueuse décimolaire de sulfate de cuivre (II) ;
 - Dans le tube n°2, ajouter une pointe de spatule de poudre de zinc ;
-- Boucher le tube à essais et agiter. Laisser décanter ; 
-- Filtrer le contenu du tube n°2 et noter la teinte de la limaille de zinc ; 
-- Comparer la teinte du tube n°1 (tube témoin) et du filtrat ; 
+- Boucher le tube à essais et agiter. Laisser décanter ;
+- Filtrer le contenu du tube n°2 et noter la teinte de la limaille de zinc ;
+- Comparer la teinte du tube n°1 (tube témoin) et du filtrat ;
 - Ajouter dans les deux tubes quelques gouttes de soude (solution d’hydroxyde de sodium molaire) ;
 - Observer.
 
@@ -36,7 +36,6 @@ auto_numbering: true
 - L'ajout de la solution de soude dans le tube n°2 provoque la formation d'un précipité blanc.
 - L'ajout de la solution de soude dans le tube n°1 provoque la formation d'un précipité bleu.
 {{% /solution %}}
-
 
 {{% note exercise %}}
 
@@ -73,11 +72,11 @@ Ce sont des témoins. Ils permettent par exemple de se souvenir de la coloration
 - Aucune modification visible dans le tube n°4. L'ajout de soude provoque juste la formation d'hydroxyde de zinc (les ions zinc sont présents dès le début de l'expérience). On peut en conclure qu'aucune réaction chimique ne s'est déroulée dans le milieu.
 
 - De nombreuses modifications ont lieu dans le tube n°2 :
-    - La décoloration de la solution laisse penser que la concentration des ions cuivre a fortement baissé, ce qui est confirmé par la non formation d'hydroxyde de cuivre lors de l'ajout de soude.
+  - La décoloration de la solution laisse penser que la concentration des ions cuivre a fortement baissé, ce qui est confirmé par la non formation d'hydroxyde de cuivre lors de l'ajout de soude.
 
-    - La formation du précipité blanc laisse penser que des ions zinc sont apparus dans la solution.
-    
-    - Au vu des conclusions précédentes, on peut aussi être amené à penser que le dépôt rouge à la surface du zinc pourrait être du cuivre.
+  - La formation du précipité blanc laisse penser que des ions zinc sont apparus dans la solution.
+
+  - Au vu des conclusions précédentes, on peut aussi être amené à penser que le dépôt rouge à la surface du zinc pourrait être du cuivre.
 
     On peut en conclure qu'il existe une réaction chimique dans le tube à essais n° 2.
 {{% /solution %}}
@@ -115,7 +114,6 @@ La réaction étudiée met en jeu un **transfert direct d'électrons à la surfa
 {{% /note %}}
 
 {{% /solution %}}
-
 
 ## Transfert spontané indirect d'électrons
 
@@ -186,7 +184,7 @@ $$
 - Les électrons qui parviennent au niveau de l'électrode de cuivre ne peuvent pas entrer dans la solution et **ne peuvent pas s'accumuler**.\
 Les électrons sont donc **consommés par une réaction chimique**.
 
-- La seule entité susceptible de consommer des électrons est l'ion cuivre *puisque c'est un oxydant*. On peut donc envisager la réaction d'équation 
+- La seule entité susceptible de consommer des électrons est l'ion cuivre *puisque c'est un oxydant*. On peut donc envisager la réaction d'équation
 $$
     \ce{Cu^{2+} (aq) + 2e^ --> Cu (s)}
 $$
@@ -254,7 +252,6 @@ $$Q\_{r,i} = \dfrac{\dfrac{[\ce{Zn^{2+}}]\_i}{C^o}}{\dfrac{[\ce{Cu^{2+}}]\_i}{C^
 Le système évolue tant que $Q\_{r} < K$, une pile en fonctionnement est donc un système hors équilibre.
 {{% /solution %}}
 
-
 <!-- Le cours commence ici -->
 ## Constitution d'une pile électrochimique
 
@@ -277,7 +274,6 @@ L'ensemble formé par **deux métaux plongeant chacun dans une solution contenan
 
 - Chaque compartiment d'une pile est appelé une demi-pile.
 <img src="/terminales-pc/chap-10/chap-10-1/pile3.svg" alt="" width="50%" />
-
 
 - Schématisation formelle d'une pile :
 $$
@@ -308,8 +304,8 @@ $$
 - La plaque de métal est appelée **électrode**. *C'est à sa surface que se produisent les transferts d'électrons*.
 {{% /note %}}
 
-
 {{% note tip %}}
+
 #### Force électromotrice d'une pile
 
 Un voltmètre électronique branché aux bornes d'une pile qui n'est connectée à aucun circuit électrique mesure sa **force électromotrice** $E$. *La force électromotrice est donc la tension à vide de la pile*).
@@ -319,6 +315,7 @@ Remarque
 : La tension aux bornes d'une pile en fonctionnement est généralement plus petite que sa force électromotrice.
 
 {{% note tip %}}
+
 #### Évolution spontanée d'une pile
 
 - *Lorsqu'elle débite, une pile est un **système hors équilibre**.*
@@ -329,10 +326,10 @@ Remarque
 $$ Q\_{r,eq} = K \qquad \text{et} \qquad I\_{eq} = 0 $$
 {{% /note %}}
 
-
 ## Comment décrire le fonctionnement d'une pile à partir d'une mesure expérimentale&nbsp;?
 
 {{% note tip %}}
+
 #### Étapes à suivre pour décrire précisément le fonctionnement d'une pile à partir d'une mesure expérimentale
 
 1. À partir de l'indication de l'ampèremètre ou du voltmère déterminer la polarité de la pile.
@@ -361,10 +358,7 @@ $$ Q\_{r,eq} = K \qquad \text{et} \qquad I\_{eq} = 0 $$
 18. Donner toutes les étapes qui permettent de décrire le fonctionnement de la pile étudiée dans la section 2.
 {{% solution "Réponse" %}}
 
-
 {{% /solution %}}
-
-
 
 {{% note exercise %}}
 On associe une demi-pile $\ce{Cu^{2+}/Cu}$ telle que $[\ce{Cu^{2+}}]\_i = \pu{0,050 mol.L-1}$ à une demi-pile $\ce{Ag+/Ag}$ telle que $[\ce{Ag+}]\_i = \pu{0,010 mol.L-1}$, à l'aide d'un pont salin au nitrate d'ammonium.
@@ -378,16 +372,18 @@ Prévoir dans quel sens va évoluer le système.
 
 2. En déduire les réactions aux électrodes et le sens de déplacement des porteurs de charges dans la pile lorsqu'elle débite.
 
-3. Quelle est la polarité des électrodes&nbsp;? 
+3. Quelle est la polarité des électrodes&nbsp;?
 
 4. Faire un schéma de cette pile en précisant le sens
 de $I$ et le sens des électrons dans le circuit.
 {{% /note %}}
 
 {{% solution "Réponses" %}}
+
 1. $$
     Q\_{r,i} = \dfrac{[\ce{Ag+}]\_i^2}{[\ce{Cu^{2+}}]\_i \cdot C^o}
-$$ 
+$$
+
 avec $ C^o = \pu{1,00 mol.L-1}$.
 
     **A.N.** $Q\_{r,i} = \dfrac{\left( \pu{0,010 mol.L-1} \right)^2}{\pu{0,050 mol.L-1} \times \pu{1,00 mol.L-1}} = \pu{2,0e-3}$
@@ -397,7 +393,6 @@ avec $ C^o = \pu{1,00 mol.L-1}$.
 2. Il se produit donc :
     - À l'électrode de cuivre une oxydation (anode) $$\ce{Cu (s) --> Cu^{2+} (aq) + 2e-}$$
     - À l'électrode d'argent une réduction (cathode) $$\ce{Ag+ (aq) + e- --> Ag (s)}$$
-
 
     Les électrons se déplacent, à l'extérieur de la pile, de l'électrode de cuivre vers l'électrode d'argent. Le courant circule en sens inverse.
 
@@ -409,6 +404,7 @@ avec $ C^o = \pu{1,00 mol.L-1}$.
 ## Quantité d'électricité fournie par une pile
 
 {{% note tip %}}
+
 #### Faraday
 
 La valeur absolue de la **charge d'une mole d'électrons** définit le **faraday**, de symbole $\cal{F}$ :
@@ -417,7 +413,7 @@ $$
 $$
 avec $\cal{N}_A$ la constante d'Avogadro et $(-e)$ la charge d'un électron.
 
-On a donc 
+On a donc
 $$
 \pu{1 \cal{F}} = \vert \pu{6,02e23 mol-1} \times (\pu{-1,60e-19 C}) \vert = \pu{9,65e4 C.mol-1}
 $$
@@ -432,7 +428,7 @@ $$
 
 - Une pile, débitant un courant d'intensité constante $I$, pendant une durée $\Delta t$, fait circuler une quantité d'électricité $Q$ :
 $$
-    Q = I\\, \Delta t 
+    Q = I\\, \Delta t
 $$
 
 - La **capacité** d'une pile est la *quantité maximale d'électricité qu'elle peut fournir*.

@@ -1,6 +1,6 @@
 ---
-title: "Les piles, des générateurs omnipré-sents"
-subtitle: "Chapitre 11,5"
+title: "Les piles, des générateurs omniprésents"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-02-05T22:37:14+04:00
@@ -19,7 +19,7 @@ Les piles sont très diverses, faciles d’emploi et de faible coût. Leur forma
 
 <img src="/terminales-pc/chap-10/chap-10-5/chap-10-5-1.png" alt="" width="45%" style="float: right; padding-left: 15px;" />
 
-Ce sont des piles peu coûteuses, adaptées aux utilisations intermittentes ne nécessitant pas une forte intensité : sonneries, lampes de poche, \... Leur f.e.m vaut $\pu{1,5 V}$ ; leur énergie volumique est de l’ordre de $\pu{0,18 W⋅h⋅cm-3}$. La constitution d’une pile Leclanché est décrite sur la figure ci-contre, son schéma conventionnel s’écrit : 
+Ce sont des piles peu coûteuses, adaptées aux utilisations intermittentes ne nécessitant pas une forte intensité : sonneries, lampes de poche, \... Leur f.e.m vaut $\pu{1,5 V}$ ; leur énergie volumique est de l’ordre de $\pu{0,18 W⋅h⋅cm-3}$. La constitution d’une pile Leclanché est décrite sur la figure ci-contre, son schéma conventionnel s’écrit :
 $$
     \ce{Zn|Zn^{2+}} || \ce{NH4^+,Cl-} || \ce{MnO(OH)|MnO2} | \ce{C (s)}
 $$
@@ -34,7 +34,7 @@ $$
 
 <img src="/terminales-pc/chap-10/chap-10-5/chap-10-5-2.png" alt="" width="45%" style="float: right; padding-left: 15px;" />
 
-Les piles alcalines peuvent fournir, en courant continu, des intensités importantes. Elles peuvent donc être utilisées pour alimenter des baladeurs, des portables, \... Selon leur composition, leur f.e.m varie de $\pu{1,3 V}$ à $\pu{1,6 V}$ et leur énergie volumique de $\pu{0,24}$ à $\pu{0,50 W⋅h⋅cm-3}$. 
+Les piles alcalines peuvent fournir, en courant continu, des intensités importantes. Elles peuvent donc être utilisées pour alimenter des baladeurs, des portables, \... Selon leur composition, leur f.e.m varie de $\pu{1,3 V}$ à $\pu{1,6 V}$ et leur énergie volumique de $\pu{0,24}$ à $\pu{0,50 W⋅h⋅cm-3}$.
 
 Elles existent sous différents formats, tel que celui de la « pile bouton », décrit sur la figure ci-dessous.
 
@@ -65,7 +65,7 @@ Le lithium réagissant très violemment avec l’eau, l’électrolyte est const
 
 Une pile à combustible est une pile continuellement alimentée en réactifs et dont les produits sont éliminés en continu. La production de l'électricité se fait grâce à l'oxydation sur une électrode d'un combustible réducteur (par exemple le dihydrogène) couplée à la réduction sur l'autre électrode d'un oxydant, tel que le dioxygène de l'air. La réaction d'oxydation de l'hydrogène est accélérée par un catalyseur qui est généralement du platine. Si d'autres combinaisons sont possibles, la pile la plus couramment étudiée et utilisée est la pile dihydrogène-dioxygène ou dihydrogène-air (ceci s'expliquant notamment par l'abondance des ressources en hydrogène sur Terre et la facilité de production du dihydrogène).
 
-De telles piles sont utilisées dans les engins spatiaux. Cependant, leur alimentation soulève encore des problèmes. Des recherches se poursuivent car leur rendement élevé et leur faible pollution pourraient en faire des systèmes d’avenir. 
+De telles piles sont utilisées dans les engins spatiaux. Cependant, leur alimentation soulève encore des problèmes. Des recherches se poursuivent car leur rendement élevé et leur faible pollution pourraient en faire des systèmes d’avenir.
 
 La réaction de fonctionnement la plus fréquente de ces piles a pour équation :
 $$
@@ -91,19 +91,22 @@ $$
 8. Justifier le caractère acide de l’électrolyte.
 
 #### Énergie volumique
+
 9. Pourquoi le $\pu{watt⋅heure}$ est-il une unité d’énergie ?
 10. Que signifie $\pu{0,18 W⋅h⋅cm-3}$ ? Convertir cette valeur en $\pu{J⋅cm-3}$.
-	
+
 #### Pile alcaline
+
 11. Quel est l’électrolyte d’une pile alcaline ?
 12. Pourquoi dit-on que la soude est une solution alcaline ?
 
 #### Pile au lithium
+
 13. Pourquoi doit-on protéger le lithium de l’eau dans les piles au lithium ? Donner l’équation de sa réaction avec l’eau sachant qu’il se forme, entre autres, des ions lithium (I) et du dihydrogène.\
 Quelle est la nature de cette réaction ?
 
 #### Pile à combustible
+
 14. Citer une source possible de dioxygène pour les piles à combustible.
 15. Une pile à combustible au méthanol met en jeu les couples $\ce{CO3^{2-}/CH3OH}$ et $\ce{S2O8^{2-}/SO4^{2-}}$.\
 Donner les équations des réactions aux électrodes, sachant que la demi-pile relative au méthanol correspond au pôle négatif de cette pile et que l’électrolyte est constitué de potasse concentrée.
-

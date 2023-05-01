@@ -1,6 +1,6 @@
 ---
 title: "Transformation spontanée modélisée par une réaction d’oxydo-réduction"
-subtitle: "Chapitre 11"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-01-18T21:33:04+04:00
@@ -28,12 +28,12 @@ layout: "single"
 
 ----
 
-- **Chap. 11,1 :** [*Pile électrochimique*](1-piles)
+- **Doc.** [*Pile électrochimique*](1-piles)
 
-- **Chap. 11,2 :** [*Exercices du chapitre*](2-exercices)
+- **Doc.** [*Exercices du chapitre*](2-exercices)
 
-- **Chap. 11,3 :** [*Annale : Étude d'une pile électrique*](3-annale-1)
+- **Doc.** [*Annale : Étude d'une pile électrique*](3-annale-1)
 
-- **Chap. 11,4 :** [*Annale : Réalisation d'une pile nickel/zinc*](4-annale-2)
+- **Doc.** [*Annale : Réalisation d'une pile nickel/zinc*](4-annale-2)
 
-- **Chap. 11,5 :** [*Les piles, des générateurs omniprésents*](5-piles-exemples)
+- **Doc.** [*Les piles, des générateurs omniprésents*](5-piles-exemples)

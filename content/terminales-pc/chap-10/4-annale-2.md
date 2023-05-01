@@ -1,6 +1,6 @@
 ---
 title: "Réalisation d'une pile nickel/zinc"
-subtitle: "Chapitre 11,4"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-01-25T21:05:34+04:00
