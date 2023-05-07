@@ -1,6 +1,6 @@
 ---
 title: "Découpe d'une corde"
-subtitle: "Chapitre 14,3"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-03-09T10:20:05+04:00

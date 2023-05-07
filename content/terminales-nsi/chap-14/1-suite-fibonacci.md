@@ -1,6 +1,6 @@
 ---
 title: "Autour de la suite de Fibonacci"
-subtitle: "Chapitre 14,1"
+subtitle: "Chapitre 14,"
 author: ""
 type: ""
 date: 2021-02-25T04:49:20+04:00
@@ -17,7 +17,7 @@ auto_numbering: true
 
 La définition de la fonction factorielle est
 $$
-    n! = 
+    n! =
     \begin{cases}
         0 & \text{if } n = 0 \cr
         n \times (n-1)! & \text{sinon}
@@ -26,6 +26,7 @@ $$
 
 1. Définir la fonction `fact_env` qui calcule la factorielle d'un entier naturel $n$, *sans oublier le jeu de tests*.\
     La spécification de la fonction est :
+
     ```python
     def fact_env(n: int) -> int:
         """
@@ -57,7 +58,6 @@ if __name__ == "__main__":
     assert fact_env(8) == 40320
 ```
 
-
 {{% /solution %}}
 
 {{% note normal %}}
@@ -72,7 +72,8 @@ Cette réorganisation économise de l'espace mémoire car aucun état, sauf l'ad
 {{% /note %}}
 
 2. Définir la fonction `fact_term` qui calcule la factorielle d'un entier naturel $n$, *sans oublier le jeu de tests*.\
-    La spécification de la fonction est : 
+    La spécification de la fonction est :
+
     ```python
     def fact_term(n: int) -> int:
         """
@@ -81,13 +82,16 @@ Cette réorganisation économise de l'espace mémoire car aucun état, sauf l'ad
         Algorithme : récursivité terminale
         """
     ```
+
     La fonction `fact_term` est en fait une fonction enveloppe de la fonction `_fact` dont la spécification est :
+
     ```python
     def _fact(n: int, acc: int = 1) -> int:
         """
         Fonction qui effectue réellement le calcul récursif.
         """
     ```
+
     La fonction `_fact` met en œuvre un raisonnement basé sur la récursivité terminale.
 
 {{% solution "Réponse" %}}
@@ -118,7 +122,6 @@ if __name__ == "__main__":
     assert fact_term(8) == 40320
 ```
 
-
 {{% /solution %}}
 
 ## Autour de la suite de Fibonacci
@@ -137,6 +140,7 @@ $$
 
 3. Définir la fonction `fibo_iter` qui calcule le terme de rang $n$ de la suite de Fibonacci, *sans oublier le jeu de tests*. Le raisonnement mis en œuvre doit être itératif.\
     La spécification de la fonction est :
+
     ```python
     def fibo_iter(n: int) -> int:
     """
@@ -177,7 +181,6 @@ if __name__ == "__main__":
     assert fibo_iter(16) == 987
 ```
 
-
 {{% /solution %}}
 
 4. Quelle est la complexité de l'algorithme itératif ?
@@ -190,6 +193,7 @@ L'algorithme comporte une boucle, la complexité est donc en $O(n)$.
 
 5. Définir la fonction `fibo_head` qui calcule le terme de rang $n$ de la suite de Fibonacci, *sans oublier le jeu de tests*. Le raisonnement mis en œuvre doit être récursif.\
     La spécification de la fonction est :
+
     ```python
     def fibo_head(n: int) -> int:
     """
@@ -225,7 +229,6 @@ if __name__ == "__main__":
     assert fibo_head(16) == 987
 ```
 
-
 {{% /solution %}}
 
 6. Écrire l'arbre des appels récursifs pour $n=5$. En déduire la complexité de l'algorithme récursif.\
@@ -235,7 +238,7 @@ Quelle est la raison d'une telle complexité ?
 
 - Les mêmes calculs sont effectués plusieurs fois.
 - La hauteur de l'arbre des appels est égale à $n-1$.
-- Si chaque étape est en $O(1)$, le nombre de calculs effectués est donc $2^0 + 2^1 + 2^2 + 2^3 + \ldots + 2^{n-1} = 2^n$. 
+- Si chaque étape est en $O(1)$, le nombre de calculs effectués est donc $2^0 + 2^1 + 2^2 + 2^3 + \ldots + 2^{n-1} = 2^n$.
 
 La complexité est donc en $O(2^n)$.
 
@@ -243,6 +246,7 @@ La complexité est donc en $O(2^n)$.
 
 7. En prenant pour exemple la définition de la fonction à la question 2. et l'algorithme itératif, à la question 3., définir la fonction `fib_tail` qui calcule le terme de rang $n$ de la suite de Fibonacci à l'aide d'un algorithme récursif terminal.\
     La spécification de la fonction `fib_tail` est :
+
     ```python
     def fibo_tail(n: int) -> int:
         """
@@ -251,7 +255,9 @@ La complexité est donc en $O(2^n)$.
         Algorithme : récursif (terminale)
         """
     ```
+
     La fonction `fib_tail` est en fait une fonction enveloppe de la fonction `_fibo` dont la spécification est :
+
     ```python
     def _fibo(n: int, a: int=0, b: int=1) -> int:
         """
@@ -286,7 +292,6 @@ if __name__ == "__main__":
     assert fibo_tail(16) == 987
 ```
 
-
 {{% /solution %}}
 
 8. Quelle est la complexité de cet algorithme ?
@@ -296,7 +301,6 @@ if __name__ == "__main__":
 La complexité de l’algorithme récursif terminal, en nombre d’additions, est donnée par la récurrence $T(n) = 1+T(n−1)$. On a donc $T(n) = n−1$ pour `_fibo_tail`, et par extension pour `fibo_tail`.
 
 {{% /solution %}}
-
 
 ### Programmation dynamique
 
@@ -311,8 +315,9 @@ La méthode de **programmation dynamique**, comme la méthode **diviser pour ré
 {{% /note %}}
 
 {{% note normal %}}
-La programmation dynamique est utilisée pour résoudre des **problèmes d'optimisation**. 
+La programmation dynamique est utilisée pour résoudre des **problèmes d'optimisation**.
 La conception d’un algorithme de programmation dynamique est typiquement découpée en quatre étapes :
+
 - Caractériser la structure d’une solution optimale.
 - Définir (souvent de manière récursive) la valeur d’une solution optimale.
 - Calculer la valeur d’une solution optimale.
@@ -324,6 +329,7 @@ Dans le cas du calcul du terme de rang $n$ de la suite de Fibonacci à l'aide d'
 
 {{% note tip %}}
 Il existe alors deux méthodes pour calculer effectivement une solution : la **méthode ascendante** (**Bottom-up approach**) et la **méthode descendante** (**Top-down approach**).
+
 - Dans la **méthode ascendante**, on commence par calculer des solutions pour les sous-problèmes les plus petits, puis, de proche en proche, on calcule les solutions des problèmes en utilisant le principe d'optimalité et on mémorise les résultats dans un tableau ou un dictionnaire `F`.
 - Dans la **méthode descendante**, on écrit un algorithme récursif mais on utilise la **mémoïsation** pour ne pas résoudre plusieurs fois le même problème, c'est-à-dire que l'on stocke dans un tableau ou un dictionnaire `F` les résultats des appels récursifs.
 {{% /note %}}
@@ -362,7 +368,7 @@ def fibo_memo1(n: int) -> int:
     return _fibo(n, dic)
 ```
 
-ou 
+ou
 
 ```python
 def fibo_memo2(n: int, tab: List[int] = [0, 1]) -> int:
@@ -378,7 +384,6 @@ def fibo_memo2(n: int, tab: List[int] = [0, 1]) -> int:
     tab.append(calcul)
     return calcul
 ```
-
 
 {{% /solution %}}
 
@@ -400,76 +405,141 @@ def fibo_up(n: int) -> int:
     return tab[n]
 ```
 
-
 {{% /solution %}}
 
-## Application
+## Application : nombre de façon d'atteindre la nième marche d'un escalier
 
-On définit la suite de Tribonacci par la relation de récurrence : 
+On cherche le nombre de méthodes différentes qui permettent d'atteindre la nième marche d'un escalier, sachant que l'on peut monter un, deux ou trois marches à la fois.
+
+1. Déterminer la relation de récurrence, sachant que l'on note $u_n$ le nombre de méthodes permettant d'atteindre la nième marche.
+
+{{% solution "Réponse" %}}
+
 $$
     u_n =
     \begin{cases}
-    u_0 &= u_1 = 0 \cr
-    u_2 &= 1\cr
-    u_{n+3} &= u_{n+2} + u_{n+1} + u_{n}
+    u_1 &= 1 \cr
+    u_2 &= 2 \cr
+    u_3 &= 4 \cr
+    u_{n} &= u_{n-1} + u_{n-2} + u_{n-3}
     \end{cases}
 $$
 
-1. Quel est l’écueil à éviter lorsqu’on programme le calcul du n-ième terme de la suite de Tribonacci de manière récursive ?
+{{% /solution %}}
+
+1. Quel est l’écueil à éviter lorsqu’on programme le calcul du n-ième terme de la suite précédente de manière récursive ?
 {{% solution "Réponse" %}}
 Il faut éviter que les appels récursifs calculent plusieurs fois les mêmes valeurs.
 {{% /solution %}}
 
 2. Proposer une version itérative du calcul de $u_n$.
-{{% solution "Réponse" %}}
+
 ```python
-def tribo1(n: int) -> int:
+def nbre_methodes_iter(n: int) -> int:
     """
-    Terme de rang n de la suite de Tribonacci.
+    Calcul du nombre de méthodes différentes pour
+    accéder à la nième marche d'un escalier.
 
     Version itérative.
     """
-    u, v, w = 0, 0, 1
+```
 
-    for i in range(3, n + 1):
+{{% solution "Réponse" %}}
+
+```python
+def nbre_methodes_iter(n: int) -> int:
+    """
+    Calcul du nombre de méthodes différentes pour
+    accéder à la nième marche d'un escalier.
+
+    Version itérative.
+    """
+    u, v, w = 1, 2, 4
+
+    for i in range(4, n + 1):
         z = u + v + w
         u = v
         v = w
         w = z
 
-    if n < 2:
-        return 0
+    if n == 1:
+        return 1
+    elif n == 2:
+        return 2
+    elif n == 3:
+        return 4
     else:
         return w
 ```
+
 {{% /solution %}}
 
 3. Proposer une version récursive du calcul de $u_n$.
-{{% solution "Réponse" %}}
+
 ```python
-def tribo(n: int) -> int:
-    if n < 2: 
-        return 0 
-    elif n == 2:
-        return 1
-    
-    return tribo(n - 1) + tribo(n - 2) + tribo(n - 3)
+def nbre_methodes_rec(n: int) -> int:
+    """
+    Calcul du nombre de méthodes différentes pour
+    accéder à la nième marche d'un escalier.
+
+    Version récursive.
+    """
 ```
+
+{{% solution "Réponse" %}}
+
+```python
+def nbre_methodes_rec(n: int) -> int:
+    """
+    Calcul du nombre de méthodes différentes pour
+    accéder à la nième marche d'un escalier.
+
+    Version récursive.
+    """
+    if n == 1:
+        return 1
+    elif n == 2:
+        return 2
+    elif n == 3:
+        return 4
+    
+    return nbre_methodes_rec(n - 1) + nbre_methodes_rec(n - 2) + nbre_methodes_rec(n - 3)
+```
+
 {{% /solution %}}
 
 4. Proposer une version récursive efficace du calcul de $u_n$ qui utilise la mémoïsation.
-{{% solution "Réponse" %}}
+
 ```python
-def tribo(n: int) -> int: 
-    memo_tribo = {0: 0, 1: 0, 2: 1} 
-    
-    def _tribo(n: int) -> int: 
-        if n in memo_tribo.keys(): 
-            return memo_tribo[n] 
-        else: 
-            memo_tribo[n] = _tribo(n - 1) + _tribo(n - 2) + _tribo(n - 3) 
-        return memo_tribo[n] 
-        
-    return _tribo(n)
+def nbre_methodes_memo(n: int) -> int:
+    """
+    Calcul du nombre de méthodes différentes pour
+    accéder à la nième marche d'un escalier.
+
+    Version qui utilise la mémoïsation.
+    """
 ```
+
+{{% solution "Réponse" %}}
+
+```python
+def nbre_methodes_memo(n: int) -> int:
+    """
+    Calcul du nombre de méthodes différentes pour
+    accéder à la nième marche d'un escalier.
+
+    Version qui utilise la mémoïsation.
+    """
+    memo = {1: 1, 2: 2, 3: 4} 
+    
+    def _nbre(n: int) -> int: 
+        if n in memo.keys(): 
+            return memo[n] 
+        else: 
+            memo[n] = _nbre(n - 1) + _nbre(n - 2) + _nbre(n - 3) 
+        return memo[n] 
+        
+    return _nbre(n)
+```
+
 {{% /solution %}}

@@ -1,6 +1,6 @@
 ---
 title: "Programmation dynamique"
-subtitle: "Chapitre 14"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-02-25T04:48:58+04:00
@@ -20,11 +20,10 @@ layout: "single"
 |:-|:-|:-|
 | Programmation dynamique | Utiliser la programmation dynamique pour écrire un algorithme.  | - Les exemples de l’alignement de séquences ou du rendu de monnaie peuvent être présentés.<br />- La discussion sur le coût en mémoire peut être développée. |
 
-
 ## Documents
 
-- **Chapitre 14,1 :** [*Autour de la suite de Fibonacci*](1-suite-fibonacci)
+- **Doc.** [*Autour de la suite de Fibonacci*](1-suite-fibonacci)
 
-- **Chapitre 14,2 :** [*Problème du rendu de monnaie*](2-rendu-monnaie)
+- **Doc.** [*Problème du rendu de monnaie*](2-rendu-monnaie)
 
-- **Chapitre 14,3 :** [*Découpe d'une corde*](3-decoupe-corde)
+- **Doc.** [*Découpe d'une corde*](3-decoupe-corde)

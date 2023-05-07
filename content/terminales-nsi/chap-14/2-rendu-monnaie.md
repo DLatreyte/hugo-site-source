@@ -1,6 +1,6 @@
 ---
 title: "Problème du rendu de monnaie"
-subtitle: "Chapitre 14,2"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-02-28T05:28:54+04:00
@@ -19,9 +19,9 @@ Un commerçant cherche à rendre la monnaie à ses clients **de façon optimale*
 
 Dans ce problème,
 
--  On suppose que les clients ne donnent que des sommes entières en euros (pas de centimes pour simplifier) ;
--  Les valeurs des pièces et billets à disposition sont : 1, 2, 5, 10, 20, 50, 100, 200 et 500. On suppose que l'on a autant d'exemplaires que nécessaire de chaque pièce et billet ;
--  Dans la suite, afin de simplifier, on désigne par « pièces » à la fois les pièces et les billets.
+- On suppose que les clients ne donnent que des sommes entières en euros (pas de centimes pour simplifier) ;
+- Les valeurs des pièces et billets à disposition sont : 1, 2, 5, 10, 20, 50, 100, 200 et 500. On suppose que l'on a autant d'exemplaires que nécessaire de chaque pièce et billet ;
+- Dans la suite, afin de simplifier, on désigne par « pièces » à la fois les pièces et les billets.
 
 ## Algorithme glouton
 
@@ -39,13 +39,15 @@ En procédant ainsi, **on résout le problème étape par étape** et **un choix
 Le corrigé se trouve à cette adresse : {{< remote "https://repl.it/@dlatreyte/rendudemonnaie" "https://repl.it/@dlatreyte/rendudemonnaie" >}}
 {{% /note %}} -->
 
-1. Importer le module typing au début du fichier : 
+1. Importer le module typing au début du fichier :
+
 ```python
 from typing import List
 ```
 
 2. Préparer la fonction main suivante et étudier sa structure :
-```python 
+
+```python
 def main():
     # valeurs des pièces
     pieces = [1, 2, 5, 10, 20, 50, 100]
@@ -59,9 +61,10 @@ def main():
     reponse = ["{} piece(s) de {}".format(comment[i], pieces[i]) for i in range(len(pieces))]
     print("Je dois rendre : {}".format(a_rendre))
     print("Je donne donc : {}".format(reponse))
-``` 
+```
 
 3. Définir la fonction somme_a_rendre dont la spécification est :
+
 ```python
 def somme_a_rendre(prix: int, montant_client: int) -> int:
     """
@@ -81,11 +84,11 @@ def somme_a_rendre(prix: int, montant_client: int) -> int:
     return montant_client - prix
 ```
 
-
 {{% /solution %}}
 
 4. Définir la fonction pieces_a_rendre dont la spécification est :
-```python 
+
+```python
 def pieces_a_rendre(somme: int, pieces: List[int]) -> List[int]:
     """
     Détermine les pièces (et leur nombre) à choisir pour rendre la somme
@@ -144,7 +147,6 @@ def pieces_a_rendre_3(somme: int, pieces: List[int]) -> List[int]:
     return list(reversed(a_rendre))
 ```
 
-
 {{% /solution %}}
 
 5. Appeler la fonction `main`.
@@ -157,12 +159,12 @@ Le code se trouve à : {{< remote "cette adresse" "https://replit.com/@dlatreyte
 
 ## Algorithme de force brute
 
-1.   On note $nb$ le nombre de pièces à rendre, prises dans la liste des pièces $p = [1, 2, 5, 10, 20, 50, 100, 200, 500]$, lorsque la somme à rendre est $x$.     
+1. On note $nb$ le nombre de pièces à rendre, prises dans la liste des pièces $p = [1, 2, 5, 10, 20, 50, 100, 200, 500]$, lorsque la somme à rendre est $x$.
 Écrire la relation de récurrence que doit vérifier $nb$.
 {{% solution "Réponse" %}}
 
 $$
-    nb(x) = 
+    nb(x) =
     \begin{cases}
     0 & \text{ si } x = 0\cr
     1 + nb(x - p[i]) & \text{ si } x - p[i] \geqslant 0  \cr
@@ -171,12 +173,12 @@ $$
 
 {{% /solution %}}
 
-2. En fait, on cherche le nombre minimal de pièces à rendre pour la somme $x$.    
+2. En fait, on cherche le nombre minimal de pièces à rendre pour la somme $x$.
 Adapter la relation de récurrence.
 {{% solution "Réponse" %}}
 
 $$
-    nb(x) = 
+    nb(x) =
     \begin{cases}
     0 & \text{ si } x = 0\cr
     1 + \min{(nb(x - p[i]))} & \text{ si } x - p[i] \geqslant 0 \text{ et } i \in [0, \text{len}(p)[ \cr
@@ -190,7 +192,6 @@ $$
 
 <img src="/terminales-nsi/chap-14/chap-14-2/chap-14-2-1.svg" alt="" width="100%" />
 
-
 {{% /solution %}}
 
 4. Indiquer l'avantage et l'inconvénient de l'algorithme par Brute Force.
@@ -201,6 +202,7 @@ Cet algorithme retourne une solution optimale mais calcule plusieurs fois les m�
 {{% /solution %}}
 
 5. Réfléchir au code de la fonction dont la spécification est :
+
 ```python
 def nb_rendre(a_rendre: int, pieces: List[int]) -> int:
     """
@@ -210,6 +212,7 @@ def nb_rendre(a_rendre: int, pieces: List[int]) -> int:
     Algorithme récursif.
     """
 ```
+
 Écrire le code de cette fonction.
 {{% solution "Réponse" %}}
 
@@ -252,10 +255,10 @@ Le code se trouve à : {{< remote "cette adresse" "https://replit.com/@dlatreyte
 
 {{% note tip %}}
 
-La **programmation dynamique**, comme la méthode **diviser-pour-régner**, *résout des problèmes en combinant des solutions de sous-problèmes*.     
+La **programmation dynamique**, comme la méthode **diviser-pour-régner**, *résout des problèmes en combinant des solutions de sous-problèmes*.
 
-- *Les algorithmes **diviser-pour-régner** partitionnent le problème en sous-problèmes indépendants qu’ils résolvent récursivement, puis combinent leurs solutions pour résoudre le problème initial*. 
-- *La **programmation dynamique**, quant à elle, peut s’appliquer même lorsque les sous-problèmes ne sont pas indépendants*, c’est-à-dire lorsque des sous-problèmes ont des sous-sous-problèmes communs.     
+- *Les algorithmes **diviser-pour-régner** partitionnent le problème en sous-problèmes indépendants qu’ils résolvent récursivement, puis combinent leurs solutions pour résoudre le problème initial*.
+- *La **programmation dynamique**, quant à elle, peut s’appliquer même lorsque les sous-problèmes ne sont pas indépendants*, c’est-à-dire lorsque des sous-problèmes ont des sous-sous-problèmes communs.
 Dans ce cas, un algorithme diviser-pour-régner fait plus de travail que nécessaire, en résolvant plusieurs fois le sous-sous-problème commun. Un algorithme de programmation dynamique **résout chaque sous-sous-problème une seule fois et mémorise sa réponse dans un tableau**, évitant ainsi le recalcul de la solution chaque fois que le sous-sous-problème est rencontré.
 
 La programmation dynamique est, en général, appliquée aux **problèmes d’optimisation**. Dans ce type de problèmes, il peut y avoir de nombreuses solutions possibles. Chaque solution a une valeur, et on souhaite trouver une solution ayant la **valeur optimale** (**minimale** ou **maximale**). Une telle solution est une solution optimale au problème, et non pas la solution optimale, puisqu’il peut y avoir plusieurs solutions qui donnent la valeur optimale.
@@ -279,10 +282,10 @@ Le code se trouve à : {{< remote "cette adresse" "https://replit.com/@dlatreyte
 
 {{% note tip %}}
 
-La **programmation dynamique**, comme la méthode **diviser-pour-régner**, *résout des problèmes en combinant des solutions de sous-problèmes*.     
+La **programmation dynamique**, comme la méthode **diviser-pour-régner**, *résout des problèmes en combinant des solutions de sous-problèmes*.
 
-- *Les algorithmes **diviser-pour-régner** partitionnent le problème en sous-problèmes indépendants qu’ils résolvent récursivement, puis combinent leurs solutions pour résoudre le problème initial*. 
-- *La **programmation dynamique**, quant à elle, peut s’appliquer même lorsque les sous-problèmes ne sont pas indépendants*, c’est-à-dire lorsque des sous-problèmes ont des sous-sous-problèmes communs.     
+- *Les algorithmes **diviser-pour-régner** partitionnent le problème en sous-problèmes indépendants qu’ils résolvent récursivement, puis combinent leurs solutions pour résoudre le problème initial*.
+- *La **programmation dynamique**, quant à elle, peut s’appliquer même lorsque les sous-problèmes ne sont pas indépendants*, c’est-à-dire lorsque des sous-problèmes ont des sous-sous-problèmes communs.
 Dans ce cas, un algorithme diviser-pour-régner fait plus de travail que nécessaire, en résolvant plusieurs fois le sous-sous-problème commun. Un algorithme de programmation dynamique **résout chaque sous-sous-problème une seule fois et mémorise sa réponse dans un tableau**, évitant ainsi le recalcul de la solution chaque fois que le sous-sous-problème est rencontré.
 
 La programmation dynamique est, en général, appliquée aux **problèmes d’optimisation**. Dans ce type de problèmes, il peut y avoir de nombreuses solutions possibles. Chaque solution a une valeur, et on souhaite trouver une solution ayant la **valeur optimale** (**minimale** ou **maximale**). Une telle solution est une solution optimale au problème, et non pas la solution optimale, puisqu’il peut y avoir plusieurs solutions qui donnent la valeur optimale.
@@ -291,11 +294,10 @@ La programmation dynamique est, en général, appliquée aux **problèmes d’op
 
 {{% /solution %}}
 
-
-2. On note $nb[i][j]$ le *nombre optimal de pièces à rendre pour une somme à rendre* $j$ et $i$ types de pièces.    
+2. On note $nb[i][j]$ le *nombre optimal de pièces à rendre pour une somme à rendre* $j$ et $i$ types de pièces.
 Ce nombre est vérifie la relation de récurrence :
 $$
-    nb[i][j] = 
+    nb[i][j] =
     \begin{cases}
     0 & \text{ si } j = 0\cr
     0 & \text{ si } i = 0\cr
@@ -303,7 +305,7 @@ $$
     nb[i-1][j] & \text{ si } j - \text{pieces}[i] < 0 \cr
     \end{cases}
 $$
-    
+
     Justifier cette relation.
 
 3. Représenter le tableau $nb$ pour une somme à rendre de 12 euros.
@@ -311,6 +313,7 @@ $$
 4. Quelle est le nombre de pièces optimal en utilisant la programmation dynamique ?
 
 5. Écrire le code de la fonction `sol_dynamique` dont la spécification est :
+
 ```python
 def construction_nb(somme: int, pieces: List[int]) -> List[List[int]]:
     """
@@ -325,6 +328,7 @@ def construction_nb(somme: int, pieces: List[int]) -> List[List[int]]:
 -->
 
 7. Écrire la fonction `recherche_sol` dont la spécification est :
+
 ```python
 def recherche_sol(somme: int, pieces: List[int], nb: List[List[int]]) -> Tuple[int, Dict[int: int]]:
     """
