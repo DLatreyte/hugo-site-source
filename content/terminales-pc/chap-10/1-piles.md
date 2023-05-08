@@ -386,7 +386,7 @@ $$
 
 avec $ C^o = \pu{1,00 mol.L-1}$.
 
-    **A.N.** $Q\_{r,i} = \dfrac{\left( \pu{0,010 mol.L-1} \right)^2}{\pu{0,050 mol.L-1} \times \pu{1,00 mol.L-1}} = \pu{2,0e-3}$
+    **A.N.** $Q\_{r,i} = \dfrac{\left( \pu{0.010 mol.L-1} \right)^2}{\pu{0.050 mol.L-1} \times \pu{1.00 mol.L-1}} = \pu{2.0e-3}$
 
     $Q\_{r,i} > K$, le système évolue dans le sens inverse au sens d'écriture de l'équation de la réaction. Les réactifs sont les ions argent et le cuivre.
 
