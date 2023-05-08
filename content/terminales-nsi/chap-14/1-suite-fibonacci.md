@@ -19,7 +19,7 @@ La définition de la fonction factorielle est
 $$
     n! =
     \begin{cases}
-        0 & \text{if } n = 0 \cr
+        1 & \text{if } n = 0 \cr
         n \times (n-1)! & \text{sinon}
     \end{cases}
 $$
