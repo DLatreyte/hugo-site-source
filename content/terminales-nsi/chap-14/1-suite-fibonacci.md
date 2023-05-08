@@ -1,6 +1,6 @@
 ---
 title: "Autour de la suite de Fibonacci"
-subtitle: "Chapitre 14,"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-02-25T04:49:20+04:00
