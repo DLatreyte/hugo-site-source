@@ -1,6 +1,6 @@
 ---
 title: "Optimisation du transport de l’électricité"
-subtitle: "Chapitre 3"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-01-20T22:07:17+04:00

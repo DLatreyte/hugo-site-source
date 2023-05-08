@@ -1,6 +1,6 @@
 ---
 title: "L'effet Joule"
-subtitle: "Chapitre 3,1"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-01-20T22:25:02+04:00
@@ -34,7 +34,7 @@ L’effet Joule a plusieurs inconvénients dans le transport de l’électricit�
 - $S = \pu{2500 mm2} = 2500\\ (10^{-3} \text{ m})^2 = \pu{2,5e-3 m2}$.
 
 - La résistance de l’âme (en cuivre) d’un câble de longueur $\pu{1000 m}$ se calcule à partir de l'expression : $ R = \dfrac{\rho \cdot L}{S} $.
-    
+
     **A.N.** $ R = \dfrac{\pu{1,7e-8 \Omega.m} \times \pu{1000 m}}{\pu{2,5e-3 m2}} = \pu{6,8e-3 \Omega} $.
 {{% /solution %}}
 
@@ -42,7 +42,7 @@ L’effet Joule a plusieurs inconvénients dans le transport de l’électricit�
 {{% solution "Réponse" %}}
 La puissance dissipée par effet Joule a pour expression $P = U \\, I = R \\, I^2$ puisque la tension aux bornes d'une résistance est liée à l'intensité du courant électrique qui la traverse par la relation $U = R\\, I^2$.
 
-- *À **résistance constante**, si l’intensité du courant électrique augmente, alors la puissance dissipée par effet Joule augmente*. 
+- *À **résistance constante**, si l’intensité du courant électrique augmente, alors la puissance dissipée par effet Joule augmente*.
 - *À **intensité de courant constante**, si la résistance augmente, alors la puissance dissipée par effet Joule augmente.*
 {{% /solution %}}
 
