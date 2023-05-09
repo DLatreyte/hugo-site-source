@@ -63,7 +63,7 @@ if __name__ == "__main__":
     print(f"Je donne donc : {reponse}")
 ```
 
-3. Définir la fonction somme_a_rendre dont la spécification est :
+3. Définir la fonction `somme_a_rendre` dont la spécification est :
 
 ```python
 def somme_a_rendre(prix: int, montant_client: int) -> int:
@@ -86,7 +86,7 @@ def somme_a_rendre(prix: int, montant_client: int) -> int:
 
 {{% /solution %}}
 
-4. Définir la fonction pieces_a_rendre dont la spécification est :
+4. Définir la fonction `pieces_a_rendre` dont la spécification est :
 
 ```python
 def pieces_a_rendre(somme: int, pieces: List[int]) -> List[int]:
