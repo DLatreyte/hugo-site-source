@@ -59,8 +59,8 @@ if __name__ == "__main__":
     comment = pieces_a_rendre(a_rendre, pieces)
 
     reponse = ["{} piece(s) de {}".format(comment[i], pieces[i]) for i in range(len(pieces))]
-    print("Je dois rendre : {}".format(a_rendre))
-    print("Je donne donc : {}".format(reponse))
+    print(f"Je dois rendre : {a_rendre}")
+    print(f"Je donne donc : {reponse}")
 ```
 
 3. Définir la fonction somme_a_rendre dont la spécification est :
