@@ -45,10 +45,10 @@ Le corrigé se trouve à cette adresse : {{< remote "https://repl.it/@dlatreyte/
 from typing import List
 ```
 
-2. Préparer la fonction main suivante et étudier sa structure :
+2. Préparer le code suivant et étudier sa structure :
 
 ```python
-def main():
+if __name__ == "__main__":
     # valeurs des pièces
     pieces = [1, 2, 5, 10, 20, 50, 100]
 
