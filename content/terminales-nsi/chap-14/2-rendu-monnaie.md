@@ -324,7 +324,7 @@ La programmation dynamique est, en général, appliquée aux **problèmes d’op
 
 {{% /solution %}}
 
-2. Le manque d'efficacité de la méthode « force brute » a pour origine les multiples redondants. Mettre en œuvre la méthode de mémoïsation afin d'améliorer l'efficacité du code de la fonction `nb_rendre`.
+2. Le manque d'efficacité de la méthode force brute a pour origine les multiples redondants. Mettre en œuvre la méthode de mémoïsation afin d'améliorer l'efficacité du code de la fonction `nb_rendre`.
 
 {{% solution "Code complet" %}}
 

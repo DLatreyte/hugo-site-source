@@ -236,6 +236,8 @@ Quelle est la raison d'une telle complexité ?
 
 {{% solution "Réponse" %}}
 
+<img src="/terminales-nsi/chap-14/chap-14-1/chap-14-1-1.svg" alt="" width="100%" />
+
 - Les mêmes calculs sont effectués plusieurs fois.
 - La hauteur de l'arbre des appels est égale à $n-1$.
 - Si chaque étape est en $O(1)$, le nombre de calculs effectués est donc $2^0 + 2^1 + 2^2 + 2^3 + \ldots + 2^{n-1} = 2^n$.
@@ -344,7 +346,12 @@ Une **fonction mémoïsée** *stocke les valeurs renvoyées par ses appels préc
 
 9. Quel est l'intérêt des structures de données tableau ou dictionnaire pour le stockage des valeurs des sous-problèmes ?
 
-10. Définir la fonction `fibo_memo` qui calcule le terme de rang $n$ de la suite de Fibonacci, *sans oublier le jeu de tests*. Le raisonnement doit être récursif et mettre en œuvre la technique de mémoïsation (méthode descendante).
+10. Écrire l'arbre des appels récursifs pour $n=5$, lorsque la technique de mémoïsation est mise en œuvre. Le comparer à l'arbre obtenu à la question 6.
+{{% solution "Réponse" %}}
+<img src="/terminales-nsi/chap-14/chap-14-1/chap-14-1-2.svg" alt="" width="60%" />
+{{% /solution %}}
+
+11. Définir la fonction `fibo_memo` qui calcule le terme de rang $n$ de la suite de Fibonacci, *sans oublier le jeu de tests*. Le raisonnement doit être récursif et mettre en œuvre la technique de mémoïsation (méthode descendante).
 
 {{% solution "Réponse" %}}
 
@@ -387,7 +394,12 @@ def fibo_memo2(n: int, tab: List[int] = [0, 1]) -> int:
 
 {{% /solution %}}
 
-11. Définir la fonction `fibo_up` qui calcule le terme de rang $n$ de la suite de Fibonacci, *sans oublier le jeu de tests*. Le raisonnement doit mettre en œuvre la méthode ascendante du problème.
+12. Quelle est la complexité de l'algorithme avec mémoïsation ?
+{{% solution "Réponse" %}}
+
+{{% /solution %}}
+
+13. Définir la fonction `fibo_up` qui calcule le terme de rang $n$ de la suite de Fibonacci, *sans oublier le jeu de tests*. Le raisonnement doit mettre en œuvre la méthode ascendante du problème.
 
 {{% solution "Réponse" %}}
 
