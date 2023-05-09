@@ -157,7 +157,7 @@ Le code se trouve à : {{< remote "cette adresse" "https://replit.com/@dlatreyte
 
 ## Algorithme de force brute
 
-1. On note $nb$ le nombre de pièces à rendre, prises dans la liste des pièces $p = [1, 2, 5, 10, 20, 50, 100, 200, 500]$, lorsque la somme à rendre est $x$.
+1. On note $nb$ le nombre de pièces à rendre, prises dans la liste des pièces $p = [1, 2, 5, 10, 20, 50, 100, 200, 500]$, lorsque la somme à rendre est $x$.  
 Écrire la relation de récurrence que doit vérifier $nb$.
 {{% solution "Réponse" %}}
 
@@ -246,9 +246,68 @@ Le code se trouve à : {{< remote "cette adresse" "https://replit.com/@dlatreyte
 
 {{% /solution %}}
 
+### Compléments
+
+7. On souhaite maintenant écrire le code de la fonction `pieces_a_rendre` dont la spécification est :
+
+```python
+def pieces_a_rendre(somme: int,
+                   pieces: Tuple[int],
+                   serie: List[int],
+                   series: List[Tuple[int]]) -> None:
+    """
+    Détermine toutes les combinaisons de pièces qui permettent de rendre la somme somme.
+    pieces est le tuple des pièces disponibles.
+    series est la liste des pièces à rendre.
+    series est la liste des listes des pièces à rendre.
+    """
+```
+
+#### Remarque
+
+On peut bien sur créer une fonction enveloppe qui ne prendrait que la somme et la liste des pièces disponibles en argument et retournerait la liste des listes de pièces.
+
+{{% solution "Réponse" %}}
+
+```python
+def pieces_a_rendre(somme: int,
+                   pieces: Tuple[int],
+                   serie: List[int],
+                   series: List[Tuple[int]]) -> None:
+    """
+    Détermine toutes les combinaisons de pièces qui permettent de rendre la somme somme.
+    """
+    if somme == 0:
+        series.append(serie)
+        return None 
+
+    for piece in pieces:
+        if piece > somme:
+            continue
+        
+        # Sauvegarde de la liste des pièces pour le retour arrière
+        serie_sauv = list(serie)
+
+        serie.append(piece) 
+        pieces_a_rendre(somme - piece, pieces, serie, series)
+        
+        serie = serie_sauv
+```
+
+{{% /solution %}}
+
+8. Tester le code pour une somme à rendre de 13 puis de 130. Obtient-on rapidement un résultat pour cette dernière valeur ?
+
+9. Comment déterminer le nombre minimum de pièces à retourner ?
+{{% solution "Réponse" %}}
+
+Le nombre minimum de pièces est égal à la plus petite longueur des listes éléments de la liste `series`.
+
+{{% /solution %}}
+
 ## Programmation dynamique (mémoïsation)
 
-1. 1. Rappeler quel est l'objectif de la programmation dynamique.
+1. Rappeler quel est l'objectif de la programmation dynamique.
 {{% solution "Réponse" %}}
 
 {{% note tip %}}
@@ -265,7 +324,7 @@ La programmation dynamique est, en général, appliquée aux **problèmes d’op
 
 {{% /solution %}}
 
-2. Le manque d'efficacité de la méthode Brute-Force a pour origine les multiples redondants. Mettre en œuvre la méthode de mémoïsation afin d'améliorer l'efficacité du code de la fonction `nb_rendre`.
+2. Le manque d'efficacité de la méthode « force brute » a pour origine les multiples redondants. Mettre en œuvre la méthode de mémoïsation afin d'améliorer l'efficacité du code de la fonction `nb_rendre`.
 
 {{% solution "Code complet" %}}
 
