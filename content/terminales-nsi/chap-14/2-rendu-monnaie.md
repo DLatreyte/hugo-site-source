@@ -149,8 +149,6 @@ def pieces_a_rendre_3(somme: int, pieces: List[int]) -> List[int]:
 
 {{% /solution %}}
 
-5. Appeler la fonction `main`.
-
 {{% solution "Code complet" %}}
 
 Le code se trouve à : {{< remote "cette adresse" "https://replit.com/@dlatreyte/Rendu-de-monnaie-Glouton#main.py" >}}
