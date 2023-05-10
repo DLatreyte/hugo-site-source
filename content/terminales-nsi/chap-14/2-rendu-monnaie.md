@@ -151,7 +151,7 @@ def pieces_a_rendre_3(somme: int, pieces: List[int]) -> List[int]:
 
 {{% solution "Code complet" %}}
 
-Le code se trouve à : {{< remote "cette adresse" "https://replit.com/@dlatreyte/Rendu-de-monnaie-Glouton#main.py" >}}
+Le code se trouve à : {{< remote "cette adresse" "<https://replit.com/@dlatreyte/Rendu-de-monnaie-Glouton#main.py>" >}}
 
 {{% /solution %}}
 
@@ -242,7 +242,7 @@ def nb_rendre(a_rendre: int, pieces: List[int]) -> int:
 
 {{% solution "Code complet" %}}
 
-Le code se trouve à : {{< remote "cette adresse" "https://replit.com/@dlatreyte/Rendu-de-monnaie-Brute-Force" >}}
+Le code se trouve à : {{< remote "cette adresse" "<https://replit.com/@dlatreyte/Rendu-de-monnaie-Brute-Force>" >}}
 
 {{% /solution %}}
 
@@ -324,11 +324,45 @@ La programmation dynamique est, en général, appliquée aux **problèmes d’op
 
 {{% /solution %}}
 
-2. Le manque d'efficacité de la méthode force brute a pour origine les multiples redondants. Mettre en œuvre la méthode de mémoïsation afin d'améliorer l'efficacité du code de la fonction `nb_rendre`.
+2. Le manque d'efficacité de la méthode force brute a pour origine les multiples calculs redondants. Mettre en œuvre la méthode de **mémoïsation** afin d'améliorer l'efficacité du code de la fonction `nb_rendre`.
+
+{{% solution "Réponse" %}}
+
+```python
+def nb_rendre(a_rendre: int, pieces: List[int]) -> int:
+    """
+    Détermine le nombre minimal de pièces
+    à rendre.
+
+    Algorithme récursif avec mémoïsation.
+    """
+    dic_a_rendre = {0: 0}
+
+    def _nb_rendre(a_rendre: int, pieces: List[int], dic: Dict[int, int]) -> int:
+        """
+        Version mémoïsée de la fonction nb_rendre.
+        """
+        if a_rendre not in dic.keys():
+            nb_min = float('inf')
+        
+            for i in range(len(pieces)):
+                if pieces[i] <= a_rendre:
+                    nb = 1 + _nb_rendre(a_rendre - pieces[i], pieces, dic)
+                    if nb <= nb_min:
+                        nb_min = nb
+            
+            dic[a_rendre] = nb_min
+
+        return dic[a_rendre]
+
+    return _nb_rendre(a_rendre, pieces, dic_a_rendre)
+```
+
+{{% /solution %}}
 
 {{% solution "Code complet" %}}
 
-Le code se trouve à : {{< remote "cette adresse" "https://replit.com/@dlatreyte/Rendu-de-monnaie-Programmation-dynamique-1" >}}
+Le code se trouve à : {{< remote "cette adresse" "<https://replit.com/@dlatreyte/Rendu-de-monnaie-Programmation-dynamique-1>" >}}
 
 {{% /solution %}}
 
@@ -351,6 +385,7 @@ La programmation dynamique est, en général, appliquée aux **problèmes d’op
 
 {{% /solution %}}
 
+<!--
 2. On note $nb[i][j]$ le *nombre optimal de pièces à rendre pour une somme à rendre* $j$ et $i$ types de pièces.
 Ce nombre est vérifie la relation de récurrence :
 $$
@@ -380,9 +415,7 @@ def construction_nb(somme: int, pieces: List[int]) -> List[List[int]]:
 
 6. Quelle est la complexité de cet algorithme ?
 
-<!--
 7. À partir du tableau de la question 8, indiquer comment retrouver le découpage conduisant à la solution.
--->
 
 7. Écrire la fonction `recherche_sol` dont la spécification est :
 
@@ -396,6 +429,33 @@ def recherche_sol(somme: int, pieces: List[int], nb: List[List[int]]) -> Tuple[i
 
 {{% solution "Code complet" %}}
 
-Le code se trouve à : {{< remote "cette adresse" "https://replit.com/@dlatreyte/Rendu-de-monnaie-dynamique-1" >}}
+Le code se trouve à : {{< remote "cette adresse" "<https://replit.com/@dlatreyte/Rendu-de-monnaie-dynamique-1>" >}}
+
+{{% /solution %}}
+
+-->
+
+2. Le manque d'efficacité de la méthode force brute a pour origine les multiples calculs redondants. Mettre en œuvre la méthode de **ascendante** afin d'améliorer l'efficacité du code de la fonction `nb_rendre`.
+
+{{% solution "Réponse" %}}
+
+```python
+def nb_rendre(a_rendre: int, pieces: List[int]) -> int:
+    """
+    Détermine le nombre minimal de pièces
+    à rendre.
+
+    Algorithme itératif, méthode ascendante.
+    """
+    nbres = [float('inf')] * (a_rendre + 1)  # Tableau des valeurs
+    nbres[0] = 0
+
+    for somme in range(1, len(nbres)):
+        for piece in pieces:
+            if (somme - piece) >= 0:
+                nbres[somme] = min(nbres[sommes], 1 + nbres[somme - piece])
+
+    return nbres[a_rendre]
+```
 
 {{% /solution %}}
