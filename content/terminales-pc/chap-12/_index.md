@@ -25,12 +25,12 @@ layout: "single"
 
 ----
 
-- {{< remote "Évolution spontanée d'un système chimique sur le Livre Scolaire" "http://LLS.fr/PCTP197" >}}
+- {{< remote "Évolution spontanée d'un système chimique sur le Livre Scolaire" "<http://LLS.fr/PCTP197>" >}}
 
 ----
 
-- **Chap. 12,1 :** [*Électrolyse, une introduction*](1-electrolyse-introduction)
+- **Doc.** [*Électrolyse, une introduction*](1-electrolyse-introduction)
 
-- **Chap. 12,2 :** [*Une transformation forcée, l'électrolyse*](2-electrolyse-cours)
+- **Doc.** [*Une transformation forcée, l'électrolyse*](2-electrolyse-cours)
 
-- **Chap. 12,3 :** [*Exercices*](3-annales)
+- **Doc.** [*Exercices*](3-annales)

@@ -1,6 +1,6 @@
 ---
 title: "Une transformation forcée, l'électrolyse"
-subtitle: "Chapitre 12,2"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-02-08T08:40:41+04:00
@@ -18,17 +18,18 @@ auto_numbering: true
 ### Changer le sens d'évolution d'une transformation
 
 {{% note exercise %}}
+
 #### Manipulation
 
 - Sous la hotte, on introduit dans un tube à essai, $\pu{4 mL}$ d'une solution aqueuse $S$ de dibrome $\ce{Br2 (aq)}$ à $\pu{0,01 mol.L-1}$ et quelques tournures de cuivre métallique $\ce{Cu (s)}$. On laisse le système évoluer pendant quelques minutes et on observe.
 
-    - La coloration de la solution change : initialement jaune, elle devient vert.
+  - La coloration de la solution change : initialement jaune, elle devient vert.
 
 - Dans deux tubes à essai $A$ et $B$ contenant $\pu{0,5 mL}$ de cyclohexane, on introduit, dans le tube $A$, $\pu{1 mL}$ de $S$ et, dans le tube $B$, $\pu{1 mL}$ du mélange après réaction.  On bouche, on agite et on observe.
 
-    - Le mélange eau-cyclohexane est hétérogène. Le cyclohexane constitue la phase supérieure.
-    - Dans le tube à essai $A$, la phase aqueuse se décolore alors que la phase organique se colore en orange/marron.
-    - Dans le tube à essai $B$, la phase aqueuse se colore en bleu alors que la phase organique se colore en orange/marron. La coloration de cette phase est moins marquée que celle dans le tube $A$.
+  - Le mélange eau-cyclohexane est hétérogène. Le cyclohexane constitue la phase supérieure.
+  - Dans le tube à essai $A$, la phase aqueuse se décolore alors que la phase organique se colore en orange/marron.
+  - Dans le tube à essai $B$, la phase aqueuse se colore en bleu alors que la phase organique se colore en orange/marron. La coloration de cette phase est moins marquée que celle dans le tube $A$.
 {{% /note %}}
 
 1. Le dibrome appartient au couple $\ce{Br2/Br-}$, le couple appartient au couple $\ce{Cu^{2+}/Cu}$. Écrire l'équation de la réaction qui se déroule dans le bécher.
@@ -66,7 +67,6 @@ Ces observations valident donc la réaction spontanée entre le dibrome et le cu
 La valeur très élevée de la constante d'équilibre laisse penser que la transformation chimique est pratiquement totale, le taux d'avancement final de la transformation doit donc être proche de 1.
 {{% /solution %}}
 
-
 {{% note exercise %}}
 Dans un tube à essai, on introduit $\pu{2 mL}$ d'une solution de bromure de potassium, $\ce{K+ (aq) + Br-(aq)}$, à $\pu{1 mol.L-1}$ et $\pu{2 mL}$ d'une solution de sulfate de cuivre (II), $\ce{Cu^{2+} (aq) + SO4^{2-} (aq)}$ à $\pu{1 mol.L-1}$.
 
@@ -91,7 +91,7 @@ $K' = \dfrac{1}{K} = \pu{8,3e-26}$.
 - $Q\_{r,i} = \dfrac{[\ce{Br2}]\_i \cdot C^{o2}}{[\ce{Br-}]\_i^2 \cdot [\ce{Cu^{2+}}]\_i} = 0$.
 
 - $Q\_{r,i} < K'$, le système évolue spontanément dans le sens direct de l'équation de la réaction, qui correspond à la formation de cuivre et de dibrome. Cependant, **la valeur très petite de la constante d'équilibre** permet de prévoir que **le système chimique avance très peu** : *on peut considérer que le système n'évolue quasiment pas*.\
-Aucune évolution n'est effectivement observée 
+Aucune évolution n'est effectivement observée
 {{% /solution %}}
 
 {{% note exercise %}}
@@ -110,6 +110,7 @@ On règle alors la tension à $\pu{1,2 V}$ et on laisse le courant circuler. Apr
 
 8. Quel est le sens du courant électrique dans le circuit ? Préciser le sens de déplacement des différents porteurs de charges mis en jeu.
 {{% solution "Réponse" %}}
+
 - Le générateur impose le sens du courant électrique : ce dernier quitte la borne positive du générateur et circule jusqu'à la borne négative.
 - Le sens de circulation du courant électrique est le sens de circulation des charges positives. Les charges positives (cations dans la solution) circulent donc de la borne positive vers la borne négative du générateur.
 - Les charges négatives (électrons dans les fils du circuit et anions dans la solution) circulent dans le sens opposé au sens de circulation du courant électrique. Elles se déplacent donc de la borne négative à la borne positive du générateur.
@@ -118,12 +119,12 @@ On règle alors la tension à $\pu{1,2 V}$ et on laisse le courant circuler. Apr
 9. Proposer une interprétation des phénomènes observés aux électrodes.
 {{% solution "Réponse" %}}
 
-- *Électrode connectée à la borne positive du générateur *: **les électrons quittent cette électrode**, il sont donc libérés par une **réaction d'oxydation**. Le seul réducteur est $\ce{Br- (aq)}$ :
+- *Électrode connectée à la borne positive du générateur*: **les électrons quittent cette électrode**, il sont donc libérés par une **réaction d'oxydation**. Le seul réducteur est $\ce{Br- (aq)}$ :
 $$
     \ce{2 Br- (aq) -> Br2 (aq) + 2 e-}
 $$
 
-- *Électrode connectée à la borne négative du générateur :* **les électrons parviennent à cette électrode**, ils sont donc consommés par une **réaction de réduction**. Le seul oxydant est $\ce{Cu^{2+} (aq)}$ : 
+- *Électrode connectée à la borne négative du générateur :* **les électrons parviennent à cette électrode**, ils sont donc consommés par une **réaction de réduction**. Le seul oxydant est $\ce{Cu^{2+} (aq)}$ :
 $$
     \ce{Cu^{2+} (aq) + 2 e- -> Cu (s)}
 $$
@@ -137,7 +138,6 @@ Dans cette dernière expérience, **le système évolue dans le sens inverse du 
 Lorsqu'un générateur fournit de l'énergie électrique à un système, il peut le forcer à évoluer dans le sens inverse de son sens d'évolution spontanée.
 {{% /note %}}
 {{% /solution %}}
-
 
 ### Électrolyse
 
@@ -157,16 +157,15 @@ spontanée, et donc de s'éloigner de son état d'équilibre.
 
 <img src="/terminales-pc/chap-12/chap-12-2/chap-12-2-3.png" alt="" width="90%" />
 
-
 Bilan de matière d'une électrolyse
 ----------------------------------
 
 - On réalise l'électrolyse d'une solution d'acide sulfurique $(\ce{2 H+ (aq) + SO4^{2-} (aq)})$ :
-    - à la cathode, la réaction a pour équation : $\ce{2 H+ (aq) + 2 e- -> H2 (g)}$ ;
+  - à la cathode, la réaction a pour équation : $\ce{2 H+ (aq) + 2 e- -> H2 (g)}$ ;
 
-    - à l'anode, la réaction a pour équation : $\ce{2 H2O (l) -> O2 (g) + 4 H^+ (aq) + 4 e-}$
+  - à l'anode, la réaction a pour équation : $\ce{2 H2O (l) -> O2 (g) + 4 H^+ (aq) + 4 e-}$
 
-    - le bilan est donc : 
+  - le bilan est donc :
     $$
         \ce{2 H2O (l) -> O2 (g) + 2 H2 (g)}
     $$

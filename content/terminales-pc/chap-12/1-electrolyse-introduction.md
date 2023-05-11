@@ -1,6 +1,6 @@
 ---
 title: "Électrolyse, une introduction"
-subtitle: "Chapitre 12,1"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-02-06T18:56:43+04:00
@@ -29,6 +29,7 @@ auto_numbering: true
 {{< youtube "AJaltZPGcPk" >}}
 
 #### Observations
+
 - Il se forme de l'étain au niveau de l'électrode connectée à la borne négative du générateur ;
 - Il se forme du dichlore au niveau de l'électrode connectée à la borne positive du générateur.
 
@@ -51,6 +52,7 @@ Ce qui est important, c'est de retenir ici que le sens de circulation du courant
 
 4. Donner les définitions de l’anode et de la cathode.
 {{% solution "Réponse" %}}
+
 - Anode : électrode au niveau de laquelle une réaction d'oxydation se déroule.
 - Cathode : électrode au niveau de laquelle une réaction de réduction se déroule.
 {{% /solution %}}
@@ -99,8 +101,8 @@ La constante d’équilibre $K$ de la réaction a pour valeur : $\pu{7e50}$.
 {{< youtube "4JayOOhbJho" >}}
 
 #### Résultat expérimental
-Si on attend suffisamment longtemps le fin fil de cuivre se désagrège complètement.
 
+Si on attend suffisamment longtemps le fin fil de cuivre se désagrège complètement.
 
 ### Exploitation
 
