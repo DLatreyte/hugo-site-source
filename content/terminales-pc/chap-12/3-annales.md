@@ -3,7 +3,7 @@ title: "Exercices"
 subtitle: ""
 author: ""
 type: ""
-date: 2021-02-09T08:12:34+04:00
+date: 2022-02-09T08:12:34+04:00
 draft: false
 toc: true
 tags: []
