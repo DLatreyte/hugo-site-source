@@ -39,8 +39,8 @@ layout: single
 
 - [*Mouvement d’un système*](chap-11)
 
+- [*Études énergétiques en mécanique*](chap-14)
+
 - [*De la structure à l'interprétation des propriétés d'une espèce chimique*](chap-12)
 
 - [*Utilisation des propriétés des espèces chimiques en synthèse organique*](chap-13)
-
-- [*Études énergétiques en mécanique*](chap-14)

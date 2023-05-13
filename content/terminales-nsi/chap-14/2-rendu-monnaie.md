@@ -459,3 +459,128 @@ def nb_rendre(a_rendre: int, pieces: List[int]) -> int:
 ```
 
 {{% /solution %}}
+
+## En résumé
+
+{{% solution "Rendu de monnaie - Nombre de pièces à rendre - Toutes les méthodes" %}}
+
+```python
+"""
+Les mille et unes façon de rendre la monnaie.
+"""
+from typing import List, Dict
+
+
+def glouton(somme: int, pieces: List[int]) -> int:
+    """
+    Retourne le nombre de pièces nécessaires pour 
+    rendre la monnaie pour somme.
+
+    Méthode gloutonne, pièces est censé être trié
+    dans le sens décroissant.
+    """
+    nbre = 0  # nombre de pièces à rendre
+
+    for piece in pieces:
+        nbre += somme // piece
+        somme = somme % piece
+
+    return nbre
+
+
+def force_brute(somme: int, pieces: List[int]) -> int:
+    """
+    Retourne le nombre de pièces nécessaires pour 
+    rendre la monnaie pour somme.
+
+    Méthode force brute.
+    """
+    if somme == 0:
+        return 0
+
+    nbre_min = float('inf')
+    for piece in pieces:
+        if somme - piece >= 0:
+            nbre_new = 1 + force_brute(somme - piece, pieces)
+            if nbre_new < nbre_min:
+                nbre_min = nbre_new
+
+    return nbre_min
+
+
+def memoisation(somme: int,
+                pieces: List[int],
+                memo: Dict[int, int] = {0: 0}) -> int:
+    """
+    Retourne le nombre de pièces nécessaires pour 
+    rendre la monnaie pour somme.
+
+    Programmation dynamique : mémoïsation.
+    """
+    if somme not in memo:
+        nbre_min = float('inf')
+        for piece in pieces:
+            if somme - piece >= 0:
+                nbre_new = 1 + memoisation(somme - piece, pieces, memo)
+                if nbre_new < nbre_min:
+                    nbre_min = nbre_new
+        memo[somme] = nbre_min
+
+    return memo[somme]
+
+
+def tabulaire(somme: int, pieces: List[int]) -> int:
+    """
+    Retourne le nombre de pièces nécessaires pour 
+    rendre la monnaie pour somme.
+
+    Programmation dynamique : méthode tabulaire.
+    Fonction enveloppe.
+    """
+    nbre_pour_somme = [float('inf') for i in range(somme + 1)]
+    nbre_pour_somme[0] = 0
+
+    def _tabulaire(somme: int, pieces: List[int], nbre_pour_somme):
+        """
+        Mise en œuvre de la méthode tabulaire.
+        """
+        for somme_a_rendre in range(1, somme + 1):
+            for piece in pieces:
+                if somme_a_rendre - piece >= 0:
+                    nbre = 1 + nbre_pour_somme[somme_a_rendre - piece]
+
+                    if nbre < nbre_pour_somme[somme_a_rendre]:
+                        nbre_pour_somme[somme_a_rendre] = nbre
+
+        return nbre_pour_somme[somme]
+
+    return _tabulaire(somme, pieces, nbre_pour_somme)
+
+
+if __name__ == "__main__":
+    somme_a_rendre = 60
+    pieces = [25, 20, 1]
+
+    nbres_pieces = glouton(somme_a_rendre, pieces)
+    print(
+        f"Méthode gloutonne pour rendre {somme_a_rendre} : {nbres_pieces} pieces."
+    )
+
+    nbres_pieces = force_brute(somme_a_rendre, pieces)
+    print(
+        f"Méthode force-brute pour rendre {somme_a_rendre} : {nbres_pieces} pieces."
+    )
+
+    nbres_pieces = memoisation(somme_a_rendre, pieces)
+    print(
+        f"Méthode mémoïsation pour rendre {somme_a_rendre} : {nbres_pieces} pieces."
+    )
+
+    nbres_pieces = tabulaire(somme_a_rendre, pieces)
+    print(
+        f"Méthode tabulaire pour rendre {somme_a_rendre} : {nbres_pieces} pieces."
+    )
+
+```
+
+{{% /solution %}}
