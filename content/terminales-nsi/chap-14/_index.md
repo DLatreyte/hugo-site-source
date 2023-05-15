@@ -26,4 +26,8 @@ layout: "single"
 
 - **Doc.** [*Problème du rendu de monnaie*](2-rendu-monnaie)
 
+<!--
 - **Doc.** [*Découpe d'une corde*](3-decoupe-corde)
+-->
+
+- **Doc.** <a href="/terminales-nsi/chap-14/chap-14-3/decoupe_corde.html" alt="" target="_blank">*Découpe d'une corde*</a>

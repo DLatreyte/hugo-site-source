@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="https://www.texmacs.org/2002/extensions" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <head>
+    <title>D&eacute;coupe d'une corde</title>
+    <meta content="TeXmacs 2.1.1" name="generator"></meta>
+    <link href="https://dlatreyte.github.io/texmacs-styles/texmacs-base.css" type="text/css" rel="stylesheet"></link>
+    <link href="https://dlatreyte.github.io/texmacs-styles/blog-icon.png" rel="icon"></link>
+    <link href="https://www.texmacs.org/css/tmfold.css" type="text/css" rel="stylesheet"></link>
+    <script src="https://www.texmacs.org/javascript/texmacs_fold.js" language="javascript" defer></script>
+    <script language="javascript"
+    defer>"https://dlatreyte.github.io/texmacs-styles/highlight.pack.js"</script>
+    <script language="javascript"
+    defer>"https://dlatreyte.github.io/texmacs-styles/texmacs-base.js"</script>
+  </head>
+  <body>
+    <table class="title-block" style="margin-bottom: 2em">
+      <tr>
+        <td><table class="title-block">
+          <tr>
+            <td><font color="#1c8acf"><b><font style="font-size: 168.0%"><class style="font-variant: small-caps">D&eacute;coupe
+            d'une corde</class></font></b></font></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+    <p>
+      Un magasin ach&egrave;te des cordes d'escalade de longueur <img src="decoupe_corde-1.png"
+      style="margin-left: -0.0225674931129477em; margin-bottom: -0.0113278236914601em; margin-right: -0.0225674931129477em; margin-top: -0.0112837465564739em; vertical-align: -0.0112396694214876em; height: 0.699592286501377em"></img> et les d&eacute;coupe (soigneusement) en cordes plus
+      petites pour les vendre &agrave; ses clients. On souhaite
+      d&eacute;terminer un d&eacute;coupage optimal pour maximiser le revenu,
+      sachant que les prix de ventes <img src="decoupe_corde-2.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0.0338071625344352em; margin-right: -0.0225674931129476em; margin-top: 0em; vertical-align: -0.259482093663912em; height: 0.733443526170799em"></img> d'une corde de
+      <img src="decoupe_corde-3.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0113278236914601em; margin-right: -0.0564187327823691em; margin-top: -0.0338512396694215em; vertical-align: -0.0112396694214876em; height: 0.699592286501377em"></img> m&egrave;tres sont donn&eacute;s.<br />Par
+      exemple, supposons qu'on dispose d'une corde de <img src="decoupe_corde-4.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0113278236914601em; margin-right: -0.0225674931129478em; margin-top: -0.0112837465564739em; vertical-align: -0.0112396694214876em; height: 0.699592286501377em"></img>
+      m&egrave;tres, avec les prix de ventes indiqu&eacute;s dans le tableau
+      suivant :
+    </p>
+    <center>
+      <p style="margin-top: 0.5em; margin-bottom: 0.5em">
+        <table style="display: inline-table; vertical-align: middle">
+          <tbody><tr>
+            <td style="border-right: 1px solid; border-bottom: 1px solid; text-align: center; border-left: 1px solid; border-top: 1px solid"><img src="decoupe_corde-3.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0113278236914601em; margin-right: -0.0564187327823691em; margin-top: -0.0338512396694215em; vertical-align: -0.0112396694214876em; height: 0.699592286501377em"></img></td>
+            <td style="border-right: 1px solid; border-bottom: 1px solid; text-align: center; border-top: 1px solid">0</td>
+            <td style="border-right: 1px solid; border-bottom: 1px solid; text-align: center; border-top: 1px solid">1</td>
+            <td style="border-right: 1px solid; border-bottom: 1px solid; text-align: center; border-top: 1px solid">2</td>
+            <td style="border-right: 1px solid; border-bottom: 1px solid; text-align: center; border-top: 1px solid">3</td>
+            <td style="border-right: 1px solid; border-bottom: 1px solid; text-align: center; border-top: 1px solid">4</td>
+            <td style="border-right: 1px solid; border-bottom: 1px solid; text-align: center; border-top: 1px solid">5</td>
+            <td style="border-right: 1px solid; border-bottom: 1px solid; text-align: center; border-top: 1px solid">6</td>
+            <td style="border-right: 1px solid; border-bottom: 1px solid; text-align: center; border-top: 1px solid">7</td>
+            <td style="border-right: 1px solid; border-bottom: 1px solid; text-align: center; border-top: 1px solid">8</td>
+            <td style="border-right: 1px solid; border-bottom: 1px solid; text-align: center; border-top: 1px solid">9</td>
+            <td style="border-right: 1px solid; border-bottom: 1px solid; text-align: center; border-top: 1px solid">10</td>
+          </tr><tr>
+            <td style="border-right: 1px solid; border-bottom: 1px solid; text-align: center; border-left: 1px solid"><img src="decoupe_corde-2.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0.0338071625344352em; margin-right: -0.0225674931129476em; margin-top: 0em; vertical-align: -0.259482093663912em; height: 0.733443526170799em"></img></td>
+            <td style="border-right: 1px solid; border-bottom: 1px solid; text-align: center">0</td>
+            <td style="border-right: 1px solid; border-bottom: 1px solid; text-align: center">1</td>
+            <td style="border-right: 1px solid; border-bottom: 1px solid; text-align: center">5</td>
+            <td style="border-right: 1px solid; border-bottom: 1px solid; text-align: center">8</td>
+            <td style="border-right: 1px solid; border-bottom: 1px solid; text-align: center">9</td>
+            <td style="border-right: 1px solid; border-bottom: 1px solid; text-align: center">10</td>
+            <td style="border-right: 1px solid; border-bottom: 1px solid; text-align: center">17</td>
+            <td style="border-right: 1px solid; border-bottom: 1px solid; text-align: center">18</td>
+            <td style="border-right: 1px solid; border-bottom: 1px solid; text-align: center">20</td>
+            <td style="border-right: 1px solid; border-bottom: 1px solid; text-align: center">24</td>
+            <td style="border-right: 1px solid; border-bottom: 1px solid; text-align: center">26</td>
+          </tr></tbody>
+        </table>
+      </p>
+    </center>
+    <h2 id="auto-1">1<span style="margin-left: 1em"></span>Utilisation d'une strat&eacute;gie
+    gloutonne<span style="margin-left: 1em"></span></h2>
+    <p>
+      <div style="display: inline">
+        <a id="auto-2"></a>
+      </div>
+      <h5>1.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        Rappeler en quoi consiste une strat&eacute;gie gloutonne.
+      </div>
+    </p>
+    <div class="switchable" style="margin-left: 38.660688007188px">
+      <p>
+        <class class="always" style="float: left; text-align: right; min-width: 2.5em; margin-left: -3em; margin-right: 0.5em"><img class="summary-button container" src="decoupe_corde-5.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0225674931129477em; margin-right: -0.0225674931129476em; margin-top: -0.0225674931129476em; vertical-align: 0em; height: 0.490446280991736em"></img></class><class
+        class="always" style="float: left; text-align: right; min-width: 2.5em; margin-left: -3em; margin-right: 0.5em"><img class="detailed-button container" src="decoupe_corde-6.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0225674931129477em; margin-right: -0.0225674931129477em; margin-top: -0.0225674931129476em; vertical-align: 0em; height: 0.490446280991736em"></img></class><strong class="always">R&eacute;ponse</strong>
+      </p>
+      <font class="detailed" color="black"><div class="ornament" style="background-color:#f7f2e0;border-width:0px;border-radius:15px">
+        <p>
+          Lorsqu'on met en &oelig;uvre une strat&eacute;gie gloutonne, on
+          cherche, &agrave; chaque &eacute;tape, le meilleur choix &laquo; du
+          moment &raquo;, c'est &agrave; dire un choix optimum local.
+        </p>
+      </div></font>
+    </div>
+    <p>
+      <div style="display: inline">
+        <a id="auto-3"></a>
+      </div>
+      <h5>2. <span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        On d&eacute;finit la <em>densit&eacute;</em> d'une corde de longueur
+        <img src="decoupe_corde-3.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0113278236914601em; margin-right: -0.0564187327823691em; margin-top: -0.0338512396694215em; vertical-align: -0.0112396694214876em; height: 0.699592286501377em"></img> comme &eacute;tant le rapport <span class="no-breaks"><img
+        src="decoupe_corde-7.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0.0338071625344352em; margin-right: -0.0564187327823693em; margin-top: -0.0112837465564739em; vertical-align: -0.259482093663912em; height: 0.902699724517906em"></img>,</span> c'est-&agrave;-dire son prix au
+        m&egrave;tre. Expliquer en quoi cette grandeur pourrait &ecirc;tre
+        pertinente dans la mise en &oelig;uvre d'un algorithme glouton.<br
+        /><strong>Remarque :</strong> une grandeur comparable a
+        &eacute;t&eacute; utilis&eacute;e dans le probl&egrave;me du sac
+        &agrave; dos.
+      </div>
+    </p>
+    <div class="switchable" style="margin-left: 38.660688007188px">
+      <p>
+        <class class="always" style="float: left; text-align: right; min-width: 2.5em; margin-left: -3em; margin-right: 0.5em"><img class="summary-button container" src="decoupe_corde-5.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0225674931129477em; margin-right: -0.0225674931129476em; margin-top: -0.0225674931129476em; vertical-align: 0em; height: 0.490446280991736em"></img></class><class
+        class="always" style="float: left; text-align: right; min-width: 2.5em; margin-left: -3em; margin-right: 0.5em"><img class="detailed-button container" src="decoupe_corde-6.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0225674931129477em; margin-right: -0.0225674931129477em; margin-top: -0.0225674931129476em; vertical-align: 0em; height: 0.490446280991736em"></img></class><strong class="always">R&eacute;ponse</strong>
+      </p>
+      <font class="detailed" color="black"><div class="ornament" style="background-color:#f7f2e0;border-width:0px;border-radius:15px">
+        <p>
+          Puisqu'on cherche &agrave; maximiser le profit, l'id&eacute;e est de
+          commencer &agrave; d&eacute;couper la corde par les longueurs qui
+          rapportent le plus &agrave; l'instant o&ugrave; l'on effectue la
+          d&eacute;coupe, c'est &agrave; dire les segments dont la
+          densit&eacute; est la plus grande.
+        </p>
+      </div></font>
+    </div>
+    <p>
+      <div style="display: inline">
+        <a id="auto-4"></a>
+      </div>
+      <h5>3.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        Quelle instruction math&eacute;matique permettrait de
+        d&eacute;terminer par combien de segments de longueur <img src="decoupe_corde-3.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0113278236914601em; margin-right: -0.0564187327823691em; margin-top: -0.0338512396694215em; vertical-align: -0.0112396694214876em; height: 0.699592286501377em"></img>
+        une corde de longueur <img src="decoupe_corde-1.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0113278236914601em; margin-right: -0.0225674931129477em; margin-top: -0.0112837465564739em; vertical-align: -0.0112396694214876em; height: 0.699592286501377em"></img> peut &ecirc;tre
+        d&eacute;coup&eacute;e ?
+      </div>
+    </p>
+    <div class="switchable" style="margin-left: 38.660688007188px">
+      <p>
+        <class class="always" style="float: left; text-align: right; min-width: 2.5em; margin-left: -3em; margin-right: 0.5em"><img class="summary-button container" src="decoupe_corde-5.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0225674931129477em; margin-right: -0.0225674931129476em; margin-top: -0.0225674931129476em; vertical-align: 0em; height: 0.490446280991736em"></img></class><class
+        class="always" style="float: left; text-align: right; min-width: 2.5em; margin-left: -3em; margin-right: 0.5em"><img class="detailed-button container" src="decoupe_corde-6.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0225674931129477em; margin-right: -0.0225674931129477em; margin-top: -0.0225674931129476em; vertical-align: 0em; height: 0.490446280991736em"></img></class><strong class="always">R&eacute;ponse</strong>
+      </p>
+      <font class="detailed" color="black"><div class="ornament" style="background-color:#f7f2e0;border-width:0px;border-radius:15px">
+        <p>
+          La division enti&egrave;re : <img src="decoupe_corde-8.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0.0112396694214876em; margin-right: -0.0564187327823691em; margin-top: -0.0112837465564739em; vertical-align: -0.0676584022038568em; height: 0.733443526170799em"></img>
+        </p>
+      </div></font>
+    </div>
+    <p>
+      <div style="display: inline">
+        <a id="auto-5"></a>
+      </div>
+      <h5>4.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        Quelle instruction math&eacute;matique permettrait de
+        d&eacute;terminer la longueur de corde restante apr&egrave;s la
+        d&eacute;coupe de segments de longueur <img src="decoupe_corde-3.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0113278236914601em; margin-right: -0.0564187327823691em; margin-top: -0.0338512396694215em; vertical-align: -0.0112396694214876em; height: 0.699592286501377em"></img> ?
+      </div>
+    </p>
+    <div class="switchable" style="margin-left: 38.660688007188px">
+      <p>
+        <class class="always" style="float: left; text-align: right; min-width: 2.5em; margin-left: -3em; margin-right: 0.5em"><img class="summary-button container" src="decoupe_corde-5.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0225674931129477em; margin-right: -0.0225674931129476em; margin-top: -0.0225674931129476em; vertical-align: 0em; height: 0.490446280991736em"></img></class><class
+        class="always" style="float: left; text-align: right; min-width: 2.5em; margin-left: -3em; margin-right: 0.5em"><img class="detailed-button container" src="decoupe_corde-6.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0225674931129477em; margin-right: -0.0225674931129477em; margin-top: -0.0225674931129476em; vertical-align: 0em; height: 0.490446280991736em"></img></class><strong class="always">R&eacute;ponse</strong>
+      </p>
+      <font class="detailed" color="black"><div class="ornament" style="background-color:#f7f2e0;border-width:0px;border-radius:15px">
+        <p>
+          Le modulo : L % i
+        </p>
+      </div></font>
+    </div>
+    <p>
+      <div style="display: inline">
+        <a id="auto-6"></a>
+      </div>
+      <h5>5.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        &Eacute;crire le code de la fonction <tt class="verbatim">sol_gloutonne</tt>
+        dont la sp&eacute;cification est :
+      </div>
+    </p>
+    <div class="tmweb-code">
+      <pre class="verbatim" xml:space="preserve">
+def decoupe_gloutonne(L, s, p):
+    &quot;&quot;&quot;
+    D&eacute;termine gr&acirc;ce &agrave; une strat&eacute;gie gloutonne la d&eacute;coupe optimale
+    d une corde, connaissant les longueurs des segments possibles 
+    et les valeurs associ&eacute;es.
+
+    Param&egrave;tres
+    ----------
+    L : int
+        Longueur de la corde
+    s : list[int]
+        Liste des segments possibles
+    p : list[int]
+        Prix associ&eacute;s aux segments
+
+    Valeur retourn&eacute;e
+    ----------------
+    (somme, {segment : nombre})
+        Tuple form&eacute; de la somme gagn&eacute;e &quot;optimale&quot;
+        et du dictionnaire des segments de d&eacute;coupe accompagn&eacute;s de leur nombre.
+    &quot;&quot;&quot;</pre>
+    </div>
+    <p>
+      Utiliser les deux instructions suivantes dans le corps de la fonction
+      (se renseigner sur l'influence du param&egrave;tre <tt class="verbatim">key</tt>
+      dans la d&eacute;finition de la fonction <tt class="verbatim">sorted</tt>) :
+    </p>
+    <div class="tmweb-code">
+      <pre class="verbatim" xml:space="preserve">
+donnees = [(s[i], p[i], p[i] / s[i]) for i in range(1, len(s))]
+donnees = sorted(donnees, key=lambda donnee: donnee[2])</pre>
+    </div>
+    <div class="switchable" style="margin-left: 38.660688007188px">
+      <p>
+        <class class="always" style="float: left; text-align: right; min-width: 2.5em; margin-left: -3em; margin-right: 0.5em"><img class="summary-button container" src="decoupe_corde-5.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0225674931129477em; margin-right: -0.0225674931129476em; margin-top: -0.0225674931129476em; vertical-align: 0em; height: 0.490446280991736em"></img></class><class
+        class="always" style="float: left; text-align: right; min-width: 2.5em; margin-left: -3em; margin-right: 0.5em"><img class="detailed-button container" src="decoupe_corde-6.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0225674931129477em; margin-right: -0.0225674931129477em; margin-top: -0.0225674931129476em; vertical-align: 0em; height: 0.490446280991736em"></img></class><strong class="always">R&eacute;ponse</strong>
+      </p>
+      <font class="detailed" color="black"><div class="ornament" style="background-color:#f7f2e0;border-width:0px;border-radius:15px">
+        <div class="tmweb-code">
+          <pre class="verbatim" xml:space="preserve">
+def decoupe_gloutonne(L, s, p):
+    &quot;&quot;&quot;
+    D&eacute;termine gr&acirc;ce &agrave; une strat&eacute;gie gloutonne la d&eacute;coupe optimale
+    d une corde, connaissant les longueurs des segments possibles 
+    et les valeurs associ&eacute;es.
+
+    Param&egrave;tres
+    ----------
+    L : int
+        Longueur de la corde
+    s : list[int]
+        Liste des segments possibles
+    p : list[int]
+        Prix associ&eacute;s aux segments
+
+    Valeur retourn&eacute;e
+    ----------------
+    (somme, {segment : nombre})
+        Tuple form&eacute; de la somme gagn&eacute;e &quot;optimale&quot;
+        et du dictionnaire des segments de d&eacute;coupe 
+        accompagn&eacute;s de leur nombre.
+    &quot;&quot;&quot;
+    # Pr&eacute;paration des donn&eacute;es en vue du tri sur la densit&eacute;
+    donnees = [(s[i], p[i], p[i] / s[i]) for i in range(1, len(s))]
+
+    # Tri des donn&eacute;es par densit&eacute; croissante
+    donnees = sorted(donnees, key=lambda donnee: donnee[2])
+
+    # Valeurs retourn&eacute;es
+    decoupe = {}  # Couples (segment : nbre)
+    somme = 0
+
+    i = 0
+    while i &lt; len(donnees) and L != 0:
+        segment = donnees[-1 - i][0]
+        # Pas la peine de consid&eacute;rer les segments trop grands
+        if segment &lt;= L:
+            # Nbre de segments
+            nbre = L // segment
+            # Longueur de corde restante
+            L = L % segment
+            # Ajout au dictionnaire r&eacute;sultat
+            decoupe[segment] = nbre
+            # Ajout &agrave; la somme totale
+            somme += nbre * donnees[-1 - i][1]
+        i += 1
+
+    return (somme, decoupe)</pre>
+        </div>
+      </div></font>
+    </div>
+    <p>
+      <div style="display: inline">
+        <a id="auto-7"></a>
+      </div>
+      <h5>6.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        Quel gain peut-on esp&eacute;rer pour une corde de longueur <img src="decoupe_corde-9.png"
+        style="margin-left: -0.0225674931129477em; margin-bottom: -0.0113278236914601em; margin-right: -0.0338512396694215em; margin-top: -0.0112837465564739em; vertical-align: -0.0112396694214876em; height: 0.699592286501377em"></img> ?
+      </div>
+    </p>
+    <div class="switchable" style="margin-left: 38.660688007188px">
+      <p>
+        <class class="always" style="float: left; text-align: right; min-width: 2.5em; margin-left: -3em; margin-right: 0.5em"><img class="summary-button container" src="decoupe_corde-5.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0225674931129477em; margin-right: -0.0225674931129476em; margin-top: -0.0225674931129476em; vertical-align: 0em; height: 0.490446280991736em"></img></class><class
+        class="always" style="float: left; text-align: right; min-width: 2.5em; margin-left: -3em; margin-right: 0.5em"><img class="detailed-button container" src="decoupe_corde-6.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0225674931129477em; margin-right: -0.0225674931129477em; margin-top: -0.0225674931129476em; vertical-align: 0em; height: 0.490446280991736em"></img></class><strong class="always">R&eacute;ponse</strong>
+      </p>
+      <font class="detailed" color="black"><div class="ornament" style="background-color:#f7f2e0;border-width:0px;border-radius:15px">
+        <p>
+          La strat&eacute;gie gloutonne nous apprend que l'on peut gagner 9.
+        </p>
+      </div></font>
+    </div>
+    <h2 id="auto-8">2<span style="margin-left: 1em"></span>Utilisation de la force brute<span style="margin-left: 1em"></span></h2>
+    <p style="margin-top: 1em; margin-bottom: 1em">
+      <strong>Remarque. </strong>&Agrave; partir de cette section on ne
+      cherche plus &agrave; conna&icirc;tre la d&eacute;coupe qui conduit
+      &agrave; la somme maximale. On se contente de chercher cette somme.
+    </p>
+    <p>
+      <div style="display: inline">
+        <a id="auto-9"></a>
+      </div>
+      <h5>7.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        On note <img src="decoupe_corde-10.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0113278236914601em; margin-right: -0.0225674931129476em; margin-top: -0.0112837465564738em; vertical-align: -0.0112396694214876em; height: 0.756011019283747em"></img> la fonction qui donne la valeur
+        maximale que l'on peut obtenir en d&eacute;coupant une corde de
+        longueur <span class="no-breaks"><img src="decoupe_corde-1.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0113278236914601em; margin-right: -0.0225674931129477em; margin-top: -0.0112837465564739em; vertical-align: -0.0112396694214876em; height: 0.699592286501377em"></img>.</span> Indiquer la
+        relation de r&eacute;currence que v&eacute;rifie la fonction <span
+        class="no-breaks"><img src="decoupe_corde-10.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0113278236914601em; margin-right: -0.0225674931129476em; margin-top: -0.0112837465564738em; vertical-align: -0.0112396694214876em; height: 0.756011019283747em"></img>.</span>
+      </div>
+    </p>
+    <div class="switchable" style="margin-left: 38.660688007188px">
+      <p>
+        <class class="always" style="float: left; text-align: right; min-width: 2.5em; margin-left: -3em; margin-right: 0.5em"><img class="summary-button container" src="decoupe_corde-5.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0225674931129477em; margin-right: -0.0225674931129476em; margin-top: -0.0225674931129476em; vertical-align: 0em; height: 0.490446280991736em"></img></class><class
+        class="always" style="float: left; text-align: right; min-width: 2.5em; margin-left: -3em; margin-right: 0.5em"><img class="detailed-button container" src="decoupe_corde-6.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0225674931129477em; margin-right: -0.0225674931129477em; margin-top: -0.0225674931129476em; vertical-align: 0em; height: 0.490446280991736em"></img></class><strong class="always">R&eacute;ponse</strong>
+      </p>
+      <font class="detailed" color="black"><div class="ornament" style="background-color:#f7f2e0;border-width:0px;border-radius:15px">
+        <center>
+          <img src="decoupe_corde-11.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0.08467217630854em; margin-right: 0em; margin-top: -0.0424022038567493em; vertical-align: -0.703250688705234em; height: 1.70274380165289em"></img>
+        </center>
+        <p>
+          o&ugrave; <img src="decoupe_corde-12.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0.0112396694214876em; margin-right: -0.0225674931129476em; margin-top: -0.0112837465564738em; vertical-align: -0.161674931129477em; height: 0.77104132231405em"></img> est l'un des segments possibles et
+          <img src="decoupe_corde-13.png" style="margin-left: -0.0225674931129477em; margin-bottom: 0.0338071625344352em; margin-right: 0em; margin-top: -0.0145454545454545em; vertical-align: -0.259482093663912em; height: 0.959118457300275em"></img> le prix associ&eacute;.
+        </p>
+        <p>
+          La relation suppose que l'it&eacute;ration porte sur tous les
+          segments possibles.
+        </p>
+      </div></font>
+    </div>
+    <p>
+      <div style="display: inline">
+        <a id="auto-10"></a>
+      </div>
+      <h5>8.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        &Eacute;crire le code de la fonction <tt class="verbatim">decoupe_force_brute</tt>
+        dont la sp&eacute;cification est : 
+      </div>
+    </p>
+    <div class="tmweb-code">
+      <pre class="verbatim" xml:space="preserve">
+def decoupe_force_brute(longueur: int, 
+                        longueurs: List[int], 
+                        prix: List[int]) -&gt; int:
+    &quot;&quot;&quot;
+    D&eacute;termine gr&acirc;ce &agrave; une strat&eacute;gie par force brute la d&eacute;coupe optimale
+    d une corde, connaissant les longueurs des segments possibles 
+    et les valeurs associ&eacute;es.
+    &quot;&quot;&quot;</pre>
+    </div>
+    <div class="switchable" style="margin-left: 38.660688007188px">
+      <p>
+        <class class="always" style="float: left; text-align: right; min-width: 2.5em; margin-left: -3em; margin-right: 0.5em"><img class="summary-button container" src="decoupe_corde-5.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0225674931129477em; margin-right: -0.0225674931129476em; margin-top: -0.0225674931129476em; vertical-align: 0em; height: 0.490446280991736em"></img></class><class
+        class="always" style="float: left; text-align: right; min-width: 2.5em; margin-left: -3em; margin-right: 0.5em"><img class="detailed-button container" src="decoupe_corde-6.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0225674931129477em; margin-right: -0.0225674931129477em; margin-top: -0.0225674931129476em; vertical-align: 0em; height: 0.490446280991736em"></img></class><strong class="always">R&eacute;ponse</strong>
+      </p>
+      <font class="detailed" color="black"><div class="ornament" style="background-color:#f7f2e0;border-width:0px;border-radius:15px">
+        <div class="tmweb-code">
+          <pre class="verbatim" xml:space="preserve">
+def decoupe_force_brute(longueur: int,
+                        longueurs: List[int],
+                        prix: List[int]) -&gt; int:
+    &quot;&quot;&quot;
+    D&eacute;termine gr&acirc;ce &agrave; une strat&eacute;gie par force brute la d&eacute;coupe optimale
+    d une corde, connaissant les longueurs des segments possibles 
+    et les valeurs associ&eacute;es.
+    &quot;&quot;&quot;
+    if longueur == 0:
+        return 0
+
+    valeur_max = 0
+    for (i, segment) in enumerate(longueurs):
+        if longueur - segment &gt;= 0:
+            valeur_new = prix[i] + decoupe_force_brute(longueur - segment,
+                                                       longueurs, prix)
+            if valeur_new &gt; valeur_max:
+                valeur_max = valeur_new
+
+    return valeur_max</pre>
+        </div>
+      </div></font>
+    </div>
+    <p>
+      <div style="display: inline">
+        <a id="auto-11"></a>
+      </div>
+      <h5>9.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        Quel gain peut-on esp&eacute;rer pour une corde de longueur <img src="decoupe_corde-9.png"
+        style="margin-left: -0.0225674931129477em; margin-bottom: -0.0113278236914601em; margin-right: -0.0338512396694215em; margin-top: -0.0112837465564739em; vertical-align: -0.0112396694214876em; height: 0.699592286501377em"></img> ?
+      </div>
+    </p>
+    <div class="switchable" style="margin-left: 38.660688007188px">
+      <p>
+        <class class="always" style="float: left; text-align: right; min-width: 2.5em; margin-left: -3em; margin-right: 0.5em"><img class="summary-button container" src="decoupe_corde-5.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0225674931129477em; margin-right: -0.0225674931129476em; margin-top: -0.0225674931129476em; vertical-align: 0em; height: 0.490446280991736em"></img></class><class
+        class="always" style="float: left; text-align: right; min-width: 2.5em; margin-left: -3em; margin-right: 0.5em"><img class="detailed-button container" src="decoupe_corde-6.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0225674931129477em; margin-right: -0.0225674931129477em; margin-top: -0.0225674931129476em; vertical-align: 0em; height: 0.490446280991736em"></img></class><strong class="always">R&eacute;ponse</strong>
+      </p>
+      <font class="detailed" color="black"><div class="ornament" style="background-color:#f7f2e0;border-width:0px;border-radius:15px">
+        <p>
+          La strat&eacute;gie par force brute nous apprend que l'on peut
+          gagner 10. 
+        </p>
+      </div></font>
+    </div>
+    <h2 id="auto-12">3<span style="margin-left: 1em"></span>Utilisation de la programmation
+    dynamique<span style="margin-left: 1em"></span></h2>
+    <p>
+      <div style="display: inline">
+        <a id="auto-13"></a>
+      </div>
+      <h5>10.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        Rappeler quel est l'objectif de la programmation dynamique.
+      </div>
+    </p>
+    <div class="switchable" style="margin-left: 38.660688007188px">
+      <p>
+        <class class="always" style="float: left; text-align: right; min-width: 2.5em; margin-left: -3em; margin-right: 0.5em"><img class="summary-button container" src="decoupe_corde-5.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0225674931129477em; margin-right: -0.0225674931129476em; margin-top: -0.0225674931129476em; vertical-align: 0em; height: 0.490446280991736em"></img></class><class
+        class="always" style="float: left; text-align: right; min-width: 2.5em; margin-left: -3em; margin-right: 0.5em"><img class="detailed-button container" src="decoupe_corde-6.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0225674931129477em; margin-right: -0.0225674931129477em; margin-top: -0.0225674931129476em; vertical-align: 0em; height: 0.490446280991736em"></img></class><strong class="always">R&eacute;ponse</strong>
+      </p>
+      <font class="detailed" color="black"><div class="ornament" style="background-color:#f7f2e0;border-width:0px;border-radius:15px">
+        <p>
+          La programmation dynamique est une technique dont le principe
+          consiste &agrave; d&eacute;couper un probl&egrave;me en
+          sous-probl&egrave;mes (non ind&eacute;pendants les uns des autres),
+          &agrave; les r&eacute;soudre et &agrave; stocker les
+          r&eacute;sultats de ces sous-probl&egrave;mes dans un tableau afin
+          de les r&eacute;utiliser.
+        </p>
+      </div></font>
+    </div>
+    <h3 id="auto-14">3.1<span style="margin-left: 1em"></span>Utilisation de la
+    m&eacute;mo&iuml;sation<span style="margin-left: 1em"></span></h3>
+    <p>
+      <div style="display: inline">
+        <a id="auto-15"></a>
+      </div>
+      <h5>11.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        Que faut-il ajouter au code de la section 2 afin de mettre en
+        &oelig;uvre la m&eacute;mo&iuml;sation ?
+      </div>
+    </p>
+    <div class="switchable" style="margin-left: 38.660688007188px">
+      <p>
+        <class class="always" style="float: left; text-align: right; min-width: 2.5em; margin-left: -3em; margin-right: 0.5em"><img class="summary-button container" src="decoupe_corde-5.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0225674931129477em; margin-right: -0.0225674931129476em; margin-top: -0.0225674931129476em; vertical-align: 0em; height: 0.490446280991736em"></img></class><class
+        class="always" style="float: left; text-align: right; min-width: 2.5em; margin-left: -3em; margin-right: 0.5em"><img class="detailed-button container" src="decoupe_corde-6.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0225674931129477em; margin-right: -0.0225674931129477em; margin-top: -0.0225674931129476em; vertical-align: 0em; height: 0.490446280991736em"></img></class><strong class="always">R&eacute;ponse</strong>
+      </p>
+      <font class="detailed" color="black"><div class="ornament" style="background-color:#f7f2e0;border-width:0px;border-radius:15px">
+        <p>
+          Il faut utiliser un dictionnaire afin de stocker les
+          r&eacute;sultats des sous-probl&egrave;mes rencontr&eacute;s lors
+          des apples r&eacute;cursifs.
+        </p>
+      </div></font>
+    </div>
+    <p>
+      <div style="display: inline">
+        <a id="auto-16"></a>
+      </div>
+      <h5>12.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        &Eacute;crire le code de la fonction <tt class="verbatim">decoupe_memoisation</tt>
+        dont la sp&eacute;cification est : 
+      </div>
+    </p>
+    <div class="tmweb-code">
+      <pre class="verbatim" xml:space="preserve">
+def decoupe_memoisation(longueur: int, longueurs: List[int],
+                        prix: List[int]) -&gt; int:
+    &quot;&quot;&quot;
+    D&eacute;termine en utilisant la m&eacute;mo&iuml;sation la d&eacute;coupe optimale
+    d une corde, connaissant les longueurs des segments possibles 
+    et les valeurs associ&eacute;es.
+
+    Cette fonction est une fonction enveloppe.
+    &quot;&quot;&quot;</pre>
+    </div>
+    <div class="switchable" style="margin-left: 38.660688007188px">
+      <p>
+        <class class="always" style="float: left; text-align: right; min-width: 2.5em; margin-left: -3em; margin-right: 0.5em"><img class="summary-button container" src="decoupe_corde-5.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0225674931129477em; margin-right: -0.0225674931129476em; margin-top: -0.0225674931129476em; vertical-align: 0em; height: 0.490446280991736em"></img></class><class
+        class="always" style="float: left; text-align: right; min-width: 2.5em; margin-left: -3em; margin-right: 0.5em"><img class="detailed-button container" src="decoupe_corde-6.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0225674931129477em; margin-right: -0.0225674931129477em; margin-top: -0.0225674931129476em; vertical-align: 0em; height: 0.490446280991736em"></img></class><strong class="always">R&eacute;ponse</strong>
+      </p>
+      <font class="detailed" color="black"><div class="ornament" style="background-color:#f7f2e0;border-width:0px;border-radius:15px">
+        <div class="tmweb-code">
+          <pre class="verbatim" xml:space="preserve">
+def decoupe_memoisation(longueur: int, longueurs: List[int],
+                        prix: List[int]) -&gt; int:
+    &quot;&quot;&quot;
+    D&eacute;termine en utilisant la m&eacute;mo&iuml;sation la d&eacute;coupe optimale
+    d une corde, connaissant les longueurs des segments possibles 
+    et les valeurs associ&eacute;es.
+
+    Cette fonction est une fonction enveloppe.
+    &quot;&quot;&quot;
+    memo = {0: 0}
+
+    def _memoisation(longueur: int, longueurs: List[int], prix: List[int],
+                     memo: Dict[int, int]) -&gt; int:
+        &quot;&quot;&quot;
+        Fonction qui effectue le traitement.
+        &quot;&quot;&quot;
+        if longueur not in memo:
+            valeur_max = 0
+            for (i, segment) in enumerate(longueurs):
+                if longueur - segment &gt;= 0:
+                    valeur_new = prix[i] + _memoisation(
+                        longueur - segment, longueurs, prix, memo)
+                    valeur_max = max(valeur_max, valeur_new)
+            memo[longueur] = valeur_max
+        return memo[longueur]
+
+    _memoisation(longueur, longueurs, prix, memo)
+    return memo[longueur]</pre>
+        </div>
+      </div></font>
+    </div>
+    <p>
+      <div style="display: inline">
+        <a id="auto-17"></a>
+      </div>
+      <h5>13.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        La valeur retourn&eacute;e par la m&eacute;thode <tt class="verbatim">decoupe_memoisation</tt>
+        doit-elle diff&eacute;rer de celle retourn&eacute;e par la fonction
+        <tt class="verbatim">decoupe_force_brute</tt> ? Pourquoi ?
+      </div>
+    </p>
+    <div class="switchable" style="margin-left: 38.660688007188px">
+      <p>
+        <class class="always" style="float: left; text-align: right; min-width: 2.5em; margin-left: -3em; margin-right: 0.5em"><img class="summary-button container" src="decoupe_corde-5.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0225674931129477em; margin-right: -0.0225674931129476em; margin-top: -0.0225674931129476em; vertical-align: 0em; height: 0.490446280991736em"></img></class><class
+        class="always" style="float: left; text-align: right; min-width: 2.5em; margin-left: -3em; margin-right: 0.5em"><img class="detailed-button container" src="decoupe_corde-6.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0225674931129477em; margin-right: -0.0225674931129477em; margin-top: -0.0225674931129476em; vertical-align: 0em; height: 0.490446280991736em"></img></class><strong class="always">R&eacute;ponse</strong>
+      </p>
+      <font class="detailed" color="black"><div class="ornament" style="background-color:#f7f2e0;border-width:0px;border-radius:15px">
+        <p>
+          La r&eacute;ponse doit &ecirc;tre identique puisque la
+          m&eacute;mo&iuml;sation ne modifie pas fondamentalement l'algorithme
+          mais enregistre simplement les calculs interm&eacute;diaires de
+          fa&ccedil;on &agrave; ne pas avoir &agrave; les calculer plusieurs
+          fois.
+        </p>
+      </div></font>
+    </div>
+    <h3 id="auto-18">3.2<span style="margin-left: 1em"></span>Utilisation d'une m&eacute;thode
+    tabulaire<span style="margin-left: 1em"></span></h3>
+    <p>
+      <div style="display: inline">
+        <a id="auto-19"></a>
+      </div>
+      <h5>14.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        Indiquer le principe de la m&eacute;thode tabulaire.
+      </div>
+    </p>
+    <div class="switchable" style="margin-left: 38.660688007188px">
+      <p>
+        <class class="always" style="float: left; text-align: right; min-width: 2.5em; margin-left: -3em; margin-right: 0.5em"><img class="summary-button container" src="decoupe_corde-5.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0225674931129477em; margin-right: -0.0225674931129476em; margin-top: -0.0225674931129476em; vertical-align: 0em; height: 0.490446280991736em"></img></class><class
+        class="always" style="float: left; text-align: right; min-width: 2.5em; margin-left: -3em; margin-right: 0.5em"><img class="detailed-button container" src="decoupe_corde-6.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0225674931129477em; margin-right: -0.0225674931129477em; margin-top: -0.0225674931129476em; vertical-align: 0em; height: 0.490446280991736em"></img></class><strong class="always">R&eacute;ponse</strong>
+      </p>
+      <font class="detailed" color="black"><div class="ornament" style="background-color:#f7f2e0;border-width:0px;border-radius:15px">
+        <p>
+          La m&eacute;thode tabulaire consiste &agrave; calculer tous les
+          sous-probl&egrave;mes en partant du plus petit jusqu'au
+          probl&egrave;me recherch&eacute;.
+        </p>
+      </div></font>
+    </div>
+    <p>
+      <div style="display: inline">
+        <a id="auto-20"></a>
+      </div>
+      <h5>15.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        Quelle structure doit-on ajoute au programme de la section 2 pour
+        mettre en &oelig;uvre la m&eacute;thode tabulaire ?
+      </div>
+    </p>
+    <div class="switchable" style="margin-left: 38.660688007188px">
+      <p>
+        <class class="always" style="float: left; text-align: right; min-width: 2.5em; margin-left: -3em; margin-right: 0.5em"><img class="summary-button container" src="decoupe_corde-5.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0225674931129477em; margin-right: -0.0225674931129476em; margin-top: -0.0225674931129476em; vertical-align: 0em; height: 0.490446280991736em"></img></class><class
+        class="always" style="float: left; text-align: right; min-width: 2.5em; margin-left: -3em; margin-right: 0.5em"><img class="detailed-button container" src="decoupe_corde-6.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0225674931129477em; margin-right: -0.0225674931129477em; margin-top: -0.0225674931129476em; vertical-align: 0em; height: 0.490446280991736em"></img></class><strong class="always">R&eacute;ponse</strong>
+      </p>
+      <font class="detailed" color="black"><div class="ornament" style="background-color:#f7f2e0;border-width:0px;border-radius:15px">
+        <p>
+          Il faut utiliser un tableau afin de stocker tous les calculs
+          interm&eacute;diaires, en partant du plus petit
+          sous-probl&egrave;me.
+        </p>
+      </div></font>
+    </div>
+    <p>
+      <div style="display: inline">
+        <a id="auto-21"></a>
+      </div>
+      <h5>16.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        &Eacute;crire le code de la fonction <tt class="verbatim">decoupe_tabulaire</tt>
+        dont la sp&eacute;cification est : 
+      </div>
+    </p>
+    <div class="tmweb-code">
+      <pre class="verbatim" xml:space="preserve">
+def decoupe_tabulaire(longueur: int, longueurs: List[int],
+                      prix: List[int]) -&gt; int:
+    &quot;&quot;&quot;
+    D&eacute;termine en utilisant la m&eacute;thode tabulaire la d&eacute;coupe optimale
+    d une corde, connaissant les longueurs des segments possibles 
+    et les valeurs associ&eacute;es.
+    &quot;&quot;&quot;</pre>
+    </div>
+    <div class="switchable" style="margin-left: 38.660688007188px">
+      <p>
+        <class class="always" style="float: left; text-align: right; min-width: 2.5em; margin-left: -3em; margin-right: 0.5em"><img class="summary-button container" src="decoupe_corde-5.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0225674931129477em; margin-right: -0.0225674931129476em; margin-top: -0.0225674931129476em; vertical-align: 0em; height: 0.490446280991736em"></img></class><class
+        class="always" style="float: left; text-align: right; min-width: 2.5em; margin-left: -3em; margin-right: 0.5em"><img class="detailed-button container" src="decoupe_corde-6.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0225674931129477em; margin-right: -0.0225674931129477em; margin-top: -0.0225674931129476em; vertical-align: 0em; height: 0.490446280991736em"></img></class><strong class="always">R&eacute;ponse</strong>
+      </p>
+      <font class="detailed" color="black"><div class="ornament" style="background-color:#f7f2e0;border-width:0px;border-radius:15px">
+        <div class="tmweb-code">
+          <pre class="verbatim" xml:space="preserve">
+def decoupe_tabulaire(longueur: int, longueurs: List[int],
+                      prix: List[int]) -&gt; int:
+    &quot;&quot;&quot;
+    D&eacute;termine en utilisant la m&eacute;thode tabulaire la d&eacute;coupe optimale
+    d une corde, connaissant les longueurs des segments possibles 
+    et les valeurs associ&eacute;es.
+    &quot;&quot;&quot;
+    valeurs = [0 for i in range(longueur + 1)]
+
+    for long in range(longueur + 1):
+        if long == 0:
+            valeurs[long] = 0
+        else:
+            for i, segment in enumerate(longueurs):
+                if long - segment &gt;= 0:
+                    valeur = prix[i] + valeurs[long - (i + 1)]
+                    if valeur &gt; valeurs[long]:
+                        valeurs[long] = valeur
+    return valeurs[longueur]</pre>
+        </div>
+      </div></font>
+    </div>
+    <p>
+      <div style="display: inline">
+        <a id="auto-22"></a>
+      </div>
+      <h5>17.<span style="margin-left: 1em"></span></h5>
+      <div style="display: inline">
+        La valeur retourn&eacute;e par la m&eacute;thode <tt class="verbatim">decoupe_tabulaire</tt>
+        doit-elle diff&eacute;rer de celle retourn&eacute;e par la fonction
+        <tt class="verbatim">decoupe_force_brute</tt> ? Pourquoi ?
+      </div>
+    </p>
+    <div class="switchable" style="margin-left: 38.660688007188px">
+      <p>
+        <class class="always" style="float: left; text-align: right; min-width: 2.5em; margin-left: -3em; margin-right: 0.5em"><img class="summary-button container" src="decoupe_corde-5.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0225674931129477em; margin-right: -0.0225674931129476em; margin-top: -0.0225674931129476em; vertical-align: 0em; height: 0.490446280991736em"></img></class><class
+        class="always" style="float: left; text-align: right; min-width: 2.5em; margin-left: -3em; margin-right: 0.5em"><img class="detailed-button container" src="decoupe_corde-6.png" style="margin-left: -0.0225674931129477em; margin-bottom: -0.0225674931129477em; margin-right: -0.0225674931129477em; margin-top: -0.0225674931129476em; vertical-align: 0em; height: 0.490446280991736em"></img></class><strong class="always">R&eacute;ponse</strong>
+      </p>
+      <font class="detailed" color="black"><div class="ornament" style="background-color:#f7f2e0;border-width:0px;border-radius:15px">
+        <p>
+          La r&eacute;ponse doit &ecirc;tre identique puisque la
+          m&eacute;thode tabulaire ne modifie pas fondamentalement
+          l'algorithme mais enregistre simplement les calculs
+          interm&eacute;diaires de fa&ccedil;on &agrave; ne pas avoir &agrave;
+          les calculer plusieurs fois.
+        </p>
+      </div></font>
+    </div>
+    <h2 id="auto-23">4<span style="margin-left: 1em"></span>Correction<span style="margin-left: 1em"></span></h2>
+    <p>
+      La correction se trouve &agrave; <a href="https://replit.com/@dlatreyte/Decoupe-dune-corde-1#main.py">cette adresse</a>.
+    </p>
+  </body>
+</html>
