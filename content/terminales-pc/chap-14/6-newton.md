@@ -11,7 +11,7 @@ categories: ["Terminale Spé PC"]
 image: ""
 solution_est_visible: true
 auto_numbering: true
-mathjax: true
+mathjax: false
 ---
 
 ## Objectif
@@ -43,9 +43,11 @@ Les transferts thermiques entre un corps et le milieu extérieur suivent la loi 
 - Capacité thermique massique de l’argent : $c_{Ag} = \pu{235 J·kg-1·K-1}$&nbsp;;
 - Valeurs approximatives des coefficients de Newton pour un transfert conducto-convectif dans l’eau chaude : $h = \pu{3000 W.m-2·K−1}$, et dans l’air : $h = \pu{10 W.m-2·K−1}$&nbsp;;
 - Température initiale de la cuillière : $T_0 = \pu{21 °C}$&nbsp;;
-- Loi de Newton : $\varphi = hS(T - T^{ext})$ ou $\varphi = hS(T^{ext} - T)$ à adapter en fonction de la situation.
+- Loi de Newton : $\varphi = hS(T^{ext} - T)$. $\varphi$ est une grandeur algébrique.
 
 {{% /note %}}
+
+- <a href="https://phychim.ac-versailles.fr/IMG/pdf/1-ener-transfert-e_volution-de-t-rectificatif.pdf" target="_blank"> Document de référence pour l'élaboration de cette séance </a>
 
 ## Travail à réaliser
 
@@ -58,15 +60,11 @@ Les transferts thermiques entre un corps et le milieu extérieur suivent la loi 
 {{% /solution %}}
 
 2. Préciser le sens du transfert thermique entre le système et le liquide.
-En déduire le signe de $\varphi$ donné par l'expression dans les données et l'expression de la loi de Newton à utiliser dans ce problème.
+En déduire le signe de $\varphi$ donné par l'expression de la loi de Newton.
 {{% solution "Réponse" %}}
 
 - La température du milieu extérieur est supérieure à la température du système. L'énergie thermique s'écoule donc du milieu extérieur vers le système.
-- La puissance thermique $\varphi$ est *effectivement reçue par le système*, cette grandeur est donc positive.
-- La relation de Newton qui conduit à $\varphi > 0$ est
-$$
-\varphi = hS(T_1 - T)
-$$
+- La relation de Newton conduit à $\varphi > 0$, la puissance thermique est *effectivement reçue par le système*.
 
 {{% /solution %}}
 
@@ -247,7 +245,7 @@ Compléter le tableau suivant :
 | :---- | :----: | :----: |
 | Grandeur dont on étudie l'évolution | Température $T$ | Tension $u_C$ |
 | Grandeur conservée | Énergie par transfert thermique | Énergie par transfert d'électrons |
-| Expression du flux échangé | $\varphi = \dfrac{\mathrm{d}Q}{dt}$ | $i = \dfrac{\mathrm{d}q}{dt}$ (pas un flux d'énergie !) |
+| Expression du flux échangé | $\varphi = \dfrac{\mathrm{d}Q}{dt}$ | $i = \dfrac{\mathrm{d}q}{dt}$ (⚠️ pas un flux d'énergie !) |
 | Contrainte sur le système | Température extérieure $T^{ext}$  | Tension $E$ aux bornes du dipôle |
 | Grandeurs caractéristiques du système | Capacité thermique $C$ | Capacité du condensateur $C$, résistance $R$ |
 | Expression du flux en fonction de la grandeur dont on étudie l'évolution | $\varphi = C\dfrac{\mathrm{d}T}{dt}$ | $i=C\dfrac{\mathrm{d}u_C}{dt}$ |
