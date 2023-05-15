@@ -44,3 +44,5 @@ layout: single
 - [*De la structure à l'interprétation des propriétés d'une espèce chimique*](chap-12)
 
 - [*Utilisation des propriétés des espèces chimiques en synthèse organique*](chap-13)
+
+- [*Modèle ondulatoire et corpusculaire de la lumière*](chap-15)
