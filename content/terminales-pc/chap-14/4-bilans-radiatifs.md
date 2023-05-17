@@ -154,7 +154,7 @@ avec $\sigma = \pu{5,670e8 W.m-2.K-4}$.
 {{% /note %}}
 
 Remarque
-: On attribue souvent les *propriétés des corps noirs en équilibre radiatif et thermodynamique* aux *corps noirs en équilibre radiatif à température localement constante (mais pas uniforme)*. Si on considère, paar exemple, le soleil, l'étude du rayonnement qu'il émet montre qu'il est voisin de celui d'un corps noir de température de l'ordre de $\pu{6000 °C}$. La couche superficielle responsable de l'émission est appelée *photosphère*. Sa température d'équilibre local est voisine de cette valeur. Quant aux rayonnements émis par les couches profondes du soleil (dont la température est beaucoup plus élevée, de l'ordre de $\pu{10^7 K}$) ils sont totalement absorbés par la photosphère.
+: On attribue souvent les *propriétés des corps noirs en équilibre radiatif et thermodynamique* aux *corps noirs en équilibre radiatif à température localement constante (mais pas uniforme)*. Si on considère, par exemple, le soleil, l'étude du rayonnement qu'il émet montre qu'il est voisin de celui d'un corps noir de température de l'ordre de $\pu{6000 °C}$. La couche superficielle responsable de l'émission est appelée *photosphère*. Sa température d'équilibre local est voisine de cette valeur. Quant aux rayonnements émis par les couches profondes du soleil (dont la température est beaucoup plus élevée, de l'ordre de $\pu{10^7 K}$) ils sont totalement absorbés par la photosphère.
 
 ## Effet de serre
 
