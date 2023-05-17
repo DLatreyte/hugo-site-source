@@ -56,7 +56,7 @@ Un milieu est dit totalement **transparent** s'*il transmet intégralement le ra
 Remarque
 : En fait, on n'observe jamais une transparence ou une opacité totale sur l'ensemble des fréquences du spectre. Pour un milieu donné, il convient de définir les intervalles de fréquences (ou de longueur d'onde), pour lesquelles on pourra considérer le milieu comme à peu près transparent ou opaque. Ainsi le verre, par exemple, pourra être considéré comme transparent dans l'intervalle $\pu{0,3 \mu m} < \lambda < \pu{3 \mu m}$ et opaque au contraire dans l'intervalle $\pu{4 \mu m} < \lambda < \pu{30 \mu m}$.
 
-### Équilibre radiatif
+### Équilibre radiatif d'un corps opaque
 
 {{% note warning %}}
 
