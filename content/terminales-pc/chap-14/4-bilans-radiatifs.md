@@ -184,8 +184,7 @@ $$
 
 {{% /solution %}}
 
-2. On suppose l'équilibre radiatif de la vitre. écrire l'équation qui traduit cet
-équilibre.
+2. On suppose l'équilibre radiatif de la vitre. Écrire l'équation qui traduit cet équilibre.
 
 {{% solution "Réponse" %}}
 
