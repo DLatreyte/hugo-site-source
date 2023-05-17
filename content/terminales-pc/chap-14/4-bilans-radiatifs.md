@@ -149,7 +149,7 @@ Le bilan radiatif d'un **corps noir en équilibre radiatif et thermodynamique** 
 $$
 \varphi_e = \varphi_a = \sigma T^4
 $$
-avec $\sigma = \pu{5,670e8 W.m-2.K-4}$.
+avec $\sigma = \pu{5,670e-8 W.m-2.K-4}$.
 
 {{% /note %}}
 
