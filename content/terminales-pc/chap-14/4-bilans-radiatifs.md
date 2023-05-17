@@ -25,9 +25,9 @@ Dans ce document, la grandeur $\varphi$ n'est pas le **flux thermique** pour une
 
 {{% note tip %}}
 
-#### émission
+#### Émission
 
-Il s'agit du *rayonnement électromagnétique émis par un corps porté à une certaine température*. Cette émission est *spontanée* et a pour cause les mouvements des porteurs de charge de la matière (électrons, etc.) dus à l'excitation thermique. *L'énergie interne est ainsi convertie en énergie radiative*. Nous notons $\varphi_e$ le flux surfacique correspondant à cette émission.
+Il s'agit du *rayonnement électromagnétique émis par un corps porté à une certaine température*. Cette émission est *spontanée* et a pour cause les mouvements des porteurs de charge de la matière (électrons, etc.) dus à l'excitation thermique. *L'énergie interne est ainsi convertie en énergie radiative*. Nous notons $\varphi_e$ le flux surfacique correspondant à cette émission.
 
 #### Absorption
 
@@ -35,7 +35,7 @@ Il s'agit du phénomène inverse. *Le rayonnement absorbé par la matière est c
 
 #### Réflexion et diffusion
 
-*Le rayonnement incident sur une paroi peut être renvoyé par la paroi dans une autre direction dans le milieu d'incidence par interaction avec la paroi mais sans absorption*. Les phénomènes concernés peuvent être la simple *réflexion* (obéissant aux lois de Descartes) ou la *diffusion* qui consiste à un renvoi étalé dans toutes les directions même pour une direction incidente unique. Le verre dépoli, le papier, les tissus, etc. sont des substances diffusantes. *Réflexion et diffusion s'effectuent sans changement de fréquence des ondes*. Notons $\varphi_r$, Ie flux surfacique de retour dans le milieu d'incidence.
+*Le rayonnement incident sur une paroi peut être renvoyé par la paroi dans une autre direction dans le milieu d'incidence par interaction avec la paroi mais sans absorption*. Les phénomènes concernés peuvent être la simple *réflexion* (obéissant aux lois de Descartes) ou la *diffusion* qui consiste à un renvoi étalé dans toutes les directions même pour une direction incidente unique. Le verre dépoli, le papier, les tissus, etc. sont des substances diffusantes. *Réflexion et diffusion s'effectuent sans changement de fréquence des ondes*. Notons $\varphi_r$, Ie flux surfacique de retour dans le milieu d'incidence.
 
 {{% /note %}}
 
@@ -45,16 +45,16 @@ Il s'agit du phénomène inverse. *Le rayonnement absorbé par la matière est c
 
 #### Milieu transparent
 
-Un milieu est dit totalement **transparent** s'*il transmet intégralement le rayonnement qu'il reçoit. Il n'y a donc ni absorption, ni réflexion/diffusion*.
+Un milieu est dit totalement **transparent** s'*il transmet intégralement le rayonnement qu'il reçoit. Il n'y a donc ni absorption, ni réflexion/diffusion*.
 
 #### Milieu opaque
 
-À l'inverse un milieu est dit totalement **opaque** s'*il ne transmet aucune fraction de rayonnement qu'il reçoit*. Le rayonnement incident est donc *soit absorbé, soit réfléchi/diffusé, soit les deux*.
+À l'inverse un milieu est dit totalement **opaque** s'*il ne transmet aucune fraction de rayonnement qu'il reçoit*. Le rayonnement incident est donc *soit absorbé, soit réfléchi/diffusé, soit les deux*.
 
 {{% /note %}}
 
 Remarque
-: En fait, on n'observe jamais une transparence ou une opacité totale sur l'ensemble des fréquences du spectre. Pour un milieu donné, il convient de définir les intervalles de fréquences (ou de longueur d'onde), pour lesquelles on pourra considérer le milieu comme à peu près transparent ou opaque. Ainsi le verre, par exemple, pourra être considéré comme transparent dans l'intervalle $\pu{0,3 \mu m} < \lambda < \pu{3 \mu m}$ et opaque au contraire dans l'intervalle $\pu{4 \mu m} < \lambda < \pu{30 \mu m}$.
+: En fait, on n'observe jamais une transparence ou une opacité totale sur l'ensemble des fréquences du spectre. Pour un milieu donné, il convient de définir les intervalles de fréquences (ou de longueur d'onde), pour lesquelles on pourra considérer le milieu comme à peu près transparent ou opaque. Ainsi le verre, par exemple, pourra être considéré comme transparent dans l'intervalle $\pu{0,3 \mu m} < \lambda < \pu{3 \mu m}$ et opaque au contraire dans l'intervalle $\pu{4 \mu m} < \lambda < \pu{30 \mu m}$.
 
 ### Équilibre radiatif
 
@@ -92,7 +92,7 @@ est satisfaite.
 {{% /note %}}
 
 Remarque
-: *L'équilibre radiatif ne suppose pas l'équilibre thermodynamique pour les corps opaques, leurs températures peuvent être différentes*.
+: *L'équilibre radiatif ne suppose pas l'équilibre thermodynamique pour les corps opaques, leurs températures peuvent être différentes*.
 
 {{% note tip %}}
 
@@ -122,7 +122,7 @@ Remarque
 
 Un **corps noir** est défini comme un *absorbeur intégral sur la totalité du spectre* : *tout rayonnement thermique incident est absorbé quel que soit sa longueur d'onde et quelle que soit sa direction incidente*.
 
-Le concept d'absorbeur intégral est un *concept idéal*. L'absorption totale ou quasi totale pour une substance donnée n'est observée, dans la pratique, que dans certains domaines spectraux ou « fenêtres spectrale ».
+Le concept d'absorbeur intégral est un *concept idéal*. L'absorption totale ou quasi totale pour une substance donnée n'est observée, dans la pratique, que dans certains domaines spectraux ou « fenêtres spectrale ».
 
 **Le flux partant d'un corps noir est totalement d'origine émissive : il n'y a pas de contribution due au rayonnement réfléchi ou diffusé**.
 
@@ -132,13 +132,13 @@ Le concept d'absorbeur intégral est un *concept idéal*. L'absorption totale ou
 
 #### Loi de Stefan
 
-La loi de Joseph Stefan fut découverte expérimentalement en 1879 lors de son étude du **rayonnement d'équilibre du corps noir**. Elle stipule que le flux émis par un corps noir est proportionnel à sa température élevée à la puissance 4.
+La loi de Joseph Stefan fut découverte expérimentalement en 1879 lors de son étude du **rayonnement d'équilibre du corps noir**. Elle stipule que le flux émis par un corps noir est proportionnel à sa température élevée à la puissance 4.
 $$
 \varphi_e = \sigma T^4
 $$
 avec $\sigma = \pu{5,670e8 W.m-2.K-4}$.
 
-Un corps noir émet un flux surfacique, à toutes les longueurs d'ondes, d'autant plus grand que sa température est élevée.
+Un corps noir émet un flux surfacique, à toutes les longueurs d'ondes, d'autant plus grand que sa température est élevée.
 {{% /note %}}
 
 {{% note tip %}}
@@ -154,12 +154,11 @@ avec $\sigma = \pu{5,670e8 W.m-2.K-4}$.
 {{% /note %}}
 
 Remarque
-: On attribue souvent les *propriétés des corps noirs en équilibre radiatif et thermodynamique* aux *corps noirs en équilibre radiatif à température localement constante (mais pas uniforme)*.
-Si on considère, paar exemple, le soleil, l'étude du rayonnement qu'il émet montre qu'il est voisin de celui d'un corps noir de température de l'ordre de $\pu{6000 °C}$. La couche superficielle responsable de l'émission est appelée *photosphère*. Sa température d'équilibre local est voisine de cette valeur. Quant aux rayonnements émis par les couches profondes du soleil (dont la température est beaucoup plus élevée, de l'ordre de $\pu{10^7 K}$) ils sont totalement absorbés par la photosphère.
+: On attribue souvent les *propriétés des corps noirs en équilibre radiatif et thermodynamique* aux *corps noirs en équilibre radiatif à température localement constante (mais pas uniforme)*. Si on considère, paar exemple, le soleil, l'étude du rayonnement qu'il émet montre qu'il est voisin de celui d'un corps noir de température de l'ordre de $\pu{6000 °C}$. La couche superficielle responsable de l'émission est appelée *photosphère*. Sa température d'équilibre local est voisine de cette valeur. Quant aux rayonnements émis par les couches profondes du soleil (dont la température est beaucoup plus élevée, de l'ordre de $\pu{10^7 K}$) ils sont totalement absorbés par la photosphère.
 
 ## Effet de serre
 
-On étudie l'effet de serre produit par l'interposition d'une vitre au-dessus d'une plaque qui reçoit le rayonnement solaire. La plaque est noircie et assimilée à un corps noir. Le verre est supposé totalement transparent au rayonnement solaire. La vitre est en revanche totalement absorbante pour le rayonnement infrarouge émis par la plaque (et l'atmosphère) qui absorbe le rayonnement solaire. On désigne par $\varphi_s$ le flux solaire surfacique supposé arriver normalement à la vitre et à la plaque, par $\varphi_{CN}$ le rayonnement émis par la plaque et par $\varphi_1$ le rayonnement émis par la vitre.
+On étudie l'effet de serre produit par l'interposition d'une vitre au-dessus d'une plaque qui reçoit le rayonnement solaire. La plaque est noircie et assimilée à un corps noir. Le verre est supposé totalement transparent au rayonnement solaire. La vitre est en revanche totalement absorbante pour le rayonnement infrarouge émis par la plaque (et l'atmosphère) qui absorbe le rayonnement solaire. On désigne par $\varphi_s$ le flux solaire surfacique supposé arriver normalement à la vitre et à la plaque, par $\varphi_{CN}$ le rayonnement émis par la plaque et par $\varphi_1$ le rayonnement émis par la vitre.
 
 #### Donnée
 
@@ -167,7 +166,7 @@ On étudie l'effet de serre produit par l'interposition d'une vitre au-dessus d'
 
 <img src="/terminales-pc/chap-14/chap-14-3/chap-14-3-1.png" alt="" width="80%" />
 
-1. On suppose l'équilibre radiatif de la plaque. Écrire l'équation qui traduit
+1. On suppose l'équilibre radiatif de la plaque. écrire l'équation qui traduit
 cet équilibre.
 
 {{% solution "Réponse" %}}
@@ -185,7 +184,7 @@ $$
 
 {{% /solution %}}
 
-2. On suppose l'équilibre radiatif de la vitre. Écrire l'équation qui traduit cet
+2. On suppose l'équilibre radiatif de la vitre. écrire l'équation qui traduit cet
 équilibre.
 
 {{% solution "Réponse" %}}
@@ -249,7 +248,7 @@ $$ T\_{1} = \left( \dfrac{\varphi \_{1}}{\sigma} \right)^{1 / 4} = \left(
 
 {{% /solution %}}
 
-5. On supperpose maintenant deux vitres (avec une couche d'air entre ces vitres).
+5. On superpose maintenant deux vitres (avec une couche d'air entre ces vitres).
 Reprendre les questions précédentes et déterminer la nouvelle température de
 la plaque.
 {{% solution "Réponse" %}}
@@ -293,7 +292,7 @@ soit maximale.
 
 ## Bilan radiatif de la Terre
 
-{{% remote "Activité du Livre scolaire." "https://www.lelivrescolaire.fr/page/15701179" %}}
+{{% remote "Activité du Livre scolaire." "<https://www.lelivrescolaire.fr/page/15701179>" %}}
 
 {{% solution "Corrigé" %}}
 
