@@ -25,26 +25,26 @@ layout: "single"
 
 ----
 
-- {{< remote "Structure des entités organiques sur le Livre Scolaire" "https://www.lelivrescolaire.fr/page/7112746" >}}
+- {{< remote "Structure des entités organiques sur le Livre Scolaire" "<https://www.lelivrescolaire.fr/page/7112746>" >}}
 
 ----
 
-- **Chap. 13,1 :** [*Théorème de l'énergie cinétique*](https://www.icloud.com/keynote/0vrdVPsTvTz1BqyCbzXIC6aKw)
+- **Doc.** [*Théorème de l'énergie cinétique*](https://www.icloud.com/keynote/0vrdVPsTvTz1BqyCbzXIC6aKw)
 
-- **Chap. 13,1 (bis) :** [*Théorème de l'énergie cinétique, cours au format pdf*](/premieres-pc/chap-14/chap-14-1/chap-14-01.pdf)
+- **Doc.** [*Théorème de l'énergie cinétique, cours au format pdf*](/premieres-pc/chap-14/chap-14-1/chap-14-01.pdf)
 
-- **Chap. 13,2 :** [*Théorème de l'énergie cinétique, correction des exercices du chap. 14,1*](/premieres-pc/chap-14/chap-14-2/chap-14-02.pdf)
+- **Doc.** [*Théorème de l'énergie cinétique, correction des exercices du chap. 14,1*](/premieres-pc/chap-14/chap-14-2/chap-14-02.pdf)
 
-- **Chap. 13,3 :** [*Titanic, le défaut de la cuirasse*](/premieres-pc/chap-14/chap-14-3/Chap-14-03.html)
+- **Doc.** [*Titanic, le défaut de la cuirasse*](/premieres-pc/chap-14/chap-14-3/Chap-14-03.html)
 
-- **Chap. 13,4 :** [*Théorème de l'énergie mécanique*](https://www.icloud.com/keynote/0--YjnLfb46br8c5mueM11SjQ)
+- **Doc.** [*Théorème de l'énergie mécanique*](https://www.icloud.com/keynote/0--YjnLfb46br8c5mueM11SjQ)
 
-- **Chap. 13,4 (bis) :** [*Théorème de l'énergie mécanique, cours au format pdf*](/premieres-pc/chap-14/chap-14-4/Chap-14-04.pdf)
+- **Doc.** [*Théorème de l'énergie mécanique, cours au format pdf*](/premieres-pc/chap-14/chap-14-4/Chap-14-04.pdf)
 
-- **Chap. 13,5 :** [*Oscillations d'un pendule*](/premieres-pc/chap-14/chap-14-5/Chap-14-05.html)
+- **Doc.** [*Oscillations d'un pendule*](/premieres-pc/chap-14/chap-14-5/Chap-14-05.html)
 
-- **Chap. 13,6 :** [*Le saut à l'élastique*](/premieres-pc/chap-14/chap-14-6/Chap-14-06.html)
+- **Doc.** [*Le saut à l'élastique*](/premieres-pc/chap-14/chap-14-6/Chap-14-06.html)
 
-- **Chap. 13,7 :** [*Considérations sur l'énergie*](/premieres-pc/chap-14/chap-14-7/Chap-14-07.html)
+- **Doc.** [*Considérations sur l'énergie*](/premieres-pc/chap-14/chap-14-7/Chap-14-07.html)
 
-- **Chap. 13,8 :** [*Exercices de synthèse*](8-exercices)
+- **Doc.** [*Exercices de synthèse*](8-exercices)

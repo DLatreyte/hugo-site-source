@@ -25,7 +25,7 @@ layout: "single"
 
 ----
 
-- {{< remote "Structure des entités organiques sur le Livre Scolaire" "https://www.lelivrescolaire.fr/page/6692765" >}}
+- {{< remote "Structure des entités organiques sur le Livre Scolaire" "<https://www.lelivrescolaire.fr/page/6692765>" >}}
 
 ----
 
@@ -33,4 +33,4 @@ layout: "single"
 
 - **Doc. :** [*Nomenclature : exercices*](2-exercices)
 
-- **Doc. :** [*Groupes caractéristiques*](https://www.icloud.com/keynote/04FOMNt0QbMNejuH3XfDBF8pQ)
+- **Doc. :** [*Comment identifier les groupes caractéristiques présents dans une molécule ?*](https://www.icloud.com/keynote/04FOMNt0QbMNejuH3XfDBF8pQ)
