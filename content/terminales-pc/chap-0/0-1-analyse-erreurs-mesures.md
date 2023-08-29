@@ -9,7 +9,7 @@ toc: true
 tags: ["Erreurs", "Incertitudes"]
 categories: ["Physique", "Terminale Spé PC"]
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 La physique est une *science naturelle*. *Les lois qui décrivent et qui

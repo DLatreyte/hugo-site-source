@@ -9,7 +9,7 @@ toc: true
 tags: ["Erreurs", "Incertitudes"]
 categories: ["Physique", "Terminale Spé PC"]
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 Le résultat d'une mesure n'est pas une valeur mais un intervalle de valeurs que l'on note $\pu{m±U(m)}$ est l'incertitude sur la mesure — dans lequel on peut considérer, avec un certain niveau de confiance, que la «&nbsp;valeur vraie&nbsp;» se trouve.
@@ -480,7 +480,7 @@ Calculer l'incertitude $U(e/m)$, puis exprimer correctement le résultat du rapp
 
 #### Accès à une animation en ligne
 
-{{% remote "Mouvement d'un électron dans un oscilloscope" "https://www.geogebra.org/m/xvpkgaxz" %}}
+{{% remote "Mouvement d'un électron dans un oscilloscope" "<https://www.geogebra.org/m/xvpkgaxz>" %}}
 
 {{% solution "Solution" %}}
 $$
