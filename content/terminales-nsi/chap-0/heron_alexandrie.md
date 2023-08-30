@@ -1,6 +1,6 @@
 ---
 title: "Héron d'Alexandrie"
-subtitle: "Chapitre 0"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-09-05T04:24:09+04:00
