@@ -104,7 +104,7 @@ Deux situations sont à envisager :
   </div>
 </div>
 
-> Point objet à distance finie et point objet à distance infinie.
+> Point image à distance finie et point objet à distance infinie.
 
 {{% note warning %}}
 L'**image** de l'objet est l'*ensemble des points images*.
