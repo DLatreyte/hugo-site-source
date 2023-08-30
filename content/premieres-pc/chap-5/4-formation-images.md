@@ -272,7 +272,7 @@ Effectuer ainsi 6 à 8 mesures et rassembler les mesures dans un tableau.
 
 #### Relation de conjugaison
 
-, une lentille mince de distance focale $f\rq$ donne d'un point objet $A$ situé sur l'axe optique, un point image $A\rq$ dont la position sur l'axe est donnée par la relation :
+Une lentille mince de distance focale $f\rq$ donne d'un point objet $A$ situé sur l'axe optique, un point image $A\rq$ dont la position sur l'axe est donnée par la relation :
 $$\dfrac{1}{\overline{OA\rq}} - \dfrac{1}{\overline{OA}} = \dfrac{1}{f\rq}$$
 $A$ et $A\rq$ sont dits **conjugués**.
 {{% /note %}}
