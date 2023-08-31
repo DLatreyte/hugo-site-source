@@ -16,9 +16,9 @@ layout: "single"
 
 ## Au programme
 
-| Contenus | Capacités attendues | Commentaires |
+| Contenus | Capacités attendues | Commentaires |
 |:-:|:-:|:-:|
-| Récursivité | - Écrire un programme récursif. <br />- Analyser le fonctionnement d’un programme récursif.   | Des exemples relevant de domaines variés sont à privilégier.   |
+| Récursivité | - Écrire un programme récursif. <br />- Analyser le fonctionnement d'un programme récursif.   | Des exemples relevant de domaines variés sont à privilégier.   |
 
 ## Documents
 

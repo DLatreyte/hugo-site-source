@@ -14,6 +14,10 @@ auto_numbering: true
 ---
 [^1]: Ce n'est pas la seule définition possible et c'est loin d'être la plus efficace une fois implémentée.
 
+<center>
+<h3>To understand recursion, you must first understand recursion.</h3>
+</center>
+
 La **récurrence** est un *raisonnement mathématique* courant et parmi les plus puissants pour démontrer des théorèmes ou construire des objets. Par exemple, on l'utilise dans un cours de mathématique de lycée pour montrer que&nbsp;:
 
 - Pour tout entier $n \geqslant 0$, on a&nbsp;: $1 + 2 + 3 + \ldots + n = \dfrac{n(n+1)}{2}$&nbsp;;
@@ -178,7 +182,7 @@ def arrangement(n: int) -> int:
 assert arrangement(5) == 15
 ```
 
-- {{< remote "Code Python interactif" "http://pythontutor.com/visualize.html#code=def%20arrangement%28n%3A%20int%29%20-%3E%20int%3A%0A%20%20%20%20%22%22%22%0A%20%20%20%20D%C3%A9termination%20du%20nombre%20de%20quilles%20dans%20un%20%0A%20%20%20%20arrangement%20%C3%A0%20n%20lignes.%0A%20%20%20%20%0A%20%20%20%20HYPOTH%C3%88SE%20%3A%20n%20entier%20naturel.%0A%20%20%20%20%22%22%22%0A%20%20%20%20if%20n%20%3D%3D%201%3A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23%20cas%20de%20base%0A%20%20%20%20%20%20%20%20return%201%0A%20%20%20%20else%3A%0A%20%20%20%20%20%20%20%20return%20n%20%2B%20arrangement%28n%20-%201%29%20%20%20%23%20appel%20r%C3%A9cursif%0A%20%20%20%20%20%20%20%20%0Aassert%20arrangement%285%29%20%3D%3D%2015&cumulative=false&heapPrimitives=false&mode=edit&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false" >}}
+- {{< remote "Code Python interactif" "<http://pythontutor.com/visualize.html#code=def%20arrangement%28n%3A%20int%29%20-%3E%20int%3A%0A%20%20%20%20%22%22%22%0A%20%20%20%20D%C3%A9termination%20du%20nombre%20de%20quilles%20dans%20un%20%0A%20%20%20%20arrangement%20%C3%A0%20n%20lignes.%0A%20%20%20%20%0A%20%20%20%20HYPOTH%C3%88SE%20%3A%20n%20entier%20naturel.%0A%20%20%20%20%22%22%22%0A%20%20%20%20if%20n%20%3D%3D%201%3A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23%20cas%20de%20base%0A%20%20%20%20%20%20%20%20return%201%0A%20%20%20%20else%3A%0A%20%20%20%20%20%20%20%20return%20n%20%2B%20arrangement%28n%20-%201%29%20%20%20%23%20appel%20r%C3%A9cursif%0A%20%20%20%20%20%20%20%20%0Aassert%20arrangement%285%29%20%3D%3D%2015&cumulative=false&heapPrimitives=false&mode=edit&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false>" >}}
 
 ### Retour sur le calcul de la factorielle d'un entier naturel
 
@@ -237,7 +241,7 @@ def factorielle(n: int) -> int:
 assert factorielle(5) == 120
 ````
 
-- {{< remote "Code Python interactif" "http://pythontutor.com/visualize.html#code=def%20factorielle%28n%3A%20int%29%20-%3E%20int%3A%0A%20%20%20%20%22%22%22%20%0A%20%20%20%20D%C3%A9finition%20r%C3%A9cursive%20de%20la%20fonction%20factorielle.%0A%20%20%20%20%0A%20%20%20%20HYPOTH%C3%88SE%20%3A%20n%20entier%20naturel.%0A%20%20%20%20%22%22%22%0A%20%20%20%20if%20n%20%3D%3D%200%3A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23%20cas%20de%20base%0A%20%20%20%20%20%20%20%20return%201%0A%20%20%20%20else%3A%0A%20%20%20%20%20%20%20%20return%20n%20*%20factorielle%28n%20-%201%29%20%20%20%23%20appel%20r%C3%A9cursif%0A%20%20%20%20%20%20%20%20%0Aassert%20factorielle%285%29%20%3D%3D%20120&cumulative=false&heapPrimitives=false&mode=edit&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false" >}}
+- {{< remote "Code Python interactif" "<http://pythontutor.com/visualize.html#code=def%20factorielle%28n%3A%20int%29%20-%3E%20int%3A%0A%20%20%20%20%22%22%22%20%0A%20%20%20%20D%C3%A9finition%20r%C3%A9cursive%20de%20la%20fonction%20factorielle.%0A%20%20%20%20%0A%20%20%20%20HYPOTH%C3%88SE%20%3A%20n%20entier%20naturel.%0A%20%20%20%20%22%22%22%0A%20%20%20%20if%20n%20%3D%3D%200%3A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23%20cas%20de%20base%0A%20%20%20%20%20%20%20%20return%201%0A%20%20%20%20else%3A%0A%20%20%20%20%20%20%20%20return%20n%20*%20factorielle%28n%20-%201%29%20%20%20%23%20appel%20r%C3%A9cursif%0A%20%20%20%20%20%20%20%20%0Aassert%20factorielle%285%29%20%3D%3D%20120&cumulative=false&heapPrimitives=false&mode=edit&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false>" >}}
 
 ## Définition récursive d'une fonction
 
@@ -323,7 +327,7 @@ Si un problème n'est pas facile à résoudre, le découper en problèmes plus p
 
 Penser à écrire, pour chacune des fonctions ci-dessous, sa spécification ainsi qu'un jeu de tests.
 
-Un corrigé partiel se trouve en ligne à cette adresse : {{< remote "https://repl.it/join/qaeylksn-dlatreyte" "https://repl.it/join/qaeylksn-dlatreyte" >}}. Ce corrigé comporte des exemples d'utilisation de l'instruction `assert`.
+Un corrigé partiel se trouve en ligne à cette adresse : {{< remote "<https://repl.it/join/qaeylksn-dlatreyte>" "<https://repl.it/join/qaeylksn-dlatreyte>" >}}. Ce corrigé comporte des exemples d'utilisation de l'instruction `assert`.
 
 {{% note exercise %}}
 
