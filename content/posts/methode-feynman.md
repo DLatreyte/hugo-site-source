@@ -36,13 +36,17 @@ Le premier principe est que vous ne devez pas vous mentir à vous-même ; et que
 
 {{% note normal %}}
 
-Il faut apprendre le plus tôt possible la différence entre connaître le nom de quelque chose et savoir quelque chose. --- Richard Feynman
+Il faut apprendre le plus tôt possible la différence entre connaître le nom de
+quelque chose et comprendre ce qu'est ce quelque chose. --- Richard Feynman
 
 {{% /note %}}
 
 {{% note normal %}}
 
-Vous pouvez connaître le nom d’un oiseau dans toutes les langues du monde, mais quand vous avez terminé, vous ne saurez absolument rien du tout sur l’oiseau. Alors regardons l’oiseau et observons ce qu’il fait — c’est cela qui compte. --- Richard Feynman
+Vous pouvez apprendre le nom d'un oiseau dans toutes les langues du monde,
+mais quand vous aurez terminé, vous ne saurez absolument rien du tout sur
+l'oiseau. Alors, regardez l'oiseau et observez ce qu'il fait, c'est cela qui
+compte. --- Richard Feynman
 
 {{% /note %}}
 
