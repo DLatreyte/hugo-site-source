@@ -17,7 +17,7 @@ auto_numbering: false
 
 - Prix Nobel 1965 de Physique
 - Connu pour sa profonde compréhension des phénomènes, sa capacité à les schématiser et celle à les décrire simplement.
-- A fait partie du projet «&nbsp;Manhattan&nbsp;» pendant la seconde guerre mondiale ; de la commission d'enquête sur l'écher du lancement de la navette Challenger en 1986. Dans les deux cas l'originalité de son raisonnement a été remarquée.
+- A fait partie du projet «&nbsp;Manhattan&nbsp;» pendant la seconde guerre mondiale ; de la commission d'enquête sur l'échec du lancement de la navette Challenger en 1986. Dans les deux cas l'originalité de son raisonnement a été remarquée.
 - A donné l'un des cours de physique les plus connus au monde : [The Feynman Lectures on Physics](https://www.feynmanlectures.caltech.edu/#footnote_1)
 
 {{% note warning %}}
