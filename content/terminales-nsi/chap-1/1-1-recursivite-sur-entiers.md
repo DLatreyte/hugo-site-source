@@ -654,7 +654,7 @@ $$
 
 #### Remarques
 
-- La fonction d'Ackermann croît extrêmement rapidement&nbsp;: $A(4,2)$ a déjà $\pu{19\\,729}$ chiffres&nbsp;!
+- La fonction d'Ackermann croît extrêmement rapidement&nbsp;: $A(4,2)$ a déjà $\pu{19729}$ chiffres&nbsp;!
 - La fonction d'Ackermann demandant beaucoup de calculs même pour de petites entrées, elle est parfois utilisée comme programme de test d'une implémentation d'un langage de programmation&nbsp;: en particulier, elle utilise de façon très exigeante la récursivité (cf. [Fonction d'Ackermann, Wikipédia](http://fr.wikipedia.org/wiki/Fonction\_d'Ackermann)).
 {{% /note %}}
 
