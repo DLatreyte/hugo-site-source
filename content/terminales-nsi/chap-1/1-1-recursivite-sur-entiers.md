@@ -611,7 +611,7 @@ $$
         \begin{array}{ll}
             m                        & \text{ si } n = 0\cr
             \text{pgcd}(n,m)         & \text{ si } m < n \cr
-            \text{pgcd}(n, m \, \text{mod}\, n)  & \text{ sinon }\cr
+            \text{pgcd}(n, m \\, \text{mod}\\, n)  & \text{ sinon }\cr
         \end{array}
     \right.
 $$
