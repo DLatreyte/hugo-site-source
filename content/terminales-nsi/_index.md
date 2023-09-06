@@ -55,7 +55,7 @@ layout: single
 
 ### Langages et programmation
 
-- **Chapitre 0 :** [Révisions](chap-0)
+- **Chapitre 0 :** [Révisions de notions de 1ère](chap-0)
 
 - **Chapitre 1 :** [*Récursivité*](chap-1)
 
