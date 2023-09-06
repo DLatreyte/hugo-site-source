@@ -36,26 +36,26 @@ layout: single
 
 ### Sites Web
 
-- {{< remote "Pixees, Ressources pour les sciences du numérique" "https://pixees.fr" >}}
+- {{< remote "Pixees, Ressources pour les sciences du numérique" "<https://pixees.fr>" >}}
 
-- {{< remote "Binaire, le blog du journal « Le Monde » sur les sciences du numérique" "https://www.lemonde.fr/blog/binaire/" >}}
+- {{< remote "Binaire, le blog du journal « Le Monde » sur les sciences du numérique" "<https://www.lemonde.fr/blog/binaire/>" >}}
 
-- {{< remote "Informatique (presque) débranchée" "https://www.apprendre-en-ligne.net/infodo/index.html" >}}
+- {{< remote "Informatique (presque) débranchée" "<https://www.apprendre-en-ligne.net/infodo/index.html>" >}}
 
-- {{< remote "Wikipedia, portail informatique" "https://fr.wikipedia.org/wiki/Portail:Informatique" >}}
+- {{< remote "Wikipedia, portail informatique" "<https://fr.wikipedia.org/wiki/Portail:Informatique>" >}}
 
-- {{< remote "Interstices" "https://interstices.info" >}}
+- {{< remote "Interstices" "<https://interstices.info>" >}}
 
-  - {{< remote "L’informatique de A à Z" "https://interstices.info/linformatique-de-a-a-z/" >}}
-  - {{< remote "Sciences Numériques et Technologie au lycée" "https://interstices.info/sciences-numeriques-et-technologie-au-lycee/" >}}
+  - {{< remote "L’informatique de A à Z" "<https://interstices.info/linformatique-de-a-a-z/>" >}}
+  - {{< remote "Sciences Numériques et Technologie au lycée" "<https://interstices.info/sciences-numeriques-et-technologie-au-lycee/>" >}}
 
-- {{< remote "Éduscol" "https://eduscol.education.fr/cid144156/nsi-bac-2021.html#lien2" >}}
+- {{< remote "Éduscol" "<https://eduscol.education.fr/cid144156/nsi-bac-2021.html#lien2>" >}}
 
 ## Documents
 
 ### Langages et programmation
 
-- **Chapitre 0 :** [*Héron d'Alexandrie*]({{% relref "./Chap-0/heron_alexandrie" %}})
+- **Chapitre 0 :** [Révisions](chap-0)
 
 - **Chapitre 1 :** [*Récursivité*](chap-1)
 
