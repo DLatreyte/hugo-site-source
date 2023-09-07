@@ -112,6 +112,9 @@ def rang(e: str, c: str, i: int) -> int:
     """
     Retourne l'indice de la première position du caractère e dans la
     chaîne c ou -1 si le caractère n'est pas présent dans la chaîne.
+
+    Remarque : l'indice n'est pas réellement le rang. Faire débuter i
+    à 0 pour obtenir l'indice, à 1 pour obtenir le rang.
     """
     if c == "":
         return -1
@@ -133,6 +136,37 @@ def main():
         print("Caractère pas présent dans la chaîne.")
 
 main()
+```
+
+{{% /solution %}}
+
+{{% note exercise %}}
+
+#### Copie d'une chaîne de caractères
+
+Écrire une fonction récursive nommée `copie`, qui, à partir d'une chaîne de caractères `c`, retourne une nouvelle chaîne copie de `c`.
+
+Tester cette fonction.
+
+{{% /note %}}
+
+{{% solution "Solution" %}}
+
+```python
+def copie(c: str) -> str:
+    """
+    Retourne une copie de la chaîne c.
+    
+    Algorithme récursif.
+    """
+    if c == "":
+        return ""
+    else:
+        return c[0] + copie(c[1:])
+
+    assert copie('abcd') == 'abcd'
+    assert copie('a') == 'a'
+    assert copie('') == ''
 ```
 
 {{% /solution %}}
