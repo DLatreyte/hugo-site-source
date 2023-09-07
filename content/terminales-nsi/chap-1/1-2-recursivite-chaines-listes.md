@@ -100,7 +100,7 @@ main()
 
 #### Recherche de la position d'un caractère dans une chaîne de caractères
 
-Écrire une fonction récursive nommée `rang`, qui, à partir d'un caractère `e` et d'une chaîne de caractères `c`, détermine la (première) position de ce caractère dans la chaîne. Si le caractère n'est pas présent, retourner un entier négatif.
+Écrire une fonction récursive nommée `rang`, qui, à partir d'un caractère `e` et d'une chaîne de caractères `c`, détermine la (première) position de ce caractère dans la chaîne. Si le caractère n'est pas présent, retourner un nombre négatif.
 
 Tester cette fonction dans un programme.
 {{% /note %}}
@@ -115,6 +115,8 @@ def rang(e: str, c: str, i: int) -> int:
 
     Remarque : l'indice n'est pas réellement le rang. Faire débuter i
     à 0 pour obtenir l'indice, à 1 pour obtenir le rang.
+
+    Remarque : récursivité terminale
     """
     if c == "":
         return -1
@@ -122,6 +124,21 @@ def rang(e: str, c: str, i: int) -> int:
         return i
     else:
         return rang(e, c[1:], i + 1)
+
+def rang_2(c: str, e: str) -> int:
+    """
+    Retourne le rang de la première position du caractère e dans la
+    chaîne c ou un nombre négatif si le caractère n'est pas présent
+    dans la chaîne.
+
+    Récursivité enveloppée.
+    """
+    if c == "":
+        return -float('inf')
+    elif c[0] == e:
+        return 1
+    else:
+        return 1 + rang(c[1:], e)
 
 
 def main():
