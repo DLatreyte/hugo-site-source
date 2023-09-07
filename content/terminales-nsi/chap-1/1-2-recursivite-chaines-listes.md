@@ -277,19 +277,24 @@ def est_palindrome(c: str) -> bool:
     """
     Détecte si la chaîne de caractères est un palindrome.
     Utilisation d'une sous-chaïne. La récursivité est terminale.
+
+    Hypothèse : la chaîne c n'est pas vide.
     """
-    if len(c) == 0:
+    if c == "":
         return True
     elif c[0] != c[-1]:
         return False
     else:
-        return est_palindrome(c[1:-1])
+        return est_palindrome(c[1: -1])
 
 
 def est_palindrome_02(c: str, i: int, j: int) -> bool:
     """
     Détecte si la chaîne de caractères est un palindrome.
-    Utilisation d'une sous-chaïne. La récursivité est terminale.
+    i est le premier indice de la chaîne, j le dernier.
+    Utilisation d'une sous-chaîne. La récursivité est terminale.
+
+    Hypothèse : la chaîne c n'est pas vide.
     """
     if i == j:
         return True
