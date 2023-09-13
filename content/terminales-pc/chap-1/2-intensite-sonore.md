@@ -228,7 +228,7 @@ Si $I' = 3\\, I$, $L' = 10 \log \left( \dfrac{3\\, I}{I_0} \right) = 10 \log (3)
 
 #### L'oreille humaine en concert
 
-Pour régler le niveau sonore de la salle de concert, un ingénieur du son connaît certaines règles. Par exemple, s'il fait ses réglages pour avoir un son de $\pu{98 dB}$ pour des spectateurs situés à $\pu{16 m}$ d'une enceinte, il sait que l'intensité sonore sera quatre fois plus grande pour les spectateurs situés à $\pu{8 m}$ de l'enceinte. Il sait aussi que l'intensité sonore est doublée s'il place à côté de deux enceintes identiques. Pour ces réglages cet ingénieur doit tenir compte des seuils de risque, de danger et de douleur. En effet l'exposition à un niveau sonore trop élevé peut provoquer des acouphènes. L'acouphène est un bourdonnement ou sifflement parasite qu'une personne entend sans que ce bruit existe réellement.
+Pour régler le niveau sonore de la salle de concert, un ingénieur du son connaît certaines règles. Par exemple, s'il fait ses réglages pour avoir un son de $\pu{98 dB}$ pour des spectateurs situés à $\pu{16 m}$ d'une enceinte, il sait que l'intensité sonore sera quatre fois plus grande pour les spectateurs situés à $\pu{8 m}$ de l'enceinte. Il sait aussi que l'intensité sonore est doublée s'il place côte à côte deux enceintes identiques. Pour ces réglages cet ingénieur doit tenir compte des seuils de risque, de danger et de douleur. En effet l'exposition à un niveau sonore trop élevé peut provoquer des acouphènes. L'acouphène est un bourdonnement ou sifflement parasite qu'une personne entend sans que ce bruit existe réellement.
 
 <img src="/terminales-pc/chap-1/chap-1-3-2.jpg" width="70%" alt="" />
 
