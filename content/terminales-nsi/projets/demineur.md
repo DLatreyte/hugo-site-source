@@ -28,7 +28,7 @@ Le Démineur est un jeu vidéo de réflexion dont le but est de localiser des mi
 
 Le plateau à deux dimensions (m lignes et n colonnes) du jeu sera défini à la question 3. par une liste de listes contenant des valeurs booléennes. La présence d'une bombe correspondra à la valeur `True` tandis que l'absence d'une bombe à la valeur `False`. Les bombes seront placées aléatoirement avec une probabilité de 1/p.
 
-2. Dans le module `demineur`, définir la fonction `place_bombe` dont la spécification est :
+2. Dans le module `demineur`, définir la fonction `contient_bombe` dont la spécification est :
 
 ```python
 def contient_bombe(p: int) -> bool:
@@ -97,5 +97,5 @@ def affichage_nbre_bombes(p: List[List[bool]]) -> None:
 9. Appeler la fonction `affichage_nbre_bombes` depuis le fichier principal.
 
 {{% solution "Corrigé" %}}
-{{% remote "Un corrigé se trouve à cette adresse" "https://replit.com/@dlatreyte/Demineur" %}}
+{{% remote "Un corrigé se trouve à cette adresse" "<https://replit.com/@dlatreyte/Demineur>" %}}
 {{% /solution %}}
