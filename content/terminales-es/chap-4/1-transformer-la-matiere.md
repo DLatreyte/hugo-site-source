@@ -9,7 +9,7 @@ toc: true
 tags: ["Énergie", "Transformation", "Énergie fossile", "PIB"]
 categories: ["Terminale Enseignement Scientifique"]
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 
@@ -57,7 +57,7 @@ Lorsqu'on parle de combustible fossile on fait allusion aux hydrocarbures.
 {{% /solution %}}
 
 4. L'auteur annonce « Aujourd’hui, [...] 80% de notre énergie primaire provient des combustibles fossiles [...] ». Se rendre sur le site de RTE, en France et vérifier si cette affirmation est exacte **pour la France**.
-{{< remote "La production d'électricité par filiaire, en direct, en France" "https://www.rte-france.com/eco2mix/la-production-delectricite-par-filiere" >}}
+{{< remote "La production d'électricité par filiaire, en direct, en France" "<https://www.rte-france.com/eco2mix/la-production-delectricite-par-filiere>" >}}
 
 {{% solution "Réponse" %}}
 Cette affirmation est vraie au niveau mondial mais en France c'est l'énergie nucléaire qui est majoritairement utilisée (plus de 70%).

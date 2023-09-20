@@ -9,14 +9,14 @@ toc: true
 tags: ["Énergie de combustion", "Réaction de combustion"]
 categories: ["Terminale Enseignement Scientifique"]
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 
 
 ## Documents
 
-- {{< remote "Documents sur le Livre Scolaire" "https://www.lelivrescolaire.fr/page/5410148" >}}
+- {{< remote "Documents sur le Livre Scolaire" "<https://www.lelivrescolaire.fr/page/5410148>" >}}
 
 {{% note tip %}}
 
@@ -113,7 +113,7 @@ Laquelle des deux solutions est la moins pire pour ce qui est de la lutte contre
 On s’aperçoit que l’augmentation de la quantité d’ozone au Canada a entraîné une augmentation du nombre d’hospitalisations. Cela *suggère* (**corrélation**) que la présence de gaz polluant a un impact direct sur la santé.
 On estime à 7 millions le nombre de décès liés à la pollution dans le monde. Ces décès sont souvent liés à des problèmes respiratoires ou pulmonaires, mais de nombreuses pathologies concernent également le cœur ou encore le cerveau.
 
-- Retour sur les relations : {{< remote "corrélation/causalité" "https://www.lemonde.fr/sciences/video/2019/09/12/correlation-et-causalite-peut-on-decrocher-un-prix-nobel-en-mangeant-du-chocolat_5509656_1650684.html" >}}
+- Retour sur les relations : {{< remote "corrélation/causalité" "<https://www.lemonde.fr/sciences/video/2019/09/12/correlation-et-causalite-peut-on-decrocher-un-prix-nobel-en-mangeant-du-chocolat_5509656_1650684.html>" >}}
 {{% /solution %}}
 
 9. Montrer qu’il existe une diversité de polluants provenant d’une diversité de sources et proposer des événements pouvant exacerber ces sources de pollution.

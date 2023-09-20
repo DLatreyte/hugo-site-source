@@ -9,13 +9,13 @@ toc: true
 tags: ["Transformation", "Production", "Consommation", "Énergie fossile"]
 categories: ["Terminale Enseignement Scientifique"]
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 
 ## Documents
 
-- {{< remote "Documents sur le Livre Scolaire" "http://LLS.fr/ESTP68" >}}
+- {{< remote "Documents sur le Livre Scolaire" "<http://LLS.fr/ESTP68>" >}}
 
 ## Questions
 
