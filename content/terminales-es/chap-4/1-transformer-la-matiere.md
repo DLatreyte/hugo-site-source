@@ -9,7 +9,7 @@ toc: true
 tags: ["Énergie", "Transformation", "Énergie fossile", "PIB"]
 categories: ["Terminale Enseignement Scientifique"]
 image: ""
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: true
 ---
 
