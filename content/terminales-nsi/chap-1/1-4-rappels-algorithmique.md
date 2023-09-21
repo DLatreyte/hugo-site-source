@@ -9,7 +9,7 @@ toc: true
 tags: ["Algorithmique", "Complexité", "Terminaison", "Invariant", "Variant", "Correction"]
 categories: ["Terminales Spé NSI", "Informatique"]
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 
