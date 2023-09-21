@@ -278,9 +278,9 @@ TantQue (i ≤ m) ou (j ≤ n) Faire
 9.
 
 ```pseudo
-Tant que n >= 0 Faire 
+Tant que n > 0 Faire 
     op
-    n ⟵ n / 2
+    n ⟵ n // 2
 ```
 
 {{% /note %}}
@@ -339,7 +339,7 @@ puissance de deux supérieure ou égale à $n$.*<br />
  {{% note normal %}}
 La fonction $f$ d'expression $f(p) = n - p$ est-elle un variant de boucle&nbsp;?
 
-- $f(p)$ est un entier.
+- $f(p)$ est un entier positif.
 - Tant que $p < n$, $f(p) > 0$
 - $f$ décroît sur l'ensemble des valeurs de $p$ puisque $$f(p_{i+1}) - f(p) = n - p_{i+1} - n + p_{i} = p_{i} - p_{i+1} = p_{i} - 2p_{i} = - p_{i} <0$$
 - *Condition d'arrêt&nbsp;:* $p_{max} \geqslant n$, donc $f (p_{max}) \leqslant 0$.
@@ -393,7 +393,7 @@ La fonction retourne `Vrai`.
 {{% solution "Réponse" %}}
 $f(i, j) = j - i$ est-elle un variant de boucle&nbsp;?
 
-- Tant que $j > i$, $f(i, j)$ est un entier et $f(i, j) = j - i > 0$.
+- Tant que $j > i$, $f(i, j)$ est un entier positif et $f(i, j) = j - i > 0$.
 - $f (i+1, j-1) = j - 1 - (i + 1) = j - 1 - i - 1 = j - i - 2 = f(i, j) - 2 < f(i, j)$.  
 La fonction est donc décroissante sur l'ensemble des valeurs de $i$ et de $j$.
 - *Condition d'arrêt&nbsp;:* $i > j$, donc $f(i, j) = j - i < 0$
