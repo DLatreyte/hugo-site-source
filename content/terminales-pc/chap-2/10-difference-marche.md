@@ -70,13 +70,13 @@ Puisque les deux signaux ont quitté les émetteurs à la même date, $\tau = t_
 - $\delta$ est une grandeur algébrique mais on a tendance à privilégier sa valeur absolue lors de l'analyse des problèmes.
 {{% /note %}}
 
-## Émission de deux sinusoïdales de même fréquence
+## Émission de deux ondes sinusoïdales de même fréquence
 
 <img src="/terminales-pc/chap-2/chap-2-10-3.png" alt="" width="60%" />
 
 Les deux émetteurs $E_1$ et $E_2$ émettent maintenant deux ondes sinusoïdales de **même fréquence** $f$.  
 On déplace le récepteur $R$ selon l'axe $(x'x)$ et on observe le résultat de la superposition des ondes.
-En utilisant le programme à cette adresse&nbsp;: {{< remote "Simulation" "https://repl.it/@dlatreyte/sommeondes" >}} on a mis en évidence les quatres situations ci-dessous
+En utilisant le programme à cette adresse&nbsp;: {{< remote "Simulation" "<https://repl.it/@dlatreyte/sommeondes>" >}} on a mis en évidence les quatres situations ci-dessous
 
 Pour chacune d'elles,
 
@@ -134,7 +134,7 @@ En régime sinusoïdal, *le retard d’une onde par rapport à une autre se trad
 
 ## Application&nbsp;: superposition d'ondes sinusoïdales de même fréquence à la surface de l'eau
 
-Le programme accessible à cette adresse {{< remote "Simulation" "https://repl.it/@dlatreyte/sommeondessurfaceeau" >}} simule la propagation d'ondes sinusoïdales, créées par deux sources vibrant à la même fréquence $f$, à la surface de l'eau.
+Le programme accessible à cette adresse {{< remote "Simulation" "<https://repl.it/@dlatreyte/sommeondessurfaceeau>" >}} simule la propagation d'ondes sinusoïdales, créées par deux sources vibrant à la même fréquence $f$, à la surface de l'eau.
 
 1. Expliquer la forme de la surface de l'eau.
 {{% solution "Réponse" %}}
