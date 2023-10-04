@@ -16,7 +16,7 @@ auto_numbering: true
 
 ## Documents
 
-- {{< remote "Documents sur le Livre Scolaire" "<https://www.lelivrescolaire.fr/page/5410148>" >}}
+- [Documents sur le Livre Scolaire](https://www.lelivrescolaire.fr/page/5410148)
 
 {{% note tip %}}
 
