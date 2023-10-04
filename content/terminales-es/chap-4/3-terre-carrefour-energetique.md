@@ -46,7 +46,7 @@ Différents stocks et flux énergétiques peuvent être identifiés sur Terre :
 - $\pu{1 kW⋅h}$ (kilowattheure) $= \pu{3,6E6 J}$ ;
 - $\pu{1 kcal}$ (kilocalorie) $= \pu{4184 J}$ ;
 - $\pu{1 W} = \pu{1 J⋅s-1}$ ;
-- $\pu{1 Gt} (gigatonne) $= \pu{10^3 Mt}$ (megatonne).
+- $\pu{1 Gt}$ (gigatonne) $= \pu{10^3 Mt}$ (megatonne).
 
 {{% /note %}}
 
