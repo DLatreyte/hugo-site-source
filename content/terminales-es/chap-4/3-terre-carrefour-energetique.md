@@ -13,9 +13,42 @@ solution_est_visible: false
 auto_numbering: true
 ---
 
+La Terre est un lieu de transfert d'énergie. Elle reçoit un flux d'énergie venant du Soleil, mais elle génère également de l'énergie. L'exploitation de ces stocks permet de satisfaire les besoins énergétiques humains.
+
+<center>
+*Quelle proportion de l'énergie présente sur Terre est exploitée ?*
+</center>
+
 ## Documents
 
-- {{< remote "Documents sur le Livre Scolaire" "<http://LLS.fr/ESTP70>" >}}
+- [Documents sur le Livre Scolaire](http://LLS.fr/ESTP70)
+
+{{% note tip %}}
+
+<img src="/terminales-es/chap-4/chap-4-3/im1.png" alt="" width="100%" />
+
+{{% /note %}}
+
+{{% note tip %}}
+
+Différents stocks et flux énergétiques peuvent être identifiés sur Terre :
+
+- les **stocks énergétiques** : quantité d'énergie en réserve sous différentes formes (chimique, potentielle, etc.) ;
+- les **flux énergétiques** : quantité d'énergie transférée d'un stock à un autre, par unité de temps.
+
+{{% /note %}}
+
+{{% note tip %}}
+
+- $\pu{1 g}$ d'uranium permet de produire théoriquement $\pu{72,6 GJ}$ par fission ;
+- $\pu{1 TJ} = \pu{10^3 GJ} = \pu{10^6 MJ} = \pu{10^9 kJ} = \pu{10^{12} J}$ ;
+- $\pu{1 t.e.p.}$ (tonne d'équivalent pétrole) $= \pu{4,19e10  J}$ ;
+- $\pu{1 kW⋅h}$ (kilowattheure) $= \pu{3,6E6 J}$ ;
+- $\pu{1 kcal}$ (kilocalorie) $= \pu{4184 J}$ ;
+- $\pu{1 W} = \pu{1 J⋅s-1}$ ;
+- $\pu{1 Gt} (gigatonne) $= \pu{10^3 Mt}$ (megatonne).
+
+{{% /note %}}
 
 {{% note tip %}}
 L'unité légale de l'énergie est le **joule** (J).
