@@ -9,7 +9,7 @@ toc: true
 tags: ["Soluté", "Concentration molaire", "Concentration massique", "Beer Lambert", "Dilution", "Couleur", "Absorption", "Dosage", "Étalonnage"]
 categories: ["Chimie", "Terminale Spé PC"]
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 
@@ -79,7 +79,7 @@ Pour réaliser une échelle de teinte à partir d'une solution $S_0$ dans laquel
 
 ### Résultats expérimentaux
 
-- *Spectre d'absorption du permanganate de potassium&nbsp;:* {{< remote "Données expérimentales" "/terminales-pc/chap-4/chap-4-2-2.smbl" >}}. L'exploitation de ce fichier nécessite le téléchargement du logiciel {{< remote "Spectral Analysis" "https://www.vernier.com/product/spectral-analysis/" >}}.
+- *Spectre d'absorption du permanganate de potassium&nbsp;:* {{< remote "Données expérimentales" "/terminales-pc/chap-4/chap-4-2-2.smbl" >}}. L'exploitation de ce fichier nécessite le téléchargement du logiciel {{< remote "Spectral Analysis" "<https://www.vernier.com/product/spectral-analysis/>" >}}.
 
 - *Absorbances des solutions étalons de permanganate de potassium&nbsp;:*
 
@@ -113,7 +113,7 @@ Pour réaliser une échelle de teinte à partir d'une solution $S_0$ dans laquel
 
 {{% /solution %}}
 
-- L'exploitation des résultats expérimentaux nécessite le téléchargement du logiciel {{< remote "Graphical Analysis" "https://www.vernier.com/product/graphical-analysis-4/" >}}.
+- L'exploitation des résultats expérimentaux nécessite le téléchargement du logiciel {{< remote "Graphical Analysis" "<https://www.vernier.com/product/graphical-analysis-4/>" >}}.
 
 ### Questions
 
