@@ -77,7 +77,7 @@ On parle donc de **type abstrait**.
 
 ### Liste : `list`
 
-Le type `list` de Python n'est pas implémeté à l'aide de **listes chaînées** (que nous étudierons au [chapitre 7](../../chap-7)), car *la suppression ou l’ajout ailleurs qu’en fin de liste nécessite de décaler les valeurs de fin de liste, et n’est donc pas réalisé en temps constant*. D’autre part, *l’accès à un élément quelconque est réalisé en temps constant*, ce qui n’est pas le cas avec une liste chaînée.
+Le type `list` de Python n'est pas implémenté à l'aide de **listes chaînées** (que nous étudierons au [chapitre 7](../../chap-7)), car *la suppression ou l’ajout ailleurs qu’en fin de liste nécessite de décaler les valeurs de fin de liste, et n’est donc pas réalisé en temps constant*. D’autre part, *l’accès à un élément quelconque est réalisé en temps constant*, ce qui n’est pas le cas avec une liste chaînée.
 
 Le type `list` de Python est implémenté à l'aide de *tableaux dynamiques*.
 
@@ -95,7 +95,7 @@ Un ensemble Python (`set`) est *équivalent à un dictionnaire ne contenant que 
 
 ### Opérations sur les listes
 
-|Type Python | Type abstrait | Opération | Exemple | Complexité |
+|Type Python | Implémentation | Opération | Exemple | Complexité |
 | :----: | :----: | :----: | :----: | :----: |
 | `list` | Tableau dynamique | Ajout à la fin | `lst.append(x)` | $O(1)$ |
 | `lst=[]` |  | Accès à un élément | `lst[i]` | $O(1)$ |

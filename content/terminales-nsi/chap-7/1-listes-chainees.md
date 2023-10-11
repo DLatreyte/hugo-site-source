@@ -14,8 +14,8 @@ auto_numbering: true
 ---
 {{% note normal %}}
 
-- Un corrigé de la **section 1** se trouve {{< remote "ici" "https://repl.it/@dlatreyte/tableaux" >}}
-- Un corrigé des **sections suivantes** se trouve {{< remote "ici" "https://repl.it/@dlatreyte/listeschainees" >}}
+- Un corrigé de la **section 1** se trouve {{< remote "ici" "<https://repl.it/@dlatreyte/tableaux>" >}}
+- Un corrigé des **sections suivantes** se trouve {{< remote "ici" "<https://repl.it/@dlatreyte/listeschainees>" >}}
 {{% /note %}}
 
 ## Tableaux
@@ -50,7 +50,7 @@ def est_dans(tab: List[int], n: int) -> bool:
     """
     Recherche si la valeur n est présente au moins une fois
     dans le tableau tab.
-    Algorithm itératif.
+    Algorithme itératif.
     """
 ```
 
