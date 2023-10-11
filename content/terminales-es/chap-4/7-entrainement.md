@@ -9,7 +9,7 @@ toc: true
 tags: []
 categories: []
 image: ""
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: true
 ---
 
