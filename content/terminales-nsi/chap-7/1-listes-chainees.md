@@ -211,6 +211,13 @@ Tout au long de ce document nous allons uniquement envisager des listes chaîné
 
 ## Quelques opérations sur les listes chaînées
 
+{{% note warning %}}
+
+Le point de vue envisagé dans la suite de ce document est celui de la **programmation impérative** : nous allons définir des fonctions qui vont modifier la liste chaînée.  
+Nous créerons une classe enveloppe dans un prochain document, de façon à ce notre liste chaînée ait la même interface qu'une liste Python.
+
+{{% /note %}}
+
 ### Longueur d'une liste chaînée
 
 12. Écrire la fonction `longueur` dont la spécification est :
@@ -456,6 +463,7 @@ def renverser(lst: Cellule) -> Cellule:
 
 - Une **liste chaînée** est une structure de données utile pour représenter une *séquence finie d'éléments*.
 - Chaque élément est contenu dans une **cellule**, qui fournit, en plus de la **valeur**, un moyen pour accéder à la **cellule suivante**.
+- Les éléments d'une liste chaînée ne sont pas situés dans des emplacements contigüs en mémoire.
 - Les opérations sur les listes chaînées se programment sous la forme de **parcours qui suivent ces liaisons**, en utilisant la récursivité ou des boucles.
 {{% /note %}}
 
