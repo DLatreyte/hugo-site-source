@@ -495,7 +495,7 @@ Une liste chaînée est un **type abstrait de données** qui doit, au minimum, f
 
 - Les boutons « précédent » et « suivant » des lecteurs de musique peuvent utiliser une liste chaînée doublement/circulaire.
 
-- Les tracés et les forme,s sur le canevas, de MS-Paint sont connectés via une liste chaînée.
+- Les tracés et les formes sur le canevas, de MS-Paint sont connectés via une liste chaînée.
 
 - Le balayage « gauche/droite » sur Tinder utilise une liste doublement chaînée.
 
