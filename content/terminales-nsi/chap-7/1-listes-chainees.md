@@ -12,11 +12,6 @@ image: ""
 solution_est_visible: true
 auto_numbering: true
 ---
-{{% note normal %}}
-
-- Un corrigé de la **section 1** se trouve {{< remote "ici" "<https://repl.it/@dlatreyte/tableaux>" >}}
-- Un corrigé des **sections suivantes** se trouve {{< remote "ici" "<https://repl.it/@dlatreyte/listeschainees>" >}}
-{{% /note %}}
 
 ## Tableaux
 
@@ -139,6 +134,126 @@ def insere_rec(tab: List[int], n: int, i: int, k: int) -> None:
 - Dans le pire des cas (insertion à la première place du tableau), on déplace $N-1$ valeurs.
 
 L'algorithme est donc en $O(N)$.
+{{% /solution %}}
+
+{{% solution "Corrigé de la partie" %}}
+
+```python
+def est_dans(tab: list[int], val: int) -> bool:
+    """
+    Recherche la présence de val dans tab.
+    """
+    trouve = False
+
+    i = 0
+    while i < len(tab) and not trouve:
+        if val == tab[i]:
+            trouve = True
+        i += 1
+
+    return trouve
+
+
+def est_dans_rec(tab: list[int], n: int, i: int = 0) -> bool:
+    """
+    Recherche si la valeur n est présente au moins une fois
+    dans le tableau tab.
+    Algorithme récursif, i est l'indice de recherche.
+    """
+    if i == len(tab):
+        return False
+    elif tab[i] == n:
+        return True
+    else:
+        return est_dans_rec(tab, n, i + 1)
+
+
+def insere(tab: list[int], n: int, i: int) -> None:
+    """
+    Insère la valeur n à l'indice i du tableau tab.
+    Algorithm itératif et en place.
+    
+    Lève une exception si le tableau est déjà plein.
+    
+    HYPOTHÈSE : la gestion des "trous" n'est pas assurée,
+    l'algorithme se contente de décaler les valeurs vers 
+    la droite.
+    """
+    dernier_indice = len(tab) - 1
+
+    if tab[dernier_indice] != None:
+        raise Exception("Tableau plein !")
+
+    k = dernier_indice
+    while k > i:
+        tab[k] = tab[k - 1]
+        k -= 1
+
+    #for k in range(dernier_indice, i, -1):
+    #    tab[k] = tab[k - 1]
+
+    tab[i] = n
+
+
+def insere_rec(tab: list[int], n: int, i: int, k: int) -> None:
+    """
+    Insère la valeur n à l'indice i du tableau tab.
+    Algorithm récursif et en place. k est l'indice de
+    recherche. 
+    Sa première valeur doit être len(tab) - 1.
+    
+    Lève une exception si le tableau est déjà plein.
+    
+    HYPOTHÈSE : la gestion des "trous" n'est pas 
+    assurée, l'algorithme se contente de décaler 
+    les valeurs vers la droite.
+    """
+    dernier_indice = len(tab) - 1
+
+    if tab[dernier_indice] != None and k == dernier_indice:
+        raise Exception("Tableau plein !")
+    elif k == i:
+        tab[i] = n
+        return None
+    else:
+        tab[k] = tab[k - 1]
+        return insere_rec(tab, n, i, k - 1)
+
+
+if __name__ == "__main__":
+    tab = [i for i in range(20)]
+
+    assert est_dans(tab, 12) == True
+    assert est_dans(tab, 0) == True
+    assert est_dans(tab, 20) == False
+
+    assert est_dans_rec(tab, 12) == True
+    assert est_dans_rec(tab, 0) == True
+    assert est_dans_rec(tab, 20) == False
+
+    print("Insertion itérative")
+    tab = [1, 1, 2, 3, 4, 5, None, None, None]
+    print(tab)
+    insere(tab, 7, 0)
+    print(tab)
+    insere(tab, 7, 0)
+    print(tab)
+    insere(tab, 7, 0)
+    print(tab)
+    #insere(tab, 7, 0)
+    #print(tab)
+    print()
+    print("Insertion récursive")
+    tab = [1, 1, 2, 3, 4, 5, None, None, None]
+    print(tab)
+    insere_rec(tab, 7, 0, len(tab) - 1)
+    print(tab)
+    insere_rec(tab, 7, 0, len(tab) - 1)
+    print(tab)
+    insere_rec(tab, 7, 0, len(tab))
+    print(tab)
+```
+
 {{% /solution %}}
 
 ## Structure de liste chaînée
