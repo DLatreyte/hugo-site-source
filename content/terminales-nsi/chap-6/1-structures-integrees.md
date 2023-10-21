@@ -117,7 +117,7 @@ Un ensemble Python (`set`) est *équivalent à un dictionnaire ne contenant que 
 
 ### Opérations sur les ensembles
 
-|Type Python | Type abstrait | Opération | Exemple | Complexité |
+|Type Python | Type abstrait | Opération | Exemple | Complexité (moyenne) |
 | :----: | :----: | :----: | :----: | :----: |
 | `set` | Ensemble | Ajout d'un élément | `s.add(elt)` | $O(1)$ |
 | `s = {}` |  | Retrait d'un élément | `s.remove(elt)` | $O(1)$ |
@@ -127,19 +127,19 @@ Un ensemble Python (`set`) est *équivalent à un dictionnaire ne contenant que 
 | |  | Différence | `s - t` | $O(n)$ |
 | |  | Différence symétrique | `s ^ t` | $O(n)$ |
 
-## Exemple : Définition et implémentation du type abstrait Tableau_dynamique en Python
+## Exemple : Définition et implémentation du type abstrait « Liste » à l'aide de tableaux dynamiques en Python
 
-### Interface du type abstrait Tableau_dynamique
+### Interface du type abstrait « Liste »
 
 L'interface de la classe est la suivante :
 
 ```python
-Help on class TableauDynamique in module __main__:
+Help on class Liste in module __main__:
 
-class TableauDynamique(builtins.object)
- |  TableauDynamique() -> 'None'
+class Liste(builtins.object)
+ |  Liste() -> 'None'
  |  
- |  Classe implémentant le type « tableau dynamqie »,
+ |  Classe implémentant le type « Liste »,
  |  version très simplifiée du type « liste » de Python.
  |  
  |  Methods defined here:
@@ -159,13 +159,13 @@ class TableauDynamique(builtins.object)
 
 ### Implémentation
 
-1. Créer la classe `TableauDynamique`.
+1. Créer la classe `Liste`.
 2. Dans la méthode `__init__`, initialiser trois attributs privés `_nbre`, `_capacite` et `_tab` tels que `_nbre` donne le nombre d'éléments dans le tableau (initialement égal à 0), `_capacite` donne le nombre maximal possible d'éléments dans le tableau (initialement égal à 1) et `_tab` référence un tableau créé à l'aide de la fonction `py_object` du module `ctypes`.
 
 **Remarque :** le code de création du tableau est le suivant :
 
 ```python
-def _construit_tableau(self: TableauDynamique, capacite: int):
+def _construit_tableau(self: Liste, capacite: int):
     """
     Construction d'un tableau de capacité donnée.
     """
@@ -175,7 +175,7 @@ def _construit_tableau(self: TableauDynamique, capacite: int):
 3. Définir la méthode `__len__` dont la spécification est :
 
 ```python
-def __len__(self: TableauDynamique) -> int:
+def __len__(self: Liste) -> int:
     """
     Retourne le nombre d'éléments dans le tableau.
     """
@@ -184,7 +184,7 @@ def __len__(self: TableauDynamique) -> int:
 4. Définir la méthode `__getitem__` dont la spécification est :
 
 ```python
-def __getitem__(self: TableauDynamique, i: int) -> object:
+def __getitem__(self: Liste, i: int) -> object:
     """
     Retourne l'élément d'indice i.
 
@@ -196,7 +196,7 @@ def __getitem__(self: TableauDynamique, i: int) -> object:
 5. Définir la méthode privée `_augmente_taille` dont la spécification est :
 
 ```python
-def _augmente_taille(self: TableauDynamique, capacite: int) -> None:
+def _augmente_taille(self: Liste, capacite: int) -> None:
     """
     Crée un nouveau tableau de dimension capacite puis copie tous les
     éléments de l'ancien tableau dans ce dernier.
@@ -209,7 +209,7 @@ def _augmente_taille(self: TableauDynamique, capacite: int) -> None:
 6. Définir la méthode `append` dont la spécification est :
 
 ```python
-def append(self: TableauDynamique, obj: object) -> None:
+def append(self: Liste, obj: object) -> None:
     """
     Ajoute l'élément obj en dernière position dans le tableau.
     """
@@ -220,10 +220,116 @@ def append(self: TableauDynamique, obj: object) -> None:
 7. Définir la méthode `__repr__` dont la spécification est :
 
 ```python
-def __repr__(self: TableauDynamique) -> str:
+def __repr__(self: Liste) -> str:
     """
     Retourne la chaîne de caractères représentant le tableau.
     """
 ```
 
 8. Tester le bon fonctionnement de la classe.
+
+{{% solution "Corrigé" %}}
+
+```python
+from __future__ import annotations
+import ctypes
+
+
+class Liste:
+    """
+    Implémentation du type abstrait liste avec des
+    tableaux dynamiques.
+    """
+
+    def __init__(self: Liste) -> None:
+        """
+        Initialisation de l'objet
+        """
+        self._nbre = 0  # Nbre d'éléments dans la liste
+        self._capacite = 1  # Nbre max d'éléments dans le tableau
+        self._tab = self._construit_tableau(self._capacite)  # Tableau
+
+    def _construit_tableau(self: Liste, capacite: int):
+        """
+        Construction d'un tableau de capacité donnée.
+        """
+        return (capacite * ctypes.py_object)()
+
+    def __len__(self: Liste) -> int:
+        """
+        Retourne le nombre d'éléments dans le tableau.
+        """
+        return self._nbre
+
+    def __getitem__(self: Liste, i: int) -> object:
+        """
+        Retourne l'élément d'indice i.
+    
+        Une exception est levée si l'indice n'appartient
+        pas au bon intervalle.
+        """
+        if i >= self._nbre:
+            raise IndexError("Indice trop grand !")
+        elif i < 0:
+            i = self._nbre + i
+
+        return self._tab[i]
+
+    def _augmente_taille(self: Liste, capacite: int) -> None:
+        """
+        Crée un nouveau tableau de dimension capacite puis copie 
+        tous les éléments de l'ancien tableau dans ce dernier.
+        Fait en sorte que le nouveau tableau soit le tableau désormais
+        utilisé.
+        Met à jour l'attribut capacite.
+        """
+        new_tab = self._construit_tableau(capacite)
+
+        for i in range(self._nbre):
+            #new_tab[i] = self._tab.__getitem__(i)
+            new_tab[i] = self._tab[i]
+
+        self._tab = new_tab
+        self._capacite = capacite
+
+    def append(self: Liste, obj: object) -> None:
+        """
+        Ajoute l'élément obj en dernière position dans le tableau.
+        """
+        if self._nbre == self._capacite:
+            self._augmente_taille(2 * self._capacite)
+
+        self._tab[self._nbre] = obj
+        self._nbre += 1
+
+    def __repr__(self: Liste) -> str:
+        """
+        Retourne la chaîne de caractères représentant le tableau.
+        """
+        chaine = "["
+        for i in range(self._nbre):
+            chaine += str(self._tab[i])
+            if i != self._nbre - 1:
+                chaine += ", "
+        chaine += "]"
+        return chaine
+
+
+if __name__ == "__main__":
+    liste = Liste()
+    print(f"Longueur de la liste : {len(liste)}")
+    print(f"Capacité du tableau : {liste._capacite}")
+
+    liste.append(3)  # TableauDynamique.append(liste, 3)
+    print(f"Longueur de la liste : {len(liste)}")
+    print(f"Capacité du tableau : {liste._capacite}")
+    print(liste)
+
+    for i in range(112):
+        liste.append(i)
+    print(f"Longueur de la liste : {len(liste)}")
+    print(f"Capacité du tableau : {liste._capacite}")
+    print(liste)
+```
+
+{{% /solution %}}
