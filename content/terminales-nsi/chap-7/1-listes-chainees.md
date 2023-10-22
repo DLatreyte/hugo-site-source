@@ -450,7 +450,7 @@ def modifier_n_ieme_element(lst: Cellule, i: int, valeur: int) -> None:
 21. Écrire la fonction `ajout_fin_liste` dont la spécification est :
 
 ```python
-def ajout_fin_liste(lst: Cellule, valeur: Cellule) -> None:
+def ajout_fin_liste(lst: Cellule, valeur: int) -> None:
     """
     Ajout de valeur à la fin de la liste.
     La liste lst est modifiée.
@@ -467,13 +467,11 @@ On doit parcourir toute la liste pour ajouter un élément à la fin. La complex
 23. Écrire la fonction `ajout_debut_liste` dont la spécification est :
 
 ```python
-def ajout_debut_liste(lst: Cellule, valeur: Cellule) -> Cellule:
+def ajout_debut_liste(lst: Cellule, valeur: int) -> Cellule:
     """
     Ajout de valeur au début de la liste.
-    Création d'une nouvelle liste mais toute modification de la liste
-    lst modifie cette nouvelle liste.
     """
-````
+```
 
 24. Quelle est la complexité de cette fonction ?
 {{% solution "Réponse" %}}
