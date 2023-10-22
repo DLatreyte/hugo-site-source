@@ -17,7 +17,7 @@ auto_numbering: true
 
 {{% note tip %}}
 
-- Un **tableau** est une *structure de données* dans laquelle *les éléments, de même type, occupent des positions contiguës en mémoire*.
+- Un **tableau** est une *structure de données* dans laquelle *les éléments, tous de même type, occupent des positions contiguës en mémoire*.
 - Le nombre d'éléments qu'un tableau peut contenir est déterminé à la création d'un tableau.
 {{% /note %}}
 
@@ -31,10 +31,10 @@ auto_numbering: true
 
 {{% note normal %}}
 
-- La structure de données appelée « liste » dans le langage Python est en fait un **tableau dynamique**.
+- La structure de données appelée « liste » dans le langage Python est implémentée à l'aide de **tableaux dynamiques**.
 {{% /note %}}
 
-**Remarque :** Dans la suite de ce document, on va considérer que la liste Python `tab`, créé par l'instruction `tab = [i for i in range(20)]` est de longueur fixe. Elle se comporte alors comme un tableau.
+**Remarque :** Dans la suite de ce document, on va considérer que la liste Python `tab`, créé par l'instruction `tab = [i for i in range(20)]` est de longueur fixe. *Elle se comporte alors comme un tableau.*
 
 ### Pourquoi la recherche d'un élément dans un tableau quelconque (non trié donc) est en $O(N)$ ?
 
@@ -598,7 +598,7 @@ if __name__ == "__main__":
     affichage_elements_liste(lst)
 ```
 
-## Ensemble du code
+## Ensemble du code de l'activité
 
 {{% solution "Corrigé de la partie sur les tableaux" %}}
 
@@ -719,3 +719,373 @@ if __name__ == "__main__":
 ```
 
 {{% /solution %}}
+
+{{% solution "Corrigé des sections sur les listes chaînées" %}}
+
+```python
+from __future__ import annotations
+
+
+class Maillon:
+    """
+    Implémentation de l'élément de base du 
+    type abstrait Liste.
+    """
+    def __init__(self: Maillon, 
+                 val: int, 
+                 suivante: Maillon = None) -> None:
+        """
+        Initialisation de l'objet.
+        """
+        self.valeur = val
+        self.suivante = suivante
+
+
+def longueur(lst: Maillon) -> int:
+    """
+    Détermination du nombre d'éléments dans la liste.
+    """
+    if lst is None:
+        return 0
+    else:
+        return 1 + longueur(lst.suivante)
+
+
+def longueur_iter(lst: Maillon) -> int:
+    """
+    Détermination du nombre d'éléments dans la liste.
+    
+    ALgorithme itératif.
+    """
+    nbre = 0
+    while lst is not None:
+        nbre += 1
+        lst = lst.suivante
+    return nbre
+
+
+def vers_chaine(lst: Maillon, car: str = "[") -> str:
+    """
+    Affichage de la liste.
+    """
+    if lst.suivante is None:
+        return car + str(lst.valeur) + "]"
+    else:
+        return vers_chaine(lst.suivante, 
+                           car + str(lst.valeur) + ", ")
+
+
+def list_to_str(lst: Maillon, premier: bool = True) -> str:
+    """
+    Affichage de la liste.
+    """
+    if lst.suivante is None:
+        return str(lst.valeur) + "]"
+    elif premier:
+        return "[" + str(lst.valeur) + ", " + list_to_str(lst.suivante, False)
+    else:
+        return str(lst.valeur) + ", " + list_to_str(lst.suivante, False)
+
+
+def list_to_str_iter(lst: Maillon) -> str:
+    """
+    Affichage de la liste.
+    
+    Algorithme itératif.
+    """
+    rep = "["
+    while lst.suivante is not None:
+        rep += str(lst.valeur) + ", "
+        lst = lst.suivante
+    rep += str(lst.valeur) + "]" 
+    return rep
+
+
+def n_ieme_element(lst: Maillon, i: int) -> int:
+    """
+    Retourne le n-ième élément de la liste. La convention
+    suivie est celle de Python, le premier élément ayant
+    l'indice i = 0.
+
+    Algorithme récursif.
+
+    Lève une exception si l'indice de la liste est trop grand.
+    """
+    if lst is None:
+        raise IndexError("Indice trop grand !")
+    elif i == 0:
+        return lst.valeur
+    else:
+        return n_ieme_element(lst.suivante, i-1)
+
+
+def n_ieme_element_iter(lst: Maillon, i: int) -> int:
+    """
+    Retourne le n-ième élément de la liste. La convention
+    suivie est celle de Python, le premier élément ayant
+    l'indice i = 0.
+
+    Algorithme itératif.
+
+    Lève une exception si l'indice de la liste est trop grand.
+    """
+    compteur = 0
+    while compteur != i  or (lst is None):
+        if lst is None:
+            raise IndexError("Indice trop grand !")
+        lst = lst.suivante
+        compteur += 1
+    return lst.valeur
+
+
+def modifier_n_ieme_element(lst: Maillon, i: int, valeur: int) -> None:
+    """
+    Modifie le n-ième élément de la liste. La convention
+    suivie est celle de Python, le premier élément ayant
+    l'indice i = 0.
+
+    Algorithme récursif.
+
+    Lève une exception si l'indice de la liste est trop grand.
+    """
+    if lst is None:
+        raise IndexError("Indice hors des limites")
+    elif i == 0:
+        lst.valeur = valeur
+        return None
+    else:
+        return modifier_n_ieme_element(lst.suivante, i-1, valeur)
+
+        
+def modifier_n_ieme_element_iter(lst: Maillon, i: int, valeur: int) -> None:
+    """
+    Modifie le n-ième élément de la liste. La convention
+    suivie est celle de Python, le premier élément ayant
+    l'indice i = 0.
+    
+    Algorithme itératif.
+    
+    Lève une exception si l'indice de la liste est trop grand.
+    """
+    compteur = 0
+    while compteur != i or (lst is None):
+        if lst is None:
+            raise IndexError("Indice hors des limites")
+        lst = lst.suivante
+        compteur += 1
+    lst.valeur = valeur
+    return None 
+
+
+def ajout_fin_liste(lst: Maillon, valeur: int) -> None:
+    """
+    Ajout de valeur à la fin de la liste.
+    La liste lst est modifiée.
+
+    Algorithme récursif.
+    """
+    if lst.suivante is None:
+        maillon = Maillon(valeur)
+        lst.suivante = maillon
+        return None
+    else:
+        ajout_fin_liste(lst.suivante, valeur)
+
+
+def ajout_fin_liste_iter(lst: Maillon, valeur: int) -> None:
+    """
+    Ajout de valeur à la fin de la liste.
+    La liste lst est modifiée.
+
+    Algorithme itératif.
+    """
+    while lst.suivante is not None:
+        lst = lst.suivante
+    
+    maillon = Maillon(valeur)
+    lst.suivante = maillon
+    return None
+
+
+def ajout_debut_liste(lst: Maillon, valeur: int) -> Maillon:
+    """
+    Ajout de valeur au début de la liste.
+
+    La nouvelle adresse de la tête de liste doit être
+    retournée.
+    """
+    maillon = Maillon(valeur)
+    maillon.suivante = lst
+    lst = maillon
+    return lst
+
+
+def retrait_dernier_element(lst: Maillon) -> int:
+    """
+    Retire le dernier élément de la liste et le retourne.
+
+    Algorithme récursif.
+    """
+    if lst.suivante.suivante is None:
+        valeur = lst.suivante.valeur
+        lst.suivante = None
+        return valeur
+    else:
+        return retrait_dernier_element(lst.suivante)
+
+def retrait_premier_element(lst: Maillon) -> tuple[int, Maillon]:
+    """
+    Retire le premier élément de la liste et le retourne.
+
+    La nouvelle adresse de la tête de liste doit être 
+    retournée.
+    """
+    valeur = lst.valeur
+    lst = lst.suivante
+    return valeur, lst 
+
+
+def retrait_n_ieme_element(lst: Maillon, i: int) -> int:
+    """
+    Retire le n-ième élément de la liste lst. La convention
+    suivie est celle de Python, le premier élément ayant
+    l'indice i = 0.
+    
+    Algorithme récursif.
+    
+    Lève une exception si l'indice de la liste est trop grand,
+    ne prend pas en charge le retrait du premier élément.
+    """
+    if lst is None or i == 0:
+        raise IndexError("Opération impossible")
+    elif i == 1:
+        if lst.suivante is None:
+            raise IndexError("Indice hors des limites")
+        valeur = lst.suivante.valeur
+        lst.suivante = lst.suivante.suivante
+        return valeur
+    else:
+        return retrait_n_ieme_element(lst.suivante, i-1)
+
+
+def concatener(lst1: Maillon, lst2: Maillon) -> Maillon:
+    """
+    Concatène les listes lst1 et lst2. Une nouvelle liste est
+    créée et retournée.
+    Les éléments de la première liste sont copiés alors que ceux 
+    de la deuxième sont insérés. lst1 et lst2 ne sont donc pas modifiées.
+
+    ATTENTION : tout élément de lst partagé avec lst2 modifié l'est aussi 
+    dans lst2.
+
+    Algorithme récursif.
+    """
+    if lst1 is None:
+        return lst2
+    else:
+        return Maillon(lst1.valeur, concatener(lst1.suivante, lst2))    
+
+
+def copie(lst: Maillon) -> Maillon:
+    """
+    Réalise une nouvelle copie de la liste lst.
+
+    Algorithme récursif.
+    """
+    if lst.suivante is None:
+        return Maillon(lst.valeur)
+    else:
+        return Maillon(lst.valeur, copie(lst.suivante))
+
+
+def concatener_avec_copie_integrale(lst1: Maillon, lst2: Maillon) -> Maillon:
+    """
+    Concatène les listes lst1 et lst2. Les éléments des listes lst1 et lst2
+    sont recopiés pour former une nouvelle liste.
+
+    Algorithme récursif.
+    """
+    if lst1 is None:
+        return copie(lst2)
+    else:
+        return Maillon(lst1.valeur, concatener_avec_copie_integrale(lst1.suivante, lst2))
+
+
+def retourner(lst: Maillon) -> Maillon:
+    """
+    Retourne une nouvelle liste formée des éléments de lst à l'envers. 
+    Les éléments peuvent avoir été recopiés ou pas.
+
+    Algorithme récursif.
+    """
+    if lst.suivante is None:
+        return Maillon(lst.valeur)
+    else:
+        maillon = retourner(lst.suivante)
+        maillon = concatener_avec_copie_integrale(maillon,
+        Maillon(lst.valeur))
+        return maillon
+
+
+if __name__ == "__main__":
+    lst = Maillon(23, Maillon(32, Maillon(12, Maillon(45))))
+    print(longueur(lst))
+    print(longueur_iter(lst))
+    print(vers_chaine(lst))
+    print(list_to_str(lst))
+    print(list_to_str_iter(lst))
+    print(n_ieme_element(lst, 0))
+    print(n_ieme_element(lst, 3))
+    print(n_ieme_element_iter(lst, 2))
+    #print(n_ieme_element_iter(lst, 4))
+    modifier_n_ieme_element(lst, 1, -12)
+    modifier_n_ieme_element_iter(lst, 2, 343)
+    print(list_to_str(lst))
+    ajout_fin_liste(lst, -32)
+    print(list_to_str(lst))
+    ajout_fin_liste_iter(lst, 45)
+    print(list_to_str(lst))
+    lst = ajout_debut_liste(lst, 89)
+    print(list_to_str(lst))
+    der = retrait_dernier_element(lst)
+    print(f"Dernier élément : {der}")
+    print(list_to_str(lst))
+    prem, lst = retrait_premier_element(lst)
+    print(f"Premier élément : {prem}")
+    print(list_to_str(lst))
+
+    lst2 = Maillon(89, Maillon(76, Maillon(38)))
+    lst3 = concatener(lst, lst2)
+    print(list_to_str(lst3))
+
+    lst4 = copie(lst2)
+    print(list_to_str(lst4))
+
+    lst5 = concatener_avec_copie_integrale(lst3, lst4)
+    print(list_to_str(lst5))
+
+    lst6 = retourner(lst5)
+    print(list_to_str(lst6))
+```
+
+{{% /solution %}}
+
+## Exercices
+
+{{% note exercise %}}
+
+#### Exercice 1
+
+Reprendre toutes les fonctions des sections 2 et 3 mais en implémentant cette fois le type abstrait « Liste chaînée » à l'aide de tuples (à la place de la classe.)
+
+{{% /note %}}
+
+{{% note exercise %}}
+
+#### Exercice 2
+
+Lors de cette séance on a choisit le paradigme impératif : on a définit des fonctions qui manipulent des cellules, l'ensemble de ces cellules formant une liste chaînée.
+
+Par transformation des fonctions en méthodes, écrire le code de la classe `Liste` qui définit le type abstrait « Liste chaînée ».
+
+{{% /note %}}
