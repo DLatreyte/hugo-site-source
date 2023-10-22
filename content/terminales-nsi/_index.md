@@ -69,7 +69,7 @@ layout: single
 
 ### Structures de données
 
-- **Chapitre 6 :** [*Structures de données fournies avec le langage Python*](chap-6)
+- **Chapitre 6 :** [*Type de données astrait (ADT). Deux exemples fournis avec le langage Python*](chap-6)
 
 - **Chapitre 7 :** [*Listes chaînées*](chap-7)
 
