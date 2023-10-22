@@ -21,7 +21,7 @@ auto_numbering: true
 - Le nombre d'éléments qu'un tableau peut contenir est déterminé à la création d'un tableau.
 {{% /note %}}
 
-|Type Python | Type abstrait | Opération | Exemple | Complexité |
+|Type Python | Type | Opération | Exemple | Complexité |
 | :----: | :----: | :----: | :----: | :----: |
 | N'existe pas | Tableau | Accès à un élément | `tab[i]` | $O(1)$ |
 |  |  | Modification d'un élément | `tab[i] = x` | $O(1)$ |

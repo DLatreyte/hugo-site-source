@@ -18,7 +18,7 @@ layout: "single"
 
 | Contenus | Capacités attendues | Commentaires |
 |:-:|:-:|:-:|
-| - Listes. |  - Distinguer des structures par le jeu des méthodes qui les caractérisent.<br />- Choisir une structure de données adaptée à la situation à modéliser. | - Les listes n’existent pas de façon native en Python. |
+| - Listes. |  - Distinguer des structures par le jeu des méthodes qui les caractérisent.<br />- Choisir une structure de données adaptée à la situation à modéliser. | - Les listes n’existent pas de façon native en Python. |
 
 ## Documents
 
