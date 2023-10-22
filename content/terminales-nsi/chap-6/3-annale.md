@@ -4,7 +4,7 @@ subtitle: ""
 author: ""
 type: ""
 date: 2020-10-13T05:06:51+04:00
-draft: false
+draft: true
 toc: true
 tags: ["Dictionnaire", "Liste"]
 categories: ["Terminales Spé NSI", "Informatique"]
