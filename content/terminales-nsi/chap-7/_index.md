@@ -22,4 +22,4 @@ layout: "single"
 
 ## Documents
 
-- **Doc. :** [*Listes chaînées*](1-listes-chainees)
+- **Doc. :** [*Listes Chaînées, présentation... et implémentation à l'aide d'une classe*](1-listes-chainees)

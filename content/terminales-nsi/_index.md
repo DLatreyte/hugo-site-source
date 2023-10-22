@@ -20,7 +20,9 @@ layout: single
 
 - {{< remote "Modalités de l'épreuve du Grand oral" "../terminales-pc/grand_oral" >}}
 
+<!--
 - [<span style="color: red;"><strong>BAC 2023 NSI : «&nbsp;Entrées prépondérantes&nbsp;»</strong></span>]({{< ref "2022-2023-entrees-preponderantes.md" >}})
+-->
 
 ## Quelques références
 

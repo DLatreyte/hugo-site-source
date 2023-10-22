@@ -1,6 +1,6 @@
 ---
-title: "Listes Chaînées"
-subtitle: ""
+title: "Listes Chaînées, présentation"
+subtitle: "... et implémentation à l'aide d'une classe"
 author: ""
 type: ""
 date: 2020-10-14T18:01:18+04:00
@@ -134,126 +134,6 @@ def insere_rec(tab: List[int], n: int, i: int, k: int) -> None:
 - Dans le pire des cas (insertion à la première place du tableau), on déplace $N-1$ valeurs.
 
 L'algorithme est donc en $O(N)$.
-{{% /solution %}}
-
-{{% solution "Corrigé de la partie" %}}
-
-```python
-def est_dans(tab: list[int], val: int) -> bool:
-    """
-    Recherche la présence de val dans tab.
-    """
-    trouve = False
-
-    i = 0
-    while i < len(tab) and not trouve:
-        if val == tab[i]:
-            trouve = True
-        i += 1
-
-    return trouve
-
-
-def est_dans_rec(tab: list[int], n: int, i: int = 0) -> bool:
-    """
-    Recherche si la valeur n est présente au moins une fois
-    dans le tableau tab.
-    Algorithme récursif, i est l'indice de recherche.
-    """
-    if i == len(tab):
-        return False
-    elif tab[i] == n:
-        return True
-    else:
-        return est_dans_rec(tab, n, i + 1)
-
-
-def insere(tab: list[int], n: int, i: int) -> None:
-    """
-    Insère la valeur n à l'indice i du tableau tab.
-    Algorithm itératif et en place.
-    
-    Lève une exception si le tableau est déjà plein.
-    
-    HYPOTHÈSE : la gestion des "trous" n'est pas assurée,
-    l'algorithme se contente de décaler les valeurs vers 
-    la droite.
-    """
-    dernier_indice = len(tab) - 1
-
-    if tab[dernier_indice] != None:
-        raise Exception("Tableau plein !")
-
-    k = dernier_indice
-    while k > i:
-        tab[k] = tab[k - 1]
-        k -= 1
-
-    #for k in range(dernier_indice, i, -1):
-    #    tab[k] = tab[k - 1]
-
-    tab[i] = n
-
-
-def insere_rec(tab: list[int], n: int, i: int, k: int) -> None:
-    """
-    Insère la valeur n à l'indice i du tableau tab.
-    Algorithm récursif et en place. k est l'indice de
-    recherche. 
-    Sa première valeur doit être len(tab) - 1.
-    
-    Lève une exception si le tableau est déjà plein.
-    
-    HYPOTHÈSE : la gestion des "trous" n'est pas 
-    assurée, l'algorithme se contente de décaler 
-    les valeurs vers la droite.
-    """
-    dernier_indice = len(tab) - 1
-
-    if tab[dernier_indice] != None and k == dernier_indice:
-        raise Exception("Tableau plein !")
-    elif k == i:
-        tab[i] = n
-        return None
-    else:
-        tab[k] = tab[k - 1]
-        return insere_rec(tab, n, i, k - 1)
-
-
-if __name__ == "__main__":
-    tab = [i for i in range(20)]
-
-    assert est_dans(tab, 12) == True
-    assert est_dans(tab, 0) == True
-    assert est_dans(tab, 20) == False
-
-    assert est_dans_rec(tab, 12) == True
-    assert est_dans_rec(tab, 0) == True
-    assert est_dans_rec(tab, 20) == False
-
-    print("Insertion itérative")
-    tab = [1, 1, 2, 3, 4, 5, None, None, None]
-    print(tab)
-    insere(tab, 7, 0)
-    print(tab)
-    insere(tab, 7, 0)
-    print(tab)
-    insere(tab, 7, 0)
-    print(tab)
-    #insere(tab, 7, 0)
-    #print(tab)
-    print()
-    print("Insertion récursive")
-    tab = [1, 1, 2, 3, 4, 5, None, None, None]
-    print(tab)
-    insere_rec(tab, 7, 0, len(tab) - 1)
-    print(tab)
-    insere_rec(tab, 7, 0, len(tab) - 1)
-    print(tab)
-    insere_rec(tab, 7, 0, len(tab))
-    print(tab)
-```
-
 {{% /solution %}}
 
 ## Structure de liste chaînée
@@ -464,12 +344,17 @@ def ajout_fin_liste(lst: Cellule, valeur: int) -> None:
 On doit parcourir toute la liste pour ajouter un élément à la fin. La complexité est donc linéaire.
 {{% /solution %}}
 
+### Ajout d'une valeur au début de la liste
+
 23. Écrire la fonction `ajout_debut_liste` dont la spécification est :
 
 ```python
 def ajout_debut_liste(lst: Cellule, valeur: int) -> Cellule:
     """
     Ajout de valeur au début de la liste.
+
+    La nouvelle adresse de la tête de liste doit être
+    retournée.
     """
 ```
 
@@ -491,13 +376,60 @@ def retrait_dernier_element(lst: Cellule) -> int:
     """
 ```
 
+26. Quelle est la complexité de cette fonction ?
+{{% solution "Réponse" %}}
+Il faut parcourir la liste, donc $O(N)$.
+{{% /solution %}}
+
+### Retrait du premier élément d'une liste
+
+27. Écrire la fonction `retrait_premier_element` dont la spécification est :
+
+```python
+def retrait_premier_element(lst: Cellule) -> tuple[int, Cellule]:
+    """
+    Retire le premier élément de la liste et le retourne.
+
+    La nouvelle adresse de la tête de liste doit être 
+    retournée.
+    """
+```
+
+28. Quelle est la complexité de cette fonction ?
+{{% solution "Réponse" %}}
+$O(1)$.
+{{% /solution %}}
+
+### Retrait du n-ième élément d'une liste
+
+29. Écrire la fonction `retrait_n_ieme_element` dont la spécification est :
+
+```python
+def retrait_n_ieme_element(lst: Maillon, i: int) -> int:
+    """
+    Retire le n-ième élément de la liste lst. La convention
+    suivie est celle de Python, le premier élément ayant
+    l'indice i = 0.
+    
+    Algorithme récursif.
+    
+    Lève une exception si l'indice de la liste est trop grand,
+    ne prend pas en charge le retrait du premier élément.
+    """
+```
+
+30. Quelle est la complexité de cette fonction ?
+{{% solution "Réponse" %}}
+Le retrait en lui-même est en $O(1)$ mais il faut arriver jusqu'à la valeur. L'ensemble est donc en $O(N)$.
+{{% /solution %}}
+
 ### Concaténation de deux listes
 
 {{% note tip %}}
 On appelle **concaténation** de deux listes l'opération consistant à mettre bout à bout les deux listes.
 {{% /note %}}
 
-26. Écrire la fonction `concatener` dont la spécification est :
+31. Écrire la fonction `concatener` dont la spécification est :
 
 ```python
 def concatener(lst1: Cellule, lst2: Cellule) -> Cellule:
@@ -516,7 +448,7 @@ def concatener(lst1: Cellule, lst2: Cellule) -> Cellule:
 
 <img src="/terminales-nsi/chap-7/chap-7-1-3.png" alt="" width="100%" />
 
-27. Écrire la fonction `copie` dont la spécification est :
+32. Écrire la fonction `copie` dont la spécification est :
 
 ```python
 def copie(lst: Cellule) -> Cellule:
@@ -529,7 +461,7 @@ def copie(lst: Cellule) -> Cellule:
 
 <img src="/terminales-nsi/chap-7/chap-7-1-4.png" alt="" width="75%" />
 
-28. Se servir de la fonction `copie` pour écrire la fonction `concatener_avec_copie_integrale` dont la spécification est :
+33. Se servir de la fonction `copie` pour écrire la fonction `concatener_avec_copie_integrale` dont la spécification est :
 
 ```python
 def concatener_avec_copie_integrale(lst1: Cellule, lst2: Cellule) -> Cellule:
@@ -543,7 +475,7 @@ def concatener_avec_copie_integrale(lst1: Cellule, lst2: Cellule) -> Cellule:
 
 <img src="/terminales-nsi/chap-7/chap-7-1-5.png" alt="" width="100%" />
 
-29. Quelle est la complexité de la fonction `concatener` ? Même question pour la fonction `concatener_avec_copie_integrale`.
+34. Quelle est la complexité de la fonction `concatener` ? Même question pour la fonction `concatener_avec_copie_integrale`.
 {{% solution "Réponse" %}}
 
 - Dans le premier cas, il est nécessaire de recopier tous les éléments de `lst1`. La complexité est donc linéaire et dépend du nombre d'élements de `lst1`.
@@ -552,7 +484,7 @@ def concatener_avec_copie_integrale(lst1: Cellule, lst2: Cellule) -> Cellule:
 
 ### Renverser une liste
 
-30. Écrire la fonction `renverser` dont la spécification est :
+35. Écrire la fonction `renverser` dont la spécification est :
 
 ```python
 def renverser(lst: Cellule) -> Cellule:
@@ -665,3 +597,125 @@ if __name__ == "__main__":
     print(dernier)
     affichage_elements_liste(lst)
 ```
+
+## Ensemble du code
+
+{{% solution "Corrigé de la partie sur les tableaux" %}}
+
+```python
+def est_dans(tab: list[int], val: int) -> bool:
+    """
+    Recherche la présence de val dans tab.
+    """
+    trouve = False
+
+    i = 0
+    while i < len(tab) and not trouve:
+        if val == tab[i]:
+            trouve = True
+        i += 1
+
+    return trouve
+
+
+def est_dans_rec(tab: list[int], n: int, i: int = 0) -> bool:
+    """
+    Recherche si la valeur n est présente au moins une fois
+    dans le tableau tab.
+    Algorithme récursif, i est l'indice de recherche.
+    """
+    if i == len(tab):
+        return False
+    elif tab[i] == n:
+        return True
+    else:
+        return est_dans_rec(tab, n, i + 1)
+
+
+def insere(tab: list[int], n: int, i: int) -> None:
+    """
+    Insère la valeur n à l'indice i du tableau tab.
+    Algorithm itératif et en place.
+    
+    Lève une exception si le tableau est déjà plein.
+    
+    HYPOTHÈSE : la gestion des "trous" n'est pas assurée,
+    l'algorithme se contente de décaler les valeurs vers 
+    la droite.
+    """
+    dernier_indice = len(tab) - 1
+
+    if tab[dernier_indice] != None:
+        raise Exception("Tableau plein !")
+
+    k = dernier_indice
+    while k > i:
+        tab[k] = tab[k - 1]
+        k -= 1
+
+    #for k in range(dernier_indice, i, -1):
+    #    tab[k] = tab[k - 1]
+
+    tab[i] = n
+
+
+def insere_rec(tab: list[int], n: int, i: int, k: int) -> None:
+    """
+    Insère la valeur n à l'indice i du tableau tab.
+    Algorithm récursif et en place. k est l'indice de
+    recherche. 
+    Sa première valeur doit être len(tab) - 1.
+    
+    Lève une exception si le tableau est déjà plein.
+    
+    HYPOTHÈSE : la gestion des "trous" n'est pas 
+    assurée, l'algorithme se contente de décaler 
+    les valeurs vers la droite.
+    """
+    dernier_indice = len(tab) - 1
+
+    if tab[dernier_indice] != None and k == dernier_indice:
+        raise Exception("Tableau plein !")
+    elif k == i:
+        tab[i] = n
+        return None
+    else:
+        tab[k] = tab[k - 1]
+        return insere_rec(tab, n, i, k - 1)
+
+
+if __name__ == "__main__":
+    tab = [i for i in range(20)]
+
+    assert est_dans(tab, 12) == True
+    assert est_dans(tab, 0) == True
+    assert est_dans(tab, 20) == False
+
+    assert est_dans_rec(tab, 12) == True
+    assert est_dans_rec(tab, 0) == True
+    assert est_dans_rec(tab, 20) == False
+
+    print("Insertion itérative")
+    tab = [1, 1, 2, 3, 4, 5, None, None, None]
+    print(tab)
+    insere(tab, 7, 0)
+    print(tab)
+    insere(tab, 7, 0)
+    print(tab)
+    insere(tab, 7, 0)
+    print(tab)
+    #insere(tab, 7, 0)
+    #print(tab)
+    print()
+    print("Insertion récursive")
+    tab = [1, 1, 2, 3, 4, 5, None, None, None]
+    print(tab)
+    insere_rec(tab, 7, 0, len(tab) - 1)
+    print(tab)
+    insere_rec(tab, 7, 0, len(tab) - 1)
+    print(tab)
+    insere_rec(tab, 7, 0, len(tab))
+    print(tab)
+```
+
+{{% /solution %}}
