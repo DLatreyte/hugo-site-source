@@ -1,6 +1,6 @@
 ---
 title: "Problème du sac à dos"
-subtitle: "Chapitre 9,5"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-01-21T06:41:30+04:00
@@ -14,7 +14,7 @@ auto_numbering: true
 ---
 
 {{% note warning %}}
-{{< remote "À lire absolument pour en découvrir plus !" "https://interstices.info/le-probleme-du-sac-a-dos/" >}}
+{{< remote "À lire absolument pour en découvrir plus !" "<https://interstices.info/le-probleme-du-sac-a-dos/>" >}}
 {{% /note %}}
 
 ## Introduction
@@ -43,7 +43,7 @@ Quels objets faut-il sélectionner de façon à ce que la valeur totale, dans le
 ## Méthode de résolution approchée : stratégie gloutonne
 
 {{% note normal %}}
-Une solution se trouve à cette adresse : {{< remote "https://repl.it/@dlatreyte/sacados" "https://repl.it/@dlatreyte/sacados" >}}
+Une solution se trouve à cette adresse : {{< remote "<https://repl.it/@dlatreyte/sacados>" "<https://repl.it/@dlatreyte/sacados>" >}}
 {{% /note %}}
 
 1. Rappeler ce qu'est une stratégie gloutonne.
@@ -66,6 +66,7 @@ Le choix effectué à chaque étape n'est jamais remis en cause, ce qui fait que
 3. Dans la fonction `main`, définir la liste objets dont les membres sont des dictionnaires représentant les différents objets du problème.\
     Chacun de ces dictionnaires doit donc posséder les clés `nom`, `masse`, `valeur` associées aux valeurs.
 {{% solution "Solution" %}}
+
 ```python
 objets = [{'nom': 'A', 'masse': 13, 'valeur': 700},
               {'nom': 'B', 'masse': 12, 'valeur': 500},
@@ -75,18 +76,22 @@ objets = [{'nom': 'A', 'masse': 13, 'valeur': 700},
               {'nom': 'F', 'masse': 18, 'valeur': 800}
               ]
 ```
+
 {{% /solution %}}
 
 4. Dans la fonction `main`, définir la variable `masse_max` et lui affecter la valeur 40.
 {{% solution "Solution" %}}
+
 ```python
 masse_max = 40
-``` 
+```
+
 {{% /solution %}}
 
 Le principe de la stratégie gloutonne consiste à ajouter en priorité les objets « les plus efficaces ». « Plus efficace » ne signifie pas « plus grande valeur » mais « plus grande valeur comparativement à la masse ».
 
 Avant d'appliquer l'algorithme glouton, il est nécessaire de trier la liste objets. Définir la fonction suivante :
+
 ```python
 def tri_objets(objets: List[Dict]) -> List[Dict]:
     """
@@ -110,16 +115,19 @@ Une fonction en Python peut être passée comme argument à une autre fonction.
 7. Affecter, dans la fonction `main`, le résultat de l'appel de la fonction `tri_objets` à la variable `objets`. \
     Afficher à l'écran la liste triée.
 {{% solution "Solution" %}}
+
 ```python
 objets = tri_objets(objets)
 print("Objets utilisables : {}".format(objets), end='\n')
 ```
+
 {{% /solution %}}
 
-Remarque. 
+Remarque.
 : Ne pas oublier d'appeler la fonction main.
 
 8. Définir la fonction `construction_sac_a_dos` dont la spécification est :
+
 ```python
 def constrution_sac_a_dos(objets_tries: List[Dict], 
                           masse_max: float) -> Tuple[List[str], int, int]:
@@ -132,7 +140,9 @@ def constrution_sac_a_dos(objets_tries: List[Dict],
     de la valeur du sac à dos et de la masse du sac à dos.
     """
 ```
+
 {{% solution "Solution" %}}
+
 ```python
 def constrution_sac_a_dos(objets_tries: List[Dict], masse_max: float) -> Tuple[List[str], int, int]:
     """
@@ -159,16 +169,20 @@ def constrution_sac_a_dos(objets_tries: List[Dict], masse_max: float) -> Tuple[L
 
     return (liste_objets, valeur, masse_sac)
 ```
+
 {{% /solution %}}
 
 9. Affecter, dans la fonction `main`, le tuple retourné par la fonction construction_sac_a_dos aux variables sac_a_dos, valeur et masse_sac.
 {{% solution "Solution" %}}
+
 ```python
 sac_a_dos, valeur, masse_sac = constrution_sac_a_dos(objets, masse_max)
 ```
+
 {{% /solution %}}
 
 10. Afficher le résultat :
+
 ```python
 print("Stratégie gloutonne")
 print("-------------------")
@@ -177,7 +191,6 @@ print("Masse du sac à dos : {}".format(masse_sac))
 print("Valeur du sac à dos : {}".format(valeur))
 print()
 ```
-
 
 <!-- Deuxième partie : Arbre des possibilités -->
 ## Méthode de résolution exacte
@@ -220,6 +233,7 @@ Le nombre de combinaisons est $2^n$ où $n$ est le nombre d'objets. Cette croiss
 {{% /solution %}}
 
 14. Écrire le code de la fonction `masse_sac` dont la spécification est :
+
 ```python
 def masse_sac(objets: List[Dict[str, str]], liste_obj: List[int]) -> int:
     """
@@ -228,6 +242,7 @@ def masse_sac(objets: List[Dict[str, str]], liste_obj: List[int]) -> int:
 ```
 
 15. Écrire le code de la fonction `calcul_valeur_sac` dont la spécification est :
+
 ```python
 def calcul_valeur_sac(objets: List[Dict[str, str]],
                       liste_obj: List[int]) -> int:
@@ -237,6 +252,7 @@ def calcul_valeur_sac(objets: List[Dict[str, str]],
 ```
 
 16. Écrire le code suivant :
+
 ```python
 def recherche_recursive(objets: List[Dict[str, str]], masse_max: isinstance,
                         list_obj: List[int], i: int) -> List[int]:
@@ -263,5 +279,5 @@ def recherche_recursive(objets: List[Dict[str, str]], masse_max: isinstance,
     else:
         return sol2[:]
 ```
-    Examiner cette fonction
 
+    Examiner cette fonction

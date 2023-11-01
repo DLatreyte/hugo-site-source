@@ -1,6 +1,6 @@
 ---
 title: "Stratégie gloutonne : Le rendu de monnaie"
-subtitle: "Chapitre 9,6"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-01-24T01:51:49+04:00
@@ -23,7 +23,8 @@ Pour minimiser le nombre de pièces (on confond dans ce document les pièces et 
 
 En procédant ainsi, on se rend compte que l'**on résout le problème étape par étape et qu’un choix optimal est fait à chaque étape** (la pièce de plus grande valeur). Cette stratégie entre donc bien dans la catégorie des **algorithmes gloutons**.
 
-1. Préparer la partie de code suivante : 
+1. Préparer la partie de code suivante :
+
 ```python
 def main():
     # valeurs des pièces
@@ -41,9 +42,10 @@ def main():
 
 
 main()
-``` 
+```
 
 2. Définir la fonction `somme_a_rendre` dont la spécification est :
+
 ```python
 def somme_a_rendre(prix: int, client: int) -> int:
     """
@@ -53,6 +55,7 @@ def somme_a_rendre(prix: int, client: int) -> int:
 ```
 
 3. Définir la fonction `pieces_a_rendre` dont la spécification est :
+
 ```python
 def pieces_a_rendre(somme: int, pieces: List[int]) -> List[int]:
     """

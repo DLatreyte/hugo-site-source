@@ -1,6 +1,6 @@
 ---
 title: "Structures de données abstraites arborescentes : les arbres"
-subtitle: "Chapitre 9,1"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-11-05T03:37:56+04:00
@@ -15,7 +15,7 @@ auto_numbering: true
 
 > La notion de listes chaînées est parfaite pour structurer un ensemble d'élements destinés à être énumérés séquentiellement. Elle permet aussi d'implémenter les structures de piles et de files. *Elle n'est cependant pas adaptée aux accès spécifiques à des positions données dans la séquence*, puisqu'il faut alors parcourir toutes les cellules depuis le début de la liste jusqu'à la position souhaitée (complexité en $O(N)$).
 
-{{< remote "Document de référence pour ce cours"  "https://isn-icn-ljm.pagesperso-orange.fr/NSI-TLE/co/section_chapitre3.html" >}}
+{{< remote "Document de référence pour ce cours"  "<https://isn-icn-ljm.pagesperso-orange.fr/NSI-TLE/co/section_chapitre3.html>" >}}
 
 ## Structures arborescentes
 
