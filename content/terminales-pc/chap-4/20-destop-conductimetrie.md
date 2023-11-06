@@ -1,5 +1,5 @@
 ---
-title: "Titrage des ions hydroxyde présents dans le Destop® par suivi conductimétrique"
+title: "Titrage des ions hydroxyde présents dans le Destop® par suivi conductimétrique et pH-métrique"
 subtitle: ""
 author: ""
 type: ""
@@ -83,11 +83,14 @@ $\lambda_{\ce{Na^+}} = \pu{5,01e-3 S.m2.mol-1}$ ; $\lambda_{\ce{Cl^-}} = \pu{7,6
 
 - Solution d'acide chlorhydrique de concentration $C_A = \pu{2,5e-2 mol.L-1}$.
 
-- Conductimètre et sonde, agitateur et barreau aimanté, burette graduée $\pu{25 mL}$, pipette jaugée $\pu{10 mL}$ et propipette, éprouvette graduée, béchers, eau distillée.
+- Conductimètre et sonde, pH-mètre, différents indicateurs colorés, agitateur et barreau aimanté, burette graduée $\pu{25 mL}$, pipette jaugée $\pu{10 mL}$ et propipette, éprouvette graduée, béchers, eau distillée.
 
 ### Travail expérimental
 
-1. Élaborer un protocole expérimental permettant de titrer $V_B = \pu{10 mL}$ d'une solution de Destop® **diluée 200 fois**.
+1. Élaborer un protocole expérimental permettant de titrer $V_B = \pu{10 mL}$ d'une solution de Destop® **diluée 200 fois** :
+
+- avec un suivi conductimétrique,
+- avec un suivi pH-métrique.
 
 2. Écrire l'équation de la réaction de titrage.
 {{% solution "Réponse" %}}
@@ -109,7 +112,7 @@ Une réaction chimique utilisée pour réaliser un titrage doit&nbsp;:
 
 4. Mettre en œuvre le protocole expérimental.
 
-5. Justifier l'allure de la courbe $\sigma = f(V_A)$.
+5. Justifier l'allure de la courbe $\sigma = f(V_A)$ et l'allure de la courbe $\mathrm{pH} = g(V_A)$.
 {{% solution "Réponse" %}}
 
 ##### Remarque
@@ -124,6 +127,7 @@ Les ions oxonium, le titrant, sont en défaut. La solution contient donc (hormis
 - des ions sodium dont la concentration reste constante ;
 - des ions hydroxyde dont la concentration diminue.
 L'expression de la conductivité de la solution est donc
+
 $$
 \sigma_{av} = \lambda_{\ce{Na^+}} [\ce{Na^+}] + \lambda_{\ce{Cl^-}} [\ce{Cl^-}] + \lambda_{\ce{OH^-}} [\ce{OH^-}]
 $$
@@ -137,6 +141,7 @@ Les ions hydroxyde, le titré, sont désormais en défaut. La solution contient 
 - des ions sodium dont la concentration reste constante ;
 - des ions oxonium dont la concentration augmente.
 L'expression de la conductivité de la solution est donc
+
 $$
 \sigma_{ap} = \lambda_{\ce{Na^+}} [\ce{Na^+}] + \lambda_{\ce{Cl^-}} [\ce{Cl^-}] + \lambda_{\ce{H3O^+}} [\ce{H3O^+}]
 $$

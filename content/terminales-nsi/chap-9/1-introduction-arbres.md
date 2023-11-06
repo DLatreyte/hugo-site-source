@@ -67,14 +67,14 @@ graph TD
 {{< /mermaid >}}
 
 {{% note exercise %}}
-Écrire l'expression mathématique représentée par l'arbre ci-dessus.
+écrire l'expression mathématique représentée par l'arbre ci-dessus.
 {{% /note %}}
 {{% solution "Réponse" %}}
 $3 \times 8 + 6$
 {{% /solution %}}
 
 {{% note exercise %}}
-Écrire l'arbre représentant l'expression mathématique $ a\\, sin( \dfrac{2\pi}{T}t)$.
+écrire l'arbre représentant l'expression mathématique $ a\\, sin( \dfrac{2\pi}{T}t)$.
 {{% /note %}}
 
 {{% solution "Réponse" %}}
@@ -83,7 +83,7 @@ $3 \times 8 + 6$
 
 #### Arbre lexicographique
 
-Un arbre lexicographique, ou arbre en parties communes, ou dictionnaire, représente un ensemble de mots. *Les préfixes communs à plusieurs mots n'apparaissent qu'une seule fois dans l’arbre*.
+Un arbre lexicographique, ou arbre en parties communes, ou dictionnaire, représente un ensemble de mots. *Les préfixes communs à plusieurs mots n'apparaissent qu'une seule fois dans l’arbre*.
 
 {{< mermaid >}}
 graph TD
@@ -185,7 +185,7 @@ La **hauteur** d'un nœud dans un arbre est donc **le nombre d'arrêtes qu'il fa
 ### Profondeur d'un arbre
 
 {{% note tip %}}
-La **hauteur** (ou **profondeur**) d’un *arbre* est égale à *la profondeur du nœud le plus profond*.
+La **hauteur** (ou **profondeur**) d’un *arbre* est égale à *la profondeur du nœud le plus profond*.
 {{% /note %}}
 
 {{% note normal %}}
@@ -194,7 +194,7 @@ La hauteur d'un arbre est très importante. En effet, la plupart des algorithmes
 
 {{% note warning %}}
 *Tous les auteurs n'utilisent pas la convention choisie dans ce cours !*  
-Pour certains, la **profondeur** d’un *nœud* est égale au *nombre de nœuds qu’il faut parcourir à partir de la racine (incluse) pour parvenir au nœud*&nbsp;; la hauteur de la racine est alors de 1.
+Pour certains, la **profondeur** d’un *nœud* est égale au *nombre de nœuds qu’il faut parcourir à partir de la racine (incluse) pour parvenir au nœud*&nbsp;; la hauteur de la racine est alors de 1.
 {{% /note %}}
 
 {{% note exercise %}}
