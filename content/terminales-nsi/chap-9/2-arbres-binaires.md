@@ -15,7 +15,7 @@ mathjax: true
 ---
 
 {{% note normal %}}
-Le corrigé de l'activité se trouve {{< remote "ici" "https://repl.it/@dlatreyte/arbres" >}}
+Le corrigé de l'activité se trouve {{< remote "ici" "<https://repl.it/@dlatreyte/arbres>" >}}
 {{% /note %}}
 
 ## Arbres binaires
@@ -383,7 +383,7 @@ def profondeur(n: Noeud) -> int:
     Retourne la profondeur de l'arbre 
     """
     if est_vide(n):
-        return 0
+        return -1
     else:
         return 1 + max(profondeur(n.gauche), profondeur(n.droit))
 ```
@@ -554,6 +554,10 @@ FinFonction
 ```
 
 20. Implémenter en Python l'algorithme précédent.
+
+21. Reprendre toutes les fonctions de ce document en n'utilisant pas la classe `Noeud` mais une liste à trois éléments. Le premier est la « valeur » du noeud, le second l'adresse du fils gauche, le troisième l'adresse du fils droit.
+
+22. Reprendre toutes les fonctions de ce document en n'utilisant pas la classe `Noeud` mais un dictionnaire à trois clés : `valeur`, `gauche` et `droit` pour stocker la « valeur » du noeud, l'adresse du fils gauche et l'adresse du fils droit.
 
 ## À retenir
 
