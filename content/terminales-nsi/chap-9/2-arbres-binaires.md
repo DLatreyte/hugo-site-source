@@ -514,7 +514,7 @@ def affiche_suffixe(n: Noeud) -> None:
 
 ```shell
 Fonction parcours_largeur(racine: Noeud):
-    File f = newFile()
+    File f = File()
     f.enfiler(racine)
     TantQue non f.est_vide():
         n = f.defiler()
@@ -529,7 +529,7 @@ Fonction parcours_largeur(racine: Noeud):
 FinFonction
 ```
 
-18. Implémenter en Python l'algorithme précédent.
+18. Implémenter en Python cet algorithme.
 
 ### Parcours en profondeur d'un arbre
 
@@ -538,22 +538,24 @@ De quel type de parcours en profondeur s'agit-il ?
 
 ```shell
 Fonction parcours_profondeur(racine: Noeud):
-    Pile p = newPile()
+    Pile p = Pile()
     p.empiler(racine)
-    TantQue non est_vide(p):
+    TantQue non p.est_vide():
         n = p.depiler()
         print(n)
         Si non est_vide(n.filsG):
-            empiler(n.filsG)
+            p.empiler(n.filsG)
         FinSi
         Si non est_vide(n.filsD):
-            empiler(n.filsD)
+            p.empiler(n.filsD)
         FinSi
     FinTantQue
 FinFonction
 ```
 
-20. Implémenter en Python l'algorithme précédent.
+20. Implémenter en Python cet algorithme.
+
+## Développement
 
 21. Reprendre toutes les fonctions de ce document en n'utilisant pas la classe `Noeud` mais une liste à trois éléments. Le premier est la « valeur » du noeud, le second l'adresse du fils gauche, le troisième l'adresse du fils droit.
 
