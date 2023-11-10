@@ -166,6 +166,8 @@ La structure utilisée peut être :
 - Une liste Python de trois éléments ;
 - Un dictionnaire comportant trois clés : `valeur`, `gauche` et `droit`.
 
+*On peut même imaginer utiliser un tableau ou une liste chaînée !*
+
 On ne créera pas de structure « arbre binaire » (accompagnée de méthodes) dans ce document.
 
 {{% /note %}}
@@ -235,10 +237,11 @@ abr = Noeud('r', Noeud('a', Noeud('c', None, Noeud('h')), Noeud('d', Noeud('i'),
 ```
 
 {{% solution "Réponse" %}}
-<!--
+
 <img src="/terminales-nsi/chap-9/chap-9-2-1.svg" alt="" width="100%" />
--->
+
 <br />
+
 <img src="/terminales-nsi/chap-9/chap-9-2-2.png" alt="" width="100%" />
 {{% /note %}}
 
@@ -436,6 +439,108 @@ def nbre_feuilles(n: Noeud) -> int:
         return 1
     else:
         return 0 + nbre_feuilles(n.gauche) + nbre_feuilles(n.droit)
+```
+
+{{% /solution %}}
+
+13. Écrire le code de la fonction `remplace` dont la spécification est&nbsp;:
+
+```python
+def remplace(n: Noeud, val_ini: str, val_fin: str) -> None:
+    """
+    Cherche tous les noeuds de valeur val_ini et remplace ces
+    dernières par val_fin.
+    """
+```
+
+{{% solution "Réponse" %}}
+
+```python
+def remplace(n: Noeud, val_ini: str, val_fin: str) -> None:
+    """
+    Cherche tous les noeuds de valeur val_ini et remplace ces
+    dernières par val_fin.
+    """
+    if est_vide(n):
+        return None
+    elif n.valeur == val_ini:
+        n.valeur = val_fin
+    else:
+        remplace(n.gauche, val_ini, val_fin)
+        remplace(n.droit, val_ini, val_fin)
+```
+
+{{% /solution %}}
+
+14. Écrire le code de la fonction `ajoute` dont la spécification est&nbsp;:
+
+```python
+def ajoute(n: Noeud, parent: str, enfant: str, gauche: bool) -> None:
+    """
+    Ajoute un noeud de valeur enfant comme enfant du noeud de valeur
+    parent.
+    Le noeud enfant est placé par défaut à gauche.
+
+    HYPOTHÈSE : Le noeud de valeur parent existe.
+    """
+```
+
+{{% solution "Réponse" %}}
+
+```python
+def ajoute(n: Noeud, parent: str, enfant: str, gauche: bool) -> None:
+    """
+    Ajoute un noeud de valeur enfant comme enfant du noeud de valeur
+    parent.
+    Le noeud enfant est placé par défaut à gauche.
+
+    HYPOTHÈSE : Le noeud de valeur parent existe.
+    """
+    if est_vide(n):
+        return None
+    elif n.valeur == parent:
+        if gauche and not est_vide(n.gauche):
+            raise Exception("Le noeud enfant gauche existe déjà !")
+        if not gauche and not est_vide(n.droit):
+            raise Exception("Le noeud enfant droit existe déjà !")
+        if gauche:
+            n.gauche = Noeud(enfant)
+        else:
+            n.droit = Noeud(enfant)
+    else:
+        ajoute(n.gauche, parent, enfant, gauche)
+        ajoute(n.droit, parent, enfant, gauche)
+```
+
+{{% /solution %}}
+
+15. Écrire le code de la fonction `supprime` dont la spécification est&nbsp;:
+
+```python
+def supprime(n: Noeud, val: str) -> None:
+    """
+    Supprime le noeud de valeur val ainsi que tous ses descendants.
+    """
+```
+
+{{% solution "Réponse" %}}
+
+```python
+def supprime(n: Noeud, val: str) -> None:
+    """
+    Supprime le noeud de valeur val ainsi que tous ses descendants.
+    """
+    if est_vide(n):
+        return None
+    elif est_feuille(n):
+        return None
+    elif n.gauche.valeur == val:
+        n.gauche = None
+    elif n.droit.valeur == val:
+        n.droit = None
+    else:
+        supprime(n.gauche, val)
+        supprime(n.droit, val)
 ```
 
 {{% /solution %}}
