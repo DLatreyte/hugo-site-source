@@ -442,34 +442,17 @@ graph TD
     0 --- 8(8)
     1 --- 2(2)
     2 --- 3(3)
-    2 --- A(None)
     1 --- 4(4)
     4 --- 5(5)
     4 --- 6(6)
-    6 --- B(None)
     6 --- 7(7)
     8 --- 9(9)
     8 --- 13(13)
-    9 --- C(None)
     9 --- 10(10)
     10 --- 11(11)
     10 --- 12(12)
     13 --- 14(14)
     13 --- 15(15)
-    3 --- D(None)
-    3 --- E(None)
-    5 --- F(None)
-    5 --- G(None)
-    7 --- H(None)
-    7 --- I(None)
-    11 --- J(None)
-    11 --- K(None)
-    12 --- L(None)
-    12 --- M(None)
-    14 --- O(None)
-    14 --- P(None)
-    15 --- Q(None)
-    15 --- R(None)
 {{% /mermaid %}}
 {{% solution "Réponses" %}}
 
@@ -479,27 +462,51 @@ graph TD
 
 {{% /solution %}}
 
-15. Écrire les spécifications et le code des fonctions `affiche_infixe`, `affiche_prefixe` et `affiche_suffixe` dont les spécifications sont :
+15. Écrire les spécifications et le code des fonctions `parcours_infixe`, `parcours_prefixe` et `parcours_suffixe` dont les spécifications sont :
 
 ```python
-def affiche_infixe(n: Noeud) -> None:
+def parcours_infixe(n: Noeud) -> str:
     """
     Parcourt le sous-arbre gauche, affiche la valeur du nœud puis parcourt le sous-arbre droit.
+    Retourne le parcours sous forme d'une chaîne de caractères.
     """
+    if est_vide(n):
+        return ""
+    else:
+        chaine = parcours_infixe(n.gauche)
+        chaine += str(n.valeur)
+        chaine += parcours_infixe(n.droit)
+        return chaine
 ```
 
 ```python
-def affiche_prefixe(n: Noeud) -> None:
+def parcours_prefixe(n: Noeud) -> None:
     """
     Parcourt le sous-arbre gauche, affiche la valeur du nœud puis parcourt le sous-arbre droit.
+    Retourne le parcours sous forme d'une chaîne de caractères.
     """
+    if est_vide(n):
+        return ""
+    else:
+        chaine = str(n.valeur)
+        chaine += parcours_prefixe(n.gauche)
+        chaine += parcours_prefixe(n.droit)
+        return chaine
 ```
 
 ```python
-def affiche_suffixe(n: Noeud) -> None:
+def parcours_suffixe(n: Noeud) -> None:
     """
     Parcourt le sous-arbre gauche, affiche la valeur du nœud puis parcourt le sous-arbre droit.
+    Retourne le parcours sous forme d'une chaîne de caractères.
     """
+    if est_vide(n):
+        return ""
+    else:
+        chaine = parcours_suffixe(n.gauche)
+        chaine += parcours_suffixe(n.droit)
+        chaine += str(n.valeur)
+        return chaine
 ```
 
 ### Algorithmes itératifs
@@ -553,9 +560,11 @@ Fonction parcours_profondeur(racine: Noeud):
 FinFonction
 ```
 
+Modifier l'algorithme de telle sorte qu'il réalise le parcours
+
 20. Implémenter en Python cet algorithme.
 
-## Développement
+## Compléments
 
 21. Reprendre toutes les fonctions de ce document en n'utilisant pas la classe `Noeud` mais une liste à trois éléments. Le premier est la « valeur » du noeud, le second l'adresse du fils gauche, le troisième l'adresse du fils droit.
 
