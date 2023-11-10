@@ -546,6 +546,28 @@ FinFonction
 
 18. Implémenter en Python cet algorithme.
 
+{{% solution "Réponse" %}}
+
+```python
+def parcours_largeur(n: Noeud) -> str:
+    """ Réalise le parcours en largeur d'un arbre binaire. """
+    message = ""
+
+    f = File()
+    f.enfiler(n)
+    while not f.est_vide():
+        n = f.defiler()
+        message += str(n.valeur)
+        if not est_vide(n.gauche):
+            f.enfiler(n.gauche)
+        if not est_vide(n.droit):
+            f.enfiler(n.droit)
+
+    return message
+```
+
+{{% /solution %}}
+
 ### Parcours en profondeur d'un arbre
 
 19. Décrire le fonctionnement de l'algorithme suivant et montrer qu'il réalise un parcours en profondeur d'un arbre.  
@@ -568,9 +590,59 @@ Fonction parcours_profondeur(racine: Noeud):
 FinFonction
 ```
 
-Modifier l'algorithme de telle sorte qu'il réalise le parcours ...
+{{% solution "Réponse" %}}
+
+L'algorithme semble realiser un parcours préfixe mais en explorant d'abord le sous-arbre droit au lieu d'explorer le sous-arbre gauche.
+
+{{% /solution %}}
+
+Modifier l'algorithme de telle sorte qu'il réalise le parcours préfixe.
+
+{{% solution "Réponse" %}}
+
+```shell
+Fonction parcours_profondeur(racine: Noeud):
+    Pile p = Pile()
+    p.empiler(racine)
+    TantQue non p.est_vide():
+        n = p.depiler()
+        print(n)
+        Si non est_vide(n.filsD):
+            p.empiler(n.filsD)
+        FinSi
+        Si non est_vide(n.filsG):
+            p.empiler(n.filsG)
+        FinSi
+    FinTantQue
+FinFonction
+```
+
+{{% /solution %}}
 
 20. Implémenter en Python cet algorithme.
+
+{{% solution "Réponse" %}}
+
+```python
+def parcours_profondeur(n: Noeud) -> str:
+    """
+    Réalise un parcours en profondeur à l'aide d'une pile.
+    """
+    message = ""
+
+    p = Pile()
+    p.empiler(n)
+    while not p.est_vide():
+        n = p.depiler()
+        message += str(n.valeur)
+        if not est_vide(n.gauche):
+            p.empiler(n.gauche)
+        if not est_vide(n.droit):
+            p.empiler(n.droit)
+    return message
+```
+
+{{% /solution %}}
 
 ## Implémentation de la spécification en Python à l’aide d’une liste Python
 
