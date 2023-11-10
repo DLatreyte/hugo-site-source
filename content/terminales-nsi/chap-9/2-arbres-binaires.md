@@ -172,6 +172,25 @@ On ne créera pas de structure « arbre binaire » (accompagnée de méthodes) d
 
 2. Écrire le code de la classe `Noeud` respectant la spécification. Les trois attributs seront nommés `valeur`, `gauche`, `droit`.
 
+{{% solution "Réponse" %}}
+
+```python
+from __future__ import annotations
+
+class Noeud:
+    """
+    Structure de stockage pour créer des arbres binaires.
+    """
+
+    def __init__(self: Noeud, val: str, g: Noeud = None, d: Noeud = None) -> None:
+        """ Initialisation de l'objet. """
+        self.valeur = val
+        self.gauche = g
+        self.droit = d
+```
+
+{{% /solution %}}
+
 3. Écrire le code permettant de construire l'arbre :
 {{< mermaid >}}
 graph TD
@@ -194,6 +213,15 @@ arbre_1 = Noeud('A',
                         Noeud('C')),
                 Noeud('D')
                 )
+```
+
+ou
+
+```python
+abr1 = Noeud('A')
+abr1.gauche = Noeud('B')
+abr1.droit = Noeud('D')
+abr1.gauche.droit = Noeud('C')
 ```
 
 {{% /solution %}}
@@ -312,7 +340,7 @@ def degre_noeud(n: Noeud) -> int:
 
 ## Quelques algorithmes de manipulation des arbres binaires
 
-### Algorithmes récursifs
+Tous les algorithmes qui suivent sont récursifs.
 
 10. Écrire le code de la fonction `taille` dont la spécification est&nbsp;:
 
@@ -517,15 +545,11 @@ def parcours_suffixe(n: Noeud) -> None:
 
 {{% /solution %}}
 
-### Algorithmes itératifs
-
-16. Reprendre les questions précédentes en utilisant des algorithmes itératifs.
-
-## Parcours d'un arbre à l'aide d'une file ou d'une pile
+## Algorithmes itératifs --- Parcours d'un arbre à l'aide d'une file ou d'une pile
 
 ### Parcours en largeur d'un arbre
 
-17. Décrire le fonctionnement de l'algorithme suivant et montrer qu'il réalise un parcours en largeur d'un arbre.
+16. Décrire le fonctionnement de l'algorithme suivant et montrer qu'il réalise un parcours en largeur d'un arbre.
 
 ```shell
 Fonction parcours_largeur(racine: Noeud):
@@ -544,7 +568,7 @@ Fonction parcours_largeur(racine: Noeud):
 FinFonction
 ```
 
-18. Implémenter en Python cet algorithme.
+17. Implémenter en Python cet algorithme.
 
 {{% solution "Réponse" %}}
 
@@ -570,7 +594,7 @@ def parcours_largeur(n: Noeud) -> str:
 
 ### Parcours en profondeur d'un arbre
 
-19. Décrire le fonctionnement de l'algorithme suivant et montrer qu'il réalise un parcours en profondeur d'un arbre.  
+18. Décrire le fonctionnement de l'algorithme suivant et montrer qu'il réalise un parcours en profondeur d'un arbre.  
 De quel type de parcours en profondeur s'agit-il ?
 
 ```shell
@@ -619,7 +643,7 @@ FinFonction
 
 {{% /solution %}}
 
-20. Implémenter en Python cet algorithme.
+19. Implémenter en Python cet algorithme.
 
 {{% solution "Réponse" %}}
 
@@ -646,7 +670,7 @@ def parcours_profondeur(n: Noeud) -> str:
 
 ## Implémentation de la spécification en Python à l’aide d’une liste Python
 
-21. Reprendre toutes les fonctions de ce document en n'utilisant pas la classe `Noeud` mais une liste à trois éléments. Le premier est la « valeur » du noeud, le second l'adresse du fils gauche, le troisième l'adresse du fils droit.
+20. Reprendre toutes les fonctions de ce document en n'utilisant pas la classe `Noeud` mais une liste à trois éléments. Le premier est la « valeur » du noeud, le second l'adresse du fils gauche, le troisième l'adresse du fils droit.
 
 {{% solution "Réponse" %}}
 
@@ -802,7 +826,7 @@ if __name__ == "__main__":
 
 ## Implémentation de la spécification en Python à l’aide d’un dictionnaire
 
-22. Reprendre toutes les fonctions de ce document en n'utilisant pas la classe `Noeud` mais un dictionnaire à trois clés : `valeur`, `gauche` et `droit` pour stocker la « valeur » du noeud, l'adresse du fils gauche et l'adresse du fils droit.
+21. Reprendre toutes les fonctions de ce document en n'utilisant pas la classe `Noeud` mais un dictionnaire à trois clés : `valeur`, `gauche` et `droit` pour stocker la « valeur » du noeud, l'adresse du fils gauche et l'adresse du fils droit.
 
 {{% solution "Réponse" %}}
 
