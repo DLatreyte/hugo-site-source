@@ -576,13 +576,312 @@ Modifier l'algorithme de telle sorte qu'il réalise le parcours ...
 
 21. Reprendre toutes les fonctions de ce document en n'utilisant pas la classe `Noeud` mais une liste à trois éléments. Le premier est la « valeur » du noeud, le second l'adresse du fils gauche, le troisième l'adresse du fils droit.
 
+{{% solution "Réponse" %}}
+
+```python
+"""
+Implémentation d'un arbre binaire en utilisant le 
+paradigme impératif et des listes.
+
+Structure d'un noeud : [valeur, gauche, droit]
+"""
+
+
+def est_vide(n: list[str, list, list]) -> bool:
+    """
+    Teste si un arbre est vide.
+    """
+    return n is None
+
+
+def ajoute_filsG(n: list[str, list, list], valeur: str) -> None:
+    """
+    Ajoute un noeud d'étiquette valeur comme fils gauche. 
+    """
+    if est_vide(n[1]):
+        n[1] = [valeur, None, None]
+    else:
+        raise Exception("Le nœud possède déjà un fils gauche !")
+
+
+def ajoute_filsD(n: list[str, list, list], valeur: str) -> None:
+    """
+    Ajoute un noeud d'étiquette valeur comme fils droit. 
+    """
+    if est_vide(n[2]):
+        n[2] = [valeur, None, None]
+    else:
+        raise Exception("Le nœud possède déjà un fils droit !")
+
+
+def est_feuille(n: list[str, list, list]) -> bool:
+    """
+    Teste si un noeud est une feuille.
+    """
+    return est_vide(n[1]) and est_vide(n[2])
+
+
+def degre_noeud(n: list[str, list, list]) -> int:
+    """
+    Détermine le degré du noeud passé en argument.
+    """
+    if est_vide(n):
+        raise Exception("Le nœud est vide !")
+
+    nbre = 0
+    if not est_vide(n[1]):
+        nbre += 1
+    if not est_vide(n[2]):
+        nbre += 1
+
+    return nbre
+
+
+def taille(n: list[str, list, list]) -> int:
+    """
+    Retourne le nombre de noeud dans l'arbre.
+    """
+    if est_vide(n):
+        return 0
+    else:
+        return 1 + taille(n[1]) + taille(n[2])
+
+
+def profondeur(n: list[str, list, list]) -> int:
+    """
+    Retourne la profondeur de l'arbre. 
+    """
+    if est_vide(n):
+        return -1
+    else:
+        return 1 + max(profondeur(n[1]), profondeur(n[2]))
+
+
+def nbre_feuilles(n: list[str, list, list]) -> int:
+    """
+    Détermine le nombre de feuilles dans l'arbre. 
+    """
+    if est_vide(n):
+        return 0
+    elif est_feuille(n):
+        return 1
+    else:
+        return nbre_feuilles(n[1]) + nbre_feuilles(n[2])
+
+
+def parcours_pref(n: list[str, list, list]) -> str:
+    """ Parcours en profondeur préfixe d'un arbre binaire. """
+    if est_vide(n):
+        return ""
+    else:
+        chaine = str(n[0])
+        chaine += parcours_pref(n[1])
+        chaine += parcours_pref(n[2])
+        return chaine
+
+
+def parcours_inf(n: list[str, list, list]) -> str:
+    """ Parcours en profondeur infixe d'un arbre binaire. """
+    if est_vide(n):
+        return ""
+    else:
+        chaine = parcours_inf(n[1])
+        chaine += str(n[0])
+        chaine += parcours_inf(n[2])
+        return chaine
+
+
+def parcours_suf(n: list[str, list, list]) -> str:
+    """ Parcours en profondeur infixe d'un arbre binaire. """
+    if est_vide(n):
+        return ""
+    else:
+        chaine = parcours_suf(n[1])
+        chaine += parcours_suf(n[2])
+        chaine += str(n[0])
+        return chaine
+
+
+if __name__ == "__main__":
+    arb = ['A', ['B',
+                 ['C', None, None],
+                 ['D', None, None]
+                 ],
+           ['E',
+            ['F', None, None],
+            ['G',
+             ['H',
+              None,
+              None
+              ],
+             None
+             ]
+            ]
+           ]
+    print(est_vide(arb))
+    print(f"Taille de l'arbre : {taille(arb)}")
+    print(f"Profondeur (hauteur) de l'arbre : {profondeur(arb)}")
+    print(f"Préfixe : {parcours_pref(arb)}")
+    print(f"Infixe : {parcours_inf(arb)}")
+    print(f"Suffixe : {parcours_suf(arb)}")
+```
+
+{{% /solution %}}
+
 ## Implémentation de la spécification en Python à l’aide d’un dictionnaire
 
 22. Reprendre toutes les fonctions de ce document en n'utilisant pas la classe `Noeud` mais un dictionnaire à trois clés : `valeur`, `gauche` et `droit` pour stocker la « valeur » du noeud, l'adresse du fils gauche et l'adresse du fils droit.
+
+{{% solution "Réponse" %}}
+
+```python
+"""
+Implémentation du type arbre binaire en utilisant
+le paradigme impératif et des dictionnaires.
+"""
+
+
+def est_vide(n: dict[str, dict, dict]) -> bool:
+    """
+    Teste si un arbre est vide.
+    """
+    return n == None
+
+
+def ajoute_filsG(n: dict[str, dict, dict], val: str) -> None:
+    """
+    Ajoute un noeud d'étiquette val comme fils gauche. 
+    """
+    if est_vide(n['gauche']):
+        n['gauche'] = {'valeur': val, 'gauche': None, 'droit': None}
+    else:
+        raise Exception("Le nœud possède déjà un fils gauche !")
+
+
+def ajoute_filsD(n: dict[str, dict, dict], val: str) -> None:
+    """
+    Ajoute un noeud d'étiquette valeur comme fils droit. 
+    """
+    if est_vide(n['droit']):
+        n['droit'] = {'valeur': val, 'gauche': None, 'droit': None}
+    else:
+        raise Exception("Le nœud possède déjà un fils droit !")
+
+
+def est_feuille(n: dict[str, dict, dict]) -> bool:
+    """
+    Teste si un noeud est une feuille.
+    """
+    return est_vide(n['gauche']) and est_vide(n['droit'])
+
+
+def degre_noeud(n: dict[str, dict, dict]) -> int:
+    """
+    Détermine le degré du noeud passé en argument.
+    """
+    if est_vide(n):
+        raise Exception("Le nœud est vide !")
+
+    nbre = 0
+    if not est_vide(n['gauche']):
+        nbre += 1
+    if not est_vide(n['droit']):
+        nbre += 1
+
+    return nbre
+
+
+def taille(n: dict[str, dict, dict]) -> int:
+    """
+    Retourne le nombre de noeud dans l'arbre.
+    """
+    if est_vide(n):
+        return 0
+    else:
+        return 1 + taille(n['gauche']) + taille(n['droit'])
+
+
+def profondeur(n: dict[str, dict, dict]) -> int:
+    """
+    Retourne la profondeur de l'arbre. 
+    """
+    if est_vide(n):
+        return -1
+    else:
+        return 1 + max(profondeur(n['gauche']), profondeur(n['droit']))
+
+
+def nbre_feuilles(n: dict[str, dict, dict]) -> int:
+    """
+    Détermine le nombre de feuilles dans l'arbre. 
+    """
+    if est_vide(n):
+        return 0
+    elif est_feuille(n):
+        return 1
+    else:
+        return nbre_feuilles(n['gauche']) + nbre_feuilles(n['droit'])
+
+
+def parcours_pref(n: dict[str, dict, dict]) -> str:
+    """ Parcours en profondeur préfixe d'un arbre binaire. """
+    if est_vide(n):
+        return ""
+    else:
+        return str(n['valeur']) + parcours_pref(n['gauche']) +\
+            parcours_pref(n['droit'])
+
+
+def parcours_inf(n: dict[str, dict, dict]) -> str:
+    """ Parcours en profondeur infixe d'un arbre binaire. """
+    if est_vide(n):
+        return ""
+    else:
+        return parcours_inf(n['gauche']) + str(n['valeur']) +\
+            parcours_inf(n['droit'])
+
+
+def parcours_suf(n: dict[str, dict, dict]) -> str:
+    """ Parcours en profondeur infixe d'un arbre binaire. """
+    if est_vide(n):
+        return ""
+    else:
+        return parcours_suf(n['gauche']) + parcours_suf(n['droit']) +\
+            str(n['valeur'])
+
+
+if __name__ == "__main__":
+    arb = {'valeur': 'A',
+           'gauche': None,
+           'droit': {'valeur': 'B',
+                     'gauche': {'valeur': 'C',
+                                'gauche': None,
+                                'droit': None},
+                     'droit': {'valeur': 'D',
+                               'gauche': None,
+                               'droit': None}}}
+    print(est_vide(arb))
+    print(parcours_inf(arb))
+
+    arb2 = {'valeur': 'A', 'droit': None, 'gauche': None}
+    ajoute_filsG(arb2, "B")
+    ajoute_filsD(arb2, "C")
+    noeud_C = arb2['droit']
+    ajoute_filsD(noeud_C, "D")
+    ajoute_filsG(noeud_C, "E")
+    print(f"Taille de l'arbre : {taille(arb2)}")
+    print(f"Profondeur (hauteur) de l'arbre : {profondeur(arb2)}")
+    print(parcours_pref(arb2))
+    print(parcours_inf(arb2))
+    print(parcours_suf(arb2))
+```
+
+{{% /solution %}}
 
 ## À retenir
 
 {{% note tip %}}
 Un **arbre binaire** est un ensemble fini de nœuds, qui est soit **vide** (la valeur `None` est utilisée pour représenter l'arbre vide), soit structuré à partir d'un nœud particulier, appelé **racine** de l'arbre, et de deux sous-ensembles de nœuds formant récursivement un **sous-arbre gauche** et un **sous-arbre droit**.
+
 Un arbre peut-être implémenté en Python avec un objet par nœud, d'une **classe** qui possède trois attributs : la valeur (ou étiquette) du nœud, le sous-arbre gauche et le sous-arbre droit. Il peut aussi être implémenté en utilisant une liste à trois éléments ou un dictionnaire à trois éléments.
 {{% /note %}}
