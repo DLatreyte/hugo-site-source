@@ -229,15 +229,39 @@ abr1.gauche.droit = Noeud('C')
 4. Quel arbre correspond à ce code ?
 
 ```python
-Noeud('r', Noeud('a', Noeud('c', None, Noeud('h')), Noeud('d', Noeud('i'),
+abr = Noeud('r', Noeud('a', Noeud('c', None, Noeud('h')), Noeud('d', Noeud('i'),
  Noeud('j', Noeud('m'), None))), Noeud('b', Noeud('e', Noeud('k', None, None),
   None), Noeud('f')))
 ```
 
 {{% solution "Réponse" %}}
+<!--
 <img src="/terminales-nsi/chap-9/chap-9-2-1.svg" alt="" width="100%" />
+-->
+<br />
 <img src="/terminales-nsi/chap-9/chap-9-2-2.png" alt="" width="100%" />
 {{% /note %}}
+
+Écrire le code différemment en créant les nœuds les uns après les autres.
+
+{{% solution "Réponse" %}}
+
+```python
+abr = Noeud('r')
+abr.gauche = Noeud('a')
+abr.droit = Noeud('b')
+abr.gauche.gauche = Noeud('c')
+abr.gauche.droit = Noeud('d')
+abr.gauche.gauche.droit = Noeud('h')
+abr.gauche.droit.gauche = Noeud('i')
+abr.gauche.droit.droit = Noeud('j')
+abr.gauche.droit.droit.gauche = Noeud('m')
+abr.droit.gauche = Noeud('e')
+abr.droit.gauche.gauche = Noeud('k')
+abr.droit.droit = Noeud('f')
+```
+
+{{% /solution %}}
 
 5. Écrire le code de la fonction `est_vide` dont la spécification est&nbsp;:
 
