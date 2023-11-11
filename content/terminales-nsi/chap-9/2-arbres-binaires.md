@@ -383,12 +383,18 @@ def taille(n: Noeud) -> int:
 ```python
 def taille(n: Noeud) -> int:
     """
-    Retourne le nombre de noeud dans l'arbre depuis le noeud n
+    Retourne le nombre de noeud dans l'arbre.
     """
     if est_vide(n):
+        # Cas de base : un arbre vide ne contient aucun noeud.
         return 0
     else:
-        return 1 + taille(n.gauche) + taille(n.droit)
+        # Recherche récursive dans les sous-arbres gauche et droit.
+        taille_gauche = taille(n.gauche)
+        taille_droit = taille(n.droit)
+
+        # Calcul de la taille
+        return 1 + taille_gauche + taille_droit
 ```
 
 {{% /solution %}}
@@ -407,12 +413,18 @@ def profondeur(n: Noeud) -> int:
 ```python
 def profondeur(n: Noeud) -> int:
     """
-    Retourne la profondeur de l'arbre 
+    Retourne la profondeur de l'arbre. 
     """
     if est_vide(n):
+        # Cas de base : si le nœud est vide, il n'est pas dans l'arbre.
         return -1
     else:
-        return 1 + max(profondeur(n.gauche), profondeur(n.droit))
+        # Recherche récursive dans les sous-arbres gauche et droit.
+        arbre_gauche = profondeur(n.gauche)
+        arbre_droit = profondeur(n.droit)
+
+        # Détermine la profondeur
+        return 1 + max(arbre_gauche, arbre_droit)
 ```
 
 {{% /solution %}}
@@ -433,12 +445,19 @@ def nbre_feuilles(n: Noeud) -> int:
     """
     Détermine le nombre de feuilles dans l'arbre. 
     """
-    if est_vide(n):  # Cas des nœuds de degré 1 (ou de l'arbre vide)
+    if est_vide(n):
+        # Cas de base : un arbre vide ne contient aucune feuille
         return 0
     elif est_feuille(n):
+        # Cas de base : on ajoute 1 au total dès qu'on rencontre une feuille
         return 1
     else:
-        return 0 + nbre_feuilles(n.gauche) + nbre_feuilles(n.droit)
+        # Recherche récursive dans les sous-arbres gauche et droit.
+        nbre_feuilles_gauche = nbre_feuilles(n.gauche)
+        nbre_feuilles_droit = nbre_feuilles(n.droit)
+
+        # Calcul du nombre de feuilles
+        return nbre_feuilles_gauche + nbre_feuilles_droit
 ```
 
 {{% /solution %}}
