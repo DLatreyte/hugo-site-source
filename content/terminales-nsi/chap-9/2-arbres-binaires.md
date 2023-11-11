@@ -462,7 +462,60 @@ def nbre_feuilles(n: Noeud) -> int:
 
 {{% /solution %}}
 
-13. Écrire le code de la fonction `remplace` dont la spécification est&nbsp;:
+13. Écrire le code de la fonction `profondeur_noeud` dont la spécification est&nbsp;:
+
+```python
+def profondeur_noeud(n: Noeud, val: str, prof: int = 0) -> int:
+    """
+    Détermine la profondeur du noeud de valeur val.
+    """
+```
+
+{{% solution "Réponse" %}}
+
+```python
+def profondeur_noeud(n: Noeud, val: str, prof: int = 0) -> int:
+    """
+    Détermine la profondeur du noeud de valeur val.
+    Retourne -1 si le noeud n'est pas dans l'arbre.
+
+    prof est la profondeur.
+    """
+    if est_vide(n):
+        # Cas de base : si le nœud est vide, il n'est pas dans l'arbre.
+        return -1
+    elif n.valeur == val:
+        # On a trouvé le noeud
+        return prof
+    else:
+        # Recherche récursive dans les sous-arbres gauche et droit.
+        # Incrémente la profondeur
+        prof_gauche = profondeur_noeud(n.gauche, val, prof + 1)
+        prof_droite = profondeur_noeud(n.droit, val, prof + 1)
+
+        # Valeur retournée
+        return max(prof_gauche, prof_droite)
+```
+
+#### Exemple : recherche de la profondeur du nœud de valeur 3
+
+Les nœuds passés en argument sont repérés par la notation 1n, 2n, ...
+
+```shell
+p(1n, 3, 0)
+    p(2n, 3, 1)           -> -1
+        p(4n, 3, 2)       -> -1
+            p(None, 3, 3) -> -1
+            p(None, 3, 3) -> -1
+        p(5n, 3, 2)       -> -1
+            p(None, 3, 3) -> -1
+            p(None, 3, 3) -> -1
+    p(3n, 3, 1)           -> 1 
+```
+
+{{% /solution %}}
+
+14. Écrire le code de la fonction `remplace` dont la spécification est&nbsp;:
 
 ```python
 def remplace(n: Noeud, val_ini: str, val_fin: str) -> None:
@@ -491,7 +544,7 @@ def remplace(n: Noeud, val_ini: str, val_fin: str) -> None:
 
 {{% /solution %}}
 
-14. Écrire le code de la fonction `ajoute` dont la spécification est&nbsp;:
+15. Écrire le code de la fonction `ajoute` dont la spécification est&nbsp;:
 
 ```python
 def ajoute(n: Noeud, parent: str, enfant: str, gauche: bool) -> None:
@@ -533,7 +586,7 @@ def ajoute(n: Noeud, parent: str, enfant: str, gauche: bool) -> None:
 
 {{% /solution %}}
 
-15. Écrire le code de la fonction `supprime` dont la spécification est&nbsp;:
+16. Écrire le code de la fonction `supprime` dont la spécification est&nbsp;:
 
 ```python
 def supprime(n: Noeud, val: str) -> None:
@@ -564,7 +617,7 @@ def supprime(n: Noeud, val: str) -> None:
 
 {{% /solution %}}
 
-13. Quelles sont les complexités des algorithmes implémentés dans cette section ?
+17. Quelles sont les complexités des algorithmes implémentés dans cette section ?
 {{% solution "Réponse" %}}
 Les algorithmes parcourent une fois chaque nœud de l'arbre. La complexité est donc proportionnelle au nombre de nœuds.
 {{% /solution %}}
@@ -583,7 +636,7 @@ Si on souhaite donner un affichage de l'arbre, la façon dont on le parcourt pre
 
 {{% /note %}}
 
-14. Pour l'arbre ci-dessous, donner les parcours préfixe, infixe et suffixe.
+18. Pour l'arbre ci-dessous, donner les parcours préfixe, infixe et suffixe.
 {{% mermaid %}}
 graph TD
     0(0) --- 1(1)
@@ -610,7 +663,7 @@ graph TD
 
 {{% /solution %}}
 
-15. Écrire le code des fonctions `parcours_infixe`, `parcours_prefixe` et `parcours_suffixe` dont les spécifications sont :
+19. Écrire le code des fonctions `parcours_infixe`, `parcours_prefixe` et `parcours_suffixe` dont les spécifications sont :
 
 ```python
 def parcours_infixe(n: Noeud) -> str:
@@ -697,7 +750,7 @@ def parcours_suffixe(n: Noeud) -> None:
 
 ### Parcours en largeur d'un arbre
 
-16. Décrire le fonctionnement de l'algorithme suivant et montrer qu'il réalise un parcours en largeur d'un arbre.
+20. Décrire le fonctionnement de l'algorithme suivant et montrer qu'il réalise un parcours en largeur d'un arbre.
 
 ```shell
 Fonction parcours_largeur(racine: Noeud):
@@ -716,7 +769,7 @@ Fonction parcours_largeur(racine: Noeud):
 FinFonction
 ```
 
-17. Implémenter en Python cet algorithme.
+21. Implémenter en Python cet algorithme.
 
 {{% solution "Réponse" %}}
 
@@ -742,7 +795,7 @@ def parcours_largeur(n: Noeud) -> str:
 
 ### Parcours en profondeur d'un arbre
 
-18. Décrire le fonctionnement de l'algorithme suivant et montrer qu'il réalise un parcours en profondeur d'un arbre.  
+22. Décrire le fonctionnement de l'algorithme suivant et montrer qu'il réalise un parcours en profondeur d'un arbre.  
 De quel type de parcours en profondeur s'agit-il ?
 
 ```shell
@@ -791,7 +844,7 @@ FinFonction
 
 {{% /solution %}}
 
-19. Implémenter en Python cet algorithme.
+23. Implémenter en Python cet algorithme.
 
 {{% solution "Réponse" %}}
 
@@ -818,7 +871,7 @@ def parcours_profondeur(n: Noeud) -> str:
 
 ## Implémentation de la spécification en Python à l’aide d’une liste Python
 
-20. Reprendre toutes les fonctions de ce document en n'utilisant pas la classe `Noeud` mais une liste à trois éléments. Le premier est la « valeur » du noeud, le second l'adresse du fils gauche, le troisième l'adresse du fils droit.
+24. Reprendre toutes les fonctions de ce document en n'utilisant pas la classe `Noeud` mais une liste à trois éléments. Le premier est la « valeur » du noeud, le second l'adresse du fils gauche, le troisième l'adresse du fils droit.
 
 {{% solution "Réponse" %}}
 
@@ -974,7 +1027,7 @@ if __name__ == "__main__":
 
 ## Implémentation de la spécification en Python à l’aide d’un dictionnaire
 
-21. Reprendre toutes les fonctions de ce document en n'utilisant pas la classe `Noeud` mais un dictionnaire à trois clés : `valeur`, `gauche` et `droit` pour stocker la « valeur » du noeud, l'adresse du fils gauche et l'adresse du fils droit.
+25. Reprendre toutes les fonctions de ce document en n'utilisant pas la classe `Noeud` mais un dictionnaire à trois clés : `valeur`, `gauche` et `droit` pour stocker la « valeur » du noeud, l'adresse du fils gauche et l'adresse du fils droit.
 
 {{% solution "Réponse" %}}
 
