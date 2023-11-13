@@ -849,9 +849,9 @@ FinFonction
 {{% solution "Réponse" %}}
 
 ```python
-def parcours_profondeur(n: Noeud) -> str:
+def parcours_prefixe_iter(n: Noeud) -> str:
     """
-    Réalise un parcours en profondeur à l'aide d'une pile.
+    Réalise un parcours préfixe à l'aide d'une pile.
     """
     message = ""
 

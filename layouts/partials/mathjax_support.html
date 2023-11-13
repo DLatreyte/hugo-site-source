@@ -1,14 +1,16 @@
 <script>
   MathJax = {
+    loader: { load: ['[tex]/physics'] },
     tex: {
-      packages: {'[-]': ['textmacros']},
+      packages: { '[+]': ['physics'] },
+      packages: { '[-]': ['textmacros'] },
       inlineMath: [['$', '$'], ['\\(', '\\)']],
       displayMath: [['$$', '$$'], ['\\[', '\\]']],
       processEscapes: true,      // use \$ to produce a literal dollar sign
       processEnvironments: true, // process \begin{xxx}...\end{xxx} outside math mode
       processRefs: true,         // process \ref{...} outside of math mode
       digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,
-                               // pattern for recognizing numbers
+      // pattern for recognizing numbers
       tags: 'ams',              // or 'ams' or 'all'
       tagSide: 'right',          // side for \tag macros
       tagIndent: '0.8em',        // amount to indent tags
@@ -17,7 +19,7 @@
       maxMacros: 1000,           // maximum number of macro substitutions per expression
       maxBuffer: 10 * 1024,       // maximum size for the internal TeX string (5K)
       formatError:               // function called when TeX syntax errors occur
-          (jax, err) => jax.formatError(err)
+        (jax, err) => jax.formatError(err)
     },
     showProcessingMessages: true,
     svg: {
@@ -31,9 +33,8 @@
       matchFontHeight: true         // true to match ex-height of surrounding font
     }
   };
-  </script>
-  <script type="text/javascript" id="MathJax-script" async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
-  </script>
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
 
-  <!-- tex-chtml-full.js -->
+<!-- tex-chtml-full.js -->

@@ -177,6 +177,29 @@ def appartient(a: Noeud, x: int) -> bool:
     """
 ```
 
+{{% solution "Réponse" %}}
+
+```python
+def appartient(a: Noeud, x: int) -> bool:
+    """
+    Détermine si la valeur x apparaît dans l'abr a.
+    """
+    if est_vide(a):
+        # Cas de base : on parvient à un noeud vide,
+        # la valeur n'est pas présente
+        return False
+    elif a.valeur == x:
+        # Cas de base : on parvient au noeud recherché
+        return True
+    # Appels récursifs
+    elif a.valeur > x:
+        return appartient(a.gauche, x)
+    else:
+        return appartient(a.droit, x)
+```
+
+{{% /solution %}}
+
 8. Quelle est la complexité de cette recherche ?
 
 ## Ajout d'une valeur dans un ABR
@@ -242,7 +265,7 @@ def est_abr(a: Noeud) -> bool:
 
 ## Corrigé
 
-{{< remote "Corrigé de l'activité" "https://repl.it/@dlatreyte/Arbre-binaire-de-recherche" >}}
+{{< remote "Corrigé de l'activité" "<https://repl.it/@dlatreyte/Arbre-binaire-de-recherche>" >}}
 
 ## À retenir
 
