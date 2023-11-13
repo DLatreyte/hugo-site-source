@@ -107,7 +107,7 @@ graph TD
 {{% solution "Réponse" %}}
 
 Non ! La propriété est bien vérifiée pour la racine mais pas pour le sous-arbre gauche.  
-La définition est récurisve !
+La définition est récursive !
 
 {{% /solution %}}
 
@@ -127,6 +127,31 @@ On ne crée pas de structure arbre binaire (accompagnée de méthodes).
 4. Pour représenter un ABR, on va à nouveau utiliser la classe `Noeud`. Écrire à nouveau le code de cette classe.  
 **Les contraintes sur les valeurs des nœuds ne sont pas codées dans la classe**.
 
+5. À quel arbre binaire de recherche ce code correspond-il ?  
+
+```shell
+# Création d'un arbre binaire de recherche
+arbre = Noeud(10)
+arbre.gauche = Noeud(5)
+arbre.droit = Noeud(15)
+arbre.gauche.gauche = Noeud(3)
+arbre.gauche.droit = Noeud(8)
+arbre.droit.gauche = Noeud(12)
+arbre.droit.droit = Noeud(18)
+```
+
+{{% solution "Réponse" %}}
+{{% mermaid %}}
+graph TD
+    A(10) --- B(5)
+    A --- C(15)
+    B --- D(3)
+    B --- E(8)
+    C --- F(12)
+    C --- I(18)
+{{% /mermaid %}}
+{{% /solution %}}
+
 5. Écrire à nouveau les spécifications des fonctions `taille`, `hauteur` et `parcours` (parcours infixe).
 
 ```python
@@ -136,12 +161,45 @@ def est_vide(n: Noeud) -> bool:
     """
 ```
 
+{{% solution "Réponse" %}}
+
+```python
+def est_vide(n: Noeud) -> bool:
+    """
+    Teste si un arbre est vide.
+    """
+    return n == None
+```
+
+{{% /solution %}}
+
 ```python
 def hauteur(a: Noeud) -> int:
     """
     Retourne la hauteur de l'arbre binaire de recherche a. 
     """
 ```
+
+{{% solution "Réponse" %}}
+
+```python
+def hauteur(n: Noeud) -> int:
+    """
+    Retourne la profondeur de l'arbre. 
+    """
+    if est_vide(n):
+        # Cas de base : si le nœud est vide, il n'est pas dans l'arbre.
+        return -1
+    else:
+        # Recherche récursive dans les sous-arbres gauche et droit.
+        arbre_gauche = hauteur(n.gauche)
+        arbre_droit = hauteur(n.droit)
+
+        # Détermine la profondeur
+        return 1 + max(arbre_gauche, arbre_droit)
+```
+
+{{% /solution %}}
 
 ```python
 def taille(a: Noeud) -> int:
@@ -150,12 +208,51 @@ def taille(a: Noeud) -> int:
     """
 ```
 
+{{% solution "Réponse" %}}
+
+```python
+def taille(n: Noeud) -> int:
+    """
+    Retourne le nombre de noeud dans l'arbre.
+    """
+    if est_vide(n):
+        # Cas de base : un arbre vide ne contient aucun noeud.
+        return 0
+    else:
+        # Recherche récursive dans les sous-arbres gauche et droit.
+        taille_gauche = taille(n.gauche)
+        taille_droit = taille(n.droit)
+
+        # Calcul de la taille
+        return 1 + taille_gauche + taille_droit
+```
+
+{{% /solution %}}
+
 ```python
 def parcours(n: Noeud) -> None:
     """
     Parcours infixe de l'arbre
     """
 ```
+
+{{% solution "Réponse" %}}
+
+```python
+def parcours_inf(n: Noeud) -> str:
+    """ Parcours en profondeur infixe d'un arbre binaire. """
+    if est_vide(n):
+        # Cas de base : On atteint un noeud vide
+        return ""
+    else:
+        # Appel récursif à gauche, valeur du nœud, appel récursif à droite
+        chaine = parcours_inf(n.gauche)
+        chaine += str(n.valeur)
+        chaine += parcours_inf(n.droit)
+        return chaine
+```
+
+{{% /solution %}}
 
 6. Vérifier que la fonction `parcours` affiche les valeurs dans l'ordre croissant.
 
@@ -201,6 +298,17 @@ def appartient(a: Noeud, x: int) -> bool:
 {{% /solution %}}
 
 8. Quelle est la complexité de cette recherche ?
+
+{{% solution "Réponse" %}}
+
+La complexité du pire cas de la fonction `appartient` dépend de la hauteur de l'arbre binaire de recherche (ABR).
+
+- Dans le pire des cas, l'arbre peut être déséquilibré au point de ressembler à une liste chaînée. Dans un tel scénario, la complexité de la recherche est **linéaire** par rapport au nombre total de nœuds dans l'arbre.  
+Complexité : $O(n)$.
+- Si on écarte ce cas extrême, l'arbre binaire de recherche (ABR) est plus ou moins équilibré et la hauteur est de l'ordre du logrithme du nombre de nœuds.  
+Complexité : $O(\log n)$.
+
+{{% /solution %}}
 
 ## Ajout d'une valeur dans un ABR
 
