@@ -104,6 +104,7 @@ graph TD
     G --- H(None)
     G --- I(None)
 {{% /mermaid %}}
+
 {{% solution "Réponse" %}}
 
 Non ! La propriété est bien vérifiée pour la racine mais pas pour le sous-arbre gauche.  

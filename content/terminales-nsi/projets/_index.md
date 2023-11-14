@@ -17,3 +17,7 @@ layout: "single"
 - [*Analyse des numéros du Loto*](analyse-numeros-loto)
 
 - [*Tableau du jeu « Le démineur »*](demineur)
+
+<!--
+- [*Étiquetage en composante connexe*](etiquetage-composante-connexe)
+-->
