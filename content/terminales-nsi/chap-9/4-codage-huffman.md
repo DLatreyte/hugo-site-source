@@ -181,8 +181,61 @@ def __lt__(self, n: Noeud):
         return self.valeur < n.valeur
 ```
 
+{{% solution "Réponse" %}}
+
+```python
+class Noeud:
+    def __init__(self: Noeud, val: int, let: str = "") -> None:
+        """
+        Initialisation de l'objet.
+        """
+        self.valeur = val
+        self.lettre = let
+        self.gauche = None
+        self.droit = None
+
+    def __lt__(self: Noeud, n: Noeud) -> bool:
+        """
+        Comparaison de deux noeuds = comparaison des valeurs
+        """
+        return self.valeur < n.valeur
+```
+
+{{% /solution %}}
+
 14. Écrire les codes (et la spécification !) des fonctions `est_vide`, `est_feuille`, `parcours_prefixe` qui, respectivement  teste si un nœud est vide, teste si un nœud est une feuille et finalement affiche l'arbre.
 
+{{% solution "Réponse" %}}
+
+```python
+def est_vide(n: Noeud) -> bool:
+    """
+    Détermine si l'arbre est vide.
+    """
+    return n is None
+
+
+def est_feuille(n: Noeud) -> bool:
+    """
+    Détermine si le noeud est une feuille.
+    """
+    return (n.gauche is None) and (n.droit is None)
+
+
+def parcours(n: Noeud) -> str:
+    """
+    Parcours en profondeur préfixe de l'arbre.
+    """
+    if n is None:
+        return ""
+    else:
+        chaine = str(n.valeur)
+        chaine += parcours(n.gauche)
+        chaine += parcours(n.droit)
+        return chaine
+```
+
+{{% /solution %}}
 15. Écrire le code de la fonction `creation_table_frequences` dont la spécification est
 
 ```python
@@ -197,6 +250,24 @@ Tester la fonction avec l'instruction :
 ```python
 assert creation_table_frequences("ABRACADABRA") == {'A': 5, 'B': 2, 'R': 2, 'C': 1, 'D': 1}
 ```
+
+{{% solution "Réponse" %}}
+
+```python
+def creation_table_frequences(message: str) -> dict[str, int]:
+    """
+    Établit la table des fréquences des caractères dans message.
+    """
+    dic = {}
+    for car in message:
+        if car in dic.keys():
+            dic[car] += 1
+        else:
+            dic[car] = 1
+    return dic
+```
+
+{{% /solution %}}
 
 16. Lire le document sur [les files de priorité](http://pascal.ortiz.free.fr/contents/python/structures_de_donnees/les_files_de_priorite.html)
 Écrire le code de la fonction `construction_arbre_huffman` dont la spécification est
@@ -215,16 +286,70 @@ et l'algorithme (cf. Cormen, *Algorithmes*)
 Cet algorithm est un exemple d'**algorithme glouton** dans lequel on prend la décision qui semble la meilleure à un instant donné.
 {{% /note %}}
 
+{{% solution "Réponse" %}}
+
+```python
+def construction_arbre_huffman(dic_frequences: dict[str, int]) -> Noeud:
+    """
+    Construction de l'arbre de Huffman.
+    """
+    file = []
+
+    # Création de tous les noeuds et insertion dans la file
+    for lettre, frequence in dic_frequences.items():
+        noeud = Noeud(frequence, lettre)
+        heappush(file, noeud)
+
+    # Construction de l'arbre
+    for i in range(len(dic_frequences) - 1):
+        noeud_droit = heappop(file)
+        noeud_gauche = heappop(file)
+        # Nouvel arbre
+        nouvelle_valeur = noeud_droit.valeur + noeud_gauche.valeur
+        noeud = Noeud(nouvelle_valeur)
+        noeud.droit = noeud_droit
+        noeud.gauche = noeud_gauche
+        # Intégration à la file
+        heappush(file, noeud)
+
+    # Retour de l'arbre
+    return heappop(file)
+```
+
+{{% /solution %}}
+
 17. Écrire une fonction nommée `codes_huffman_parcours` dont la spécification est :
 
 ```python
 def codes_huffman_parcours(a: Noeud, dic: dict[str, str], code: str) -> None:
     """
-    Parcours de l'arbre et construction des codes et du dictionnaire passé en argument. Les lettres constituent les valeurs et les codes les clés.
+    Parcours de l'arbre et construction des codes et du dictionnaire passé en argument.
+    Les lettres constituent les clés et les codes les valeurs.
 
     Algorithme récursif.
     """
 ```
+
+{{% solution "Réponse" %}}
+
+```python
+def codes_huffman_parcours(a: Noeud, dic: dict[str, str], code: str) -> None:
+    """
+    Parcours de l'arbre et construction des codes et du dictionnaire passé en argument.
+    Les lettres constituent les clés et les codes les valeurs.
+
+    Algorithme récursif.
+    """
+    if est_feuille(a):
+        # Cas de base : on modifie le dictionnaire
+        dic[a.lettre] = code
+        return None
+    else:
+        codes_huffman_parcours(a.gauche, dic, code + "0")
+        codes_huffman_parcours(a.droit, dic, code + "1")
+```
+
+{{% /solution %}}
 
 18. Écrire une fonction nommée `encodage` dont la spécification est :
 
@@ -235,6 +360,27 @@ def encodage(message: str, codes: dict[str, str]) -> str:
     """
 ```
 
+{{% solution "Réponse" %}}
+
+```python
+def encodage(message: str, codes: dict[str, str]) -> str:
+    """
+    Retourne la chaîne de bits produite par le codage de Huffman pour la chaîne message.
+    """
+    message_code = ""
+    for car in message:
+        message_code += codes[car]
+    return message_code
+```
+
+{{% note warning %}}
+
+Il est impératif de savoir écrire le code de cette fonction !
+
+{{% /note %}}
+
+{{% /solution %}}
+
 19. Écrire une fonction nommée `decodage` dont la spécification est :
 
 ```python
@@ -244,6 +390,67 @@ def decodage(message_compresse: str, codes: dict[str, str]) -> str:
     """
 ```
 
-{{% solution "Corrigé" %}}
-[Code Python](https://replit.com/@dlatreyte/huffman#main.py)
+{{% solution "Réponse" %}}
+
+```python
+def decodage(message_compresse: str, codes: dict[str, str]) -> str:
+    """
+    Retourne le message non compressé à partir du codage de Huffman. 
+
+    Étape intermédiaire : passer d'un dictionnaire 'A': '001' à
+    '001' : 'A'
+    """
+    # Inversion clés - valeurs
+    dic_inverse = {}
+    for cle, valeur in codes.items():
+        dic_inverse[valeur] = cle
+
+    # Décodage
+    resultat = ""
+    code = ""
+    for car in message_compresse:
+        code += car
+        if code in dic_inverse.keys():
+            resultat += dic_inverse[code]
+            code = ""
+    return resultat
+```
+
 {{% /solution %}}
+
+## Appels de toutes les fonctions dans la partie principale du programme
+
+```python
+if __name__ == "__main__":
+    arb = Noeud(12, 'A')
+    arb.gauche = Noeud(23, 'B')
+    arb.droit = Noeud(48, 'C')
+    arb.gauche.gauche = Noeud(49, 'K')
+    arb.droit.gauche = Noeud(9, 'H')
+    arb.droit.droit = Noeud(78, 'X')
+
+    print(parcours(arb))
+    print(arb < Noeud(67, 'E'))
+
+    assert creation_table_frequences("ABRACADABRA") == {
+        'A': 5, 'B': 2, 'R': 2, 'C': 1, 'D': 1}
+
+    message = "ABRACADABRA"
+
+    # nom_fichier = "livre.txt"
+    # with open(nom_fichier, 'r') as f:
+    #    message = f.read()
+
+    table_frequences = creation_table_frequences(message)
+    arbre = construction_arbre_huffman(table_frequences)
+    print(parcours(arbre))
+
+    dic_codes = {}
+    codes_huffman_parcours(arbre, dic_codes, '')
+    print(dic_codes)
+
+    message_code = encodage(message, dic_codes)
+    print(message_code)
+    message_decode = decodage(message_code, dic_codes)
+    print(message_decode)
+```
