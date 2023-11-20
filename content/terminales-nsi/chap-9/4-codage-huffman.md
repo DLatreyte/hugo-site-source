@@ -186,7 +186,7 @@ def __lt__(self, n: Noeud):
 15. Écrire le code de la fonction `creation_table_frequences` dont la spécification est
 
 ```python
-def creation_table_frequences(message: str) -> Dict[str, int]:
+def creation_table_frequences(message: str) -> dict[str, int]:
     """
     Établit la table des fréquences des caractères dans message.
     """
@@ -202,7 +202,7 @@ assert creation_table_frequences("ABRACADABRA") == {'A': 5, 'B': 2, 'R': 2, 'C':
 Écrire le code de la fonction `construction_arbre_huffman` dont la spécification est
 
 ```python
-def construction_arbre_huffman(dic_frequences: Dict[str, int]) -> Noeud:
+def construction_arbre_huffman(dic_frequences: dict[str, int]) -> Noeud:
     """
     Construction de l'arbre de Huffman.
     """
@@ -218,7 +218,7 @@ Cet algorithm est un exemple d'**algorithme glouton** dans lequel on prend la d�
 17. Écrire une fonction nommée `codes_huffman_parcours` dont la spécification est :
 
 ```python
-def codes_huffman_parcours(a: Noeud, dic: Dict[str, str], code: str) -> None:
+def codes_huffman_parcours(a: Noeud, dic: dict[str, str], code: str) -> None:
     """
     Parcours de l'arbre et construction des codes et du dictionnaire passé en argument. Les lettres constituent les valeurs et les codes les clés.
 
@@ -229,7 +229,7 @@ def codes_huffman_parcours(a: Noeud, dic: Dict[str, str], code: str) -> None:
 18. Écrire une fonction nommée `encodage` dont la spécification est :
 
 ```python
-def encodage(message: str, codes: Dict[str, str]) -> str:
+def encodage(message: str, codes: dict[str, str]) -> str:
     """
     Retourne la chaîne de bits produite par le codage de Huffman pour la chaîne message.
     """
@@ -238,7 +238,7 @@ def encodage(message: str, codes: Dict[str, str]) -> str:
 19. Écrire une fonction nommée `decodage` dont la spécification est :
 
 ```python
-def decodage(message_compresse: str, codes: Dict[str, str]) -> str:
+def decodage(message_compresse: str, codes: dict[str, str]) -> str:
     """
     Retourne le message non compressé à partir du codage de Huffman. 
     """
