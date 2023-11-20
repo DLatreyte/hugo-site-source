@@ -198,7 +198,7 @@ Tester la fonction avec l'instruction :
 assert creation_table_frequences("ABRACADABRA") == {'A': 5, 'B': 2, 'R': 2, 'C': 1, 'D': 1}
 ```
 
-16. Lire le document sur {{< remote "les files de priorité" "<http://pascal.ortiz.free.fr/contents/python/structures_de_donnees/les_files_de_priorite.html>" >}}
+16. Lire le document sur [les files de priorité](http://pascal.ortiz.free.fr/contents/python/structures_de_donnees/les_files_de_priorite.html)
 Écrire le code de la fonction `construction_arbre_huffman` dont la spécification est
 
 ```python
