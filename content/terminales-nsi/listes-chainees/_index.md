@@ -24,6 +24,6 @@ layout: "single"
 
 - **Doc. :** [*Listes Chaînées, présentation... et implémentation à l'aide d'une classe*](1-listes-chainees)
 
-- **Doc. :** [*Listes Chaînées, implémentation à l'aide de tuple*](2-listes-chainees-liste)
+- **Doc. :** [*Listes Chaînées, implémentation à l'aide de listes Python*](2-listes-chainees-liste)
 
 - **Doc. :** [*Programmation d'une classe « Liste Chaînée »*](3-classe-liste-chainee)
