@@ -99,14 +99,19 @@ La concentration des réactifs est un facteur cinétique. Lorsque le système av
 À chaque instant $t$, $x(t) = V \cdot [\ce{I2}] (t)$, donc&nbsp;:
 
 - $[ \ce{S2O8^{2-}} ] (t) = [\ce{S2O8^{2-}}] _0 - \dfrac{x(t)}{V} = [\ce{S2O8^{2-}}]_0 - \dfrac{[\ce{I2}] \cdot V}{V} $
+
 $$
 \boxed{[\ce{S2O8^{2-}}] (t) = [\ce{S2O8^{2-}}] _0 - [\ce{I2}] (t) }
 $$
+
 - $[\ce{I^-}] (t) = [\ce{I^-}] _0 - \dfrac{2 x(t)}{V} =  [\ce{I^-}]_0 - \dfrac{2 [\ce{I2}] \cdot V}{V}$
+
 $$
 \boxed{[\ce{I^-}] (t) = [\ce{I^-}] _0 - 2 [\ce{I2}] (t)}
 $$
+
 - $[\ce{SO4^{2-}}] (t) = \dfrac{2 x(t)}{V} = \dfrac{2 [\ce{I2}] \cdot V}{V}$
+
 $$
 \boxed{[\ce{SO4^{2-}}] (t) = 2 [\ce{I2}] (t)}
 $$
@@ -133,6 +138,7 @@ $$
 {{% note normal %}}
 
 - Si la transformation chimique est **totale**,
+
 $$
     x (t_{1/2}) = \dfrac{x_{max}}{2}
 $$
@@ -232,7 +238,7 @@ $[v] = \dfrac{1}{L^3} \times \dfrac{n}{T}$ où $n$ est une quantité de matière
 En pratique, on utilise *mole par litre par seconde*&nbsp;: $\pu{mol.L-1.s-1}$.
 {{% /solution %}}
 
-### Comment déterminer expérimentalement la valeur de la vitesse de réaction&nbsp
+### Comment déterminer expérimentalement la valeur de la vitesse de réaction
 
 {{% note tip %}}
 Pour déterminer une vitesse volumique $v$ à une date $t_1$, à partir des valeurs de la concentration d'un produit (ou d'un réactif) $[X]$ (ou $[Y]$) obtenues lors d’une expérience&nbsp;:

@@ -245,5 +245,5 @@ def decodage(message_compresse: str, codes: Dict[str, str]) -> str:
 ```
 
 {{% solution "Corrigé" %}}
-{{% remote "Code Python" "<https://replit.com/@dlatreyte/huffman#main.py>" %}}
+[Code Python](https://replit.com/@dlatreyte/huffman#main.py)
 {{% /solution %}}
