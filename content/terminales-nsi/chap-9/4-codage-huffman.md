@@ -269,7 +269,7 @@ def creation_table_frequences(message: str) -> dict[str, int]:
 
 {{% /solution %}}
 
-16. Lire le document sur [les files de priorité](http://pascal.ortiz.free.fr/contents/python/structures_de_donnees/les_files_de_priorite.html)
+16. Lire le document sur [les files de priorité](http://pascal.ortiz.free.fr/contents/python/structures_de_donnees/les_files_de_priorite.html).  
 Écrire le code de la fonction `construction_arbre_huffman` dont la spécification est
 
 ```python
