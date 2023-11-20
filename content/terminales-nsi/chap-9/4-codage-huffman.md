@@ -283,7 +283,7 @@ et l'algorithme (cf. Cormen, *Algorithmes*)
 <img src="/terminales-nsi/chap-9/chap-9-4-1.png" alt="" width="70%" />
 
 {{% note warning %}}
-Cet algorithm est un exemple d'**algorithme glouton** dans lequel on prend la décision qui semble la meilleure à un instant donné.
+Cet algorithme est un exemple d'**algorithme glouton** dans lequel on prend la décision qui semble la meilleure à un instant donné.
 {{% /note %}}
 
 {{% solution "Réponse" %}}
@@ -418,7 +418,13 @@ def decodage(message_compresse: str, codes: dict[str, str]) -> str:
 
 {{% /solution %}}
 
-## Appels de toutes les fonctions dans la partie principale du programme
+{{% note warning %}}
+
+Il est impératif de savoir écrire le code de cette fonction !
+
+{{% /note %}}
+
+### Appels de toutes les fonctions dans la partie principale du programme
 
 ```python
 if __name__ == "__main__":
