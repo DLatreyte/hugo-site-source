@@ -14,7 +14,7 @@ auto_numbering: true
 layout: "single"
 ---
 
-## Au programme 
+## Au programme
 
 ### ...de la partie «&nbsp;Structures de données&nbsp;»
 
@@ -28,8 +28,6 @@ layout: "single"
 |:-:|:-:|:-:|
 | - Algorithmes sur les arbres binaires et sur les arbres binaires de recherche. |  - Calculer la taille et la hauteur d’un arbre. Parcourir un arbre de différentes façons (ordres infixe, préfixe ou suffixe ; ordre en largeur d’abord). Rechercher une clé dans un arbre de recherche, insérer une clé. | - Une structure de données récursive adaptée est utilisée. L’exemple des arbres permet d’illustrer la programmation par classe. La recherche dans un arbre de recherche équilibré est de coût logarithmique. |
 
-
-
 ## Documents
 
 - **Chapitre 9,1 :** [*Structures de données abstraites arborescentes : les arbres*](1-introduction-arbres)
@@ -39,7 +37,3 @@ layout: "single"
 - **Chapitre 9,3 :** [*Les arbres binaire de recherche*](3-arbres-binaires-recherche)
 
 - **Chapitre 9,4 :** [*Le codage de Huffman*](4-codage-huffman)
-
-- **Chapitre 9,5 :** [*Le problème du sac à dos*](5-sac-a-dos)
-
-- **Chapitre 9,6 :** [*TP révision : Le rendu de monnaie*](6-rendu-monnaie)

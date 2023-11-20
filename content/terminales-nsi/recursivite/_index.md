@@ -1,6 +1,6 @@
 ---
 title: "Récursivité"
-subtitle: "Chapitre 1"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-09-05T18:33:42+04:00

@@ -1,5 +1,5 @@
 ---
-title: "Problème du sac à dos"
+title: "Le problème du sac à dos"
 subtitle: ""
 author: ""
 type: ""
@@ -14,7 +14,7 @@ auto_numbering: true
 ---
 
 {{% note warning %}}
-{{< remote "À lire absolument pour en découvrir plus !" "<https://interstices.info/le-probleme-du-sac-a-dos/>" >}}
+[À lire absolument pour en découvrir plus !](https://interstices.info/le-probleme-du-sac-a-dos/)
 {{% /note %}}
 
 ## Introduction
@@ -43,7 +43,7 @@ Quels objets faut-il sélectionner de façon à ce que la valeur totale, dans le
 ## Méthode de résolution approchée : stratégie gloutonne
 
 {{% note normal %}}
-Une solution se trouve à cette adresse : {{< remote "<https://repl.it/@dlatreyte/sacados>" "<https://repl.it/@dlatreyte/sacados>" >}}
+[Solution](https://repl.it/@dlatreyte/sacados)
 {{% /note %}}
 
 1. Rappeler ce qu'est une stratégie gloutonne.
@@ -61,25 +61,24 @@ Le choix effectué à chaque étape n'est jamais remis en cause, ce qui fait que
 
 {{% /solution %}}
 
-2. Importer les types `List`, `Dict` et `Tuple` du module `typing`.
-
-3. Dans la fonction `main`, définir la liste objets dont les membres sont des dictionnaires représentant les différents objets du problème.\
-    Chacun de ces dictionnaires doit donc posséder les clés `nom`, `masse`, `valeur` associées aux valeurs.
+2. Dans la partie principale du programme, définir la liste objets dont les membres sont des dictionnaires représentant les différents objets du problème.\
+    Chacun de ces dictionnaires doit posséder les clés `nom`, `masse`, `valeur` associées aux valeurs.
 {{% solution "Solution" %}}
 
 ```python
-objets = [{'nom': 'A', 'masse': 13, 'valeur': 700},
-              {'nom': 'B', 'masse': 12, 'valeur': 500},
-              {'nom': 'C', 'masse': 8, 'valeur': 200},
-              {'nom': 'D', 'masse': 10, 'valeur': 300},
-              {'nom': 'E', 'masse': 14, 'valeur': 600},
-              {'nom': 'F', 'masse': 18, 'valeur': 800}
-              ]
+if __name__ == "__main__":
+    objets = [{'nom': 'A', 'masse': 13, 'valeur': 700},
+                {'nom': 'B', 'masse': 12, 'valeur': 500},
+                {'nom': 'C', 'masse': 8, 'valeur': 200},
+                {'nom': 'D', 'masse': 10, 'valeur': 300},
+                {'nom': 'E', 'masse': 14, 'valeur': 600},
+                {'nom': 'F', 'masse': 18, 'valeur': 800}
+                ]
 ```
 
 {{% /solution %}}
 
-4. Dans la fonction `main`, définir la variable `masse_max` et lui affecter la valeur 40.
+3. Définir la variable `masse_max` et lui affecter la valeur 40.
 {{% solution "Solution" %}}
 
 ```python
@@ -93,9 +92,9 @@ Le principe de la stratégie gloutonne consiste à ajouter en priorité les obje
 Avant d'appliquer l'algorithme glouton, il est nécessaire de trier la liste objets. Définir la fonction suivante :
 
 ```python
-def tri_objets(objets: List[Dict]) -> List[Dict]:
+def tri_objets(objets: list[dict]) -> list[dict]:
     """
-    Tri la liste de dictionnaires selon les rapports valeur/masse.
+    Trie la liste de dictionnaires selon les rapports valeur/masse.
     """
     def recupere_rapports(objet):
         return objet['valeur'] / objet['masse']
@@ -105,20 +104,20 @@ def tri_objets(objets: List[Dict]) -> List[Dict]:
     return objets_tries
 ```
 
-5. Quel concept propre à la programmation fonctionnelle la fonction `sorted` met-elle en œuvre ?
+4. Quel concept propre à la programmation fonctionnelle la fonction `sorted` met-elle en œuvre ?
 {{% solution "Solution" %}}
 Une fonction en Python peut être passée comme argument à une autre fonction.
 {{% /solution %}}
 
-6. Décrire précisément la structure et le comportement de la fonction `tri_objets`.
+5. Décrire précisément la structure et le comportement de la fonction `tri_objets`.
 
-7. Affecter, dans la fonction `main`, le résultat de l'appel de la fonction `tri_objets` à la variable `objets`. \
+6. Affecter, dans la fonction `main`, le résultat de l'appel de la fonction `tri_objets` à la variable `objets`. \
     Afficher à l'écran la liste triée.
 {{% solution "Solution" %}}
 
 ```python
 objets = tri_objets(objets)
-print("Objets utilisables : {}".format(objets), end='\n')
+print(f"Objets utilisables : {objets}", end='\n')
 ```
 
 {{% /solution %}}
@@ -126,11 +125,11 @@ print("Objets utilisables : {}".format(objets), end='\n')
 Remarque.
 : Ne pas oublier d'appeler la fonction main.
 
-8. Définir la fonction `construction_sac_a_dos` dont la spécification est :
+7. Définir la fonction `construction_sac_a_dos` dont la spécification est :
 
 ```python
-def constrution_sac_a_dos(objets_tries: List[Dict], 
-                          masse_max: float) -> Tuple[List[str], int, int]:
+def constrution_sac_a_dos(objets_tries: list[dict], 
+                          masse_max: float) -> tuple[list[str], int, int]:
     """
     Construction du sac à dos à partir d'une stratégie gloutonne.
     HYPOTHÈSE : la liste de dictionnaires est triée par ordre croissant des rapports
@@ -144,7 +143,7 @@ def constrution_sac_a_dos(objets_tries: List[Dict],
 {{% solution "Solution" %}}
 
 ```python
-def constrution_sac_a_dos(objets_tries: List[Dict], masse_max: float) -> Tuple[List[str], int, int]:
+def constrution_sac_a_dos(objets_tries: list[dict], masse_max: float) -> tuple[list[str], int, int]:
     """
     Construction du sac à dos à partir d'une stratégie gloultonne.
     HYPOTHÈSE : la liste de dictionnaires est triée par ordre croissant des rapports
@@ -172,7 +171,7 @@ def constrution_sac_a_dos(objets_tries: List[Dict], masse_max: float) -> Tuple[L
 
 {{% /solution %}}
 
-9. Affecter, dans la fonction `main`, le tuple retourné par la fonction construction_sac_a_dos aux variables sac_a_dos, valeur et masse_sac.
+8. Affecter, dans la partie principale du programme, le tuple retourné par la fonction `construction_sac_a_dos` aux variables `sac_a_dos`,`valeur` et `masse_sac`.
 {{% solution "Solution" %}}
 
 ```python
@@ -181,19 +180,19 @@ sac_a_dos, valeur, masse_sac = constrution_sac_a_dos(objets, masse_max)
 
 {{% /solution %}}
 
-10. Afficher le résultat :
+9. Afficher le résultat :
 
 ```python
 print("Stratégie gloutonne")
 print("-------------------")
-print("Constitution du sac à dos : {}".format(sac_a_dos))
-print("Masse du sac à dos : {}".format(masse_sac))
-print("Valeur du sac à dos : {}".format(valeur))
+print(f"Constitution du sac à dos : {sac_a_dos}")
+print(f"Masse du sac à dos : {masse_sac}")
+print(f"Valeur du sac à dos : {valeur}")
 print()
 ```
 
 <!-- Deuxième partie : Arbre des possibilités -->
-## Méthode de résolution exacte
+## Extension : Méthode de résolution exacte
 
 Si on ne prend pas en compte, dans un premier temps, les contraintes, il est possible d'établir la liste des combinaisons possibles des objets à l'aide d'un **arbre d'exploration binaire**.
 
@@ -201,61 +200,61 @@ Par exemple, voici ce à quoi cet arbre ressemble lorsqu'on prend en compte les 
 
 {{< mermaid>}}
 graph TD
-V("" ) --> A
-V --> V1(" ")
-A --> C("A,B")
-C --> D("A,B,C")
-C --> E("A,B")
-A --> F("A")
-F --> G("A,C")
-F --> H("A")
-V1 --> I("B")
-I --> J("B,C")
-I --> K("B")
-V1 --> V2(" ")
-V2 --> L("C")
-V2 --> M(" ")
+V("" ) --- A
+V --- V1((" "))
+A --- C(("A,B"))
+C --- D(("A,B,C"))
+C --- E(("A,B"))
+A --- F(("A"))
+F --- G(("A,C"))
+F --- H(("A"))
+V1 --- I(("B"))
+I --- J(("B,C"))
+I --- K(("B"))
+V1 --- V2((" "))
+V2 --- L(("C"))
+V2 --- M((" "))
 {{< /mermaid >}}
 
 Les combinaisons s'obtiennent en parcourant l'arbre du sommet jusqu'à chaque extrémité : on obtient alors un vecteur dont on peut calculer la poids et la valeur. Il suffit alors de retenir celui dont la masse est inférieure à la masse maximale et dont la valeur est alors maximale.
 
-11. Au niveau de chaque nœud à quoi correspond le chemin « gauche » : objet retenu ou objet non retenu ?
+10. Au niveau de chaque nœud à quoi correspond le chemin « gauche » : objet retenu ou objet non retenu ?
 {{% solution "Réponse" %}}
 Objet retenu.
 {{% /solution %}}
 
-12. Compléter l'arbre avec l'objet D.
+11. Compléter l'arbre avec l'objet D.
 
-13. Si on implémente un algorithme mettant en œuvre la technique présentée ici, on trouve comme solution [A,C,F]. Vérifier que cette solution est meilleure que celle donnée par l'algorithme glouton.\
+12. Si on implémente un algorithme mettant en œuvre la technique présentée ici, on trouve comme solution $[A,C,F]$. Vérifier que cette solution est meilleure que celle donnée par l'algorithme glouton.\
     Pourquoi cette méthode n'est cependant pas utilisable la plupart du temps ? Quel est le nombre de combinaisons possibles ?
 {{% solution "Réponse" %}}
 Le nombre de combinaisons est $2^n$ où $n$ est le nombre d'objets. Cette croissance exponentielle rend l'algorithme exact beaucoup trop lent.
 {{% /solution %}}
 
-14. Écrire le code de la fonction `masse_sac` dont la spécification est :
+13. Écrire le code de la fonction `masse_sac` dont la spécification est :
 
 ```python
-def masse_sac(objets: List[Dict[str, str]], liste_obj: List[int]) -> int:
+def masse_sac(objets: list[dict[str, str]], liste_obj: list[int]) -> int:
     """
     Calcule la masse du sac pour la liste d'objets retenus liste_obj.
     """
 ```
 
-15. Écrire le code de la fonction `calcul_valeur_sac` dont la spécification est :
+14. Écrire le code de la fonction `calcul_valeur_sac` dont la spécification est :
 
 ```python
-def calcul_valeur_sac(objets: List[Dict[str, str]],
-                      liste_obj: List[int]) -> int:
+def calcul_valeur_sac(objets: list[dict[str, str]],
+                      liste_obj: list[int]) -> int:
     """
     Calcule la masse du sac pour la liste d'objets retenus liste_obj.
     """
 ```
 
-16. Écrire le code suivant :
+15. Écrire le code suivant :
 
 ```python
-def recherche_recursive(objets: List[Dict[str, str]], masse_max: isinstance,
-                        list_obj: List[int], i: int) -> List[int]:
+def recherche_recursive(objets: list[dict[str, str]], masse_max: isinstance,
+                        list_obj: list[int], i: int) -> list[int]:
     """
     Détermine le chemin de l'arbre de décision correspondant à la valeur optimale
     pour une masse du sac déterminée.

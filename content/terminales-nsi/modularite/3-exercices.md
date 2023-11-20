@@ -284,7 +284,7 @@ Créer un module contenu dans un fichier nommé `arithmetique.py`. Ce module con
 
 – `expo` qui prend en paramètres les entiers $a$, $b$ et $n$ et calcule le reste de la division par $n$ de $a^b$ ;
 
-– `pgcd` qui prend en paramètres les entiers $a$ et $b$ et renvoie le plus grand diviseur commun de $a$ et $b$ ([définition du pgcd]({{% ref "../chap-1/1-1-recursivite-sur-entiers.md#pgcd" %}})) ;
+– `pgcd` qui prend en paramètres les entiers $a$ et $b$ et renvoie le plus grand diviseur commun de $a$ et $b$ ([définition du pgcd]({{% ref "../recursivite/1-1-recursivite-sur-entiers.md#pgcd" %}})) ;
 
 – `decomposition` qui prend un entier positif $n$ en paramètre et renvoie la liste de ses facteurs premiers ainsi que leur multiplicité.
 

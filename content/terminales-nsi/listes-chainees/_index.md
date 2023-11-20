@@ -1,6 +1,6 @@
 ---
 title: "Listes chaînées"
-subtitle: "Chapitre 7"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-10-13T04:15:41+04:00
@@ -23,3 +23,7 @@ layout: "single"
 ## Documents
 
 - **Doc. :** [*Listes Chaînées, présentation... et implémentation à l'aide d'une classe*](1-listes-chainees)
+
+- **Doc. :** [*Listes Chaînées, implémentation à l'aide de tuple*](2-listes-chainees-liste)
+
+- **Doc. :** [*Programmation d'une classe « Liste Chaînée »*](3-classe-liste-chainee)

@@ -1,5 +1,5 @@
 ---
-title: "Stratégie gloutonne : Le rendu de monnaie"
+title: "Le rendu de monnaie"
 subtitle: ""
 author: ""
 type: ""
@@ -26,7 +26,7 @@ En procédant ainsi, on se rend compte que l'**on résout le problème étape pa
 1. Préparer la partie de code suivante :
 
 ```python
-def main():
+if __name__ == "__main__":
     # valeurs des pièces
     pieces = [1, 2, 5, 10, 20, 50, 100]
 
@@ -36,12 +36,9 @@ def main():
     a_rendre = somme_a_rendre(prix, client)
     comment = pieces_a_rendre(a_rendre, pieces)
 
-    reponse = ["{} piece(s) de {}".format(comment[i], pieces[i]) for i in range(len(pieces))]
-    print("Je dois rendre : {}".format(a_rendre))
-    print("Je donne donc : {}".format(reponse))
-
-
-main()
+    reponse = [f"{comment[i]} piece(s) de {pieces[i]}" for i in range(len(pieces))]
+    print(f"Je dois rendre : {a_rendre}")
+    print(f"Je donne donc : {reponse}")
 ```
 
 2. Définir la fonction `somme_a_rendre` dont la spécification est :
@@ -57,7 +54,7 @@ def somme_a_rendre(prix: int, client: int) -> int:
 3. Définir la fonction `pieces_a_rendre` dont la spécification est :
 
 ```python
-def pieces_a_rendre(somme: int, pieces: List[int]) -> List[int]:
+def pieces_a_rendre(somme: int, pieces: list[int]) -> list[int]:
     """
     Détermine les pièces (et leur nombre) à choisir pour rendre la somme
     passée en argument.

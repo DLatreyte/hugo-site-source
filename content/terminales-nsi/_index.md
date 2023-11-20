@@ -57,47 +57,49 @@ layout: single
 
 ### Langages et programmation
 
-- **Chapitre 0 :** [Révisions de notions de 1ère](chap-0)
+- **Chapitre 0 :** [Révisions de notions de 1ère](revisions)
 
-- **Chapitre 1 :** [*Récursivité*](chap-1)
+- **Chapitre 1 :** [*Récursivité*](recursivite)
 
-- **Chapitre 2 :** [*Modularité et robustesse du code*](chap-2)
+- **Chapitre 2 :** [*Modularité et robustesse du code*](modularite)
 
-- **Chapitre 3 :** [*Paradigmes de programmation*](chap-3)
+- **Chapitre 3 :** [*Paradigmes de programmation*](paradigmes)
 
-- **Chapitre 4 :** [*Programmation objet*](chap-4)
+- **Chapitre 4 :** [*Programmation objet*](programmation-objet)
 
-- **Chapitre 5 :** [*Programmation fonctionnelle*](chap-5)
+- **Chapitre 5 :** [*Programmation fonctionnelle*](programmation-fonctionnelle)
 
 ### Structures de données
 
-- **Chapitre 6 :** [*Type de données astrait (ADT). Deux exemples fournis avec le langage Python*](chap-6)
+- **Chapitre 6 :** [*Type de données astrait (ADT). Deux exemples fournis avec le langage Python*](types-abstraits)
 
-- **Chapitre 7 :** [*Listes chaînées*](chap-7)
+- **Chapitre 7 :** [*Listes chaînées*](listes-chainees)
 
-- **Chapitre 8 :** [*Piles et Files*](chap-8)
+- **Chapitre 8 :** [*Piles et Files*](piles-files)
 
 ### Structures de données et algorithmique
 
-- **Chapitre 9 :** [*Structures hiérarchiques : les arbres*](chap-9)
+- **Chapitre 9 :** [*Structures hiérarchiques : les arbres*](arbres)
 
-- **Chapitre 15 :** [*Les graphes*](chap-15)
+- **Chapitre 16 :** [*Les graphes*](graphes)
 
 ### Algorithmique
 
-- **Chapitre 13 :** [*Méthode «&nbsp;diviser pour régner&nbsp;»*](chap-10)
+- **Chapitre 10 :** [*Algorithmes gloutons*](gloutons)
 
-- **Chapitre 14 :** [*Programmation dynamique*](chap-14)
+- **Chapitre 14 :** [*Méthode «&nbsp;diviser pour régner&nbsp;»*](diviser-pour-regner)
+
+- **Chapitre 15 :** [*Programmation dynamique*](programmation-dynamique)
 
 ### Architectures matérielles, systèmes d'exploitation et réseaux
 
-- **Chapitre 10 :** [*Réseaux*](chap-11)
+- **Chapitre 11 :** [*Réseaux*](reseaux)
 
-- **Chapitre 11 :** [*Les systèmes d'exploitation*](chap-12)
+- **Chapitre 12 :** [*Les systèmes d'exploitation*](systemes-exploitation)
 
 ### Bases de données
 
-- **Chapitre 12 :** [*Bases de données*](chap-13)
+- **Chapitre 13 :** [*Bases de données*](bases-donnees)
 
 <!-- - **Chapitre 14 :** [**](chap-14)  -->
 

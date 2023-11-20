@@ -53,7 +53,7 @@ Certains langages sont très liés à certains paradigmes mais la plupart permet
 
 ## Programmation impérative
 
-{{< remote "Wikipedia" "https://fr.wikipedia.org/wiki/Programmation_impérative" >}}
+{{< remote "Wikipedia" "<https://fr.wikipedia.org/wiki/Programmation_impérative>" >}}
 
 {{% note tip %}}
 En *programmation impérative* les opérations sont décrites en **séquences d'instructions**, dont **l'ordre est déterminé par le programmeur**, et donc l'objectif est la **modification de l'état de la mémoire** (**variables**).
@@ -91,7 +91,7 @@ La programmation impérative s'appuie sur le modèle des machines à états, ave
 
 ## Programmation fonctionnelle
 
-{{< remote "Wikipedia" "https://fr.wikipedia.org/wiki/Programmation_fonctionnelle" >}}
+{{< remote "Wikipedia" "<https://fr.wikipedia.org/wiki/Programmation_fonctionnelle>" >}}
 
 {{% note tip %}}
 En *programmation fonctionnelle* un programme est considéré comme l'**application** (au sens mathématique du terme) d'une **fonction** à l'ensemble des données que le programme doit manipuler. Ce programme donne donc **toujours le même résultat pour les mêmes données** (pas d'effet de bord).
@@ -108,7 +108,7 @@ En *programmation fonctionnelle* un programme est considéré comme l'**applicat
 
 #### Remarque
 
-- La mise en œuvre des langages fonctionnels fait un usage sophistiqué de la **pile** (cf. chapitre 1 sur la [récursivité]({{% ref "../chap-1/1-1-recursivite-sur-entiers.md" %}}) et chapitre 8 sur la [structure de pile]({{% relref "../chap-8/_index.md" %}})) car, *afin de s'affranchir de la nécessité de stocker des données temporaires dans des tableaux*, ils font largement appel à la **récursivité**. L'une des multiples techniques pour rendre la compilation de la récursivité plus efficace est une technique dénommée **récursion terminale** (en anglais&nbsp;: **tail-recursion**), qui consiste à *accumuler les résultats intermédiaires dans une case mémoire de la pile et à la passer en paramètre dans l'appel récursif*. Ceci permet d'*éviter d'empiler les appels récursifs dans la pile en les remplaçant par une simple succession de sauts*. Le code généré par le compilateur est alors similaire à celui généré par une boucle en impératif.
+- La mise en œuvre des langages fonctionnels fait un usage sophistiqué de la **pile** (cf. chapitre 1 sur la [récursivité]({{% ref "../recursivite/1-1-recursivite-sur-entiers.md" %}}) et chapitre sur la [structure de pile]({{% relref "../piles-files/_index.md" %}})) car, *afin de s'affranchir de la nécessité de stocker des données temporaires dans des tableaux*, ils font largement appel à la **récursivité**. L'une des multiples techniques pour rendre la compilation de la récursivité plus efficace est une technique dénommée **récursion terminale** (en anglais&nbsp;: **tail-recursion**), qui consiste à *accumuler les résultats intermédiaires dans une case mémoire de la pile et à la passer en paramètre dans l'appel récursif*. Ceci permet d'*éviter d'empiler les appels récursifs dans la pile en les remplaçant par une simple succession de sauts*. Le code généré par le compilateur est alors similaire à celui généré par une boucle en impératif.
 
 - La programmation fonctionnelle éliminant les effets de bord (*fonctions pures*), il est plus facile de faire effectuer des calculs en parallèle aux programmes développés dans un style fonctionnel pur.
 

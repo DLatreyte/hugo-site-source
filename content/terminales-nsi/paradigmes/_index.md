@@ -1,6 +1,6 @@
 ---
 title: "Paradigmes de programmation"
-subtitle: "Chapitre 3"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-09-21T20:58:27+04:00
