@@ -110,4 +110,3 @@ layout: single
 ## Épreuves pratiques (NSI)
 
 - [*Sujets des épreuves pratiques*](ece)
-jkljksq
