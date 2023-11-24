@@ -6,8 +6,8 @@ type: ""
 date: 2023-11-24T12:59:57+04:00
 draft: false
 toc: true
-tags: []
-categories: []
+tags: ["Tri", "Invariant de boucle", "Variant de boucle", "Complexité"]
+categories: ["Terminales Spé NSI", "Informatique"]
 image: ""
 solution_est_visible: true
 auto_numbering: true

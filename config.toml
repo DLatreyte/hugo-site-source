@@ -144,11 +144,11 @@ enableEmoji = true
     url = "premieres-pc"
     weight = 1
 
-[[menu.main]]
-    parent = "cours"
-    name = "1ère Spé. NSI"
-    url = "premieres-nsi"
-    weight = 2
+#[[menu.main]]
+#    parent = "cours"
+#    name = "1ère Spé. NSI"
+#    url = "premieres-nsi"
+#    weight = 2
 
 [[menu.main]]
     parent = "cours"
