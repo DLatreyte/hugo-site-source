@@ -81,25 +81,27 @@ layout: single
 
 - **Chapitre 9 :** [*Structures hiérarchiques : les arbres*](arbres)
 
-- **Chapitre 16 :** [*Les graphes*](graphes)
+- **Chapitre 17 :** [*Les graphes*](graphes)
 
 ### Algorithmique
 
 - **Chapitre 10 :** [*Algorithmes gloutons*](gloutons)
 
-- **Chapitre 14 :** [*Méthode «&nbsp;diviser pour régner&nbsp;»*](diviser-pour-regner)
+- **Chapitre 11 :** [*Algorithmes de tris, révisions*](tris)
 
-- **Chapitre 15 :** [*Programmation dynamique*](programmation-dynamique)
+- **Chapitre 15 :** [*Méthode «&nbsp;diviser pour régner&nbsp;»*](diviser-pour-regner)
+
+- **Chapitre 16 :** [*Programmation dynamique*](programmation-dynamique)
 
 ### Architectures matérielles, systèmes d'exploitation et réseaux
 
-- **Chapitre 11 :** [*Réseaux*](reseaux)
+- **Chapitre 12 :** [*Réseaux*](reseaux)
 
-- **Chapitre 12 :** [*Les systèmes d'exploitation*](systemes-exploitation)
+- **Chapitre 13 :** [*Les systèmes d'exploitation*](systemes-exploitation)
 
 ### Bases de données
 
-- **Chapitre 13 :** [*Bases de données*](bases-donnees)
+- **Chapitre 14 :** [*Bases de données*](bases-donnees)
 
 <!-- - **Chapitre 14 :** [**](chap-14)  -->
 
