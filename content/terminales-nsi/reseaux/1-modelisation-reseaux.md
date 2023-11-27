@@ -167,7 +167,7 @@ Lors d’une transmission, les données traversent chacune des couches au niveau
 
 ## Adressage IP
 
-Lorsque l'on veut établir une communication, il est indispensable de posséder trois informations :
+Lorsque l'on veut établir une communication, il est indispensable de posséder trois informations :
 
 1. Le nom de la machine distante,
 2. son adresse,
@@ -176,8 +176,8 @@ Le nom dit « qui » est l'hôte distant, l'adresse nous dit « où » il se t
 
 {{% note normal %}}
 
-Les adresses IP (version 4) sont standardisées sous forme d'un **nombre de 32 bits** (**représenté sous forme de quatre entiers de huit bits, séparés par des points**) qui permet à la fois l'identification de chaque hôte et du réseau auquel il appartient. Le choix des nombres composants une adresse IP n'est pas laissé au hasard, au contraire il fait l'objet d'une attention particulière notamment pour faciliter les **opérations de routage**.  
-Chaque adresse IP contient donc deux informations, une **adresse de réseau** et une **adresse d'hôte**. *La combinaison des deux désigne de manière **unique** une machine et une seule sur l'Internet*.
+Les adresses IP (version 4) sont standardisées sous forme d'un **nombre de 32 bits** (**représenté sous forme de quatre entiers de huit bits, séparés par des points**) qui permet à la fois l'identification de chaque hôte et du réseau auquel il appartient. Le choix des nombres composants une adresse IP n'est pas laissé au hasard, au contraire il fait l'objet d'une attention particulière notamment pour faciliter les **opérations de routage**.  
+Chaque adresse IP contient donc deux informations, une **adresse de réseau** et une **adresse d'hôte**. *La combinaison des deux désigne de manière **unique** une machine et une seule sur l'Internet*.
 
 {{% /note %}}
 
@@ -199,9 +199,9 @@ C'est l'adressage historique, il est toujours utilisé sur les réseaux privés 
 
 #### Remarques
 
-- L'adresse réseau 0.0.0.0 n’existe pas ;
-- Le NetID « 127 » est réservée pour les communications en boucle locale (loopback) ;
-- La classe D est prévue pour faire du « multicast » ou multipoint.
+- L'adresse réseau 0.0.0.0 n’existe pas ;
+- Le NetID « 127 » est réservée pour les communications en boucle locale (loopback) ;
+- La classe D est prévue pour faire du « multicast » ou multipoint.
 - La classe E est une classe expérimentale.
 - Deux adresses hôtes ne sont pas attribuables :
   - *tous les bits de la partie hôte à 1 : c'est l'**adresse de diffusion** ;*
@@ -249,6 +249,7 @@ Un **masque de sous-réseau** est un masque distinguant les bits d'une adresse I
 {{% solution "Réponse" %}}
 
 - **Adresse réseau :** il faut réaliser l'opération : 192.168.1.2 & 255.255.255.0
+
 $$
 \def\arraystretch{1.5}
 \begin{array}{cc}
@@ -260,6 +261,7 @@ $$
 soit 192.168.1.0
 
 - **Adresse hôte :** soit on effectue un & logique avec le complément à 1 du masque, doit on cherche le nombre formé par les bits non retenus par la partie réseau.
+
 $$
 \def\arraystretch{1.5}
 \begin{array}{cc}

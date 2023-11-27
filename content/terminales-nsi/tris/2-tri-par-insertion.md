@@ -79,6 +79,21 @@ ce qui économise de la place en mémoire.
 {{% /note %}}
 
 4. À partir de toutes les informations précédentes, écrire l'algorithme du tri par insertion. Implémenter cet algorithme en Python.
+{{% solution "Réponse" %}}
+
+```python
+def tri_insertion(tab: list[int | float | str]) -> None:
+    """ Tri par insertion """
+    for i in range(1, len(tab)):
+        valeur = tab[i]   # Sauvegarde de la valeur en cours
+    j = i - 1             # Indice de la boucle interne
+        while tab[j] > valeur and j >= 0:
+            tab[j + 1] = tab[j]  # On remonte la valeur plus grande
+            j = j - 1
+        tab[j + 1] = valeur      # On insère la valeur dans le tableau
+```
+
+{{% /solution %}}
 
 5. Faire tourner « à la main » l'algorithme lorsque la fonction reçoit le tableau
 `tab = [5,2,4,6,1,3]`.
