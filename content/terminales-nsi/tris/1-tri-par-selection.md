@@ -109,13 +109,9 @@ La méthode du **tri par insertion** est expliquée à [cette adresse](https://y
 5. Visualiser la première vidéo (s'arrêter au bout de 4min40). Essayer de bien
 comprendre la méthode.
 
-6. Appliquer la méthode dans le jeu des tonneaux et trier cinq tonneaux du plus
-léger au plus lourd. Cette méthode était-elle celle que vous aviez mise en
-œuvre dans la section 1 ?
+6. Appliquer la méthode dans le jeu des tonneaux et trier cinq tonneaux du plus léger au plus lourd. Cette méthode était-elle celle que vous aviez mise en œuvre dans la section 1 ?
 
-7. La méthode étant bien comprise, choisir sept cartes à jouer (avec les valeurs
-numériques, pas des figures). Les placer en ligne au hasard sur une table et
-les trier en appliquant le tri par sélection.  
+7. La méthode étant bien comprise, choisir sept cartes à jouer (avec les valeurs numériques, pas des figures). Les placer en ligne au hasard sur une table et les trier en appliquant le tri par sélection.  
 **Se filmer pendant toute l'opération en commentant chacune des étapes !**
 
 ### Algorithme
@@ -186,13 +182,56 @@ if __name__ == "__main__":
 `tab = [5,2,4,6,1,3]`.
 
 10. Comment prouve-t-on, de façon générale, la terminaison d'un algorithme ?
+{{% solution "Réponse" %}}
+
+On recherche un *variant de boucle*.
+
+{{% note tip %}}
+
+Un **variant de boucle** est une expression arithmétique associée à une boucle qui satisfait deux conditions :
+
+- **Valeur initiale :** Le variant doit être initialisé avec une *valeur entière non négative* avant que la boucle ne commence.
+- **Décroissance :** À chaque itération de la boucle, la *valeur du variant doit décroître*. Cela signifie que le variant agit comme une mesure de progression vers la sortie de la boucle.
+
+L'idée derrière la notion de variant de boucle est que si le variant est toujours non négatif et diminue lors de la progression de la boucle, alors la boucle ne peut pas continuer indéfiniment. Si la boucle continue indéfiniment, cela signifie que le variant ne décroît pas à chaque itération, ce qui contredit la propriété de décroissance du variant.
+
+{{% /note %}}
+
+{{% /solution %}}
 
 11. Est-il nécessaire de prouver la terminaison de cet algorithme ?
+{{% solution "Réponse" %}}
+
+L'algorithme fait intervenir deux boucles `Pour`. Il se termine donc forcément puisqu'il s'agit de *boucles déterministes*.
+
+{{% /solution %}}
 
 12. Comment prouve-t-on, de façon générale, la correction d'un algorithme ?
+{{% solution "Réponse" %}}
+
+On recherche un *invariant de boucle*.
+
+{{% note tip %}}
+
+Un **invariant de boucle** est une *proposition vraie à chaque tour de boucle*. Associé à une **postcondition** il permet, au final, de montrer la correction d'un algorithme.
+
+Pour qu'un invariant de boucle soit efficace, il doit satisfaire deux propriétés essentielles :
+
+- **Initialisation :** L'invariant doit être vrai avant la première itération de la boucle. Cela garantit que l'invariant est une propriété valable lorsque la boucle commence son exécution.
+- **Conservation :** Si l'invariant est vrai avant une itération de la boucle, alors il doit également rester vrai après l'itération, à condition que la condition de boucle (la condition qui détermine si la boucle doit continuer ou s'arrêter) soit vraie. Cela assure que l'invariant reste préservé à chaque étape de la boucle.
+
+Un invariant de boucle doit être associé à une **postcondition**, c'est dire à une propriété qui doit être vraie à la fin de la boucle.
+
+{{% /note %}}
+
+{{% /solution %}}
 
 13. Prouver que la proposition « Au début de chaque itération de la boucle `Pour` externe le tableau `tab[0, ..., i-1]` est un tableau trié constitué des `i` plus petits éléments du tableau `tab`, dans l'ordre croissant.» est un invariant de boucle.  
 Prouver que l'algorithme est correct.
+
+{{% solution "Réponse" %}}
+
+{{% /solution %}}
 
 14. Déterminer la complexité de l'algorithme.
 

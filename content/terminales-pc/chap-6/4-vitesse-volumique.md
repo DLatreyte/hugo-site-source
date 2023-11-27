@@ -81,13 +81,13 @@ La concentration des réactifs est un facteur cinétique. Lorsque le système av
 - Si la transformation chimique est totale au moins un des réactifs est limitant et $x_f = x_{\text{max}}$.
 - Détermination de l'avancement maximal&nbsp;:
   - $\ce{I^-}$ limitant&nbsp;:
-    $n_0(\ce{I^-}) - 2x_{\text{max}} = 0 \iff x_{\text{max}} = \dfrac{n_0(\ce{I^-})}{2}$.
+    $n_0(\ce{I^-}) - 2x_{\text{max}} = 0 \iff x_{\text{max}} = \dfrac{n_0(\ce{I^-})}{2}$.  
     <strong>A.N.</strong> $x_{\text{max}} = \dfrac{ \pu{50e-3 L} \times \pu{0,50 mol.L-1} }{2} = \pu{1,3e-2 mol}$.
   - $\ce{S2O8^{2-}}$ limitant&nbsp;:
-    $n_0(\ce{S2O8^{2-}}) - x_{\text{max}} = 0 \iff x_{\text{max}} = n_0(\ce{S2O8^{2-}})$.
+    $n_0(\ce{S2O8^{2-}}) - x_{\text{max}} = 0 \iff x_{\text{max}} = n_0(\ce{S2O8^{2-}})$.  
     <strong>A.N.</strong> $x_{\text{max}} = \pu{50e-3 L} \times \pu{0,10 mol.L-1} = \pu{5,0e-3 mol}$.
   - Finalement, $x_{\text{max}} = \pu{5,0e-3 mol}$ et $\ce{S2O8^{2-}}$ est le réactif limitant.
-- Sur le graphique, on constate que $[\ce{I2}]\_\infty = \pu{5,0e-2 mol.L-1}$. Or $[\ce{I2}]\_\infty = \dfrac{x_{\text{max}}}{V}$ avec $V$ le volume de la solution.
+- Sur le graphique, on constate que $[\ce{I2}]\_\infty = \pu{5,0e-2 mol.L-1}$. Or $[\ce{I2}]\_\infty = \dfrac{x_{\text{max}}}{V}$ avec $V$ le volume de la solution.  
 <strong>A.N.</strong> $[\ce{I2(aq)}]\_\infty = \dfrac{\pu{5,0e-3 mol}}{\pu{50e-3 L} + \pu{50e-3 L}} = \pu{5,0e-2 mol.L-1}$.
 
 *La transformation chimique est bien totale.*
