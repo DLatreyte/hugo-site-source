@@ -1,5 +1,5 @@
 ---
-title: "Adressage IP"
+title: "Adressage IPv4"
 subtitle: ""
 author: ""
 type: ""
@@ -50,7 +50,7 @@ réseau. L'adresse s'écrit donc 222.1.1.20/26.
 5. Écrire l'adresse IPv4 135.1.1.25, de masque 255.255.248.0 en notation CIDR.
 {{% solution "Réponse" %}}
 $248 = \left( 1111 \\; 1000 \right)\_{2}$, donc le masque s'écrit
-11111111.11111111.11111000.00000000. 21 bits sont utilisés pour la partie
+`11111111.11111111.11111000.00000000`. 21 bits sont utilisés pour la partie
 réseau. L'adresse s'écrit donc 135.1.1.25/21.
 {{% /solution %}}
 
