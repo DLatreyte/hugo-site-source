@@ -219,6 +219,8 @@ C'est l'adressage historique, il est toujours utilisé sur les réseaux privés 
 2. Calculer le nombre d'hôtes pour chaque réseau.
 {{% solution "Réponse" %}}
 
+**Rappel :** Deux configurations sont impossibles pour la partie hôte : tous les bits à 0 (adresse réseau) et tous les bits à 1 (adresse de diffusion).
+
 - Classe A : $2^{24} -2 = 16277214$
 - Classe B : $2^{16} -2 = 65534$
 - Classe C : $2^{8} -2 = 254$
