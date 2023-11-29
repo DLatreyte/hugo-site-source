@@ -189,7 +189,7 @@ Chaque adresse IP contient donc deux informations, une **adresse de réseau** et
 
 C'est l'adressage historique, il est toujours utilisé sur les réseaux privés mais a disparu dans les réseaux public car il engendre la perte d'un grand nombre d'adresses.
 
-| Classe | Nbre bits du masque de sous réseau | Nbre bits de l'adresse réseau | Adresses réseau |
+| Classe | Nbre bits du masque de sous réseau | Nbre bits de l'adresse hôte | Adresses réseau |
 | :---: | :---: | :---: | :---: |
 | A | 8 bits commençant obligatoirement par le bit 0 | 24 bits | 1.0.0.0 à 126.0.0.0 |
 | B | 16 bits commençant obligatoirement par les bits 10 | 16 bits | 128.0.0.0 à 191.255.0.0 |
@@ -207,12 +207,12 @@ C'est l'adressage historique, il est toujours utilisé sur les réseaux privés 
   - *tous les bits de la partie hôte à 1 : c'est l'**adresse de diffusion** ;*
   - *tous les bits de la partie hôte à 0 : c'est l'**adresse du réseau**.*
 
-1. Calculer le nombre de réseaux différents que l'on peut définir en fonctiond des classes.
+1. Calculer le nombre de réseaux différents que l'on peut définir en fonction des classes.
 {{% solution "Réponse" %}}
 
-- Classe A : $2^7 = 128$
-- Classe B : $2^{14} = 16384$
-- Classe C : $2^{21} = 209752$
+- Classe A : $2^7 = 128$. Le premier bit est fixé 0, on ne peut donc modifier que les sept bits suivants.
+- Classe B : $2^{14} = 16384$. Les deux premiers bits sont fixés à 10, on ne peut donc modifier que les 14 bits suivants.
+- Classe C : $2^{21} = 209752$. Les trois premiers bits sont fixés à 110, on ne peut donc modifier que les 21 bits suivants.
 
 {{% /solution %}}
 
