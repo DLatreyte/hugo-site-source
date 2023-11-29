@@ -17,7 +17,7 @@ auto_numbering: true
 
 {{% note normal %}}
 
-- Télécharger le logiciel {{< remote "Filius" "https://www.lernsoftware-filius.de/Herunterladen" >}}
+- Télécharger le logiciel {{< remote "Filius" "<https://www.lernsoftware-filius.de/Herunterladen>" >}}
 - **Attention :** Choisir la langue lors de la première ouverture du logiciel. En cas d’erreur, supprimer le dossier `.filius` contenant les paramètres de langues se trouvant dans `C:\Users\nom d’utilisateur sur le réseau\AppData\Local\.filius` (sous windows).
 {{% /note %}}
 
@@ -30,7 +30,7 @@ auto_numbering: true
 
 1. Sélectionner « Utiliser l'adresse IP comme nom ».
 
-1. Ralentir les animations de façon à pouvoir visualiser le chemin des segments : ramener le curseur placé juste à droite du bouton `Simulation` à 10 ou 0&nbsp;%.
+1. Ralentir les animations de façon à pouvoir visualiser le chemin des trames : ramener le curseur placé juste à droite du bouton `Simulation` à 10 ou 0&nbsp;%.
 
 1. Sur l'ordinateur portable installer les outils en ligne de commande : `Mode simulation` $\longrightarrow$ `Clic gauche` $\longrightarrow$ `Installation des logiciels` $\longrightarrow$ `Ligne de commande` $\longrightarrow$ `Appliquer les modifications`.
 
@@ -119,6 +119,7 @@ Cette table indique sur quel port se trouve chaque ordinateur (repéré par son 
 
 17. Créer le réseau local suivant :
 <img src="/terminales-nsi/chap-11/chap-11-4-2.png" alt="" width="" />
+
 Les masques de sous-réseau sont :
     - 255.255.255.0 pour le sous-réseau connecté au switch A ;
     - 255.255.0.0 pour le sous-réseau connecté au switch B.
