@@ -200,17 +200,74 @@ La communication n'a toujours pas lieu.
 L'ordinateur du sous-réseau B doit lui aussi avoir une passerelle définie.
 {{% /solution %}}
 
-25. Examiner la table `arp` de l'ordinateur du sous-réseau A qui vient de communiquer avec l'ordinateur du sous-réseau B. Existe-t-il une entrée pour l'ordinateur du sous-réseau B ? Quelle est l'entrée qui existe ?
+Associer une passerelle à tous les ordinateurs.
+
+25. Examiner la table `arp` de l'ordinateur du sous-réseau A qui vient de communiquer avec l'ordinateur du sous-réseau B. Existe-t-il une entrée pour l'ordinateur du sous-réseau B ? À quel ordinateur est associée l'entrée présente dans la table ?
 {{% solution "Réponse" %}}
 Il n'existe aucune entrée pour l'ordinateur du sous-réseau B mais une entrée pour l'interface du routeur appartenant au sous-réseau A.
 {{% note tip %}}
-La couche de liaison ne définit **aucune connexion directe entre deux ordinateurs**. Les ordinateurs envoient toujours des **segments** (niveau 2) sur le réseau local. Lorsque l'ordinateur destinataire ne se trouve pas sur le réseau local, c'est au routeur d'acheminer correctement les **paquets** (niveau 3).
+La couche de liaison ne définit **aucune connexion directe entre deux ordinateurs**. Les ordinateurs envoient toujours des **trames** (niveau 2) sur le réseau local. Lorsque l'ordinateur destinataire ne se trouve pas sur le réseau local, c'est au routeur d'acheminer correctement les **paquets** (niveau 3).
 {{% /note %}}
 {{% /solution %}}
 
-26. Lancer la commande `traceroute` vers l'ordinateur du sous-réseau B. À quoi correspond le retour de cette commande ?
+26. De la même façon, examiner la table `arp` de l'ordinateur du sous-réseau B qui vient de communiquer avec l'ordinateur du sous-réseau A. Existe-t-il une entrée pour l'ordinateur du sous-réseau A ? À quel ordinateur est associée l'entrée présente dans la table ?
+{{% solution "Réponse" %}}
+Il n'existe aucune entrée pour l'ordinateur du sous-réseau A mais une entrée pour l'interface du routeur appartenant au sous-réseau B.
+{{% /solution %}}
+
+27. Quelle conclusion peut-on déduire des deux observations précédentes ?
+{{% solution "Réponse" %}}
+
+{{% note tip %}}
+
+Les trames ne traversent pas les routeurs et ne peuvent pas se propager dans des réseaux différents.
+
+{{% /note %}}
+
+{{% /solution %}}
+
+28. Lancer la commande `traceroute` vers l'ordinateur du sous-réseau B. À quoi correspond le retour de cette commande ?
 {{% solution "Réponse" %}}
 `traceroute` donne le chemin suivi par les paquets.
+{{% /solution %}}
+
+29. Quelle première action doit effectuer un ordinateur qui doit envoyer un **paquet** sur un réseau qui n'est pas celui auquel il appartient ?
+{{% solution "Réponse" %}}
+
+L'ordinateur doit dans un premier temps déterminer l'adresse MAC du routeur (passerelle) sur son réseau.
+
+Cette étape nécessite la diffusion d'une trame de découverte tel qu'expliqué dans les premières étapes de ce document.
+
+{{% /solution %}}
+
+30. Quelles informations contiennent la trame et le paquet formés et envoyés par un ordinateur qui doit envoyer un **paquet** sur un réseau qui n'est pas celui auquel il appartient ?
+{{% solution "Réponse" %}}
+
+{{% note tip %}}
+
+- Trame (couche de liaison ou niveau 2 du modèle OSI):
+  - Addresse MAC source : son adresse MAC
+  - Adresse MAC de destination : l'adresse MAC du **routeur**
+- Paquet (couche réseau ou niveau 3 du modèle OSI) :
+  - Addresse IP source : son adresse IP
+  - Addresse IP de destination : l'adresse IP de l'**ordinateur appartenant à l'autre sous-réseau**
+
+{{% /note %}}
+
+{{% /solution %}}
+
+31. Quelles actions un routeur effectue-t-il lorsqu'il reçoit une **trame** ?
+{{% solution "Réponse" %}}
+
+{{% note tip %}}
+
+- Le routeur déconstruit la trame ;
+- Le routeur lit l'adresse IP de destination du paquet en lisant l'entête de ce paquet ;
+- Le routeur prend une décision de routage ;
+- Le routeur recontruit une trame qui encapsule le paquet et contient comme adresse MAC source son adresse MAC et comme addresse MAC de destination celle de l'ordinateur cible si ce dernier appartient au même sous-réseau que le routeur ou alors l'adresse MAC du prochain routeur.
+
+{{% /note %}}
+
 {{% /solution %}}
 
 ## Réseaux étendus
@@ -219,11 +276,11 @@ La couche de liaison ne définit **aucune connexion directe entre deux ordinateu
 Télécharger le fichier de configuration du {{< remote "réseau étendu" "/terminales-nsi/chap-11/chap-11-4-3.fls" >}}
 {{% /note %}}
 
-27. Lancer la commande `traceroute` depuis l'ordinateur M14 vers l'ordinateur M9. Noter la route empruntée par les paquets.
+32. Lancer la commande `traceroute` depuis l'ordinateur M14 vers l'ordinateur M9. Noter la route empruntée par les paquets.
 
-28. Afin de simuler une panne, supprimer le câble réseau qui relie le routeur F au routeur E et lancer à nouveau la commande `traceroute`. Les paquets issus de M14 parviennent-ils toujours en M9 ?
+33. Afin de simuler une panne, supprimer le câble réseau qui relie le routeur F au routeur E et lancer à nouveau la commande `traceroute`. Les paquets issus de M14 parviennent-ils toujours en M9 ?
 
 Remarque.
 : Cela peut ne pas fonctionner du premier coup, car la mise à jour des tables de routage n’est pas immédiate. Pour remédier à cela, faire un `ping` entre M14 et M9, si cela ne fonctionne pas (timeout), attendre quelques secondes et recommencer.
 
-29. Ouvrir les tables de routage de tous les routeurs qui sont intervenus dans la communication et expliquer le fonctionnement de ces tables.
+34. Ouvrir les tables de routage de tous les routeurs qui sont intervenus dans la communication et expliquer le fonctionnement de ces tables.
