@@ -1,6 +1,6 @@
 ---
 title: "Le routage entre réseaux IP"
-subtitle: "Chapitre 10,5"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-01-02T15:51:33+04:00
@@ -32,6 +32,7 @@ La plupart du temps, cependant, on n'attache qu'une seule interface à chaque ca
 - Tous les systèmes d'exploitation, pour des raisons de fonctionnement interne qui ne seront pas développées ici, définissent une interface dite de bouclage (**loopback**) dont l'adresse est `127.0.0.1`.
 
 {{% note exercise %}}
+
 1. Lancer un terminal.
 2. Entrer la commande `ipconfig /all` sous Windows ou `ifconfig` sous Linux ou OSX. Vérifier que l'interface de loopback est bien définie.
 3. Tapper la commande `ping 127.0.0.1` et vérifier que l'interface est bien active.
@@ -44,11 +45,11 @@ La plupart du temps, cependant, on n'attache qu'une seule interface à chaque ca
 ### Tables de routage
 
 {{% note normal %}}
+
 #### Les routeurs ne sont pas les seuls ordinateurs à posséder une table de routage
 
 Chaque ordinateur sur un réseau doit décider à qui transmettre les trames lorsqu'il doit dialoguer avec un autre ordinateur.
 {{% /note %}}
-
 
 À l'aide du logiciel Filius, on se connecte à une machine d'adresse IP `172.12.0.2` et on clique sur «&nbsp;Afficher le bureau&nbsp;».
 
@@ -59,7 +60,7 @@ On utilise la commande `route` dans le terminal et on obtient le résultat suiva
 
 {{% solution "Réponse" %}}
 
-Ligne 1 
+Ligne 1
 : La machine a pour adresse IP `172.12.0.2` (on le sait grâce au masque de sous-réseau `255.255.255.255` qui est le masque d'un hôte). Tout paquet destiné à cet ordinateur émis depuis cet ordinateur doit passer par l'interface de loopback.
 
 Ligne 2
@@ -135,10 +136,10 @@ La route par défaut, dans la table de routage passe par le routeur R4 qui, sauf
 </center>
 {{% /solution %}}
 
-
 ### Comment une décision de routage est-elle prise par un routeur ?
 
 {{% note tip %}}
+
 #### Algorithme de prise de décision
 
 - Un signal électrique (ou lumineux ou hertzien) parvient à l'une des cartes réseau du routeur.\
@@ -184,6 +185,7 @@ On compte dans ce sens un saut de plus car l'ordinateur d'adresse `192.168.3.11`
 
 16. Compléter la table de routage du routeur R3 de façon à ce que n'importe quel ordinateur puisse communiquer avec n'importe quel autre ordinateur.
 Ajouter aussi la passerelle par défaut, R4
+
 <center>
 
 | Destination   | Masque          | Passerelle    | Interface     |
@@ -226,11 +228,9 @@ Ajouter aussi la passerelle par défaut, R4
 Cette table de routage est complète, il n'est pas nécessaire d'ajouter quoi que ce soit. Tout paquet destiné à un réseau non présent dans cette table est envoyé à la passerelle par défaut qui s'occupe de le router au-delà du périmètre d'influence de R1.
 {{% /solution %}}
 
-
 ## Types de routage
 
 Si le réseau n'est pas trop étendu, il est possible de créer manuellement les tables de routage de chaque routeur (**routage statique**). Cependant, cette méthode n'est pas applicable sur des grands réseaux&nbsp;: les routeurs doivent alors mettre en œuvre des protocoles leurs permettant de construire et de partager automatiquement les tables de routage&nbsp;; on parle de **routage dynamique**.
-
 
 ### Intérêt d'un routage automatique
 
@@ -243,16 +243,15 @@ Si le réseau n'est pas trop étendu, il est possible de créer manuellement les
 - Les protocoles de routage doivent permettre de **compenser les pannes dans le réseau** : une fois une panne détectée, il faut transmettre l’information sur l’événement le plus rapidement possible pour que les différents routeurs recalculent par où faire passer leurs messages en contournant la liaison en panne.
 {{% /note %}}
 
-On laisse donc les routeurs mettre eux-mêmes à jour leur table de routage grâce à la mise en œuvre de *protocoles de routage*. 
+On laisse donc les routeurs mettre eux-mêmes à jour leur table de routage grâce à la mise en œuvre de *protocoles de routage*.
 
 {{% note normal %}}
 Initialement, les informations dont dispose un routeur sont celles sur ces voisins immédiats ainsi que les sous-réseaux auxquels il est connecté. En envoyant régulièrement des messages à ses voisins, et en évaluant le temps de réponse, il peut déterminer si un routeur fonctionne ou pas et en déduire si une liaison existe toujours ou est rompue. Il peut ensuite propager cette information à ses voisins qui peuvent eux-mêmes les transmettre à leurs voisins. *Ainsi, **de proche en proche**, tous les routeurs finissent par partager les mêmes connaissances sur la topologie du réseau*.
 {{% /note %}}
 
-
 ### Routing Information Protocol (RIP) : algorithme à vecteur de distances
 
-- RIP est historiquement le premier algorithme de routage. 
+- RIP est historiquement le premier algorithme de routage.
 
 {{% note tip %}}
 RIP recherche **le plus court chemin** selon un *critère de coût simple* : **le nombre de routeurs à traverser (hop)**.\
@@ -265,21 +264,21 @@ $$ \text{adresse} + \text{distance} = \text{vecteur} $$
 
 - Lors de l'**initialisation du routeur**, celui-ci détermine l'adresse réseau de ses interfaces puis *envoie sur chacune une demande d'informations (table RIP complète) aux routeurs voisins*.
 
-- Lors de la **réception d'une demande**, un *routeur envoie sa table complète ou partielle* suivant la nature de cette demande. 
+- Lors de la **réception d'une demande**, un *routeur envoie sa table complète ou partielle* suivant la nature de cette demande.
 
 - Lors de la **réception d'une réponse**, il met à jour sa table si besoin. Trois cas peuvent se présenter :
-	- pour une **nouvelle route**, il *incrémente la distance*, *vérifie que celle-ci est strictement inférieure à 15* et diffuse immédiatement le vecteur de distance correspondant ;
-	- pour une **route existante, mais avec une distance plus faible**, la table est mise à jour. La nouvelle distance et, éventuellement, l'adresse du routeur si elle diffère sont intégrées à la table ;
-	- pour une **route existante, mais avec une distance plus importante**, la table est mise à jour si la nouvelle distance est émise par le même routeur voisin que précédemment.
+  - pour une **nouvelle route**, il *incrémente la distance*, *vérifie que celle-ci est strictement inférieure à 15* et diffuse immédiatement le vecteur de distance correspondant ;
+  - pour une **route existante, mais avec une distance plus faible**, la table est mise à jour. La nouvelle distance et, éventuellement, l'adresse du routeur si elle diffère sont intégrées à la table ;
+  - pour une **route existante, mais avec une distance plus importante**, la table est mise à jour si la nouvelle distance est émise par le même routeur voisin que précédemment.
 
-	Bien sûr, si l'*appareil reçoit une route dont la distance est supérieure à celle déjà connue d'un autre voisin, RIP l'ignore*. 
-	
+ Bien sûr, si l'*appareil reçoit une route dont la distance est supérieure à celle déjà connue d'un autre voisin, RIP l'ignore*.
+ 
 - À intervalles réguliers (toutes les 30 secondes), la *table RIP est diffusée qu'il y ait ou non des modifications.*
 
 - Des routes doivent être retirées de la table gérée par RIP dans deux situations :
 
-	- en premier lieu, si un **réseau immédiatement connecté devient inaccessible** (panne de l'interface, de la ligne, modification de la topologie par l'administrateur, etc.), les routeurs RIP reliés à ce réseau affectent dans leur table une *distance «&nbsp;infinie&nbsp;»* (16 comme indiqué plus haut) à cette route. Elle est conservée pendant la durée d'un temporisateur de «&nbsp;maintien&nbsp;» (garbage collect) de 120 secondes puis est supprimée. Immédiatement après, le vecteur avec une distance «&nbsp;infinie&nbsp;» est diffusé. Un routeur qui reçoit un vecteur avec une distance de 16 comprend : «&nbsp;il faut que tu retires cette route de ta table, car elle est devenue invalide !&nbsp;» De proche en proche, cette information se propage ;
-	- en second lieu, **un routeur du réseau tombe en panne**. Cela veut peut-être dire que les réseaux situés derrière cet appareil sont devenus inaccessibles. Mais comment savoir si un routeur est en panne ? RIP considère qu'un routeur qui *n'a pas donné de nouvelles depuis trois minutes* est hors service. Pour gérer cette situation, il attribue à toutes les routes dynamiques un temporisateur initialisé à 180 secondes par défaut. À chaque réception d'un vecteur de distance déjà présent dans la table, le compteur est réinitialisé. Mais si jamais ce compteur atteint zéro, la route est considérée comme invalide. On se retrouve alors dans la situation précédente (distance infinie, temporisateur de maintien, diffusion de l'information puis suppression de la route). Maintenant, si un autre routeur connaît une route menant vers un des réseaux que l'on vient de retirer, c'est parfait ! Notre routeur intègrera cette nouvelle route dans sa table. De cette façon, RIP permet la tolérance aux pannes.
+  - en premier lieu, si un **réseau immédiatement connecté devient inaccessible** (panne de l'interface, de la ligne, modification de la topologie par l'administrateur, etc.), les routeurs RIP reliés à ce réseau affectent dans leur table une *distance «&nbsp;infinie&nbsp;»* (16 comme indiqué plus haut) à cette route. Elle est conservée pendant la durée d'un temporisateur de «&nbsp;maintien&nbsp;» (garbage collect) de 120 secondes puis est supprimée. Immédiatement après, le vecteur avec une distance «&nbsp;infinie&nbsp;» est diffusé. Un routeur qui reçoit un vecteur avec une distance de 16 comprend : «&nbsp;il faut que tu retires cette route de ta table, car elle est devenue invalide !&nbsp;» De proche en proche, cette information se propage ;
+  - en second lieu, **un routeur du réseau tombe en panne**. Cela veut peut-être dire que les réseaux situés derrière cet appareil sont devenus inaccessibles. Mais comment savoir si un routeur est en panne ? RIP considère qu'un routeur qui *n'a pas donné de nouvelles depuis trois minutes* est hors service. Pour gérer cette situation, il attribue à toutes les routes dynamiques un temporisateur initialisé à 180 secondes par défaut. À chaque réception d'un vecteur de distance déjà présent dans la table, le compteur est réinitialisé. Mais si jamais ce compteur atteint zéro, la route est considérée comme invalide. On se retrouve alors dans la situation précédente (distance infinie, temporisateur de maintien, diffusion de l'information puis suppression de la route). Maintenant, si un autre routeur connaît une route menant vers un des réseaux que l'on vient de retirer, c'est parfait ! Notre routeur intègrera cette nouvelle route dans sa table. De cette façon, RIP permet la tolérance aux pannes.
 
 <div style="text-align: right;">
 <a href="https://inetdoc.developpez.com/tutoriels/routage-dynamique-protocole-rip/#L3-1" target="_blank"> https://inetdoc.developpez.com/tutoriels/routage-dynamique-protocole-rip/#L3-1 </a>
@@ -292,11 +291,11 @@ Un routeur garde donc en mémoire, pour chaque réseau IP connu, l'adresse du ro
 {{% note tip %}}
 Les trois caractéristiques principales qui distinguent l’algorithme RIP de l’algorithme OSPF sont :
 
-- *La distance est mesurée en nombre de routeurs à traverser*. 
+- *La distance est mesurée en nombre de routeurs à traverser*.
 
 - *Aucun routeur n'a une vision globale du réseau*. Les routes sont connues de proche en proche.
 
-- Le protocole est *limité aux réseaux dont le plus long chemin implique quinze routeurs au maximum car la convergence des informations est très lente*. 
+- Le protocole est *limité aux réseaux dont le plus long chemin implique quinze routeurs au maximum car la convergence des informations est très lente*.
 {{% /note %}}
 
 Remarque
@@ -304,7 +303,6 @@ Remarque
 
 Remarque
 : Pour déterminer quelle est la meilleure route, le protocole RIP s'appuie sur l'algorithme de Bellman et Ford qui sera étudié un peu plus tard dans l'année.
-
 
 {{% note exercise %}}
 <img src="/terminales-nsi/chap-11/chap-11-5/chap-11-5-5.png" alt="" width="" />
@@ -338,11 +336,13 @@ Remarque
 {{% /note %}}
 
 {{% solution "Réponses" %}}
-1. 
-   - `10.0.0.0/8`: adresses de `10.0.0.1` à `10.255.255.254` (même chose pour tous les réseaux en `x.0.0.0/8`) ;
-   - `192.168.1.0/24`: adresses de `192.168.1.1` à `192.168.1.254` ;
-   - `192.168.2.0/24`: adresses de `192.168.2.1` à `192.168.2.254` ;
-2. 
+1.
+
+- `10.0.0.0/8`: adresses de `10.0.0.1` à `10.255.255.254` (même chose pour tous les réseaux en `x.0.0.0/8`) ;
+- `192.168.1.0/24`: adresses de `192.168.1.1` à `192.168.1.254` ;
+- `192.168.2.0/24`: adresses de `192.168.2.1` à `192.168.2.254` ;
+
+2.
    - $R_1$ : `192.168.1.254`, `10.0.0.1`, `20.0.0.1` ;
    - $R_2$ : `20.0.0.2`, `30.0.0.2`, `40.0.0.2` ;
    - $R_3$ : `30.0.0.1`, `50.0.0.1`, `70.0.0.2`, `10.0.0.2` ;
@@ -350,6 +350,7 @@ Remarque
    - $R_5$ : `192.168.2.254`, `60.0.0.1`, `70.0.0.1`.
 
 3. Table de routage de $R_1$ après initialisation :
+
 <center>
 
 | Destination   | Masque          | Passerelle | Interface       | Distance |
@@ -360,8 +361,10 @@ Remarque
 
 </center>
 
-4. 
-- Table de routage de $R_2$ après initialisation : 
+4.
+
+- Table de routage de $R_2$ après initialisation :
+
 <center>
 
 | Destination | Masque      | Passerelle | Interface  | Distance |
@@ -373,6 +376,7 @@ Remarque
 </center>
 
 - Table de routage de $R_3$ après initialisation :
+
 <center>
 
 | Destination | Masque      | Passerelle | Interface  | Distance |
@@ -385,6 +389,7 @@ Remarque
 </center>
 
 5. Après échange RIP entre $R_1$ et $R_3$, table de routage de $R_1$ :
+
 <center>
 
 | Destination   | Masque          | Passerelle | Interface       | Distance |
@@ -399,6 +404,7 @@ Remarque
 </center>
 
 6. Après échange RIP entre $R_1$ et $R_2$, table de routage de $R_1$ :
+
 <center>
 
 | Destination   | Masque          | Passerelle | Interface       | Distance |
@@ -414,6 +420,7 @@ Remarque
 </center>
 
 7. Table de routage finale de $R_1$ :
+
 <center>
 
 | Destination   | Masque          | Passerelle | Interface       | Distance |
@@ -474,6 +481,7 @@ Les débits de transmission sur les liaisons séries sont bien plus petits que c
 {{% /solution %}}
 
 {{% note tip %}}
+
 #### Notion de coût d'une liaison
 
 La notion de coût est directement liée au **débit des liaisons** entre les routeurs. Le **débit** correspond au *nombre de bits de données qu'il est possible de faire passer dans un réseau par seconde*. Le débit est donc donné en bits par seconde (bps) ou dans l'une des unités multiples.\
@@ -494,19 +502,18 @@ Soit le réseau dont la topologie est la suivante :
 
 Les adresses IP des routeurs sont les suivantes :
 
-- $A$ : 
-   - eth0 : `172.18.255.254`
-   - eth1 : `192.168.1.1`
-   - eth2 : `192.168.2.1`
+- $A$ :
+  - eth0 : `172.18.255.254`
+  - eth1 : `192.168.1.1`
+  - eth2 : `192.168.2.1`
 - $B$ :
-   - eth0 : `192.168.1.2`
-   - eth1 : `192.168.3.1`
-   - eth2 : `172.16.255.254`
+  - eth0 : `192.168.1.2`
+  - eth1 : `192.168.3.1`
+  - eth2 : `172.16.255.254`
 - $C$ :
-   - eth0 : `192.168.2.2`
-   - eth1 : `192.168.3.2`
-   - eth2 : `172.17.255.254`
-
+  - eth0 : `192.168.2.2`
+  - eth1 : `192.168.3.2`
+  - eth2 : `172.17.255.254`
 
 1. Établir la table de routage du routeur $A$ si on suppose que le protocole RIP est utilisé.\
 Utiliser le nom des interfaces (eth0, eth1, eth2) à la place des adresses IP dans la table de routage.
@@ -525,7 +532,6 @@ Utiliser le nom des interfaces (eth0, eth1, eth2) à la place des adresses IP da
 
 </center>
 {{% /solution %}}
-
 
 2. Quel est, d'après la table de routage ci-dessus, le chemin qui sera emprunté par un paquet pour aller d'une machine ayant pour adresse IP `172.18.1.1/16` à une machine ayant pour adresse IP `172.16.5.3/16` ?
 {{% solution "Réponse" %}}
