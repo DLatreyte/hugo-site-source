@@ -50,7 +50,7 @@ De façon générale, les **réactions d'ordre 1** appartiennent aux *réactions
 ### Schéma général
 
 {{% note warning %}}
-**Cette partie n'est pas explicitement au programme !!!** Seule sa conclusion (l'allure de la courbe) l'est. Elle n'est présente dans ce cours qu'afin de vous aider à comprendre l'origine de ce comportement.
+**Cette partie n'est pas explicitement au programme !!!** Seule sa conclusion (l'allure de la courbe) l'est. Elle n'est présente dans ce cours qu'afin de vous aider à comprendre l'origine de ce comportement... **et parce qu'elle est souvent apparue lors des sessions précédentes du Bac** !!!
 {{% /note %}}
 
 Pour introduire l'évolution de la concentration d'un réactif lors d'une réaction d'ordre 1, on va considérer la décomposition d'une entité $A$ dans une solution homogène de volume $V$, selon l'équation :
