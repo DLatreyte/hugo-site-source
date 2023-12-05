@@ -81,7 +81,7 @@ La vitesse volumique de disparition de ce réactif est donc *proportionnelle à 
 {{% solution "Réponse" %}}
 
 - $[A]\_0 = \dfrac{n_0}{V}$ ;
-- $[A] (t) = \dfrac{n_0 - x(t)}{V}$.
+- $[A] (t) = \dfrac{n_0 - x(t)}{V} = [A]\_0 - \dfrac{x(t)}{V}$.
 {{% /solution %}}
 
 <!--
@@ -132,7 +132,7 @@ avec $D$, $E$ et $F$ des constantes dont il faut déterminer l'expression.
 - $\dfrac{\mathrm{d} [A] }{\mathrm{dt}} = \dfrac{\mathrm{d} }{\mathrm{dt}} \left( D + E e^{(-t/F)} \right) = -\dfrac{E}{F}\\, e^{(-t/F)}$ puisque $D$ est une constante.
 
 - Par substitution dans l'équation différentielle on obtient :
- $-\dfrac{E}{F}\\, e^{(-t/F)} + k D + k E e^{(-t/F)} = 0 \iff \left( -\dfrac{1}{F} +  k \right) E e^{(-t/F)} = - kD$.
+ $$-\dfrac{E}{F}\\, e^{(-t/F)} + k D + k E e^{(-t/F)} = 0 \iff \left( -\dfrac{1}{F} +  k \right) E e^{(-t/F)} = - kD$$
 
 - La relation précédente doit être vraie quelle que soit la date $t$. Le terme à gauche de l'égalité ne peut donc pas dépendre du temps (puisque le terme de droit est constant). On doit avoir $-\dfrac{1}{F} +  k = 0$ ou $\boxed{F = \dfrac{1}{k}}$.
 
@@ -195,3 +195,9 @@ Le sucre de consommation est principalement constitué de saccharose, une moléc
 -->
 
 10. Tracer l'évolution de la valeur de la vitesse volumique de disparition en fonction de la concentration en en saccharose. Retrouver que la réaction chimique est d'ordre 1 et calculer à nouveau la valeur de la constante $k$.
+
+{{% note warning %}}
+
+C'est cette dernière question qui intervient systématiquement dans les exercices de Bac.
+
+{{% /note %}}
