@@ -94,9 +94,13 @@ Remarque
 L'ordinateur peut tout à fait envoyer un paquet vers l'ordinateur d'adresse `192.168.3.11` puisqu'il possède une route par défaut qui passe par le routeur R2, route qui mène au sous-réseau d'adresse `192.168.3.0`.
 {{% /solution %}}
 
-5. Même question pour l'envoi d'un paquet vers la machine d'adresse `192.168.1.10`.
+5. Même question pour l'envoi d'un paquet vers la machine d'adresse `192.168.1.10`.  
+Est-il nécessaire de formuler une hypothèse ?
 {{% solution "Réponse" %}}
-Lorsqu'on affiche la table de routage de cet ordinateur on constate qu'aucune entrée ne lui permet d'envoyer un paquet vers le réseau d'adresse `192.168.1.0/24` puisque ce réseau n'est pas le sien et que le routeur R2, passerelle par défaut pour cet ordinateur, n'a aucune connaissance de ce réseau.
+Lorsqu'on affiche la table de routage de cet ordinateur on constate qu'aucune entrée ne lui permet d'envoyer un paquet vers le réseau d'adresse `192.168.1.0/24` puisque ce réseau n'est pas le sien. Tout dépend donc de la configuration du routeur R2, passerelle par défaut pour cet ordinateur.
+
+- Si le routeur R2 n'a aucune connaissance de ce réseau, la machine ne peut pas envoyer un paquet vers celle d'adresse `192.168.1.10`.
+- Si le routeur R2 sait comment envoyer un paquet à ce réseau, la machine peut envoyer un paquet vers celle d'adresse `192.168.1.10`.
 {{% /solution %}}
 
 6. Se connecter l'ordinateur d'adresse IP `192.168.0.11`. Est-il capable d'envoyer un paquet vers la machine d'adresse IP `192.168.3.11` ? Justifier la réponse à partir de l'étude de la table de routage.
