@@ -143,12 +143,12 @@ La route par défaut, dans la table de routage passe par le routeur R4 qui, sauf
 #### Algorithme de prise de décision
 
 - Un signal électrique (ou lumineux ou hertzien) parvient à l'une des cartes réseau du routeur.\
-Le routeur *reconstruit la trame* contenant toutes les informations que transporte ce signal.
+Le routeur *déconstruit la trame* contenant toutes les informations que transporte ce signal.
 
 - Le routeur *lit l'adresse MAC du destinataire dans l'entête de la trame*.\
 Si cette adresse MAC n'est pas celle du routeur, la trame est rejetée. Si l'adresse MAC est bien celle du routeur, le routeur analyse l'adresse *IP du destinataire final*, présente dans l'entête du paquet contenu dans la trame.
 
-- Si l'*adresse IP du destinataire final appartient à un réseau auquel le routeur est directement connecté*, le routeur envoie directement l'information sur le bon réseau.
+- Si l'*adresse IP du destinataire final appartient à un réseau auquel le routeur est directement connecté*, le routeur envoie directement l'information sur le bon réseau (il reconstruit une nouvelle trame avec comme adresse MAC source son adresse, bien sûr).
 
 - Si l'*adresse IP du destinataire final appartient à un réseau qui apparaît dans la table de routage*, le routeur envoie l'information à la passerelle définie.
 
@@ -272,7 +272,7 @@ $$ \text{adresse} + \text{distance} = \text{vecteur} $$
   - pour une **route existante, mais avec une distance plus importante**, la table est mise à jour si la nouvelle distance est émise par le même routeur voisin que précédemment.
 
  Bien sûr, si l'*appareil reçoit une route dont la distance est supérieure à celle déjà connue d'un autre voisin, RIP l'ignore*.
- 
+
 - À intervalles réguliers (toutes les 30 secondes), la *table RIP est diffusée qu'il y ait ou non des modifications.*
 
 - Des routes doivent être retirées de la table gérée par RIP dans deux situations :
