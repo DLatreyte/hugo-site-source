@@ -38,17 +38,16 @@ Dans un réseau, les routeurs jouent un rôle essentiel dans la transmission de
 
 ## Sécurisation des communications
 
-La protection des données sensibles échangées est au cœur d’internet. Les notions de chiffrement et de déchiffrement de paquets pour les communications sécurisées sont explicitées.
+La protection des données sensibles échangées est au cœur d’internet. Les notions de chiffrement et de déchiffrement de paquets pour les communications sécurisées sont explicitées.
 
 ### Au programme
 
 | Contenus | Capacités attendues | Commentaire |
-|:----:|:----:|:----:|
-| Sécurisation des communications. | Décrire les principes de chiffrement symétrique (clef partagée) et asymétrique (avec clef privée/clef publique). Décrire l’échange d’une clef symétrique en utilisant un protocole asymétrique pour sécuriser une communication HTTPS. |Les protocoles symétriques et asymétriques peuvent être illustrés en mode débranché, éventuellement avec description d’un chiffrement particulier.
-La négociation de la méthode chiffrement du protocole SSL (Secure Sockets Layer) n’est pas abordée. |
+| ---- | ---- | ---- |
+| - Sécurisation des communications. | - Décrire les principes de chiffrement symétrique (clef partagée) et asymétrique (avec clef privée/clef publique).<br />- Décrire l’échange d’une clef symétrique en utilisant un protocole asymétrique pour sécuriser une communication HTTPS. |- Les protocoles symétriques et asymétriques peuvent être illustrés en mode débranché, éventuellement avec description d’un chiffrement particulier.<br />- La négociation de la méthode chiffrement du protocole SSL (Secure Sockets Layer) n’est pas abordée. |
 
 ### Documents
 
-- **Doc.** [*Cours*]()
+- **Doc.** [*Cours*](https://www.remnote.com/a/25022023/63fc4b5d35d23643c0cbda0c)
 
 - **Doc.** [*Réalisation d'un chiffrement symétrique*](7-chiffrement-symétrique)
