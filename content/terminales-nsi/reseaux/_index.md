@@ -50,4 +50,4 @@ La protection des données sensibles échangées est au cœur d’internet. Les 
 
 - **Doc.** [*Cours*](https://www.remnote.com/a/25022023/63fc4b5d35d23643c0cbda0c)
 
-- **Doc.** [*Réalisation d'un chiffrement symétrique*](7-chiffrement-symétrique)
+- **Doc.** [*Réalisation d'un chiffrement symétrique*](7-chiffrement-symetrique)
