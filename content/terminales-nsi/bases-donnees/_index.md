@@ -1,6 +1,6 @@
 ---
 title: "Bases de données"
-subtitle: "Chapitre 12"
+subtitle: ""
 author: ""
 type: ""
 date: 2021-01-18T17:54:59+04:00
