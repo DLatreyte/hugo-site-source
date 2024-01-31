@@ -105,7 +105,7 @@ Pour prédire le sens d'une transformation, il faut comparer la valeur du quotie
 
 $$Q\_{r,i} = \dfrac{\dfrac{[\ce{Zn^{2+}}]\_i}{C^o}}{\dfrac{[\ce{Cu^{2+}}]\_i}{C^o}} = \dfrac{[\ce{Zn^{2+}}]\_i}{[\ce{Cu^{2+}}]\_i}$$
 
-**A.N.** $Q\_{r,i} = \dfrac{\pu{0,10 mol.L-1}}{\pu{0,10 mol.L-1}} = \pu{1,0} < \pu{1,9e37}$
+**A.N.** $Q\_{r,i} = \dfrac{\pu{0 mol.L-1}}{\pu{0,10 mol.L-1}} = 0 < \pu{1,9e37}$
 
 On pouvait donc prévoir une évolution du système chimique dans le sens de la réaction chimique d'oxydoréduction.
 
@@ -157,6 +157,7 @@ La réaction étudiée met en jeu un **transfert direct d'électrons à la surfa
 7. Représenter sur un schéma annoté le circuit électrique pile - ampèremètre - conducteur ohmique. Indiquer le sens du courant électrique à l’extérieur de la pile et la valeur de son intensité.
 {{% solution "Réponse" %}}
 <img src="/terminales-pc/chap-10/chap-10-1/pile1.svg" alt="" width="50%" />
+
 {{% /solution %}}
 
 8. Indiquer sur le schéma précédent le sens de circulation des électrons à l'extérieur de la pile. Les électrons peuvent-ils circuler à l'intérieur de la pile&nbsp;?
@@ -173,6 +174,7 @@ La réaction étudiée met en jeu un **transfert direct d'électrons à la surfa
 - Aucun électron ne peut être créé par une réaction chimique. Les électrons qui quittent l'électrode de cuivre sont donc **libérés par une réaction chimique**.
 
 - La seule entité susceptible de libérer des électrons est le zinc *puisque c'est un réducteur*. On peut donc envisager la réaction d'équation :
+
 $$
     \ce{Zn (s) --> Zn^{2+} (aq) + 2 e-}
 $$
@@ -185,6 +187,7 @@ $$
 Les électrons sont donc **consommés par une réaction chimique**.
 
 - La seule entité susceptible de consommer des électrons est l'ion cuivre *puisque c'est un oxydant*. On peut donc envisager la réaction d'équation
+
 $$
     \ce{Cu^{2+} (aq) + 2e^ --> Cu (s)}
 $$
@@ -200,6 +203,7 @@ $$
 - **Le zinc est oxydé parce que le cuivre est réduit dans le même temps**. *Ces entités ne se rencontrent cependant jamais ; les électrons ne sont pas échangés directement lors d'une collision mais indirectement par l'intermédiaire du circuit électrique*.
 
 - Équation bilan ;
+
 $$
     \ce{Cu^{2+} (aq) + Zn (s) --> Cu (s) + Zn^{2+} (aq)}
 $$
@@ -230,6 +234,7 @@ On retrouve bien le sens d'évolution prédit et constaté dans la première par
 14. Reprendre le schéma de la question 7. et y ajouter toutes les entités microscopiques ainsi que leurs sens de circulation.
 {{% solution "Réponse" %}}
 <img src="/terminales-pc/chap-10/chap-10-1/pile2.svg" alt="" width="50%" />
+
 {{% /solution %}}
 
 15. Les ions du pont électrolytique jouent-ils bien le double rôle qu'on leur a attribué à la question 13.&nbsp;?
@@ -276,6 +281,7 @@ L'ensemble formé par **deux métaux plongeant chacun dans une solution contenan
 <img src="/terminales-pc/chap-10/chap-10-1/pile3.svg" alt="" width="50%" />
 
 - Schématisation formelle d'une pile :
+
 $$
 \boxed{
 \begin{array}{c c | c || c | c c}
@@ -286,6 +292,7 @@ $$
 
 17. Donner la schématisation de la pile étudiée dans la section 2.
 {{% solution "Réponse" %}}
+
 $$
 \boxed{
 \begin{array}{c c | c || c | c c}
@@ -364,6 +371,7 @@ $$ Q\_{r,eq} = K \qquad \text{et} \qquad I\_{eq} = 0 $$
 On associe une demi-pile $\ce{Cu^{2+}/Cu}$ telle que $[\ce{Cu^{2+}}]\_i = \pu{0,050 mol.L-1}$ à une demi-pile $\ce{Ag+/Ag}$ telle que $[\ce{Ag+}]\_i = \pu{0,010 mol.L-1}$, à l'aide d'un pont salin au nitrate d'ammonium.
 
 1. L'équation de la réaction d'oxydoréduction susceptible de se produire peut s'écrire :
+
 $$
     \ce{2 Ag (s) + Cu^{2+} (aq) <=> 2 Ag+ (aq) + Cu (s)}
 $$
@@ -382,6 +390,7 @@ de $I$ et le sens des électrons dans le circuit.
 
 1. $$
     Q\_{r,i} = \dfrac{[\ce{Ag+}]\_i^2}{[\ce{Cu^{2+}}]\_i \cdot C^o}
+
 $$
 
 avec $ C^o = \pu{1,00 mol.L-1}$.
