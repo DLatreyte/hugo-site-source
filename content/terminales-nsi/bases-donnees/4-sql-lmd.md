@@ -32,7 +32,7 @@ Le programme se limite au sous-ensemble **LMD**. Nous serons tout de même oblig
 
 ## SQLite
 
-Dans ce cours nous utiliserons SQLite depuis l'interface de {{< remote "Repl.it" "https://repl.it/" >}}.
+Dans ce cours nous utiliserons SQLite depuis l'interface de {{< remote "Repl.it" "<https://repl.it/>" >}}.
 
 SQLite est un **moteur de base de données relationnelle** (sous-ensemble d'un **SGBD**) accessible par le langage SQL. Contrairement aux serveurs de bases de données traditionnels, comme MySQL ou PostgreSQL, sa particularité est de ne pas reproduire le *schéma habituel client-serveur* mais de *fonctionner sans serveur* (on parle de *base de données « standalone » ou « embarquée »*). L'intégralité de la base de données (déclarations, tables, index et données) est stockée dans un fichier indépendant de la plateforme.
 
@@ -42,7 +42,7 @@ Remarque
 SQLite est le moteur de base de données le plus utilisé au monde.
 
 {{% note warning %}}
-Chaque SGBD possède, en plus du SQL, des commandes propres : {{< remote "section 3 de la documentation officielle" "https://sqlite.org/cli.html" >}} Ces dernières **commencent toujours par un point** en SQLite et **ne devront pas être apprises !**
+Chaque SGBD possède, en plus du SQL, des commandes propres : {{< remote "section 3 de la documentation officielle" "<https://sqlite.org/cli.html>" >}} Ces dernières **commencent toujours par un point** en SQLite et **ne devront pas être apprises !**
 {{% /note %}}
 
 ## Création d'une première base de données
@@ -66,7 +66,7 @@ On possède un fichier tableur contenant des informations sur quelques acteurs, 
 
 On souhaite transformer ce fichier en une base de données contenant, pour l'instant, *une seule relation*.
 
-1. Réaliser une copie de l'{{< remote "environnement de travail sur repl.it" "https://repl.it/@dlatreyte/Celebrites" >}}
+1. Réaliser une copie de l'{{< remote "environnement de travail sur repl.it" "<https://repl.it/@dlatreyte/Celebrites>" >}}
 
 L'instruction de création de la table (relation) est
 
@@ -303,7 +303,7 @@ WHERE Age > 40 OR Pays = "Australie";
 
 ### Les sportifs stars
 
-Écrire toutes les commandes correspondant au requêtes ci-dessous pour la base de donnée se trouvant à {{< remote "cette adresse" "https://repl.it/@dlatreyte/Sportifs-Stars" >}}
+Écrire toutes les commandes correspondant au requêtes ci-dessous pour la base de donnée se trouvant à {{< remote "cette adresse" "<https://repl.it/@dlatreyte/Sportifs-Stars>" >}}
 
 1. Donner le schéma relationnel de la base de données.
 2. Afficher les noms de tous les sportifs.
@@ -316,7 +316,7 @@ WHERE Age > 40 OR Pays = "Australie";
 
 ### Instagram
 
-Écrire toutes les commandes correspondant au requêtes ci-dessous pour la base de donnée se trouvant à {{< remote "cette adresse" "https://repl.it/@dlatreyte/Instagram" >}}
+Écrire toutes les commandes correspondant au requêtes ci-dessous pour la base de donnée se trouvant à {{< remote "cette adresse" "<https://repl.it/@dlatreyte/Instagram>" >}}
 
 1. Donner le schéma relationnel de la base de données.
 2. Afficher toutes les informations relatives aux utilisateurs qui ne sont pas des footballeurs.
@@ -499,9 +499,9 @@ WHERE Pays LIKE '%a%';
 
 {{% /solution %}}
 
-#### Exercice d'application
+#### Exercice d'application : base Animaux
 
-Écrire toutes les commandes correspondant au requêtes ci-dessous pour la base de donnée se trouvant à {{< remote "cette adresse" "https://repl.it/@dlatreyte/Animaux" >}}
+Écrire toutes les commandes correspondant au requêtes ci-dessous pour la base de donnée se trouvant à {{< remote "cette adresse" "<https://repl.it/@dlatreyte/Animaux>" >}}
 
 1. Rechercher toutes les informations sur les animaux dont le nom commence par la lettre `p`.
 
@@ -570,7 +570,7 @@ WHERE Nom = "Holland";
 
 #### Exercice d'application
 
-Écrire toutes les commandes correspondant au requêtes ci-dessous pour la base de donnée se trouvant à {{< remote "cette adresse" "https://repl.it/@dlatreyte/Superheroes-and-Villains" >}}
+Écrire toutes les commandes correspondant au requêtes ci-dessous pour la base de donnée se trouvant à {{< remote "cette adresse" "<https://repl.it/@dlatreyte/Superheroes-and-Villains>" >}}
 
 1. Écrire une requête qui affiche tous les enregistrements de la table « Superheroes and Villains ».
 
@@ -597,9 +597,9 @@ WHERE Nom = "Holland";
 ## Exercice d'application à partir de données réelles et conséquentes
 
 {{% note normal %}}
-Le document de travail se trouve à cette adresse : {{< remote "https://repl.it/@dlatreyte/Indicateurs-lycees-en-France" "https://repl.it/@dlatreyte/Indicateurs-lycees-en-France" >}}
+Le document de travail se trouve à cette adresse : {{< remote "<https://repl.it/@dlatreyte/Indicateurs-lycees-en-France>" "<https://repl.it/@dlatreyte/Indicateurs-lycees-en-France>" >}}
 {{% /note %}}
 
-La base de donnée contient tous les indicateurs des lycées français présentés sur le site de l’éducation nationale et dont les données sont en accès “libre” sur {{< remote "data.gouv.fr" "https://www.data.gouv.fr/fr/" >}}. La notice descriptive est fournie.
+La base de donnée contient tous les indicateurs des lycées français présentés sur le site de l’éducation nationale et dont les données sont en accès “libre” sur {{< remote "data.gouv.fr" "<https://www.data.gouv.fr/fr/>" >}}. La notice descriptive est fournie.
 
 - Écrire 10 requêtes qui vous semblerons utiliser au mieux cette base de données.
