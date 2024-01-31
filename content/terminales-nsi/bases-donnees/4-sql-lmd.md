@@ -568,7 +568,7 @@ WHERE Nom = "Holland";
 
 {{% /solution %}}
 
-#### Exercice d'application
+#### Exercice d'application : base Superhereos and Villains
 
 Écrire toutes les commandes correspondant au requêtes ci-dessous pour la base de donnée se trouvant à {{< remote "cette adresse" "<https://repl.it/@dlatreyte/Superheroes-and-Villains>" >}}
 
