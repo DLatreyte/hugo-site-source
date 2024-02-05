@@ -388,10 +388,7 @@ de $I$ et le sens des électrons dans le circuit.
 
 {{% solution "Réponses" %}}
 
-1. $$
-    Q\_{r,i} = \dfrac{[\ce{Ag+}]\_i^2}{[\ce{Cu^{2+}}]\_i \cdot C^o}
-
-$$
+1. $$ Q\_{r,i} = \dfrac{[\ce{Ag+}]\_i^2}{[\ce{Cu^{2+}}]\_i \cdot C^o} $$
 
 avec $ C^o = \pu{1,00 mol.L-1}$.
 
@@ -431,11 +428,13 @@ $$
 {{% note tip %}}
 
 - La **quantité d'électricité** $Q$ mise en jeu au cours du fonctionnement d'un générateur électrochimique est égale à la *valeur absolue de la charge totale des électrons échangés* :
+
 $$
     Q = n(e^-)\\, \cal{F}
 $$
 
 - Une pile, débitant un courant d'intensité constante $I$, pendant une durée $\Delta t$, fait circuler une quantité d'électricité $Q$ :
+
 $$
     Q = I\\, \Delta t
 $$

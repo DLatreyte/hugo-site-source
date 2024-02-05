@@ -23,7 +23,7 @@ comprendre plusieurs clés possibles ; ce sont les **clés candidates**.
 
 {{% note tip %}}
 *On appelle **clé primaire** d'une relation la clé
-minimale parmi toutes les clés candidates de la relation. Une clés
+minimale parmi toutes les clés candidates de la relation. Une clé
 primaire doit toujours contenir une valeur et celle-ci doit être unique
 pour chacun des enregistrements de la relation*
 {{% /note %}}
