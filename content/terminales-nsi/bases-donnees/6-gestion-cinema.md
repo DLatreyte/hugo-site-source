@@ -137,7 +137,7 @@ WHERE numfilm = 20;
 {{% solution "Réponse" %}}
 
 ```SQL
-SELECT titre
+SELECT DISTINCT titre
 FROM film, projection
 WHERE film.numfilm = projection.numfilm
 AND salle = 'Sud'
@@ -173,12 +173,10 @@ WHERE production = (SELECT production
 {{% solution "Réponse" %}}
 
 ```SQL
-SELECT libcat, COUNT(numfilm) AS 'Nbre films'
-FROM film f, categorie c
-WHERE f.codecat = c.codecat
-AND c.libcat = (SELECT libcat 
-                FROM categorie
-                WHERE libcat = "documentaire");
+SELECT COUNT(*) AS 'Nbre films'
+FROM film f
+JOIN categorie c ON f.codecat = c.codecat
+WHERE libcat = "documentaire";
 ```
 
 {{% /solution %}}
