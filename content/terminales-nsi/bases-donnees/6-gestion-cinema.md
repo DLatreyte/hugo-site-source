@@ -133,14 +133,14 @@ WHERE numfilm = 20;
 
 {{% /solution %}}
 
-9. Quels sont les noms des films diffusés en salle nord qui durent entre 60 et 120 minutes ?
+9. Quels sont les noms des films diffusés en salle Sud qui durent entre 60 et 120 minutes ?
 {{% solution "Réponse" %}}
 
 ```SQL
 SELECT titre
 FROM film, projection
 WHERE film.numfilm = projection.numfilm
-AND salle = 'Nord'
+AND salle = 'Sud'
 AND duree BETWEEN 60 AND 120;
 ```
 
