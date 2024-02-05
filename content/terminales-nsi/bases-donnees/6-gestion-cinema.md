@@ -15,7 +15,7 @@ auto_numbering: true
 
 > L'objectif de cette séance est de mettre en œuvre tous les concepts du chapitre.
 
-La base de donnée accessible à {{< remote "cette adresse" "https://repl.it/@dlatreyte/Cinema" >}} simule de façon simplifiée la gestion d'un cinéma.
+La base de donnée accessible à {{< remote "cette adresse" "<https://repl.it/@dlatreyte/Cinema>" >}} simule de façon simplifiée la gestion d'un cinéma.
 
 1. Étudier la structure de chacune des relations de la base et établir son schéma relationnel.\
 En particulier, faire apparaître les clés primaires et les clés étrangères.
@@ -117,7 +117,7 @@ WHERE seance = '11h00';
 ```SQL
 SELECT titre, duree
 FROM film
-WHERE numfilm = '20';
+WHERE numfilm = 20;
 ```
 
 {{% /solution %}}
@@ -128,7 +128,7 @@ WHERE numfilm = '20';
 ```SQL
 SELECT titre, (duree/60)
 FROM film
-WHERE numfilm = '20';
+WHERE numfilm = 20;
 ```
 
 {{% /solution %}}
@@ -141,7 +141,7 @@ SELECT titre
 FROM film, projection
 WHERE film.numfilm = projection.numfilm
 AND salle = 'Nord'
-AND duree BETWEEN '60' AND '120';
+AND duree BETWEEN 60 AND 120;
 ```
 
 {{% /solution %}}
