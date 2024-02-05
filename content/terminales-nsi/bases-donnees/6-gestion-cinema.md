@@ -267,9 +267,9 @@ FROM film ;
 {{% solution "Réponse" %}}
 
 ```SQL
-SELECT MIN(seance)
+SELECT MIN(seance) AS 'Première séance'
 FROM projection
-WHERE date='2005/11/18';
+WHERE date = '2005/11/18';
 ```
 
 {{% /solution %}}
@@ -283,12 +283,12 @@ SELECT numfilm, titre
 FROM film
 WHERE duree = (SELECT duree
                FROM film
-               WHERE numfilm='71');
+               WHERE numfilm = 71);
 ```
 
 {{% /solution %}}
 
-21. Quel le numéro et le titre des films de la même catégorie que Super Mondet XII ?\
+21. Quel est le numéro et le titre des films de la même catégorie que Super Mondet XII ?\
 Utiliser deux requêtes imbriquées.
 {{% solution "Réponse" %}}
 
@@ -312,9 +312,18 @@ WHERE f.numfilm = p.numfilm
 AND seance IN ('11h00','13h10','14h50');
 ```
 
+ou
+
+```SQL
+SELECT DISTINCT titre
+FROM film f 
+JOIN projection p ON f.numfilm = p.numfilm
+WHERE seance IN ('11h00', '13h10', '14h50');
+```
+
 {{% /solution %}}
 
-23. Quels sont les films (numéro et titre) plus longs que la moyenne ?\
+23. Quels sont les films (numéro et titre) plus longs que la moyenne de tous les films ?\
 Utiliser deux requêtes imbriquées.
 {{% solution "Réponse" %}}
 
@@ -327,7 +336,7 @@ WHERE duree > (SELECT AVG(duree)
 
 {{% /solution %}}
 
-24. Quels films (numéro, titre, salle et séance) sont programmés aux mêmes horaires ?\
+24. Quels films (numéro, salle et séance) sont programmés aux mêmes horaires ?\
 Utiliser une autojointure.
 {{% solution "Réponse" %}}
 
