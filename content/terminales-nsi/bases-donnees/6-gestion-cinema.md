@@ -187,13 +187,13 @@ WHERE libcat = "documentaire";
 ```SQL
 SELECT titre
 FROM film
-WHERE duree = '140'
+WHERE duree = 140
 AND production = 'UGC';
 ```
 
 {{% /solution %}}
 
-14. Quels sont les titres des films commençant par C et L (triés par ordre alphabétique) ?
+14. Quels sont les titres des films commençant par C ou L (triés par ordre alphabétique) ?
 {{% solution "Réponse" %}}
 
 ```SQL
@@ -224,7 +224,7 @@ ORDER BY titre;
 ```SQL
 SELECT DISTINCT titre, duree
 FROM film, projection
-WHERE film.numfilm=projection.numfilm
+WHERE film.numfilm = projection.numfilm
 AND salle != 'Nord';
 ```
 
@@ -239,6 +239,16 @@ FROM film, projection
 WHERE film.numfilm=projection.numfilm
 AND seance LIKE '11h%'
 AND salle IN ('Nord','Centrale');
+```
+
+ou
+
+```SQL
+SELECT DISTINCT titre
+FROM film f
+JOIN projection p ON f.numfilm = p.numfilm 
+WHERE seance = '11h00' 
+    AND (salle = 'Nord' OR salle = 'Centrale');
 ```
 
 {{% /solution %}}
