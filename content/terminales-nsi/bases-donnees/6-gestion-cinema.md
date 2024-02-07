@@ -352,7 +352,7 @@ AND p1.numfilm != p2.numfilm;
 25. Quelle est le titre, la salle, la séance et la durée (en heure) des films projeté. En utilisant la fonction ROUND(<champ ou formule>,<nb décimales>) ?{{% solution "Réponse" %}}
 
 ```SQL
-SELECT titre, salle, seance, ROUND(duree/60,1) AS 'duree'
+SELECT titre, salle, seance, ROUND(duree/60.,1) AS 'duree'
 FROM film f, projection p
 WHERE f.numfilm = p.numfilm;
 ```
