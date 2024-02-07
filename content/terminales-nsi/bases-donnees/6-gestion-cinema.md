@@ -363,12 +363,18 @@ WHERE f.numfilm = p.numfilm;
 {{% solution "Réponse" %}}
 
 ```SQL
-
+SELECT DISTINCT titre
+FROM film f, projection p
+WHERE f.numfilm NOT IN (
+    SELECT f.numfilm
+    FROM film f, projection p
+    WHERE f.numfilm = p.numfilm
+);
 ```
 
 {{% /solution %}}
 
-27. Quels sont les trois films qui sont les plus diffusés ? cc) Quel est le film le plus diffusé ?
+27. Quel est le film le plus diffusé ?
 {{% solution "Réponse" %}}
 
 ```SQL
