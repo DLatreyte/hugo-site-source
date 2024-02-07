@@ -363,7 +363,7 @@ WHERE f.numfilm = p.numfilm;
 {{% solution "Réponse" %}}
 
 ```SQL
-SELECT DISTINCT titre
+SELECT DISTINCT titre, f.numfilm
 FROM film f, projection p
 WHERE f.numfilm NOT IN (
     SELECT f.numfilm
@@ -412,7 +412,7 @@ WHERE salle = 'Sud';
 
 {{% /solution %}}
 
-30. Une erreur s’est glissée dans la table projection : l’horaire de 13h10 est à remplacé par 19h30 pour la salle sud.
+30. Une erreur s’est glissée dans la table projection : l’horaire de 13h10 est à remplacer par 19h30 pour la salle sud.
 {{% solution "Réponse" %}}
 
 ```SQL
@@ -424,7 +424,7 @@ WHERE seance = '13h10'
 
 {{% /solution %}}
 
-31. Mettre à jour la table projection en majorant de 1 € les films dont les séances sont à 14h50 ; de 2 € pour les séances à 19h30.
+31. Mettre à jour la table projection en ajoutant 1 € au prix des films dont les séances sont à 14h50 et 2 € au prix des films dont les séances sont à 19h30.
 {{% solution "Réponse" %}}
 
 ```SQL
@@ -439,7 +439,7 @@ WHERE seance = '19h30';
 
 {{% /solution %}}
 
-32. Mettre à jour la table projection en majorant le 10% les films en projection le 18/11.
+32. Mettre à jour la table projection en ajoutant 10% au tarif des films projectés le 18/11.
 {{% solution "Réponse" %}}
 
 ```SQL
