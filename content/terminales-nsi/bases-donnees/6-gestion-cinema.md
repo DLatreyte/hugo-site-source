@@ -439,7 +439,7 @@ WHERE seance = '19h30';
 
 {{% /solution %}}
 
-32. Mettre à jour la table projection en ajoutant 10% au tarif des films projectés le 18/11.
+32. Mettre à jour la table projection en augmentant de 10% le tarif des films projectés le 18/11.
 {{% solution "Réponse" %}}
 
 ```SQL
@@ -450,7 +450,7 @@ WHERE date = '2005/11/18';
 
 {{% /solution %}}
 
-33. Mettre à jour la table projection en majorant de 25% les films n°10 et n°50.
+33. Mettre à jour la table projection en augmentant de 25% le tarif des films n°10 et n°50.
 {{% solution "Réponse" %}}
 
 ```SQL
