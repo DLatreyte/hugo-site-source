@@ -60,7 +60,7 @@ SELECT classe FROM eleves;
 
 {{% /solution %}}
 
-4. Afficher les titres des livres et les annees d’édition classé selon l’année.
+4. Afficher les titres des livres et les annees d’édition classés selon les années.
 {{% solution "Réponse" %}}
 
 ```sql

@@ -70,10 +70,11 @@ Remarque
 
 ### Analyse de la partie expérimentale
 
-1. Compléter la partie «&nbsp;Variables du problème&nbsp;», dans le fichier accessible à <a href="https://dlatreyte.github.io/jupyter-lite/lab?path=term-spe-pc%2FAcide-Base%2FConstante-acidite-acide-ethanoique-eleves.ipynb" target="_blank">cette adresse</a>.
+1. Compléter la partie «&nbsp;Variables du problème&nbsp;», dans le fichier accessible à partir de classroom.
 
 2. Compléter la partie «&nbsp;Détermination des valeurs de la variable $x$&nbsp;».
 Pour chaque solution,
+
 $$
     x = \log\left( \dfrac{V_B}{V_A} \right)
 $$
@@ -99,6 +100,7 @@ On a déjà vu que l'acide acétique et l'ion acétate réagissent très peu ave
 6. Exprimer, en fonction des grandeurs $C_A$, $C_B$, $V_A$, $V_B$, les concentrations de $[\ce{CH3CO2H}]\_{eq}$ et $[\ce{CH3CO2^-}]\_{eq}$.
 
 7. En déduire que
+
 $$
 \log \left( \dfrac{[\ce{CH3CO2^-}]\_{eq}}{[\ce{CH3CO2H}]\_{eq}} \right) = \log\left( \dfrac{V_B}{V_A} \right)
 $$
@@ -113,6 +115,6 @@ $$
 
 {{% solution "Corrigé" %}}
 
-{{% remote "Corrigé" "https://dlatreyte.github.io/jupyter-lite/lab?path=term-spe-pc%2FAcide-Base%2FConstante-acidite-acide-ethanoique.ipynb" %}}
+{{% remote "Corrigé" "<https://dlatreyte.github.io/jupyter-lite/lab?path=term-spe-pc%2FAcide-Base%2FConstante-acidite-acide-ethanoique.ipynb>" %}}
 
 {{% /solution %}}
