@@ -37,7 +37,7 @@ Dans ce chapitre, on introduit les outils qui permettent de comparer entre eux l
 
 1. À quelle conclusion doit nous mener la première remarque du document ?
 {{% solution "Réponse" %}}
-L'eau pure n'est donc pas uniquement composée de molécules d'eau mais aussi d'ions.
+L'eau pure n'est pas uniquement composée de molécules d'eau mais aussi d'ions.
 {{% /solution %}}
 
 2. À quelle conclusion doit nous mener la seconde remarque du document ?
@@ -66,7 +66,7 @@ $$\ce{H2O + H2O <=> H3O+ + OH- (aq)}$$ est appelée **autoprotolyse de l'eau**.
 On remarque que la réaction d'autoprotolyse de l'eau, **lorsqu'elle est seule**, impose $[\ce{H3O+}] = [\ce{HO-}]$ dans l'eau.
 
 Remarque
-: Lorsque la réaction d'autoprotolyse de l'eau n'est pas la seule réaction acide-base se déroulant dans la solution, en général, $[\ce{H3O+}] \neq [\ce{HO-}]$
+: Lorsque la réaction d'autoprotolyse de l'eau n'est pas la seule réaction acide-base se déroulant dans la solution, en général, $[\ce{H3O+}] \neq [\ce{HO-}]$.
 
 ### Avancement final de la réaction d'autoprotolyse de l'eau
 
@@ -82,14 +82,16 @@ $n(\ce{H2O}) = \dfrac{m(\ce{H2O})}{M(\ce{H2O})} = \dfrac{\pu{1,00E3 g}}{\pu{18,0
 5. Déterminer l'avancement final de la transformation modélisée par la réaction d'autoprotolyse de l'eau.
 {{% solution "Réponse" %}}
 
-- *Avancement final* $x\_f$ est tel que $n\_f(\ce{H3O+}) = x\_f$. On $n\_f(\ce{H3O+}) = V \\, [\ce{H3O+}] = \pu{1,0e-7 mol}$.
+- *Avancement final* $x\_f$ est tel que $n\_f(\ce{H3O+}) = x\_f$.  
+On a donc $n\_f(\ce{H3O+}) = V \\, [\ce{H3O+}] = \pu{1,0e-7 mol}$.
 
 {{% /solution %}}
 
-6. Le système chimique est-il réellement modifié par la cette réaction ?
+6. Le système chimique est-il réellement modifié par la cette réaction chimique ?
 {{% solution "Réponse" %}}
 
-- *Avancement maximal* $x\_{max}$ est tel qu'il n'y a plus d'eau dans l'état final. Donc $x\_{max} = \pu{55,6 mol}$ ;
+- *Avancement maximal* $x\_{max}$ est tel qu'il n'y a plus d'eau dans l'état final.  
+On détermine donc que $x\_{max} = \pu{55,6 mol}$ ;
 
 - $\tau = \dfrac{x\_f}{x\_{max}} = \dfrac{\pu{1,0e-7 mol}}{\pu{55,6 mol}} = \pu{1,8e-9}$.
 
@@ -424,6 +426,7 @@ Finalement
 $$\pu{7,6} < \text{pH} < \pu{8,2}$$
 
 2. La relation $\text{pH} = \text{pK}\_a + \log \left( \dfrac{[\ce{ClO-}]}{[\ce{HClO}]}   \right)$ conduit à
+
 $$
     \log \left( \dfrac{[\ce{ClO-}]}{[\ce{HClO}]}   \right) = \text{pH} - \text{pK}\_a
 $$
