@@ -480,7 +480,7 @@ donc&nbsp;:
 
 En solution aqueuse, un acide $\alpha$-aminé
 existe essentiellement sous la forme d'ions dipolaires appelés
-**amphions** et **zwitterions**.
+**amphions** ou **zwitterions**.
 
 Un amphion résulte du **transfert interne d'un proton** du groupe
 carboxyle vers le groupe amine d'un acide $\alpha$-aminé. Ce transfert
