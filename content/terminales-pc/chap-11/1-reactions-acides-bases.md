@@ -469,7 +469,7 @@ $\alpha$-aminés, $\beta$-aminés, $\gamma$-aminés ou $\delta$-aminés.
 
 Un acide aminé est dit $\alpha$-aminé si le *groupe
 amine* est porté par l'atome de carbone voisin de celui qui porte le
-groupe carboxyle . La formule générale d'un acide $\alpha$-aminé est
+groupe carboxyle. La formule générale d'un acide $\alpha$-aminé est
 donc&nbsp;:
 <img src="/terminales-pc/chap-11/chap-11-1/chap-11-1-4.png" alt="" width="35%" />
 {{% /note %}}
@@ -483,7 +483,7 @@ existe essentiellement sous la forme d'ions dipolaires appelés
 **amphions** et **zwitterions**.
 
 Un amphion résulte du **transfert interne d'un proton** du groupe
-carboxyle vers le groupe amine d'une acide $\alpha$-aminé. Ce transfert
+carboxyle vers le groupe amine d'un acide $\alpha$-aminé. Ce transfert
 est **une réaction acido-basique intramoléculaire**.
 
 <img src="/terminales-pc/chap-11/chap-11-1/chap-11-1-5.png" alt="" width="75%" />
