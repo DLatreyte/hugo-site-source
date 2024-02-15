@@ -186,3 +186,92 @@ La complexité de l'algorithme est donc en $O(\log_2 n)$ ; elle est bien meilleu
 - L'efficacité d'un algorithme qui s'appuit sur le paradigme « Diviser pour régner » dépend de l'implémentation de la récursivité par le langage choisi.
 
 {{% /note %}}
+
+## Exercice : recherche dichotomique
+
+6. Écrire le code de la fonction `recherche1` dont la spécification est la suivante :
+
+```python
+def recherche1(liste: list[int], val: int) -> int:
+    """
+    Retourne l'indice de la valeur dans la liste si cette 
+    dernière est présente, -1 sinon.
+
+    HYPOTHÈSE : val est unique si présente.
+
+    Algorithme itératif.
+    """
+```
+
+{{% solution "Réponse" %}}
+
+```python
+def recherche1(liste: list[int], val: int) -> int:
+    """
+    Retourne l'indice de la valeur dans la liste si cette 
+    dernière est présente, -1 sinon.
+
+    HYPOTHÈSE : val est unique si présente.
+
+    Algorithme itératif.
+    """
+    g = 0               # indice le plus petit
+    d = len(liste) - 1  # indice le plus grand
+
+    trouve = False
+    while (g < d) and not trouve:
+        m = (g + d) // 2  # indice milieu
+        if liste[m] == val:
+            trouve = True
+        elif liste[m] > val:
+            d = m - 1
+        else:
+            g = m + 1
+    return m if trouve else -1
+```
+
+{{% /solution %}}
+
+7. Tester la fonction `recherche1`.
+
+8. Écrire le code de la fonction `recherche2` dont la spécification est la suivante :
+
+```python
+def recherche2(liste: list[int], val: int, g: int, d: int) -> bool:
+    """
+    Retourne l'indice de la valeur dans la liste si cette 
+    dernière est présente, -1 sinon.
+
+    HYPOTHÈSE : val est unique si présente.
+
+    Algorithme récursif.
+    """
+```
+
+{{% solution "Réponse" %}}
+
+```python
+def recherche2(liste: list[int], val: int, g: int, d: int) -> bool:
+    """
+    Retourne l'indice de la valeur dans la liste si cette 
+    dernière est présente, -1 sinon.
+
+    HYPOTHÈSE : val est unique si présente.
+
+    Algorithme récursif.
+    """
+    if g > d:
+        return -1
+    else:
+        m = (g + d) // 2  # indice milieu
+        if liste[m] == val:
+            return m
+        elif liste[m] > val:
+            return recursive(liste, val, g, m - 1)
+        else:
+            return recursive(liste, val, m + 1, d)
+```
+
+{{% /solution %}}
+
+9. Tester la fonction `recherche2`.
