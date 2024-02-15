@@ -429,7 +429,7 @@ On peut montrer que la *hauteur de l'arbre des appels récursifs* est voisine (e
 1. Étudier le code suivant et remplacer les ... pour chaque numéro.
 
 ```python
-def tri_fusion(S: List[int]) -> None:
+def tri_fusion(S: list[int]) -> None:
     """
     Implémentation du tri fusion.
     La liste S est modifiée en place.
@@ -455,7 +455,7 @@ def tri_fusion(S: List[int]) -> None:
 2. Étudier le code suivant et expliquer comment s'effectue la fusion.
 
 ```python
-def fusion(S1: List[int], S2: List[int], S: List[int]) -> None:
+def fusion(S1: list[int], S2: list[int], S: list[int]) -> None:
     """
     Combine les éléments des deux listes S1 et S2 dans la liste S (en place).
     i est le nombre d'élément(s) de S1 copié(s) dans S. 
