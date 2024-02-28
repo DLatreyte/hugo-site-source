@@ -6,7 +6,7 @@ type: ""
 date: 2021-01-30T21:29:18+04:00
 draft: false
 toc: true
-tags: []
+tags: ["Constante d'équilibre", "pKa", "pH", "Domaine de prédominance"]
 categories: ["Chimie", "Terminale Spé PC"]
 image: ""
 solution_est_visible: true
@@ -70,6 +70,7 @@ L'utilisation d'un tableau d'avancement permet de conclure que $n\_0(\ce{C6H5CO2
 {{% /solution %}}
 
 5. Montrer qu'on peut exprimer la constante d'acidité $K\_A$ sous la forme
+
 $$
     K\_A = \dfrac{c\_A \cdot \tau^2}{C^o \\, (1 - \tau)}
 $$

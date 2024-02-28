@@ -6,8 +6,8 @@ type: ""
 date: 2021-02-27T11:27:34+04:00
 draft: false
 toc: true
-tags: []
-categories: []
+tags: ["Constante d'équilibre", "pKa", "pH", "Domaine de prédominance"]
+categories: ["Terminale Spé PC"]
 image: ""
 solution_est_visible: true
 auto_numbering: true
@@ -94,6 +94,7 @@ Remarques :
 - Le volume de la solution $U_S$ est supposé constant (la dilution est négligée).
 
 10. En supposant que $x_f$ est négligeable par rapport au produit $C_S\cdot U_S$, montrer que :
+
 $$
     K \approx \dfrac{x_f^2}{C_S\cdot U_S^2 \cdot C^o}
 $$

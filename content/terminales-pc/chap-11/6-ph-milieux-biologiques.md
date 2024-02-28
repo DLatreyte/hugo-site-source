@@ -6,7 +6,7 @@ type: ""
 date: 2021-01-31T18:45:28+04:00
 draft: false
 toc: true
-tags: []
+tags: ["Constante d'équilibre", "pKa", "pH", "Domaine de prédominance"]
 categories: ["Terminale Spé PC"]
 image: ""
 solution_est_visible: true

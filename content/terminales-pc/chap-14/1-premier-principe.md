@@ -45,6 +45,7 @@ $\Delta E_M = E_M (t_{\infty}) - E_M(t = 0) = - \dfrac{1}{2}\\, m\\, v_0^2 < 0$.
 2. Donner, après application du théorème de l'énergie cinétique, l'expression de la valeur de la force de frottements solides (force non conservative constante) dans le cas de l'expérience proposée.
 {{% solution "Réponse" %}}
 $\Delta E_M = E_M (t_{\infty}) - E_M(t = 0) = W(\vec{f}) = \vec{f} \cdot \overrightarrow{AB}$ donc $- \dfrac{1}{2}\\, m\\, v_0^2 = -f \cdot d$ où $d = \Vert \overrightarrow{AB} \Vert$. Finalement
+
 $$
     f = \dfrac{1}{2}\\, \dfrac{m\\, v_0^2}{d}
 $$
@@ -116,8 +117,8 @@ $$ E_t = E_M + U$$
 L'énergie totale d'un système est une **grandeur conservative**.
 {{% /note %}}
 
-Remarque:
-Seules les variations de l'énergie totale d'un système ont un sens physique.
+Remarque
+: Seules les variations de l'énergie totale d'un système ont un sens physique.
 
 ## Comment varie l'énergie totale $E_t$ d'un système lorsqu'il n'est pas isolé ?
 

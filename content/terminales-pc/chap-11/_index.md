@@ -24,7 +24,7 @@ layout: "single"
 
 ----
 
-- {{< remote "Évolution spontanée d'un système chimique sur le Livre Scolaire" "http://LLS.fr/PCTP175" >}}
+- {{< remote "Évolution spontanée d'un système chimique sur le Livre Scolaire" "<http://LLS.fr/PCTP175>" >}}
 
 ----
 
@@ -45,3 +45,7 @@ layout: "single"
 - **Doc.** [*Annale : Le bleu de bromophénol*](8-annale-bleu-de-bromophenol)
 
 - **Doc.** [*Annale : Propriétés des solutions d'ammoniac*](9-annale-solutions-ammoniac)
+
+<!--
+- **Doc.** [*Exercices du livre numérique Hatier*](10-livre-hatier)
+-->

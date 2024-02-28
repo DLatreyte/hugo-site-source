@@ -6,8 +6,8 @@ type: ""
 date: 2021-02-27T10:49:40+04:00
 draft: false
 toc: true
-tags: []
-categories: []
+tags: ["Constante d'équilibre", "pKa", "pH", "Domaine de prédominance"]
+categories: ["Terminale Spé PC"]
 image: ""
 solution_est_visible: true
 auto_numbering: true
@@ -27,6 +27,7 @@ On considère un volume $V = \pu{100 mL}$ de solution $S_0$ dont le pH est de 4,
 2. Donner la définition d’un acide selon Brønsted.
 
 3. L’équation de la réaction de $\ce{HIn}$ avec l’eau est :
+
 $$
     \ce{HIn (aq) + H2O <=> In^− (aq) + H3O+}
 $$
@@ -41,6 +42,7 @@ $$
 7. En déduire le taux d’avancement final. La transformation chimique modélisée par cette réaction est-elle totale ?
 
 8. En utilisant la ligne décrivant l’état intermédiaire du tableau d’avancement, justifier que pour toute valeur de l’avancement $x$ on a la relation :
+
 $$
     n(\ce{HIn}) + n(\ce{In^−}) = n_0
 $$
@@ -99,6 +101,7 @@ On admet que, pour toutes les solutions obtenues par mélange des solutions $S_1
 - $[\ce{HIn}] + [\ce{In^−}] = C_0$.
 
 13. Montrer que l’absorbance $A$ d’un mélange quelconque est donnée par :
+
 $$
     A = k\\, [\ce{In^−}]
 $$

@@ -71,7 +71,7 @@ def sous_tab_max(tab: List[int]) -> int:
 
 {{% solution "Réponse" %}}
 
-On retrouve deux boucles imbriquées dans la fonction, la complexité est donc en $O(n)$.
+On retrouve deux boucles imbriquées dans la fonction, la complexité est donc en $O(n^2)$.
 
 {{% /solution %}}
 
