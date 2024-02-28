@@ -83,7 +83,7 @@ Le tableau initial est scindé en deux parties de tailles à peu près égales (
 
 <img src="/terminales-nsi/chap-10/chap-10-4/chap-10-4-1.png" alt="" width=80% />
 
-La procédure est récursive. Pour « sortir » des appels récursifs, il est nécessaire de ren- contrer un « couple de données-paramètres » (transmis à l’appel) dont la solution est triviale. C’est le cas si le tableau est composé d’au plus un élément.
+La procédure est récursive. Pour « sortir » des appels récursifs, il est nécessaire de rencontrer un « couple de données-paramètres » (transmis à l’appel) dont la solution est triviale. C’est le cas si le tableau est composé d’au plus un élément.
 
 3. Écrire le code de la fonction `somme_max` dont la spécification est&nbsp;:
 
