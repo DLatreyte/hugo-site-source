@@ -91,7 +91,7 @@ def somme_a_rendre(prix: int, montant_client: int) -> int:
 3. Définir la fonction `pieces_a_rendre` dont la spécification est :
 
 ```python
-def pieces_a_rendre(somme: int, pieces: List[int]) -> List[int]:
+def pieces_a_rendre(somme: int, pieces: list[int]) -> list[int]:
     """
     Détermine les pièces (et leur nombre) à choisir pour rendre la somme
     passée en argument.
@@ -103,7 +103,7 @@ def pieces_a_rendre(somme: int, pieces: List[int]) -> List[int]:
 {{% solution "Réponse" %}}
 
 ```python
-def pieces_a_rendre(somme: int, pieces: List[int]) -> List[int]:
+def pieces_a_rendre(somme: int, pieces: list[int]) -> list[int]:
     """
     Détermine les pièces (et leur nombre) à choisir 
     pour rendre la somme passée en argument.
@@ -124,7 +124,7 @@ def pieces_a_rendre(somme: int, pieces: List[int]) -> List[int]:
     return list(reversed(a_rendre))
 
 
-def pieces_a_rendre_2(somme: int, pieces: List[int]):
+def pieces_a_rendre_2(somme: int, pieces: list[int]):
     a_rendre = {}
 
     i = len(pieces) - 1
@@ -136,7 +136,7 @@ def pieces_a_rendre_2(somme: int, pieces: List[int]):
     return a_rendre
 
 
-def pieces_a_rendre_3(somme: int, pieces: List[int]) -> List[int]:
+def pieces_a_rendre_3(somme: int, pieces: list[int]) -> list[int]:
     a_rendre = [0] * len(pieces)
 
     i = len(pieces) - 1
@@ -204,7 +204,7 @@ Cet algorithme retourne une solution optimale mais calcule plusieurs fois les m�
 5. Réfléchir au code de la fonction dont la spécification est :
 
 ```python
-def nb_rendre(a_rendre: int, pieces: List[int]) -> int:
+def nb_rendre(a_rendre: int, pieces: list[int]) -> int:
     """
     Détermine le nombre minimal de pièces
     à rendre.
@@ -217,7 +217,7 @@ def nb_rendre(a_rendre: int, pieces: List[int]) -> int:
 {{% solution "Réponse" %}}
 
 ```python
-def nb_rendre(a_rendre: int, pieces: List[int]) -> int:
+def nb_rendre(a_rendre: int, pieces: list[int]) -> int:
     """
     Détermine le nombre minimal de pièces
     à rendre.
@@ -273,9 +273,9 @@ On peut bien sur créer une fonction enveloppe qui ne prendrait que la somme et 
 
 ```python
 def pieces_a_rendre(somme: int,
-                   pieces: Tuple[int],
-                   serie: List[int],
-                   series: List[Tuple[int]]) -> None:
+                   pieces: tuple[int],
+                   serie: list[int],
+                   series: list[Tuple[int]]) -> None:
     """
     Détermine toutes les combinaisons de pièces qui permettent de rendre la somme somme.
     """
@@ -331,7 +331,7 @@ La programmation dynamique est, en général, appliquée aux **problèmes d’op
 {{% solution "Réponse" %}}
 
 ```python
-def nb_rendre(a_rendre: int, pieces: List[int]) -> int:
+def nb_rendre(a_rendre: int, pieces: list[int]) -> int:
     """
     Détermine le nombre minimal de pièces
     à rendre.
@@ -340,7 +340,7 @@ def nb_rendre(a_rendre: int, pieces: List[int]) -> int:
     """
     dic_a_rendre = {0: 0}
 
-    def _nb_rendre(a_rendre: int, pieces: List[int], dic: Dict[int, int]) -> int:
+    def _nb_rendre(a_rendre: int, pieces: list[int], dic: dict[int, int]) -> int:
         """
         Version mémoïsée de la fonction nb_rendre.
         """
@@ -442,7 +442,7 @@ Le code se trouve à : {{< remote "cette adresse" "<https://replit.com/@dlatreyt
 {{% solution "Réponse" %}}
 
 ```python
-def nb_rendre(a_rendre: int, pieces: List[int]) -> int:
+def nb_rendre(a_rendre: int, pieces: list[int]) -> int:
     """
     Détermine le nombre minimal de pièces
     à rendre.
@@ -470,10 +470,8 @@ def nb_rendre(a_rendre: int, pieces: List[int]) -> int:
 """
 Les mille et unes façon de rendre la monnaie.
 """
-from typing import List, Dict
 
-
-def glouton(somme: int, pieces: List[int]) -> int:
+def glouton(somme: int, pieces: list[int]) -> int:
     """
     Retourne le nombre de pièces nécessaires pour 
     rendre la monnaie pour somme.
@@ -490,7 +488,7 @@ def glouton(somme: int, pieces: List[int]) -> int:
     return nbre
 
 
-def force_brute(somme: int, pieces: List[int]) -> int:
+def force_brute(somme: int, pieces: list[int]) -> int:
     """
     Retourne le nombre de pièces nécessaires pour 
     rendre la monnaie pour somme.
@@ -511,8 +509,8 @@ def force_brute(somme: int, pieces: List[int]) -> int:
 
 
 def memoisation(somme: int,
-                pieces: List[int],
-                memo: Dict[int, int] = {0: 0}) -> int:
+                pieces: list[int],
+                memo: dict[int, int] = {0: 0}) -> int:
     """
     Retourne le nombre de pièces nécessaires pour 
     rendre la monnaie pour somme.
@@ -531,7 +529,7 @@ def memoisation(somme: int,
     return memo[somme]
 
 
-def tabulaire(somme: int, pieces: List[int]) -> int:
+def tabulaire(somme: int, pieces: list[int]) -> int:
     """
     Retourne le nombre de pièces nécessaires pour 
     rendre la monnaie pour somme.
