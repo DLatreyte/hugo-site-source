@@ -254,9 +254,9 @@ Le code se trouve à : {{< remote "cette adresse" "<https://replit.com/@dlatreyt
 
 ```python
 def pieces_a_rendre(somme: int,
-                   pieces: Tuple[int],
-                   serie: List[int],
-                   series: List[Tuple[int]]) -> None:
+                   pieces: tuple[int],
+                   serie: list[int],
+                   series: list[Tuple[int]]) -> None:
     """
     Détermine toutes les combinaisons de pièces qui permettent de rendre la somme somme.
     pieces est le tuple des pièces disponibles.
