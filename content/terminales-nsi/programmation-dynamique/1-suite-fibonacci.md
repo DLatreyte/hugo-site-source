@@ -349,6 +349,7 @@ Une **fonction mémoïsée** *stocke les valeurs renvoyées par ses appels préc
 10. Écrire l'arbre des appels récursifs pour $n=5$, lorsque la technique de mémoïsation est mise en œuvre. Le comparer à l'arbre obtenu à la question 6.
 {{% solution "Réponse" %}}
 <img src="/terminales-nsi/chap-14/chap-14-1/chap-14-1-2.svg" alt="" width="60%" />
+
 {{% /solution %}}
 
 11. Définir la fonction `fibo_memo` qui calcule le terme de rang $n$ de la suite de Fibonacci, *sans oublier le jeu de tests*. Le raisonnement doit être récursif et mettre en œuvre la technique de mémoïsation (méthode descendante).
@@ -365,7 +366,7 @@ def fibo_memo1(n: int) -> int:
     """
     dic = {0: 0, 1: 1}
 
-    def _fibo(n: int, dic: "Dict[int: int]") -> int:
+    def _fibo(n: int, dic: "dict[int: int]") -> int:
         if n in dic.keys():
             return dic[n]
         else:
@@ -378,7 +379,7 @@ def fibo_memo1(n: int) -> int:
 ou
 
 ```python
-def fibo_memo2(n: int, tab: List[int] = [0, 1]) -> int:
+def fibo_memo2(n: int, tab: list[int] = [0, 1]) -> int:
     """
     Version mémoïsée de Fibonacci.
 
