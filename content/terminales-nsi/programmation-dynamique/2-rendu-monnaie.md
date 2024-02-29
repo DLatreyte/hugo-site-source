@@ -39,13 +39,15 @@ En procédant ainsi, **on résout le problème étape par étape** et **un choix
 Le corrigé se trouve à cette adresse : {{< remote "https://repl.it/@dlatreyte/rendudemonnaie" "https://repl.it/@dlatreyte/rendudemonnaie" >}}
 {{% /note %}} -->
 
+<!--
 1. Importer le module typing au début du fichier :
 
 ```python
 from typing import List
 ```
+-->
 
-2. Préparer le code suivant et étudier sa structure :
+1. Préparer le code suivant et étudier sa structure :
 
 ```python
 if __name__ == "__main__":
@@ -58,12 +60,12 @@ if __name__ == "__main__":
     a_rendre = somme_a_rendre(prix, client)
     comment = pieces_a_rendre(a_rendre, pieces)
 
-    reponse = ["{} piece(s) de {}".format(comment[i], pieces[i]) for i in range(len(pieces))]
+    reponse = [f"{comment[i]} piece(s) de {pieces[i]}" for i in range(len(pieces))]
     print(f"Je dois rendre : {a_rendre}")
     print(f"Je donne donc : {reponse}")
 ```
 
-3. Définir la fonction `somme_a_rendre` dont la spécification est :
+2. Définir la fonction `somme_a_rendre` dont la spécification est :
 
 ```python
 def somme_a_rendre(prix: int, montant_client: int) -> int:
@@ -86,7 +88,7 @@ def somme_a_rendre(prix: int, montant_client: int) -> int:
 
 {{% /solution %}}
 
-4. Définir la fonction `pieces_a_rendre` dont la spécification est :
+3. Définir la fonction `pieces_a_rendre` dont la spécification est :
 
 ```python
 def pieces_a_rendre(somme: int, pieces: List[int]) -> List[int]:
