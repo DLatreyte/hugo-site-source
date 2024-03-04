@@ -280,7 +280,7 @@ L'application numérique donne $T = \pu{422 K}$.
 6. Généraliser le cas précédent à la situation où on utiliserait $n$ vitres.
 {{% solution "Réponse" %}}
 
-Si on utilise $n$ vitres, $\varphi \_{CN} = (n + 1) \varphi \_{s}$ et $T =  \dfrac{(n + 1) \varphi \_{s}}{\sigma} $.
+Si on utilise $n$ vitres, $\varphi \_{CN} = (n + 1) \varphi \_{s}$ et $T =  \left( \dfrac{(n + 1) \varphi \_{s}}{\sigma} \right)^{1 / 4} $.
 
 {{% /solution %}}
 
