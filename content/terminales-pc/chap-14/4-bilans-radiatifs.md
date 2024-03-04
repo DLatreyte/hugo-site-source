@@ -166,7 +166,7 @@ On étudie l'effet de serre produit par l'interposition d'une vitre au-dessus d'
 
 <img src="/terminales-pc/chap-14/chap-14-3/chap-14-3-1.png" alt="" width="80%" />
 
-1. On suppose l'équilibre radiatif de la plaque. écrire l'équation qui traduit
+1. On suppose l'équilibre radiatif de la plaque. Écrire l'équation qui traduit
 cet équilibre.
 
 {{% solution "Réponse" %}}
