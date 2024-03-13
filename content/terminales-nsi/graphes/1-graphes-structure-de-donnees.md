@@ -13,10 +13,10 @@ solution_est_visible: true
 auto_numbering: true
 ---
 
-- {{< remote "Cours et exercices non corrigés" "/terminales-nsi/chap-15/chap-15-1/1-Graphes-Introduction-Q.pdf" >}}
+- {{< remote "Cours et exercices non corrigés" "/terminales-nsi/chap-15/chap-15-1/Introduction-graphes-Q.pdf" >}}
 
 {{% solution "Solutions" %}}
-{{< remote "Cours et exercices corrigés" "/terminales-nsi/chap-15/chap-15-1/1-Graphes-Introduction-QR.pdf" >}}
+{{< remote "Cours et exercices corrigés" "/terminales-nsi/chap-15/chap-15-1/Introduction-graphes-QR.pdf" >}}
 {{% /solution %}}
 
 <!--
