@@ -66,7 +66,7 @@ def __str__(self: GrapheM) -> str:
 3. Écrire le code d'une fonction `main` qui permet de tester l'implémentation de la classe et la représentation du graphe à l'écran.\
 Choisir comme matrices tests
 $$
-    M_1 =
+M_1 =
     \begin{pmatrix}
         1 & 1 & 0 \cr
         0 & 1 & 1 \cr

@@ -29,5 +29,3 @@ layout: "single"
 | Diversité et unité des langages de programmation | Repérer, dans un nouveau langage de programmation, les traits communs et les traits particuliers à ce langage. | Les manières dont un même programme simple s’écrit dans différents langages sont comparées. |
 
 ## Document
-
-- **Chap. 1,1 :** [Accès au cours]({{< relref "/premieres-nsi/chap-01/chap-01.pdf" >}})
