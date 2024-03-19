@@ -7,7 +7,7 @@ date: 2021-04-22T04:48:57+04:00
 draft: false
 toc: true
 tags: []
-categories: []
+categories: ["Terminales Spé NSI", "Informatique"]
 image: ""
 solution_est_visible: true
 auto_numbering: true
@@ -65,6 +65,7 @@ def __str__(self: GrapheM) -> str:
 
 3. Écrire le code d'une fonction `main` qui permet de tester l'implémentation de la classe et la représentation du graphe à l'écran.\
 Choisir comme matrices tests
+
 $$
 M_1 =
     \begin{pmatrix}
@@ -435,4 +436,4 @@ def mat_to_lst(self: GrapheM) -> GrapheL:
 
 ## Code complet
 
-{{< remote "Code complet en ligne" "https://replit.com/join/yugulkal-dlatreyte" >}}
+{{< remote "Code complet en ligne" "<https://replit.com/join/yugulkal-dlatreyte>" >}}

@@ -32,6 +32,8 @@ layout: "single"
 
 - **Doc.** [*Représentation d'un graphe en informatique*](2-representation-graphe)
 
+- **Doc.** [*Représentation d'un graphe en informatique, deuxième version*](2-representation-graphe-bis)
+
 <!--
 - **Doc.** [Parcours de graphes](3-parcours-graphes)
 -->
