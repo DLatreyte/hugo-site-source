@@ -14,9 +14,9 @@ auto_numbering: true
 ---
 
 > L'objectif de ce document est de présenter à partir de l'exemple de l'équilibre d'estérification-hydrolyse des méthodes généralisables que le chimiste utilise au quotidien pour répondre aux questions :
-
-- Comment accélérer une transformation lente ?
-- Comment augmenter le rendement d'une transformation limitée ?
+>
+> - Comment accélérer une transformation lente ?
+> - Comment augmenter le rendement d'une transformation limitée ?
 
 ## Équilibre estérification - hydrolyse
 
@@ -91,6 +91,7 @@ On réalise l'hydrolyse, en milieu acide et en présence d'un excès d'eau, d'un
 {{% solution "Solution" %}}
 1. L'acide obtenu est l'acide éthanoïque $\ce{CH3-CO2H}$. L'alcool obtenu est le 3-phénylpropan-1-ol $\ce{HO-CH2-CH2-CH2-C6H5}$.
 2. La stœchiométrie de la réaction est telle qu'il se forme autant d'acide que d'alcool. Le rendement s'écrit donc :
+
 $$
     \eta = \dfrac{n\_f(\text{alcool})}{n\_i(\text{ester})} = \dfrac{m\_f(\text{alcool})}{n\_i(\text{ester})\cdot M(\text{alcool})}
 $$
@@ -120,19 +121,24 @@ Pictogrammes présents sur l'étiquette d'un flacon de méthanol :
 {{% /note %}}
 {{% solution "Solution" %}}
 1. Lacide benzoïque réagit avec le méthanol selon l'équation :
+
 $$
     \ce{C6H5-CO2H + CH3-OH <=> C6H5-CO2-CH3 + H2O}
 $$
+
 2. En chauffant, on accélère la réaction. C'est à l'ébullition, température maximale que peut atteindre le mélange, que la vitesse de la réaction est la plus élevée.
 Le condenseur à eau du montage à reflux refroidit les vapeurs qui s'élèvent et les condense. Le liquide alors obtenu retourne dans le ballon, ce qui permet d'éviter la perte de réactifs et de produits par évaporation.
 3. Le méthanol est un liquide toxique dont il convient d'éviter de respirer les vapeurs ; d'où la nécessité d'effectuer cette synthèse sous la hotte. Inflammable, on devra le manipuler en l'absence de toute flamme.
 4.
 
 - La quantité d'acide utilisé pour cette synthèse est :
+
 $$
     n\_i(\text{acide}) = \dfrac{m\_i (\text{acide})}{M(\text{acide})} = \dfrac{\pu{12,2 g}}{\pu{122,0 g.mol-1}} = \pu{0,100 mol}
 $$
+
 - La quantité d'alcool utilisé est :
+
 $$
     n\_i(\text{alcool}) = \dfrac{m\_i (\text{alcool})}{M(\text{alcool})} = \dfrac{V\_i (\text{alcool}) \cdot \mu (\text{alcool})}{M(\text{alcool})}
 $$
@@ -149,12 +155,14 @@ Le rendement vaut 75 %.
 {{% note tip %}}
 
 - Un ester peut être obtenu par la réaction d'un acide $\ce{R-CO2-H}$ avec un alcool $\ce{R'-OH}$ suivant l'équation :
+
 $$
     \ce{R-CO2-H (liq) + R'-OH (liq) <=> R-CO2-R' (liq) + H2O (liq)}
 $$
 Les ions H+ catalysent cette synthèse.
 
 - L'eau hydrolyse l'ester $\ce{R-CO2-R'}$ pour donner l'acide carboxylique $\ce{R-CO2-H}$ et l'alcool $\ce{R'-OH}$ correspondants suivant l'équation :
+
 $$
     \ce{R-CO2-R' (liq) + H2O (liq) <=> R-CO2-H (liq) + R'-OH (liq)}
 $$
@@ -166,6 +174,7 @@ Cet état est atteint lorsque *la vitesse de formation de l'ester par la réacti
 - *Toute transformation modélisée par une réaction d'estérification ou d'hydrolyse est **lente** et **limitée**.*
 
 - L'équilibre d'estérification-hydrolyse est caractérisé par la constante d'équilibre $K$ telle que, pour l'équation écrite dans le send de l'estérification :
+
 $$
     K = \dfrac{[\text{ester}]\\, [\text{eau}]}{[\text{acide}]\\, [\text{alcool}]}
 $$
@@ -276,9 +285,11 @@ Comment le système chimique réagit-il à une modification de l'un des facteurs
 {{% /note %}}
 {{% solution "Solution" %}}
 1. Si le système est à l'équilibre :
+
 $$
     K = Q\_{r,eq} = \dfrac{n\_{eq}(\text{ester})\\, n\_{eq}(\text{eau})}{n\_{eq}(\text{acide})\\, n\_{eq}(\text{alcool})}
 $$
+
 2. Si à ce système, on ajoute de l'alcool, le quotient de réaction diminue, $Q\_r < Q\_{r,eq}$.
 3. Puisque $Q\_r < Q\_{r,eq}=K$, le critère d'évolution nous apprend que le système doit évoluer de façon à ce que la valeur du quotient de réaction augmente.\
 Le système consomme les réactifs et évolue dans le sens direct.
