@@ -239,12 +239,12 @@ def recuperation_sommet(self: Graphe, s: str) -> Sommet:
     Récupère le sommet de valeur s.
     Lève une exception si le sommet n'existe pas.
     """
-    sommet_recherche = False
-    for sommet in self.sommets:
-        if sommet.val == s:
-            sommet_recherche = sommet
-            break
-    return sommet_recherche
+	if not self.existe_sommet(s):
+	    raise Exception(f"Le sommet {s} n'existe pas.")
+
+	for objet_sommet in self.sommets:
+	    if objet_sommet.val == s:
+	        return objet_sommet
 ```
 
 {{% /solution %}}
@@ -271,19 +271,10 @@ def existe_arête(self, s1: str, s2: str) -> bool:
     Ne vérifie pas l'existence de l'arête {s2, s1}.
     Lève une exception si l'un des sommets n'existe pas.
     """
-    if not self.existe_sommet(s1):
-        raise Exception(f"Sommet {s1} n'existe pas !")
-    if not self.existe_sommet(s2):
-        raise Exception(f"Sommet {s2} n'existe pas !")
+	objet_sommet_depart = self.recuperation_sommet(s1)
+	objet_sommet_arrivee = self.recuperation_sommet(s2)
 
-    sommet_depart = self.recuperation_sommet(s1)
-    sommet_destination = self.recuperation_sommet(s2)
-
-    arete_existe = False
-    if sommet_destination in sommet_depart.adj:
-        arete_existe = True
-
-    return arete_existe
+	return objet_sommet_arrivee in objet_sommet_depart.adj
 ```
 
 {{% /solution %}}
@@ -356,8 +347,7 @@ def est_non_oriente(self: Graphe) -> bool:
     """
     for sommet1 in self.sommets:
         for sommet2 in sommet1.adj:
-            if not (self.existe_arête(sommet1.val, sommet2.val)
-                    and self.existe_arête(sommet2.val, sommet1.val)):
+            if not self.existe_arête(sommet2.val, sommet1.val):
                 return False
     return True
 ```
