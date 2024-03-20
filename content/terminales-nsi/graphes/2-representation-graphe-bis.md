@@ -486,7 +486,7 @@ Il est possible de compléter la classe en définissant les méthodes suivantes 
 - `taille`, de spécification :
 
     ```python
-    def taille(self: Graphe) -> None:
+    def taille(self: Graphe) -> int:
         """
         Retourne le nombre de sommets dans le graphe.
         """
