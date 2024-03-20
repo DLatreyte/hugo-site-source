@@ -265,3 +265,19 @@ Il faut protéger le groupe carboxyle de la molécule $A$ et le groupe amine de 
 {{% note tip %}}
 La synthèse d’un dipeptide (ou d’un polypeptide) nécessite d’utiliser des groupes protecteurs et des groupes activants.
 {{% /note %}}
+
+## Synthèse éco-responsable
+
+{{% note tip %}}
+
+Pour être **éco-responsable**, une synthèse doit :
+
+- Économiser les atomes, c'est à dire maximiser leur présence dans le produit de la synthèse (par opposition aux auxtres produits, qui ne constituent pas l'objet premier de la synthèse) ;
+
+- Favoriser l'utilisation de catalyseurs afin de diminuer la consommation d’énergie, d’augmenter la sélectivité des réactions et de diminuer les quantités de réactifs ;
+
+- Favoriser les réactifs les moins toxiques possibles pour l'environnement ;
+
+- Utiliser des solvants verts, c'est à dire faiblement toxiques pour l'environnement, facilement récupérables et recyclables. Ils doivent cependant permettre de maintenir les caractéristiques de la réaction, telles que les vitesses de réaction et les rendements.
+
+{{% /note %}}
