@@ -73,7 +73,7 @@ Lorsqu’on fait réagir de l’aspirine avec de la soude à température ambian
 {{% solution "Solution" %}}
 1. <img src="/terminales-pc/chap-17/chap-17-2/aspirine-hydroxyle-1.png" alt="" width="" />
 2. La réaction est sélective puisque seul le groupe carboxyle réagit.\
-Les ions hydroxyle sont chimiosélectifs.
+Les ions hydroxyde sont chimiosélectifs.
 {{% /solution %}}
 
 {{% note exercise %}}
@@ -119,7 +119,7 @@ Justifier cette affirmation en écrivant la demi-équation électronique.
 7. À quoi sert l’étape 1 du protocole ?
 8. Quelle est la fonction, lors de cette synthèse, du groupe acétal ?
 9. À quoi servent les étapes 2 et 3 de la synthèse ?
-10. Il existe un autre réducteur l’hydrure de diisobutylaluminium, noté DIBAL, capable de réduire les esters en aldéhydes (en utilisant 2 moles de réactif par mole d’ester on peut même aller jusqu’aux alcools) mais pas capable de réduire les cétones.\
+10. Il existe un autre réducteur l’hydrure de diisobutylaluminium, noté DIBAL, capable de réduire les esters en aldéhydes (*en utilisant 2 moles de réactif par mole d’ester on peut même aller jusqu’aux alcools*) mais pas capable de réduire les cétones.\
 Expliquer pourquoi il aurait été préférable de privilégier ce réaction comparativement à $\ce{LiAlH4}$.
 11. Le DIBAL peut-il alors être qualifié de chimiosélectif pour cette réaction ?
 
@@ -186,6 +186,7 @@ La tyrosine, la glycine, la phénylalanine et la méthionine sont nécessaires �
 
 3. Compléter l'équation de réaction ci-dessous entre un acide carboxylique et une amine. Entourer et nommer le nouveau groupe fonctionnel.
 <img src="/terminales-pc/chap-17/chap-17-2/fabrication-amide.png" alt="" width="80%" />
+
 {{% solution "Solution" %}}
 <img src="/terminales-pc/chap-17/chap-17-2/fabrication-amide-sol.png" alt="" width="75%" />
 On fabrique une amide.
@@ -209,6 +210,7 @@ que l’on notera :<img src="/terminales-pc/chap-17/chap-17-2/reactif-b-bis.png"
 5. Il est possible d'obtenir 4 polypeptides à partir de ces deux réactifs. Les formules topologiques de deux d'entre eux sont données ci-dessous (la première est la Met-enképhaline). Donner celles des deux autres.
 {{< columns >}}
 <img src="/terminales-pc/chap-17/chap-17-2/polypeptide-1.png" alt="" width="60%" />
+
 {{< column >}}
 <img src="/terminales-pc/chap-17/chap-17-2/polypeptide-2.png" alt="" width="60%" />
 {{< endcolumns >}}
