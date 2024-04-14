@@ -6,7 +6,7 @@ type: ""
 date: 2021-04-22T04:48:57+04:00
 draft: false
 toc: true
-tags: []
+tags: ["Graphe", "Structure de données"]
 categories: ["Terminales Spé NSI", "Informatique"]
 image: ""
 solution_est_visible: true

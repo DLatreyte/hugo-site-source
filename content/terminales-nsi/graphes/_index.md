@@ -6,8 +6,8 @@ type: ""
 date: 2021-04-20T04:18:36+04:00
 draft: false
 toc: true
-tags: []
-categories: []
+tags: ["Graphe", "Structure de données"]
+categories: ["Terminales Spé NSI", "Informatique"]
 image: ""
 solution_est_visible: true
 auto_numbering: true
@@ -43,3 +43,5 @@ layout: "single"
 <!--
 - **Doc.** [Parcours en profondeur : programme en Python](4-parcours-profondeur-python)
 -->
+
+- **Doc.** [*Coloration d'un graphe*](5-coloration-graphe)
