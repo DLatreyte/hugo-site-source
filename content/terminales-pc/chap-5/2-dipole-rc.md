@@ -48,7 +48,7 @@ On réalise un circuit électrique comportant, en série, un condensateur, une l
 {{% solution "Réponse" %}}
 
 - Lorsqu'on ferme l'interrupteur $K$, la lampe s'éclaire, puis s'éteint progressivement (la durée au bout de laquelle elle s'éteint dépend du condensateur utilisé). Un courant **transitoire** apparaît donc dans le circuit.
-- Le courant électrique ne peu s'établir durablement dans le circuit puisque celui-ci est en fait ouvert (coupé par la présence du diélectrique entre les armatures du condensateur). Le courant, lors du régime **permanent** est nul.
+- Le courant électrique ne peut s'établir durablement dans le circuit puisque celui-ci est en fait ouvert (coupé par la présence du diélectrique entre les armatures du condensateur). Le courant, lors du régime **permanent** est nul.
 {{% /solution %}}
 
 2. Comment expliquer l'apparition d'un courant transitoire puis l'absence de courant lors du régime permanent ?
@@ -65,6 +65,7 @@ Le courant électrique finit par disparaître dans le circuit : la tension aux b
 
 - Dans le régime permanent, le générateur entretien donc un déséquilibre électrostatique qui le *maintien de la **charge du condensateur**, c'est à dire le **stockage de l'énergie électrique**.*
 <img src="/terminales-pc/chap-5/chap-5-2-3.png" alt="" width="40%" />
+
 {{% /solution %}}
 
 {{% note tip %}}

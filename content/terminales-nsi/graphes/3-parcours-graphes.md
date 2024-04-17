@@ -1,6 +1,6 @@
 ---
 title: "Parcours de graphes"
-subtitle: ""
+subtitle: "Mise en œuvre pratique"
 author: ""
 type: ""
 date: 2021-04-29T09:18:21+04:00
@@ -18,3 +18,5 @@ auto_numbering: true
 {{% solution "Solutions" %}}
 {{< remote "Cours et exercices corrigés" "/terminales-nsi/chap-15/chap-15-3/3-parcours-QR.pdf" >}}
 {{% /solution %}}
+
+
