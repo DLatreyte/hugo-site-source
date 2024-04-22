@@ -1,6 +1,6 @@
 ---
 title: "Évolution temporelle dans un circuit capacitif"
-subtitle: "Chapitre 6"
+subtitle: ""
 author: ""
 type: ""
 date: 2020-10-26T18:04:53+04:00
@@ -24,7 +24,7 @@ layout: "single"
 
 ----
 
-- {{< remote "Chapitre du Livre Scolaire" "http://LLS.fr/PCTP549" >}}
+- {{< remote "Chapitre du Livre Scolaire" "<http://LLS.fr/PCTP549>" >}}
 
 ----
 
