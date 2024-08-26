@@ -1,5 +1,5 @@
 ---
-title: "Baccalauréat général 2021 : de nouveaux parcours vers les classes prépa"
+title: "De nouveaux parcours vers les classes prépa"
 subtitle: ""
 author: ""
 type: ""
