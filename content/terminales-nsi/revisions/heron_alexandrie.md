@@ -9,7 +9,7 @@ toc: true
 tags: []
 categories: ["Informatique", "Terminales Spé NSI"]
 image: ""
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: false
 mathjax: true
 ---
