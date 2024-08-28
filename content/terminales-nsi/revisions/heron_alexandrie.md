@@ -195,7 +195,7 @@ def amelioration_essai(essai: float, x: float) -> float:
 6. Définir le prédicat `est_suffisamment_bon` dont la spécification est&nbsp;:
 
 ```python
-def est_suffisamment_bon(essai: float, x: float) -> float: 
+def est_suffisamment_bon(essai: float, x: float) -> bool: 
     """ 
     Retourne True si la valeur absolue de la différence du carré du nombre essai 
     et du nombre x est inférieure à une tolérance donnée (prendre 0.001).
@@ -217,7 +217,7 @@ assert est_suffisamment_bon(1.9999, 4) == True
 {{% solution "Réponse" %}}
 
 ```python
-def est_suffisamment_bon(essai: float, x: float) -> float:
+def est_suffisamment_bon(essai: float, x: float) -> bool:
     """
     Retourne True si la valeur absolue de la différence du carré du nombre essai
     et du nombre x est inférieure à une tolérance donnée (prendre 0.001).

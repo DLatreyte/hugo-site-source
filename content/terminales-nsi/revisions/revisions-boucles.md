@@ -69,7 +69,7 @@ def multiplication_multiple_sept(a: int) -> str:
     """
 ```
 
-## Exercice 3
+## Exercice 4
 
 Écrire et exécuter une fonction qui calcule et retourne une chaîne de caractères formée de la liste des diviseurs du nombre passé en argument.
 La spécification de la fonction est :
@@ -85,7 +85,7 @@ def diviseurs(a: int) -> str:
     """
 ```
 
-## Exercice 4
+## Exercice 5
 
 Écrire une fonction qui retourne une chaîne de caractère formée des 10 premiers termes de la table de multiplication de 1 à 10. Le caractère de passage à la ligne `\n` doit être utilisé afin de séparer les différentes tables (de 2, de 3, etc.).
 
@@ -106,7 +106,7 @@ def table_multiplication() -> str:
 >>> print(table_multiplication())
 ```
 
-## Exercice5
+## Exercice 6
 
 Écrire et exécuter une fonction qui demande 10 nombres à l'utilisateur et qui détermine lequel est le plus grand et lequel est le plus petit. Les deux résultats sont retournés au sein d'une unique chaîne de caractères.
 
@@ -126,11 +126,11 @@ def plus_grand_plus_petit() -> str:
     """
 ```
 
-## Exercice 6
+## Exercice 7
 
 Reprendre l'exercice précédent mais en faisant en sorte que le nombre de valeurs demandées à l'utilisateur soit passé en argument à la fonction.
 
-## Exercice 7
+## Exercice 8
 
 Écrire et exécuter une fonction qui demande à l'utilisateur d'entrer 10
   notes et qui retourne la moyenne de ces notes.
@@ -143,17 +143,17 @@ def moyenne() -> float:
     """
 ```
 
-## Exercice 8
+## Exercice 9
 
 Modifier le programme précédent de façon à ce que le nombre de notes à prendre en compte soit passé en argument de la fonction.
 
-## Exercice 9
+## Exercice 10
 
 Modifier le programme précédent de façon à ce que l'utilisateur n'ait pas à indiquer le nombre de notes qu'il souhaite saisir. Une note négative terminer la saisie.
 
  **Remarque :** la fonction doit afficher le nombre de notes saisies, elle retourne donc une chaîne de caractères.
 
-## Exercice 10
+## Exercice 11
 
 Écrire et exécuter une fonction qui simule un tirage du Loto (s'aider de l'exercice 12 du chapitre 02).
 La spécification de la fonction est
@@ -168,7 +168,7 @@ def loto_naif() -> str:
 
 **Remarque.** Normalement, lorsqu'un numéro est tiré, il ne peut pas apparaître à nouveau. On acceptera cependant qu'un même numéro puisse apparaitre plusieurs fois puisqu'on ne connaît pas encore de structure de contrôle qui permet de facilement « stocker » plusieurs valeurs.
 
-## Exercice 11
+## Exercice 12
 
 Écrire et exécuter une fonction qui tire au hasard un nombre entier compris entre 1 et 50 et demande à l'utilisateur de le deviner.
   
@@ -186,7 +186,7 @@ def devine() -> None:
     """
 ```
 
-## Exercice 12
+## Exercice 13
 
 Écrire et exécuter une fonction qui affiche l'alphabet à l'endroit si elle reçoit l'argument `"croissant"` ou à l'envers si elle reçoit l'argument `"decroissant"`.
   
@@ -203,7 +203,7 @@ def alphabet(sens: str) -> str:
     """
 ```
 
-## Exercice 13
+## Exercice 14
 
 Écrire et exécuter une fonction qui détermine les *n* premiers termes de la « suite de Fibonacci » définie par :
 
