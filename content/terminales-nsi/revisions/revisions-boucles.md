@@ -5,7 +5,7 @@ author: ""
 type: ""
 date: 2023-09-06T05:51:48+04:00
 draft: false
-toc: true
+toc: false
 tags: []
 categories: []
 image: ""
@@ -396,7 +396,7 @@ def moyenne_auto() -> tuple[int, float]:
 
 ## Exercice 11
 
-Écrire et exécuter une fonction qui simule un tirage du Loto (s'aider de l'exercice 12 du chapitre 02).
+Écrire et exécuter une fonction qui simule un tirage du Loto.  
 La spécification de la fonction est
 
 ```python
@@ -409,6 +409,26 @@ def loto_naif() -> str:
 
 **Remarque.** Normalement, lorsqu'un numéro est tiré, il ne peut pas apparaître à nouveau. On acceptera cependant qu'un même numéro puisse apparaitre plusieurs fois puisqu'on ne connaît pas encore de structure de contrôle qui permet de facilement « stocker » plusieurs valeurs.
 
+{{% solution "Solution" %}}
+
+```python
+from random import randint
+
+def loto_naif() -> str:
+    """
+    Retourne 6 entiers sélectionnés aléatoirement dans l'intervalle
+    [1, 49].
+    """
+    nbre_valeurs = 6
+    rep = ""
+    for i in range(nbre_valeurs):
+        valeur = randint(1, 49)
+        rep += str(valeur) + " "
+    return rep
+```
+
+{{% /solution %}}
+
 ## Exercice 12
 
 Écrire et exécuter une fonction qui tire au hasard un nombre entier compris entre 1 et 50 et demande à l'utilisateur de le deviner.
@@ -420,12 +440,18 @@ Cette fonction doit indiquer à l'utilisateur si sa tentative est trop grande ou
 ```python
 def devine() -> None:
     """
-    Déterminer aléatoirement un nombre compris en 1 et 49 et demande à l'utilisateur
-    de le deviner.
-    La fonction affiche des messages qui aident l'utilisateur dans recherche et quitte
-    dès que cette dernière est fructueuse.
+    Déterminer aléatoirement un nombre compris en 1 et 50 et demande à l'utilisateur de le deviner.
+    La fonction affiche des messages qui aident l'utilisateur dans recherche et quitte dès que cette dernière est fructueuse.
     """
 ```
+
+{{% solution "Solution" %}}
+
+```python
+
+```
+
+{{% /solution %}}
 
 ## Exercice 13
 
