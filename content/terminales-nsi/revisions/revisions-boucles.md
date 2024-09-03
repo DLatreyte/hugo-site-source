@@ -5,7 +5,7 @@ author: ""
 type: ""
 date: 2023-09-06T05:51:48+04:00
 draft: false
-toc: false
+toc: true
 tags: []
 categories: []
 image: ""
