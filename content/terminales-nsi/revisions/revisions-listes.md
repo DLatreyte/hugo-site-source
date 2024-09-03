@@ -158,7 +158,7 @@ def nombre_dans_intervalle(liste: List[float], valeur_min: float, valeur_max: fl
 La spécification de la fonction est :
 
 ```python
-def distance(pt1: Tuple[float], pt2: Tuple[float]) -> float:
+def distance(pt1: tuple[float], pt2: tuple[float]) -> float:
     """
     Détermine la distance entre les points pt1 et 
     pt2.
@@ -183,6 +183,31 @@ def distanceN(pt1: Tuple[float], pt2: Tuple[float]) -> float:
     """
 ```
 
+{{% solution "Solution" %}}
+
+```python
+from math import sqrt
+
+def distanceN(pt1: tuple[float], pt2: tuple[float]) -> float:
+    """
+    Détermine la distance entre les points pt1 et
+    pt2.
+
+    ERREUR si les dimensions des tuples ne
+    correspondent pas.
+    """
+    if len(pt1) != len(pt2):
+        raise Exception("Les dimensions ne correspondent pas !")
+
+    carre_distance: float = 0
+    for i in range(len(pt1)):
+        carre_distance += (pt2[i] - pt1[i])**2
+
+    return sqrt(carre_distance)
+```
+
+{{% /solution %}}
+
 ## Exercice 7
 
 Écrire une fonction qui retourne une la table de multiplication de tous les nombres entiers compris entre 0 et n sous forme d'une liste de listes.
@@ -190,7 +215,7 @@ def distanceN(pt1: Tuple[float], pt2: Tuple[float]) -> float:
 La spécification de la fonction est :
 
 ```python
-def table_multiplication(n: int) -> List[List[int]]:
+def table_multiplication(n: int) -> list[list[int]]:
     """
     Détermine la table de multiplication de tous les 
     entiers compris entre 1 et n.
@@ -199,3 +224,26 @@ def table_multiplication(n: int) -> List[List[int]]:
     [[1, 2, 3, 4], [2, 4, 6, 8], [3, 6, 9, 12], [4, 8, 12, 16]]
     """
 ```
+
+{{% solution "Solution" %}}
+
+```python
+
+def table_multiplication(n: int) -> list[list[int]]:
+    """
+    Détermine la table de multiplication de tous les 
+    entiers compris entre 1 et n.
+
+    >>> table_multiplication(4)
+    [[1, 2, 3, 4], [2, 4, 6, 8], [3, 6, 9, 12], [4, 8, 12, 16]]
+    """
+    table = []
+    for i in range(1, n + 1):
+        ligne = []
+        for j in range(1, n + 1):
+            ligne.append(i * j)
+        table.append(ligne)
+    return table
+```
+
+{{% /solution %}}
