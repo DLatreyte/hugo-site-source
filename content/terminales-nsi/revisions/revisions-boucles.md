@@ -448,7 +448,24 @@ def devine() -> None:
 {{% solution "Solution" %}}
 
 ```python
-
+def devine() -> None:
+    """
+    Déterminer aléatoirement un nombre compris en 1 et 49 et demande à l'utilisateur de le deviner.
+    La fonction affiche des messages qui aident l'utilisateur dans recherche et quitte dès que cette dernière est fructueuse.
+    """
+    nbre_a_deviner = randint(1, 49)
+    nbre_tentatives = 0
+    trouve = False
+    while not trouve:
+        proposition = int(input("Entrez votre proposition : "))
+        nbre_tentatives += 1
+        if proposition == nbre_a_deviner:
+            trouve = True
+        elif proposition > nbre_a_deviner:
+            print("La proposition est trop grande !")
+        else:
+            print("La proposition est trop petite !")
+    print(f"Nombre de tentatives : {nbre_tentatives}")
 ```
 
 {{% /solution %}}
@@ -467,8 +484,35 @@ def alphabet(sens: str) -> str:
     Retourne les lettres de l'alphabet en fonction de la chaîne de caractères
     passée en argument.
     Les valeurs possibles pour cet argument sont 'croissant' ou 'decroissant'.
+
+    Code ascii [97; 122]
     """
 ```
+
+{{% solution "Solution" %}}
+
+```python
+def alphabet(sens: str) -> str:
+    """
+    Retourne les lettres de l'alphabet en fonction de la chaîne de caractères
+    passée en argument.
+    Les valeurs possibles pour cet argument sont 'croissant' ou 'decroissant'.
+
+    Code ascii [97; 122]
+    """
+    if sens == "croissant":
+        debut_code, fin_code, increment, pas = 97, 122, 1, 1
+    else:
+        debut_code, fin_code, increment, pas = 122, 97, -1, -1
+
+    rep = ""
+    for i in range(debut_code, fin_code + increment, pas):
+        rep += chr(i)
+
+    return rep
+```
+
+{{% /solution %}}
 
 ## Exercice 14
 
@@ -490,3 +534,23 @@ def fibo(n: int) -> str:
     Retourne les n premiers termes de la suite de Fibonacci.
     """
 ```
+
+{{% solution "Solution" %}}
+
+```python
+def fibo(n: int) -> str:
+    """
+    Retourne les n premiers termes de la suite de Fibonacci.
+    """
+    rep = "0 1 "
+    u = 0
+    v = 1
+    for i in range(2, n):
+        z = u + v
+        rep += str(z) + " "
+        u = v
+        v = z
+    return rep
+```
+
+{{% /solution %}}
