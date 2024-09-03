@@ -21,12 +21,32 @@ auto_numbering: false
 La spécification de la fonction est la suivante :
 
 ```python
-def minmax(liste: List[float]) -> Tuple[float]:
+def minmax(liste: list[float]) -> tuple[float]:
     """
     Retourne un tuple constitué des valeurs minimale
     et maximale de la liste
     """
 ```
+
+{{% solution "Solution" %}}
+
+```python
+def minmax(liste: list[float]) -> tuple[float]:
+    """
+    Retourne un tuple constitué des valeurs minimale
+    et maximale de la liste
+    """
+    val_min = liste[0]
+    val_max = liste[0]
+    for i in range(1, len(liste) - 1):
+        if liste[i] > val_max:
+            val_max = liste[i]
+        if liste[i] < val_min:
+            val_min = liste[i]
+    return val_min, val_max
+```
+
+{{% /solution %}}
 
 ## Exercice 2
 
@@ -36,12 +56,28 @@ Ne pas utiliser la fonction `len` du langage.
 La spécification de la fonction est la suivante :
 
 ```python
-def longueur(liste: List[float]) -> int:
+def longueur(liste: list[float]) -> int:
     """
     Retourne le nombre d'éléments dans la
     liste
     """
 ```
+
+{{% solution "Solution" %}}
+
+```python
+def longueur(liste: list[float]) -> int:
+    """
+    Retourne le nombre d'éléments dans la
+    liste
+    """
+    longueur = 0
+    for i in range(len(liste)):
+        longueur += 1
+    return longueur
+```
+
+{{% /solution %}}
 
 ## Exercice 3
 
@@ -52,12 +88,31 @@ def longueur(liste: List[float]) -> int:
 La spécification de la fonction est la suivante :
 
 ```python
-def loto() -> List[int]:
+def loto() -> list[int]:
     """
     Simule le tirage du Loto. retourne une liste de 6 entiers compris
     entre 1 et 49.
     """
 ```
+
+{{% solution "Solution" %}}
+
+```python
+def loto() -> list[int]:
+    """
+    Simule le tirage du Loto. retourne une liste de 6 entiers compris
+    entre 1 et 49.
+    """
+    tirages = []
+    nbre_valeurs = 6
+    while len(tirages) <= nbre_valeurs:
+        tirage = randint(1, 49)
+        if tirage not in tirages:
+            tirages.append(tirage)
+    return tirages
+```
+
+{{% /solution %}}
 
 ## Exercice 4
 
