@@ -19,6 +19,8 @@ Une chaîne de caractère est une **structure de données** qui permet de rassem
 
 {{% note tip %}}
 
+#### Définition récursive d'une chaîne de caractères
+
 Une chaîne de caractères est :
 
 - soit la chaîne de caractères vide ;
@@ -29,6 +31,8 @@ Une chaîne de caractères est :
 Une liste est une **structure de données** qui permet de rassembler en un *unique objet* une **succession ordonnée** d'objets (ou de valeurs). Ainsi, une *définition récursive d'une liste* pourrait être :
 
 {{% note tip %}}
+
+#### Définition récursive d'une liste
 
 Une liste est :
 

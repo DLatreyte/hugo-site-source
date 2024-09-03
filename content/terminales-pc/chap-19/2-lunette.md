@@ -22,7 +22,7 @@ Un œil humain parfait étant fait pour observer un objet situé à l'infini, il
 
 {{% /note %}}
 
-> À l'issue de cette séance vous devrez être capables de construire et d'expliquer le principe d'une lunette afocale.
+>
 
 {{% note warning %}}
 
@@ -231,6 +231,7 @@ $G$ est donc une grandeur sans dimension.
 {{% /solution %}}
 
 21. Montrer, que dans le cas de la lunette afocale, le grossissement $G$ a aussi pour expression
+
 $$
     G = \dfrac{f'\_{\text{objectif}}}{f'\_{\text{oculaire}}}
 $$
