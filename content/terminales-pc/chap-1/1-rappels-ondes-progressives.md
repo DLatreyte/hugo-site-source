@@ -17,9 +17,9 @@ auto_numbering: true
 
 ### Étude de quelques simulations de propagation d'ondes mécaniques
 
-{{% remote "Onde progressive de compression" "https://www.geogebra.org/m/uwwwhvmt" %}}
+{{% remote "Onde progressive de compression" "<https://www.geogebra.org/m/uwwwhvmt>" %}}
 
-{{% remote "Onde progressive se propageant le long d'une corde" "https://www.geogebra.org/m/pha7fzc5" %}}
+{{% remote "Onde progressive se propageant le long d'une corde" "<https://www.geogebra.org/m/pha7fzc5>" %}}
 
 ### Onde mécanique progressive
 
@@ -38,7 +38,7 @@ Une onde progressive est dite longitudinale lorsqu'elle se propage selon une dir
 
 #### Onde progressive transversale
 
-:Une onde progressive est dite transversale (ou transverse) lorsqu'elle se propage selon une direction perpendiculaire à la direction de la déformation.
+Une onde progressive est dite transversale (ou transverse) lorsqu'elle se propage selon une direction perpendiculaire à la direction de la déformation.
 <img src="/terminales-pc/chap-1/Chap-3-2-cours-2.png" width="70%" alt="Onde transverale le long d'une corde" />
 
 #### Une onde mécanique se transmet de proche en proche
@@ -217,7 +217,7 @@ On appelle **longueur d'onde** la **période spatiale** d'une **onde progressive
 {{% /note %}}
 
 <img src="/terminales-pc/chap-1/Chap-3-2-cours-11.png" alt="" width="80%" />
->  Cartographie de l'espace à une date quelconque. Bien remarquer que l'**axe des abscisses représente l'espace**.
+> Cartographie de l'espace à une date quelconque. Bien remarquer que l'**axe des abscisses représente l'espace**.
 
 ### Relation entre la longueur d'onde et la période temporelle
 
