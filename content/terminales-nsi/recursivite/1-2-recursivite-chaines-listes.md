@@ -328,7 +328,8 @@ main()
 
 1. Écrire une fonction nommée `longueur_liste`, récursive, qui, à partir d'une liste passée en argument, détermine sa longueur.
 
-2. Écrire une fonction nommée `produit_elements`, récursive, qui, à partir d'une liste d'entiers passée en argument, calcule le produit de tous les nombres.
+2. Écrire une fonction nommée `somme_elements`, récursive, qui, à partir d'une liste de nombres passée en argument, calcule la somme de tous les nombres.
+2bis. Écrire une fonction nommée `produit_elements`, récursive, qui, à partir d'une liste de nombres passée en argument, calcule le produit de tous les nombres.
 
 3. Écrire une fonction nommée `plus_grand_element`, récursive, qui, à partir d'une liste d'entiers passée en argument, détermine quel est l'entier le plus grand.
 
