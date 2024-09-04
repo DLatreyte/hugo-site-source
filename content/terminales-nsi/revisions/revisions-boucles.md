@@ -450,10 +450,10 @@ def devine() -> None:
 ```python
 def devine() -> None:
     """
-    Déterminer aléatoirement un nombre compris en 1 et 49 et demande à l'utilisateur de le deviner.
+    Déterminer aléatoirement un nombre compris en 1 et 50 et demande à l'utilisateur de le deviner.
     La fonction affiche des messages qui aident l'utilisateur dans recherche et quitte dès que cette dernière est fructueuse.
     """
-    nbre_a_deviner = randint(1, 49)
+    nbre_a_deviner = randint(1, 50)
     nbre_tentatives = 0
     trouve = False
     while not trouve:
