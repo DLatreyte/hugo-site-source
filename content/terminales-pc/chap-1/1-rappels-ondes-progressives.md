@@ -120,7 +120,7 @@ $$ t_2 = t_1 + \tau$$
 Un phénomène est dit **périodique** (dans *le temps*) s'il se reproduit identique à lui-même à intervalles de temps égaux.
 {{% /note %}}
 <img src="/terminales-pc/chap-1/Chap-3-2-cours-5.png" alt="" width="80%" />
-> **Fig. 1** — Mouvement dans le temps d'une source $S$ (à la position $x=0$, par exemple). Bien remarquer que l'axe des abscisses représente le temps.
+> Fig. 1 — Mouvement dans le temps d'une source $S$ (à la position $x=0$, par exemple). Bien remarquer que l'axe des abscisses représente le temps.
 
 #### Remarque
 
@@ -130,7 +130,7 @@ Un phénomène est dit **périodique** (dans *le temps*) s'il se reproduit ident
 La **période (temporelle)** $T$ d'un *phénomène périodique* est la *plus petite durée au bout de laquelle ce phénomène se reproduit identique à lui-même*.
 {{% /note %}}
 <img src="/terminales-pc/chap-1/Chap-3-2-cours-6.png" alt="" width="80%" />
-> **Fig. 2** — Période $T$ d'un phénomène périodique. Bien remarquer que l'axe des abscisses représente le temps.
+> Fig. 2 — Période $T$ d'un phénomène périodique. Bien remarquer que l'axe des abscisses représente le temps.
 
 {{% note tip %}}
 Le **fréquence** $f$ d'un *phénomène périodique* est le *nombre de fois que ce phénomène se reproduit identique à lui-même pendant la durée d'une seconde*.  
@@ -152,7 +152,7 @@ La période temporelle d'une onde progressive est identique à celle de la sourc
 {{% /note %}}
 
 <img src="/terminales-pc/chap-1/Chap-3-2-cours-7.png" alt="" width="80%" />
-> **Fig. 3** — Mouvement dans le temps d'un point quelconque $M$ atteint par l'onde (à la position $x=a$ par exemple). Noter le **déphasage** par rapport au mouvement de la source (en $x=0$), sur la figure 1. Bien remarquer que l'axe des abscisses représente le temps.
+> Fig. 3 — Mouvement dans le temps d'un point quelconque $M$ atteint par l'onde (à la position $x=a$ par exemple). Noter le **déphasage** par rapport au mouvement de la source (en $x=0$), sur la figure 1. Bien remarquer que l'axe des abscisses représente le temps.
 
 {{% note warning %}}
 
@@ -175,7 +175,7 @@ Les mouvements dans le temps de ces deux points sont **déphasés** — *les val
 
 #### Période spatiale
 
-Lorsqu'on prend une *photo instantanée du milieu*, l'image obtenue présente un **motif (spatial)** qui *se répète, identique à lui-même*. Le milieu dans lequel l'onde se propage présente une **périodicité spatiale**.
+Lorsqu'on prend une *photo instantanée du milieu*, l'image obtenue présente un **motif (spatial)** qui *se répète, identique à lui-même*. On dit que l'onde progressive périodique présente une **périodicité spatiale**.
 {{% /note %}}
 
 #### Remarques
@@ -184,7 +184,7 @@ Lorsqu'on prend une *photo instantanée du milieu*, l'image obtenue présente un
 - *La périodicité spatiale d'une onde périodique non sinusoïdale (cf. section suivante) ne porte aucun nom.*
 
 <img src="/terminales-pc/chap-1/Chap-3-2-cours-8.png" alt="" width="80%" />
-> **Fig. 4** — Cartographie de l'espace à une date quelconque. Bien remarquer que l'**axe des abscisses représente l'espace**. La période spatiale s'exprime en mètre (m).
+> Fig. 4 — Cartographie de l'espace à une date quelconque. Bien remarquer que l'**axe des abscisses représente l'espace**. La période spatiale s'exprime en mètre (m).
 
 {{% note warning %}}
 
