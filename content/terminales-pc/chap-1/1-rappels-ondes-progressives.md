@@ -202,13 +202,13 @@ Une **onde progressive sinusoïdale** est une *onde progressive périodique cré
 {{% /note %}}
 
 <img src="/terminales-pc/chap-1/Chap-3-2-cours-9.png" alt="" width="80%" />
-> **Fig. 5** — Mouvement sinusoïdal d'une source $S$ (à la position $x=0$ par exemple).
+> Fig. 5 — Mouvement sinusoïdal d'une source $S$ (à la position $x=0$ par exemple).
 
 Puisque chaque point matériel atteint par l'onde *reproduit le mouvement de la source avec un certain retard*, si cette dernière possède un mouvement sinusoïdal dans le temps, *ces points possèdent le même mouvement sinusoïdal, déphasé dans le temps*.  
 La période (temporelle) des mouvements de ces points est identique à celle de la source.
 
 <img src="/terminales-pc/chap-1/Chap-3-2-cours-10.png" alt="" width="80%" />
-> **Fig. 6** — Mouvement dans le temps d'un point quelconque $M$ atteint par l'onde (à la position $x=a$ par exemple). Noter le déphasage par rapport au mouvement de la source (en $x=0$) sur la figure 5. Bien remarquer que l'**axe des abscisses représente le temps**.
+> Fig. 6 — Mouvement dans le temps d'un point quelconque $M$ atteint par l'onde (à la position $x=a$ par exemple). Noter le déphasage par rapport au mouvement de la source (en $x=0$) sur la figure 5. Bien remarquer que l'**axe des abscisses représente le temps**.
 
 ### Longueur d'onde
 
@@ -222,7 +222,7 @@ On appelle **longueur d'onde** la **période spatiale** d'une **onde progressive
 ### Relation entre la longueur d'onde et la période temporelle
 
 <img src="/terminales-pc/chap-1/Chap-3-2-cours-12.png" alt="" width="80%" />
-> Allures d'une corde et d'une tranche d'air (ou d'un ressort) à différentes dates. La signification de la longueur d'onde apparaît clairement : **c'est la distance parcourue par l'onde pendant la durée $T$ à la vitesse $v$.**
+> Allures d'une corde et d'une tranche d'air (ou d'un ressort) à différentes dates. La signification de la longueur d'onde apparaît clairement : c'est la distance parcourue par l'onde pendant la durée $T$ à la vitesse $v$.
 
 {{% note tip %}}
 La longueur d'onde $lambda$ d'une onde sinusoïdale est *la distance parcourue par l'onde pendant une durée égale à sa période temporelle* $T$ à la vitesse $v$.  
