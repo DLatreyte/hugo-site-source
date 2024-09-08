@@ -1,5 +1,5 @@
 ---
-title: "Intensité sonore, niveau sonore"
+title: "Intensité sonore, niveau d'intensité sonore"
 subtitle: ""
 author: ""
 type: ""
