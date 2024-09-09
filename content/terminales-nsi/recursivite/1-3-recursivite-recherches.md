@@ -9,7 +9,7 @@ toc: true
 tags: ["Récursivité", "Recherche linéaire", "Recherche dichotomique", "Complexité", "Terminaison", "Correction"]
 categories: ["Informatique", "Terminales Spé NSI"]
 image: ""
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: true
 ---
 
@@ -29,7 +29,7 @@ L'objectif de cette séance est de rapidement revoir ces algorithmes et de mettr
 {{% note warning %}}
 Penser à donner la **spécification** de chacune des fonctions et écrire une **série des tests** pour chacune d'elles.
 {{% /note %}}
-- Un corrigé se trouve à cette adresse&nbsp;: {{< remote "https://repl.it/join/azqimfmv-dlatreyte" "https://repl.it/join/azqimfmv-dlatreyte">}}
+- Un corrigé se trouve à cette adresse&nbsp;: {{< remote "<https://repl.it/join/azqimfmv-dlatreyte>" "<https://repl.it/join/azqimfmv-dlatreyte">}}>
 
 ## Recherche séquentielle (ou linéaire)
 
