@@ -9,7 +9,7 @@ toc: true
 tags: ["Récursivité", "Recherche linéaire", "Recherche dichotomique", "Complexité", "Terminaison", "Correction"]
 categories: ["Informatique", "Terminales Spé NSI"]
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 
@@ -48,7 +48,7 @@ La **recherche séquentielle (ou linéaire)**  consiste à
 
 **Fonction&nbsp;:** recherche(tab, valeur)  
 **Action&nbsp;:** recherche la valeur «&nbsp;valeur&nbsp;» dans le tableau «&nbsp;tab&nbsp;»  
-**Début**
+**Début**  
 <span style="margin-left: 2em">i ⟵ 0  </span><br />
 <span style="margin-left: 2em">i_val ⟵ -1  </span><br />
 <span style="margin-left: 2em">nb ⟵ Longueur(tab)  </span><br />
@@ -120,7 +120,7 @@ La **recherche séquentielle (ou linéaire)**  consiste à
 
 **Fonction&nbsp;:** recherche(tab, valeur, i)  
 **Action&nbsp;:** recherche la valeur «&nbsp;valeur&nbsp;» dans le tableau «&nbsp;tab&nbsp;» à l'aide de l'indice i.  
-**Début**
+**Début**  
 <span style="margin-left: 2em">nb ⟵ **Longueur**(tab)  </span><br />
 <span style="margin-left: 2em">**Si** i == nb **Alors**  </span><br />
 <span style="margin-left: 4em">**Renvoyer** -1  </span><br />
