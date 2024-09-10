@@ -29,7 +29,9 @@ L'objectif de cette séance est de rapidement revoir ces algorithmes et de mettr
 {{% note warning %}}
 Penser à donner la **spécification** de chacune des fonctions et écrire une **série des tests** pour chacune d'elles.
 {{% /note %}}
+<!--
 - Un corrigé se trouve à cette adresse&nbsp;: {{< remote "<https://repl.it/join/azqimfmv-dlatreyte>" "<https://repl.it/join/azqimfmv-dlatreyte">}}>
+-->
 
 ## Recherche séquentielle (ou linéaire)
 
