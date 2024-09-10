@@ -478,6 +478,7 @@ de l'entier naturel $a$ par l'entier naturel $b$*
    5`) au moyen d'un tableau indiquant l'évolution des valeurs des variables
    au fil des itérations.
 {{% solution "Réponse" %}}
+
 $$
 \begin{array}{c : c : c : c : c}
 a & 17 & 17 & 17 & 17\cr \hdashline
@@ -535,23 +536,17 @@ La propriété $0 \leqslant r$ est bien un invariant de la boucle **TantQue** et
 4. Écrire le code Python implémentant l'algorithme 4. La spécification de la fonction est la suivante&nbsp;:
 
 ```python
-def division_euclidienne(a: int, b: int) -> Tuple[int, int]:
+def division_euclidienne(a: int, b: int) -> tuple[int, int]:
     """
     Calcule la division euclidienne de l'entier naturel a par l'entier naturel b.
     Retourne les entiers naturels q et r, quotient et reste de cette division.
     """
 ```
 
-**Remarque&nbsp;:** Ne pas oublier d'importer la classe `Tuple` du module `typing`&nbsp;:
-
-```python
-from typing import Tuple
-````
-
 {{% solution "Réponse" %}}
 
 ```python
-def division_euclidienne(a: int, b: int) -> Tuple[int, int]:
+def division_euclidienne(a: int, b: int) -> tuple[int, int]:
     """
     Calcule la division euclidienne de l'entier naturel a par l'entier naturel b.
     Retourne les entiers naturels q et r, quotient et reste de cette division.
