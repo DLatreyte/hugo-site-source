@@ -590,7 +590,7 @@ def power(n: int) -> int:
     return p
 ```
 
-1. Quelle opération ce code réalise-t-il ?
+1. Quel calcul ce code réalise-t-il ?
 
 2. Écrire un jeu de test pour cette fonction.
 

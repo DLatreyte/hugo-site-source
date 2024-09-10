@@ -122,7 +122,7 @@ $\Delta t = t_S - t_N$ est alors le retard avec lequel le son arrive au niveau d
 Un groupe d'élèves effectue la mesure de la célérité des ultrasons dans l'air dans une pièce à $\pu{20 °C}$.
 Leurs résultats sont regroupés dans le tableau ci-dessous :
 
-| N° mesure | Valeur ($\pu{m/s}$) | N° mesure | Valeur ($\pu{m/s}$) |
+| N° mesure |   ($\pu{m/s}$) | N° mesure | Valeur ($\pu{m/s}$) |
 |:-:|:-:|:-:|:-:|
 | 1 | 338 | 11 | 338 |
 | 2 | 341 | 12 | 336 |
