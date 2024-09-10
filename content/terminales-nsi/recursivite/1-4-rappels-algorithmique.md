@@ -637,7 +637,7 @@ $f(i)$ est un variant de boucle, l'algorithme se termine.
 On considère la suivante :
 
 ```python
-def maxer(s: List[float]) -> float:
+def maxer(s: list[float]) -> float:
     while len(s) > 1:
         if s[0] > s[1]:
             s.pop(1)
