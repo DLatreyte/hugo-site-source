@@ -88,17 +88,26 @@ L'algorithme se termine.
 
 3. Démontrer que l'algorithme est correct.
 {{% solution "Réponse" %}}
+Pour déterminer qu'un algorithme qui comporte une boucle est correct, il faut trouver
+un invariant de boucle.
 
+On peut par exemple dire que « La valeur recherchée n'est pas présente dans les éléments du tableau d'indices 0 à i-1, où i est l'indice courant. »
+
+- **Initialisation :** Avant la première itération, $i = 0$, donc l'invariant est vrai trivialement car aucun élément n'a encore été examiné.
+- **Conservation :** À chaque itération, on vérifie si l'élément à l'indice $i$ est la valeur recherchée. Si ce n'est pas le cas, on passe à l'élément suivant $(i + 1)$. Ainsi, on sait que la valeur recherchée n'est pas dans les éléments précédents.
+- **Terminaison :** La boucle se termine soit quand on trouve la valeur (auquel cas l'invariant n'est plus nécessaire), soit quand on a parcouru tout le tableau sans la trouver (auquel cas l'invariant assure que la valeur n'est pas dans le tableau).
 {{% /solution %}}
 
 4. Démontrer que l'algorithme est en O(N).
 {{% solution "Réponse" %}}
-
+L'algorithme contient une boucle dont le nombre de tours est, dans le pire des cas,
+égal au nombre d'éléments dans la liste. La complexité est donc linéaire, $O(n)$.
 {{% /solution %}}
 
 5. Comment pourrait-on améliorer l'efficacité de cet algorithme&nbsp;?
 {{% solution "Réponse" %}}
-
+Il faudrait quitter la boucle dès l'instant où la valeur a été trouvée, si elle
+est bien présente dans la liste.
 {{% /solution %}}
 
 {{% note normal %}}
