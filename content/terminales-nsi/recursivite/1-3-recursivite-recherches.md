@@ -69,7 +69,21 @@ La **recherche séquentielle (ou linéaire)**  consiste à
 
 2. Démontrer que l'algorithme se termine.
 {{% solution "Réponse" %}}
+Pour démontrer que l'algorithme se termine il faut définir un variant de boucle car c'est au niveau
+de la boucle TantQue qu'un problème peut intervenir.
 
+La fonction dont l'expression est $f(i) = nb -i$ est-elle un variant de boucle ?
+
+- $i$ et $nb$ sont des entiers naturels. De plus la boucle « tourne » tant que $i<nb$.
+$f(i)$ est donc un entier naturel.
+- $f(i_{k+1}) - f(i_k) = nb - i_{k+1} - ( nb - i_{k} ) = i_{k} - i_{k+1}$. Comme
+$i_{k+1} = i_{k} + 1$, $f(i_{k+1}) - f(i_k) = i_{k} - (i_{k} + 1) = -1$. La fonction
+est décroissante.
+
+$f$ est une fonction qui retourne forcément un entier naturel et qui est décroissante ;
+elle est donc bornée par la valeur 0, c'est un variant de boucle.
+
+L'algorithme se termine.
 {{% /solution %}}
 
 3. Démontrer que l'algorithme est correct.
