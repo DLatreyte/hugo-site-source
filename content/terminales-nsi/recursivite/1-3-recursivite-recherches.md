@@ -134,6 +134,10 @@ est bien présente dans la liste.
 {{% /note %}}
 
 6. Expliquer pourquoi l'algorithme 2 est plus efficace que l'algorithme 1.
+{{% solution "Réponse" %}}
+On quitte la boucle dès l'instant où la valeur a été trouvée, si elle
+est bien présente dans la liste.
+{{% /solution %}}
 
 ### Recherche séquentielle récursive
 
@@ -212,16 +216,78 @@ La division par deux de l'ensemble de données de recherche à chaque appel indi
 9. Démontrer que l'algorithme se termine.
 {{% solution "Réponse" %}}
 
+- **Variant de boucle :** $f(g, d) = d - g + 1$ où $d$ signifie « droite » et $g$ « gauche ».
+- Au début, $g = 0$ et $d = n-1$ (où $n$ est la taille du tableau).
+Le variant initial est donc $n$, qui est un entier naturel.
+- À chaque itération, on a trois cas :
+  - Si l'élément est trouvé, la boucle se termine.
+  - Si l'élément cherché est plus grand que le milieu, on met à jour $g = m + 1$
+  - Si l'élément cherché est plus petit que le milieu, on met à jour $d = m - 1$
+Dans les deux derniers cas, la taille de l'intervalle est réduite de moitié (ou presque).
+Donc, le variant diminue strictement à chaque itération.
+
+Puisque le variant est initialement positif, diminue strictement à chaque itération, et que la boucle se termine quand il atteint 0 ou 1, on peut conclure que l'algorithme se termine toujours en un nombre fini d'étapes.
+
 {{% /solution %}}
 
 10. Démontrer que l'algorithme est correct.
 {{% solution "Réponse" %}}
+**Invariant de boucle :** À chaque itération de la boucle, l'élément recherché, s'il est présent dans le tableau, se trouve dans la sous-section de l'intervalle [gauche, droite], où :
 
+- gauche est l'indice de début de l'intervalle actuel,
+- droite est l'indice de fin de l'intervalle actuel.
+
+- **Initialisation (avant la première itération)**
+
+Initialement, les indices gauche et droite sont positionnés de telle sorte que :
+
+- gauche = 0, qui représente le premier indice du tableau.
+- droite = n - 1, qui représente le dernier indice du tableau.
+Ainsi, avant la première itération, l'élément recherché se trouve potentiellement dans l'intervalle entier du tableau [0, n - 1], ce qui respecte bien l'invariant de boucle.
+
+Conclusion : L'invariant est vérifié avant la première itération.
+
+- **Conservation (pendant l'itération)**
+
+Supposons que l'invariant soit vrai au début d'une itération, c'est-à-dire que si l'élément recherché est présent, il se trouve dans l'intervalle [gauche, droite].
+
+L'algorithme calcule ensuite l'indice médian : milieu
+
+Il compare l'élément à l'indice milieu avec l'élément recherché x :
+
+- *Si l'élément au milieu est égal à x :* L'algorithme s'arrête, et l'élément est trouvé, ce qui n'est pas en contradiction avec l'invariant.
+- *Si l'élément au milieu est strictement inférieur à x :* L'algorithme met à jour la borne gauche : gauche = milieu + 1
+Cela signifie que x ne peut pas se trouver dans la sous-partie gauche du tableau (de l'indice gauche à milieu), car les éléments dans cette partie sont tous inférieurs à x. Par conséquent, l'élément recherché, s'il existe, se trouve dans le nouvel intervalle [gauche, droite], et l'invariant est préservé.
+- *Si l'élément au milieu est strictement supérieur à x :* L'algorithme met à jour la borne droite : droite = milieu − 1
+Cela signifie que x ne peut pas se trouver dans la sous-partie droite du tableau (de milieu à droite), car les éléments dans cette partie sont tous supérieurs à x. Par conséquent, l'élément recherché, s'il existe, se trouve dans le nouvel intervalle [gauche, droite], et l'invariant est préservé.
+
+Conclusion : L'invariant est préservé à chaque itération.
+
+- **Terminaison**
+
+La boucle se termine lorsque l'intervalle devient vide, c'est-à-dire lorsque gauche > droite. Cela signifie que l'élément recherché n'existe pas dans le tableau (sinon, il aurait été trouvé lors des itérations précédentes).
+
+Ainsi, lorsque l'algorithme se termine :
+
+- Soit il a trouvé l'élément recherché, ce qui est cohérent avec l'invariant.
+- Soit l'intervalle est vide, et donc l'élément n'est pas présent dans le tableau, ce qui est également conforme à l'invariant, car l'invariant stipule seulement que si l'élément est présent, il se trouve dans l'intervalle.
+
+Conclusion : À la fin de l'algorithme, l'invariant reste valide et garantit que le résultat final est correct.
 {{% /solution %}}
 
 11. Démontrer que l'algorithme est en $O(\log_2 N)$.
 {{% solution "Réponse" %}}
+L'algorithme fonctionne en divisant l'intervalle de recherche par 2 à chaque itération. Ainsi, si le tableau contient $n$ éléments, après une itération, la taille de l'intervalle est réduite à $n/2$, puis $n/4$, et ainsi de suite. En général, après $k$ itérations, la taille de l'intervalle est réduite à $n / 2^k$.
 
+L'algorithme se termine lorsque l'intervalle ne contient plus qu'un seul élément, ce qui se produit lorsque :
+$$
+\dfrac{n}{2^k} = 1
+$$
+En résolvant cette équation, on obtient :
+$$
+k = log_2(n)
+$$
+Cela signifie que l'algorithme effectue au plus $log_2(n)$ itérations pour un tableau de taille $n$.
 {{% /solution %}}
 
 ### Recherche dichotomique récursive
