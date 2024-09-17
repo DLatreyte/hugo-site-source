@@ -285,9 +285,9 @@ $$
 $$
 En résolvant cette équation, on obtient :
 $$
-k = log_2(n)
+k = \log_2(n)
 $$
-Cela signifie que l'algorithme effectue au plus $log_2(n)$ itérations pour un tableau de taille $n$.
+Cela signifie que l'algorithme effectue au plus $\log_2(n)$ itérations pour un tableau de taille $n$.
 {{% /solution %}}
 
 ### Recherche dichotomique récursive
