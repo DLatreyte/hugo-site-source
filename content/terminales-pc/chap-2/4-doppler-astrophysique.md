@@ -136,7 +136,7 @@ Crédit : « Observatoire de Paris / U.F.E. »
 ## Ressources pour encore mieux maîtriser le sujet
 
 > Astrophysics: Binary Star System Velocity Curves of a Binary Star System
-{{% youtube "u_rSqXMZ_To" %}}
+[https://www.youtube.com/embed/u_rSqXMZ_To?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0](Ressource)
 
 > Doppler Effect, Binary Stars, Neutron Stars, Black Holes
-{{% youtube "oY8ak7hxKpw" %}}
+[https://youtu.be/oY8ak7hxKpw?feature=shared](Ressource)
