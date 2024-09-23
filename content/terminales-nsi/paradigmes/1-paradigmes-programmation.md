@@ -221,9 +221,7 @@ Définir une fonction qui élève au carré chaque élément d'une liste.
 
 1. Style impératif avec effet de bord.
 {{< highlight py3 "linenos=table" >}}
-from typing import List
-
-def liste_carre(liste: List[float]) -> None:
+def liste_carre(liste: list[float]) -> None:
     """
     Élève au carré chaque élément de la liste liste.
     """
@@ -236,15 +234,13 @@ liste_carre(l)
 La fonction modifie la liste globale `liste`&nbsp;! Le problème a pour origine la mutabilité de la structure de données «&nbsp;liste&nbsp;» et le passage d'une *référence* à la fonction, et non pas une *copie de cette liste*.
 
 {{< highlight py3 "linenos=table" >}}
-from typing import List
-
-def liste_carre(liste: List[float]) -> List[float]:
+def liste_carre(liste: list[float]) -> List[float]:
     """
     Élève au carré chaque élément de la liste liste.
     """
     newList = liste[:]
 
-    def eleve_carre(liste: List[float]) -> List[float]:
+    def eleve_carre(liste: list[float]) -> list[float]:
         if len(liste) == 0:
             return liste
         else:
