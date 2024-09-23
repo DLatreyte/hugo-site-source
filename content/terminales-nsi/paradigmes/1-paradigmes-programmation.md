@@ -234,7 +234,7 @@ liste_carre(l)
 La fonction modifie la liste globale `liste`&nbsp;! Le problème a pour origine la mutabilité de la structure de données «&nbsp;liste&nbsp;» et le passage d'une *référence* à la fonction, et non pas une *copie de cette liste*.
 
 {{< highlight py3 "linenos=table" >}}
-def liste_carre(liste: list[float]) -> List[float]:
+def liste_carre(liste: list[float]) -> list[float]:
     """
     Élève au carré chaque élément de la liste liste.
     """
