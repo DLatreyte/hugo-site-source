@@ -9,7 +9,7 @@ toc: true
 tags: ["Absorption", "Atténuation", "Ondes", "Fibre optique"]
 categories: ["Physique", "Terminale Spé PC", "Annale"]
 image: ""
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: true
 ---
 

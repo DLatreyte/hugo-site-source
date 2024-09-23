@@ -9,7 +9,7 @@ toc: true
 tags: []
 categories: []
 image: ""
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: true
 ---
 
@@ -29,6 +29,7 @@ L'objectif de cet exercice est de vérifier l'affirmation du guide d'information
 #### Données
 
 - Le niveau d'intensité sonore $L$ est lié à l'intensité sonore $I$ par la relation :
+
 $$
     L = 10\\; \log \left( \dfrac{I}{I_0} \right)
 $$
@@ -47,6 +48,7 @@ Dans cette première partie, on considérera que l'atténuation de l'onde sonore
 #### Donnée
 
 - Dans le modèle de l'atténuation géométrique, et pour une source ponctuelle, l'intensité sonore $I$ perçue à une distance $d$ de la source est reliée à la puissance sonore $P$ de cette source par la relation :
+
 $$
     I = \dfrac{P}{4\pi\\,d^2}
 $$
@@ -61,6 +63,7 @@ avec $P$ la puissance de l'onde sonore en watt et $d$ la distance à la source e
 {{% /solution %}}
 
 2. À l'aide des données, montrer que l'atténuation géométrique $A_{geo}$ du conducteur 1 au conducteur 2 en décibels peut s'exprimer sous la forme&nbsp;:
+
 $$
     A_{geo} = 10\\, \log \left( \dfrac{I_1}{I_2} \right)
 $$
@@ -113,12 +116,14 @@ $A_{\text{mesure}} = L_1 - L_2 = \pu{80 dB} - \pu{68 dB} = \pu{12 dB}$
 #### Données
 
 - L'incertitude-type $U(A_{\text{mesure}})$ sur la grandeur $A_{\text{mesure}}$ peut se calculer à partir de la relation&nbsp;:
+
 $$
     U(A_{\text{mesure}}) = \sqrt{ U(L_1)^2 + U(L_2)^2  }
 $$
 avec $U(X)$ désigne l'incertitude-type associée à la grandeur $X$.
 
 - Le z-score, noté $Z$, correspond à l'écart entre le résultat de la mesure $X$ et la valeur de référence $X_{ref}$ évalué en nombre d'incertitude-type&nbsp;:
+
 $$
     Z = \dfrac{|X - X_{ref} |}{U(X)}
 $$
@@ -158,16 +163,19 @@ Il s'agit d'une atténuation par absorption.
 {{% solution "Réponse" %}}
 
 - On note $L_1^'$ le niveau d'intensité sonore au niveau du conducteur 1 et on suppose qu'il n'y a aucune atténuation géométrique entre l'émetteur et la fenêtre. Le niveau d'intensité sonore $L_1^{''}$ à l'extérieur de la fenêtre du conducteur 1 est alors tel que&nbsp;:
+
 $$
     A_{fen} = L_1^' - L_1^{''}
 $$
 
 - Entre le conducteur 1 et le conducteur 2, l'atténuation est due à la distance. Le niveau d'intensité sonore $L_2^{''}$ à l'extérieur de la fenêtre du conducteur 2 est alors tel que&nbsp;:
+
 $$
     A_{geo} = L_1^{''} - L_2^{''}
 $$
 
 - Puisque la vitre du conducteur 2 absorbe une partie de l'onde sonore, le niveau d'intensité sonore $L_2^'$ à l'intérieur de la voiture 2 est donc tel que&nbsp;:
+
 $$
     A_{fen} = L_2^{''} - L_2^{'}
 $$
