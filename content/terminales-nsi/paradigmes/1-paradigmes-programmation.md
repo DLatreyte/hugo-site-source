@@ -140,9 +140,7 @@ Définir une fonction qui réalise la somme des nombres d'une liste passée en a
 
 1. **Style impératif**
 {{< highlight py3 "linenos=table" >}}
-from typing import List
-
-def somme(liste: List[float]) -> float:
+def somme(liste: list[float]) -> float:
     """
     Calcule la somme des éléments de la liste liste.
     """
@@ -155,9 +153,7 @@ Cette fonction manipule la variable locale `somme` et utilise une boucle `for`. 
 
 2. **Style fonctionnel**
 {{< highlight py3 "linenos=table" >}}
-from typing import List
-
-def somme(liste: List[float]) -> float:
+def somme(liste: list[float]) -> float:
     """
     Calcule la somme des éléments de la liste liste.
     """
@@ -172,9 +168,7 @@ Cette fonction ne manipule aucune variable et n'utilise pas de boucle mais la r�
 
 2. **Style fonctionnel avec récursion terminale**
 {{< highlight py3 "linenos=table" >}}
-from typing import List
-
-def somme(liste: List[float], total: float = 0) -> float:
+def somme(liste: list[float], total: float = 0) -> float:
     """
     Calcule la somme des éléments de la liste liste.
     """

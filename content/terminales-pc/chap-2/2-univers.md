@@ -100,9 +100,9 @@ On apprend dans le texte que lorsqu'un émetteur de lumière s'éloigne, les lon
 Si le mouvement des galaxies était totalement aléatoire, il y aurait autant de galaxies qui s'éloigneraient globalement de nous que de galaxies qui se rapprocheraient globalement de nous. Nous devrions donc trouver autant de lumières avec un décalage vers le bleu que vers le rouge.
 {{% /solution %}}
 
-12. On demande à un élève de résoudre le problème suivant&nbsp;: «&nbsp;Une voiture roule à $\pu{20,0 m.s−1}$ et émet un son de sirène de fréquence $\pu{600 Hz}$. Déterminer la fréquence perçue par un observateur immobile alors que la voiture s’approche et lorsqu’elle s’éloigne.&nbsp;»
+12. On demande à un élève de résoudre le problème suivant : « Une voiture roule à $\pu{20,0 m.s−1}$ et émet un son de sirène de fréquence $\pu{600 Hz}$. Déterminer la fréquence perçue par un observateur immobile alors que la voiture s’approche et lorsqu’elle s’éloigne. »
 On considère que la célérité du son est $c = \pu{340 m.s−1}$.
-Comme aide à la résolution, on fournit à l’élève les deux formules suivantes&nbsp;:
+Comme aide à la résolution, on fournit à l’élève les deux formules suivantes :
 $$
 f = \dfrac{f_s}{1 - \dfrac{v_s}{c}} \text{ et } f = \dfrac{f_s}{1 + \dfrac{v_s}{c}}
 $$
