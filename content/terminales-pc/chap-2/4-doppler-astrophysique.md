@@ -9,7 +9,7 @@ toc: true
 tags: ["Ondes", "Effet Doppler", "Mur du son"]
 categories: ["Physique", "Terminale Spé PC", "Annale"]
 image: ""
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: true
 ---
 L’effet Doppler constitue un moyen d’investigation utilisé en astrophysique Il permet de déterminer la vitesse des astres à partir de l’analyse spectrale de la lumière que ceux-ci émettent.
