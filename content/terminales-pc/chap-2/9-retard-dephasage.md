@@ -58,21 +58,21 @@ La longueur d'onde est la période spatiale. Après un déplacement dans l'espac
 {{% /note %}}
 {{% /solution %}}
 
-Les élèves éloignent le microphone $M_2$ afin d’obtenir *pour la première fois* les deux courbes de la *Figure 2*. Ils cesse alors de déplacer $M_2$.
+Les élèves éloignent le microphone $M_2$ afin d’obtenir *pour la première fois* les deux courbes de la *Figure 2*. Ils cessent alors de déplacer $M_2$.
 
-4. Quels renseignements permettent d’affirmer que $M_1$ n’a pas été déplacé et que $M_2$ est plus loin du haut-parleur que lors de la première acquisition&nbsp;?
+4. Quels renseignements permettent d’affirmer que $M_1$ n’a pas été déplacé et que $M_2$ est plus loin du haut-parleur que lors de la première acquisition ?
 {{% solution "Réponse" %}}
 L'amplitude du signal capté par $M_1$ n'a pas varié, tandis que celle du signal capté par $M_2$ a diminué. $M_1$ est donc resté immobile et $M_2$ a reculé (puisqu'on sait que l'intensité d'une onde diminue au cours de sa propagation).
 {{% /solution %}}
 
-5. Les signaux électriques $u_1 (t)$ et $u_2 (t)$ sont-ils en phase&nbsp;? Justifier la réponse.
+5. Les signaux électriques $u_1 (t)$ et $u_2 (t)$ sont-ils en phase ? Justifier la réponse.
 {{% solution "Réponse" %}}
 
 - Les signaux ne sont plus en phase puisque lorsque $u_1$ est maximale $u_2$ est minimale. Ils ne traduisent plus le même état vibratoire au niveau de $M_1$ et de $M_2$.
-- En fait, les **signaux sont en opposition de phase**&nbsp;: *ils traduisent des états vibratoires opposés*.
+- En fait, les **signaux sont en opposition de phase* : *ils traduisent des états vibratoires opposés*.
 {{% /solution %}}
 
-6. La distance d séparant $M_1$ et $M_2$ a augmenté de $\pu{13,6 cm}$. Cela confirme-t-il le résultat de la question 2)&nbsp;?
+6. La distance d séparant $M_1$ et $M_2$ a augmenté de $\pu{13,6 cm}$. Cela confirme-t-il le résultat de la question 2) ?
 {{% solution "Réponse" %}}
 
 - Puisque les signaux sont en opposition de phase, le retard $\tau$ est égal à $\tau = \dfrac{T}{2}$.  
@@ -86,9 +86,9 @@ Le retard est égal à une demi-période.
 On peut modéliser mathématiquement une onde sinusoïdale se propageant depuis une source $S$ et atteignant un point quelconque $M$ de l'espace par la fonction $s$[^1] à deux variables, appelée *élongation de la vibration*, telle que $$s(M,t) = A \cos(\dfrac{2\pi}{T}(t-\tau) + \varphi)$$
 <img src="/terminales-pc/chap-2/chap-2-9-4.png" alt="" width="30%" />
 
-- $A$ est l'amplitude de l'élongation. Par définition, $A > 0$&nbsp;;
-- $T$ est la période temporelle de l'onde&nbsp;;
-- $\tau$ est le retard de l'onde au point $M$&nbsp;;
+- $A$ est l'amplitude de l'élongation. Par définition, $A > 0$ ;
+- $T$ est la période temporelle de l'onde ;
+- $\tau$ est le retard de l'onde au point $M$ ;
 - $\varphi$ est la **phase à l'origine**.
 - $\dfrac{2\pi}{T}(t-\tau) + \varphi$ est la **phase** de l'onde en $M$.
 
@@ -104,7 +104,7 @@ La notion de retard n'a aucun sens au niveau de la source $S$, donc si on fait v
 La courbe verte est $s(M,t)$.
 {{% /solution %}}
 
-8. Modifier les valeurs de $A$. Quelles sont les valeurs extrêmes de $s(M,t)$&nbsp;?
+8. Modifier les valeurs de $A$. Quelles sont les valeurs extrêmes de $s(M,t)$ ?
 {{% solution "Réponse" %}}
 
 - Puisque quel que soit l'angle $\alpha$, $-1 \leq \cos (\alpha) \leq 1$, $-A \leq A \cos (\alpha) \leq A$ et $-A \leq s(M,t) \leq A$.
@@ -115,15 +115,16 @@ La courbe verte est $s(M,t)$.
 Lorsqu'on fait varier $T$ la courbe se contracte ou se dilate horizontalement, ceci correspond bien à la période du signal.
 {{% /solution %}}
 
-11. Modifier $\tau$ et bien comprendre en quoi il traduit le retard de l'onde au point $M$. En particulier, pourquoi le signal se déplace-t-il vers la droite lorsqu'on augmente $\tau$&nbsp;?
+11. Modifier $\tau$ et bien comprendre en quoi il traduit le retard de l'onde au point $M$. En particulier, pourquoi le signal se déplace-t-il vers la droite lorsqu'on augmente $\tau$ ?
 {{% solution "Réponse" %}}
 Lorsqu'on augmente la valeur du retard le signal se déplace vers la droite pour bien mettre en évidence le fait que l'information arrive plus tard dans le temps.
 {{% /solution %}}
 
-12. En se rappelant que $\tau = \dfrac{r}{v}$, où $r$ est la distance $SM$ et $v$ la célérité de l'onde, montrer qu'on peut écrire la fonction $s$ sous la forme&nbsp;:
+12. En se rappelant que $\tau = \dfrac{r}{v}$, où $r$ est la distance $SM$ et $v$ la célérité de l'onde, montrer qu'on peut écrire la fonction $s$ sous la forme :
 $$s(M,t) = A \cos(\dfrac{2\pi}{T}t - \dfrac{2\pi}{\lambda}r + \varphi)$$
 {{% solution "Réponse" %}}
 Comme $\tau = \dfrac{r}{v}$,
+
 $$
 \begin{aligned}
 s(M,t) &= A \cos(\dfrac{2\pi}{T}(t-\tau) + \varphi)  \cr
@@ -136,7 +137,7 @@ $$
 Cette expression fait apparaître la **double périodicité** (**spatiale** et **temporelle**).
 {{% /solution %}}
 
-13. Pourquoi appelle-t-on $\varphi$ la phase à l'origine&nbsp;?
+13. Pourquoi appelle-t-on $\varphi$ la phase à l'origine ?
 {{% solution "Réponse" %}}
 Lorsqu'on pose $t=0$ et $r=0$, $s(0, 0) = A \cos(\varphi)$.
 {{% /solution %}}
