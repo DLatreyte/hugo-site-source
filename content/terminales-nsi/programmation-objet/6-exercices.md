@@ -36,7 +36,7 @@ En pratique
 ```python
 p1 = Point()
 p1.__abs = 1     # Interdit
-p1.set_abs = 1   # Bonne pratique
+p1.set_abs(1)   # Bonne pratique
 ```
 
 En Python, par convention, le nom des attributs privés commence par `__`.
@@ -91,7 +91,7 @@ On rappelle qu'un triangle est isocèle si $AB=AC$ ou $AB=BC$ ou $AC=BC$ ($AB$, 
 10. **(Facultatif car HP)** Implémenter une version statique (méthodes décorées par le décorateur `@staticmethod`) des deux méthodes `calcul_distance` et `calcul_milieu`.
 
 {{% note normal %}}
-{{< remote "Pour découvrir ce que sont les méthodes de classe, les méthodes statiques" "https://www.geeksforgeeks.org/class-method-vs-static-method-python/" >}}
+{{< remote "Pour découvrir ce que sont les méthodes de classe, les méthodes statiques" "<https://www.geeksforgeeks.org/class-method-vs-static-method-python/>" >}}
 {{% /note %}}
 
 11. Tester tous les objets et méthodes depuis la fonction `main` du programme.
