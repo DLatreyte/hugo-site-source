@@ -9,7 +9,7 @@ toc: true
 tags: ["Beer-Lambert", "Dosage par étalonnage", "Spectroscopie IR", "Groupes caractéristiques", "Fonctions chimiques"]
 categories: ["Chimie", "Terminale Spé PC", "Annale"]
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 mermaid: true
 ---
@@ -87,9 +87,11 @@ Afin de procéder au contrôle, on réalise le titrage par spectrophotométrie d
 
 - *Première étape&nbsp;:* On recueille l'éthanol du vin par distillation.
 - *Deuxième étape&nbsp;:* L'éthanol est oxydé par la NAD+ dans une réaction catalysée par une enzyme spécifique. La réaction produit de la nicotinamide-adénine-dinucléotide réduite ($\ce{NADH}$) en quantité de matière égale à celle de l'éthanol dosé selon l'équation&nbsp;:
+
 $$
 \ce{Ethanol + NAD^+ -> Ethanal + NADH + H^+ }
 $$
+
 - *Troisième étape&nbsp;:* La $\ce{NADH}$ absorbant dans le domaine UV, on mesure son absorbance par spectrophotométrie.
 
 L'étalonnage du spectrophotomètre avec différentes solutions d'éthanol permet de vérifier la loi de Beer-Lambert&nbsp;: $A = k \\, C_m$ avec $k = \pu{1,6e–3 L.mg-1}$ et $C_m$ la concentration massique d'éthanol dans l'échantillon.

@@ -9,7 +9,7 @@ toc: true
 tags: ["Titrage", "Transformation totale", "Tableau d'avancement", "Méthode de la dérivée", "Réaction acide-base", "Tableau d'avancement"]
 categories: ["Chimie", "Terminale Spé PC", "Annale"]
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 
@@ -107,6 +107,7 @@ On réalise le titrage avec suivi pH-métrique de la solution $S_1$ par une solu
 
 7. Écrire l'équation de la réaction chimique support de ce titrage.
 {{% solution "Réponse" %}}
+
 $$
 \ce{ CH3COO^-(aq) + H3O^+ -> CH3COOH(aq) + H2O  }
 $$
@@ -121,6 +122,7 @@ On obtient les courbes de la figure 5 ci-dessous&nbsp;:
 8. Schématiser et légender le dispositif de titrage.
 {{% solution "Réponse" %}}
 <img src="/terminales-pc/chap-4/chap-4-9-3.png" alt="" width="60%" />
+
 {{% /solution %}}
 
 9. Donner la définition de l'équivalence d'un titrage.

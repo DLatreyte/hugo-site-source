@@ -9,7 +9,7 @@ toc: true
 tags: ["Beer-Lambert", "Dosage par étalonnage", "Incertitudes"]
 categories: ["Chimie", "Terminale Spé PC", "Annale"]
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 

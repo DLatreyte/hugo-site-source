@@ -9,7 +9,7 @@ toc: true
 tags: ["Titrage", "Suivi conductimétrique", "Suivi pH-métrique", "Conductivité", "Base", "Acide", "Équivalence", "Titrage colorimétrique", "Incertitudes"]
 categories: ["Chimie", "Terminale Spé PC", "Annale"]
 image: ""
-solution_est_visible: true
+solution_est_visible: false
 auto_numbering: true
 ---
 $\gdef\barcirc{{\mathrlap{\mathchoice{\kern{0.145em}}{\kern{0.145em}}{\kern{0.1015em}}{\kern{0.1015em}}\circ}{-}}}$
@@ -85,6 +85,7 @@ $$\ce{ AH(aq)  + HO^–(aq) -> A–(aq) + H2O(l) }$$
 {{% /solution %}}
 
 5. L'incertitude sur $m$ est donnée par l'expression :
+
 $$
 \left(\dfrac{U(m)}{m}\right)^2 = \left(\dfrac{U(C_B)}{C_B}\right)^2 + \left(\dfrac{U(V_{BE})}{V_{BE}}\right)^2 + \left(\dfrac{U(V_A)}{V_A}\right)^2 + \left(\dfrac{U(V)}{V}\right)^2
 $$
