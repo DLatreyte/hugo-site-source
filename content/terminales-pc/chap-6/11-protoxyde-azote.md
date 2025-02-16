@@ -9,7 +9,7 @@ toc: true
 tags: ["Vitesse de réaction", "Vitesse de formation", "Vitesse de disparition", "Tableau d'avancement", "Ordre 1", "Mécanisme réactionnel"]
 categories: ["Chimie", "Terminale Spé PC"]
 image: ""
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: true
 ---
 
@@ -45,6 +45,7 @@ $ [\ce{N2O}] = C_0 - 2 x $ et $ [\ce{N2}] = 2x $, donc $ [\ce{N2O}] = C_0 - [\ce
 
 5. Exprimer la vitesse volumique de formation $v\_f$ de $[\ce{N2}]$.
 {{% solution "Réponse" %}}
+
 $$
     v\_f (\ce{N2}) = \dfrac{\mathrm{d} [\ce{N2}]}{\mathrm{dt}}
 $$
@@ -115,6 +116,7 @@ Les vitesses volumiques de formation ou de disparition sont spécifiques à chac
 10. Dans le tableau, dans le {{< remote "fichier des données" "/terminales-pc/chap-6/chap-6-11-1.ambl" >}} ajouter une colonne calculée pour calculer la vitesse de disparition $v_d(\ce{N2O})$ du protoxyde d'azote $\ce{N2O}$ à chaque instant.
 {{% solution "Réponse" %}}
 <img src="/terminales-pc/chap-6/chap-6-11-4.png" alt="" width="" />
+
 {{% /solution %}}
 
 11. Tracer l’évolution de la vitesse volumique de disparition de $v_d(\ce{N2O})$ en fonction de $[\ce{N2O}]$. Conclusion.

@@ -1,5 +1,5 @@
 ---
-title: "Le codage d'Huffman"
+title: "Le codage de Huffman"
 subtitle: ""
 author: ""
 type: ""
