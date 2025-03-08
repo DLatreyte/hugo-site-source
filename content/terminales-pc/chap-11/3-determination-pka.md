@@ -59,8 +59,8 @@ Remarque
 
 {{% solution "Résultats expérimentaux" %}}
 
-- $\sigma_1 = \pu{1,113e3 \mu S.cm-1}$
-- $\sigma_2 = \pu{0,3206e3 \mu S.cm-1}$
+- $\sigma_1 = \pu{1,113e-3 \mu S.cm-1}$
+- $\sigma_2 = \pu{0,3206e-3 \mu S.cm-1}$
 
 {{% /solution %}}
 

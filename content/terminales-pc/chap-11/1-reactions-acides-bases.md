@@ -164,10 +164,6 @@ De la même façon, on montre que
 $$ \text{pH} > \dfrac{1}{2}\\, \text{pK}\_e$$
 {{% /solution %}}
 
-Remarque&nbsp;:
-
-:   Les limites supérieure et inférieure du pH en solution aqueuse seront démontrées un peu plus loin dans ce document.
-
 ## Constante d'acidité $K_a$
 
 ### Définition
