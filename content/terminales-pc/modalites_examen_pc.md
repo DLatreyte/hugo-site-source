@@ -4,7 +4,7 @@ subtitle: "Épreuve de l'enseignement de spécialité « physique-chimie » de l
 author: ""
 type: ""
 date: 2020-08-19T16:22:06+04:00
-draft: false
+draft: true
 toc: true
 tags: ["Bulletin Officiel", "Épreuve BAC"]
 categories: ["Programme officiel"]
@@ -74,4 +74,3 @@ Il n'y a pas d'épreuve de remplacement pour la partie pratique : en cas d'absen
 Le candidat tire au sort un sujet comportant deux questions, portant sur deux domaines de natures différentes du programme, et doit traiter les deux questions.  
 En fonction du contenu du sujet tiré au sort par le candidat, l'examinateur décide si l'usage d'une calculatrice est autorisé ou interdit.  
 Cette épreuve a lieu dans une salle comportant du matériel de physique-chimie afin que des questions puissent être posées sur le matériel expérimental et son utilisation, sans que le candidat soit conduit à manipuler.
-

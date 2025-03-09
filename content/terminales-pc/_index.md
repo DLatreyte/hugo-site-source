@@ -9,12 +9,6 @@ layout: "single"
 
 - {{< remote "Programme officiel" "/programmes/Terminale_Specialite_PC.pdf" >}}
 
-- {{< remote "Modalités de l'examen" "modalites_examen_pc" >}}
-
-- [<span style="color: red;"><strong>Parties du programme de l'épreuve écrite</strong></span>]({{< ref "programme_avant_examen.md" >}})
-
-- {{< remote "Modalités de l'épreuve du Grand oral" "grand_oral" >}}
-
 <!--
 - {{< remote "Planning prévisionnel jusqu'aux épreuves (écrit + ECE)" "planning-previsionnel" >}}
 -->

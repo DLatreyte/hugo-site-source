@@ -4,7 +4,7 @@ subtitle: "Toutes les parties du programmes n'ont pas à être traitées avant l
 author: ""
 type: ""
 date: 2020-08-19T18:10:34+04:00
-draft: false
+draft: true
 toc: true
 tags: ["Bulletin Officiel", "Épreuve BAC"]
 categories: ["Programme officiel"]

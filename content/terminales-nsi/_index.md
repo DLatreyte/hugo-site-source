@@ -16,10 +16,11 @@ layout: single
 
 - {{< remote "Programme officiel" "/programmes/Terminale_Specialite_nsi.pdf" >}}
 
+<!--
 - {{< remote "Modalités de l'examen" "modalites_examen_nsi" >}}
 
 - {{< remote "Modalités de l'épreuve du Grand oral" "../terminales-pc/grand_oral" >}}
-
+-->
 <!--
 - [<span style="color: red;"><strong>BAC 2023 NSI : «&nbsp;Entrées prépondérantes&nbsp;»</strong></span>]({{< ref "2022-2023-entrees-preponderantes.md" >}})
 -->

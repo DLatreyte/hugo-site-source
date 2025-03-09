@@ -4,7 +4,7 @@ subtitle: "Modalités de l'épreuve du Grand oral"
 author: ""
 type: ""
 date: 2020-08-19T19:16:14+04:00
-draft: false
+draft: true
 toc: true
 tags: ["Bulletin Officiel", "Grand oral"]
 categories: ["Programme officiel"]
@@ -42,7 +42,7 @@ Au début de l'épreuve, le candidat présente au jury deux questions.
 Ces questions portent sur les deux enseignements de spécialité soit pris isolément, soit abordés de manière transversale. Elles mettent en lumière un des grands enjeux du ou des programmes de ces enseignements. Elles sont adossées à tout ou partie du programme du cycle terminal. Pour les candidats scolarisés, elles ont été élaborées et préparées par le candidat avec ses professeurs et, s'il le souhaite, avec d'autres élèves.
 Les questions sont transmises au jury, par le candidat, sur une feuille signée par les professeurs des enseignements de spécialité du candidat et portant le cachet de son établissement d'origine.  
 Le jury choisit une des deux questions. Le candidat dispose de 20 minutes de préparation pour mettre en ordre ses idées et réaliser, s'il le souhaite, un support qu'il remettra au jury sur une feuille qui lui est fournie. Ce support ne fait pas l'objet d'une évaluation. L'exposé du candidat se fait sans note.  
-Le candidat explique pourquoi il a choisi de préparer cette question pendant sa formation, puis il la développe et y répond.   
+Le candidat explique pourquoi il a choisi de préparer cette question pendant sa formation, puis il la développe et y répond.
 Le jury évalue les capacités argumentatives et les qualités oratoires du candidat.
 
 ### 4.2. Deuxième temps : échange avec le candidat (10 minutes)
@@ -62,7 +62,7 @@ Les candidats individuels ou les candidats issus des établissements scolaires p
 
 ## 6. Composition du jury
 
-Le jury est composé de deux professeurs de disciplines différentes, dont l'un représente l'un des deux enseignements de spécialité du candidat et l'autre représente l'autre enseignement de spécialité ou l'un des enseignements communs, ou est professeur-documentaliste. 
+Le jury est composé de deux professeurs de disciplines différentes, dont l'un représente l'un des deux enseignements de spécialité du candidat et l'autre représente l'autre enseignement de spécialité ou l'un des enseignements communs, ou est professeur-documentaliste.
 
 ## 7. Annexes
 
