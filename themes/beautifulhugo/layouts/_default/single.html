@@ -91,7 +91,7 @@
           </div>
           {{ else }}
           <div class="disqus-comments">
-            {{ template "_internal/disqus.html" . }}
+            {{ partial "disqus-wrapper.html" . }}
           </div>
           {{ end }}
         {{ end }}

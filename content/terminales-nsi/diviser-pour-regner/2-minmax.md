@@ -161,7 +161,7 @@ def maxmin2(tab: List[float]) -> float:
     return maximum
 ```
 
-**Remarque :** on peut aussi développersa propre fonction `max`.
+**Remarque :** on peut aussi développer sa propre fonction `max`.
 
 {{% /solution %}}
 
