@@ -4,7 +4,7 @@ subtitle: ""
 author: ""
 type: ""
 date: 2020-09-02T23:02:47+04:00
-draft: false
+draft: true
 toc: false
 tags: []
 categories: []
