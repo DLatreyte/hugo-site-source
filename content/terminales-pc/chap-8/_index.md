@@ -29,26 +29,72 @@ layout: "single"
 - {{< remote "Mouvements dans des champs uniformes sur le Livre Scolaire" "http://LLS.fr/PCTP315" >}}
 
 ----
-
+<!--
 - **Doc.** [*Rappels de première sur l'énergie*](1-rappels-energie)
+-->
 
+- **Cours.** *Les théorèmes énergétiques*
+    - <a href="/terminales-pc/chap-8/doc-theoremes-energetiques/Doc. 8,1 - Q - Théorèmes énergétiques.pdf" >Document</a> 
+    - <a href="/terminales-pc/chap-8/doc-theoremes-energetiques/Doc. 8,1 - QR - Théorèmes énergétiques.pdf" >*Correction*</a>
+
+<!--
 - **Doc.** [*Cours : Mouvements dans le champ de pesanteur uniforme*](2-mouvement-champ-pesanteur-uniforme)
+-->
+- **Cours.** *Mouvements d'un système dans le champ de pesanteur uniforme*
+    - <a href="/terminales-pc/chap-8/doc-champ-pesanteur-uniforme/Doc. 8,2 - Q - Mouvement d'un système ponctuel dans le champ de pesanteur uniforme.pdf" >Document</a> 
+    - <a href="/terminales-pc/chap-8/doc-champ-pesanteur-uniforme/Doc. 8,2 - QR - Mouvement d'un système ponctuel dans le champ de pesanteur uniforme.pdf" >*Correction*</a>
 
+<!--
 - **Doc.** [*Recherche : Le problème du chasseur et du singe*](18-chasseur-singe)
+-->
 
-- **Doc.** [*Annale : Mécanique du vol d'un ballon sonde*](3-annale-mouvement-ballon-sonde)
+- **TP (Python).** *Étude expérimentale d'un mouvement vertical*
+    - <a href="/terminales-pc/chap-8/doc-tp1/Doc. 8,3 - Q - Étude expérimentale d'un mouvement.pdf" >Document</a> 
+    - <a href="/terminales-pc/chap-8/doc-tp1/Élèves - Étude énergies.ipynb" >Fichier élève (Jupyterlab)</a> 
+    - <a href="/terminales-pc/chap-8/doc-tp1/BallTossUp.mov" >Vidéo</a> 
+    - <a href="/terminales-pc/chap-8/doc-tp1/Doc. 8,3 - QR - Étude expérimentale d'un mouvement.pdf" >*Correction*</a>
 
-- **Doc.** [*Annale : Saut en parachute*](4-annale-saut-parachute)
+- **TP (Python).** *Chute d'une balle lachée depuis un vélo*
+    - <a href="/terminales-pc/chap-8/doc-tp1/Doc. 8,4 - Q - Chute d'une balle lachée depuis un vélo.pdf" >Document</a> 
+    - <a href="/terminales-pc/chap-8/doc-tp1/velo_balle_eleves.ipynb" >Fichier élève (Jupyterlab)</a> 
+    - <a href="/terminales-pc/chap-8/doc-tp1/velo_et_balle.mp4" >Vidéo</a> 
+    - <a href="/terminales-pc/chap-8/doc-tp1/Doc. 8,4 - QR - Chute d'une balle lachée depuis un vélo.pdf" >*Correction*</a>
 
-- **Doc.** [*Annale : Lancer de ballon en GRS*](17-annale-grs)
+
+- **Exercice.** *Le problème du chasseur et du singe*
+    - <a href="/terminales-pc/chap-8/doc-chasseur-singe/Doc. 8,8 - QR - Le problème du chasseur et du singe.pdf" >Document</a> 
+    - <a href="/terminales-pc/chap-8/doc-chasseur-singe/Doc. 8,8 - QR - Le problème du chasseur et du singe.pdf" >*Correction*</a>
+
+- **Annale.** [*Mécanique du vol d'un ballon sonde*](3-annale-mouvement-ballon-sonde)
+
+<!--
+- **Annale.** [*Saut en parachute*](4-annale-saut-parachute)
+-->
+- **Annale.** *Saut en parachute*
+    - <a href="/terminales-pc/chap-8/doc-saut-en-parachute/Doc. 8,9 - Q - Saut en parachute.pdf" >Document</a> 
+    - <a href="/terminales-pc/chap-8/doc-saut-en-parachute/Doc. 8,9 - QR - Saut en parachute.pdf" >Correction</a>
+
+<!--
+- **Annale.** [*Lancer de ballon en GRS*](17-annale-grs)
+-->
+
+- **Annale.** *Lancer de ballon en GRS*
+    - <a href="/terminales-pc/chap-8/doc-grs/Doc. 8,10 - Q - Lancer d'un ballon en GRS.pdf" >Document</a> 
+    - <a href="/terminales-pc/chap-8/doc-grs/Doc. 8,10 - QR - Lancer d'un ballon en GRS.pdf" >Correction</a>
 
 ----
 
+<!--
 - **Doc.** [*Cours : Mouvement d'une particule chargée dans un champ électrique uniforme*](5-mouvement-champ-electrique)
+-->
 
-- **Doc.** [*Annale : Les débuts de l'électron en physique*](12-annale-thomson)
+- **Cours.** *Mouvement d'une particule chargée dans un champ électrique uniforme*
+    - <a href="/terminales-pc/chap-8/doc-champ-electrique/Doc. 8,5 - Q - Mouvement d'un objet ponctuel dans le champ électrique uniforme.pdf" >Document</a> 
+    - <a href="/terminales-pc/chap-8/doc-champ-electrique/Doc. 8,5 - QR - Mouvement d'un objet ponctuel dans le champ électrique uniforme.pdf" >*Correction*</a>
 
-- **Doc.** [*Annale : Particule $\alpha$ dans un champ électrostatique uniforme*](13-annale-particule-alpha)
+- **Annale.** [*Les débuts de l'électron en physique*](12-annale-thomson)
+
+- **Annale.** [*Particule $\alpha$ dans un champ électrostatique uniforme*](13-annale-particule-alpha)
 
 ## Mouvements dans un champ gravitationnel non uniforme
 
@@ -67,6 +113,10 @@ layout: "single"
 ----
 
 - **Doc.** [*Cours : Mouvements dans le champ gravitationnel non uniforme*](6-mouvement-champ-gravitationnel)
+
+- **Cours.** *Mouvements dans le champ gravitationnel non uniforme*
+    - <a href="/terminales-pc/chap-8/doc-champ-non-uniforme/Doc. 8,6 - Cours - Q - Mouvements dans le champ gravitationnel non uniforme.pdf" >Document</a> 
+    - <a href="/terminales-pc/chap-8/doc-champ-non-uniforme/Doc. 8,6 - Cours - Q - Mouvements dans le champ gravitationnel non uniforme" >*Correction*</a>
 
 - **Doc.** [*Annale : Exploration du système saturnien*](7-saturne)
 
