@@ -62,7 +62,7 @@ layout: "single"
 
 - **TP (Python).** *Tracés de vecteurs à l'aide de Python*
     - <a href="/terminales-pc/chap-8/doc-trace-vecteurs/document.pdf" >Document</a> 
-    - <a href="/terminales-pc/chap-8/doc-trace-vecteurs/trace-vecteurs.ipynb" >Fichier élève (Jupyterlab)</a> 
+    - <a href="/terminales-pc/chap-8/doc-trace-vecteurs/trace-vecteurs-eleves.ipynb" >Fichier élève (Jupyterlab)</a> 
     - <a href="/terminales-pc/chap-8/doc-trace-vecteurs/BallTossOut.mp4" >Vidéo</a> 
     - <a href="/terminales-pc/chap-8/doc-trace-vecteurs/correction.pdf" >*Correction*</a>
 
