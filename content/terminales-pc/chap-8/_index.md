@@ -60,6 +60,12 @@ layout: "single"
     - <a href="/terminales-pc/chap-8/doc-tp1/velo_et_balle.mp4" >Vidéo</a> 
     - <a href="/terminales-pc/chap-8/doc-tp1/correction.pdf" >*Correction*</a>
 
+- **TP (Python).** *Tracés de vecteurs à l'aide de Python*
+    - <a href="/terminales-pc/chap-8/doc-trace-vecteurs/document.pdf" >Document</a> 
+    - <a href="/terminales-pc/chap-8/doc-trace-vecteurs/trace-vecteurs.ipynb" >Fichier élève (Jupyterlab)</a> 
+    - <a href="/terminales-pc/chap-8/doc-trace-vecteurs/BallTossOut.mp4" >Vidéo</a> 
+    - <a href="/terminales-pc/chap-8/doc-trace-vecteurs/correction.pdf" >*Correction*</a>
+
 
 - **Exercice.** *Le problème du chasseur et du singe*
     - <a href="/terminales-pc/chap-8/doc-chasseur-singe/document.pdf" >Document</a> 
