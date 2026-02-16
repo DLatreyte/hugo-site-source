@@ -118,26 +118,36 @@ layout: "single"
 
 ----
 
-- **Doc.** [*Cours : Mouvements dans le champ gravitationnel non uniforme*](6-mouvement-champ-gravitationnel)
+<!--
+- **Cours.** [*Mouvements dans le champ gravitationnel non uniforme*](6-mouvement-champ-gravitationnel)
+-->
 
 - **Cours.** *Mouvements dans le champ gravitationnel non uniforme*
     - <a href="/terminales-pc/chap-8/doc-champ-non-uniforme/document.pdf" >Document</a> 
     - <a href="/terminales-pc/chap-8/doc-champ-non-uniforme/correction.pdf" >*Correction*</a>
 
-- **Doc.** [*Annale : Exploration du système saturnien*](7-saturne)
+- **TP (Python).** *Détermination de la masse du Soleil*
+    - <a href="/terminales-pc/chap-8/doc-masse-soleil/document.pdf" >Document</a> 
+    - <a href="/terminales-pc/chap-8/doc-masse-soleil/determination_masse_soleil_eleves.ipynb" >Fichier élève (Jupyterlab)</a> 
+    - <a href="/terminales-pc/chap-8/doc-masse-soleil/correction.pdf" >*Correction*</a>
 
-- **Doc.** [*Annale : Principe de la spectrométrie de masse*](8-spectrometre-masse)
+- **Annale.** [*Exploration du système saturnien*](7-saturne)
 
-- **Doc.** [*Annale : Laboratoires en impesanteur*](9-impesanteur)
+- **Annale.** [*Principe de la spectrométrie de masse*](8-spectrometre-masse)
 
-- **Doc.** [*Annale : Tomographie par émission de positons (Difficile !)*](10-tomographie)
+- **Annale.** [*Laboratoires en impesanteur*](9-impesanteur)
 
+- **Annale.** [*Tomographie par émission de positons (Difficile !)*](10-tomographie)
+
+<!--
 ## Utilisation de Python
 
 - **Doc.** [*Quelques tracés de courbes à l'aide de Python*](11-traces-de-courbes)
 
-- **Doc.** [*Détermination de la masse du Soleil à l'aide de Python*](14-troisieme-loi-kepler-python)
+-->
 
 - **Doc.** [*TP : Chute d'une goutte d'eau dans différents milieux*](15-chute-eau)
 
+<!--
 - **Doc.** [*TP : Étude d'un mouvement et tracé de vecteurs*](16-trace-de-vecteurs)
+-->
