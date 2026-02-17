@@ -34,42 +34,45 @@ layout: "single"
 -->
 
 - **Cours.** *Les théorèmes énergétiques*
-    - <a href="/terminales-pc/chap-8/doc-theoremes-energetiques/document.pdf" >Document</a> 
-    - <a href="/terminales-pc/chap-8/doc-theoremes-energetiques/correction.pdf" >*Correction*</a>
+    - <a href="/terminales-pc/chap-8/doc-theoremes-energetiques/document.pdf" target=_blanck >Document</a> 
+    - <a href="/terminales-pc/chap-8/doc-theoremes-energetiques/correction.pdf" target=_blanck >*Correction*</a>
 
 <!--
 - **Doc.** [*Cours : Mouvements dans le champ de pesanteur uniforme*](2-mouvement-champ-pesanteur-uniforme)
 -->
 - **Cours.** *Mouvements d'un système dans le champ de pesanteur uniforme*
-    - <a href="/terminales-pc/chap-8/doc-champ-pesanteur-uniforme/document.pdf" >Document</a> 
-    - <a href="/terminales-pc/chap-8/doc-champ-pesanteur-uniforme/correction.pdf" >*Correction*</a>
+    - <a href="/terminales-pc/chap-8/doc-champ-pesanteur-uniforme/document.pdf" target=_blanck >Document</a> 
+    - <a href="/terminales-pc/chap-8/doc-champ-pesanteur-uniforme/correction.pdf" target=_blanck >*Correction*</a>
 
 <!--
 - **Doc.** [*Recherche : Le problème du chasseur et du singe*](18-chasseur-singe)
 -->
 
 - **TP (Python).** *Étude expérimentale d'un mouvement vertical*
-    - <a href="/terminales-pc/chap-8/doc-tp1/document.pdf" >Document</a> 
-    - <a href="/terminales-pc/chap-8/doc-tp1/Élèves - Étude énergies.ipynb" >Fichier élève (Jupyterlab)</a> 
-    - <a href="/terminales-pc/chap-8/doc-tp1/BallTossUp.mov" >Vidéo</a> 
-    - <a href="/terminales-pc/chap-8/doc-tp1/correction.pdf" >*Correction*</a>
+    - <a href="/terminales-pc/chap-8/doc-tp1/document.pdf" target=_blanck >Document</a> 
+    - <a href="/terminales-pc/chap-8/doc-tp1/Élèves - Étude énergies.ipynb" target=_blanck >Fichier élève (Jupyterlab)</a> 
+    - <a href="/terminales-pc/chap-8/doc-tp1/BallTossUp.mov" target=_blanck >Vidéo</a> 
+    - <a href="/terminales-pc/chap-8/doc-tp1/correction.pdf" target=_blanck >*Correction*</a>
 
 - **TP (Python).** *Chute d'une balle lachée depuis un vélo*
-    - <a href="/terminales-pc/chap-8/doc-tp1/document.pdf" >Document</a> 
-    - <a href="/terminales-pc/chap-8/doc-tp1/velo_balle_eleves.ipynb" >Fichier élève (Jupyterlab)</a> 
-    - <a href="/terminales-pc/chap-8/doc-tp1/velo_et_balle.mp4" >Vidéo</a> 
-    - <a href="/terminales-pc/chap-8/doc-tp1/correction.pdf" >*Correction*</a>
+    - <a href="/terminales-pc/chap-8/doc-tp1/document.pdf" target=_blanck >Document</a> 
+    - <a href="/terminales-pc/chap-8/doc-tp1/velo_balle_eleves.ipynb" target=_blanck>Fichier élève (Jupyterlab)</a> 
+    - <a href="/terminales-pc/chap-8/doc-tp1/velo_et_balle.mp4" target=_blanck>Vidéo</a> 
+    - <a href="/terminales-pc/chap-8/doc-tp1/correction.pdf" target=_blanck>*Correction*</a>
 
 - **TP (Python).** *Tracés de vecteurs à l'aide de Python*
-    - <a href="/terminales-pc/chap-8/doc-trace-vecteurs/document.pdf" >Document</a> 
-    - <a href="/terminales-pc/chap-8/doc-trace-vecteurs/trace-vecteurs-eleves.ipynb" >Fichier élève (Jupyterlab)</a> 
-    - <a href="/terminales-pc/chap-8/doc-trace-vecteurs/BallTossOut.mp4" >Vidéo</a> 
-    - <a href="/terminales-pc/chap-8/doc-trace-vecteurs/correction.pdf" >*Correction*</a>
+    - <a href="/terminales-pc/chap-8/doc-trace-vecteurs/document.pdf" target=_blanck >Document</a> 
+    - <a href="/terminales-pc/chap-8/doc-trace-vecteurs/BallTossOut.mp4" target=_blanck >Vidéo</a> 
+
+    - <a href="https://notebook.basthon.fr/?from=https://dlatreyte.github.io/terminales-pc/chap-8/doc-trace-vecteurs/trace-vecteurs-eleves.ipynb" target=_blanck>Fichier de travail (Jupyterlab)</a>
+    - <a href="https://notebook.basthon.fr/?from=https://dlatreyte.github.io/terminales-pc/chap-8/doc-trace-vecteurs/trace-vecteurs.ipynb" target=_blanck>Correction (Jupyterlab)</a>
+    
+    - <a href="/terminales-pc/chap-8/doc-trace-vecteurs/correction.pdf" target=_blanck>*Correction*</a>
 
 
 - **Exercice.** *Le problème du chasseur et du singe*
-    - <a href="/terminales-pc/chap-8/doc-chasseur-singe/document.pdf" >Document</a> 
-    - <a href="/terminales-pc/chap-8/doc-chasseur-singe/correction.pdf" >*Correction*</a>
+    - <a href="/terminales-pc/chap-8/doc-chasseur-singe/document.pdf" target=_blanck >Document</a> 
+    - <a href="/terminales-pc/chap-8/doc-chasseur-singe/correction.pdf" target=_blanck >*Correction*</a>
 
 - **Annale.** [*Mécanique du vol d'un ballon sonde*](3-annale-mouvement-ballon-sonde)
 
@@ -77,16 +80,16 @@ layout: "single"
 - **Annale.** [*Saut en parachute*](4-annale-saut-parachute)
 -->
 - **Annale.** *Saut en parachute*
-    - <a href="/terminales-pc/chap-8/doc-saut-en-parachute/document.pdf" >Document</a> 
-    - <a href="/terminales-pc/chap-8/doc-saut-en-parachute/correction.pdf" >Correction</a>
+    - <a href="/terminales-pc/chap-8/doc-saut-en-parachute/document.pdf" target=_blanck >Document</a> 
+    - <a href="/terminales-pc/chap-8/doc-saut-en-parachute/correction.pdf" target=_blanck >Correction</a>
 
 <!--
 - **Annale.** [*Lancer de ballon en GRS*](17-annale-grs)
 -->
 
 - **Annale.** *Lancer de ballon en GRS*
-    - <a href="/terminales-pc/chap-8/doc-grs/document.pdf" >Document</a> 
-    - <a href="/terminales-pc/chap-8/doc-grs/correction.pdf" >Correction</a>
+    - <a href="/terminales-pc/chap-8/doc-grs/document.pdf" target=_blanck >Document</a> 
+    - <a href="/terminales-pc/chap-8/doc-grs/correction.pdf" target=_blanck >Correction</a>
 
 ----
 
@@ -95,8 +98,8 @@ layout: "single"
 -->
 
 - **Cours.** *Mouvement d'une particule chargée dans un champ électrique uniforme*
-    - <a href="/terminales-pc/chap-8/doc-champ-electrique/document.pdf" >Document</a> 
-    - <a href="/terminales-pc/chap-8/doc-champ-electrique/correction.pdf" >*Correction*</a>
+    - <a href="/terminales-pc/chap-8/doc-champ-electrique/document.pdf" target=_blanck >Document</a> 
+    - <a href="/terminales-pc/chap-8/doc-champ-electrique/correction.pdf" target=_blanck >*Correction*</a>
 
 - **Annale.** [*Les débuts de l'électron en physique*](12-annale-thomson)
 
@@ -123,13 +126,13 @@ layout: "single"
 -->
 
 - **Cours.** *Mouvements dans le champ gravitationnel non uniforme*
-    - <a href="/terminales-pc/chap-8/doc-champ-non-uniforme/document.pdf" >Document</a> 
-    - <a href="/terminales-pc/chap-8/doc-champ-non-uniforme/correction.pdf" >*Correction*</a>
+    - <a href="/terminales-pc/chap-8/doc-champ-non-uniforme/document.pdf" target=_blanck >Document</a> 
+    - <a href="/terminales-pc/chap-8/doc-champ-non-uniforme/correction.pdf" target=_blanck >*Correction*</a>
 
 - **TP (Python).** *Détermination de la masse du Soleil*
-    - <a href="/terminales-pc/chap-8/doc-masse-soleil/document.pdf" >Document</a> 
-    - <a href="/terminales-pc/chap-8/doc-masse-soleil/determination_masse_soleil_eleves.ipynb" >Fichier élève (Jupyterlab)</a> 
-    - <a href="/terminales-pc/chap-8/doc-masse-soleil/correction.pdf" >*Correction*</a>
+    - <a href="/terminales-pc/chap-8/doc-masse-soleil/document.pdf" target=_blanck >Document</a> 
+    - <a href="/terminales-pc/chap-8/doc-masse-soleil/determination_masse_soleil_eleves.ipynb" target=_blanck >Fichier élève (Jupyterlab)</a> 
+    - <a href="/terminales-pc/chap-8/doc-masse-soleil/correction.pdf" target=_blanck >*Correction*</a>
 
 - **Annale.** [*Exploration du système saturnien*](7-saturne)
 
