@@ -23,6 +23,7 @@ layout: "single"
 
 ## Documents
 
+<!--
 - **Doc. :** [*Incertitudes et analyse des erreurs dans les mesures physiques*](0-1-analyse-erreurs-mesures)
 
 - **Doc. :** [*Détermination pratique des incertitudes*](0-2-determination-pratique-incertitudes)
@@ -30,3 +31,14 @@ layout: "single"
 ## Ressource
 
 {{% remote "Coefficients de Student" "coefficients-student" %}}
+
+-->
+
+- **TD/TP (Python).** *Détermination d'une incertitude-type*
+    - <a href="/terminales-pc/chap-0/doc-determination-incertitudes/document.pdf" target=_blanck >Document</a> 
+
+    - <a href="https://notebook.basthon.fr/?from=https://dlatreyte.github.io/terminales-pc/chap-0/doc-determination-incertitudes/determination-incertitude-type-eleves.ipynb" target=_blanck >Fichier élève (Jupyterlab)</a> 
+
+    - <a href="https://notebook.basthon.fr/?from=https://dlatreyte.github.io/terminales-pc/chap-0/doc-determination-incertitudes/determination-incertitude-type.ipynb" target=_blanck >Correction du code (Jupyterlab)</a> 
+
+    - <a href="/terminales-pc/chap-0/doc-determination-incertitudes/correction.pdf" target=_blanck >Correction (pdf)</a>
