@@ -34,7 +34,7 @@ layout: "single"
 
 -->
 
-- **TD/TP (Python).** *Détermination d'une incertitude-type*
+- **TP (Python).** *Détermination d'une incertitude-type*
     - <a href="/terminales-pc/chap-0/doc-determination-incertitudes/document.pdf" target=_blanck >Document</a> 
 
     - <a href="https://notebook.basthon.fr/?from=https://dlatreyte.github.io/terminales-pc/chap-0/doc-determination-incertitudes/determination-incertitude-type-eleves.ipynb" target=_blanck >Fichier élève (Jupyterlab)</a> 
@@ -42,3 +42,13 @@ layout: "single"
     - <a href="https://notebook.basthon.fr/?from=https://dlatreyte.github.io/terminales-pc/chap-0/doc-determination-incertitudes/determination-incertitude-type.ipynb" target=_blanck >Correction du code (Jupyterlab)</a> 
 
     - <a href="/terminales-pc/chap-0/doc-determination-incertitudes/correction.pdf" target=_blanck >Correction (pdf)</a>
+
+
+- **TP (Python).** *Propagation d'incertitudes*
+    - <a href="/terminales-pc/chap-0/doc-propagation-incertitudes/document.pdf" target=_blanck >Document</a> 
+
+    - <a href="https://notebook.basthon.fr/?from=https://dlatreyte.github.io/terminales-pc/chap-0/doc-propagation-incertitudes/propagation_incertitudes_eleves.ipynb" target=_blanck >Fichier élève (Jupyterlab)</a> 
+
+    - <a href="https://notebook.basthon.fr/?from=https://dlatreyte.github.io/terminales-pc/chap-0/doc-propagation-incertitudes/propagation_incertitudes.ipynb" target=_blanck >Correction du code (Jupyterlab)</a> 
+
+    - <a href="/terminales-pc/chap-0/doc-propagation-incertitudes/correction.pdf" target=_blanck >Correction (pdf)</a>
