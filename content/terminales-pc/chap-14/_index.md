@@ -29,19 +29,55 @@ layout: "single"
 - {{< remote "Bilans d'énergie thermique sur le Livre Scolaire" "https://www.lelivrescolaire.fr/page/16262617" >}}
 
 ----
-
+<!--
 - **Doc.** [*Premier principe de la thermodynamique*](1-premier-principe)
+-->
 
+- **Cours.** *Premier principe de la thermodynamique*
+    - <a href="/terminales-pc/chap-14/doc-premier-principe/document.pdf" target=_blanck >Document</a> 
+    - <a href="/terminales-pc/chap-14/doc-premier-principe/correction.pdf" target=_blanck >Correction</a>
+
+<!--
 - **Doc.** [*Premier principe de la thermodynamique : exercices*](2-exercices)
+-->
+
+- **Exercices.** *Premier principe de la thermodynamique*
+    - <a href="/terminales-pc/chap-14/doc-exercices/document.pdf" target=_blanck >Document</a> 
 
 <!--
 - **Doc.** [*Bilans radiatifs*](3-bilans-radiatifs)
 -->
 
+- **Cours.** *Transferts thermiques _ comment modéliser l'évolution de la température d'un solide ?*
+    - <a href="/terminales-pc/chap-14/doc-transfert-thermique/document.pdf" target=_blanck >Document</a> 
+    - <a href="/terminales-pc/chap-14/doc-transfert-thermique/correction.pdf" target=_blanck >Correction</a>
+
+<!--
 - **Doc.** [*Bilans radiatifs*](4-bilans-radiatifs)
+-->
 
+- **Cours.** *Bilans radiatifs*
+    - <a href="/terminales-pc/chap-14/doc-bilan-radiatif/document.pdf" target=_blanck >Document</a> 
+    - <a href="/terminales-pc/chap-14/doc-bilan-radiatif/correction.pdf" target=_blanck >Correction</a>
+
+<!--
 - **Doc.** [*Détermination de la capacité thermique massique du granite*](5-calorimetrie)
+-->
 
+- **TP.** *Détermination de la capacité thermique massique du granites*
+    - <a href="/terminales-pc/chap-14/doc-tp/document.pdf" target=_blanck >Document</a> 
+    - <a href="/terminales-pc/chap-14/doc-tp/correction.pdf" target=_blanck >Correction</a>
+
+
+- **TP.** *Élévation de la température d'un liquide à l'aide d'un courant électrique*
+    - <a href="/terminales-pc/chap-14/doc-tp2/document.pdf" target=_blanck >Document</a> 
+    - <a href="https://notebook.basthon.fr/?from=https://dlatreyte.github.io/terminales-pc/chap-14/doc-tp2/calo_effet_joule_ELEVES.ipynb" target=_blanck >Fichier élève (Jupyterlab)</a> 
+    - <a href="https://notebook.basthon.fr/?from=https://dlatreyte.github.io/terminales-pc/chap-14/doc-tp2/calo_effet_joule.ipynb" target=_blanck >Correction du code (Jupyterlab)</a> 
+    - <a href="/terminales-pc/chap-14/doc-tp2/correction.pdf" target=_blanck >Correction (pdf)</a>
+
+<!--
 - **Doc.** [*Transferts thermiques : loi de Newton*](6-newton)
+-->
+
 
 - **Doc.** {{% remote "Annale : Puissance rayonnée par la Lune" "/terminales-pc/chap-14/chap-14-6/chap-14-6-annale.html" %}}
