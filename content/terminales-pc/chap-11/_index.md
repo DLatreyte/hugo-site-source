@@ -24,7 +24,7 @@ layout: "single"
 
 ----
 
-- {{< remote "Évolution spontanée d'un système chimique sur le Livre Scolaire" "<http://LLS.fr/PCTP175>" >}}
+- {{< remote "Évolution spontanée d'un système chimique sur le Livre Scolaire" "http://LLS.fr/PCTP175" >}}
 
 ----
 

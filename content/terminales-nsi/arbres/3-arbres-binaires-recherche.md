@@ -374,7 +374,7 @@ def est_abr(a: Noeud) -> bool:
 
 ## Corrigé
 
-{{< remote "Corrigé de l'activité" "<https://repl.it/@dlatreyte/Arbre-binaire-de-recherche>" >}}
+{{< remote "Corrigé de l'activité" "https://repl.it/@dlatreyte/Arbre-binaire-de-recherche" >}}
 
 ## À retenir
 

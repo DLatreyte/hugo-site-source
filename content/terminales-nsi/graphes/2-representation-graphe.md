@@ -439,4 +439,4 @@ def mat_to_lst(self: GrapheM) -> GrapheL:
 
 ## Code complet
 
-{{< remote "Code complet en ligne" "<https://replit.com/join/yugulkal-dlatreyte>" >}}
+{{< remote "Code complet en ligne" "https://replit.com/join/yugulkal-dlatreyte" >}}

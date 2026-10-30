@@ -15,7 +15,7 @@ auto_numbering: true
 
 ## Documents
 
-- {{< remote "Documents sur le Livre Scolaire" "<http://LLS.fr/ESTP68>" >}}
+- {{< remote "Documents sur le Livre Scolaire" "http://LLS.fr/ESTP68" >}}
 
 ## Questions
 

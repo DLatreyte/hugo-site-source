@@ -153,7 +153,7 @@ def pieces_a_rendre_3(somme: int, pieces: list[int]) -> list[int]:
 
 {{% solution "Code complet" %}}
 
-Le code se trouve à : {{< remote "cette adresse" "<https://replit.com/@dlatreyte/Rendu-de-monnaie-Glouton#main.py>" >}}
+Le code se trouve à : {{< remote "cette adresse" "https://replit.com/@dlatreyte/Rendu-de-monnaie-Glouton#main.py" >}}
 
 {{% /solution %}}
 
@@ -244,7 +244,7 @@ def nb_rendre(a_rendre: int, pieces: list[int]) -> int:
 
 {{% solution "Code complet" %}}
 
-Le code se trouve à : {{< remote "cette adresse" "<https://replit.com/@dlatreyte/Rendu-de-monnaie-Brute-Force>" >}}
+Le code se trouve à : {{< remote "cette adresse" "https://replit.com/@dlatreyte/Rendu-de-monnaie-Brute-Force" >}}
 
 {{% /solution %}}
 
@@ -362,7 +362,7 @@ def nb_rendre(a_rendre: int, pieces: list[int]) -> int:
 
 {{% solution "Code complet" %}}
 
-Le code se trouve à : {{< remote "cette adresse" "<https://replit.com/@dlatreyte/Rendu-de-monnaie-Programmation-dynamique-1>" >}}
+Le code se trouve à : {{< remote "cette adresse" "https://replit.com/@dlatreyte/Rendu-de-monnaie-Programmation-dynamique-1" >}}
 
 {{% /solution %}}
 
@@ -431,7 +431,7 @@ def recherche_sol(
 
 {{% solution "Code complet" %}}
 
-Le code se trouve à : {{< remote "cette adresse" "<https://replit.com/@dlatreyte/Rendu-de-monnaie-dynamique-1>" >}}
+Le code se trouve à : {{< remote "cette adresse" "https://replit.com/@dlatreyte/Rendu-de-monnaie-dynamique-1" >}}
 
 {{% /solution %}}
 

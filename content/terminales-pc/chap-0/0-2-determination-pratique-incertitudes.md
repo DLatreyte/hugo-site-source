@@ -481,7 +481,7 @@ Calculer l'incertitude $U(e/m)$, puis exprimer correctement le résultat du rapp
 
 #### Accès à une animation en ligne
 
-{{% remote "Mouvement d'un électron dans un oscilloscope" "<https://www.geogebra.org/m/xvpkgaxz>" %}}
+{{% remote "Mouvement d'un électron dans un oscilloscope" "https://www.geogebra.org/m/xvpkgaxz" %}}
 
 {{% solution "Solution" %}}
 $$

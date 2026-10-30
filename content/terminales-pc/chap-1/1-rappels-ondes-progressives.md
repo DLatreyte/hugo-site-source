@@ -17,9 +17,9 @@ auto_numbering: true
 
 ### Étude de quelques simulations de propagation d'ondes mécaniques
 
-{{% remote "Onde progressive de compression" "<https://www.geogebra.org/m/uwwwhvmt>" %}}
+{{% remote "Onde progressive de compression" "https://www.geogebra.org/m/uwwwhvmt" %}}
 
-{{% remote "Onde progressive se propageant le long d'une corde" "<https://www.geogebra.org/m/pha7fzc5>" %}}
+{{% remote "Onde progressive se propageant le long d'une corde" "https://www.geogebra.org/m/pha7fzc5" %}}
 
 ### Onde mécanique progressive
 

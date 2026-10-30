@@ -115,6 +115,6 @@ $$
 
 {{% solution "Corrigé" %}}
 
-{{% remote "Corrigé" "<https://dlatreyte.github.io/jupyter-lite/lab?path=term-spe-pc%2FAcide-Base%2FConstante-acidite-acide-ethanoique.ipynb>" %}}
+{{% remote "Corrigé" "https://dlatreyte.github.io/jupyter-lite/lab?path=term-spe-pc%2FAcide-Base%2FConstante-acidite-acide-ethanoique.ipynb" %}}
 
 {{% /solution %}}

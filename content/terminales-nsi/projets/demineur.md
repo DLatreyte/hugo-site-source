@@ -97,5 +97,5 @@ def affichage_nbre_bombes(p: List[List[bool]]) -> None:
 9. Appeler la fonction `affichage_nbre_bombes` depuis le fichier principal.
 
 {{% solution "Corrigé" %}}
-{{% remote "Un corrigé se trouve à cette adresse" "<https://replit.com/@dlatreyte/Demineur>" %}}
+{{% remote "Un corrigé se trouve à cette adresse" "https://replit.com/@dlatreyte/Demineur" %}}
 {{% /solution %}}

@@ -15,7 +15,7 @@ auto_numbering: true
 
 ## Exercice n°36 : Synthol
 
-{{< remote "Annale sur le Livre Scolaire" "<https://www.lelivrescolaire.fr/page/15963591>" >}}
+{{< remote "Annale sur le Livre Scolaire" "https://www.lelivrescolaire.fr/page/15963591" >}}
 
 {{% solution "Corrigé" %}}
 
@@ -25,7 +25,7 @@ auto_numbering: true
 
 ## Exercice n°37 : Vitamine C
 
-{{< remote "Annale sur le Livre Scolaire" "<https://www.lelivrescolaire.fr/page/15963591>" >}}
+{{< remote "Annale sur le Livre Scolaire" "https://www.lelivrescolaire.fr/page/15963591" >}}
 
 {{% solution "Corrigé" %}}
 

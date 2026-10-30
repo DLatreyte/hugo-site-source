@@ -17,7 +17,7 @@ auto_numbering: true
 
 {{% note normal %}}
 
-- Télécharger le logiciel {{< remote "Filius" "<https://www.lernsoftware-filius.de/Herunterladen>" >}}
+- Télécharger le logiciel {{< remote "Filius" "https://www.lernsoftware-filius.de/Herunterladen" >}}
 - **Attention :** Choisir la langue lors de la première ouverture du logiciel. En cas d’erreur, supprimer le dossier `.filius` contenant les paramètres de langues se trouvant dans `C:\Users\nom d’utilisateur sur le réseau\AppData\Local\.filius` (sous windows).
 {{% /note %}}
 

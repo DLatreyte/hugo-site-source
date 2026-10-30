@@ -24,7 +24,7 @@ layout: "single"
 
 ----
 
-- {{< remote "Chapitre du Livre Scolaire" "<http://LLS.fr/PCTP549>" >}}
+- {{< remote "Chapitre du Livre Scolaire" "http://LLS.fr/PCTP549" >}}
 
 ----
 

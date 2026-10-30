@@ -25,7 +25,7 @@ layout: "single"
 
 ----
 
-- {{< remote "Structure des entités organiques sur le Livre Scolaire" "<https://www.lelivrescolaire.fr/page/6692765>" >}}
+- {{< remote "Structure des entités organiques sur le Livre Scolaire" "https://www.lelivrescolaire.fr/page/6692765" >}}
 
 ----
 

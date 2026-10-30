@@ -53,7 +53,7 @@ Certains langages sont très liés à certains paradigmes mais la plupart permet
 
 ## Programmation impérative
 
-{{< remote "Wikipedia" "<https://fr.wikipedia.org/wiki/Programmation_impérative>" >}}
+{{< remote "Wikipedia" "https://fr.wikipedia.org/wiki/Programmation_impérative" >}}
 
 {{% note tip %}}
 En *programmation impérative* les opérations sont décrites en **séquences d'instructions**, dont **l'ordre est déterminé par le programmeur**, et donc l'objectif est la **modification de l'état de la mémoire** (**variables**).
@@ -91,7 +91,7 @@ La programmation impérative s'appuie sur le modèle des machines à états, ave
 
 ## Programmation fonctionnelle
 
-{{< remote "Wikipedia" "<https://fr.wikipedia.org/wiki/Programmation_fonctionnelle>" >}}
+{{< remote "Wikipedia" "https://fr.wikipedia.org/wiki/Programmation_fonctionnelle" >}}
 
 {{% note tip %}}
 En *programmation fonctionnelle* un programme est considéré comme l'**application** (au sens mathématique du terme) d'une **fonction** à l'ensemble des données que le programme doit manipuler. Ce programme donne donc **toujours le même résultat pour les mêmes données** (pas d'effet de bord).
