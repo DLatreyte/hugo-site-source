@@ -26,7 +26,7 @@ Une correction se trouve à cette adresse : {{< remote "https://repl.it/@dlatrey
 Dans un module nommé `personne`, créer la classe `Personne` dont la spécification est la suivante :
 
 ```python
-class Personne():
+class Personne:
     """
     Modélisation d'une personne.
 
@@ -62,106 +62,110 @@ def __init__(self, nom: str, prenom: str) -> None:
 
 ```python
 def modifier_nom(self, nom: str) -> None:
-        """
-        Permet de modifier le nom de la personne.
-        """
+    """
+    Permet de modifier le nom de la personne.
+    """
 ```
 
 ```python
 def obtenir_nom(self) -> str:
-        """
-        Retourne le nom de la personne.
-        """
+    """
+    Retourne le nom de la personne.
+    """
 ```
 
 ```Python
 def modifier_prenom(self, prenom: str) -> None:
-        """
-        Permet de modifier le prénom de la personne.
-        """
+    """
+    Permet de modifier le prénom de la personne.
+    """
 ```
 
 ```python
 def obtenir_prenom(self) -> str:
-        """
-        Retourne le prénom de la personne.
-        """
+    """
+    Retourne le prénom de la personne.
+    """
 ```
 
 ```python
 def obtenir_email(self) -> str:
-        """
-        Retourne l'email de la personne.
-        """
+    """
+    Retourne l'email de la personne.
+    """
 ```
 
 ```python
 def renseigner_email(self, email: str) -> None:
-        """
-        Renseigne l'attribut email de la personne.
-        """
+    """
+    Renseigne l'attribut email de la personne.
+    """
 ```
 
 ```python
 def obtenir_telephone(self) -> str:
-        """
-        Retourne le numéro de téléphone de la personne.
-        """
+    """
+    Retourne le numéro de téléphone de la personne.
+    """
 ```
 
 ```python
 def renseigner_telephone(self, telephone: str) -> None:
-        """
-        Renseigne l'attribut telephone de la personne.
-        """
+    """
+    Renseigne l'attribut telephone de la personne.
+    """
 ```
 
 ```python
 def renseigner_date_naissance(self, date: str) -> None:
-        """
-        Récupère la date de naissance sous la forme jour/mois/année.
-        Renseigne l'attribut date_naissance et, après un traitement, les attributs
-        jour_naissance, mois_naissance, annee_naissance.
-        
-        Lève une exception de type ValueError si l'année ne possède pas le bon format.
-        """
+    """
+    Récupère la date de naissance sous la forme jour/mois/année.
+    Renseigne l'attribut date_naissance et, après un traitement, les attributs
+    jour_naissance, mois_naissance, annee_naissance.
+
+    Lève une exception de type ValueError si l'année ne possède pas le bon format.
+    """
 ```
 
 ```python
 def obtenir_date_naissance(self) -> str:
-        """
-        Retourne la date de naissance.
-        """
+    """
+    Retourne la date de naissance.
+    """
 ```
 
 ```python
 def obtenir_age(self, annee_en_cours: int) -> int:
-        """
-        Retourne l'age de la personne à partir de l'année en cours.
+    """
+    Retourne l'age de la personne à partir de l'année en cours.
 
-        Lève une exception de type Exception si la date de naissance n'a pas été renseignée au préalable.
-        """
+    Lève une exception de type Exception si la date de naissance n'a pas été renseignée au préalable.
+    """
 ```
 
 La méthode `infos` suivante doit aussi faire parti de cette classe :
 
 ```python
 def infos(self) -> str:
-        """
-        Retourne toutes les informations relatives à la personne.
-        """
+    """
+    Retourne toutes les informations relatives à la personne.
+    """
 
-        chaine = """
+    chaine = """
         Prénom : {}
         Nom : {}
         Date de naissance : {}
         Email : {}
         Téléphone : {}
-        """.format(self.obtenir_prenom(), self.obtenir_nom(),
-                   self.obtenir_date_naissance(), self.obtenir_email(),
-                   self.obtenir_telephone())
+        """.format(
+        self.obtenir_prenom(),
+        self.obtenir_nom(),
+        self.obtenir_date_naissance(),
+        self.obtenir_email(),
+        self.obtenir_telephone(),
+    )
 
-        return chaine
+    return chaine
 ```
 
 {{% note warning %}}
@@ -261,7 +265,7 @@ Cette classe est de loin la moins développée du document, vous pourrez ajouter
 Dans un module nommé `banque`, créer la classe `Banque` dont la spécification est la suivante :
 
 ```python
-class Banque():
+class Banque:
     """
     Modélisation d'une banque.
 
@@ -308,6 +312,7 @@ def creation_compte(self) -> None:
 
     self.comptes.append(c)
 
+
 def infos(self) -> str:
     """
     Informations sur la banque
@@ -320,9 +325,9 @@ def infos(self) -> str:
         chaine = chaine + compte.infos()
         chaine = """
         -----------
-        
+
         """
-    
+
     return chaine
 ```
 

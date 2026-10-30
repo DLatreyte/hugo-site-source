@@ -279,7 +279,7 @@ La syntaxe utilisée pour définir une fonction en Python est assez proche de ce
 
 ```python3
 def f(x: float) -> float:
-	return x**2
+    return x**2
 ```
 
 On reconnaît tout de suite la signature de la fonction `def f(x: float) -> float` qui indique bien que la fonction possède un paramètre `x` de type `float` et retourne une valeur de type `float`. **Chaque paramètre peut donc être accompagné de son type !**
@@ -296,7 +296,7 @@ La définition de la fonction `surface` définie plus haut est la suivante :
 
 ```python3
 def surface(a: float, b: float) -> float:
-	return a * b
+    return a * b
 ```
 
 {{% note normal %}}
@@ -330,7 +330,7 @@ L'utilisateur d'une fonction n'a pas besoin de connaître en détail toutes les 
 
 ```python3
 def f(x: float) -> float:
-	""" Retourne le carré du nombre x passé en argument. """
+    """Retourne le carré du nombre x passé en argument."""
 ```
 
 En fait, la spécification est la seule contrainte qu'est tenu de respecter le concepteur d'une fonction. Il faut donc être capable de faire la distinction entre toutes les spécifications suivantes :
@@ -340,27 +340,27 @@ Dans ce cas de figure, *l'utilisateur doit faire l'effort de bien comprendre le 
   
 ```python3
 def racine_carree(x: float) -> float:
-	""" Retourne la racine carrée du nombre x. """
+    """Retourne la racine carrée du nombre x."""
 ```
 
 - Le programmeur avertit l'utilisateur qu'il existe une bonne utilisation de la fonction (l'argument doit être positif ou nul) mais n'empêche pas l'utilisateur d'appeler la fonction avec un mauvais argument.  
 Ici aussi, il incombe à l'utilisateur de bien utiliser la fonction.
 
 ```python3
-  def racine_carree(x: float) -> float:
-  	""" 
+def racine_carree(x: float) -> float:
+    """
     Retourne la racine carrée du nombre x.
-    HYPOTHÈSE : x positif ou nul. """
+    HYPOTHÈSE : x positif ou nul."""
 ```
 
 - Le programmeur prend en charge la bonne utilisation de la fonction.
 
 ```python3
 def racine_carree(x: float) -> float:
-	"""
-	Retourne la racine carrée du nombre x si positif ou nul.
-	ERREUR : x négatif.
-	"""
+    """
+    Retourne la racine carrée du nombre x si positif ou nul.
+    ERREUR : x négatif.
+    """
 ```
  
 
@@ -484,14 +484,14 @@ randint(a, b) method of random.Random instance
     
 ```python3
 def retire_un(n):
-	return 1 - n
+    return 1 - n
 ```
 
 2. La spécification est la suivante&nbsp;:
 
 ```python3
 def retire_un(n: float) -> float:
-	""" Retourne la valeur de n - 1 """
+    """Retourne la valeur de n - 1"""
 ```
 	La fonction telle qu'elle est définie à la question 1 correspond-elle à cette spécification ?
 
@@ -505,8 +505,8 @@ def retire_un(n: float) -> float:
     
 ```python3
 def retire_un(n: float) -> float:
-	""" Retourne la valeur de n - 1 """
-	return n - 1
+    """Retourne la valeur de n - 1"""
+    return n - 1
 ```
 {{% /solution %}}
 
@@ -517,10 +517,10 @@ def retire_un(n: float) -> float:
     La documentation complète de cette fonction est la suivante&nbsp;:
 
 ```python3
-def polynomiale(a:int, b:int, c:int, d:int, x: float) -> float:
+def polynomiale(a: int, b: int, c: int, d: int, x: float) -> float:
     """
     Retourne la valeur ax^3 + bx^2 + cx + d
-    
+
     >>> polynomiale(1, 1, 1, 1, 2)
     15.0
     >>> polynomiale(1, 1, 1, 1, 3)
@@ -532,10 +532,10 @@ def polynomiale(a:int, b:int, c:int, d:int, x: float) -> float:
     La documentation complète de cette fonction est la suivante&nbsp;:
 
 ```python3
-def polynomiale_carre(a:int, b:int, c:int, x: float) -> float:
+def polynomiale_carre(a: int, b: int, c: int, x: float) -> float:
     """
     Retourne la valeur ax^4 + bx^2 + c
-    
+
     >>> polynomiale(1, 1, 1, 1, 2)
     15.0
     >>> polynomiale(1, 1, 1, 1, 3)
@@ -559,7 +559,7 @@ def polynomiale(a: int, b: int, c: int, d: int, x: float) -> float:
     return a * x**3 + b * x**2 + c * x + d
 
 
-def polynomiale_carre(a:int, b:int, c:int, x: float) -> float:
+def polynomiale_carre(a: int, b: int, c: int, x: float) -> float:
     """
     Retourne la valeur ax^4 + bx^2 + c
 
@@ -578,7 +578,7 @@ def polynomiale_carre(a:int, b:int, c:int, x: float) -> float:
 1. Définir et tester la fonction nommée `somme`, écrite en Python, dont la spécification est&nbsp;:
 
 ```python
-def somme(x:float, y: float, z: float) -> float:
+def somme(x: float, y: float, z: float) -> float:
     """
     Retourne la somme des trois nombres passés en argument.
     """
@@ -600,11 +600,11 @@ def moyenne(a: float, b: float, c: float) -> float:
 La spécification de la fonction est la suivante&nbsp;:
 
 ```python3
-def moyenne_ponderee(x:float, y:float, z:float, a:int, b:int, c:int) -> float:
+def moyenne_ponderee(x: float, y: float, z: float, a: int, b: int, c: int) -> float:
     """
     Retourne la moyenne pondérée des nombres x, y et z par les coefficients
     a, b et c.
-    
+
     >>> moyenne_ponderee(5, 10, 15, 1, 1, 1)
     10.0
     >>> moyenne_ponderee(5, 10, 15, 1, 1, 0)
@@ -615,7 +615,7 @@ def moyenne_ponderee(x:float, y:float, z:float, a:int, b:int, c:int) -> float:
 
 {{% solution "Solution 6." %}}
 ```python
-def somme(x:float, y: float, z: float) -> float:
+def somme(x: float, y: float, z: float) -> float:
     """
     Retourne la somme des trois nombres passés en argument.
     """
@@ -629,14 +629,14 @@ def moyenne(a: float, b: float, c: float) -> float:
     return somme(a, b, c) / 3
 
 
-def moyenne_ponderee(x:float, y:float, z:float, a:int, b:int, c:int) -> float:
+def moyenne_ponderee(x: float, y: float, z: float, a: int, b: int, c: int) -> float:
     """
     Retourne la moyenne pondérée des nombres x, y et z par les coefficients
     a, b et c.
-    
+
     >>> moyenne_ponderee(5, 10, 15, 1, 1, 1)
     10.0
-    
+
     >>> moyenne_ponderee(5, 10, 15, 1, 1, 0)
     7.5
     """
@@ -673,19 +673,20 @@ def moyenne_ponderee(x:float, y:float, z:float, a:int, b:int, c:int) -> float:
 ```python
 from math import pow, pi
 
+
 def surface_rectangle(a: float, b: float) -> float:
-    """ Détermine la surface du rectangle de côtés a et b. """
+    """Détermine la surface du rectangle de côtés a et b."""
     return a * b
 
 
 def volume_parallelepipede(a: float, b: float, h: float) -> float:
-    """ Retourne le volume du parallélépipède rectangle de côtés a, b et de
-    hauteur h. """
+    """Retourne le volume du parallélépipède rectangle de côtés a, b et de
+    hauteur h."""
     return surface_rectangle(a, b) * h
 
 
 def surface_disque(r: float) -> float:
-    """ Returne la surface du disque de rayon r. """
+    """Returne la surface du disque de rayon r."""
     return pi * pow(r, 2)
 
 
@@ -698,11 +699,10 @@ def surface_couronne(r1: float, r2: float) -> float:
 
 
 def volume_tube(r1, r2, l) -> float:
-    """ Retourne le volume de la partie pleine d'un tube de longueur l, dont
+    """Retourne le volume de la partie pleine d'un tube de longueur l, dont
     la section est une couronne de rayon intérieur r1 et de rayon extérieur
-    r2. """
+    r2."""
     return surface_couronne(r1, r2) * l
-
 ```
 {{% /solution %}}
 
@@ -727,11 +727,12 @@ def distance(x1: float, y1: float, x2: float, y2: float) -> float:
 ```python
 from math import pow, sqrt
 
+
 def distance(x1: float, y1: float, x2: float, y2: float) -> float:
     """
-    Retourne la distance dans le plan entre les deux points de 
-	coordonnées (x1, y1) et (x2, y2).
-    
+    Retourne la distance dans le plan entre les deux points de
+        coordonnées (x1, y1) et (x2, y2).
+
     >>> distance(0, 0, 1, 1)
     1.4142135623730951
     """
@@ -753,8 +754,9 @@ Définir et tester une fonction écrite en Python, nommée `tirage_entier`, tell
 
 {{% solution "Solution 9." %}}
 ```python
-from random import random  
-    
+from random import random
+
+
 def tirage_entier(a: int) -> int:
     """
     Retourne un nombre entier aléatoire compris entre 1 et a (inclus).

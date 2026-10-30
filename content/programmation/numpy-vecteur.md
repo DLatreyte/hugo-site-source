@@ -170,14 +170,18 @@ np.savetxt("backup.txt", tab)
 
 ```python
 tab = np.array([1, 2, 3, 4])
-tab = np.append(tab, 5)  # Ne modifie pas en place le tableau mais crée un nouveau tableau
+tab = np.append(
+    tab, 5
+)  # Ne modifie pas en place le tableau mais crée un nouveau tableau
 print(tab)
 ```
 
 ### Suppression d'un élément
 
 ```python
-tab = np.delete(tab, 2)  # Ne modifie pas en place le tableau mais crée un nouveau tableau
+tab = np.delete(
+    tab, 2
+)  # Ne modifie pas en place le tableau mais crée un nouveau tableau
 print(tab)
 ```
 

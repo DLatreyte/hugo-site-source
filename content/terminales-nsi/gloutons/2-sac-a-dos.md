@@ -67,13 +67,14 @@ Le choix effectué à chaque étape n'est jamais remis en cause, ce qui fait que
 
 ```python
 if __name__ == "__main__":
-    objets = [{'nom': 'A', 'masse': 13, 'valeur': 700},
-                {'nom': 'B', 'masse': 12, 'valeur': 500},
-                {'nom': 'C', 'masse': 8, 'valeur': 200},
-                {'nom': 'D', 'masse': 10, 'valeur': 300},
-                {'nom': 'E', 'masse': 14, 'valeur': 600},
-                {'nom': 'F', 'masse': 18, 'valeur': 800}
-                ]
+    objets = [
+        {"nom": "A", "masse": 13, "valeur": 700},
+        {"nom": "B", "masse": 12, "valeur": 500},
+        {"nom": "C", "masse": 8, "valeur": 200},
+        {"nom": "D", "masse": 10, "valeur": 300},
+        {"nom": "E", "masse": 14, "valeur": 600},
+        {"nom": "F", "masse": 18, "valeur": 800},
+    ]
 ```
 
 {{% /solution %}}
@@ -96,8 +97,9 @@ def tri_objets(objets: list[dict]) -> list[dict]:
     """
     Trie la liste de dictionnaires selon les rapports valeur/masse.
     """
+
     def recupere_rapports(objet):
-        return objet['valeur'] / objet['masse']
+        return objet["valeur"] / objet["masse"]
 
     objets_tries = sorted(objets, key=recupere_rapports)
 
@@ -117,7 +119,7 @@ Une fonction en Python peut être passée comme argument à une autre fonction.
 
 ```python
 objets = tri_objets(objets)
-print(f"Objets utilisables : {objets}", end='\n')
+print(f"Objets utilisables : {objets}", end="\n")
 ```
 
 {{% /solution %}}
@@ -128,14 +130,15 @@ Remarque.
 7. Définir la fonction `construction_sac_a_dos` dont la spécification est :
 
 ```python
-def constrution_sac_a_dos(objets_tries: list[dict], 
-                          masse_max: float) -> tuple[list[str], int, int]:
+def constrution_sac_a_dos(
+    objets_tries: list[dict], masse_max: float
+) -> tuple[list[str], int, int]:
     """
     Construction du sac à dos à partir d'une stratégie gloutonne.
     HYPOTHÈSE : la liste de dictionnaires est triée par ordre croissant des rapports
     valeurs/masses.
 
-    Retourne un tuple constitué d'une liste contenant les noms des objets sélectionnés, 
+    Retourne un tuple constitué d'une liste contenant les noms des objets sélectionnés,
     de la valeur du sac à dos et de la masse du sac à dos.
     """
 ```
@@ -143,13 +146,15 @@ def constrution_sac_a_dos(objets_tries: list[dict],
 {{% solution "Solution" %}}
 
 ```python
-def constrution_sac_a_dos(objets_tries: list[dict], masse_max: float) -> tuple[list[str], int, int]:
+def constrution_sac_a_dos(
+    objets_tries: list[dict], masse_max: float
+) -> tuple[list[str], int, int]:
     """
     Construction du sac à dos à partir d'une stratégie gloultonne.
     HYPOTHÈSE : la liste de dictionnaires est triée par ordre croissant des rapports
     valeurs/masses.
 
-    Retourne un tuple constitué d'une liste contenant les noms des objets sélectionnés, 
+    Retourne un tuple constitué d'une liste contenant les noms des objets sélectionnés,
     de la valeur du sac à dos et de la masse du sac à dos.
     """
     masse_sac = 0
@@ -159,11 +164,11 @@ def constrution_sac_a_dos(objets_tries: list[dict], masse_max: float) -> tuple[l
     i = len(objets_tries) - 1  # Compteur
     while i >= 0:
         objet = objets_tries[i]  # objet est un dictionnaire
-        if (masse_sac + objet['masse']) <= masse_max:
-            valeur += objet['valeur']
-            masse_sac += objet['masse']
-            liste_objets.append(objet['nom'])
-    
+        if (masse_sac + objet["masse"]) <= masse_max:
+            valeur += objet["valeur"]
+            masse_sac += objet["masse"]
+            liste_objets.append(objet["nom"])
+
         i -= 1  # Décrémentation du compteur
 
     return (liste_objets, valeur, masse_sac)
@@ -243,8 +248,7 @@ def masse_sac(objets: list[dict[str, str]], liste_obj: list[int]) -> int:
 14. Écrire le code de la fonction `calcul_valeur_sac` dont la spécification est :
 
 ```python
-def calcul_valeur_sac(objets: list[dict[str, str]],
-                      liste_obj: list[int]) -> int:
+def calcul_valeur_sac(objets: list[dict[str, str]], liste_obj: list[int]) -> int:
     """
     Calcule la masse du sac pour la liste d'objets retenus liste_obj.
     """
@@ -253,8 +257,9 @@ def calcul_valeur_sac(objets: list[dict[str, str]],
 15. Écrire le code suivant :
 
 ```python
-def recherche_recursive(objets: list[dict[str, str]], masse_max: isinstance,
-                        list_obj: list[int], i: int) -> list[int]:
+def recherche_recursive(
+    objets: list[dict[str, str]], masse_max: isinstance, list_obj: list[int], i: int
+) -> list[int]:
     """
     Détermine le chemin de l'arbre de décision correspondant à la valeur optimale
     pour une masse du sac déterminée.
@@ -263,8 +268,9 @@ def recherche_recursive(objets: list[dict[str, str]], masse_max: isinstance,
         return list_obj[:]
 
     val1 = -1  # Initialisation à une valeur impossible du poids
-    if objets[i]['masse'] <= masse_max - masse_sac(
-            objets, list_obj):  # Ajoute objet si m_sac - m_inter > 0
+    if objets[i]["masse"] <= masse_max - masse_sac(
+        objets, list_obj
+    ):  # Ajoute objet si m_sac - m_inter > 0
         list_obj[i] = 1
         sol1 = recherche_recursive(objets, masse_max, list_obj, i + 1)
         val1 = calcul_valeur_sac(objets, sol1)

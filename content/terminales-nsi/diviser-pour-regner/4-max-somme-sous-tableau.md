@@ -90,7 +90,7 @@ La procédure est récursive. Pour « sortir » des appels récursifs, il est n�
 ```python
 def somme_max(tab: List[int]) -> int:
     """
-    Recherche de la somme maximale dans un 
+    Recherche de la somme maximale dans un
     sous-tableau en appliquant le paradigme
     « Diviser pour régner ».
     """
@@ -105,7 +105,7 @@ Ne pas effectuer le calcul de la somme maximale se trouveant dans la séquence �
 ```python
 def somme_max(tab: List[int]) -> int:
     """
-    Recherche de la somme maximale dans un 
+    Recherche de la somme maximale dans un
     sous-tableau en appliquant le paradigme
     « Diviser pour régner ».
     """

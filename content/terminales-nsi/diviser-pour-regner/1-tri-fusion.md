@@ -458,8 +458,8 @@ def tri_fusion(S: list[int]) -> None:
 def fusion(S1: list[int], S2: list[int], S: list[int]) -> None:
     """
     Combine les éléments des deux listes S1 et S2 dans la liste S (en place).
-    i est le nombre d'élément(s) de S1 copié(s) dans S. 
-    j est le nombre d'élément(s) de S2 copié(s) dans S. 
+    i est le nombre d'élément(s) de S1 copié(s) dans S.
+    j est le nombre d'élément(s) de S2 copié(s) dans S.
     On doit donc avoir i + j <= len(S).
     """
     i = 0
@@ -503,13 +503,12 @@ Dans cette section, on cherche à adapter l'algorithme de tri fusion à une list
 {{% solution "Réponse" %}}
 
 ```python
-class Cellule():
+class Cellule:
     """
     Implémentation d'une cellule
     """
 
-    def __init__(self: Cellule, valeur: int, 
-                 suivant: Cellule = None) -> None:
+    def __init__(self: Cellule, valeur: int, suivant: Cellule = None) -> None:
         self.valeur = valeur
         self.suivant = suivant
 ```
@@ -610,7 +609,9 @@ def coupe(lst: "Cellule") -> "Cellule":
 ou
 
 ```python
-def coupe(lst: Cellule, l1: Cellule = None, l2: Cellule = None, i: int = 0) -> Tuple[Cellule, Cellule]:
+def coupe(
+    lst: Cellule, l1: Cellule = None, l2: Cellule = None, i: int = 0
+) -> Tuple[Cellule, Cellule]:
     """
     Découpe la liste L2 est deux sous-listes de même
     longueur à un élément près.
@@ -621,7 +622,7 @@ def coupe(lst: Cellule, l1: Cellule = None, l2: Cellule = None, i: int = 0) -> T
         if i % 2 == 0:
             return coupe(lst.suivant, Cellule(lst.valeur, l1), l2, i + 1)
         else:
-            return coupe(lst.suivant, l1, Cellule(lst.valeur, l2), i + 1) 
+            return coupe(lst.suivant, l1, Cellule(lst.valeur, l2), i + 1)
 ```
 
 {{% /solution %}}
@@ -631,7 +632,7 @@ def coupe(lst: Cellule, l1: Cellule = None, l2: Cellule = None, i: int = 0) -> T
 ```python
 def fusion(l1: Cellule, l2: Cellule) -> Cellule:
     """
-    Réalise la fusion des deux listes l1 et l2 
+    Réalise la fusion des deux listes l1 et l2
     triées.
 
     Algorithme récursif.
@@ -643,14 +644,14 @@ def fusion(l1: Cellule, l2: Cellule) -> Cellule:
 ```python
 def fusion(l1: "Cellule", l2: "Cellule") -> "Cellule":
     """
-    Réalise la fusion des deux listes l1 et l2 
+    Réalise la fusion des deux listes l1 et l2
     triées.
     """
     if l1 is None:
         return l2
     if l2 is None:
         return l1
-        
+
     if l1.valeur <= l2.valeur:
         return Cellule(l1.valeur, fusion(l1.suivant, l2))
     else:

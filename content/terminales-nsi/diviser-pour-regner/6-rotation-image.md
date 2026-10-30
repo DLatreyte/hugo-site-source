@@ -140,8 +140,9 @@ def mystere(im):
             niveau = 255 - niveau
             im.putpixel((x, y), niveau)
 
+
 def main():
-    """ Fonction principale """
+    """Fonction principale"""
 
     # Chemin de l'image
     image = "tigrenb.png"
@@ -154,6 +155,7 @@ def main():
     mystere(im_nb)
     # Visualisation des modifications
     im_nb.show()
+
 
 main()
 ```
@@ -196,7 +198,7 @@ def recuperation_niveaux(im: Image, pt: tuple) -> None:
 
 
 def modification_couleur(im: Image, pt: tuple, triplet: tuple) -> None:
-    """ 
+    """
     Attribue la couleur (triplet) au pixel pt.
     """
 
@@ -211,7 +213,7 @@ def modification_couleur(im: Image, pt: tuple, triplet: tuple) -> None:
 
 def grille(im: Image, pas: int, triplet: tuple) -> None:
     """
-    Trace une grille à l'écran, de pas 'pas' dont la couleur 
+    Trace une grille à l'écran, de pas 'pas' dont la couleur
     est donnée par le triplet triplet.
     """
     pass
@@ -229,7 +231,7 @@ def teinte_plus_chaude(im: Image, offset: int) -> None:
 
 
 def main():
-    """ Fonction principale. """
+    """Fonction principale."""
     nom_image = "tigre.jpg"
 
     # Création de l'objet image
@@ -293,7 +295,7 @@ def rotation_aux(im, x: int, y: int, t: int) -> None:
 
     for i in range(x, x + t):
         for j in range(y, y + t):
-            #print(x, y)
+            # print(x, y)
             t_1 = im.getpixel((i, j))
             t_2 = im.getpixel((i, j + t))
             t_3 = im.getpixel((i + t, j + t))

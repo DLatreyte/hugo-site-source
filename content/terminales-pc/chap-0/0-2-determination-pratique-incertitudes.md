@@ -239,7 +239,7 @@ compenser. Après analyse du code de la fonction `calcul_ecarts_a_moyenne`, comp
 ```python
 somme = 0
 for valeur in liste_valeurs:
-    somme = somme + (valeur - moyenne)**2
+    somme = somme + (valeur - moyenne) ** 2
 ```
 
 {{% /solution %}}
@@ -280,6 +280,7 @@ faut précéder ce nom par celui du module&nbsp;:
 
 ```python
 import math as m
+
 print(m.sin(m.pi))
 ```
 

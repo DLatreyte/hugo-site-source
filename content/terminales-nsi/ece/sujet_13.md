@@ -37,7 +37,7 @@ from typing import List
 
 def tri_selection(tab: List[float]) -> List[float]:
     """
-    Tri sélection avec l'algorithme imposé 
+    Tri sélection avec l'algorithme imposé
     par l'énoncé.
     """
     for i in range(0, len(tab) - 1):

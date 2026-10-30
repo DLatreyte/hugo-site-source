@@ -272,8 +272,8 @@ def plus_grand_plus_petit() -> str:
     chaîne de caractères formée des deux valeurs max et min.
     """
     nbre_tours = 10
-    valeur_max = float('-inf')  # Plus petite valeur possible
-    valeur_min = float('inf')   # Plus grande valeur possible
+    valeur_max = float("-inf")  # Plus petite valeur possible
+    valeur_min = float("inf")  # Plus grande valeur possible
 
     for i in range(1, nbre_tours + 1):
         valeur = float(input(f"Entrez la valeur {i} : "))
@@ -299,8 +299,8 @@ def plus_grand_plus_petit(nbre_tours: int) -> str:
     Demande à l'utilisateur d'entrer 10 valeurs et retourne une
     chaîne de caractères formée des deux valeurs max et min.
     """
-    valeur_max = float('-inf')  # Plus petite valeur possible
-    valeur_min = float('inf')   # Plus grande valeur possible
+    valeur_max = float("-inf")  # Plus petite valeur possible
+    valeur_min = float("inf")  # Plus grande valeur possible
 
     for i in range(1, nbre_tours + 1):
         valeur = float(input(f"Entrez la valeur {i} : "))
@@ -413,6 +413,7 @@ def loto_naif() -> str:
 
 ```python
 from random import randint
+
 
 def loto_naif() -> str:
     """

@@ -179,13 +179,14 @@ On ne créera pas de structure « arbre binaire » (accompagnée de méthodes) d
 ```python
 from __future__ import annotations
 
+
 class Noeud:
     """
     Structure de stockage pour créer des arbres binaires.
     """
 
     def __init__(self: Noeud, val: str, g: Noeud = None, d: Noeud = None) -> None:
-        """ Initialisation de l'objet. """
+        """Initialisation de l'objet."""
         self.valeur = val
         self.gauche = g
         self.droit = d
@@ -209,21 +210,16 @@ graph TD
 {{% solution "Réponse" %}}
 
 ```python
-arbre_1 = Noeud('A',
-                Noeud('B',
-                        None,
-                        Noeud('C')),
-                Noeud('D')
-                )
+arbre_1 = Noeud("A", Noeud("B", None, Noeud("C")), Noeud("D"))
 ```
 
 ou
 
 ```python
-abr1 = Noeud('A')
-abr1.gauche = Noeud('B')
-abr1.droit = Noeud('D')
-abr1.gauche.droit = Noeud('C')
+abr1 = Noeud("A")
+abr1.gauche = Noeud("B")
+abr1.droit = Noeud("D")
+abr1.gauche.droit = Noeud("C")
 ```
 
 {{% /solution %}}
@@ -231,9 +227,15 @@ abr1.gauche.droit = Noeud('C')
 4. Quel arbre correspond à ce code ?
 
 ```python
-abr = Noeud('r', Noeud('a', Noeud('c', None, Noeud('h')), Noeud('d', Noeud('i'),
- Noeud('j', Noeud('m'), None))), Noeud('b', Noeud('e', Noeud('k', None, None),
-  None), Noeud('f')))
+abr = Noeud(
+    "r",
+    Noeud(
+        "a",
+        Noeud("c", None, Noeud("h")),
+        Noeud("d", Noeud("i"), Noeud("j", Noeud("m"), None)),
+    ),
+    Noeud("b", Noeud("e", Noeud("k", None, None), None), Noeud("f")),
+)
 ```
 
 {{% solution "Réponse" %}}
@@ -250,18 +252,18 @@ abr = Noeud('r', Noeud('a', Noeud('c', None, Noeud('h')), Noeud('d', Noeud('i'),
 {{% solution "Réponse" %}}
 
 ```python
-abr = Noeud('r')
-abr.gauche = Noeud('a')
-abr.droit = Noeud('b')
-abr.gauche.gauche = Noeud('c')
-abr.gauche.droit = Noeud('d')
-abr.gauche.gauche.droit = Noeud('h')
-abr.gauche.droit.gauche = Noeud('i')
-abr.gauche.droit.droit = Noeud('j')
-abr.gauche.droit.droit.gauche = Noeud('m')
-abr.droit.gauche = Noeud('e')
-abr.droit.gauche.gauche = Noeud('k')
-abr.droit.droit = Noeud('f')
+abr = Noeud("r")
+abr.gauche = Noeud("a")
+abr.droit = Noeud("b")
+abr.gauche.gauche = Noeud("c")
+abr.gauche.droit = Noeud("d")
+abr.gauche.gauche.droit = Noeud("h")
+abr.gauche.droit.gauche = Noeud("i")
+abr.gauche.droit.droit = Noeud("j")
+abr.gauche.droit.droit.gauche = Noeud("m")
+abr.droit.gauche = Noeud("e")
+abr.droit.gauche.gauche = Noeud("k")
+abr.droit.droit = Noeud("f")
 ```
 
 {{% /solution %}}
@@ -292,7 +294,7 @@ def est_vide(n: Noeud) -> bool:
 ```python
 def ajoute_filsG(n: Noeud, valeur: str) -> None:
     """
-    Ajoute un noeud d'étiquette valeur comme fils gauche. 
+    Ajoute un noeud d'étiquette valeur comme fils gauche.
     """
 ```
 
@@ -301,7 +303,7 @@ def ajoute_filsG(n: Noeud, valeur: str) -> None:
 ```python
 def ajoute_filsG(n: Noeud, valeur: str) -> None:
     """
-    Ajoute un noeud d'étiquette valeur comme fils gauche. 
+    Ajoute un noeud d'étiquette valeur comme fils gauche.
     """
     if est_vide(n.gauche):
         n.gauche = Noeud(valeur)
@@ -316,7 +318,7 @@ def ajoute_filsG(n: Noeud, valeur: str) -> None:
 ```python
 def ajoute_filsD(n: Noeud, valeur: str) -> None:
     """
-    Ajoute un noeud d'étiquette valeur comme fils droit. 
+    Ajoute un noeud d'étiquette valeur comme fils droit.
     """
 ```
 
@@ -325,7 +327,7 @@ def ajoute_filsD(n: Noeud, valeur: str) -> None:
 ```python
 def ajoute_filsD(n: Noeud, valeur: str) -> None:
     """
-    Ajoute un noeud d'étiquette valeur comme fils droit. 
+    Ajoute un noeud d'étiquette valeur comme fils droit.
     """
     if est_vide(n.droit):
         n.droit = Noeud(valeur)
@@ -404,7 +406,7 @@ def taille(n: Noeud) -> int:
 ```python
 def profondeur(n: Noeud) -> int:
     """
-    Retourne la profondeur de l'arbre. 
+    Retourne la profondeur de l'arbre.
     """
 ```
 
@@ -413,7 +415,7 @@ def profondeur(n: Noeud) -> int:
 ```python
 def profondeur(n: Noeud) -> int:
     """
-    Retourne la profondeur de l'arbre. 
+    Retourne la profondeur de l'arbre.
     """
     if est_vide(n):
         # Cas de base : si le nœud est vide, il n'est pas dans l'arbre.
@@ -434,7 +436,7 @@ def profondeur(n: Noeud) -> int:
 ```python
 def nbre_feuilles(n: Noeud) -> int:
     """
-    Détermine le nombre de feuilles dans l'arbre. 
+    Détermine le nombre de feuilles dans l'arbre.
     """
 ```
 
@@ -443,7 +445,7 @@ def nbre_feuilles(n: Noeud) -> int:
 ```python
 def nbre_feuilles(n: Noeud) -> int:
     """
-    Détermine le nombre de feuilles dans l'arbre. 
+    Détermine le nombre de feuilles dans l'arbre.
     """
     if est_vide(n):
         # Cas de base : un arbre vide ne contient aucune feuille
@@ -775,7 +777,7 @@ FinFonction
 
 ```python
 def parcours_largeur(n: Noeud) -> str:
-    """ Réalise le parcours en largeur d'un arbre binaire. """
+    """Réalise le parcours en largeur d'un arbre binaire."""
     message = ""
 
     f = File()
@@ -877,7 +879,7 @@ def parcours_prefixe_iter(n: Noeud) -> str:
 
 ```python
 """
-Implémentation d'un arbre binaire en utilisant le 
+Implémentation d'un arbre binaire en utilisant le
 paradigme impératif et des listes.
 
 Structure d'un noeud : [valeur, gauche, droit]
@@ -893,7 +895,7 @@ def est_vide(n: list[str, list, list]) -> bool:
 
 def ajoute_filsG(n: list[str, list, list], valeur: str) -> None:
     """
-    Ajoute un noeud d'étiquette valeur comme fils gauche. 
+    Ajoute un noeud d'étiquette valeur comme fils gauche.
     """
     if est_vide(n[1]):
         n[1] = [valeur, None, None]
@@ -903,7 +905,7 @@ def ajoute_filsG(n: list[str, list, list], valeur: str) -> None:
 
 def ajoute_filsD(n: list[str, list, list], valeur: str) -> None:
     """
-    Ajoute un noeud d'étiquette valeur comme fils droit. 
+    Ajoute un noeud d'étiquette valeur comme fils droit.
     """
     if est_vide(n[2]):
         n[2] = [valeur, None, None]
@@ -946,7 +948,7 @@ def taille(n: list[str, list, list]) -> int:
 
 def profondeur(n: list[str, list, list]) -> int:
     """
-    Retourne la profondeur de l'arbre. 
+    Retourne la profondeur de l'arbre.
     """
     if est_vide(n):
         return -1
@@ -956,7 +958,7 @@ def profondeur(n: list[str, list, list]) -> int:
 
 def nbre_feuilles(n: list[str, list, list]) -> int:
     """
-    Détermine le nombre de feuilles dans l'arbre. 
+    Détermine le nombre de feuilles dans l'arbre.
     """
     if est_vide(n):
         return 0
@@ -967,7 +969,7 @@ def nbre_feuilles(n: list[str, list, list]) -> int:
 
 
 def parcours_pref(n: list[str, list, list]) -> str:
-    """ Parcours en profondeur préfixe d'un arbre binaire. """
+    """Parcours en profondeur préfixe d'un arbre binaire."""
     if est_vide(n):
         return ""
     else:
@@ -978,7 +980,7 @@ def parcours_pref(n: list[str, list, list]) -> str:
 
 
 def parcours_inf(n: list[str, list, list]) -> str:
-    """ Parcours en profondeur infixe d'un arbre binaire. """
+    """Parcours en profondeur infixe d'un arbre binaire."""
     if est_vide(n):
         return ""
     else:
@@ -989,7 +991,7 @@ def parcours_inf(n: list[str, list, list]) -> str:
 
 
 def parcours_suf(n: list[str, list, list]) -> str:
-    """ Parcours en profondeur infixe d'un arbre binaire. """
+    """Parcours en profondeur infixe d'un arbre binaire."""
     if est_vide(n):
         return ""
     else:
@@ -1000,21 +1002,11 @@ def parcours_suf(n: list[str, list, list]) -> str:
 
 
 if __name__ == "__main__":
-    arb = ['A', ['B',
-                 ['C', None, None],
-                 ['D', None, None]
-                 ],
-           ['E',
-            ['F', None, None],
-            ['G',
-             ['H',
-              None,
-              None
-              ],
-             None
-             ]
-            ]
-           ]
+    arb = [
+        "A",
+        ["B", ["C", None, None], ["D", None, None]],
+        ["E", ["F", None, None], ["G", ["H", None, None], None]],
+    ]
     print(est_vide(arb))
     print(f"Taille de l'arbre : {taille(arb)}")
     print(f"Profondeur (hauteur) de l'arbre : {profondeur(arb)}")
@@ -1047,20 +1039,20 @@ def est_vide(n: dict[str, dict, dict]) -> bool:
 
 def ajoute_filsG(n: dict[str, dict, dict], val: str) -> None:
     """
-    Ajoute un noeud d'étiquette val comme fils gauche. 
+    Ajoute un noeud d'étiquette val comme fils gauche.
     """
-    if est_vide(n['gauche']):
-        n['gauche'] = {'valeur': val, 'gauche': None, 'droit': None}
+    if est_vide(n["gauche"]):
+        n["gauche"] = {"valeur": val, "gauche": None, "droit": None}
     else:
         raise Exception("Le nœud possède déjà un fils gauche !")
 
 
 def ajoute_filsD(n: dict[str, dict, dict], val: str) -> None:
     """
-    Ajoute un noeud d'étiquette valeur comme fils droit. 
+    Ajoute un noeud d'étiquette valeur comme fils droit.
     """
-    if est_vide(n['droit']):
-        n['droit'] = {'valeur': val, 'gauche': None, 'droit': None}
+    if est_vide(n["droit"]):
+        n["droit"] = {"valeur": val, "gauche": None, "droit": None}
     else:
         raise Exception("Le nœud possède déjà un fils droit !")
 
@@ -1069,7 +1061,7 @@ def est_feuille(n: dict[str, dict, dict]) -> bool:
     """
     Teste si un noeud est une feuille.
     """
-    return est_vide(n['gauche']) and est_vide(n['droit'])
+    return est_vide(n["gauche"]) and est_vide(n["droit"])
 
 
 def degre_noeud(n: dict[str, dict, dict]) -> int:
@@ -1080,9 +1072,9 @@ def degre_noeud(n: dict[str, dict, dict]) -> int:
         raise Exception("Le nœud est vide !")
 
     nbre = 0
-    if not est_vide(n['gauche']):
+    if not est_vide(n["gauche"]):
         nbre += 1
-    if not est_vide(n['droit']):
+    if not est_vide(n["droit"]):
         nbre += 1
 
     return nbre
@@ -1095,75 +1087,72 @@ def taille(n: dict[str, dict, dict]) -> int:
     if est_vide(n):
         return 0
     else:
-        return 1 + taille(n['gauche']) + taille(n['droit'])
+        return 1 + taille(n["gauche"]) + taille(n["droit"])
 
 
 def profondeur(n: dict[str, dict, dict]) -> int:
     """
-    Retourne la profondeur de l'arbre. 
+    Retourne la profondeur de l'arbre.
     """
     if est_vide(n):
         return -1
     else:
-        return 1 + max(profondeur(n['gauche']), profondeur(n['droit']))
+        return 1 + max(profondeur(n["gauche"]), profondeur(n["droit"]))
 
 
 def nbre_feuilles(n: dict[str, dict, dict]) -> int:
     """
-    Détermine le nombre de feuilles dans l'arbre. 
+    Détermine le nombre de feuilles dans l'arbre.
     """
     if est_vide(n):
         return 0
     elif est_feuille(n):
         return 1
     else:
-        return nbre_feuilles(n['gauche']) + nbre_feuilles(n['droit'])
+        return nbre_feuilles(n["gauche"]) + nbre_feuilles(n["droit"])
 
 
 def parcours_pref(n: dict[str, dict, dict]) -> str:
-    """ Parcours en profondeur préfixe d'un arbre binaire. """
+    """Parcours en profondeur préfixe d'un arbre binaire."""
     if est_vide(n):
         return ""
     else:
-        return str(n['valeur']) + parcours_pref(n['gauche']) +\
-            parcours_pref(n['droit'])
+        return str(n["valeur"]) + parcours_pref(n["gauche"]) + parcours_pref(n["droit"])
 
 
 def parcours_inf(n: dict[str, dict, dict]) -> str:
-    """ Parcours en profondeur infixe d'un arbre binaire. """
+    """Parcours en profondeur infixe d'un arbre binaire."""
     if est_vide(n):
         return ""
     else:
-        return parcours_inf(n['gauche']) + str(n['valeur']) +\
-            parcours_inf(n['droit'])
+        return parcours_inf(n["gauche"]) + str(n["valeur"]) + parcours_inf(n["droit"])
 
 
 def parcours_suf(n: dict[str, dict, dict]) -> str:
-    """ Parcours en profondeur infixe d'un arbre binaire. """
+    """Parcours en profondeur infixe d'un arbre binaire."""
     if est_vide(n):
         return ""
     else:
-        return parcours_suf(n['gauche']) + parcours_suf(n['droit']) +\
-            str(n['valeur'])
+        return parcours_suf(n["gauche"]) + parcours_suf(n["droit"]) + str(n["valeur"])
 
 
 if __name__ == "__main__":
-    arb = {'valeur': 'A',
-           'gauche': None,
-           'droit': {'valeur': 'B',
-                     'gauche': {'valeur': 'C',
-                                'gauche': None,
-                                'droit': None},
-                     'droit': {'valeur': 'D',
-                               'gauche': None,
-                               'droit': None}}}
+    arb = {
+        "valeur": "A",
+        "gauche": None,
+        "droit": {
+            "valeur": "B",
+            "gauche": {"valeur": "C", "gauche": None, "droit": None},
+            "droit": {"valeur": "D", "gauche": None, "droit": None},
+        },
+    }
     print(est_vide(arb))
     print(parcours_inf(arb))
 
-    arb2 = {'valeur': 'A', 'droit': None, 'gauche': None}
+    arb2 = {"valeur": "A", "droit": None, "gauche": None}
     ajoute_filsG(arb2, "B")
     ajoute_filsD(arb2, "C")
-    noeud_C = arb2['droit']
+    noeud_C = arb2["droit"]
     ajoute_filsD(noeud_C, "D")
     ajoute_filsG(noeud_C, "E")
     print(f"Taille de l'arbre : {taille(arb2)}")

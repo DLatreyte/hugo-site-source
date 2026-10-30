@@ -87,13 +87,13 @@ def est_dans_02(e: str, c: str, i: int) -> bool:
 
 
 def main():
-    """ Fonction principale. """
+    """Fonction principale."""
     chaine = input("Entrer la chaîne : ")
     car = input("Entrer le caractère à recherche : ")
 
     print("{} est-il dans {} : {}".format(car, chaine, est_dans(car, chaine)))
-    print("{} est-il dans {} : {}".format(car, chaine, est_dans_02(car,
-          chaine, 0)))
+    print("{} est-il dans {} : {}".format(car, chaine, est_dans_02(car, chaine, 0)))
+
 
 main()
 ```
@@ -129,6 +129,7 @@ def rang(e: str, c: str, i: int) -> int:
     else:
         return rang(e, c[1:], i + 1)
 
+
 def rang_2(c: str, e: str) -> int:
     """
     Retourne le rang de la première position du caractère e dans la
@@ -138,7 +139,7 @@ def rang_2(c: str, e: str) -> int:
     Récursivité enveloppée.
     """
     if c == "":
-        return -float('inf')
+        return -float("inf")
     elif c[0] == e:
         return 1
     else:
@@ -146,7 +147,7 @@ def rang_2(c: str, e: str) -> int:
 
 
 def main():
-    """ Fonction principale. """
+    """Fonction principale."""
     chaine = input("Chaîne ? ")
     car = input("Caractère ? ")
 
@@ -155,6 +156,7 @@ def main():
         print("Position du carcatères :", indice)
     else:
         print("Caractère pas présent dans la chaîne.")
+
 
 main()
 ```
@@ -177,7 +179,7 @@ Tester cette fonction.
 def copie(c: str) -> str:
     """
     Retourne une copie de la chaîne c.
-    
+
     Algorithme récursif.
     """
     if c == "":
@@ -185,9 +187,9 @@ def copie(c: str) -> str:
     else:
         return c[0] + copie(c[1:])
 
-    assert copie('abcd') == 'abcd'
-    assert copie('a') == 'a'
-    assert copie('') == ''
+    assert copie("abcd") == "abcd"
+    assert copie("a") == "a"
+    assert copie("") == ""
 ```
 
 {{% /solution %}}
@@ -210,7 +212,7 @@ def inversion(c: str) -> str:
     Version avec sous-chaîne et récursivité enveloppée.
     """
     if c == "":
-        return ''
+        return ""
     else:
         return inversion(c[1:]) + c[0]
 
@@ -232,7 +234,7 @@ def inversion_03(c: str, i: int) -> str:
     Version sans sous-chaîne et récursivité enveloppée.
     """
     if i == len(c):
-        return ''
+        return ""
     else:
         return inversion_03(c, i + 1) + c[i]
 
@@ -249,16 +251,17 @@ def inversion_04(c: str, c_inv: str, i: int) -> str:
 
 
 def main():
-    """ Fonction principale. """
+    """Fonction principale."""
     chaine = input("Chaîne ? ")
     chaine_inversee_01 = inversion(chaine)
     print(chaine_inversee_01)
-    chaine_inversee_02 = inversion_02(chaine, '')
+    chaine_inversee_02 = inversion_02(chaine, "")
     print(chaine_inversee_02)
     chaine_inversee_03 = inversion_03(chaine, 0)
     print(chaine_inversee_03)
-    chaine_inversee_04 = inversion_04(chaine, '', 0)
+    chaine_inversee_04 = inversion_04(chaine, "", 0)
     print(chaine_inversee_04)
+
 
 main()
 ```
@@ -289,7 +292,7 @@ def est_palindrome(c: str) -> bool:
     elif c[0] != c[-1]:
         return False
     else:
-        return est_palindrome(c[1: -1])
+        return est_palindrome(c[1:-1])
 
 
 def est_palindrome_02(c: str, i: int, j: int) -> bool:
@@ -305,16 +308,15 @@ def est_palindrome_02(c: str, i: int, j: int) -> bool:
     elif c[i] != c[j]:
         return False
     else:
-        return est_palindrome_02(c, i+1, j-1)
+        return est_palindrome_02(c, i + 1, j - 1)
 
 
 def main():
-    """ Fonction principale. """
+    """Fonction principale."""
     chaine = input("Chaîne à tester : ")
     print("Est un palindrome 01 ? {}".format(est_palindrome(chaine)))
 
-    print("Est un palindrome 02 ?",
-          est_palindrome_02(chaine, 0, len(chaine)-1))
+    print("Est un palindrome 02 ?", est_palindrome_02(chaine, 0, len(chaine) - 1))
 
 
 main()
@@ -383,7 +385,7 @@ def plus_grand_element(liste: list) -> float:
         return liste[0]
     else:
         val_max = plus_grand_element(liste[1:])
-        return (liste[0] if liste[0] > val_max else val_max)
+        return liste[0] if liste[0] > val_max else val_max
 
 
 def plus_petit_element(liste: list) -> float:
@@ -396,7 +398,7 @@ def plus_petit_element(liste: list) -> float:
         return liste[0]
     else:
         val_min = plus_petit_element(liste[1:])
-        return (liste[0] if liste[0] < val_min else val_min)
+        return liste[0] if liste[0] < val_min else val_min
 
 
 def longueur_liste(l: List) -> int:
@@ -497,16 +499,16 @@ def produit_elements_2(l: List[float], p: float = 1) -> float:
 
 
 def recherche_element(liste: list, val_rech: int, i: int) -> int:
-    """ Ne se contente pas de déterminer si la valeur cherchée est
+    """Ne se contente pas de déterminer si la valeur cherchée est
     présente, retourne son indice (on ne cherche que la première
-    valeur) si possible (sinon -1). """
+    valeur) si possible (sinon -1)."""
 
     if i == len(liste):
         return -1
     elif liste[i] == val_rech:
         return i
     else:
-        return recherche_element(liste, val_rech, i+1)
+        return recherche_element(liste, val_rech, i + 1)
 
 
 def main():
@@ -527,6 +529,7 @@ def main():
     print(somme)
     print(produit)
     print(somme2)
+
 
 main()
 ```

@@ -105,14 +105,14 @@ def est_negatif(x: float) -> bool:
 La fonction précédente respecte la spécification et réalise le traitement attendu. On pourrait cependant regretter qu'elle ne traite pas le cas où l'utilisateur lui transmet un argument qui n'est pas un nombre. Il faut alors modifier la spécification et ajouter une instruction au corps de la fonction (*Cet exemple ne devra pas forcément être généralisé. Il est souvent préférable d'écrire le code le plus simplement possible et d'être clair au niveau de la spécification*) : 
 
 ```python
-def est_negatif(x: float) -> bool: 
-    """ 
+def est_negatif(x: float) -> bool:
+    """
     Retourne True si x est négatif, False sinon.
     ERREUR si x n'est pas un nombre.
-    """ 
+    """
     if not (isinstance(x, int) or isinstance(x, float)):
         raise TypeError("Impossible, {} n'est pas un nombre !".format(x))
-    
+
     return x < 0
 ```
 
@@ -331,12 +331,12 @@ False and (1 / 0)
 Dans la console, écrire et exécuter les expressions booléennes suivantes, **après avoir prédit chacune des valeurs retournées** :
 ```python
 a, b = 3, 5
-lettre, car = 'i', 'j';
+lettre, car = "i", "j"
 a != b
 a + 2 == b
 a + 8 < 2 * b
 lettre <= car
-lettre == 'w'
+lettre == "w"
 ```
 
 {{< /note >}}
@@ -346,10 +346,10 @@ lettre == 'w'
 
 Écrire un prédicat nommé `est_positif` dont la spécification est :
 ```python
-def est_positif(x: float) -> bool: 
-    """ 
-	Retourne True si x est positif ou nul, False sinon.
-	"""
+def est_positif(x: float) -> bool:
+    """
+    Retourne True si x est positif ou nul, False sinon.
+    """
 ``` 
 
 {{< /note >}}
@@ -357,8 +357,8 @@ def est_positif(x: float) -> bool:
 {{% solution "Réponse" %}}
 
 ```python
-def est_positif(x: float) -> bool: 
-    """ 
+def est_positif(x: float) -> bool:
+    """
     Retourne True si x est positif ou nul, False sinon.
     """
     return (x > 0) or (x == 0)
@@ -385,10 +385,10 @@ La méthode, avec de tels nombres, consiste à vérifier que la différence entr
 
 Écrire un prédicat nommé `est_egal` dont la spécification est :
 ```python
-def est_egal(x: float, y: float) -> bool: 
+def est_egal(x: float, y: float) -> bool:
     """
     Retourne True si abs(x - y) < epsilon où epsilon = 1e-5.
-    
+
     >>> est_egal(1 / 49 * 49, 1)
     True
     """
@@ -398,10 +398,10 @@ def est_egal(x: float, y: float) -> bool:
 {{% solution "Réponse" %}}
 
 ```python
-def est_egal(x: float, y: float) -> bool: 
+def est_egal(x: float, y: float) -> bool:
     """
     Retourne True si abs(x - y) < epsilon où epsilon = 1e-5.
-    
+
     >>> est_egal(1 / 49 * 49, 1)
     True
     """
@@ -423,7 +423,7 @@ def est_egal(x: float, y: float) -> bool:
 Écrire un prédicat nommé `est_pair` dont la spécification est :
 ```python
 def est_pair(n: int) -> bool:
-    """ Retourne True si n est un nombre pair, False sinon. """
+    """Retourne True si n est un nombre pair, False sinon."""
 ```
 
 {{< /note >}}
@@ -432,7 +432,7 @@ def est_pair(n: int) -> bool:
 
 ```python
 def est_pair(n: int) -> bool:
-    """ Retourne True si n est un nombre pair, False sinon. """
+    """Retourne True si n est un nombre pair, False sinon."""
     return n % 2 == 0
 ``` 
 
@@ -443,8 +443,8 @@ def est_pair(n: int) -> bool:
 
 Écrire un prédicat nommé `est_entier` dont la spécification est :
 ```python
-def est_entier(n: int) -> bool: 
-    """ Détermine si n est un nombre entier. """
+def est_entier(n: int) -> bool:
+    """Détermine si n est un nombre entier."""
 ```
 
 Remarque
@@ -455,8 +455,8 @@ Il est aussi possible d'utiliser la fonction `isinstance` et le type intégré `
 {{% solution "Réponse" %}}
 
 ```python
-def est_entier(n: int) -> bool: 
-    """ Détermine si n est un nombre entier. """
+def est_entier(n: int) -> bool:
+    """Détermine si n est un nombre entier."""
     entier = False
 
     if isinstance(n, int):
@@ -468,8 +468,9 @@ ou, après avoir découvert que la fonction `floor` retourne la partie entière 
 ```python
 import math as m
 
-def est_entier(n: int) -> bool: 
-    """ Détermine si n est un nombre entier. """
+
+def est_entier(n: int) -> bool:
+    """Détermine si n est un nombre entier."""
     entier = False
 
     if n == m.floor(n):
@@ -479,8 +480,8 @@ def est_entier(n: int) -> bool:
 ```
 ou
 ```python
-def est_entier(n: int) -> bool: 
-    """ Détermine si n est un nombre entier. """
+def est_entier(n: int) -> bool:
+    """Détermine si n est un nombre entier."""
     entier = False
 
     if n == int(n):
@@ -496,14 +497,14 @@ def est_entier(n: int) -> bool:
 
 Écrire un prédicat nommé `est_naturel` dont la spécification est :
 ```python
-def est_naturel(n: int) -> bool: 
-    """ Détermine si un nombre entier est un entier naturel.
-    
-    >>> est_naturel(5) 
-    True 
-    >>> est_naturel(-5) 
+def est_naturel(n: int) -> bool:
+    """Détermine si un nombre entier est un entier naturel.
+
+    >>> est_naturel(5)
+    True
+    >>> est_naturel(-5)
     False
-    >>> est_naturel_2(2.3) 
+    >>> est_naturel_2(2.3)
     False
     """
 ```
@@ -512,14 +513,14 @@ La fonction `est_naturel` doit réaliser son traitement en utilisant les fonctio
 
 {{% solution "Réponse" %}}
 ```python
-def est_naturel(n: int) -> bool: 
-    """ Détermine si un nombre entier est un entier naturel.
-    
-    >>> est_naturel(5) 
-    True 
-    >>> est_naturel(-5) 
+def est_naturel(n: int) -> bool:
+    """Détermine si un nombre entier est un entier naturel.
+
+    >>> est_naturel(5)
+    True
+    >>> est_naturel(-5)
     False
-    >>> est_naturel_2(2.3) 
+    >>> est_naturel_2(2.3)
     False
     """
     naturel = False
@@ -536,19 +537,19 @@ def est_naturel(n: int) -> bool:
 
 Écrire un prédicat nommé `est_naturel_2` dont la spécification est :
 ```python
-def est_naturel_2(n: int) -> bool: 
-    """ 
-    Détermine si un nombre entier est un entier naturel. 
+def est_naturel_2(n: int) -> bool:
+    """
+    Détermine si un nombre entier est un entier naturel.
     ERREUR si n n'est pas un nombre.
-    
-    >>> est_naturel(5) 
-    True 
-    >>> est_naturel(-5) 
-    False 
-    >>> est_naturel_2(2.3) 
+
+    >>> est_naturel(5)
+    True
+    >>> est_naturel(-5)
     False
-    >>> est_naturel_2("coucou") 
-    TypeError: n n'est pas un nombre !!! 
+    >>> est_naturel_2(2.3)
+    False
+    >>> est_naturel_2("coucou")
+    TypeError: n n'est pas un nombre !!!
     """
 ```
 Cette fonction doit utiliser la fonction `est_naturel`, la fonction intégrée `isinstance`, les types intégrés `int` et `float` et l'instruction `raise`.
@@ -560,25 +561,24 @@ Prendre pour exemple le code à la fin de la première section de ce cours.
 {{% solution "Réponse" %}}
 
 ```python 
-def est_naturel_2(n: int) -> bool: 
-    """ 
-    Détermine si un nombre entier est un entier naturel. 
+def est_naturel_2(n: int) -> bool:
+    """
+    Détermine si un nombre entier est un entier naturel.
     ERREUR si n n'est pas un nombre.
-    
-    >>> est_naturel(5) 
-    True 
-    >>> est_naturel(-5) 
-    False 
-    >>> est_naturel_2(2.3) 
+
+    >>> est_naturel(5)
+    True
+    >>> est_naturel(-5)
     False
-    >>> est_naturel_2("coucou") 
-    TypeError: n n'est pas un nombre !!! 
+    >>> est_naturel_2(2.3)
+    False
+    >>> est_naturel_2("coucou")
+    TypeError: n n'est pas un nombre !!!
     """
     if not (isinstance(n, int) or isinstance(n, float)):
         raise TypeError("Impossible, pas un nombre")
 
     return est_naturel(n)
-
 ```
 
 {{% /solution %}}
@@ -588,16 +588,16 @@ def est_naturel_2(n: int) -> bool:
 
 Écrire un prédicat nommé `est_plus_grand` dont la spécification est :
 ```python
-def est_plus_grand(x: float, y: float) -> bool: 
-    """ Retourne True si x > y, False sinon. """
+def est_plus_grand(x: float, y: float) -> bool:
+    """Retourne True si x > y, False sinon."""
 ```
 {{< /note >}}
 
 {{% solution "Réponse" %}}
 
 ```python
-def est_plus_grand(x: float, y: float) -> bool: 
-    """ Retourne True si x > y, False sinon. """
+def est_plus_grand(x: float, y: float) -> bool:
+    """Retourne True si x > y, False sinon."""
     return x > y
 ```
 
@@ -608,8 +608,8 @@ def est_plus_grand(x: float, y: float) -> bool:
 
 Écrire une fonction nommée `le_plus_grand` dont la spécification est :
 ```python
-def le_plus_grand(x: float, y: float) -> float: 
-    """ Retourne x si x > y, y sinon. """
+def le_plus_grand(x: float, y: float) -> float:
+    """Retourne x si x > y, y sinon."""
 ```
 Remarque
 : Cette fonction doit utiliser la fonction `est_plus_grand` de l'exercice précédent.
@@ -619,8 +619,8 @@ Remarque
 {{% solution "Réponse" %}}
 
 ```python
-def le_plus_grand(x: float, y: float) -> float: 
-    """ Retourne x si x > y, y sinon. """
+def le_plus_grand(x: float, y: float) -> float:
+    """Retourne x si x > y, y sinon."""
     plus_grand = x
 
     if not est_plus_grand(x, y):
@@ -636,8 +636,8 @@ def le_plus_grand(x: float, y: float) -> float:
 
 Écrire une fonction nommée `valeur_absolue` dont la spécification est :
 ```python
-def valeur_absolue(x: float) -> float: 
-    """ Retourne la valeur absolue de x. """
+def valeur_absolue(x: float) -> float:
+    """Retourne la valeur absolue de x."""
 ```
 Cette fonction devra utiliser le prédicat `est_positif` de l'exercice 3.
 
@@ -729,7 +729,7 @@ La remise doit être calculée par l'appel d'une fonction nommée calcul_remise 
 
 Écrire un prédicat nommé `est_bissextile` dont la spécification est :
 ```python
-def est_bissextile(n: int) -> bool: 
+def est_bissextile(n: int) -> bool:
     """
     Retourne True si l'année n est bissextile, False sinon.
     """

@@ -44,7 +44,7 @@ La manipulation d'un fichier dépend de son type :
 En python, on crée un objet fichier grâce à la fonction `open` :
 
 ```python
-f = open("fichier.txt",'r')
+f = open("fichier.txt", "r")
 ```
 
 La fonction `open` prend, comme arguments, deux chaînes de caractères. La première est le **chemin du fichier** à ouvrir (absolu ou relatif), la seconde précise dans quel **mode** il doit l'être (*lecture*, *écriture*, etc.). Il est aussi possible, de manière optionnelle, d'indiquer **l'encodage** du texte dans le fichier à lire.
@@ -54,7 +54,7 @@ La fonction `open` prend, comme arguments, deux chaînes de caractères. La prem
 **Création d'un objet fichier en lecture seule en précisant l'encodage**
 
 ```python
-f = open("fichier.txt", encoding='iso-8859-15', mode='r')
+f = open("fichier.txt", encoding="iso-8859-15", mode="r")
 ```
 
 ### Modes d'ouverture des fichiers
@@ -88,8 +88,8 @@ f = open("fichier.txt", encoding='iso-8859-15', mode='r')
 #### Affichage du contenu d'un fichier, ligne par ligne
 
 ```python
-f = open("fichier.txt", 'r')
-      
+f = open("fichier.txt", "r")
+
 for ligne in f.readline():
     print(ligne)
 ```
@@ -97,17 +97,17 @@ for ligne in f.readline():
 #### Affichage du contenu d'un fichier, ligne par ligne
 
 ```python
-f = open("fichier.txt", 'r')
-      
-for ligne in f:    # car en fait, f est un itérateur
+f = open("fichier.txt", "r")
+
+for ligne in f:  # car en fait, f est un itérateur
     print(ligne)
 ```
 
 #### Affichage du contenu d'un fichier après l'avoir chargé entièrement en mémoire dans une liste dont les éléments sont les lignes
 
 ```python
-f = open("fichier.txt", 'r')
-      
+f = open("fichier.txt", "r")
+
 lignes = f.readlines()
 for ligne in lignes:
     print(ligne)
@@ -116,8 +116,8 @@ for ligne in lignes:
 #### Affichage du contenu d'un fichier après l'avoir chargé entièrement en mémoire dans une seule chaîne de caractères
 
 ```python
-f = open("fichier.txt", 'r')
-      
+f = open("fichier.txt", "r")
+
 chaine = f.read()
 ```
 
@@ -162,7 +162,7 @@ Parmi les autres différences entre systèmes, on trouve le séparateur de répe
    def extraction_caracteres(nom_fichier: str) -> List[str]:
        """
        Ouvre le fichier nom_fichier, extrait l'ensemble des caractères
-       sous forme d'une unique chaîne de caractères puis crée une liste 
+       sous forme d'une unique chaîne de caractères puis crée une liste
        dont chaque élément est un caractère présent dans le texte initial.
        """
    ```
@@ -177,7 +177,7 @@ Parmi les autres différences entre systèmes, on trouve le séparateur de répe
 
    ```python
    def main():
-       """ Fonction principale qui appelle toutes les autres. """
+       """Fonction principale qui appelle toutes les autres."""
        roman = "la-jangada.txt"
        liste_caracteres = extraction_caracteres(roman)
        print(liste_caracteres)
@@ -244,7 +244,7 @@ La liste `liste_caractères` contient des caractères n'appartenant pas à l'alp
 
    ```python
    def main():
-       """ Fonction principale qui appelle toutes les autres. """
+       """Fonction principale qui appelle toutes les autres."""
        roman = "la-jangada.txt"
        liste_caracteres = extraction_caracteres(roman)
        liste_caracteres = nettoyage(liste_caracteres)
@@ -291,7 +291,7 @@ Dans cette partie nous allons transformer tous les caractères accentués en leu
 
    ```python
    def main():
-       """ Fonction principale qui appelle toutes les autres. """
+       """Fonction principale qui appelle toutes les autres."""
        roman = "la-jangada.txt"
        liste_caracteres = extraction_caracteres(roman)
        liste_caracteres = nettoyage(liste_caracteres)
@@ -316,7 +316,7 @@ Dans cette partie nous allons transformer tous les caractères accentués en leu
 
       ```python
       def main():
-          """ Fonction principale qui appelle toutes les autres. """
+          """Fonction principale qui appelle toutes les autres."""
           roman = "la-jangada.txt"
           liste_caracteres = extraction_caracteres(roman)
           liste_caracteres = nettoyage(liste_caracteres)
@@ -355,7 +355,7 @@ Dans cette partie nous allons transformer tous les caractères accentués en leu
 
       ```python
       def main():
-          """ Fonction principale qui appelle toutes les autres. """
+          """Fonction principale qui appelle toutes les autres."""
           roman = "la-jangada.txt"
           liste_caracteres = extraction_caracteres(roman)
           liste_caracteres = nettoyage(liste_caracteres)
@@ -386,7 +386,7 @@ Dans cette partie nous allons transformer tous les caractères accentués en leu
 
       ```python
       def main():
-          """ Fonction principale qui appelle toutes les autres. """
+          """Fonction principale qui appelle toutes les autres."""
           roman = "la-jangada.txt"
           liste_caracteres = extraction_caracteres(roman)
           liste_caracteres = nettoyage(liste_caracteres)
@@ -436,8 +436,8 @@ Dans cette partie nous allons transformer tous les caractères accentués en leu
    ```python
    from typing import List, Dict, Sequence
    import string
-   
-   
+
+
    def affichage_dict(dic_car: Dict[str, float]) -> None:
        """
        Affichage du contenu d'un dictionnaire classé en fonction des valeurs,
@@ -448,8 +448,8 @@ Dans cette partie nous allons transformer tous les caractères accentués en leu
            liste_couples.append((cle, dic_car[cle]))
        for couple in sorted(liste_couples, key=lambda c: c[1], reverse=True):
            print("{} : {}".format(couple[0], couple[1]))
-   
-   
+
+
    def analyse_dict_car(dict_car: Dict[str, int]) -> Dict[str, float]:
        """
        Création d'un dictionnaire des caractères présents, comme clés, dans le
@@ -457,17 +457,17 @@ Dans cette partie nous allons transformer tous les caractères accentués en leu
        d'apparition de ces caractères.
        """
        dict_frequences = {}
-   
+
        nbre_car = 0
        for nbre in dict_car.values():
            nbre_car += nbre
-   
+
        for cle in dict_car.keys():
            dict_frequences[cle] = dict_car[cle] / nbre_car * 100
-   
+
        return dict_frequences
-   
-   
+
+
    def creation_dict_car(liste_car: List[str]) -> Dict[str, str]:
        """
        Création d'un dictionnaire dont les clés sont les caratères présents dans
@@ -481,8 +481,8 @@ Dans cette partie nous allons transformer tous les caractères accentués en leu
            else:
                dict_car[car] = 1
        return dict_car
-   
-   
+
+
    def transformation_minuscules(liste_car: List[str]) -> List[str]:
        """
        Transforme toutes les minuscules de la liste liste_car en majuscules.
@@ -491,13 +491,13 @@ Dans cette partie nous allons transformer tous les caractères accentués en leu
            if liste_car[i].islower():
                liste_car[i] = liste_car[i].upper()
        return liste_car
-   
-   
+
+
    def trouve_indice(car: str, seq: Sequence) -> int:
        """
        Détermine le premier indice du caractère car dans liste.
        On suppose que car appartient à la liste.
-       
+
        Ainsi trouve_indice('a', "jkhdsalkj") retourne 5.
        """
        indice = 0
@@ -505,23 +505,23 @@ Dans cette partie nous allons transformer tous les caractères accentués en leu
            if car == elt:
                return indice
            indice += 1
-   
-   
+
+
    def transformation_accents(liste_car: List[str]) -> List[str]:
        """
        Transforme chaque caractère accentué en son équivalent sans accent.
        """
        accents = "âãàéèêëïîôôùüûÂÁÀÃÉÈËÊÎÏÔOÕõÙÜÛçÇÑñń"
        equivalents = "aaaeeeeiioouuuAAAAEEEEIIOOOOUUUcCNnn"
-   
+
        for i in range(len(liste_car)):
            if liste_car[i] in accents:
                indice_car = trouve_indice(liste_car[i], accents)
                nouveau_car = equivalents[indice_car]
                liste_car[i] = nouveau_car
        return liste_car
-   
-   
+
+
    def suppression_chiffres(liste_car: List[str]) -> List[str]:
        """
        Supprime tous les caractères invisibles dans la liste.
@@ -533,8 +533,8 @@ Dans cette partie nous allons transformer tous les caractères accentués en leu
                continue
            i += 1
        return liste_car
-   
-   
+
+
    def suppression_blancs(liste_car: List[str]) -> List[str]:
        """
        Supprime tous les caractères invisibles dans la liste.
@@ -546,8 +546,8 @@ Dans cette partie nous allons transformer tous les caractères accentués en leu
                continue
            i += 1
        return liste_car
-   
-   
+
+
    def suppression_ponctuation(liste_car: List[str]) -> List[str]:
        """
        Supprime tous les caractères de ponctuation dans la liste.
@@ -560,8 +560,8 @@ Dans cette partie nous allons transformer tous les caractères accentués en leu
                continue
            i += 1
        return liste_car
-   
-   
+
+
    def nettoyage(liste_car: List[str]) -> List[str]:
        """
        Supprime tous les caractères de ponctuation, les blancs et les chiffres
@@ -575,47 +575,47 @@ Dans cette partie nous allons transformer tous les caractères accentués en leu
                continue
            i += 1
        return liste_car
-   
-   
+
+
    def extraction_caracteres(nom_fichier: str) -> List[str]:
        """
        Ouvre le fichier nom_fichier, extrait l'ensemble des caractères
-       sous forme d'une unique chaîne de caractères puis crée une liste 
+       sous forme d'une unique chaîne de caractères puis crée une liste
        dont chaque élément est un caractère présent dans le texte initial.
        """
-       with open(nom_fichier, 'r', encoding='utf-8-sig') as f:
+       with open(nom_fichier, "r", encoding="utf-8-sig") as f:
            chaine_contenu = f.read()
        return list(chaine_contenu)
-   
-   
+
+
    def main():
-       """ Fonction principale qui appelle toutes les autres. """
-       
+       """Fonction principale qui appelle toutes les autres."""
+
        # Création du dictionnaire de référence
        roman = "la-jangada.txt"
        liste_caracteres_ref = extraction_caracteres(roman)
        liste_caracteres_ref = nettoyage(liste_caracteres_ref)
        liste_caracteres_ref = transformation_accents(liste_caracteres_ref)
        liste_caracteres_ref = transformation_minuscules(liste_caracteres_ref)
-   
+
        dict_car_ref = creation_dict_car(liste_caracteres_ref)
        dict_car_ref = analyse_dict_car(dict_car_ref)
-   #     print(dict_car_ref)
-       
+       #     print(dict_car_ref)
+
        affichage_dict(dict_car_ref)
-   
+
        # Analyse du texte chiffré
        texte = "texte-chiffre.txt"
        liste_caracteres_chif = extraction_caracteres(texte)
        liste_caracteres_chif = nettoyage(liste_caracteres_chif)
-       
+
        dict_car_chif = creation_dict_car(liste_caracteres_chif)
        dict_car_chif = analyse_dict_car(dict_car_chif)
-   #    print(dict_car_chif)
+       #    print(dict_car_chif)
        print("----------------------------------------")
        affichage_dict(dict_car_chif)
-   
-   
+
+
    main()
    ```
    

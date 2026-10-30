@@ -169,16 +169,17 @@ Un algorithme est simplement **récursif** s'il s'appelle lui-même pour effectu
 ```python
 def arrangement(n: int) -> int:
     """
-    Détermination du nombre de quilles dans un 
+    Détermination du nombre de quilles dans un
     arrangement à n lignes.
-    
+
     HYPOTHÈSE : n entier naturel.
     """
-    if n == 1:                          # cas de base
+    if n == 1:  # cas de base
         return 1
     else:
-        return n + arrangement(n - 1)   # appel récursif
-        
+        return n + arrangement(n - 1)  # appel récursif
+
+
 assert arrangement(5) == 15
 ```
 
@@ -228,16 +229,17 @@ $$
 
 ```python
 def factorielle(n: int) -> int:
-    """ 
+    """
     Définition récursive de la fonction factorielle.
-    
+
     HYPOTHÈSE : n entier naturel.
     """
-    if n == 0:                          # cas de base
+    if n == 0:  # cas de base
         return 1
     else:
-        return n * factorielle(n - 1)   # appel récursif
-        
+        return n * factorielle(n - 1)  # appel récursif
+
+
 assert factorielle(5) == 120
 ````
 
@@ -420,7 +422,7 @@ def somme_entiers_rec(n: int) -> int:
     """
     Calcule la somme des n premiers entiers.
     Algorithme récursif.
-    
+
     HYPOTHÈSE : n entier naturel
     """
     if n == 0:
@@ -428,11 +430,12 @@ def somme_entiers_rec(n: int) -> int:
     else:
         return n + somme_entiers_rec(n - 1)
 
+
 def somme_entiers_iter(n: int) -> int:
     """
     Calcule la somme des n premiers entiers.
     Algorithme itératif.
-    
+
     HYPOTHÈSE : n entier naturel
     """
     somme = 0
@@ -533,11 +536,13 @@ def puissance_02(x: float, n: int) -> float:
         return 1
     elif n % 2 == 0:
         inter = puissance_02(
-            x, n / 2)  # mise en mémoire du résultat de l'appel récursif
+            x, n / 2
+        )  # mise en mémoire du résultat de l'appel récursif
         return inter * inter
     else:
         inter = puissance_02(
-            x, (n - 1) / 2)  # mise en mémoire du résultat de l'appel récursif
+            x, (n - 1) / 2
+        )  # mise en mémoire du résultat de l'appel récursif
         return inter * inter * x
 ```
 
@@ -621,9 +626,9 @@ $$
 
 ```python
 def pgcd(m: int, n: int) -> int:
-    """ 
-    Calcule le pgcd de m et n. La récursivité est terminale. 
-    
+    """
+    Calcule le pgcd de m et n. La récursivité est terminale.
+
     HYPOTHÈSE : n et m entiers naturels
     """
     if n == 0:
@@ -730,6 +735,7 @@ def main():
     print("v({}) = {}".format(n, v_))
     print("v({}) - u({}) = {}".format(v_, u_, v_ - u_))
 
+
 main()
 ```
 
@@ -776,7 +782,7 @@ def est_impair(nbre: int) -> bool:
 
 
 def main():
-    """ Fonction principale """
+    """Fonction principale"""
     n = int(input("Entrer le nombre à tester : "))
     print("Est-il pair ? {}".format(est_pair(n)))
 
@@ -807,7 +813,7 @@ La **conjecture de Syracuse** (encore appelée conjecture de Collatz, ou conject
 
 ```python
 def syracuse_01(n: int) -> int:
-    """ Retourne la longueur de la suite de Syracuse, c'est à
+    """Retourne la longueur de la suite de Syracuse, c'est à
     dire le nombre de termes avant que la valeur soit égale à 1.
     Récursivité enveloppée.
     """

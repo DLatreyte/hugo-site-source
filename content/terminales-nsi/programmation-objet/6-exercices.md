@@ -35,8 +35,8 @@ En pratique
 
 ```python
 p1 = Point()
-p1.__abs = 1     # Interdit
-p1.set_abs(1)   # Bonne pratique
+p1.__abs = 1  # Interdit
+p1.set_abs(1)  # Bonne pratique
 ```
 
 En Python, par convention, le nom des attributs privés commence par `__`.

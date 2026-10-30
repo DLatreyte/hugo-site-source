@@ -177,7 +177,7 @@ def est_vide(n: Noeud) -> bool:
 ```python
 def hauteur(a: Noeud) -> int:
     """
-    Retourne la hauteur de l'arbre binaire de recherche a. 
+    Retourne la hauteur de l'arbre binaire de recherche a.
     """
 ```
 
@@ -186,7 +186,7 @@ def hauteur(a: Noeud) -> int:
 ```python
 def hauteur(n: Noeud) -> int:
     """
-    Retourne la profondeur de l'arbre. 
+    Retourne la profondeur de l'arbre.
     """
     if est_vide(n):
         # Cas de base : si le nœud est vide, il n'est pas dans l'arbre.
@@ -241,7 +241,7 @@ def parcours(n: Noeud) -> None:
 
 ```python
 def parcours_inf(n: Noeud) -> str:
-    """ Parcours en profondeur infixe d'un arbre binaire. """
+    """Parcours en profondeur infixe d'un arbre binaire."""
     if est_vide(n):
         # Cas de base : On atteint un noeud vide
         return ""

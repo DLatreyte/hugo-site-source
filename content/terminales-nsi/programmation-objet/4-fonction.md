@@ -31,7 +31,7 @@ def y(t: float, v0: float) -> float:
     REMARQUE : la fonction définit un paramètre constant g = 9.81
     """
     g = 9.81
-    return -0.5 * g * t**2 + v0 *t
+    return -0.5 * g * t**2 + v0 * t
 ```
 
 {{% /solution %}}
@@ -52,7 +52,7 @@ $$ f\rq (x_0) \approx \dfrac{f(x_0 + h) - f(x_0)}{h}$$
 2. Définir la fonction `diff` dont la spécification est&nbsp;:
 
 ```python
-def diff(f: Callable, x0: float, h: float=1E-7) -> float:
+def diff(f: Callable, x0: float, h: float = 1e-7) -> float:
     """
     Calcule la dérivée de la fonction f au point d'abscisse x0.
 
@@ -63,7 +63,7 @@ def diff(f: Callable, x0: float, h: float=1E-7) -> float:
 {{% solution "Réponse" %}}
 
 ```python
-def diff(f: Callable, x0: float, h: float = 1E-7) -> float:
+def diff(f: Callable, x0: float, h: float = 1e-7) -> float:
     """
     Calcule la dérivée de la fonction f au point d'abscisse x0.
 
@@ -80,6 +80,7 @@ def diff(f: Callable, x0: float, h: float = 1E-7) -> float:
 
 ```python
 import math as m
+
 print(diff(m.cos, 0))
 ```
 
@@ -133,17 +134,17 @@ Une **classe** définit un **nouveau type** et est constituée d'**attributs** (
 8. Définir la classe `Y1` dont la spécification est
 
 ```python
-class Y1():
+class Y1:
     """
     Classe représentant la fonction mathématique y.
-    
+
     Attributs
     ---------
     g : float
         Paramètre g dont la valeur est fixée à l'initialisation de l'objet.
     v0 : float
         Paramètre v0 dont la valeur est récupérée à l'initialisation de l'objet.
-        
+
     Méthode
     -------
     valeur(self, t: float) -> float
@@ -154,22 +155,23 @@ class Y1():
 {{% solution "Réponse" %}}
 
 ```python
-class Y1():
+class Y1:
     """
     Classe représentant la fonction mathématique y.
-    
+
     Attributs
     ---------
     g : float
         Paramètre g dont la valeur est fixée à l'initialisation de l'objet.
     v0 : float
         Paramètre v0 dont la valeur est récupérée à l'initialisation de l'objet.
-        
+
     Méthode
     -------
     valeur(self, t: float) -> float
         Retourne la valeur de y à la date t passée en argument.
     """
+
     def __init__(self, v0: float, g: float = 9.81) -> None:
         self.v0 = v0
         self.g = g
@@ -212,10 +214,10 @@ Les classes possèdent cependant, en Python, une méthode spéciale nommée `__c
 {{% solution "Réponse" %}}
 
 ```python
-class Y2():
+class Y2:
     """
     Classe représentant la fonction mathématique y.
-    
+
     Attributs
     ---------
     g : float
@@ -242,7 +244,7 @@ class Y2():
 
 ```python
 yo = Y2(3)
-print( yo(0.1) )
+print(yo(0.1))
 ```
 
 {{% /solution %}}
@@ -264,8 +266,9 @@ def fixe_param(v0: float) -> Callable:
 
     return calcule_y
 
+
 y3 = fixe_param(3)
-print( y3(0.1) )
+print(y3(0.1))
 ```
 
 13. Qu'attend comme argument la fonction `fixe_param`&nbsp;?
@@ -297,7 +300,7 @@ Utiliser le site [Pythontutor](http://pythontutor.com) pour bien comprendre l'ef
 
 ```python
 y5 = fixe_param(5)
-print( y5(0.1) )
+print(y5(0.1))
 ```
 
 {{% /solution %}}

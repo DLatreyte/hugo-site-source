@@ -132,7 +132,7 @@ import time
 
 
 def effacer_ecran():
-    print("\u001B[H\u001B[J")
+    print("\u001b[H\u001b[J")
 
 
 def main():

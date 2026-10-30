@@ -123,9 +123,9 @@ La signature de la fonction est :
 ```python
 def statistiques(notes: List[float]) -> Tuple[float]:
     """
-    Détermine les statistiques des notes reçues 
+    Détermine les statistiques des notes reçues
     en argument : moyenne et notes comprises dans
-    les intervalles [0, moy - 3[, [moy - 3, moy + 3[, 
+    les intervalles [0, moy - 3[, [moy - 3, moy + 3[,
     [moy + 3, 20]
     """
 ```
@@ -135,7 +135,7 @@ Cette fonction doit utiliser les deux fonctions de signature :
 ```python
 def moyenne(liste_notes: List[float]) -> float:
     """
-    Détermine la moyenne des notes reçues en 
+    Détermine la moyenne des notes reçues en
     argument dans la liste passée en argument.
     """
 ```
@@ -143,9 +143,11 @@ def moyenne(liste_notes: List[float]) -> float:
 et
 
 ```python
-def nombre_dans_intervalle(liste: List[float], valeur_min: float, valeur_max: float) -> float:
+def nombre_dans_intervalle(
+    liste: List[float], valeur_min: float, valeur_max: float
+) -> float:
     """
-    Détermine le nombre de valeurs de liste 
+    Détermine le nombre de valeurs de liste
     comprises dans l'intervalle [val_min, val_max[.
     """
 ```
@@ -160,9 +162,9 @@ La spécification de la fonction est :
 ```python
 def distance(pt1: tuple[float], pt2: tuple[float]) -> float:
     """
-    Détermine la distance entre les points pt1 et 
+    Détermine la distance entre les points pt1 et
     pt2.
-    ERREUR si les dimensions des tuples ne 
+    ERREUR si les dimensions des tuples ne
     correspondent pas.
     """
 ```
@@ -176,9 +178,9 @@ La spécification de la fonction est :
 ```python
 def distanceN(pt1: Tuple[float], pt2: Tuple[float]) -> float:
     """
-    Détermine la distance entre les points pt1 et 
+    Détermine la distance entre les points pt1 et
     pt2.
-    ERREUR si les dimensions des tuples ne 
+    ERREUR si les dimensions des tuples ne
     correspondent pas.
     """
 ```
@@ -187,6 +189,7 @@ def distanceN(pt1: Tuple[float], pt2: Tuple[float]) -> float:
 
 ```python
 from math import sqrt
+
 
 def distanceN(pt1: tuple[float], pt2: tuple[float]) -> float:
     """
@@ -201,7 +204,7 @@ def distanceN(pt1: tuple[float], pt2: tuple[float]) -> float:
 
     carre_distance: float = 0
     for i in range(len(pt1)):
-        carre_distance += (pt2[i] - pt1[i])**2
+        carre_distance += (pt2[i] - pt1[i]) ** 2
 
     return sqrt(carre_distance)
 ```
@@ -217,9 +220,9 @@ La spécification de la fonction est :
 ```python
 def table_multiplication(n: int) -> list[list[int]]:
     """
-    Détermine la table de multiplication de tous les 
+    Détermine la table de multiplication de tous les
     entiers compris entre 1 et n.
-    
+
     >>> table_multiplication(4)
     [[1, 2, 3, 4], [2, 4, 6, 8], [3, 6, 9, 12], [4, 8, 12, 16]]
     """
@@ -228,10 +231,9 @@ def table_multiplication(n: int) -> list[list[int]]:
 {{% solution "Solution" %}}
 
 ```python
-
 def table_multiplication(n: int) -> list[list[int]]:
     """
-    Détermine la table de multiplication de tous les 
+    Détermine la table de multiplication de tous les
     entiers compris entre 1 et n.
 
     >>> table_multiplication(4)

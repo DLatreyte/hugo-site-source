@@ -264,7 +264,7 @@ class Liste:
     def __getitem__(self: Liste, i: int) -> object:
         """
         Retourne l'élément d'indice i.
-    
+
         Une exception est levée si l'indice n'appartient
         pas au bon intervalle.
         """
@@ -277,7 +277,7 @@ class Liste:
 
     def _augmente_taille(self: Liste, capacite: int) -> None:
         """
-        Crée un nouveau tableau de dimension capacite puis copie 
+        Crée un nouveau tableau de dimension capacite puis copie
         tous les éléments de l'ancien tableau dans ce dernier.
         Fait en sorte que le nouveau tableau soit le tableau désormais
         utilisé.
@@ -286,7 +286,7 @@ class Liste:
         new_tab = self._construit_tableau(capacite)
 
         for i in range(self._nbre):
-            #new_tab[i] = self._tab.__getitem__(i)
+            # new_tab[i] = self._tab.__getitem__(i)
             new_tab[i] = self._tab[i]
 
         self._tab = new_tab

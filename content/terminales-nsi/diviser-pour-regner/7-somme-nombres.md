@@ -43,6 +43,7 @@ def somme1(tab: List[float]) -> float:
 
     return tab[0] + somme1(tab[1:])
 
+
 if __name__ == "__main__":
     tab = [1, 2, 3, 4, 5, 6, 7]
     n = tab[len(tab) - 1]

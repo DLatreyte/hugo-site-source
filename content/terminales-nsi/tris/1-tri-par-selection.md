@@ -159,11 +159,11 @@ def tri_selection(tab: list[int | float]) -> None:
     Tri par sélection.
     """
     for i in range(len(tab) - 1):  # On s'arrête à l'avant-dernier élément
-        val_min = tab[i]           # On sauvegarde la valeur courante
+        val_min = tab[i]  # On sauvegarde la valeur courante
         for j in range(i + 1, len(tab)):  # On s'arrête au dernier élément
             if tab[j] < val_min:
-                val_min = tab[j]   # On repère la valeur la plus petite
-                j_min = j          # et son indice
+                val_min = tab[j]  # On repère la valeur la plus petite
+                j_min = j  # et son indice
         tab[j_min] = tab[i]
         tab[i] = val_min
 

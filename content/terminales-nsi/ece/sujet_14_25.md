@@ -21,18 +21,24 @@ Un professeur de NSI décide de gérer les résultats de sa classe sous la forme
 - les valeurs sont des dictionnaires dont les clefs sont les types d’épreuves et les valeurs sont les notes obtenues associées à leurs coefficients. Avec :
 
 ```python
-resultats = {'Dupont':{'DS1' : [15.5, 4],
-                       'DM1' : [14.5, 1],
-                       'DS2' : [13, 4],
-                       'PROJET1' : [16, 3],
-                       'DS3' : [14, 4]},
-             'Durand':{'DS1' : [6 , 4],
-                       'DM1' : [14.5, 1],
-                       'DS2' : [8, 4],
-                       'PROJET1' : [9, 3],
-                       'IE1' : [7, 2],
-                       'DS3' : [8, 4],
-                       'DS4' :[15, 4]}}
+resultats = {
+    "Dupont": {
+        "DS1": [15.5, 4],
+        "DM1": [14.5, 1],
+        "DS2": [13, 4],
+        "PROJET1": [16, 3],
+        "DS3": [14, 4],
+    },
+    "Durand": {
+        "DS1": [6, 4],
+        "DM1": [14.5, 1],
+        "DS2": [8, 4],
+        "PROJET1": [9, 3],
+        "IE1": [7, 2],
+        "DS3": [8, 4],
+        "DS4": [15, 4],
+    },
+}
 ```
 
 L’élève dont le nom est Durand a ainsi obtenu au DS2 la note de 8 avec un coefficient 4. Le professeur crée une fonction `moyenne` qui prend en paramètre le nom d’un de ces élèves et lui renvoie sa moyenne arrondie au dixième.
@@ -97,24 +103,24 @@ Compléter le code récursif de la fonction `propager` donné ci-dessous et écr
 
 ```python
 def propager(M, i, j, val):
-    if M[i][j]== ...:
+    if M[i][j] == ...:
         return None
 
     M[i][j] = val
 
     # l'élément en haut fait partie de la composante
-    if ((i - 1) >= 0 and M[i - 1][j] == ...):
+    if (i - 1) >= 0 and M[i - 1][j] == ...:
         propager(M, i - 1, j, val)
 
     # l'élément en bas fait partie de la composante
-    if ((...) < len(M) and M[i + 1][j] == 1):
+    if (...) < len(M) and M[i + 1][j] == 1:
         ...(M, ..., j, val)
 
     # l'élément à gauche fait partie de la composante
-    if ((...) >= 0 and M[i][j - 1] == 1):
+    if (...) >= 0 and M[i][j - 1] == 1:
         propager(M, i, ..., val)
 
     # l'élément à droite fait partie de la composante
-    if ((...) < len(M) and M[i][j + 1] == 1):
+    if (...) < len(M) and M[i][j + 1] == 1:
         ...(M, i, ..., val)
 ```

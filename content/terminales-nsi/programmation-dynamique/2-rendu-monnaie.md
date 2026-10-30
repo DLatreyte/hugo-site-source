@@ -105,10 +105,10 @@ def pieces_a_rendre(somme: int, pieces: list[int]) -> list[int]:
 ```python
 def pieces_a_rendre(somme: int, pieces: list[int]) -> list[int]:
     """
-    Détermine les pièces (et leur nombre) à choisir 
+    Détermine les pièces (et leur nombre) à choisir
     pour rendre la somme passée en argument.
-    
-    Utilise la division euclidienne et le modulo de 
+
+    Utilise la division euclidienne et le modulo de
     façon à pouvoir traiter tous les cas.
 
     On reçoit : pieces = [1, 2, 5, 10, 20]
@@ -227,7 +227,7 @@ def nb_rendre(a_rendre: int, pieces: list[int]) -> int:
     if a_rendre == 0:
         return 0
 
-    nb_min = float('inf')
+    nb_min = float("inf")
 
     for i in range(len(pieces)):
         if pieces[i] <= a_rendre:
@@ -253,10 +253,9 @@ Le code se trouve à : {{< remote "cette adresse" "<https://replit.com/@dlatreyt
 7. On souhaite maintenant écrire le code de la fonction `pieces_a_rendre` dont la spécification est :
 
 ```python
-def pieces_a_rendre(somme: int,
-                   pieces: tuple[int],
-                   serie: list[int],
-                   series: list[Tuple[int]]) -> None:
+def pieces_a_rendre(
+    somme: int, pieces: tuple[int], serie: list[int], series: list[Tuple[int]]
+) -> None:
     """
     Détermine toutes les combinaisons de pièces qui permettent de rendre la somme somme.
     pieces est le tuple des pièces disponibles.
@@ -272,27 +271,26 @@ On peut bien sur créer une fonction enveloppe qui ne prendrait que la somme et 
 {{% solution "Réponse" %}}
 
 ```python
-def pieces_a_rendre(somme: int,
-                   pieces: tuple[int],
-                   serie: list[int],
-                   series: list[Tuple[int]]) -> None:
+def pieces_a_rendre(
+    somme: int, pieces: tuple[int], serie: list[int], series: list[Tuple[int]]
+) -> None:
     """
     Détermine toutes les combinaisons de pièces qui permettent de rendre la somme somme.
     """
     if somme == 0:
         series.append(serie)
-        return None 
+        return None
 
     for piece in pieces:
         if piece > somme:
             continue
-        
+
         # Sauvegarde de la liste des pièces pour le retour arrière
         serie_sauv = list(serie)
 
-        serie.append(piece) 
+        serie.append(piece)
         pieces_a_rendre(somme - piece, pieces, serie, series)
-        
+
         serie = serie_sauv
 ```
 
@@ -345,14 +343,14 @@ def nb_rendre(a_rendre: int, pieces: list[int]) -> int:
         Version mémoïsée de la fonction nb_rendre.
         """
         if a_rendre not in dic.keys():
-            nb_min = float('inf')
-        
+            nb_min = float("inf")
+
             for i in range(len(pieces)):
                 if pieces[i] <= a_rendre:
                     nb = 1 + _nb_rendre(a_rendre - pieces[i], pieces, dic)
                     if nb <= nb_min:
                         nb_min = nb
-            
+
             dic[a_rendre] = nb_min
 
         return dic[a_rendre]
@@ -422,7 +420,9 @@ def construction_nb(somme: int, pieces: List[int]) -> List[List[int]]:
 7. Écrire la fonction `recherche_sol` dont la spécification est :
 
 ```python
-def recherche_sol(somme: int, pieces: List[int], nb: List[List[int]]) -> Tuple[int, Dict[int: int]]:
+def recherche_sol(
+    somme: int, pieces: List[int], nb: List[List[int]]
+) -> Tuple[int, Dict[int:int]]:
     """
     Recherche la solution et toutes les pièces à rendre pour cette solution.
     La valeur retournée a pour forme (somme, {piece: nombre})
@@ -449,7 +449,7 @@ def nb_rendre(a_rendre: int, pieces: list[int]) -> int:
 
     Algorithme itératif, méthode ascendante.
     """
-    nbres = [float('inf')] * (a_rendre + 1)  # Tableau des valeurs
+    nbres = [float("inf")] * (a_rendre + 1)  # Tableau des valeurs
     nbres[0] = 0
 
     for somme in range(1, len(nbres)):
@@ -471,9 +471,10 @@ def nb_rendre(a_rendre: int, pieces: list[int]) -> int:
 Les mille et unes façon de rendre la monnaie.
 """
 
+
 def glouton(somme: int, pieces: list[int]) -> int:
     """
-    Retourne le nombre de pièces nécessaires pour 
+    Retourne le nombre de pièces nécessaires pour
     rendre la monnaie pour somme.
 
     Méthode gloutonne, pièces est censé être trié
@@ -490,7 +491,7 @@ def glouton(somme: int, pieces: list[int]) -> int:
 
 def force_brute(somme: int, pieces: list[int]) -> int:
     """
-    Retourne le nombre de pièces nécessaires pour 
+    Retourne le nombre de pièces nécessaires pour
     rendre la monnaie pour somme.
 
     Méthode force brute.
@@ -498,7 +499,7 @@ def force_brute(somme: int, pieces: list[int]) -> int:
     if somme == 0:
         return 0
 
-    nbre_min = float('inf')
+    nbre_min = float("inf")
     for piece in pieces:
         if somme - piece >= 0:
             nbre_new = 1 + force_brute(somme - piece, pieces)
@@ -508,17 +509,15 @@ def force_brute(somme: int, pieces: list[int]) -> int:
     return nbre_min
 
 
-def memoisation(somme: int,
-                pieces: list[int],
-                memo: dict[int, int] = {0: 0}) -> int:
+def memoisation(somme: int, pieces: list[int], memo: dict[int, int] = {0: 0}) -> int:
     """
-    Retourne le nombre de pièces nécessaires pour 
+    Retourne le nombre de pièces nécessaires pour
     rendre la monnaie pour somme.
 
     Programmation dynamique : mémoïsation.
     """
     if somme not in memo:
-        nbre_min = float('inf')
+        nbre_min = float("inf")
         for piece in pieces:
             if somme - piece >= 0:
                 nbre_new = 1 + memoisation(somme - piece, pieces, memo)
@@ -531,13 +530,13 @@ def memoisation(somme: int,
 
 def tabulaire(somme: int, pieces: list[int]) -> int:
     """
-    Retourne le nombre de pièces nécessaires pour 
+    Retourne le nombre de pièces nécessaires pour
     rendre la monnaie pour somme.
 
     Programmation dynamique : méthode tabulaire.
     Fonction enveloppe.
     """
-    nbre_pour_somme = [float('inf') for i in range(somme + 1)]
+    nbre_pour_somme = [float("inf") for i in range(somme + 1)]
     nbre_pour_somme[0] = 0
 
     def _tabulaire(somme: int, pieces: List[int], nbre_pour_somme):
@@ -562,25 +561,16 @@ if __name__ == "__main__":
     pieces = [25, 20, 1]
 
     nbres_pieces = glouton(somme_a_rendre, pieces)
-    print(
-        f"Méthode gloutonne pour rendre {somme_a_rendre} : {nbres_pieces} pieces."
-    )
+    print(f"Méthode gloutonne pour rendre {somme_a_rendre} : {nbres_pieces} pieces.")
 
     nbres_pieces = force_brute(somme_a_rendre, pieces)
-    print(
-        f"Méthode force-brute pour rendre {somme_a_rendre} : {nbres_pieces} pieces."
-    )
+    print(f"Méthode force-brute pour rendre {somme_a_rendre} : {nbres_pieces} pieces.")
 
     nbres_pieces = memoisation(somme_a_rendre, pieces)
-    print(
-        f"Méthode mémoïsation pour rendre {somme_a_rendre} : {nbres_pieces} pieces."
-    )
+    print(f"Méthode mémoïsation pour rendre {somme_a_rendre} : {nbres_pieces} pieces.")
 
     nbres_pieces = tabulaire(somme_a_rendre, pieces)
-    print(
-        f"Méthode tabulaire pour rendre {somme_a_rendre} : {nbres_pieces} pieces."
-    )
-
+    print(f"Méthode tabulaire pour rendre {somme_a_rendre} : {nbres_pieces} pieces.")
 ```
 
 {{% /solution %}}

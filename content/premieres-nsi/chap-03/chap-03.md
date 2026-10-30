@@ -358,28 +358,28 @@ Soit trois variables `a`, `b` et `c`. Écrire les instructions permutant les val
 Écrire une fonction qui convertit des francs en euros (1 euro correspond à 6,55957 francs).  
 La spécification de la fonction est :
 ```python
-def conversion_franc_euro(francs: float) -> str: 
-    """ 
+def conversion_franc_euro(francs: float) -> str:
+    """
     Conversion d'une somme en francs en euros. Le message retourné donne les deux valeurs.
 
     >>> conversion_franc_euro(100)
-    '100 francs correspondent à 15.244901723741037 euros.' 
+    '100 francs correspondent à 15.244901723741037 euros.'
     """
 ```
 {{% /note %}}
 {{% solution "Solution" %}}
 ```python
-def conversion_franc_euro(francs: float) -> str: 
-    """ 
+def conversion_franc_euro(francs: float) -> str:
+    """
     Conversion d'une somme en francs en euros. Le message retourné donne les deux valeurs.
 
     >>> conversion_franc_euro(100)
-    '100 francs correspondent à 15.244901723741037 euros.' 
+    '100 francs correspondent à 15.244901723741037 euros.'
     """
     change = 6.55957
     euros = francs / change
-    
-    return '{} francs correspondent à {} euros.'.format(francs, euros)
+
+    return "{} francs correspondent à {} euros.".format(francs, euros)
 ```
 {{% /solution %}}
 
@@ -391,7 +391,7 @@ def conversion_franc_euro(francs: float) -> str:
 La spécification de la fonction est :
 ```python
 def salutation(nom: str, prenom: str, naissance: int) -> str:
-    """ 
+    """
     À partir des nom, prénom et année de naissance, retourne un message d'accueil indiquant l'âge.
 
     >>> salutation("Dupond", "Patrick", 1961)
@@ -402,7 +402,7 @@ def salutation(nom: str, prenom: str, naissance: int) -> str:
 {{% solution "Solution" %}}
 ```python
 def salutation(nom: str, prenom: str, annee_naissance: int) -> str:
-    """ 
+    """
     À partir des nom, prénom et année de naissance, retourne un message d'accueil indiquant l'âge.
 
     >>> salutation("Dupond", "Patrick", 1961)
@@ -410,8 +410,8 @@ def salutation(nom: str, prenom: str, annee_naissance: int) -> str:
     """
     annee_en_cours = 2021
     age = annee_en_cours - annee_naissance
-    
-    return 'Bonjour {} {}, vous avez {} ans.'.format(prenom, nom, age)
+
+    return "Bonjour {} {}, vous avez {} ans.".format(prenom, nom, age)
 ```
 {{% /solution %}}
 
@@ -426,8 +426,8 @@ def age_aleatoire(age_min: int, age_max: int) -> str:
     """
     À partir de deux ages limites, retourne un message contenant un age déterminé aléatoirement.
 
-    >>> age_aleatoire(20, 100) 
-    'Votre age est : 85 ans !' 
+    >>> age_aleatoire(20, 100)
+    'Votre age est : 85 ans !'
     """
 ```
 {{% /note %}}
@@ -435,15 +435,16 @@ def age_aleatoire(age_min: int, age_max: int) -> str:
 ```python
 from random import randint
 
+
 def age_aleatoire(age_min: int, age_max: int) -> str:
     """
     À partir de deux ages limites, retourne un message contenant un age déterminé aléatoirement.
 
-    >>> age_aleatoire(20, 100) 
-    'Votre age est : 85 ans !' 
+    >>> age_aleatoire(20, 100)
+    'Votre age est : 85 ans !'
     """
     age = randint(age_min, age_max)
 
-    return 'Votre age est : {} ans !'.format(age)
+    return "Votre age est : {} ans !".format(age)
 ```
 {{% /solution %}}

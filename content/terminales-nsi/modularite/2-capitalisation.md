@@ -141,8 +141,10 @@ le nombre de jours écoulés depuis le dépôt.
     n = jours_ecoules(C0,C,t)
     t = taux_annuel(C0,C,n)
 """
+
 import sys
 from math import log
+
 
 def montant_actuel(C0: float, t: float, n: int) -> float:
     """
@@ -150,11 +152,12 @@ def montant_actuel(C0: float, t: float, n: int) -> float:
     d'intérêt et de la durée de dépôt, le montant actuel.
     """
     try:
-        C = C0*(1 + t / (360 * 100))**n
+        C = C0 * (1 + t / (360 * 100)) ** n
     except:
         print("Un des arguments passé à la fonction est incorrect. Fin du programme.")
         sys.exit(1)
     return C
+
 
 def montant_initial(C: float, t: float, n: int) -> float:
     """
@@ -162,11 +165,12 @@ def montant_initial(C: float, t: float, n: int) -> float:
     d'intérêt et de la durée de dépôt, le montant initial déposé.
     """
     try:
-        C0 = C*(1 + t / (360*100))**(-n)
+        C0 = C * (1 + t / (360 * 100)) ** (-n)
     except:
         print("Un des arguments passé à la fonction est incorrect. Fin du programme.")
         sys.exit(1)
     return C0
+
 
 def jours_ecoules(C0: float, C: float, t: float) -> float:
     """
@@ -174,11 +178,12 @@ def jours_ecoules(C0: float, C: float, t: float) -> float:
     actuel et du taux d'intérêt, la durée écoulée en jours.
     """
     try:
-        n = log(C/C0) / log(1 + t/(360*100))
+        n = log(C / C0) / log(1 + t / (360 * 100))
     except:
         print("Un des arguments passé à la fonction est incorrect. Fin du programme.")
         sys.exit(1)
     return n
+
 
 def taux_annuel(C0: float, C: float, n: int) -> float:
     """
@@ -186,7 +191,7 @@ def taux_annuel(C0: float, C: float, n: int) -> float:
     actuel et de la durée de dépôt (en jours), le taux annuel.
     """
     try:
-        t = 360*100*( (C/C0)**(1/n) - 1)
+        t = 360 * 100 * ((C / C0) ** (1 / n) - 1)
     except:
         print("Un des arguments passé à la fonction est incorrect. Fin du programme.")
         sys.exit(1)

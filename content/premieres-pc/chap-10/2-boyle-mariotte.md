@@ -111,7 +111,7 @@ plt.show()
 ```python
 sns.set()
 plt.figure()
-plt.plot(V, P, 'o', label="Pression (Pa)")
+plt.plot(V, P, "o", label="Pression (Pa)")
 plt.xlabel(r"$V\ (\mathrm{m}^3)$")
 plt.ylim(50000, 250000)
 plt.xlim(1e-5, 8e-5)
@@ -159,7 +159,7 @@ plt.show()
 {{% solution "Réponse" %}}
 
 ```python
-plt.plot(invV, P, 'o', label="Pression (Pa)")
+plt.plot(invV, P, "o", label="Pression (Pa)")
 plt.xlabel(r"$1/V\ (\mathrm{m}^{-3})$")
 plt.legend()
 plt.show()
@@ -211,6 +211,7 @@ print(popt)
 def modele(x, a):
     return a * x
 
+
 # Détermination des paramètres optimaux
 popt, pcov = curve_fit(modele, invV, P)
 a_mod = popt[0]
@@ -220,8 +221,8 @@ invV_mod = np.linspace(min(invV), max(invV), 50)
 P_mod = modele(invV_mod, a_mod)
 
 # Tracé
-plt.plot(invV, P, 'o', label="Pression (Pa)")
-plt.plot(invV_mod, P_mod, '-', label="Pression (Pa) modélisée")
+plt.plot(invV, P, "o", label="Pression (Pa)")
+plt.plot(invV_mod, P_mod, "-", label="Pression (Pa) modélisée")
 plt.xlabel(r"$1/V\ (\mathrm{m}^{-3})$")
 plt.legend()
 plt.show()

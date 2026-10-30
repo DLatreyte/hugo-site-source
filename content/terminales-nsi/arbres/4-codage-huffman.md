@@ -175,10 +175,10 @@ Par rapport à l'implémentation réalisée lors des TP précédenrs, ajouter le
 
 ```python
 def __lt__(self, n: Noeud):
-        """
-        Comparaison de deux noeuds = comparaison des valeurs
-        """
-        return self.valeur < n.valeur
+    """
+    Comparaison de deux noeuds = comparaison des valeurs
+    """
+    return self.valeur < n.valeur
 ```
 
 {{% solution "Réponse" %}}
@@ -248,7 +248,13 @@ def creation_table_frequences(message: str) -> dict[str, int]:
 Tester la fonction avec l'instruction :
 
 ```python
-assert creation_table_frequences("ABRACADABRA") == {'A': 5, 'B': 2, 'R': 2, 'C': 1, 'D': 1}
+assert creation_table_frequences("ABRACADABRA") == {
+    "A": 5,
+    "B": 2,
+    "R": 2,
+    "C": 1,
+    "D": 1,
+}
 ```
 
 {{% solution "Réponse" %}}
@@ -386,7 +392,7 @@ Il est impératif de savoir écrire le code de cette fonction !
 ```python
 def decodage(message_compresse: str, codes: dict[str, str]) -> str:
     """
-    Retourne le message non compressé à partir du codage de Huffman. 
+    Retourne le message non compressé à partir du codage de Huffman.
     """
 ```
 
@@ -395,7 +401,7 @@ def decodage(message_compresse: str, codes: dict[str, str]) -> str:
 ```python
 def decodage(message_compresse: str, codes: dict[str, str]) -> str:
     """
-    Retourne le message non compressé à partir du codage de Huffman. 
+    Retourne le message non compressé à partir du codage de Huffman.
 
     Étape intermédiaire : passer d'un dictionnaire 'A': '001' à
     '001' : 'A'
@@ -428,18 +434,23 @@ Il est impératif de savoir écrire le code de cette fonction !
 
 ```python
 if __name__ == "__main__":
-    arb = Noeud(12, 'A')
-    arb.gauche = Noeud(23, 'B')
-    arb.droit = Noeud(48, 'C')
-    arb.gauche.gauche = Noeud(49, 'K')
-    arb.droit.gauche = Noeud(9, 'H')
-    arb.droit.droit = Noeud(78, 'X')
+    arb = Noeud(12, "A")
+    arb.gauche = Noeud(23, "B")
+    arb.droit = Noeud(48, "C")
+    arb.gauche.gauche = Noeud(49, "K")
+    arb.droit.gauche = Noeud(9, "H")
+    arb.droit.droit = Noeud(78, "X")
 
     print(parcours(arb))
-    print(arb < Noeud(67, 'E'))
+    print(arb < Noeud(67, "E"))
 
     assert creation_table_frequences("ABRACADABRA") == {
-        'A': 5, 'B': 2, 'R': 2, 'C': 1, 'D': 1}
+        "A": 5,
+        "B": 2,
+        "R": 2,
+        "C": 1,
+        "D": 1,
+    }
 
     message = "ABRACADABRA"
 
@@ -452,7 +463,7 @@ if __name__ == "__main__":
     print(parcours(arbre))
 
     dic_codes = {}
-    codes_huffman_parcours(arbre, dic_codes, '')
+    codes_huffman_parcours(arbre, dic_codes, "")
     print(dic_codes)
 
     message_code = encodage(message, dic_codes)

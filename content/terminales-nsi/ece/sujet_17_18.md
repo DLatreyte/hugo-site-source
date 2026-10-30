@@ -23,13 +23,13 @@ Cette fonction doit renvoyer un indice correspondant au nombre cherché s’il e
 On considère la fonction `separe` ci-dessous qui prend en argument un tableau `tab` dont les éléments sont des 0 et des 1 et qui sépare les 0 des 1 en plaçant les 0 en début de tableau et les 1 à la suite.
 
 ```python
-def separe(tab): 
+def separe(tab):
     i = 0
     j = ...
-    while i < j :
+    while i < j:
         if tab[i] == 0:
             i = ...
-        else :
+        else:
             tab[i], tab[j] = ...
             j = ...
     return tab
@@ -41,7 +41,24 @@ Compléter la fonction `separe` ci-dessus.
 
 ```python
 assert separe([1, 0, 1, 0, 1, 0, 1, 0]) == [0, 0, 0, 0, 1, 1, 1, 1]
-assert separe([1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0]) == [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+assert separe([1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0]) == [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+]
 ```
 
 ## Exercice 3 (1/3 des points)
@@ -50,13 +67,13 @@ On considère la fonction `insere` ci-dessous qui prend en argument un entier `a
 
 ```python
 def insere(a, tab):
-    l = list(tab)  #l contient les mêmes éléments que tab
+    l = list(tab)  # l contient les mêmes éléments que tab
     l.append(a)
     i = ...
-    while a < ... and ... >= ... :
-      l[i + 1] = ...
-      l[i] = a
-      i = ...
+    while a < ... and ... >= ...:
+        l[i + 1] = ...
+        l[i] = a
+        i = ...
     return l
 ```
 
@@ -65,7 +82,7 @@ Compléter la fonction `insere` ci-dessus.
 #### Jeu de tests
 
 ```python
-assert insere(3,[1,2,4,5]) == [1, 2, 3, 4, 5]
-assert insere(10,[1,2,7,12,14,25]) ==  [1, 2, 7, 10, 12, 14, 25]
-assert insere(1,[2,3,4]) == [1, 2, 3, 4]
+assert insere(3, [1, 2, 4, 5]) == [1, 2, 3, 4, 5]
+assert insere(10, [1, 2, 7, 12, 14, 25]) == [1, 2, 7, 10, 12, 14, 25]
+assert insere(1, [2, 3, 4]) == [1, 2, 3, 4]
 ```

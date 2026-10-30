@@ -66,8 +66,8 @@ Expliquer d’où provient l’erreur et proposer un correctif.
 - Si on veut que la dernière valeur de la boucle soit $n$, comme l'indique le commentaire dans le code, la borne supérieure doit être égale à $n+1$.
 
 ```python
-for k in range(1, n+1):
-        s = s + terme(k)
+for k in range(1, n + 1):
+    s = s + terme(k)
 ```
 
 ou
@@ -159,7 +159,7 @@ L’exception `IndexError` est levée si on essaie d’accéder à une valeur st
 Il faut vérifier quelles valeur de `v1` et `v2`.
 
 ```python
-def scalaire(v1: tuple, v2: tuple) -> float:  
+def scalaire(v1: tuple, v2: tuple) -> float:
     """
     Calcule le produit scalaire des deux vecteurs v1 et v2.
     """
@@ -198,7 +198,7 @@ IndexError: tuple index out of range
 ```python
 def random_vect(n: int) -> tuple:
     """
-    Génère un vecteur de taille n contenant des entiers non nuls 
+    Génère un vecteur de taille n contenant des entiers non nuls
     entre -10 et 10
     """
     v = []
@@ -219,7 +219,7 @@ La solution consiste à utiliser plutôt une boucle `TantQue` avec un test sur l
 ```python
 def random_vect(n: int) -> tuple:
     """
-    Génère un vecteur de taille n contenant des entiers non nuls 
+    Génère un vecteur de taille n contenant des entiers non nuls
     entre -10 et 10
     """
     v = []
@@ -244,21 +244,21 @@ La chaîne `string.ascii_uppercase` est définie dans le module `string` et vaut
 
 ```python
 def valeur1(chaine):
-    s = 0 
-    for c in chaine: 
-        if c >= "A" and c <= "Z": 
-            s = s + ord(c) - ord('A') + 1 
+    s = 0
+    for c in chaine:
+        if c >= "A" and c <= "Z":
+            s = s + ord(c) - ord("A") + 1
     return s
 ```
 
 **Proposition 2**
 
 ```python
-def valeur2(chaine) : 
-    s = 0 
-    for c in chaine.upper(): 
-        if c >= "A" and c < "Z": 
-            s = s + ord(c) - ord('A') + 1 
+def valeur2(chaine):
+    s = 0
+    for c in chaine.upper():
+        if c >= "A" and c < "Z":
+            s = s + ord(c) - ord("A") + 1
     return s
 ```
 
@@ -266,11 +266,13 @@ def valeur2(chaine) :
 
 ```python
 import string
-def valeur3(chaine): 
-    s = 0 
-    for c in chaine.upper(): 
-        if c in string.ascii_uppercase: 
-            s = s + string.ascii_uppercase.index(c) 
+
+
+def valeur3(chaine):
+    s = 0
+    for c in chaine.upper():
+        if c in string.ascii_uppercase:
+            s = s + string.ascii_uppercase.index(c)
     return s
 ```
 

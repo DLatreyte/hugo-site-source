@@ -22,11 +22,11 @@ def creation_liste_cles_triees(dic_car: Dict[str, float]) -> List[str]:
     liste_couples = []
     for cle in dic_car.keys():
         liste_couples.append((cle, dic_car[cle]))
-    
+
     liste_cles_triees = []
     for couple in sorted(liste_couples, key=lambda c: c[1], reverse=True):
         liste_cles_triees.append(couple[0])
-        
+
     return liste_cles_triees
 
 
@@ -77,7 +77,7 @@ def trouve_indice(car: str, seq: Sequence) -> int:
     """
     Détermine le premier indice du caractère car dans liste.
     On suppose que car appartient à la liste.
-    
+
     Ainsi trouve_indice('a', "jkhdsalkj") retourne 5.
     """
     indice = 0
@@ -160,17 +160,17 @@ def nettoyage(liste_car: List[str]) -> List[str]:
 def extraction_caracteres(nom_fichier: str) -> List[str]:
     """
     Ouvre le fichier nom_fichier, extrait l'ensemble des caractères
-    sous forme d'une unique chaîne de caractères puis crée une liste 
+    sous forme d'une unique chaîne de caractères puis crée une liste
     dont chaque élément est un caractère présent dans le texte initial.
     """
-    with open(nom_fichier, 'r', encoding='utf-8-sig') as f:
+    with open(nom_fichier, "r", encoding="utf-8-sig") as f:
         chaine_contenu = f.read()
     return list(chaine_contenu)
 
 
 def main():
-    """ Fonction principale qui appelle toutes les autres. """
-    
+    """Fonction principale qui appelle toutes les autres."""
+
     # Création du dictionnaire de référence
     roman = "la-jangada.txt"
     #     fichier_test = "texte-de-test.txt"
@@ -181,9 +181,9 @@ def main():
 
     dict_car_ref = creation_dict_car(liste_caracteres_ref)
     dict_car_ref = analyse_dict_car(dict_car_ref)
-#     print(dict_car_ref)
-    
-#     affichage_dict(dict_car_ref)
+    #     print(dict_car_ref)
+
+    #     affichage_dict(dict_car_ref)
     liste_cles_ref = creation_liste_cles_triees(dict_car_ref)
     print("----------------------------------------")
     print(liste_cles_ref)
@@ -192,15 +192,15 @@ def main():
     texte = "texte-chiffre.txt"
     liste_caracteres_chif = extraction_caracteres(texte)
     liste_caracteres_chif = nettoyage(liste_caracteres_chif)
-    
+
     dict_car_chif = creation_dict_car(liste_caracteres_chif)
     dict_car_chif = analyse_dict_car(dict_car_chif)
-#     print(dict_car_chif)
+    #     print(dict_car_chif)
     print("----------------------------------------")
-#     affichage_dict(dict_car_chif)
+    #     affichage_dict(dict_car_chif)
     print("----------------------------------------")
     liste_cles_chif = creation_liste_cles_triees(dict_car_chif)
     print(liste_cles_chif)
 
-main()
 
+main()

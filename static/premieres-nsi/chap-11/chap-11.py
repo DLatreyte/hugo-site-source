@@ -2,6 +2,7 @@
 Chiffrement de César. L'algorithme utilisé permet d'envisager un
 décalage positif de n'importe quelle valeur.
 """
+
 import string
 
 
@@ -15,9 +16,11 @@ def chiffrement(chaine: str, decalage: int) -> str:
 
     for car in chaine:  # pour chaque caractère de la chaîne non chiffrée
         indice_car = chaine_reference.index(car)  # On récupère l'indice du caractère
-        nouvel_indice = indice_car + decalage     # On applique le décalage
+        nouvel_indice = indice_car + decalage  # On applique le décalage
 
-        nouvel_indice = nouvel_indice % modulo    # On ramène la valeur dans le bon intervalle
+        nouvel_indice = (
+            nouvel_indice % modulo
+        )  # On ramène la valeur dans le bon intervalle
 
         liste_car_chiffres.append(chaine_reference[nouvel_indice])
 
@@ -37,24 +40,26 @@ def main():
 
     while not reponse_coherente:
         action = input("Que voulez-vous faire, chiffrer (c) ou déchiffrer (d) ? : ")
-        if action == 'c':
+        if action == "c":
             chaine = input("Quelle chaîne voulez-vous chiffrer ? ")
             decalage = int(input("Quel décalage voulez-vous opérer ? "))
             chaine_chiffree = chiffrement(chaine, decalage)
-            print("Chaîne de départ : {}, décalage : {}, chaîne chiffrée : {}".format(
-                                                                                chaine,
-                                                                                decalage,
-                                                                                chaine_chiffree))
+            print(
+                "Chaîne de départ : {}, décalage : {}, chaîne chiffrée : {}".format(
+                    chaine, decalage, chaine_chiffree
+                )
+            )
             reponse_coherente = True
 
-        elif action == 'd':
+        elif action == "d":
             chaine_chiffree = input("Quelle chaîne voulez-vous déchiffrer ? ")
             decalage = int(input("Quel décalage a été appliqué lors du chiffrement ? "))
             chaine = dechiffrement(chaine_chiffree, decalage)
-            print("Chaîne chiffrée : {}, décalage : {}, chaîne déchiffrée : {}".format(
-                                                                                chaine_chiffree,
-                                                                                decalage,
-                                                                                chaine))
+            print(
+                "Chaîne chiffrée : {}, décalage : {}, chaîne déchiffrée : {}".format(
+                    chaine_chiffree, decalage, chaine
+                )
+            )
             reponse_coherente = True
 
         else:

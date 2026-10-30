@@ -128,14 +128,14 @@ class Graphe:
     ```python
     def __repr__(self: Graphe) -> str:
         """
-        Représentation du graphe sous forme d'une chaîne de 
+        Représentation du graphe sous forme d'une chaîne de
         caractères.
         """
         rep = "{"
         for i, sommet in enumerate(self.sommets):
             rep += repr(sommet)
             if i < len(self.sommets) - 1:  # Ajout de la virgule sauf dernier tour
-                rep += ', '
+                rep += ", "
         rep += "}"
         return rep
     ```
@@ -165,7 +165,7 @@ def existe_sommet(self: Graphe, s: str) -> bool:
     """
     Vérifie que le sommet s existe bien dans le graphe.
     """
-    sommet_present = False       # Sommet pas présent
+    sommet_present = False  # Sommet pas présent
     for sommet in self.sommets:  # sommet référence un objet
         if sommet.val == s:
             sommet_present = True
@@ -223,9 +223,9 @@ def ajout_sommet(self: Graphe, val: str) -> None:
     ```python
     def recuperation_sommet(self: Graphe, s: str) -> Sommet:
         """
-        Récupère l'objet de type sommet, présent dans la liste
-     sommets, dont la valeur/étiquette est s.
-        Lève une exception si le sommet n'existe pas.
+           Récupère l'objet de type sommet, présent dans la liste
+        sommets, dont la valeur/étiquette est s.
+           Lève une exception si le sommet n'existe pas.
         """
     ```
 
@@ -414,10 +414,9 @@ def construction_matrice(self: Graphe) -> list[list[int]]:
         # Récupération de l'objet de type sommet associé au nom
         sommet = self.recuperation_sommet(nom_sommet)
         # Récupération des noms des sommets adjacents
-        nom_sommets_adjacents = [
-            sommet_adj.val for sommet_adj in sommet.adj]
+        nom_sommets_adjacents = [sommet_adj.val for sommet_adj in sommet.adj]
 
-        ligne_matrice = []            # Initialisation de la ligne de la matrice
+        ligne_matrice = []  # Initialisation de la ligne de la matrice
         for i in range(len(val_sommets_ordonnees)):
             if val_sommets_ordonnees[i] in nom_sommets_adjacents:
                 ligne_matrice.append(1)
@@ -462,7 +461,7 @@ def representation_matrice(self: Graphe) -> str:
     nbre = len(matrice)  # nombre de lignes et de colonnes
     for i in range(nbre):
         for j in range(nbre):
-            rep += str(matrice[i][j]) + '\t'
+            rep += str(matrice[i][j]) + "\t"
         rep += "\n"
     return rep
 ```
@@ -487,7 +486,7 @@ Il est possible de compléter la classe en définissant les méthodes suivantes 
     ```python
     def rend_non_oriente(self: Graphe) -> None:
         """
-        Assure que pour toute arête {s1, s2} il existe une 
+        Assure que pour toute arête {s1, s2} il existe une
         arête {s2, s1}. Si ce n'est pas le cas, cette arête
         est créée.
         """

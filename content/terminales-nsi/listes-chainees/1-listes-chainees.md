@@ -107,7 +107,7 @@ def insere(tab: List[int], n: int, i: int) -> None:
     Lève une exception si le tableau est déjà plein.
 
     HYPOTHÈSE : la gestion des "trous" n'est pas assurée,
-    l'algorithme se contente de décaler les valeurs vers 
+    l'algorithme se contente de décaler les valeurs vers
     la droite.
     """
 ```
@@ -123,7 +123,7 @@ def insere_rec(tab: List[int], n: int, i: int, k: int) -> None:
     Lève une exception si le tableau est déjà plein.
 
     HYPOTHÈSE : la gestion des "trous" n'est pas assurée,
-    l'algorithme se contente de décaler les valeurs vers 
+    l'algorithme se contente de décaler les valeurs vers
     la droite.
     """
 ```
@@ -164,7 +164,7 @@ En langage Python, on peut implémenter une cellule à l'aide d'une classe, de l
 8. Définir la classe `Cellule` dont la spécification est :
 
 ```python
-class Cellule():
+class Cellule:
     """
     Implémentation d'une cellule de liste chaînée
     de nombres entiers.
@@ -390,7 +390,7 @@ def retrait_premier_element(lst: Cellule) -> tuple[int, Cellule]:
     """
     Retire le premier élément de la liste et le retourne.
 
-    La nouvelle adresse de la tête de liste doit être 
+    La nouvelle adresse de la tête de liste doit être
     retournée.
     """
 ```
@@ -436,12 +436,12 @@ def concatener(lst1: Cellule, lst2: Cellule) -> Cellule:
     """
     Concatène les listes lst1 et lst2. Une nouvelle liste est
     créée et retournée.
-    Les éléments de la première liste sont copiés alors que ceux 
+    Les éléments de la première liste sont copiés alors que ceux
     de la deuxième sont insérés. lst1 et lst2 ne sont donc pas modifiées.
 
-    ATTENTION : tout élément de lst partagé avec lst2 modifié l'est aussi 
+    ATTENTION : tout élément de lst partagé avec lst2 modifié l'est aussi
     dans lst2.
-    
+
     Algorithme récursif.
     """
 ```
@@ -489,7 +489,7 @@ def concatener_avec_copie_integrale(lst1: Cellule, lst2: Cellule) -> Cellule:
 ```python
 def renverser(lst: Cellule) -> Cellule:
     """
-    Retourne une nouvelle liste formée des éléments de lst à l'envers. 
+    Retourne une nouvelle liste formée des éléments de lst à l'envers.
     Les éléments peuvent avoir été recopiés ou pas.
 
     Algorithme récursif.
@@ -552,12 +552,12 @@ Une liste chaînée est un **type abstrait de données** qui doit, au minimum, f
 
 ```python
 if __name__ == "__main__":
-    #c1 = Cellule(1, None)
-    #c2 = Cellule(2, None)
-    #c3 = Cellule(3, None)
-    #lst = c1
-    #lst.suivante = c2
-    #c2.suivante = c3
+    # c1 = Cellule(1, None)
+    # c2 = Cellule(2, None)
+    # c3 = Cellule(3, None)
+    # lst = c1
+    # lst.suivante = c2
+    # c2.suivante = c3
 
     lst = Cellule(1, Cellule(2, Cellule(3, Cellule(4, None))))
     affichage_elements_liste(lst)
@@ -567,11 +567,11 @@ if __name__ == "__main__":
 
     assert n_ieme_element(lst, 0) == 1
     assert n_ieme_element(lst, 3) == 4
-    #print(n_ieme_element(lst, 4))
+    # print(n_ieme_element(lst, 4))
 
     assert n_ieme_element_iter(lst, 0) == 1
     assert n_ieme_element_iter(lst, 3) == 4
-    #print(n_ieme_element_iter(lst, 4))
+    # print(n_ieme_element_iter(lst, 4))
 
     lst1 = Cellule(1, Cellule(2, Cellule(3, Cellule(4, None))))
     lst2 = Cellule(5, Cellule(6, Cellule(7, None)))

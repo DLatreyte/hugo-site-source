@@ -18,12 +18,13 @@ auto_numbering: true
 Simulation du suivi conductimétrique pour le titrage
 du sérum physiologique.
 """
+
 import matplotlib.pyplot as plt
 import csv
 from scipy.stats import linregress
 
 
-class Ion():
+class Ion:
     """
     Définition d'un ion à prendre en compte dans le
     calcul de la conductivité d'une solution.
@@ -31,9 +32,9 @@ class Ion():
 
     def __init__(self, nom, conduc=0, charge=0, n=0):
         self.nom = nom
-        self.charge = charge        # Charge électrique (multiple de e)
+        self.charge = charge  # Charge électrique (multiple de e)
         self.conductivite = conduc  # Conductivité molaire ionique
-        self.quantite = n           # Quantité de matière (moles)
+        self.quantite = n  # Quantité de matière (moles)
 
     @property
     def quantite(self):
@@ -54,7 +55,7 @@ class Ion():
         return chaine
 
 
-class Solution():
+class Solution:
     """
     Définition d'une solution ionique.
     """
@@ -72,11 +73,10 @@ class Solution():
         return conduc
 
 
-def creation_fichier_resultat(nom_fichier, entete_x, entete_y,
-                              list_x, list_y):
+def creation_fichier_resultat(nom_fichier, entete_x, entete_y, list_x, list_y):
 
-    with open(nom_fichier, 'w') as fichier:
-        writer = csv.writer(fichier, dialect='excel')
+    with open(nom_fichier, "w") as fichier:
+        writer = csv.writer(fichier, dialect="excel")
         writer.writerow([entete_x, entete_y])
 
         for i in range(len(list_x)):
@@ -89,20 +89,20 @@ def affichage(list_v, list_conduc, list_regres):
     # Création d'une sous-figure
     ax = fig.add_subplot(111)
     # Affichage des données
-    ax.plot(list_v, list_conduc, 'ro')
-    ax.plot(list_v, list_regres, 'b-')
+    ax.plot(list_v, list_conduc, "ro")
+    ax.plot(list_v, list_regres, "b-")
     # Limites pour l'axe des abscisses
-    ax.set_xlim(min(list_v) - 1E-3, max(list_v) + 1E-3)
+    ax.set_xlim(min(list_v) - 1e-3, max(list_v) + 1e-3)
     # Utilisation de l'écriture scientifique pour les valeurs
-    ax.ticklabel_format(axis='both', style='sci', scilimits=(0, 0))
+    ax.ticklabel_format(axis="both", style="sci", scilimits=(0, 0))
     # Label de l'axe des abscisses
-    ax.set_xlabel(r'$V_2$ (L)')
+    ax.set_xlabel(r"$V_2$ (L)")
     # Label de l'axe des ordonnées
-    ax.set_ylabel(r'$\sigma$ ($\mathrm{S}\cdot\mathrm{m}^{-1}$)')
+    ax.set_ylabel(r"$\sigma$ ($\mathrm{S}\cdot\mathrm{m}^{-1}$)")
     # Affichage de la grille
     ax.grid()
     # Légende
-    ax.set_title(r'Suivi conductimétrique sans effet de dilution')
+    ax.set_title(r"Suivi conductimétrique sans effet de dilution")
     # Sauvegarde de la figure
     fig.savefig("conductimetrie_01.pdf")
     # Affichage de la figure
@@ -140,22 +140,22 @@ def regression_lineaire(vol_1, conduc_1, vol_2, conduc_2):
 
 
 def main():
-    C = 3.2E-2   # Concentration des ions chlorure
-    V = 10E-3    # Volume de sérum physiologique
-    C2 = 2E-2    # Concentration des ions argent
+    C = 3.2e-2  # Concentration des ions chlorure
+    V = 10e-3  # Volume de sérum physiologique
+    C2 = 2e-2  # Concentration des ions argent
     V2_max = 24  # Volume maximal de titrant versé (en mL)
-    V_eau = 0.100   # Volume d'eau ajouté
-    xE = C * V   # Avancement à l'équivalence
+    V_eau = 0.100  # Volume d'eau ajouté
+    xE = C * V  # Avancement à l'équivalence
 
-    ion_argent = Ion("ion argent", 6.2E-3, 1)
-    ion_chlorure = Ion("ion chlorure", 7.6E-3, -1)
-    ion_sodium = Ion("ion sodium", 5.0E-3, 1, C * V)
-    ion_nitrate = Ion("ion nitrate", 7.1E-3, -1)
+    ion_argent = Ion("ion argent", 6.2e-3, 1)
+    ion_chlorure = Ion("ion chlorure", 7.6e-3, -1)
+    ion_sodium = Ion("ion sodium", 5.0e-3, 1, C * V)
+    ion_nitrate = Ion("ion nitrate", 7.1e-3, -1)
 
     sol = Solution([ion_argent, ion_chlorure, ion_sodium, ion_nitrate])
 
     # Volumes de titrant versés
-    volumes = [i * 1E-3 for i in range(V2_max + 1)]
+    volumes = [i * 1e-3 for i in range(V2_max + 1)]
     conduc = []  # valeurs des conductivités dans la solution
 
     for V2 in volumes:
@@ -167,16 +167,12 @@ def main():
         sol.volume = V_eau + V + V2
         conduc.append(sol.conductivite())
 
-    creation_fichier_resultat("valeurs.csv",
-                              "Volumes (L)",
-                              "Conductivité (S.m^-1)",
-                              volumes,
-                              conduc)
+    creation_fichier_resultat(
+        "valeurs.csv", "Volumes (L)", "Conductivité (S.m^-1)", volumes, conduc
+    )
 
-    vol_1, conduc_1, vol_2, conduc_2 = determination_intervalles(conduc,
-                                                                 volumes)
-    droites_regression = regression_lineaire(vol_1, conduc_1, vol_2,
-                                             conduc_2)
+    vol_1, conduc_1, vol_2, conduc_2 = determination_intervalles(conduc, volumes)
+    droites_regression = regression_lineaire(vol_1, conduc_1, vol_2, conduc_2)
 
     affichage(volumes, conduc, droites_regression)
 

@@ -51,11 +51,11 @@ class Liste:
             self.maillons = Maillon(valeur)
 
     def est_vide(self: Liste) -> bool:
-        """ Détermine si la liste est vide. """
+        """Détermine si la liste est vide."""
         return self.maillons is None
 
     def __len__(self: Liste) -> int:
-        """ Retourne le nombre d'éléments dans la liste. """
+        """Retourne le nombre d'éléments dans la liste."""
         if self.est_vide():
             return 0
         else:
@@ -152,7 +152,6 @@ class Liste:
 
         rep += "]"
         return rep
-
 ```
 
 {{% /solution %}}

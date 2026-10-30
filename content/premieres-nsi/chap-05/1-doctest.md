@@ -19,10 +19,10 @@ Le travail qui suit s'appuie sur la définition de la fonction `kelvin_vers_cels
 
 ```python
 def kelvin_vers_celsius(t: float) -> float:
-    """ 
+    """
     Convertit la température donnée en kelvin en une température θ en degrés celsius.
     Relation : θ = t - 273.15.
-    
+
     >>> kelvin_vers_celsius(0) -273.15
     >>> kelvin_vers_celsius(273.15) 0.0
     """
@@ -102,8 +102,8 @@ La fonction testmod du module doctest analyse la valeur retournée par une fonct
 
 ```python
 if __name__ == "__main__":
+    import doctest
 
-    import doctest 
     doctest.testmod()
 ```
 
@@ -119,22 +119,21 @@ A-t-on la moindre indication que la fonction `testmod` a été lancée ?
 1. Remplacer la définition de la fonction `kelvin_vers_celsius` par celle-ci :
 ```python
 def kelvin_vers_celsius(t: float) -> float:
+    """Convertit la température donnée en kelvin en une
+    température θ en degrés celsius.
+    Relation : θ = t - 273.15.
 
-    """ Convertit la température donnée en kelvin en une
-    température θ en degrés celsius. 
-    Relation : θ = t - 273.15. 
-    
     ERREUR si t est négative.
-    
-    >>> kelvin_vers_celsius(0) 
+
+    >>> kelvin_vers_celsius(0)
     -273.15
-    >>> kelvin_vers_celsius(273.15) 
-    0.0 
-    """ 
-    if t < 0: 
+    >>> kelvin_vers_celsius(273.15)
+    0.0
+    """
+    if t < 0:
         raise ValueError("Température en kelvin doit être positive !")
 
-    offset = -273.15 
+    offset = -273.15
     return t + offset
 ```
 Quelle est la différence dans le comportement de la fonction ce code introduit-il ?
@@ -176,6 +175,7 @@ Pour chacune des fonctions, il faut
 ```python
 if __name__ == "__main__":
     import doctest
+
     doctest.testmod()
 ```
 
@@ -193,11 +193,11 @@ def est_egal(a: float, b: float) -> bool:
     """
     Teste l'égalité de 2 floats a et b : abs(a - b) <= epsilon avec
     epsilon = 1e-7
-    
-    >>> est_egal(0, 0.0) 
-    xxx 
-    >>> est_egal(1/49*49, 1) 
-    xxx 
+
+    >>> est_egal(0, 0.0)
+    xxx
+    >>> est_egal(1/49*49, 1)
+    xxx
     """
 ```
 Remplacer les `xxx` de façon à ce que la fonction testmod accepte votre définition.
@@ -210,14 +210,14 @@ Remplacer les `xxx` de façon à ce que la fonction testmod accepte votre défin
 Définir la fonction `inverse` dont une partie de la spécification est :
 ```python
 def inverse(x: float) -> float:
-    """ Retourne l'inverse du nombre x.
+    """Retourne l'inverse du nombre x.
     ERREUR si x est nul.
 
-    >>> inverse(0) 
+    >>> inverse(0)
     Traceback (most recent call last):
     …
     ZeroDivisionError: Division par 0 !!!
-    >>> inverse(5) 
+    >>> inverse(5)
     xxx
     """
 ```

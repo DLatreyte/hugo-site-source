@@ -57,10 +57,10 @@ assert <expression booléenne>, <message si valeur Faux>
 
 ```python
 def kelvin_vers_celsius(t: float) -> float:
-    """ 
+    """
     Convertit la température donnée en kelvin en une température θ en degrés celsius.
     Relation : θ = t - 273.15.
-    
+
     >>> kelvin_vers_celsius(0) -273.15
     >>> kelvin_vers_celsius(273.15) 0.0
     """
@@ -72,15 +72,16 @@ def kelvin_vers_celsius(t: float) -> float:
 
 ```python
 def kelvin_vers_celsius(t: float) -> float:
-    """ 
+    """
     Convertit la température donnée en kelvin en une température θ en degrés celsius.
     Relation : θ = t - 273.15.
-    
+
     >>> kelvin_vers_celsius(0) -273.15
     >>> kelvin_vers_celsius(273.15) 0.0
     """
     offset = -273.15
     return t + offset
+
 
 if __name__ == "__main__":
     assert kelvin_vers_celsius(0) == -273.15, "Pb avec fonction kelvin_vers_celsius"

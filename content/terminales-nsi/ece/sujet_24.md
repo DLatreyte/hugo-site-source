@@ -35,7 +35,7 @@ def recherche(elt: int, tab: List[int]) -> int:
     Retourne l’indice de la dernière occurrence de `elt` dans `tab` si `elt` est dans `tab` et le -1 sinon.
     """
     indice = -1
-    i = len(tab) - 1   # Dernier indice du tableau
+    i = len(tab) - 1  # Dernier indice du tableau
     trouve = False
     while i > 0 and not trouve:
         if tab[i] == elt:
@@ -106,7 +106,7 @@ Compléter le code ci-dessus et instancier trois objets : `adresse1`, `adresse2`
 if __name__ == "__main__":
     assert adresse1.est_reservee() == False
     assert adresse3.est_reservee() == True
-    assert adresse2.adresse_suivante().adresse == '192.168.0.3'
+    assert adresse2.adresse_suivante().adresse == "192.168.0.3"
 ```
 
 {{% solution "Solution" %}}
@@ -130,7 +130,7 @@ class AdresseIP:
         """
         Retourne True si l'adresse IP est une adresse réservée, False sinon
         """
-        return self.adresse == '192.168.0.0' or self.adresse == '192.168.0.255'
+        return self.adresse == "192.168.0.0" or self.adresse == "192.168.0.255"
 
     def adresse_suivante(self: AdresseIP) -> AdresseIP:
         """
@@ -139,19 +139,19 @@ class AdresseIP:
         octet = self.liste_octet()[-1]
         if octet < 254:
             octet_nouveau = octet + 1
-            return AdresseIP('192.168.0.' + str(octet_nouveau))
+            return AdresseIP("192.168.0." + str(octet_nouveau))
         else:
             return False
 
 
 if __name__ == "__main__":
-    adresse1 = AdresseIP('192.168.0.1')
-    adresse2 = AdresseIP('192.168.0.2')
-    adresse3 = AdresseIP('192.168.0.0')
+    adresse1 = AdresseIP("192.168.0.1")
+    adresse2 = AdresseIP("192.168.0.2")
+    adresse3 = AdresseIP("192.168.0.0")
 
     assert adresse1.est_reservee() == False
     assert adresse3.est_reservee() == True
-    assert adresse2.adresse_suivante().adresse == '192.168.0.3'
+    assert adresse2.adresse_suivante().adresse == "192.168.0.3"
 ```
 
 {{% /solution %}}

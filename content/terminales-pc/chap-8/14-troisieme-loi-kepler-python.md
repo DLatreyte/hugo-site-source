@@ -76,8 +76,7 @@ Ajouter, au bas du document, avec les lignes de code suivantes (faire un copier-
 
 ```python
 # Modélisation
-popt, pcov = curve_fit(f_modelisation, a_cube,
-                       T_carre)  # Calcul modélisation
+popt, pcov = curve_fit(f_modelisation, a_cube, T_carre)  # Calcul modélisation
 
 # Affichage modélisation
 affichage_modelisation(a_cube, T_carre, f_modelisation(a_cube, *popt))

@@ -1,6 +1,7 @@
 """
 Carnet d'adresse.
 """
+
 from typing import Dict, List, Tuple
 
 
@@ -21,13 +22,13 @@ def nouvelle_entree(carnet: List[Dict], cles: List[str]) -> List[Dict]:
     Les informations à stocker sont contenues dans la liste cles.
     """
     print("Création d'une entrée dans le carnet d'adresse.")
-    
+
     infos = {}
-    
+
     for cle in cles:
         info = input("{} : ".format(cle))
         infos[cle] = info
-    
+
     carnet.append(infos)
     return carnet
 
@@ -38,7 +39,7 @@ def recherche(carnet: List[Dict]) -> None:
     """
     nom = input("De qui cherchez-vous le téléphone ? ")
     trouve = False
-    
+
     for i in range(len(carnet)):
         membre = carnet[i]
         if nom in membre.values():
@@ -50,54 +51,55 @@ def recherche(carnet: List[Dict]) -> None:
         print("{} non trouvée !".format(nom))
 
 
-def destruction_entree(carnet: List[Dict], cles: List[str]) -> List[Dict] :
+def destruction_entree(carnet: List[Dict], cles: List[str]) -> List[Dict]:
     """
     Suppression d'une entrée dans le carnet d'adresse.
     """
     nom = input("Quel nom faut-il supprimer ? ")
     trouve = False
-    
+
     for i in range(len(carnet)):
-        membre = carnet[i]  
-        if nom in membre.values():  
+        membre = carnet[i]
+        if nom in membre.values():
             trouve = True
-            del carnet[i]   
-    
+            del carnet[i]
+
     if not trouve:
         print("Entrée non trouvée !")
-        
+
     return carnet
-    
 
 
 def main():
-    carnet = []  
-    cles = ["Nom", "Prénom", "Téléphone"]  
-    
+    carnet = []
+    cles = ["Nom", "Prénom", "Téléphone"]
+
     print("Application agenda téléphonique.")
     print("================================\n")
-    
+
     poursuivre = True
     while poursuivre:
-        print("1 : Affichage, 2 : Nouvelle entrée, 3 : Recherche d'un numéro, 4 : Suppression d'une entrée, q : Quitter \n") 
+        print(
+            "1 : Affichage, 2 : Nouvelle entrée, 3 : Recherche d'un numéro, 4 : Suppression d'une entrée, q : Quitter \n"
+        )
         choix = input("Choix : ")
-        
-        if choix == '1':
+
+        if choix == "1":
             print("------")
             affichage(carnet)
-        elif choix == '2':
+        elif choix == "2":
             print("------")
             carnet = nouvelle_entree(carnet, cles)
-        elif choix == '3':
+        elif choix == "3":
             print("------")
             recherche(carnet)
-        elif choix == '4':
+        elif choix == "4":
             print("------")
             carnet = destruction_entree(carnet, cles)
 
         else:
             poursuivre = False
-        
+
         print("------")
 
 

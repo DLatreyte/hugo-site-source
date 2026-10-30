@@ -168,7 +168,7 @@ filter(function or None, iterable) --> filter object
 ```python
 def est_pair(n: int) -> bool:
     """
-    Détermine si n est pair. 
+    Détermine si n est pair.
     """
 ```
 
@@ -177,7 +177,7 @@ def est_pair(n: int) -> bool:
 ```python
 def est_pair(n: int) -> bool:
     """
-    Détermine si n est pair. 
+    Détermine si n est pair.
     """
     return n % 2 == 0
 ```
@@ -267,9 +267,7 @@ Utiliser une fonction anonyme.
 {{% solution "Solution" %}}
 
 ```python
-list(map(lambda x: 3 * x,\
-             filter(lambda n: n % 2 == 0,\
-                     collatz(7))))
+list(map(lambda x: 3 * x, filter(lambda n: n % 2 == 0, collatz(7))))
 ```
 
 {{% /solution %}}

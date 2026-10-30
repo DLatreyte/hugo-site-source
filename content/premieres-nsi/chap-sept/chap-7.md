@@ -115,7 +115,7 @@ def trace_rectangle(tortue: "Turtle", longueur: int, largeur: int) -> None:
 
 
 def main():
-    """ Fonction principale qui appelle toutes les autres. """
+    """Fonction principale qui appelle toutes les autres."""
     tortue_1 = turtle.Turtle()
     longueur = 300
     largeur = 200
@@ -176,6 +176,7 @@ main()
 ```python
 import turtle
 
+
 def trace_rectangle(tortue: "Turtle", longueur: int, largeur: int) -> None:
     """
     Dessine à l'écran à l'aide de la tortue passée en argument
@@ -191,7 +192,7 @@ def trace_rectangle(tortue: "Turtle", longueur: int, largeur: int) -> None:
 
 
 def main():
-    """ Fonction principale qui appelle toutes les autres. """
+    """Fonction principale qui appelle toutes les autres."""
     tortue_1 = turtle.Turtle()
     tortue_1.shape("turtle")
     tortue_1.color("aquamarine4")
@@ -204,6 +205,7 @@ def main():
         tortue_1.left(angle_entre_carres * (i + 1))
 
     turtle.exitonclick()  # Empêche la fenêtre de se fermer automatiquement à la fin du tracé
+
 
 main()
 ```
@@ -276,19 +278,21 @@ Remarque.
 ```python
 import turtle
 
+
 def main():
     nbre_cercles = 30
     angle_entre_cercles = int(360 / nbre_cercles)
     rayon_cercles = 100
-    
+
     tortue = turtle.Turtle()
     tortue.speed(0)
-    
+
     for i in range(0, nbre_cercles):
         turtle.circle(rayon_cercles)
         turtle.setheading(angle_entre_cercles * (i + 1))
 
     turtle.exitonclick()
+
 
 main()
 ```
@@ -342,32 +346,34 @@ main()
 import turtle
 import random
 
+
 def main():
-    """ Fonction principale du programme. """
+    """Fonction principale du programme."""
     tortue = turtle.Turtle()
     tortue.speed()
-    
+
     nbre_points = 200
-    
+
     rayon_min = 5
     rayon_max = 25
-    
+
     x_min = -200
     x_max = 200
     y_min = -200
     y_max = 200
-    
+
     for i in range(nbre_points):
         x = random.randint(x_min, x_max)
         y = random.randint(y_min, y_max)
         rayon = random.randint(rayon_min, rayon_max)
-        
+
         tortue.penup()
         tortue.setposition(x, y)
         tortue.pendown()
         tortue.dot(rayon)
-        
+
     turtle.exitonclick()
+
 
 main()
 ```
@@ -384,6 +390,7 @@ Sur le modèle de l'exercice précédent, écrire un programme qui trave à l'é
 import turtle
 import random
 
+
 def trace_carre(tortue: "Turtle", largeur: int) -> None:
     """
     Trace un carré de largeur donnée dont l'orientation dépend
@@ -393,20 +400,21 @@ def trace_carre(tortue: "Turtle", largeur: int) -> None:
     for i in range(4):
         tortue.forward(largeur)
         tortue.left(90)
-        
+
+
 def main():
-    """ Fonction principale. """
+    """Fonction principale."""
     tortue = turtle.Turtle()
     tortue.speed(0)
-    
+
     nbre_carres = 200
-    
+
     largeur_min = 5
     largeur_max = 25
-    
+
     angle_min = 0
     angle_max = 360
-    
+
     x_min = -200
     x_max = 200
     y_min = -200
@@ -417,13 +425,13 @@ def main():
         y = random.randint(y_min, y_max)
         largeur = random.randint(largeur_min, largeur_max)
         angle = random.randint(angle_min, angle_max)
-        
+
         tortue.penup()
         tortue.setposition(x, y)
         tortue.setheading(angle)
         tortue.pendown()
         trace_carre(tortue, largeur)
-        
+
     turtle.exitonclick()
 
 
@@ -471,26 +479,29 @@ main()
 ```python
 import turtle
 
+
 def main():
     nbre_colonnes = 15
     nbre_rangees = 15
     rayon = 10
     dx = 30  # espacement horizontal entre points
     dy = 30  # espacement vertical entre points
-    
+
     tortue = turtle.Turtle()
     tortue.speed(0)
-    
+
     for i in range(nbre_rangees):
         for j in range(nbre_colonnes):
             tortue.penup()
-            tortue.setposition(i * dx - (nbre_rangees * dx) // 2,
-                               j * dy - (nbre_colonnes * dy) // 2)
+            tortue.setposition(
+                i * dx - (nbre_rangees * dx) // 2, j * dy - (nbre_colonnes * dy) // 2
+            )
             tortue.pendown()
             tortue.dot(rayon)
-    
+
     turtle.exitonclick()
-    
+
+
 main()
 ```
 {{% /details %}}
@@ -574,25 +585,26 @@ Tracés de carrés concentriques.
 """
 
 import turtle
-    
-def trace_carres(tortue: "Turtle", largeur: int,
-                 largeur_min: int, dl: int) -> None:
+
+
+def trace_carres(tortue: "Turtle", largeur: int, largeur_min: int, dl: int) -> None:
     """
     Dessine à l'écran une série de carrés dont les largeurs
     sont de plus en plus petites.
-    Le processus itératif cesse dès que la largeur à tracer est 
+    Le processus itératif cesse dès que la largeur à tracer est
     inférieure à la largeurw minimale choisie.
     Tous les carrés sont espacés de la longueur dl.
     """
-    while not(largeur < largeur_min):
+    while not (largeur < largeur_min):
         tortue.penup()
         tortue.home()
         tortue.goto(-largeur // 2, -largeur // 2)  # Coin inférieur gauche
         tortue.pendown()
         trace_carre(tortue, largeur)
-        
+
         largeur -= dl
-        
+
+
 def trace_carre(tortue: "Turtle", largeur: int) -> None:
     """
     Dessine un carré de côté de largeur donnée.
@@ -600,15 +612,15 @@ def trace_carre(tortue: "Turtle", largeur: int) -> None:
     for i in range(4):
         tortue.forward(largeur)
         tortue.left(90)
-    
-    
+
+
 def main():
     """
     Fonction principale, appelle toutes les autres fonctions.
     """
     width = 700
     height = 600
-    
+
     largeur = 300
     largeur_min = 10
     delta = 15
@@ -622,10 +634,11 @@ def main():
     tortue.color("yellow")
     tortue.speed(0)
     tortue.pensize("3")
-    
+
     trace_carres(tortue, largeur, largeur_min, delta)
 
     window.exitonclick()
+
 
 main()
 ```
@@ -701,20 +714,20 @@ Tracés de cercles de différentes tailles.
 
 import turtle
 
-def draw_circles(tortue: "Turtle", r: int,
-                 r_min: int, dr: int) -> None:
+
+def draw_circles(tortue: "Turtle", r: int, r_min: int, dr: int) -> None:
     """
     Dessine à l'écran une série de cercles dont les rayons sont
     de plus en plus petits.
     Le processus itératif cesse dès que le rayon du cercle à tracer
     est inférieur au rayon minimal choisi.
     """
-    while not(r < r_min):
+    while not (r < r_min):
         tortue.penup()
         tortue.goto(0, -r)
         tortue.pendown()
         tortue.circle(r)
-        
+
         r -= dr
 
 
@@ -724,7 +737,7 @@ def main():
     """
     width = 700
     height = 600
-    
+
     radius = 200
     radius_min = 15
     delta_r = 15
@@ -738,10 +751,11 @@ def main():
     pen.color("red")
     pen.speed(0)
     pen.pensize("3")
-    
+
     draw_circles(pen, radius, radius_min, delta_r)
 
     window.exitonclick()
+
 
 main()
 ```
@@ -856,10 +870,11 @@ def rectangle(tortue: "Turtle", longueur: int, largeur: int) -> None:
         tortue.left(90)
         tortue.forward(largeur)
         tortue.left(90)
-     
 
-def trace_rectangle(tortue: "Turtle", x: int, y: int,
-                    longueur: int, largeur: int) -> None:
+
+def trace_rectangle(
+    tortue: "Turtle", x: int, y: int, longueur: int, largeur: int
+) -> None:
     """
     Déplace la souris à la position (x, y) puis trace un rectangle de
     longueur et largeur passées en argument.
@@ -869,7 +884,7 @@ def trace_rectangle(tortue: "Turtle", x: int, y: int,
     tortue.goto(x, y)
     tortue.pendown()
     rectangle(tortue, longueur, largeur)
-   
+
 
 def main():
     """
@@ -881,40 +896,44 @@ def main():
     longueur_aire_jeu = 800
     largeur_carre = 100
     x_rect = -(longueur_aire_jeu - largeur_carre)
-    y_rect = -largeur_carre //2
+    y_rect = -largeur_carre // 2
     pas = 50  # de combien augment l'abscisse entre deux animations
-    
+
     # Création de la fenetre pour l'animation
     fenetre = turtle.Screen()
     fenetre.setup(longueur_aire_jeu + 50, largeur_aire_jeu + 50)
     fenetre.bgcolor("black")
-    
+
     # Création de la tortue pour tracer les limites de l'animation
     tortue1 = turtle.Turtle()
     tortue1.speed(0)
     tortue1.color("white")
     tortue1.hideturtle()
-    
+
     # Tracé des limites
-    trace_rectangle(tortue1, -longueur_aire_jeu // 2,
-                    -largeur_aire_jeu // 2, longueur_aire_jeu,
-                    largeur_aire_jeu)
-    
+    trace_rectangle(
+        tortue1,
+        -longueur_aire_jeu // 2,
+        -largeur_aire_jeu // 2,
+        longueur_aire_jeu,
+        largeur_aire_jeu,
+    )
+
     # Création de la tortue pour l'animation
     tortue2 = turtle.Turtle()
     tortue2.speed(0)
     tortue2.color("white")
     tortue2.hideturtle()
-    
+
     # Animation
     while x_rect <= longueur_aire_jeu // 2:
         tortue2.clear()
         trace_rectangle(tortue2, x_rect, y_rect, largeur_carre, largeur_carre)
         x_rect += pas
-    
-    
+
     # Ferme la fenêtre avec un click sur l'espace de jeu
     turtle.exitonclick()
+
 
 main()
 ```
@@ -951,10 +970,11 @@ def rectangle(tortue: "Turtle", longueur: int, largeur: int) -> None:
         tortue.left(90)
         tortue.forward(largeur)
         tortue.left(90)
-        
 
-def trace_rectangle(tortue: "Turtle", x: int, y: int,
-                    longueur: int, largeur: int) -> None:
+
+def trace_rectangle(
+    tortue: "Turtle", x: int, y: int, longueur: int, largeur: int
+) -> None:
     """
     Déplace la souris à la position (x, y) puis trace un rectangle de
     longueur et largeur passées en argument.
@@ -964,8 +984,8 @@ def trace_rectangle(tortue: "Turtle", x: int, y: int,
     tortue.goto(x, y)
     tortue.pendown()
     rectangle(tortue, longueur, largeur)
-        
-        
+
+
 def main():
     """
     Fonction principale. Initialisation des variables et appel des
@@ -976,45 +996,49 @@ def main():
     longueur_aire_jeu = 800
     largeur_carre = 100
     x_rect = -(longueur_aire_jeu - largeur_carre)
-    y_rect = -largeur_carre //2
+    y_rect = -largeur_carre // 2
     pas = 50  # de combien augment l'abscisse entre deux animations
-    
+
     # Création de la fenetre pour l'animation
     fenetre = turtle.Screen()
     fenetre.setup(longueur_aire_jeu + 50, largeur_aire_jeu + 50)
     fenetre.bgcolor("black")
-    
+
     # Création de la tortue pour tracer les limites de l'animation
     tortue1 = turtle.Turtle()
     tortue1.speed(0)
     tortue1.color("white")
     tortue1.hideturtle()
-    
+
     # Tracé des limites
-    trace_rectangle(tortue1, -longueur_aire_jeu // 2,
-                    -largeur_aire_jeu // 2, longueur_aire_jeu,
-                    largeur_aire_jeu)
-    
+    trace_rectangle(
+        tortue1,
+        -longueur_aire_jeu // 2,
+        -largeur_aire_jeu // 2,
+        longueur_aire_jeu,
+        largeur_aire_jeu,
+    )
+
     # Création de la tortue pour l'animation
     tortue2 = turtle.Turtle()
     tortue2.speed(0)
     tortue2.color("white")
     tortue2.hideturtle()
-    
+
     # On prend en main le rafraichissement
     fenetre.tracer(0)
-    
+
     # Animation
     while x_rect <= longueur_aire_jeu // 2:
         tortue2.clear()
         trace_rectangle(tortue2, x_rect, y_rect, largeur_carre, largeur_carre)
         fenetre.update()  # affichage()
         x_rect += pas
-        
-        
+
     # Ferme la fenêtre avec un click sur l'espace de jeu
     turtle.exitonclick()
-    
+
+
 main()
 ```
 {{% /details %}}
@@ -1043,10 +1067,11 @@ def rectangle(tortue: "Turtle", longueur: int, largeur: int) -> None:
         tortue.left(90)
         tortue.forward(largeur)
         tortue.left(90)
-        
 
-def trace_rectangle(tortue: "Turtle", x: int, y: int,
-                    longueur: int, largeur: int) -> None:
+
+def trace_rectangle(
+    tortue: "Turtle", x: int, y: int, longueur: int, largeur: int
+) -> None:
     """
     Déplace la souris à la position (x, y) puis trace un rectangle de
     longueur et largeur passées en argument.
@@ -1056,8 +1081,8 @@ def trace_rectangle(tortue: "Turtle", x: int, y: int,
     tortue.goto(x, y)
     tortue.pendown()
     rectangle(tortue, longueur, largeur)
-        
-        
+
+
 def main():
     """
     Fonction principale. Initialisation des variables et appel des
@@ -1068,45 +1093,49 @@ def main():
     longueur_aire_jeu = 800
     largeur_carre = 100
     x_rect = -(longueur_aire_jeu - largeur_carre)
-    y_rect = -largeur_carre //2
+    y_rect = -largeur_carre // 2
     pas = 1  # de combien augment l'abscisse entre deux animations
-    
+
     # Création de la fenetre pour l'animation
     fenetre = turtle.Screen()
     fenetre.setup(longueur_aire_jeu + 50, largeur_aire_jeu + 50)
     fenetre.bgcolor("black")
-    
+
     # Création de la tortue pour tracer les limites de l'animation
     tortue1 = turtle.Turtle()
     tortue1.speed(0)
     tortue1.color("white")
     tortue1.hideturtle()
-    
+
     # Tracé des limites
-    trace_rectangle(tortue1, -longueur_aire_jeu // 2,
-                    -largeur_aire_jeu // 2, longueur_aire_jeu,
-                    largeur_aire_jeu)
-    
+    trace_rectangle(
+        tortue1,
+        -longueur_aire_jeu // 2,
+        -largeur_aire_jeu // 2,
+        longueur_aire_jeu,
+        largeur_aire_jeu,
+    )
+
     # Création de la tortue pour l'animation
     tortue2 = turtle.Turtle()
     tortue2.speed(0)
     tortue2.color("white")
     tortue2.hideturtle()
-    
+
     # On prend en main le rafraichissement
     fenetre.tracer(0)
-    
+
     # Animation
     while x_rect <= longueur_aire_jeu // 2:
         tortue2.clear()
         trace_rectangle(tortue2, x_rect, y_rect, largeur_carre, largeur_carre)
         fenetre.update()  # affichage()
         x_rect += pas
-        
-        
+
     # Ferme la fenêtre avec un click sur l'espace de jeu
     turtle.exitonclick()
-    
+
+
 main()
 ```
 {{% /details %}}
@@ -1218,12 +1247,14 @@ main()
 """
 Mouvement d'une balle contenue dans une boite à deux dimensions.
 """
+
 import turtle
 from time import sleep
 
 
-def trace_rectangle(tortue: "Turtle", x: int, y: int,
-                    longueur: int, largeur: int) -> None:
+def trace_rectangle(
+    tortue: "Turtle", x: int, y: int, longueur: int, largeur: int
+) -> None:
     """
     Déplace la souris à la position (x, y) puis trace un rectangle de
     longueur et largeur passées en argument.
@@ -1239,9 +1270,19 @@ def trace_rectangle(tortue: "Turtle", x: int, y: int,
         tortue.left(90)
 
 
-def lancement_jeu(fenetre: "Screen", tortue: "Turtle", t: int, t_max: int,
-                  largeur: int, hauteur: int, x: int, y: int, vx:int,
-                  vy: int, rayon: int) -> None:
+def lancement_jeu(
+    fenetre: "Screen",
+    tortue: "Turtle",
+    t: int,
+    t_max: int,
+    largeur: int,
+    hauteur: int,
+    x: int,
+    y: int,
+    vx: int,
+    vy: int,
+    rayon: int,
+) -> None:
     """
     Déplace à l'écran une balle en la conservant dans les limites du
     plateau.
@@ -1257,22 +1298,22 @@ def lancement_jeu(fenetre: "Screen", tortue: "Turtle", t: int, t_max: int,
             vx = -vx
         x = x + vx
         y = y + vy
-        
+
         tortue.clear()
         tortue.penup()
         tortue.goto(x, y)
         tortue.pendown()
         tortue.color("yellow")
         tortue.dot(rayon)
-        
+
         sleep(0.1)
 
         t = t + 1
 
 
 def main():
-    """ Fonction principale. """
-    
+    """Fonction principale."""
+
     # Paramètres de l'animation
     largeur = 400
     hauteur = 400
@@ -1280,18 +1321,18 @@ def main():
     x, y = 0, 0
     vx, vy = 20, 15
     date_debut, date_fin = 1, 500
-    
+
     # Création de la fenêtre
     fenetre = turtle.Screen()
     fenetre.setup(largeur + 50, hauteur + 50)
     fenetre.bgcolor("black")
-    
+
     # Création de la tortue qui trace les limites de l'aire de jeu
     tortue1 = turtle.Turtle()
     tortue1.speed(0)
     tortue1.color("white")
     tortue1.hideturtle()
-    
+
     # Tracé des limites
     trace_rectangle(tortue1, -largeur // 2, -hauteur // 2, largeur, hauteur)
 
@@ -1301,11 +1342,13 @@ def main():
     tortue.color("yellow")
     tortue.hideturtle()
     tortue.dot(rayon)
-    
+
     # Lancement du jeu
-    lancement_jeu(fenetre, tortue, date_debut, date_fin, largeur, hauteur,
-                  x, y, vx, vy, rayon)
-    
+    lancement_jeu(
+        fenetre, tortue, date_debut, date_fin, largeur, hauteur, x, y, vx, vy, rayon
+    )
+
+
 main()
 ```
 {{% /details %}}
@@ -1322,12 +1365,14 @@ main()
 """
 Mouvement d'une balle contenue dans une boite à deux dimensions.
 """
+
 import turtle
 from time import sleep
 
 
-def trace_rectangle(tortue: "Turtle", x: int, y: int,
-                    longueur: int, largeur: int) -> None:
+def trace_rectangle(
+    tortue: "Turtle", x: int, y: int, longueur: int, largeur: int
+) -> None:
     """
     Déplace la souris à la position (x, y) puis trace un rectangle de
     longueur et largeur passées en argument.
@@ -1343,9 +1388,19 @@ def trace_rectangle(tortue: "Turtle", x: int, y: int,
         tortue.left(90)
 
 
-def lancement_jeu(fenetre: "Screen", tortue: "Turtle", t: int, t_max: int,
-                  largeur: int, hauteur: int, x: int, y: int, vx:int,
-                  vy: int, rayon: int) -> None:
+def lancement_jeu(
+    fenetre: "Screen",
+    tortue: "Turtle",
+    t: int,
+    t_max: int,
+    largeur: int,
+    hauteur: int,
+    x: int,
+    y: int,
+    vx: int,
+    vy: int,
+    rayon: int,
+) -> None:
     """
     Déplace à l'écran une balle en la conservant dans les limites du
     plateau.
@@ -1361,7 +1416,7 @@ def lancement_jeu(fenetre: "Screen", tortue: "Turtle", t: int, t_max: int,
             vx = -vx
         x = x + vx
         y = y + vy
-        
+
         tortue.clear()
         tortue.penup()
         tortue.goto(x, y)
@@ -1369,15 +1424,15 @@ def lancement_jeu(fenetre: "Screen", tortue: "Turtle", t: int, t_max: int,
         tortue.color("yellow")
         tortue.dot(rayon)
         fenetre.update()
-        
+
         sleep(0.1)
 
         t = t + 0.1
 
 
 def main():
-    """ Fonction principale. """
-    
+    """Fonction principale."""
+
     # Paramètres de l'animation
     largeur = 400
     hauteur = 400
@@ -1385,19 +1440,19 @@ def main():
     x, y = 0, 0
     vx, vy = 20, 15
     date_debut, date_fin = 1, 500
-    
+
     # Création de la fenêtre
     fenetre = turtle.Screen()
     fenetre.setup(largeur + 50, hauteur + 50)
     fenetre.bgcolor("black")
     fenetre.tracer(0)
-    
+
     # Création de la tortue qui trace les limites de l'aire de jeu
     tortue1 = turtle.Turtle()
     tortue1.speed(0)
     tortue1.color("white")
     tortue1.hideturtle()
-    
+
     # Tracé des limites
     trace_rectangle(tortue1, -largeur // 2, -hauteur // 2, largeur, hauteur)
 
@@ -1407,11 +1462,13 @@ def main():
     tortue.color("yellow")
     tortue.hideturtle()
     tortue.dot(rayon)
-    
+
     # Lancement du jeu
-    lancement_jeu(fenetre, tortue, date_debut, date_fin, largeur, hauteur,
-                  x, y, vx, vy, rayon)
-    
+    lancement_jeu(
+        fenetre, tortue, date_debut, date_fin, largeur, hauteur, x, y, vx, vy, rayon
+    )
+
+
 main()
 ```
 {{% /details %}}

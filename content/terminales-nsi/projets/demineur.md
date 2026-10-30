@@ -45,7 +45,7 @@ def contient_bombe(p: int) -> bool:
 ```python
 def initialisation_jeu(m: int, n: int, p: int) -> List[List[bool]]:
     """
-    Initialise le Jeu en construisant un plateau de dimensions m x n cases, 
+    Initialise le Jeu en construisant un plateau de dimensions m x n cases,
     contenant des bombes dont la probabilité d'apparition est de 1/p.
 
     La présence d'une bombe correspond à la valeur True, l'absence d'une
@@ -76,7 +76,7 @@ def affichage(p: List[List[bool]]) -> None:
 ```python
 def nombre_bombes(p: List[List[bool]], i: int, j: int) -> int:
     """
-    Retourne le nombre de bombes au voisinage de la 
+    Retourne le nombre de bombes au voisinage de la
     cellule (i, j) du plateau p.
     """
 ```

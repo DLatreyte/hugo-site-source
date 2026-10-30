@@ -51,7 +51,7 @@ Pour pouvoir déplacer le dernier disque (celui du dessous), il est nécessaire 
 ```python
 def hanoi(n: int, source: str, milieu: str, destination: str) -> None:
     """
-    Fonction qui déplace récursivement les disques selon les règles des tours de Hanoï. 
+    Fonction qui déplace récursivement les disques selon les règles des tours de Hanoï.
     """
 ```
 

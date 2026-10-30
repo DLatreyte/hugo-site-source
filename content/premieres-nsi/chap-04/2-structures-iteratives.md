@@ -181,8 +181,7 @@ def plus_grand_diviseur(nbre: int) -> str:
         if nbre % diviseur == 0:
             break
         diviseur -= 1
-    reponse = "Le plus grand diviseur de {} est {}.".format(nbre,
-                                                            diviseur)
+    reponse = "Le plus grand diviseur de {} est {}.".format(nbre, diviseur)
     return reponse
 
 
@@ -190,8 +189,7 @@ def plus_grand_diviseur_2(nbre: int) -> str:
     for diviseur in range(nbre - 1, 0, -1):
         if nbre % diviseur == 0:
             break
-    reponse = "Le plus grand diviseur de {} est {}.".format(nbre,
-                                                            diviseur)
+    reponse = "Le plus grand diviseur de {} est {}.".format(nbre, diviseur)
     return reponse
 ```
 Dans le second exemple, on remarque que les variables définies dans une boucle **Pour chaque** en Python sont globales : *on peut accéder à leur valeur depuis l'extérieur de la boucle.*
@@ -256,7 +254,7 @@ Les deux fonctions dans l’exemple ci-dessus utilisent les deux structures de b
 Soit la fonction suivante :
 ```python3
 def inconnue(a: int, b: int) -> int:
-    """ Fonction dont il faut déterminer l'action. """
+    """Fonction dont il faut déterminer l'action."""
     r = a % b
     while r != 0:
         a = b
@@ -303,7 +301,7 @@ Fin de boucle lorsque $r=0$.
 Soit la fonction suivante :
 ```python3
 def inconnue_deux(a: int) -> int:
-    """ Fonction dont il faut déterminer l'action. """
+    """Fonction dont il faut déterminer l'action."""
     b = 1
     i = 2
     while i <= a:
@@ -325,8 +323,8 @@ Vérifier le résultat obtenu en exécutant le programme.
 1. 
 ```python
 while i <= a:
-        b *= i
-        i += 1
+    b *= i
+    i += 1
 ```
 Fin de boucle lorsque $i = a + 1$.
 
@@ -371,17 +369,17 @@ def triple_du_precedent(a: int) -> str:
     Retourne une chaîne de caractères formée par une suite de 12
     entiers dont chaque terme est égal au triple du précédent,
     à partir du premier entier a, positif,  passé en argument.
-    
+
     >>> triple_du_precedent(1)
     '1 3 9 27 81 243 729 2187 6561 19683 59049 177147 '
     >>> triple_du_precedent(5)
     '5 15 45 135 405 1215 3645 10935 32805 98415 295245 885735 '
     """
-    reponse = ""    # Initialisation de la chaîne à retourner
-    compteur = 1    # Initialisation du compteur
-    val_max_compteur = 12   # Valeur maximale pour le compteur
+    reponse = ""  # Initialisation de la chaîne à retourner
+    compteur = 1  # Initialisation du compteur
+    val_max_compteur = 12  # Valeur maximale pour le compteur
 
-    while(compteur <= val_max_compteur):
+    while compteur <= val_max_compteur:
         reponse += str(a) + " "  # Ajout de chaque nombre à la chaîne
         a *= 3
         compteur += 1
@@ -463,7 +461,7 @@ def multiplication_multiple_trois(a: int) -> str:
     Retourne une chaîne de caractères formées des 10 premiers
     nombres de la table de multiplication de a en signalant au
     passage ceux qui sont des multiples de 3.
-    
+
     >>> multiplication_multiple_trois(2)
     '2 4 6* 8 10 12* 14 16 18* 20 '
     >>> multiplication_multiple_trois(7)
@@ -476,7 +474,7 @@ def multiplication_multiple_trois(a: int) -> str:
         valeur = a * compteur
         reponse += str(valeur)
         if valeur % 3 == 0:  # si multiple de 3
-            reponse += "*"   # ajouter astérisque
+            reponse += "*"  # ajouter astérisque
         reponse += " "  # pour séparer les valeurs
         compteur += 1
     return reponse
@@ -513,7 +511,7 @@ def multiplication_multiple_sept(a: int) -> str:
     """
     Calcule les 50 premiers termes de la table de a mais retourne
     une chaîne de caractères contenant uniquement les multiples de 7.
-    
+
     >>> multiplication_multiple_sept(2)
     '14 28 42 56 70 84 98 '
     >>> multiplication_multiple_sept(9)
@@ -525,7 +523,7 @@ def multiplication_multiple_sept(a: int) -> str:
     while compteur <= val_max_compteur:
         valeur = a * compteur
         if valeur % 7 == 0:  # si multiple de 3
-            reponse += str(valeur) + " "   # ajouter valeur
+            reponse += str(valeur) + " "  # ajouter valeur
         compteur += 1
     return reponse
 ```
@@ -667,8 +665,7 @@ def plus_grand_plus_petit() -> str:
         elif valeur < valeur_plus_petite:
             valeur_plus_petite = valeur
         i += 1
-    reponse = "max : {}, min : {}".format(valeur_plus_grande,
-                                          valeur_plus_petite)
+    reponse = "max : {}, min : {}".format(valeur_plus_grande, valeur_plus_petite)
     return reponse
 ```
 
@@ -701,8 +698,7 @@ def plus_grand_plus_petit(nbre_valeurs: int) -> str:
         elif valeur < valeur_plus_petite:
             valeur_plus_petite = valeur
         i += 1
-    reponse = "max : {}, min : {}".format(valeur_plus_grande,
-                                          valeur_plus_petite)
+    reponse = "max : {}, min : {}".format(valeur_plus_grande, valeur_plus_petite)
     return reponse
 ```
 
@@ -787,18 +783,19 @@ def moyenne_ter() -> str:
     Demande des notes à l'utilisateur et retourne la moyenne. La saisie
     cesse lorsque la note entrée est négative.
     """
-    somme = 0  
+    somme = 0
     nbre_notes = 0
-    
+
     while True:
         note = float(input("Entrez la note {} : ".format(nbre_notes + 1)))
         if note < 0:
             break
         somme += note
         nbre_notes += 1
-        
-    reponse = "Nbre de notes : {}, moyenne : {:.2f}".format(nbre_notes,
-                                                        somme / nbre_notes)
+
+    reponse = "Nbre de notes : {}, moyenne : {:.2f}".format(
+        nbre_notes, somme / nbre_notes
+    )
     return reponse
 ```
 
@@ -833,16 +830,16 @@ def loto_naif() -> str:
     [1, 49].
     """
     import random
-    
+
     reponse = ""
-    i = 1   # Compteur
+    i = 1  # Compteur
     nbre_boules = 6  # Valeur max du compteur
-    
+
     while i <= nbre_boules:
         boule = random.randint(1, 49)
         reponse += "{} ".format(boule)
         i += 1  # Incrémentation du compteur
-        
+
     return reponse
 ```
 
@@ -881,16 +878,21 @@ def devine() -> None:
     dès que cette dernière est fructueuse.
     """
     import random
+
     nbre_a_deviner = random.randint(1, 50)
-    
+
     nbre_tentatives = 0
-    
+
     while True:
         nbre = int(input("Proposition n° {} : ".format(nbre_tentatives + 1)))
         nbre_tentatives += 1
-        
+
         if nbre == nbre_a_deviner:
-            print("Bravo, le nombre a été deviné en {} tentatives.".format(nbre_tentatives))
+            print(
+                "Bravo, le nombre a été deviné en {} tentatives.".format(
+                    nbre_tentatives
+                )
+            )
             break
         elif nbre > nbre_a_deviner:
             print("Trop grand !")
@@ -931,16 +933,16 @@ def alphabet(sens: str) -> str:
     Les valeurs possibles pour cet argument sont 'croissant' ou 'decroissant'.
     """
     nbre_lettres = 26
-    i = 1   # Compteur
+    i = 1  # Compteur
     reponse = ""
-    
+
     if sens == "croissant":
         indice = 97
     elif sens == "decroissant":
         indice = 122
     else:
         raise Exception("Il faut choisir 'croissant' ou 'decroissant'.")
-                        
+
     while i <= nbre_lettres:
         reponse += chr(indice)
         if sens == "croissant":
@@ -948,7 +950,7 @@ def alphabet(sens: str) -> str:
         else:
             indice -= 1
         i += 1
-        
+
     return reponse
 ```
 
@@ -1022,15 +1024,15 @@ def triple_du_precedent(a: int) -> str:
     Retourne une chaîne de caractères formée par une suite de 12
     entiers dont chaque terme est égal au triple du précédent,
     à partir du premier entier a, positif,  passé en argument.
-    
+
     >>> triple_du_precedent(1)
     '1 3 9 27 81 243 729 2187 6561 19683 59049 177147 '
     >>> triple_du_precedent(5)
     '5 15 45 135 405 1215 3645 10935 32805 98415 295245 885735 '
     """
-    reponse = ""    # Initialisation de la chaîne à retourner
-    val_max_compteur = 12   # Valeur maximale pour le compteur
-    
+    reponse = ""  # Initialisation de la chaîne à retourner
+    val_max_compteur = 12  # Valeur maximale pour le compteur
+
     for i in range(1, val_max_compteur + 1):
         reponse += "{} ".format(a)
         a *= 3
@@ -1042,13 +1044,13 @@ def multiplication(a: int) -> str:
     """
     Retourne une chaîne de caractères formées des 10 premiers
     nombres de la table de multiplication de a.
-    
+
     >>> multiplication(7)
     '7 14 21 28 35 42 49 56 63 70 '
     """
     reponse = ""  # Initialisation de la chaîne à retourner
     val_max_compteur = 10
-    
+
     for i in range(1, val_max_compteur + 1):
         reponse += str(a * i) + " "
 
@@ -1060,20 +1062,20 @@ def multiplication_multiple_trois(a: int) -> str:
     Retourne une chaîne de caractères formées des 10 premiers
     nombres de la table de multiplication de a en signalant au
     passage ceux qui sont des multiples de 3.
-    
+
     >>> multiplication_multiple_trois(2)
     '2 4 6* 8 10 12* 14 16 18* 20 '
     >>> multiplication_multiple_trois(7)
     '7 14 21* 28 35 42* 49 56 63* 70 '
     """
     reponse = ""  # Initialisation de la chaîne à retourner
-    val_max_compteur = 10  
-    
+    val_max_compteur = 10
+
     for i in range(1, val_max_compteur + 1):
         valeur = a * i
         reponse += str(valeur)
         if valeur % 3 == 0:  # si multiple de 3
-            reponse += "*"   # ajouter astérisque
+            reponse += "*"  # ajouter astérisque
         reponse += " "  # pour séparer les valeurs
 
     return reponse
@@ -1083,7 +1085,7 @@ def multiplication_multiple_sept(a: int) -> str:
     """
     Calcule les 50 premiers termes de la table de a mais retourne
     une chaîne de caractères contenant uniquement les multiples de 7.
-    
+
     >>> multiplication_multiple_sept(2)
     '14 28 42 56 70 84 98 '
     >>> multiplication_multiple_sept(9)
@@ -1091,11 +1093,11 @@ def multiplication_multiple_sept(a: int) -> str:
     """
     reponse = ""  # Initialisation de la chaîne à retourner
     val_max_compteur = 50
-    
+
     for i in range(1, val_max_compteur + 1):
         valeur = a * i
         if valeur % 7 == 0:  # si multiple de 3
-            reponse += str(valeur) + " "   # ajouter valeur
+            reponse += str(valeur) + " "  # ajouter valeur
 
     return reponse
 
@@ -1104,12 +1106,12 @@ def diviseurs(a: int) -> str:
     """
     Retourne une chaîne de caractères formée de la liste des diviseurs
     de a.
-    
+
     >>> diviseurs(18)
     '18 9 6 3 2 1 '
     """
     reponse = ""
-    
+
     for n in range(a, 0, -1):
         if a % n == 0:
             reponse += str(n) + " "
@@ -1123,7 +1125,7 @@ def table_multiplication() -> str:
     """
     reponse = ""
     val_max = 10
-    
+
     for i in range(1, val_max + 1):
         for j in range(1, val_max + 1):
             reponse += "{} ".format(i * j)
@@ -1148,13 +1150,13 @@ def plus_grand_plus_petit(nbre_valeurs: int) -> str:
         elif valeur < valeur_plus_petite:
             valeur_plus_petite = valeur
 
-    reponse = "max : {}, min : {}".format(valeur_plus_grande,
-                                          valeur_plus_petite)
+    reponse = "max : {}, min : {}".format(valeur_plus_grande, valeur_plus_petite)
     return reponse
 
 
 if __name__ == "__main__":
     import doctest
+
     doctest.testmod()
 ```
 

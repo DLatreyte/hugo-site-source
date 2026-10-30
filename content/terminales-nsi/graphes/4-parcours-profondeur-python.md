@@ -33,8 +33,8 @@ Contrairement à ce qui a été fait dans le [document 15,2]({{< ref "2-represen
 from __future__ import annotations
 from typing import List, Union
 
-class Graphe:
 
+class Graphe:
     def __init__(self: Graphe) -> None:
         self.succ = {}
 ```
@@ -48,7 +48,7 @@ def ajouter_sommet(self: Graphe, s: Union[int, str]) -> None:
     """
     Ajoute le sommet s (entier ou chaîne de caractères) au graphe
     s'il n'est pas déjà présent.
-    s est une clé du dictionnaire succ. Sa valeur associée par défaut 
+    s est une clé du dictionnaire succ. Sa valeur associée par défaut
     est une liste vide.
     """
 ```
@@ -60,7 +60,7 @@ def ajouter_sommet(self: Graphe, s: Union[int, str]) -> None:
     """
     Ajoute le sommet s (entier ou chaîne de caractères) au graphe
     s'il n'est pas déjà présent.
-    s est une clé du dictionnaire succ. Sa valeur associée par défaut 
+    s est une clé du dictionnaire succ. Sa valeur associée par défaut
     est une liste vide.
     """
     if s not in self.succ.keys():
@@ -194,10 +194,10 @@ graph TD
 
 ```python
 g = Graphe()
-g.ajouter_arc(0,1)
-g.ajouter_arc(0,3)
-g.ajouter_arc(1,2)
-g.ajouter_arc(3,1)
+g.ajouter_arc(0, 1)
+g.ajouter_arc(0, 3)
+g.ajouter_arc(1, 2)
+g.ajouter_arc(3, 1)
 ```
 
 {{% /solution %}}
@@ -207,7 +207,9 @@ g.ajouter_arc(3,1)
 9. Reprendre la fonction `parcours_profondeur` proposée dans le [document 15,3]({{< ref "3-parcours-graphes" >}}) et la transformer en méthode de la classe `Graphe`. Sa nouvelle spécification est alors :
 
 ```python
-def parcours_profondeur(self: Graphe, vus: List[Union[int, str]], s: Union[int, str]) -> None:
+def parcours_profondeur(
+    self: Graphe, vus: List[Union[int, str]], s: Union[int, str]
+) -> None:
     """
     Parcours en profondeur depuis le sommet s.
     Cette méthode prend en argument la liste des sommets déjà visités. Lors du premier appel
@@ -222,7 +224,9 @@ Remarque.
 {{% solution "Solution" %}}
 
 ```python
-def parcours_profondeur(self: Graphe, vus: List[Union[int, str]], s: Union[int, str]) -> None:
+def parcours_profondeur(
+    self: Graphe, vus: List[Union[int, str]], s: Union[int, str]
+) -> None:
     """
     Parcours en profondeur depuis le sommet s.
     Cette méthode prend en argument la liste des sommets déjà visités. Lors du premier appel
@@ -274,7 +278,9 @@ Attribuer la valeur `None` au sommet de départ.
 13. Créer la méthode `chemin_entre` dont la spécification est :
 
 ```python
-def chemin_entre(self: Graphe, s1: Union[int, str], s2: Union[int, str]) -> List[Union[int, str]]:
+def chemin_entre(
+    self: Graphe, s1: Union[int, str], s2: Union[int, str]
+) -> List[Union[int, str]]:
     """
     Vérifie que le chemin entre s1 et s2 existe puis le retourne sous la forme d'une liste.
     """

@@ -22,8 +22,8 @@ auto_numbering: true
 ```python
 if __name__ == "__main__":
     assert nb_repetitions(5, [2, 5, 3, 5, 6, 9, 5]) == 3
-    assert nb_repetitions('A', ['B', 'A', 'B', 'A', 'R']) == 2
-    assert nb_repetitions(12, [1, '! ', 7, 21, 36, 44]) == 0
+    assert nb_repetitions("A", ["B", "A", "B", "A", "R"]) == 2
+    assert nb_repetitions(12, [1, "! ", 7, 21, 36, 44]) == 0
     assert nb_repetitions(16, [1, 32, 7, 21, 36, 44]) == 0
 ```
 
@@ -40,10 +40,11 @@ def nb_repetitions(elt: Union[int, float, str], tab: List) -> int:
             nbre += 1
     return nbre
 
+
 if __name__ == "__main__":
     assert nb_repetitions(5, [2, 5, 3, 5, 6, 9, 5]) == 3
-    assert nb_repetitions('A', ['B', 'A', 'B', 'A', 'R']) == 2
-    assert nb_repetitions(12, [1, '! ', 7, 21, 36, 44]) == 0
+    assert nb_repetitions("A", ["B", "A", "B", "A", "R"]) == 2
+    assert nb_repetitions(12, [1, "! ", 7, 21, 36, 44]) == 0
 ```
 
 {{% /solution %}}
@@ -70,11 +71,11 @@ def binaire(a: int) -> str:
 
 ```python
 if __name__ == "__main__":
-    assert binaire(0) == '0'
-    assert binaire(1) == '1'
-    assert binaire(2) == '10'
-    assert binaire(4) == '100'
-    assert binaire(77) == '1001101'
+    assert binaire(0) == "0"
+    assert binaire(1) == "1"
+    assert binaire(2) == "10"
+    assert binaire(4) == "100"
+    assert binaire(77) == "1001101"
 ```
 
 {{% solution "Solution" %}}
@@ -93,11 +94,11 @@ def binaire(a: int) -> str:
 
 
 if __name__ == "__main__":
-    assert binaire(0) == '0'
-    assert binaire(1) == '1'
-    assert binaire(2) == '10'
-    assert binaire(4) == '100'
-    assert binaire(77) == '1001101'
+    assert binaire(0) == "0"
+    assert binaire(1) == "1"
+    assert binaire(2) == "10"
+    assert binaire(4) == "100"
+    assert binaire(77) == "1001101"
 ```
 
 {{% /solution %}}

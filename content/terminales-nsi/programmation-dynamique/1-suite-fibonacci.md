@@ -103,6 +103,7 @@ def fact_term(n: int) -> int:
 
     Algorithme : récursivité terminale
     """
+
     def _fact(n: int, acc: int = 1) -> int:
         """
         Fonction qui effectue réellement le calcul récursif.
@@ -173,7 +174,6 @@ def fibo_iter(n: int) -> int:
 
 
 if __name__ == "__main__":
-
     # fibo_iter
     assert fibo_iter(0) == 0
     assert fibo_iter(1) == 1
@@ -261,7 +261,7 @@ La complexité est donc en $O(2^n)$.
     La fonction `fib_tail` est en fait une fonction enveloppe de la fonction `_fibo` dont la spécification est :
 
     ```python
-    def _fibo(n: int, a: int=0, b: int=1) -> int:
+    def _fibo(n: int, a: int = 0, b: int = 1) -> int:
         """
         Fonction qui effectue réellement le calcul récursif.
         """
@@ -276,6 +276,7 @@ def fibo_tail(n: int) -> int:
 
     Algorithme : récursif (terminale)
     """
+
     def _fibo_tail(n: int, a: int = 0, b: int = 1):
         if n == 0:
             return a
@@ -515,8 +516,10 @@ def nbre_methodes_rec(n: int) -> int:
         return 2
     elif n == 3:
         return 4
-    
-    return nbre_methodes_rec(n - 1) + nbre_methodes_rec(n - 2) + nbre_methodes_rec(n - 3)
+
+    return (
+        nbre_methodes_rec(n - 1) + nbre_methodes_rec(n - 2) + nbre_methodes_rec(n - 3)
+    )
 ```
 
 {{% /solution %}}
@@ -543,15 +546,15 @@ def nbre_methodes_memo(n: int) -> int:
 
     Version qui utilise la mémoïsation.
     """
-    memo = {1: 1, 2: 2, 3: 4} 
-    
-    def _nbre(n: int) -> int: 
-        if n in memo.keys(): 
-            return memo[n] 
-        else: 
-            memo[n] = _nbre(n - 1) + _nbre(n - 2) + _nbre(n - 3) 
-        return memo[n] 
-        
+    memo = {1: 1, 2: 2, 3: 4}
+
+    def _nbre(n: int) -> int:
+        if n in memo.keys():
+            return memo[n]
+        else:
+            memo[n] = _nbre(n - 1) + _nbre(n - 2) + _nbre(n - 3)
+        return memo[n]
+
     return _nbre(n)
 ```
 

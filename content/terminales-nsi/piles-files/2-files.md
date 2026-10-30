@@ -72,19 +72,19 @@ La valeur retirée de la file est toujours la première valeur à l'avoir intég
 
 ```python
 if __name__ == "__main__":
- f = File()
- f.enfiler(1)
- f.enfiler(2)
- f.enfiler(3)
- f.enfiler(4)
- print(f.defiler())
- f.enfiler(5)
- print(f.defiler())
- print(f.defiler())
- print(f)
- print(f.defiler())
- print(f.defiler())
- print(f.defiler())
+    f = File()
+    f.enfiler(1)
+    f.enfiler(2)
+    f.enfiler(3)
+    f.enfiler(4)
+    print(f.defiler())
+    f.enfiler(5)
+    print(f.defiler())
+    print(f.defiler())
+    print(f)
+    print(f.defiler())
+    print(f.defiler())
+    print(f.defiler())
 ```
 
 ## Implémentation d'une structure de file à l'aide d'une liste Python

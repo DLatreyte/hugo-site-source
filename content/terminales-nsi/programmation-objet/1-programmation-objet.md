@@ -91,6 +91,7 @@ class Compte:
     """
     Modélisation d'un compte bancaire.
     """
+
     pass
 ```
 
@@ -204,6 +205,7 @@ class Compte:
     """
     Modélisation d'un compte bancaire.
     """
+
     def retrait(self, valeur: float) -> None:
         """
         Retire valeur au solde.
@@ -300,10 +302,11 @@ class Compte:
     """
     Modélisation d'un compte bancaire.
     """
+
     def __init__(self, proprietaire: str = "", solde: float = 0) -> None:
         self.proprietaire = proprietaire
         self.solde = solde
-        
+
     def retrait(self, valeur: float) -> None:
         """
         Retire valeur au solde.
@@ -336,12 +339,13 @@ class Compte:
     """
     Modélisation d'un compte bancaire.
     """
+
     nbre_comptes = 0
-    
+
     def __init__(self, proprietaire: str = "", solde: float = 0) -> None:
         self.proprietaire = proprietaire
         self.solde = solde
-        
+
     def retrait(self, valeur: float) -> None:
         """
         Retire valeur au solde.
@@ -369,13 +373,14 @@ class Compte:
     """
     Modélisation d'un compte bancaire.
     """
+
     nbre_comptes = 0
-    
+
     def __init__(self, proprietaire: str = "", solde: float = 0) -> None:
         Compte.nbre_comptes = Compte.nbre_comptes + 1
         self.proprietaire = proprietaire
         self.solde = solde
-        
+
     def retrait(self, valeur: float) -> None:
         """
         Retire valeur au solde.

@@ -22,9 +22,9 @@ La spécification du constructeur de la classe est :
 
 ```python
 def __init__(self: GrapheM, mat: List[List[int]]) -> None:
-        """
-        Constructeur de la classe.
-        """
+    """
+    Constructeur de la classe.
+    """
 ```
 
 **Remarque :** cette classe possède l'attribut `mat` qui référence la matrice d'adjacence.
@@ -37,6 +37,7 @@ class GrapheM:
     Implémentation de la représentation
     matricielle d'un graphe.
     """
+
     def __init__(self: GrapheM, mat: List[List[int]]) -> None:
         """
         Constructeur de la classe.
@@ -89,7 +90,7 @@ Remarque
 
 ```python
 def main():
-    """ Fonction principale """
+    """Fonction principale"""
     mat1 = [[1, 1, 0], [0, 1, 1], [0, 0, 1]]
     mat2 = [[0, 1, 1, 0], [1, 0, 1, 1], [1, 1, 0, 1], [0, 1, 1, 0]]
 
@@ -98,6 +99,7 @@ def main():
 
     print(graph11)
     print(graph21)
+
 
 main()
 ```
@@ -132,7 +134,7 @@ def nbre_sommets(self: GrapheM) -> int:
 ```python
 def est_lie(self: GrapheM, i: int, j: int) -> bool:
     """
-    Retourne True s'il existe une relation (arête ou arc) 
+    Retourne True s'il existe une relation (arête ou arc)
     entre les sommets i et j, False sinon.
     """
 ```
@@ -150,10 +152,10 @@ assert graph11.est_lie(2, 0) == False
 ```python
 def est_lie(self: GrapheM, i: int, j: int) -> bool:
     """
-    Retourne True s'il existe une relation (arête ou arc) 
+    Retourne True s'il existe une relation (arête ou arc)
     entre les sommets i et j, False sinon.
     """
-    return self.mat[i][j] != 0 
+    return self.mat[i][j] != 0
 ```
 
 {{% /solution %}}
@@ -168,11 +170,11 @@ La matrice est symétrique par rapport à la diagonale.
 
 ```python
 def est_non_oriente(self: GrapheM) -> bool:
-        """
-        Retourne True si le graphe est non orienté 
-        (si la matrice est symétrique) et False si le 
-        graphe est orienté.
-        """
+    """
+    Retourne True si le graphe est non orienté
+    (si la matrice est symétrique) et False si le
+    graphe est orienté.
+    """
 ```
 
 Jeu de tests :
@@ -186,18 +188,18 @@ assert graph21.est_non_oriente() == True
 
 ```python
 def est_non_oriente(self: GrapheM) -> bool:
-        """
-        Retourne True si le graphe est non orienté 
-        (si la matrice est symétrique) et False si le 
-        graphe est orienté.
-        """
-        n = len(self.mat)
+    """
+    Retourne True si le graphe est non orienté
+    (si la matrice est symétrique) et False si le
+    graphe est orienté.
+    """
+    n = len(self.mat)
 
-        for i in range(n):
-            for j in range(i+1, n):
-                if self.mat[i][j] != self.mat[j][i]:
-                    return False
-        return True
+    for i in range(n):
+        for j in range(i + 1, n):
+            if self.mat[i][j] != self.mat[j][i]:
+                return False
+    return True
 ```
 
 {{% /solution %}}
@@ -211,9 +213,9 @@ La spécification du constructeur de la classe est :
 
 ```python
 def __init__(self: GrapheL, lst: List[List[int]]) -> None:
-        """
-        Constructeur de la classe.
-        """
+    """
+    Constructeur de la classe.
+    """
 ```
 
 **Remarque :** cette classe possède l'attribut `lst` qui référence une liste d'adjacence.
@@ -225,6 +227,7 @@ class GrapheL:
     """
     Implémentation de la liste des voisins d'un graphe non orienté.
     """
+
     def __init__(self, lst: List[List[int]]) -> None:
         self.lst = lst
 ```
@@ -377,7 +380,7 @@ print(graph23)
 ```python
 def lst_to_mat(self: GrapheL) -> GrapheM:
     """
-    Génère la matrice sommet-sommet à partir de la liste des 
+    Génère la matrice sommet-sommet à partir de la liste des
     voisins/successeurs.
     """
     mat = []
@@ -428,7 +431,7 @@ def mat_to_lst(self: GrapheM) -> GrapheL:
         for j in range(len(self.mat)):
             if self.mat[i][j] != 0:
                 rel.append(j)
-        liste.append(rel) 
+        liste.append(rel)
     return GrapheL(liste)
 ```
 

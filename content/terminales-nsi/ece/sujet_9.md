@@ -41,9 +41,10 @@ if __name__ == "__main__":
 ```python
 from typing import List, Tuple
 
+
 def moyenne(notes: List[Tuple[float]]) -> float:
     """
-    Retourne la moyenne des notes pondérées passées en argument dans la liste de tuples. 
+    Retourne la moyenne des notes pondérées passées en argument dans la liste de tuples.
     """
     somme_notes = 0
     somme_coefs = 0
@@ -90,7 +91,14 @@ def pascal(n: int) -> List[List[int]]:
 ```python
 if __name__ == "__main__":
     assert pascal(4) == [[1], [1, 1], [1, 2, 1], [1, 3, 3, 1], [1, 4, 6, 4, 1]]
-    assert pascal(5) == [[1], [1, 1], [1, 2, 1], [1, 3, 3, 1], [1, 4, 6, 4, 1], [1, 5, 10, 10, 5, 1]]
+    assert pascal(5) == [
+        [1],
+        [1, 1],
+        [1, 2, 1],
+        [1, 3, 3, 1],
+        [1, 4, 6, 4, 1],
+        [1, 5, 10, 10, 5, 1],
+    ]
 ```
 
 {{% solution "Corrigé" %}}
@@ -98,9 +106,10 @@ if __name__ == "__main__":
 ```python
 from typing import List, Tuple
 
+
 def pascal(n: int) -> List[List[int]]:
     """
-    Détermine les valeurs du triangle de Pascal. 
+    Détermine les valeurs du triangle de Pascal.
     """
     C = [[1]]
     for k in range(1, n + 1):
@@ -114,7 +123,14 @@ def pascal(n: int) -> List[List[int]]:
 
 if __name__ == "__main__":
     assert pascal(4) == [[1], [1, 1], [1, 2, 1], [1, 3, 3, 1], [1, 4, 6, 4, 1]]
-    assert pascal(5) == [[1], [1, 1], [1, 2, 1], [1, 3, 3, 1], [1, 4, 6, 4, 1], [1, 5, 10, 10, 5, 1]]
+    assert pascal(5) == [
+        [1],
+        [1, 1],
+        [1, 2, 1],
+        [1, 3, 3, 1],
+        [1, 4, 6, 4, 1],
+        [1, 5, 10, 10, 5, 1],
+    ]
 ```
 
 {{% /solution %}}

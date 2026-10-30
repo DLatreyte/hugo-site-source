@@ -63,8 +63,8 @@ Toute fonction doit être accompagnée de sa spécification !
 2. Définir la fonction `moyenne` dont la spécification est
 
 ```python
-def moyenne(a: float, b: float) -> float: 
-    """ Calcule et retourne la moyenne des deux nombres a et b 
+def moyenne(a: float, b: float) -> float:
+    """Calcule et retourne la moyenne des deux nombres a et b
     passés en argument.
     """
 ```
@@ -92,8 +92,8 @@ def moyenne(a: float, b: float) -> float:
 3. Définir la fonction `valeur_absolue` dont la spécification est&nbsp;:
 
 ```python
-def valeur_absolue(x: float) -> float: 
-    """ 
+def valeur_absolue(x: float) -> float:
+    """
     Calcule et retourne la valeur absolue du nombre x passé en argument.
     """
 ```
@@ -117,7 +117,7 @@ def valeur_absolue(x: float) -> float:
     Calcule et retourne la valeur absolue du nombre x positif
     passé en argument.
     """
-    if x >= 0 :
+    if x >= 0:
         return x
     else:
         return -x
@@ -128,8 +128,8 @@ def valeur_absolue(x: float) -> float:
 4. Définir la fonction `puissance` dont la spécification est&nbsp;:
 
 ```python
-def puissance(x: float, n: int) -> float: 
-    """ calcule et retourne le résultat de x à la puissance entière n :
+def puissance(x: float, n: int) -> float:
+    """calcule et retourne le résultat de x à la puissance entière n :
     x^n = x . x . x . … . x (n fois)
     """
 ```
@@ -164,8 +164,8 @@ def puissance(x: float, n: int) -> float:
 5. Définir la fonction `amelioration_essai` dont la spécification est&nbsp;:
 
 ```python
-def amelioration_essai(essai: float, x: float) -> float: 
-    """ Calcule et retourne la moyenne des nombres essai (strictement positif) 
+def amelioration_essai(essai: float, x: float) -> float:
+    """Calcule et retourne la moyenne des nombres essai (strictement positif)
     et x/essai.
     """
 ```
@@ -187,7 +187,7 @@ def amelioration_essai(essai: float, x: float) -> float:
     """
     Calcule et retourne la moyenne des nombres essai (strictement positif) et x/essai.
     """
-    return moyenne(essai, x/essai)
+    return moyenne(essai, x / essai)
 ```
 
 {{% /solution %}}
@@ -195,9 +195,9 @@ def amelioration_essai(essai: float, x: float) -> float:
 6. Définir le prédicat `est_suffisamment_bon` dont la spécification est&nbsp;:
 
 ```python
-def est_suffisamment_bon(essai: float, x: float) -> bool: 
-    """ 
-    Retourne True si la valeur absolue de la différence du carré du nombre essai 
+def est_suffisamment_bon(essai: float, x: float) -> bool:
+    """
+    Retourne True si la valeur absolue de la différence du carré du nombre essai
     et du nombre x est inférieure à une tolérance donnée (prendre 0.001).
     Retourne False sinon.
     """
@@ -233,8 +233,8 @@ def est_suffisamment_bon(essai: float, x: float) -> bool:
 7. Définir la fonction `test` qui implémente l'algorithme de Héron d'Alexandrie. La spécification de la fonction est&nbsp;:
 
 ```python
-def test(essai: float, x: float) -> float: 
-    """ 
+def test(essai: float, x: float) -> float:
+    """
     Retourne la racine carrée du nombre x. Le calcul est effectué grâce à un
     raisonnement itératif depuis une première valeur strictement positive notée essai.
     """
@@ -270,9 +270,9 @@ def test(essai: float, x: float) -> float:
 8. Définir la fonction `racine_carree` dont la spécification est&nbsp;:
 
 ```python
-def racine_carree(x: float) -> float: 
-    """ 
-    Retourne le résultat de l'appel de la fonction test avec la valeur 1 
+def racine_carree(x: float) -> float:
+    """
+    Retourne le résultat de l'appel de la fonction test avec la valeur 1
     pour l'argument essai.
     """
 ```

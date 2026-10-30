@@ -41,7 +41,7 @@ Exemples :
 On veut écrire une classe pour gérer une file à l’aide d’une liste chaînée. On dispose d’une classe `Maillon` permettant la création d’un maillon de la chaîne, celui-ci étant constitué d’une valeur et d’une référence au maillon suivant de la chaîne :
 
 ```python
-class Maillon :
+class Maillon:
     def __init__(self: Maillon, v: int, suivant: Maillon) -> None:
         self.valeur = v
         self.suivant = suivant
@@ -50,32 +50,32 @@ class Maillon :
 Compléter la classe `File` suivante où l’attribut `dernier_file` contient le maillon correspondant à l’élément arrivé en dernier dans la file :
 
 ```python
-class File :
+class File:
     def __init__(self: Maillon) -> None:
         self.dernier_file = None
 
     def enfile(self: Maillon, element: int) -> None:
-        nouveau_maillon = Maillon(... , self.dernier_file)
+        nouveau_maillon = Maillon(..., self.dernier_file)
         self.dernier_file = ...
 
-    def est_vide(self: Maillon) -> ... :
+    def est_vide(self: Maillon) -> ...:
         return self.dernier_file == None
 
     def affiche(self: Maillon) -> None:
         maillon = self.dernier_file
-        while maillon != ... :
+        while maillon != ...:
             print(maillon.valeur)
             maillon = ...
 
     def defile(self: Maillon) -> int:
-        if not self.est_vide() :
-            if self.dernier_file.suivant == None :
+        if not self.est_vide():
+            if self.dernier_file.suivant == None:
                 resultat = self.dernier_file.valeur
                 self.dernier_file = None
                 return resultat
             maillon = ...
 
-            while maillon.suivant.suivant != None :
+            while maillon.suivant.suivant != None:
                 maillon = maillon.suivant
             resultat = ...
 
@@ -118,12 +118,13 @@ class Maillon:
         self.valeur = v
         self.suivant = suivant
 
-class File :
+
+class File:
     def __init__(self: Maillon) -> None:
         self.dernier_file = None
 
     def enfile(self: Maillon, element: int) -> None:
-        nouveau_maillon = Maillon(element , self.dernier_file)
+        nouveau_maillon = Maillon(element, self.dernier_file)
         self.dernier_file = nouveau_maillon
 
     def est_vide(self: Maillon) -> bool:
@@ -131,19 +132,19 @@ class File :
 
     def affiche(self: Maillon) -> None:
         maillon = self.dernier_file
-        while maillon != None :
+        while maillon != None:
             print(maillon.valeur)
             maillon = maillon.suivant
 
     def defile(self: Maillon) -> int:
-        if not self.est_vide() :
-            if self.dernier_file.suivant == None :
+        if not self.est_vide():
+            if self.dernier_file.suivant == None:
                 resultat = self.dernier_file.valeur
                 self.dernier_file = None
                 return resultat
             maillon = self.dernier_file.suivant
 
-            while maillon.suivant.suivant != None :
+            while maillon.suivant.suivant != None:
                 maillon = maillon.suivant
             resultat = maillon.suivant.valeur
 

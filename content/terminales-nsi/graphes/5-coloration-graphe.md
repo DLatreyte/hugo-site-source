@@ -41,6 +41,7 @@ Son code est reproduit ci-dessous.
 """
 Représentation d’un graphe à l'aide d'une liste d'adjacence.
 """
+
 from __future__ import annotations
 
 
@@ -63,7 +64,7 @@ class Sommet:
         return self.adj
 
     def ajoute_adjacent(self: Sommet, som: Sommet) -> None:
-        """ Ajoute un sommet adjacent """
+        """Ajoute un sommet adjacent"""
         self.adj.append(som)
 
     def __repr__(self: Sommet) -> str:
@@ -118,7 +119,7 @@ class Graphe:
         """
         Vérifie que le sommet s existe bien dans le graphe.
         """
-        sommet_present = False       # Sommet pas présent
+        sommet_present = False  # Sommet pas présent
         for sommet in self.sommets:  # sommet référence un objet
             if sommet.val == s:
                 sommet_present = True
@@ -190,10 +191,9 @@ class Graphe:
             # Récupération de l'objet de type sommet associé au nom
             sommet = self.recuperation_sommet(nom_sommet)
             # Récupération des noms des sommets adjacents
-            nom_sommets_adjacents = [
-                sommet_adj.val for sommet_adj in sommet.adj]
+            nom_sommets_adjacents = [sommet_adj.val for sommet_adj in sommet.adj]
 
-            ligne_matrice = []       # Initialisation de la ligne de la matrice
+            ligne_matrice = []  # Initialisation de la ligne de la matrice
             for i in range(len(val_sommets_ordonnees)):
                 if val_sommets_ordonnees[i] in nom_sommets_adjacents:
                     ligne_matrice.append(1)
@@ -214,7 +214,7 @@ class Graphe:
         nbre = len(matrice)  # nombre de lignes et de colonnes
         for i in range(nbre):
             for j in range(nbre):
-                rep += str(matrice[i][j]) + '\t'
+                rep += str(matrice[i][j]) + "\t"
             rep += "\n"
         return rep
 
@@ -227,7 +227,7 @@ class Graphe:
             rep += repr(sommet)
             # Ajout de la virgule sauf dernier tour de boucle
             if i < len(self.sommets) - 1:
-                rep += ', '
+                rep += ", "
         rep += "}"
         return rep
 
@@ -445,7 +445,7 @@ def coloriage(g: Graphe) -> tuple[dict[str, int], int]:
     sommet et du nombre de couleurs utilisées.
     """
     nbre_couleurs = 0  # Nombre de couleurs utilisées
-    couleurs = {}      # Dictionnaire des sommets colorés
+    couleurs = {}  # Dictionnaire des sommets colorés
 
     for sommet in g.liste_sommets():
         # Choix d'une couleur pour le sommet
@@ -473,7 +473,7 @@ def choix_couleur(sommet: Sommet, couleurs: dict[str, int]) -> int:
 
     # recherche des couleurs déjà attribuées
     for adj in sommet.liste_adjacents():  # Sommet adjacent
-        if adj.val in couleurs.keys():    # Sommet déjà colorié
+        if adj.val in couleurs.keys():  # Sommet déjà colorié
             couleur_attribuee = couleurs[adj.val]  # avec une valeur <= n
             if couleur_attribuee <= n_adj:
                 couleurs_attribuees[couleur_attribuee] = True

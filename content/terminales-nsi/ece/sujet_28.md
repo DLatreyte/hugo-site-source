@@ -34,9 +34,17 @@ graph TD
 est stocké dans
 
 ```python
-a = {'F':['B','G'], 'B':['A','D'], 'A':['',''], 'D':['C','E'], \
-     'C':['',''], 'E':['',''], 'G':['','I'], 'I':['','H'], \
-     'H':['','']}
+a = {
+    "F": ["B", "G"],
+    "B": ["A", "D"],
+    "A": ["", ""],
+    "D": ["C", "E"],
+    "C": ["", ""],
+    "E": ["", ""],
+    "G": ["", "I"],
+    "I": ["", "H"],
+    "H": ["", ""],
+}
 ```
 
 Écrire une fonction récursive `taille` prenant en paramètres un arbre binaire arbre sous la forme d’un dictionnaire et un caractère `lettre` qui est la valeur du sommet de l’arbre, et qui renvoie la taille de l’arbre à savoir le nombre total de nœud.
@@ -45,24 +53,34 @@ On pourra distinguer les 4 cas où les deux « fils » du nœud sont `''`, le fi
 #### Test possible
 
 ```python
-assert taille(a, 'F') == 9
+assert taille(a, "F") == 9
 ```
 
 {{% solution "Corrigé" %}}
 
 ```python
-def taille(arbre,lettre):
+def taille(arbre, lettre):
     if arbre[lettre][0] != "" and arbre[lettre][1] != "":
         return 1 + taille(arbre, arbre[lettre][0]) + taille(arbre, arbre[lettre][1])
     elif arbre[lettre][0] == "" and arbre[lettre][1] != "":
         return 1 + taille(arbre, arbre[lettre][1])
     elif arbre[lettre][0] != "" and arbre[lettre][1] == "":
         return 1 + taille(arbre, arbre[lettre][0])
-    else :
+    else:
         return 1
 
 
-a= {'F': ['B','G'], 'B': ['A','D'], 'A': ['',''], 'D': ['C','E'], 'C': ['',''], 'E': ['',''], 'G': ['','I'], 'I': ['','H'],'H': ['','']}
+a = {
+    "F": ["B", "G"],
+    "B": ["A", "D"],
+    "A": ["", ""],
+    "D": ["C", "E"],
+    "C": ["", ""],
+    "E": ["", ""],
+    "G": ["", "I"],
+    "I": ["", "H"],
+    "H": ["", ""],
+}
 ```
 
 {{% /solution %}}
@@ -130,13 +148,13 @@ a, b = b, a
 
 ```python
 def tri_iteratif(tab):
-    for k in range( len(tab)-1 , 0, -1):
+    for k in range(len(tab) - 1, 0, -1):
         imax = k
-        for i in range(0 , k ):
-            if tab[i] > tab[imax] :
+        for i in range(0, k):
+            if tab[i] > tab[imax]:
                 imax = i
-        if tab[imax] > tab[k] :
-            tab[k] , tab[imax] = tab[imax] , tab[k]
+        if tab[imax] > tab[k]:
+            tab[k], tab[imax] = tab[imax], tab[k]
     return tab
 ```
 

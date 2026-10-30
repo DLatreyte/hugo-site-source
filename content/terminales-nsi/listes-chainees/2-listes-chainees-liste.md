@@ -51,11 +51,11 @@ def insere(tab: list[int], n: int, i: int) -> None:
     """
     Insère la valeur n à l'indice i du tableau tab.
     Algorithm itératif et en place.
-    
+
     Lève une exception si le tableau est déjà plein.
-    
+
     HYPOTHÈSE : la gestion des "trous" n'est pas assurée,
-    l'algorithme se contente de décaler les valeurs vers 
+    l'algorithme se contente de décaler les valeurs vers
     la droite.
     """
     dernier_indice = len(tab) - 1
@@ -68,7 +68,7 @@ def insere(tab: list[int], n: int, i: int) -> None:
         tab[k] = tab[k - 1]
         k -= 1
 
-    #for k in range(dernier_indice, i, -1):
+    # for k in range(dernier_indice, i, -1):
     #    tab[k] = tab[k - 1]
 
     tab[i] = n
@@ -78,13 +78,13 @@ def insere_rec(tab: list[int], n: int, i: int, k: int) -> None:
     """
     Insère la valeur n à l'indice i du tableau tab.
     Algorithm récursif et en place. k est l'indice de
-    recherche. 
+    recherche.
     Sa première valeur doit être len(tab) - 1.
-    
+
     Lève une exception si le tableau est déjà plein.
-    
-    HYPOTHÈSE : la gestion des "trous" n'est pas 
-    assurée, l'algorithme se contente de décaler 
+
+    HYPOTHÈSE : la gestion des "trous" n'est pas
+    assurée, l'algorithme se contente de décaler
     les valeurs vers la droite.
     """
     dernier_indice = len(tab) - 1
@@ -119,8 +119,8 @@ if __name__ == "__main__":
     print(tab)
     insere(tab, 7, 0)
     print(tab)
-    #insere(tab, 7, 0)
-    #print(tab)
+    # insere(tab, 7, 0)
+    # print(tab)
     print()
     print("Insertion récursive")
     tab = [1, 1, 2, 3, 4, 5, None, None, None]

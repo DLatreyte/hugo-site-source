@@ -148,7 +148,7 @@ def codage_chaine(texte: str) -> str:
     Convertit la chaîne de caractères passée
     en argument en une chaîne de caractères
     formés de 0 et de 1.
-    Les 0 et 1 constitue le codage binaire 
+    Les 0 et 1 constitue le codage binaire
     de chacun des caractères de la chaîne
     initiale.
 
@@ -166,7 +166,7 @@ def codage_chaine(texte: str) -> str:
     Convertit la chaîne de caractères passée
     en argument en une chaîne de caractères
     formés de 0 et de 1.
-    Les 0 et 1 constitue le codage binaire 
+    Les 0 et 1 constitue le codage binaire
     de chacun des caractères de la chaîne
     initiale.
 
@@ -191,12 +191,12 @@ def codage_chaine(texte: str) -> str:
 
 ```python
 if __name__ == "__main__":
-    #texte_a_chiffrer = input("Texte à chiffrer : ")
+    # texte_a_chiffrer = input("Texte à chiffrer : ")
     texte_a_chiffrer = "papa"
     texte_code = codage_chaine(texte_a_chiffrer)
     print(f"Code du texte :\n{texte_code}")
 
-    #cle = input("Clé de chiffrement : ")
+    # cle = input("Clé de chiffrement : ")
     cle = "bar"
     cle_code = codage_chaine(cle)
     print(f"Code de la clé :\n{cle_code}")
@@ -210,7 +210,7 @@ if __name__ == "__main__":
 def ajustement_cle(code_cle: str, longueur_chaine: int) -> str:
     """
     Ajuste la longueur du code de la clé à celle du
-    code de la chaîne à chiffrer, de longueur 
+    code de la chaîne à chiffrer, de longueur
     longueur_chaine.
     """
 ```
@@ -221,7 +221,7 @@ def ajustement_cle(code_cle: str, longueur_chaine: int) -> str:
 def ajustement_cle(code_cle: str, longueur_chaine: int) -> str:
     """
     Ajuste la longueur du code de la clé à celle du
-    code de la chaîne à chiffrer, de longueur 
+    code de la chaîne à chiffrer, de longueur
     longueur_chaine.
     """
     if len(code_cle) >= longueur_chaine:
@@ -229,7 +229,7 @@ def ajustement_cle(code_cle: str, longueur_chaine: int) -> str:
     else:
         rapport = longueur_chaine // len(code_cle)
         rep = code_cle * rapport
-        rep += code_cle[:longueur_chaine - len(rep)]
+        rep += code_cle[: longueur_chaine - len(rep)]
 
     return rep
 ```
@@ -297,7 +297,7 @@ def decodage(car_code: str) -> str:
     octet = 8
 
     for i in range(len(car_code)):
-        valeur_code += int(car_code[i]) * 2**(octet - (i + 1))
+        valeur_code += int(car_code[i]) * 2 ** (octet - (i + 1))
 
     return chr(valeur_code)
 ```

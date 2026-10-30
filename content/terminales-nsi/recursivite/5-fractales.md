@@ -39,33 +39,36 @@ Dans le code suivant (qu'il faudra étudier et exécuter) :
 import turtle
 import math as m
 
+
 def dessine_etoile(t: turtle, pt: tuple, long: int) -> None:
     if long <= 2:
         return None
-    
-    for i in range(6) :
+
+    for i in range(6):
         x_ext = pt[0] + int(long * m.cos((2 * m.pi / 6) * i))
         y_ext = pt[1] + int(long * m.sin((2 * m.pi / 6) * i))
 
-        pt_ext = (x_ext, y_ext) # Extrémité du segment
-        
+        pt_ext = (x_ext, y_ext)  # Extrémité du segment
+
         t.penup()
         t.setposition(pt)
-        
+
         t.pendown()
         t.setposition(pt_ext)
-        
-        dessine_etoile(t, pt_ext, long/3)
 
-def main() :
+        dessine_etoile(t, pt_ext, long / 3)
+
+
+def main():
     t = turtle.Turtle()
     t.speed(0)
     t.hideturtle()
     segment = 300
-    centre = (0,0)
+    centre = (0, 0)
     dessine_etoile(t, centre, segment)
     turtle.mainloop()
-    
+
+
 main()
 ```
 
@@ -180,6 +183,7 @@ qui dessine à l'écran un segment de
 """
 Tracé du flocon de Von Koch
 """
+
 import turtle
 
 
@@ -255,9 +259,9 @@ def main():
     t.pendown()
 
     dessine_flocon(t, 5, 400)
-    #koch(t, 4, 300)
+    # koch(t, 4, 300)
 
-    #koch_1(t, 200)
+    # koch_1(t, 200)
 
     fen.exitonclick()
 
@@ -318,8 +322,10 @@ son point de départ*.
 """
 Programme qui dessine un arbre fractal.
 """
+
 import turtle
 import math as m
+
 
 def arbre(t: turtle, n: int, longueur: int, theta: int) -> None:
 
@@ -333,11 +339,12 @@ def arbre(t: turtle, n: int, longueur: int, theta: int) -> None:
         t.width(n)
         t.forward(longueur / 3)
         t.left(theta)
-        arbre(t, n-1, longueur / 3 * 2, theta)
+        arbre(t, n - 1, longueur / 3 * 2, theta)
         t.right(2 * theta)
-        arbre(t, n-1, longueur / 3 * 2, theta)
+        arbre(t, n - 1, longueur / 3 * 2, theta)
         t.left(theta)
         t.backward(longueur / 3)
+
 
 def main():
     t = turtle.Turtle()
@@ -352,9 +359,10 @@ def main():
     arbre(t, n, longueur, theta)
     # enregistrement de l'image
     ts = turtle.getscreen()
-    ts.getcanvas().postscript(file='arbre.pdf')
+    ts.getcanvas().postscript(file="arbre.pdf")
 
     turtle.mainloop()
+
 
 main()
 ```

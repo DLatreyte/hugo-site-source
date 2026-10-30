@@ -259,10 +259,7 @@ Quel est le critère de tri ?
 
 **Exemple de problème à traiter :** Trier la liste suivante par année de naissance (ordre croissant)
 ```python
-eleves = [("Brian", 1, 1, 1942),
-            ("Grace", 9, 12, 1906),
-            ("Linus", 28, 12, 1969),
-            ...]
+eleves = [("Brian", 1, 1, 1942), ("Grace", 9, 12, 1906), ("Linus", 28, 12, 1969), ...]
 ```
 
 {{% note normal %}}
@@ -275,7 +272,7 @@ Cette fonction auxiliaire doit être un prédicat.
 ```python
 def tri_g(inf: Callable, tab: List[int], i: int = 1) -> List[int]:
     """
-    Implémentation d'un algorithme générique de tri par insertion. 
+    Implémentation d'un algorithme générique de tri par insertion.
     Algorithme récursif.
     """
     if i == len(tab):

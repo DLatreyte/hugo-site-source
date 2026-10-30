@@ -135,11 +135,11 @@ def puissance2(a: int, n: int) -> int:
         return 1
 
     calc = puissance2(a, n // 2)
-    
+
     if n % 2 == 0:
         return calc**2
     else:
-        return a * (calc)**2
+        return a * (calc) ** 2
 
 
 if __name__ == "__main__":
@@ -194,7 +194,7 @@ La complexité de l'algorithme est donc en $O(\log_2 n)$ ; elle est bien meilleu
 ```python
 def recherche1(liste: list[int], val: int) -> int:
     """
-    Retourne l'indice de la valeur dans la liste si cette 
+    Retourne l'indice de la valeur dans la liste si cette
     dernière est présente, -1 sinon.
 
     HYPOTHÈSE : val est unique si présente.
@@ -208,14 +208,14 @@ def recherche1(liste: list[int], val: int) -> int:
 ```python
 def recherche1(liste: list[int], val: int) -> int:
     """
-    Retourne l'indice de la valeur dans la liste si cette 
+    Retourne l'indice de la valeur dans la liste si cette
     dernière est présente, -1 sinon.
 
     HYPOTHÈSE : val est unique si présente.
 
     Algorithme itératif.
     """
-    g = 0               # indice le plus petit
+    g = 0  # indice le plus petit
     d = len(liste) - 1  # indice le plus grand
 
     trouve = False
@@ -239,7 +239,7 @@ def recherche1(liste: list[int], val: int) -> int:
 ```python
 def recherche2(liste: list[int], val: int, g: int, d: int) -> bool:
     """
-    Retourne l'indice de la valeur dans la liste si cette 
+    Retourne l'indice de la valeur dans la liste si cette
     dernière est présente, -1 sinon.
 
     HYPOTHÈSE : val est unique si présente.
@@ -253,7 +253,7 @@ def recherche2(liste: list[int], val: int, g: int, d: int) -> bool:
 ```python
 def recherche2(liste: list[int], val: int, g: int, d: int) -> bool:
     """
-    Retourne l'indice de la valeur dans la liste si cette 
+    Retourne l'indice de la valeur dans la liste si cette
     dernière est présente, -1 sinon.
 
     HYPOTHÈSE : val est unique si présente.

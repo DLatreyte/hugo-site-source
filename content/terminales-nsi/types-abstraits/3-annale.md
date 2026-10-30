@@ -95,7 +95,7 @@ La modélisation précédente n'est pas satisfaisante si l'on veut conserver les
 On propose, dans cette partie, de modéliser les notes des élèves de la façon suivante :
 
 ```python
-notes_de_la_classe = [('Enzo', 3), ('Emma', 16), ('Lucas', 14), ('Manon', 13)]
+notes_de_la_classe = [("Enzo", 3), ("Emma", 16), ("Lucas", 14), ("Manon", 13)]
 ```
 
 1. Quel est le type de `notes_de_la_classe`&nbsp;?
@@ -151,7 +151,7 @@ def nom_du_genie(les_notes):
 def nom_du_genie(les_notes):
     note_max = None
     genie = None
-    for (nom, note) in les_notes:
+    for nom, note in les_notes:
         if note_max == None or note > note_max:
             genie = nom
             note_max = note
@@ -177,8 +177,12 @@ L'expression retourne `None`
 Dans cette partie, on souhaite modéliser dans une même structure de données les notes des élèves d'une classe en précisant le nom de la matière concernée par la note. On propose la modélisation suivante :
 
 ```python
-notes = {'Enzo' : ('Math', 3), 'Emma' : ('Math', 16),
-        'Lucas' : ('NSI', 14), 'Manon' : ('Math', 3)}
+notes = {
+    "Enzo": ("Math", 3),
+    "Emma": ("Math", 16),
+    "Lucas": ("NSI", 14),
+    "Manon": ("Math", 3),
+}
 ```
 
 1. Quel est le type de `notes`&nbsp;?
@@ -215,7 +219,7 @@ Type : dictionnaire.
 4. Quel est l'affichage généré par l'exécution du code suivant&nbsp;?
 
 ```python
-for (nom, (matiere, note)) in notes.items():
+for nom, (matiere, note) in notes.items():
     if note < 15:
         print(nom)
 ```
@@ -236,7 +240,7 @@ def moins_bon(notes: Dict[str, Tuple[str, int]]) -> List[str]:
     note_moins_bonne = 20
     rep = []
 
-    for (nom, t_matiere) in notes.items():
+    for nom, t_matiere in notes.items():
         note = t_matiere[1]
 
         if note < note_moins_bonne:
@@ -247,10 +251,16 @@ def moins_bon(notes: Dict[str, Tuple[str, int]]) -> List[str]:
 
     return rep
 
+
 if __name__ == "__main__":
-    notes = {'Enzo' : ('Math', 3), 'Emma' : ('Math', 16), 'Lucas' : ('NSI', 14), 'Manon' : ('Math', 3)}
-    
-    assert moins_bon(notes) == ['Enzo', 'Manon']
+    notes = {
+        "Enzo": ("Math", 3),
+        "Emma": ("Math", 16),
+        "Lucas": ("NSI", 14),
+        "Manon": ("Math", 3),
+    }
+
+    assert moins_bon(notes) == ["Enzo", "Manon"]
 ```
 
 {{% /solution %}}
