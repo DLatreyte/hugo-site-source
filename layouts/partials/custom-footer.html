@@ -29,3 +29,7 @@
   }); }); });
 })();
 </script>
+{{- /* QCM de fin de section : script chargé seulement sur les pages qui en contiennent */ -}}
+{{- if .Store.Get "hasQcm" }}
+<script src="{{ "js/qcm.js" | relURL }}"></script>
+{{- end }}

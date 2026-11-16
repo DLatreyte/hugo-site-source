@@ -1,0 +1,10 @@
+{{- /* Question numérotée (Q1, Q2…), comme #question du modèle Typst cours-pc.
+  Usage : {{< question >}} énoncé en Markdown {{< /question >}} */ -}}
+{{- $n := add (.Page.Store.Get "questionNombre" | default 0) 1 -}}
+{{- .Page.Store.Set "questionNombre" $n -}}
+<div class="question-bloc" id="{{ printf "q%d" $n }}">
+  <div class="question-num">Q{{ $n }}.</div>
+  <div class="question-corps">
+{{ .InnerDeindent | .Page.RenderString (dict "display" "block") }}
+  </div>
+</div>

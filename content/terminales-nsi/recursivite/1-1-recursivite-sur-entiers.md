@@ -35,7 +35,7 @@ La **récursion** est un mécanisme puissant permettant d'exprimer la **répéti
 
 ## Rappels sur les fonctions
 
-- {{< remote "Cours de 1ère NSI sur les fonctions" "../../../premieres-nsi/chap-02/chap-02" >}}
+- {{< remote "Cours de 1ère NSI sur les fonctions" "/premieres-nsi/chap-2/2-1-types-fonctions/" >}}
 
 ## Définition récursive d'une fonction
 

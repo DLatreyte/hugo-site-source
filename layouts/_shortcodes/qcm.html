@@ -1,0 +1,62 @@
+{{- /* QCM de fin de section, sur le principe du livre Rust de Brown University :
+  une question à la fois, score à la fin ; si tout n'est pas juste, on peut recommencer
+  ou afficher les réponses (après quoi le QCM ne peut plus être retenté).
+
+  Usage (contenu en YAML ; guillemets simples si le texte contient des \ ) :
+  {{< qcm >}}
+  - question: 'Quel est le type de la valeur `18.5` ?'
+    reponses:
+      - '`int`'
+      - '`float`'
+    bonne: 2                  # numéro de la bonne réponse (à partir de 1), ou liste : [1, 3]
+    explication: 'Un nombre écrit avec un point est un flottant.'
+  {{< /qcm >}}
+*/ -}}
+{{- $questions := .Inner | transform.Unmarshal (dict "format" "yaml") -}}
+{{- $n := add (.Page.Store.Get "qcmNombre" | default 0) 1 -}}
+{{- .Page.Store.Set "qcmNombre" $n -}}
+{{- .Page.Store.Set "hasQcm" true -}}
+{{- $titre := .Get "titre" | default "Vérifier ses acquis" -}}
+{{- $solutions := slice -}}
+{{- range $questions -}}
+  {{- $b := .bonne -}}
+  {{- $liste := slice -}}
+  {{- if reflect.IsSlice $b -}}{{- range $b }}{{ $liste = $liste | append (sub (int .) 1) }}{{ end -}}
+  {{- else -}}{{- $liste = slice (sub (int $b) 1) -}}{{- end -}}
+  {{- $solutions = $solutions | append ($liste | jsonify) -}}
+{{- end -}}
+<div class="qcm" data-qcm="{{ printf "%s#%d" $.Page.RelPermalink $n }}" data-s="{{ printf "[%s]" (delimit $solutions ",") | base64Encode }}">
+  <div class="qcm-tete">
+    <span class="qcm-icone" aria-hidden="true">?</span>
+    <span class="qcm-titre">{{ $titre }}</span>
+    <span class="qcm-info">{{ len $questions }} question{{ if gt (len $questions) 1 }}s{{ end }}</span>
+  </div>
+  <div class="qcm-corps">
+    <div class="qcm-accueil">
+      <p>Répondez aux questions une par une ; le résultat s'affiche à la fin. Recommencez jusqu'à obtenir 100&nbsp;% : vous pouvez aussi afficher les réponses, mais vous ne pourrez alors plus retenter ce QCM.</p>
+    </div>
+    {{- range $i, $q := $questions }}
+    {{- $multiple := and (reflect.IsSlice $q.bonne) (gt (len $q.bonne) 1) }}
+    <div class="qcm-q" data-type="{{ cond $multiple "multiple" "unique" }}" hidden>
+      <div class="qcm-num">Question {{ add $i 1 }} / {{ len $questions }}{{ if $multiple }} <em>(plusieurs réponses possibles)</em>{{ end }}</div>
+      <div class="qcm-enonce">{{ $q.question | $.Page.RenderString (dict "display" "block") }}</div>
+      <ul class="qcm-choix">
+        {{- range $j, $r := $q.reponses }}
+        <li data-i="{{ $j }}"><label><input type="{{ cond $multiple "checkbox" "radio" }}" name="{{ printf "q%d-%d" $n $i }}" value="{{ $j }}"> <span>{{ $r | string | $.Page.RenderString }}</span></label></li>
+        {{- end }}
+      </ul>
+      {{- with $q.explication }}
+      <div class="qcm-explication" hidden>{{ . | $.Page.RenderString (dict "display" "block") }}</div>
+      {{- end }}
+    </div>
+    {{- end }}
+    <div class="qcm-bilan" hidden></div>
+  </div>
+  <div class="qcm-actions">
+    <button type="button" class="qcm-btn qcm-commencer">Commencer</button>
+    <button type="button" class="qcm-btn qcm-valider" hidden disabled>Valider</button>
+    <button type="button" class="qcm-btn qcm-recommencer" hidden>Recommencer</button>
+    <button type="button" class="qcm-btn qcm-secondaire qcm-reveler" hidden>Voir les réponses</button>
+    <button type="button" class="qcm-btn qcm-secondaire qcm-revoir" hidden>Revoir les questions</button>
+  </div>
+</div>

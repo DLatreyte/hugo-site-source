@@ -169,8 +169,8 @@ programmation de fonctions humaines comme la vision, la reconnaissance des
 formes ou l'intelligence artificielle.
 {{< /note >}}
 
-<img src="/premieres-nsi/chap-16/fig-16-1.png" alt="" width="80%" />
-<img src="/premieres-nsi/chap-16/fig-16-2.png" alt="" width="80%" />
+<img src="/terminales-nsi/chap-1/fig-16-1.png" alt="" width="80%" />
+<img src="/terminales-nsi/chap-1/fig-16-2.png" alt="" width="80%" />
 
 <center>
 

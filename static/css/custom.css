@@ -31,3 +31,57 @@ span.nolink { color: #dc2626; }
 .clue-body { padding: .8em 1.1em; }
 .clue-body > :first-child { margin-top: 0 !important; }
 .clue-body > :last-child { margin-bottom: 0 !important; }
+
+/* Questions numérotées (Q1, Q2…) comme dans les documents Typst */
+.question-bloc { display: flex; gap: .6em; margin: 1.2rem 0 .6rem; }
+.question-num { flex: none; font-weight: 700; color: #70aac2; min-width: 2.4em; }
+.question-corps { flex: 1; min-width: 0; }
+.question-corps > :first-child { margin-top: 0 !important; }
+.question-corps > :last-child { margin-bottom: 0 !important; }
+/* Tableaux à compléter : cellules vides assez hautes pour écrire */
+#R-body-inner table td:empty::after { content: "\00a0"; display: inline-block; min-height: 1.6em; }
+
+/* QCM de fin de section */
+.qcm { --qcm: #1e66f5; margin: 2rem 0; border: 0.5px solid color-mix(in srgb, var(--qcm) 35%, transparent);
+  border-left: 3px solid var(--qcm); border-radius: 0 3px 3px 0; overflow: hidden; }
+.qcm-tete { display: flex; align-items: center; gap: .7em; padding: .45em .9em; font-weight: 700;
+  background: color-mix(in srgb, var(--qcm) 13%, transparent); }
+.qcm-icone { display: inline-grid; place-items: center; width: 1.3em; height: 1.3em; border-radius: 50%;
+  background: var(--qcm); color: #fff; font-size: .85em; }
+.qcm-info { margin-left: auto; font-weight: 400; font-size: .85em; opacity: .75; }
+.qcm-corps { padding: .8em 1.1em .2em; }
+.qcm-accueil p { margin-top: 0; }
+.qcm-q + .qcm-q.qcm-revue, .qcm-revue + .qcm-revue { border-top: 1px dashed color-mix(in srgb, var(--qcm) 30%, transparent); padding-top: .6em; }
+.qcm-num { font-size: .85em; opacity: .75; margin-bottom: .3em; }
+.qcm-enonce > :first-child { margin-top: 0 !important; }
+.qcm-choix { list-style: none; padding: 0 !important; margin: .5em 0 1em !important; }
+.qcm-choix li { margin: .35em 0; padding: 0 !important; }
+.qcm-choix li::before { content: none !important; }
+.qcm-choix label { display: flex; align-items: baseline; gap: .6em; padding: .45em .7em; border-radius: 4px; cursor: pointer;
+  border: 1px solid color-mix(in srgb, currentColor 18%, transparent); }
+.qcm-choix label:hover { background: color-mix(in srgb, var(--qcm) 7%, transparent); }
+.qcm-choix input { flex: none; }
+.qcm-choix li.qcm-juste label { border-color: #40a02b; background: color-mix(in srgb, #40a02b 12%, transparent); }
+.qcm-choix li.qcm-faux label { border-color: #d20f39; background: color-mix(in srgb, #d20f39 10%, transparent); }
+.qcm-explication { margin: -.4em 0 1em; padding: .5em .8em; border-left: 3px solid #70aac2;
+  background: color-mix(in srgb, #70aac2 10%, transparent); font-size: .95em; }
+.qcm-explication > :first-child { margin-top: 0 !important; } .qcm-explication > :last-child { margin-bottom: 0 !important; }
+.qcm-bilan { margin: .2em 0 .8em; padding: .6em .8em; border-radius: 4px; }
+.qcm-bilan.qcm-ok { background: color-mix(in srgb, #40a02b 13%, transparent); }
+.qcm-bilan.qcm-ko { background: color-mix(in srgb, #df8e1d 15%, transparent); }
+.qcm-bilan.qcm-revele { background: color-mix(in srgb, #70aac2 15%, transparent); }
+.qcm-actions { display: flex; flex-wrap: wrap; gap: .6em; padding: 0 1.1em 1em; }
+.qcm-btn { padding: .45em 1.1em; border-radius: 4px; border: 1px solid var(--qcm); background: var(--qcm); color: #fff;
+  font: inherit; font-weight: 600; cursor: pointer; }
+.qcm-btn:disabled { opacity: .45; cursor: not-allowed; }
+.qcm-btn.qcm-secondaire { background: transparent; color: var(--qcm); }
+.qcm-btn[hidden], .qcm [hidden] { display: none !important; }
+
+/* Schéma en étapes (Doc. 2,5) */
+.etapes { display: flex; flex-direction: column; align-items: center; gap: .2rem; margin: 1rem 0 1.5rem; }
+.etapes .etape { width: min(36rem, 100%); padding: .6rem .9rem; text-align: center; line-height: 1.7;
+  border: 1px solid rgba(112, 170, 194, .6); border-radius: .4rem; background: rgba(112, 170, 194, .08); }
+.etapes .etape-fleche { color: #70aac2; font-size: 1.2rem; line-height: 1; }
+.qcm-choix label { font-weight: normal; font-variation-settings: normal; letter-spacing: normal; }
+/* Pas de bouton « copier » sur le code en ligne des QCM et du schéma en étapes */
+.qcm .copy-to-clipboard-button, .etapes .copy-to-clipboard-button { display: none; }

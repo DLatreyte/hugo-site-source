@@ -9,6 +9,9 @@ Cours, activités et exercices de physique-chimie et d'informatique pour le lyc�
 {{% card title="1ère Spé. Physique-Chimie" href="premieres-pc" icon="flask" %}}
 Constitution de la matière, mouvement et interactions, énergie, ondes et signaux.
 {{% /card %}}
+{{% card title="1ère Spé. NSI" href="premieres-nsi" icon="laptop-code" %}}
+Premiers pas en programmation avec Python, listes et tuples, avec des QCM pour vérifier ses acquis.
+{{% /card %}}
 {{% card title="Terminale Spé. Physique-Chimie" href="terminales-pc" icon="atom" %}}
 Ondes, mécanique, thermodynamique, chimie des solutions, mesures et incertitudes.
 {{% /card %}}
