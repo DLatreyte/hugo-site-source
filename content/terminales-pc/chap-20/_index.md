@@ -1,17 +1,14 @@
 ---
 title: "Modéliser l’écoulement d’un fluide"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-05-31T05:14:03+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 210
 ---
 
 ## Au programme

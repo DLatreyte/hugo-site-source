@@ -5,6 +5,7 @@ date: 2017-03-05
 tags: ["example", "math"]
 draft: true
 solution_est_visible: true
+weight: 34
 ---
 
 KaTeX can be used to generate complex math formulas server-side. 
@@ -90,7 +91,7 @@ def add(x: float, y: float) -> float:
 
 > Alors voilà, ...
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 $$\ce{Zn^2+  <=>[+ 2OH-][+ 2H+]  $\underset{\text{amphoteres Hydroxid}}{\ce{Zn(OH)2 v}}$  <=>[+ 2OH-][+ 2H+]  $\underset{\text{Hydroxozikat}}{\ce{[Zn(OH)4]^2-}}$}$$
 
@@ -100,7 +101,7 @@ $$\ce{Zn^2+  <=>[+ 2OH-][+ 2H+]  $\underset{\text{amphoteres Hydroxid}}{\ce{Zn(O
 
 # Essais
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 {{< highlight py3 "linenos=table,hl_lines=5" >}}
 def add(x: float, y: float) -> float:

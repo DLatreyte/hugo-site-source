@@ -1,16 +1,14 @@
 ---
 title: "NUMERIQUE et SCIENCES INFORMATIQUES"
 subtitle: "Partie pratique"
-author: ""
-type: ""
 date: 2022-01-16T23:13:15+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: false
 auto_numbering: true
+weight: 9900
 ---
 
 ## Exercice 1 (50% des points)
@@ -56,7 +54,7 @@ On pourra distinguer les 4 cas où les deux « fils » du nœud sont `''`, le fi
 assert taille(a, "F") == 9
 ```
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
 ```python
 def taille(arbre, lettre):
@@ -83,7 +81,7 @@ a = {
 }
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Exercice 2 (50% des points)
 
@@ -132,7 +130,7 @@ Compléter le code qui doit donner :
 assert tri_iteratif([41, 55, 21, 18, 12, 6, 25]) == [6, 12, 18, 21, 25, 41, 55]
 ```
 
-{{% note normal %}}
+{{< note normal >}}
 
 On rappelle que l’instruction
 
@@ -142,9 +140,9 @@ a, b = b, a
 
 échange les contenus de `a` et de `b`.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
 ```python
 def tri_iteratif(tab):
@@ -158,4 +156,4 @@ def tri_iteratif(tab):
     return tab
 ```
 
-{{% /solution %}}
+{{< /solution >}}

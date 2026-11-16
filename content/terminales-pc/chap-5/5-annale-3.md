@@ -1,16 +1,14 @@
 ---
 title: "Condensateur et éclairage d'un train miniature"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-11-06T12:41:50+04:00
 draft: false
 toc: true
 tags: ["Annale", "Courant électrique", "Tension", "Potentiel électrique", "Générateur", "Dipôle", "Branche", "Maille", "Nœud", "Loi des nœuds", "Loi des mailles", "Loi d'Ohm", "Résistance","Condensateur", "Équation différentielle linéaire à coefficients constants"]
 categories: ["Physique", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 500
 ---
 
 Le modélisme ferroviaire est une activité qui passionne petits et grands.  
@@ -67,13 +65,13 @@ Pendant le soubresaut le condensateur se décharge dans les lampes. Sur le circu
 - durée du soubresaut : $\Delta t_{\text{soubresaut}} = \pu{0,10 s}$.
 
 4. Montrer que, pendant le soubresaut, l'équation différentielle relative à la tension $u_C$ aux bornes du condensateur est de la forme :
-$$ u_C + (2R + R_0) C\\, \dfrac{\mathrm{d}u_C}{ \mathrm{dt} } = 0 $$
+$$ u_C + (2R + R_0) C\, \dfrac{\mathrm{d}u_C}{ \mathrm{dt} } = 0 $$
 
-5. Vérifier que $u_C(t) = A\\, e^{ - \dfrac{t}{(2R + R_0) C} }$ est une solution possible de l’équation différentielle précédente et déterminer la valeur de $A$.
+5. Vérifier que $u_C(t) = A\, e^{ - \dfrac{t}{(2R + R_0) C} }$ est une solution possible de l’équation différentielle précédente et déterminer la valeur de $A$.
 
 6. Donner l’expression de l’intensité $i(t)$ du courant. En déduire le signe de l’intensité $i(t)$.
 
-L’expression de la puissance instantanée consommée par chaque lampe en fonction de l’intensité  du courant est donnée par la relation : $p(t) = R\\, i^2(t)$.
+L’expression de la puissance instantanée consommée par chaque lampe en fonction de l’intensité  du courant est donnée par la relation : $p(t) = R\, i^2(t)$.
 
 7. On propose sur les **figures 5**, **6** et **7** de l'annexe, trois graphiques pouvant représenter l'allure  de l'évolution de la puissance instantanée consommée par chaque lampe en fonction du temps, au cours de la décharge du condensateur.
 En utilisant l'expression de $i(t)$ et en justifiant, choisir la seule figure pouvant représenter cette évolution.
@@ -99,7 +97,7 @@ Au début du soubresaut, à $t = \pu{0 s}$, l'intensité prend sa valeur maximal
 #### Données
 
 - Conducteur ohmique de résistance $R_3 = \pu{1,5 k\Omega}$ ;
-- On admet que la durée d'éclairement des diodes est de l'ordre de $$\Delta t = (R_3+R_0)C \\, \ln \left( \dfrac{I_{\text{max}}}{I_\text{seuil}}  \right)$$
+- On admet que la durée d'éclairement des diodes est de l'ordre de $$\Delta t = (R_3+R_0)C \, \ln \left( \dfrac{I_{\text{max}}}{I_\text{seuil}}  \right)$$
 
 10. Montrer par une analyse dimensionnelle que $\Delta t$ a bien la dimension d'un temps.
 

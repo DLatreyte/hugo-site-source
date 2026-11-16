@@ -1,17 +1,15 @@
 ---
 title: "Contrôle du flot d'exécution d'un programme : l'alternative"
 subtitle: "Chapitre 4,1"
-author: ""
-type: ""
 date: 2021-08-27T16:34:09+04:00
 draft: false
 toc: true
 tags: ["Python", "Alternative", "Structure conditionnelle", "Booléen"]
 categories: ["Première Spé NSI"]
-image: ""
 solution_est_visible: false
 auto_numbering: true
 mathjax: true
+weight: 100
 ---
 
 ## Booléens et expressions booléennes
@@ -56,7 +54,7 @@ Une **fonction booléenne** est une *fonction qui fait correspondre à un ou plu
 
 <center>
 
-{{% columns %}}
+{{< columns >}}
 
 | $A$ | $B$ | $\text{Et}(A, B)$ |
 | :----: | :----: | :----: | 
@@ -65,7 +63,7 @@ Une **fonction booléenne** est une *fonction qui fait correspondre à un ou plu
 | Faux | Vrai | Faux |
 | Faux | Faux | Faux |
 
-{{% column %}}
+{{< column >}}
 
 | $A$ | $B$ | $\text{Ou}(A, B)$ |
 | :----: | :----: | :----: | 
@@ -75,7 +73,7 @@ Une **fonction booléenne** est une *fonction qui fait correspondre à un ou plu
 | Faux | Faux | Faux |
 
 
-{{% endcolumns %}}
+{{< endcolumns >}}
 
 | $A$ | $\text{Non}(A)$ |
 | :----: | :----: |
@@ -140,7 +138,7 @@ L'**alternative simple** `SI – ALORS`  est une structure de contrôle qui perm
 
 {{< /note  >}}
 
-{{% mermaid %}}
+{{< mermaid >}}
 graph TD
     A[Début du programme] -->|Évolution séquentielle| B(Instruction juste avant l'alternative)
     B --> C{Expression booléenne}
@@ -148,7 +146,7 @@ graph TD
     C -->|Valeur : Faux| E(Instruction après l'alternative)
     D --> E
     E --> |Évolution séquentielle| F[Fin du programme]
-{{% /mermaid %}}
+{{< /mermaid >}}
 
 #### Écriture en pseudo-code
 
@@ -178,7 +176,7 @@ L'alternative `SI – ALORS – SINON` est une structure de contrôle qui permet
 
 {{< /note >}}
 
-{{% mermaid %}}
+{{< mermaid >}}
 graph TD
     A[Début du programme] -->|Évolution séquentielle| B(Instruction juste avant l'alternative)
     B --> C{Expression booléenne}
@@ -187,7 +185,7 @@ graph TD
     D --> E(Instruction après l'alternative)
     G --> E
     E --> |Évolution séquentielle| F[Fin du programme]
-{{% /mermaid %}}
+{{< /mermaid >}}
 
 #### Écriture en pseudo-code
 
@@ -218,7 +216,7 @@ L'alternative `SI – SINON SI – … (– SINON)` est une structure de contrô
 
 {{< /note >}}
 
-{{% mermaid %}}
+{{< mermaid >}}
 graph TD
     A[Début du programme] -->|Évolution séquentielle| B(Instruction juste avant l'alternative)
     B --> C{Expression booléenne 1}
@@ -230,7 +228,7 @@ graph TD
     H --> E
     I --> E
     E --> |Évolution séquentielle| F[Fin du programme]
-{{% /mermaid %}}
+{{< /mermaid >}}
 
 #### Écriture en pseudo-code
 
@@ -265,7 +263,7 @@ La structure `SI – SINON SI – … (– SINON)` n'est pas aussi fondamentale 
 
 #### Exemple
 
-{{% columns %}}
+{{< columns >}}
 
 ```bash
 ENTRÉE : i, j : Nombres
@@ -282,7 +280,7 @@ FIN SI
 RETOURNE message
 ```
 
-{{% column %}}
+{{< column >}}
 
 ```bash
 ENTRÉE : i, j : Nombres
@@ -301,7 +299,7 @@ FIN SI
 RETOURNE message
 ```
 
-{{% endcolumns %}}
+{{< endcolumns >}}
 
 ## Exercices
 
@@ -354,7 +352,7 @@ def est_positif(x: float) -> bool:
 
 {{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def est_positif(x: float) -> bool:
@@ -366,7 +364,7 @@ def est_positif(x: float) -> bool:
 
 Remarque
 : Comme le prochain exercice va le souligner, tester l'égalité de deux nombres flottants n'est pas du tout une bonne idée en programmation.
-{{% /solution %}}
+{{< /solution >}}
 
 {{< note exercise >}}
 #### Exercice 4 : Déterminer si deux nombres sont égaux
@@ -395,7 +393,7 @@ def est_egal(x: float, y: float) -> bool:
 ``` 
 {{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def est_egal(x: float, y: float) -> bool:
@@ -415,7 +413,7 @@ def est_egal(x: float, y: float) -> bool:
     return egaux
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 {{< note exercise >}}
 #### Exercice 5 : Vérifier qu'un nombre entier est un nombre pair
@@ -428,7 +426,7 @@ def est_pair(n: int) -> bool:
 
 {{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def est_pair(n: int) -> bool:
@@ -436,9 +434,9 @@ def est_pair(n: int) -> bool:
     return n % 2 == 0
 ``` 
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 #### Exercice 6 : Vérifier qu'un nombre est un nombre entier
 
 Écrire un prédicat nommé `est_entier` dont la spécification est :
@@ -450,9 +448,9 @@ def est_entier(n: int) -> bool:
 Remarque
 : Il existe plusieurs façons de résoudre ce problème : utiliser la fonction intégrée `int` ou la fonction du module `math` nommée `floor` (rechercher son action à l'aide de la fonction `help`).
 Il est aussi possible d'utiliser la fonction `isinstance` et le type intégré `int`, comme dans l'exemple de la première section de ce cours.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def est_entier(n: int) -> bool:
@@ -490,7 +488,7 @@ def est_entier(n: int) -> bool:
     return entier
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 {{< note exercise >}}
 #### Exercice 7 : Vérifier qu'un nombre est un nombre entier naturel
@@ -511,7 +509,7 @@ def est_naturel(n: int) -> bool:
 La fonction `est_naturel` doit réaliser son traitement en utilisant les fonctions `est_positif` et `est_entier` des exercices précédents.
 {{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 ```python
 def est_naturel(n: int) -> bool:
     """Détermine si un nombre entier est un entier naturel.
@@ -530,7 +528,7 @@ def est_naturel(n: int) -> bool:
 
     return naturel
 ```
-{{% /solution %}}
+{{< /solution >}}
 
 {{< note exercise >}}
 #### Exercice 8 : Vérifier qu'un nombre est un nombre entier naturel (v2)
@@ -558,7 +556,7 @@ Prendre pour exemple le code à la fin de la première section de ce cours.
 
 {{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python 
 def est_naturel_2(n: int) -> bool:
@@ -581,7 +579,7 @@ def est_naturel_2(n: int) -> bool:
     return est_naturel(n)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 {{< note exercise >}}
 #### Exercice 9 : Déterminer qu'un nombre est plus grand qu'un autre
@@ -593,7 +591,7 @@ def est_plus_grand(x: float, y: float) -> bool:
 ```
 {{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def est_plus_grand(x: float, y: float) -> bool:
@@ -601,9 +599,9 @@ def est_plus_grand(x: float, y: float) -> bool:
     return x > y
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 #### Exercice 10 : Déterminer le plus grand entre deux nombres
 
 Écrire une fonction nommée `le_plus_grand` dont la spécification est :
@@ -614,9 +612,9 @@ def le_plus_grand(x: float, y: float) -> float:
 Remarque
 : Cette fonction doit utiliser la fonction `est_plus_grand` de l'exercice précédent.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def le_plus_grand(x: float, y: float) -> float:
@@ -629,9 +627,9 @@ def le_plus_grand(x: float, y: float) -> float:
     return plus_grand
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 #### Exercice 11 : Détermination de la valeur absolue d'un nombre
 
 Écrire une fonction nommée `valeur_absolue` dont la spécification est :
@@ -641,9 +639,9 @@ def valeur_absolue(x: float) -> float:
 ```
 Cette fonction devra utiliser le prédicat `est_positif` de l'exercice 3.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def valeur_absolue(x: float) -> float: 
@@ -657,19 +655,19 @@ def valeur_absolue(x: float) -> float:
     return valeur
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 #### Exercice 12 : Structures imbriquées
 
 Écrire deux fonctions qui implémentent les deux algorithmes donnés à la section 3.5 dans ce cours.
 
 *Les spécifications de ces fonctions ne devront pas être oubliées.*
 
-{{% /note %}}
+{{< /note >}}
 
 
-{{% note exercise %}}
+{{< note exercise >}}
 #### Exercice 13 : Message en fonction d'une note
 
 Écrire une fonction (*et sa spécification !*) nommée `synthese` qui attend une moyenne générale au BAC et qui retourne :
@@ -680,9 +678,9 @@ def valeur_absolue(x: float) -> float:
 - « Admis, Mention Bien » si elle est comprise entre 14 (inclus) et 16 (exclus) ;
 - « Admis, Mention Très Bien » si elle est supérieure à 16 (inclus).
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 #### Exercice 14 : Détermination des racines d'un polynôme du second degré dans $\mathbb{R}$
 
 
@@ -699,7 +697,7 @@ Pour l'équation $a x^2 + b x + c = 0$, où $a$, $b$ et $c$ sont des nombres ré
     <span style="margin-left: 2em;">⏤</span> $b^2 - 4 a c > 0 ⟹$ deux solutions :   
     $$
     \begin{cases}
-        x_1 = \dfrac{-b + \sqrt(b^2-4 a c)}{2 a} \\\\
+        x_1 = \dfrac{-b + \sqrt(b^2-4 a c)}{2 a} \\
         x_2 = \dfrac{-b - \sqrt(b^2-4 a c)}{2 a}
     \end{cases}
     $$
@@ -708,10 +706,10 @@ Pour l'équation $a x^2 + b x + c = 0$, où $a$, $b$ et $c$ sont des nombres ré
         x = -\dfrac{b}{2a}
     $$
     <span style="margin-left: 2em;">⏤</span> $b^2 - 4 a c < 0 ⟹$ pas de solution dans l'ensemble des réels
-{{% /note %}}
+{{< /note >}}
 
 
-{{% note exercise %}}
+{{< note exercise >}}
 #### Exercice 15 : Détermination d'un prix TTC avec remise
 
 Écrire une fonction (*et sa spécification !*) nommée `calcul_prix` qui attend un prix hors taxe et qui calcule le prix TTC correspondant (avec un taux de TVA de 19,6 %), auquel doit être appliquée une remise qui dépend de sa valeur :
@@ -721,10 +719,10 @@ Pour l'équation $a x^2 + b x + c = 0$, où $a$, $b$ et $c$ sont des nombres ré
 -  5 % pour un montant TTC supérieur ou égal à 5000 euros.
 
 La remise doit être calculée par l'appel d'une fonction nommée calcul_remise (penser à écrire sa spécification).
-{{% /note %}}
+{{< /note >}}
 
 
-{{% note exercise %}}
+{{< note exercise >}}
 #### Exercice 16 : Année bissextile
 
 Écrire un prédicat nommé `est_bissextile` dont la spécification est :
@@ -738,4 +736,4 @@ def est_bissextile(n: int) -> bool:
 Remarque 
 :Une année est bissextile si son millésime est multiple de 4. Cependant, les années dont le millésime est multiple de 100 ne sont bissextiles que si c'est aussi un multiple de 400 (1900 n'était pas bissextile, 2000 l'a été).
 
-{{% /note %}}
+{{< /note >}}

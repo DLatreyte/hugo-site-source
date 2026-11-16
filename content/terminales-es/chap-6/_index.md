@@ -1,17 +1,14 @@
 ---
 title: "Les atouts de l'électricité"
 subtitle: "Chapitre 2"
-author: ""
-type: ""
 date: 2021-01-07T04:15:49+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 30
 ---
 
 ## Au programme

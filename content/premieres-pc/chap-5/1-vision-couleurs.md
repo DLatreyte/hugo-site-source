@@ -1,16 +1,14 @@
 ---
 title: "Vision et couleurs"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-11-08T12:54:05+04:00
 draft: false
 toc: true
 tags: ["Cône", "Bâtonnet", "Rétine"]
 categories: ["Physique", "Premières Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 100
 ---
 
 ## Les images se forment sur la rétine
@@ -50,16 +48,16 @@ Quelques zones de la rétine&nbsp;:
 
 <div style="clear: both; "> </div>
 
-{{% note normal %}}
+{{< note normal >}}
 En vision photopique, l’œil est peu sensible au bleu.
-{{% /note %}}
+{{< /note >}}
 
 ## Répartition des bâtonnets sur la rétine
 
 <img src="/premieres-pc/chap-5/chap-5-1-5.png" alt="" width="85%" />
-{{% note normal %}}
+{{< note normal >}}
 La densité de bâtonnets est maximale pour une direction correspondant à un angle de 17°.
-{{% /note %}}
+{{< /note >}}
 
 ## Bâtonnets
 

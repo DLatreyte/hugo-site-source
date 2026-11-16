@@ -1,18 +1,15 @@
 ---
 title: "Évolution d'un système chimique"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-01-05T18:03:18+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
 mathjax: true
-layout: "single"
+weight: 60
 ---
 
 ## Au programme

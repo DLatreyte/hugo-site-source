@@ -1,16 +1,14 @@
 ---
 title: "Autour de la suite de Fibonacci"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-02-25T04:49:20+04:00
 draft: false
 toc: true
 tags: ["Récursivité", "Récursivité terminale", "Récursivité enveloppée", "Programmation dynamique", "Mémoïsation"]
 categories: ["Terminales Spé NSI"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 100
 ---
 
 ## Rappel : récursivité terminale
@@ -36,7 +34,7 @@ $$
         """
     ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def fact_env(n: int) -> int:
@@ -58,9 +56,9 @@ if __name__ == "__main__":
     assert fact_env(8) == 40320
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note normal %}}
+{{< note normal >}}
 En informatique, la **récursion terminale**, aussi appelée, récursion finale, est un *cas particulier de récursivité assimilée à une itération*.\
 Une fonction à récursivité terminale (dite tail-recursive en anglais) est une fonction où l'**appel récursif est la dernière instruction à être évaluée**. Cette instruction est alors nécessairement « pure », c'est-à-dire qu'elle consiste en un simple appel à la fonction, et jamais à un calcul ou une composition.\
 Les algorithmes récursifs exprimés à l'aide de fonctions à récursion terminale profitent donc d'une optimisation de la pile d'exécution.\
@@ -69,7 +67,7 @@ Cette réorganisation économise de l'espace mémoire car aucun état, sauf l'ad
 <div style="text-align: right;">
     Wikipedia
 </div>
-{{% /note %}}
+{{< /note >}}
 
 2. Définir la fonction `fact_term` qui calcule la factorielle d'un entier naturel $n$, *sans oublier le jeu de tests*.\
     La spécification de la fonction est :
@@ -94,7 +92,7 @@ Cette réorganisation économise de l'espace mémoire car aucun état, sauf l'ad
 
     La fonction `_fact` met en œuvre un raisonnement basé sur la récursivité terminale.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def fact_term(n: int) -> int:
@@ -123,7 +121,7 @@ if __name__ == "__main__":
     assert fact_term(8) == 40320
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Autour de la suite de Fibonacci
 
@@ -151,7 +149,7 @@ $$
     """
     ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def fibo_iter(n: int) -> int:
@@ -181,15 +179,15 @@ if __name__ == "__main__":
     assert fibo_iter(16) == 987
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 4. Quelle est la complexité de l'algorithme itératif ?
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 L'algorithme comporte une boucle, la complexité est donc en $O(n)$.
 
-{{% /solution %}}
+{{< /solution >}}
 
 5. Définir la fonction `fibo_head` qui calcule le terme de rang $n$ de la suite de Fibonacci, *sans oublier le jeu de tests*. Le raisonnement mis en œuvre doit être récursif.\
     La spécification de la fonction est :
@@ -203,7 +201,7 @@ L'algorithme comporte une boucle, la complexité est donc en $O(n)$.
     """
     ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def fibo_head(n: int) -> int:
@@ -229,12 +227,12 @@ if __name__ == "__main__":
     assert fibo_head(16) == 987
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 6. Écrire l'arbre des appels récursifs pour $n=5$. En déduire la complexité de l'algorithme récursif.\
 Quelle est la raison d'une telle complexité ?
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 <img src="/terminales-nsi/chap-14/chap-14-1/chap-14-1-1.svg" alt="" width="100%" />
 
@@ -244,7 +242,7 @@ Quelle est la raison d'une telle complexité ?
 
 La complexité est donc en $O(2^n)$.
 
-{{% /solution %}}
+{{< /solution >}}
 
 7. En prenant pour exemple la définition de la fonction à la question 2. et l'algorithme itératif, à la question 3., définir la fonction `fib_tail` qui calcule le terme de rang $n$ de la suite de Fibonacci à l'aide d'un algorithme récursif terminal.\
     La spécification de la fonction `fib_tail` est :
@@ -267,7 +265,7 @@ La complexité est donc en $O(2^n)$.
         """
     ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def fibo_tail(n: int) -> int:
@@ -295,19 +293,19 @@ if __name__ == "__main__":
     assert fibo_tail(16) == 987
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 8. Quelle est la complexité de cet algorithme ?
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 La complexité de l’algorithme récursif terminal, en nombre d’additions, est donnée par la récurrence $T(n) = 1+T(n−1)$. On a donc $T(n) = n−1$ pour `_fibo_tail`, et par extension pour `fibo_tail`.
 
-{{% /solution %}}
+{{< /solution >}}
 
 ### Programmation dynamique
 
-{{% note tip %}}
+{{< note tip >}}
 En informatique, la **programmation dynamique** est une méthode algorithmique pour résoudre des **problèmes d'optimisation**. Le concept a été introduit au début des années 1950 par Richard Bellman.
 
 *La programmation dynamique consiste à résoudre un problème en le décomposant en sous-problèmes, puis à résoudre les sous-problèmes, des plus petits aux plus grands **en stockant les résultats intermédiaires**.*
@@ -315,9 +313,9 @@ En informatique, la **programmation dynamique** est une méthode algorithmique p
 La programmation dynamique s'appuie sur le **principe d'optimalité de Bellman** : *une solution optimale d'un problème s'obtient en combinant des solutions optimales à des sous-problèmes*.
 
 La méthode de **programmation dynamique**, comme la méthode **diviser pour régner**, résout des problèmes en combinant des solutions de sous-problèmes. *Les algorithmes diviser-pour-régner partitionnent le problème en **sous-problèmes indépendants** qu’ils résolvent récursivement, puis combinent leurs solutions pour résoudre le problème initial. La méthode diviser-pour-régner est inefficace si on doit résoudre plusieurs fois le même sous-problème.*
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 La programmation dynamique est utilisée pour résoudre des **problèmes d'optimisation**.
 La conception d’un algorithme de programmation dynamique est typiquement découpée en quatre étapes :
 
@@ -326,36 +324,36 @@ La conception d’un algorithme de programmation dynamique est typiquement déco
 - Calculer la valeur d’une solution optimale.
 - Construire une solution optimale à partir des informations calculées.
 La dernière étape est utile pour calculer une **solution optimale**, et pas seulement la valeur optimale. Un problème d'optimisation peut avoir de nombreuses solutions. Chaque solution a une valeur, et on souhaite trouver une solution ayant la valeur optimale. *Une telle solution optimale au problème n'est pas forcément unique, c'est sa valeur qui l'est*.
-{{% /note %}}
+{{< /note >}}
 
 Dans le cas du calcul du terme de rang $n$ de la suite de Fibonacci à l'aide d'un raisonnement récursif, le problème a pour origine les multiples calculs de chacun des sous-termes nécessaires. *La programmation dynamique consiste alors à stocker les valeurs des sous-problèmes pour éviter les recalculs*.
 
-{{% note tip %}}
+{{< note tip >}}
 Il existe alors deux méthodes pour calculer effectivement une solution : la **méthode ascendante** (**Bottom-up approach**) et la **méthode descendante** (**Top-down approach**).
 
 - Dans la **méthode ascendante**, on commence par calculer des solutions pour les sous-problèmes les plus petits, puis, de proche en proche, on calcule les solutions des problèmes en utilisant le principe d'optimalité et on mémorise les résultats dans un tableau ou un dictionnaire `F`.
 - Dans la **méthode descendante**, on écrit un algorithme récursif mais on utilise la **mémoïsation** pour ne pas résoudre plusieurs fois le même problème, c'est-à-dire que l'on stocke dans un tableau ou un dictionnaire `F` les résultats des appels récursifs.
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 Une **fonction mémoïsée** *stocke les valeurs renvoyées par ses appels précédents dans une structure de données adaptée et, lorsqu'elle est appelée à nouveau avec les mêmes paramètres, renvoie la valeur stockée au lieu de la recalculer*. Une fonction peut être mémoïsée seulement si elle est **pure**, c'est-à-dire *si sa valeur de retour ne dépend que de la valeur de ses arguments, sans effet de bord*. En ce cas, la transparence référentielle permet de remplacer l'appel de la fonction directement par sa valeur. À la différence d'une fonction tabulée, où la table est statique, une fonction mémoïsée repose sur une table dynamique remplie à la volée.
 
 *La mémoïsation est une façon de diminuer le temps de calcul d'une fonction, au prix d'une occupation mémoire plus importante. La mémoïsation modifie donc la complexité d'une fonction, en temps comme en espace.*
-{{% /note %}}
+{{< /note >}}
 
 ### Résolutions du problème à l'aide de la programmation dynamique
 
 9. Quel est l'intérêt des structures de données tableau ou dictionnaire pour le stockage des valeurs des sous-problèmes ?
 
 10. Écrire l'arbre des appels récursifs pour $n=5$, lorsque la technique de mémoïsation est mise en œuvre. Le comparer à l'arbre obtenu à la question 6.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 <img src="/terminales-nsi/chap-14/chap-14-1/chap-14-1-2.svg" alt="" width="60%" />
 
-{{% /solution %}}
+{{< /solution >}}
 
 11. Définir la fonction `fibo_memo` qui calcule le terme de rang $n$ de la suite de Fibonacci, *sans oublier le jeu de tests*. Le raisonnement doit être récursif et mettre en œuvre la technique de mémoïsation (méthode descendante).
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def fibo_memo1(n: int) -> int:
@@ -394,16 +392,16 @@ def fibo_memo2(n: int, tab: list[int] = [0, 1]) -> int:
     return calcul
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 12. Quelle est la complexité de l'algorithme avec mémoïsation ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 13. Définir la fonction `fibo_up` qui calcule le terme de rang $n$ de la suite de Fibonacci, *sans oublier le jeu de tests*. Le raisonnement doit mettre en œuvre la méthode ascendante du problème.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def fibo_up(n: int) -> int:
@@ -419,7 +417,7 @@ def fibo_up(n: int) -> int:
     return tab[n]
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Application : nombre de façon d'atteindre la nième marche d'un escalier
 
@@ -427,7 +425,7 @@ On cherche le nombre de méthodes différentes qui permettent d'atteindre la ni�
 
 1. Déterminer la relation de récurrence, sachant que l'on note $u_n$ le nombre de méthodes permettant d'atteindre la nième marche.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 $$
     u_n =
@@ -439,12 +437,12 @@ $$
     \end{cases}
 $$
 
-{{% /solution %}}
+{{< /solution >}}
 
 1. Quel est l’écueil à éviter lorsqu’on programme le calcul du n-ième terme de la suite précédente de manière récursive ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Il faut éviter que les appels récursifs calculent plusieurs fois les mêmes valeurs.
-{{% /solution %}}
+{{< /solution >}}
 
 2. Proposer une version itérative du calcul de $u_n$.
 
@@ -458,7 +456,7 @@ def nbre_methodes_iter(n: int) -> int:
     """
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def nbre_methodes_iter(n: int) -> int:
@@ -486,7 +484,7 @@ def nbre_methodes_iter(n: int) -> int:
         return w
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 3. Proposer une version récursive du calcul de $u_n$.
 
@@ -500,7 +498,7 @@ def nbre_methodes_rec(n: int) -> int:
     """
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def nbre_methodes_rec(n: int) -> int:
@@ -522,7 +520,7 @@ def nbre_methodes_rec(n: int) -> int:
     )
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 4. Proposer une version récursive efficace du calcul de $u_n$ qui utilise la mémoïsation.
 
@@ -536,7 +534,7 @@ def nbre_methodes_memo(n: int) -> int:
     """
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def nbre_methodes_memo(n: int) -> int:
@@ -558,4 +556,4 @@ def nbre_methodes_memo(n: int) -> int:
     return _nbre(n)
 ```
 
-{{% /solution %}}
+{{< /solution >}}

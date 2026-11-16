@@ -1,21 +1,19 @@
 ---
 title: "Exercices de programmation objet"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-01-13T19:12:34+04:00
 draft: false
 toc: true
 tags: ["Objet", "Classe", "Attribut", "Méthode", "Instance", "Encapsulation"]
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 600
 ---
 
-{{% note warning %}}
+{{< note warning >}}
 Chaque méthode définie devra être accompagnée de sa spécification.
-{{% /note %}}
+{{< /note >}}
 
 ## Manipulation de points
 
@@ -26,7 +24,7 @@ On considère la classe nommée `Point` ayant les attributs suivants :
 
 1. Définir la class `Point` et le constructeur `__init__` permettant d'initialiser les deux attributs.
 
-{{% note normal %}}
+{{< note normal >}}
 
 L'**encapsulation** est un concept fondamental de la conception objet. L'idée est de *ne pas laisser accessibles les attributs depuis l'extérieur de la classe/objet* ; les attributs sont alors dits **privés** (ou **protégés** si l'accès est nécessaire dans une sous-classe).
 
@@ -43,7 +41,7 @@ En Python, par convention, le nom des attributs privés commence par `__`.
 
 L'*accès et la modification* des attributs nécessitent alors la définition de méthodes appellées **getters** et **setters**.\
 Les noms de ces méthodes sont, par exemple pour l'attribut `__abs`, `get_abs` et `set_abs`.
-{{% /note %}}
+{{< /note >}}
 
 2. Définir les getters et les setters pour les deux attributs.\
 Modifier la méthode `__init__` de façon à ce qu'elle utilise les setters.
@@ -53,16 +51,16 @@ Modifier la méthode `__init__` de façon à ce qu'elle utilise les setters.
 4. Définir la méthode `calcul_distance` qui calcule la distance du point courant à un point passé en argument.\
 La signature de la fonction est `calcul_distance(self: Point, p: Point) -> float`.
 
-{{% note normal %}}
-On rappelle que la distance entre deux points $A(x\_1, y\_1)$ et $B(x\_2, y\_2)$ est égale à : $\sqrt{(x\_2 - x\_1)^2 + (y\_2 - y\_1)^2 }$.
-{{% /note %}}
+{{< note normal >}}
+On rappelle que la distance entre deux points $A(x_1, y_1)$ et $B(x_2, y_2)$ est égale à : $\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 }$.
+{{< /note >}}
 
 5. Définir la méthode `calcul_milieu` qui retourne un objet situé à égale distance du point courant et d'un point passé en argument.\
 La signature de la fonction est `calcul_milieu(self: Point, p: Point) -> Point`.
 
-{{% note normal %}}
-On rappelle que la point situé à égale distance de deux points $A(x\_1, y\_1)$ et $B(x\_2, y\_2)$ a pour coordonnées $x\_M = \dfrac{x\_1 + x\_2}{2}$ et $y\_M = \dfrac{y\_1 + y\_2}{2}$.
-{{% /note %}}
+{{< note normal >}}
+On rappelle que la point situé à égale distance de deux points $A(x_1, y_1)$ et $B(x_2, y_2)$ a pour coordonnées $x_M = \dfrac{x_1 + x_2}{2}$ et $y_M = \dfrac{y_1 + y_2}{2}$.
+{{< /note >}}
 
 On considère maintenant la classe nommée `TroisPoints` ayant les attributs suivants :
 
@@ -78,21 +76,21 @@ Modifier la méthode `__init__` de façon à ce qu'elle utilise les setters.
 8. Définir la méthode `sont_alignes` qui retourne `True` si les trois points sont alignés, `False` sinon.\
 La signature de la fonction est `sont_alignes(self) -> True`.
 
-{{% note normal %}}
+{{< note normal >}}
 On rappelle que trois points $A$, $B$ et $C$ sont alignés si $AB=AC+BC$ ou si $AC=AB+BC$ ou si $BC=AC+AB$ ($AB$, $AC$ et $BC$ sont des distances).
-{{% /note %}}
+{{< /note >}}
 
 9. Définir la méthode `est_isocele` qui retourne `True` si les trois points forment un triangle isocèle et `False` sinon.
 
-{{% note normal %}}
+{{< note normal >}}
 On rappelle qu'un triangle est isocèle si $AB=AC$ ou $AB=BC$ ou $AC=BC$ ($AB$, $AC$ et $BC$ sont des distances).
-{{% /note %}}
+{{< /note >}}
 
 10. **(Facultatif car HP)** Implémenter une version statique (méthodes décorées par le décorateur `@staticmethod`) des deux méthodes `calcul_distance` et `calcul_milieu`.
 
-{{% note normal %}}
+{{< note normal >}}
 {{< remote "Pour découvrir ce que sont les méthodes de classe, les méthodes statiques" "https://www.geeksforgeeks.org/class-method-vs-static-method-python/" >}}
-{{% /note %}}
+{{< /note >}}
 
 11. Tester tous les objets et méthodes depuis la fonction `main` du programme.
 

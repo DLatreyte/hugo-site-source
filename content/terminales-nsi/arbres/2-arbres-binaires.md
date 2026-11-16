@@ -1,24 +1,22 @@
 ---
 title: "Les arbres binaires"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-11-05T03:38:41+04:00
 draft: false
 toc: true
 tags: ["Arbres", "Arbres binaires"]
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
 mathjax: true
+weight: 200
 ---
 
 ## Arbres binaires
 
 ### Définition
 
-{{% note tip %}}
+{{< note tip >}}
 
 Un **arbre binaire** est une **structure de données abstraite** formée d'un ensemble de nœuds organisés hiérarchiquement selon la définition par récurrence suivante :
 
@@ -29,7 +27,7 @@ Un arbre binaire est :
 
 On note $T(r,g,d)$ l'arbre non vide dont la racine $r$ (on peut aussi indiquer l'étiquette de cette racine).
 
-{{% /note %}}
+{{< /note >}}
 
 ### Vocabulaire et remarques
 
@@ -40,15 +38,15 @@ On note $T(r,g,d)$ l'arbre non vide dont la racine $r$ (on peut aussi indiquer l
 
 ### Propriétés
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Position des sous-arbres
 
 - La position des sous-arbres gauche et droite est fondamentale : $$T(r,g,d) \neq T(r,d,g)$$
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Taille d'un arbre
 
@@ -57,9 +55,9 @@ On note $T(r,g,d)$ l'arbre non vide dont la racine $r$ (on peut aussi indiquer l
   - $n(E)=0$
   - $n(T)=1+n(g)+n(d)$
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Profondeur d'un nœud
 
@@ -69,15 +67,15 @@ On note $T(r,g,d)$ l'arbre non vide dont la racine $r$ (on peut aussi indiquer l
   - $h(n)=1+h(\text{parent de }n)$
 - **La profondeur d'un nœud dans un arbre est donc le nombre d'arrêtes qu'il faut parcourir, depuis la racine, pour parvenir au nœud.**  
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note warning %}}
+{{< note warning >}}
 
 La définition de la profondeur d'un nœud peut varier ! Il est impératif de vérifier celle choisie avant tout travail.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Hauteur d'un arbre
 
@@ -87,19 +85,19 @@ La hauteur d'un arbre est aussi sa profondeur.
   - $h(E)=-1$ si l'arbre est vide ;
   - $h(T)=1+\mathrm{max}(h(g), h(d))$
 
-{{% /note %}}
+{{< /note >}}
 
 #### Remarque
 
 On peut aussi définir la hauteur d'un nœud : *la **hauteur** d'un nœud est la distance entre ce nœud et la feuille la plus profonde ayant une relation de descendance avec ce nœud*.  
 
-{{% note warning %}}
+{{< note warning >}}
 
 La définition de la hauteur d'un arbre peut varier ! Il est impératif de vérifier celle choisie avant tout travail.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Relation entre le nombre de nœuds $n$ et la hauteur d'un arbre
 
@@ -108,21 +106,21 @@ La définition de la hauteur d'un arbre peut varier ! Il est impératif de véri
 
 - le nombre de sous-arbres vides de $T$ est $n+1$.
 
-{{% /note %}}
+{{< /note >}}
 
 1. Dans quel cas a-t-on $N = h+1$ ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 On a $N = h+1$ lorsque chaque nœud ne possède qu'un seul nœud fils. Il s'agit donc d'une structure linéaire (liste).
-{{% /solution %}}
+{{< /solution >}}
 
 2. Dans quel cas a-t-on $N = 2^{h+1} - 1$ ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 On a $N = 2^{h+1} - 1$ lorsque l'arbre binaire est parfait, c'est à dire lorsque toutes les feuilles ont la même profondeur.
-{{% /solution %}}
+{{< /solution >}}
 
 ## Spécification d'un arbre binaire
 
-{{% note tip %}}
+{{< note tip >}}
 
 - **Créer** un nœud (type)&nbsp;:
   - fonction&nbsp;: `creer_nœud()` $\longrightarrow$ retourne un nœud &nbsp;;
@@ -146,17 +144,17 @@ On a $N = 2^{h+1} - 1$ lorsque l'arbre binaire est parfait, c'est à dire lorsqu
 - **Écrire** dans le champ `fils_droit`&nbsp;:
   - fonction&nbsp;: `modifier_filsD(n: Noeud[T], m: Noeud[T])` $\longrightarrow$ `None`&nbsp;;
   - complexité&nbsp;: 1 opération élémentaire.
-{{% /note %}}
+{{< /note >}}
 
-{{% note warning %}}
+{{< note warning >}}
 *Tout comme on a désigné les listes chaînées par leur première cellule, on va désigner les arbres par leur nœud racine.*
-{{% /note %}}
+{{< /note >}}
 
 ## Implémentation de la spécification en Python à l'aide d'une classe
 
 Il existe de nombreuses façons de d'implémenter la structure d'arbre en Python. Dans cette partie on va utiliser une classe.
 
-{{% note warning %}}
+{{< note warning >}}
 
 Le paradigme de programmation utilisé ci-dessous est le **paradigme impératif** : *on crée dans un premier temps une structure élémentaire qui ne sert qu'à stocker les différentes valeurs et on définit ensuite des fonctions qui manipulent cette structure.*
 
@@ -170,11 +168,11 @@ La structure utilisée peut être :
 
 On ne créera pas de structure « arbre binaire » (accompagnée de méthodes) dans ce document.
 
-{{% /note %}}
+{{< /note >}}
 
 2. Écrire le code de la classe `Noeud` respectant la spécification. Les trois attributs seront nommés `valeur`, `gauche`, `droit`.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 from __future__ import annotations
@@ -192,7 +190,7 @@ class Noeud:
         self.droit = d
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 3. Écrire le code permettant de construire l'arbre :
 {{< mermaid >}}
@@ -207,7 +205,7 @@ graph TD
   D --- F(None)
 {{< /mermaid >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 arbre_1 = Noeud("A", Noeud("B", None, Noeud("C")), Noeud("D"))
@@ -222,7 +220,7 @@ abr1.droit = Noeud("D")
 abr1.gauche.droit = Noeud("C")
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 4. Quel arbre correspond à ce code ?
 
@@ -238,18 +236,18 @@ abr = Noeud(
 )
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 <img src="/terminales-nsi/chap-9/chap-9-2-1.svg" alt="" width="100%" />
 
 <br />
 
 <img src="/terminales-nsi/chap-9/chap-9-2-2.png" alt="" width="100%" />
-{{% /note %}}
+{{< /note >}}
 
 Écrire le code différemment en créant les nœuds les uns après les autres.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 abr = Noeud("r")
@@ -266,7 +264,7 @@ abr.droit.gauche.gauche = Noeud("k")
 abr.droit.droit = Noeud("f")
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 5. Écrire le code de la fonction `est_vide` dont la spécification est&nbsp;:
 
@@ -277,7 +275,7 @@ def est_vide(n: Noeud) -> bool:
     """
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def est_vide(n: Noeud) -> bool:
@@ -287,7 +285,7 @@ def est_vide(n: Noeud) -> bool:
     return n == None
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 6. Écrire le code de la fonction `ajoute_filsG` dont la spécification est&nbsp;:
 
@@ -298,7 +296,7 @@ def ajoute_filsG(n: Noeud, valeur: str) -> None:
     """
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def ajoute_filsG(n: Noeud, valeur: str) -> None:
@@ -311,7 +309,7 @@ def ajoute_filsG(n: Noeud, valeur: str) -> None:
         raise Exception("Le nœud possède déjà un fils gauche !")
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 7. Écrire le code de la fonction `ajoute_filsD` dont la spécification est&nbsp;:
 
@@ -322,7 +320,7 @@ def ajoute_filsD(n: Noeud, valeur: str) -> None:
     """
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def ajoute_filsD(n: Noeud, valeur: str) -> None:
@@ -335,7 +333,7 @@ def ajoute_filsD(n: Noeud, valeur: str) -> None:
         raise Exception("Le nœud possède déjà un fils droit !")
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 8. Écrire le code de la fonction `est_feuille` dont la spécification est&nbsp;:
 
@@ -346,7 +344,7 @@ def est_feuille(n: Noeud) -> bool:
     """
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def est_feuille(n: Noeud) -> bool:
@@ -356,7 +354,7 @@ def est_feuille(n: Noeud) -> bool:
     return est_vide(n.gauche) and est_vide(n.droit)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 9. Écrire le code de la fonction `degre_noeud` dont la spécification est&nbsp;:
 
@@ -380,7 +378,7 @@ def taille(n: Noeud) -> int:
     """
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def taille(n: Noeud) -> int:
@@ -399,7 +397,7 @@ def taille(n: Noeud) -> int:
         return 1 + taille_gauche + taille_droit
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 11. Écrire le code de la fonction `profondeur` dont la spécification est&nbsp;:
 
@@ -410,7 +408,7 @@ def profondeur(n: Noeud) -> int:
     """
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def profondeur(n: Noeud) -> int:
@@ -429,7 +427,7 @@ def profondeur(n: Noeud) -> int:
         return 1 + max(arbre_gauche, arbre_droit)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 12. Écrire le code de la fonction `nbre_feuilles` dont la spécification est&nbsp;:
 
@@ -440,7 +438,7 @@ def nbre_feuilles(n: Noeud) -> int:
     """
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def nbre_feuilles(n: Noeud) -> int:
@@ -462,7 +460,7 @@ def nbre_feuilles(n: Noeud) -> int:
         return nbre_feuilles_gauche + nbre_feuilles_droit
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 13. Écrire le code de la fonction `profondeur_noeud` dont la spécification est&nbsp;:
 
@@ -473,7 +471,7 @@ def profondeur_noeud(n: Noeud, val: str, prof: int = 0) -> int:
     """
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def profondeur_noeud(n: Noeud, val: str, prof: int = 0) -> int:
@@ -515,7 +513,7 @@ p(1n, 3, 0)
     p(3n, 3, 1)           -> 1 
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 14. Écrire le code de la fonction `remplace` dont la spécification est&nbsp;:
 
@@ -527,7 +525,7 @@ def remplace(n: Noeud, val_ini: str, val_fin: str) -> None:
     """
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def remplace(n: Noeud, val_ini: str, val_fin: str) -> None:
@@ -544,7 +542,7 @@ def remplace(n: Noeud, val_ini: str, val_fin: str) -> None:
         remplace(n.droit, val_ini, val_fin)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 15. Écrire le code de la fonction `ajoute` dont la spécification est&nbsp;:
 
@@ -559,7 +557,7 @@ def ajoute(n: Noeud, parent: str, enfant: str, gauche: bool) -> None:
     """
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def ajoute(n: Noeud, parent: str, enfant: str, gauche: bool) -> None:
@@ -586,7 +584,7 @@ def ajoute(n: Noeud, parent: str, enfant: str, gauche: bool) -> None:
         ajoute(n.droit, parent, enfant, gauche)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 16. Écrire le code de la fonction `supprime` dont la spécification est&nbsp;:
 
@@ -597,7 +595,7 @@ def supprime(n: Noeud, val: str) -> None:
     """
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def supprime(n: Noeud, val: str) -> None:
@@ -617,18 +615,18 @@ def supprime(n: Noeud, val: str) -> None:
         supprime(n.droit, val)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 17. Quelles sont les complexités des algorithmes implémentés dans cette section ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Les algorithmes parcourent une fois chaque nœud de l'arbre. La complexité est donc proportionnelle au nombre de nœuds.
-{{% /solution %}}
+{{< /solution >}}
 
 #### Parcours en profondeur d'un arbre
 
 Les fonction écrites jusqu'à présent parcourent en profondeur tous les nœuds des arbres sans que l'ordre dans lequel ce parcourt est effectué ait la moindre importance.
 
-{{% note tip %}}
+{{< note tip >}}
 
 Si on souhaite donner un affichage de l'arbre, la façon dont on le parcourt prend alors une grande importance. On peut :
 
@@ -636,10 +634,10 @@ Si on souhaite donner un affichage de l'arbre, la façon dont on le parcourt pre
 - Afficher la valeur du nœud racine avant de parcourir le sous-arbre gauche puis le sous-arbre droit. On parle d'un **parcours préfixe**.
 - Parcourir le sous-arbre gauche, le sous-arbre droit puis afficher les valeurs. On parle d'un **parcours suffixe**.
 
-{{% /note %}}
+{{< /note >}}
 
 18. Pour l'arbre ci-dessous, donner les parcours préfixe, infixe et suffixe.
-{{% mermaid %}}
+{{< mermaid >}}
 graph TD
     0(0) --- 1(1)
     0 --- 8(8)
@@ -656,14 +654,14 @@ graph TD
     10 --- 12(12)
     13 --- 14(14)
     13 --- 15(15)
-{{% /mermaid %}}
-{{% solution "Réponses" %}}
+{{< /mermaid >}}
+{{< solution "Réponses" >}}
 
 - Préfixe : 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
 - Infixe : 3, 2, 1, 5, 4, 6, 7, 0, 11, 10, 12, 9, 8, 14, 13, 15
 - Suffixe : 3, 2, 5, 7, 6, 4, 1, 11, 12, 10, 9, 14, 15, 13, 8, 0
 
-{{% /solution %}}
+{{< /solution >}}
 
 19. Écrire le code des fonctions `parcours_infixe`, `parcours_prefixe` et `parcours_suffixe` dont les spécifications sont :
 
@@ -675,7 +673,7 @@ def parcours_infixe(n: Noeud) -> str:
     """
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def parcours_infixe(n: Noeud) -> str:
@@ -692,7 +690,7 @@ def parcours_infixe(n: Noeud) -> str:
         return chaine
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ```python
 def parcours_prefixe(n: Noeud) -> None:
@@ -702,7 +700,7 @@ def parcours_prefixe(n: Noeud) -> None:
     """
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def parcours_prefixe(n: Noeud) -> None:
@@ -719,7 +717,7 @@ def parcours_prefixe(n: Noeud) -> None:
         return chaine
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ```python
 def parcours_suffixe(n: Noeud) -> None:
@@ -729,7 +727,7 @@ def parcours_suffixe(n: Noeud) -> None:
     """
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def parcours_suffixe(n: Noeud) -> None:
@@ -746,7 +744,7 @@ def parcours_suffixe(n: Noeud) -> None:
         return chaine
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Algorithmes itératifs --- Parcours d'un arbre à l'aide d'une file ou d'une pile
 
@@ -773,7 +771,7 @@ FinFonction
 
 21. Implémenter en Python cet algorithme.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def parcours_largeur(n: Noeud) -> str:
@@ -793,7 +791,7 @@ def parcours_largeur(n: Noeud) -> str:
     return message
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ### Parcours en profondeur d'un arbre
 
@@ -817,15 +815,15 @@ Fonction parcours_profondeur(racine: Noeud):
 FinFonction
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 L'algorithme semble realiser un parcours préfixe mais en explorant d'abord le sous-arbre droit au lieu d'explorer le sous-arbre gauche.
 
-{{% /solution %}}
+{{< /solution >}}
 
 Modifier l'algorithme de telle sorte qu'il réalise le parcours préfixe.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```shell
 Fonction parcours_profondeur(racine: Noeud):
@@ -844,11 +842,11 @@ Fonction parcours_profondeur(racine: Noeud):
 FinFonction
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 23. Implémenter en Python cet algorithme.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def parcours_prefixe_iter(n: Noeud) -> str:
@@ -869,13 +867,13 @@ def parcours_prefixe_iter(n: Noeud) -> str:
     return message
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Implémentation de la spécification en Python à l’aide d’une liste Python
 
 24. Reprendre toutes les fonctions de ce document en n'utilisant pas la classe `Noeud` mais une liste à trois éléments. Le premier est la « valeur » du noeud, le second l'adresse du fils gauche, le troisième l'adresse du fils droit.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 """
@@ -1015,13 +1013,13 @@ if __name__ == "__main__":
     print(f"Suffixe : {parcours_suf(arb)}")
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Implémentation de la spécification en Python à l’aide d’un dictionnaire
 
 25. Reprendre toutes les fonctions de ce document en n'utilisant pas la classe `Noeud` mais un dictionnaire à trois clés : `valeur`, `gauche` et `droit` pour stocker la « valeur » du noeud, l'adresse du fils gauche et l'adresse du fils droit.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 """
@@ -1162,12 +1160,12 @@ if __name__ == "__main__":
     print(parcours_suf(arb2))
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## À retenir
 
-{{% note tip %}}
+{{< note tip >}}
 Un **arbre binaire** est un ensemble fini de nœuds, qui est soit **vide** (la valeur `None` est utilisée pour représenter l'arbre vide), soit structuré à partir d'un nœud particulier, appelé **racine** de l'arbre, et de deux sous-ensembles de nœuds formant récursivement un **sous-arbre gauche** et un **sous-arbre droit**.
 
 Un arbre peut-être implémenté en Python avec un objet par nœud, d'une **classe** qui possède trois attributs : la valeur (ou étiquette) du nœud, le sous-arbre gauche et le sous-arbre droit. Il peut aussi être implémenté en utilisant une liste à trois éléments ou un dictionnaire à trois éléments.
-{{% /note %}}
+{{< /note >}}

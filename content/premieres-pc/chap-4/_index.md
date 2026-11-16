@@ -1,17 +1,14 @@
 ---
 title: "Ondes mécaniques progressives"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-10-25T12:26:15+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 40
 ---
 
 ## Au programme
@@ -34,7 +31,7 @@ layout: "single"
 
 - **Doc. :** [*Simulation d'une onde mécanique*](4-modele-mathematique)
 
-- **Doc. :** [*Deux smartphones pour mesurer une célérité*](5-mesure-celerité)
+- **Doc. :** [*Deux smartphones pour mesurer une célérité*](5-mesure-celerite)
 
 - **Doc. :** [*Exercices de synthèse*](6-exercices-supplementaires)
 

@@ -1,16 +1,14 @@
 ---
 title: "Analyse des résultats du Loto"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-01-28T04:03:54+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: false
+weight: 9900
 ---
 [^2]: En réalité il existe deux fichiers car la formule du jeu a été modifiée en 2008. Nous ne traiterons que les résultats des tirages entre 1976 et 2008 !
 [^1]: Vous pourrez en fournir d'autres qui vous paraitraient pertinentes.

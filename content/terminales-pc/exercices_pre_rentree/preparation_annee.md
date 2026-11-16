@@ -1,16 +1,14 @@
 ---
 title: "Préparation de l'année de terminale"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-08-26T16:05:20+04:00
 draft: true
 toc: true
 tags: []
 categories: ["Devoir maison"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 9900
 ---
 
 ## De la betterave sucrière aux carburants
@@ -27,7 +25,7 @@ Dans cet exercice, on s'intéresse au saccharose présent dans la betterave sucr
 - surface agricole française cultivée : environ 10 millions d’hectares ;
 - masse volumique de l’éthanol : $\rho = \pu{789E3 g*m-3}$ ;
 
-- masses molaires moléculaires : $M(\text{éthanol}) = \pu{46,0 g\*mol-1}$ ; $M (\text{saccharose}) = \pu{342,0 g\*mol-1}$ ;
+- masses molaires moléculaires : $M(\text{éthanol}) = \pu{46,0 g*mol-1}$ ; $M (\text{saccharose}) = \pu{342,0 g*mol-1}$ ;
 
 - électronégativités comparées $\chi$ de quelques éléments : $\chi(\ce{O}) > \chi (\ce{C})$, $\chi (\ce{C})$ environ égale à $\chi (\ce{H})$ ;
 
@@ -41,7 +39,7 @@ Dans cet exercice, on s'intéresse au saccharose présent dans la betterave sucr
 
 | Liaison                   |   $\ce{C-C}$   |        $\ce{C–H}$        |    $\ce{C–O}$    |    $\ce{C=O}$    |    $\ce{O-H}$    |    $\ce{O=O}$    |
 |---------------------------|:---------------:|:-----------------------:|:---------:|:---------:|:---------:|:---------:|
-| Énergie de liaison $E_l$ (en $\pu{kJ\*mol-1}$) | 345 | 415 | 357 | 795 | 462 | 493 |
+| Énergie de liaison $E_l$ (en $\pu{kJ*mol-1}$) | 345 | 415 | 357 | 795 | 462 | 493 |
 
 - Molécule de saccharose (atomes d'hydrogène en blanc, de carbone en gris et d'oxygène en rouge ; il est possible de tourner la molécule): 
     <iframe style="width: 500px; height: 300px;" frameborder="0" src="https://embed.molview.org/v1/?mode=balls&cid=5988"></iframe>
@@ -58,28 +56,28 @@ Le saccharose est formé à partir du D-Glucose et du D-Fructose.
 
 **Q.1.** Déterminer la formule brute de la molécule de D-Glucose.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $\ce{C6H12O6}$
-{{% /solution %}}
+{{< /solution >}}
 
 **Q.2.** Quelle particularité présente la formule brute de la molécule de D-Fructose, comparée à celle du D-Glucose ? 
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Les formules brutes des deux molécules sont identiques.
-{{% /solution %}}
+{{< /solution >}}
 
 **Q.3.** Quelle relation existe entre les molécules de D-Glucose et de D-Fructose ?
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Le D-Glucose et le D-Fructose sont des isomères.
-{{% /solution %}}
+{{< /solution >}}
 
 **Q.4.** Identifier les groupes caractéristiques présents dans chacune des molécules de D-Glucose et de D-Fructose. Nommer les fonctions chimiques présentes dans ces molécules.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 - D-Glucose : groupe **hydroxyle** $\ce{-OH}$ et groupe **carbonyle** $\ce{-CH=O}$. Les fonctions correspondantes sont : **alcool** et **aldéhyde**.
 - D-Fructose : groupe **hydroxyle** $\ce{-OH}$ et groupe **carbonyle** $\ce{-C(=O)-}$. Les fonctions correspondantes sont : **alcool** et **cétone**.
-{{% /solution %}}
+{{< /solution >}}
 
 On possède le spectre IR suivant :
 <figure>

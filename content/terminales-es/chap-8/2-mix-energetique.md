@@ -1,16 +1,14 @@
 ---
 title: "Vers un mix énergétique pour le village d'Eklaugy"
 subtitle: "Chapitre 4,2"
-author: ""
-type: ""
 date: 2021-02-11T09:47:16+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 200
 ---
 
 > Ce document est une étude de cas pour le choix d'un mix énergétique.

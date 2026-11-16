@@ -1,21 +1,19 @@
 ---
 title: "Parcours en profondeur : écriture du code en Python"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-05-06T06:46:05+04:00
 draft: false
 toc: true
 tags: ["Graphe", "Structure de données"]
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 400
 ---
 
 ## Écriture d'une classe `Graphe`
 
-L'objectif de cette partie est l'écriture du code modélisant un graphe orienté. La représentation choisie est celle d'un dictionnaire de successeurs ([en cours]({{< ref "1-graphes-structure-de-donnees" >}}) et dans le [document 15,2]({{< ref "2-representation-graphe" >}}) on a étudié les représentations par des matrice et liste de successeurs).\
+L'objectif de cette partie est l'écriture du code modélisant un graphe orienté. La représentation choisie est celle d'un dictionnaire de successeurs ([en cours]({{% ref "1-graphes-structure-de-donnees" %}}) et dans le [document 15,2]({{% ref "2-representation-graphe" %}}) on a étudié les représentations par des matrice et liste de successeurs).\
 La représentation par un dictionnaire de successeurs présente de nombreux avantages. Par exemple,
 
 - les sommets peuvent être des entiers ou des chaînes de caractères quelconques ;
@@ -24,10 +22,10 @@ La représentation par un dictionnaire de successeurs présente de nombreux avan
 
 #### Remarque
 
-Contrairement à ce qui a été fait dans le [document 15,2]({{< ref "2-representation-graphe" >}}), la classe qui va être implémentée ici permettra d'initialiser un graphe vide, puis de le constituer progressivement.
+Contrairement à ce qui a été fait dans le [document 15,2]({{% ref "2-representation-graphe" %}}), la classe qui va être implémentée ici permettra d'initialiser un graphe vide, puis de le constituer progressivement.
 
 1. Initialiser la classe `Graphe`. La méthode `__init__` a pour seule fonction l'affectation d'un dictionnaire vide à l'attribut `succ`.
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 from __future__ import annotations
@@ -39,7 +37,7 @@ class Graphe:
         self.succ = {}
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 2. Créer la méthode `ajouter_sommet` dont la spécification est :
 
@@ -53,7 +51,7 @@ def ajouter_sommet(self: Graphe, s: Union[int, str]) -> None:
     """
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def ajouter_sommet(self: Graphe, s: Union[int, str]) -> None:
@@ -67,7 +65,7 @@ def ajouter_sommet(self: Graphe, s: Union[int, str]) -> None:
         self.succ[s] = []
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 3. Créer la méthode `ajouter_arc` dont la spécification est :
 
@@ -79,7 +77,7 @@ def ajouter_arc(self: Graphe, s1: Union[int, str], s2: Union[int, str]) -> None:
     """
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def ajouter_arc(self: Graphe, s1: Union[int, str], s2: Union[int, str]) -> None:
@@ -93,7 +91,7 @@ def ajouter_arc(self: Graphe, s1: Union[int, str], s2: Union[int, str]) -> None:
         self.succ[s1].append(s2)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 4. Créer la méthode `existe_arc` dont la spécification est :
 
@@ -104,7 +102,7 @@ def existe_arc(self: Graphe, s1: Union[int, str], s2: Union[int, str]) -> bool:
     """
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def existe_arc(self: Graphe, s1: Union[int, str], s2: Union[int, str]) -> bool:
@@ -114,7 +112,7 @@ def existe_arc(self: Graphe, s1: Union[int, str], s2: Union[int, str]) -> bool:
     return s2 in self.succ[s1]
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 5. Créer la méthode `liste_sommets` dont la spécification est :
 
@@ -125,7 +123,7 @@ def liste_sommets(self: Graphe) -> List[Union[int, str]]:
     """
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def liste_sommets(self: Graphe) -> List[Union[int, str]]:
@@ -135,7 +133,7 @@ def liste_sommets(self: Graphe) -> List[Union[int, str]]:
     return list(self.succ.keys())
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 6. Créer la méthode `nbre_sommets` dont la spécification est :
 
@@ -147,7 +145,7 @@ def nbre_sommets(self: Graphe) -> int:
     """
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def nbre_sommets(self: Graphe) -> int:
@@ -158,7 +156,7 @@ def nbre_sommets(self: Graphe) -> int:
     return len(self.liste_sommets())
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 7. Créer la méthode `liste_successeurs` dont la spécification est :
 
@@ -169,7 +167,7 @@ def liste_successeurs(self: Graphe, s: Union[int, str]) -> List[Union[int, str]]
     """
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def liste_successeurs(self: Graphe, s: Union[int, str]) -> List[Union[int, str]]:
@@ -179,7 +177,7 @@ def liste_successeurs(self: Graphe, s: Union[int, str]) -> List[Union[int, str]]
     return self.succ[s1]
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 8. Dans la partie principale du programme, entrer les instructions qui permettent de coder le graphe suivant :
 {{< mermaid >}}
@@ -190,7 +188,7 @@ graph TD
     D --> B
 {{< /mermaid >}}
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 g = Graphe()
@@ -200,11 +198,11 @@ g.ajouter_arc(1, 2)
 g.ajouter_arc(3, 1)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Parcours en profondeur basé sur la récursivité
 
-9. Reprendre la fonction `parcours_profondeur` proposée dans le [document 15,3]({{< ref "3-parcours-graphes" >}}) et la transformer en méthode de la classe `Graphe`. Sa nouvelle spécification est alors :
+9. Reprendre la fonction `parcours_profondeur` proposée dans le [document 15,3]({{% ref "3-parcours-graphes" %}}) et la transformer en méthode de la classe `Graphe`. Sa nouvelle spécification est alors :
 
 ```python
 def parcours_profondeur(
@@ -221,7 +219,7 @@ def parcours_profondeur(
 Remarque.
 : Attention, j'ai modifié le nom d'une méthode : `voisins` s'appelle désormais `liste_successeurs`.
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def parcours_profondeur(
@@ -239,7 +237,7 @@ def parcours_profondeur(
             parcours_profondeur(self, vus, v)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 10. Créer la méthode `existe_chemin` dont la spécification est :
 
@@ -250,7 +248,7 @@ def existe_chemin(self: Graphe, s1: Union[int, str], s2: Union[int, str]) -> boo
     """
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def existe_chemin(self: Graphe, s1: Union[int, str], s2: Union[int, str]) -> bool:
@@ -262,7 +260,7 @@ def existe_chemin(self: Graphe, s1: Union[int, str], s2: Union[int, str]) -> boo
     return s2 in vus
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 11. Vérifier le code précédent en utilisant le graphe proposé à la question 8.
 
@@ -290,4 +288,4 @@ def chemin_entre(
 
 13. Écrire le code de la classe `Pile`. En plus de la méthode `__init__` cette classe doit posséder les méthodes `est_vide`, `empiler` et `depiler`.
 
-14. Adapter le code de la fonction proposée dans le document [document 15,3]({{< ref "3-parcours-graphes" >}}) afin de la transformer en méthode de la classe `Graphe`.
+14. Adapter le code de la fonction proposée dans le document [document 15,3]({{% ref "3-parcours-graphes" %}}) afin de la transformer en méthode de la classe `Graphe`.

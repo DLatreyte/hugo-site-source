@@ -1,23 +1,21 @@
 ---
 title: "Exemples de méthodes d’apprentissage"
 subtitle: ""
-author: ""
-type: ""
 date: 2023-03-06T14:01:18+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 200
 ---
 
 > Différentes méthodes sont ici présentées dans des contextes simples (nombre limité de données). L’objectif pédagogique est de faire comprendre les méthodes mathématiques utilisées dans un cadre beaucoup plus complexe (notamment quant au nombre de données utilisées) en intelligence artificielle.
 
 ## Les courbes d’ajustement
 
-{{% note normal %}}
+{{< note normal >}}
 
 Cette méthode repose sur un **traitement statistique des données** :
 
@@ -26,7 +24,7 @@ Cette méthode repose sur un **traitement statistique des données** :
 - Les *paramètres de cette courbe sont déterminés à l’aide des données* : c’est la **phase d’entraînement**.
 - La connaissance de cette courbe permet alors de prédire des valeurs pour des points de mesure absents : c’est la **phase d’inférence**.
 
-{{% /note %}}
+{{< /note >}}
 
 ### Évolution du prix du mètre-carré dans le 6e arrondissement de Paris
 
@@ -42,11 +40,11 @@ Les données antérieures à l’année 2020 constituent des données à parti
 
 2. Justifier qu'il peut être ajusté par une droite.
 
-{{% note normal %}}
+{{< note normal >}}
 
 Lorsqu'un nuage de points peut être ajusté par une droite, on parle de régression linéaire.
 
-{{% /note %}}
+{{< /note >}}
 
 3. Établir les caractéristiques de la courbe de tendance (de la droite donc).
 
@@ -54,7 +52,7 @@ Lorsqu'un nuage de points peut être ajusté par une droite, on parle de régres
 
 5. De la même façon, estimer le prix du mètre carré dans le 6ème arrondissement en 1999.
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Comment la droite d'ajustement est-elle déterminée ?
 
@@ -62,7 +60,7 @@ La droite d'ajustement est la droite qui passe par des valeurs aux points de mes
 
 Il convient de remarquer que la plupart des algorithmes d'apprentissage consistent à déterminer les valeurs des paramètres pour minimser l'erreur effectuée par la fonction de classification ou de régression qui est en train d'être apprise : on parle d'**optimisation**.
 
-{{% /note %}}
+{{< /note >}}
 
 ## L'algorithme des plus proches voisins
 

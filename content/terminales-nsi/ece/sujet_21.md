@@ -1,16 +1,14 @@
 ---
 title: "NUMERIQUE et SCIENCES INFORMATIQUES"
 subtitle: "Partie pratique"
-author: ""
-type: ""
 date: 2021-11-21T05:54:29+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: false
 auto_numbering: true
+weight: 9900
 ---
 
 ## Exercice 1 (50% des points)
@@ -27,7 +25,7 @@ if __name__ == "__main__":
     assert nb_repetitions(16, [1, 32, 7, 21, 36, 44]) == 0
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def nb_repetitions(elt: Union[int, float, str], tab: List) -> int:
@@ -47,7 +45,7 @@ if __name__ == "__main__":
     assert nb_repetitions(12, [1, "! ", 7, 21, 36, 44]) == 0
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Exercice 2 (50% des points)
 
@@ -78,7 +76,7 @@ if __name__ == "__main__":
     assert binaire(77) == "1001101"
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def binaire(a: int) -> str:
@@ -101,4 +99,4 @@ if __name__ == "__main__":
     assert binaire(77) == "1001101"
 ```
 
-{{% /solution %}}
+{{< /solution >}}

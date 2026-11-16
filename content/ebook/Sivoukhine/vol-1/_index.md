@@ -2,16 +2,13 @@
 title: "Cours de Physique Générale"
 subtitle: "Tome 1 : Mécanique"
 author: "D. Sivoukhine"
-type: ""
 date: 2020-08-25T22:26:33+04:00
 draft: false
 toc: false
 tags: []
 categories: ["Ebook Physique"]
-image: ""
 solution_est_visible: true
 auto_numbering: false
-layout: "single"
 ---
 
 - Publication : 1975

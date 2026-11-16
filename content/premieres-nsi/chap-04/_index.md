@@ -1,17 +1,15 @@
 ---
 title: "Contrôle du flot d’exécution d’un programme, les structures conditionnelles"
 subtitle: "Chapitre 04"
-author: ""
-type: ""
 date: 2021-08-27T16:30:31+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
 layout: single
+weight: 140
 ---
 
 ## Au programme

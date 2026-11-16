@@ -1,16 +1,14 @@
 ---
 title: "Tomographie par émission de positons (Difficile !)"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-12-30T16:56:15+04:00
 draft: false
 toc: true
 tags: ["Deuxième loi de Newton", "Accélération", "Intégration", "Repère de Frenet", "Accélération normale", "Rayon de courbure", "Champ électrique", "Force électrique", "Théorème de l'énergie cinétique"]
 categories: ["Physique", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 1000
 ---
 
 La tomographie par émission de positons (TEP) est un examen reposant sur la détection de positons. Ils sont émis par le $\ce{^{18}F-FDG}$, que l’on injecte au patient et qui doit être produit à l’hôpital. Pour cela, on bombarde au moyen d’un cyclotron des noyaux d’oxygène 18 par des protons dont l’énergie cinétique est de $\pu{16 MeV}$. Les protons placés au point $O$ sont accélérés jusqu’au point $O'$ où ils pénètrent dans le dé $D$.\
@@ -49,7 +47,7 @@ L’objectif de cette partie est d’étudier le fonctionnement du cyclotron.
 
 3. Montrer que l’abscisse $x$ du proton sur son trajet $OO'$ est donnée par la relation
 $$
-    x(t) = \dfrac{e \vert U \vert}{2 m_p d}\\, t^2
+    x(t) = \dfrac{e \vert U \vert}{2 m_p d}\, t^2
 $$
 
 4. En déduire la valeur de la durée $\Delta t_1$ mise par le proton pour aller de $O$ à $O’$.
@@ -61,7 +59,7 @@ Dans le dee $D$, le proton, soumis à un **champ magnétique uniforme** d’inte
 Le processus d’accélération et de demi-tour successifs se répète un grand nombre de fois jusqu’à ce que le proton sorte de l’accélérateur avec la vitesse souhaitée pour bombarder la cible.\
 Une dizaine de microsecondes est nécessaire pour atteindre une telle vitesse.
 
-Dans chaque dé, la force résultant de l'interaction entre le proton et le champ magnétique $\vec{B}$, appelée force de Lorentz $\vec{F}\_L$, est *toujours orthogonale au champ $\vec{B}$ et au vecteur vitesse $\vec{v}$ du proton*.\
+Dans chaque dé, la force résultant de l'interaction entre le proton et le champ magnétique $\vec{B}$, appelée force de Lorentz $\vec{F}_L$, est *toujours orthogonale au champ $\vec{B}$ et au vecteur vitesse $\vec{v}$ du proton*.\
 Cette force a pour valeur $F_L = e v B$ et est *dirigée selon le vecteur $\vec{n}$ de la base de Frenet et orientée dans le même sens que ce vecteur*.
 
 5. Rappeler la définition du repère de Frenet.

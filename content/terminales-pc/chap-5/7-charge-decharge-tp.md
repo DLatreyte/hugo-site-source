@@ -1,23 +1,21 @@
 ---
 title: "Étude expérimentale de la charge et de la décharge d'un dipôle $(R,C)$"
 subtitle: ""
-author: ""
-type: ""
 date: 2022-11-15T18:42:27+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 700
 ---
 
 > L'objectif de la séance est l'étude des différents paramètres qui influent sur le temps caractéristique du dipôle $(R,C)$ lors de la charge ou de la décharge d'un dipôle $(R,C)$.
 
 ## Documents
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### temps caractéristique
 
@@ -27,18 +25,18 @@ auto_numbering: true
 
 Ces deux manières de déterminer le temps caractéristique sont liées à une **évolution exponentielle** ou de façon équivalente à un comportement défini par une **équation différentielle linéaire à coefficients constants du premier ordre**. Elles peuvent donc être utilisée indifféremment à partir de la courbe d'évolution de l’intensité du courant ou de celle de la tension aux bornes du condensateur.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Tolérance
 
 La valeur de la capacité d’un condensateur est accompagnée de la **tolérance**.  
 Si un condensateur est étiqueté « $\pu{1 000 \mu F}$ ± 20% », alors sa capacité réelle est comprise entre $\pu{800 \mu F}$ et $\pu{1200 \mu F}$.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 <img src="/terminales-pc/chap-5/chap-5-7/montage.png" alt="" width="55%" style="float: right;" />
 
@@ -57,7 +55,7 @@ Si un condensateur est étiqueté « $\pu{1 000 \mu F}$ ± 20% », alors sa capa
 #### Décharge
 
 - Une fois la charge réalisée, tout en continuant l'acquisition, basculer l’interrupteur en position 2.
-{{% /note %}}
+{{< /note >}}
 
 ## Travail à réaliser
 

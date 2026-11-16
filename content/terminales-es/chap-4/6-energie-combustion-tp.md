@@ -1,19 +1,17 @@
 ---
 title: "Détermination expérimentale d'une énergie de combustion"
 subtitle: ""
-author: ""
-type: ""
 date: 2022-02-22T05:15:58+04:00
 draft: false
 toc: true
 tags: ["Énergie de combustion"]
 categories: ["Terminale Enseignement Scientifique"]
-image: ""
 solution_est_visible: false
 auto_numbering: false
+weight: 600
 ---
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Échanges d'énergie
 
@@ -34,15 +32,15 @@ auto_numbering: false
 
 - L'**énergie de combustion** est l'*énergie libérée lors de la combustion d'une mole d'un combustible*. Ce transfert thermique s'effectue sous forme de **chaleur** (*transfert d'énergie thermique*) $Q$.
 
-- Lorsqu'un corps incompressible (solide ou liquide) reçoit (algébriquement) la chaleur $Q$, sa température $T$ évolue de telle sorte que $$ Q = m\\; c\\; (T_f - T_i)$$
+- Lorsqu'un corps incompressible (solide ou liquide) reçoit (algébriquement) la chaleur $Q$, sa température $T$ évolue de telle sorte que $$ Q = m\; c\; (T_f - T_i)$$
 où $m$ est la masse du corps, $c$ sa capacité thermique (calorifique) massique, $T_f$ sa température finale et $T_i$ sa température initiale.
 La capacité thermique massique de l'eau vaut : $c_{\text{eau}} = \pu{4,18 J.g-1.°C-1}$.
 
 - *L'énergie est une grandeur qui se conserve*&nbsp;: toute perte d'énergie par un système est transférée à son environnement.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### L'acide stéarique
 
@@ -51,7 +49,7 @@ L'acide stéarique (du grec ancien στέαρ, qui signifie suif) ou acide octad
 - Formule chimique semi-développée est&nbsp;: $\ce{CH3-(CH2)_{16}-COOH}$.
 - Masse molaire : $M = \pu{284 g.mol-1}$.
 
-{{% /note %}}
+{{< /note >}}
 
 <center>
 <iframe style="width: 600px; height: 200px;" frameborder="0" src="https://embed.molview.org/v1/?mode=balls&cid=5281&bg=white"></iframe>
@@ -65,16 +63,16 @@ L'acide stéarique (du grec ancien στέαρ, qui signifie suif) ou acide octad
 ## Questions préliminaires
 
 1. Comparer l’énergie de combustion des alcanes et des alcools. En déduire quels sont les meilleurs combustibles. Justifier.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 En comparant les énergies de combustion de molécules dont la chaîne carbonée est de même longueur (noms formés sur la même racine), on remarque que *l’énergie de combustion des alcanes est plus grande que celle des alcools*. *Les meilleurs combustibles sont donc les alcanes*.
 
-{{% /solution %}}
+{{< /solution >}}
 
 2. Calculer l’énergie libérée $E_{lib}$ par la combustion de 10&nbsp;g de bougie.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 -->
 
@@ -82,7 +80,7 @@ En comparant les énergies de combustion de molécules dont la chaîne carbonée
 
 > Proposer et mettre en œuvre un protocole expérimental soigneusement détaillé pour répondre à la problématique.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 En utilisant le principe de conservation de l'énergie, et dans le cas idéal où il n'y aurait pas de perte thermique, on peut utiliser l'énergie de combustion de la bougie pour chauffer un volume d'eau. On mesure la masse de la bougie avant et après la combustion pour en déduire la quantité de matière d'acide stéarique brûlée. On mesure la différence de température de l'eau et par un calcul, on en déduit l'énergie qui s'est dégagée de la combustion. Le rapport des deux valeurs donne alors l'énergie de combustion en $\pu{J.mol-1}$.
 
@@ -104,12 +102,12 @@ En effet,
 - une grande partie de cette énergie chauffe l'air ;
 - la canette elle-même perd une partie de l'énergie qu'elle reçoit.
 
-{{% /solution %}}
+{{< /solution >}}
 
 <!--
 ## Exercice : Comparaison de la combustion de 2 carburants (difficile)
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 L’essence (modélisée par l’**octane** $\ce{C8H18}$) et l’**éthanol** ($\ce{C2H6O}$) sont des carburants utilisés dans les moteurs à explosion. Une voiture à essence consommant 6,0&nbsp;L au 100 (soit un volume $V = \pu{6,0 L}$ d’essence pour un parcours de 100&nbsp;km) et rejette une masse $m = \pu{130 g}$ de dioxyde de carbone par kilomètre.    
 Vérifions s’il en est de même avec une voiture de motorisation équivalente fonctionnant à l’éthanol (ou bioéthanol).
@@ -122,9 +120,9 @@ Vérifions s’il en est de même avec une voiture de motorisation équivalente 
 
 - Masse volumique de l'éthanol : $\rho = \pu{0,79 kg.L-1}$.
 - Masses molaires : $M(H) = \pu{1,0 g.mol-1}$, $M(C) = \pu{12,0 g.mol-1}$, $M(O) = \pu{16,0 g.mol-1}$.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponses" %}}
+{{< solution "Réponses" >}}
 
 1. $ \ce{2 C8H18 (g) + 25 O2 (g) -> 18 H2O (g) + 16 CO2 (g)} $     
 $ \ce{C2H6O (g) + 3 O2 (g) → 3 H2O (g) + 2 CO2 (g)} $
@@ -132,18 +130,18 @@ $ \ce{C2H6O (g) + 3 O2 (g) → 3 H2O (g) + 2 CO2 (g)} $
 2. Il peut se former du monoxyde de carbone (gaz toxique) et des fumées noires de carbone lorsque la **combustion est incomplète**, c'est à dire *quand le dioxygène n'est pas présent en quantité suffisante*.
 
 3. Cette voiture consomme 8,7&nbsp;L pour 100&nbsp;km, soit $V = \pu{8,7e-2 L}$ pour 1&nbsp;km.     
-Comme $$m(\text{éthanol}) = \rho(\text{éthanol})\\, V(\text{éthanol})$$ et $$m(\text{éthanol}) = n(\text{éthanol}) M(\text{éthanol})$$ alors $$ n(\text{éthanol}) M(\text{éthanol}) = \rho(\text{éthanol})\\, V(\text{éthanol})$$ ou $$n(\text{éthanol}) = \dfrac{\rho(\text{éthanol})\\, V(\text{éthanol})}{M(\text{éthanol})}$$
+Comme $$m(\text{éthanol}) = \rho(\text{éthanol})\, V(\text{éthanol})$$ et $$m(\text{éthanol}) = n(\text{éthanol}) M(\text{éthanol})$$ alors $$ n(\text{éthanol}) M(\text{éthanol}) = \rho(\text{éthanol})\, V(\text{éthanol})$$ ou $$n(\text{éthanol}) = \dfrac{\rho(\text{éthanol})\, V(\text{éthanol})}{M(\text{éthanol})}$$
 
     **A.N.** $n(\text{éthanol}) = \dfrac{\pu{0,79e3 g.L-1} \times \pu{8,7e-2 L}}{\pu{46,0 g.mol-1}} = \pu{1,5 mol}$     
     La voiture consomme $\pu{1,5 mol}$ d'éthanol par kilomètre.
 
-    L'équation de la réaction nous apprend que la combustion d'une mole d'éthanol conduit à la formation de deux moles de dioxyde de carbone. On a donc $$ n(\ce{CO2})\_{\text{produit}} = 2\\; n(\text{éthanol})\_{\text{consommé}}$$    
+    L'équation de la réaction nous apprend que la combustion d'une mole d'éthanol conduit à la formation de deux moles de dioxyde de carbone. On a donc $$ n(\ce{CO2})_{\text{produit}} = 2\; n(\text{éthanol})_{\text{consommé}}$$    
     
-    **A.N.** $ n(\ce{CO2})\_{\text{produit}} = 2 \times \pu{1,5 mol} = \pu{3,0 mol}$       
+    **A.N.** $ n(\ce{CO2})_{\text{produit}} = 2 \times \pu{1,5 mol} = \pu{3,0 mol}$       
     La voiture produit $\pu{3,0 mol}$ de dioxyde de carbone par kilomètre.
 
-    $m(\ce{CO2})\_{\text{produit}} = n(\ce{CO2})\_{\text{produit}} M(\ce{CO2})$ donc $m(\ce{CO2})\_{\text{produit}} = \pu{3,0 mol} \times \pu{44,0 g.mol-1} = \pu{1,3e2 g}$     
+    $m(\ce{CO2})_{\text{produit}} = n(\ce{CO2})_{\text{produit}} M(\ce{CO2})$ donc $m(\ce{CO2})_{\text{produit}} = \pu{3,0 mol} \times \pu{44,0 g.mol-1} = \pu{1,3e2 g}$     
     La voiture qui fonctionne à l'éthanol produit environ 130&nbsp;g de dioxyde de carbone par kilomètre, soit environ la même masse qu'une voiture qui utilise de l'essence.
 
-{{% /solution %}}
+{{< /solution >}}
 -->

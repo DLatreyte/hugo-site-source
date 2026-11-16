@@ -1,16 +1,14 @@
 ---
 title: "Comment obtenir une numérotation automatique des sections, de la table des matières avec Hugo"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-08-22T11:09:39+04:00
 draft: true
 toc: true
 tags: ["HowTo"]
 categories: ["Hugo"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 9900
 ---
 
 ## Étapes à suivre

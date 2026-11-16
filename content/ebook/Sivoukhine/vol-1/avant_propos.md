@@ -2,15 +2,14 @@
 title: "Avant propos"
 subtitle: ""
 author: "D. Sivoukhine"
-type: ""
 date: 2020-08-25T22:26:18+04:00
 draft: false
 toc: false
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: false
+weight: 9900
 ---
 
 Le présent ouvrage est le développement d'un cours que nous avons exposé pendant près de vingt ans aux étudiants de l'Institut de Physique technique de Moscou. Pendant cette période ni le plan général du cours, ni l'approche de l'exposé des questions fondamentales n'ont subi de modifications importantes. Mais chaque année nous éprouvions le besoin d'y inclure de nouvelles questions et de nouveaux exemples se substituant aux précédents que nous étions obligés d'éliminer par manque de temps. Le lecteur trouvera dans cet ouvrage la presque totalité des questions abordées au cours de ces années, ainsi que d'autres qui ne l'ont pas été. On y a inclus aussi nombre de problèmes avec indication des réponses ou des procédés de résolution. Nous estimons que tout cela sera utile aux étudiants désireux d'approfondir leurs connaissances en physique et contribuera à leur formation de physicien. L'objectif est de les conduire à formuler et à résoudre eux-mêmes les questions de principe et les problèmes d'application. Il est bien évident que tout ce que nous avons jugé utile d'inclure dans cet ouvrage ne saurait faire partie du programme obligatoire. Pour la commodité du lecteur les questions les plus importantes sont imprimées en caractères courants et les autres en petits caractères.

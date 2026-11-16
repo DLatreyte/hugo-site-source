@@ -1,16 +1,14 @@
 ---
 title: "Rappels d'algorithmique"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-09-12T17:46:07+04:00
 draft: false
 toc: true
 tags: ["Algorithmique", "Complexité", "Terminaison", "Invariant", "Variant", "Correction"]
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 104
 ---
 
 
@@ -20,16 +18,16 @@ auto_numbering: true
 ### Introduction
 -->
 
-{{% note tip %}}
+{{< note tip >}}
 Un **algorithme** est une *suite finie et non ambiguë
 d'opérations ou d'instructions* à réaliser afin de résoudre un problème.
-{{% /note %}}
+{{< /note >}}
 
 En informatique, pour qu'un algorithme puisse être implémenté, il est
 nécessaire de s'assurer que la «&nbsp;suite finie et non ambiguë d'opérations ou
 d'instructions à réaliser&nbsp;» s'effectue en une **durée finie** .
 
-{{% note tip %}}
+{{< note tip >}}
 Lorsqu'on élabore ou étudie un algorithme, il est donc nécessaire de
 vérifier&nbsp;:
 
@@ -39,21 +37,21 @@ vérifier&nbsp;:
 classe de problèmes. Ils ne nécessiteront cependant pas tous l'utilisation de
 la même quantité de mémoire ou le même nombre d'étapes de calcul, donc la
 même durée.
-{{% /note %}}
+{{< /note >}}
 
 #### Remarques
 
 - Ce n'est pas toujours une mauvaise nouvelle si certains algorithmes ont besoin d'un «&nbsp;temps infini&nbsp;» pour résoudre un problème&nbsp;: certains choix en cryptographie reposent sur l'idée que «&nbsp;casser&nbsp;» la protection nécessite une durée de calcul trop grande, pour le matériel dont on dispose *aujourd'hui*.
 - Pour certains problèmes on doit se contenter d'une *solution approchée* et pas d'une *solution exacte*.
 
-{{% note tip %}}
+{{< note tip >}}
 La performance d'un algorithme porte sur deux aspects&nbsp;: la **durée du
 calcul**  et la **quantité de mémoire**  nécessaires à la résolution du
 problème. *Malheureusement ces deux points s'opposent* . Il est souvent
 nécessaire d'occuper davantage de mémoire pour gagner en temps de calcul, ou
 d'écrire plus d'instructions, et donc faire plus de calculs, pour aboutir à
 une gestion de la mémoire optimale.
-{{% /note %}}
+{{< /note >}}
 
 Conformément au programme, on limite la *performance algorithmique*  à la **complexité algorithmique**.
 
@@ -61,20 +59,20 @@ Conformément au programme, on limite la *performance algorithmique*  à la **co
 
 ### Introduction
 
-{{% note tip %}}
+{{< note tip >}}
 La **complexité algorithmique** donne des informations
 sur la **durée du calcul**  nécessaire à la résolution du problème. Plus
 la complexité algorithmique est petite, moins de calculs sont effectués et
 plus l'algorithme est performant (sous réserve que la gestion de l'espace
 mémoire utilisé par l'implémentation de l'algorithme ne constitue pas un
 problème).
-{{% /note %}}
+{{< /note >}}
 
-{{% note warning %}}
+{{< note warning >}}
 On exprime la complexité d'un algorithme en fonction de la **taille (nombre)
 des données qu'il manipule**  en considérant que *chaque instruction
 élémentaire s'effectue en temps constant*.
-{{% /note %}}
+{{< /note >}}
 
 Il existe plusieurs méthodes pour analyser la complexité d'un algorithme,
 comme&nbsp;:
@@ -100,10 +98,10 @@ Les complexités des différents algorithmes varient beaucoup. On peut
 néanmoins regrouper les algorithmes en quelques grandes familles&nbsp;:
 
 - **Complexité constante&nbsp;:** Leur notation est de la forme $O(1)$. Ces algorithmes sont indépendants du nombre de données à traiter.
-{{% note normal %}}
+{{< note normal >}}
 La **complexité constante** apparaît dans la *recherche par index dans un tableau*.  
 *La complexité  constante est la plus «&nbsp;performante&nbsp;».*
-{{% /note %}}
+{{< /note >}}
 
 - **Les algorithmes logarithmiques&nbsp;:** Leur notation est de la forme $O(\log N)$. Ces
 algorithmes sont très performants en temps de traitement. *Le nombre de calculs
@@ -115,47 +113,47 @@ La fonction logarithme à utiliser dépend du problème étudié mais, comme
 la complexité est définie à un facteur près, la base du logarithme n'a pas
 d'importance.
 
-{{% note normal %}}
+{{< note normal >}}
 La **complexité logarithmique** apparaît dans les problèmes dans lesquels
 l'ensemble des données peut être décomposé en deux parties égales, qui
 sont elles-mêmes décomposées en 2 (recherche par dichotomie, recherche dans un arbre binaire, etc.).  
 *La **complexité logarithmique** est très «&nbsp;performante&nbsp;».*
-{{% /note %}}
+{{< /note >}}
 
-{{% note warning %}}
+{{< note warning >}}
 Le logarithme à utiliser est alors
-la fonction réciproque de $f&nbsp;: x \longmapsto 2^x$, c'est à dire $\log_{2}$
+la fonction réciproque de $f : x \longmapsto 2^x$, c'est à dire $\log_{2}$
 (aussi appelé logarithme entier).  
 Le <b>logarithme entier</b> d'un nombre $x$ supérieur ou égal à 1 est le <b>nombre de fois qu'il faut le diviser par deux pour obtenir un nombre inférieur ou égal à 1</b>.
-{{% /note %}}
+{{< /note >}}
 
 - **Les algorithmes linéaires&nbsp;:** Leur notation est de la forme $O(N)$. *Ces
 algorithmes sont rapides. Le nombre de calculs dépend, de manière **linéaire**,
 du nombre de données initiales à traiter*.
 
-{{% note normal %}}
+{{< note normal >}}
 La **complexité linéaire** apparaît dans les problèmes dans lesquels *on
 parcourt séquentiellement l'ensemble des données* pour réaliser une
 opération (recherche d'une valeur, par exemple).  
 *La complexité linéaire est considérée comme «&nbsp;efficace&nbsp;».*
-{{% /note %}}
+{{< /note >}}
 
 - **Les algorithmes linéaires et logarithmiques (quasi-linéaire)&nbsp;:** Leur notation est de la forme $O(N \log N)$.
 
-{{% note normal %}}
+{{< note normal >}}
 La **complexité linéaire et logarithmique** apparaît dans des problèmes dans lesquels on *découpe répétitivement les données en deux parties, que l'on parcourt
 séquentiellement* ensuite (tri Quicksort par exemple).  
 *La complexité quasi-linéaire est considérée comme «&nbsp;assez efficace&nbsp;».*
-{{% /note %}}
+{{< /note >}}
 
 - **Les algorithmes de type polynomiale&nbsp;:** Leur notation est de la forme $O(N^k)$ où
 $k$ est la puissance.
 
-{{% note normal %}}
+{{< note normal >}}
 Une complexité **quadratique** apparaît, par exemple, lorsqu'on parcourt un
 *tableau à deux dimensions*, lorsqu'on effectue un tri par comparaison, etc.  
 *La complexité polynomiale est considérée comme «&nbsp;moyennement efficace&nbsp;».*
-{{% /note %}}
+{{< /note >}}
 
 - **Les algorithmes exponentiels ou factoriels&nbsp;:** Leur notation est de la forme $O(e^N)$ ou $O(N!)$. Ce sont les algorithmes les plus complexes.  
 Le nombre de calculs augmente de façon **exponentielle ou factorielle** en
@@ -165,11 +163,11 @@ effectuant 22026 calculs&nbsp;; un ensemble de 100 données en effectuant $\pu{2
 On dit généralement que les problèmes produisant ce type d'algorithmes sont
 «&nbsp;non calculables&nbsp;».
 
-{{% note normal %}}
+{{< note normal >}}
 On rencontre les algorithmes de type **exponentiels ou factoriels** dans les problématiques liées à la
 programmation de fonctions humaines comme la vision, la reconnaissance des
 formes ou l'intelligence artificielle.
-{{% /note %}}
+{{< /note >}}
 
 <img src="/premieres-nsi/chap-16/fig-16-1.png" alt="" width="80%" />
 <img src="/premieres-nsi/chap-16/fig-16-2.png" alt="" width="80%" />
@@ -200,7 +198,7 @@ En particulier, quand deux boucles sont imbriquées, le corps de la boucle inter
 Quand le temps d'exécution du corps de la boucle dépend de la valeur de l'indice $i$, le temps total d'exécution de la boucle est la somme des temps d'exécution du corps de la boucle pour chaque valeur de $i$.
 - Le cas des boucles `Tantque` est plus complexe puisque le nombre d'itérations n'est en général pas connu à priori. Il doit être évalué au cas par cas.
 
-{{% note exercise %}}
+{{< note exercise >}}
 Pour chacun des programmes suivants, dire en fonction de $n$ quel est le nombre d’opérations `op` que le programme effectue. Justifier votre résultat.
 
 1.
@@ -283,11 +281,11 @@ Tant que n > 0 Faire
     n ⟵ n // 2
 ```
 
-{{% /note %}}
+{{< /note >}}
 
 ### Comment illustrer l'influence du nombre d'éléments passés en entrée
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Quelques complexités à tout de suite identifier
 
@@ -299,14 +297,14 @@ En utilisant la fonction `time` du module `time`, écrire le code de fonctions q
 4. montre que la recherche linéaire dans une liste à deux dimensions est en $O(N^2)$ ;
 5. montre que la recherche dichotomique dans une liste triée est en $O(\log(N))$.
 
-{{% /note %}}
+{{< /note >}}
 
 ## Terminaison d'un algorithme itératif&nbsp;: variant de boucle
 
 La structure qui généralement doit retenir l'attention lors de l'analyse de
 la terminaison d'un algorithme est la **structure de boucle**.
 
-{{% note tip %}}
+{{< note tip >}}
 On appelle **variant** d'une boucle une *fonction qui a
 pour variables les variables du problème, qui retourne une valeur entière positive et
 qui décroît à chacune des itérations de la boucle, jusqu'à s'annuler ou
@@ -315,7 +313,7 @@ la boucle*.
 
 **La découverte d'un variant de boucle permet de conclure que la boucle se
 termine** puisqu'il n'existe aucune suite infinie strictement décroissante d'entiers naturels.
-{{% /note %}}
+{{< /note >}}
 
 ### Exemple 1&nbsp;: Calcul de la plus petite puissance de deux supérieure ou égale à un entier $n$  
 
@@ -336,7 +334,7 @@ puissance de deux supérieure ou égale à $n$.*<br />
 
 -----
 
- {{% note normal %}}
+ {{< note normal >}}
 La fonction $f$ d'expression $f(p) = n - p$ est-elle un variant de boucle&nbsp;?
 
 - $f(p)$ est un entier positif.
@@ -345,7 +343,7 @@ La fonction $f$ d'expression $f(p) = n - p$ est-elle un variant de boucle&nbsp;?
 - *Condition d'arrêt&nbsp;:* $p_{max} \geqslant n$, donc $f (p_{max}) \leqslant 0$.
 
 La fonction $f$ est un variant de boucle et la boucle se termine donc bien.
-{{% /note %}}
+{{< /note >}}
 
 ### Exemple 2&nbsp;: Palindrome
 
@@ -376,7 +374,7 @@ La fonction $f$ est un variant de boucle et la boucle se termine donc bien.
    variables le fonctionnement de l'algorithme 2 pour la chaîne de caractères
    «&nbsp;sauras&nbsp;» puis pour la chaîne de caractères «&nbsp;radar&nbsp;».  
    **Remarque&nbsp;:** Le premier élément d'une chaîne a pour indice 0.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - Pour l'entrée «&nbsp;sauras&nbsp;»&nbsp;:  
 $i$&nbsp;: 0, 1, 2  
@@ -387,33 +385,33 @@ La fonction retourne `Faux`.
 $i$&nbsp;: 0, 1, 2, 3  
 $j$&nbsp;: 4, 3, 2, 1  
 La fonction retourne `Vrai`.
-{{% /solution %}}
+{{< /solution >}}
 
 2. Montrer que $f(i, j) = j - i$ est un variant de la boucle **TantQue**.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $f(i, j) = j - i$ est-elle un variant de boucle&nbsp;?
 
 - Tant que $j > i$, $f(i, j)$ est un entier positif et $f(i, j) = j - i > 0$.
 - $f (i+1, j-1) = j - 1 - (i + 1) = j - 1 - i - 1 = j - i - 2 = f(i, j) - 2 < f(i, j)$.  
 La fonction est donc décroissante sur l'ensemble des valeurs de $i$ et de $j$.
 - *Condition d'arrêt&nbsp;:* $i > j$, donc $f(i, j) = j - i < 0$
-{{% /solution %}}
+{{< /solution >}}
 
 3. En déduire que la boucle **TantQue** se termine.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 La fonction $f$ est un variant de boucle. La boucle se termine donc bien.
-{{% /solution %}}
+{{< /solution >}}
 
 ## Correction d'un algorithme itératif&nbsp;: invariant de boucle
 
-{{% note tip %}}
+{{< note tip >}}
 On appelle **invariant d'une boucle**  une *propriété qui,
 si elle est vraie avant l'exécution d'une itération, le demeure après
 l'exécution de l'itération*.
 *Un invariant de boucle doit être vrai avant de commencer la boucle* et est
 alors garanti de *rester correct après chaque itération* de la boucle. En
 particulier, l'*invariant sera toujours vrai à la fin de la boucle*.
-{{% /note %}}
+{{< /note >}}
 
 Les boucles et la récursivité étant fondamentalement similaire, il y a peu de
 différence entre démontrer un invariant de boucles et prouver qu'un programme
@@ -437,7 +435,7 @@ est correct en utilisant un raisonnement par récurrence.
 
 -----
 
-{{% note normal %}}
+{{< note normal >}}
 La propriété «&nbsp;À chaque tour de boucle $p$ est une puissance de 2&nbsp;» est un invariant de
 boucle. En effet&nbsp;:
 
@@ -450,7 +448,7 @@ boucle. En effet&nbsp;:
 \times 2 = 2^n$
 
 La proposition est donc bien un invariant de boucle et on peut conclure que l'algorithme est correct.
-{{% /note %}}
+{{< /note >}}
 
 ### Exemple 4&nbsp;: Quotient et reste de la division euclidienne d'un entier positif par un entier strictement
 
@@ -477,7 +475,7 @@ de l'entier naturel $a$ par l'entier naturel $b$*
 1. Décrire le fonctionnement de l'algorithme pour l'entrée (`a = 17`, `b =
    5`) au moyen d'un tableau indiquant l'évolution des valeurs des variables
    au fil des itérations.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 $$
 \begin{array}{c : c : c : c : c}
@@ -487,11 +485,11 @@ q & 0 & 1 & 2 & 3 \cr \hdashline
 r & 17 & 12 & 7 & 2 \cr
 \end{array}
 $$
-{{% /solution %}}
+{{< /solution >}}
 
 2. Montrer que la boucle **TantQue**  se termine en utilisant un *variant de
    boucle*.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 La fonction $f(r) = r - b$ peut-elle être un variant de boucle&nbsp;?
 
 - $f(r) = r -b$ est un entier.
@@ -502,12 +500,12 @@ La fonction $f$ est décroissante.
 - *Condition d'arrêt&nbsp;:* $r < b$, donc $f(r, b) = r - b < 0$.
 
 La fonction $f$ est bien un variant de boucle et cette boucle se termine.
-{{% /solution %}}
+{{< /solution >}}
 
 3. Montrer que la propriété $a =bq+ r$ est un invariant de la
    boucle **TantQue**, en déduire que l'algorithme produit le résultat
    attendu.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Si la propriété $a =b q+ r$ est un invariant de boucle, elle doit être vraie avant d'entrer dans la boucle, à chaque tour de boucle et une fois la boucle terminée.
 
 - **Initialisation&nbsp;:** Avant d'entrer dans la boucle, $q=0$ et $r=a$. Donc on a bien $a = 0 \times b + a$.
@@ -516,11 +514,11 @@ Au rang $k+1$, $q_{k+1} = q_{k} + 1$ et $r_{k+1} = r_k - b$. Donc $a = b q_{k+1}
 - **Terminaison&nbsp;:** La boucle s'arrête lorsque $r < b$. Au dernier tour de la boucle on a donc bien $a=b q + r$.
 
 La propriété $a =bq+ r$ est bien un invariant de boucle et le programme est correct.
-{{% /solution %}}
+{{< /solution >}}
 
 <!--
 4. Montrer que la propriété $0 \leqslant r < b$ est un invariant de boucle.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Si la propriété $0 \leqslant r$ est un invariant de boucle, elle doit être vraie avant d'entrer dans la boucle, à chaque tour de boucle et une fois la boucle terminée.
 
 - **Initialisation&nbsp;:** Avant d'entrer dans la boucle, $r=a > 0$.
@@ -529,7 +527,7 @@ Au rang $k+1$, $r_{k+1} = r_k - b > 0$. On sait que $r_{k+1} > 0$ car on passe a
 - **Terminaison&nbsp;:** La boucle s'arrête dès que $r < b$. Donc au dernier tour (et à la sortie, donc) de la boucle on a donc bien encore $b > r \geqslant 0$.
 
 La propriété $0 \leqslant r$ est bien un invariant de la boucle **TantQue** et en déduire que le programme est correct.
-{{% /solution %}}
+{{< /solution >}}
 
 -->
 
@@ -543,7 +541,7 @@ def division_euclidienne(a: int, b: int) -> tuple[int, int]:
     """
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def division_euclidienne(a: int, b: int) -> tuple[int, int]:
@@ -559,10 +557,10 @@ def division_euclidienne(a: int, b: int) -> tuple[int, int]:
     return q, r
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 6. Écrire un jeu de tests pour la fonction `division_euclidienne`.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 assert division_euclidienne(1, 2) == (0, 1)
@@ -570,11 +568,11 @@ assert division_euclidienne(2, 1) == (2, 0)
 assert division_euclidienne(17, 5) == (3, 2)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Exercices
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice
 
@@ -600,9 +598,9 @@ def power(n: int) -> int:
 
 5. Déterminer la complexité de cet algorithme.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponses" %}}
+{{< solution "Réponses" >}}
 
 1. `power` calcule $2^n$.
 
@@ -628,9 +626,9 @@ $f(i)$ est un variant de boucle, l'algorithme se termine.
     - **Terminaison :** Lors du dernier tour de boucle, $i = n - 1$, le calcul effectué est donc $p = 2^{n-1} \times 2= 2^n$.  
     L'algorithme est correct.
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice
 
@@ -658,9 +656,9 @@ def maxer(s: list[float]) -> float:
 
 6. Existe-t-il un ou des algorithmes qui réalisent la même opération plus efficacement ?
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponses" %}}
+{{< solution "Réponses" >}}
 
 1. la fonction trouve le plus grand élément dans la liste passée en argument.
 
@@ -675,9 +673,9 @@ def maxer(s: list[float]) -> float:
 
 4. Invariant de boucle :
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice
 
@@ -707,9 +705,9 @@ On considère la fonction `somme_premiers_entiers` qui implémente l'algorithme&
 4. Prouver que la proposition&nbsp;: «&nbsp;au début du tour du kième tour de la boucle, la variable somme est égale à la somme des $k-1$ premiers entiers naturels&nbsp;» est un invariant de boucle.  En déduire que l'algorithme est correct.
 
 5. Quelle est la complexité de cet algorithme&nbsp;?
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponses" %}}
+{{< solution "Réponses" >}}
 1.
 
 ```python
@@ -756,4 +754,4 @@ La proposition est bien un invariant de boucle, *elle nous assure que le program
 
 5.
 
-{{% /solution %}}
+{{< /solution >}}

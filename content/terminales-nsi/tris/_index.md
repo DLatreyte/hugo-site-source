@@ -1,17 +1,14 @@
 ---
 title: "Algorithmes de tri"
 subtitle: ""
-author: ""
-type: ""
 date: 2023-11-24T12:59:28+04:00
 draft: false
 toc: true
 tags: []
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 160
 ---
 
 ## Au programme de la classe de première

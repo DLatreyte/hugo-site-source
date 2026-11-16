@@ -1,21 +1,19 @@
 ---
 title: "Titrage direct de l'aspirine"
 subtitle: ""
-author: ""
-type: ""
 date: 2022-02-06T23:33:38+04:00
 draft: false
 toc: true
 tags: ["Tableau d'avancement", "Équivalence", "Titrage", "pH-mètre", "Suivi pH-métrique"]
 categories: ["Terminale Spé PC"]
-image: ""
 solution_est_visible: false
 auto_numbering: true
+weight: 1800
 ---
 
 > L'objectif de cette séance est de titrer l'aspirine contenue dans un comprimé d'Aspirine du Rhône et d'ainsi vérifier que la masse présente est bien égale à 500&nbsp;mg.
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Aspirine
 
@@ -32,13 +30,13 @@ C’est un des médicaments les plus consommés au monde.
 <div style="text-align: right;">
     <a href="https://fr.wikipedia.org/wiki/Acide_acétylsalicylique" target="_blank">Wikipedia</a>
 </div>
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 Le **bleu de bromothymol** est un indicateur coloré de $pK_a$ 7,1. La forme acide ($\mathrm{pH} < 6$) colore une solution en jaune alors que la forme basique ($\mathrm{pH}>7,6$) colore une solution en bleu.
 
-{{% /note %}}
+{{< /note >}}
 
 ## Protocole expérimental
 

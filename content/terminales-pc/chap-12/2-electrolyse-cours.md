@@ -1,23 +1,21 @@
 ---
 title: "Une transformation forcée, l'électrolyse"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-02-08T08:40:41+04:00
 draft: false
 toc: true
 tags: []
 categories: ["Chimie", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 200
 ---
 
 ## Transformations forcées
 
 ### Changer le sens d'évolution d'une transformation
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Manipulation
 
@@ -30,26 +28,26 @@ auto_numbering: true
   - Le mélange eau-cyclohexane est hétérogène. Le cyclohexane constitue la phase supérieure.
   - Dans le tube à essai $A$, la phase aqueuse se décolore alors que la phase organique se colore en orange/marron.
   - Dans le tube à essai $B$, la phase aqueuse se colore en bleu alors que la phase organique se colore en orange/marron. La coloration de cette phase est moins marquée que celle dans le tube $A$.
-{{% /note %}}
+{{< /note >}}
 
 1. Le dibrome appartient au couple $\ce{Br2/Br-}$, le couple appartient au couple $\ce{Cu^{2+}/Cu}$. Écrire l'équation de la réaction qui se déroule dans le bécher.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $$
     \ce{Br2 (aq) + Cu (s) <=> 2 Br- (aq) + Cu^{2+} (aq)}
 $$
-{{% /solution %}}
+{{< /solution >}}
 
 2. La constante d'équilibre associée à la réaction précédente vaut $K = \pu{1,2e25}$.\
 Prédire le sens d'évolution spontanée du système.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-- $Q\_{r,i} = \dfrac{[\ce{Br-}]\_i^2 \cdot [\ce{Cu^{2+}}]\_i}{[\ce{Br2}]\_i \cdot C^{o2}} = 0$.
+- $Q_{r,i} = \dfrac{[\ce{Br-}]_i^2 \cdot [\ce{Cu^{2+}}]_i}{[\ce{Br2}]_i \cdot C^{o2}} = 0$.
 
-- $Q\_{r,i} < K$, le système évolue dans le sens direct d'écriture de l'équation de la réaction chimique.
-{{% /solution %}}
+- $Q_{r,i} < K$, le système évolue dans le sens direct d'écriture de l'équation de la réaction chimique.
+{{< /solution >}}
 
 3. Ce résultat est-il en accord avec les observations ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - **Observation 1 :** la coloration de la solution varie, il existe une réaction chimique.
 
@@ -60,64 +58,64 @@ Prédire le sens d'évolution spontanée du système.
 - **Observation 3 :** La coloration de la phase organique laisse penser qu'il reste du dibrome à la fin de l'expérience (reste car la coloration est moins marquée que celle du tube $A$, ce qui laisse entendre qu'une partie du dibrome a disparu). La coloration de la phase aqueuse laisse penser que des ions cuivre sont apparus dans le milieu.
 
 Ces observations valident donc la réaction spontanée entre le dibrome et le cuivre.
-{{% /solution %}}
+{{< /solution >}}
 
 4. Que peut laisser penser la valeur de la constante d'équilibre sur le taux d'avancement final de la transformation ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 La valeur très élevée de la constante d'équilibre laisse penser que la transformation chimique est pratiquement totale, le taux d'avancement final de la transformation doit donc être proche de 1.
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 Dans un tube à essai, on introduit $\pu{2 mL}$ d'une solution de bromure de potassium, $\ce{K+ (aq) + Br-(aq)}$, à $\pu{1 mol.L-1}$ et $\pu{2 mL}$ d'une solution de sulfate de cuivre (II), $\ce{Cu^{2+} (aq) + SO4^{2-} (aq)}$ à $\pu{1 mol.L-1}$.
 
 - Aucune modification du milieu laisse penser que le système évolue.
-{{% /note %}}
+{{< /note >}}
 
 5. Écrire l'équation de la seule réaction chimique susceptible de se produire dans le milieu.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $$
     \ce{2 Br- (aq) + Cu^{2+} (aq) <=> Br2 (aq) + Cu (s)}
 $$
-{{% /solution %}}
+{{< /solution >}}
 
 6. Déterminer la valeur de la constante d'équilibre de la réaction précédente.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $K' = \dfrac{1}{K} = \pu{8,3e-26}$.
-{{% /solution %}}
+{{< /solution >}}
 
 7. Peut-on expliquer l'absence apparente d'évolution ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-- $Q\_{r,i} = \dfrac{[\ce{Br2}]\_i \cdot C^{o2}}{[\ce{Br-}]\_i^2 \cdot [\ce{Cu^{2+}}]\_i} = 0$.
+- $Q_{r,i} = \dfrac{[\ce{Br2}]_i \cdot C^{o2}}{[\ce{Br-}]_i^2 \cdot [\ce{Cu^{2+}}]_i} = 0$.
 
-- $Q\_{r,i} < K'$, le système évolue spontanément dans le sens direct de l'équation de la réaction, qui correspond à la formation de cuivre et de dibrome. Cependant, **la valeur très petite de la constante d'équilibre** permet de prévoir que **le système chimique avance très peu** : *on peut considérer que le système n'évolue quasiment pas*.\
+- $Q_{r,i} < K'$, le système évolue spontanément dans le sens direct de l'équation de la réaction, qui correspond à la formation de cuivre et de dibrome. Cependant, **la valeur très petite de la constante d'équilibre** permet de prévoir que **le système chimique avance très peu** : *on peut considérer que le système n'évolue quasiment pas*.\
 Aucune évolution n'est effectivement observée
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 On remplit un tube en $U$ d'une solution de bromure de cuivre (II), $\ce{Cu^{2+} (aq) + 2 Br- (aq)}$, à $\pu{0,1 mol.L-1}$ et on réalise le montage ci-dessous.
 On ferme l'interrupteur et on fait croître la tension entre les deux électrodes. Lorsqu'elle atteint environ $\pu{0,85 V}$, un courant traverse le circuit.
 On règle alors la tension à $\pu{1,2 V}$ et on laisse le courant circuler. Après quelques minutes, on observe l'électrode reliée au pôle négatif et la solution au voisinage de celle reliée au pôle positif.
-{{% /note %}}
+{{< /note >}}
 
-{{% columns %}}
+{{< columns >}}
 <img src="/terminales-pc/chap-12/chap-12-2/CuBr2-1.png" alt="" width="80%" />
 > Avant...
-{{% column %}}
+{{< column >}}
 <img src="/terminales-pc/chap-12/chap-12-2/CuBr2-2.png" alt="" width="100%" />
 > Après...
-{{% endcolumns %}}
+{{< endcolumns >}}
 
 8. Quel est le sens du courant électrique dans le circuit ? Préciser le sens de déplacement des différents porteurs de charges mis en jeu.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - Le générateur impose le sens du courant électrique : ce dernier quitte la borne positive du générateur et circule jusqu'à la borne négative.
 - Le sens de circulation du courant électrique est le sens de circulation des charges positives. Les charges positives (cations dans la solution) circulent donc de la borne positive vers la borne négative du générateur.
 - Les charges négatives (électrons dans les fils du circuit et anions dans la solution) circulent dans le sens opposé au sens de circulation du courant électrique. Elles se déplacent donc de la borne négative à la borne positive du générateur.
-{{% /solution %}}
+{{< /solution >}}
 
 9. Proposer une interprétation des phénomènes observés aux électrodes.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - *Électrode connectée à la borne positive du générateur*: **les électrons quittent cette électrode**, il sont donc libérés par une **réaction d'oxydation**. Le seul réducteur est $\ce{Br- (aq)}$ :
 $$
@@ -128,20 +126,20 @@ $$
 $$
     \ce{Cu^{2+} (aq) + 2 e- -> Cu (s)}
 $$
-{{% /solution %}}
+{{< /solution >}}
 
 10. Comparer l'évolution de ce système avec celle étudié lors des expériences précédentes. Existe-t-il une contradiction entre ces évolutions ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Dans cette dernière expérience, **le système évolue dans le sens inverse du sens spontané** mis en évidence lors des expériences précédentes. Ce résultat n'est pas en contradiction avec les conclusions précédentes puisqu'ici **il n'est pas question d'une transformation spontanée mais d'une transformation forcée par le passage du courant électrique généré par le générateur**.
 
-{{% note tip %}}
+{{< note tip >}}
 Lorsqu'un générateur fournit de l'énergie électrique à un système, il peut le forcer à évoluer dans le sens inverse de son sens d'évolution spontanée.
-{{% /note %}}
-{{% /solution %}}
+{{< /note >}}
+{{< /solution >}}
 
 ### Électrolyse
 
-{{% note tip %}}
+{{< note tip >}}
 
 - *Une électrolyse est une transformation forcée due à la circulation d'un
 courant électrique imposé par un générateur.*\
@@ -152,8 +150,8 @@ spontanée, et donc de s'éloigner de son état d'équilibre.
 - Connaissant le sens du courant, on peut envisager les différentes oxydations possibles à l'anode et les différentes réductions possibles à la cathode en sachant que le solvant et les électrodes peuvent participer à ces réactions.\
 *C'est l'analyse des produits formés qui permet de déterminer les réactions qui se produisent effectivement aux électrodes.*
 
-- *Lors d'une transformation forcée, le quotient de réaction $Q\_r$ **s'éloigne** toujours de la constante d'équilibre $K$.*
-{{% /note %}}
+- *Lors d'une transformation forcée, le quotient de réaction $Q_r$ **s'éloigne** toujours de la constante d'équilibre $K$.*
+{{< /note >}}
 
 <img src="/terminales-pc/chap-12/chap-12-2/chap-12-2-3.png" alt="" width="90%" />
 
@@ -177,28 +175,28 @@ Bilan de matière d'une électrolyse
     maintenant l'intensité $I$ du courant électrique constante, la
     quantité d'électricité $Q$ qui traverse une section du circuit
     électrique est :
-    $$ Q = I\\, \Delta t $$
+    $$ Q = I\, \Delta t $$
     avec $Q$ en coulomb (C), $I$ en ampère (A) et $\Delta t$ exprimé en seconde (s).\
     Cette quantité d'électricité est liée à la quantité d'électrons transférés
-    $n (e^-)\_{\text{transf}}$ d'une électrode à l'autre suivant :
-    $$Q = n (e^-)\_{\text{transf}}\\, \mathcal{F}$$
-    avec $n (e^-)\_{\text{transf}}$ exprimé en mole (mol), $\mathcal{F}$, constante de Faraday, exprimée en coulomb par mole ($\pu{C.mol-1}$).
+    $n (e^-)_{\text{transf}}$ d'une électrode à l'autre suivant :
+    $$Q = n (e^-)_{\text{transf}}\, \mathcal{F}$$
+    avec $n (e^-)_{\text{transf}}$ exprimé en mole (mol), $\mathcal{F}$, constante de Faraday, exprimée en coulomb par mole ($\pu{C.mol-1}$).
 
 - Si, par exemple, on s'intéresse à la quantité de matière de dioxygène formé au cours de l'expérience :
 
     | État | Avancement (en mol) | $\ce{2 H2O (l)}$ | $\ce{-->}$ | $\ce{O2 (g)}$ |$+$| $\ce{4 H+ (aq)}$ |$+$| $\ce{4 e-}$|
     | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
     | **Initial** | $x = 0$ | excès |  | 0 | | excès | | 0 |
-    | **Final** | $x = x\_f$ | excès |  | $x\_f$ | | excès | | $4\\, x\_f$ |
+    | **Final** | $x = x_f$ | excès |  | $x_f$ | | excès | | $4\, x_f$ |
 
     La quantité de matière d'électrons transférés lors de l'électrolyse
     est telle que :
     $$
-       n (e^-)_{\text{transf}} = 4\\, x\_f = \dfrac{I\\, \Delta t}{\mathcal{F}}
-         \qquad \text{donc} \qquad x\_f = \dfrac{I\\, \Delta t}{4\\, \mathcal{F}}
+       n (e^-)_{\text{transf}} = 4\, x_f = \dfrac{I\, \Delta t}{\mathcal{F}}
+         \qquad \text{donc} \qquad x_f = \dfrac{I\, \Delta t}{4\, \mathcal{F}}
     $$ Finalement :
     $$
-       n (\ce{O2})\_f = x\_f = \dfrac{I\\, \Delta t}{4\\,\mathcal{F}}
+       n (\ce{O2})_f = x_f = \dfrac{I\, \Delta t}{4\,\mathcal{F}}
     $$
 
 La transformation forcée du système chimique cesse :
@@ -216,9 +214,9 @@ La transformation forcée du système chimique cesse :
     parasites » peuvent être déclenchées en parallèle et former des
     produits gazeux susceptibles de détruire la pile.
 
-{{% note warning %}}
+{{< note warning >}}
 *Il ne faut donc pas essayer de recharger une pile usée portant la mention « non rechargeable ».*
-{{% /note %}}
+{{< /note >}}
 
 - Il existe des systèmes électrochimiques rechargeables dans lesquels il est possible de reformer les réactifs par électrolyse : les accumulateurs.
 

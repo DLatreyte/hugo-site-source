@@ -1,21 +1,19 @@
 ---
 title: "Comment peut-on modifier la structure d'une molécule ?"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-04-19T11:24:32+04:00
 draft: false
 toc: true
 tags: []
 categories: ["Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 100
 ---
 
 ## Introduction
 
-{{% note tip %}}
+{{< note tip >}}
 Les **molécules organiques** contiennent essentiellement des *atomes de
 carbone* et d'*hydrogène* et souvent des atomes d'oxygène ou d'azote.
 Elle peuvent être synthétiques ou naturelles et proviennent alors
@@ -36,7 +34,7 @@ est appelée organométallique.
 https://fr.wikipedia.org/wiki/Chimie_organique
 </a>
 </div>
-{{% /note %}}
+{{< /note >}}
 
 À l'issue de ce chapitre, dans lequel sont présentées les principales
 transformations de structure en chimie organique, vous devrez être
@@ -49,16 +47,16 @@ capables :
     *addition*, *élimination*) à partir de l'examen de la nature des
     réactifs et des produits.
 
-{{% note warning %}}
+{{< note warning >}}
 Dans ce chapitre, on se contente d'une **description macroscopique** des réactions chimiques.
 Les mécanismes réactionnels ne sont pas utilisés.
-{{% /note %}}
+{{< /note >}}
 
 ## Modifications de la chaîne carbonée
 
 ### Raccourcissement de la chaîne carbonée
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Craquage
 
@@ -66,27 +64,27 @@ Le **craquage** désigne, en pétrochimie, la *thermolyse* du pétrole et
 de ses dérivés liquides. L'opération consiste à *casser une molécule
 organique complexe en éléments plus petits*, notamment des alcanes et
 des alcènes.
-{{% /note %}}
+{{< /note >}}
 
 Les conditions de *température et de pression*, ainsi que la *nature du
 catalyseur* sont des éléments déterminants du craquage.
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 **Exercice 1**. *Sous la pression atmosphérique, à la température de
 500 °C et en présence de platine, l'hexane se décompose en propane et
 propène. Écrire l'équation de la réaction.*
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Vapocraquage (craquage à la vapeur)
 
 Le **vapocraquage** est un procédé pétrochimique qui consiste à obtenir,
 à partir d'alcanes lourds ou légers, des *alcènes* (éthylène, propylène)
 *en présence d'eau*.
-{{% /note %}}
+{{< /note >}}
 
 Ces alcènes sont principalement à la base de l'industrie des matières
 plastiques (polyéthylène, polypropylène, etc.) et servent également à la
@@ -94,16 +92,16 @@ production de bien d'autres produits dans les domaines de la cosmétique,
 la pharmacie, la construction, les industries électrique, électronique,
 le textile, l'aéronautique, etc.
 
-{{% note exercise %}}
+{{< note exercise >}}
 **Exercice 2**. *Sous la pression atmosphérique, à la température de
 800 °C et en présence de vapeur d'eau, le butane se décompose en éthène
 et dihydrogène. Écrire l'équation de la réaction.*
 
-{{% /note %}}
+{{< /note >}}
 
 ### Modification de la structure de la chaîne carbonée
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Reformage catalytique
 
@@ -112,36 +110,36 @@ effectuées sous *haute pression* et à *haute température* (de l'ordre de
 550 °C) en présence d'un *catalyseur*, au cours desquelles des
 hydrocarbures légers (**linéaires**, **ramifiés**, **cycliques**, ...)
 sont transformés en essence.
-{{% /note %}}
+{{< /note >}}
 
 Remarque
 : On appelle **essence** un mélange d'hydrocarbures dont la combustion est performante. On
     retrouve 20 à 30% d'alcanes, 5% de cycloalcanes, 30 à 40% d'alcènes,
     30 à 45% d'hydrocarbures aromatiques de la famille du benzène
 
-{{% note exercise %}}
+{{< note exercise >}}
 **Exercice 3**. *Rappeler les définitions des termes : alcane, alcène,
 cycloalcane et benzène. Donner leurs formules chimiques générale.*
 
-{{% /note %}}
+{{< /note >}}
 
 #### Exemples de reformage
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Isomérisation
 
 Une **isomérisation** est la transformation d'un *alcane à chaîne
 linéaire en un isomère de constitution ramifié, à température modérée
 (120 °C à 200 °C)*.
-{{% /note %}}
+{{< /note >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 **Exercice 4**. *Écrire l'équation de l'isomérisation de l'octane en
 2,2,4-triméthylpentane.*
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Cyclisation
 
@@ -149,19 +147,19 @@ Une **cyclisation** est la transformation d'*un alcane linéaire en
 cyclane, souvent ramifiés, à température modérée (120 °C à 200 °C)*.
 Cette transformation n'est possible que pour des alcanes possédant au
 moins cinq atomes de carbone.
-{{% /note %}}
+{{< /note >}}
 
 Remarque.
 
 :   Une cyclisation produit du dihydrogène.
 
-{{% note exercise %}}
+{{< note exercise >}}
 **Exercice 5**. *Écrire l'équation de cyclisation de l'hexane en
 méthylcyclopentane.*
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Déshydrocyclisation
 
@@ -171,16 +169,16 @@ du dihydrogène en réalisant la cyclisation à une température plus élevée
 Pt). Elle s'accompagne alors d'une **déshydrogénation** (élimination
 d'une molécule de dihydrogène) et conduit à l'apparition d'un cycle
 benzénique.
-{{% /note %}}
+{{< /note >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 **Exercice 6**. *Écrire l'équation de la réaction de déshydrocyclisation
 de l'hexane en benzène.*
-{{% /note %}}
+{{< /note >}}
 
 ### Allongement de la chaîne carbonée
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Alkylation
 
@@ -188,17 +186,17 @@ L'alkylation consiste à substituer (remplacer) un atome d'hydrogène
 d'une chaîne carbonée par un groupe alkyle. On allonge la chaîne d'un
 alcane en le faisant réagir avec un alcène (opération inverse du
 **craquage**).
-{{% /note %}}
+{{< /note >}}
 
 Son intérêt est de produire des espèces chimiques à fort indice
 d'octane.
 
-{{% note exercise %}}
+{{< note exercise >}}
 **Exercice 7**. *La réaction entre le méthylpropène et le méthylpropane
 donne du 2,2,4-triméthylpentane. Écrire l'équation de cette réaction.*
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Polymérisation par polyaddition
 
@@ -206,7 +204,7 @@ La **polymérisation par polyaddition** permet de rallonger la chaîne
 carbonée principale en réalisant une *addition répétée d'un très grand
 nombre de molécules insaturées appelées **monomères**.* Elle conduit à
 une macromolécule appelée **polymère**.
-{{% /note %}}
+{{< /note >}}
 
 Exemple.
 
@@ -216,16 +214,16 @@ Exemple.
 
 <img src="/terminales-pc/chap-17/chap-17-1/chap-17-1-1.png" alt="" width="50%" />
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 **Exercice 8**. *Écrire la réaction de polymérisation de $n$ molécules
 du monomère éthène.*
 
-{{% /note %}}
+{{< /note >}}
 
 ## Transformation du groupe caractéristique d'une molécule organique
 
-{{% note tip %}}
+{{< note tip >}}
 
 Une réaction chimique peut également modifier le groupe caractéristique
 d'une molécule.
@@ -241,11 +239,11 @@ peut être **oxydé** en groupe carboxyle.
 
 - ...
 
-{{% /note %}}
+{{< /note >}}
 
 ## À quelles catégories peut appartenir une réaction impliquant un composé organique ?
 
-{{% note normal %}}
+{{< note normal >}}
 
 Les **réactions organiques** sont des réactions chimiques impliquant des
 composés organiques. Les principaux types de réactions organiques sont
@@ -263,69 +261,69 @@ alimentaires, etc., met en jeu des réactions organiques.
 https://fr.wikipedia.org/wiki/Chimie_organique
 </a>
 </div>
-{{% /note %}}
+{{< /note >}}
 
 ### Réactions de substitution
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Substitution
 
 Une réaction de **substitution** est une réaction chimique *au cours de
 laquelle un atome ou groupe d'atomes, lié à un carbone par une liaison
 simple, est remplacé par un autre atome ou groupe d'atomes*.
-{{% /note %}}
+{{< /note >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 **Exercice 9**. *La réaction chimique entre 2-chloro-2-méthylpropane et
 l'eau est une réaction de substitution. Il se forme du
 2-méthylpropan-2-ol et de l'acide chlorhydrique. Écrire l'équation de
 cette réaction.*
-{{% /note %}}
+{{< /note >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 **Exercice 10**. *La réaction chimique entre le benzène et l'acide
 nitrique est une réaction de substitution. Il se forme du nitrobenzène
 et de l'eau. Écrire l'équation de cette réaction.*
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 **Exercice 11**. *La réaction chimique entre l'acide salycilique et
 l'acide éthanoïque est une réaction de substitution. Il se forme de
 l'acide acétylsalycilique et de l'eau. Écrire l'équation de cette
 réaction.*
 
-{{% /note %}}
+{{< /note >}}
 
 ### Réactions d'addition
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Addition
 
 Une réaction **d'addition** est une réaction chimique *au cours de
 laquelle un atome ou un groupe d'atomes vient se fixer sur des atomes
 initialement liés par une double ou une triple liaison*.
-{{% /note %}}
+{{< /note >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 **Exercice 12**. *La réaction chimique entre le 2-méthylbut-2-ène et le
 dibrome est une réaction d'addition. Écrire l'équation de la réaction et
 donner le nom du produit formé.*
-{{% /note %}}
+{{< /note >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 **Exercice 13**. *La réaction chimique entre l'éthanal et le dihydrogène
 est une réaction d'addition. Écrire l'équation de la réaction et donner
 le nom du produit formé.*
-{{% /note %}}
+{{< /note >}}
 
 ### Réactions d'élimination
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Élimination
 
@@ -334,19 +332,19 @@ laquelle deux atomes ou groupes d'atomes voisins sont retirés d'une
 molécule. Entre les 2 atomes porteurs de ces groupes d'atomes se forme
 une double ou une triple liaison.*
 
-{{% /note %}}
+{{< /note >}}
 
 Remarque.
 
 :   On parle aussi d'élimination lorsqu'une molécule *subit une
     cyclisation*.
 
-{{% note exercise %}}
+{{< note exercise >}}
 **Exercice 14**. *Écrire la réaction d'élimination du 2-méthylbutan-2-ol
 qui donne du 2 méthylbut-2-ène et de l'eau.*
-{{% /note %}}
+{{< /note >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 **Exercice 15**. *Écrire la réaction d'élimination du cyclohexanol qui
 donne du cyclohexène et de l'eau.*
-{{% /note %}}
+{{< /note >}}

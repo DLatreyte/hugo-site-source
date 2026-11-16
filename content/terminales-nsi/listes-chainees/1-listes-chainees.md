@@ -1,25 +1,23 @@
 ---
 title: "Listes Chaînées, présentation"
 subtitle: "... et implémentation à l'aide d'une classe"
-author: ""
-type: ""
 date: 2020-10-14T18:01:18+04:00
 draft: false
 toc: true
 tags: ["Tableau", "Tableau dynamique", "Liste", "Liste chaînée", "Complexité"]
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 100
 ---
 
 ## Tableaux
 
-{{% note tip %}}
+{{< note tip >}}
 
 - Un **tableau** est une *structure de données* dans laquelle *les éléments, tous de même type, occupent des positions contiguës en mémoire*.
 - Le nombre d'éléments qu'un tableau peut contenir est déterminé à la création d'un tableau.
-{{% /note %}}
+{{< /note >}}
 
 |Type Python | Type | Opération | Exemple | Complexité |
 | :----: | :----: | :----: | :----: | :----: |
@@ -29,10 +27,10 @@ auto_numbering: true
 | |  | Insertion d'un élément | `insere(tab, x, i)` | $O(n)$ |
 | |  | Recherche d'un élément | `est_dans(tab, x)` | $O(n)$ |
 
-{{% note normal %}}
+{{< note normal >}}
 
 - La structure de données appelée « liste » dans le langage Python est implémentée à l'aide de **tableaux dynamiques**.
-{{% /note %}}
+{{< /note >}}
 
 **Remarque :** Dans la suite de ce document, on va considérer que la liste Python `tab`, créé par l'instruction `tab = [i for i in range(20)]` est de longueur fixe. *Elle se comporte alors comme un tableau.*
 
@@ -63,13 +61,13 @@ def est_dans_rec(tab: List[int], n: int, i: int = 0) -> bool:
 ```
 
 4. Quelle est la complexité des algorithmes précédents en fonction de $N$, la taille du tableau ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - Dans l'algorithme itératif, dans le pire des cas (valeur absente du tableau) $N$ tours de boucle sont effectués.
 - Dans l'algorithme récursif, $N$ appels récursifs sont effectués.
 
 L'algorithme est donc en $O(N)$.
-{{% /solution %}}
+{{< /solution >}}
 
 ### Pourquoi l'insertion d'un élément dans un tableau est en $O(N)$ ?
 
@@ -89,10 +87,10 @@ Si on introduit, en position 1, la valeur 7. Le tableau est alors :
 
 </center>
 
-{{% note warning %}}
+{{< note warning >}}
 Cette opération n'est possible, sans crainte de perdre des données, que si toutes les cellules du tableau ne contiennent pas des données.
 Toute fonction permettant l'insertion de valeurs doit donc avertir un utilisateur dans le cas contraire.
-{{% /note %}}
+{{< /note >}}
 
 **Remarque :** Dans le code ci-dessous, les cellules seront considérées vides si elles contiennent la valeur `None`.
 
@@ -129,29 +127,29 @@ def insere_rec(tab: List[int], n: int, i: int, k: int) -> None:
 ```
 
 7. Quelle est la complexité des algorithmes précédents en fonction de $N$, la taille du tableau ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - Dans le pire des cas (insertion à la première place du tableau), on déplace $N-1$ valeurs.
 
 L'algorithme est donc en $O(N)$.
-{{% /solution %}}
+{{< /solution >}}
 
 ## Structure de liste chaînée
 
-{{% note tip %}}
+{{< note tip >}}
 Les **listes chaînées** constituent une structure de données :
 
 - de *longueur modifiable* ;
 - *plus efficace que les tableaux lorsqu'il s'agit d'ajouter ou de retirer un élément* (il n'est pas nécessaire de faire de la place en déplaçant les éléments) ;
 - qui servira de brique à l'élaboration d'autres structures de données.
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 Une **liste chaînée** permet de représenter une liste ; *chaque élément de cette liste est une **cellule*** contenant :
 
 - la **valeur** de l'élément à stocker ;
 - l'**adresse mémoire de la cellule** représentant l'élément suivant.
-{{% /note %}}
+{{< /note >}}
 
 <img src="/terminales-nsi/chap-7/chap-7-1-1.png" alt="" width="60%" />
 
@@ -178,9 +176,9 @@ class Cellule:
     """
 ```
 
-{{% note normal %}}
+{{< note normal >}}
 La *dernière cellule d'une liste chaînée devra pointer vers l'objet* `None` *qui représente donc une **cellule vide**.*
-{{% /note %}}
+{{< /note >}}
 
 9. Instancier 3 objets `c1`, `c2`, `c3`, de type `Cellule`, dont les valeurs sont 1, 2, 3.
 Tous ces objets sont pour l'instant isolés (ils ne pointent vers aucune autre cellule si ce n'est la cellule vide `None`).
@@ -192,13 +190,13 @@ Tous ces objets sont pour l'instant isolés (ils ne pointent vers aucune autre c
 
 ### Les listes chaînées sont des structures fondamentalement récursives
 
-{{% note tip %}}
+{{< note tip >}}
 Une liste chaînée est :
 
 - *soit la liste vide* (objet `None`) ;
 - *soit constituée de son premier élément* (objet de type `Cellule`) et *du reste des éléments qui forment aussi une liste*.
 Une liste chaînée est donc une **structure récursive**.
-{{% /note %}}
+{{< /note >}}
 
 ### Une liste chaînée est-elle forcément homogène
 
@@ -206,12 +204,12 @@ Tout au long de ce document nous allons uniquement envisager des listes chaîné
 
 ## Quelques opérations sur les listes chaînées
 
-{{% note warning %}}
+{{< note warning >}}
 
 Le point de vue envisagé dans la suite de ce document est celui de la **programmation impérative** : nous allons définir des fonctions qui vont modifier la liste chaînée.  
 Nous créerons une classe enveloppe dans un prochain document, de façon à ce notre liste chaînée ait la même interface qu'une liste Python.
 
-{{% /note %}}
+{{< /note >}}
 
 ### Longueur d'une liste chaînée
 
@@ -238,10 +236,10 @@ def longueur_iter(lst: Cellule) -> int:
 ```
 
 14. Déterminer la complexité du calcul de la longueur d'une liste.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 On réalise autant d'appels récursifs (ou de tours de boucles qu'il y a d'éléments dans la liste).  
 La complexité est donc en $O(N)$.
-{{% /solution %}}
+{{< /solution >}}
 
 ### Affichage de tous les éléments d'une liste
 
@@ -301,12 +299,12 @@ def n_ieme_element_iter(lst: Cellule, i: int) -> int:
 ```
 
 19. Déterminer la complexité de la recherche du n-ième élément d'une liste.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - Si l'élément dont on cherche la valeur est le dernier de la liste il est nécessaire de faire $N$ appels récursifs (ou tours de boucles).
 - Si l'indice est hors des limites, il est ici aussi nécessaire de parcourir toute la liste avant de s'en rendre compte.
 L'algorithm est donc en $O(N)$.
-{{% /solution %}}
+{{< /solution >}}
 
 ### Modification de la valeur d'une cellule sans modifier la structure de la liste
 
@@ -340,9 +338,9 @@ def ajout_fin_liste(lst: Cellule, valeur: int) -> None:
 ```
 
 22. Quelle est la complexité de la fonction `ajout_fin_liste` ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 On doit parcourir toute la liste pour ajouter un élément à la fin. La complexité est donc linéaire.
-{{% /solution %}}
+{{< /solution >}}
 
 ### Ajout d'une valeur au début de la liste
 
@@ -359,9 +357,9 @@ def ajout_debut_liste(lst: Cellule, valeur: int) -> Cellule:
 ```
 
 24. Quelle est la complexité de cette fonction ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $O(1)$
-{{% /solution %}}
+{{< /solution >}}
 
 ### Retrait du dernier élément d'une liste
 
@@ -377,9 +375,9 @@ def retrait_dernier_element(lst: Cellule) -> int:
 ```
 
 26. Quelle est la complexité de cette fonction ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Il faut parcourir la liste, donc $O(N)$.
-{{% /solution %}}
+{{< /solution >}}
 
 ### Retrait du premier élément d'une liste
 
@@ -396,9 +394,9 @@ def retrait_premier_element(lst: Cellule) -> tuple[int, Cellule]:
 ```
 
 28. Quelle est la complexité de cette fonction ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $O(1)$.
-{{% /solution %}}
+{{< /solution >}}
 
 ### Retrait du n-ième élément d'une liste
 
@@ -419,15 +417,15 @@ def retrait_n_ieme_element(lst: Maillon, i: int) -> int:
 ```
 
 30. Quelle est la complexité de cette fonction ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Le retrait en lui-même est en $O(1)$ mais il faut arriver jusqu'à la valeur. L'ensemble est donc en $O(N)$.
-{{% /solution %}}
+{{< /solution >}}
 
 ### Concaténation de deux listes
 
-{{% note tip %}}
+{{< note tip >}}
 On appelle **concaténation** de deux listes l'opération consistant à mettre bout à bout les deux listes.
-{{% /note %}}
+{{< /note >}}
 
 31. Écrire la fonction `concatener` dont la spécification est :
 
@@ -476,11 +474,11 @@ def concatener_avec_copie_integrale(lst1: Cellule, lst2: Cellule) -> Cellule:
 <img src="/terminales-nsi/chap-7/chap-7-1-5.png" alt="" width="100%" />
 
 34. Quelle est la complexité de la fonction `concatener` ? Même question pour la fonction `concatener_avec_copie_integrale`.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - Dans le premier cas, il est nécessaire de recopier tous les éléments de `lst1`. La complexité est donc linéaire et dépend du nombre d'élements de `lst1`.
 - Dans le second cas, on recopie tous les éléments de `lst1` et de `lst2`. La complexité est donc linéaire et est la somme du nombre d'éléments de `lst1` et de `lst2`.
-{{% /solution %}}
+{{< /solution >}}
 
 ### Renverser une liste
 
@@ -504,15 +502,15 @@ def renverser(lst: Cellule) -> Cellule:
 
 ## Conclusion
 
-{{% note tip %}}
+{{< note tip >}}
 
 - Une **liste chaînée** est une structure de données utile pour représenter une *séquence finie d'éléments*.
 - Chaque élément est contenu dans une **cellule**, qui fournit, en plus de la **valeur**, un moyen pour accéder à la **cellule suivante**.
 - Les éléments d'une liste chaînée ne sont pas situés dans des emplacements contigüs en mémoire.
 - Les opérations sur les listes chaînées se programment sous la forme de **parcours qui suivent ces liaisons**, en utilisant la récursivité ou des boucles.
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 
 Une liste chaînée est un **type abstrait de données** qui doit, au minimum, fournir les fonctions suivantes :
 
@@ -522,7 +520,7 @@ Une liste chaînée est un **type abstrait de données** qui doit, au minimum, f
 - `est_vide` : détermine si la liste est vide ou pas ;
 - `nième_élément` : retourne la valeur du nième élément depuis le début.
 
-{{% /note %}}
+{{< /note >}}
 
 | Action | Liste chaînée | Tableau | Tableau dynamique |
 | :--: | :--: | :--: | :--: |

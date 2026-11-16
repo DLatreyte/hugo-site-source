@@ -1,17 +1,15 @@
 ---
 title: "Le télescope James-Webb"
 subtitle: ""
-author: ""
-type: ""
 date: 2022-01-07T12:10:03+04:00
 draft: false
 toc: true
 tags: []
 categories: ["Premières Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
 mathjax: true
+weight: 200
 ---
 
 ## Le télescope
@@ -29,21 +27,21 @@ L'observatoire spatial entame alors son voyage vers sa destination, le **point d
 
 > **Figure 1** (<a href="https://fr.wikipedia.org/wiki/James-Webb_(télescope_spatial)" target="_blank">Wikipedia</a>)
 
-{{% note tip %}}
+{{< note tip >}}
 
 Toutes les données sur le télescope en temps réel sont accessibles à <a href="https://www.jwst.nasa.gov/content/about/orbit.html" target="_blank">cette adresse.</a>
 
-{{% /note %}}
+{{< /note >}}
 
 ## Le point de Lagrange $L_2$
 
 *Dans cet exercice, on considère que le point de Lagrange $L_2$ est un point dans l'espace au niveau duquel la valeur du champ gravitationnel total créé par le Soleil et la Terre est égale à la valeur du champ gravitationnel créé par le Soleil au niveau du centre de la Terre.*
 
-{{% note warning %}}
+{{< note warning >}}
 
 La description du point de Lagrande $L_2$ donnée ci-dessus n'est pas une définition mais une approximation seulement valable si $R_T \gg d$.
 
-{{% /note %}}
+{{< /note >}}
 
 <img src="/premieres-pc/chap-8/chap-8-2/Positions_points_Lagrange_sur_axe.png" alt="" width=90%>
 
@@ -69,7 +67,7 @@ Le point de Lagrange $L_2$ se trouve sur la ligne Terre-Soleil, au-delà de la T
 5. Déterminer, en utilisant les expressions établies aux questions 3. et 4., la relation qui définit le point de Lagrange $L_2$.
 6. On peut montrer que la relation précédente a pour approximation&nbsp;:
 $$
-    d = R_T\\, \left(\dfrac{M_T}{3 M_S}\right)^{1/3}
+    d = R_T\, \left(\dfrac{M_T}{3 M_S}\right)^{1/3}
 $$
 Calculer la valeur de la distance $d$ entre la Terre et le point $L_2$. Cette valeur est-elle cohérente avec celle annoncée dans l'énoncé ?
 7. Quel sera le mouvement d'une masse placée au point $L_2$&nbsp;?
@@ -88,8 +86,8 @@ Calculer la valeur de la distance $d$ entre la Terre et le point $L_2$. Cette va
 
 ## Corrigé
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
 {{< remote "Correction au format pdf" "/premieres-pc/chap-8/chap-8-2/james_webb_correction.pdf" >}}
 
-{{% /solution %}}
+{{< /solution >}}

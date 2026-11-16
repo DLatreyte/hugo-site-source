@@ -1,17 +1,15 @@
 ---
 title: "Conditions d’interférence de deux ondes sinusoïdales"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-09-21T21:13:09+04:00
 draft: false
 toc: true
 tags: ["Différence de marche", "Superposition", "Période temporelle", "Longueur d'onde", "Retard", "Déphasage", "Ondes","Interférences"]
 categories: ["Physique", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
 mathjax: true
+weight: 1100
 ---
 [^1]: Comprendre : *les rayonnements ne sont pas identiques, même si émis par le même atome*.
 [^2]: Comprendre : *les rayonnements ne sont pas identiques, même si émis par le même élément chimique*.
@@ -19,14 +17,14 @@ mathjax: true
 
 ## Interférences
 
-{{% note tip %}}
+{{< note tip >}}
 On appelle **interférence** le *résultat de la superposition de plusieurs ondes (mécaniques ou électromagnétiques) en un même point de l'espace*.
 
 En physique, on distingue normalement deux phénomènes particuliers qui se produisent lorsqu'on additionne des ondes sinusoïdales :
 
 - L'**interférence**, *quand les ondes ont la **même fréquence**.*
 - Le **battement**, *quand les fréquences des ondes sont légèrement différentes*.
-{{% /note %}}
+{{< /note >}}
 
 Par la suite, toutes les ondes étudiées seront **sinusoïdales**, **de même fréquence** $f$.
 
@@ -48,10 +46,10 @@ Les ondes lumineuses présentent quelques particularités (par rapport aux ondes
 
 Les récepteurs n'étant pas capables « de suivre » les vibrations de la lumière ($f \approx \pu{1e15 Hz}$), ils réalisent une « moyenne ». *Ce processus d'intégration nivelle les variations d'intensité lumineuse dans la plupart des situations et le phénomène d'interférences lumineuse n'est généralement pas visible*.
 
-{{% note tip %}}
+{{< note tip >}}
 *Le phénomène d'interférences n'est visible avec de la lumière qu'à la condition que les deux ondes qui interfèrent soient **issues de la même source** !*  
 ... et que la différence de chemin optique est inférieure à la **longueur de cohérence** (notion pas au programme).
-{{% /note %}}
+{{< /note >}}
 
 <img src="/terminales-pc/chap-2/chap-2-11-2.jpg" alt="" width="50%" />
 > Le montage expérimental doit donc être légèrement modifié lorsqu'on réalise des interférences lumineuses : les sources secondaires sont issues du même faisceau lumineux.
@@ -76,14 +74,14 @@ avec $p$ entier.
 $$ \tau = p T \Leftrightarrow \delta = p \lambda $$
 avec $p$ entier.
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Interférence constructive
 
 - La différence de marche $\delta$ de deux ondes **en phase** est un multiple entier de la longueur d'onde $\lambda$ :
 $$ \tau = p T \Leftrightarrow \delta = p \lambda $$
 - *L'amplitude de l'addition des deux ondes en phase est égale à la somme des amplitudes de ces ondes* : l'interférence est dite **constructive**.
-{{% /note %}}
+{{< /note >}}
 
 #### Rappel
 
@@ -103,7 +101,7 @@ avec $p$ entier.
 $$ \tau = (2p + 1) \dfrac{T}{2} \Leftrightarrow \delta = (2p + 1) \dfrac{\lambda}{2} $$
 avec $p$ entier.
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Interférence destructive
 
@@ -111,7 +109,7 @@ avec $p$ entier.
 $$ \tau = (2p + 1) \dfrac{T}{2} \Leftrightarrow \delta = (2p + 1) \dfrac{\lambda}{2} $$
 
 - *L'amplitude de l'addition des deux ondes en opposition de phase est égale à la différence des amplitudes de ces ondes* : l'interférence est dite **destructive**.
-{{% /note %}}
+{{< /note >}}
 
 #### Rappel
 
@@ -129,13 +127,13 @@ On considère une situation dans laquelle les ondes présentent un déphasage qu
 $$ \delta \neq (2p + 1) \dfrac{\lambda}{2} \text{ et } \delta \neq n \lambda$$
 avec $p$ et $n$ entiers. *On ne peut rien dire de plus sans l'expression des élongations*.
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Interférence quelconque
 
 - La différence de marche $\delta$ entre deux ondes ni en phase ni en opposition de phase est quelconque.
 - Il est alors impossible de prédire sans calcul (ce qui est hors programme) l'amplitude du résultat de l'addition des deux ondes.
-{{% /note %}}
+{{< /note >}}
 
 ## Fentes, trous d'Young
 
@@ -152,14 +150,14 @@ La configuration des fentes (ou trous) d'Young est à connaître.
 - L'expression de la différence de marche n'est pas à apprendre par cœur. Sa démonstration ne figure pas au programme.  
 Par contre, il est nécessaire de savoir utiliser cette expression.
 
-{{% solution "Démonstration pour les plus curieux" %}}
+{{< solution "Démonstration pour les plus curieux" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note normal %}}
+{{< note normal >}}
 Dans le cas des fentes (ou trous) d'Young, la différence de marche entre l'onde émise par $S_2$ et l'onde émise par $S_1$ a pour expression :
 $$ \delta = \dfrac{ax}{D} $$
-{{% /note %}}
+{{< /note >}}
 
 ### Résultat à l'écran
 
@@ -167,12 +165,12 @@ $$ \delta = \dfrac{ax}{D} $$
 
 ### Interfrange
 
-{{% note tip %}}
+{{< note tip >}}
 On appelle **interfrange** $i$ la *période spatiale de la figure obtenue à l’écran dans le champ d’interférence*.
 
 Si $D \gg a$,
 $$ i = \dfrac{\lambda D}{a} $$
-{{% /note %}}
+{{< /note >}}
 
 ### Influence de la longueur d'onde sur les figures d'interférence
 
@@ -188,9 +186,9 @@ Les lieux où les ondes interférent constructivement (respectivement destructiv
 <img src="/terminales-pc/chap-2/chap-2-11-8-3.png" alt="" width="80%" />
 <img src="/terminales-pc/chap-2/chap-2-11-8-4.png" alt="" width="80%" />
 
-{{% note tip %}}
+{{< note tip >}}
 
 - *Les figures d'interférence de chacune des longueurs d'onde se superposent sur l'écran*.
 - La frange centrale, correspondant à une différence de marche nulle, est « brillante » pour chacune des longueurs d'onde. *Elle apparaît donc blanche à l'écran*.
 - Les autres franges « brillantes » n'étant  pas disposées au même endroit dans l'espace pour toutes les longueurs d'ondes, *leur superposition conduit à un phénomène d'irisation*.
-{{% /note %}}
+{{< /note >}}

@@ -1,14 +1,13 @@
 ---
 title: "Parties du programme à l'examen (BO n°36, du 30 septembre 2022)"
 subtitle: "Toutes les parties du programmes n'ont pas à être traitées avant l'examen"
-author: ""
-type: ""
 date: 2020-08-19T18:10:34+04:00
 draft: true
 toc: true
 tags: ["Bulletin Officiel", "Épreuve BAC"]
 categories: ["Programme officiel"]
-image: ""
+
+weight: 9900
 ---
 
 ## 1. Partie écrite

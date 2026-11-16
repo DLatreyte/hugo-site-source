@@ -1,27 +1,25 @@
 ---
 title: "Équilibre d'un système"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-12-06T13:25:30+04:00
 draft: false
 toc: true
 tags: ["Deuxième loi de Newton","Équilibre"]
 categories: ["Physique", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
 mathjax: true
+weight: 600
 ---
 
-{{% note warning %}}
+{{< note warning >}}
 Les lois de Newton seules sont insuffisantes pour décrire l'équilibre des systèmes dans le cas général. Leur utilisation conduit cependant à la solution des problèmes dans les deux cas suivants&nbsp;:
 
 - Le système est soumis à **deux forces ayant même droite d'action**&nbsp;;
 - Le système est soumis à **plusieurs forces coplanaires et concourantes**.
-{{% /note %}}
+{{< /note >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 1
 
@@ -35,12 +33,12 @@ Appliquons cette caractéristique dans le cas particulier suivant&nbsp;: une mas
 
 Données&nbsp;:
 : $k = \pu{1000 N.m-1}$ et $g = \pu{10 N.kg-1}$.
-{{% /note %}}
-{{% solution "Solution" %}}
+{{< /note >}}
+{{< solution "Solution" >}}
 {{< remote "Solution au format pdf" "/terminales-pc/chap-7/chap-7-6-8.pdf" >}}
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 2
 
@@ -54,12 +52,12 @@ Données&nbsp;:
 : $g = \pu{10 N.kg-1}$&nbsp;; masse volumique de l'eau $\rho = \pu{1,0e3 kg.m-3}$.
 
 <img src="/terminales-pc/chap-7/chap-7-6-4.png" alt="" width="30%" />
-{{% /note %}}
-{{% solution "Solution" %}}
+{{< /note >}}
+{{< solution "Solution" >}}
 {{< remote "Solution au format pdf" "/terminales-pc/chap-7/chap-7-6-9.pdf" >}}
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 3
 
@@ -70,12 +68,12 @@ Donnée&nbsp;:
 : $g = \pu{10 N.kg-1}$
 
 <img src="/terminales-pc/chap-7/chap-7-6-6.png" alt="" width="70%" />
-{{% /note %}}
-{{% solution "Solution" %}}
+{{< /note >}}
+{{< solution "Solution" >}}
 {{< remote "Solution au format pdf" "/terminales-pc/chap-7/chap-7-6-10.pdf" >}}
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 4
 
@@ -94,12 +92,12 @@ Donnée&nbsp;:
 Déterminer la tension de chacun des deux fils.
 
 <img src="/terminales-pc/chap-7/chap-7-6-3.png" alt="" width="70%" />
-{{% /note %}}
-{{% solution "Solution" %}}
+{{< /note >}}
+{{< solution "Solution" >}}
 {{< remote "Solution au format pdf" "/terminales-pc/chap-7/chap-7-6-11.pdf" >}}
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 5
 
@@ -110,12 +108,12 @@ Déterminer&nbsp;:
 1. La force électrique exercée par la charge $+q$ sur la charge $-2q$ et la tension $\overrightarrow{T}$ du fil.
 
 <img src="/terminales-pc/chap-7/chap-7-6-1.png" alt="" width="65%" />
-{{% /note %}}
-{{% solution "Solution" %}}
+{{< /note >}}
+{{< solution "Solution" >}}
 {{< remote "Solution au format pdf" "/terminales-pc/chap-7/chap-7-6-12.pdf" >}}
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 6
 
@@ -129,12 +127,12 @@ Données&nbsp;:
 : Poids de $m_1$&nbsp;: $\pu{4 N}$&nbsp;; $g = \pu{10 N.kg-1}$.
 
 <img src="/terminales-pc/chap-7/chap-7-6-5.png" alt="" width="70%" />
-{{% /note %}}
-{{% solution "Solution" %}}
+{{< /note >}}
+{{< solution "Solution" >}}
 {{< remote "Solution au format pdf" "/terminales-pc/chap-7/chap-7-6-13.pdf" >}}
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 7
 
@@ -146,7 +144,7 @@ On prendra $g = \pu{10 N.kg-1}$, et on ne tiendra pas compte des frottements.
 3. Si l'allongement est de $\pu{7 cm}$, que vaut $\alpha$&nbsp;?
 
 <img src="/terminales-pc/chap-7/chap-7-6-7.png" alt="" width="70%" />
-{{% /note %}}
-{{% solution "Solution" %}}
+{{< /note >}}
+{{< solution "Solution" >}}
 {{< remote "Solution au format pdf" "/terminales-pc/chap-7/chap-7-6-14.pdf" >}}
-{{% /solution %}}
+{{< /solution >}}

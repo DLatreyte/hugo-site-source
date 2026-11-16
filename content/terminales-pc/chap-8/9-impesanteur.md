@@ -1,17 +1,15 @@
 ---
 title: "Annale : Laboratoires en impesanteur"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-12-30T16:09:44+04:00
 draft: false
 toc: true
 tags: ["Deuxième loi de Newton", "Équation différentielle", "Intégration", "Condition initiale", "Équations horaires", "Repère de Frenet"]
 categories: ["Physique", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
 mathjax: true
+weight: 900
 ---
 
 Au terme apesanteur, utilisé dans le langage courant, on préfère aujourd’hui celui d’impesanteur, en raison de la confusion orale entre «&nbsp;la pesanteur&nbsp;» et «&nbsp;l’apesanteur&nbsp;».
@@ -22,7 +20,7 @@ L’étude de l’influence de la pesanteur sur certains phénomènes physiques,
 Extrait d’un document scientifique du site Educnet.
 
 L’Airbus «&nbsp;Zéro G&nbsp;» qui est en vol horizontal à $\pu{6300 m}$ d’altitude monte en se cabrant à 47°. Il est alors en hyper pesanteur [...]. Le pilote diminue ensuite la poussée
-des réacteurs de façon à juste compenser le frottement de l’air et l’avion entre en phase de chute libre dès $\\pu{8000 m}$. Son contenu est en impesanteur. Son élan lui permet d’atteindre $\pu{8700 m}$ puis il retombe (phase descendante de la parabole). Après avoir remis les gaz à $\pu{8000 m}$ et retrouvé une phase d’hyper pesanteur l’avion reprend son vol horizontal à $\pu{6300 m}$. L’opération dure environ une minute pour obtenir 25 secondes d’impesanteur ou micropesanteur [...].
+des réacteurs de façon à juste compenser le frottement de l’air et l’avion entre en phase de chute libre dès $\pu{8000 m}$. Son contenu est en impesanteur. Son élan lui permet d’atteindre $\pu{8700 m}$ puis il retombe (phase descendante de la parabole). Après avoir remis les gaz à $\pu{8000 m}$ et retrouvé une phase d’hyper pesanteur l’avion reprend son vol horizontal à $\pu{6300 m}$. L’opération dure environ une minute pour obtenir 25 secondes d’impesanteur ou micropesanteur [...].
 
 <div style="text-align: right;" >
 <a href="http://www.educnet.education.fr/orbito/pedago/zerog/zerog2.htm" target="_blank"> http://www.educnet.education.fr/orbito/pedago/zerog/zerog2.htm </a>
@@ -31,7 +29,7 @@ des réacteurs de façon à juste compenser le frottement de l’air et l’avio
 <img src="/terminales-pc/chap-8/chap-8-9/chap-8-9-1.png" alt="" width="" />
 
 Le mouvement de l’avion de masse $m$ est étudié pendant sa phase de chute libre dans le plan vertical $xOz$ défini sur la figure précédente. Lors de cette phase, tout se passe comme si, en première approximation, l’avion n’était soumis qu’à la seule force de pesanteur.\
-À $t = 0$, l’altitude initiale est $z_0$, la vitesse du centre d’inertie de l’avion est $v_0 = \pu{6,0e2 km.h-1}$ et l’inclinaison du vecteur-vitesse initiale $\vec{v}\_0$ par rapport à l’horizontale est $\alpha = \pu{47°}$.\
+À $t = 0$, l’altitude initiale est $z_0$, la vitesse du centre d’inertie de l’avion est $v_0 = \pu{6,0e2 km.h-1}$ et l’inclinaison du vecteur-vitesse initiale $\vec{v}_0$ par rapport à l’horizontale est $\alpha = \pu{47°}$.\
 Le champ de pesanteur est supposé uniforme et de valeur $g = \pu{9,8 m.s-2}$.
 
 1. En appliquant la 2<sup>ème</sup> loi de Newton à l’avion, déterminer l’expression du vecteur-accélération $\vec{a}$ de son centre d’inertie. En déduire les coordonnées $a_x$ et $a_z$ de ce vecteur-accélération.
@@ -91,6 +89,6 @@ Quel est l’atout principal des expériences en impesanteur réalisées à bord
 
 ## Corrigé
 
-{{% solution "Réponses" %}}
+{{< solution "Réponses" >}}
 {{< remote "Corrigé au format pdf" "/terminales-pc/chap-8/chap-8-9/chap-8-9-3.pdf" >}}
-{{% /solution %}}
+{{< /solution >}}

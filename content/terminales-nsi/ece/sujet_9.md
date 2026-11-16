@@ -1,16 +1,14 @@
 ---
 title: "NUMERIQUE et SCIENCES INFORMATIQUES"
 subtitle: "Partie pratique"
-author: ""
-type: ""
 date: 2021-11-07T04:57:44+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: false
 auto_numbering: true
+weight: 9900
 ---
 
 ## Exercice 1 (50% des points)
@@ -36,7 +34,7 @@ if __name__ == "__main__":
     assert moyenne(notes) == 12.5
 ```
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
 ```python
 from typing import List, Tuple
@@ -59,7 +57,7 @@ def moyenne(notes: List[Tuple[float]]) -> float:
     return somme_notes / somme_coefs
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Exercice 2 (50% des points)
 
@@ -101,7 +99,7 @@ if __name__ == "__main__":
     ]
 ```
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
 ```python
 from typing import List, Tuple
@@ -133,4 +131,4 @@ if __name__ == "__main__":
     ]
 ```
 
-{{% /solution %}}
+{{< /solution >}}

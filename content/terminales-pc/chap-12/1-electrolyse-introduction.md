@@ -1,16 +1,14 @@
 ---
 title: "Électrolyse, une introduction"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-02-06T18:56:43+04:00
 draft: false
 toc: true
 tags: []
 categories: ["Chimie", "Terminale Spé PC"]
-image: ""
 solution_est_visible: false
 auto_numbering: true
+weight: 100
 ---
 
 > Lors de cette séance, on va montrer que la circulation d’un courant électrique, *imposée par un générateur de tension continue*, *peut forcer le système chimique à évoluer dans le sens opposé au sens spontané d’évolution*.
@@ -36,58 +34,58 @@ auto_numbering: true
 ### Exploitation
 
 1. Schématiser le montage.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 2. Rappeler ce qu’est le courant électrique.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Le courant électrique est un mouvement d'ensemble de charges électriques (électrons dans les solides conducteurs, ions dans les solutions conductrices).
-{{% /solution %}}
+{{< /solution >}}
 
 3. Indiquer sur le schéma du montage le sens de circulation du courant électrique, **imposé par le générateur**, et celui des électrons.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Ce qui est important, c'est de retenir ici que le sens de circulation du courant est imposé par le générateur.
-{{% /solution %}}
+{{< /solution >}}
 
 4. Donner les définitions de l’anode et de la cathode.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - Anode : électrode au niveau de laquelle une réaction d'oxydation se déroule.
 - Cathode : électrode au niveau de laquelle une réaction de réduction se déroule.
-{{% /solution %}}
+{{< /solution >}}
 
 5. Repérer sur le schéma du montage les positions de l'anode et de la cathode.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 6. Le dichlore $\ce{Cl2 (aq)}$ oxyde spontanément le métal étain, ce qui produit des ions étain (II) $\ce{Sn^{2+} (aq)}$ et chlorure $\ce{Cl- (aq)}$.\
 Écrire l’équation de la réaction correspondante avec des nombres stœchiométriques entiers et les plus petits possibles.\
 La constante d’équilibre $K$ de la réaction a pour valeur : $\pu{7e50}$.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 7. La solution de chlorure d’étain (II) utilisée (et donc stockée dans des flacons au laboratoire) évolue-t-elle spontanément pour donner du dichlore et de l’étain ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 8. Faire l’inventaire des espèces chimiques présentes dans la solution et écrire les équations des demi-réactions susceptibles de se produire au niveau des électrodes.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 9. À partir des observations, choisir celles qui semblent se dérouler réellement.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 10. Écrire l’équation de la réaction dans le sens de la transformation chimique. La comparer à celle donnée à la question 6 et conclure.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Électrolyse à anode soluble
 
@@ -107,28 +105,28 @@ Si on attend suffisamment longtemps le fin fil de cuivre se désagrège complèt
 ### Exploitation
 
 11. Schématiser le montage réalisé.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 12. Indiquer le sens de circulation du courant électrique, imposé par le générateur, et celui des électrons.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 13. Faire l’inventaire des espèces chimiques présentes en solution et écrire les équations des réactions qui peuvent se produire lors de l’expérience :
     a. À l’anode ;
     b. À la cathode.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 14. Quel est le bilan de cette électrolyse ? La concentration en ions cuivre (II) varie-t-elle au cours de l’électrolyse ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 15. Pourquoi cette électrolyse est-elle appelée «&nbsp;à anode soluble&nbsp;» ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% /solution %}}
+{{< /solution >}}

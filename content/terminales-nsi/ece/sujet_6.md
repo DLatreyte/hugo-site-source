@@ -1,16 +1,14 @@
 ---
 title: "NUMERIQUE et SCIENCES INFORMATIQUES"
 subtitle: "Partie pratique"
-author: ""
-type: ""
 date: 2021-10-27T17:34:19+04:00
 draft: true
 toc: true
 tags: []
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: false
 auto_numbering: true
+weight: 9900
 ---
 
 ## Exercice 1 (50% points)
@@ -32,9 +30,9 @@ Exemples :
 [17, 2, 0]
 ```
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Exercice 2 (50% points)
 
@@ -110,7 +108,7 @@ False
 7
 ```
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
 ```python
 class Maillon:
@@ -154,4 +152,4 @@ class File:
         return None
 ```
 
-{{% /solution %}}
+{{< /solution >}}

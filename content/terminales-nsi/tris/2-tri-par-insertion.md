@@ -1,16 +1,14 @@
 ---
 title: "Tri par insertion"
 subtitle: ""
-author: ""
-type: ""
 date: 2023-11-24T12:59:57+04:00
 draft: false
 toc: true
 tags: ["Tri", "Invariant de boucle", "Variant de boucle", "Complexité"]
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 200
 ---
 
 ## Tri du joueur de cartes
@@ -53,16 +51,16 @@ les trier en appliquant le tri par insertion.
 
 ### Algorithme
 
-{{% note normal %}}
+{{< note normal >}}
 
 À chaque étape du processus, le tableau est divisé en deux sous-tableaux : le
 premier (indices plus petits que l'indice courant) est trié, le second
 (indices plus grands que l'indice courant n'est pas encore trié). **On cherche
 la place de l'élément courant (non encore trié) dans le tableau trié**.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 
 Le tri par insertion est basé sur l'utilisation de deux boucles imbriquées :
 
@@ -76,10 +74,10 @@ courant).
 L'algorithme du *tri par insertion* est un algorithme de *tri en place*. La
 réorganisation du tableau ne nécessite pas la création d'un nouveau tableau,
 ce qui économise de la place en mémoire.
-{{% /note %}}
+{{< /note >}}
 
 4. À partir de toutes les informations précédentes, écrire l'algorithme du tri par insertion. Implémenter cet algorithme en Python.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def tri_insertion(tab: list[int | float | str]) -> None:
@@ -93,7 +91,7 @@ def tri_insertion(tab: list[int | float | str]) -> None:
         tab[j + 1] = valeur      # On insère la valeur dans le tableau
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 5. Faire tourner « à la main » l'algorithme lorsque la fonction reçoit le tableau
 `tab = [5,2,4,6,1,3]`.
@@ -112,7 +110,7 @@ Prouver que l'algorithme est correct.
 
 11. Déterminer la complexité de l'algorithme.
 
-{{% note normal %}}
+{{< note normal >}}
 
 Le tri par sélection est globalement peu efficace. On peut tout de même lui attribuer quelques qualités :
 
@@ -124,4 +122,4 @@ Le tri par sélection est globalement peu efficace. On peut tout de même lui at
 
 - **Si vous avez des contraintes de mémoire :** Le tri par insertion est un tri en place, il utilise une quantité constante de mémoire supplémentaire, ce qui peut être avantageux si vous avez des contraintes de mémoire.
 
-{{% /note %}}
+{{< /note >}}

@@ -1,17 +1,14 @@
 ---
 title: "Caractéristiques des ondes progressives"
 subtitle: "Chapitre 2"
-author: ""
-type: ""
 date: 2020-09-04T13:26:22+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 30
 ---
 
 ## Au programme

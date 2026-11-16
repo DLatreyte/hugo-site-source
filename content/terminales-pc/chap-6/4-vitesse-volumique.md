@@ -1,21 +1,19 @@
 ---
 title: "Suivi cinétique et vitesses volumiques de formation et de disparition"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-11-14T20:04:29+04:00
 draft: false
 toc: true
 tags: ["Tableau d'avancement", "Vitesse volumique", "Suivi cinétique"]
 categories: ["Chimie", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 400
 ---
 
 ## Comment suivre l’évolution au cours du temps d’un système formé d'ions iodure et péroxodisulfate
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Expérience
 
@@ -31,7 +29,7 @@ Les ions peroxodisulfate réagissent lentement avec les ions iodure selon l’é
 $$
 \ce{ 2 I^-(aq) + S2O8^{2-}(aq) -> I2(aq) + 2 SO4^{2-}(aq)  }
 $$
-{{% /note %}}
+{{< /note >}}
 
 On utilise un colorimètre et la loi de Beer-Lambert pour déterminer l’évolution de la concentration du diiode formé au cours du temps.
 
@@ -45,25 +43,25 @@ On utilise un colorimètre et la loi de Beer-Lambert pour déterminer l’évolu
 
 1. Établir, à l'aide du logiciel Graphical Analysis, le graphique $[\ce{I2}] = f(t)$.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 <img src="/terminales-pc/chap-6/chap-6-4-1.png" alt="" width="70%" />
-{{% /solution %}}
+{{< /solution >}}
 
 2. Comment varie la vitesse de formation du diiode&nbsp;:
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Pour une durée $\Delta t$ donnée, on remarque que la concentration de diiode augmente de moins en moins vite lorsque le temps s'écoule. *La vitesse de formation du diiode est donc de moins en moins grande. Au bout d'une certaine durée elle s'annule même (l'état final de la transformation est atteint).*
-{{% /solution %}}
+{{< /solution >}}
 
 3. Expliquer cette évolution en utilisant un des facteurs cinétiques introduits dans les documents précédents.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 La concentration des réactifs est un facteur cinétique. Lorsque le système avance, cette concentration diminue, il est donc normal, **sauf cas particulier**, que la vitesse de formation du diiode diminue progressivement.
-{{% /solution %}}
+{{< /solution >}}
 
 4. Établir le tableau d'avancement de la transformation en fonction du temps.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 <center>
 
 | **État** | **Av.** | $\ce{2 I^-(aq)}$ | $\ce{S2O8^{2-}(aq)}$ | $\ce{I2(aq)}$ | $\ce{2 SO4^{2-}(aq)}$ |
@@ -72,11 +70,11 @@ La concentration des réactifs est un facteur cinétique. Lorsque le système av
 | Quelconque $t$ | $x(t)$ | $n_0(\ce{I^-}) - 2x(t)$ | $n_0(\ce{S2O8^{2-}}) - x(t)$ | $x(t)$ | $2 x(t)$ |
 
 </center>
-{{% /solution %}}
+{{< /solution >}}
 
 5. La transformation étudiée est-elle totale&nbsp;? Justifier la réponse.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - Si la transformation chimique est totale au moins un des réactifs est limitant et $x_f = x_{\text{max}}$.
 - Détermination de l'avancement maximal&nbsp;:
@@ -87,15 +85,15 @@ La concentration des réactifs est un facteur cinétique. Lorsque le système av
     $n_0(\ce{S2O8^{2-}}) - x_{\text{max}} = 0 \iff x_{\text{max}} = n_0(\ce{S2O8^{2-}})$.  
     <strong>A.N.</strong> $x_{\text{max}} = \pu{50e-3 L} \times \pu{0,10 mol.L-1} = \pu{5,0e-3 mol}$.
   - Finalement, $x_{\text{max}} = \pu{5,0e-3 mol}$ et $\ce{S2O8^{2-}}$ est le réactif limitant.
-- Sur le graphique, on constate que $[\ce{I2}]\_\infty = \pu{5,0e-2 mol.L-1}$. Or $[\ce{I2}]\_\infty = \dfrac{x_{\text{max}}}{V}$ avec $V$ le volume de la solution.  
-<strong>A.N.</strong> $[\ce{I2(aq)}]\_\infty = \dfrac{\pu{5,0e-3 mol}}{\pu{50e-3 L} + \pu{50e-3 L}} = \pu{5,0e-2 mol.L-1}$.
+- Sur le graphique, on constate que $[\ce{I2}]_\infty = \pu{5,0e-2 mol.L-1}$. Or $[\ce{I2}]_\infty = \dfrac{x_{\text{max}}}{V}$ avec $V$ le volume de la solution.  
+<strong>A.N.</strong> $[\ce{I2(aq)}]_\infty = \dfrac{\pu{5,0e-3 mol}}{\pu{50e-3 L} + \pu{50e-3 L}} = \pu{5,0e-2 mol.L-1}$.
 
 *La transformation chimique est bien totale.*
-{{% /solution %}}
+{{< /solution >}}
 
 6. À partir du tableau d'avancement, écrire les expression des concentrations molaires de toutes les espèces chimiques en fonction de la concentration molaire en diiode.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 À chaque instant $t$, $x(t) = V \cdot [\ce{I2}] (t)$, donc&nbsp;:
 
 - $[ \ce{S2O8^{2-}} ] (t) = [\ce{S2O8^{2-}}] _0 - \dfrac{x(t)}{V} = [\ce{S2O8^{2-}}]_0 - \dfrac{[\ce{I2}] \cdot V}{V} $
@@ -115,27 +113,27 @@ $$
 $$
 \boxed{[\ce{SO4^{2-}}] (t) = 2 [\ce{I2}] (t)}
 $$
-{{% /solution %}}
+{{< /solution >}}
 
 7. Ajouter les différentes fonctions sur le graphique de la question 1.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 <img src="/terminales-pc/chap-6/chap-6-4-2.png" alt="" width="100%" />
-{{% /solution %}}
+{{< /solution >}}
 
 ## Comment évaluer la durée nécessaire à l’achèvement de la transformation chimique étudiée
 
 ### Temps de demi-réaction
 
-{{% note tip %}}
-Le **temps de demi-réaction**, noté $t\_{1/2}$, d’une réaction chimique est la *durée nécessaire pour que l’avancement de la réaction parvienne à la moitié de sa valeur finale*.
+{{< note tip >}}
+Le **temps de demi-réaction**, noté $t_{1/2}$, d’une réaction chimique est la *durée nécessaire pour que l’avancement de la réaction parvienne à la moitié de sa valeur finale*.
 
 $$
     x (t_{1/2}) = \dfrac{x_f}{2}
 $$
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 - Si la transformation chimique est **totale**,
 
@@ -147,110 +145,110 @@ $$
 
 - Le temps de demi-réaction est la durée au bout de laquelle la moitié de la quantité de matière finale de produit a été produite.
 
-{{% /note %}}
+{{< /note >}}
 
 ### Le temps de demi-réaction est, en terminale, une valeur essentiellement expérimentale
 
 En classe de terminale, il n'est pas question de résoudre les équations différentielles qui traduisent l'évolution au cours du temps des concentrations. *On détermine donc le temps de demi-réaction à partir de l'expérience*.
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Détermination pratique du temps de demi-réaction
 
 1. Tracer la courbe $x = f(t)$.
 2. Déterminer la valeur de l'avancement final.
 2. Rechercher sur le graphique la date pour laquelle $x = \dfrac{x_f}{2}$&nbsp;; c'est $t_{1/2}$.
-{{% /note %}}
+{{< /note >}}
 
 8. Construire, à l'aide du logiciel Graphical Analysis, la courbe $x = f(t)$ et en déduire la valeur du demi-temps de réaction.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 <img src="/terminales-pc/chap-6/chap-6-4-3.png" alt="" width="100%" />
 > $t_{1/2} = \pu{9 min}$
-{{% /solution %}}
+{{< /solution >}}
 
 9. Démontrer que l'on peut, en fait, déterminer la valeur de $t_{1/2}$ à partir de la courbe $[\ce{I2}] = g(t)$ ou des courbes $[\ce{SO4^{2-}}] = h(t)$, $[\ce{I^-}] = m(t)$, etc.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 À partir du tableau d'avancement on a déterminé que&nbsp;:
 
-- $[\ce{I2}] (t) = \dfrac{x(t)}{V}$, donc $[\ce{I2}]\_f = \dfrac{x_f}{V}$.
+- $[\ce{I2}] (t) = \dfrac{x(t)}{V}$, donc $[\ce{I2}]_f = \dfrac{x_f}{V}$.
 On a donc $[\ce{I2}] (t_{1/2}) = \dfrac{x(t_{1/2})}{V} = \dfrac{x_f}{2V}$.
-Comme $x_f = V [\ce{I2}]\_f $, $[\ce{I2}] (t_{1/2}) = \dfrac{V [\ce{I2}]_f}{2V} = \dfrac{ [\ce{I2}] _f }{2}$.
+Comme $x_f = V [\ce{I2}]_f $, $[\ce{I2}] (t_{1/2}) = \dfrac{V [\ce{I2}]_f}{2V} = \dfrac{ [\ce{I2}] _f }{2}$.
 
 $$ \boxed{[\ce{I2}] (t_{1/2}) = \dfrac{ [\ce{I2}] _f }{2} }$$
 
-- $[\ce{SO4^{2-}}] (t) = \dfrac{2 x(t)}{V}$, donc $[\ce{SO4^{2-}}]\_f = \dfrac{2 x_f}{V}$.
+- $[\ce{SO4^{2-}}] (t) = \dfrac{2 x(t)}{V}$, donc $[\ce{SO4^{2-}}]_f = \dfrac{2 x_f}{V}$.
 On a donc $[\ce{SO4^{2-}}] (t_{1/2}) = \dfrac{ 2 x(t_{1/2})}{V} = \dfrac{2 x_f}{2V} = \dfrac{x_f}{V}$.
-Comme $x_f = \dfrac{V [\ce{SO4^{2-}}]\_f}{2}$, $[\ce{SO4^{2-}}] (t_{1/2}) = \dfrac{V [\ce{SO4^{2-}}]_f}{2V} = \dfrac{ [\ce{SO4^{2-}}] _f }{2}$.
+Comme $x_f = \dfrac{V [\ce{SO4^{2-}}]_f}{2}$, $[\ce{SO4^{2-}}] (t_{1/2}) = \dfrac{V [\ce{SO4^{2-}}]_f}{2V} = \dfrac{ [\ce{SO4^{2-}}] _f }{2}$.
 
 $$ \boxed{[\ce{SO4^{2-}}] (t_{1/2}) = \dfrac{ [\ce{SO4^{2-}}] _f }{2}} $$
 
-- $[\ce{I^-}] (t) = [\ce{I^-}]\_0 - \dfrac{2 x(t)}{V}$, donc $[\ce{I^-}]\_f = [\ce{I^-}]\_0 - \dfrac{2 x_f}{V}$. On a donc $[\ce{I^-}] (t_{1/2}) = [\ce{I^-}]\_0 - \dfrac{ 2 x(t_{1/2})}{V} = [\ce{I^-}]\_0 - \dfrac{2 x_f}{2V} = [\ce{I^-}]\_0 - \dfrac{x_f}{V}$.
-Comme $x_f = \dfrac{V }{2}\\, ([\ce{I^-}]\_0 - V [\ce{I^-}]\_f) $, $ [\ce{I^-}] (t_{1/2}) =  [\ce{I^-}]\_0 - \dfrac{V }{2}\\, ([\ce{I^-}]\_0 - [\ce{I^-}]\_f) = \dfrac{1}{2}\\, ([\ce{I^-}]\_0 + [\ce{I^-}]\_f)$.
+- $[\ce{I^-}] (t) = [\ce{I^-}]_0 - \dfrac{2 x(t)}{V}$, donc $[\ce{I^-}]_f = [\ce{I^-}]_0 - \dfrac{2 x_f}{V}$. On a donc $[\ce{I^-}] (t_{1/2}) = [\ce{I^-}]_0 - \dfrac{ 2 x(t_{1/2})}{V} = [\ce{I^-}]_0 - \dfrac{2 x_f}{2V} = [\ce{I^-}]_0 - \dfrac{x_f}{V}$.
+Comme $x_f = \dfrac{V }{2}\, ([\ce{I^-}]_0 - V [\ce{I^-}]_f) $, $ [\ce{I^-}] (t_{1/2}) =  [\ce{I^-}]_0 - \dfrac{V }{2}\, ([\ce{I^-}]_0 - [\ce{I^-}]_f) = \dfrac{1}{2}\, ([\ce{I^-}]_0 + [\ce{I^-}]_f)$.
 
-$$ \boxed{[\ce{I^-}] (t_{1/2}) = \dfrac{1}{2}\\, ([\ce{I^-}]\_0 + [\ce{I^-}]\_f) }$$
+$$ \boxed{[\ce{I^-}] (t_{1/2}) = \dfrac{1}{2}\, ([\ce{I^-}]_0 + [\ce{I^-}]_f) }$$
 
 - De même,
- $$ \boxed{[\ce{S2O8^{2-}}] (t_{1/2}) = \dfrac{1}{2}\\, ([\ce{S2O8^{2-}}]\_0 + [\ce{S2O8^{2-}}]\_f) = \dfrac{[\ce{S2O8^{2-}}]\_0}{2} }$$
+ $$ \boxed{[\ce{S2O8^{2-}}] (t_{1/2}) = \dfrac{1}{2}\, ([\ce{S2O8^{2-}}]_0 + [\ce{S2O8^{2-}}]_f) = \dfrac{[\ce{S2O8^{2-}}]_0}{2} }$$
  puisqu'il s'agit du réactif limitant.
 
  <img src="/terminales-pc/chap-6/chap-6-4-4.png" alt="" width="100%" />
-{{% /solution %}}
+{{< /solution >}}
 
 ### Intérêt de $t_{1/2}$
 
-{{% note tip %}}
+{{< note tip >}}
 Le **temps de demi-réaction** *fournit une échelle de temps caractéristique de la transformation étudiée*. L’expérience montre qu’un système cesse d’évoluer au bout d’une durée de l’ordre de quelques $t_{1/2}$.
-{{% /note %}}
+{{< /note >}}
 
 ## Vitesses (volumiques) d'un formation d'un produit et de disparition d'un réactif
 
 ### Vitesse (volumique) de formation d'un produit
 
-{{% note tip %}}
-La vitesse (volumique) de formation $v\_f (t)$ d'un produit $X$ a pour expression&nbsp;:
+{{< note tip >}}
+La vitesse (volumique) de formation $v_f (t)$ d'un produit $X$ a pour expression&nbsp;:
 $$
-    v\_f (t) = \lim \limits_{\Delta t \to 0} \dfrac{\[ X \](t+\Delta t) - \[ X \] (t)}{\Delta t} = \left( \dfrac{\mathrm{d} \[ X \]}{\mathrm{dt}} \right)_t
+    v_f (t) = \lim \limits_{\Delta t \to 0} \dfrac{[ X ](t+\Delta t) - [ X ] (t)}{\Delta t} = \left( \dfrac{\mathrm{d} [ X ]}{\mathrm{dt}} \right)_t
 $$
-{{% /note %}}
+{{< /note >}}
 
 ### Vitesse volumique de disparition d'un réactif
 
-{{% note tip %}}
-La vitesse (volumique) de disparition $v\_d (t)$ d'un réactif $Y$ a pour expression&nbsp;:
+{{< note tip >}}
+La vitesse (volumique) de disparition $v_d (t)$ d'un réactif $Y$ a pour expression&nbsp;:
 $$
-    v\_d (t) = - \left( \lim \limits_{\Delta t \to 0} \dfrac{\[ Y \](t+\Delta t) - \[ Y \] (t)}{\Delta t} \right) = - \left( \dfrac{\mathrm{d} \[ Y \]}{\mathrm{dt}} \right)_t
+    v_d (t) = - \left( \lim \limits_{\Delta t \to 0} \dfrac{[ Y ](t+\Delta t) - [ Y ] (t)}{\Delta t} \right) = - \left( \dfrac{\mathrm{d} [ Y ]}{\mathrm{dt}} \right)_t
 $$
-{{% /note %}}
+{{< /note >}}
 
-{{% note warning %}}
+{{< note warning >}}
 
 Le signe $-$ permet de définir *une vitesse de disparition positive* puisque la concentration du réactif $Y$ diminue au cours du temps.
 
-{{% /note %}}
+{{< /note >}}
 
 ### Quelle est l’unité d'une vitesse volumique ?
 
 10. À l'aide d'une analyse dimensionnelle, déterminer l'unité de la vitesse volumique.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $[v] = \dfrac{1}{L^3} \times \dfrac{n}{T}$ où $n$ est une quantité de matière. Comme $\dfrac{n}{V} = [C]$ la vitesse volumique est donc une concentration sur un temps et s'exprime en *mole par mètre-cube par seconde*&nbsp;: $\pu{mol.m-3.s-1}$.
 En pratique, on utilise *mole par litre par seconde*&nbsp;: $\pu{mol.L-1.s-1}$.
-{{% /solution %}}
+{{< /solution >}}
 
 ### Comment déterminer expérimentalement la valeur de la vitesse de réaction
 
-{{% note tip %}}
+{{< note tip >}}
 Pour déterminer une vitesse volumique $v$ à une date $t_1$, à partir des valeurs de la concentration d'un produit (ou d'un réactif) $[X]$ (ou $[Y]$) obtenues lors d’une expérience&nbsp;:
 
 - On modélise le «&nbsp;nuage de points&nbsp;»&nbsp;;
 - On mesure la pente de la tangente à la courbe obtenue lors de l’étape précédente au point d’abscisse $t_1$.
-{{% /note %}}
+{{< /note >}}
 
 <!--
 11. À l'aide du logiciel Graphical analysis déterminer la vitesse de réaction $v$ aux dates $\pu{5 min}$, $\pu{10 min}$ et $\pu{20 min}$.    
 Commenter l'évolution de la vitesse volumique de réaction.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 <img src="/terminales-pc/chap-6/chap-6-4-5.png" alt="" width="100%" />
 
 - $v (\pu{5 min}) = dfrac{\pu{2,4e-4 mol.min-1}}{\pu{100e-3 L}} = \pu{2,4e-3 mol.L-1.min-1}$&nbsp;;
@@ -258,27 +256,27 @@ Commenter l'évolution de la vitesse volumique de réaction.
 - $v (\pu{20 min}) = \pu{8,5e-4 mol.L-1.min-1}$&nbsp;;
 
 Comme attendu, la vitesse volumique de réaction diminue au cours du temps.
-{{% /solution %}}
+{{< /solution >}}
 -->
 
 11. Écrire l'expression de la vitesse volumique de formation de $[\ce{I_2}]$ et et déterminer ses valeurs aux dates $\pu{5 min}$, $\pu{10 min}$ et $\pu{20 min}$.
 
-{{% solution "Réponse" %}}
-$$ \boxed{v\_f (\ce{I_2})(t) = \dfrac{\mathrm{d} [\ce{I_2}]}{\mathrm{dt}}}$$
+{{< solution "Réponse" >}}
+$$ \boxed{v_f (\ce{I_2})(t) = \dfrac{\mathrm{d} [\ce{I_2}]}{\mathrm{dt}}}$$
 
 <img src="/terminales-pc/chap-6/chap-6-4-6.png" alt="" width="100%" />
-{{% /solution %}}
+{{< /solution >}}
 
 12. Écrire l'expression de la vitesse volumique de disparition de $[\ce{I^-}]$ et déterminer ses valeurs aux dates $\pu{5 min}$, $\pu{10 min}$ et $\pu{20 min}$.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 $$
-    v\_d (\ce{I^-})(t) = - \dfrac{1}{2} \dfrac{\mathrm{d} [\ce{I^-}]}{\mathrm{dt}}$$
+    v_d (\ce{I^-})(t) = - \dfrac{1}{2} \dfrac{\mathrm{d} [\ce{I^-}]}{\mathrm{dt}}$$
 
 <img src="/terminales-pc/chap-6/chap-6-4-7.png" alt="" width="100%" />
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Données expérimentales
 

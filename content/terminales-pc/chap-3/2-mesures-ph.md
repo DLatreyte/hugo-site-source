@@ -1,16 +1,14 @@
 ---
 title: "Mesures de pH, taux d'avancement final"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-10-03T12:47:37+04:00
 draft: false
 toc: true
 tags: ["pH", "Acide", "Base", "Couple acide/base", "Réaction acide-base","Dilution","Taux d'avancement final"]
 categories: ["Chimie", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 200
 ---
 
 ## Objectifs
@@ -24,26 +22,26 @@ auto_numbering: true
 
 ### Préparation des solutions
 
-On dispose d'une solution $S\_{0}$ d'acide chlorhydrique $\ce{H^+ (aq) + Cl^- (aq)}$ de *concentration apportée*  $C\_0 = \pu{0,10 mol.L-1}$.
+On dispose d'une solution $S_{0}$ d'acide chlorhydrique $\ce{H^+ (aq) + Cl^- (aq)}$ de *concentration apportée*  $C_0 = \pu{0,10 mol.L-1}$.
 
-1. Proposer un mode opératoire pour obtenir, à partir de $S\_{0}$, $\pu{100,0 mL}$
-   d'une solution $S\_{1}$ d'acide chlorhydrique de concentration $C\_1 = \pu{1,0e-2 mol.L-1}$.
+1. Proposer un mode opératoire pour obtenir, à partir de $S_{0}$, $\pu{100,0 mL}$
+   d'une solution $S_{1}$ d'acide chlorhydrique de concentration $C_1 = \pu{1,0e-2 mol.L-1}$.
    *Réaliser la manipulation*.
 
-1. Toujours à partir de la solution $S\_{0}$, préparer une autre solution
-   $S\_{2}$ d'acide chlorhydrique de concentration $C\_2 = \pu{5,0e-3 mol.L-1}$.
+1. Toujours à partir de la solution $S_{0}$, préparer une autre solution
+   $S_{2}$ d'acide chlorhydrique de concentration $C_2 = \pu{5,0e-3 mol.L-1}$.
    *Pourquoi vaut-il mieux utiliser la
-   solution $S\_{0}$ et non pas la solution $S\_{1}$ pour réaliser cette opération*&nbsp;?
+   solution $S_{0}$ et non pas la solution $S_{1}$ pour réaliser cette opération*&nbsp;?
 
-1. Maintenant que la technique est connue, préparer les solution $S\_{3}$,
-   $S\_{4}$ et $S\_{5}$, d'acide chlorhydrique, de concentrations $C\_3 = \pu{1,0e-3 mol.L-1}$, $C\_4 = \pu{5,0e-4 mol.L-1}$, $C\_5 = \pu{1,0e-4 mol.L-1}$.
+1. Maintenant que la technique est connue, préparer les solution $S_{3}$,
+   $S_{4}$ et $S_{5}$, d'acide chlorhydrique, de concentrations $C_3 = \pu{1,0e-3 mol.L-1}$, $C_4 = \pu{5,0e-4 mol.L-1}$, $C_5 = \pu{1,0e-4 mol.L-1}$.
    **Bien réfléchir à chaque fois au meilleur choix de la solution mère avant d'effectuer ces dilutions**.
 
 ### Mesures du pH
 
 #### Avertissement
 
-{{% note normal %}}
+{{< note normal >}}
 
 Pour toute mesure du pH d'une solution au moyen d'un pH-mètre :
 
@@ -61,53 +59,53 @@ solutions dont le pH est déterminé et constant à température donnée.
 
 Consulter la notice de l'appareil pour réaliser cet étalonnage.
 
-{{% /note %}}
+{{< /note >}}
 
 #### Mesures des pH
 
-4. Mesurer le pH des solutions $S\_{5}$, $S\_{4}$, $S\_{3}$, $S\_{2}$, $S\_{1}$.
+4. Mesurer le pH des solutions $S_{5}$, $S_{4}$, $S_{3}$, $S_{2}$, $S_{1}$.
    *Pourquoi est-il conseillé de procéder dans ce sens* ?
 
-{{% note normal %}}
+{{< note normal >}}
 
 On ne mesure pas le pH de la solution mère car elle est trop concentrée. L'expression du pH donnée en cours n'est alors plus valable.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Résultats expérimentaux" %}}
+{{< solution "Résultats expérimentaux" >}}
 <center>
 
-| Solution | $S\_1$ | $S\_2$ | $S\_3$ | $S\_4$ | $S\_5$ |
+| Solution | $S_1$ | $S_2$ | $S_3$ | $S_4$ | $S_5$ |
 | :----: | :----: | :----: | :----: | :----: | :----: |
 | pH | 2,00 | 2,26 | 2,96 | 3,26 | 4,05 |
 
 </center>
-{{% /solution %}}
+{{< /solution >}}
 
 ## Mesures du pH de solutions d'acide éthanoïque
 
 ### Préparation de solutions
 
-On dispose d'une solution $S'\_{0}$ d'acide éthanoïque $\ce{CH3-CO2H (aq)}$ de *concentration apportée*  $C'\_0 = \pu{0,10 mol.L-1}$.
-Comme précédemment, préparer des solutions $S'\_{1}$, $S'\_{2}$, $S'\_{3}$, $S'\_{4}$, $S'\_{5}$ d'acide éthanoïque de concentrations molaires $C'\_1 = \pu{1,0e-2 mol.L-1}$, $C'\_2 = \pu{5,0e-3 mol.L-1}$, $C'\_3 = \pu{1,0e-3 mol.L-1}$, $C'\_4 = \pu{5,0e-4 mol.L-1}$, $C'\_5 = \pu{1,0e-4 mol.L-1}$.
+On dispose d'une solution $S'_{0}$ d'acide éthanoïque $\ce{CH3-CO2H (aq)}$ de *concentration apportée*  $C'_0 = \pu{0,10 mol.L-1}$.
+Comme précédemment, préparer des solutions $S'_{1}$, $S'_{2}$, $S'_{3}$, $S'_{4}$, $S'_{5}$ d'acide éthanoïque de concentrations molaires $C'_1 = \pu{1,0e-2 mol.L-1}$, $C'_2 = \pu{5,0e-3 mol.L-1}$, $C'_3 = \pu{1,0e-3 mol.L-1}$, $C'_4 = \pu{5,0e-4 mol.L-1}$, $C'_5 = \pu{1,0e-4 mol.L-1}$.
 
 ### Mesures des pH
 
-5. Mesurer le pH des solutions $S'\_{5}$, $S'\_{4}$, $S'\_{3}$, $S'\_{2}$, $S'\_{1}$.
+5. Mesurer le pH des solutions $S'_{5}$, $S'_{4}$, $S'_{3}$, $S'_{2}$, $S'_{1}$.
 
-{{% solution "Résultats expérimentaux" %}}
+{{< solution "Résultats expérimentaux" >}}
 <center>
 
-| Solution | $S'\_1$ | $S'\_2$ | $S'\_3$ | $S'\_4$ | $S'\_5$ |
+| Solution | $S'_1$ | $S'_2$ | $S'_3$ | $S'_4$ | $S'_5$ |
 | :----: | :----: | :----: | :----: | :----: | :----: |
 | pH | 3,33 | 3,45 | 3,88 | 4,00 | 4,36 |
 
 </center>
-{{% /solution %}}
+{{< /solution >}}
 
 ## Taux d'avancement final
 
-{{% note tip %}}
+{{< note tip >}}
 
 On appelle **taux d'avancement final** $\tau$ la comparaison de l'avancement final $x_f$ de la transformation modélisée par la réaction chimique étudiée, et l'avancement final $x_{max}$ de la transformation hypothétique totale modélisée par la même réaction.
 $$
@@ -119,9 +117,9 @@ $$
 * Le taux d'avancement final est une grandeur sans dimension ;
 * $0 \le \tau \le 1$ ;
 * **Plus le taux d'avancement final est proche de 1, plus la transformation chimique se rapproche d'une transformation chimique totale**.
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 
 * On appelle **acide fort** un *acide qui se dissocie totalement lorsqu'on l'introduit dans le solvant*.
   *Toute transformation chimique modélisée par la réaction de cet acide avec le solvant est donc totale*.
@@ -129,7 +127,7 @@ $$
 * Lorsqu'un acide ne réagit pas totalement avec le solvant dans lequel il est introduit, on le qualifie de **faible**.
    *Toute transformation chimique modélisée par la réaction de cet acide avec le solvant n'est donc pas totale*.
 
-{{% /note %}}
+{{< /note >}}
 
 ### Solutions d'acide chlorhydrique
 
@@ -138,14 +136,14 @@ $$
 
 <center>
 
-| Solution | $S\_{1}$ | $S\_{2}$ | $S\_{3}$ | $S\_{4}$ | $S\_{5}$ |
+| Solution | $S_{1}$ | $S_{2}$ | $S_{3}$ | $S_{4}$ | $S_{5}$ |
 | :----: | :----: | :----: | :----: | :----: | :----: |
-| $C\_i$ ($\pu{mol.L-1}$) | $\pu{1,0e-2}$ | $\pu{5,0e-3}$ | $\pu{1,0e-3}$ | $\pu{5,0e-4}$ | $\pu{1,0e-4}$ |
+| $C_i$ ($\pu{mol.L-1}$) | $\pu{1,0e-2}$ | $\pu{5,0e-3}$ | $\pu{1,0e-3}$ | $\pu{5,0e-4}$ | $\pu{1,0e-4}$ |
 | $\ce{pH_i}$ |  |  |  |  |  |
-| $[\ce{H3O^+}]\_i$ ($\pu{mol.L-1}$) |  |  |  |  |  |
-| $x\_{f,i}$ |  |  |  |  |  |
-| $x\_{max,i}$ |  |  |  |  |  |
-| $\tau\_{i}$ |  |  |  |  |  |
+| $[\ce{H3O^+}]_i$ ($\pu{mol.L-1}$) |  |  |  |  |  |
+| $x_{f,i}$ |  |  |  |  |  |
+| $x_{max,i}$ |  |  |  |  |  |
+| $\tau_{i}$ |  |  |  |  |  |
 
 </center>
 
@@ -160,14 +158,14 @@ $$
 
 <center>
 
-| Solution | $S'\_{1}$ | $S'\_{2}$ | $S'\_{3}$ | $S'\_{4}$ | $S'\_{5}$ |
+| Solution | $S'_{1}$ | $S'_{2}$ | $S'_{3}$ | $S'_{4}$ | $S'_{5}$ |
 | :----: | :----: | :----: | :----: | :----: | :----: |
-| $C'\_i$ ($\pu{mol.L-1}$) | $\pu{1,0e-2}$ | $\pu{5,0e-3}$ | $\pu{1,0e-3}$ | $\pu{5,0e-4}$ | $\pu{1,0e-4}$ |
+| $C'_i$ ($\pu{mol.L-1}$) | $\pu{1,0e-2}$ | $\pu{5,0e-3}$ | $\pu{1,0e-3}$ | $\pu{5,0e-4}$ | $\pu{1,0e-4}$ |
 | $\ce{pH}'_i$ |  |  |  |  |  |
-| $[\ce{H3O^+}]\_i$ ($\pu{mol.L-1}$) |  |  |  |  |  |
-| $x\_{f,i}$ |  |  |  |  |  |
-| $x\_{max,i}$ |  |  |  |  |  |
-| $\tau\_{i}$ |  |  |  |  |  |
+| $[\ce{H3O^+}]_i$ ($\pu{mol.L-1}$) |  |  |  |  |  |
+| $x_{f,i}$ |  |  |  |  |  |
+| $x_{max,i}$ |  |  |  |  |  |
+| $\tau_{i}$ |  |  |  |  |  |
 
 </center>
 

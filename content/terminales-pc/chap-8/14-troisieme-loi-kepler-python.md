@@ -1,26 +1,24 @@
 ---
 title: "Détermination de la masse du Soleil à l'aide de Python"
 subtitle: ""
-author: ""
-type: ""
 date: 2022-01-11T10:47:21+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
 mathjax: true
+weight: 1400
 ---
 
 > L'objectif de ce document est de retrouver la masse du Soleil à l'aide des données des périodes et des demi-grands axes des planètes et de la troisième loi de Képler.
 
-{{% note normal %}}
+{{< note normal >}}
 
 Un corrigé de cette activité se trouve à cette <a href="https://replit.com/@dlatreyte/Troisieme-loi-de-Kepler#main.py" target="_blank">adresse</a>. Ne pas le consulter avant d'avoir cherché les réponses aux questions.
 
-{{% /note %}}
+{{< /note >}}
 
 #### Données
 

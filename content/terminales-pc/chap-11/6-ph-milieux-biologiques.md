@@ -1,16 +1,14 @@
 ---
 title: "pH et milieux biologiques"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-01-31T18:45:28+04:00
 draft: false
 toc: true
 tags: ["Constante d'équilibre", "pKa", "pH", "Domaine de prédominance"]
 categories: ["Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 600
 ---
 
 > De nombreux phénomènes biologiques ne peuvent se produire que dans des milieux
@@ -45,18 +43,18 @@ Dans l'intestin, le pH est voisin de 8.
 ## Exploitation
 
 Données
-: À 37&nbsp;°C, $\text{pK}\_A (\ce{H2PO4^-/HPO4^{2-}}) = \pu{6,82}$, $\text{pK}\_A (\ce{CO2,H2O/HCO3^-}) = \pu{6,10}$ ; $\text{pK}\_e = \pu{13,6}$.
+: À 37&nbsp;°C, $\text{pK}_A (\ce{H2PO4^-/HPO4^{2-}}) = \pu{6,82}$, $\text{pK}_A (\ce{CO2,H2O/HCO3^-}) = \pu{6,10}$ ; $\text{pK}_e = \pu{13,6}$.
 
 1. À une température de 37&nbsp;°C, le sang est-il une solution neutre, acide ou basique ?
 
-2. Sur un axe gradué en unité de pH, repérer les valeurs des $\text{pK}\_A$ des couples $\ce{H2PO4^-/HPO4^{2-}}$ et $\ce{CO2,H2O/HCO3^-}$. En prenant 7,40 comme valeur de pH du sang, indiquer les espèces prédominantes et calculer le rapport des concentrations de la forme basique et de la forme acide correspondante.
+2. Sur un axe gradué en unité de pH, repérer les valeurs des $\text{pK}_A$ des couples $\ce{H2PO4^-/HPO4^{2-}}$ et $\ce{CO2,H2O/HCO3^-}$. En prenant 7,40 comme valeur de pH du sang, indiquer les espèces prédominantes et calculer le rapport des concentrations de la forme basique et de la forme acide correspondante.
 
 3. Écrire l'équation de la réaction entre l'ion oxonium et l'ion hydrogénocarbonate.
 
 4. Justifier, à l'aide d'une équation de réaction, le rôle des médicaments antiacides contenant l'ion hydrogénocarbonate.
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
 {{% remote "Corrigé au format pdf" "/terminales-pc/chap-11/chap-11-6/milieu-biologique.pdf" %}}
 
-{{% /solution %}}
+{{< /solution >}}

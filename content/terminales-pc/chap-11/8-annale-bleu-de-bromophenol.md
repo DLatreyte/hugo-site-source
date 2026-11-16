@@ -1,16 +1,14 @@
 ---
 title: "Annale : Le bleu de bromophénol"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-02-27T10:49:40+04:00
 draft: false
 toc: true
 tags: ["Constante d'équilibre", "pKa", "pH", "Domaine de prédominance"]
 categories: ["Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 800
 ---
 
 Le bleu de bromophénol est un indicateur coloré dont la forme acide, notée $\ce{HIn}$, est jaune et dont la forme basique, notée $\ce{In^−}$, est bleue.
@@ -103,12 +101,12 @@ On admet que, pour toutes les solutions obtenues par mélange des solutions $S_1
 13. Montrer que l’absorbance $A$ d’un mélange quelconque est donnée par :
 
 $$
-    A = k\\, [\ce{In^−}]
+    A = k\, [\ce{In^−}]
 $$
 
 14. Pour la solution $S_2$ de $\text{pH} = \pu{12,0}$ l’absorbance est maximale.\
 Montrer que l’absorbance maximale $A_{\text{max}}$ et la concentration molaire en bleu de bromophénol apporté $C_0$ vérifient la relation :
-$$A_{\text{max}} = k\\, C_0$$
+$$A_{\text{max}} = k\, C_0$$
     En déduire la valeur du coefficient $k$ et préciser son unité.
 
 15. Calculer les concentrations effectives des espèces In– et $\ce{HIn}$ présentes dans le mélange lorsque l’absorbance $A$ de celui-ci est égale à $\pu{0,83}$.
@@ -128,6 +126,6 @@ Donner sa valeur.
 
 ## Correction
 
-{{% solution "Correction" %}}
+{{< solution "Correction" >}}
 {{< remote "Corrigé au format pdf" "/terminales-pc/chap-11/chap-11-7/chap-11-7-3.pdf" >}}
-{{% /solution %}}
+{{< /solution >}}

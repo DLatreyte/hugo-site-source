@@ -1,17 +1,15 @@
 ---
 title: "Lancement d'une fusée et retour sur Terre"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-12-18T17:44:22+04:00
 draft: false
 toc: true
 tags: []
 categories: ["Physique", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
 mathjax: true
+weight: 700
 ---
 
 ## Lancement d'une fusée
@@ -46,12 +44,12 @@ qualifiés de « à poudre »).
 
 ##### Version Ariane 40
 
-* Masse totale *au décollage*  : $M\_{0} = \pu{210e3 kg}$.
+* Masse totale *au décollage*  : $M_{0} = \pu{210e3 kg}$.
 * Masse totale de propergol contenu dans le premier étage *au décollage*  :
-  $M\_{p} = \pu{147e3 kg}$.
+  $M_{p} = \pu{147e3 kg}$.
 * Masse de propergol consommé chaque seconde lors du fonctionnement du
   premier étage (c'est aussi le débit d'éjection des gaz) : $D = \pu{1,0e3 kg.s-1}$.
-* Vitesse d'éjection des gaz par rapport à la fusée, *au décollage* : $v\_{g} = \pu{2,5e3 m.s-1}$.
+* Vitesse d'éjection des gaz par rapport à la fusée, *au décollage* : $v_{g} = \pu{2,5e3 m.s-1}$.
 * Durée de fonctionnement du premier étage : $\pu{147 s}$.
 * Poussée totale moyenne fournie par les moteurs du premier étage : $F = \pu{2,45e6 N}$.
 * Pendant la phase de propulsion du premier étage, la poussée des moteurs
@@ -61,12 +59,12 @@ qualifiés de « à poudre »).
 
 La *poussée*  ou plus exactement la *force de poussée*  $\vec{F}$ est la
 modélisation de l'action qu'exercent les gaz éjectés vers l'arrière par la
-fusée, à la vitesse $\vec{v}\_{g}$ *par rapport à la fusée*.
+fusée, à la vitesse $\vec{v}_{g}$ *par rapport à la fusée*.
 Dans les conditions optimales du fonctionnement d'une fusée, on peut définir
 la force de poussée par la relation
 
 $$
- \vec{F} = - D\\, \vec{v}\_{g}
+ \vec{F} = - D\, \vec{v}_{g}
 $$
 
 où $D$ est la masse de gaz éjectée par seconde (débit d'éjection).
@@ -98,13 +96,13 @@ fonctionnement du premier étage.
 On se propose de déterminer des valeurs approchées de la vitesse et de
 l'accélération à différentes dates.
 
-3. Calculer (en indiquant la méthode employée) la valeur de la vitesse $v\_{9}$ à la date $t = \pu{9 s}$ et la valeur de la vitesse $v\_{11}$ à la date $t = \pu{11 s}$.
+3. Calculer (en indiquant la méthode employée) la valeur de la vitesse $v_{9}$ à la date $t = \pu{9 s}$ et la valeur de la vitesse $v_{11}$ à la date $t = \pu{11 s}$.
 
 4. En déduire (en indiquant la méthode employée) une valeur approchée de
-l'accélération $a\_{10}$ à la date $t = \pu{10 s}$.
+l'accélération $a_{10}$ à la date $t = \pu{10 s}$.
 
 Aux dates $t = \pu{70 s}$ et $t = \pu{140 s}$ l'application du
-raisonnement mis en œuvre aux questions précédentes conduit aux valeurs suivantes pour l'accélération : $a\_{70} = \pu{7,50 m.s-2}$ et $a\_{140} = \pu{25,0 m.s-2}$.
+raisonnement mis en œuvre aux questions précédentes conduit aux valeurs suivantes pour l'accélération : $a_{70} = \pu{7,50 m.s-2}$ et $a_{140} = \pu{25,0 m.s-2}$.
 
 5. Le mouvement de la fusée est-il uniformément accéléré ?
 
@@ -121,7 +119,7 @@ frottements de la fusée avec l'air.
 
 Le modèle utilisé dans cet exercice permet d'écrire le principe fondamental
 de la dynamique (2ème loi de Newton) pour la fusée, à la date $t$, sous la
-forme $M \vec{a}\_{G} = \sum \vec{F}^{ext}$ **bien que sa masse
+forme $M \vec{a}_{G} = \sum \vec{F}^{ext}$ **bien que sa masse
 varie**.
 
 8. Donner la direction et le sens du vecteur accélération $\vec{a}$. Justifier la réponse.
@@ -131,13 +129,13 @@ varie**.
 10. Justifier que la masse de la fusée à la date $t$ s'écrit
 
 $$
-M (t) = M\_{0} - Dt
+M (t) = M_{0} - Dt
 $$
 
-11. Calculer la valeur $M\_{70}$ de la masse à la date $t = \pu{70 s}$.
+11. Calculer la valeur $M_{70}$ de la masse à la date $t = \pu{70 s}$.
 
 12. À partir des relations établies aux questions précédentes, calculer la
-valeur de l'accélération $a\_{70}$ à la date $t = \pu{70 s}$.
+valeur de l'accélération $a_{70}$ à la date $t = \pu{70 s}$.
 
 13. La valeur de l'accélération à la date $t = \pu{70 s}$ permet-elle de
 valider l'étude effectuée dans cette partie ?
@@ -152,7 +150,7 @@ Les deux derniers kilomètres se font sur une trajectoire pratiquement
 rectiligne et verticale à la vitesse constante de $\pu{10 m.s-1}$. Cette trajectoire sera matérialisée par un axe vertical $(z' z)$ *orienté vers le haut* et dont l'origine $O$ se trouvera au niveau du sol. Les frottements de l'air sur la cabine elle-même deviennent négligeables.
 
 Donnée.
-: Masse du vaisseau Soyouz : $m\_{S} = \pu{3,00e3 kg}$.
+: Masse du vaisseau Soyouz : $m_{S} = \pu{3,00e3 kg}$.
 
 14. Représenter les forces appliquées sur la cabine. Donner toutes les
 caractéristiques de ces forces.
@@ -545,6 +543,6 @@ vaisseau Soyouz sont issues de renseignements fournis par le C.N.E.S.
 
 ## Corrigé
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 {{< remote "Corrigé au format pdf" "/terminales-pc/chap-7/chap-7-7-1.pdf"  >}}
-{{% /solution %}}
+{{< /solution >}}

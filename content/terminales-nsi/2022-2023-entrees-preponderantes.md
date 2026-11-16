@@ -1,16 +1,14 @@
 ---
 title: "Programme NSI de terminale « Entrées prépondérantes » (BO n°36, du 30 septembre 2022)"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-11-18T17:21:24+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 204223
 ---
 
 Lors de l'épreuve terminale dans l'enseignement de spécialité numérique et sciences informatiques, les candidats peuvent être évalués sur les parties suivantes du programme de la classe de terminale :

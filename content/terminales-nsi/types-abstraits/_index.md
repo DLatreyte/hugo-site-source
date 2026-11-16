@@ -1,17 +1,14 @@
 ---
 title: "Structures de données fournies avec le langage Python"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-10-12T21:18:41+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 100
 ---
 
 ## Au programme

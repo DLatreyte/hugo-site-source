@@ -1,22 +1,20 @@
 ---
 title: "Dosage d'un antiseptique : la Bétadine"
 subtitle: ""
-author: ""
-type: ""
 date: 2022-10-23T17:36:06+04:00
 draft: false
 toc: true
 tags: ["Soluté", "Concentration molaire", "Concentration massique", "Beer Lambert", "Dilution", "Couleur", "Absorption", "Dosage", "Étalonnage"]
 categories: ["Chimie", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
 mathjax: false
+weight: 1900
 ---
 
 ## Documents
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Bétadine
 
@@ -26,23 +24,23 @@ La Bétadine® dermique 10% est un antiseptique et désinfectant à base d'iode,
 
 - *La Bétadine® est une solution colorée par une seule entité chimique*.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Povidone iodée
 
 Le principe actif de la Bétadine® est le diiode $\ce{I2}$. Dans la solution, les molécules de diiode s'associent avec la molécule de povidone
-(ou polyvinylpyrrolidone), molécule volumineuse, polymère organique de formule $\ce{(C6H9NO)\_{n}}$, pour former la povidone iodée. Au fur et à mesure de son utilisation, la povidone iodée libère les molécules de diiode.  
+(ou polyvinylpyrrolidone), molécule volumineuse, polymère organique de formule $\ce{(C6H9NO)_{n}}$, pour former la povidone iodée. Au fur et à mesure de son utilisation, la povidone iodée libère les molécules de diiode.  
 *On peut considérer qu'en moyenne, pour la libération d'une mole de diiode, il faut $\pu{2362,8 g}$ de povidone iodée (c'est à dire une
 mole).*  
 La povidone iodée possède généralement une absorbance différente de celle du diiode.
 
 <img src="/terminales-pc/chap-4/chap-4-19/Povidon-Iod.png" alt="" width="70%" />
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Dosage par étalonnage colorimétrique
 
@@ -56,9 +54,9 @@ La povidone iodée possède généralement une absorbance différente de celle d
   possible lorsque *l'entité chimique colore la solution*  et que la loi de
   Beer-Lambert peut être appliquée.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Conditions générales de réalisation d'un dosage par étalonnage colorimétrique
 
@@ -70,9 +68,9 @@ La povidone iodée possède généralement une absorbance différente de celle d
 
 4. Il est nécessaire de réaliser une *courbe d'étalonnage*  à l'aide d'une échelle de teinte dont *les concentrations encadrent la concentration recherchée*.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Solutions à disposition
 
@@ -80,7 +78,7 @@ La povidone iodée possède généralement une absorbance différente de celle d
 
 - Solution aqueuse de diiode à $\pu{1,0e-3 mol.L-1}$.
 
-{{% /note %}}
+{{< /note >}}
 
 ## Séance
 
@@ -93,14 +91,14 @@ La povidone iodée possède généralement une absorbance différente de celle d
 1. À partir des documents et de l'examen de la solution de Bétadine®, déterminer
 quelle est l'entité responsable de la coloration de la solution. Justifier la
 réponse.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 La coloration de la Bétadine® est due à la présence de la molécule de diiode $\ce{I2}$.
 
-{{% /solution %}}
+{{< /solution >}}
 
 2. Montrer que la concentration de cette espèce chimique dans la Bétadine® est égale à $\pu{4,2e-2 mol.L-1}$ en diiode.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - Dans le premier document, on apprend que la Bétadine® contient $\pu{10 g}$ de povidone iodée pour $\pu{100 mL}$ de solution.
 
@@ -110,26 +108,26 @@ La coloration de la Bétadine® est due à la présence de la molécule de diiod
 
 - La quantité de matière juste calculée est celle libérée par $\pu{100 mL}$ de Bétadine®. La concentration molaire en diiode est donc égale à $\pu{4,2e-2 mol.L-1}$.
 
-{{% /solution %}}
+{{< /solution >}}
 
 3. Élaborer un protocole expérimental permettant de déterminer la concentration molaire de cette espèce chimique.Justifier en particulier l'utilisation de solutions étalons de concentrations en diiode : $\pu{1,0e-3 mol.L-1}$, $\pu{8,0e-4 mol.L-1}$, $\pu{6,0e-4 mol.L-1}$, $\pu{4,0e-4 mol.L-1}$, $\pu{2,0e-4 mol.L-1}$ et $\pu{1,0e-4 mol.L-1}$.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - La Bétadine fournie est diluée 100 fois, sa concentration est donc voisine de $\pu{4,2e-4 mol.L-1}$.
 
 - La solution mère de diiode fournie a pour concentration en diiode $\pu{1,0e-3 mol.L-1}$. On peut donc envisager l'élaboration de solutions étalons de concentrations :
   $\pu{1,0e-3 mol.L-1}$, $\pu{8,0e-4 mol.L-1}$, $\pu{6,0e-4 mol.L-1}$, $\pu{4,0e-4 mol.L-1}$, $\pu{2,0e-4 mol.L-1}$ et $\pu{1,0e-4 mol.L-1}$ puique l'intervalle de concentrations alors réalisé encadre alors la concentration recherchée.
 
-{{% /solution %}}
+{{< /solution >}}
 
 4. À l'aide du spectrophotomètre, établir le spectre d'absorption du diiode dans le visible et en déduire la longueur d'onde à utiliser lors du dosage par étalonnage.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 <img src="/terminales-pc/chap-4/chap-4-19/Absorbance_diiode.png" alt="" width="80%" />
 
 L'absorbance est maximale aux environs de la longueur d'onde $\lambda = \pu{490 nm}$ ; c'est la longueur d'onde qu'il faut choisir pour réaliser un dosage par étalonnage s'appuyant sur la loi de Beer-Lambert.
-{{% /solution %}}
+{{< /solution >}}
 
 5. Mettre en œuvre le protocole de dosage par étalonnage.  
 La concentration en diiode dans la Bétadine® est-elle celle attendue ?

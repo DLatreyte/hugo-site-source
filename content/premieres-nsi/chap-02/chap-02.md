@@ -9,20 +9,21 @@ categories: ["Première Spé NSI"]
 solution_est_visible: true
 auto_numbering: true
 
+weight: 9900
 ---
 [^1]: Nous reviendrons sur ce point plus tard dans l'année.
 
 
 ## À quoi a-t-on accès lorsqu'on utilise un langage de programmation ?
 
-{{% note tip %}}
+{{< note tip >}}
 Un langage de programmation doit :
 
 - fournir des **objets (ou types) primitifs** ;
 - posséder une bibliothèque de **fonctions prédéfinies** ;
 - permettre la **manipulation des objets primitifs et des fonctions prédéfinies** ;
 - établir des règles qui permettent de **construire de nouveaux objets (ou types)** ou de nouvelles fonctions par *combinaison des types primitifs et des fonctions prédéfinies*.
-{{% /note %}}
+{{< /note >}}
 
 
 Nous allons aborder chacun de ces points.
@@ -74,9 +75,9 @@ Le langage Python possède un grand nombre d'*objets primitifs*. Parmi eux, on u
 ## Syntaxe et évaluation d'une expression en Python
 
 
-{{% note tip %}}
+{{< note tip >}}
 En mathématique et en informatique une expression est une formule exprimant la façon de calculer une valeur.
-{{% /note %}}
+{{< /note >}}
 
 
 ### Ambigüité de l'écriture traditionnelle des expressions
@@ -133,27 +134,27 @@ Dans ce chapitre nous allons nous contenter d'utiliser les opérateurs arithmét
 |   `**`    |  `op**exp`   | renvoie le résultat de `op` à la puissance `exp`                                    |
 
 
-{{% note warning %}}
+{{< note warning >}}
 - Le résultat de la **division de deux nombres** est toujours un `float`, *même s'il s'agit de la division de deux nombres entiers*.
   
 - Le résultat de la **division euclidienne** de deux nombres est un `float` si l'un des nombres est un `float`, un `int` si les deux nombres sont des entiers.
-{{% /note %}}
+{{< /note >}}
 
 
-{{% note exercise %}}
+{{< note exercise >}}
 #### Exercice 1.
  
 Utiliser l'éditeur de texte Thonny pour visualiser toutes les étapes de l'évaluation de l'expression $2 \times (3 + 4, 3)^3 + 5 \times 6^2$.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Solution 1" %}}
+{{< solution "Solution 1" >}}
 
 - Écrire dans la fenêtre principale : `2 * (3 + 4.3)**3 + 5 * 6**2`.
 
 - Lancer la commande : Run $\rightarrow$ Debug current script (touches <kbd>Ctrl + F5</kbd>). Un rectangle jaune doit apparaître à l'écran. Il indique la partie de l'expression que Python va évaluer au « pas » suivant.
 
 - Progresser pas à pas grâce à la commande Run $\rightarrow$ Step into  (touche <kbd>F7</kbd>) en notant à chaque fois ce qui est évalué et le résultat de l'évaluation.
-{{% /solution %}}
+{{< /solution >}}
 
 ## Application d'une fonction
 
@@ -161,9 +162,9 @@ Utiliser l'éditeur de texte Thonny pour visualiser toutes les étapes de l'éva
 ### Schéma-bloc d'une fonction
 
 
-{{% note tip %}}
+{{< note tip >}}
 On appelle schéma-bloc la modélisation du fonctionnement d'une fonction.  Cette modélisation est affichée sous forme graphique.
-{{% /note %}}
+{{< /note >}}
 
 
 Par exemple, le schéma-bloc de la fonction « mise au carré » est le suivant :
@@ -213,9 +214,9 @@ random(...) method of random.Random instance
 
 **Remarque :** On constate que pour utiliser une fonction contenue dans le module de nom `module`, on doit utiliser la syntaxe `module.nom_de_la_fonction`.
 
-{{% note warning %}}
+{{< note warning >}}
 Les fonctions intégrées `dir` et `help` sont très importantes. Il faut apprendre à les utiliser le plus rapidement possible.
-{{% /note %}}
+{{< /note >}}
 
 
 ### Syntaxe de l'application d'une fonction
@@ -223,9 +224,9 @@ Les fonctions intégrées `dir` et `help` sont très importantes. Il faut appren
 L'appel (ou l'application) d'une fonction obéit à une syntaxe bien particulière, semblable à celle utilisée en math. Par exemple, l'appel de la fonction `abs` avec l'argument `-3` s'écrit `abs(-3)`.
 
 
-{{% note warning %}}
+{{< note warning >}}
 Il ne faut donc pas confondre `f`, le nom de la fonction, avec `f(x)`, l'appel (ou application) de la fonction.
-{{% /note %}}
+{{< /note >}}
 
 ### Évaluation de l'argument d'une fonction
 
@@ -256,10 +257,10 @@ En informatique, on s'appuie sur cette écriture, en la précisant un peu, on di
 <img src="/premieres-nsi/chap-02/signature_fonction.svg" width="22%" alt="Schéma bloc d'une fonction" />
   
 
-{{% note tip %}}
+{{< note tip >}}
 - Le **type** d'une fonction est constitué par *les types de ses  paramètres et par le type de la valeur qu'elle retourne*.
 - La **signature** d'une fonction est l'*association du nom de cette fonction et de son type*.
-{{% /note %}}
+{{< /note >}}
 
 La connaissance de la signature d'une fonction est fondamentale, ce n'est pas parce qu'une fonction se nomme `sum` qu'elle est capable de faire la somme de deux nombres (cf. exercice 2 plus bas) ! Le type de la fonction indique quels sont les types des arguments qu'elle accepte et donne une première (mais insuffisante !) indication sur la façon de l'utiliser.
 
@@ -286,9 +287,9 @@ On reconnaît tout de suite la signature de la fonction `def f(x: float) -> floa
 
 - Les deux points `:` à la fin de la ligne servent à indiquer que le *bloc d'instructions* qui suit la signature constitue **le corps de la fonction**, c'est à dire l'ensemble des étapes qui sont réalisées lorsqu'on appelle la fonction. 
 
-{{% note warning %}}
+{{< note warning >}}
 **Un bloc d'instructions doit toujours être indenté par rapport à la marge !**
-{{% /note %}}
+{{< /note >}}
 
 - L'instruction `return` *indique à la fonction de retourner la valeur qu'elle vient de calculer*.
 
@@ -299,29 +300,29 @@ def surface(a: float, b: float) -> float:
     return a * b
 ```
 
-{{% note normal %}}
+{{< note normal >}}
 Les indications `: float`, qui sert à indiquer le **type** de l'argument attendu et `-> float`, qui permet d'indiquer le type de la valeur retournée par la fonction, sont des **annotations**.\
 L'interpréteur Python ne les prend pas en compte, **leur présence est utile aux programmeurs et simplifie la lecture du code**.
-{{% /note %}}
+{{< /note >}}
 
 ### Spécification d'une fonction
 
-{{% note tip %}}
+{{< note tip >}}
 L'utilisation d'une fonction nécessite la description précise :
 
 1. des conditions dans lesquelles elle peut être utilisée : c'est le rôle de la **signature**.
   
 2. de la valeur qu'elle retourne : c'est le rôle de la **documentation**.
-{{% /note %}}
+{{< /note >}}
 
 Il est donc indispensable d'établir *un contrat entre le concepteur de la fonction et son utilisateur*.
 
-{{% note tip %}}
+{{< note tip >}}
 On appelle spécification l'association de la **signature** et de la **documentation** de la fonction :
 $$
     \text{\textbf{Spécification}} = \text{\textbf{Signature}} + \text{\textbf{Commentaires}}
 $$
-{{% /note %}}
+{{< /note >}}
 
 **Remarque :** Une spécification ne s'intéresse pas au « comment » !  
 L'utilisateur d'une fonction n'a pas besoin de connaître en détail toutes les étapes du traitement du problème par la fonction, il doit juste savoir *quelle valeur elle retourne et comment il faut l'utiliser*.
@@ -366,7 +367,7 @@ def racine_carree(x: float) -> float:
 
 ## Exercices du chapitre
 
-{{% note exercise %}}
+{{< note exercise >}}
 #### Exercice 2. Découverte de fonctions
  
 Les deux fonctions intégrées `dir` et `help` sont fondamentales. Les utiliser **dans la console** du logiciel Thonny afin de répondre aux questions ci-dessous.
@@ -377,7 +378,7 @@ Les deux fonctions intégrées `dir` et `help` sont fondamentales. Les utiliser 
 4. Rechercher comment se nomme la fonction du module `math` qui calcule la racine carrée d'un nombre passé en argument.
 {{% / note %}}
 
-{{% solution "Solution 2." %}}
+{{< solution "Solution 2." >}}
 
 - Pour afficher la spécification d'une fonction utiliser la fonction `help`
 
@@ -438,9 +439,9 @@ sqrt(x, /)
     Return the square root of x.
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 #### Exercice 3. Utilisation d'une fonction
 
 Utiliser **la console** du logiciel Thonny pour répondre aux questions suivantes&nbsp;: 
@@ -453,9 +454,9 @@ Utiliser **la console** du logiciel Thonny pour répondre aux questions suivante
 3. Appeler cette fonction `randint` de façon à obtenir un nombre entier aléatoire compris entre 1 et 10.
     
 4. Est-il possible que l'appel précédent retourne 1 ou 10 ?
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Solution 3." %}}
+{{< solution "Solution 3." >}}
 
 ```python3
 >>> import random as rd
@@ -474,10 +475,10 @@ randint(a, b) method of random.Random instance
 - `>>> random.randint(1, 10)` permet d'obtenir un nombre entier aléatoire entre 1 et 10 inclus.
     
 - La fonction retourne un entier compris entre 1 et 10 inclus.
-{{% /solution %}}
+{{< /solution >}}
  
 
-{{% note exercise %}}
+{{< note exercise >}}
 #### Exercice 4. Définition d'une fonction
 
 1. La fonction définie ci-dessous est-elle syntaxiquement correcte ?
@@ -496,9 +497,9 @@ def retire_un(n: float) -> float:
 	La fonction telle qu'elle est définie à la question 1 correspond-elle à cette spécification ?
 
 3. Corriger le corps de la fonction `retire_un` de façon à ce que le calcul effectué corresponde à ce qu'annonce la spécification.
-{{% /note %}} 
+{{< /note >}} 
 
-{{% solution "Solution 4." %}}
+{{< solution "Solution 4." >}}
 - Du point de vue syntaxique la fonction est correcte.
     
 - La fonction telle qu'elle est définie retourne la valeur de $1 - n$ et ne correspond donc pas à la spécification.
@@ -508,9 +509,9 @@ def retire_un(n: float) -> float:
     """Retourne la valeur de n - 1"""
     return n - 1
 ```
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 #### Exercice 5. Calcul de fonctions polynomiales
 
 1.  Définir et tester une fonction écrite en Python, nommée `polynomiale`, telle que `polynomiale(a, b, c, d, x)` retourne la valeur de la fonction qui à $x$ associe $a x^3 + b x^2 + c x + d$.  
@@ -542,9 +543,9 @@ def polynomiale_carre(a: int, b: int, c: int, x: float) -> float:
     40.0
     """
 ```
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Solution 5." %}}
+{{< solution "Solution 5." >}}
 
 ```python
 def polynomiale(a: int, b: int, c: int, d: int, x: float) -> float:
@@ -570,9 +571,9 @@ def polynomiale_carre(a: int, b: int, c: int, x: float) -> float:
     """
     return a * x**4 + b * x**2 + c
 ```
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 #### Exercice 6. Calcul de la moyenne de trois nombres
 
 1. Définir et tester la fonction nommée `somme`, écrite en Python, dont la spécification est&nbsp;:
@@ -611,9 +612,9 @@ def moyenne_ponderee(x: float, y: float, z: float, a: int, b: int, c: int) -> fl
     7.5
     """
 ```
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Solution 6." %}}
+{{< solution "Solution 6." >}}
 ```python
 def somme(x: float, y: float, z: float) -> float:
     """
@@ -642,9 +643,9 @@ def moyenne_ponderee(x: float, y: float, z: float, a: int, b: int, c: int) -> fl
     """
     return somme(a * x, b * y, c * z) / somme(a, b, c)
 ```
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 #### Exercice 7. Calculs de surfaces et de volumes
 
 1. Définir et tester une fonction écrite en Python, nommée `surface_rectangle`, qui détermine la surface d'un rectangle de longueur $a$ et de largeur $b$.  
@@ -663,12 +664,12 @@ def moyenne_ponderee(x: float, y: float, z: float, a: int, b: int, c: int) -> fl
  **Préciser la spécification de la fonction.**  
  *Cette fonction devra utiliser la fonction `surface_disque` pour effectuer son traitement.*
     
-5. Définir et tester une fonction écrite en Python, nommée `volume_tube`, qui détermine le volume de la partie pleine d'un tube de longueur $l$, dont la section est une couronne de rayon intérieur $r\_1$ et de rayon extérieur $r\_2$.  
+5. Définir et tester une fonction écrite en Python, nommée `volume_tube`, qui détermine le volume de la partie pleine d'un tube de longueur $l$, dont la section est une couronne de rayon intérieur $r_1$ et de rayon extérieur $r_2$.  
 **Préciser la spécification de la fonction.**  
 *Cette fonction devra utiliser la fonction `surface_couronne` pour effectuer son traitement.*
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Solution 7." %}}
+{{< solution "Solution 7." >}}
 
 ```python
 from math import pow, pi
@@ -704,9 +705,9 @@ def volume_tube(r1, r2, l) -> float:
     r2."""
     return surface_couronne(r1, r2) * l
 ```
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 #### Exercice 8. Calcul d'une distance 
   
 Définir et tester une fonction écrite en Python, nommée `distance` qui détermine la distance séparant deux points de coordonnées $(x_1, y_1)$ et $(x_2, y_2)$ d'un plan.
@@ -722,8 +723,8 @@ def distance(x1: float, y1: float, x2: float, y2: float) -> float:
     1.4142135623730951
     """
 ```
-{{% /note %}}
-{{% solution "Solution 8." %}}
+{{< /note >}}
+{{< solution "Solution 8." >}}
 ```python
 from math import pow, sqrt
 
@@ -738,9 +739,9 @@ def distance(x1: float, y1: float, x2: float, y2: float) -> float:
     """
     return sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2))
 ```
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 #### Exercice 9. Reprise de l'exercice 1 (difficile ) 
 
 L'objectif de cet exercice est de retrouver une partie du comportement de la fonction `randint` du module `random` à partir de la fonction `random` de ce même module.
@@ -750,9 +751,9 @@ Définir et tester une fonction écrite en Python, nommée `tirage_entier`, tell
 **Remarque :** Lire attentivement la documentation de la fonction `random` afin de comprendre ce qu'elle retourne.
 
 **Rappel :** La fonction intégrée `int` permet de convertir n'importe quel nombre en nombre entier.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Solution 9." %}}
+{{< solution "Solution 9." >}}
 ```python
 from random import random
 
@@ -763,4 +764,4 @@ def tirage_entier(a: int) -> int:
     """
     return int(random() * a + 1)
 ```
-{{% /solution %}}
+{{< /solution >}}

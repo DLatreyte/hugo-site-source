@@ -8,10 +8,8 @@ draft: true
 toc: true
 tags: []
 categories: [Ebook Physique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
 ---
 
 - Publication : 1975

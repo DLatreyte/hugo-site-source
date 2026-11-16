@@ -1,16 +1,14 @@
 ---
 title: "BAC 2021 NSI : Entrées prépondérantes (novembre 2020)"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-11-18T17:46:22+04:00
 draft: true
 toc: true
 tags: []
 categories: ["Réforme du Bac"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 20
 ---
 
 Le programme est composé des parties et sous-parties suivantes. Les sujets du baccalauréat garantiront que les élèves pourront choisir 3 exercices en évitant les **parties en gras** s’ils le souhaitent, et en se concentrant sur les «&nbsp;entrées prépondérantes&nbsp;» du programme.

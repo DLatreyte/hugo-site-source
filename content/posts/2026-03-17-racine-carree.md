@@ -1,16 +1,14 @@
 ---
 title: "Contrôler une valeur à l’aide du typage"
 subtitle: "...en Python"
-author: ""
-type: ""
 date: 2026-03-18T14:58:15+01:00
 draft: true
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 1
 ---
 
 
@@ -22,12 +20,12 @@ auto_numbering: true
 
 On prend l’exemple de la fonction `square_root`. Cette fonction ne peut pas recevoir n’importe quelle valeur : elle attend une valeur *compatible avec la racine carrée*.
 
-{{% note warning %}}
+{{< note warning >}}
 
   - Le point important n’est pas la racine carrée elle-même.
   - Le point important est : _comment faire apparaître dans le code une contrainte sur les valeurs autorisées_.
 
-{{%  /note %}}
+{{< /note >}}
 
 
 
@@ -40,11 +38,11 @@ def square_root(number: float) -> float:
 ```
 on dit seulement que `number` est un `float`. Il peut donc aussi bien être `4.0`, que `-3.0`, ou encore `NaN`. _La fonction doit donc vérifier elle-même que la valeur reçue est valide_, et cette vérification peut être oubliée.
 
-{{% note tip %}}
+{{< note tip >}}
 
   `float` décrit une *catégorie technique large*, pas une *valeur métier valide*.
 
-{{%  /note %}}
+{{< /note >}}
 
 ## Première conséquence : la validation est dispersée
 
@@ -58,11 +56,11 @@ def square_root(number: float) -> float:
     return number**0.5
 ```
 
-{{% note tip %}}
+{{< note tip >}}
 
 Un type primitif comme `float` est souvent *trop général* pour exprimer une contrainte métier précise.
 
-{{%  /note %}}
+{{< /note >}}
 
 ## Approche basée sur les types
 

@@ -1,23 +1,21 @@
 ---
 title: "Vérification de la loi de Boyle-Mariotte"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-02-28T13:36:55+04:00
 draft: false
 toc: true
 tags: []
 categories: ["Premières Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 200
 ---
 
 > L'objet de ce document est de vérifier la relation de Boyle-Mariotte pour un gaz décrit par le modèle du gaz parfait.
 
-{{% note warning %}}
+{{< note warning >}}
 Aucune manipulation n'étant possible, on utilisera lors de cette séance, l'application accessible {{< remote "à cette adresse" "https://phet.colorado.edu/sims/html/gas-properties/latest/gas-properties_en.html" >}}
-{{% /note %}}
+{{< /note >}}
 
 1. Faire afficher par l'application la longueur d'un côté de l'enceinte. Cette enceinte a la forme d'un cube.
 
@@ -40,7 +38,7 @@ Relever à chaque fois la valeur de la pression (en Pa).
 
 10. Pourquoi la proportionnalité n'intervient-elle que pour les faibles pressions ?
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Modèle du gaz parfait
 
@@ -50,21 +48,21 @@ Le modèle du gaz parfait est constitue une tentative de description du comporte
 - *on néglige les interactions qui existent entre les entités qui constituent le gaz*. Ces entités n'interagissent donc qu'avec les parois du récipient qui contient le gaz.
 
 Quatre paramètres (non indépendant entre eux) permettent de décrire un gaz parfait en équilibre (mécanique et thermique) : $P$ la pression (en pascal), $T$ la température (en kelvin), $V$ le volume (en mètre-cube) et $n$ la quantité de matière (en mole).
-{{% /note %}}
+{{< /note >}}
 
-{{% note warning %}}
+{{< note warning >}}
 Le modèle du gaz parfait ne décrit fidèlement le comportement d'un gaz réel qu'à *basse pression*.\
 On utilise cependant régulièrement ce modèle en chimie.
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 La loi de Boyle-Mariotte relie la *pression* et le *volume* d'un **gaz parfait** *à température constante*. Son expression mathématique est :
 $$
-    P\\, V = \text{cste}
+    P\, V = \text{cste}
 $$
 En d'autres termes, *maintenir la température constante pendant une augmentation de pression d'un gaz exige une diminution de volume*. Inversement, *la réduction de la pression du gaz passe par une augmentation de volume*.\
 La valeur exacte de la constante n'a pas besoin d'être connue pour appliquer la loi entre deux volumes de gaz sous des pressions différentes, à la même température :
 $$
-    P_1\\, V_1 = P_2\\, V_2
+    P_1\, V_1 = P_2\, V_2
 $$
-{{% /note %}}
+{{< /note >}}

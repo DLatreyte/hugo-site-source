@@ -1,16 +1,14 @@
 ---
 title: "Tri par insertion"
 subtitle: "Chapitre 5,2"
-author: ""
-type: ""
 date: 2020-10-07T21:53:32+04:00
 draft: false
 toc: true
 tags: ["Tri", "Récursivité", "Fonction"]
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 200
 ---
 
 ## Objectifs
@@ -28,9 +26,9 @@ Le tri par insertion est un tri « naturel » souvent qualifié de « tri du jou
 
 ## Tri par insertion
 
-{{% note warning %}}
+{{< note warning >}}
 Une correction du code à développer ci-dessous se trouve {{< remote "ici" "https://repl.it/@dlatreyte/triparinsertion" >}}
-{{% /note %}}
+{{< /note >}}
 
 ### Introduction
 
@@ -42,16 +40,16 @@ La méthode du tri par insertion est ilustré à {{< remote "ici" "https://youtu
 
 Le tri par insertion est efficace lorsqu'on cherche à trier un tableau contenant un petit nombre d'élements ou un tableau dans lequel les éléments sont déjà pratiquement triés.
 
-{{% note tip %}}
+{{< note tip >}}
 #### Idée
 À chaque étape du processus, le tableau est divisé en deux sous-tableaux : le premier (indices plus petits que l'indice courant) est trié, le second (indices plus grands que l'indice courant n'est pas encore trié). On cherche la place de l'élément courant (non encore trié) dans le tableau trié.
 
 Le tri par insertion est basé sur l'*utilisation de deux boucles imbriquées* :
 - La première boucle, une boucle `Pour`, *parcourt la liste des valeurs, de la deuxième à la dernière* ;
 -  La seconde boucle, une boucle `TantQue`, *cherche à placer l'élément courant dans la première partie triée du tableau* (indices inférieurs à l'indice courant). 
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 #### Algorithme 1
 **Fonction** tri_iter
 
@@ -72,7 +70,7 @@ Le tri par insertion est basé sur l'*utilisation de deux boucles imbriquées* :
 10.<span style="margin-left: 2em">**FinPour**</span><br />
 **Fin**
 
-{{% /note %}}
+{{< /note >}}
 
 **Remarque.** L'algorithme du tri par insertion est un algorithme de tri en place. La réorganisation du tableau ne nécessite pas la création d'un nouveau tableau, ce qui économise de la place en mémoire.
 
@@ -83,7 +81,7 @@ Le tri par insertion est basé sur l'*utilisation de deux boucles imbriquées* :
 4. Expliquer les conditions d'arrêt de la boucle `while`, ligne 5.
 
 5. Implémenter la fonction en langage Python et la tester en l'appelant avec les arguments donnés à la question précédente.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 ```python
 def tri(tab: List[int]) -> List[int]:
     """
@@ -100,36 +98,36 @@ def tri(tab: List[int]) -> List[int]:
 
     return tab
 ```
-{{% /note %}}
+{{< /note >}}
 
 6. Comment prouve-t-on, de façon générale, la terminaison d'un algorithme ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 On définit un variant de boucle.
-{{% /solution %}}
+{{< /solution >}}
 
 7. Est-il nécessaire de prouver la terminaison de la boucle externe de cet algorithme ? De la boucle interne ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 La boucle externe est une boucle Pour. Il n'est donc pas nécessaire de prouver sa terminaison. Par contre la boucle interne est une boucle TantQue. Il faut donc prouver sa terminaison.
-{{% /solution %}}
+{{< /solution >}}
 
 8. Démontrer la terminaison de cet algorithme.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 La fonction $f$ définie par $f(j) = j$ est-elle un variant de boucle ?
 
 - Première valeur de $j$ : $i-1$, donc première valeur de $f$ : $f(j) = i - 1 >0$ puisque $i > 1$.
 - $f$ est-elle décroissante ?   
-    $f\_{j+1} - f\_{j} = j-1 - j = -1$, La fonction est bien décroissante.
+    $f_{j+1} - f_{j} = j-1 - j = -1$, La fonction est bien décroissante.
 - Dernière valeur de $j$ : $-1$, donc $f(j) = -1$.
 $f$ est une fonction positive, décroissante dont la dernière valeur est négative : c'est bien un variant de boucle. La boucle se termine.
-{{% /solution %}}
+{{< /solution >}}
 
 9. Comment prouve-t-on, de façon générale, la correction d'un algorithme ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 On recherche un invariant de boucle.
-{{% /solution %}}
+{{< /solution >}}
 
 10. Définir un invariant de boucle et prouver que l'algorithme est correct.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 #### Invariant de boucle.
 La question à se poser est : « Qu'est ce qui est constant à chaque étape de cet algorithme ? »    
 Au début de chaque itération de la boucle Pour externe le tableau `tab[0, ... , i-1]` est un tableau trié constitué des i plus petits éléments du tableau `tab`, dans l'ordre croissant.
@@ -150,10 +148,10 @@ La troisième propriété est peut-être la plus importante : elle est utilisée
 **Conservation.** Par hypothèse, pour `i` compris entre 1 et `nb-2`, `tab[0,  ,i-1]` est un tableau trié. Lors de l'itération `i`, on recherche le plus petit élément du tableau `tab[i, ... ,nb-1]` et on le place à la position d'indice `i`. À partir de l'hypothèse, cet élément est plus grand que n'importe quel élément du tableau `tab[0,  ,i-1]` (sinon il appartiendrait déjà à ce tableau) ; le tableau `tab[0, ... ,i]` est donc trié.
 
 **Terminaison.** Au début de la boucle dans laquelle `i=nb-2, tab[0, ... ,nb-3]` est un tableau trié. À l'issue de cette boucle, on a déterminé le plus petit élément entre `tab[nb-2]` et `tab[nb-1]` et on a placé correctement ces éléments ; le tableau `tab[0, ... ,nb-1]` est donc trié et l'algorithme est correct. 
-{{% /solution %}}
+{{< /solution >}}
 
 11. Déterminer la complexité de l'algorithme.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 #### Rappels. 
 Au chapitre précédent, la notion de complexité a été introduite. Nous allons rappeller, dans cette partie, quelques règles simples qui permettent de se faire une idée de l'efficacité d'un algorithme.
 -  Une affectation ou l'évaluation d'une expression ont un temps d'exécution petit que l'on considère constant. Cette durée constitue souvent l'unité de base dans laquelle on mesure le temps d'exécution d'un algorithme.
@@ -173,11 +171,11 @@ On étudie seulement la complexité du pire et **on se limite à l'influence des
 -  pour $i=N-2$, la boucle interne effectue 1 tour.
 
 Finalement, il y a $1+2+\ldots+(N-2)+(N-1)=\sum_{k=1}^{N-1} k=\dfrac{(N-1)*N}{2}=\dfrac{N^2}{2}-\dfrac{N}{2}$. La complexité de l'algorithme est en $O(N^2)$.
-{{% /solution %}}
+{{< /solution >}}
 
 ## Algorithme récursif
 
-{{% note normal %}}
+{{< note normal >}}
 #### Algorithme 2
 **Fonction** tri_rec
 
@@ -195,9 +193,9 @@ Finalement, il y a $1+2+\ldots+(N-2)+(N-1)=\sum_{k=1}^{N-1} k=\dfrac{(N-1)*N}{2}
 6.<span style="margin-left: 4em">**Retourner** tri_rec(tab, i + 1)</span><br />
 7.<span style="margin-left: 2em">**FinSi**</span><br />
 **Fin**
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 #### Algorithme 3
 **Fonction** insere
 
@@ -216,12 +214,12 @@ Finalement, il y a $1+2+\ldots+(N-2)+(N-1)=\sum_{k=1}^{N-1} k=\dfrac{(N-1)*N}{2}
 7.<span style="margin-left: 4em">**Retourner** insere(tab, i - 1)</span><br />
 7.<span style="margin-left: 2em">**FinSi**</span><br />
 **Fin**
-{{% /note %}}
+{{< /note >}}
 
 12. Décrire le fonctionnement de l'algorithme récursif avec soin lorsque la fonction reçoit le tableau `tab = [5,2,4,6,1,3]`.
 
 13. Implémenter en Python l'algorithme récursif.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 ```python
 def tri_rec(tab: List[int], i: int = 1) -> List[int]:
     """
@@ -246,7 +244,7 @@ def insere(tab: List[int], i: int) -> List[int]:
         tab[i] = temp
         return insere(tab, i - 1)
 ```
-{{% /solution %}}
+{{< /solution >}}
 
 ## Ajout d'une fonctionnalité au tri par insertion
 
@@ -262,13 +260,13 @@ Quel est le critère de tri ?
 eleves = [("Brian", 1, 1, 1942), ("Grace", 9, 12, 1906), ("Linus", 28, 12, 1969), ...]
 ```
 
-{{% note normal %}}
+{{< note normal >}}
 L'idée est de confier la relation d'ordre à une fonction auxiliaire que l'on passe comme argument à la fonction de tri.   
 Cette fonction auxiliaire doit être un prédicat.
-{{% /note %}}
+{{< /note >}}
 
 13. Modifier les fonction `tri-rec` et `insere` de façon à ce qu'elles admettent la fonction `inf` comme argument. La fonction `inf` est responsable de la relation d'ordre lors du tri.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 ```python
 def tri_g(inf: Callable, tab: List[int], i: int = 1) -> List[int]:
     """
@@ -294,10 +292,10 @@ def insere_g(inf: Callable, tab: List[int], i: int) -> List[int]:
         tab[i] = temp
         return insere_g(inf, tab, i - 1)
 ```
-{{% /solution %}}
+{{< /solution >}}
 
 14. Écrire une fonction `inf` qui permet de trier un tableau d'entiers par ordre croissant.
-{{% solution "Réponse" %}} 
+{{< solution "Réponse" >}} 
 ```python
 def infe(x, y):
     """
@@ -306,7 +304,7 @@ def infe(x, y):
     """
     return y <= x
 ```
-{{% /solution %}}
+{{< /solution >}}
 
 15. Modifier la fonction `inf` de façon à ce que le tableau soit trié par ordre décroissant.
 

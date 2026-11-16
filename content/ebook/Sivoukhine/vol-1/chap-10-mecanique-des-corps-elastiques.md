@@ -2,15 +2,14 @@
 title: "Mécanique des corps élastiques"
 subtitle: "Chapitre 10"
 author: "D. Sivoukhine"
-type: ""
 date: 2020-08-25T22:32:17+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: false
+weight: 9900
 ---
 
 ## §73. Corps parfaitement élastiques

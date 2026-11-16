@@ -1,16 +1,14 @@
 ---
 title: "Rotation d'une image bitmap d'un quart de tour"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-11-18T17:12:52+04:00
 draft: false
 toc: true
 tags: ["Diviser pour régner", "Récursivité", "Traitement images"]
 categories: ["Terminales Spé NSI"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 600
 ---
 
 L'objectif de cette activité est l'écriture d'une fonction qui effectue la rotation d'une image bitmap de 90 degrés en utilisant le principe « Diviser pour régner ».
@@ -21,7 +19,7 @@ On peut manipuler des images en Python à l'aide du **module PIL (Python Image L
 
 ### Définition
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### L'image matricielle
 
@@ -29,13 +27,13 @@ Une **image matricielle**, ou « carte de points » (de l'anglais « bitmap »),
 <div style="text-align: right;">
 <a href="https://fr.wikipedia.org/wiki/Image_matricielle">Wikipedia</a>
 </div>
-{{% /note %}}
+{{< /note >}}
 
 <img src="/terminales-nsi/chap-10/chap-10-2-1.jpg" alt="" width="80%" />
 
 ### Caractéristiques
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Numérisation
 
@@ -44,16 +42,16 @@ Le codage ou la représentation informatique d'une image implique sa **numérisa
 - l'**espace spatial** dans lequel *l'image est numérisée suivant l'axe des abscisses et l'axe des ordonnées* : on parle d'**échantillonnage**. Les échantillons dans cet espace sont nommés **pixels** (« *picture element* ») et leur nombre va constituer la **définition de l'image**.
 
 - l'**espace des couleurs** dans lequel *les différentes valeurs de luminosité que peut prendre un pixel sont numérisées pour représenter sa couleur et son intensité* ; on parle de **quantification**. La précision dans cet espace dépend du nombre de bits sur lesquels on code la luminosité et est appelée **profondeur de l'image**.
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### À retenir
 
 La qualité d'une image matricielle est déterminée par *le nombre total de pixels* et *la quantité d’information contenue dans chaque pixel* (souvent appelée profondeur de numérisation des couleurs).
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Définition d'une image
 
@@ -62,34 +60,34 @@ On appelle **définition** le nombre de points (pixels) constituant une image: *
 La **définition** d'une image indique donc le niveau de détails qui seront visibles dans l'image. *Pour une taille donnée, plus il y aura de pixels, plus il y aura de détails fins visibles*.
 
 **Exemple.** Une image numérisée avec une définition de $640 \times 480$ pixels (donc contenant 307 200 pixels) apparaîtra très approximative et sous forme d’un pavage de petits carrés de couleur, par comparaison à une image de $1280 \times  1024$ pixels (soit 1 310 720 pixels).
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Résolution d'une image
 
 On appelle **résolution** le nombre de points (pixels) contenus dans une longueur donnée, le pouce (un pouce mesure $\pu{2,54 cm}$, c'est une unité de mesure britannique). Elle est exprimée en « *points par pouce* » (**PPP**) en français et « *Dots Per Inch* » (**DPI**) en anglais.
 
 La résolution permet ainsi d'établir le rapport entre la **définition** d'une image et la **dimension** réelle de sa représentation sur un support physique (écran, papier, etc.)
-{{% /note %}}
+{{< /note >}}
 
 <img src="/terminales-nsi/chap-10/chap-10-2-2.png" alt="" width="" />
 > Source : {{< remote "http://www.raphaelisdant.fr/paris8/" "http://www.raphaelisdant.fr/paris8/" >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Codage des couleurs
 
 En plus de sa définition, une image numérique utilise plus ou moins de mémoire selon le *codage des informations de couleur* qu'elle possède. C'est ce que l'on nomme le **codage de couleurs** ou **profondeur des couleurs**, exprimé en bits par pixel (bpp) : 1, 4, 8, 16, 24, ... bits.
 
 Le **codage des informations de couleur** est donc *le nombre de bits utilisés pour coder une couleur*.
-{{% /note %}}
+{{< /note >}}
 
 #### Remarque
 
 Les écrans utilisent la **synthèse additive** pour restituer les couleurs : *chaque pixel est composé de trois sous-éléments munis respectivement d'un filtre : rouge, vert, bleu*.
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Quelques modes de représentation des couleurs
 
@@ -99,7 +97,7 @@ Les écrans utilisent la **synthèse additive** pour restituer les couleurs : *c
 Pour convertir une image couleur en niveau de gris il faut remplacer, pour chaque pixel les trois valeurs représentant les niveaux de rouge, de vert et de bleu, en une seule valeur représentant la luminosité.
 Il présente une profondeur de 8 bpp ou 16 bpp.
 - **Mode RVB :** Dans ce mode, la couleur de chaque pixel de l'image est codée à l'aide d'un triplet de valeurs pour le rouge, le vert et le bleu. Chaque canal peut être codé sur 8 bits (le plus fréquent) ou 16 bits (appareils de photo modernes).
-{{% /note %}}
+{{< /note >}}
 
 ### Exploitation des documents
 
@@ -265,9 +263,9 @@ Dans la suite de cette activité on suppose que l'image est carrée et que sa di
 
 Une solution se trouve à {{< remote "cette adresse" "https://repl.it/@dlatreyte/rotation-image" >}}
 
-{{% note normal %}}
+{{< note normal >}}
 L'idée de l'algorithme consiste à découper l'image en quatre, à effectuer la rotation de 90 degrés de chacun des quatre morceaux, puis de les déplacer vers leur position finale.
-{{% /note %}}
+{{< /note >}}
 
 <img src="/terminales-nsi/chap-10/chap-10-2-3.png" alt="" width="60%" />
 

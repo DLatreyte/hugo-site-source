@@ -1,17 +1,14 @@
 ---
 title: "Modèle ondulatoire et corpusculaire de la lumière"
 subtitle: ""
-author: ""
-type: ""
 date: 2023-05-15T13:58:58+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 150
 ---
 
 ## Au programme

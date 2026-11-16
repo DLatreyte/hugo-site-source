@@ -1,17 +1,14 @@
 ---
 title: "Bases de données"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-01-18T17:54:59+04:00
 draft: false
 toc: true
 tags: []
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 210
 ---
 
 Le développement des traitements informatiques nécessite la manipulation de données de plus en plus nombreuses. Leur organisation et leur stockage constituent un enjeu essentiel de performance. Le recours aux bases de données relationnelles est aujourd’hui une solution très répandue. Ces bases de données permettent d’organiser, de stocker, de mettre à jour et d’interroger des données structurées volumineuses utilisées simultanément par différents programmes ou différents utilisateurs. Cela est impossible avec les représentations tabulaires étudiées en classe de première.

@@ -1,22 +1,20 @@
 ---
 title: "Un tour de magie 🪄"
 subtitle: ""
-author: ""
-type: ""
 date: 2023-03-09T19:04:14+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 500
 ---
 > 👨🏻‍🔬 L'objectif de la séance est de modifier la couleur d'une **solution aqueuse verte** en y ajoutant une solution incolore !!!
 
 ## Documents
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Coloration de quelques solutions en fonction des entités qui y sont présentes
 
@@ -34,9 +32,9 @@ auto_numbering: true
 
 </center>
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Quelques tests caractéristiques de reconnaissance des ions en solution aqueuse
 
@@ -59,9 +57,9 @@ auto_numbering: true
 
 - En présence d'ions baryum $\ce{Ba^{2+}}$ le diiode en solution aqueuse forme un solide blanc d'iodure de baryum $\ce{BaI2}$.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Solutions mises à disposition
 
@@ -72,9 +70,9 @@ auto_numbering: true
 - Solution de soude $(\ce{Na^+ (aq) + OH^- (aq)})$, incolore
 - Solution de chlorure de baryum, incolore
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Tour de magie
 
@@ -83,7 +81,7 @@ auto_numbering: true
 **Remarque :** choisir bien évidemment une solution incolore différente pour chaque tube à essais.
 - Bien agiter les tubes à essais **à l'exception de ceux contenant la solution de soude ou celle de chlorure de baryum**.
 
-{{% /note %}}
+{{< /note >}}
 
 ## Travail à réaliser
 
@@ -92,7 +90,7 @@ auto_numbering: true
 Noter toutes les observations.
 3. Justifier les résultats obtenus.
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
 #### Observations
 
@@ -137,7 +135,7 @@ Noter toutes les observations.
 
 ### Extraction par solvant
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Extraction liquide-liquide
 
@@ -148,6 +146,6 @@ Noter toutes les observations.
     - Dans lequel l'entité à extraire est très soluble
   - On utilise une ampoule à décanter
 
-{{% /note %}}
+{{< /note >}}
 
-{{% /solution %}}
+{{< /solution >}}

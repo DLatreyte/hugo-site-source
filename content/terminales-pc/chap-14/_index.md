@@ -1,17 +1,14 @@
 ---
 title: "Effectuer des bilans d’énergie sur un système : le premier principe de la thermodynamique"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-02-22T04:30:56+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 150
 ---
 
 ## Au programme

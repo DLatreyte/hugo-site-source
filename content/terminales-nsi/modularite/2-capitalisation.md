@@ -1,21 +1,19 @@
 ---
 title: "Capitalisation d'une valeur"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-09-15T05:05:07+04:00
 draft: false
 toc: true
 tags: ["Modules", "Exceptions", "Assertions"]
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 200
 ---
 Cette séance a pour objectif de vous familiariser avec la *création et la
 manipulation de modules*.
 
-{{% note normal %}}
+{{< note normal >}}
 Comme il est maintenant de tradition vous diviserez le code de votre programme
 principal en trois parties:
 
@@ -26,16 +24,16 @@ principal en trois parties:
 *Vous documenterez aussi **systématiquement**  vos fonctions*  (une aide sera
 fournie dans les questions relatives à la définition de chacune de ces
 fonctions).
-{{% /note %}}
+{{< /note >}}
 
 En mathématique, on démontre qu'un capital placé à un certain taux
 d'intérêt évolue selon la formule&nbsp;:
 
 $$
-C = C\_{0}  \left( 1 + \dfrac{t}{360 \times 100} \right)^n
+C = C_{0}  \left( 1 + \dfrac{t}{360 \times 100} \right)^n
 $$
 
-où $C$ est le montant du capital considéré le jour de l'examen, $C\_{0}$ le
+où $C$ est le montant du capital considéré le jour de l'examen, $C_{0}$ le
 montant initial du capital, $t$ le taux d'intérêt (en pourcentage) et $n$ le
 nombre de jours écoulés depuis le dépôt.
 
@@ -46,16 +44,16 @@ Pour une durée de placement exprimée en jours, l'usage fait que l'intérêt es
 Selon le problème à résoudre on peut bien évidemment aussi écrire:
 
 $$
-C\_{0} = C \left( 1 + \dfrac{t}{360 \times 100} \right)^{- n}
+C_{0} = C \left( 1 + \dfrac{t}{360 \times 100} \right)^{- n}
 $$
 
 $$
-  n = \frac{\ln \left( \dfrac{C}{C\_{0}} \right)}{\ln \left( 1 + \frac{t}{360
+  n = \frac{\ln \left( \dfrac{C}{C_{0}} \right)}{\ln \left( 1 + \frac{t}{360
   \times 100} \right)}
 $$
 
 $$
-  t = 360 \times 100 \left( \left( \dfrac{C}{C\_{0}} \right)^{1 / n} - 1
+  t = 360 \times 100 \left( \left( \dfrac{C}{C_{0}} \right)^{1 / n} - 1
   \right)
 $$
 
@@ -97,11 +95,11 @@ def taux_annuel(C0: float, C: float, n: int) -> float:
     """
 ```
 
-{{% note warning %}}
+{{< note warning >}}
 Penser à gérer les exceptions (le module `sys` possède une fonction `exit`
 qui permet d'interrompre proprement un programme lorsqu'on lui passe le
 nombre 1 en argument).
-{{% /note %}}
+{{< /note >}}
 
 2. Placer un commentaire au début du module qui décrit son fonctionnement.
 
@@ -125,7 +123,7 @@ nombre 1 en argument).
 7. On place 10&nbsp;000 euros. Au bout de 60 jours, le montant est de 10&nbsp;042 euros.
     À quel taux d'intérêt a été placée cette somme&nbsp;?
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
 ```python
 """
@@ -210,4 +208,4 @@ if __name__ == "__main__":
     assert t == taux_annuel(C0, C, n)
 ```
 
-{{% /solution %}}
+{{< /solution >}}

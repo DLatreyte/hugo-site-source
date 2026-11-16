@@ -1,17 +1,14 @@
 ---
 title: "Forcer le sens d’évolution d’un système"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-02-06T18:48:02+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 190
 ---
 
 ## Au programme

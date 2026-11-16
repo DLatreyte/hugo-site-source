@@ -1,16 +1,14 @@
 ---
 title: "Simulation du fonctionnement d'une banque"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-09-26T20:06:58+04:00
 draft: false
 toc: true
 tags: ["Objet", "Classe", "Attribut", "Méthode", "Instance", "Encapsulation"]
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 200
 ---
 
 L'objectif de ce document est de simuler (sommairement bien sûr) le fonctionnement d'une banque. Le programme doit permettre :
@@ -168,9 +166,9 @@ def infos(self) -> str:
     return chaine
 ```
 
-{{% note warning %}}
+{{< note warning >}}
 Tester la classe en instanciant au moins un objet de type `Personne` et en utilisant toutes les méthodes.
-{{% /note %}}
+{{< /note >}}
 
 ## Classe Compte_bancaire
 
@@ -193,9 +191,9 @@ class Compte_bancaire():
 
 Les spécifications des méthodes sont les suivantes :
 
-{{% note warning %}}
+{{< note warning >}}
 Ne pas oublier d'importer la classe `Personne` du module `personne` au début du fichier.
-{{% /note %}}
+{{< /note >}}
 
 ```python
 def __init__(self, proprietaire: Personne, montant_initial: float) -> None:
@@ -254,9 +252,9 @@ def infos(self) -> str:
     return chaine
 ```
 
-{{% note warning %}}
+{{< note warning >}}
 Tester la classe en instanciant au moins un objet de type `Compte_bancaire` et en utilisant toutes les méthodes.
-{{% /note %}}
+{{< /note >}}
 
 ## Classe Banque
 
@@ -278,11 +276,11 @@ class Banque:
     """
 ```
 
-{{% note warning %}}
+{{< note warning >}}
 
 - Ne pas oublier d'importer la classe `Personne` du module `personne` au début du fichier.
 - Ne pas oublier d'importer la classe `Compte_bancaire` du module `compte_bancaire` au début du fichier.
-{{% /note %}}
+{{< /note >}}
 
 Les spécifications des méthodes sont les suivantes :
 

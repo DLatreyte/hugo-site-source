@@ -1,16 +1,14 @@
 ---
 title: "Annale : Condensateur d'un flash"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-11-07T14:18:10+04:00
 draft: false
 toc: true
 tags: ["Annale", "Courant électrique", "Tension", "Potentiel électrique", "Générateur", "Dipôle", "Branche", "Maille", "Nœud", "Loi des nœuds", "Loi des mailles", "Loi d'Ohm", "Résistance","Condensateur", "Équation différentielle linéaire à coefficients constants"]
 categories: ["Physique", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 600
 ---
 
 On se propose d'étudier le fonctionnement d'un flash d'appareil photographique jetable. Pour obtenir un éclair de puissance lumineuse suffisante, on utilise un tube flash qui nécessite pour son amorçage, une forte tension (au moins $\pu{250 V}$) pour émettre un éclair très bref. Pour stocker l'énergie nécessaire au fonctionnement du tube flash, on utilise un condensateur de capacité $C$. Ce condensateur est chargé à l'aide d'un circuit électronique alimenté par une pile.
@@ -48,7 +46,7 @@ On enregistre la tension $u$ aux bornes du condensateur $C$ (voir graphique en a
 7. On assimilera, après son amorçage, le tube flash à un conducteur ohmique de résistance $r$. À partir du schéma électrique ci-contre montrer que l'équation différentielle de la décharge du condensateur à travers un conducteur ohmique de résistance r est de la forme&nbsp;:
 $$\dfrac{\mathrm{d}u}{\mathrm{dt}} + \dfrac{1}{rC} u = 0 $$
 
-8. Vérifier que la solution est de la forme $u = U_0\\, e^{-t / \tau'}$.
+8. Vérifier que la solution est de la forme $u = U_0\, e^{-t / \tau'}$.
 9. Que représente la tension $U_0$ pour le fonctionnement du tube flash&nbsp;?
 10. Déterminer $U_0$. Cette valeur est-elle en accord avec la production de l'éclair&nbsp;?
 
@@ -58,8 +56,8 @@ $$\dfrac{\mathrm{d}u}{\mathrm{dt}} + \dfrac{1}{rC} u = 0 $$
 
 ## Corrigé
 
-{{% solution "Accès au corrigé" %}}
+{{< solution "Accès au corrigé" >}}
 
 {{< remote "Corrigé au format pdf" "/terminales-pc/chap-5/chap-5-6-4.pdf" >}}
 
-{{% /solution %}}
+{{< /solution >}}

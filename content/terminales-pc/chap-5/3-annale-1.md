@@ -1,25 +1,23 @@
 ---
 title: "Annale : Le super condensateur prêt à sortir de l'ombre"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-11-06T11:35:19+04:00
 draft: false
 toc: true
 tags: ["Annale", "Courant électrique", "Tension", "Potentiel électrique", "Générateur", "Dipôle", "Branche", "Maille", "Nœud", "Loi des nœuds", "Loi des mailles", "Loi d'Ohm", "Résistance","Condensateur", "Équation différentielle linéaire à coefficients constants"]
 categories: ["Physique", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 300
 ---
 
 Promis à un grand avenir, les super condensateurs sont des dispositifs de stockage de l’énergie, intermédiaires entre les accumulateurs électrochimiques et les condensateurs traditionnels. Leurs applications, qui n’en sont qu'à leurs débuts, touchent de nombreux domaines tant dans l'électronique de grande diffusion que dans l'électronique de puissance, notamment en ouvrant des perspectives intéressantes dans le domaine des véhicules hybrides.
 
 ## Charge d’un condensateur à courant constant
 
-{{% note warning %}}
+{{< note warning >}}
 **Partie pas au programme** mais qui peut vous aider à mieux appréhender la relation entre l’intensité du courant électrique et la charge.
-{{% /note %}}
+{{< /note >}}
 
 Une première méthode consiste à charger le condensateur à l’aide d’un générateur délivrant un courant d’intensité I constant, selon le montage suivant.
 
@@ -62,14 +60,14 @@ On ferme l’interrupteur $K$ à $t = \pu{0 s}$, un dispositif informatique (acq
 7. En déduire la valeur de la capacité $C$ du condensateur. Comparer avec la valeur obtenue à la question 4.
 
 8. *En respectant les notations du montage*, montrer que la tension $u$ vérifie l’équation différentielle&nbsp;:
-$$E = RC \\, \dfrac{ \mathrm{d} u}{ \mathrm{dt} } + u$$
+$$E = RC \, \dfrac{ \mathrm{d} u}{ \mathrm{dt} } + u$$
 
-9. La solution de cette équation différentielle est de la forme $u(t) = E\\, (1 – e^{-t/\tau} )$ où $\tau$ est la constante de temps du circuit. Montrer que pour $t = 5\tau$, le condensateur est quasiment chargé. Le vérifier graphiquement.
+9. La solution de cette équation différentielle est de la forme $u(t) = E\, (1 – e^{-t/\tau} )$ où $\tau$ est la constante de temps du circuit. Montrer que pour $t = 5\tau$, le condensateur est quasiment chargé. Le vérifier graphiquement.
 
 ## Correction
 
-{{% solution "Accès au corrigé" %}}
+{{< solution "Accès au corrigé" >}}
 
 {{< remote "Correction au format pdf" "/terminales-pc/chap-5/chap-5-3-7.pdf" >}}
 
-{{% /solution %}}
+{{< /solution >}}

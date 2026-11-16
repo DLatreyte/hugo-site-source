@@ -1,15 +1,13 @@
 ---
 title: "Spécialité NSI, Bulletin officiel n°36 du 30 septembre 2022"
 subtitle: "Épreuve de l'enseignement de spécialité « numérique et sciences informatiques » de la classe de terminale de la voie générale à compter de la session 2023 de l'examen du baccalauréat"
-author: ""
-type: ""
 date: 2020-08-21T23:02:16+04:00
 draft: false
 toc: true
 tags: ["Bulletin officiel"]
 categories: ["Programme officiel"]
-image: ""
 solution_est_visible: true
+weight: 9900
 ---
 
 Cette note de service définit l'épreuve terminale de l'enseignement de spécialité numérique et sciences informatiques de la classe de terminale de la voie générale. Elle est applicable à compter de la session 2021 du baccalauréat.

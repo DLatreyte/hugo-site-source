@@ -1,34 +1,32 @@
 ---
 title: "Modules et exceptions"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-09-15T05:06:32+04:00
 draft: false
 toc: true
 tags: ["Modules", "Exceptions"]
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 100
 ---
 Ce chapitre se concentre sur les modules de Python et sur les modalités
 d'importation des données des modules dans l'environnement de travail.
 
-{{% note tip %}}
+{{< note tip >}}
 L'objectif de ce document est de souligner l'importance d'un **code modulaire**,
 c'est à dire d'un code qui&nbsp;:
 
 - puisse être *utilisé dans plusieurs programmes*&nbsp;;
 - puisse être *documenté* précisément&nbsp;;
 - soit suffisamment compact pour *être étudié avec soin* et en particulier *testé*.
-{{% /note %}}
+{{< /note >}}
 
 ## Qu'est-ce qu'un module&nbsp;?
 
-{{% note tip %}}
+{{< note tip >}}
 *Un module permet d'organiser logiquement le code Python*.
-{{% /note %}}
+{{< /note >}}
 
 - Quand la taille du code augmente, il peut être pratique de le diviser en entités organisées qui
 peuvent continuer à interagir.
@@ -38,11 +36,11 @@ plusieurs programmes.
 
 ## Modules et fichiers
 
-{{% note tip %}}
+{{< note tip >}}
 Si les modules représentent un moyen d'organiser **logiquement** le code
 Python, les fichiers permettent quant à eux d'organiser **physiquement** le
 code.
-{{% /note %}}
+{{< /note >}}
 
 À cette fin, *chaque fichier est considéré comme un module individuel,
 et réciproquement*. *Le nom de fichier d'un module est le nom du module
@@ -89,30 +87,30 @@ recherche:
 >>> sys.path.append('/home/utilisateur/dossier-modules')
 ```
 
-{{% note warning %}}
+{{< note warning >}}
 Il n'est pas nécessaire de modifier le *chemin de recherche* si le **fichier
 module** se trouve *dans le même répertoire* que le fichier source
 contenant le code qui importe le module.
-{{% /note %}}
+{{< /note >}}
 
 ## Portée des variables et espaces de noms
 
-{{% note tip %}}
+{{< note tip >}}
 La *portée* d'un identificateur est la portion du programme à laquelle sa
 déclaration s'applique. On emploie également le terme de *visibilité* .
 
 *Les variables définies dans une fonction ont une **portée locale**, celles
 définies au plus haut niveau d'un module ont une **portée globale***.
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 Les **variables globales** présentent une caractéristique notable&nbsp;: *à moins
 qu'elles n'aient été détruites, leur durée de vie est égale à celle du
 script qui s'exécute*. En revanche, les **variables locales**, comme le **bloc de
 pile** dans lequel elles résident, *sont temporaires et ne
 «&nbsp; vivent&nbsp;» que le temps pendant lequel les fonctions dans
 lesquelles elles sont définies sont actives*.
-{{% /note %}}
+{{< /note >}}
 
 ```python
 >>> chaine_globale = "Salut"
@@ -130,11 +128,11 @@ NameError: name 'chaine_locale' is not defined
 <img src="/terminales-nsi/chap-2/fig-2-1-1.jpg" alt="" width="80%" />
 > Durée de vie des variables locales et globales.
 
-{{% note warning %}}
+{{< note warning >}}
 Dans le cas où une variable locale porte le même nom qu'une variable
 globale, c'est la variable locale qui est utilisée. *Python cherche d'abord
 dans l'espace de nom local avant de chercher dans l'espace de nom global.*
-{{% /note %}}
+{{< /note >}}
 
 ```python
 >>> chaine = "Bonjour"
@@ -148,17 +146,17 @@ Au revoir
 Il est donc possible de «&nbsp; masquer&nbsp;» une variable globale, en utilisant une
 variable locale de même nom.
 
-{{% note normal %}}
+{{< note normal >}}
 *Lorsque l'interpréteur Python importe un module, les règles de portée
 s'appliquent&nbsp;: si l'import se situe au niveau du module, sa portée est globale,
 s'il se situe dans une fonction, sa portée est locale*.
-{{% /note %}}
+{{< /note >}}
 
 ## Import de modules
 
 ### L'instruction `import`
 
-{{% note tip %}}
+{{< note tip >}}
 L'import d'un module nécessite l'emploi de l'instruction `import`. La syntaxe
 est la suivante&nbsp;:
 
@@ -166,7 +164,7 @@ est la suivante&nbsp;:
 import os
 ```
 
-{{% /note %}}
+{{< /note >}}
 
 Il est possible d'importer plusieurs modules&nbsp;:
 
@@ -180,10 +178,10 @@ utilisé pour accéder au module. Si celui-ci est trouvé, il est importé. Comm
 règles de portée s'appliquent&nbsp;: *si l'import se situe au niveau du module, sa
 portée est **globale**, s'il se situe dans une fonction, sa portée est **locale**.*
 
-{{% note warning %}}
+{{< note warning >}}
 L'appel import amène le module dans l'espace de nom, pas les objets qu'il
 contient. La notation `.` doit être utilisée afin d'utiliser ces objets.
-{{% /note %}}
+{{< /note >}}
 
 ```python
 >>> import os
@@ -194,7 +192,7 @@ NameError: name 'name' is not defined
 posix
 ```
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Comment accéder à la liste des objets contenus dans un module&nbsp;?
 
@@ -205,9 +203,9 @@ On peut utiliser la fonction `dir`&nbsp;:
 >>> dir(os)
 ```
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Comment obtenir l'aide d'un module&nbsp;?
 
@@ -218,7 +216,7 @@ On peut utiliser la fonction `help`&nbsp;:
 >>> help(os)
 ```
 
-{{% /note %}}
+{{< /note >}}
 
 <img src="/terminales-nsi/chap-2/fig-2-1-2.jpg" alt="" width="80%" />
 > Résultat de l'importation du module `os`. Aucune référence à l'attribut `name` n'existe dans l'espace de nom global.
@@ -231,7 +229,7 @@ On peut utiliser la fonction `help`&nbsp;:
 
 ### L'expression from ... import
 
-{{% note tip %}}
+{{< note tip >}}
 Il est possible d'importer des objets particuliers d'un module dans le
 programme. **L'objet appartient alors réellement à l'espace de nom du
 programme**.
@@ -242,7 +240,7 @@ programme**.
 posix
 ```
 
-{{% /note %}}
+{{< /note >}}
 
 #### Remarque
 
@@ -271,9 +269,9 @@ Il existe une façon encore plus dangereuse d'utiliser l'expression `from ... im
 *Tous les objets contenus dans le module sont alors ajoutés à l'espace de nom
 globale du programme.*
 
-{{% note warning %}}
+{{< note warning >}}
 Éviter le plus possible la forme d'importation&nbsp;: `from nom_module import *`&nbsp;!
-{{% /note %}}
+{{< /note >}}
 
 ### L'instruction import ... as
 
@@ -289,10 +287,10 @@ et procéder ensuite comme avec le nom complet&nbsp;:
 
 ### Import vs chargement
 
-{{% note tip %}}
+{{< note tip >}}
 Un module n'est *incorporé dans l'espace de nom global* qu'une seule fois, quel que soit le nombre de fois
 où il est *importé*.
-{{% /note %}}
+{{< /note >}}
 
 ### Exemple de création d'un module
 
@@ -361,13 +359,13 @@ File "tm_python", line 1
 SyntaxError: invalid syntax
 ```
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Message d'erreur
 
 Le message affiché contient le `traceback`, c'est à dire la pile d'appel --- le chemin parcouru par l'interpréteur pour atteindre l'erreur (soit la liste des fonctions traversées pour atteindre l'erreur).  
 Ce message comporte le **type d'exception** levée (`ZeroDivisionError`, `IOError`, `NameError`, `SyntaxError`, etc.)  et un **message** qui décrit le problème rencontré.
-{{% /note %}}
+{{< /note >}}
 
 #### Remarque
 
@@ -375,11 +373,11 @@ Dans le cas d'une erreur de syntaxe, *le message d'erreur indique même où est
 détectée l'erreur à l'aide d'une flèche* (en fait, elle se trouve
 généralement juste avant l'endroit pointé par la flèche).
 
-{{% note tip %}}
+{{< note tip >}}
 Pour éviter que le programme ne se termine définitivement ou qu'il se
 termine sans que la raison n'en soit explicite, il est conseillé de **gérer
 les exceptions**.
-{{% /note %}}
+{{< /note >}}
 
 #### Exemple&nbsp;: Gestion des entrées du clavier
 
@@ -392,7 +390,7 @@ les exceptions**.
         print("Oups ! Ce n'est pas un nombre. Nouvelle tentative")
 ```
 
-{{% note tip %}}
+{{< note tip >}}
 Le gestion des exceptions repose sur quelques mots clés&nbsp;: `try`, `except`, `else`
 et `finally` et sur une liste de types d'exceptions dont la liste peut être
 consultée dans la [documentation en ligne de Python](https://docs.python.org/3.8/library/exceptions.html#bltin-exceptions)&nbsp;:
@@ -413,7 +411,7 @@ Plusieurs clauses except peuvent être utilisées. Il n'est pas nécessaire
   exception ait été levée ou pas. C'est donc ici que l'on peut s'assurer
   qu'un fichier ouvert dans le bloc try est correctement fermé, quoi qu'il
   arrive.
-{{% /note %}}
+{{< /note >}}
 
 #### Exemple&nbsp;: Prise en compte de plusieurs erreurs
 
@@ -481,9 +479,9 @@ correctement, *quoi qu'il arrive*.
 
 ## Application
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 1. Écrire un module nommé `convert_temp` contenant les fonctions réalisant les conversions entre des températures exprimées en degrés Celsius, degrés Fahrenheit et Kelvin :  `C2F`, `F2C`, `C2K`, `K2C`, `F2K` and `K2F`.
 
 2. Appeler ces fonctions depuis un autre programme.
-{{% /note %}}
+{{< /note >}}

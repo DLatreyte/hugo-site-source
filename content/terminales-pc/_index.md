@@ -4,7 +4,7 @@ date: 2019-09-14T16:47:06+04:00
 draft: false
 tags: []
 categories: []
-layout: "single"
+weight: 20
 ---
 
 - {{< remote "Programme officiel" "/programmes/Terminale_Specialite_PC.pdf" >}}

@@ -1,16 +1,14 @@
 ---
 title: "Bienvenue aux parents des élèves de la TA"
 subtitle: "Année 2021-2022"
-author: ""
-type: ""
 date: 2021-09-13T16:42:39+04:00
 draft: true
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 9
 ---
 
 1. Objectifs de la classe de terminale et évolution du BAC pour la session 2022
@@ -27,7 +25,7 @@ auto_numbering: true
     - *PRIO :* Mme Simon
 
 3. BAC
-    - [**Évolution des coefficients du baccalauréat**]({{< relref "./2021-08-29-bac-2022" >}})
+    - [**Évolution des coefficients du baccalauréat**]({{% relref "./2021-08-29-bac-2022" %}})
     - **Certification PIX est désormais obligatoire**
     - **Grand Oral** ([modalités]({{% relref "../terminales-pc/grand_oral" %}}))
     - **Attestations de langues vivantes** (les modalités vont être précisées aux élèves par les enseignants très rapidement)
@@ -36,11 +34,11 @@ auto_numbering: true
     - *Spécialités :* fin du mois de mars
     - *Philosophie, Grand Oral :* juin
 
-{{% note warning %}}
+{{< note warning >}}
 
 *Attention au rythme effréné cette année !!!*
 
-{{% /note %}}
+{{< /note >}}
 
 5. Orientation
     - *Septembre :* Constitution des dossiers UCAS

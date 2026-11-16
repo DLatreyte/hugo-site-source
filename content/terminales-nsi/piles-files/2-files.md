@@ -1,16 +1,14 @@
 ---
 title: "Les Files"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-10-31T22:50:06+04:00
 draft: false
 toc: true
 tags: ["File", "Pile", "Liste chaînée", "Liste", "Tableau dynamique", "Complexité"]
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 200
 ---
 
 ## Rappel : Type de Données Abstrait (TDA)
@@ -21,21 +19,21 @@ Une structure de données ou type de données abstrait est un *moyen d'organiser
 - Sa spécification, c'est à dire la liste des manipulations/opérations que l'on peut ou pas effectuer.
 La spécification indique généralement la complexité de chacune des opérations prévues par le TDA.
 
-{{% note warning %}}
+{{< note warning >}}
 Un type de données abstrait **ne dépend pas** de la manière dont la structure de données est implémentée dans le langage de programmation utilisé.  
 Un TDA peut être implémenté de plusieurs façons différentes.
-{{% /note %}}
+{{< /note >}}
 
 ## Qu'est-ce qu'une file ?
 
-{{% note normal %}}
+{{< note normal >}}
 Une **file** est une structure de données abstraite dans laquelle *les données sont organisées comme le seraient des personnes dans une **file d'attente** (au guichet de la poste par exemple) :*
 
 - à chaque fois qu'une personne arrive, elle se place à la fin de la file ;
 - lorsqu'un guichet se libère, c'est la personne arrivée en premier parmi celles qui attendent qui est servie.
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Spécification d'une File de valeurs de type T
 
@@ -54,19 +52,19 @@ Une **file** est une structure de données abstraite dans laquelle *les données
 - **Tester** si une file est vide :
   - fonction : `est_vide(f: File[T])` $\longrightarrow$ retourne un booléen ;
   - complexité : 1 opération élémentaire.
-{{% /note %}}
+{{< /note >}}
 
-{{% note warning %}}
+{{< note warning >}}
 La spécification d'une file montre qu'il n'existe aucune **opération élémentaire** pour&nbsp;:
 
 - accéder à une donnée qui n'est pas la première de la file&nbsp;;
 - déterminer combien de données contient la file.
 - ...
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 La valeur retirée de la file est toujours la première valeur à l'avoir intégrée&nbsp;: **First In, First Out (FIFO)**
-{{% /note %}}
+{{< /note >}}
 
 ## Jeu de tests possibles
 
@@ -111,9 +109,9 @@ Cette méthode doit lever une exception de type `IndexError` lorsqu'on essaie de
 8. Comment pourrait-on améliorer la complexité de la méthode `defiler`&nbsp;?
 Modifier toutes les méthodes qui doivent l'être de façon à améliorer l'implémentation de la classe `File`.
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 {{% remote "Code Python" "https://repl.it/@dlatreyte/fileliste" %}}
-{{% /solution %}}
+{{< /solution >}}
 
 ## Implémentation d'une structure de file à l'aide d'une liste chaînée
 
@@ -138,9 +136,9 @@ Cette méthode doit lever une exception de type `IndexError` lorsqu'on essaie de
 
 8. Tester le code.
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 {{% remote "Code Python" "https://repl.it/@dlatreyte/filechaine" %}}
-{{% /solution %}}
+{{< /solution >}}
 
 ## Implémentation d'une structure de file à l'aide de deux piles
 
@@ -171,12 +169,12 @@ Pour retirer la valeur la plus ancienne dans la file deux cas sont à considére
 
 5. Écrire le code de la méthode `lire` de la spécification (le problème à considérer est très similaire à celui du retrait de la première valeur).
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 {{% remote "Code Python" "https://repl.it/@dlatreyte/filepile" %}}
-{{% /solution %}}
+{{< /solution >}}
 
 ## À retenir
 
-{{% note tip %}}
+{{< note tip >}}
 Une **file** est une structure de données de type **premier entré, premier sorti (FIFO)**. Elle peut être implémentée facilement à l'aide d'une liste chaînée, avec la structure de liste (tableau dynamique) de Python ou à l'aide de deux piles.
-{{% /note %}}
+{{< /note >}}

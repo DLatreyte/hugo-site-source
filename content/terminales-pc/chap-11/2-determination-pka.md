@@ -1,23 +1,21 @@
 ---
 title: "Détermination du $pK_A$ du couple acide/base de l'acide acétique"
 subtitle: ""
-author: ""
-type: ""
 date: 2022-02-02T04:20:24+04:00
 draft: false
 toc: true
 tags: ["Constante d'équilibre", "Constante d'acidité"]
 categories: ["Terminale Spé PC"]
-image: ""
 solution_est_visible: false
 auto_numbering: true
 mathjax: true
+weight: 200
 ---
 
 > L'objectif premier de cette séance est la détermination de la constante d'acidité du couple acide/base de l'acide acétique (éthanoïque).
 La méthode utilisée s'appuie sur des mesures de pH.
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Acide éthanoïque (ou acide acétique)
 
@@ -25,9 +23,9 @@ L'acide éthanoïque est naturellement présent dans le vinaigre. Il lui donne s
 Il doit être manipulé avec soin en suivant les consignes de sécurité.
 Son acidité est due à sa capacité à perdre le proton de son groupe carboxyle, le transformant ainsi en ion acétate $\ce{CH_3COO^-}$. C'est un **acide faible**, son $pK_a$ étant égal à 4,76 à $\pu{25 °C}$.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Constante d'équilibre, constante d'acidité d'un couple acide/base
 
@@ -46,7 +44,7 @@ Une constante d'acidité est **caractéristique** d'un couple acide/base $\ce{ac
 Remarque
 : La constante d'équilibre d'une réaction (et donc la constante d'acidité d'un couple acide/base) est *une grandeur qui dépend de la température*.
 
-{{% /note %}}
+{{< /note >}}
 
 ## Protocole expérimental
 
@@ -97,12 +95,12 @@ On a déjà vu que l'acide acétique et l'ion acétate réagissent très peu ave
 - que la concentration en ion acétate est $C_B$ dans la solution $B$&nbsp;;
 - qu'après le mélange des solutions $A$ et $B$, les quantités de matière $n_A$ et $n_B$ introduites restent constantes.
 
-6. Exprimer, en fonction des grandeurs $C_A$, $C_B$, $V_A$, $V_B$, les concentrations de $[\ce{CH3CO2H}]\_{eq}$ et $[\ce{CH3CO2^-}]\_{eq}$.
+6. Exprimer, en fonction des grandeurs $C_A$, $C_B$, $V_A$, $V_B$, les concentrations de $[\ce{CH3CO2H}]_{eq}$ et $[\ce{CH3CO2^-}]_{eq}$.
 
 7. En déduire que
 
 $$
-\log \left( \dfrac{[\ce{CH3CO2^-}]\_{eq}}{[\ce{CH3CO2H}]\_{eq}} \right) = \log\left( \dfrac{V_B}{V_A} \right)
+\log \left( \dfrac{[\ce{CH3CO2^-}]_{eq}}{[\ce{CH3CO2H}]_{eq}} \right) = \log\left( \dfrac{V_B}{V_A} \right)
 $$
 
 8. Établir la relation qui existe entre le pH de la solution et le $pK_A$ du couple $\ce{CH3CO2H / CH3CO2^-}$.
@@ -113,8 +111,8 @@ $$
 
 11. Tracer le diagramame de prédominance du couple $\ce{CH3CO2H / CH3CO2^-}$.
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
 {{% remote "Corrigé" "https://dlatreyte.github.io/jupyter-lite/lab?path=term-spe-pc%2FAcide-Base%2FConstante-acidite-acide-ethanoique.ipynb" %}}
 
-{{% /solution %}}
+{{< /solution >}}

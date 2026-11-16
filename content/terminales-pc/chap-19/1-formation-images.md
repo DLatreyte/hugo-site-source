@@ -1,16 +1,14 @@
 ---
 title: "Formation d'une image par une lentille mince convergente"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-08-31T21:33:32+04:00
 draft: false
 toc: true
 tags: ["Lentille mince convergente", "Formation image", "Rayons particuliers", "Lentille", "Lentille convergente", "Distance focale", "Foyer image", "Foyer objet", "Axe optique", "Centre optique"]
 categories: ["Physique", "Terminale Spé PC"]
-image: ""
 solution_est_visible: false
 auto_numbering: true
+weight: 100
 ---
 
 > L'objectif de cette séance est de se remettre en mémoire les conditions d'obtention et les caractéristiques d'une image formée par une lentille mince convergente en fonction de la position de l'objet.
@@ -20,7 +18,7 @@ auto_numbering: true
 
 ### Obtention, position et caractéristiques d'une image
 
-{{% note normal %}}
+{{< note normal >}}
 
 - Mesurer la taille de l'objet dont on veut former l'image et noter son orientation.
 - Choisir une lentille mince convergente de vergence $V = \pu{10 \delta}$.
@@ -30,7 +28,7 @@ auto_numbering: true
 - Recommencer ces opérations, pour des distances entre l'objet et la lentille égales à : $\pu{20 cm}$ et $\pu{15 cm}$.
 - Placer maintenant l'objet à $\pu{10 cm}$ puis $\pu{5 cm}$. Est-il possible d'obtenir une image nette sur l'écran ?
 - Dans chacun des deux derniers cas, placer (avec précaution), son œil selon l'axe de la lentille vers l'objet. Existe-t-il une image ?
-{{% /note %}}
+{{< /note >}}
 
 1. Rappeler la relation qui existe entre la vergence $V$ d'une lentille et sa distance focale $f'$.\
 En déduire la valeur de la distance focale de la lentille.
@@ -48,7 +46,7 @@ Quelle est la particularité du rayon de lumière qui passe par le centre optiqu
 
 5. Télécharger ce [document](/terminales-pc/chap-19/chap-19-1/constructions.pdf) et tracer les images pour toutes les situations proposées.
 
-{{% note tip %}}
+{{< note tip >}}
 
 Une **relation de conjugaison** est *une formule mathématique reliant la position d'un objet à celle de son image par un système optique.*
 
@@ -57,15 +55,15 @@ $$
     \dfrac{1}{\overline{OA'}} - \dfrac{1}{\overline{OA}} = \dfrac{1}{f'}
 $$
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note warning %}}
+{{< note warning >}}
 
 $\overline{OA'}$ est une **mesure algébrique** : c'est la longueur $OA'$ à laquelle on ajoute une **information de sens** : *se rend-on du point $O$ au point $A'$ dans le sens choisit comme référence (ici l'axe optique) ou dans le sens opposé&nbsp;?*
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 
 - On appelle **grandissement** *la comparaison algébrique de la taille de l'image et celle de l'objet*&nbsp;:
 $$
@@ -77,7 +75,7 @@ $$
  \gamma = \dfrac{\overline{OA'}}{\overline{OA}}
 $$
 
-{{% /note %}}
+{{< /note >}}
 
 6. Pour chacune des situations utiliser la relation de conjugaison afin de retrouver la position et les caractéristiques de l'image.
 
@@ -85,11 +83,11 @@ $$
 
 ### Détermination d'une valeur *approchée* de la distance focale
 
-{{% note normal %}}
+{{< note normal >}}
 
 Placer une lentille inconnue (tenue à la main) de manière à obtenir l'image d'un objet éloigné&nbsp;: par exemple obtenir sur le sol l'image donnée par la lentille d'un néon au plafond.
 
-{{% /note %}}
+{{< /note >}}
 
 7. Où se forme l'image d'un objet situé à l'infini&nbsp;? Réaliser un schéma pour illustrer votre réponse.
 
@@ -97,7 +95,7 @@ Placer une lentille inconnue (tenue à la main) de manière à obtenir l'image d
 
 ### Détermination de la distance focale en utilisant la relation de conjugaison
 
-{{% note normal %}}
+{{< note normal >}}
 
 - Placer l'objet lumineux, la lentille et l'écran sur le banc d'optique.
 - Pour **une distance fixée entre l'objet et la lentille**, chercher la position de l'image à l'aide de l'écran.\
@@ -117,7 +115,7 @@ Mesurer alors la distance entre la lentille et l'écran.
 
 **Utiliser le logiciel Graphical Analysis pour effectuer les calculs.**
 
-{{% /note %}}
+{{< /note >}}
 
 9. La connaissance de la valeur approchée de la distance focale de la lentille est-elle utile pour le choix des distances objet--lentille&nbsp;? Si oui, pourquoi&nbsp;?
 

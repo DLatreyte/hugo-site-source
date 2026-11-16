@@ -1,16 +1,14 @@
 ---
 title: "Programmation Fonctionnelle"
 subtitle: "Chapitre 5,1"
-author: ""
-type: ""
 date: 2020-10-06T03:49:30+04:00
 draft: false
 toc: true
 tags: ["Programmation fonctionnelle", "List Comprehension", "Récursivité"]
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 100
 ---
 
 ## Qu'est-ce que la programmation fonctionnelle&nbsp;?
@@ -33,7 +31,7 @@ Il n'est cependant pas question de modifier ces listes (méthode `append`).
 
 ## Découverte des quelques éléments de programmation fonctionnelle
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Suite de Collatz
 
@@ -49,7 +47,7 @@ $$ u_{n+1} = \begin{cases}
 3 u_n + 1 &\text{sinon.}
 \end{cases}
 $$
-{{% /note %}}
+{{< /note >}}
 
 ### Récursivité
 
@@ -63,7 +61,7 @@ def collatz_iter(n: int) -> None:
     """
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def collatz_iter(n: int) -> None:
@@ -80,7 +78,7 @@ def collatz_iter(n: int) -> None:
     print(1)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 2. Définir la fonction dont la spécification est&nbsp;:
 
@@ -92,7 +90,7 @@ def collatz_recur(n: int) -> None:
     """
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def collatz_recur(n: int) -> None:
@@ -110,7 +108,7 @@ def collatz_recur(n: int) -> None:
             return collatz_recur(3 * n + 1)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ### Génération de listes
 
@@ -124,7 +122,7 @@ def collatz(n: int) -> List[int]:
     """
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def collatz(n: int) -> List[int]:
@@ -141,14 +139,14 @@ def collatz(n: int) -> List[int]:
             return [n] + collatz(3 * n + 1)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ### Comment manipuler une liste sans réaliser la moindre boucle&nbsp;?
 
 Après avoir construit la liste contenant la suite de Collatz débutant au nombre $n$, on peut vouloir en extraire, par exemple, tous les nombres pairs.
 
 4. À l'aide de la fonction `help` découvrir la spécification de la fonction `filter`. Écrire cette spécification en français.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 filter(function or None, iterable) --> filter object
@@ -161,7 +159,7 @@ filter(function or None, iterable) --> filter object
     """
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 5. Définir la fonction dont la spécification est la suivante&nbsp;:
 
@@ -172,7 +170,7 @@ def est_pair(n: int) -> bool:
     """
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def est_pair(n: int) -> bool:
@@ -182,20 +180,20 @@ def est_pair(n: int) -> bool:
     return n % 2 == 0
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 6. Quelle instruction permet de générer une nouvelle liste ne contenant que les éléments pairs de la liste générée par l'application `collatz(7)`&nbsp;?
 
 **Remarque&nbsp;:** `filter` réalise une évaluation paresseuse et ne retourne pas une liste mais un itérateur. Ce concept est fondamental en programmation fonctionnelle mais ne sera pas abordé dans ce document.  
 Le résultat de l'application de `filter` doit donc être passé comme argument à la fonction `list`&nbsp;: `list(filter(..., ...))`.
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 list(filter(est_pair, collatz(7)))
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 Programmer la fonction `est_pair` avec le mot-clé `def` nécessite d'entrer de nombreuses lignes de code pour, au final, ne nécessiter qu'une seule expression&nbsp;: `n % 2 == 0`. Les langages fonctionnels permettent généralement de définir des **fonctions anonymes** (**lambda expressions**).  
 En Python, l'expression
@@ -219,22 +217,22 @@ Malheureusement, la fonction anonyme, une fois utilisée est «&nbsp;perdue&nbsp
 4
 ```
 
-{{% note warning %}}
+{{< note warning >}}
 Les fonctions anonymes sont limitées à une expression en Python.
-{{% /note %}}
+{{< /note >}}
 
 7. Reprendre l'instruction qui permet de générer une nouvelle liste ne contenant que les éléments pairs de la liste générée par l'application `collatz(7)`, *en remplaçant l'appel à la fonction `est_pair` par une fonction anonyme*.
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 list(filter(lambda n: n % 2 == 0, collatz(7)))
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 8. À l'aide de la fonction `help` découvrir la spécification de la fonction `map`. Écrire cette spécification en français.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 map(func, *iterables) --> map object
@@ -247,61 +245,61 @@ map(func, *iterables) --> map object
     """
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 9. Quelle instruction permet de générer une nouvelle liste contenant chaque élément de la liste générée par l'application `collatz(7)` multiplié par 3&nbsp;?  
 Utiliser une fonction anonyme.
 
 **Remarque&nbsp;:** `map` réalise aussi une évaluation paresseuse et ne retourne pas une liste mais un itérateur. Le résultat de l'application de `map` doit donc être passé comme argument à la fonction `list`&nbsp;: `list(map(..., ...))`.
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 list(map(lambda x: 3 * x, collatz(7)))
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 10. Quelle instruction permet de générer une nouvelle liste contenant chaque élément pair de la liste générée par l'application `collatz(7)` multiplié par 3&nbsp;?  
 Utiliser une fonction anonyme.
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 list(map(lambda x: 3 * x, filter(lambda n: n % 2 == 0, collatz(7))))
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## List comprehension
 
 Les **List Comprehensions**, introduites en classe de première, permettent d'écrire en Python des instructions réalisant les mêmes opérations que `filter` et `map` de façon très efficace et **lisible**.
 
 11. Écrire l'instruction qui permet de générer une nouvelle liste ne contenant que les éléments pairs de la liste générée par l'application `collatz(7)`, à l'aide d'une List comprehension.
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 [n for n in collatz(7) if n % 2 == 0]
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 12. Écrire l'instruction qui permet de générer une nouvelle liste dont les termes sont le triple de chaque terme de la liste générée par l'application `collatz(7)`, à l'aide d'une List comprehension.
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 [3 * n for n in collatz(7)]
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 13. Écrire l'instruction qui permet de générer une nouvelle liste dont les termes sont le triple de chaque terme de la liste générée par l'application `collatz(7)` si ces termes sont pairs, à l'aide d'une List comprehension.
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 [3 * n for n in collatz(7) if n % 2 == 0]
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Quelques mots sur l'évaluation paresseuse (laziness)
 

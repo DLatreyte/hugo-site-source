@@ -1,16 +1,14 @@
 ---
 title: "Exercices d'optique géométrique"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-05-16T03:45:12+04:00
 draft: false
 toc: true
 tags: ["Lentille mince convergente", "Relation de conjugaison", "Lunette", "Grossissement", "Loupe"]
 categories: ["Physique", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 300
 ---
 
 ## Étude de lentilles convergentes
@@ -19,7 +17,7 @@ On dispose d'un banc d'optique, d'un objet lumineux $AB$ de hauteur $\pu{3,5 cm}
 
 1. L'objet lumineux est placé à une distance de $\pu{15,0 cm}$ de la lentille $L_1$.\
 Où doit-on placer l'écran afin de visualiser une image nette de AB à travers la lentille $L_1$ ?
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 - Relation de Descartes :
 $$
@@ -31,10 +29,10 @@ $$
 - **A.N.** $\overline{O_1A' } = \dfrac{\pu{10,0 cm} \times \pu{-15,0 cm}}{\pu{-15,0 cm} + \pu{10,0 cm}} = \pu{30,0 cm}$
 
 L'écran doit être placé $\pu{30,0 cm}$ derrière la lentille $L_1$.
-{{% /solution %}}
+{{< /solution >}}
 
 2. Dans ces conditions, quelle est la valeur du grandissement de la lentille $L_1$ ?
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 - Le grandissement est défini par :
 $$
@@ -45,17 +43,17 @@ $$
     \gamma = \dfrac{\overline{OA' }}{\overline{OA}}
 $$
 donc $\gamma = \dfrac{\pu{30,0 cm}}{\pu{-15,0 cm}} = \pu{-2,0}$
-{{% /solution %}}
+{{< /solution >}}
 
 3. L'image est-elle droite ou renversée ? Est-elle plus grande ou plus petite que l'objet ?
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 - L'image est renversée car le grandissement est négatif.
 - L'image est plus grande que l'objet car $\lvert \gamma \rvert > 1$.
-{{% /solution %}}
+{{< /solution >}}
 
 4. En déduire la dimension de l'image.
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 - Si on utilise la définition du grandissement on obtient
 $$
@@ -64,11 +62,11 @@ $$
 - **A.N.** $\overline{A' B'} = \pu{-2,0} \times \pu{3,5 cm} = \pu{-7,0 cm}$
 
 L'image a pour dimension $A' B' = \pu{7,0 cm}$.
-{{% /solution %}}
+{{< /solution >}}
 
 5. On remplace la lentille $L_1$ par une lentille convergente $L_2$ de vergence $V_2$ inconnue. Sur le banc d'optique, l'objet est placé à $\pu{40,0 cm}$ de la lentille. On visualise une image nette lorsque l'écran se situe $\pu{66,7 cm}$ derrière la lentille.\
 Calculer la vergence $V_2$ de la lentille.
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 - La relation de conjugaison permet d'écrire
 $$
@@ -76,7 +74,7 @@ $$
         = \dfrac{\overline{O_2A} - \overline{O_2A' }}{\overline{O_2A' } \cdot \overline{O_2A}}
 $$
 - **A.N.** $V_2 = \dfrac{\pu{-40,0 cm} - \pu{66,7 cm}}{\pu{66,7 cm} \times \pu{-40,0 cm}} = \pu{4,0 \delta}$.
-{{% /solution %}}
+{{< /solution >}}
 
 ## Où est passée la lentille ?
 
@@ -122,7 +120,7 @@ Sur certaines montres indiquant le jour du mois, on place devant ce nombre une l
 
 ## Principe du vidéo-projecteur
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Caractéristiques
 
@@ -135,7 +133,7 @@ Sur certaines montres indiquant le jour du mois, on place devant ce nombre une l
 - Contraste: > 2500:1
 - Optique : Lentille de projection : 22 à 27 mm
 - Lampe : Durée de vie 4 000 heures
-{{% /note %}}
+{{< /note >}}
 
 Le schéma ci-après représente de façon très simplifiée le principe d'un vidéo-projecteur. Une lampe éclaire une lentille convergente $L_1$, jouant le rôle de condenseur, placée devant une plaque de cristaux liquides.
 

@@ -1,16 +1,14 @@
 ---
 title: "Annale : Airbag et condensateur, quel rapport ?"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-11-06T12:00:01+04:00
 draft: false
 toc: true
 tags: ["Annale", "Courant électrique", "Tension", "Potentiel électrique", "Générateur", "Dipôle", "Branche", "Maille", "Nœud", "Loi des nœuds", "Loi des mailles", "Loi d'Ohm", "Résistance","Condensateur", "Équation différentielle linéaire à coefficients constants"]
 categories: ["Physique", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 400
 ---
 
 Les technologies développées dans l’industrie microélectronique ont été transposées avec succès pour fabriquer des microsystèmes électromécaniques, c’est-à-dire des systèmes miniaturisés qui intègrent sur une même puce des parties mécaniques (capteurs d’accélération ou de pression, miroirs, micromoteurs) et des circuits électroniques associés.
@@ -68,7 +66,7 @@ En tenant compte du fait que la constante de temps est très faible, on considé
 <img src="/terminales-pc/chap-5/chap-5-4-4.png" alt="" width="60%" />
 
 8. Parmi les deux propositions suivantes donnant l’expression de la capacité $C$ en fonction de la distance $d$ entre les armatures du condensateur, choisir en justifiant celle qui peut convenir&nbsp;:
-    1. $C = k\\, d$
+    1. $C = k\, d$
     2. $C = \dfrac{k}{d}$
 
 9. Donner l’expression de la tension aux bornes du condensateur $u_C$ et de la charge $q$ du condensateur avant le choc, en fonction de $E$ (on pourra s’aider d’un schéma du circuit).
@@ -87,8 +85,8 @@ Le déclenchement du gonflage de l’airbag est commandé par la détection d’
 
 ## Corrigé
 
-{{% solution "Accès au corrigé" %}}
+{{< solution "Accès au corrigé" >}}
 
 {{< remote "Corrigé au format pdf" "/terminales-pc/chap-5/chap-5-4-5.pdf" >}}
 
-{{% /solution %}}
+{{< /solution >}}

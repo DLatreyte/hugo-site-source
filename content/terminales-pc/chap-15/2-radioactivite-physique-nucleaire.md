@@ -1,25 +1,23 @@
 ---
 title: "Radioactivité et physique nucléaire"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-08-06T11:49:22+02:00
 draft: true
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
 MathJax: true
 typora-copy-images-to: ../../../static/terminales-pc/chap-15/chap-15-2
+weight: 200
 ---
 
 ## Le noyau atomique
 
 ### Rappels : description du noyau
 
-{{% note normal %}}
+{{< note normal >}}
 
 - Un noyau est constitué de nucléons de deux types : les protons et les neutrons.
 
@@ -36,7 +34,7 @@ typora-copy-images-to: ../../../static/terminales-pc/chap-15/chap-15-2
     \ce{^A_ZX}
     $$
 
-{{% /note %}}
+{{< /note >}}
 
 On peut généraliser l'écriture utilisée pour la représentation des noyaux à d'autres particules que les noyaux. Le nombre $Z$​​ représente alors la mesure algébrique de la charge électrique, l'unité de charge étant la charge positive élémentaire $+e$​​.
 
@@ -56,19 +54,19 @@ On peut généraliser l'écriture utilisée pour la représentation des noyaux �
 
 ### Noyaux isotopes
 
-{{% note tip %}}
+{{< note tip >}}
 
 - Les noyaux de même numéro atomique $Z$​ **appartiennent au même élément chimique**.
 
-{{% /note %}}
+{{< /note >}}
 
 Ainsi le noyau $\ce{^{37}_{17}Cl}$​​​ appartient à l'élément chlore représenté dans la nature par tous les édifices possédant 17 protons dans leur noyau.
 
-{{% note tip %}}
+{{< note tip >}}
 
 - Des noyaux de même numéro atomique $Z$ et de nombre de masse $A$​​ différents sont dits **isotopes**. *Ces noyaux appartiennent au même élément chimique et ils ne différent les uns des autres que par leur nombre de neutrons.*
 
-{{% /note %}}
+{{< /note >}}
 
 Les atomes correspondants aux isotopes d'un même élément ont le même cortège électronique : leurs propriétés chimiques sont pratiquement identiques. C'est pour cela qu'en chimie il est inutile de distinguer par exemple les atomes de noyaux $\ce{^{35}_{17}Cl}$ et $\ce{^{37}_{17}Cl}$.
 
@@ -84,7 +82,7 @@ Les noyaux isotopes du même élément peuvent avoir des « propriétés nucléa
 
 <center>
 
-![img](/terminales-pc/chap-15/chap-15-2/ValléeDeStabilité2.JPG)
+![img](/terminales-pc/chap-15/chap-15-2/ValleeDeStabilite2.JPG)
 
 > Source [Wikipedia](https://fr.wikipedia.org/wiki/Vallée_de_stabilité)
 
@@ -92,7 +90,7 @@ Les noyaux isotopes du même élément peuvent avoir des « propriétés nucléa
 
 ### Interprétation de la stabilité des noyaux
 
-{{% note normal %}}
+{{< note normal >}}
 
 Deux types de forces interviennent au niveau du noyau :
 
@@ -102,27 +100,27 @@ Deux types de forces interviennent au niveau du noyau :
 
 En raison de la faible portée de l'interaction forte ($\approx \pu{5 fm}$), chaque nucléon n'est attiré que par ses proches voisins, indépendamment de la taille du noyau, contrairement à la répulsion électrostatique, de portée infinie.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 
 Dans un noyau stable, les forces attractives l'emportent très nettement, elles assurent la cohésion du noyau.
 
-{{% /note %}}
+{{< /note >}}
 
 ## Les différents types de radioactivité
 
 La radioactivité naturelle découverte par Becquerel en 1896 et la radioactivité artificielle découverte par Irène et Frédéric Joliot-Curie en 1934 sont *des réactions nucléaires spontanées*.
 
-{{% note tip %}}
+{{< note tip >}}
 
 La radioactivité, terme inventé vers 1898 par Pierre Curie, est un *phénomène physique naturel* au cours duquel **des noyaux atomiques instables se désintègrent spontanément**  en d'autres noyaux, avec dégagement d'énergie sous forme de divers rayonnements.
 
-{{% /note %}}
+{{< /note >}}
 
 ### Propriétés de la radioactivité
 
-{{% note tip %}}
+{{< note tip >}}
 
 La radioactivité est un phénomène :
 
@@ -130,7 +128,7 @@ La radioactivité est un phénomène :
 - **inéluctable** : tout noyau est destiné à se désintégrer un jour ou l'autre.
 - **insensible à l'environnement extérieur** : en particulier, les conditions de température et de pression n'influent pas sur l'aptitude ou pas d'un noyau à se désintégrer.
 
-{{% /note %}}
+{{< /note >}}
 
 ### Les lois de conservation
 

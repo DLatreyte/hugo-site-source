@@ -1,16 +1,14 @@
 ---
 title: "Teachable Machine : reconnaître une position"
 subtitle: ""
-author: ""
-type: ""
 date: 2023-03-01T22:35:36+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 100
 ---
 
 > L'objectif de cette séance est de montrer comment on peut apprendre à un **modèle d'apprentissage** à reconnaître une position. Le logiciel utilisé est Teachable Machine et **l'apprentissage aura pour objectif de faire en sorte que le logiciel puisse déterminer si on se tient droit, ou si on est incliné vers la gauche ou vers la droite**.

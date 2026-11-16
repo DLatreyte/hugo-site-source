@@ -1,14 +1,13 @@
 ---
 title: "Spécialité PC, Bulletin officiel spécial n° 2 du 13 février 2020"
 subtitle: "Épreuve de l'enseignement de spécialité « physique-chimie » de la classe de terminale de la voie générale à compter de la session 2021 de l'examen du baccalauréat"
-author: ""
-type: ""
 date: 2020-08-19T16:22:06+04:00
 draft: true
 toc: true
 tags: ["Bulletin Officiel", "Épreuve BAC"]
 categories: ["Programme officiel"]
-image: ""
+
+weight: 9900
 ---
 
 Cette note de service définit l'épreuve de l'enseignement de spécialité physique-chimie de la classe de terminale de la voie générale. Elle est applicable à compter de la session 2021 du baccalauréat.  

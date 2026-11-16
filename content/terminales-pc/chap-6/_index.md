@@ -1,17 +1,14 @@
 ---
 title: "Suivi temporel et évolution macroscopique d'un système chimique"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-11-08T19:03:40+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 80
 ---
 
 ## Au programme

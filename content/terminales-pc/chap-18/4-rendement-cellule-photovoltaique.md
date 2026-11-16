@@ -1,16 +1,14 @@
 ---
 title: "Étude d’une cellule photovoltaïque"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-05-03T12:33:36+04:00
 draft: false
 toc: true
 tags: []
 categories: ["Physique", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 400
 ---
 
 

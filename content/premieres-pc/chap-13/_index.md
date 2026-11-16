@@ -1,17 +1,14 @@
 ---
 title: "Utilisation des propriétés des espèces chimiques en synthèse organique"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-05-09T12:44:17+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 140
 ---
 
 

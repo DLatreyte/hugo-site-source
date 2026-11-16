@@ -1,24 +1,22 @@
 ---
 title: "SQL Murder Mystery"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-02-07T07:00:01+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 700
 ---
 
-{{% note normal %}}
+{{< note normal >}}
 
 - Les fichiers de travail se trouvent à cette adresse : {{< remote "https://replit.com/@dlatreyte/Murder-Mystery#main.sql" "https://replit.com/@dlatreyte/Murder-Mystery" >}}
 
 - Les documents de référence se trouvent à cette adresse : {{< remote "https://github.com/NUKnightLab/sql-mysteries" "https://github.com/NUKnightLab/sql-mysteries" >}}
-{{% /note %}}
+{{< /note >}}
 
 ## Task
 

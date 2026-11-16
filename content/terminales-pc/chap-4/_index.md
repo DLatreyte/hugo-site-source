@@ -1,17 +1,14 @@
 ---
 title: "Analyse d’un système chimique"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-10-05T09:24:24+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 60
 ---
 
 ## Dosages par étalonnage

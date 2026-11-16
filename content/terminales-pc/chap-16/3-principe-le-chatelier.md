@@ -1,16 +1,14 @@
 ---
 title: "Déplacement d'équilibre et principe de Le Chatelier"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-04-12T16:33:33+04:00
 draft: false
 toc: true
 tags: []
 categories: ["Chimie", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: false
+weight: 300
 ---
 
 > L'amélioration du rendement de l'estérification par l'extraction de l'ester synthétisé, l'élimination de l'eau formée ou l'utilisation d'un excès de l'un des réactifs, est un exemple de déplacement d'équilibre.\
@@ -40,42 +38,42 @@ Cet énoncé, complété par la remarque selon laquelle *« les modifications de
 ## Questions
 
 1. Le texte parle d'étherification ; ce terme vous paraît-il correct aujourd'hui ? Sinon, le corriger.
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 Le texte définit l'étherification : réaction entre un alcool et un acide se transforment en éther et en eau. C'est la définition d'une estérification si on emploie « éther » à la place d'« ester ».
-{{% /solution %}}
+{{< /solution >}}
 
 2. Donner un exemple de système mécanique qui mis « hors d'équilibre se déplace pour arriver à une position d'équilibre stable ».
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 - Une bille dans une cuvette finit toujours par s'immobiliser au fond de la cuvette.
 - Un pendule simple écarté de sa position d'équilibre oscille jusqu'à s'immobiliser directement au dessous de son point d'attache.
 - ...
-{{% /solution %}}
+{{< /solution >}}
 
 3. Illustrer sur un exemple l'observation de Jean-Baptiste Dumas.
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 Un acide est dit faible s'il ne se dissocie pas totalement lorsqu'il réagit avec l'eau. Dans un tel cas la réaction inverse, celle de sa base conjuguée avec les ions oxonium, se déroule en même temps dans le milieu. L'état final est donc un état d'équilibre.
-{{% /solution %}}
+{{< /solution >}}
 
 4. Exprimer en terme d'avancement la phrase entre crochets : [On savait ... en présence].
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 Cette phrase définit les transformations non totales ; l'état final, état d'équilibre, est atteint alors que le (ou les) réactif(s) limitant(s) n'a (n'ont) pas été épuisé(s).
-{{% /solution %}}
+{{< /solution >}}
 
 5. Montrer que les conséquences d'un excès d'alcool ou d'acide et l'élimination de l'ester ou de l'eau formés sont en accord avec le principe de Le Chatelier.
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 L'idée est de réfléchir en décomposant le processus en deux phases :
 1. Le mélange initial est stœchiométrique (équimolaire ici). On laisse le système atteindre un équilibre.
 2. On ajoute la quantité de réactif en excès manquante. Et on applique le principe afin de déterminer dans quel sens le système évolue.
 
 Pour l'estérification, un premier état d'équilibre ayant été atteint,
 $$
-    K = Q\_{r,eq} \dfrac{[\text{ester}]\_{eq}\\, [\text{eau}]\_{eq}}{[\text{acide}]\_{eq}\\, [\text{alcool}]\_{eq}} = \dfrac{n\_{eq}(\text{ester})\\, n\_{eq}(\text{eau})}{n\_{eq}(\text{acide})\\, n\_{eq}(\text{alcool})}
+    K = Q_{r,eq} \dfrac{[\text{ester}]_{eq}\, [\text{eau}]_{eq}}{[\text{acide}]_{eq}\, [\text{alcool}]_{eq}} = \dfrac{n_{eq}(\text{ester})\, n_{eq}(\text{eau})}{n_{eq}(\text{acide})\, n_{eq}(\text{alcool})}
 $$
 Si on augmente $n(\text{acide})$, la nouvelle valeur du quotient de réaction est telle que $Q_r < K$. Le critère d'évolution précise que le système doit évoluer dans le sens direct de façon à ce que l'on ait à nouveau $Q_r = K$ ; il consomme donc l'acide.
-{{% /solution %}}
+{{< /solution >}}
 
 6. Quel est l'effet d'une réaction athermique sur la température du système où elle se déroule ? En déduire que la remarque selon laquelle « les modifications ... cause extérieure » permet de justifier que la limite de l'estérification est indépendante de la température.
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 Une réaction chimique athermique ne libère aucune énergie sous forme thermique. La température du milieu reste donc constante, comme la valeur de la constante d'équilibre. La composition de l'état d'équilibre lors d'une estérification est indépendante de la température.
-{{% /solution %}}
+{{< /solution >}}

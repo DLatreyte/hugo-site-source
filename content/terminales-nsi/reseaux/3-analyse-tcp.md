@@ -1,16 +1,14 @@
 ---
 title: "Analyse du protocole de transport TCP"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-11-29T05:59:52+04:00
 draft: false
 toc: true
 tags: ["Réseaux", "IP", "Adressage", "TCP", "Ethernet", "Wireshark"]
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 300
 ---
 
 Cette séance nécessite l'utilisation du logiciel libre Wireshark. Des
@@ -18,9 +16,9 @@ versions pour Windows (il existe même une version portable qui n'a pas besoin
 d'être installée), OS X et Linux sont téléchargeables à cette adresse :
 {{< remote "https://www.wireshark.org" "https://www.wireshark.org" >}}
 
-{{% note normal %}}
+{{< note normal >}}
 {{< remote "Fichiers pour utilisation de Wireshark" "/terminales-nsi/chap-11/Wireshark.zip" >}}
-{{% /note %}}
+{{< /note >}}
 
 1. Rechercher pour quelles actions les protocoles `http`, `pop3`, `ftp`, `telnet`, `ssh` et `dns` sont utilisés.
 
@@ -41,7 +39,7 @@ Utilisez l'annexe de ce TP pour le format des entêtes TCP et UDP.
 | `ssh` | | | | | |
 | `dns` | | | | | |
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 | **Protocole** | **Adresse IP du serveur** | **Numéro de port du serveur** |  **Numéro du protocole (entête IP)** |  **Adresse IPdu client** | **Numéro du port du client** |
 | :----:| :----:| :----:| :----:| :----:| :----:|
@@ -53,22 +51,22 @@ Utilisez l'annexe de ce TP pour le format des entêtes TCP et UDP.
 | `ssh` | 10.1.1.13 | 22 | 6 | 10.1.1.11 | 38257 |
 | `dns` | 10.1.1.13 | 53 | 17 | 132.227.61.122 | 34053 |
 
-{{% /solution %}}
+{{< /solution >}}
 
 4. Après examen des numéros de port des serveurs et des clients quelle conclusion peut-on établir ?
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Les numéros de port des serveurs sont standardisés mais pas ceux des
 clients. C'est tout à fait normal : un client doit connaître le numéro du
 port pour s'adresser au bon service sur le serveur.De plus, les numéros des
 services sont fixes et inférieurs à 1024 alors que ceux utilisés par les
 clients sont dynamiques et supérieurs à cette valeur. Seul un compte «
 administrateur de la machine » peut ouvrir un port inférieur à 1024.
-{{% /solution %}}
+{{< /solution >}}
 
 #### Établissement d'une connexion ({{< remote "Wikipedia" "https://fr.wikipedia.org/wiki/Transmission_Control_Protocol" >}})
 
-{{% note normal %}}
+{{< note normal >}}
 Le côté client de la connexion effectue une ouverture active en 3 temps :
 
 * *Le client envoie un segment SYN au serveur,*
@@ -87,22 +85,22 @@ synchronisés :
 * Le client confirme en envoyant un ACK avec un numéro de séquence augmenté
   de un (x+1) et un numéro d'acquittement correspondant au numéro de
   séquence du serveur plus un (y+1).
-{{% /note %}}
+{{< /note >}}
 
 5. Utiliser la trace `http.pcap`. Mettre le filtre à `http || tcp` pour limiter les messages à afficher. Quelles sont les trames correspondant à l'établissement de la connexion TCP ?
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 **Rappel :**  L'établissement d'une connexion TCP met en œuvre le « hand
 shake », un processus en trois étape : émission d'un segment avec un drapeau
 SYN, puis réponse avec un drapeau SYN,ACK et pour finir une dernière
 émission (avant le réel envoi des données) avec un drapeau ACK.
 
 Les trames sont donc les trames 5, 6 et 7.
-{{% /solution %}}
+{{< /solution >}}
 
 #### Transferts de données ({{< remote "Wikipedia" "https://fr.wikipedia.org/wiki/Transmission_Control_Protocol" >}})
 
-{{% note normal %}}
+{{< note normal >}}
 Pendant la phase de transferts de données, certains mécanismes clefs
 permettent d'assurer la robustesse et la fiabilité de TCP. En particulier, les
 numéros de séquence sont utilisés afin d'ordonner les segments TCP reçus et
@@ -139,54 +137,54 @@ Par exemple, dans le cas d'un échange de segments par Telnet :
   44 (Seq = 44) et comme numéro d'acquittement le numéro de séquence du
   segment précédemment reçu, augmenté de la quantité de données reçue
   (Ack = 79 + 1 = 80).
-{{% /note %}}
+{{< /note >}}
 
 6. Observer en détail les messages correspondant à l'établissement de la
 connexion TCP. Identifier les numéros de séquence, numéros d'acquittement et
 la taille de la fenêtre de réception échangés.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Le numéro de séquence initial du client est 0x a7 b6 4b 61 (2 831 741
 921).
 Le numéro de séquence initial du serveur est 0x d7 aa 92 97 (3 618 280
 087).
 La taille de la fenêtre de réception du client est de 5840 octets, celle
 du serveur est de 5792 octets.
-{{% /solution %}}
+{{< /solution >}}
 
 7. Continuer avec la trace `http.pcap`, mettre le filtre à `http`,
 combien de trames sont-elles affichées? Ensuite, remettre le filtre à `http || tcp`, combien de trames sont-elles affichées ? Les nombres de trames dans les deux cas sont-ils égaux ? Pourquoi ?
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 * Filtre = « http » : 4 trames,
 * Filtre = « http or tcp » : 14 trames.
 
 Il y a plus de trames capturées quand le filtre est `http || tcp` car
 au niveau transport, il y a des segments de contrôle `TCP`  (`SYN`, `SYN-ACK`, `ACK`, `FIN`) en plus des segments de données (les segments qui contiennent les messages du protocole au niveau applicatif `HTTP`).
-{{% /solution %}}
+{{< /solution >}}
 
 8. Analyser maintenant la trace `ftp.pcap`. À quoi correspondent les trames 1
 et 2 ?
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Les trames 1 et 2 constituent le dialogue initial, lorsque le client essaie de
 faire correspondre une adresse MAC à une adresse IP. Ce dialogue concerne la
 couche 1 du modèle OSI.
-{{% /solution %}}
+{{< /solution >}}
 
 9. Indiquer quelle sont les adresses MAC des client et serveur.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Client : 08:00:27:e3:ec:3b et Serveur : 08:00:27:04:56:51
-{{% /solution %}}
+{{< /solution >}}
 
 10. Analyser maintenant la trace `dns.pcap` et mettre le filtre à `dns`,
 combien de trames sont-elles affichées ? Le protocole de niveau 4 utilisé
 est-il TCP ?
 Ensuite, mettre le filtre à `dns or udp`, combien de trames sont-elles affichées ? Les nombres de trames dans les deux cas sont-ils égaux ? Pourquoi ? (Il pourra être utile de se renseigner sur le protocole `UDP`).
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Pour tous les deux cas : 2 trames sont affichées. **Il n'y a pas de message
 de contrôle dans UDP**.
-{{% /solution %}}
+{{< /solution >}}

@@ -1,23 +1,21 @@
 ---
 title: "La récursivité appliquée aux chaînes de caractères et aux listes"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-09-08T04:53:31+04:00
 draft: false
 toc: true
 tags: ["Chaînes de caractères", "Listes", "Récursivité"]
 categories: ["Informatique", "Terminales Spé NSI"]
-image: ""
 solution_est_visible: true
 auto_numbering: false
+weight: 102
 ---
 
 ## Introduction
 
 Une chaîne de caractère est une **structure de données** qui permet de rassembler en un *unique objet* une **succession ordonnée** de caractères. Ainsi, une *définition récursive d'une chaîne de caractères* pourrait être :
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Définition récursive d'une chaîne de caractères
 
@@ -26,11 +24,11 @@ Une chaîne de caractères est :
 - soit la chaîne de caractères vide ;
 - soit constituée de son premier caractère et du reste des caractères qui forment aussi une chaîne de caractères (éventuellement vide).
 
-{{% /note %}}
+{{< /note >}}
 
 Une liste est une **structure de données** qui permet de rassembler en un *unique objet* une **succession ordonnée** d'objets (ou de valeurs). Ainsi, une *définition récursive d'une liste* pourrait être :
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Définition récursive d'une liste
 
@@ -39,13 +37,13 @@ Une liste est :
 - soit la liste vide ;
 - soit constituée de son premier élément et du reste des éléments qui forment aussi une liste (éventuellement vide).
 
-{{% /note %}}
+{{< /note >}}
 
 ## Exercices
 
 Penser à écrire, pour chacune des fonctions ci-dessous, sa spécification ainsi qu'un jeu de tests.
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Recherche dans une chaîne de caractères
 
@@ -54,9 +52,9 @@ Penser à écrire, pour chacune des fonctions ci-dessous, sa spécification ains
 Tester cette fonction.
 
 **Remarque :** la fonction `est_dans` est un **prédicat**.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def est_dans(e: str, c: str) -> bool:
@@ -98,18 +96,18 @@ def main():
 main()
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Recherche de la position d'un caractère dans une chaîne de caractères
 
 Écrire une fonction récursive nommée `rang`, qui, à partir d'un caractère `e` et d'une chaîne de caractères `c`, détermine la (première) position de ce caractère dans la chaîne. Si le caractère n'est pas présent, retourner un nombre négatif.
 
 Tester cette fonction dans un programme.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def rang(e: str, c: str, i: int) -> int:
@@ -161,9 +159,9 @@ def main():
 main()
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Copie d'une chaîne de caractères
 
@@ -171,9 +169,9 @@ main()
 
 Tester cette fonction.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def copie(c: str) -> str:
@@ -192,18 +190,18 @@ def copie(c: str) -> str:
     assert copie("") == ""
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Inversion d'une chaîne de caractères
 
 Écrire une fonction récursive nommée `inversion`, qui, à partir d'une chaîne de caractères `c`, retourne la chaîne « mirroir », c'est à dire la chaîne égale à celle passée en argument quand on la lit de droite à gauche.
 
 Tester cette fonction dans un programme.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def inversion(c: str) -> str:
@@ -266,18 +264,18 @@ def main():
 main()
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Détecteur de palindrome
 
 Un palindrome est un mot (ou une phrase) qui se lit aussi bien de la gauche vers la droite que de la droite vers la gauche : par exemple « radar », « kayak », ou bien la phrase « esope reste et se repose » (si l'on ne tient pas compte des espaces).
 
 Écrire une fonction récursive nommée `est_palindrome` qui reçoit comme argument une chaîne de caractères contenant le mot (ou la phrase). Cette fonction doit tester si les deux caractères opposés sont identiques, puis appeler récursivement la fonction sur la partie de la chaîne qui ne contient pas ces deux caractères (les espaces sont ignorés).
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def est_palindrome(c: str) -> bool:
@@ -322,9 +320,9 @@ def main():
 main()
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Travail sur les listes
 
@@ -370,9 +368,9 @@ assert creation_liste_filtree(1, 10) == [3, 5, 6, 9, 10]
 
 10. Modifier la fonction précédente afin que le filtre « entiers multiples de 3 ou de 5 » soit passé en argument.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Solutions" %}}
+{{< solution "Solutions" >}}
 
 ```python
 def plus_grand_element(liste: list) -> float:
@@ -534,4 +532,4 @@ def main():
 main()
 ```
 
-{{% /solution %}}
+{{< /solution >}}

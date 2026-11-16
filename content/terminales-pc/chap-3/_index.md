@@ -1,17 +1,14 @@
 ---
 title: "Modélisation des réactions acide-base"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-09-28T15:33:16+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 50
 ---
 
 ## Au programme

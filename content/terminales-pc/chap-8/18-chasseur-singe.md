@@ -1,16 +1,14 @@
 ---
 title: "Le problème du chasseur et du singe"
 subtitle: ""
-author: ""
-type: ""
 date: 2023-01-05T17:00:18+04:00
 draft: false
 toc: true
 tags: []
 categories: ["Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 1800
 ---
 
 <img src="/terminales-pc/chap-8/chap-8-18/monkey_and_hunter.gif" alt="" width="" />
@@ -33,7 +31,7 @@ Un chasseur vise directement, à l'aide de son arme, un singe suspendu à un arb
 - Le champ de pesanteur $\vec{g}$ est supposé uniforme.
 - On suppose que la portée du projectile est supérieur à la distance $D$.
 
-{{% solution "Étapes de la résolution du problème" %}}
+{{< solution "Étapes de la résolution du problème" >}}
 
 1. Établir les équation horaires du mouvement du projectile.
 2. Établir les équation horaires du mouvement du singe.
@@ -42,25 +40,25 @@ Un chasseur vise directement, à l'aide de son arme, un singe suspendu à un arb
 5. En déduire l'altitude du singe à l'instant $t_I$.
 6. Conclure
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% solution "Éléments de correction" %}}
+{{< solution "Éléments de correction" >}}
 
 **Remarque :** il faut bien évidemment être capable de démontrer toutes les expressions données.
 
 1. Équations horaires du projectile :
 $$
 \begin{cases}
-   x_P (t) = V_0 \cos (\alpha) t & \\\\
-   y_P (t) = -\dfrac{1}{2} g t^2 + V_0 \sin (\alpha) t & \\\\
+   x_P (t) = V_0 \cos (\alpha) t & \\
+   y_P (t) = -\dfrac{1}{2} g t^2 + V_0 \sin (\alpha) t & \\
 \end{cases}
 $$
 
 2. Équations horaires du singe :
 $$
 \begin{cases}
-   x_S (t) = D & \\\\
-   y_S (t) = -\dfrac{1}{2} g t^2 + H & \\\\
+   x_S (t) = D & \\
+   y_S (t) = -\dfrac{1}{2} g t^2 + H & \\
 \end{cases}
 $$
 
@@ -85,4 +83,4 @@ Le projectile rencontre le singe, ce dernier n'aurait pas du se laisser tomber.
 
 Le singe et la flèche ont la même accélération, ils tombent au sol avec une accélération $a = g$. Par rapport au singe, la flèche possède donc un mouvement rectiligne dirigé vers lui puisqu'elle tombe exactement comme lui.
 
-{{% /solution %}}
+{{< /solution >}}

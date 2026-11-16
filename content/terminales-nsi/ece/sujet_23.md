@@ -1,16 +1,14 @@
 ---
 title: "NUMERIQUE et SCIENCES INFORMATIQUES"
 subtitle: "Partie pratique"
-author: ""
-type: ""
 date: 2022-01-24T05:59:58+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: false
 auto_numbering: true
+weight: 9900
 ---
 
 ## Exercice 1 (50% des points)
@@ -29,7 +27,7 @@ Par exemple : avec la phrase `'Hello world !'` le dictionnaire est le suivant : 
 
 Écrire une fonction `occurence_lettres` prenant comme paramètre une variable `phrase` de type `str`. Cette fonction doit renvoyer un dictionnaire constitué des occurrences des caractères présents dans la phrase.
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
 ```python
 def occurence_lettres(phrase):
@@ -42,7 +40,7 @@ def occurence_lettres(phrase):
     return dico
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Exercice 2 (50% des points)
 
@@ -86,7 +84,7 @@ Compléter le code.
 [0, 1, 6, 7, 8, 9, 10]
 ```
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
 ```python
 def fusion(L1, L2):
@@ -115,4 +113,4 @@ def fusion(L1, L2):
     return L12
 ```
 
-{{% /solution %}}
+{{< /solution >}}

@@ -1,17 +1,14 @@
 ---
 title: "Évolution temporelle dans un circuit capacitif"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-10-26T18:04:53+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 70
 ---
 
 ## Au programme

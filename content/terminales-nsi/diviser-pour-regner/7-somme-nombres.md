@@ -1,16 +1,14 @@
 ---
 title: "Somme des $n$ nombres d'un tableau"
 subtitle: ""
-author: ""
-type: ""
 date: 2023-01-29T23:13:31+04:00
 draft: false
 toc: true
 tags: ["Diviser pour régner", "Récursivité"]
 categories: ["Terminales Spé NSI"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 700
 ---
 
 > L’objectif de ce document est d’écrire et d’implémenter un algorithme s’appuyant sur le raisonnement « Diviser pour régner » qui permet de déterminer la somme des $n$ nombres (entiers) d'un tableau.
@@ -28,7 +26,7 @@ def somme1(tab: List[float]) -> float:
 ```
 
 Penser à écrire un jeu de tests.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def somme1(tab: List[float]) -> float:
@@ -52,13 +50,13 @@ if __name__ == "__main__":
     print("Done!")
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 2. Réfléchir à un algorithme utilisant le principe « Diviser pour régner » qui résoud le même problème.  
 Écrire le code de la fonction `somme2` qui implémente cet algorithme.  
 Tester cette fonction.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def somme2(tab: List[float]) -> float:
@@ -94,10 +92,10 @@ if __name__ == "__main__":
     print("Done!")
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 3. Décrire le fonctionnement de l'algorithme pour la liste `[1, 2, 3, 4, 5, 6, 7]`.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```bash
 somme([1, 2, 3, 4, 5, 6, 7])
@@ -134,4 +132,4 @@ somme([1, 2, 3, 4, 5, 6, 7])
     retourne 28
 ```
 
-{{% /solution %}}
+{{< /solution >}}

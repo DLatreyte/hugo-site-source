@@ -1,16 +1,14 @@
 ---
 title: "Les piles, des générateurs omniprésents"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-02-05T22:37:14+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 500
 ---
 
 Les piles sont très diverses, faciles d’emploi et de faible coût. Leur format et leurs caractéristiques sont adaptés à leurs différentes utilisations.

@@ -1,16 +1,14 @@
 ---
 title: "Coefficients de Student"
 subtitle: ""
-author: ""
-type: ""
 date: 2022-02-06T16:38:35+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 9900
 ---
 Le tableau suivant fournit les valeurs de certains quantiles de la loi de Student pour différents intervalles de confiance.
 

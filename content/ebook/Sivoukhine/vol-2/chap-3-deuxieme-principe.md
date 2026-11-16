@@ -8,9 +8,9 @@ draft: true
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: false
+weight: 9900
 ---
 
 ## §27. Quelques remarques générales sur les premier et deuxième principes de la thermodynamique {id="sec:27"}

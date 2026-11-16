@@ -1,17 +1,14 @@
 ---
 title: "Décrire un système thermodynamique : exemple du modèle du gaz parfait"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-02-21T04:21:36+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 140
 ---
 
 ## Au programme

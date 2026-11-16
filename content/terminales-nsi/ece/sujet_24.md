@@ -1,16 +1,14 @@
 ---
 title: "NUMERIQUE et SCIENCES INFORMATIQUES"
 subtitle: "Partie pratique"
-author: ""
-type: ""
 date: 2021-12-07T07:57:06+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: false
 auto_numbering: true
+weight: 9900
 ---
 
 ## Exercice 1 (50% des points)
@@ -27,7 +25,7 @@ if __name__ == "__main__":
     assert recherche(1, [8, 1, 10, 1, 7, 1, 8]) == 5
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def recherche(elt: int, tab: List[int]) -> int:
@@ -52,7 +50,7 @@ if __name__ == "__main__":
     assert recherche(1, [8, 1, 10, 1, 7, 1, 8]) == 5
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Exercice 2 (50% des points)
 
@@ -109,7 +107,7 @@ if __name__ == "__main__":
     assert adresse2.adresse_suivante().adresse == "192.168.0.3"
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 from __future__ import annotations
@@ -154,4 +152,4 @@ if __name__ == "__main__":
     assert adresse2.adresse_suivante().adresse == "192.168.0.3"
 ```
 
-{{% /solution %}}
+{{< /solution >}}

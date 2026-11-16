@@ -1,16 +1,14 @@
 ---
 title: "Illustration des différents schemas pour la dérivation numérique"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-08-25T17:37:31+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 9900
 ---
 Code le plus simple possible et donc pas modulable du tout
 {{< highlight py3 >}}

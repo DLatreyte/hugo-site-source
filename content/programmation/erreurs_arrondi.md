@@ -1,16 +1,14 @@
 ---
 title: "Erreurs d'arrondi"
 subtitle: "... dans le cas de la dérivation numérique"
-author: ""
-type: ""
 date: 2020-08-25T17:14:39+04:00
 draft: true
 toc: true
 tags: ["Analyse numérique", "Code"]
 categories: ["Tutoriel"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 9900
 ---
 
 {{< highlight py3 >}}

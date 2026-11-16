@@ -1,31 +1,29 @@
 ---
 title: "Manuel numérique Hatier : Exercices du chapitre"
 subtitle: ""
-author: ""
-type: ""
 date: 2023-02-02T21:29:06+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 500
 ---
 
 ## Exercice n°43, page 233 : Boire avec une paille
 
 1. L'eau est considérée incompressible, il donc possible d'y appliquer la loi de la statique des fluides. Comme l'axe $(Oz)$ est orienté vers le haut,
 $$
-p(z) + \rho_{\text{eau}}\\, g z = \text{cste}
+p(z) + \rho_{\text{eau}}\, g z = \text{cste}
 $$
 Appliquée au point d'altitude $z_1$ et au point $F$, au fond du verre, la relation s'écrit,
 $$
-p(z_1)+\rho_{\text{eau}}\\,  g z_1 = p_\text{fond} +\rho_{\text{eau}}\\,  g \times 0
+p(z_1)+\rho_{\text{eau}}\,  g z_1 = p_\text{fond} +\rho_{\text{eau}}\,  g \times 0
 $$
 ​  ou
 $$
-p_\text{fond} = p_0+\rho_{\text{eau}}\\,  g z_1
+p_\text{fond} = p_0+\rho_{\text{eau}}\,  g z_1
 $$
 ​  puisque $p(z_1) = p_0$ (ce point se trouve à l'interface de l'air et de l'eau).  
 **A.N.** $p_\text{fond} =\pu{1,013e5 Pa} + \pu{1,0e3 kg.m-3} \times \pu{9,81 N.kg-1} \times \pu{9,5e-2 m} = \pu{1,02e5 Pa}$  
@@ -33,17 +31,17 @@ $$
 
 2. On applique la loi de la statique des fluides dans la paille entre les points d'altitude $z_1$ et $z_2$ :
     $$
-    p(z_1)+\rho_{\text{eau}}\\,  g z_1 = p_2 +\rho_{\text{eau}}\\,  g z_2
+    p(z_1)+\rho_{\text{eau}}\,  g z_1 = p_2 +\rho_{\text{eau}}\,  g z_2
     $$
     Comme $p(z_1)=p_0$, on a
     $$
-    p_0 - p_2 = \rho_{\text{eau}}\\,  g (z_2 - z_1)
+    p_0 - p_2 = \rho_{\text{eau}}\,  g (z_2 - z_1)
     $$
     **Rappel :** le point d'altitude $z_1$, dans la paille, n'est pas en contact avec l'air mais, comme seule l'altitude compte pour la pression, il possède la même pression que les points à la même altitude au contact de l'air.
 
 3. À partir de la relation précédente, on obtient :
     $$
-    p_2 =p_0 - \rho_{\text{eau}}\\,  g (z_2 - z_1)
+    p_2 =p_0 - \rho_{\text{eau}}\,  g (z_2 - z_1)
     $$
     **A.N.** $p_2 = \pu{1,013e5 Pa} - \pu{1,0e3 kg.m-3} \times \pu{9,81 N.kg-1} \times(\pu{25e-2 m} - \pu{9,5e-2 m}) = \pu{0,998e5 Pa} = \pu{998 hPa}$.
 
@@ -53,15 +51,15 @@ $$
 
 1. L'eau est considérée incompressible, il donc possible d'y appliquer la loi de la statique des fluides. Comme l'axe $(Oz)$ est orienté vers le haut,
     $$
-    p(z) + \rho_{\text{eau}}\\,  g z = \text{cste}
+    p(z) + \rho_{\text{eau}}\,  g z = \text{cste}
     $$
     Appliquée à la situation étudiée, la relation s'écrit,
     $$
-    p(z_1) + \rho_{\text{eau}}\\,  g z_1 = p(z_2) + \rho_{\text{eau}}\\,  g z_2
+    p(z_1) + \rho_{\text{eau}}\,  g z_1 = p(z_2) + \rho_{\text{eau}}\,  g z_2
     $$
     Comme le point d'altitude $z_1$ se trouve à l'interface entre l'air et l'eau, $p(z_1)=p_0$ et
     $$
-    p_0 + \rho_{\text{eau}}\\,  g z_1 = p(z_2) + \rho_{\text{eau}}\\,  g z_2 \iff p(z_2) = p_0 + \rho_{\text{eau}}\\,  g (z_1 - z_2)
+    p_0 + \rho_{\text{eau}}\,  g z_1 = p(z_2) + \rho_{\text{eau}}\,  g z_2 \iff p(z_2) = p_0 + \rho_{\text{eau}}\,  g (z_1 - z_2)
     $$
     **A.N.** $p(z_2) = \pu{1,013e5 Pa} + \pu{1,0e3 kg.m-3} \times \pu{9,81 N.kg-1} \times (\pu{70 m} - \pu{5 m}) = \pu{7,4e5 Pa}$.
 
@@ -93,15 +91,15 @@ $$
 
 3. L'huile est considérée incompressible, il donc possible d'y appliquer la loi de la statique des fluides. Comme l'axe $(Oz)$ est orienté vers le haut,
     $$
-    p(z) + \rho_{\text{huile}}\\, g z = \text{cste}
+    p(z) + \rho_{\text{huile}}\, g z = \text{cste}
     $$
     Appliquée à la situation étudiée, la relation s'écrit,
     $$
-    p(z_1) + \rho_{\text{huile}}\\, g z_1 = p(z_2) + \rho_{\text{huile}}\\, g z_2 \iff p(z_1) = p(z_2) + \rho_{\text{huile}}\\, g (z_2 - z_1)
+    p(z_1) + \rho_{\text{huile}}\, g z_1 = p(z_2) + \rho_{\text{huile}}\, g z_2 \iff p(z_1) = p(z_2) + \rho_{\text{huile}}\, g (z_2 - z_1)
     $$
     Comme le point d'altitude $z_2$ se trouve à l'interface entre l'air et l'eau, $p(z_2)=p_0$​ et
     $$
-    p(z_1) = p_0 + \rho_{\text{huile}}\\, g H_{\text{huile}}
+    p(z_1) = p_0 + \rho_{\text{huile}}\, g H_{\text{huile}}
     $$
     **A.N.** $p(z_1) = \pu{1,013e5 Pa} + \pu{920 kg.m-3} \times \pu{9,81 N.kg-1} \times \pu{7e-2 m} = \pu{1,019e5 Pa}$.
 
@@ -119,31 +117,31 @@ $$
 
 3. L'huile est considérée incompressible, il donc possible d'y appliquer la loi de la statique des fluides. Comme l'axe $(Oz)$ est orienté vers le haut,
     $$
-    p(z) + \rho_{\text{huile}}\\, g z = \text{cste}
+    p(z) + \rho_{\text{huile}}\, g z = \text{cste}
     $$
     Appliquée à la situation étudiée, la relation s'écrit,
     $$
-    p(z_1) + \rho_{\text{huile}}\\, g z_1 = p(z_3) + \rho_{\text{huile}}\\, g z_3 \iff p(z_1) = p(z_3) + \rho_{\text{huile}}\\, g H
+    p(z_1) + \rho_{\text{huile}}\, g z_1 = p(z_3) + \rho_{\text{huile}}\, g z_3 \iff p(z_1) = p(z_3) + \rho_{\text{huile}}\, g H
     $$
     Comme le point d'altitude $z_3$ se trouve à l'interface entre l'air et l'eau, $p(z_3)=p_0$​ et
     $$
-    p(z_1) = p_0 + \rho_{\text{huile}}\\, g H
+    p(z_1) = p_0 + \rho_{\text{huile}}\, g H
     $$
 
 4. L'eau est considérée incompressible, il donc possible d'y appliquer la loi de la statique des fluides.
     $$
-    p(z_1) + \rho_{\text{eau}}\\, g z_1 = p(z_2) + \rho_{\text{eau}}\\, g z_2
+    p(z_1) + \rho_{\text{eau}}\, g z_1 = p(z_2) + \rho_{\text{eau}}\, g z_2
     $$
     Le point d'altitude $z_2$ se trouve à l'interface entre l'eau et l'air, on a donc $p(z_2) = p_0$.
 
     Finalement
     $$
-    p(z_1) = p_0 + \rho_{\text{eau}}\\, g (z_2 - z_1) \iff p(z_1) = p_0 + \rho_{\text{eau}}\\, g h
+    p(z_1) = p_0 + \rho_{\text{eau}}\, g (z_2 - z_1) \iff p(z_1) = p_0 + \rho_{\text{eau}}\, g h
     $$
 
 5. Le point d'altitude $z_1$ se trouve dans la colonne d'eau à droite mais aussi à l'interface entre l'eau et l'huile, la pression y est donc égale à celle calculée à la question 3. On a donc
     $$
-    p_0 + \rho_{\text{eau}}\\, g h =p_0 + \rho_{\text{huile}}\\, g H \iff \rho_{\text{eau}} h = \rho_{\text{huile}} H
+    p_0 + \rho_{\text{eau}}\, g h =p_0 + \rho_{\text{huile}}\, g H \iff \rho_{\text{eau}} h = \rho_{\text{huile}} H
     $$
     Finalement
     $$
@@ -157,24 +155,24 @@ $$
 
 1.
 
-- On considère que l'air emprisonné dans les poumons est un gaz parfait et que la transformation se fait à température et quantité de matière constantes. On peut donc appliquer la loi de Boyle-Mariotte $$p\\, V = \text{cste}$$
-$$p_0\\, V_0 = p_1\\, V_R \iff p_1 = p_0 \\, \dfrac{V_0}{V_R}$$
+- On considère que l'air emprisonné dans les poumons est un gaz parfait et que la transformation se fait à température et quantité de matière constantes. On peut donc appliquer la loi de Boyle-Mariotte $$p\, V = \text{cste}$$
+$$p_0\, V_0 = p_1\, V_R \iff p_1 = p_0 \, \dfrac{V_0}{V_R}$$
 **A.N.** $p_1 = \pu{1,013e5 Pa} \times \dfrac{\pu{6,0 L}}{\pu{1,5 L}} = \pu{4,1e5 Pa}$.
 
-- Pour déterminer la relation avec la profondeur $h_1$, on considère que l'eau est un fluide incompressible. De plus, on utilise un axe $(Oz)$ dirigé vers le haut, dont l'origine est située à la surface de la mer. On peut alors utiliser la loi fondamentale de la statique des fluides $$p(z) + \rho_{\text{eau}}\\, g z = \text{cste}$$
-Appliquée à la situation, la relation devient $$p(z_1) + \rho_{\text{eau}}\\, g z_1 = p_0 \iff z_1 = \dfrac{p_0 - p(z_1)}{\rho_{\text{eau}}\\, g}$$
+- Pour déterminer la relation avec la profondeur $h_1$, on considère que l'eau est un fluide incompressible. De plus, on utilise un axe $(Oz)$ dirigé vers le haut, dont l'origine est située à la surface de la mer. On peut alors utiliser la loi fondamentale de la statique des fluides $$p(z) + \rho_{\text{eau}}\, g z = \text{cste}$$
+Appliquée à la situation, la relation devient $$p(z_1) + \rho_{\text{eau}}\, g z_1 = p_0 \iff z_1 = \dfrac{p_0 - p(z_1)}{\rho_{\text{eau}}\, g}$$
 Comme $h_1 = -z_1$, vu le choix de position de l'origine,
-$$h_1 = \dfrac{p(z_1) - p_0}{\rho_{\text{eau}}\\, g}$$
+$$h_1 = \dfrac{p(z_1) - p_0}{\rho_{\text{eau}}\, g}$$
 **A.N.** $h_1 = \dfrac{\pu{4,1e5 Pa} - \pu{1,013e5 Pa}}{\pu{1,0e3 kg.m-3} \times \pu{9,81 N.kg-1}} = \pu{3,1e1 m}$
 
 2. On utilise ici aussi la loi fondamentale de la statique des fluides,
-$$p(z_2) + \rho_{\text{eau}}\\, g z_2 = p_0 \iff p(z_2) = p_0 - \rho_{\text{eau}}\\, g z_2$$
+$$p(z_2) + \rho_{\text{eau}}\, g z_2 = p_0 \iff p(z_2) = p_0 - \rho_{\text{eau}}\, g z_2$$
 Comme $h_2 = -z_2$, vu le choix de position de l'origine,
-$$ p(z_2) = p_0 + \rho_{\text{eau}}\\, g h_2$$
+$$ p(z_2) = p_0 + \rho_{\text{eau}}\, g h_2$$
 **A.N.** $ p(z_2) = \pu{1,013e5 Pa} + \pu{1,0e3 kg.m-3} \times \pu{9,81 N.kg-1} \times \pu{200 m} = \pu{2,1e6 Pa}$.
 
 3. L'application de la loi de Boyle-Mariotte permet d'écrire
-$$p(z_2) \\, V_2 = p_0 \\, V_0 \iff V_2 = V_0\\, \dfrac{p_0}{p(z_2)}$$
+$$p(z_2) \, V_2 = p_0 \, V_0 \iff V_2 = V_0\, \dfrac{p_0}{p(z_2)}$$
 **A.N.** $V_2 = \pu{6,0 L} \times \dfrac{\pu{1,013e5 Pa}}{\pu{2,1e6 Pa}} = \pu{2,9e-1 L}$.
 
 4. D'après l'énoncé, le sang, liquide incompressible, assure le maintien du volume pulmonaire.
@@ -200,7 +198,7 @@ $$p(z_2) \\, V_2 = p_0 \\, V_0 \iff V_2 = V_0\\, \dfrac{p_0}{p(z_2)}$$
     - *Valeur :* $P = M g$
   - Puisque le piston est immobile, les actions qui s'exercent sur lui se compensent :
     $$
-    \overrightarrow{F}\_{\text{huile}/\text{piston}} + \overrightarrow{F}\_{\text{air}/\text{piston}} + \overrightarrow{P} = \vec{0}
+    \overrightarrow{F}_{\text{huile}/\text{piston}} + \overrightarrow{F}_{\text{air}/\text{piston}} + \overrightarrow{P} = \vec{0}
     $$
     soit, si on projette sur un axe vertical orienté vers le haut,
     $$
@@ -223,7 +221,7 @@ $$p(z_2) \\, V_2 = p_0 \\, V_0 \iff V_2 = V_0\\, \dfrac{p_0}{p(z_2)}$$
     p_{\text{air}} + \dfrac{m g}{s} = p_{\text{air}} + \dfrac{M g}{S} \iff \dfrac{m}{s} = \dfrac{M}{S}
   $$
 
-3. $$M = m \\, \dfrac{S}{s}$$
+3. $$M = m \, \dfrac{S}{s}$$
     **A.N.** $M = \pu{50 kg} \times \dfrac{100 s}{s} = \pu{5,0e3 kg}$. Grâce à la presse il est possible de compenser le poids d'une masse de 5,0 t à l'aide d'une masse de 50 kg !
 
 4. On a démontré que $$p_{\text{huile}} = p_{\text{air}} + \dfrac{M g}{S}$$  

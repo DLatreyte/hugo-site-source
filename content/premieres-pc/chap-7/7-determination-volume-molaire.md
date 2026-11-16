@@ -1,22 +1,20 @@
 ---
 title: "Détermination du volume molaire"
 subtitle: ""
-author: ""
-type: ""
 date: 2022-11-04T07:20:51+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 700
 ---
 > L'objectif de cette séance est de déterminer la valeur du volume molaire des gaz, sous la pression atmosphérique et à la température de la pièce.
 
 # Documents
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Volume molaire
 
@@ -28,22 +26,22 @@ L'unité légale du volume molaire est $\pu{m3.mol-1}$, son unité pratique est 
 
 - À la pression atmosphérique, $P_{atm} = \pu{1013 hPa}$ et à la température de $\pu{20 °C}$, $V_m = \pu{24,0 L}$.
 - À la pression atmosphérique, $P_{atm} = \pu{1013 hPa}$ et à la température de $\pu{25 °C}$, $V_m = \pu{24,5 L}$.
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Relation entre la quantité de matière d'un gaz et son volume molaire
 
 Si on note $n$ la quantité de matière du gaz et $V$ le volume qu'il occupe, $$n = \dfrac{V}{V_m}$$
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Comment récupérer un gaz formé lors d'une transformation chimique ?
 
 <img src="/premieres-pc/chap-7/chap-7-7/montage.png" alt="" width="90%" />
 
-{{% /note %}}
+{{< /note >}}
 
 ## Séance
 

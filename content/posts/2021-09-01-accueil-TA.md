@@ -1,16 +1,14 @@
 ---
 title: "Bienvenue aux TA"
 subtitle: "Année 2021-2022"
-author: ""
-type: ""
 date: 2021-09-01T06:25:29+04:00
 draft: true
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 10
 ---
 
 1. Objectifs de la classe de terminale et évolution du BAC pour la session 2022
@@ -43,7 +41,7 @@ auto_numbering: true
     - Description de l'emploi du temps de la classe.
 
 5. BAC
-    - [**Évolution des coefficients du baccalauréat**]({{< relref "./2021-08-29-bac-2022" >}})
+    - [**Évolution des coefficients du baccalauréat**]({{% relref "./2021-08-29-bac-2022" %}})
     - **Certification PIX est désormais obligatoire**
     - **Grand Oral** ([modalités]({{% relref "../terminales-pc/grand_oral" %}}), nous en reparlerons dans l'année)
     - **Attestations de langues vivantes** (les modalités vont être précisées aux élèves par les enseignants très rapidement)

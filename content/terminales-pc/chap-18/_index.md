@@ -1,17 +1,14 @@
 ---
 title: "Décrire la lumière par un flux de photons"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-04-26T19:34:21+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 200
 ---
 
 ## Au programme

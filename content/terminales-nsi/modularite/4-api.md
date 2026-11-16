@@ -1,16 +1,14 @@
 ---
 title: "Fourniture et utilisation d'une API"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-09-22T05:15:58+04:00
 draft: false
 toc: true
 tags: ["Modules", "API", "Assertions"]
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: false
 auto_numbering: true
+weight: 400
 ---
 
 ## API

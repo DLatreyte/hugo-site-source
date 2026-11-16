@@ -1,16 +1,14 @@
 ---
 title: "Boîte à outils informatique pour rendre un devoir sur pronote"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-08-25T17:23:19+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: false
+weight: 30
 ---
 
 #### Rendre un devoir sur Pronote

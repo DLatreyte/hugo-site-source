@@ -1,22 +1,20 @@
 ---
 title: "Exercices du chapitre : corrections"
 subtitle: "Livre numérique Hatier"
-author: ""
-type: ""
 date: 2022-10-23T16:06:55+04:00
 draft: false
 toc: true
 tags: ["Ondes", "Période", "Fréquence", "Longueur d'onde", "Onde progressive", "Onde mécanique", "Onde sinusoïdale", "Célérité"]
 categories: ["Physique", "Premières Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
 mathjax: true
+weight: 700
 ---
 
 #### Exercice N°31, page 343
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
 - La fréquence $f$ est le nombre de périodes par seconde, donc
   $$ f = \dfrac{1}{T} = \dfrac{1}{\pu{9,5 s}} = \pu{0,11 Hz}
@@ -28,11 +26,11 @@ mathjax: true
   
 - La longueur d'onde est la période spatiale de l'onde, c'est donc la plus petite longueur au bout de laquelle on retrouve le même état vibratoire dans le milieu. Les deux bouchons doivent être espacés de $\pu{57 m}$.
 
-{{% /solution %}}
+{{< /solution >}}
 
 #### N° 32, page 343
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
 - La fréquence étant le nombre de périodes par seconde,
   $$
@@ -49,11 +47,11 @@ mathjax: true
   
   La longueur $\pu{0,92 m}$ n'est pas un multiple entier de la longueur d'onde, les deux points ne sont donc pas en phase.
 
-{{% /solution %}}
+{{< /solution >}}
 
 #### N°33, page 343
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
 - On ne peut parler de longueur d'onde que pour les ondes périodiques sinusoïdales. L'onde est donc bien périodique.
   
@@ -67,11 +65,11 @@ mathjax: true
      \dfrac{\pu{15e-2 m}}{\pu{0,29 s}} = \pu{0,52 m.s-1}
     $$
 
-{{% /solution %}}
+{{< /solution >}}
 
 #### N°34, page 343
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
 $$
     T = \pu{2 ms}
@@ -80,11 +78,11 @@ $$
     f = \pu{5e2 Hz}
 $$
 
-{{% /solution %}}
+{{< /solution >}}
 
 #### N°35, page 343
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
 Cette onde est une onde sinusoïdale. Elle possède une amplitude égale à $\pu{2,5 Pa}$ et une longueur d'onde égale à $\lambda = \pu{8 mm}$.  
 La période temporelle $T$ vaut
@@ -98,11 +96,11 @@ $$
 
 **Remarque :** si on applique les règles données pour déterminer le nombre de chiffres significatifs, on ne doit conserver qu'un seul chiffre significatif pour le résultat de chaque calcul.
 
-{{% /solution %}}
+{{< /solution >}}
 
 #### N°36, page 343
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
 - Sur le document, $\pu{3,1 cm}$ correspondent à $\pu{6,0 cm}$ dans la réalité. 4 longueurs d'onde à l'écran s'étalent sur une longueur égale à $\pu{2,3 cm}$ ; la longueur d'onde est donc égale à
   $$
@@ -121,7 +119,7 @@ $$
   
   On se rend compte que la célérité de l'onde a changé.
   
-{{% note normal %}}
+{{< note normal >}}
 
 #### Remarque : cette question est hors-programme
 
@@ -131,13 +129,13 @@ $$
 - Dans un **milieu dispersif**, *la célérité d'une onde mécanique dépend des caractéristiques du milieu mais aussi de la fréquence (période temporelle) de l'onde}}.  
     L'eau est un milieu dispersif pour les ondes qui se propagent à sa surface.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 #### N°52, page 347
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
 - La durée qui sépare deux images est égale à
   $$
@@ -161,11 +159,11 @@ $$
   
 - En haute mer, la profondeur de l'eau est supérieure à la profondeur de l'eau près de la côte donc le tsunami a une célérité supérieure en haute mer par rapport à la célérité près de la côte.
 
-{{% /solution %}}
+{{< /solution >}}
 
 #### N°53, page 347
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
 1. La distance parcourue par les ultrasons est égale à $2L$.
 
@@ -184,7 +182,7 @@ $$
 
 - $\tau = t_{\text{air}} - t_{\text{eau}}$ donc $\tau = \dfrac{2L}{v_{\text{air}}} - \dfrac{2L}{v_{\text{eau}}}$ et
 $$
-v_{\text{eau}} = \dfrac{ 2L\\, v_{\text{air}} }{ 2L - \tau\\, v_{\text{air}}}
+v_{\text{eau}} = \dfrac{ 2L\, v_{\text{air}} }{ 2L - \tau\, v_{\text{air}}}
 $$
 **A.N.** $v_{\text{eau}} = \dfrac{ 2 \times \pu{55e-2 m} \times \pu{340 m.s^-1} }{ 2 \times \pu{55e-2 m} - \pu{2,5e-3 s} \times \pu{340 m.s^-1} } = \pu{1,5e3 m.s-1} $
 
@@ -198,14 +196,14 @@ Pour diminuer l'incertitude sur la valeur de la célérité, il est donc nécess
 
 - Puisque la célérité des ultrasons dans le glycérol est supérieure à celle dans l'eau, les ultrasons qui voyagent dans ce liquide seront donc perçus plus tôt. Le retard $\tau'$ que présenteront les ultrasons qui voyageront dans l'eau sera donc plus grand : $\tau' > \tau$
 
-- $\tau' = \dfrac{2L}{v_{\text{air}}} - \dfrac{2L}{v_{g}} = 2L \\, \left(  \dfrac{1}{v_{\text{air}}} - \dfrac{1}{v_{g}} \right)$  
+- $\tau' = \dfrac{2L}{v_{\text{air}}} - \dfrac{2L}{v_{g}} = 2L \, \left(  \dfrac{1}{v_{\text{air}}} - \dfrac{1}{v_{g}} \right)$  
 **A.N.** $\tau' = 2 \times \pu{55e-2 m} \times \left(  \dfrac{1}{\pu{340 m.s^-1}} - \dfrac{1}{\pu{1915 m.s^-1}} \right) = \pu{2,7e-3 s}  $
 
-{{% /solution %}}
+{{< /solution >}}
 
 #### N°54, page 347
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
 1.
 
@@ -233,11 +231,11 @@ $$\lambda < \dfrac{h}{2} \iff \dfrac{\lambda}{h} < \dfrac{1}{2}$$
 - Si la valeur de la célérité change et que la fréquence reste constante, la longueur d'onde varie.  
 **A.N.** $\lambda = \pu{6,3 m.s-1} \times \pu{6,2 s} = \pu{39 m}$.
 
-{{% /solution %}}
+{{< /solution >}}
 
 #### Activité, page 334
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
 #### Remarque
 
@@ -274,7 +272,7 @@ $$t_0 = t_S - \dfrac{d}{v_S}$$
 $$ \dfrac{d}{v_P} = t_P - \left( t_S - \dfrac{d}{v_S} \right) = t_P - t_S + \dfrac{d}{v_S} $$
 ce qui donne
 $$
-  d = (t_P - t_S)\\, \dfrac{ v_P\\, v_S }{ v_S - v_P }
+  d = (t_P - t_S)\, \dfrac{ v_P\, v_S }{ v_S - v_P }
 $$
 
 <center>
@@ -291,4 +289,4 @@ d. L'épicentre est le point $E$ sur la carte.
 **Remarque.** L'**épicentre** n'est pas le **foyer** du séisme, c'est le point à la surface de la Terre censé être à la verticale du foyer.
 La détermination de l'épicentre par la méthode proposée n'est pas précise puisque les distances $d$ ne sont pas des distances à la surface de la Terre mais des distances dans tout le volume de la Terre.
 
-{{% /solution %}}
+{{< /solution >}}

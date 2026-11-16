@@ -1,34 +1,32 @@
 ---
 title: "Cohésion des solides"
 subtitle: ""
-author: ""
-type: ""
 date: 2022-03-19T15:12:06+04:00
 draft: false
 toc: true
 tags: []
 categories: ["Premières Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 300
 ---
 
 ## Cohésion des solides ioniques
 
 1. Qu'est-ce qu'un solide ionique&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Un **solide ionique** est un *solide constitué d'ions chargés positivement — **les cations** — et d'ions chargés négativement — **les anions**.*
-{{% /solution %}}
+{{< /solution >}}
 
 2. Quelle est la caractéristique importante, du point de vue électrique, d'un solide ionique&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Dans un solide ionique les cations et les anions sont en quantités telles que **l'édifice est  électriquement neutre**.
-{{% /solution %}}
+{{< /solution >}}
 
 3. Qu'est-ce qu'un solide ionique cristallin&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Un solide ionique est dit **cristallin** si, au niveau microscopique, *l'arrangement des ions dans l'espace forme une structure périodique*.
-{{% /solution %}}
+{{< /solution >}}
 
 {{< columns >}}
 <img src="/premieres-pc/chap-12/chap-12-3/chlorure-de-sodium-compact.png" alt="Chlorure de sodium, modèle compact" width="55%" />
@@ -38,7 +36,7 @@ Un solide ionique est dit **cristallin** si, au niveau microscopique, *l'arrange
 
 4. Écrire les formules chimiques des solides ioniques suivants: fluorure de calcium, chlorure de sodium, chlorure de calcium, hydroxyde de cuivre, sulfate
 de sodium, chlorure de fer III.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - fluorure de calcium : $\ce{CaF2 (s)}$ ;
 - chlorure de sodium : $\ce{NaCl (s)}$
@@ -47,31 +45,31 @@ de sodium, chlorure de fer III.
 - sulfate de sodium : $\ce{Na2SO4 (s)}$
 - chlorure de fer III : $\ce{FeCl3 (s)}$
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 - Par convention, on débute toujours le nom d'un solide ionique par celui de l'anion qui le constitue. On ajoute à ce dernier le nom du cation.
 - Par convention, on écrit la *formule chimique* d'un solide ionique en plaçant en premier le cation On lui accole ensuite l'anion.
 - Un solide ionique est un *isolant électrique* (aucune charge électrique ne peut se déplacer dans un tel solide).
 
-{{% /note %}}
+{{< /note >}}
 
 ### Cohésion d'un solide ionique
 
 5. Quelle interaction fondamentale est à la base de la cohésion d'un solide ionique&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 La *cohésion d'un cristal ionique* repose sur l'**interaction électrostatique entre les anions et les cations** (interactions attractives puisque ces édifices possèdent des charges de signes opposés).
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 L'intensité des interactions électrostatiques est telle qu'il faut fournir une importante quantité d'énergie à un solide ionique pour séparer ses ions
-et le faire passer à l'état de vapeur ($\theta \_{\text{vap}} = \pu{1465 °C}$ pour le chlorure de sodium).
+et le faire passer à l'état de vapeur ($\theta _{\text{vap}} = \pu{1465 °C}$ pour le chlorure de sodium).
 
-{{% /note %}}
+{{< /note >}}
 
 ## Cohésion d'un solide moléculaire
 
@@ -88,42 +86,42 @@ et le faire passer à l'état de vapeur ($\theta \_{\text{vap}} = \pu{1465 °C}$
 </center>
 
 6. En quoi le résultat de l'expérience présentée dans la vidéo est-il surprenant&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 Un filet d'eau est dévié en présence d'un corps électrisé. *Les molécules, **édifices électriquement neutres**, peuvent donc présenter des propriétés électriques !!!*
 
-{{% /solution %}}
+{{< /solution >}}
 
 7. La force de Coulomb peut-elle expliquer le comportement décrit à la question précédente&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 Une molécule est un édifice électriquement neutre, la force de Coulomb qui décrit l'interaction entre deux charges électriques ne peut pas expliquer le comportement électrique d'une molécule.
 
-{{% /solution %}}
+{{< /solution >}}
 
 ### Électronégativité des atomes
 
 8. Que représente l'*électronégativité d'un atome*&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% note tip %}}
+{{< note tip >}}
 
 L'**électronégativité** d'un atome représente sa *capacité à attirer à lui les électrons d'une liaison covalente*.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 9. Quel comportement traduit une grande électronégativité&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% note tip %}}
+{{< note tip >}}
 
 Plus l'*électronégativité d'un atome est grande*, plus il *attire à lui les électrons*.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 <img src="/premieres-pc/chap-12/chap-12-3/electronegativite.svg" alt="" width="100%" />
 
@@ -134,18 +132,18 @@ Plus l'*électronégativité d'un atome est grande*, plus il *attire à lui les 
 #### Électronégativités identiques ou voisines
 
 10. Comment sont partagés les électrons du doublet liant situé entre deux atomes d'électronégativités identiques ou proches&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 Les *électrons du doublet liant* sont *répartis équitablement* entre les deux atomes liés. *Ces atomes ne portent aucune charge partielle*.
 
-{{% /solution %}}
+{{< /solution >}}
 
 11. Comment peut-on qualifier la liaison covalente entre deux atomes d'*électronégativités identiques ou proches* : **polarisée**, **non polarisée**&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 La liaison covalente entre deux atomes d'*électronégativités identiques ou proches* est dite **non polarisée**.
 
-{{% /solution %}}
+{{< /solution >}}
 
 <img src="/premieres-pc/chap-12/chap-12-3/dihydrogene.png" alt="" width="13%" />
 <img src="/premieres-pc/chap-12/chap-12-3/methane.png" alt="" width="25%" />
@@ -153,59 +151,59 @@ La liaison covalente entre deux atomes d'*électronégativités identiques ou pr
 #### Électronégativités différentes
 
 12. Comment sont partagés les électrons du doublet liant situé entre deux atomes d'électronégativités différentes&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 L'atome d'électronégativité la plus grande *attire davantage à lui les électrons du doublet liant* que l'atome le moins électronégatif.
 
-{{% /solution %}}
+{{< /solution >}}
 
 13. Quelle est la conséquence de la différence d'électronégativité entre les deux atomes sur la densité électronique dans leur environnement&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - La densité électronique autour de l'atome le plus électronégatif *est plus importante que lorsqu'il est seul* : il présente un excès de charge électrique négative. On dit qu'il porte une **charge partielle négative** $\delta^-$.
 - La densité électronique autour de l'atome le moins électronégatif *est moins importante que lorsqu'il est seul* : il présente un déficit de charge négative. On dit qu'il porte une **charge partielle positive** $\delta^+$.
 
-{{% /solution %}}
+{{< /solution >}}
 
 14. Comment peut-on qualifier la liaison covalente entre deux atomes d'*électronégativités différentes* : **polarisée**, **non polarisée**&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 La liaison covalente entre deux atomes d'*électronégativités différentes* est dite **polarisée**.
 
-{{% /solution %}}
+{{< /solution >}}
 
 <img src="/premieres-pc/chap-12/chap-12-3/fluorure-d-hydrogene.png" alt="" width="90%" />
 
 #### Électronégativités très différentes
 
 15. Comment sont partagés les électrons du doublet liant lorsque les électronégativités entre les deux atomes sont très différentes&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 Plus la différence d'électronégativité entre les deux atomes est grande, plus l'atome le plus électronégatif s'accapare la totalité du doublet (qui n'est donc plus liant).
 
-{{% /solution %}}
+{{< /solution >}}
 
 16. Quelle est la conséquence de la différence d'électronégativité entre les deux atomes sur la densité électronique dans leur environnement&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 L'atome le plus électronégatif porte la charge $-e$. L'atome le moins électronégatif, qui a perdu un électron périphérique, porte la charge $+e$.
 
-{{% /solution %}}
+{{< /solution >}}
 
 17. Lorsque les électronégativités des deux atomes sont très différentes, peut-on toujours parler de liaison covalente&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 Plus la différence d'électronégativité entre les deux atomes est grande, *plus la liaison se rapproche d'une liaison ionique et perd son caractère covalent*.
 
-{{% /solution %}}
+{{< /solution >}}
 
 #### Résumé
 
-{{% note warning %}}
+{{< note warning >}}
 
 **Ne pas apprendre le tableau ci-dessous !**
 
-{{% /note %}}
+{{< /note >}}
 
 <center>
 
@@ -221,7 +219,7 @@ Plus la différence d'électronégativité entre les deux atomes est grande, *pl
 
 ### Molécules polaires, molécules apolaires
 
-{{% note tip %}}
+{{< note tip >}}
 
 - Une molécule est dite **polaire** si *elle comporte une ou plusieurs
   **liaisons polarisées** et si sa géométrie est telle que le **barycentre (ou point d'équilibre) des charges électriques négatives ne coïncide pas avec le barycentre des
@@ -231,7 +229,7 @@ Plus la différence d'électronégativité entre les deux atomes est grande, *pl
   polarisée** **ou** si sa géométrie est telle que le **barycentre (ou point d'équilibre) des charges électriques négatives coïncide avec le barycentre des charges électriques
   positives**.*
 
-{{% /note %}}
+{{< /note >}}
 
 <img src="/premieres-pc/chap-12/chap-12-3/eau-dioxyde-de-carbone.png" alt="" width="50%" />
 
@@ -246,26 +244,26 @@ Le caractère polaire envisagé dans cette partie est **permanent** (dans la sec
 ### Caractère polaire ou apolaire des solvants
 
 19. L'eau est-elle un solvant polaire&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 Le solvant eau est constitué de molécules d'eau, polaires. C'est donc un solvant polaire.
 
-{{% /solution %}}
+{{< /solution >}}
 
 20. Un *solvant organique* dont les molécules comportent *un ou plusieurs atomes très électronégatifs*, comme l'azote N, l'oxygène O, le fluor F ou le chlore Cl, *est-il généralement polaire*&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 Si la chaîne carbonnée n'est pas trop longue, *une molécule organique comportant des atomes électronégatifs, tels que l'azote N, l'oxygène O, le fluor F ou le chlore Cl est polaire*.
 Tout solvant constitué de telles molécules est donc polaire.
 
-{{% /solution %}}
+{{< /solution >}}
 
 21. Un *solvant organique hydrogénocarboné*, constitués de molécules ne comportant que des atomes de carbone ou d'hydrogène, est-il polaire ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 Un hydrocarbure est une molécule **apolaire** puisqu'aucune des laisons n'est polarisée. Les solvants organiques sont donc généralement **apolaires**.
 
-{{% /solution %}}
+{{< /solution >}}
 
 ### Cohésion des solides moléculaires
 
@@ -276,17 +274,17 @@ Un hydrocarbure est une molécule **apolaire** puisqu'aucune des laisons n'est p
 
 #### Les interactions de Van Der Waals
 
-{{% note tip %}}
+{{< note tip >}}
 
 Les forces de Van Der Waals ne sont pas des forces de Coulomb mais elles expliquent néanmoins les interactions entre les molécules. *Elles font intervenir des interactions entre les **dipôles des molécules**, qu'ils soient **permanents** comme dans les molécules polaires ou **induits** comme dans les molécules de diiode ou de dichlore*.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 Les interactions de Van Der Waals sont toujours attractives.
 
-{{% /note %}}
+{{< /note >}}
 
 <img src="/premieres-pc/chap-12/chap-12-3/van_der_waals.png" alt="" width="90%" />
 
@@ -294,14 +292,14 @@ Les interactions de Van Der Waals sont toujours attractives.
 
 #### La liaison hydrogène
 
-{{% note tip %}}
+{{< note tip >}}
 
 Une liaison hydrogène se forme chaque fois qu'un *atome d'hydrogène (portant
 une charge partielle $\delta^+$ à cause d'une liaison covalente avec un atome
 plus électronégatif) peut interagir avec un*hétéroatome*(N, O, F)*d'une
 molécule voisine*.
 
-{{% /note %}}
+{{< /note >}}
 
 <img src="/premieres-pc/chap-12/chap-12-3/liaison-hydrogene.png" alt="" width="100%" />
 
@@ -313,51 +311,51 @@ Les liaisons hydrogène sont à la base de la cohésion de l'eau solide ou de l'
 
 ### Dissolution et interactions
 
-{{% note tip %}}
+{{< note tip >}}
 
 Pour qu'un solide (ionique ou moléculaire) soit soluble dans un solvant, il
 faut que *les interactions avec ce solvant soient suffisamment importantes
 pour affaiblir et vaincre les interactions au sein du solide*.
 
-{{% /note %}}
+{{< /note >}}
 
 ### Étapes successives (pour un composé ionique)
 
 On peut décomposer le phénomène de dissolution d'un **soluté** dans un **solvant** en trois étapes successives :
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Dissociation du solide ionique
 
 Les forces électrostatiques entre les ions à la surface du solide et les charges partielles du solvant (*qui doit donc être polaire*) affaiblissent les forces électrostatiques entre les ions, au sein du solide.
-{{% /note %}}
+{{< /note >}}
 
 <img src="/premieres-pc/chap-12/chap-12-3/dissolution_1.png" alt="Image issue de Maxicours" width="70%" />
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Hydratation (ou solvatation) des ions
 
 Les molécules du solvant, attirées par l'interaction électrostatique, entourent les ions.
-{{% /note %}}
+{{< /note >}}
 
 <img src="/premieres-pc/chap-12/chap-12-3/dissolution_2.png" alt="Image issue de Maxicours" width="50%" />
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Dispersion des ions
 
 Les ions hydratés se dispersent de façon homogène dans la solution.
 
-{{% /note %}}
+{{< /note >}}
 
 <img src="/premieres-pc/chap-12/chap-12-3/dissolution_3.png" alt="Image issue de Maxicours" width="70%" />
 
-{{% note normal %}}
+{{< note normal >}}
 
 On utilise l'indice $(\text{aq})$ pour indiquer qu'un ion est solvaté : $\ce{Na+ (aq)}$.
 
-{{% /note %}}
+{{< /note >}}
 
 **Remarque.**  On arrive, de nos jours, à déterminer le nombre moyen de
 molécules d'eau autour des ions solvatés :
@@ -371,7 +369,7 @@ molécules d'eau autour des ions solvatés :
 
 ### Cas des espèces chimiques apolaires
 
-{{% note tip %}}
+{{< note tip >}}
 
 Les espèces chimiques moléculaires ne peuvent se dissoudre dans l'eau ou
 dans les solvants polaires que si elles sont susceptibles de s'y **solvater**.
@@ -385,27 +383,27 @@ Waals s'établissent alors entre les espèces chimiques et le solvant*.
 Les espèces chimiques qui peuvent donner des liaisons hydrogène, comme le
 glucose et l'éthanol, sont solubles dans l'eau.
 
-{{% /note %}}
+{{< /note >}}
 
 ### Équation de dissolution
 
-{{% note tip %}}
+{{< note tip >}}
 
 L'équation de la réaction de dissolution modélise, *à l'échelle
   macroscopique*, les deux étapes de la dissolution.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice
 
 Écrire les équations de dissolution, dans l'eau, du chlorure de sodium
 $\ce{NaCl (s)}$, du sulfate d'aluminium $\ce{Al2(SO4)3 (s)}$, du diiode $\ce{I2 (s)}$, du sulfate de sodium $\ce{Na2SO4 (s)}$, du saccharose $\ce{C_{12}H_{22}O_{11} (s)}$.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Correction" %}}
+{{< solution "Correction" >}}
 
 $$\ce{NaCl (s) ->[H2O] Na^+ (aq) + Cl^- (aq)}$$
 $$\ce{Al2(SO4)3 (s) ->[H2O] 2 Al^{3+} (aq) + 3 SO4^{2-} (aq)}$$
@@ -413,11 +411,11 @@ $$\ce{I2 (s) ->[H2O] I2 (aq)}$$
 $$\ce{Na2SO4 (s) ->[H2O] 2 Na^{+} (aq) + SO4^{2-} (aq)}$$
 $$\ce{C_{12}H_{22}O_{11} (s) ->[H2O] C_{12}H_{22}O_{11} (aq)}$$
 
-{{% /solution %}}
+{{< /solution >}}
 
 ### Concentration molaire effective d'un ion en solution
 
-{{% note tip %}}
+{{< note tip >}}
 
 La **concentration molaire effective** d'un ion $X$ dans une solution, notée
 $[X]$, est la quantité de matière $n (X)$ de cet ion présente dans un volume
@@ -425,7 +423,7 @@ $V$ de cette solution :
 
 $$ [X] = \dfrac{n (X)}{V} $$
 
-{{% /note %}}
+{{< /note >}}
 
 #### Remarque
 
@@ -433,7 +431,7 @@ Le lien entre la concentration molaire effective d'un ion en solution et la
 concentration molaire apportée $C$ en soluté (dont est issu l'ion) se trouve
 à partir de la stœchiométrie de la réaction.
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice
 
@@ -443,9 +441,9 @@ de l'eau. La solution a un volume $V = \pu{0,50 L}$.
 1. Déterminer la concentration molaire $C_0$ en soluté apporté.
 2. Déterminer la concentration effective de chacun des ions en solution en fonction de la solution $C_0$ en soluté apporté.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Correction" %}}
+{{< solution "Correction" >}}
 
 1. La concentration en soluté apporté est la concentration de ce soluté dans l'état initial de la transformation (même si la dissolution n'a pas encore débuté). On a donc $C_0 = \dfrac{n_0}{V} = \dfrac{\pu{0,10 mol}}{\pu{0,50 L}} = \pu{0,20 mol.L-1}$.
 
@@ -468,9 +466,9 @@ La transformation est totale, donc $n_0 - x_{max} = 0 \iff x_{max} = n_0$. On en
 #### Remarque
 
 On peut aussi raisonner directement en utilisant la stœchiométrie de la réaction : chaque mole de sulfate de sodium dissoute fait apparaître deux moles d'ions sodium et une mole d'ions sulfate dans la solution ; $C_0$ moles de sulfate de sodium dissoutes font donc apparaître $2C_0$ moles d'ions sodium et $C_0$ moles d'ions sulfate dans la solution.
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice
 
@@ -479,15 +477,15 @@ On fait dissoudre $m = \pu{51,3 g}$ de sulfate d'aluminium $\ce{Al2(SO4)3 (s)}$ 
 1. Déterminer la concentration molaire $C_0$ en soluté apporté.
 2. Déterminer la concentration effective de chacun des ions en solution en fonction de $C_0$.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Correction" %}}
+{{< solution "Correction" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Exercices
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice (Interactions de Van Der Waals)
 
@@ -501,9 +499,9 @@ On fait dissoudre $m = \pu{51,3 g}$ de sulfate d'aluminium $\ce{Al2(SO4)3 (s)}$ 
    1. Repérer celles dont le moment dipolaire est nul.
    1. En déduire celles qui ont un dipôle électrique permanent et celles qui
       ne peuvent présenter qu'un dipôle électrique induit.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Correction" %}}
+{{< solution "Correction" >}}
 
 1. Les molécules polaires présentent un dipôle permanent. Ce terme traduit le fait que les barycentres des charges positives et des charges négatives ne se supperposent pas dans l'espace. Du point de vue électrique, il existe donc deux pôles de charges opposées au sein de la molécule (qui reste globalement électriquement neutre). Pour qu'une molécule diatomique soit polaire, il faut que les deux atomes qui la composent possèdent des électronégativités différentes, la liaison entre eux est alors polarisée.
 Les molécules apolaires peuvent posséder un moment dipôlaire temporaire (on dit induit) pendant une fraction de seconde, en fonction des mouvement des électrons (qui sont beaucoup plus mobiles que les noyaux) mais pas de dipôle permanent. Pour une molécule diatomique, il faut que les deux atomes aient des électronégativités égales ou proches, la liaison entre eux n'est alors pas polarisée.
@@ -526,21 +524,21 @@ Les molécules apolaires peuvent posséder un moment dipôlaire temporaire (on d
    <iframe style="width: 500px; height: 300px;" frameborder="0" src="https://embed.molview.org/v1/?mode=balls&cid=402"></iframe>
    </center>
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice (Interactions de Van Der Waals)
 
-Le méthylpropan-2-ol, $\ce{(CH3)\_{3}C - OH}$, ou alcool tertiobutylique, est un alcool.
+Le méthylpropan-2-ol, $\ce{(CH3)_{3}C - OH}$, ou alcool tertiobutylique, est un alcool.
 
 1. Cette molécule possède-t-elle une ou plusieurs liaisons polarisées ?
 1. Cette molécule est-elle polaire ?
 1. Quelles interactions assurent la cohésion de cet alcool à l'état solide ou liquide ?
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Correction" %}}
+{{< solution "Correction" >}}
 <center>
 <iframe style="width: 500px; height: 300px;" frameborder="0" src="https://embed.molview.org/v1/?mode=balls&cid=6386"></iframe>
 </center>
@@ -551,9 +549,9 @@ Le méthylpropan-2-ol, $\ce{(CH3)\_{3}C - OH}$, ou alcool tertiobutylique, est u
    - Les interactions de Van Der Waals puisque la molécule est polaire ;
    - La liaison hydrogène puisque la molécule possède un atome d'oxygène électronégatif propriétaire de deux doublets non liants.
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice (Recherches la présence de liaisons hydrogène)
 
@@ -565,9 +563,9 @@ Le méthylpropan-2-ol, $\ce{(CH3)\_{3}C - OH}$, ou alcool tertiobutylique, est u
 1. Parmi ces molécules, quelles sont celles qui peuvent participer à des
    liaisons hydrogène ?
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Correction" %}}
+{{< solution "Correction" >}}
 
 1. <img src="/premieres-pc/chap-12/chap-12-3/mol_lewis.png" alt="" width="70%" />
 
@@ -593,9 +591,9 @@ Le méthylpropan-2-ol, $\ce{(CH3)\_{3}C - OH}$, ou alcool tertiobutylique, est u
 
 3. Une liaison hydrogène peut s'établir entre *un atome d'hydrogène lié par covalence à un atome $A$ très électronégatif* -- comme le fluor (F), l'oxygène (O) ou l'azote (N) -- et *un atome $B$ très électronégatif porteur d'un doublet non liant*.
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice (Expliquer la dissolution d'un solide ionique dans l'eau)
 
@@ -610,9 +608,9 @@ introduite dans un bécher rempli d'eau, sans agitation.
    Qu'est-ce que cela signifie ?
 1. Écrire l'équation de dissolution de ce solide dans l'eau.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Correction" %}}
+{{< solution "Correction" >}}
 
 1. Les trois étapes sont :
 
@@ -624,9 +622,9 @@ introduite dans un bécher rempli d'eau, sans agitation.
 
 1. $$\ce{KMnO4 (s) ->[H2O] K^+ (aq) + MnO4^- (aq)}$$
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice (Expliquer la dissolution d'un solide moléculaire dans l'eau)
 
@@ -638,9 +636,9 @@ L'acétone a pour formule $\ce{CH3-CO-CH_{3}}$.
 
 1. Quelle interaction est responsable de cette miscibilité ?
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Correction" %}}
+{{< solution "Correction" >}}
 
 1. L'acétone possède une unique liaison polarisée, c'est donc une molécule polaire.
 
@@ -651,9 +649,9 @@ L'acétone a pour formule $\ce{CH3-CO-CH_{3}}$.
 - l'interaction de Van Der Waals (dipôle permanent - dipôle permanent)&nbsp;;
 - la liaison hydrogène. En effet, l'atome d'oxygène de l'acétone, chargé $\delta^-$, comporte des doublets non liants capables d'interagir avec les atomes d'hydrogène, chargés $\delta^+$, des molécules d'eau.
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice (Étudier dans l'eau la solubilitÉ du diiode)
 
@@ -673,9 +671,9 @@ agitation et décantation, le contenu du tube présente l'aspect (b).
 1. Quelle information peut-on tirer du contenu du tube (b) à propos de la
    solubilité du diiode ? Était-ce prévisible ?
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Correction" %}}
+{{< solution "Correction" >}}
 
 1. Le diiode est une molécule apolaire puisque la seule liaison présente est non polarisée.
 
@@ -690,4 +688,4 @@ agitation et décantation, le contenu du tube présente l'aspect (b).
 
 En conclusion, le diiode, très peu soluble dans l'eau car apolaire, a migré dans la phase organique apolaire elle-aussi.
 
-{{% /solution %}}
+{{< /solution >}}

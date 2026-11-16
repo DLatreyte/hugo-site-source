@@ -1,16 +1,14 @@
 ---
 title: "Planning Prévisionnel"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-08-30T10:22:59+04:00
 draft: false
 toc: false
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 9900
 ---
 Planning prévisionnel de l'année... des ajustements seront sûrement nécessaires.
 

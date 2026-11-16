@@ -1,17 +1,14 @@
 ---
 title: "Les réseaux"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-11-26T06:04:09+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 190
 ---
 
 ## Protocoles de routage

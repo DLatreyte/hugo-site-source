@@ -2,15 +2,14 @@
 title: "Univers en expansion"
 subtitle: ""
 author: "Stephen Hawking"
-type: ""
 date: 2020-09-07T23:20:53+04:00
 draft: false
 toc: true
 tags: ["Ondes", "Effet Doppler", "Red Schift"]
 categories: ["Physique", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 200
 ---
 
 ## Une brève histoire du temps&nbsp;: Du big bang aux trous noirs — Stephen Hawking
@@ -31,74 +30,74 @@ Dans les années qui ont suivi la preuve de l’existence d’autres galaxies, H
 ## Exploitation du document
 
 1. Qu’est-ce qui différencie les étoiles et les planètes, du point de vue de l’émission de la lumière&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Les planètes ne sont pas des corps suffisamment chauds pour émettre de la lumière (plus précisément ondes électromagnétiques) dans tout le domaine spectral et en particulier dans le domaine visible ; les planètes n'émettent que dans les IR.  
 Si on voit les planètes c'est parce qu'elles **réfléchissent la lumière des étoiles** (en particulier du Soleil).
 
 Les étoiles émettent leur propre lumière (plus précisément ondes électromagnétiques) dans tout le domaine spectral grâce à l'énergie dégagée par les réactions de fusion nucléaire qui se déroulent en leur sein (à l'exception des naines brunes).
-{{% /solution %}}
+{{< /solution >}}
 
 2. Qu’est-ce que l’«&nbsp;année-lumière&nbsp;»&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Une *année-lumière* est la **distance** parcourue par la lumière, à la célérité constante $c_0$, dans le vide, pendant une année.
-{{% /solution %}}
+{{< /solution >}}
 
 3. Pourquoi n’est-il pas possible de *mesurer directement* la distance à laquelle se trouvent toutes les étoiles&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Les mesures directes s'appuient essentiellement sur des méthodes de triangulation ou parallaxe ([En savoir plus](https://media4.obspm.fr/public/ressources_lu/pages_mesure-distances/mctc-triangulation.html)).  
 Ces méthodes consistent à viser un objet depuis deux positions différentes et à en déduire la distance à l'objet.
 <img src="/terminales-pc/chap-2/fig-2-2-1.jpg" alt="" width="70%" />
 Plus l'étoile est éloignée, plus les rayons issus de cette étoile arrivent parallèles les uns aux autres. Aucune mesure d'angle n'est alors possible.
 
 En conclusion, plus la distance entre les deux positions de visée est grande, plus lointaine peut être l'étoile. La distance de visée maximale est environ égale à $\pu{3e8 km}$, c'est à dire aux positions de la Terre séparées de 6 mois.
-{{% /solution %}}
+{{< /solution >}}
 
 4. Décrire en quoi consiste une *mesure indirecte* de la distance à laquelle se trouve une étoile.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 La **brillance** d'une étoile dépend de sa **luminosité** et de sa **distance**. La **luminosité**, elle dépend du type de l'étoile.  
 Pour relier ces grandeurs, on se sert des *étoiles les plus proches dont on peut déterminer **directement** la distance* : connaissant leur type, donc leur *luminosité*, et leur *distance*, on **mesure** leur *brillance*.  
 Une fois la relation entre ces trois grandeurs établie, on peut mesurer, pour n'importe quelle étoile visible, la *brillance* de cette étoile et sa *luminosité*. On en déduit alors la *distance*.
-{{% /solution %}}
+{{< /solution >}}
 
 5. D’après le texte, comment définit-on le *type d’une étoile*&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Pour déterminer le [type d'une étoile](https://fr.wikipedia.org/wiki/Type_spectral) on utilise essentiellement le [diagramme de Hertzsprung-Russell](https://fr.wikipedia.org/wiki/Diagramme_de_Hertzsprung-Russell) : on y fait apparaître des relations entre la **luminosité** et la [**température de couleur des étoiles**](https://fr.wikipedia.org/wiki/Temp%C3%A9rature_de_couleur).
-{{% /solution %}}
+{{< /solution >}}
 
 6. Rappeler ce que sont les spectres d’émission et d’absorption d’un élément chimique.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Un élément chimique excité peut se désexciter (retourner dans son **état fondamental**) en émettant de la lumière. Comme les **énergies sont quantifieés** dans un atome (ou ion), toutes les longueurs d'ondes ne sont pas possibles pour la lumière émise.  
 En fait $\nu = \dfrac{\Delta E}{h}$ où $\nu$ est la fréquence de l'onde, $\Delta E$ la différence d'énergie entre les deux niveaux d'énergie considérés et $h$ la constante de Planck. On appelle **spectre d'émission** le résultat de l'analyse de la lumière émise par une espèce chimique lorsqu'elle se désexcite.
 
 Lorsqu'une espèce chimique est éclairée par une lumière, elle peut absorber certaines longueurs d'onde de cette lumière. En fait, **elle peut absorber les mêmes longueurs d'onde qu'elle est capable d'émettre**. On appelle **spectre d'absorption** le résultat de l'analyse de la lumière absorbée par une espèce chimique.
-{{% /solution %}}
+{{< /solution >}}
 
 7. Quelle loi, accompagne une lumière dont le spectre est un «&nbsp;spectre thermique&nbsp;»&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 La loi qui donne la répartition de l'intensité du rayonnement en fonction de sa longueur d'onde est la [loi de Planck](https://fr.wikipedia.org/wiki/Loi_de_Planck).
-{{% /solution %}}
+{{< /solution >}}
 
 8. Expliquer ce qu’entend l’auteur lorsqu’il écrit&nbsp;: «&nbsp;il s’y trouvait bien les mêmes ensembles caractéristiques de couleurs manquantes [<span>...</span>] mais ces derniers étaient tous décalés d’une même quantité relative vers l’extrémité rouge du spectre&nbsp;».
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Les spectre de la lumière issue des étoiles est un **spectre thermique** : toutes les radiations (longueurs d'onde) sont présentes avec une intensité plus ou moins importante en fonction de la température de l'étoile. Cependant, lorsqu'on examine de plus près un tel spectre, on constate que de fines raies noires se détachent sur ce fond coloré ([spectre de Fraunhofer](https://fr.wikipedia.org/wiki/Raies_de_Fraunhofer)). Ces raies correspondent à l'absorption de la lumière par les éléments chimiques se trouvant dans la couche externe de l'étoile (chromosphère pour le Soleil). **Un spectre d'absorption est caractéristique de l'élément chimique considéré.**
 L'auteur nous apprend que dans le spectre des étoiles on retrouve bien les spectres des éléments (positions relatives des différentes raies) mais que les longueurs d'onde sont **décalées (vers le rouge la plupart du temps) par rapport à celles que l'on mesure sur Terre**.
-{{% /solution %}}
+{{< /solution >}}
 
 9. Donner la relation qui existe entre la fréquence et la longueur d’onde d’une onde progressive sinusoïdale.
-{{% solution "Réponse" %}}
-$\lambda = c \\, T$ et $T = 1 / f$, donc $\lambda = \dfrac{c}{f} \Leftrightarrow f = \dfrac{c}{\lambda}$.
-{{% /solution %}}
+{{< solution "Réponse" >}}
+$\lambda = c \, T$ et $T = 1 / f$, donc $\lambda = \dfrac{c}{f} \Leftrightarrow f = \dfrac{c}{\lambda}$.
+{{< /solution >}}
 
 10. Décrire ce qu'est «&nbsp;l’effet doppler&nbsp;».
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 L'«&nbsp;l’effet doppler&nbsp;» est le décalage de fréquence d'une onde observé entre les mesures à l'émission et à la réception lorsque la distance relative entre l'émetteur et le récepteur varie au cours du temps.
-{{% /solution %}}
+{{< /solution >}}
 
 11. Pourquoi «&nbsp;trouver autant de spectres décalés vers le bleu que vers le rouge&nbsp;» aurait prouvé «&nbsp;que les galaxies se mouvaient au hasard&nbsp;»&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 On apprend dans le texte que lorsqu'un émetteur de lumière s'éloigne, les longueurs d'onde de la lumière reçue sont décalées vers le rouge. À l'opposé, lorsqu'un émetteur de lumière se rapproche les longueurs d'onde de la lumière reçue sont décalées vers le bleu.  
 Si le mouvement des galaxies était totalement aléatoire, il y aurait autant de galaxies qui s'éloigneraient globalement de nous que de galaxies qui se rapprocheraient globalement de nous. Nous devrions donc trouver autant de lumières avec un décalage vers le bleu que vers le rouge.
-{{% /solution %}}
+{{< /solution >}}
 
 12. On demande à un élève de résoudre le problème suivant : « Une voiture roule à $\pu{20,0 m.s−1}$ et émet un son de sirène de fréquence $\pu{600 Hz}$. Déterminer la fréquence perçue par un observateur immobile alors que la voiture s’approche et lorsqu’elle s’éloigne. »
 On considère que la célérité du son est $c = \pu{340 m.s−1}$.
@@ -108,11 +107,11 @@ f = \dfrac{f_s}{1 - \dfrac{v_s}{c}} \text{ et } f = \dfrac{f_s}{1 + \dfrac{v_s}{
 $$
 sans préciser à quelle situation chacune s’applique ($f$ est la fréquence perçue, $f_s$ la fréquence propre de la source, $v_s$ la vitesse de la source et $c$ la célérité du son).  
 À partir d’un raisonnement à expliciter, répondre à la question posée à l’élève.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - Puisque la voiture s'approche de l'observateur la fréquence $f$ du son perçu est plus grande que la fréquence $f_s$ du son émis. Après étude des deux formules proposées seule la première donne $f > f_s$ ; c'est celle qu'il faut choisir.
 - **A.N.** $ f = \dfrac{ \pu{600 Hz} }{1 - \dfrac{ \pu{20,0 m.s-1} }{ \pu{340 m.s-1} }} = \pu{637,7 Hz} $ soit ${638 Hz} $.
-{{% /solution %}}
+{{< /solution >}}
 
 13. Lorsqu'un émetteur émet une onde sonore périodique de fréquence $f_s$ en se déplaçant à la vitesse $v_s$  vers un récepteur immobile, ce dernier perçoit une onde sonore périodique de fréquence $f$ telle que
 $$
@@ -120,16 +119,16 @@ f = \dfrac{f_s}{1 - \dfrac{v_s}{c}}
 $$
 Si l'onde émise est sinusoïdale, la relation précédente peut être exprimée à l'aide des longueurs d'onde.  
 Donner cette expression en fonction des longueurs d'onde.<span id="longueur-onde"></span>
-{{% solution "Réponse" %}}
-$f = \dfrac{f_s}{1 - \dfrac{v_s}{c}}$. Or $c = f_s\\, \lambda_s$ et $c = f\\, \lambda$, donc si on substitue les fréquences par les longueurs d'onde $\dfrac{c}{\lambda} = \dfrac{1}{1 - \dfrac{v_s}{c}}\\, \dfrac{c}{\lambda_s}$. On en déduit immédiatement que
-$$\lambda = \lambda_s \\, \left( 1 - \dfrac{v_s}{c} \right)$$
+{{< solution "Réponse" >}}
+$f = \dfrac{f_s}{1 - \dfrac{v_s}{c}}$. Or $c = f_s\, \lambda_s$ et $c = f\, \lambda$, donc si on substitue les fréquences par les longueurs d'onde $\dfrac{c}{\lambda} = \dfrac{1}{1 - \dfrac{v_s}{c}}\, \dfrac{c}{\lambda_s}$. On en déduit immédiatement que
+$$\lambda = \lambda_s \, \left( 1 - \dfrac{v_s}{c} \right)$$
 
 Lorsque l'émetteur se rapproche $f > f_s$, la relation juste démontrée indique qu'alors $\lambda < \lambda_s$.
 > Lorsque l'émetteur se rapproche, la fréquence du signal reçu est plus grande, sa longueur d'onde plus petite (décalage vers le bleu pour la lumière).
-{{% /solution %}}
+{{< /solution >}}
 
 14. Ce document présente seulement un court extrait du livre et laisse peut-être penser que l’expansion de l’Univers est due au déplacement des galaxies, *déplacement d’autant plus rapide qu’elles sont situées loin de nous*. En fait, ces galaxies ne se déplacent pas, c’est l’espace lui-même qui évolue.  
 En considérant que l’espace est un milieu à deux dimensions, semblable à un ballon de foot que l’on gonfle, expliquer pourquoi on peut avoir l’impression que les galaxies ont le mouvement décrit au début de cette question.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 L'idée ici est vraiment d'imaginer un ballon que l'on gonfle : son volume augmente, tout comme sa surface externe. Si on imagine des motifs sur cette surface, ils se déplacent alors et s'éloignent même les uns des autres. Il en est de même pour des points à l'intérieur de ce ballon.
-{{% /solution %}}
+{{< /solution >}}

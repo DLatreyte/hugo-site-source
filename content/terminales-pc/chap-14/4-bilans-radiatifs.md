@@ -1,29 +1,27 @@
 ---
 title: "Bilans Radiatifs"
 subtitle: ""
-author: ""
-type: ""
 date: 2022-03-02T06:10:40+04:00
 draft: false
 toc: true
 tags: []
 categories: ["Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 400
 ---
 
 ## Rayonnement électromagnétique et transfert thermique
 
 ### Émission, absorption, réflexion, diffusion
 
-{{% note warning %}}
+{{< note warning >}}
 
 Dans ce document, la grandeur $\varphi$ n'est pas le **flux thermique** pour une surface donnée $S$ quelconque mais le **flux thermique surfacique**. Son unité n'est donc pas le **watt** ($\pu{W}$) mais le **watt par mètre-carré** ($\pu{W⋅m−2}$).
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Émission
 
@@ -37,11 +35,11 @@ Il s'agit du phénomène inverse. *Le rayonnement absorbé par la matière est c
 
 *Le rayonnement incident sur une paroi peut être renvoyé par la paroi dans une autre direction dans le milieu d'incidence par interaction avec la paroi mais sans absorption*. Les phénomènes concernés peuvent être la simple *réflexion* (obéissant aux lois de Descartes) ou la *diffusion* qui consiste à un renvoi étalé dans toutes les directions même pour une direction incidente unique. Le verre dépoli, le papier, les tissus, etc. sont des substances diffusantes. *Réflexion et diffusion s'effectuent sans changement de fréquence des ondes*. Notons $\varphi_r$, Ie flux surfacique de retour dans le milieu d'incidence.
 
-{{% /note %}}
+{{< /note >}}
 
 ### Milieux transparents. Milieux opaques
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Milieu transparent
 
@@ -51,18 +49,18 @@ Un milieu est dit totalement **transparent** s'*il transmet intégralement le ra
 
 À l'inverse un milieu est dit totalement **opaque** s'*il ne transmet aucune fraction de rayonnement qu'il reçoit*. Le rayonnement incident est donc *soit absorbé, soit réfléchi/diffusé, soit les deux*.
 
-{{% /note %}}
+{{< /note >}}
 
 Remarque
 : En fait, on n'observe jamais une transparence ou une opacité totale sur l'ensemble des fréquences du spectre. Pour un milieu donné, il convient de définir les intervalles de fréquences (ou de longueur d'onde), pour lesquelles on pourra considérer le milieu comme à peu près transparent ou opaque. Ainsi le verre, par exemple, pourra être considéré comme transparent dans l'intervalle $\pu{0,3 \mu m} < \lambda < \pu{3 \mu m}$ et opaque au contraire dans l'intervalle $\pu{4 \mu m} < \lambda < \pu{30 \mu m}$.
 
 ### Équilibre radiatif d'un corps opaque
 
-{{% note warning %}}
+{{< note warning >}}
 
 Pour des raisons de simplification, *tous les flux thermiques sont considérés positifs* dans la suite du document. De plus, on considère les échanges d'énergie rayonnante entre corps opaques placés dans un milieu transparent, en un point de la surface d'un de ces corps opaques.
 
-{{% /note %}}
+{{< /note >}}
 
 #### Flux surfacique incident
 
@@ -81,7 +79,7 @@ $$
 \varphi_p = \varphi_e + \varphi_r
 $$
 
-{{% note tip %}}
+{{< note tip >}}
 
 On dit qu'un **corps opaque** est en **équilibre radiatif** avec le champ de rayonnement qui l'entoure si la condition
 $$
@@ -89,34 +87,34 @@ $$
 $$
 est satisfaite.
 
-{{% /note %}}
+{{< /note >}}
 
 Remarque
 : *L'équilibre radiatif ne suppose pas l'équilibre thermodynamique pour les corps opaques, leurs températures peuvent être différentes*.
 
-{{% note tip %}}
+{{< note tip >}}
 
 Pour un corps opaque en équilibre radiatif avec le champ de rayonnement qui l'entoure,
 $$
 \varphi_e = \varphi_a
 $$
 
-{{% /note %}}
+{{< /note >}}
 
 ### Rayonnement d'équilibre
 
-{{% note tip %}}
+{{< note tip >}}
 
 Lorsque le système, constitué des corps opaques placés dans un milieu transparent, est **à l'équilibre thermodynamique** à la température $T$, le rayonnement qui règne dans le milieu transparent est dit **rayonnemenent d'équilibre**.
 
-{{% /note %}}
+{{< /note >}}
 
 Remarque
 : *L'équilibre thermodynamique nécessite l'équilibre radiatif des corps opaques avec le rayonnement dans lequel ils baignent*.
 
 ### Loi de Stefan pour le rayonnement d'équilibre d'un corps noir
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Corps noir
 
@@ -126,9 +124,9 @@ Le concept d'absorbeur intégral est un *concept idéal*. L'absorption totale ou
 
 **Le flux partant d'un corps noir est totalement d'origine émissive : il n'y a pas de contribution due au rayonnement réfléchi ou diffusé**.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Loi de Stefan
 
@@ -139,9 +137,9 @@ $$
 avec $\sigma = \pu{5,670e8 W.m-2.K-4}$.
 
 Un corps noir émet un flux surfacique, à toutes les longueurs d'ondes, d'autant plus grand que sa température est élevée.
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Bilan radiatif pour un corps noir
 
@@ -151,7 +149,7 @@ $$
 $$
 avec $\sigma = \pu{5,670e-8 W.m-2.K-4}$.
 
-{{% /note %}}
+{{< /note >}}
 
 Remarque
 : On attribue souvent les *propriétés des corps noirs en équilibre radiatif et thermodynamique* aux *corps noirs en équilibre radiatif à température localement constante (mais pas uniforme)*. Si on considère, par exemple, le soleil, l'étude du rayonnement qu'il émet montre qu'il est voisin de celui d'un corps noir de température de l'ordre de $\pu{6000 °C}$. La couche superficielle responsable de l'émission est appelée *photosphère*. Sa température d'équilibre local est voisine de cette valeur. Quant aux rayonnements émis par les couches profondes du soleil (dont la température est beaucoup plus élevée, de l'ordre de $\pu{10^7 K}$) ils sont totalement absorbés par la photosphère.
@@ -169,7 +167,7 @@ On étudie l'effet de serre produit par l'interposition d'une vitre au-dessus d'
 1. On suppose l'équilibre radiatif de la plaque. Écrire l'équation qui traduit
 cet équilibre.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 Puisque la plaque peut être considérée comme un corps noir,
 
@@ -182,11 +180,11 @@ $$
   \varphi_s + \varphi_1 = \varphi_{CN}
 $$
 
-{{% /solution %}}
+{{< /solution >}}
 
 2. On suppose l'équilibre radiatif de la vitre. Écrire l'équation qui traduit cet équilibre.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 Puisque la vitre peut être considérée comme un corps noir pour le
 rayonnement IR,
@@ -201,11 +199,11 @@ $$
   2 \varphi_1 = \varphi_{CN}
 $$
 
-{{% /solution %}}
+{{< /solution >}}
 
 3. Calculer la température $T$ de la plaque noircie.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Si on considère $\varphi_s$ comme une donnée du problème, les équations précédentes
 constituent un système de deux équations à deux inconnues : $\varphi_1$ et $\varphi_{CN}$. Par
 substitution, on détermine que
@@ -224,10 +222,10 @@ $$
 
 **A.N.** $ T= \left( \dfrac{2 \times \pu{0,600e3 W⋅m-2} }{\pu{5,670e-8 W⋅m-2⋅K-4}} \right)^{1/4} = \pu{380 K} $.
 
-{{% /solution %}}
+{{< /solution >}}
 
 4. En déduire la température $T_1$ de la vitre.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 L'équation (2) indique que
 
@@ -235,31 +233,31 @@ $$ \varphi_{1} = \dfrac{\varphi_{CN}}{2} $$
 
 Si on applique la loi de Stephan à la vitre, corps noir en équilibre thermodynamique et local pour le rayonnement IR, on peut écrire
 
-$$ \varphi_{1} = \sigma T\_{1}^4 $$
+$$ \varphi_{1} = \sigma T_{1}^4 $$
 
 donc
 
-$$ T\_{1} = \left( \dfrac{\varphi \_{1}}{\sigma} \right)^{1 / 4} = \left(
-   \dfrac{\varphi \_{CN}}{2 \sigma} \right)^{1 / 4} = \left(
+$$ T_{1} = \left( \dfrac{\varphi _{1}}{\sigma} \right)^{1 / 4} = \left(
+   \dfrac{\varphi _{CN}}{2 \sigma} \right)^{1 / 4} = \left(
    \dfrac{T}{2} \right)^{1 / 4} $$
 
-**A.N.**  $T\_{1} = \left( \dfrac{\pu{380 K}}{2} \right)^{1 / 4} = \pu{320 K}$.
+**A.N.**  $T_{1} = \left( \dfrac{\pu{380 K}}{2} \right)^{1 / 4} = \pu{320 K}$.
 
-{{% /solution %}}
+{{< /solution >}}
 
 5. On superpose maintenant deux vitres (avec une couche d'air entre ces vitres).
 Reprendre les questions précédentes et déterminer la nouvelle température de
 la plaque.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 Les bilans radiatifs sont les suivants :
 
 - Pour la vitre extérieure :
-  $$ 2 \varphi \_{2} = \varphi \_{1} $$
+  $$ 2 \varphi _{2} = \varphi _{1} $$
 - Pour la vitre interieure :
-  $$ 2 \varphi \_{1} = \varphi \_{2} + \varphi \_{CN} $$
+  $$ 2 \varphi _{1} = \varphi _{2} + \varphi _{CN} $$
 - Pour la plaque :
-  $$ \varphi \_{CN} = \varphi \_{s} + \varphi \_{1} $$
+  $$ \varphi _{CN} = \varphi _{s} + \varphi _{1} $$
 
 On en déduit
 
@@ -267,22 +265,22 @@ $$\varphi_2 = \varphi_s$$ $$\varphi_1=2 \varphi_s$$ $$\varphi_{CN} = 3\varphi_s$
 
 Si on applique la loi de Stefan à la plaque, corps noir en équilibre radiatif et thermique local, on peut écrire
 
-$$ \varphi \_{CN} = \sigma T^4 $$
+$$ \varphi _{CN} = \sigma T^4 $$
 
 donc
 
-$$ T = \left( \dfrac{3 \varphi \_{s}}{\sigma} \right)^{1 / 4} $$
+$$ T = \left( \dfrac{3 \varphi _{s}}{\sigma} \right)^{1 / 4} $$
 
 L'application numérique donne $T = \pu{422 K}$.
 
-{{% /solution %}}
+{{< /solution >}}
 
 6. Généraliser le cas précédent à la situation où on utiliserait $n$ vitres.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-Si on utilise $n$ vitres, $\varphi \_{CN} = (n + 1) \varphi \_{s}$ et $T =  \left( \dfrac{(n + 1) \varphi \_{s}}{\sigma} \right)^{1 / 4} $.
+Si on utilise $n$ vitres, $\varphi _{CN} = (n + 1) \varphi _{s}$ et $T =  \left( \dfrac{(n + 1) \varphi _{s}}{\sigma} \right)^{1 / 4} $.
 
-{{% /solution %}}
+{{< /solution >}}
 
 Remarque
 : Dans la réalité, chaque vitre réfléchit et absorbe une partie du rayonnement
@@ -293,8 +291,8 @@ soit maximale.
 
 [Activité du Livre scolaire.](https://www.lelivrescolaire.fr/page/15701179)
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
 {{< remote "Corrigé de l'activité au format pdf" "/terminales-pc/chap-14/chap-14-3/chap-14-3-3.pdf" >}}
 
-{{% /solution %}}
+{{< /solution >}}

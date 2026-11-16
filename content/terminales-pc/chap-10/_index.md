@@ -1,17 +1,14 @@
 ---
 title: "Transformation spontanée modélisée par une réaction d’oxydo-réduction"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-01-18T21:33:04+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 120
 ---
 
 ## Au programme

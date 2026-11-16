@@ -1,16 +1,14 @@
 ---
 title: "NUMERIQUE et SCIENCES INFORMATIQUES"
 subtitle: "Partie pratique"
-author: ""
-type: ""
 date: 2021-10-27T18:39:50+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: false
 auto_numbering: true
+weight: 9900
 ---
 
 ## Exercice 1 (50% des points)
@@ -27,7 +25,7 @@ if __name__ == "__main__":
     assert maxi([1, 5, 6, 9, 1, 2, 3, 7, 9, 8]) == (9, 3)
 ```
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
 ```python
 from typing import List, Tuple
@@ -51,7 +49,7 @@ if __name__ == "__main__":
     assert maxi([1, 5, 6, 9, 1, 2, 3, 7, 9, 8]) == (9, 3)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Exercice 2 (50% des points)
 
@@ -83,7 +81,7 @@ if __name__ == "__main__":
     assert positif(T) == [0, 5, 4, 10, 9]
 ```
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
 ```python
 from typing import List, Tuple
@@ -112,4 +110,4 @@ if __name__ == "__main__":
     assert positif(T) == [0, 5, 4, 10, 9]
 ```
 
-{{% /solution %}}
+{{< /solution >}}

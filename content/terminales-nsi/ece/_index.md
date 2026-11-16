@@ -1,17 +1,14 @@
 ---
 title: "Épreuves pratiques"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-10-27T17:49:14+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 240
 ---
 
 <!--

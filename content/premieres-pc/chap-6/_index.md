@@ -1,17 +1,14 @@
 ---
 title: "Transformations modélisées par une réaction d'oxydoréduction  en solution aqueuse"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-11-28T23:23:21+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 50
 ---
 
 ## Au programme

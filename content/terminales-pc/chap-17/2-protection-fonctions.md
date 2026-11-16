@@ -1,51 +1,49 @@
 ---
 title: "Protection/déprotection de fonctions chimiques"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-04-19T18:07:58+04:00
 draft: false
 toc: true
 tags: ["Réactif polyfonctionnel", "réactif chimiosélectif", "réaction sélective", "Groupe protecteur"]
 categories: ["Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 200
 ---
 
 > En chimie, les réactifs peuvent être **polyfonctionnels**. *Plusieurs fonctions sont alors susceptibles de réagir dans les conditions de l’expérience*. Le rôle du chimiste est de mettre en œuvre des stratégies permettant de favoriser la réaction affectant le groupe visé.
 
 ## Molécule polyfonctionnelle
 
-{{% note tip %}}
+{{< note tip >}}
 Une molécule est dite **polyfonctionnelle** si elle possède plusieurs groupes caractéristiques.
-{{% /note %}}
+{{< /note >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 Entourer et nommer les groupes caractéristiques des molécules suivantes :
 
 - para-aminophénol : <img src="/terminales-pc/chap-17/chap-17-2/para-aminophenol.png" alt="" width="40%" />
 - paracétamol : <img src="/terminales-pc/chap-17/chap-17-2/paracetamol.png" alt="" width="40%" />
 - acide salicylique : <img src="/terminales-pc/chap-17/chap-17-2/acide-salicylique.png" alt="" width="25%" />
 - acide acétylsalicylique : <img src="/terminales-pc/chap-17/chap-17-2/acide-acetylsalicylique.png" alt="" width="30%" />
-{{% /note %}}
-{{% solution "Solution" %}}
+{{< /note >}}
+{{< solution "Solution" >}}
 - para-aminophénol : <img src="/terminales-pc/chap-17/chap-17-2/para-aminophenol-sol.png" alt="" width="50%" />
 - paracétamol : <img src="/terminales-pc/chap-17/chap-17-2/paracetamol-sol.png" alt="" width="50%" />
 - acide salicylique : <img src="/terminales-pc/chap-17/chap-17-2/acide-salicylique-sol.png" alt="" width="35%" />
 - acide acétylsalicylique : <img src="/terminales-pc/chap-17/chap-17-2/aspirine-sol.png" alt="" width="40%" />
-{{% /solution %}}
+{{< /solution >}}
 
 ## Réactifs chimiosélectifs
 
-{{% note tip %}}
+{{< note tip >}}
 
 - Une réaction est **sélective** lorsque, parmi plusieurs fonctions d’une même molécule, l’une d’elles réagit *préférentiellement* avec le réactif considéré.
 - Le réactif avec lequel la fonction réagit préférentiellement est dit **chimiosélectif**.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Synthèse du paracétamol
 
@@ -55,13 +53,13 @@ L'équation de la réaction de synthèse du paracétamol s'écrit :
 
 1. Cette réaction est-elle sélective ? Justifier la réponse.
 2. Quel est le réactif chimiosélectif ?
-{{% /note %}}
-{{% solution "Solution" %}}
+{{< /note >}}
+{{< solution "Solution" >}}
 1. Le para-aminophénol possède deux groupes fonctionnels. Seul le groupe amine réagit (il se transforme en groupe amide), le groupe hydroxyle reste intact à l'issue de la synthèse. La réaction est sélective.
 2. L'anhydride éthanoïque est chimiosélectif puisqu'il ne réagit qu'avec le groupe amine.
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Réaction de l'aspirine (acide acétylsalicylique) avec la soude - Première partie
 
@@ -69,14 +67,14 @@ Lorsqu’on fait réagir de l’aspirine avec de la soude à température ambian
 
 1. Écrire l’équation de la réaction de l’aspirine avec la soude.
 2. Cette réaction est-elle sélective ? Si oui, quel est le réactif chimiosélectif ?
-{{% /note %}}
-{{% solution "Solution" %}}
+{{< /note >}}
+{{< solution "Solution" >}}
 1. <img src="/terminales-pc/chap-17/chap-17-2/aspirine-hydroxyle-1.png" alt="" width="" />
 2. La réaction est sélective puisque seul le groupe carboxyle réagit.\
 Les ions hydroxyde sont chimiosélectifs.
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Réaction de l’aspirine (acide acétylsalicylique) avec la soude — Deuxième partie
 
@@ -84,15 +82,15 @@ Lorsqu’on fait réagir de l’aspirine chauffée à reflux avec un excès de s
 
 1. Écrire l’équation de la réaction de l’aspirine avec la soude sachant que le groupe ester donne le groupe hydroxyle.
 2. Cette réaction est-elle sélective ? Si oui, quel est le réactif chimiosélectif ?
-{{% /note %}}
-{{% solution "Solution" %}}
+{{< /note >}}
+{{< solution "Solution" >}}
 1. <img src="/terminales-pc/chap-17/chap-17-2/aspirine-hydroxyle-2.png" alt="" width="" />
 2. La réaction est n'est pas sélective puisque les deux groupes de l'aspirine réagissent.
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note tip %}}
+{{< note tip >}}
 La sélectivité ou la non-sélectivité d’une réaction dépend des réactifs utilisés, mais aussi des conditions expérimentales.
-{{% /note %}}
+{{< /note >}}
 
 ## Protection de fonctions
 
@@ -100,9 +98,9 @@ La sélectivité ou la non-sélectivité d’une réaction dépend des réactifs
 
 Lorsqu’il n’existe pas de réaction sélective permettant de choisir laquelle des fonctions d’une molécule polyfonctionnelle faire réagir, il est nécessaire de protéger les autres fonctions afin qu’elles ne soient pas attaquées.
 
-{{% note tip %}}
+{{< note tip >}}
 Un **groupe protecteur** est un groupe caractéristique, *volontairement créé dans la molécule d’une molécule polyfonctionnelle afin de bloquer la réactivité de l’une de ses fonctions*. Cette fonction est temporairement transformée en une autre fonction.
-{{% /note %}}
+{{< /note >}}
 
 ### Annale : Réduction avec protection de fonction
 
@@ -123,7 +121,7 @@ Justifier cette affirmation en écrivant la demi-équation électronique.
 Expliquer pourquoi il aurait été préférable de privilégier ce réaction comparativement à $\ce{LiAlH4}$.
 11. Le DIBAL peut-il alors être qualifié de chimiosélectif pour cette réaction ?
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 1. $A$ : <img src="/terminales-pc/chap-17/chap-17-2/reactif-a-reduction.png" alt="" width="30%" />
 2. $B$ : <img src="/terminales-pc/chap-17/chap-17-2/produit-b-reduction.png" alt="" width="30%" />
@@ -139,16 +137,16 @@ L'étape 3 est l'étape de déprotection : on fait réagir le groupe protecteur 
 10. L'utilisation du DIBAL aurait beaucoup simplifié la synthèse : une seule étape aurait remplacé les 3 étapes. Les quantités de matière mises en jeu auraient donc été moins importantes.\
 Le processus aurait donc été plus simple, plus rapide, moins onéreux.
 11. Le DIBAL est un réactif chimiosélectif pour la synthèse envisagée.
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note tip %}}
+{{< note tip >}}
 Le groupe protecteur utilisé doit :
 
 - Réagir de manière sélective avec la fonction à protéger ;
 - Ne pas réagir lors des réactions suivantes ;
 - Pouvoir être retiré facilement et sélectivement, une fois la réaction souhaitée achevée.
 
-{{% /note %}}
+{{< /note >}}
 
 ### Annale : Synthèse peptidique
 
@@ -175,27 +173,27 @@ La déprotection de la fonction est assurée par la réaction inverse, appelée 
 #### Mise en évidence de la difficulté de la synthèse peptidique
 
 1. À quoi reconnaît-on que les molécules du document 1 sont bien des acides aminés ?
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 Les molécules sont des acides aminés car elles comportent les groupes carboxyle et amine. Ce sont des acides $\alpha$-aminés lorsque le groupe amine est porté par le carbone voisin du carbone du groupe carboxyle.
-{{% /solution %}}
+{{< /solution >}}
 
 2. Identifier les 4 acides α-aminés différents nécessaires à la synthèse de la Met-enképhaline.
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 La tyrosine, la glycine, la phénylalanine et la méthionine sont nécessaires à la synthèse de la met-enképhaline.
-{{% /solution %}}
+{{< /solution >}}
 
 3. Compléter l'équation de réaction ci-dessous entre un acide carboxylique et une amine. Entourer et nommer le nouveau groupe fonctionnel.
 <img src="/terminales-pc/chap-17/chap-17-2/fabrication-amide.png" alt="" width="80%" />
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 <img src="/terminales-pc/chap-17/chap-17-2/fabrication-amide-sol.png" alt="" width="75%" />
 On fabrique une amide.
-{{% /solution %}}
+{{< /solution >}}
 
 4. En déduire s'il est possible d'obtenir un seul dipeptide en faisant réagir deux acides α-aminés différents ensembles sans précaution particulière. Justifier simplement.
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 Chaque acide α-aminé ($A$ et $B$ par exemple) possède deux groupes caractéristiques (carboxyle et amine). Lorsqu'on les fait réagir, on peut donc obtenir **quatre dipeptides différents** : $\ce{A-B}$, $\ce{B-A}$, $\ce{A-A}$ et $\ce{B-B}$.
-{{% /solution %}}
+{{< /solution >}}
 
 #### Dernière étape de synthèse de la Met-enképhaline
 
@@ -215,60 +213,60 @@ que l’on notera :<img src="/terminales-pc/chap-17/chap-17-2/reactif-b-bis.png"
 <img src="/terminales-pc/chap-17/chap-17-2/polypeptide-2.png" alt="" width="60%" />
 {{< endcolumns >}}
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 <img src="/terminales-pc/chap-17/chap-17-2/dipeptide.png" alt="" width="60%" />
 Les deux molécules données dans l'énoncé sont $\ce{B-A}$ et $\ce{B-B}$.
-{{% /solution %}}
+{{< /solution >}}
 
 6. Déduire de la question précédente quelle fonction de chacun des réactifs $A$ et $B$ doit être protégée afin d'obtenir uniquement la Met-enképhaline.
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 Il faut protéger le groupe carboxyle de la molécule $A$ et le groupe amine de la molécule $B$.
-{{% /solution %}}
+{{< /solution >}}
 
 7. À l'aide des documents, compléter la suite de transformations chimiques à mettre en place afin de réaliser la dernière étape de la synthèse de la Met-enképhaline :
 
 - **A.** Protection du réactif $B$ :
 <img src="/terminales-pc/chap-17/chap-17-2/etape-a.png" alt="" width="" />
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 <img src="/terminales-pc/chap-17/chap-17-2/etape-a-sol.png" alt="" width="" />
-{{% /solution %}}
+{{< /solution >}}
 
 - **B.** Protection du réactif $A$ :
 <img src="/terminales-pc/chap-17/chap-17-2/etape-b.png" alt="" width="" />
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 <img src="/terminales-pc/chap-17/chap-17-2/etape-b-sol.png" alt="" width="80%" />
-{{% /solution %}}
+{{< /solution >}}
 
 - **C.** Réaction entre le réactif $A$ protégé et le réactif $B$ protégé :
 <img src="/terminales-pc/chap-17/chap-17-2/etape-c.png" alt="" width="" />
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 <img src="/terminales-pc/chap-17/chap-17-2/etape-c-sol.png" alt="" width="" />
-{{% /solution %}}
+{{< /solution >}}
 
 - **D.** Déprotection de la fonction amine :
 <img src="/terminales-pc/chap-17/chap-17-2/etape-d.png" alt="" width="" />
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 <img src="/terminales-pc/chap-17/chap-17-2/etape-d-sol.png" alt="" width="" />
-{{% /solution %}}
+{{< /solution >}}
 
 - **E.** Déprotection de la fonction acide carboxylique :
 <img src="/terminales-pc/chap-17/chap-17-2/etape-e.png" alt="" width="" />
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 <img src="/terminales-pc/chap-17/chap-17-2/etape-e-sol.png" alt="" width="" />
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note tip %}}
+{{< note tip >}}
 La synthèse d’un dipeptide (ou d’un polypeptide) nécessite d’utiliser des groupes protecteurs et des groupes activants.
-{{% /note %}}
+{{< /note >}}
 
 ## Synthèse éco-responsable
 
-{{% note tip %}}
+{{< note tip >}}
 
 Pour être **éco-responsable**, une synthèse doit :
 
@@ -280,4 +278,4 @@ Pour être **éco-responsable**, une synthèse doit :
 
 - Utiliser des solvants verts, c'est à dire faiblement toxiques pour l'environnement, facilement récupérables et recyclables. Ils doivent cependant permettre de maintenir les caractéristiques de la réaction, telles que les vitesses de réaction et les rendements.
 
-{{% /note %}}
+{{< /note >}}

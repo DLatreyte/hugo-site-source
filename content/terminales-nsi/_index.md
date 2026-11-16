@@ -1,15 +1,13 @@
 ---
 title: "Terminales Spé. NSI"
 subtitle: "Documents pour le cours de NSI en Terminale"
-author: ""
-type: ""
 date: 2020-08-19T16:00:27+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 layout: single
+weight: 30
 ---
 
 ## Programme ##
@@ -22,7 +20,7 @@ layout: single
 - {{< remote "Modalités de l'épreuve du Grand oral" "../terminales-pc/grand_oral" >}}
 -->
 <!--
-- [<span style="color: red;"><strong>BAC 2023 NSI : «&nbsp;Entrées prépondérantes&nbsp;»</strong></span>]({{< ref "2022-2023-entrees-preponderantes.md" >}})
+- [<span style="color: red;"><strong>BAC 2023 NSI : «&nbsp;Entrées prépondérantes&nbsp;»</strong></span>]({{% ref "2022-2023-entrees-preponderantes.md" %}})
 -->
 
 ## Quelques références

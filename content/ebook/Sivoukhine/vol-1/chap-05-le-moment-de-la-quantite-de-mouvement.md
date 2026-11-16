@@ -2,15 +2,14 @@
 title: "Le moment de la quantité de mouvement"
 subtitle: "Chapitre 05"
 author: "D. Sivoukhine"
-type: ""
 date: 2020-08-25T22:30:04+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: false
+weight: 9900
 ---
 
 ## §30.  Moment d'une force et moment cinétique par rapport à une origine fixe

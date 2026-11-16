@@ -1,16 +1,14 @@
 ---
 title: "Problème de la sous-séquence de somme maximale"
 subtitle: ""
-author: ""
-type: ""
 date: 2022-01-28T06:12:48+04:00
 draft: false
 toc: true
 tags: []
 categories: ["Terminales Spé NSI"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 400
 ---
 
 > Ce document étudie le **problème de la sous-séquence de somme maximale**. Ce problème est intéressant parce qu’il existe nombre d’algorithmes pour le résoudre et la complexité (en nombre d’opérations de somme) de ces algorithmes varie considérablement.
@@ -18,12 +16,12 @@ Seulement deux algorithmes seront abordés, un prochain document présentera l'a
 
 ## Présentation
 
-{{% note normal %}}
+{{< note normal >}}
 
 Étant donné un tableau `tab[1..n]` d’entiers (**positifs et négatifs**), déterminer la valeur maximale du sous-tableau `tab[g..h]` donnant *la plus grande somme de tous les sous-tableaux contigus* de `tab`.
 Pour plus de commodité, la sous-séquence de somme maximale est 0 si tous les entiers sont négatifs.
 
-{{% /note %}}
+{{< /note >}}
 
 #### Exemples
 
@@ -47,7 +45,7 @@ def sous_tab_max(tab: List[int]) -> int:
 
 Tester cette fonction.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def sous_tab_max(tab: List[int]) -> int:
@@ -65,15 +63,15 @@ def sous_tab_max(tab: List[int]) -> int:
     return smax
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 2. Quelle est la complexité de cette fonction&nbsp;?
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 On retrouve deux boucles imbriquées dans la fonction, la complexité est donc en $O(n^2)$.
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Paradigme « Diviser pour régner »
 
@@ -100,7 +98,7 @@ def somme_max(tab: List[int]) -> int:
 
 Ne pas effectuer le calcul de la somme maximale se trouveant dans la séquence à cheval sur les deux sous-parties. Ce calcul doit être effectué par un appel à la fonction `max_sous_tab` définie ci-dessous.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def somme_max(tab: List[int]) -> int:
@@ -127,7 +125,7 @@ def somme_max(tab: List[int]) -> int:
     return s_max
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 4. Écrire le code de la fonction `max_sous_tab` dont la spécification est&nbsp;:
 
@@ -139,7 +137,7 @@ def max_sous_tab(tab: List[float], milieu: int) -> float:
     """
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def max_sous_tab(tab: List[float], milieu: int) -> float:
@@ -162,6 +160,6 @@ def max_sous_tab(tab: List[float], milieu: int) -> float:
     return gmax + dmax
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 5. Quelle est la complexité de la fonction `somme_max`&nbsp;?

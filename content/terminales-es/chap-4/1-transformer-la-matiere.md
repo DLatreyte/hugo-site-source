@@ -1,16 +1,14 @@
 ---
 title: "Nous vivons de transformer la matière"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-11-12T06:16:51+04:00
 draft: false
 toc: true
 tags: ["Énergie", "Transformation", "Énergie fossile", "PIB"]
 categories: ["Terminale Enseignement Scientifique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 100
 ---
 
 ## Document
@@ -31,14 +29,14 @@ Jacques Treiner<br />
 ## Questions
 
 1. Le concept d'énergie difficile à définir. Rechercher le terme (parfois conjugué, parfois sous forme d'un nom) que l'auteur associe systématiquement à l'énergie.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 À toute **transformation** de la matière la physique sait faire correspondre un **bilan énergétique**.
-{{% /solution %}}
+{{< /solution >}}
 
 2. Tenter de définir le concept d'énergie.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% note tip %}}
+{{< note tip >}}
 
 - *L'énergie est une grandeur physique qui permet de caractériser **quantitativement** la transformation d'un système.*
 - L'énergie est une grandeur conservative : *l'énergie d'un système **isolé** est constante*. **L'énergie ne peut donc être ni créée, ni détruite.**
@@ -47,23 +45,23 @@ Jacques Treiner<br />
   - Le **travail** est un *transfert ordonné d'énergie* entre deux systèmes.
   - La **chaleur** (ou **transfert d'énergie d'origine thermique**) est un *transfert désordonné d'energie* entre deux systèmes.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 3. Expliquer ce qu'est un combustible fossile. Donner quelques exemples.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Lorsqu'on parle de combustible fossile on fait allusion aux hydrocarbures.
-{{% /solution %}}
+{{< /solution >}}
 
 4. L'auteur annonce « Aujourd’hui, [...] 80% de notre énergie primaire provient des combustibles fossiles [...] ». Se rendre sur le site de RTE, en France et vérifier si cette affirmation est exacte **pour la France**.
 {{< remote "La production d'électricité par filiaire, en direct, en France" "https://www.rte-france.com/eco2mix/la-production-delectricite-par-filiere" >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Cette affirmation est vraie au niveau mondial mais en France c'est l'énergie nucléaire qui est majoritairement utilisée (plus de 70%).
-{{% /solution %}}
+{{< /solution >}}
 
 5. Quel message l'auteur souhaite-t-il délivrer ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 À vous de me dire !
-{{% /solution %}}
+{{< /solution >}}

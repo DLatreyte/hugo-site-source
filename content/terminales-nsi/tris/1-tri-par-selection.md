@@ -1,16 +1,14 @@
 ---
 title: "Tri par sélection"
 subtitle: ""
-author: ""
-type: ""
 date: 2023-11-24T12:59:47+04:00
 draft: false
 toc: true
 tags: ["Tri", "Invariant de boucle", "Variant de boucle", "Complexité"]
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 100
 ---
 
 *La recherche d'un élément dans un tableau est beaucoup plus efficace si ce
@@ -18,11 +16,11 @@ tableau est ordonné*. À vrai dire, ce n'est pas en cours d'informatique que
 vous avez découvert ceci : dans toutes les bibliothèques les livres sont
 classés de façon à rendre leur recherche plus rapide !
 
-{{% note normal %}}
+{{< note normal >}}
 
 Le tri des tableaux/listes permet de trouver rapidement les objets recherchés et facilite la recherche des valeurs extrêmes.
 
-{{% /note %}}
+{{< /note >}}
 
 La question que se propose d'aborder ce document est donc : « comment classer les éléments d'un tableau selon une relation d'ordre donnée ? ».
 
@@ -47,12 +45,12 @@ On dispose :
 2
 - d'étagères pouvant servir de stockage intermédiaire.
 
-{{% note normal %}}
+{{< note normal >}}
 
 Ce sont exactement les mêmes éléments que ceux dont dispose un ordinateur :
 une **fonction de comparaison** et des **zones de stockage**.
 
-{{% /note %}}
+{{< /note >}}
 
 Le but ultime du jeu est évidemment de trier ces tonneaux en faisant le moins
 de comparaisons et d'échanges possibles.
@@ -60,23 +58,23 @@ de comparaisons et d'échanges possibles.
 1. Limiter l'animation à trois tonneaux et trouver le tonneau le plus léger.
 Décrire la méthode employée. Combien de comparaisons est-il nécessaire de
 faire ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 On compare les deux premiers tonneaux et on conserve le plus léger sur la
 balance. On compare alors ce tonneau à celui qui reste dans la liste de
 tonneaux. Deux comparaisons sont donc nécessaires.
 
-{{% /solution %}}
+{{< /solution >}}
 
 2. Toujours à partir de trois tonneaux, les trier du plus léger au plus lourd.
 Décrire la méthode employée (on peut schématiser toutes les étapes sur sa
 feuille). Combien de comparaisons est-il nécessaire de faire ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 Sans utilisation de la zone de stockage, il faut effectuer 3 comparaison. On peut se
 contenter de deux comparaisons si on utilise la zone de stockage.
 
-{{% /solution %}}
+{{< /solution >}}
 
 3. Choisir maintenant cinq tonneaux. Les trier du plus léger au plus lourd.
 Décrire la méthode employée et indiquer combien de comparaisons ont été
@@ -87,7 +85,7 @@ méthode permettant de les trier. La décrire.
 
 ## Algorithme de tri
 
-{{% note tip %}}
+{{< note tip >}}
 
 Un **algorithme de tri** est, en informatique ou en mathématiques, un algorithme
 qui permet d'organiser une collection d'objets selon un ordre déterminé.
@@ -96,7 +94,7 @@ Les objets à trier font donc partie d'un ensemble muni d'une relation d'ordre.
 Les ordres les plus utilisés sont l'ordre numérique et l'ordre lexicographique
 (dictionnaire).
 
-{{% /note %}}
+{{< /note >}}
 
 ## Tri par sélection
 
@@ -116,7 +114,7 @@ comprendre la méthode.
 
 ### Algorithme
 
-{{% note normal %}}
+{{< note normal >}}
 
 À chaque étape du processus, le tableau est divisé en deux sous-tableaux : le
 premier (indices plus petits que l'indice courant) est trié, le second
@@ -125,12 +123,12 @@ premier (indices plus petits que l'indice courant) est trié, le second
 non trié (à droite) et une fois cette dernière trouvée, on permute (si
 nécessaire) la valeur courante et la valeur la plus petite.**
 
-{{% /note %}}
+{{< /note >}}
 
 **Remarque :** La permutation des valeurs contenues dans deux variables est souvent employée en informatique, elle nécessite une troisième variable pour un stockage
 temporaire.
 
-{{% note tip %}}
+{{< note tip >}}
 
 Le **tri par sélection** est basé sur l'utilisation de deux boucles `Pour` imbriquées&nbsp;:
 
@@ -145,10 +143,10 @@ L'algorithme du tri par sélection est un algorithme de *tri en place* : la
 réorganisation du tableau ne nécessite pas la création d'un nouveau tableau,
 ce qui économise de la place en mémoire.
 
-{{% /note %}}
+{{< /note >}}
 
 8. À partir de toutes les informations précédentes, écrire l'algorithme du tri par sélection. Implémenter cet algorithme en Python.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 from random import randint
@@ -176,17 +174,17 @@ if __name__ == "__main__":
     print(tab)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 9. Faire tourner « à la main » l'algorithme lorsque la fonction reçoit le tableau
 `tab = [5,2,4,6,1,3]`.
 
 10. Comment prouve-t-on, de façon générale, la terminaison d'un algorithme ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 On recherche un *variant de boucle*.
 
-{{% note tip %}}
+{{< note tip >}}
 
 Un **variant de boucle** est une expression arithmétique associée à une boucle qui satisfait deux conditions :
 
@@ -195,23 +193,23 @@ Un **variant de boucle** est une expression arithmétique associée à une boucl
 
 L'idée derrière la notion de variant de boucle est que si le variant est toujours non négatif et diminue lors de la progression de la boucle, alors la boucle ne peut pas continuer indéfiniment. Si la boucle continue indéfiniment, cela signifie que le variant ne décroît pas à chaque itération, ce qui contredit la propriété de décroissance du variant.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 11. Est-il nécessaire de prouver la terminaison de cet algorithme ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 L'algorithme fait intervenir deux boucles `Pour`. Il se termine donc forcément puisqu'il s'agit de *boucles déterministes*.
 
-{{% /solution %}}
+{{< /solution >}}
 
 12. Comment prouve-t-on, de façon générale, la correction d'un algorithme ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 On recherche un *invariant de boucle*.
 
-{{% note tip %}}
+{{< note tip >}}
 
 Un **invariant de boucle** est une *proposition vraie à chaque tour de boucle*. Associé à une **postcondition** il permet, au final, de montrer la correction d'un algorithme.
 
@@ -222,20 +220,20 @@ Pour qu'un invariant de boucle soit efficace, il doit satisfaire deux propriét�
 
 Un invariant de boucle doit être associé à une **postcondition**, c'est dire à une propriété qui doit être vraie à la fin de la boucle.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 13. Prouver que la proposition « Au début de chaque itération de la boucle `Pour` externe le tableau `tab[0, ..., i-1]` est un tableau trié constitué des `i` plus petits éléments du tableau `tab`, dans l'ordre croissant.» est un invariant de boucle.  
 Prouver que l'algorithme est correct.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 14. Déterminer la complexité de l'algorithme.
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Dans quels cas le tri par sélection peut-il être pertinent ?
 
@@ -249,4 +247,4 @@ Le tri par sélection est globalement peu efficace. On peut tout de même lui at
 
 - **Peu de mouvements d'éléments :** Bien que le tri par sélection effectue un nombre quadratique de comparaisons, le nombre de mouvements d'éléments est linéaire (*l'échange d'éléments n'a lieu qu'une seule fois à chaque itération*). Cela peut être avantageux dans des situations où le coût des comparaisons est faible par rapport au coût des déplacements d'éléments dans la mémoire.
 
-{{% /note %}}
+{{< /note >}}

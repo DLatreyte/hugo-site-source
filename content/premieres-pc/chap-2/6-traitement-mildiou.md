@@ -1,21 +1,19 @@
 ---
 title: "Traitement du mildiou"
 subtitle: ""
-author: ""
-type: ""
 date: 2022-09-06T08:20:53+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: false
 auto_numbering: true
+weight: 600
 ---
 
 ## Documents
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Mildiou
 
@@ -31,9 +29,9 @@ inférieure, un duvet blanc prend place par temps humide. Enfin, sur les
 tiges, vous constaterez des taches brunes et les fruits seront bruns et auront
 du mal à mûrir.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Bouillie bordelaise : un traitement efficace contre le mildiou
 
@@ -46,9 +44,9 @@ le biais des ions cuivre ($\ce{Cu^{2+}}$) du mélange. Ces ions affectent des en
 dans les spores des champignons (bénéfiques ou parasites) bloquant leur
 germination.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Une recette de la bouillie bordelaise
 
@@ -61,7 +59,7 @@ d'eau.
 
 - Mélanger les deux solutions précédentes puis ajouter de l'eau jusqu'à
 atteindre 10 litres.
-{{% /note %}}
+{{< /note >}}
 
 ## Séance
 
@@ -78,7 +76,7 @@ On a déjà préparé une solution de chaux pour $\pu{250 mL}$ de bouillie borde
 l'aide de toutes les informations fournies, préparer un volume $V_0$ (valeur à
 déterminer) d'une solution de sulfate de cuivre pentahydraté (solution $S_0$).
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - Dans la recette de la bouillie bordelaise on constate que le volume de
 la solution de sulfate de cuivre pentahydraté est 5 fois plus petit que le
@@ -100,7 +98,7 @@ m_0 = n_0 M = C V_0 M
 $$
 **A.N.** $m_0 = \pu{0,40}{mol.L^{- 1}} \times \pu{50e-3 L} \times \pu{249,68 g.mol^{-1}} = \pu{5 g}$.
 
-{{% /solution %}}
+{{< /solution >}}
 
 #### Question 2
 
@@ -108,11 +106,11 @@ La solution préparée à la question précédente s'avère trop concentrée.
 Préparer un volume $V_1= \pu{50 mL}$ d'une solution $S_1$ de concentration $C_1= \pu{0,08
 mol.L^{-1}}$ en sulfate de cuivre pentahydraté, à partir de la solution $S_0$.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 La concentration $C_1$ est 5 fois moins importante que la concentration $C_0$. Il
 faut donc prélever $\pu{10 mL}$ de la solution $S_0$ à l'aide d'une pipette jaugée, et
 d'introduire cette solution dans une fiole jaugée de $\pu{10 mL}$. Pour finir, il faut
 compléter jusqu'au trait de jauge avec de l'eau distillée.
 
-{{% /solution %}}
+{{< /solution >}}

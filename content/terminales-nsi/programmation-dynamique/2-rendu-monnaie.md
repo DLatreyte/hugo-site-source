@@ -1,16 +1,14 @@
 ---
 title: "Problème du rendu de monnaie"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-02-28T05:28:54+04:00
 draft: false
 toc: true
 tags: [ "Programmation dynamique"]
 categories: ["Terminales Spé NSI"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 200
 ---
 
 ## Énoncé du problème
@@ -35,9 +33,9 @@ Afin de **minimiser le nombre de pièces à rendre**, on peut suivre la stratég
 
 En procédant ainsi, **on résout le problème étape par étape** et **un choix optimal est effectué à chacune de ces étapes** (la pièce de plus grande valeur). *Cet algorithme fait parti de la catégorie des **algorithmes gloutons** : chercher la solution optimale à partir d'optima locaux.*
 
-<!-- {{% note warning %}}
+<!-- {{< note warning >}}
 Le corrigé se trouve à cette adresse : {{< remote "https://repl.it/@dlatreyte/rendudemonnaie" "https://repl.it/@dlatreyte/rendudemonnaie" >}}
-{{% /note %}} -->
+{{< /note >}} -->
 
 <!--
 1. Importer le module typing au début du fichier :
@@ -75,7 +73,7 @@ def somme_a_rendre(prix: int, montant_client: int) -> int:
     """
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def somme_a_rendre(prix: int, montant_client: int) -> int:
@@ -86,7 +84,7 @@ def somme_a_rendre(prix: int, montant_client: int) -> int:
     return montant_client - prix
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 3. Définir la fonction `pieces_a_rendre` dont la spécification est :
 
@@ -100,7 +98,7 @@ def pieces_a_rendre(somme: int, pieces: list[int]) -> list[int]:
     """
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def pieces_a_rendre(somme: int, pieces: list[int]) -> list[int]:
@@ -149,19 +147,19 @@ def pieces_a_rendre_3(somme: int, pieces: list[int]) -> list[int]:
     return list(reversed(a_rendre))
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% solution "Code complet" %}}
+{{< solution "Code complet" >}}
 
 Le code se trouve à : {{< remote "cette adresse" "https://replit.com/@dlatreyte/Rendu-de-monnaie-Glouton#main.py" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Algorithme de force brute
 
 1. On note $nb$ le nombre de pièces à rendre, prises dans la liste des pièces $p = [1, 2, 5, 10, 20, 50, 100, 200, 500]$, lorsque la somme à rendre est $x$.  
 Écrire la relation de récurrence que doit vérifier $nb$.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 $$
     nb(x) =
@@ -171,11 +169,11 @@ $$
     \end{cases}
 $$
 
-{{% /solution %}}
+{{< /solution >}}
 
 2. En fait, on cherche le nombre minimal de pièces à rendre pour la somme $x$.
 Adapter la relation de récurrence.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 $$
     nb(x) =
@@ -185,21 +183,21 @@ $$
     \end{cases}
 $$
 
-{{% /solution %}}
+{{< /solution >}}
 
 3. Écrire le schéma des appels récursifs pour $x=11$ et $p=[2,5,10]$.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 <img src="/terminales-nsi/chap-14/chap-14-2/chap-14-2-1.svg" alt="" width="100%" />
 
-{{% /solution %}}
+{{< /solution >}}
 
 4. Indiquer l'avantage et l'inconvénient de l'algorithme par Brute Force.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 Cet algorithme retourne une solution optimale mais calcule plusieurs fois les mêmes valeurs. Il est donc inutilisable si la valeur à retourner est importante.
 
-{{% /solution %}}
+{{< /solution >}}
 
 5. Réfléchir au code de la fonction dont la spécification est :
 
@@ -214,7 +212,7 @@ def nb_rendre(a_rendre: int, pieces: list[int]) -> int:
 ```
 
 Écrire le code de cette fonction.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def nb_rendre(a_rendre: int, pieces: list[int]) -> int:
@@ -238,15 +236,15 @@ def nb_rendre(a_rendre: int, pieces: list[int]) -> int:
     return nb_min
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 6. Tester le code pour une somme à rendre de 13 puis de 130. Le résultat confirme-t-il la réponse à la question 4&nbsp;?
 
-{{% solution "Code complet" %}}
+{{< solution "Code complet" >}}
 
 Le code se trouve à : {{< remote "cette adresse" "https://replit.com/@dlatreyte/Rendu-de-monnaie-Brute-Force" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 ### Compléments
 
@@ -268,7 +266,7 @@ def pieces_a_rendre(
 
 On peut bien sur créer une fonction enveloppe qui ne prendrait que la somme et la liste des pièces disponibles en argument et retournerait la liste des listes de pièces.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def pieces_a_rendre(
@@ -294,23 +292,23 @@ def pieces_a_rendre(
         serie = serie_sauv
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 8. Tester le code pour une somme à rendre de 13 puis de 130. Obtient-on rapidement un résultat pour cette dernière valeur ?
 
 9. Comment déterminer le nombre minimum de pièces à retourner ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 Le nombre minimum de pièces est égal à la plus petite longueur des listes éléments de la liste `series`.
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Programmation dynamique (mémoïsation)
 
 1. Rappeler quel est l'objectif de la programmation dynamique.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% note tip %}}
+{{< note tip >}}
 
 La **programmation dynamique**, comme la méthode **diviser-pour-régner**, *résout des problèmes en combinant des solutions de sous-problèmes*.
 
@@ -320,13 +318,13 @@ Dans ce cas, un algorithme diviser-pour-régner fait plus de travail que nécess
 
 La programmation dynamique est, en général, appliquée aux **problèmes d’optimisation**. Dans ce type de problèmes, il peut y avoir de nombreuses solutions possibles. Chaque solution a une valeur, et on souhaite trouver une solution ayant la **valeur optimale** (**minimale** ou **maximale**). Une telle solution est une solution optimale au problème, et non pas la solution optimale, puisqu’il peut y avoir plusieurs solutions qui donnent la valeur optimale.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 2. Le manque d'efficacité de la méthode force brute a pour origine les multiples calculs redondants. Mettre en œuvre la méthode de **mémoïsation** afin d'améliorer l'efficacité du code de la fonction `nb_rendre`.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def nb_rendre(a_rendre: int, pieces: list[int]) -> int:
@@ -358,20 +356,20 @@ def nb_rendre(a_rendre: int, pieces: list[int]) -> int:
     return _nb_rendre(a_rendre, pieces, dic_a_rendre)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% solution "Code complet" %}}
+{{< solution "Code complet" >}}
 
 Le code se trouve à : {{< remote "cette adresse" "https://replit.com/@dlatreyte/Rendu-de-monnaie-Programmation-dynamique-1" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Programmation dynamique (méthode tabulaire)
 
 1. Rappeler quel est l'objectif de la programmation dynamique.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% note tip %}}
+{{< note tip >}}
 
 La **programmation dynamique**, comme la méthode **diviser-pour-régner**, *résout des problèmes en combinant des solutions de sous-problèmes*.
 
@@ -381,9 +379,9 @@ Dans ce cas, un algorithme diviser-pour-régner fait plus de travail que nécess
 
 La programmation dynamique est, en général, appliquée aux **problèmes d’optimisation**. Dans ce type de problèmes, il peut y avoir de nombreuses solutions possibles. Chaque solution a une valeur, et on souhaite trouver une solution ayant la **valeur optimale** (**minimale** ou **maximale**). Une telle solution est une solution optimale au problème, et non pas la solution optimale, puisqu’il peut y avoir plusieurs solutions qui donnent la valeur optimale.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 <!--
 2. On note $nb[i][j]$ le *nombre optimal de pièces à rendre pour une somme à rendre* $j$ et $i$ types de pièces.
@@ -429,17 +427,17 @@ def recherche_sol(
     """
 ```
 
-{{% solution "Code complet" %}}
+{{< solution "Code complet" >}}
 
 Le code se trouve à : {{< remote "cette adresse" "https://replit.com/@dlatreyte/Rendu-de-monnaie-dynamique-1" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 -->
 
 2. Le manque d'efficacité de la méthode force brute a pour origine les multiples calculs redondants. Mettre en œuvre la méthode de **ascendante** afin d'améliorer l'efficacité du code de la fonction `nb_rendre`.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def nb_rendre(a_rendre: int, pieces: list[int]) -> int:
@@ -460,11 +458,11 @@ def nb_rendre(a_rendre: int, pieces: list[int]) -> int:
     return nbres[a_rendre]
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## En résumé
 
-{{% solution "Rendu de monnaie - Nombre de pièces à rendre - Toutes les méthodes" %}}
+{{< solution "Rendu de monnaie - Nombre de pièces à rendre - Toutes les méthodes" >}}
 
 ```python
 """
@@ -573,4 +571,4 @@ if __name__ == "__main__":
     print(f"Méthode tabulaire pour rendre {somme_a_rendre} : {nbres_pieces} pieces.")
 ```
 
-{{% /solution %}}
+{{< /solution >}}

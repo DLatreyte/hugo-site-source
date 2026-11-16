@@ -1,21 +1,19 @@
 ---
 title: "Implémentation du type abstrait Liste Chaînée à l'aide de listes Python"
 subtitle: ""
-author: ""
-type: ""
 date: 2023-11-20T15:50:09+04:00
 draft: false
 toc: true
 tags: ["Liste", "Liste chaînée"]
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 200
 ---
 
 Reprendre toutes les fonctions des sections 2 et 3 du document 1 de ce chapitre, en implémentant cette fois le type abstrait « Liste chaînée » à l'aide de tuples (à la place de la classe).
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def est_dans(tab: list[int], val: int) -> bool:
@@ -133,4 +131,4 @@ if __name__ == "__main__":
     print(tab)
 ```
 
-{{% /solution %}}
+{{< /solution >}}

@@ -1,15 +1,14 @@
 ---
 title: "Éléments d'histoire et d'architecture des ordinateurs"
 subtitle: "Chapitre 01"
-author: ""
 type: "page"
 date: 2019-09-10T23:50:18+04:00
 draft: false
 toc: true
 tags: ["Histoire de l'informatique", "Compilation", "Interprétation", "Architecture de l'ordinateur"]
 categories: ["Première Spé NSI"]
-image: ""
 auto_numbering: true
+weight: 9900
 ---
 
 ## Au programme

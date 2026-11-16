@@ -1,16 +1,14 @@
 ---
 title: "Annale : L'eau de Javel"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-11-21T16:28:23+04:00
 draft: false
 toc: true
 tags: []
 categories: ["Chimie", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 900
 ---
 
 Connue depuis plus de deux siècles, l'eau de Javel reste un produit chimique d'utilisation courante, présent dans près de 95&nbsp;% des foyers français. C'est un désinfectant très efficace contre les contaminations bactériennes et virales, en particulier celle du SIDA.

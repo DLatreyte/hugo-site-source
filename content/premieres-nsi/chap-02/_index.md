@@ -1,17 +1,14 @@
 ---
 title: "Premiers pas en programmation... et en Python"
 subtitle: "Chapitre 2"
-author: ""
-type: ""
 date: 2021-07-09T18:04:22+02:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 120
 ---
 
 On appelle **informatique** le *traitement automatisé des informations* par un ordinateur. Cette discipline s'appuie sur la **programmation**, activité qui consiste à apprendre à un ordinateur à effectuer des tâches qu'il n'est pas capable d'exécuter à sa conception. L'écriture d'un programme nécessite l'utilisation d'un **langage de programmation**. Dans ce cours nous utiliserons Python.

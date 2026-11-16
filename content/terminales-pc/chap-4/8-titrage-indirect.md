@@ -1,22 +1,20 @@
 ---
 title: "Annale : Titrage indirect d'une eau de Javel"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-10-26T15:41:44+04:00
 draft: false
 toc: true
 tags: ["Titrage indirect", "Titrage en retour", "Réaction d'oxydo-réduction", "Équivalence", "Volume molaire"]
 categories: ["Chimie", "Terminale Spé PC", "Annale"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 800
 ---
 
 - Lors d'un *titrage direct*, une entité, le *titrant*, *située dans la burette*, réagit **directement** avec le *titré*.
 - Lors d’un *titrage indirect*, on titre une espèce chimique **après avoir réalisé une réaction chimique**.
 
-{{% note normal %}}
+{{< note normal >}}
 Charles Guillaume Scheele, pharmacien suédois, découvrit le dichlore au XVIII<sup>ème</sup> siècle.
 Ce gaz intervient dans la fabrication de l'eau de Javel&nbsp;; celle-ci doit son nom à un ancien village qui est aujourd'hui un quartier de Paris. C'est à Javel que Claude Louis Berthollet, directeur à la manufacture des Gobelins, fabriqua ce produit décolorant et désinfectant et l'employa en 1785 au blanchiment des toiles textiles.
 
@@ -25,7 +23,7 @@ C'est donc une solution aqueuse constituée entre autres d'ions chlorure $\ce{Cl
 En milieu acide, l'eau de Javel subit une transformation complète représentée par la réaction d'équation&nbsp;:
 $$\ce{ ClO^–(aq)  +  Cl^–(aq)  + 2H^+(aq)  ->  H2O(l) +   Cl2(g) }$$
 Cette transformation permet de définir le *degré chlorométrique*. Celui-ci est *égal au volume, exprimé en litres, de dichlore produit par un litre d'eau de Javel*. Ce volume est mesuré à une température de $\pu{0 °C}$ sous une pression de $\pu{1,013 bar}$.
-{{% /note %}}
+{{< /note >}}
 
 Pour vérifier l'indication portée sur une bouteille commerciale d'eau de Javel, 12°&nbsp;chl (12 degrés chlorométriques), on réalise un titrage.
 
@@ -73,6 +71,6 @@ Commenter le résultat.
 
 ## Corrigé
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 {{< remote "Corrigé au format pdf" "/terminales-pc/chap-4/chap-4-8-2.pdf" >}}
-{{% /solution %}}
+{{< /solution >}}

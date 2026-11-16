@@ -1,14 +1,14 @@
 ---
 title: "Contrôle du flot d’exécution d’un programme, les structures itératives"
 subtitle: "Chapitre 6"
-author: ""
 type: "page"
 date: 2019-09-28T17:41:06+04:00
 draft: false
 toc: true
 tags: [Boucles]
 categories: ["Première Spé NSI"]
-image: ""
+
+weight: 9900
 ---
 
 Ce chapitre reprend l'étude de structures de contrôles, c'est à dire d'instructions qui permettent de modifier le « flot d'exécution implicite » d'un programme.
@@ -65,9 +65,9 @@ La boucle **Pour Chaque** s’écrit `for` en Python. Cette structure de boucle 
 
 Les domaines d’application de cette boucle sont, par exemple, *le parcours des tableaux*, puisqu’on connaît le nombre de cases qui les constituent, ou *les traitements de données*, leur nombre étant connu à l'avance.
 
-{{% note tip %}}
+{{< note tip >}}
 À l’issue de chaque itération la valeur du compteur est incrémentée automatiquement.
-{{% /note %}}
+{{< /note >}}
 
 ### Syntaxe en Python ###
 
@@ -81,18 +81,18 @@ def table_de(n: int) -> str:
     return reponse
 ```
 
-{{% note warning %}}
+{{< note warning >}}
 La variable qui sert de compteur de boucle (`element` dans l’exemple précédent) **ne doit jamais être modifiée dans la boucle**, ce qui exclut la possibilité de changer sa valeur par une affectation. *Dans le cas contraire, le comportement de la boucle est indéterminé ; elle peut très bien s’arrêter immédiatement, comme devenir infinie*.
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 a boucle `for` *parcourt les éléments d’un itérable (comme une séquence ou un itérateur) et se termine quand tous les éléments sont épuisés*. Sa syntaxe est :
 ```python3
 for element in itérable:
     suite_à_répéter
 ```
 À chaque itération, la variable d’itération `element` prend *la valeur de l’élément courant de l’itérable* (séquence, itérateur ou tout objet supportant l’itération) pour pouvoir l’utiliser dans le bloc `suite_à_répéter`.
-{{% /note %}}
+{{< /note >}}
 
 ### L'itérateur **range** ###
 
@@ -112,9 +112,9 @@ range(debut, fin)
 range(fin)
 ```
 
-{{% note warning %}}
+{{< note warning >}}
 De façon générale, tous les intervalles, en Python, sont du type **[debut, fin[**.
-{{% /note %}}
+{{< /note >}}
 
 **Exemples. ** 
 ```python3
@@ -237,7 +237,7 @@ def inconnue(a: int, b: int) -> int:
 6. Quel est le calcul réalisé par ce programme ?
 
 ---
-{{% details "**Solution**" %}}
+{{< details "**Solution**" >}}
 1. ```python3
 while r != 0:
     a = b
@@ -250,7 +250,7 @@ Fin de boucle lorsque $r=0$.
 4.  Touches **Ctrl + F5**. 
 5. Valeur retournée : 1
 6. Cette fonction détermine le pgcd des deux nombres.
-{{% /details %}}
+{{< /details >}}
 
 ### Exercice 2 ###
 
@@ -274,7 +274,7 @@ def inconnue_deux(a: int) -> int:
 6. Quel est le calcul réalisé par ce programme ?
 
 ---
-{{% details "**Solution**" %}}
+{{< details "**Solution**" >}}
 1. ```python3
 while i <= a:
         b *= i
@@ -285,7 +285,7 @@ Fin de boucle lorsque $i = a + 1$.
 3. Valeur retournée : 720
 4.  Touches **Ctrl + F5**.
 5. Cette fonction retourne le résultat du calcul : $1\times 2\times 3\times\ldots\times a$, c'est à dire la factorielle de $a$, $a!$.
-{{% /details %}}
+{{< /details >}}
 
 
 ### Exercice 3 ###
@@ -306,7 +306,7 @@ def triple_du_precedent(a: int) -> str:
     """
 ```
 ---
-{{% details "**Solution**" %}}
+{{< details "**Solution**" >}}
 ```python3
 def triple_du_precedent(a: int) -> str:
     """
@@ -329,7 +329,7 @@ def triple_du_precedent(a: int) -> str:
         compteur += 1
     return reponse
 ```
-{{% /details %}}
+{{< /details >}}
 
 ### Exercice 4 ###
 
@@ -346,7 +346,7 @@ def multiplication(a: int) -> str:
     """
 ```
 ---
-{{% details "**Solution**" %}}
+{{< details "**Solution**" >}}
 ```python3
 def multiplication(a: int) -> str:
     """
@@ -364,7 +364,7 @@ def multiplication(a: int) -> str:
         compteur += 1
     return reponse
 ```
-{{% /details %}}
+{{< /details >}}
 
 ### Exercice 5 ###
 
@@ -384,7 +384,7 @@ def multiplication_multiple_trois(a: int) -> str:
     """
 ```
 ---
-{{% details "**Solution**" %}}
+{{< details "**Solution**" >}}
 ```python3
 def multiplication_multiple_trois(a: int) -> str:
     """
@@ -409,7 +409,7 @@ def multiplication_multiple_trois(a: int) -> str:
         compteur += 1
     return reponse
 ```
-{{% /details %}}
+{{< /details >}}
 
 ### Exercice 6 ###
 
@@ -428,7 +428,7 @@ def multiplication_multiple_sept(a: int) -> str:
     """
 ```
 ---
-{{% details "**Solution**" %}}
+{{< details "**Solution**" >}}
 ```python3
 def multiplication_multiple_sept(a: int) -> str:
     """
@@ -450,7 +450,7 @@ def multiplication_multiple_sept(a: int) -> str:
         compteur += 1
     return reponse
 ```
-{{% /details %}}
+{{< /details >}}
 
 ### Exercice 7 ###
 
@@ -467,7 +467,7 @@ def diviseurs(a: int) -> str:
     """
 ```
 ---
-{{% details "**Solution**" %}}
+{{< details "**Solution**" >}}
 ```python3
 def diviseurs(a: int) -> str:
     """
@@ -485,7 +485,7 @@ def diviseurs(a: int) -> str:
         n -= 1
     return reponse
 ```
-{{% /details %}}
+{{< /details >}}
 
 
 ### Exercice 8 ###
@@ -507,7 +507,7 @@ def table_multiplication() -> str:
 >>> print(table_multiplication())
 ```
 ---
-{{% details "**Solution**" %}}
+{{< details "**Solution**" >}}
 ```python3
 def table_multiplication() -> str:
     """
@@ -526,7 +526,7 @@ def table_multiplication() -> str:
         j = 1
     return reponse
 ```
-{{% /details %}}
+{{< /details >}}
 
 ### Exercice 9 ###
 
@@ -537,9 +537,9 @@ def table_multiplication() -> str:
 valeur = float(input("Entrez votre valeur : "))
 ```
 
-{{% note warning %}}
+{{< note warning >}}
 La fonction `input` retourne **toujours** une chaîne de caractères. Il est donc *nécessaire d'effectuer une conversion* si ce que l'utilisateur a entré est d'un autre type.
-{{% /note %}}
+{{< /note >}}
 
 La specification de la fonction est :
 ```python3
@@ -550,7 +550,7 @@ def plus_grand_plus_petit() -> str:
     """
 ```
 ---
-{{% details "**Solution**" %}}
+{{< details "**Solution**" >}}
 ```python3
 def plus_grand_plus_petit() -> str:
     """
@@ -572,14 +572,14 @@ def plus_grand_plus_petit() -> str:
     reponse = "max : {}, min : {}".format(valeur_plus_grande, valeur_plus_petite)
     return reponse
 ```
-{{% /details %}}
+{{< /details >}}
 
 ### Exercice 10 ###
 
 Reprendre l'exercice précédent mais en faisant en sorte que le nombre de valeurs demandées à l'utilisateur soit passé en argument à la fonction.
 
 ---
-{{% details "**Solution**" %}}
+{{< details "**Solution**" >}}
 ```python3
 def plus_grand_plus_petit(nbre_valeurs: int) -> str:
     """
@@ -600,7 +600,7 @@ def plus_grand_plus_petit(nbre_valeurs: int) -> str:
     reponse = "max : {}, min : {}".format(valeur_plus_grande, valeur_plus_petite)
     return reponse
 ```
-{{% /details %}}
+{{< /details >}}
 
 ### Exercice 11 ###
 
@@ -615,7 +615,7 @@ def moyenne() -> float:
 ```
 
 ---
-{{% details "**Solution**" %}}
+{{< details "**Solution**" >}}
 ```python3
 def moyenne() -> float:
     """
@@ -630,14 +630,14 @@ def moyenne() -> float:
         i += 1
     return somme / nbre_notes
 ```
-{{% /details %}}
+{{< /details >}}
 
 ### Exercice 12 ###
 
 Modifier le programme précédent de façon à ce que le nombre de notes à prendre en compte soit passé en argument de la fonction.
 
 ---
-{{% details "**Solution**" %}}
+{{< details "**Solution**" >}}
 ```python3
 def moyenne(nbre_notes: int) -> float:
     """
@@ -651,7 +651,7 @@ def moyenne(nbre_notes: int) -> float:
         i += 1
     return somme / nbre_notes
 ```
-{{% /details %}}
+{{< /details >}}
 
 ### Exercice 13 ###
 
@@ -660,7 +660,7 @@ Modifier le programme précédent de façon à ce que l'utilisateur n'ait pas à
 **Remarque :** la fonction doit afficher le nombre de notes saisies, elle retourne donc une chaîne de caractères.
 
 ---
-{{% details "**Solution**" %}}
+{{< details "**Solution**" >}}
 ```python3
 def moyenne_ter() -> str:
     """
@@ -682,7 +682,7 @@ def moyenne_ter() -> str:
     )
     return reponse
 ```
-{{% /details %}}
+{{< /details >}}
 
 
 ### Exercice 14 ###
@@ -700,7 +700,7 @@ def loto_naif() -> str:
 **Remarque.** Normalement, lorsqu'un numéro est tiré, il ne peut pas apparaître à nouveau. On acceptera cependant qu'un même numéro puisse apparaitre plusieurs fois puisqu'on ne connaît pas encore de structure de contrôle qui permet de facilement « stocker » plusieurs valeurs.
 
 ---
-{{% details "**Solution**" %}}
+{{< details "**Solution**" >}}
 ```python3
 def loto_naif() -> str:
     """
@@ -720,7 +720,7 @@ def loto_naif() -> str:
 
     return reponse
 ```
-{{% /details %}}
+{{< /details >}}
 
 
 ### Exercice 15 ###
@@ -741,7 +741,7 @@ def devine() -> None:
 ```
 
 ---
-{{% details "**Solution**" %}}
+{{< details "**Solution**" >}}
 ```python3
 def devine() -> None:
     """
@@ -772,7 +772,7 @@ def devine() -> None:
         else:
             print("Trop petit ! ")
 ```
-{{% /details %}}
+{{< /details >}}
 
 ### Exercice 16 ###
 
@@ -791,7 +791,7 @@ def alphabet(sens: str) -> str:
 ```
 
 ---
-{{% details "**Solution**" %}}
+{{< details "**Solution**" >}}
 ```python3
 def alphabet(sens: str) -> str:
     """
@@ -820,13 +820,13 @@ def alphabet(sens: str) -> str:
 
     return reponse
 ```
-{{% /details %}}
+{{< /details >}}
 
 ### Exercice 17 ###
 
 Écrire et exécuter une fonction qui détermine les *n* premiers termes de la « suite de Fibonacci » définie par :
 $$
-\begin{aligned} u_1 &= 1\\\\ u_2 &= 1\\\\ u_n &= u_{n-1} + u_{n-2} \text{ pour } n > 2 \end{aligned}
+\begin{aligned} u_1 &= 1\\ u_2 &= 1\\ u_n &= u_{n-1} + u_{n-2} \text{ pour } n > 2 \end{aligned}
 $$
 
 Cette fonction doit recevoir en argument la valeur de $n$ et retourner la suite de nombres sous forme de chaîne de caractères. Spécification de la fonction :
@@ -838,7 +838,7 @@ def fibo(n: int) -> str:
 ```
 
 ---
-{{% details "**Solution**" %}}
+{{< details "**Solution**" >}}
 ```python3
 def fibo(n: int) -> str:
     """
@@ -861,14 +861,14 @@ def fibo(n: int) -> str:
             rang += 1
     return reponse
 ```
-{{% /details %}}
+{{< /details >}}
 
 ## Exercices du chapitre (version **for**) ##
 
 Reprendre les exercices 3, 4, 5, 6, 7, 9, 10, 11, 12, 14, 16 de la section précédente et les ré-écrire à l’aide de l’instruction `for`.
 
 ----
-{{% details "**Solutions**" %}}
+{{< details "**Solutions**" >}}
 ```python3
 def triple_du_precedent(a: int) -> str:
     """
@@ -1010,7 +1010,7 @@ if __name__ == "__main__":
 
     doctest.testmod()
 ```
-{{% /details %}}
+{{< /details >}}
 
 ## Exercices de réflexion du chapitre ##
 
@@ -1046,7 +1046,7 @@ En d'autres termes, le problème consiste à trouver quatre entiers $a$, $b$, $c
 
 ### Exercice : Code ISBN ###
 
-L'« International Standard Book Number » (ISBN) est un code à dix chiffres qui identifie de manière unique un livre. Le chiffre le plus à droite de ce code est *la somme de contrôle* ([Wikipedia](http://fr.wikipedia.org/wiki/Somme_de_contrôle)) : il est calculé, de manière unique, à partir des valeurs des neuf autres chiffres. Sa valeur est telle que $d\_1 + 2 d\_2 + 3 d\_3 + \ldots + 10 d\_{10}$ soit un multiple de 11 (ici $d\_i$ représente la valeur du i<sub>ème</sub> chiffre du code, en partant de la droite).
+L'« International Standard Book Number » (ISBN) est un code à dix chiffres qui identifie de manière unique un livre. Le chiffre le plus à droite de ce code est *la somme de contrôle* ([Wikipedia](http://fr.wikipedia.org/wiki/Somme_de_contrôle)) : il est calculé, de manière unique, à partir des valeurs des neuf autres chiffres. Sa valeur est telle que $d_1 + 2 d_2 + 3 d_3 + \ldots + 10 d_{10}$ soit un multiple de 11 (ici $d_i$ représente la valeur du i<sub>ème</sub> chiffre du code, en partant de la droite).
 
 **Exemple.** La *la somme de contrôle* du code commençant par 020131452 est 5 puisque 5 est la seule valeur de $x$ comprise entre 0 et 10 (exclu) telle que $$10 \cdot 0 + 9 \cdot 2 + 8 \cdot 0 + 7 \cdot 1 + 6 \times 3 + 5 \times 1 + 4 \times 4 + 3 \times 5+ 2 \times 2 + 1 \times x$$ soit un multiple de 11.
 

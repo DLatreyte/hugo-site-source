@@ -1,19 +1,17 @@
 ---
 title: "Dessin de figures fractales"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-01-26T06:16:46+04:00
 draft: false
 toc: true
 tags: ["Fractales", "Récursivité", "Turtle"]
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 500
 ---
 
-{{% note tip %}}
+{{< note tip >}}
 Le mot fractale vient du latin fractus qui signifie brisé. En effet, une
 figure fractale est un objet géométrique infiniment morcelé des détails
 sont observables à une échelle arbitrairement choisie.
@@ -23,7 +21,7 @@ figure*, on dit qu'elle est **auto similaire**.
 
 {{< remote "http://www.maths-et-tiques.fr/index.php/detentes/les-fractales" "" >}}
 {{< remote "http://fr.wikipedia.org/wiki/Fractalehttp://fr.wikipedia.org/wiki/Fractale" "" >}}
-{{% /note %}}
+{{< /note >}}
 
 ## Introduction
 
@@ -82,37 +80,37 @@ Le principe est le suivant : on divise un segment initial en trois morceaux,
 et on construit un triangle équilatéral sans base au-dessus du morceau
 central. On réitère le processus $n$ fois, $n$ étant appelé l'**ordre**.
 
-{{% columns %}}
+{{< columns >}}
 <img src="/terminales-nsi/chap-1/chap-1-5/koch_0.png" alt="" width="" />
-{{% column %}}
+{{< column >}}
 <img src="/terminales-nsi/chap-1/chap-1-5/koch_1.png" alt="" width="" />
-{{% endcolumns %}}
-{{% columns %}}
+{{< endcolumns >}}
+{{< columns >}}
 <img src="/terminales-nsi/chap-1/chap-1-5/koch_2.png" alt="" width="" />
-{{% column %}}
+{{< column >}}
 <img src="/terminales-nsi/chap-1/chap-1-5/koch_3.png" alt="" width="" />
-{{% endcolumns %}}
+{{< endcolumns >}}
 
 > Ordres 0, 1, 2 et 3 de la fractale.
 
 Si on trace trois fois cette figure, on obtient successivement un
 triangle, une étoile, puis un flocon de plus en plus complexe.
 
-{{% columns %}}
+{{< columns >}}
 <img src="/terminales-nsi/chap-1/chap-1-5/flocon_0.png" alt="" width="60%" />
-{{% column %}}
+{{< column >}}
 <img src="/terminales-nsi/chap-1/chap-1-5/flocon_1.png" alt="" width="60%" />
-{{% endcolumns %}}
-{{% columns %}}
+{{< endcolumns >}}
+{{< columns >}}
 <img src="/terminales-nsi/chap-1/chap-1-5/flocon_2.png" alt="" width="60%" />
-{{% column %}}
+{{< column >}}
 <img src="/terminales-nsi/chap-1/chap-1-5/flocon_3.png" alt="" width="60%" />
-{{% endcolumns %}}
+{{< endcolumns >}}
 > Figures successives (ordre 0, 1, 2 et 4).
 
 ### Principe de la construction
 
-{{% note normal %}}
+{{< note normal >}}
 La méthode de construction utilise un algorithme récursif :
 
 - À l'ordre 0, il suffit d'appeler une fois la méthode `forward` pour tracer un segment. *C'est le cas de base.*
@@ -123,7 +121,7 @@ La méthode de construction utilise un algorithme récursif :
     n'est qu'on remplace l'appel de chacune des méthodes `forward` par le tracé de
     segments à l'ordre $n-1$. *C'est l'appel récursif, on découpe chaque
     partie de segment en sous-parties*.
-{{% /note %}}
+{{< /note >}}
 
 ### Travail
 
@@ -177,7 +175,7 @@ qui dessine à l'écran un segment de
     un flocon de von Koch, d'ordre $n$ et dont chaque segment à une
     longueur $l$.
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 """
@@ -269,7 +267,7 @@ def main():
 main()
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Arbre fractal
 
@@ -316,7 +314,7 @@ son point de départ*.
     comportement de la fonction à différents ordres. Cette fois-ci, une
     profondeur 10 ou 11 donne un résultat assez joli.
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 """
@@ -367,4 +365,4 @@ def main():
 main()
 ```
 
-{{% /solution %}}
+{{< /solution >}}

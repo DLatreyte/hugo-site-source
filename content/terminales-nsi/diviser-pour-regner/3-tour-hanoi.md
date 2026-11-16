@@ -1,21 +1,19 @@
 ---
 title: "Les tours de Hanoï"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-11-24T04:54:14+04:00
 draft: false
 toc: true
 tags: ["Diviser pour régner", "Récursivité"]
 categories: ["Terminales Spé NSI"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
 mathjax: true
+weight: 300
 ---
 
 
-{{% note normal %}}
+{{< note normal >}}
 
 Le problème mathématique des tours de Hanoï a été inventé par Édouard Lucas. Paru d'abord en fascicule en 1889 , il est publié ensuite dans le tome 3 de ses «&nbsp;Récréations mathématiques&nbsp;», parues à titre posthume en 1892. Il annonce que ce problème est dû à un de ses amis, N. Claus de Siam (anagramme de Lucas d'Amiens, Amiens étant sa ville de naissance), prétendument professeur au collège de Li-Sou-Stian (anagramme de Saint Louis, le lycée où Lucas enseignait).
 
@@ -24,27 +22,27 @@ Sous le titre «&nbsp;Les brahmes tombent&nbsp;», Lucas relate que «&nbsp;*N. 
 <div style="text-align: right;">
 <a href="https://fr.wikipedia.org/wiki/Tours_de_Hanoï" target="_blank">Wikipedia</a>
 </div>
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 Au début du jeu, les disques sont tous positionnés sur la première tige (du plus grand au plus petit) et *l’objectif est de déplacer tous ces disques sur la troisième tige*, en respectant les règles suivantes :
 
 - *Un seul disque peut être déplacé à la fois ;*
 - *On ne peut jamais poser un disque sur un disque de diamètre inférieur.*
-{{% /note %}}
+{{< /note >}}
 
 <img src="/terminales-nsi/chap-10/chap-10-3-1.png" alt="" width="80%" />
 
 1. Numéroter chaque disque pour un empilement à 4 disques et écrire l'enchaînement des étapes nécessaires à la réalisation de la tâche.
 
 2. Faire émerger le raisonnement récursif qui permet de résoudre le problème.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Pour pouvoir déplacer le dernier disque (celui du dessous), il est nécessaire de déplacer les $n − 1$ disques qui le couvrent sur la tige centrale. Une fois ces déplacements effectués, on peut le déplacer sur la troisième tige. Il reste alors à déplacer les $n − 1$ autres disques vers la troisième tige.
 
 <img src="/terminales-nsi/chap-10/chap-10-3-2.png" alt="" width="" />
 
-{{% /solution %}}
+{{< /solution >}}
 
 3. Écrire le code de la fonction dont la spécification est
 
@@ -57,9 +55,9 @@ def hanoi(n: int, source: str, milieu: str, destination: str) -> None:
 
 Tester cette fonction.
 
-{{% solution "Aide" %}}
+{{< solution "Aide" >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 L'algorithme est le suivant :
 
@@ -70,12 +68,12 @@ L'algorithme est le suivant :
   - Déplacer le disque qui reste du piquet $A$ au piquet $C$&nbsp;;
   - Déplacer $n-1$ disques du piquet $B$ au piquet $C$.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 4. Indiquer tous les appels de fonctions et toutes les instructions exécutées pour $n=3$.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - `hanoi(3, "A", "B", "C")`
   - `hanoi(2, "A", "C", "B")`
@@ -100,10 +98,10 @@ L'algorithme est le suivant :
       - Affichage : 1 de A vers C
       - `hanoi(0, "B", "A", "C")`
 
-{{% /solution %}}
+{{< /solution >}}
 
 5. Quelle est la complexité de la fonction ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 #### Récurrence
 
@@ -122,6 +120,6 @@ $$
 
 La complexité est en $O(2^n)$.
 
-{{% /solution %}}
+{{< /solution >}}
 
 - {{< remote "Accès au corrigé" "https://replit.com/@dlatreyte/hanoi" >}}

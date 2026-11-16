@@ -1,16 +1,14 @@
 ---
 title: "Annale : Ammoniac"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-10-26T18:56:00+04:00
 draft: false
 toc: true
 tags: ["Titrage", "Suivi conductimétrique", "Suivi pH-métrique", "Conductivité", "Base", "Acide", "Équivalence"]
 categories: ["Chimie", "Terminale Spé PC", "Annale"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 1000
 ---
 $\gdef\barcirc{{\mathrlap{\mathchoice{\kern{0.145em}}{\kern{0.145em}}{\kern{0.1015em}}{\kern{0.1015em}}\circ}{-}}}$
 
@@ -89,6 +87,6 @@ Exploiter le titrage et déterminer la concentration en quantité de matière en
 
 ## Corrigé
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 {{< remote "Corrigé au format pdf" "/terminales-pc/chap-4/chap-4-10-4.pdf" >}}
-{{% /solution %}}
+{{< /solution >}}

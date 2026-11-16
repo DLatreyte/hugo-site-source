@@ -1,16 +1,14 @@
 ---
 title: "Représentation d'un graphe en informatique"
 subtitle: ""
-author: ""
-type: ""
 date: 2024-03-19T19:48:53+04:00
 draft: false
 toc: false
 tags: ["Graphe", "Structure de données"]
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 200
 ---
 
 > Plusieurs modes de représentation peuvent être implémentés pour stocker des graphes : *matrices d’adjacence (ou sommet-sommet), listes des voisins, des successeurs ou des prédécesseurs*. Lors de cette séance nous allons écrire les classes réalisant ces implémentations.
@@ -31,7 +29,7 @@ auto_numbering: true
     - `val` représente la valeur du sommet ou son étiquette. Cet attribut est de type chaîne de caractères (`str`) ;
     - `adj` représente la liste des sommets adjacents au sommet, instance de la classe. Cet attribut référence une liste de sommets ; lors de l'initialisation d'un sommet il doit référencer une liste vide.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 class Sommet:
@@ -47,7 +45,7 @@ def __init__(self: Sommet, val: str) -> None:
     self.adj = []  # Sommets adjacents
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 2. Ajouter au code de la classe `Sommet` la re-définition de la méthode `__repr__` donnée ci-dessous :
 
@@ -97,7 +95,7 @@ def __init__(self: Sommet, val: str) -> None:
 
     - Soit constituée des sommets passés en argument lors de l'initialisation d'un objet de type `Graphe`.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 class Graphe:
@@ -121,7 +119,7 @@ class Graphe:
                 self.sommets.append(Sommet(sommet))
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 5. Ajouter au code de la classe `Graphe` la re-définition de la méthode `__repr__` donnée ci-dessous :
 
@@ -158,7 +156,7 @@ class Graphe:
         """
     ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def existe_sommet(self: Graphe, s: str) -> bool:
@@ -172,7 +170,7 @@ def existe_sommet(self: Graphe, s: str) -> bool:
     return sommet_present
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 8. Tester le code précédent en ajoutant les instructions suivantes, *à la fin du fichier* :
 
@@ -193,7 +191,7 @@ def existe_sommet(self: Graphe, s: str) -> bool:
         """
     ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def ajout_sommet(self: Graphe, val: str) -> None:
@@ -209,7 +207,7 @@ def ajout_sommet(self: Graphe, val: str) -> None:
     self.sommets.append(Sommet(val))
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 10. Tester le code précédent en ajoutant les instructions suivantes, *à la fin du fichier* :
 
@@ -231,7 +229,7 @@ def ajout_sommet(self: Graphe, val: str) -> None:
 
 ​ **Remarque :** Cette méthode simplifie l'écriture des méthodes suivantes.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def recuperation_sommet(self: Graphe, s: str) -> Sommet:
@@ -247,7 +245,7 @@ def recuperation_sommet(self: Graphe, s: str) -> Sommet:
 	        return objet_sommet
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 12. Écrire le code de la fonction `existe_arete` dont la spécification est :
 
@@ -261,7 +259,7 @@ def recuperation_sommet(self: Graphe, s: str) -> Sommet:
         """
     ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def existe_arête(self, s1: str, s2: str) -> bool:
@@ -277,7 +275,7 @@ def existe_arête(self, s1: str, s2: str) -> bool:
 	return objet_sommet_arrivee in objet_sommet_depart.adj
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 13. Écrire le code de la fonction `ajout_arete` dont la spécification est :
 
@@ -292,7 +290,7 @@ def existe_arête(self, s1: str, s2: str) -> bool:
         """
     ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def ajout_arete(self: Graphe, s1: str, s2: str) -> None:
@@ -315,7 +313,7 @@ def ajout_arete(self: Graphe, s1: str, s2: str) -> None:
     sommet_depart.adj.append(sommet_destination)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 14. Tester le code précédent en ajoutant les instructions suivantes, *à la fin du fichier* :
 
@@ -338,7 +336,7 @@ def ajout_arete(self: Graphe, s1: str, s2: str) -> None:
         """
     ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def est_non_oriente(self: Graphe) -> bool:
@@ -352,7 +350,7 @@ def est_non_oriente(self: Graphe) -> bool:
     return True
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 16. Tester le code précédent en ajoutant les instructions suivantes, *à la fin du fichier* :
 
@@ -399,7 +397,7 @@ def est_non_oriente(self: Graphe) -> bool:
         return matrice
     ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def construction_matrice(self: Graphe) -> list[list[int]]:
@@ -427,7 +425,7 @@ def construction_matrice(self: Graphe) -> list[list[int]]:
     return matrice
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 18. Tester le code précédent en ajoutant les instructions suivantes, *à la fin du fichier* :
 
@@ -447,7 +445,7 @@ def construction_matrice(self: Graphe) -> list[list[int]]:
 
     Tester le code.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def representation_matrice(self: Graphe) -> str:
@@ -466,7 +464,7 @@ def representation_matrice(self: Graphe) -> str:
     return rep
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 #### Extensions possibles
 

@@ -1,16 +1,14 @@
 ---
 title: "Réalisation d'un chiffrement symétrique"
 subtitle: ""
-author: ""
-type: ""
 date: 2022-04-15T06:36:15+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 700
 ---
 
 > L'objectif de ce document est d'illustrer un exemple de chiffrement symétrique, basique mais très utilisé dans les débuts de l'informatique car son implémentation est très simple..
@@ -18,15 +16,15 @@ auto_numbering: true
 ## Principe de la méthode
 
 1. Rechercher le codage binaire du mot `mon papa`. C'est le message à chiffrer.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 `01101101 01101111 01101110 00100000 01110000 01100001 01110000 01100001`
 
-{{% /solution %}}
+{{< /solution >}}
 
 **Remarque :** utiliser le site [https://www.rapidtables.com/convert/number/ascii-to-binary.html](https://www.rapidtables.com/convert/number/ascii-to-binary.html) pour obtenir les codes des caractères.
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Rappel
 
@@ -35,18 +33,18 @@ Pour déterminer le codage binaire d'un caractère il faut :
 - Rechercher son code sous forme décimale ;
 - Déterminer l'écriture binaire du code décimal.
 
-{{% /note %}}
+{{< /note >}}
 
 2. On choisit le mot `bar` comme clé de chiffrement. Rechercher le codage binaire de ce mot.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 `01100010 01100001 01110010`
 
-{{% /solution %}}
+{{< /solution >}}
 
 3. Le chiffrement est effectué à l'aide d'une opération logique : on effectue un **XOR bit à bit** entre les bits du message à chiffrer et ceux de la clé.
 Rappeler la table de vérité du XOR (OU exclusif).
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 <center>
 
@@ -59,17 +57,17 @@ Rappeler la table de vérité du XOR (OU exclusif).
 
 </center>
 
-{{% /solution %}}
+{{< /solution >}}
 
 4. La clé est plus courte que le message. La dupliquer autant de fois que nécessaire (si la taille du message n'est pas un multiple entier de celle de la clé, ne prendre que quelques bits de cette dernière, en commençant par la gauche).
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 `01100010 01100001 01110010 01100010 01100001 01110010 01100010 01100001`
 
-{{% /solution %}}
+{{< /solution >}}
 
 5. Réaliser l'opération `message XOR clé`.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 | | |
 | :----: | :----: |
@@ -79,10 +77,10 @@ Rappeler la table de vérité du XOR (OU exclusif).
 | | |
 |  | 00001111 00001110 00011100 01000010 00010001 00010011 00010010 00000000 |
 
-{{% /solution %}}
+{{< /solution >}}
 
 6. Afin de déchiffrer le message, on applique la même opération au message chiffré. Vérifier que l'on obtient bien le codage du message initial.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 | | |
 | :----: | :----: |
@@ -93,7 +91,7 @@ Rappeler la table de vérité du XOR (OU exclusif).
 |  | 01101101 01101111 01101110 00100000 01110000 01100001 01110000 01100001 |
 
 On obtient bien le même codage.
-{{% /solution %}}
+{{< /solution >}}
 
 ## Implémentation en Python
 
@@ -110,7 +108,7 @@ def codage(a: int) -> str:
     """
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def codage(a: int) -> str:
@@ -138,7 +136,7 @@ def codage(a: int) -> str:
     return chaine_bin
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 8. Définir la fonction `codage_chaine` dont la spécification est
 
@@ -158,7 +156,7 @@ def codage_chaine(texte: str) -> str:
 
 La fonction `codage_chaine` utilise les fonctions `codage` et `ord`.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def codage_chaine(texte: str) -> str:
@@ -182,12 +180,12 @@ def codage_chaine(texte: str) -> str:
     return rep
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 9. Vérifier que la fonction `codage_chaine` retourne bien le même codage que celui établi à la question 1. dans la partie principale du programme.
 
 10. Obtenir le code de la clé utilisée à la question 2.
-{{% solution "Réponses aux deux questions précédentes" %}}
+{{< solution "Réponses aux deux questions précédentes" >}}
 
 ```python
 if __name__ == "__main__":
@@ -202,7 +200,7 @@ if __name__ == "__main__":
     print(f"Code de la clé :\n{cle_code}")
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 11. Définir la fonction `ajustement_cle` dont la spécification est
 
@@ -215,7 +213,7 @@ def ajustement_cle(code_cle: str, longueur_chaine: int) -> str:
     """
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def ajustement_cle(code_cle: str, longueur_chaine: int) -> str:
@@ -234,7 +232,7 @@ def ajustement_cle(code_cle: str, longueur_chaine: int) -> str:
     return rep
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 12. Définir la fonction `chiffrement` dont la spécification est
 
@@ -251,7 +249,7 @@ La fonction `chiffrement` utilise la fonction `ajustement_cle`.
 
 **Remarque :** l'opérateur, en Python, permettant de réaliser le `xor` est `^` *à la condition que les opérandes soient des entiers*.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def chiffrement(chaine: str, cle: str) -> str:
@@ -269,7 +267,7 @@ def chiffrement(chaine: str, cle: str) -> str:
     return code_texte_chiffre
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 13. Définir la fonction `decodage` dont la spécification est
 
@@ -283,7 +281,7 @@ def decodage(car_code: str) -> str:
     """
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def decodage(car_code: str) -> str:
@@ -302,7 +300,7 @@ def decodage(car_code: str) -> str:
     return chr(valeur_code)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 14. Définir la fonction `decodage_chaine` dont la spécification est
 

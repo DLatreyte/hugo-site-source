@@ -1,0 +1,11 @@
+{{- /* Solution repliable, affichée seulement si solution_est_visible: true dans la page */ -}}
+{{- if .Page.Params.solution_est_visible -}}
+{{- partial "shortcodes/callout.html" (dict
+  "page"     .Page
+  "style"    "grey"
+  "icon"     "check"
+  "title"    (.Get 0 | default "Solution")
+  "expanded" false
+  "content"  (.InnerDeindent | .Page.RenderString (dict "display" "block"))
+) -}}
+{{- end -}}

@@ -1,16 +1,14 @@
 ---
 title: "Étoiles et diffraction"
 subtitle: "Chapitre 3,2,2"
-author: ""
-type: ""
 date: 2020-09-14T10:56:06+04:00
 draft: false
 toc: true
 tags: ["Diffraction"]
 categories: ["Physique", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 500
 ---
 [^1]: C'est celui que l'on utilisera en classe. Il existe des versions pour tous les systèmes d'exploitation.
 
@@ -45,7 +43,7 @@ Utiliser le tableur grapheur [Graphical Analysis](https://www.vernier.com/produc
 ## Corrigé
 
 
-{{% solution "Réponses aux questions" %}}
+{{< solution "Réponses aux questions" >}}
 **1.** L'angle $\theta$ est fixé par le phénomène de diffraction. Plus l'écran est loin de l'objet diffractant plus grande est la tache de diffraction. Il est donc préférable de choisir $D=\pu{1,80 m}$.
 
 **2.** Pas faisable à la maison.
@@ -58,7 +56,7 @@ U(L_1) = \dfrac{2\times \text{Valeur Plus Petite Graduation}}{\sqrt{12}}
 $$ comme indiqué dans le [chapitre 0,2]({{% ref "../chap-0/0-2-determination-pratique-incertitudes.md#simple_mesure" %}}).
 - En fait, deux mesures sont effectuées, on doit donc utiliser l'expression 
 $$
- U(L_1) = \sqrt{2\\, \left(\dfrac{2\times \text{Valeur Plus Petite Graduation}}{\sqrt{12}}\right)^2}
+ U(L_1) = \sqrt{2\, \left(\dfrac{2\times \text{Valeur Plus Petite Graduation}}{\sqrt{12}}\right)^2}
  $$ comme indiqué dans le [chapitre 0,2]({{% ref "../chap-0/0-2-determination-pratique-incertitudes.md#double_mesure" %}}).
 
 - La règle est manifestement graduée jusqu'au millimètre, donc   
@@ -100,4 +98,4 @@ $D = \pu{1,80 m}$, la dernière graduation est $\pu{0,01 m}$ (aucune précision 
 **10.** Chaque branche produit une *figure de diffraction sur un axe perpendiculaire à l’axe du fil*. Ainsi, pour une araignée à trois bras, on obtiendra une figure de diffraction à 6 branches. Pour une araignée à 4 bras, on obtiendra une figure de diffraction à 4 branches. Pour une araignée à 6 bras, on obtiendra une figure à 6 branches.
 
 **11.** Le nombre de branches d’une étoile observée à travers un télescope dépend du nombre de bras qui supportent le miroir secondaire du télescope (araignée) et du phénomène de diffraction de la lumière. Chaque bras produit une figure de diffraction selon un axe perpendiculaire à l’axe du bras. 
-{{% /solution %}}
+{{< /solution >}}

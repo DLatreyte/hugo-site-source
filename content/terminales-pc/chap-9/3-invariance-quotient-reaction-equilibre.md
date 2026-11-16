@@ -1,16 +1,14 @@
 ---
 title: "Invariance de la valeur du quotient de réaction dans l'état d'équilibre"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-01-09T19:11:38+04:00
 draft: false
 toc: true
 tags: []
 categories: ["Chimie", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 300
 ---
 ## Objectif
 
@@ -18,27 +16,27 @@ Après avoir défini le quotient de réaction, l'objectif est de démontrer que,
 
 ## Quotient de réaction associé à une réaction chimique acide-base modélisant une transformation chimique non totale
 
-{{% note normal %}}
+{{< note normal >}}
 Le quotient de réaction associé à la réaction
 $$
     \ce{ AH (aq) + H2O <=> A- (aq) + H3O+}
 $$
 a pour expression, dans un état quelconque de la transformation,
 $$
-    Q\_r = \dfrac{ \left( \dfrac{[\ce{A-}]}{C^o} \right) \cdot \left( \dfrac{[\ce{H3O+}]}{C^o} \right)}{ \left( \dfrac{[\ce{AH}]}{C^o} \right)}
+    Q_r = \dfrac{ \left( \dfrac{[\ce{A-}]}{C^o} \right) \cdot \left( \dfrac{[\ce{H3O+}]}{C^o} \right)}{ \left( \dfrac{[\ce{AH}]}{C^o} \right)}
 $$
 où $C^o = \pu{1,00 mol.L-1}$.
-{{% /note %}}
+{{< /note >}}
 
 Remarque
 
-: Le quotient de réaction sera défini plus précisément dans le document [Chapitre 10,4]({{< relref "./4-quotient-reaction-constante-equilibre.md" >}}).
+: Le quotient de réaction sera défini plus précisément dans le document [Chapitre 10,4]({{% relref "./4-quotient-reaction-constante-equilibre.md" %}}).
 
 ## Manipulation
 
 - Mettre en place le conductimètre et la cellule de conductimétrie.
 - Étalonner le conductimètre avec la solution de chlorure de potassium (voir notice d’utilisation).
-- Mesurer la conductivité $\sigma$ des solutions d'acides (éthanoïque, méthanoïque ou benzoïque) de concentration molaire apportée $C\_i$ en réalisant les mesures de la solution la plus diluée à la solution la plus concentrée.\
+- Mesurer la conductivité $\sigma$ des solutions d'acides (éthanoïque, méthanoïque ou benzoïque) de concentration molaire apportée $C_i$ en réalisant les mesures de la solution la plus diluée à la solution la plus concentrée.\
 Les mesures seront effectuées sur le calibre $\pu{2000 \mu S.cm-1}$.
 - Compléter le tableau ci-dessous pour chaque acide (les conductivités doivent être exprimées en $\pu{\mu S.cm-1}$) :
 
@@ -59,9 +57,9 @@ $\lambda ^0 (\ce{H3O+}) = \pu{35,0e−3 S.m2.mol-1}$ ; $\lambda ^0 (\ce{HCO2^-})
 
 - On raisonnera tout d’abord en généralisant pour un acide carboxylique de formule $\ce{HA}$.
 
-{{% note warning %}}
+{{< note warning >}}
 {{< remote "Fichier de travail contenant les résultats des expériences" "https://docs.google.com/spreadsheets/d/1JSKMnXadM1R12fG_mVE9PGaQHLQ3F_j8bIiSqFn63_c/edit?usp=sharing" >}}
-{{% /note %}}
+{{< /note >}}
 
 1. Écrire l'équation de la réaction entre l’acide et l’eau (il s’agit bien de la réaction qui nous intéresse ici puisque la solution d’acide diluée a été obtenue en mettant de l’acide pur dans de l’eau).
 

@@ -1,0 +1,9 @@
+{{- /* Compatible avec l'ancien usage {{< details "Titre" >}} et celui de Hugo/Relearn {{< details summary="Titre" >}} */ -}}
+{{- $summary := cond .IsNamedParams (.Get "summary" | default (.Get "title")) (.Get 0) | default "Détails" -}}
+{{- partial "shortcodes/callout.html" (dict
+  "page"     .Page
+  "style"    "grey"
+  "title"    $summary
+  "expanded" (and .IsNamedParams (eq (.Get "open") "true"))
+  "content"  (.InnerDeindent | .Page.RenderString (dict "display" "block"))
+) -}}

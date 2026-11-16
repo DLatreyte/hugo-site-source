@@ -1,17 +1,14 @@
 ---
 title: "Les graphes"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-04-20T04:18:36+04:00
 draft: false
 toc: true
 tags: ["Graphe", "Structure de données"]
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 140
 ---
 
 ## Au programme de la partie « Structures de données »

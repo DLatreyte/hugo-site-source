@@ -1,16 +1,14 @@
 ---
 title: "Modéliser les notes des élèves"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-10-13T05:06:51+04:00
 draft: true
 toc: true
 tags: ["Dictionnaire", "Liste"]
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 300
 ---
 
 ## Partie 1 : Modélisation simpliste
@@ -27,11 +25,11 @@ notes_de_lea = [12, 14, 3, 16, 17, 2, 13, 19]
     - un tuple
     - un dictionnaire
     - autre chose
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 Type : liste.
 
-{{% /solution %}}
+{{< /solution >}}
 
 2. Que vaut l'expression `notes_de_lea[2]`&nbsp;?
     - 3
@@ -39,22 +37,22 @@ Type : liste.
     - 6
     - 5
     - autre chose
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 `notes_de_lea[2]` vaut 3.
 
-{{% /solution %}}
+{{< /solution >}}
 
 3. Quelle instruction permet d'ajouter une note de 15 à cette structure de données&nbsp;?
     - `notes_de_lea.append(15)`
     - `notes_de_lea[8] = 15`
     - `notes_de_lea.append([15])`
     - `notes_de_lea = notes_de_lea + 15`
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 Ajout à la fin d'une liste : `notes_de_lea.append(15)`.
 
-{{% /solution %}}
+{{< /solution >}}
 
 4. On propose le code suivant :
 {{< highlight py3 "linenos=table" >}}
@@ -81,13 +79,13 @@ assert fonction(notes_de_lea) == ???
 - Recopier et compléter la ligne 17 de ce code.
 - Recopier et compléter la ligne 5 de ce code. On demande ici d'expliquer en quelques mots ce que fait cette fonction.
 
-{{% solution "Réponses" %}}
+{{< solution "Réponses" >}}
 
 - Type de la valeur de retour : `tuple`
 - `assert fonction(notes_de_lea) == (6, 2)`
 - Cette fonction renvoie le nombre de notes supérieures ou égales à 10 et le nombre de notes inférieures à 10.
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Partie 2 : Modélisation avec une structure de données imbriquées
 
@@ -104,11 +102,11 @@ notes_de_la_classe = [("Enzo", 3), ("Emma", 16), ("Lucas", 14), ("Manon", 13)]
     - un tuple
     - un dictionnaire
     - autre chose
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 Type : liste.
 
-{{% /solution %}}
+{{< /solution >}}
 
 2. Que vaut l'expression `notes_de_la_classe[2]`&nbsp;?
     - `14`
@@ -117,18 +115,18 @@ Type : liste.
     - `'Emma'`
     - `16`
     - autre chose
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 `notes_de_la_classe[2]` vaut `('Lucas', 14)`.
 
-{{% /solution %}}
+{{< /solution >}}
 
 3. Quelle instruction permet d'ajouter à cette structure de données une note de 15 obtenue par Farid&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 `notes_de_la_classe.append(('Farid', 15))`
 
-{{% /solution %}}
+{{< /solution >}}
 
 4. On veut écrire une fonction `nom_du_genie` qui prend une telle structure de données en paramètre et qui renvoie le nom de l'élève qui a eu la meilleure note.
     - Proposer un test pour cette fonction.
@@ -145,7 +143,7 @@ def nom_du_genie(les_notes):
     for (nom, note) in les_notes:
 ```
 
-{{% solution "Réponses" %}}
+{{< solution "Réponses" >}}
 
 ```python
 def nom_du_genie(les_notes):
@@ -158,7 +156,7 @@ def nom_du_genie(les_notes):
     return genie
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 5. Que vaut l'expression `nom_du_genie([])`&nbsp;?
     - `None`
@@ -166,11 +164,11 @@ def nom_du_genie(les_notes):
     - `0`
     - `()`
     - rien : cette expression génère une erreur
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 L'expression retourne `None`
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Partie 3 : Une modélisation plus complète
 
@@ -191,11 +189,11 @@ notes = {
     - un tuple
     - un dictionnaire
     - autre chose
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 Type : dictionnaire.
 
-{{% /solution %}}
+{{< /solution >}}
 
 2. Que vaut l'expression `notes[2]`&nbsp;?
     - `14`
@@ -203,18 +201,18 @@ Type : dictionnaire.
     - `('NSI', 14)`
     - `3`
     - cette expression génère une erreur
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 `notes[2]` génère une erreur.
 
-{{% /solution %}}
+{{< /solution >}}
 
 3. Quelle instruction permet d'ajouter la note de 15 obtenue par Farid en NSI&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 `notes['Farid'] = ('NSI', 15)`
 
-{{% /solution %}}
+{{< /solution >}}
 
 4. Quel est l'affichage généré par l'exécution du code suivant&nbsp;?
 
@@ -224,16 +222,16 @@ for nom, (matiere, note) in notes.items():
         print(nom)
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 Le code affiche les noms des élèves qui ont une note inférieure à 15.
 
-{{% /solution %}}
+{{< /solution >}}
 
 5. On veut écrire une fonction qui prend une telle structure de données en paramètre et qui renvoie le nom de l'élève qui a eu la moins bonne note, toutes matières confondues.
     - Proposer une test pour cette fonction.
     - Écrire le code de cette fonction.
-{{% solution "Réponses" %}}
+{{< solution "Réponses" >}}
 
 ```python
 def moins_bon(notes: Dict[str, Tuple[str, int]]) -> List[str]:
@@ -263,7 +261,7 @@ if __name__ == "__main__":
     assert moins_bon(notes) == ["Enzo", "Manon"]
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 6. On veut écrire une fonction `tri_par_matiere` qui prend une telle structure de données en paramètre et qui renvoie un dictionnaire dont les clés sont les noms des matières, et les valeurs la liste des notes obtenues par les élèves dans chaque matière.
 
@@ -278,7 +276,7 @@ if __name__ == "__main__":
 
 Écrire le code de cette fonction.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def tri_par_matiere(notes: Dict[str, Tuple[str, int]]) -> Dict[str, List[int]]:
@@ -296,4 +294,4 @@ def tri_par_matiere(notes: Dict[str, Tuple[str, int]]) -> Dict[str, List[int]]:
     return rep
 ```
 
-{{% /solution %}}
+{{< /solution >}}

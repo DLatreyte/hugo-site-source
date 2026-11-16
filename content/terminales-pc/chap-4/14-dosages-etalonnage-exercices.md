@@ -1,16 +1,14 @@
 ---
 title: "Dosages par étalonnage : exercices"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-10-25T09:17:28+04:00
 draft: false
 toc: true
 tags: ["Dosage", "Étalonnage", "Conductimétrie", "Kohlrausch", "Beer-Lambert"]
 categories: ["Chimie", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 1400
 ---
 
 ## Utiliser la loi de Kohlrausch
@@ -48,7 +46,7 @@ On dispose d'une échelle de teinte en diiode dont les concentrations $C_i$ sont
 
 La conductivité d'une solution ionique est donnée par la relation :
 $$
-    \sigma = \sum_i \lambda_i\\; [X_i]
+    \sigma = \sum_i \lambda_i\; [X_i]
 $$
 où $\lambda_i$ est la conductivité ionique molaire de l'espèce chimique $X_i$, dont la concentration dans la solution est $[X_i]$.
 

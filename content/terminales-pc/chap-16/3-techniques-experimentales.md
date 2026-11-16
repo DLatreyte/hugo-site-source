@@ -1,16 +1,14 @@
 ---
 title: "Techniques expérimentales en chimie de synthèse"
 subtitle: ""
-author: ""
-type: ""
 date: 2022-04-12T13:56:56+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 300
 ---
 
 ## Principe du montage à reflux
@@ -91,9 +89,9 @@ Dans le cas de *composés colorés*, le chromatogramme est directement exploitab
 
 Pour les *produits incolores*, il est nécessaire de faire apparaitre les taches : c’est l’étape de **révélation**.
 On peut pour cela utiliser une lampe à ultraviolet.
-{{% note warning %}}
+{{< note warning >}}
 Attention ! Ne jamais regarder directement la lumière d’une lampe UV.
-{{% /note %}}
+{{< /note >}}
 
 Entourer chaque tache au crayon.
 

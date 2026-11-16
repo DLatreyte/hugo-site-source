@@ -1,16 +1,14 @@
 ---
 title: "Recherche d'un élément dans un tableau : algorithmes itératifs et récursifs"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-09-09T21:33:15+04:00
 draft: false
 toc: true
 tags: ["Récursivité", "Recherche linéaire", "Recherche dichotomique", "Complexité", "Terminaison", "Correction"]
 categories: ["Informatique", "Terminales Spé NSI"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 103
 ---
 
 ## Recherche d'un élément dans un tableau
@@ -26,23 +24,23 @@ L'objectif de cette séance est de rapidement revoir ces algorithmes et de mettr
 ## Travail à faire
 
 - Implémenter en Python les cinq algorithmes suivants et répondre aux questions.
-{{% note warning %}}
+{{< note warning >}}
 Penser à donner la **spécification** de chacune des fonctions et écrire une **série des tests** pour chacune d'elles.
-{{% /note %}}
+{{< /note >}}
 <!--
 - Un corrigé se trouve à cette adresse&nbsp;: {{< remote "https://repl.it/join/azqimfmv-dlatreyte" "https://repl.it/join/azqimfmv-dlatreyte" >}}
 -->
 
 ## Recherche séquentielle (ou linéaire)
 
-{{% note tip %}}
+{{< note tip >}}
 La **recherche séquentielle (ou linéaire)**  consiste à
 *comparer la valeur recherchée à toutes les valeurs présentes dans le tableau*.  
-{{% /note %}}
+{{< /note >}}
 
 ### Recherche séquentielle itérative
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Algorithme 1
 
@@ -60,15 +58,15 @@ La **recherche séquentielle (ou linéaire)**  consiste à
 <span style="margin-left: 2em">**FinTantQue**  </span><br />
 <span style="margin-left: 2em">**Renvoyer** i_val  </span><br />
 **Fin**  
-{{% /note %}}
+{{< /note >}}
 
 1. Décrire le fonctionnement de l'algorithme pour les valeurs `tab = [1, 8, 3, 5, 9]` et `val = 3`.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 2. Démontrer que l'algorithme se termine.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Pour démontrer que l'algorithme se termine il faut définir un variant de boucle car c'est au niveau
 de la boucle TantQue qu'un problème peut intervenir.
 
@@ -84,10 +82,10 @@ $f$ est une fonction qui retourne forcément un entier naturel et qui est décro
 elle est donc bornée par la valeur 0, c'est un variant de boucle.
 
 L'algorithme se termine.
-{{% /solution %}}
+{{< /solution >}}
 
 3. Démontrer que l'algorithme est correct.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Pour déterminer qu'un algorithme qui comporte une boucle est correct, il faut trouver
 un invariant de boucle.
 
@@ -96,21 +94,21 @@ On peut par exemple dire que « La valeur recherchée n'est pas présente dans l
 - **Initialisation :** Avant la première itération, $i = 0$, donc l'invariant est vrai trivialement car aucun élément n'a encore été examiné.
 - **Conservation :** À chaque itération, on vérifie si l'élément à l'indice $i$ est la valeur recherchée. Si ce n'est pas le cas, on passe à l'élément suivant $(i + 1)$. Ainsi, on sait que la valeur recherchée n'est pas dans les éléments précédents.
 - **Terminaison :** La boucle se termine soit quand on trouve la valeur (auquel cas l'invariant n'est plus nécessaire), soit quand on a parcouru tout le tableau sans la trouver (auquel cas l'invariant assure que la valeur n'est pas dans le tableau).
-{{% /solution %}}
+{{< /solution >}}
 
 4. Démontrer que l'algorithme est en O(N).
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 L'algorithme contient une boucle dont le nombre de tours est, dans le pire des cas,
 égal au nombre d'éléments dans la liste. La complexité est donc linéaire, $O(n)$.
-{{% /solution %}}
+{{< /solution >}}
 
 5. Comment pourrait-on améliorer l'efficacité de cet algorithme&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Il faudrait quitter la boucle dès l'instant où la valeur a été trouvée, si elle
 est bien présente dans la liste.
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 ##### Algorithme 2
 
@@ -131,17 +129,17 @@ est bien présente dans la liste.
 <span style="margin-left: 2em">**Sinon**  </span><br />
 <span style="margin-left: 4em">**Renvoyer** -1  </span><br />
  **Fin**
-{{% /note %}}
+{{< /note >}}
 
 6. Expliquer pourquoi l'algorithme 2 est plus efficace que l'algorithme 1.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 On quitte la boucle dès l'instant où la valeur a été trouvée, si elle
 est bien présente dans la liste.
-{{% /solution %}}
+{{< /solution >}}
 
 ### Recherche séquentielle récursive
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Algorithme 3
 
@@ -159,7 +157,7 @@ est bien présente dans la liste.
 <span style="margin-left: 4em">**FinSi**  </span><br />
 <span style="margin-left: 2em">**FinSi**  </span><br />
 **Fin**  
-{{% /note %}}
+{{< /note >}}
 
 7. Décrire le fonctionnement de l'algorithme pour les valeurs `tab = [1, 8, 3, 5, 9]`, `i = 0` et `val = 3`.  
 Établir, en particulier, l'arbre des appels.
@@ -168,21 +166,21 @@ est bien présente dans la liste.
 
 Dès que le nombre de données devient important, la recherche séquentielle n'est plus envisageable. Sa complexité en $O(N)$ pénalise les autres traitements qui l'utilisent. Il faut diminuer le temps de traitement par l'emploi d'algorithmes plus performants, comme celui de la **recherche dichotomique**.
 
-{{% note tip %}}
+{{< note tip >}}
 La **recherche dichotomique** est basée sur le principe de «&nbsp;diviser pour régner&nbsp;». On divise l'ensemble de recherche en deux sous-ensembles égaux. On détermine ensuite dans quel sous-ensemble doit se trouver la valeur recherchée, puis on poursuit la recherche dans ce sous-ensemble.
-{{% /note %}}
+{{< /note >}}
 
-{{% note warning %}}
+{{< note warning >}}
 Le préalable à la méthode de recherche dichotomique est de disposer d'un **ensemble trié** de données, car la détermination du sous-ensemble dans lequel se poursuit la recherche se fait par comparaison entre la valeur recherchée et les valeurs de début et de ﬁn du sous-ensemble.
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 La division par deux de l'ensemble de données de recherche à chaque appel indique que la complexité est en $O(\log N)$.
-{{% /note %}}
+{{< /note >}}
 
 ### Recherche dichotomique itérative
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Algorithme 4
 
@@ -206,15 +204,15 @@ La division par deux de l'ensemble de données de recherche à chaque appel indi
 <span style="margin-left: 2em">**FinTantQue**  </span><br />
 <span style="margin-left: 2em">**Renvoyer** résultat  </span><br />
 **Fin**  
-{{% /note %}}
+{{< /note >}}
 
 8. Décrire le fonctionnement de l'algorithme pour les valeurs `tab = [1, 3, 5, 8, 9]` et `val = 3`.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 9. Démontrer que l'algorithme se termine.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - **Variant de boucle :** $f(g, d) = d - g + 1$ où $d$ signifie « droite » et $g$ « gauche ».
 - Au début, $g = 0$ et $d = n-1$ (où $n$ est la taille du tableau).
@@ -228,10 +226,10 @@ Donc, le variant diminue strictement à chaque itération.
 
 Puisque le variant est initialement positif, diminue strictement à chaque itération, et que la boucle se termine quand il atteint 0 ou 1, on peut conclure que l'algorithme se termine toujours en un nombre fini d'étapes.
 
-{{% /solution %}}
+{{< /solution >}}
 
 10. Démontrer que l'algorithme est correct.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 **Invariant de boucle :** À chaque itération de la boucle, l'élément recherché, s'il est présent dans le tableau, se trouve dans la sous-section de l'intervalle [gauche, droite], où :
 
 - gauche est l'indice de début de l'intervalle actuel,
@@ -273,10 +271,10 @@ Ainsi, lorsque l'algorithme se termine :
 - Soit l'intervalle est vide, et donc l'élément n'est pas présent dans le tableau, ce qui est également conforme à l'invariant, car l'invariant stipule seulement que si l'élément est présent, il se trouve dans l'intervalle.
 
 Conclusion : À la fin de l'algorithme, l'invariant reste valide et garantit que le résultat final est correct.
-{{% /solution %}}
+{{< /solution >}}
 
 11. Démontrer que l'algorithme est en $O(\log_2 N)$.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 L'algorithme fonctionne en divisant l'intervalle de recherche par 2 à chaque itération. Ainsi, si le tableau contient $n$ éléments, après une itération, la taille de l'intervalle est réduite à $n/2$, puis $n/4$, et ainsi de suite. En général, après $k$ itérations, la taille de l'intervalle est réduite à $n / 2^k$.
 
 L'algorithme se termine lorsque l'intervalle ne contient plus qu'un seul élément, ce qui se produit lorsque :
@@ -288,11 +286,11 @@ $$
 k = \log_2(n)
 $$
 Cela signifie que l'algorithme effectue au plus $\log_2(n)$ itérations pour un tableau de taille $n$.
-{{% /solution %}}
+{{< /solution >}}
 
 ### Recherche dichotomique récursive
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Algorithme 5
 
@@ -312,15 +310,15 @@ Cela signifie que l'algorithme effectue au plus $\log_2(n)$ itérations pour un 
 <span style="margin-left: 4em">**FinSi** </span><br />
 <span style="margin-left: 2em">**FinSi** </span><br />
 **Fin**  
-{{% /note %}}
+{{< /note >}}
 
 12. Décrire le fonctionnement de l'algorithme pour les valeurs `tab = [1, 3, 5, 8, 9]`, `gauche = 0`, `droite = 4`, et `val = 3`.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Application
 
-{{% note exercise %}}
+{{< note exercise >}}
 Écrire un programme de devinette&nbsp;: l'utilisateur choisit un nombre au hasard (compris entre 1 et 50) et l'ordinateur doit découvrir ce nombre. Faire en sorte que le nombre de tentatives de l'ordinateur lui permette de trouver la bonne valeur à coup sur (choisir de façon pertinente ce nombre).
-{{% /note %}}
+{{< /note >}}

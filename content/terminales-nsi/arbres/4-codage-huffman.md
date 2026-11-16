@@ -1,51 +1,49 @@
 ---
 title: "Le codage de Huffman"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-11-16T16:11:14+04:00
 draft: false
 toc: true
 tags: ["Arbre binaire", "Compression"]
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 400
 ---
 
 > Cette séance a pour objet l'étude d'une méthode de compression de données inventée par David Albert Huffman en 1952. Cette méthode permet de réduire la longueur du codage d’un alphabet et repose sur la création d’un arbre binaire.
 
 ## Différents types de codages
 
-{{% note normal %}}
+{{< note normal >}}
 *On appelle **alphabet** l’ensemble des symboles (caractères) composant la donnée de départ à compresser.*
-{{% /note %}}
+{{< /note >}}
 
 Dans la suite, nous utiliserons un alphabet composé seulement des 8 lettres A, B, C, D, E, F, G et H.
 
 On cherche à coder chaque lettre de cet alphabet par une séquence de chiffres binaires.
 
 1. Combien de bits sont nécessaires pour coder chacune des 8 lettres de l’alphabet&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 Il faut coder 8 caractères, on a donc besoin de 3 bits, puisque $2^3 = 8$.
 
-{{% /solution %}}
+{{< /solution >}}
 
 2. Quelle est la longueur en octets d’un message de 1 000 caractères construit sur cet alphabet&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - $1000 \times 3 = 3000$ bits sont nécessaires.
 - $\dfrac{3000}{8} = 375$ octets sont nécessaires.
 
-{{% /solution %}}
+{{< /solution >}}
 
 3. Proposer un code de taille fixe pour chaque caractère de l’alphabet de 8 lettres.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 A&nbsp;: 000&nbsp;; B&nbsp;: 001&nbsp;; C&nbsp;: 010&nbsp;; D&nbsp;: 011&nbsp;; E&nbsp;: 100&nbsp;; F&nbsp;: 101&nbsp;; G&nbsp;: 110 et H&nbsp;: 111.
 
-{{% /solution %}}
+{{< /solution >}}
 
 On considère maintenant le codage suivant, la longueur du code de chaque caractère étant variable.
 
@@ -57,23 +55,23 @@ On considère maintenant le codage suivant, la longueur du code de chaque caract
 
 </center>
 
-{{% note normal %}}
+{{< note normal >}}
 Ce type de code est dit **préfixe**, ce qui signifie qu’*aucun code n’est le préfixe d’un autre* (le code de A est 10 et aucun autre code ne commence par 10, le code de B est 001 et aucun autre code ne commence par 001). Cette propriété permet de séparer les caractères de manière non ambiguë.
-{{% /note %}}
+{{< /note >}}
 
 4. En utilisant la table précédente, donner le code du message : CACHE.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 CACHE&nbsp;: 00010000111101
 
-{{% /solution %}}
+{{< /solution >}}
 
 5. Quel est le message correspondant au code 001101100111001.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 001101100111001 : BADGE
 
-{{% /solution %}}
+{{< /solution >}}
 
 Dans un texte, chacun des 8 caractères a un nombre d’apparitions différent. Cela est résumé dans le tableau suivant, construit à partir d’un texte de 1 &nbsp;000 caractères.
 
@@ -86,33 +84,33 @@ Dans un texte, chacun des 8 caractères a un nombre d’apparitions différent. 
 </center>
 
 7. En utilisant le code de taille fixe proposé à la question 3., quelle est la longueur en bits du message contenant les 1 000 caractères énumérés dans le tableau précédent&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 Si on utilise 3 bits pour chaque caractère, il faut $1000 \times 3 = 3000$ bits pour coder le message.
 
-{{% /solution %}}
+{{< /solution >}}
 
 8. En utilisant le code de la question 4., quelle est la longueur du même message en bits&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 $N = f(A)\cdot l(A) + f(B)\cdot l(B) + f(C)\cdot l(C) + f(D)\cdot l(D) + f(E)\cdot l(E) + f(F)\cdot l(F) + f(G)\cdot l(G) + f(H)\cdot l(H)$ où $f(x_i)$ est la fréquence du caractère $x_i$ et $l(x_i)$ la longueur (en bits) du codage du caractère $x_i$.
 **A.N.** $N = 240 \times 2 + 140 \times 3 + 160 \times 3 + 51 \times 4 + 280 \times 2 + 49 \times 4 + 45 \times 4 + 35 \times 4 = 2660$
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note normal %}}
+{{< note normal >}}
 Ce type de codage réserve le codage le plus court aux caractères les plus fréquents.
-{{% /note %}}
+{{< /note >}}
 
 ## Codage de Huffman
 
 L’objectif du codage de Huffman est de trouver le codage proposé à la question 4.
 
-{{% note normal %}}
+{{< note normal >}}
 *Le codage de Huffman minimise la taille en nombre de bits du message codé en se basant sur le nombre d’apparition de chaque caractère (un caractère qui apparaît souvent aura un code plutôt court).*
 
 - Pour déterminer le code optimal, on considère 8 arbres, chacun réduit à une racine, contenant le symbole et son nombre d’apparitions.
-{{% /note %}}
+{{< /note >}}
 {{< mermaid >}}
 graph TD
     A("A | 240")
@@ -124,9 +122,9 @@ graph TD
     G("G | 45")
     H("H | 35")
 {{< /mermaid >}}
-{{% note normal %}}
+{{< note normal >}}
 - On fusionne ensuite les deux arbres contenant les plus petits nombres d’apparitions (valeur inscrite sur la racine), et on affecte à ce nouvel arbre la somme des nombres d’apparitions de ses deux sous-arbres. Lors de la fusion des deux arbres, le choix de mettre l’un ou l’autre à gauche n’a pas d’importance. Nous choisissons ici de mettre le plus fréquent à gauche (s’il y a un cas d’égalité, nous faisons un choix arbitraire).
-{{% /note %}}
+{{< /note >}}
 {{< mermaid >}}
 graph TD
     A("A | 240")
@@ -140,17 +138,17 @@ graph TD
     G("G | 45")
     H("H | 35")
 {{< /mermaid >}}
-{{% note normal %}}
+{{< note normal >}}
 - On recommence jusqu’à ce qu’il n’y ait plus qu’un seul arbre.
-{{% /note %}}
+{{< /note >}}
 
 9. Combien d’étapes (combien de fusions d’arbres) sont nécessaires pour que cet algorithme se termine&nbsp;?
 
 10. En suivant l’algorithme précédent, construire l’arbre de Huffman.
 
-{{% note normal %}}
+{{< note normal >}}
 Le code à affecter à chaque lettre est déterminé par sa position dans l’arbre. Précisément, le code d’un symbole de l’alphabet décrit le chemin de la racine à la feuille qui le contient : *un 0 indique qu’on descend par le fils gauche et un 1 indique qu’on descend par le fils droit*.
-{{% /note %}}
+{{< /note >}}
 
 {{< mermaid >}}
 graph TD
@@ -181,7 +179,7 @@ def __lt__(self, n: Noeud):
     return self.valeur < n.valeur
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 class Noeud:
@@ -201,11 +199,11 @@ class Noeud:
         return self.valeur < n.valeur
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 14. Écrire les codes (et la spécification !) des fonctions `est_vide`, `est_feuille`, `parcours_prefixe` qui, respectivement  teste si un nœud est vide, teste si un nœud est une feuille et finalement affiche l'arbre.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def est_vide(n: Noeud) -> bool:
@@ -235,7 +233,7 @@ def parcours(n: Noeud) -> str:
         return chaine
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 15. Écrire le code de la fonction `creation_table_frequences` dont la spécification est
 
 ```python
@@ -257,7 +255,7 @@ assert creation_table_frequences("ABRACADABRA") == {
 }
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def creation_table_frequences(message: str) -> dict[str, int]:
@@ -273,7 +271,7 @@ def creation_table_frequences(message: str) -> dict[str, int]:
     return dic
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 16. Lire le document sur [les files de priorité](http://pascal.ortiz.free.fr/contents/python/structures_de_donnees/les_files_de_priorite.html).  
 Écrire le code de la fonction `construction_arbre_huffman` dont la spécification est
@@ -288,11 +286,11 @@ def construction_arbre_huffman(dic_frequences: dict[str, int]) -> Noeud:
 et l'algorithme (cf. Cormen, *Algorithmes*)
 <img src="/terminales-nsi/chap-9/chap-9-4-1.png" alt="" width="70%" />
 
-{{% note warning %}}
+{{< note warning >}}
 Cet algorithme est un exemple d'**algorithme glouton** dans lequel on prend la décision qui semble la meilleure à un instant donné.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def construction_arbre_huffman(dic_frequences: dict[str, int]) -> Noeud:
@@ -322,7 +320,7 @@ def construction_arbre_huffman(dic_frequences: dict[str, int]) -> Noeud:
     return heappop(file)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 17. Écrire une fonction nommée `codes_huffman_parcours` dont la spécification est :
 
@@ -336,7 +334,7 @@ def codes_huffman_parcours(a: Noeud, dic: dict[str, str], code: str) -> None:
     """
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def codes_huffman_parcours(a: Noeud, dic: dict[str, str], code: str) -> None:
@@ -355,7 +353,7 @@ def codes_huffman_parcours(a: Noeud, dic: dict[str, str], code: str) -> None:
         codes_huffman_parcours(a.droit, dic, code + "1")
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 18. Écrire une fonction nommée `encodage` dont la spécification est :
 
@@ -366,7 +364,7 @@ def encodage(message: str, codes: dict[str, str]) -> str:
     """
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def encodage(message: str, codes: dict[str, str]) -> str:
@@ -379,13 +377,13 @@ def encodage(message: str, codes: dict[str, str]) -> str:
     return message_code
 ```
 
-{{% note warning %}}
+{{< note warning >}}
 
 Il est impératif de savoir écrire le code de cette fonction !
 
-{{% /note %}}
+{{< /note >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 19. Écrire une fonction nommée `decodage` dont la spécification est :
 
@@ -396,7 +394,7 @@ def decodage(message_compresse: str, codes: dict[str, str]) -> str:
     """
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def decodage(message_compresse: str, codes: dict[str, str]) -> str:
@@ -422,13 +420,13 @@ def decodage(message_compresse: str, codes: dict[str, str]) -> str:
     return resultat
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note warning %}}
+{{< note warning >}}
 
 Il est impératif de savoir écrire le code de cette fonction !
 
-{{% /note %}}
+{{< /note >}}
 
 ### Appels de toutes les fonctions dans la partie principale du programme
 

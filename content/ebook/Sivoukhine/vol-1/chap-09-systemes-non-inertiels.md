@@ -2,15 +2,14 @@
 title: "Étude des mouvements par rapport à des systèmes non inertiels"
 subtitle: "Chapitre 09"
 author: "D. Sivoukhine"
-type: ""
 date: 2020-08-25T22:31:56+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: false
+weight: 9900
 ---
 
 ## §63. Forces d’inertie apparaissant dans les référentiels en mouvement de translation accéléré

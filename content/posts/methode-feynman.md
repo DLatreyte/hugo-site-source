@@ -1,16 +1,14 @@
 ---
 title: "La méthode de travail de Feynman"
 subtitle: "...ou comment comprendre en profondeur un sujet"
-author: ""
-type: ""
 date: 2021-09-26T15:11:13+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: false
+weight: 7
 ---
 
 ## Feynman
@@ -20,35 +18,35 @@ auto_numbering: false
 - A fait partie du projet «&nbsp;Manhattan&nbsp;» pendant la seconde guerre mondiale ; de la commission d'enquête sur l'échec du lancement de la navette Challenger en 1986. Dans les deux cas l'originalité de son raisonnement a été remarquée.
 - A donné l'un des cours de physique les plus connus au monde : [The Feynman Lectures on Physics](https://www.feynmanlectures.caltech.edu/#footnote_1)
 
-{{% note warning %}}
+{{< note warning >}}
 
 «&nbsp;Simple&nbsp;» ne signifie pas «&nbsp;facile&nbsp;».
 
-{{% /note %}}
+{{< /note >}}
 
 ## Principes
 
-{{% note normal %}}
+{{< note normal >}}
 
 Le premier principe est que vous ne devez pas vous mentir à vous-même ; et que vous êtes la personne la plus facile à berner. --- Richard Feynman
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 Il faut apprendre le plus tôt possible la différence entre connaître le nom de
 quelque chose et comprendre ce qu'est ce quelque chose. --- Richard Feynman
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 Vous pouvez apprendre le nom d'un oiseau dans toutes les langues du monde,
 mais quand vous aurez terminé, vous ne saurez absolument rien du tout sur
 l'oiseau. Alors, regardez l'oiseau et observez ce qu'il fait, c'est cela qui
 compte. --- Richard Feynman
 
-{{% /note %}}
+{{< /note >}}
 
 ## Les quatre étapes
 
@@ -60,12 +58,12 @@ compte. --- Richard Feynman
 
 4. **Expliquez à un enfant&nbsp;:** *Simplifiez*, *simplifiez*, *simplifiez*. Expliquez le concept de la manière la plus simple et la plus fluide possible, de sorte qu’un enfant pourrait le comprendre. Relisez vos notes et assurez-vous de ne pas avoir de vocabulaire technique ou de phrases alambiquées. Pour vous en assurer, vous pouvez relire vos notes à voix haute. Feynman recommande l’utilisation d’analogies : elles permettent de rattacher le concept à des idées concrètes et déjà connues. **Si vous ne pouvez pas expliquer le concept de manière simple, c’est que vous ne l'avez pas bien compris.**
 
-{{% note normal %}}
+{{< note normal >}}
 
 Rendez les choses aussi simples que possible,
 mais pas plus simples. --- Albert Einstein
 
-{{% /note %}}
+{{< /note >}}
 
 ## La répétition espacée
 

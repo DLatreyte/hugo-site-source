@@ -1,16 +1,14 @@
 ---
 title: "Une transformation chimique n'est pas toujours totale"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-01-09T21:55:40+04:00
 draft: false
 toc: true
 tags: ["Tableau d'avancement", "Transformation totale", "Transformation limitée", "Avancement"]
 categories: ["Premières Spé PC", "Chimie"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 500
 ---
 
 > Objectifs
@@ -21,7 +19,7 @@ auto_numbering: true
 
 ## Documents
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Concentration molaire apportée en soluté
 
@@ -31,9 +29,9 @@ et s'exprime généralement en $\pu{mol.L-1}$.
 $$
     C = \dfrac{n \left( \text{soluté dissous} \right)}{V \left( \text{solution}\right)}
 $$
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Concentration molaire effective en espèces dissoutes
 
@@ -44,9 +42,9 @@ notée $[X]$ et s'exprime généralement en $\pu{mol.L-1}$.
 $$
     [X] = \dfrac{n \left( X \text{ effectivement en solution} \right)}{V \left(\text{solution} \right)}
 $$
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Potentiel hydrogène (ou pH)
 
@@ -63,9 +61,9 @@ solution. Ainsi, dans un milieu aqueux à 25&nbsp;°C :
 - une solution de $0 \leqslant \text{pH} < 7$ est dite **acide**. Plus son pH s'éloigne de 7 (diminue) et plus elle est acide ;
 
 - une solution de $14 \geqslant \text{pH} > 7$ est dite **basique**. Plus son pH s'éloigne de 7 (augmente) et plus elle est basique.
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Relation entre le pH et la concentration en ions oxonium
 
@@ -81,9 +79,9 @@ Remarque
     $$
         \text{pH} = - \log \left( \dfrac{[\ce{H3O+}]}{C^o} \right) \iff [\ce{H3O+}] = C^o \cdot 10^{- \text{pH}}
         $$
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Différents types d'acides
 
@@ -102,7 +100,7 @@ est capable de libérer l'ion oxonium $\ce{H3O+}$.
     $$
         \ce{ CH3CO2H (a) + H2O <=> CH3CO2- (aq) + H3O+}
     $$
-{{% /note %}}
+{{< /note >}}
 
 ## Travail à réaliser
 
@@ -110,26 +108,26 @@ est capable de libérer l'ion oxonium $\ce{H3O+}$.
 
 #### Préparation de solutions
 
-On dispose d'une solution $S\_0$ d'acide chlorhydrique $\left( \ce{H3O+ + Cl- (aq)} \right)$ de *concentration apportée* $\pu{0,10 mol.L-1}$.
+On dispose d'une solution $S_0$ d'acide chlorhydrique $\left( \ce{H3O+ + Cl- (aq)} \right)$ de *concentration apportée* $\pu{0,10 mol.L-1}$.
 
-1. Proposer un mode opératoire pour obtenir, à partir de $S_0$, $\pu{100,0 mL}$ d'une solution $S\_1$ d'acide chlorhydrique de concentration $\pu{1,0e-2 mol.L-1}$.\
+1. Proposer un mode opératoire pour obtenir, à partir de $S_0$, $\pu{100,0 mL}$ d'une solution $S_1$ d'acide chlorhydrique de concentration $\pu{1,0e-2 mol.L-1}$.\
     Réaliser la manipulation.
-{{% solution "Réponse" %}}
-La quantité de matière $n_1$ d'acide chlorhydrique présente dans $S_1$ est issue de la solution $S_0$. Dans $S_0$, il faut donc prélever $n_1 = C_0 V_P$ moles. $n_1$ est aussi égale à $n_1 = C_1 V_1$, donc $C_0 V_P = C_1 V_1 \iff V_P = V_1 \\, \dfrac{C_1}{C_0}$.\
+{{< solution "Réponse" >}}
+La quantité de matière $n_1$ d'acide chlorhydrique présente dans $S_1$ est issue de la solution $S_0$. Dans $S_0$, il faut donc prélever $n_1 = C_0 V_P$ moles. $n_1$ est aussi égale à $n_1 = C_1 V_1$, donc $C_0 V_P = C_1 V_1 \iff V_P = V_1 \, \dfrac{C_1}{C_0}$.\
 <strong>A.N.</strong> $V_P = \pu{100,0 mL} \times \dfrac{\pu{1,0e-2 mol.L-1}}{\pu{0,10 mol.L-1}} = \pu{10,0 mL}$.
 
 Il faut donc prélever $\pu{10,0 mL}$ de la solution $S_0$ à l'aide d'une pipette jaugée de $\pu{10,0 mL}$, introduire ce volume de solution dans une fiole jaugée de $\pu{100,0 mL}$ et compléter à l'aide d'eau distillée, jusqu'au trait de jauge.
-{{% /solution %}}
+{{< /solution >}}
 
-2. Toujours à partir de la solution $S\_0$, préparer une autre solution $S\_2$ d'acide chlorhydrique de concentration $\pu{1,0e-3 mol.L-1}$.\
-    Pourquoi vaut-il mieux utiliser la solution $S\_0$ et non pas la solution $S\_1$ ?
+2. Toujours à partir de la solution $S_0$, préparer une autre solution $S_2$ d'acide chlorhydrique de concentration $\pu{1,0e-3 mol.L-1}$.\
+    Pourquoi vaut-il mieux utiliser la solution $S_0$ et non pas la solution $S_1$ ?
 
-- Maintenant que la technique est maîtrisée, préparer les solution $S\_3$, $S\_4$, d'acide chlorhydrique de concentrations $\pu{1,0e-4 mol.L-1}$, $\pu{1,0e-5 mol.L-1}$.\
+- Maintenant que la technique est maîtrisée, préparer les solution $S_3$, $S_4$, d'acide chlorhydrique de concentrations $\pu{1,0e-4 mol.L-1}$, $\pu{1,0e-5 mol.L-1}$.\
     Bien réfléchir à chaque fois à la manière d'effectuer ces dilutions.
 
 #### Mesure du pH
 
-{{% note normal %}}
+{{< note normal >}}
 **Comment utiliser un pH-mètre ?**
 
 Pour toute mesure du pH d'une solution au moyen d'un pH-mètre :
@@ -149,12 +147,12 @@ Le pH-mètre doit être étalonné avant toute mesure ; on utilise deux
 solutions étalons (aussi appelées *solutions tampons*), c'est à dire
 deux solutions dont le pH est déterminé et constant à température
 donnée.
-{{% /note %}}
+{{< /note >}}
 
-3. Mesurer le pH des solutions $S\_4$, $S\_3$, $S\_2$, $S\_1$, $S\_0$.\
+3. Mesurer le pH des solutions $S_4$, $S_3$, $S_2$, $S_1$, $S_0$.\
     Pourquoi est-il conseillé de procéder dans ce sens ?
 
-{{% solution "Résultats des mesures" %}}
+{{< solution "Résultats des mesures" >}}
 
 <center>
 
@@ -164,7 +162,7 @@ donnée.
 
 </center>
 
-{{% /solution %}}
+{{< /solution >}}
 
 #### Exploitation des résultats des mesures
 
@@ -177,18 +175,18 @@ Remplir le tableau :
 | $C (\pu{mol.L-1})$ |  |  |  |  |  |
 | pH |  |  |  |  |  |
 | $[\ce{H3O+}] (\pu{mol.L-1})$ |  |  |  |  |  |
-| $x\_f$ |  |  |  |  |  |
-| $x\_{max}$ |  |  |  |  |  |
+| $x_f$ |  |  |  |  |  |
+| $x_{max}$ |  |  |  |  |  |
 
 </center>
 
 4. À partir de la valeur du pH calculer la valeur de la concentration
     molaire effective en ions oxonium $\ce{H3O+}$.
 
-5. En déduire la valeur de l'avancement final $x\_f$ pour chacune des
+5. En déduire la valeur de l'avancement final $x_f$ pour chacune des
     transformations.
 
-6. Pour chaque transformation calculer la valeur de l'avancement maximal $x\_{max}$.
+6. Pour chaque transformation calculer la valeur de l'avancement maximal $x_{max}$.
 
 7. Ces transformations peuvent-elles être considérées totales ?
 
@@ -196,14 +194,14 @@ Remplir le tableau :
 
 #### Préparation de solutions
 
-On dispose d'une solution $S'\_0$ d'acide éthanoïque $\ce{CH3COOH (aq)}$ de *concentration apportée* $\pu{0,10 mol.L-1}$.\
-Comme précédemment, préparer des solutions $S'\_1$, $S'\_2$, $S'\_3$, $S'\_4$ d'acide éthanoïque de concentration molaire $\pu{1,0e-2 mol.L-1}$ ; $\pu{1,0e-3 mol.L-1}$ ; $\pu{1,0e-4 mol.L-1}$ ; $\pu{1,0e-5 mol.L-1}$.
+On dispose d'une solution $S'_0$ d'acide éthanoïque $\ce{CH3COOH (aq)}$ de *concentration apportée* $\pu{0,10 mol.L-1}$.\
+Comme précédemment, préparer des solutions $S'_1$, $S'_2$, $S'_3$, $S'_4$ d'acide éthanoïque de concentration molaire $\pu{1,0e-2 mol.L-1}$ ; $\pu{1,0e-3 mol.L-1}$ ; $\pu{1,0e-4 mol.L-1}$ ; $\pu{1,0e-5 mol.L-1}$.
 
 #### Mesure
 
-- Mesurer le pH des solutions $S'\_5$, $S'\_4$, $S'\_3$, $S'\_2$, $S'\_1$.
+- Mesurer le pH des solutions $S'_5$, $S'_4$, $S'_3$, $S'_2$, $S'_1$.
 
-{{% solution "Résultats des mesures" %}}
+{{< solution "Résultats des mesures" >}}
 
 <center>
 
@@ -213,7 +211,7 @@ Comme précédemment, préparer des solutions $S'\_1$, $S'\_2$, $S'\_3$, $S'\_4$
 
 </center>
 
-{{% /solution %}}
+{{< /solution >}}
 
 #### Exploitation des résultats des mesures
 
@@ -226,8 +224,8 @@ Remplir le tableau :
 | $C (\pu{mol.L-1})$ |  |  |  |  |  |
 | pH |  |  |  |  |  |
 | $[\ce{H3O+}] (\pu{mol.L-1})$ |  |  |  |  |  |
-| $x\_f$ |  |  |  |  |  |
-| $x\_{max}$ |  |  |  |  |  |
+| $x_f$ |  |  |  |  |  |
+| $x_{max}$ |  |  |  |  |  |
 
 </center>
 
@@ -237,7 +235,7 @@ Remplir le tableau :
 9. En déduire la valeur de l'avancement final $x_f$ pour chacune des
     transformations.
 
-10. Pour chaque transformation calculer la valeur de l'avancement maximal $x\_{max}$.
+10. Pour chaque transformation calculer la valeur de l'avancement maximal $x_{max}$.
 
 11. Ces transformations sont-elles totales ?
 

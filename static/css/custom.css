@@ -1,0 +1,33 @@
+/* Liens externes (shortcode remote) */
+a.remote::after { content: " ↗"; font-size: .8em; }
+a.internal { color: #15803d; }
+span.nolink { color: #dc2626; }
+/* Colonnes */
+.colonnes { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1.5rem; margin-top: 1rem; }
+/* Formules */
+.katex { font-size: 1.08em; }
+.katex-display { overflow-x: auto; overflow-y: hidden; padding: .2em 0; }
+.box-content > :first-child { margin-top: 0 !important; }
+/* Tableaux : texte aligné à gauche et en haut (sauf alignement demandé dans le Markdown) */
+#R-body-inner table th, #R-body-inner table td { text-align: left; vertical-align: top; }
+
+/* Encadrés au style gentle-clues (Typst) :
+   liseré de 2 pt à gauche, bordure fine, en-tête pâle avec icône et titre en gras */
+.clue {
+  margin: 1.2rem 0;
+  border: 0.5px solid color-mix(in srgb, var(--accent) 30%, transparent);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 3px 3px 0;
+  overflow: hidden;
+}
+.clue-header {
+  display: flex; align-items: center; gap: .7em;
+  padding: .45em .9em;
+  background: color-mix(in srgb, var(--accent) 15%, transparent);
+  font-weight: 700;
+}
+.clue-icon { width: 1.15em; height: 1.15em; flex: none; margin: 0 !important; box-shadow: none !important; border: 0 !important; }
+.clue-title > p { margin: 0; display: inline; }
+.clue-body { padding: .8em 1.1em; }
+.clue-body > :first-child { margin-top: 0 !important; }
+.clue-body > :last-child { margin-bottom: 0 !important; }

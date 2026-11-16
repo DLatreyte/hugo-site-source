@@ -2,17 +2,15 @@
 title: "Les effets de marées"
 subtitle: "Terminale C et E – Collection Eurin - Gié, 
   Hachette"
-author: ""
-type: ""
 date: 2020-08-25T10:33:55+04:00
 draft: false
 toc: true
 tags: ["Mécanique", "Champ gravitationnel", "Marées"]
 categories: ["Physique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
 mathjax: true
+weight: 9900
 ---
 
 Les effets de marée sont fréquemment cités. On les invoque, par exemple, pour expliquer la nature particulaire des anneaux de Saturne ou pour récuser telle hypothèse sur la formation des planètes.
@@ -28,18 +26,18 @@ De façon tout à fait extraordinaire, cette accélération est indépendante de
 $$ \vec{a} = \overrightarrow{G} $$
 
 Des objets de petites dimensions répartis dans le vaisseau spatial auront également la même accélération $\vec{a}$ *quelle que soit leur nature* . Ces objets apparaîtront donc à un observateur lié au vaisseau spatial comme n'ayant pas d'accélération&nbsp;: ils seront, **relativement au vaisseau**, immobiles ou en mouvement rectiligne uniforme (avec chocs possibles sur les parois du vaisseau dans ce dernier cas). L'astronaute interprète ce comportement en termes d'impesanteur. Cette impesanteur cesse dès que l'on applique au vaisseau une force supplémentaire $\vec{F}$ non gravitationnelle qui produit un supplément d'accélération du seul vaisseau égal à $\vec{F} / m$ ($m$&nbsp;: masse du vaisseau). Supposons maintenant le champ $\overrightarrow{G}$ légèrement non uniforme, sa norme augmentant lorsqu'on passe de la région 1 
-(point $M\_{1}$) à la région 2 (point $M\_{2}$).
-Si l'on suppose encore le vaisseau animé d'un mouvement de translation, son accélération $\vec{a}\_{v}$, est, avec une excellente approximation, égale à la valeur du champ gravitationnel au centre d'inertie $G$ 
+(point $M_{1}$) à la région 2 (point $M_{2}$).
+Si l'on suppose encore le vaisseau animé d'un mouvement de translation, son accélération $\vec{a}_{v}$, est, avec une excellente approximation, égale à la valeur du champ gravitationnel au centre d'inertie $G$ 
 du vaisseau, soit&nbsp;:
 
 $$ \vec{a}_{v} \approx \overrightarrow{G} (G) $$
 
-Un petit objet, situé en $M_{1}$, a l'accélération $\vec{a} (M\_{1}) = \overrightarrow{G} (M\_{1})$ et, de même, un objet situé en $M\_{2}$ 
-a l'accélération $\vec{a} (M\_{2}) = \overrightarrow{G} (M\_{2})$ (les accélérations étant mesurées dans un référentiel galiléen, cf. [Figure 1](#figure_1)). Relativement au vaisseau spatial, l'objet en $M\_{1}$,
+Un petit objet, situé en $M_{1}$, a l'accélération $\vec{a} (M_{1}) = \overrightarrow{G} (M_{1})$ et, de même, un objet situé en $M_{2}$ 
+a l'accélération $\vec{a} (M_{2}) = \overrightarrow{G} (M_{2})$ (les accélérations étant mesurées dans un référentiel galiléen, cf. [Figure 1](#figure_1)). Relativement au vaisseau spatial, l'objet en $M_{1}$,
  a l'accélération&nbsp;:
 
 $$ 
-   \vec{a}\_{1} = \vec{a} (M\_{1}) - \vec{a}\_{v} \approx \overrightarrow{G} (M\_{1}) - \overrightarrow{G} (G) 
+   \vec{a}_{1} = \vec{a} (M_{1}) - \vec{a}_{v} \approx \overrightarrow{G} (M_{1}) - \overrightarrow{G} (G) 
 $$
 
 ll s'agit d'une accélération *différentielle*  dirigée vers l'arrière du 
@@ -58,8 +56,8 @@ $$ \lVert \overrightarrow{G} (M_{1}) \rVert < \lVert \overrightarrow{G} (G) \rVe
 De même, l'objet en $M$, a l'accélération différentielle&nbsp;:
 
 $$ 
-   \vec{a}\_{2} = \vec{a} (M\_{2}) - \vec{a}\_{v} \approx \overrightarrow{G}
-   (M\_{2}) - \overrightarrow{G} (G) 
+   \vec{a}_{2} = \vec{a} (M_{2}) - \vec{a}_{v} \approx \overrightarrow{G}
+   (M_{2}) - \overrightarrow{G} (G) 
 $$
 
 dirigée vers l'avant du vaisseau.
@@ -74,13 +72,13 @@ $$
 
 $M$ désignant la position de l'élément liquide considéré et $G$ le centre d'inertie de la Terre&nbsp;; ces accélérations différentielles ne font intervenir en aucune manière les éléments liquides eux-mêmes. Seule compte leur position par rapport au centre d'inertie $G$ de la Terre.
 
-Simplifions l'étude en considérant l'action d'un astre unique $A$ (Soleil ou Lune). Le champ gravitationnel créé par l'astre, soit $GM\_{A} / r^2$, 
-décroît du point $M\_{1}$ au point $M\_{2}$, d'où les directions en $M\_{1}$ 
-et $M\_{2}$, des accélérations différentielles&nbsp;:
+Simplifions l'étude en considérant l'action d'un astre unique $A$ (Soleil ou Lune). Le champ gravitationnel créé par l'astre, soit $GM_{A} / r^2$, 
+décroît du point $M_{1}$ au point $M_{2}$, d'où les directions en $M_{1}$ 
+et $M_{2}$, des accélérations différentielles&nbsp;:
 
 $$
-   \overrightarrow{G} (M\_{1}) - \overrightarrow{G} (G)  \text{  et  }
-   \overrightarrow{G} (M\_{2}) - \overrightarrow{G} (G)
+   \overrightarrow{G} (M_{1}) - \overrightarrow{G} (G)  \text{  et  }
+   \overrightarrow{G} (M_{2}) - \overrightarrow{G} (G)
 $$
 
 C'est un effet analogue à l'effet de triage indiqué plus haut. Le champ gravitationnel de l'astre $A$ n'intervient pas directement, mais se manifeste par des effets de différence dus à sa non-uniformité. **Dans un champ uniforme, il n'y aurait pas de phénomène de marées&nbsp;!**

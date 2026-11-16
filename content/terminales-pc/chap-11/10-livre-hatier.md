@@ -1,17 +1,15 @@
 ---
 title: "Correction des exercices du livre Hatier"
 subtitle: ""
-author: ""
-type: ""
 date: 2024-02-24T16:22:53+04:00
 draft: false
 toc: true
 tags: ["Constante d'équilibre", "pKa", "pH", "Domaine de prédominance"]
 categories: ["Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
 mathjax: true
+weight: 1000
 ---
 $\def\pH{\text{pH}}$
 $\def\pKa{\text{pK}_a}$
@@ -23,7 +21,7 @@ $\def\pKa{\text{pK}_a}$
 2. La constante d'acidité $K_a$ du couple est la constante d'équilibre de la réaction de l'acide du couple avec l'eau. C'est donc la constante d'équilibre de la réaction $$ \ce{ (CH3)3NH+ (aq) + H2O <=> (CH3)3N (aq) + H3O+ } $$
 Cette constante d'équilibre a pour expression
 
-$$ K_a = \dfrac{[\ce{(CH3)3N}] [\ce{H3O+}]}{[\ce{(CH3)3NH+}]\\, C^o} $$
+$$ K_a = \dfrac{[\ce{(CH3)3N}] [\ce{H3O+}]}{[\ce{(CH3)3NH+}]\, C^o} $$
 
 3. Si $K_a = \pu{1,4e-10}$, alors $\pKa = -\log K_a = \pu{9,9}$. Puisque $\pH > \pKa$, le diagramme de prédominance montre alors que l'entité qui prédomine est la forme basique du couple, soit $\ce{(CH_3)_3N}$.  
 À ce pH la solution est malodorante.

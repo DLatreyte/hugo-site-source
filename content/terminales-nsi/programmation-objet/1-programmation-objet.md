@@ -1,25 +1,23 @@
 ---
 title: "Programmation Objet"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-09-23T21:07:12+04:00
 draft: false
 toc: true
 tags: ["Objet", "Classe", "Attribut", "Méthode", "Instance", "Encapsulation"]
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 100
 ---
 
 ## Programmation orientée objet
 
-{{% note tip %}}
+{{< note tip >}}
 
 *Un objet est une instance d'une classe.*
 
-{{% /note %}}
+{{< /note >}}
 
 L'un des objectifs principaux de la notion d'objet est d'organiser des programmes complexes grâce aux notions :
 
@@ -30,16 +28,16 @@ L'un des objectifs principaux de la notion d'objet est d'organiser des programme
 
 **Remarque :** Seules les deux premières notions apparaissent dans le programme de NSI.
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Encapsulation
 
 Le principe de l'encapsulation est de *regrouper dans le même objet, les données (attributs) et les traitements (méthodes)* qui lui sont spécifiques. Ainsi un objet est défini par ses attributs et ses méthodes.
 
 **Les objets partagent tous les mêmes méthodes mais les attributs leurs sont propres.**
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Abstraction
 
@@ -51,9 +49,9 @@ Attributs
 
 Méthodes
 : Ce sont les **comportements** de l'objet.
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Héritage
 
@@ -61,24 +59,24 @@ Le concept d'**héritage** permet de créer des **sous-classes plus spécialisé
 
 - La **super-classe** (classe mère) déclare des méthodes et des attributs communs.
 - La **sous-classe** hérite des attributs, des méthodes et du type de la super-classe et peut les redéfinir (cf. *polymorphisme*).
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Polymorphisme
 
 Le **polymorphisme** est la faculté pour une **méthode** *portant le même nom mais appartenant à des classes distinctes héritées d'effectuer un travail différent*.
 Cette propriété est acquise par la technique de la **surcharge**.
-{{% /note %}}
+{{< /note >}}
 
 ## Compte bancaire
 
-{{% note normal %}}
+{{< note normal >}}
 
 Toute cette partie doit être réalisée en utilisant le logiciel [Python Tutor](https://pythontutor.com).
 Sélectionner [Start visualizing your code now](https://pythontutor.com/visualize.html#mode=edit) puis [Live Programming mode](https://pythontutor.com/live.html#code=&cumulative=false&heapPrimitives=nevernest&mode=edit&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false).
 
-{{% /note %}}
+{{< /note >}}
 
 Dans ce premier exemple, on considère une classe qui modélise un compte bancaire.
 
@@ -95,20 +93,20 @@ class Compte:
     pass
 ```
 
-{{% note normal %}}
+{{< note normal >}}
 
 - Un nom de classe commence toujours (c'est une convention) par une lettre capitale ;
 - `pass` est l'instruction Python qui indique de ne rien faire.
 
-{{% /note %}}
+{{< /note >}}
 
 Quelles actions a déclenché le code précédent ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - Création d'un objet `Classe Compte` ;
 - Création d'une variable `Compte` dans l'espace de nom global. Cette variable référence l'objet `Classe Compte`
 
-{{% /solution %}}
+{{< /solution >}}
 
 2. À la suite, taper et exécuter le code suivant :
 
@@ -117,12 +115,12 @@ compte_1 = Compte()
 ```
 
 Quelle action a déclenché le code précédent ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - Création d'un **objet (ou instance)** de la classe `Compte` ;
 - Création d'une variable `compte_1` dans l'espace de nom global. Cette variable référence l'objet.
 
-{{% /solution %}}
+{{< /solution >}}
 
 3. Afin d'en découvrir davantage sur `compte_1`, taper et exécuter l'instruction suivante :
 
@@ -131,24 +129,24 @@ print(compte_1)
 ```
 
 Que nous apprend l'affichage à l'écran ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```bash
 <__main__.Compte object at 0x7f7cc89bec88>
 ```
 
 `compte_1` appartient à l'espace de nom global et référence un objet de type `Compte` situé à l'adresse 0x7f7cc89bec88.
-{{% /solution %}}
+{{< /solution >}}
 
 4. *«&nbsp;Définir une classe est équivalent à définir un nouveau type.&nbsp;»*
 Quelle instruction Python pourrait démontrer cette affirmation ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 print(type(compte_1))
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ### Un objet possède des attributs dont les valeurs lui sont propres
 
@@ -160,18 +158,18 @@ compte_1.solde = 1000
 ```
 
 Les attributs (ou variable) `proprietaire` et `solde` appartiennent-ils à l'espace de nom global&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% note tip %}}
+{{< note tip >}}
 
 Les attributs sont des **variables locales à l'objet**.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 6. Taper et exécuter les instructions qui permettent de créer un objet `compte_2` dont le propriétaire se nomme «&nbsp;Natacha&nbsp;» et dont le solde est de 2000.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 compte_2 = Compte()
@@ -179,22 +177,22 @@ compte_2.proprietaire = "Natacha"
 compte_2.solde = 2000
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 7. Les objets `compte_1` et `compte_2` partagent-ils les valeurs des attributs&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 Les attributs sont des variables locales à l'objet.
 
 <img src="/terminales-nsi/chap-4/chap-4-1/objet_2.png" alt="" width="60%" />
 
-{{% note tip %}}
+{{< note tip >}}
 
 Deux instances d'une même classe ne partagent pas leurs attributs.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 ### Un objet possède un comportement
 
@@ -214,24 +212,24 @@ class Compte:
 ```
 
 La fonction `retrait` est appelée **méthode**. Quelle est sa particularité ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 La fonction `retrait` est locale à la classe ; c'est la raison pour laquelle on parle de **méthode**.
 
-{{% /solution %}}
+{{< /solution >}}
 
 9. La méthode `retrait` est-elle locale à chaque objet ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 <img src="/terminales-nsi/chap-4/chap-4-1/objet_3.png" alt="" width="60%" />
 
-{{% note tip %}}
+{{< note tip >}}
 
 Les objets instances d'une même classe **partagent les méthodes**.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 10. Natacha vient de retirer 50. Le code qui permet de prendre en compte ce retrait dans le programme est
 
@@ -242,16 +240,16 @@ compte_2.retrait(50)
 - Observer l'effet de l'instruction.
 - N'y a-t-il rien de surprenant dans l'appel de la méthode `retrait`&nbsp;?
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 La définition de la méthode `retrait` fait apparaître deux paramètres : `self` et `valeur` alors que lors de l'appel de la fonction on ne fournit qu'un seul argument qui semble être `valeur`.
 
-{{% /solution %}}
+{{< /solution >}}
 
 11. À quoi peut bien servir le paramètre `self` dans la définition d'une méthode&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% note info %}}
+{{< note info >}}
 
 Les méthodes étant partagées par les différentes instances (objets) d'une classe, elle ne peuvent à priori pas savoir sur quel objet elle doivent agir.  
 L'information sur cet objet est donc passée automatiquement par Python à la méthode. Pour être plus clair, l'instruction
@@ -266,18 +264,18 @@ est équivalente à
 Compte.retrait(compte_2, 50)
 ```
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 
 Lorsqu'on définit une méthode, le premier paramètre doit toujours être nommé `self` (c'est une convention). Il représente l'objet sur lequel la méthode doit agir.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 12. Créer l'objet `compte_3` et lui retrirer le montant 100. Quel est le problème&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 compte_3 = Compte()
@@ -291,7 +289,7 @@ AttributeError: 'Compte' object has no attribute 'solde'
 ```
 
 C'est tout à fait normal car l'objet `compte_3` ne possède par d'attribut `solde`.
-{{% /solution %}}
+{{< /solution >}}
 
 ### Les attributs d'un objet doivent être initialisés à la création de cet objet
 
@@ -317,20 +315,20 @@ class Compte:
 - Est-ce que l'erreur apparue à la question 12. est toujours présente&nbsp;?
 
 14. Afin de bien comprendre le rôle de la méthode `__init__`, créer le compte `compte_4`. À quoi sert cette méthode ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 La méthode permet d'initialiser l'objet : ses attributs sont automatiquement créés, des valeurs par défaut peuvent même leur être affectées.
 
-{{% /solution %}}
+{{< /solution >}}
 
 ### Toutes les variables ne sont pas des attributs
 
 15. Essayer d'imaginer comment déterminer simplement le nombre de comptes créés.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 L'idéal serait qu'un compteur compte soit incrémenté chaque fois qu'un compte est créé.
 
-{{% /solution %}}
+{{< /solution >}}
 
 16. Modifier le code de la classe `Compte` :
 
@@ -354,17 +352,17 @@ class Compte:
 ```
 
 La variable `nbre_comptes` est-elle locale aux objets ? Est-elle locale à la classe ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 La variable `nbre_comptes` est locale à la classe&nbsp;: **c'est une variable de classe**.
 
-{{% note tip %}}
+{{< note tip >}}
 
 Les variables de classe sont partagées par tous les objets.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 17. Modifier le code de la classe `Compte` :
 
@@ -390,12 +388,12 @@ class Compte:
 
 - Comment manipule-t-on une variable de classe ?
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% note tip %}}
+{{< note tip >}}
 
 Pour manipuler une variable de classe, il faut précéder son nom du nom de la classe.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% /solution %}}
+{{< /solution >}}

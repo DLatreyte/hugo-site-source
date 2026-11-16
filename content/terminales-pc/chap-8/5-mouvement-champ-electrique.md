@@ -1,17 +1,15 @@
 ---
 title: "Mouvement d'une particule chargée dans un champ électrique uniforme"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-12-23T18:19:05+04:00
 draft: false
 toc: true
 tags: ["Deuxième loi de Newton", "Équation différentielle", "Intégration", "Condition initiale", "Équations horaires", "Théorème de l'énergie mécanique", "Champ électrique", "Force de Coulomb"]
 categories: ["Physique", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
 mathjax: true
+weight: 500
 ---
 
 ## Champ électrique
@@ -20,78 +18,78 @@ mathjax: true
 
 <img src="/terminales-pc/chap-8/chap-8-5/Chap-8-5-1.png" alt="" width="30%" />
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Force de Coulomb
 
 Lorsque deux charges électriques immobiles se trouvent aux points $M_1$ et $M_2$
 de l'espace, on modélise l'action de la charge $q_1$ sur la charge $q_2$ par une force, la force de Coulomb, dont les caractéristiques sont&nbsp;:
 
-$$ \vec{F}\_{q_1 / q_2}  =
+$$ \vec{F}_{q_1 / q_2}  =
 \begin{cases}
 \textbf{Point d'application :} & M_2\cr
 \textbf{Direction :} & \text{droite } (M_1 M_2)\cr
 \textbf{Sens :} & \text{dépend des signes des charges}\cr
-\textbf{Valeur :} & F_{q_1 / q_2} = k\\, \dfrac{\lvert q_1 \cdot q_2 \rvert}{d^2}
+\textbf{Valeur :} & F_{q_1 / q_2} = k\, \dfrac{\lvert q_1 \cdot q_2 \rvert}{d^2}
 \end{cases}$$
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Principe des actions réciproques
 
 $$
-\vec{F}\_{q_1 / q_2} = - \vec{F}\_{q_2 / q_1}
+\vec{F}_{q_1 / q_2} = - \vec{F}_{q_2 / q_1}
 $$
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Expression vectorielle
 
 On peut exprimer de façon plus condensée la force de Coulomb en utilisant le vecteur unitaire $\vec{u}$ de la droite $(M_1 M_2)$&nbsp;:
 $$
-\vec{F}\_{q_1 / q_2} = k\\, \dfrac{q_1 \cdot q_2}{d^2}\\, \vec{u}
+\vec{F}_{q_1 / q_2} = k\, \dfrac{q_1 \cdot q_2}{d^2}\, \vec{u}
 $$
 
 - Si $q_1$ et $q_2$ sont de *même signe*, $q_1 \cdot q_2 > 0$, $\vec{F}_{q_1 / q_2}$ et $\vec{u}$ sont colinéaires de même sens&nbsp;: *l'interaction est répulsive* ;
 
 - Si $q_1$ et $q_2$ sont de *signes opposés*, $q_1 \cdot q_2 < 0$, $\vec{F}_{q_1 / q_2}$ et $\vec{u}$ sont colinéaires de sens opposés&nbsp;: *l'interaction est attractive*.
-{{% /note %}}
+{{< /note >}}
 
 ### Qu'appelle-t-on « champ électrique » ?
 
-- Si on remplace, au point $M_2$, la charge électrique $q_2$ par une charge électrique $q_3$, cette dernière est soumise de la part de la particule $q_1$ une action modélisée par la force&nbsp;: $\vec{F}\_{q_1 / q_3} = k\\, \dfrac{q_1 \cdot q_3}{d^2}\\,  \vec{u}$ ;
+- Si on remplace, au point $M_2$, la charge électrique $q_2$ par une charge électrique $q_3$, cette dernière est soumise de la part de la particule $q_1$ une action modélisée par la force&nbsp;: $\vec{F}_{q_1 / q_3} = k\, \dfrac{q_1 \cdot q_3}{d^2}\,  \vec{u}$ ;
 
 - Si on remplace, au point $M_2$, la charge électrique $q_3$ par une charge électrique $q_4$, cette dernière est soumise de la part de la particule $q_1$ une action modélisée par la force&nbsp;:
-    $\vec{F}\_{q_1 / q_4} = k\\, \dfrac{q_1 \cdot q_4}{d^2}\\,  \vec{u}$ ;
+    $\vec{F}_{q_1 / q_4} = k\, \dfrac{q_1 \cdot q_4}{d^2}\,  \vec{u}$ ;
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Champ électrique
 
 Quelle que soit la charge qui subit l'action de la charge $q_1$, on constate que&nbsp;:
 $$
-\dfrac{\vec{F}\_{q_1 / q_2}}{q_2} = \dfrac{\vec{F}\_{q_1 / q_3}}{q_3} =
-\dfrac{\vec{F}\_{q_1 / q_4}}{q_4} = \cdots = k\\, \dfrac{q_1}{d^2}\\,  \vec{u} =
+\dfrac{\vec{F}_{q_1 / q_2}}{q_2} = \dfrac{\vec{F}_{q_1 / q_3}}{q_3} =
+\dfrac{\vec{F}_{q_1 / q_4}}{q_4} = \cdots = k\, \dfrac{q_1}{d^2}\,  \vec{u} =
 \vec{E} (M_2)
 $$
 $\vec{E} (M_2)$, *champ électrique au point $M_2$ créé par $q_1$*, représente la *force électrique que subirait une charge électrique de valeur $q = 1 \text{C}$, placée au point $M_2$, de la part de la charge $q_1$*.
-{{% /note %}}
+{{< /note >}}
 
 La présence de la charge $q_1$ au point $M_1$ « communique » à tout
 point de l'espace la propriété suivante&nbsp;:
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Relation entre la force électrique et le champ électrique en un point
 
 *Toute charge électrique $q$ placée en un point $M$ de l'espace subit de la part de $q_1$ la force&nbsp;:*
 $$
-\vec{F}\_{el} = q \vec{E} (M)
+\vec{F}_{el} = q \vec{E} (M)
 $$
 *où $\vec{E} (M)$ est le champ électrique créé par la charge $q_1$, au point $M$.*
-{{% /note %}}
+{{< /note >}}
 
 #### Remarque
 
@@ -103,15 +101,15 @@ En un point de l'espace les champs électriques créés par différentes charges
 
 - La valeur du champ électrique varie comme l'inverse du carré de la distance à la charge $q_1$.
 
-{{% note warning %}}
+{{< note warning >}}
 *Généralement, le vecteur champ électrique n'est pas uniforme*.
-{{% /note %}}
+{{< /note >}}
 
 ### Comment créer un champ électrique uniforme ?
 
 <img src="/terminales-pc/chap-8/chap-8-5/Chap-8-5-3.png" alt="" width="80%" />
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Relation entre la tension électrique et le champ électrique
 
@@ -123,14 +121,14 @@ E = \dfrac{U_{AB}}{d} = \dfrac{V_A - V_B}{d} \tag{1}\label{eq:1}
 $$
 
 *L'unité du champ électrique est donc le volt par mètre (symbole&nbsp;: $\pu{V/m}$).*
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Rappel
 
 On appelle *tension électrique* la différence de potentiel entre deux points de l'espace.
-{{% /note %}}
+{{< /note >}}
 
 ## Énergie potentielle électrique
 
@@ -139,28 +137,28 @@ car elle se trouve à une certaine altitude par rapport à la Terre,
 une charge possède une *énergie potentielle électrique* car elle se
 trouve à un certain potentiel électrique.
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Rappel : Comment déterminer l'expression de l'énergie potentielle associée à une interaction ?
 
-1. Vérifier que la force $\vec{F}\_{el}$ qui modélise l'interaction est **conservative**.
+1. Vérifier que la force $\vec{F}_{el}$ qui modélise l'interaction est **conservative**.
 2. Déterminer l'expression du travail qu'effectuerait un *opérateur* déplaçant le système (ici une charge électrique) dans le champ modélisant l'interaction, **à vitesse nulle**.
 3. L'énergie fournie par l'opérateur est stockée par le système :
 $$
-\Delta E\_p = W\_{AB}(\vec{F}_{op}) = - W\_{AB}(\vec{F}\_{el})
+\Delta E_p = W_{AB}(\vec{F}_{op}) = - W_{AB}(\vec{F}_{el})
 $$
-puisqu'à chaque instant $\vec{F}\_{op} = -\vec{F}\_{el}$.
-{{% /note %}}
+puisqu'à chaque instant $\vec{F}_{op} = -\vec{F}_{el}$.
+{{< /note >}}
 
 ### La force électrique créée par un champ électrique uniforme est conservative
 
-{{% note exercise %}}
+{{< note exercise >}}
 Quelle caractéristique possède une force conservative ?
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Le travail entre deux points d'une force conservative **ne dépend pas du chemin suivi** par le système sur lequel s'applique la force conservative. Ce travail ne dépend que des caractéristiques des deux points.
-{{% /solution %}}
+{{< /solution >}}
 
 <img src="/terminales-pc/chap-8/chap-8-5/Chap-8-5-4.png" alt="" width="80%" />
 
@@ -169,90 +167,90 @@ Deux trajets sont envisagés $A \longrightarrow B$ et $A \longrightarrow C \long
 
 Les coordonnées des points $A$, $B$ et $C$ sont les suivantes : $(x_A, 0, 0)$, $(x_B, 0, 0)$, $(x_C, y_C, O)$. Les composantes du vecteur $\vec{E}$ sont $(-E, 0, 0)$.
 
-{{% note exercise %}}
+{{< note exercise >}}
 Déterminer l'expression du travail de la force électrique lorsque la charge électrique se déplace directement du point $A$ au point $B$.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
-Puisque le force électrique est une force constante, $$W_{AB}(\vec{F}\_{el}) = \vec{F}\_{el} \cdot \overrightarrow{AB} = q\\, \vec{E} \cdot \overrightarrow{AB} = q\\, (-E) \vec{i} \cdot (x_B - x_A) \vec{i} = -q E (x_B - x_A) $$
-{{% /solution %}}
+{{< solution "Réponse" >}}
+Puisque le force électrique est une force constante, $$W_{AB}(\vec{F}_{el}) = \vec{F}_{el} \cdot \overrightarrow{AB} = q\, \vec{E} \cdot \overrightarrow{AB} = q\, (-E) \vec{i} \cdot (x_B - x_A) \vec{i} = -q E (x_B - x_A) $$
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 Déterminer l'expression du travail de la force électrique lorsque la charge électrique se déplace du point $A$ au point $B$ en passant par le point $C$.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Puisque le force électrique est une force constante,
 $$
-  W_{AB}(\vec{F}\_{el}) = W\_{AC}(\vec{F}\_{el}) + W\_{CB}(\vec{F}\_{el}) = \vec{F}\_{el} \cdot \overrightarrow{AC} + \vec{F}\_{el} \cdot \overrightarrow{CB}
+  W_{AB}(\vec{F}_{el}) = W_{AC}(\vec{F}_{el}) + W_{CB}(\vec{F}_{el}) = \vec{F}_{el} \cdot \overrightarrow{AC} + \vec{F}_{el} \cdot \overrightarrow{CB}
 $$
 
 $$
-  W_{AB}(\vec{F}\_{el}) = \vec{F}\_{el} \cdot (\overrightarrow{AC} + \overrightarrow{CB}) = \vec{F}\_{el} \cdot \overrightarrow{AB}
+  W_{AB}(\vec{F}_{el}) = \vec{F}_{el} \cdot (\overrightarrow{AC} + \overrightarrow{CB}) = \vec{F}_{el} \cdot \overrightarrow{AB}
 $$
 
 On retrouve la même expression du travail, pour la force électrique, quel que soit le chemin suivi.
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note tip %}}
+{{< note tip >}}
 **La force électrique est une force conservative.**
-{{% /note %}}
+{{< /note >}}
 
 ### Travail d'un opérateur déplaçant une charge dans un champ électrique uniforme
 
-{{% note exercise %}}
+{{< note exercise >}}
 Déterminer l'expression du travail qu'exerce un opérateur qui compense à chaque instant la force électrique, de telle sorte que le déplacement se fasse à vitesse nulle, lorsque la charge électrique se déplace du point $A$ au point $B$.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Puisque le force électrique est une force constante,
 $$
-  W_{AB}(\vec{F}\_{op}) = \vec{F}\_{op} \cdot \overrightarrow{AB} = - \vec{F}\_{el} \cdot \overrightarrow{AB}
+  W_{AB}(\vec{F}_{op}) = \vec{F}_{op} \cdot \overrightarrow{AB} = - \vec{F}_{el} \cdot \overrightarrow{AB}
 $$
-puisqu'à chaque instant $\vec{F}\_{op} + \vec{F}\_{el} = \vec{0}$.
+puisqu'à chaque instant $\vec{F}_{op} + \vec{F}_{el} = \vec{0}$.
 
 Donc  
 $$
-  W_{AB}(\vec{F}\_{op}) = -q\\, \vec{E} \cdot \overrightarrow{AB} = -q\\, (-E) \vec{i} \cdot (x_B - x_A) \vec{i} = q E (x_B - x_A)
+  W_{AB}(\vec{F}_{op}) = -q\, \vec{E} \cdot \overrightarrow{AB} = -q\, (-E) \vec{i} \cdot (x_B - x_A) \vec{i} = q E (x_B - x_A)
 $$
 
 La relation $\eqref{eq:1}$ indique que $(x_A - x_B) = E U_{AB} = E (V_A - V_B)$, donc
 $$
 W_{AB}(\vec{F}_{op}) = q (V_B - V_A) \tag{2}\label{eq:2}
 $$
-{{% /solution %}}
+{{< /solution >}}
 
 ### Expression de l'énergie potentielle électrique
 
-{{% note exercise %}}
+{{< note exercise >}}
 Déduire de la relation $\eqref{eq:2}$ l'expression de la variation d'énergie potentielle électrique lorsque la charge se déplace du point $A$ au point $B$ puis l'expression de l'énergie potentielle électrique.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 L'énergie transférée par l'opérateur à la charge électrique fait varier son énergie potentielle électrique :
 $$
-  \Delta E_{Pel\\;A \to B} = W_{AB}(\vec{F}\_{op}) = q (V_B - V_A) \tag{3}\label{eq:3}
+  \Delta E_{Pel\;A \to B} = W_{AB}(\vec{F}_{op}) = q (V_B - V_A) \tag{3}\label{eq:3}
 $$
-Comme $\Delta E_{Pel\\;A \to B} = E_{Pel}(B) - E_{Pel}(A) = q (V_B - V_A)$ on peut en déduire que, de façon générale, l'énergie potentielle électrique a pour expression :
+Comme $\Delta E_{Pel\;A \to B} = E_{Pel}(B) - E_{Pel}(A) = q (V_B - V_A)$ on peut en déduire que, de façon générale, l'énergie potentielle électrique a pour expression :
 $$
 E_{Pel}(M) = q V_M + \text{cste}
 $$
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note tip %}}
+{{< note tip >}}
 L'énergie potentielle électrique d'une charge électrique $q$ placée en un point de l'espace de potentiel électrique $V_M$ a pour expression
 $$
 E_{Pel}(M) = q V_M + \text{cste}
 $$
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Rappels
 
 Seules les variations d'énergies ont un sens physique. Les énergies potentielles d'interactions sont définies à une constante additive près.\
 Lorsqu'on calcule une variation d'énergie potentielle d'interaction l'influence du choix de la constante additive disparaît.
-{{% /note %}}
+{{< /note >}}
 
 ## Mouvement d'un électron dans un oscilloscope
 
@@ -262,9 +260,9 @@ Lorsqu'on calcule une variation d'énergie potentielle d'interaction l'influence
 
 <img src="/terminales-pc/chap-8/chap-8-5/Chap-8-5-5.png" alt="" width="80%" />
 
-Un électron est produit avec une vitesse quasi-nulle au point $A$ entrée d'une zone de l'espace où règne un champ électrique $\vec{E}\_1$ créé par deux armatures conductrices planes parallèles distantes de $AB$ et le champ de pesanteur $\vec{g}$.
+Un électron est produit avec une vitesse quasi-nulle au point $A$ entrée d'une zone de l'espace où règne un champ électrique $\vec{E}_1$ créé par deux armatures conductrices planes parallèles distantes de $AB$ et le champ de pesanteur $\vec{g}$.
 
-On cherche à déterminer les équations horaire du mouvement de l'électron et plus particulièrement sa vitesse $\vec{v}\_B$ au point $B$.
+On cherche à déterminer les équations horaire du mouvement de l'électron et plus particulièrement sa vitesse $\vec{v}_B$ au point $B$.
 
 Données
 :   $e = \pu{1,6e- 19 C}$ ; $m_e =
@@ -274,22 +272,22 @@ Données
 
 ### Détermination des équations horaires du mouvement de l'électron --- Lois de Newton
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 - Déterminer à quelles interactions est soumis l'électron et modéliser chacune d'elles.
 
 - Écrire la seconde loi de Newton décrivant le mouvement de l'électron.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - *Système&nbsp;:* {électron}
 
 - *Interactions :*
 
-  - Système - champ de pesanteur, modélisée par le poids&nbsp;: $\vec{P} = m_e\\,  \vec{g}$
+  - Système - champ de pesanteur, modélisée par le poids&nbsp;: $\vec{P} = m_e\,  \vec{g}$
 
-  - Système - champ électrique, modélisée par la force électrique&nbsp;: $\vec{F}\_1 = - e\\, \vec{E}\_1$
+  - Système - champ électrique, modélisée par la force électrique&nbsp;: $\vec{F}_1 = - e\, \vec{E}_1$
 
 - *Référentiel&nbsp;:* {terrestre supposé galiléen}
 
@@ -298,56 +296,56 @@ Données
 - *Deuxième loi de Newton&nbsp;:* *puisque la masse $m_e$ d'un électron est
     constante*, on peut écrire
     $$
-    m_e  \vec{a}_1 = \vec{P} + \vec{F}\_1 =  m_e\\,  \vec{g} - e\\, \vec{E}_1
+    m_e  \vec{a}_1 = \vec{P} + \vec{F}_1 =  m_e\,  \vec{g} - e\, \vec{E}_1
     $$
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 - Comparer les valeurs de la force électrique et du poids.
   
 - Modifier la deuxième loi de Newton à partir du résultat de la question précédente.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - Comparaison des valeurs du poids et de la force électrique&nbsp;:
 $$
-\dfrac{\Vert - e\\, \vec{E}_1 \Vert}{\Vert m_e\\,  \vec{g} \Vert} \simeq
+\dfrac{\Vert - e\, \vec{E}_1 \Vert}{\Vert m_e\,  \vec{g} \Vert} \simeq
       \dfrac{\pu{1e-19 C} \times \pu{1e5 V.m-1}}{\pu{1e-30 kg} \times \pu{10 N.m-1}} = \dfrac{10^{- 14}}{10^{- 29}} = 10^{15}$$
 La valeur de la force électrique est donc $10^{15}$ fois plus élevée que celle du poids !\
 On peut donc considérer que le poids communique une accélération à l'électron négligeable comparée à celle que la force électrique lui communique.
 
 - *Deuxième loi de Newton (bis)&nbsp;:*
 $$
-m_e\\,  \vec{a}\_1 = - e\\, \vec{E}\_1
+m_e\,  \vec{a}_1 = - e\, \vec{E}_1
 $$
 ou
 $$
 \boxed{
-\vec{a}\_1 = - \dfrac{e}{m_e}  \vec{E}\_1
+\vec{a}_1 = - \dfrac{e}{m_e}  \vec{E}_1
 }
 $$
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note tip %}}
+{{< note tip >}}
 *Lorsqu'on étudie le mouvement d'une particule microscopique, on néglige généralement l'accélération due au poids de la particule.*
-{{% /note %}}
+{{< /note >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 Qualifier le mouvement de l'électron.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Le mouvement du système est **uniformément accéléré**.
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 Projeter la deuxième loi de Newton sur les trois axes du repère choisi et caractériser le mouvement pour chacun des axes.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - Repère associé au système d'axes $(x' x)$, $(y' y)$, $(z' z)$ : $(A ; \vec{i}, \vec{j}, \vec{k})$ :
 
@@ -356,17 +354,17 @@ $$\overrightarrow{AM} (0) = \left(\begin{array}{c}
          0\cr
          0\cr
          0
-       \end{array}\right) \text{ ; } \vec{v}\_A =
-       \vec{v}\_1 (0) = \left(\begin{array}{c}
+       \end{array}\right) \text{ ; } \vec{v}_A =
+       \vec{v}_1 (0) = \left(\begin{array}{c}
          0\cr
          0\cr
          0
-       \end{array}\right) \text{ ; } \vec{a}\_1 =
+       \end{array}\right) \text{ ; } \vec{a}_1 =
        \left(\begin{array}{c}
          a_{1 x}\cr
          a_{1 y}\cr
          a_{1 z}
-       \end{array}\right) \text{ ; } \vec{E}\_1 =
+       \end{array}\right) \text{ ; } \vec{E}_1 =
        \left(\begin{array}{c}
          - E_1\cr
          0\cr
@@ -401,13 +399,13 @@ $$
 $$
 
 Le mouvement est donc *uniformément accéléré* selon l'axe $(A x)$. Il n'est *pas possible de conclure* quant à la forme du mouvement selon les axes $(A y)$ et $(A z)$&nbsp;: *mouvements uniformes* ou *pas de mouvement*.
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 Établir les expressions des composantes du vecteur vitesse et et caractériser le mouvement pour chacun des axes.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 Composantes de la vitesse&nbsp;:
 $$
@@ -445,13 +443,13 @@ $$
 $$
 Il n'y a *aucun mouvement selon les axes* $(A y)$ et $(A z)$.
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 En déduire les équations horaires du mouvement de l'électron.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 Composantes du vecteur position&nbsp;:
 
@@ -465,7 +463,7 @@ $$
 donc
 $$
 \begin{cases}
-   x_1 (t) &= \dfrac{1}{2}\\, \dfrac{eE_1}{m_e} t^2 + D\cr
+   x_1 (t) &= \dfrac{1}{2}\, \dfrac{eE_1}{m_e} t^2 + D\cr
    y_1 (t) &= E\cr
    z_1 (t) &= F
 \end{cases}
@@ -482,69 +480,69 @@ Finalement
 $$
 \boxed{
   \begin{cases}
-    x_1 (t) &= \dfrac{1}{2}\\,  \dfrac{eE_1}{m_e}\\, t^2\cr
+    x_1 (t) &= \dfrac{1}{2}\,  \dfrac{eE_1}{m_e}\, t^2\cr
     y_1 (t) &= 0\cr
     z_1 (t) &= 0
   \end{cases}
 }
 $$
-{{% /solution %}}
+{{< /solution >}}
 
 <img src="/terminales-pc/chap-8/chap-8-5/Chap-8-5-8.png" alt="" width="90%" />
 
 ### Détermination de la valeur de la vitesse au point $B$ --- Lois de Newton
 
-{{% note exercise %}}
+{{< note exercise >}}
 Déterminer, à partir des équations horaires du mouvement, l'expression et la valeur de la vitesse de l'électron au point $B$.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 Comme toujours il est impossible de répondre directement à cette question à partir des équations horaires qui utilisent le paramètre temps, il faut se poser à la question suivante&nbsp;: *à quelle date
 l'électron parvient-il en $B$ ?*
 
 Si on note $t_B$ la date à laquelle l'électron parvient en $B$, alors
 $$
-x_1 (t_B) = \dfrac{1}{2}\\, \dfrac{eE_1}{m_e}\\, t_B^2 = AB \Leftrightarrow
+x_1 (t_B) = \dfrac{1}{2}\, \dfrac{eE_1}{m_e}\, t_B^2 = AB \Leftrightarrow
 \boxed{
-t_B = \sqrt{\dfrac{2 m_e\\, AB }{eE_1}}
+t_B = \sqrt{\dfrac{2 m_e\, AB }{eE_1}}
 }
 $$
 et
 $$
-v_{1 B} = v_{1 x} (t_B) = \dfrac{eE_1}{m_e}  \sqrt{\dfrac{2 m_e \\, AB }{eE_1}}
+v_{1 B} = v_{1 x} (t_B) = \dfrac{eE_1}{m_e}  \sqrt{\dfrac{2 m_e \, AB }{eE_1}}
 $$
 finalement
 $$
 \boxed{
-v_{1 B} = \sqrt{\dfrac{2eE_1\\, AB }{m_e}}
+v_{1 B} = \sqrt{\dfrac{2eE_1\, AB }{m_e}}
 }
 $$
 
 **A.N. :**  $t_B = \pu{2,4e-9 s}$ ; $v_{1 B} =\pu{2,5e7 m.s-1}$.
 
-{{% /solution %}}
+{{< /solution >}}
 
 ### Détermination de la valeur de la vitesse au point $B$ --- Théorème de l'énergie mécanique
 
-{{% note exercise %}}
+{{< note exercise >}}
 Déterminer l'expression et la valeur de la vitesse de l'électron au point $B$ à partir d'un raisonnement basé sur l'énergie.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 La seule force qui s'applique sur l'électron est la force électrique, force conservative ; **l'énergie mécanique de l'électron se conserve** donc.
 
 - Au point $A$ : $E_M(A) = E_C(A) + E_{Pel}(A) = -e V_A + \text{cste}$ puisque l'électron est produit sans vitesse.
-- Au point $B$ : $E_M(B) = E_C(B) + E_{Pel}(B) = \dfrac{1}{2}\\, m_e v_{1 B}^2 - e V_B + \text{cste}$
+- Au point $B$ : $E_M(B) = E_C(B) + E_{Pel}(B) = \dfrac{1}{2}\, m_e v_{1 B}^2 - e V_B + \text{cste}$
 - L'énergie mécanique se conserve : $\Delta E_M = 0 \iff E_M(A) = E_M(B)$ donc
 $$
--e V_A + \text{cste} = \dfrac{1}{2}\\, m_e v_{1 B}^2 - e V_B + \text{cste}
+-e V_A + \text{cste} = \dfrac{1}{2}\, m_e v_{1 B}^2 - e V_B + \text{cste}
 $$
 et
 $$
 \boxed{
-v_{1 B} = \sqrt{ \dfrac{2 e}{m_e}\\, (V_B - V_A)  }
+v_{1 B} = \sqrt{ \dfrac{2 e}{m_e}\, (V_B - V_A)  }
 }
 $$
 Ce résultat est-il identique au précédent ? À partir du schéma, on peut écrire
@@ -552,10 +550,10 @@ $$ E_1 = \dfrac{V_B - V_A}{AB}$$
 donc le résultat précédent s'écrit aussi
 $$
 \boxed{
-v_{1 B} = \sqrt{ \dfrac{2 e E_1\\, AB}{m_e}}
+v_{1 B} = \sqrt{ \dfrac{2 e E_1\, AB}{m_e}}
 }
 $$
-{{% /solution %}}
+{{< /solution >}}
 
 ## Deuxième phase&nbsp;: déviation de l'électron
 
@@ -573,12 +571,12 @@ $BC = \pu{6,0 cm}$ ; $d = \pu{3,0 cm}$ ; $E_2 = \pu{1,0e4 V.m-1}$.
 
 ### Détermination des équations horaires --- Lois de Newton
 
-{{% note exercise %}}
+{{< note exercise >}}
 Étudier le problème et déterminer l'expression vectorielle de l'accélération de l'électron dans cette phase.\
 Caractériser le mouvement.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - *Système&nbsp;:* {électron}
 
@@ -587,7 +585,7 @@ Caractériser le mouvement.
   - Système - champ de pesanteur : négligeable.
 
   - Système - champ électrique, modélisée par la force électrique&nbsp;:
-        $\vec{F}\_{2 el} = - e \vec{E}\_2$
+        $\vec{F}_{2 el} = - e \vec{E}_2$
 
 - *Référentiel&nbsp;:* {terrestre supposé galiléen}
 
@@ -595,21 +593,21 @@ Caractériser le mouvement.
 
 - *Deuxième loi de Newton&nbsp;:* *puisque la masse $m_e$ d'un électron est constante*, on peut écrire
 $$
-m_e\\, \vec{a}_2 = \vec{F}\_{2 el} = - e \vec{E}\_2
+m_e\, \vec{a}_2 = \vec{F}_{2 el} = - e \vec{E}_2
 $$ soit
 $$
 \boxed{
-  \vec{a}_2 = - \dfrac{e}{m_e}\\, \vec{E}\_2
+  \vec{a}_2 = - \dfrac{e}{m_e}\, \vec{E}_2
 }
 $$
 Le mouvement est *uniformément accéléré*.
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 Projeter la deuxième loi de Newton sur les trois axes du repère choisi et caractériser le mouvement pour chacun des axes.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - Projection de la deuxième loi de Newton sur le système d'axes $(x' x)$, $(y' y)$, $(z' z)$ muni du repère $(B ; \vec{i}, \vec{j}, \vec{k})$ (non dessiné sur le schéma)&nbsp;:
 
@@ -622,15 +620,15 @@ $$
     0
   \end{array}\right)
 \text{ ; }
-\vec{v}\_B =
-\vec{v}\_2 (0) =
+\vec{v}_B =
+\vec{v}_2 (0) =
   \left(\begin{array}{c}
     v_B\cr
     0\cr
     0
   \end{array}\right)
 \text{ ; }
-\vec{a}\_2 =
+\vec{a}_2 =
   \left(\begin{array}{c}
   a_{2 x}\cr
   a_{2 y}\cr
@@ -638,7 +636,7 @@ $$
   \end{array}\right)$$
 
 $$
-\vec{E}\_2 =
+\vec{E}_2 =
   \left(\begin{array}{c}
   0\cr
   -E_2\cr
@@ -653,7 +651,7 @@ $$
  a_{2 y}\cr
  a_{2 z}
 \end{pmatrix}
-= - \dfrac{e}{m_e}\\,
+= - \dfrac{e}{m_e}\,
  \begin{pmatrix}
  0\cr
  -E_2\cr
@@ -677,13 +675,13 @@ $$
 }
 $$
 Le mouvement est donc *uniformément accéléré* selon l'axe $(A y)$. Il n'est pas possible de conclure quant à la forme du mouvement selon les axes $(A x)$ et $(A z)$&nbsp;: *mouvements uniformes* ou *pas de mouvement*.
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 Établir les expressions des composantes du vecteur vitesse et et caractériser le mouvement pour chacun des axes.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 Composantes de la vitesse&nbsp;:
 $$
@@ -697,7 +695,7 @@ donc
 $$
 \begin{cases}
  v_{2 x} (t) = A\cr
- v_{2 y} (t) = \dfrac{eE_2}{m_e}\\, t + B\cr
+ v_{2 y} (t) = \dfrac{eE_2}{m_e}\, t + B\cr
  v_{2 z} (t) = C
 \end{cases}
 $$
@@ -721,13 +719,13 @@ $$
 }
 $$
 Il n'y a aucun mouvement selon l'axe $(B z)$ alors que le mouvement est uniforme selon l'axe $(B x)$.
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 En déduire les équations horaires du mouvement de l’électron.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - Composantes du vecteur position&nbsp;:
 $$
@@ -741,7 +739,7 @@ donc
 $$
 \begin{cases}
   x_2 (t) &= v_B t + D\cr
-  y_2 (t) &= \dfrac{1}{2}\\, \dfrac{eE_2}{m_e}\\, t^2 + E\cr
+  y_2 (t) &= \dfrac{1}{2}\, \dfrac{eE_2}{m_e}\, t^2 + E\cr
   z_2 (t) &= F
 \end{cases}
 $$
@@ -766,17 +764,17 @@ $$
 }
 $$
 
-{{% /solution %}}
+{{< /solution >}}
 
 <img src="/terminales-pc/chap-8/chap-8-5/Chap-8-5-12.png" alt="" width="90%" />
 
 ### Équation de la trajectoire
 
-{{% note exercise %}}
+{{< note exercise >}}
 Établir l'équation de la trajectoire de l'électron dans la phase II du mouvement.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 Pour obtenir l'équation de la trajectoire, il faut éliminer le temps des équations horaires&nbsp;:
 $$
@@ -785,25 +783,25 @@ $$
 donc
 $$
 \boxed{
-  y_2 (x) = \dfrac{1}{2}\\, \dfrac{eE_2}{m_e}  \left( \dfrac{x_2}{v_B} \right)^2
+  y_2 (x) = \dfrac{1}{2}\, \dfrac{eE_2}{m_e}  \left( \dfrac{x_2}{v_B} \right)^2
 }
 $$
 C'est une parabole orientée vers le haut.
-{{% /solution %}}
+{{< /solution >}}
 
 ### À quelle condition l'électron peut-il quitter cette zone de l'espace sans toucher l'armature supérieure ?
 
-{{% note exercise %}}
+{{< note exercise >}}
 Vérifier à l'aide des données expérimentales fournies que l'électron quitte le condensateur sans avoir touché les armatures.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 On fait l'hypothèse que l'électron va toucher l'armature supérieure. Soit $x_{2 p}$ l'abscisse de l'électron lorsque cet évènement intervient.
 
 À partir de l'équation de la trajectoire (c'est aussi possible à partir des équations horaires), on peut déterminer que&nbsp;:
 $$
-y_2 (x_{2 p}) = \dfrac{d}{2} = \dfrac{1}{2}\\, \dfrac{eE_2}{m_e}  \left( \dfrac{x_{2 p}}{v_B} \right)^2
+y_2 (x_{2 p}) = \dfrac{d}{2} = \dfrac{1}{2}\, \dfrac{eE_2}{m_e}  \left( \dfrac{x_{2 p}}{v_B} \right)^2
 $$
 soit
 $$
@@ -815,13 +813,13 @@ x_{2 p} = v_B  \sqrt{\frac{m_e d}{eE_2}} > BC
 $$
 
 **A.N.**  $x_{2 p} = \pu{10,3 cm} > \pu{6,0 cm}$
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 Déterminer la condition sur la tension $U_2$ à observer pour que l'électron puisse quitter le condensateur sans avoir touché les armatures.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 La question précédente a fourni l'expression suivante :
 $$
@@ -832,18 +830,18 @@ $$
 puisque $E_2 = \dfrac{U_2}{d}$. Finalement
 $$
 \boxed{
-\dfrac{m_e d^2 v_B^2}{e\\, BC^2} > U_2
+\dfrac{m_e d^2 v_B^2}{e\, BC^2} > U_2
 }
 $$
-{{% /solution %}}
+{{< /solution >}}
 
 ### Coordonnées du points de sortie
 
-{{% note exercise %}}
+{{< note exercise >}}
 Déterminer les expressions des coordonnées du point de sortie de l'électron.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 L'électron quitte la deuxième zone lorsque
 $$
@@ -854,22 +852,22 @@ $$
 donc lorsque
 $$
 \boxed{
-  y_2 (x_{2 C}) = \dfrac{1}{2}\\, \dfrac{eE_2}{m_e} \left( \dfrac{BC}{v_B} \right)^2
+  y_2 (x_{2 C}) = \dfrac{1}{2}\, \dfrac{eE_2}{m_e} \left( \dfrac{BC}{v_B} \right)^2
 }
 $$
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Dernière phase
 
-{{% note exercise %}}
+{{< note exercise >}}
 Quel est le mouvement de l'électron lorsqu'il a quitté les deux zones dans lesquelles règnent les champs électrique $\vec{E}_1$ et $\vec{E}_2$ ?
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 Au-delà des deux première zones, il n'existe plus de champ électrique et l'on peut toujours négliger le poids de l'électron. Ce dernier n'est donc soumis à aucune force, *son mouvement est rectiligne et uniforme* depuis le point de sortie de la deuxième zone.
 
-{{% /solution %}}
+{{< /solution >}}
 
 <img src="/terminales-pc/chap-8/chap-8-5/Chap-8-5-14.png" alt="" width="90%" />

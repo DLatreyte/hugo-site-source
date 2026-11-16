@@ -1,17 +1,15 @@
 ---
 title: "Contrôle du flot d'exécution d'un programme : structures iteratives"
 subtitle: "Chapitre 4,2"
-author: ""
-type: ""
 date: 2021-08-29T00:17:52+04:00
 draft: false
 toc: true
 tags: ["Python", "Boucles", "Structures répétitives"]
 categories: ["Première Spé NSI"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
 mathjax: true
+weight: 200
 ---
 
 Ce chapitre reprend l'étude de structures de contrôles, c'est à dire d'instructions qui permettent de modifier le « flot d'exécution implicite » d'un programme.
@@ -24,14 +22,14 @@ Les boucles sont des *instructions répétitives*. Comme les tests conditionnels
 Les instructions de ces blocs sont répétées tant qu'une **condition d’arrêt** n'est pas vérifiée.
 Chaque passage dans la boucle s'appelle une **itération**. 
 
-{{% note normal %}}
+{{< note normal >}}
 Les langages de programmation proposent généralement deux types de boucles, les **boucles déterministes** et les **boucles non déterministes** :
 
 - Une **boucle déterministe** (ou boucle **Pour**) est une boucle *dont on connaît à l’avance le nombre d’itérations*.<br />Une boucle **Pour** utilise une variable pour compter le nombre d'itérations effectuées : le **compteur de boucle**.
 
 - Une boucle **non déterministe** (ou **boucle conditionnelle**) est une boucle *dont on ne connaît pas à l’avance le nombre d’itérations*. La boucle s'arrête *si une condition d’arrêt intervient* mais on ne sait pas à l'avance quand ! <br />Les boucles non déterministes les plus courantes sont les boucles **Tant Que**, **Faire Tant Que** et **Répéter Jusqu’à**.
 
-{{% /note %}}
+{{< /note >}}
 
 #### Remarques ####
 
@@ -40,21 +38,21 @@ Les langages de programmation proposent généralement deux types de boucles, le
 - Faire « tourner une boucle à la main » est le seul moyen fiable pour bien comprendre son fonctionnement. On applique méthodiquement les instructions et on compare les résultats obtenus à chaque itération avec les valeurs espérées. 
 - Il est nécessaire de porter une grande attention à la condition d’arrêt d’une boucle non déterministe. Si cette dernière n’est jamais réalisée, on parle de « boucle infinie », c’est à dire d’un processus qui se répète infiniment.
 
-{{% note warning %}}
+{{< note warning >}}
 Une boucle non déterministe peut être utilisée à la place d’une boucle déterministe. Le contraire n’est pas vrai.
-{{% /note %}}
+{{< /note >}}
 
 
 ## La boucle **Tant que**, l’instruction `while` 
 
 ### Présentation
 
-{{% note normal %}}
+{{< note normal >}}
 L’expression conditionnelle d’une boucle **Tant que** est évaluée *au début de chaque itération*, ce qui permet de l’exécuter un nombre quelconque de fois. Il est même possible que les instructions contenues dans cette structure ne soient jamais exécutées *si l’expression booléenne vaut **Faux** dès sa première évaluation*.
 
 Les instructions d’une boucle **Tant que** sont exécutées *tant que l’expression booléenne est évaluée à **Vrai**.*
 
-{{% /note %}}
+{{< /note >}}
 
 {{< columns >}}
 <img src="/premieres-nsi/chap-04/chap-4-2/while-avec-compteur-autonome.svg" width="100%" />
@@ -74,19 +72,19 @@ while <expression_booléenne>:
 
 ### Présentation
 
-{{% note normal %}}
+{{< note normal >}}
 La boucle **Pour Chaque** s’écrit `for` en Python. Cette structure de boucle n’existe pas dans tous les langages. Dans la plupart des langages l’instruction `for` implémente la boucle **Pour**.
 
 Les domaines d’application de cette boucle sont, par exemple, *le parcours des tableaux*, puisqu’on connaît le nombre de cases qui les constituent, ou *les traitements de données*, leur nombre étant connu à l'avance.
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 À l’issue de chaque itération la valeur du compteur est incrémentée automatiquement.
-{{% /note %}}
+{{< /note >}}
 
-{{% note warning %}}
+{{< note warning >}}
 Il est vraiment préférable de dire **Pour chaque** et non pas seulement **Pour** lorsqu'on lit un programme écrit en Python.
-{{% /note %}}
+{{< /note >}}
 
 ### Syntaxe en Python ###
 
@@ -101,18 +99,18 @@ def table_de(n: int) -> str:
     return reponse
 ```
 
-{{% note warning %}}
+{{< note warning >}}
 La variable qui sert de compteur de boucle (`element` dans l’exemple précédent) **ne doit jamais être modifiée dans la boucle**, ce qui exclut la possibilité de changer sa valeur par une affectation. *Dans le cas contraire, le comportement de la boucle est indéterminé ; elle peut très bien s’arrêter immédiatement, comme devenir infinie*.
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 La boucle `for` *parcourt les éléments d’un itérable (comme une séquence ou un itérateur) et se termine quand tous les éléments sont épuisés*. Sa syntaxe est :
 ```python3
 for element in itérable:
     suite_à_répéter
 ```
 À chaque itération, la variable d’itération `element` prend *la valeur de l’élément courant de l’itérable* (séquence, itérateur ou tout objet supportant l’itération) pour pouvoir l’utiliser dans le bloc `suite_à_répéter`.
-{{% /note %}}
+{{< /note >}}
 
 ### L'itérateur **range** ###
 
@@ -132,9 +130,9 @@ range(debut, fin)
 range(fin)
 ```
 
-{{% note warning %}}
+{{< note warning >}}
 De façon générale, tous les intervalles, en Python, sont du type $[\text{début}, \text{fin}[$ : **la dernière valeur indiquée n'est jamais considérée**.
-{{% /note %}}
+{{< /note >}}
 
 #### Exemples
 ```python3
@@ -163,13 +161,13 @@ De façon générale, tous les intervalles, en Python, sont du type $[\text{déb
 
 ### `break` 
 
-{{% note tip %}}
+{{< note tip >}}
 L’instruction `break` **met fin à la boucle courante** et reprend l’exécution à la première instruction qui suit la structure itérative. On l’utilise généralement quand une condition externe est déclenchée (habituellement en testant avec une instruction `if`), exigeant une sortie immédiate de la boucle. Elle s’utilise aussi bien dans les boucles **Pour que** dans les boucles **Tant Que**.
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 L’instruction `break` est très utile pour quitter des « *boucles infinies* », créées par exemple à l’aide de l’entête : `while True:`.
-{{% /note %}}
+{{< /note >}}
 
 #### Exemples
 Les fonctions ci-dessous déterminent (par une méthode loin d’être efficace) le plus grand diviseur d’un nombre entré par l’utilisateur (variable `nbre`). On teste tous les nombres qui pourraient être des diviseurs du nombre, en utilisant la variable `diviseur` et en la décrémentant d’une unité pour chaque valeur qui ne divise pas le nombre. Le premier nombre qui divise exactement `nbre` est le plus grand diviseur. *Ce nombre trouvé, il est inutile de poursuivre la boucle*, on la quitte grâce à l’instruction `break`. Les deux fonctions utilisent les deux structures de boucles implémentées en Python ; `break` peut donc être utilisée quelle que soit la boucle.
@@ -196,9 +194,9 @@ Dans le second exemple, on remarque que les variables définies dans une boucle 
 
 ### `continue`
 
-{{% note tip %}}
+{{< note tip >}}
 L’instruction `continue` **termine ou ignore le reste des instructions de *l’itération courante*** et remonte au début : *le test pour une boucle non déterministe, l’itération suivante (s’il reste des itérations à parcourir) pour une boucle déterministe.*
-{{% /note %}}
+{{< /note >}}
 
 #### Exemple.
 La fonction ci-dessous fournit une illustration (peu pertinente il est vrai !) de l’utilisation de l’instruction `continue` en retournant une chaîne de caractères constituée de tous les nombres qui ne divisent pas un nombre passé en argument.
@@ -235,9 +233,9 @@ def non_diviseur_3(nbre: int) -> str:
     return reponse
 ```
 
-{{% note normal %}}
+{{< note normal >}}
 Les deux fonctions dans l’exemple ci-dessus utilisent les deux structures de boucles implémentées en Python : `continue` *peut donc être utilisée quelle que soit la boucle*.
-{{% /note %}}
+{{< /note >}}
 
 #### En résumé
 
@@ -248,7 +246,7 @@ Les deux fonctions dans l’exemple ci-dessus utilisent les deux structures de b
 
 **Remarque.** Dans cette première série d'exercices n'utiliser que la structure **Tant que**.
 
-{{% note exercise %}}
+{{< note exercise >}}
 #### Exercice 1 
 
 Soit la fonction suivante :
@@ -270,9 +268,9 @@ Vérifier le résultat obtenu en exécutant le programme.
 4. Visualiser le fonctionnement de cette fonction à l'aide du « débuggeur » intégré au logiciel Thonny.
 5. En supposant que la fonction soit appelée avec les valeurs 35 et 6, exécuter le programme à la main et déterminer la valeur retournée. Pour s'aider, construire un tableau d'évolution du contenu de chaque variable utilisée. <br /> Vérifier le résultat obtenu en exécutant le programme.
 6. Quel est le calcul réalisé par ce programme ?
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponses" %}}
+{{< solution "Réponses" >}}
 
 1. Structure itérative :
 ```python
@@ -293,9 +291,9 @@ Fin de boucle lorsque $r=0$.
 
 6. Cette fonction détermine le pgcd des deux nombres.
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 #### Exercice 2
 
 Soit la fonction suivante :
@@ -317,9 +315,9 @@ def inconnue_deux(a: int) -> int:
 Vérifier le résultat obtenu en exécutant le programme.
 5. Visualiser le fonctionnement de cette fonction à l'aide du « débuggeur » intégré au logiciel Thonny.
 6. Quel est le calcul réalisé par ce programme ?
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponses" %}}
+{{< solution "Réponses" >}}
 1. 
 ```python
 while i <= a:
@@ -336,9 +334,9 @@ Fin de boucle lorsque $i = a + 1$.
 
 5. Cette fonction retourne le résultat du calcul : $1\times 2\times 3\times\ldots\times a$, c'est à dire la factorielle de $a$, $a!$.
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 3
 
@@ -358,10 +356,10 @@ def triple_du_precedent(a: int) -> str:
     """
 ```
 
-{{% /note %}}
+{{< /note >}}
 
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def triple_du_precedent(a: int) -> str:
@@ -386,9 +384,9 @@ def triple_du_precedent(a: int) -> str:
     return reponse
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 4
 
@@ -406,9 +404,9 @@ def multiplication(a: int) -> str:
     """
 ```
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def multiplication(a: int) -> str:
@@ -428,9 +426,9 @@ def multiplication(a: int) -> str:
     return reponse
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 5
 
@@ -451,9 +449,9 @@ def multiplication_multiple_trois(a: int) -> str:
     """
 ```
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def multiplication_multiple_trois(a: int) -> str:
@@ -480,9 +478,9 @@ def multiplication_multiple_trois(a: int) -> str:
     return reponse
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 6
 
@@ -502,9 +500,9 @@ def multiplication_multiple_sept(a: int) -> str:
     """
 ```
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def multiplication_multiple_sept(a: int) -> str:
@@ -528,9 +526,9 @@ def multiplication_multiple_sept(a: int) -> str:
     return reponse
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 7
 
@@ -548,9 +546,9 @@ def diviseurs(a: int) -> str:
     """
 ```
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def diviseurs(a: int) -> str:
@@ -570,9 +568,9 @@ def diviseurs(a: int) -> str:
     return reponse
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 8
 
@@ -594,9 +592,9 @@ def table_multiplication() -> str:
 >>> print(table_multiplication())
 ```
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def table_multiplication() -> str:
@@ -617,13 +615,13 @@ def table_multiplication() -> str:
     return reponse
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note warning %}}
+{{< note warning >}}
 La fonction `input` retourne **toujours** une chaîne de caractères. Il est donc *nécessaire d'effectuer une conversion* si ce que l'utilisateur a entré est d'un autre type.
-{{% /note %}}
+{{< /note >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 9
 
@@ -643,9 +641,9 @@ def plus_grand_plus_petit() -> str:
     """
 ```
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def plus_grand_plus_petit() -> str:
@@ -669,17 +667,17 @@ def plus_grand_plus_petit() -> str:
     return reponse
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 10
 
 Reprendre l'exercice précédent mais en faisant en sorte que le nombre de valeurs demandées à l'utilisateur soit passé en argument à la fonction.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def plus_grand_plus_petit(nbre_valeurs: int) -> str:
@@ -702,9 +700,9 @@ def plus_grand_plus_petit(nbre_valeurs: int) -> str:
     return reponse
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 11
 
@@ -718,9 +716,9 @@ def moyenne() -> float:
     """
 ```
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def moyenne() -> float:
@@ -737,17 +735,17 @@ def moyenne() -> float:
     return somme / nbre_notes
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 12
 
 Modifier le programme précédent de façon à ce que le nombre de notes à prendre en compte soit passé en argument de la fonction.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def moyenne(nbre_notes: int) -> float:
@@ -763,9 +761,9 @@ def moyenne(nbre_notes: int) -> float:
     return somme / nbre_notes
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 13
 
@@ -773,9 +771,9 @@ Modifier le programme précédent de façon à ce que l'utilisateur n'ait pas à
 
  **Remarque :** la fonction doit afficher le nombre de notes saisies, elle retourne donc une chaîne de caractères.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def moyenne_ter() -> str:
@@ -799,10 +797,10 @@ def moyenne_ter() -> str:
     return reponse
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 14
 
@@ -819,9 +817,9 @@ def loto_naif() -> str:
 
 **Remarque.** Normalement, lorsqu'un numéro est tiré, il ne peut pas apparaître à nouveau. On acceptera cependant qu'un même numéro puisse apparaitre plusieurs fois puisqu'on ne connaît pas encore de structure de contrôle qui permet de facilement « stocker » plusieurs valeurs.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def loto_naif() -> str:
@@ -843,9 +841,9 @@ def loto_naif() -> str:
     return reponse
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 15
 
@@ -865,9 +863,9 @@ def devine() -> None:
     """
 ```
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def devine() -> None:
@@ -900,9 +898,9 @@ def devine() -> None:
             print("Trop petit ! ")
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 16
 
@@ -921,9 +919,9 @@ def alphabet(sens: str) -> str:
     """
 ```
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def alphabet(sens: str) -> str:
@@ -954,17 +952,17 @@ def alphabet(sens: str) -> str:
     return reponse
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 17
 
 Écrire et exécuter une fonction qui détermine les *n* premiers termes de la « suite de Fibonacci » définie par :
 $$
 \begin{aligned} 
-u_1 &= 1\\\\ 
-u_2 &= 1\\\\ 
+u_1 &= 1\\ 
+u_2 &= 1\\ 
 u_n &= u_{n-1} + u_{n-2} \text{ pour } n > 2 \end{aligned}
 $$
 
@@ -977,9 +975,9 @@ def fibo(n: int) -> str:
     """
 ```
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def fibo(n: int) -> str:
@@ -1004,19 +1002,19 @@ def fibo(n: int) -> str:
     return reponse
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Exercices du chapitre (version `for`)
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercices 
 
 Reprendre les exercices 3, 4, 5, 6, 7, 9, 10, 11, 12, 14, 16 de la section précédente et les ré-écrire à l’aide de l’instruction `for`.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponses" %}}
+{{< solution "Réponses" >}}
 
 ```python3
 def triple_du_precedent(a: int) -> str:
@@ -1160,23 +1158,23 @@ if __name__ == "__main__":
     doctest.testmod()
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Exercices de réflexion du chapitre ##
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice : Code ISBN
 
-L'« International Standard Book Number » (ISBN) est un code à dix chiffres qui identifie de manière unique un livre. Le chiffre le plus à droite de ce code est *la somme de contrôle* ([Wikipedia](http://fr.wikipedia.org/wiki/Somme_de_contrôle)) : il est calculé, de manière unique, à partir des valeurs des neuf autres chiffres. Sa valeur est telle que $d\_1 + 2 d\_2 + 3 d\_3 + \ldots + 10 d\_{10}$ soit un multiple de 11 (ici $d\_i$ représente la valeur du i<sub>ème</sub> chiffre du code, en partant de la droite).
+L'« International Standard Book Number » (ISBN) est un code à dix chiffres qui identifie de manière unique un livre. Le chiffre le plus à droite de ce code est *la somme de contrôle* ([Wikipedia](http://fr.wikipedia.org/wiki/Somme_de_contrôle)) : il est calculé, de manière unique, à partir des valeurs des neuf autres chiffres. Sa valeur est telle que $d_1 + 2 d_2 + 3 d_3 + \ldots + 10 d_{10}$ soit un multiple de 11 (ici $d_i$ représente la valeur du i<sub>ème</sub> chiffre du code, en partant de la droite).
 
 **Exemple.** La *la somme de contrôle* du code commençant par 020131452 est 5 puisque 5 est la seule valeur de $x$ comprise entre 0 et 10 (exclu) telle que $$10 \cdot 0 + 9 \cdot 2 + 8 \cdot 0 + 7 \cdot 1 + 6 \times 3 + 5 \times 1 + 4 \times 4 + 3 \times 5+ 2 \times 2 + 1 \times x$$ soit un multiple de 11.
 
 Écrire une fonction qui demande à l'utilisateur les 9 premiers chiffres d'un code ISBN et qui retourne le code ISBN sous forme d'une chaîne de caractères.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice : Calendrier (difficile)
 
@@ -1198,9 +1196,9 @@ L'« International Standard Book Number » (ISBN) est un code à dix chiffres qu
 365241 mardi 30 décembre 3000
 365242 mercredi 31 décembre 3000
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice : Le taxi de Ramanujan (difficile)
 
@@ -1210,4 +1208,4 @@ En d'autres termes, le problème consiste à trouver quatre entiers $a$, $b$, $c
 
 **Aide.** Utiliser quatre boucles imbriquées.
 
-{{% /note %}}
+{{< /note >}}

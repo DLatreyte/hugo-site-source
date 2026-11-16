@@ -1,14 +1,14 @@
 ---
 title: "Quelques dessins simples avec une tortue"
 subtitle: "Chapitre 7"
-author: ""
 type: "page"
 date: 2019-10-12T18:10:22+04:00
 draft: false
 toc: true
 tags: []
 categories: ["Première Spé NSI"]
-image: ""
+
+weight: 9900
 ---
 
 ## 1. Présentation de la « tortue graphique »
@@ -95,7 +95,7 @@ def main():
 main()
 ```
 ---
-{{% details "**Solution**" %}}
+{{< details "**Solution**" >}}
 ```python
 import turtle
 
@@ -126,7 +126,7 @@ def main():
 
 main()
 ```
-{{% /details %}}
+{{< /details >}}
 ---
 
 #### Exercice 2
@@ -172,7 +172,7 @@ def main():
 main()
 ``` 
 ---
-{{% details "**Solution**" %}}
+{{< details "**Solution**" >}}
 ```python
 import turtle
 
@@ -209,7 +209,7 @@ def main():
 
 main()
 ```
-{{% /details %}}
+{{< /details >}}
 ---
 
 Remarque. 
@@ -274,7 +274,7 @@ Remarque.
 </p>
 
 ---
-{{% details "**Solution**" %}}
+{{< details "**Solution**" >}}
 ```python
 import turtle
 
@@ -296,7 +296,7 @@ def main():
 
 main()
 ```
-{{% /details %}}
+{{< /details >}}
 ---
 
 ### Exercice 4
@@ -341,7 +341,7 @@ main()
 ```
 
 ---
-{{% details "**Solution**" %}}
+{{< details "**Solution**" >}}
 ```python
 import turtle
 import random
@@ -377,7 +377,7 @@ def main():
 
 main()
 ```
-{{% /details %}}
+{{< /details >}}
 ---
 
 ### Exercice 5
@@ -385,7 +385,7 @@ main()
 Sur le modèle de l'exercice précédent, écrire un programme qui trave à l'écran 200 carrés dont la position du coin inférieur gauche est aléatoire, tout comme l'orientation et la largeur.
 
 ---
-{{% details "**Solution**" %}}
+{{< details "**Solution**" >}}
 ```python
 import turtle
 import random
@@ -437,7 +437,7 @@ def main():
 
 main()
 ```
-{{% /details %}}
+{{< /details >}}
 ---
 
 ### Exercice 6
@@ -475,7 +475,7 @@ main()
 ```
 
 ---
-{{% details "**Solution**" %}}
+{{< details "**Solution**" >}}
 ```python
 import turtle
 
@@ -504,7 +504,7 @@ def main():
 
 main()
 ```
-{{% /details %}}
+{{< /details >}}
 ---
 
 
@@ -578,7 +578,7 @@ main()
 ```
 
 ---
-{{% details "**Solution**" %}}
+{{< details "**Solution**" >}}
 ```python
 """
 Tracés de carrés concentriques.
@@ -642,7 +642,7 @@ def main():
 
 main()
 ```
-{{% /details %}}
+{{< /details >}}
 ---
 
 ### Exercice 8
@@ -706,7 +706,7 @@ main()
 ```
 
 ---
-{{% details "**Solution**" %}}
+{{< details "**Solution**" >}}
 ```python
 """
 Tracés de cercles de différentes tailles.
@@ -759,7 +759,7 @@ def main():
 
 main()
 ```
-{{% /details %}}
+{{< /details >}}
 ---
 
 ### Exercice 9 ###
@@ -852,7 +852,7 @@ main()
     L'animation est-elle fluide ? Le carré s'affiche-t-il en un seul bloc ?
 
 ---
-{{% details "**Solution**" %}}
+{{< details "**Solution**" >}}
 ```python
 import turtle
 
@@ -937,7 +937,7 @@ def main():
 
 main()
 ```
-{{% /details %}}
+{{< /details >}}
 ---
 
 - L'abscence de fluidité de l'animation précédente est due au fait que **l'on a laissé à Python la liberté de rafraîchir l'écran à sa convenance**. La plupart du temps, il l'a fait alors que le carré n'était même pas complètement tracé.
@@ -952,7 +952,7 @@ main()
     Modifier le programme précédente de façon à y incorporer les deux commandes.
 
 ---
-{{% details "**Solution**" %}}
+{{< details "**Solution**" >}}
 ```python
 import turtle
 
@@ -1041,7 +1041,7 @@ def main():
 
 main()
 ```
-{{% /details %}}
+{{< /details >}}
 ---
 
     L'animation est-elle maintenant fluide ? Quel problème persiste ?
@@ -1049,7 +1049,7 @@ main()
 - Modifier la valeur d'une des variables de façon à ralentir l'animation.
 
 ---
-{{% details "**Solution**" %}}
+{{< details "**Solution**" >}}
 ```python
 import turtle
 
@@ -1138,7 +1138,7 @@ def main():
 
 main()
 ```
-{{% /details %}}
+{{< /details >}}
 ---
 
 ### Exercice 10 ###
@@ -1242,7 +1242,7 @@ main()
 ```
 
 ---
-{{% details "**Solution**" %}}
+{{< details "**Solution**" >}}
 ```python
 """
 Mouvement d'une balle contenue dans une boite à deux dimensions.
@@ -1351,7 +1351,7 @@ def main():
 
 main()
 ```
-{{% /details %}}
+{{< /details >}}
 ---
 
 
@@ -1360,7 +1360,7 @@ main()
 - Comment rendre l'animation plus fluide ? (Relire le commentaire de l'exercice précédent)
 
 ---
-{{% details "**Solution**" %}}
+{{< details "**Solution**" >}}
 ```python
 """
 Mouvement d'une balle contenue dans une boite à deux dimensions.
@@ -1471,5 +1471,5 @@ def main():
 
 main()
 ```
-{{% /details %}}
+{{< /details >}}
 ---

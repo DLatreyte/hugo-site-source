@@ -1,16 +1,14 @@
 ---
 title: "Les différentes erreurs lorsqu'on calcule à l'aide d'un ordinateur"
 subtitle: "Derivation numérique"
-author: ""
-type: ""
 date: 2020-08-21T14:08:45+04:00
 draft: false
 toc: true
 tags: ["Erreurs numériques", "Dérivation"]
 categories: ["Informatique", "Analyse numérique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 9900
 ---
 [^1]: Les fonctions, dans ce chapitre, sont considérées continues et dérivables sur les intervalles sélectionnés.
 [^2]: Expression à rapprocher de (1.1.).
@@ -35,21 +33,21 @@ $$f^{\prime}(x) = \lim\limits_{h \to 0} \dfrac{f(x+h) - f(x)}{h}$$
 
 Un ordinateur ne pouvant manipuler qu'un nombre limité de chiffres, tous les nombres envisageables en mathématique ne le sont pas en informatique. La notion de limite n'a en particulier aucune signification en informatique ; on *recherche donc une valeur approchée de la dérivée* en $x$.
 
-{{% note tip %}}
+{{< note tip >}}
 Le procédé le plus simple consiste à considérer que si $h$ est suffisamment petit *il n'est pas nécessaire de passer à la limite*. On considère alors que :
 $$ f^{\prime}(x) \cong \dfrac{f(x+h) - f(x)}{h} \qquad \qquad \text{(1.1.)}$$
-{{% /note %}}
+{{< /note >}}
 
 ### Comment évaluer l'approximation réalisée ?
 
 L'approximation (1.1.) s'appuie sur la valeur du paramètre $h$. Il semble évident que cette valeur doit être la plus petite possible de façon à limiter le plus possible la non prise en compte de la limite dans la formule (1.1.). *Cette intuition est cependant fausse*, nous allons voir que :
-{{% note tip %}}
+{{< note tip >}}
  - la valeur de $h$ ne doit pas être plus petite que le plus petit nombre représentable dans le langage choisi ;
 
 - la valeur de $h$ doit être assez grande pour que $f(x)$ et $f(x+h)$ soient reconnues comme deux valeurs différentes, afin d'être à l'abri d'**erreurs d'arrondi** ;
 
 - la valeur de $h$ doit être assez petite afin que les **erreurs de troncature** soient négligeables.
-{{% /note %}}
+{{< /note >}}
 
 En Python, on accède facilement à certaines de ces informations :
 {{< highlight py3 >}}
@@ -75,7 +73,7 @@ inf                           # Résultat d'une division par 0
 
 ## Calcul numérique et erreurs
 
-{{% note warning %}}
+{{< note warning >}}
 Les *opérations numériques ne sont jamais exactes et toujours entachées d'erreurs*. Ces erreurs sont généralement petites pour chaque opération mais, comme un ordinateur réalise un très grand nombre d'opérations, leur accumulation peut conduire à des résultats complètement erronés.  
 {{% / note %}}
 
@@ -100,12 +98,12 @@ Si $f(x) = x^2$ on calcule que $f'(7)=14,0$. L'utilisation de l'expression appro
 
 Si on note $\delta$ la précision relative de la machine (par exemple : 7 chiffres significatifs donnent $\delta = 10^{-7}$), l'erreur absolue sur l'évaluation d'une fonction $f$ en un point $x$ est de l'ordre de $\delta\ |f(x)|$. On peut donc **estimer** l'erreur sur le numérateur de l'expression (1.1.) par : $\delta\ |f(x+h)| + \delta\ |f(x)| \approx 2 \delta\ |f(x)|$.
 
-{{% note tip %}}
+{{< note tip >}}
 L'erreur absolue sur l'évaluation du nombre dérivé par l'expression (1.1.) est donc :
 $$
     E_a = 2 \delta\ |\dfrac{f(x)}{h}|
 $$
-{{% /note %}}
+{{< /note >}}
 
 #### Retour à l'exemple ($\delta = 10^{-3}$ et $f(x)=x^2$) :
 
@@ -116,9 +114,9 @@ $$ E_a = 2 \times 10^{-3} \times \dfrac{49}{0,1} \approx 1$$
 $$ E_a = 2 \times 10^{-3} \times \dfrac{49}{0,01} \approx 10$$
 
 
-{{% note warning %}}
+{{< note warning >}}
 Les **erreurs d'arrondi** ont pour origine *la nature finie de la représentation des nombres* en mémoire. C'est une *limite imposée par le calculateur*.
-{{% /note %}}
+{{< /note >}}
 
 #### Script Python
 
@@ -175,14 +173,12 @@ def main():
               "Évolution de l'erreur dans le calcul de la dérivéeen fonction du pas",
               "h", "erreur relative (%)", False)
     for i in range(len(hs)):
-        print("Pas : {:.5e}, Nombre calculé : {:.9f}, erreur relative (%) : {:.9e}".format(hs[i],
-                                                                              dfs[i],
-                                                                              erreurs[i]))
+        print("Pas : {:.5e}, Nombre calculé : {:.9f}, erreur relative (%) : {:.9e}".format(hs[i], dfs[i], erreurs[i]))
 
 main()
 {{< /highlight >}}
 
-{{% solution "Résultat" %}}
+{{< solution "Résultat" >}}
 
 {{< highlight py3 >}}
 Pas : 5.00000e-02, Nombre calculé : 4.050000000, erreur relative (%) : 1.250000000e+00
@@ -232,7 +228,7 @@ Pas : 5.68434e-15, Nombre calculé : 4.062500000, erreur relative (%) : 1.562500
 Pas : 2.84217e-15, Nombre calculé : 3.750000000, erreur relative (%) : 6.250000000e+00
 {{< /highlight >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 ### Erreur de troncature
 
@@ -255,12 +251,12 @@ $$f(x+h) = f(x) + f^{\prime}(x)h + f^{\prime\prime}(\epsilon)\dfrac{h^2}{2} \hsp
 soit[^2] :
 $$f^{\prime}(x) = \dfrac{f(x+h) - f(x)}{h} - f^{\prime\prime}(\epsilon)\dfrac{h}{2}$$.
 
-{{% note tip %}}
+{{< note tip >}}
 On appelle **erreur de troncature** :
 $$
     E_t = \dfrac{|h|}{2} |f^{\prime\prime}(\epsilon)|
 $$
-{{% /note %}}
+{{< /note >}}
 
 #### Retour à l'exemple ($\delta = 10^{-3}$) et $f(x) = x^2$ :
 
@@ -272,16 +268,16 @@ $$ E_t = \dfrac{0,1 \times 2}{2} \approx 0,1$$
 - avec $h=0,01$ :
 $$ E_a = \dfrac{0,01 \times 2}{2} \approx 0,01$$
 
-{{% note warning %}}
+{{< note warning >}}
 Les **erreurs de troncature** sont liées à *la précision de l'algorithme utilisé*. Si, par exemple, une fonction est approchée par son développement de Taylor, l'erreur de troncature sera obtenue par une évaluation du reste du développement. Son contrôle sera obtenu par une majoration de ce reste.
-{{% /note %}}
+{{< /note >}}
 
 
 ### Erreur de méthode
 
-{{% note warning %}}
+{{< note warning >}}
 Les **erreurs de méthode** interviennent lorsqu'une expression est mal équilibrée et/ou mélange des valeurs très différentes. C'est un problème qui engendre des *erreurs d'arrondi*. *Dans la plupart des cas, une erreur de méthode impose de modifier l'algorithme*.
-{{% /note %}}
+{{< /note >}}
 
 - **Exemple 1.** Détermination de la position du milieu d'un segment.  
 Le calcul effectué spontanément : $$m = \dfrac{a+b}{2}$$ peut conduire à des erreurs si la somme $a+b$ dépasse les capacités de représentation des nombres du calculateur, *alors que la valeur de $m$ est représentable*. Le calcul à préférer est : $$m = a + \dfrac{b-a}{2}$$
@@ -346,15 +342,15 @@ $f^{\prime\prime}(x) = 2, h = \sqrt{2 \delta f(x)} = \sqrt{2\delta} |x|$. Pour $
 
 ### Convergence et stabilité
 
-{{% note tip %}}
+{{< note tip >}}
 On dit qu'un *algorithme est stable si le résultat des opérations est peu sensible à l'accumulation des erreurs*.
-{{% /note %}}
+{{< /note >}}
 L'étude de stabilité se fait par des méthodes expérimentales et parfois théoriques.
 
 
 ## Dérivation d'une fonction analytique, les différents schémas
 
-{{% note tip %}}
+{{< note tip >}}
 L'expression :
     $$f^{\prime}(x) = \dfrac{f(x+h) - f(x)}{h}$$
     est appelée **différence finie à droite**.
@@ -363,7 +359,7 @@ On peut aussi choisir une **différence finie à gauche** :
     $$f^{\prime}(x) = \dfrac{f(x) - f(x-h)}{h}$$
 et une **différence finie centrée autour de $x$** :
     $$f^{\prime}(x) = \dfrac{f(x+h) - f(x-h)}{2h}$$
-{{% /note %}}
+{{< /note >}}
 
 > Dans toutes ces expressions l'**erreur d'arrondi** reste la même. Par contre, l'**erreur de troncature** est modifiée dans la dernière expression.
 
@@ -423,7 +419,7 @@ def main():
 main()
 {{< /highlight >}}
 
-{{% solution "Résultat" %}}
+{{< solution "Résultat" >}}
 {{< highlight py3 >}}
 h 		 Diff. finies Prog.   Diff. finies Retro.   Diff. finies centrées
 1.0e-01 	  4.2939e-02 	  4.1138e-02 	  2.2510e-04
@@ -441,7 +437,7 @@ h 		 Diff. finies Prog.   Diff. finies Retro.   Diff. finies centrées
 1.0e-13 	  7.3392e-04 	  3.7631e-04 	  3.7631e-04
 1.0e-14 	  7.3953e-03 	  3.7070e-03 	  7.3953e-03
 {{< /highlight >}}
-{{% /solution %}}
+{{< /solution >}}
 
 
 ## Dérivation d'une fonction numérique

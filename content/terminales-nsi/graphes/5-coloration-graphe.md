@@ -1,22 +1,20 @@
 ---
 title: "Coloration d'un graphe"
 subtitle: ""
-author: ""
-type: ""
 date: 2024-04-14T18:42:53+04:00
 draft: false
 toc: true
 tags: ["Graphe", "Structure de données"]
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 500
 ---
 
 > L'objectif de cette séance est de découvrir comment colorier chaque sommet
 d'un graphe à l'aide d'un algorithme glouton.
 
-{{% note normal %}}
+{{< note normal >}}
 
 Colorier un graphe signifie associer une couleur à chacun de ses sommets
 de façon à ce que deux sommets liés par une arête n'aient pas la même couleur
@@ -26,7 +24,7 @@ Colorier un graphe avec un **nombre minimal de couleurs** est un problème
 difficile mais l'utilisation d'un algorithme glouton permet de résoudre
 le problème, au prix d'un nombre de couleurs qui n'est pas toujours minimal.
 
-{{% /note %}}
+{{< /note >}}
 
 #### Remarques
 
@@ -35,7 +33,7 @@ débutant à la valeur 0.
 - La classe `Graphe` du document
 [Représentation d'un graphe](2-representation-graphe-bis) sera utilisée.  
 Son code est reproduit ci-dessous.
-{{% solution "Code" %}}
+{{< solution "Code" >}}
 
 ```python
 """
@@ -318,7 +316,7 @@ if __name__ == "__main__":
     print(g2.liste_sommets())
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 Le code du fichier fourni comporte les instructions suivantes :
 
@@ -352,7 +350,7 @@ g2 = Graphe("a,b,c,d,e,f,g")
 
 Lancer le programme et vérifier la validité des vos réponses.
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Principe de l'algorithme
 
@@ -360,7 +358,7 @@ On parcourt tous les sommets du graphe dans un ordre arbitraire, et pour chaque
 sommet, on lui attribue la première couleur qui n'est pas déjà attribuée
 à ses sommets adjacents.
 
-{{% /note %}}
+{{< /note >}}
 
 4. Mettre en œuvre cet algorithme, à la main, sur le graphe proposé dans
 le code fourni.
@@ -391,7 +389,7 @@ def choix_couleur(sommet: Sommet, couleurs: dict[str, int]) -> int:
 
 5. Écrire le code Python de ces deux fonctions.
 
-{{% solution "Aide pour l'écriture de la fonction coloriage" %}}
+{{< solution "Aide pour l'écriture de la fonction coloriage" >}}
 
 La fonction doit :
 
@@ -409,9 +407,9 @@ associées.
 - Retourner le tuple constitué du dictionnaire des couleurs et de la variable
 qui comptabilise le nombre de couleurs utilisées.
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% solution "Aide pour l'écriture de la fonction choix_couleur" %}}
+{{< solution "Aide pour l'écriture de la fonction choix_couleur" >}}
 
 La fonction doit :
 
@@ -433,9 +431,9 @@ de sommets adjacents*.
 - Doit rechercher la première couleur (indice) libre dans la liste
 `couleurs_attribuees` et la retourner.
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def coloriage(g: Graphe) -> tuple[dict[str, int], int]:
@@ -484,4 +482,4 @@ def choix_couleur(sommet: Sommet, couleurs: dict[str, int]) -> int:
             return i
 ```
 
-{{% /solution %}}
+{{< /solution >}}

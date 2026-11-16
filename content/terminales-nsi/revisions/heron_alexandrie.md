@@ -1,17 +1,15 @@
 ---
 title: "Héron d'Alexandrie"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-09-05T04:24:09+04:00
 draft: false
 toc: true
 tags: []
 categories: ["Informatique", "Terminales Spé NSI"]
-image: ""
 solution_est_visible: true
 auto_numbering: false
 mathjax: true
+weight: 9900
 ---
 
 Héron d'Alexandrie est un ingénieur, un mécanicien et un
@@ -33,14 +31,14 @@ et une méthode efficace d'extraction de racine carrée,
 c'est-à-dire de résolution de l'équation $x^2 = a$, avec $a$
 positif&nbsp;:
 
-{{% note normal %}}
+{{< note normal >}}
 
 1. Choisir une première valeur raisonnable que l'on note $G$.
 2. Améliorer cette valeur en calculant la moyenne des valeurs $G$ et $x/G$.
 3. Vérifier si cette nouvelle valeur convient.
 4. Reprendre l'étape 2 tant que la valeur calculée n'est pas satisfaisante.
 
-{{% /note %}}
+{{< /note >}}
 
 > L'objectif de cette activité est de mettre en œuvre cette méthode en Python.
 
@@ -54,11 +52,11 @@ if __name__ == "__main__":
 
 1. Qu'appelle-t-on la **documentation** d'une fonction ? La **spécification** d'une fonction ?
 
-{{% note warning %}}
+{{< note warning >}}
 
 Toute fonction doit être accompagnée de sa spécification !
 
-{{% /note %}}
+{{< /note >}}
 
 2. Définir la fonction `moyenne` dont la spécification est
 
@@ -76,7 +74,7 @@ assert moyenne(12, 16) == 14
 assert moyenne(0, 8) == 4
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def moyenne(a: float, b: float) -> float:
@@ -87,7 +85,7 @@ def moyenne(a: float, b: float) -> float:
     return (a + b) / 2
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 3. Définir la fonction `valeur_absolue` dont la spécification est&nbsp;:
 
@@ -109,7 +107,7 @@ assert valeur_absolue(0) == 0
 assert valeur_absolue(-3) == 3
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def valeur_absolue(x: float) -> float:
@@ -123,7 +121,7 @@ def valeur_absolue(x: float) -> float:
         return -x
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 4. Définir la fonction `puissance` dont la spécification est&nbsp;:
 
@@ -145,7 +143,7 @@ assert puissance(0, 2) == 0
 assert puissance(3, 0) == 1
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def puissance(x: float, n: int) -> float:
@@ -159,7 +157,7 @@ def puissance(x: float, n: int) -> float:
     return res
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 5. Définir la fonction `amelioration_essai` dont la spécification est&nbsp;:
 
@@ -180,7 +178,7 @@ assert amelioration_essai(1, 2) == 1.5
 assert amelioration_essai(2, 1) == 1.25
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def amelioration_essai(essai: float, x: float) -> float:
@@ -190,7 +188,7 @@ def amelioration_essai(essai: float, x: float) -> float:
     return moyenne(essai, x / essai)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 6. Définir le prédicat `est_suffisamment_bon` dont la spécification est&nbsp;:
 
@@ -214,7 +212,7 @@ assert est_suffisamment_bon(1.999, 4) == False
 assert est_suffisamment_bon(1.9999, 4) == True
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def est_suffisamment_bon(essai: float, x: float) -> bool:
@@ -228,7 +226,7 @@ def est_suffisamment_bon(essai: float, x: float) -> bool:
     return valeur_absolue(puissance(essai, 2) - x) < tolerance
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 7. Définir la fonction `test` qui implémente l'algorithme de Héron d'Alexandrie. La spécification de la fonction est&nbsp;:
 
@@ -251,7 +249,7 @@ assert test(1, 4) == 2.0000000929222947
 assert test(7, 4) == 2.0000000271231317
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def test(essai: float, x: float) -> float:
@@ -265,7 +263,7 @@ def test(essai: float, x: float) -> float:
     return essai
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 8. Définir la fonction `racine_carree` dont la spécification est&nbsp;:
 
@@ -285,7 +283,7 @@ assert racine_carree(9) == 3.00009155413138
 assert racine_carree(16) == 4.000000636692939
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def racine_carree(x: float) -> float:
@@ -296,17 +294,17 @@ def racine_carree(x: float) -> float:
     return test(x, 1)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 9. Définir la fonction `main` qui affiche à l'écran la liste des racines carrées de tous les nombres pairs compris dans l'intervalle $[1; 100]$.
 
 Ajouter l'appel de la fonction `main` à la fin du fichier.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def main():
     return [racine_carree(i) for i in range(1, 100) if i % 2 == 0]
 ```
 
-{{% /solution %}}
+{{< /solution >}}

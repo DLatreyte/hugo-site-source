@@ -1,22 +1,20 @@
 ---
 title: "Structures de données fournies avec le langage Python"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-10-13T05:25:49+04:00
 draft: false
 toc: true
 tags: ["Dictionnaire", "Liste", "Tableau dynamique", "Structures de données", "Ensemble", "Complexité", "Tableau associatif"]
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 100
 ---
 Python possède dans la bibliothèque standard un grand nombre de structures de données, programmées de manière efficace.
 
 ## Rappels : modules, fonctions
 
-{{% note tip %}}
+{{< note tip >}}
 
 Pour chaque **module**, on distingue :
 
@@ -26,26 +24,26 @@ Pour chaque **module**, on distingue :
 - L'interface doit présenter une **documentation** dans laquelle  **tout ce que doit savoir le client doit être indiqué**.  
 - L'objectif de l'interface est que **le client n'ait pas à consulter l'implémentation pour utiliser les fonctions**.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note warning %}}
+{{< note warning >}}
 L'interface peut être envisagée comme une **abstraction** du module : *une description de ce qui caractérise ce module sans jamais entrer dans les détails de l'implémentation*.
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 Pour chaque **fonction** du module, la **spécification** doit indiquer :
 
 - son **nom**.
 - la liste de ses **paramètres** accompagnés de leur **type**.
 - le **type** de la **valeur retournée**.
 - la **documentation** de la fonction.
-{{% /note %}}
+{{< /note >}}
 
-{{% note warning %}}
+{{< note warning >}}
 
 La spécification peut être envisagée comme une **abstraction** de la fonction : *une description de ce qui caractérise cette fonction sans jamais entrer dans les détails de l'implémentation*.
 
-{{% /note %}}
+{{< /note >}}
 
 ## Avantages d'une barrière d'abstraction
 
@@ -59,19 +57,19 @@ La spécification peut être envisagée comme une **abstraction** de la fonction
 Les **structures de données** *organisent différemment les données que le programme traite*. Le langage Python fournissant le type `list`, on pourrait se demander pourquoi ne pas *systématiquement* l'utiliser et pourquoi devoir apprendre de nouveaux types.
 En fait, *la spécialisation des structures de données rend la programmation plus simple (utilisation de l'**API**) et plus efficace (**complexité**).*
 
-{{% note warning %}}
+{{< note warning >}}
 
 Nous verrons dans les prochains chapitres qu'*il faut distinguer l'objet que l'on manipule dans un programme de son implémentation* (comment il est programmé).
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 
 Un même type peut être implémenté de différentes façons. *Dans tous les cas, il présente la même interface au programmeur* (API).
 
 On parle donc de **type abstrait**.
 
-{{% /note %}}
+{{< /note >}}
 
 ## Principaux types abstraits fournis avec le langage Python
 
@@ -228,7 +226,7 @@ def __repr__(self: Liste) -> str:
 
 8. Tester le bon fonctionnement de la classe.
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
 ```python
 from __future__ import annotations
@@ -332,4 +330,4 @@ if __name__ == "__main__":
     print(liste)
 ```
 
-{{% /solution %}}
+{{< /solution >}}

@@ -1,16 +1,14 @@
 ---
 title: "Qu'est-ce qu'une réaction d'oxydoréduction en solution aqueuse ?"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-11-29T04:20:35+04:00
 draft: false
 toc: true
 tags: ["Oxydant", "Réducteur", "Couple oxydant/réducteur", "Réaction d'oxydo-réduction"]
 categories: ["Chimie", "Premières Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 100
 ---
 
 ## Données : tests de reconnaissance des ions métalliques

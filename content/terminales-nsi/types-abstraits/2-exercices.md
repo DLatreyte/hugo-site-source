@@ -1,16 +1,14 @@
 ---
 title: "Itérer sur les éléments d'un dictionnaire"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-10-13T05:08:27+04:00
 draft: false
 toc: true
 tags: ["Dictionnaire", "Liste"]
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: false
+weight: 200
 ---
 
 Au zoo de Beauval, il y a 5 éléphants d'Asie, 17 écureuils d'Asie, 2 pandas d'Asie, etc.
@@ -85,7 +83,7 @@ assert nombre(zoo_Beauval, "panda") == 2
 
 6. Écrire le code de cette fonction.
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 from typing import Dict, Tuple
@@ -154,4 +152,4 @@ if __name__ == "__main__":
     assert nbre_pour_animal(zoo_LaFleche, "panda") == 0
 ```
 
-{{% /solution %}}
+{{< /solution >}}

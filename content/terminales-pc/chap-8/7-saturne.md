@@ -1,16 +1,14 @@
 ---
 title: "Exploration du système saturnien"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-12-29T17:38:14+04:00
 draft: false
 toc: true
 tags: ["Champ gravitationnel", "Force gravitationnelle", "Repère de Frenet", "Deuxième loi de Newton", "Période de révolution", "Mouvement uniforme", "Accélération normale"]
 categories: ["Physique", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 700
 ---
 > Saturne, à cause de sa distance à la Terre et au Soleil, est une destination spatiale complexe qui nécessite un savoir-faire et des ressources financières très importants. La mission Cassini-Huygens reste, à ce jour, la seule mission à avoir placé une sonde, Cassini, en orbite autour de Saturne, et à avoir pu mener une étude approfondie de son système.
 
@@ -40,10 +38,10 @@ L'objectif de cette partie est de juger de la compatibilité d'un modèle avec l
 
 On considère une planète $S$, de symétrie sphérique, de masse $M$ et un objet $O$ assez petit (assimilable à un point matériel) de masse $m$, gravitant autour de $S$ avec un mouvement circulaire. On note $r$ la distance séparant le centre de la planète $S$ et l'objet $O$.
 
-1. Reprendre, sur votre feuille, le schéma ci-dessous, et y représenter le vecteur force $\vec{F}\_{S / O}$ qu'exerce la planète $S$ sur l'objet $O$ (sans considération d'échelle).
+1. Reprendre, sur votre feuille, le schéma ci-dessous, et y représenter le vecteur force $\vec{F}_{S / O}$ qu'exerce la planète $S$ sur l'objet $O$ (sans considération d'échelle).
 <img src="/terminales-pc/chap-8/chap-8-7/chap-8-7-2.png" alt="" width="50%" />
 
-2. Donner l'expression vectorielle de la force gravitationnelle $\vec{F}\_{S / O}$ en fonction du vecteur unitaire $\vec{n}$.
+2. Donner l'expression vectorielle de la force gravitationnelle $\vec{F}_{S / O}$ en fonction du vecteur unitaire $\vec{n}$.
 
 ### Satellite gravitant sur une orbite circulaire
 
@@ -82,7 +80,7 @@ La figure ci-dessus donne la configuration de ces objets à un instant donné (l
 
 <img src="/terminales-pc/chap-8/chap-8-7/chap-8-7-4.png" alt="" width="30%" />
 
-Soient deux objets $A$ et $B$, assimilables à des points matériels, satellisés autour de Saturne sur deux orbites circulaires de rayon $r\_{A}$ et $r\_{B}$ différents ($r\_{A} > r\_{B}$) mais de valeurs voisines. La figure ci-dessus donne la configuration de ces objets à un instant $t$ : ils sont disposés de façon que la direction $(AB)$ passe par $S$, le centre de Saturne ; la flèche indique le sens du mouvement (les échelles des rayons n'ont pas été respectées). On considère que l'interaction gravitationnelle entre ces deux objets est négligeable et que seule celle avec Saturne intervient.
+Soient deux objets $A$ et $B$, assimilables à des points matériels, satellisés autour de Saturne sur deux orbites circulaires de rayon $r_{A}$ et $r_{B}$ différents ($r_{A} > r_{B}$) mais de valeurs voisines. La figure ci-dessus donne la configuration de ces objets à un instant $t$ : ils sont disposés de façon que la direction $(AB)$ passe par $S$, le centre de Saturne ; la flèche indique le sens du mouvement (les échelles des rayons n'ont pas été respectées). On considère que l'interaction gravitationnelle entre ces deux objets est négligeable et que seule celle avec Saturne intervient.
 
 À une date ultérieure, l'objet satellite $B$ a effectué exactement une révolution autour de Saturne. On souhaite savoir où se trouve l'objet $A$ sur son orbite.
 
@@ -100,13 +98,13 @@ Soient deux objets $A$ et $B$, assimilables à des points matériels, satellisé
 
 ### Atterrissage en douceur de Huygens
 
-L'atterrisseur Huygens s'est désolidarisé de l'orbiteur à $\pu{1270 km}$ d'altitude au dessus de Titan. Arrivé dans la haute atmosphère de Titan, à plus de $\pu{20000 km.h-1}$ et seulement freiné par ses boucliers thermiques, l'atterrisseur a alors progressivement ralenti grâce à une succession de parachutes. *À $\pu{110 km}$ d'altitude, le parachute final s'est ouvert alors que la vitesse de Huygens était égale à $v\_{0} = \pu{95,0 m.s-1}$ ; le mouvement est alors très rapidement devenu rectiligne et vertical, jusqu'à l'arrivée au sol, sur une surface solide mais molle, à la vitesse $v\_{F} = \pu{6,0 m.s-1}$.*
+L'atterrisseur Huygens s'est désolidarisé de l'orbiteur à $\pu{1270 km}$ d'altitude au dessus de Titan. Arrivé dans la haute atmosphère de Titan, à plus de $\pu{20000 km.h-1}$ et seulement freiné par ses boucliers thermiques, l'atterrisseur a alors progressivement ralenti grâce à une succession de parachutes. *À $\pu{110 km}$ d'altitude, le parachute final s'est ouvert alors que la vitesse de Huygens était égale à $v_{0} = \pu{95,0 m.s-1}$ ; le mouvement est alors très rapidement devenu rectiligne et vertical, jusqu'à l'arrivée au sol, sur une surface solide mais molle, à la vitesse $v_{F} = \pu{6,0 m.s-1}$.*
 
 #### Données
 
 - Masse de Huygens : $m = \pu{320 kg}$ ;
-- Masse de Titan : $m\_{T} = \pu{1,35e23 kg}$ ;
-- Champ de pesanteur de Titan : $g\_{T} = \pu{1,35 m.s-2}$.
+- Masse de Titan : $m_{T} = \pu{1,35e23 kg}$ ;
+- Champ de pesanteur de Titan : $g_{T} = \pu{1,35 m.s-2}$.
 - La trajectoire est matérialisée par un axe vertical $(z' Oz)$ orienté vers le haut, dont l'origine $O$ se trouve au niveau du sol de Titan.
 - La poussée d'Archimède est négligeable dans ce problème.
 - Le mouvement de Huygens sera étudié dans un référentiel titanocentrique considéré galiléen.
@@ -128,6 +126,6 @@ Tout élément de réponse sera pris en compte.
 
 ## Corrigé
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 {{< remote "Corrigé au format pdf" "/terminales-pc/chap-8/chap-8-7/chap-8-7-6.pdf" >}}
-{{% /solution %}}
+{{< /solution >}}

@@ -1,16 +1,14 @@
 ---
 title: "Titrage d'une solution de vinaigre par conductimétrie"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-10-10T21:25:36+04:00
 draft: false
 toc: true
 tags: ["Tableau d'avancement", "Équivalence", "Conductimétrie", "Titrage", "Conductivité molaire ionique", "Conductivité"]
 categories: ["Chimie", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 500
 ---
 
 ## Documents
@@ -34,11 +32,11 @@ L'acide acétique ou acide éthanoïque est un acide carboxylique avec une chaî
 
 ### Équivalence d'un titrage
 
-{{% note tip %}}
+{{< note tip >}}
 
 - On appelle **équivalence** d'un titrage le *point du titrage où on change de réactif limitant*.
 - À l'**équivalence** les *réatifs ont été introduits dans les proportions stœchiométriques*.
-{{% /note %}}
+{{< /note >}}
 
 ## Objectif
 
@@ -48,7 +46,7 @@ L'acide acétique ou acide éthanoïque est un acide carboxylique avec une chaî
 
 ### Données
 
-- Conductivités molaires ioniques : $\lambda\_{\ce{OH^-}} = \pu{19,8 mS.m2.mol-1}$, $\lambda\_{\ce{H3O^+}} = \pu{35,0 mS.m2.mol-1}$, $\lambda\_{\ce{CH3COO^-}} = \pu{4,1 mS.m2.mol-1}$, $\lambda\_{\ce{Na^+}} = \pu{5,0 mS.m2.mol-1}$.
+- Conductivités molaires ioniques : $\lambda_{\ce{OH^-}} = \pu{19,8 mS.m2.mol-1}$, $\lambda_{\ce{H3O^+}} = \pu{35,0 mS.m2.mol-1}$, $\lambda_{\ce{CH3COO^-}} = \pu{4,1 mS.m2.mol-1}$, $\lambda_{\ce{Na^+}} = \pu{5,0 mS.m2.mol-1}$.
 
 - Masse volumique du vinaigre commercial : $\rho = \pu{1,01 kg.L-1}$.
 
@@ -75,42 +73,42 @@ L'acide acétique ou acide éthanoïque est un acide carboxylique avec une chaî
 ## Exploitation
 
 1. Écrire l'équation de la réaction de titrage entre l'acide acétique et les ions hydroxyde de la solution de soude.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $ \ce{ CH3-CO2H(aq) + HO^-(aq) -> CH3-CO2^-(aq) + H2O} $
-{{% /solution %}}
+{{< /solution >}}
 
 2. Quelles propriétés doit présenter une réaction chimique utilisée pour réaliser un titrage&nbsp;?
-{{% solution "Réponse" %}}
-{{% note tip %}}
+{{< solution "Réponse" >}}
+{{< note tip >}}
 Une réaction chimique utilisée pour réaliser un titrage doit :
 
 - être **rapide**&nbsp;;
 - être **unique** dans le milieu réactionnel (c'est la seule qui doit consommer le titré)&nbsp;;
 - doit conduire à des **transformations chimiques totales**.
-{{% /note %}}
-{{% /solution %}}
+{{< /note >}}
+{{< /solution >}}
 
 3. Pourquoi la conductivité de la solution est-elle très petite au début du titrage&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Nous allons voir dans quelques semaines que l'acide acétique réagit très peu avec l'eau. Sa solubilisation dans l'eau, d'équation $\ce{ CH3-CO2H(aq) + H2O <=> CH3-CO2^-(aq) + H3O^+}$ conduit donc à la formation de très peu d'ions acétate et oxonium.
 La conductivité de cette solution est donc très petite.
-{{% /solution %}}
+{{< /solution >}}
 
 4. Pourquoi la conductivité de la solution augmente-t-elle dès que l'on introduit un peu de soude dans la solution&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Dès l'introduction de soude (réactif alors limitant), il y a, dans la solution, formation d'ions acétate et apparition d'ions sodium. La solution est donc plus conductrice.
-{{% /solution %}}
+{{< /solution >}}
 
 5. Donner, de façon qualitative, la composition du bécher :
     - avant l'équivalence&nbsp;;
     - à l'équivalence&nbsp;;
     - après l'équivalence.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 <img src="/terminales-pc/chap-4/chap-4-5-4.png" alt="" width="100%" />
-{{% /solution %}}
+{{< /solution >}}
 
 6. Établir un tableau d'avancement pour chacune des phases décrites ci-dessus.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 | État | Av. | $\ce{CH3CO2H}$ | + | $\ce{HO^-}$ | $\ce{->}$ | $\ce{CH3CO2^-}$ | + | $\ce{H2O}$ | ▍ | $\ce{Na^+}$|
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
@@ -119,30 +117,30 @@ Dès l'introduction de soude (réactif alors limitant), il y a, dans la solution
 | À Équiv. | $x_E$  | $n_A - x_E = 0$  |   | $n_B - x_E = 0$  |   |  $x_E$ |   |  excès | ▍ | $n_B$  |
 | Après Équiv.  | $x$  |  0 |   | $n_B - x_E$  |   | $x_E$  |   | excès  | ▍ | $n_B$ |
 
-{{% /solution %}}
+{{< /solution >}}
 
 7. À partir des tableaux d'avancement écrire les expressions des conductivités $\sigma$ de la solution en fonction des concentrations molaires des différentes entités chimiques :
 
 - avant l'équivalence&nbsp;;
 - à l'équivalence&nbsp;;
 - après l'équivalence.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 - Avant l'équivalence : $\sigma_{\text{av}} =  \lambda_{\ce{Na^+}} [\ce{Na^+}] + \lambda _{\ce{CH3CO2^-}} [\ce{CH3CO2^-}]$
 - À l'équivalence : $\sigma_{\text{E}} = \lambda_{\ce{Na^+}} [\ce{Na^+}] + \lambda _{\ce{CH3CO2^-}} [\ce{CH3CO2^-}]$
 - Après l'équivalence : $\sigma_{\text{ap}} = \lambda_{\ce{Na^+}} [\ce{Na^+}] + \lambda_{\ce{CH3CO2^-}} [\ce{CH3CO2^-}] + \lambda_{\ce{OH^-}} [\ce{OH^-}]$
-{{% /solution %}}
+{{< /solution >}}
 
 8. Justifier l'allure de la courbe $\sigma = f(V_B)$.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 #### Remarque préalable
 
 - Le volume de la solution est : $V_{\text{total}} = V_A + V_{\text{eau}} + V_B$. Ce volume varie donc au fur et à mesure que l'on ajoute de la soude ($V_B$).
 Cependant, si on relit plus attentivement le protocole, on remarque que $V_{\text{eau}} + V_A \gg V_B$, donc $V_{\text{total}} \approx V_{\text{eau}} + V_A$. <strong>Le volume de la solution reste constant pendant tout le titrage.</strong>
-{{% note tip %}}
+{{< note tip >}}
 - Lors d'un titrage conductimétrique, *on ajoute généralement une grande quantité d'eau (le solvant) au début du titrage*, de façon à pouvoir considérer que le *volume de la solution reste constant* tout au long du titrage.
 - Puisque le volume de la solution reste constant, **tout raisonnement basé sur les quantités de matière conduit à la même conclusion que le même raisonnement basé sur les concentrations molaires**.
-{{% /note %}}
+{{< /note >}}
 
 #### Raisonnement qualitatif (celui à préférer)
 
@@ -179,10 +177,10 @@ $\sigma_{\text{ap}}$ est fonction affine de $V_B$, de pente $(\lambda_{\ce{Na^+}
 
 - **Comparaison des pentes :** comme $\lambda_{\ce{OH^-}} \gg \lambda_{\ce{CH3CO2^-}}$, la pente de $\sigma_{\text{ap}}$ est plus importante que celle de $\sigma_{\text{av}}$.
 
-{{% /solution %}}
+{{< /solution >}}
 
 9. En déduire la concentration en acide acétique dans le vinaigre blanc.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - À la question précédente, on a constaté un comportement différent pour la conductivité, avant et après l'équivalence. **Cette dernière se trouve à l'intersection des deux droites qui modélisent ces comportements**.
 - Si on trace les deux droites, on obtient $V_{BE} = \pu{11,8 mL}$.
@@ -192,4 +190,4 @@ $\sigma_{\text{ap}}$ est fonction affine de $V_B$, de pente $(\lambda_{\ce{Na^+}
 
 - La masse volumique du vinaigre vaut $\pu{1,01 kg.L-1}$, on constate donc que l'acide acétique représente 7,1&nbsp;% de cette masse, ce qui est conforme à l'information donnée dans le document 1.
 
-{{% /solution %}}
+{{< /solution >}}

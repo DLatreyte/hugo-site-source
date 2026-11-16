@@ -1,16 +1,14 @@
 ---
 title: "Annale : Corrosion des gouttières"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-11-21T21:52:17+04:00
 draft: false
 toc: true
 tags: []
 categories: ["Chimie", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 1000
 ---
 
 Les précipitations sont naturellement acides en raison du dioxyde de carbone présent dans l'atmosphère. Par ailleurs, la combustion des matières fossiles (charbon, pétrole et gaz) produit du dioxyde de soufre et des oxydes d'azote qui s'associent à l'humidité de l'air pour libérer de l'acide sulfurique et de l'acide nitrique. Ces acides sont ensuite transportés loin de leur source avant d'être précipités par les pluies, le brouillard, la neige ou sous forme de dépôts secs.

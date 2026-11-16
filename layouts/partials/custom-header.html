@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+{{- /* Numérotation automatique des titres (paramètre auto_numbering: true des pages) */ -}}
+{{- if .Params.auto_numbering }}
+<style>
+  #R-body-inner article { counter-reset: section; }
+  #R-body-inner article h2 { counter-reset: subsection; }
+  #R-body-inner article h2::before { counter-increment: section; content: counter(section) ". "; }
+  #R-body-inner article h3::before { counter-increment: subsection; content: counter(section) "." counter(subsection) ". "; }
+  #R-body-inner article .box h2::before, #R-body-inner article .box h3::before, #R-body-inner article .clue h2::before, #R-body-inner article .clue h3::before { content: none; counter-increment: none; }
+</style>
+{{- end }}

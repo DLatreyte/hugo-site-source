@@ -1,16 +1,14 @@
 ---
 title: "L’élément fer dans l’anti-mousse"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-02-03T08:41:20+04:00
 draft: false
 toc: true
 tags: []
 categories: ["Premières Spé PC"]
-image: ""
 solution_est_visible: false
 auto_numbering: true
+weight: 100
 ---
 
 > Les solutions anti-mousse pour gazon sont composées notamment d’ions fer (II) très actifs contre la mousse. L'objectif de cette séance est de déterminer la concentration en ions fer (II) dans un anti-mousse.
@@ -57,58 +55,58 @@ auto_numbering: true
 
 9. En déduire la concentration des ions fer (II) dans la solution diluée puis dans le produit commercial.
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 {{< remote "Corrigé au format pdf" "/premieres-pc/chap-9/chap-9-1/chap-9-1-3.pdf" >}}
-{{% /solution %}}
+{{< /solution >}}
 
 ## Synthèse
 
 10. Qu'est-ce qu'un **dosage** ?
-{{% solution "Réponse" %}}
-{{% note tip %}}
+{{< solution "Réponse" >}}
+{{< note tip >}}
 **Doser** c'est *rechercher une concentration inconnue*.\
 Les dosages peuvent s'appuyer sur des **propriétés physiques** (penser à la loi de Beer-Lambert), *méthodes non destructrices* ou sur des **réactions chimiques**, *méthodes destructrices*. Dans ce dernier cas, on parle de **titrage**.
-{{% /note %}}
-{{% /solution %}}
+{{< /note >}}
+{{< /solution >}}
 
 11. Qu'est-ce qu'un **titrage** ?
-{{% solution "Réponse" %}}
-{{% note tip %}}
+{{< solution "Réponse" >}}
+{{< note tip >}}
 Un **titrage** est un dosage qui s'appuie sur une **réaction chimique**.\
 Un titrage est donc une méthode destructrice de recherche.
-{{% /note %}}
-{{% /solution %}}
+{{< /note >}}
+{{< /solution >}}
 
 12. Qu'est-ce qu'un **titrage direct** ?
-{{% solution "Réponse" %}}
-{{% note tip %}}
+{{< solution "Réponse" >}}
+{{< note tip >}}
 Un titrage est dit **direct** *si le titrant réagit directement avec le titré*.\
 *Dans un dosage direct, le titrant se situe dans la burette alors que le titré est dans l'erlenmeyer*.
-{{% /note %}}
-{{% /solution %}}
+{{< /note >}}
+{{< /solution >}}
 
 13. Qu'est-ce que l'**équivalence d'un titrage** ?
-{{% solution "Réponse" %}}
-{{% note tip %}}
+{{< solution "Réponse" >}}
+{{< note tip >}}
 L'**équivalence d'un titrage** est le point de ce titrage où l'**on change de réactif limitant**.\
 *Avant l'équivalence d'un titrage direct le titrant est le réactif limitant alors qu'après l'équivalence, c'est le titré qui est le réactif limitant*.
-{{% /note %}}
-{{% /solution %}}
+{{< /note >}}
+{{< /solution >}}
 
 14. Comment repère-t-on l'équivalence ?
-{{% solution "Réponse" %}}
-{{% note normal %}}
+{{< solution "Réponse" >}}
+{{< note normal >}}
 Plusieurs méthodes permettent de repérer l'équivalence, en fonction des réactions utilisées. Dans ce titrage, la solution change de couleur à l'équivalence.
-{{% /note %}}
-{{% /solution %}}
+{{< /note >}}
+{{< /solution >}}
 
 15. Quelles propriétés doit posséder la réaction chimique support d'un titrage ?
-{{% solution "Réponse" %}}
-{{% note tip %}}
+{{< solution "Réponse" >}}
+{{< note tip >}}
 La réaction chimique support d'un titrage doit être :
 
 - **rapide** ;
 - **unique**, de façon à ce que le titrant soit le seul à consommer le titré ;
 - la modélisation d'une **transformation chimique totale**.
-{{% /note %}}
-{{% /solution %}}
+{{< /note >}}
+{{< /solution >}}

@@ -1,16 +1,14 @@
 ---
 title: "Annale : Décomposition d'une eau oxygénée"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-11-21T15:42:36+04:00
 draft: false
 toc: true
 tags: ["Tableau d'avancement", "Vitesse volumique", "Temps de demi-réaction", "Conductivité", "Facteurs cinétiques", "Titrage", "Oxydoréduction"]
 categories: ["Chimie", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 800
 ---
 
 **L'usage des calculatrices n'est pas autorisé**. L'épreuve a été conçue pour être traitée sans calculatrice.
@@ -27,7 +25,7 @@ $$\ce{
 
 On réalise le protocole expérimental suivant&nbsp;:
 
-- On prépare huit béchers contenant chacun $V_0 = \pu{10,0 mL}$ d'une solution aqueuse de peroxyde d'hydrogène de concentration&nbsp;: $[\ce{H2O2}]\_0 = \pu{5,8e-2 mol.L-1}$.
+- On prépare huit béchers contenant chacun $V_0 = \pu{10,0 mL}$ d'une solution aqueuse de peroxyde d'hydrogène de concentration&nbsp;: $[\ce{H2O2}]_0 = \pu{5,8e-2 mol.L-1}$.
 
 - On les place dans une enceinte thermostatée qui maintient la température à la valeur $\theta_1 = \pu{20 °C}$.
 

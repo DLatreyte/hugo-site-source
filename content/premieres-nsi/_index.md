@@ -5,6 +5,8 @@ draft: false
 tags: []
 categories: []
 layout: single
+weight: 100
+hidden: true
 ---
 
 ## Programme

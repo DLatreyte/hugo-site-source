@@ -1,16 +1,14 @@
 ---
 title: "Diviser pour régner"
 subtitle: ""
-author: ""
-type: ""
 date: 2023-01-29T21:53:04+04:00
 draft: false
 toc: true
 tags: ["Diviser pour régner"]
 categories: ["Terminales Spé NSI"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 1
 ---
 
 ## Dans quel cas ?
@@ -32,7 +30,7 @@ C'est l'indépendance des sous-problèmes qui permet la construction de la solut
 
 ## Schéma de résolution
 
-{{% note tip %}}
+{{< note tip >}}
 
 Diviser
 : On décompose le problème initial en un ou plusieurs sous-problèmes de plus petites tailles.
@@ -43,7 +41,7 @@ Régner
 Combiner
 : Les solutions des sous-problèmes sont combinées pour construire la solution du problème initial.
 
-{{% /note %}}
+{{< /note >}}
 
 #### Remarques
 
@@ -55,7 +53,7 @@ Combiner
 L'algorithme suivant permet de calculer $a^n$ :
 $$
 a^n = \begin{cases}
-   1 &\text{if } n=0 \\\\
+   1 &\text{if } n=0 \\
    a \times a^{n-1} &\text{if } n>0
 \end{cases}
 $$
@@ -71,7 +69,7 @@ def puissance1(a: int, n: int) -> int:
 
 Penser à écrire quelques tests.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def puissance1(a: int, n: int) -> int:
@@ -93,21 +91,21 @@ if __name__ == "__main__":
     print("Done!")
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 2. Quelle est la complexité de cet algorithme ?
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 Le calcul nécessite $n$ appels récursifs et $n+1$ multiplications. La complexité est donc en $O(n)$.
 
-{{% /solution %}}
+{{< /solution >}}
 
 L'algorithme suivant permet aussi de calculer $a^n$ :
 $$
 a^n = \begin{cases}
-   1 &\text{if } n=0 \\\\
-    ( a^k )^2  &\text{if } n = 2k \text{ (n est pair)} \\\\
+   1 &\text{if } n=0 \\
+    ( a^k )^2  &\text{if } n = 2k \text{ (n est pair)} \\
    a \times ( a^k )^2 &\text{if } n = 2k + 1 \text{ (n est impair)}
 \end{cases}
 $$
@@ -124,7 +122,7 @@ def puissance2(a: int, n: int) -> int:
 
 Penser à écrire quelques tests.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def puissance2(a: int, n: int) -> int:
@@ -150,10 +148,10 @@ if __name__ == "__main__":
     print("Done!")
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 4. Justifier que le seconde algorithme met en œuvre le raisonnement « Diviser pour règner ».
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - La première ligne de l'algorithme correspond au cas de base pour lequel $n=0$ et $a^n=1$.
 - Pour $n>0$, à partir de la valeur $n$, le calcul se poursuit avec la valeur $\left\lfloor \dfrac{n}{2} \right\rfloor$. On décompose le calcul de $a^n$ en celui de $a^{\left\lfloor \dfrac{n}{2} \right\rfloor}$, puis celui de $a^{\left\lfloor \dfrac{n}{2} \right\rfloor / 2}$, etc. jusqu'à atteindre le cas de base. Chaque calcul intermédiaire se fait sur une instance plus petite.
@@ -165,27 +163,27 @@ if __name__ == "__main__":
 
 - $\left\lceil \dfrac{n}{2} \right\rceil$ est la notation mathématique pour l'opération en Python `n // 2 + 1`, c'est à dire pour *le plus petit entier supérieur au résultat de la division de* $n$ *par 2*.
 
-{{% /solution %}}
+{{< /solution >}}
 
 5. Pourquoi appelle-t-on l'algorithme 2, l'exponentiation rapide ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 Soit $k$ le nombre de fois qu'il faut diviser (division euclidienne) $n$ par 2 pour parvenir à la valeur 1. $k$ est tel que
 $$ 1 = \dfrac{n}{2^k} \iff 2^k = n \iff k = \log_2 n $$.  
 Il reste un appel récursif supplémentaire à effectuer pour arriver au cas de base.  
 La complexité de l'algorithme est donc en $O(\log_2 n)$ ; elle est bien meilleure que celle de l'algorithme 1.
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Conclusion
 
-{{% note tip %}}
+{{< note tip >}}
 
 - La méthode « Diviser pour régner » est le paradigme naturel de la récursivité.
 - La complexité d'un algorithme qui s'appuit sur le paradigme « Diviser pour régner » est parfois optimale (exponentiation rapide, recherche dichotomique, tri fusion, etc.) mais pas toujours (recherche du minimum et du maximum dans une liste, somme des éléments d'une liste, recherche dans une liste non triée, etc.).
 - L'efficacité d'un algorithme qui s'appuit sur le paradigme « Diviser pour régner » dépend de l'implémentation de la récursivité par le langage choisi.
 
-{{% /note %}}
+{{< /note >}}
 
 ## Exercice : recherche dichotomique
 
@@ -203,7 +201,7 @@ def recherche1(liste: list[int], val: int) -> int:
     """
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def recherche1(liste: list[int], val: int) -> int:
@@ -230,7 +228,7 @@ def recherche1(liste: list[int], val: int) -> int:
     return m if trouve else -1
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 7. Tester la fonction `recherche1`.
 
@@ -248,7 +246,7 @@ def recherche2(liste: list[int], val: int, g: int, d: int) -> bool:
     """
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def recherche2(liste: list[int], val: int, g: int, d: int) -> bool:
@@ -272,6 +270,6 @@ def recherche2(liste: list[int], val: int, g: int, d: int) -> bool:
             return recursive(liste, val, m + 1, d)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 9. Tester la fonction `recherche2`.

@@ -1,19 +1,17 @@
 ---
 title: "Tester ses fonctions avec doctest"
 subtitle: "Chapitre 5,1"
-author: ""
-type: ""
 date: 2021-08-29T16:36:33+04:00
 draft: true
 toc: true
 tags: ["Fonctions", "Python", "Jeux de tests", "doctest"]
 categories: ["Première Spé NSI"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 100
 ---
 
-{{% note normal %}}
+{{< note normal >}}
 
 Le travail qui suit s'appuie sur la définition de la fonction `kelvin_vers_celsius` suivante :
 
@@ -30,7 +28,7 @@ def kelvin_vers_celsius(t: float) -> float:
     return t + offset
 ```
 
-{{% /note %}}
+{{< /note >}}
 
 ## Première utilisation du module `doctest`
 
@@ -75,7 +73,7 @@ Mais quels tests a-t-elle effectué ?
    ok 
 ```
 
-{{% note normal %}}
+{{< note normal >}}
 
 La fonction `testmod` du module doctest a :
 
@@ -83,14 +81,14 @@ La fonction `testmod` du module doctest a :
 - exécuté les instructions de ces lignes ;
 - vérifié que le résultat retourné correspond bien à ce qui est écrit dans cette documentation.
 
-{{% /note %}}
+{{< /note >}}
 
 6. Modifier maintenant, dans la définition de la fonction `kelvin_vers_celsius`, la valeur 0.0 par 1.0. Charger à nouveau le fichier dans l'interpréteur et relancer la commande du point 5. ci-dessus.\
 Que retourne la fonction `testmod` maintenant ? Ce message décrit-il précisément le problème ?
 
-{{% note tip %}}
+{{< note tip >}}
 La fonction testmod du module doctest analyse la valeur retournée par une fonction à partir d'exemples données dans sa **documentation**.
-{{% /note %}}
+{{< /note >}}
 
 
 ### Comment rendre l'analyse de la valeur retournée par une fonction automatique ?
@@ -166,7 +164,7 @@ Quelle est la différence dans le comportement de la fonction ce code introduit-
 
 ## À retenir
 
-{{% note tip %}}
+{{< note tip >}}
 
 Pour chacune des fonctions, il faut
 1. Incorporer à sa documentation des exemples pertinents d'utilisation de ces fonctions ;
@@ -179,12 +177,12 @@ if __name__ == "__main__":
     doctest.testmod()
 ```
 
-{{% /note %}}
+{{< /note >}}
 
 
 ## Exercices
 
-{{% note exercise %}}
+{{< note exercise >}}
 #### Exercice 1
 
 Définir le prédicat `est_egal` dont une partie de la spécification est :
@@ -201,9 +199,9 @@ def est_egal(a: float, b: float) -> bool:
     """
 ```
 Remplacer les `xxx` de façon à ce que la fonction testmod accepte votre définition.
-{{% /note %}}
+{{< /note >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 2
 
@@ -222,4 +220,4 @@ def inverse(x: float) -> float:
     """
 ```
 Remplacer les *xxx* de façon à ce que la fonction testmod accepte votre définition.
-{{% /note %}}
+{{< /note >}}

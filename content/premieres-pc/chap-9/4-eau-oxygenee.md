@@ -1,21 +1,19 @@
 ---
 title: "Dosage par titrage d'une eau oxygénée"
 subtitle: ""
-author: ""
-type: ""
 date: 2022-11-29T05:21:13+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 400
 ---
 
 ## Documents
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Eau oxygénée
 
@@ -30,9 +28,9 @@ Elle est utilisée pour :
 - Peroxyde d'hydrogène (eau oxygénée) : $\pu{3 g}$ pour $\pu{100 mL}$.
 - Le terme « 10 volumes » signifie qu'un litre de solution peut dégager 10 litres d'oxygène actif (dioxygène $\ce{O2}$).
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Dosage par titrage (ou titrage)
 
@@ -41,9 +39,9 @@ Elle est utilisée pour :
 
 Lors d'un dosage par titrage l'entité dont on cherche la concentration est détruite, contrairement à ce qui passe lors d'un dosage par étalonnage.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Titrage direct
 
@@ -64,9 +62,9 @@ Du point de vue pratique, lorsque le titrage est direct :
 
 - le **réactif titrant** se trouve dans la burette ;
 - le **réactif titré** se trouve dans le bécher (ou l'erlenmyer).
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Équivalence d'un titrage
 
@@ -77,7 +75,7 @@ Du point de vue pratique, lorsque le titrage est direct :
 
 À l'équivalence, les réactifs ont donc été **introduits dans les proportions stœchiométriques** et sont tous limitants.
 
-{{% /note %}}
+{{< /note >}}
 
 ## Données
 
@@ -111,11 +109,11 @@ Ajuster le zéro.
 
 - Verser mL par mL la solution titrante dans le bécher, tout en agitant avec un barreau aimanté.
 
-{{% note warning %}}
+{{< note warning >}}
 
 Le permanganate de potassium sera versé jusqu’à ce que la solution dans le bécher prenne une couleur rose persistante.
 
-{{% /note %}}
+{{< /note >}}
 
 - Noter le volume $V_E$ de solution permanganate de potassium versé à l’équivalence.
 

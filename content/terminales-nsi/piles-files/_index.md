@@ -1,17 +1,14 @@
 ---
 title: "Piles et Files"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-10-26T22:58:14+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 120
 ---
 
 ## Au programme

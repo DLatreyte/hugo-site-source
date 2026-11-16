@@ -1,23 +1,21 @@
 ---
 title: "Loi de Boyle-Mariotte"
 subtitle: ""
-author: ""
-type: ""
 date: 2022-02-03T17:59:51+04:00
 draft: false
 toc: true
 tags: []
 categories: ["Premières Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 200
 ---
 
-{{% note normal %}}
+{{< note normal >}}
 
 À la fin du document [Chap. 9,1](../1-description-fluide), on a précisé que pour décrire **l'état d'un gaz au niveau macroscopique**, il est nécessaire de prendre en compte les paramètres **volume**, **pression**, **température** et **quantité de matière**, et que ces quatre paramètres ne sont pas indépendant les uns des des autres.
 
-{{% /note %}}
+{{< /note >}}
 
 > L'objectif de cette séance est de *mettre en évidence la relation qui existe entre la pression au sein d'un gaz et son volume, la température et la quantité de matière restant constantes*. Cette relation porte le nom de **loi de Boyle-Mariotte**.
 
@@ -37,11 +35,11 @@ auto_numbering: true
 
 ## Préparation des variables du problème
 
-{{% note normal %}}
+{{< note normal >}}
 
 Le fichier de travail se trouve à cette {{% remote "adresse" "https://dlatreyte.github.io/jupyter-lite/lab?path=premiere-spe-pc%2Fdescription-fluide-au-repos%2Fboyle-mariotte-eleves.ipynb" %}}
 
-{{% /note %}}
+{{< /note >}}
 
 1. Compléter les instructions suivantes :
 
@@ -50,14 +48,14 @@ V = [....]  # cm³
 P = [....]  # hPa
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 V = [30, 35, 40, 45, 50, 55, 60]  # cm³
 P = [1935, 1680, 1521, 1338, 1218, 1093, 1004]  # hPa
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 2. Convertir les volumes en $\pu{m3}$.
 
@@ -66,14 +64,14 @@ for i in range(len(V)):
     V[i] = ....
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 for i in range(len(V)):
     V[i] = V[i] * 1e-6
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 3. De la même façon, convertir les pressions en Pa (pascal).
 
@@ -82,14 +80,14 @@ for i in range(len(V)):
     ....
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 for i in range(len(P)):
     P[i] = P[i] * 100
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Évolution de la pression en fonction du volume
 
@@ -106,7 +104,7 @@ plt.legend()
 plt.show()
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 sns.set()
@@ -119,15 +117,15 @@ plt.legend()
 plt.show()
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 5. La relation entre $P$ et $V$ est-elle linéaire ?
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 $P$ n'est pas proportionnel à $V$.
 
-{{% /solution %}}
+{{< /solution >}}
 
 6. La variable `invV` doit référencer une liste dont les valeurs sont les inverses des valeurs de la liste référencée par la variable `V`. Écrire le code qui réalise cette opération.
 
@@ -137,7 +135,7 @@ for elt in V:
     ....
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 invV = []
@@ -145,7 +143,7 @@ for elt in V:
     invV.append(1 / elt)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 7. Compléter les instructions suivantes de façon à afficher l'évolution de la pression P en focntion de `invV`.
 
@@ -156,7 +154,7 @@ plt.legend()
 plt.show()
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 plt.plot(invV, P, "o", label="Pression (Pa)")
@@ -165,15 +163,15 @@ plt.legend()
 plt.show()
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 8. La relation est-elle cette fois linéaire ?
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 $P$ et $\dfrac{1}{V}$ sont proportionnels.
 
-{{% /solution %}}
+{{< /solution >}}
 
 ### Modélisation du comportement de $P$ en fonction de l'inverse du volume
 
@@ -204,7 +202,7 @@ plt.show()
 print(popt)
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 # Fonction modèle
@@ -229,29 +227,29 @@ plt.show()
 print(popt)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 10. Afficher la valeur du paramètre `a_mod`.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 print("a = {}".format(a_mod))
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Corrigé complet
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
 {{% remote "Correction interactive" "https://dlatreyte.github.io/jupyter-lite/lab?path=premiere-spe-pc%2Fdescription-fluide-au-repos%2Fboyle-mariotte.ipynb" %}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## À retenir
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Modèle du gaz parfait
 
@@ -261,21 +259,21 @@ Le modèle du gaz parfait est constitue une tentative de description du comporte
 - *on néglige les interactions qui existent entre les entités qui constituent le gaz*. Ces entités n'interagissent donc qu'avec les parois du récipient qui contient le gaz.
 
 Quatre paramètres (non indépendant entre eux) permettent de décrire un gaz parfait en équilibre (mécanique et thermique) : $P$ la pression (en pascal), $T$ la température (en kelvin), $V$ le volume (en mètre-cube) et $n$ la quantité de matière (en mole).
-{{% /note %}}
+{{< /note >}}
 
-{{% note warning %}}
+{{< note warning >}}
 Le modèle du gaz parfait ne décrit fidèlement le comportement d'un gaz réel qu'à *basse pression*.\
 On utilise cependant régulièrement ce modèle en chimie.
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 La loi de Boyle-Mariotte relie la *pression* et le *volume* d'un **gaz parfait** *à température constante*. Son expression mathématique est :
 $$
-    P\\, V = \text{cste}
+    P\, V = \text{cste}
 $$
 En d'autres termes, *maintenir la température constante pendant une augmentation de pression d'un gaz exige une diminution de volume*. Inversement, *la réduction de la pression du gaz passe par une augmentation de volume*.\
 La valeur exacte de la constante n'a pas besoin d'être connue pour appliquer la loi entre deux volumes de gaz sous des pressions différentes, à la même température :
 $$
-    P_1\\, V_1 = P_2\\, V_2
+    P_1\, V_1 = P_2\, V_2
 $$
-{{% /note %}}
+{{< /note >}}

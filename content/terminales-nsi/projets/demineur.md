@@ -1,25 +1,23 @@
 ---
 title: "Lé Démineur"
 subtitle: ""
-author: ""
-type: ""
 date: 2022-02-28T06:33:38+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: false
 auto_numbering: true
+weight: 9900
 ---
 
-{{% note normal %}}
+{{< note normal >}}
 Le Démineur est un jeu vidéo de réflexion dont le but est de localiser des mines cachées dans une grille représentant un champ de mines virtuel, avec pour seule indication le nombre de mines dans les zones adjacentes.
 
 <div style="text-align:right;">
 <a href="https://fr.wikipedia.org/wiki/Démineur_(genre_de_jeu_vidéo)"> Wikipedia </a>
 </div>
-{{% /note %}}
+{{< /note >}}
 
 > L'objectif de cette séance est la construction de la grille représentant le champ de mines.
 
@@ -96,6 +94,6 @@ def affichage_nbre_bombes(p: List[List[bool]]) -> None:
 
 9. Appeler la fonction `affichage_nbre_bombes` depuis le fichier principal.
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 {{% remote "Un corrigé se trouve à cette adresse" "https://replit.com/@dlatreyte/Demineur" %}}
-{{% /solution %}}
+{{< /solution >}}

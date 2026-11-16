@@ -1,16 +1,14 @@
 ---
 title: "Du schéma entités/associations au schéma relationnel"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-02-02T04:31:48+04:00
 draft: false
 toc: true
 tags: []
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 300
 ---
 
 ## Concepts relationnels
@@ -52,31 +50,31 @@ les valeurs possibles pour un champ*.
 On voit, à partir de cet exemple, qu'il est nécessaire de préciser les
 concepts qui seront utilisés dans la suite de ce chapitre.
 
-{{% note tip %}}
+{{< note tip >}}
 *Un **schéma relationnel** $R$ est formé par un
-ensemble fini de $n$ attributs $U = \{ u\_1, \ldots, u\_n \}$. On le note
+ensemble fini de $n$ attributs $U = \{ u_1, \ldots, u_n \}$. On le note
 $R [u_1, \ldots, u_n]$ ou $R [U]$.*
-{{% /note %}}
+{{< /note >}}
 
 1. Quel est le schéma relationnel de la relation `ma_cuisine` ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Le schéma relationnel de la relation `ma_cuisine` est `ma_cuisine(Appareil, Couleur)`.
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note tip %}}
+{{< note tip >}}
 *L'**arité** (ou **degré**) d'un schéma relationnel $R$ est égale à son*nombre d'attributs*.*
-{{% /note %}}
+{{< /note >}}
 
 2. Quelle est l'arité du schéma `ma_cuisine(Appareil, Couleur)` ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 L'arité du schéma `ma_cuisine(Appareil, Couleur)` est 2.
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note tip %}}
+{{< note tip >}}
 *Un **schéma de base de donnée** $R_B$ est un ensemble
 fini de $p$ schémas relationnels. On le note
 $R_B \{ R_1 [U_1], \ldots, R_p [U_p] \}$.*
-{{% /note %}}
+{{< /note >}}
 
 3. On donne le schéma de base de donnée suivant :\
 
@@ -86,9 +84,9 @@ Rb { Lecteur(Num_carte, Nom, Num_établissement),
 ```
 
 3. De combien de schémas relationnels ce schéma de base de données est-il constitué ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Ce schéma de base de donnée et constitué de deux schéma relationnel : `Lecteur` et `Établissement`.
-{{% /solution %}}
+{{< /solution >}}
 
 4.
 

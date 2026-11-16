@@ -1,17 +1,14 @@
 ---
 title: "Algorithmes gloutons"
 subtitle: ""
-author: ""
-type: ""
 date: 2023-11-20T15:18:34+04:00
 draft: false
 toc: true
 tags: ["Algorithmique", "Algorithme glouton", "Python"]
 categories: ["Informatique", "NSI"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 150
 ---
 
 ## Au programme de la classe de première

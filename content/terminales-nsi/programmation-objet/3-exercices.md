@@ -1,16 +1,14 @@
 ---
 title: "Méthodes spéciales en Python"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-09-29T09:51:52+04:00
 draft: false
 toc: true
 tags: ["Objet", "Classe", "Attribut", "Méthode", "Instance", "Encapsulation"]
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 300
 ---
 
 Définit une classe nommée `Fraction` pour représenter les nombres rationnels. Cette classe doit posséder deux attributs `num` et `denom`, de type entier, qui représentent respectivement le numérateur et le dénominateur du nombre rationnel.  
@@ -26,9 +24,9 @@ Un corrigé de cette activité se trouve à cette adresse : {{< remote "https://
 
 4. Ajouter des méthodes `__eq__` et `__lt__` qui reçoivent une deuxième fraction et qui retournent `True` si la première fraction représente un nombre respectivement égal ou strictement inférieur à la deuxième fraction.
 
-{{% note warning %}}
+{{< note warning >}}
 S'assurer que les fractions sont toujours sous forme réduite.
-{{% /note %}}
+{{< /note >}}
 
 #### Remarque : jeu de tests possibles
 

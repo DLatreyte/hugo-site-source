@@ -1,16 +1,14 @@
 ---
 title: "Récursivité sur les entiers"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-09-05T18:34:00+04:00
 draft: false
 toc: true
 tags: ["Programmation", "Récursivité", "Fonctions", "Algorithmique"]
 categories: ["Informatique", "Terminales Spé NSI"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 101
 ---
 [^1]: Ce n'est pas la seule définition possible et c'est loin d'être la plus efficace une fois implémentée.
 
@@ -25,13 +23,13 @@ La **récurrence** est un *raisonnement mathématique* courant et parmi les plus
 
 En programmation, on peut raisonner de façon identique, nous allons **construire des fonctions et des structures de données (listes chaînées, arbres, etc.) à l'aide d'une hypothèse de récurrence et d'un point de départ**. **Le déroulement de la récurrence sera quant à lui pris en charge par la machine**.
 
-{{% note warning %}}
+{{< note warning >}}
 La récursion est une approche plus **descriptive** que **constructive**. *On «&nbsp;dit&nbsp;» quoi faire à l'ordinateur mais pas comment*.
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 La **récursion** est un mécanisme puissant permettant d'exprimer la **répétition des opérations** dans un programme **sans utiliser de structure itérative** (boucles `while` ou `for`). C'est un mode de pensée qui permet de concevoir des fonctions ou des structures de données (listes chaînées, arbres, etc.) dont l'écriture condense en peu de lignes l'exécution de calculs éventuellement très longs.
-{{% /note %}}
+{{< /note >}}
 
 *Ce chapitre traite de la récursion sur les nombres entiers.*
 
@@ -96,21 +94,21 @@ La disposition des quilles de Bowling permet d'illustrer la mise en œuvre d'un 
 
 - Combien de quilles composent l'arrangement présenté&nbsp;?
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 10
-{{% /solution %}}
+{{< /solution >}}
 
 - On veut ajouter une cinquième ligne à l'arrangement présenté. Combien de quilles supplémentaires devront être disposées si l'on souhaite respecter la logique présente&nbsp;?
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 5
-{{% /solution %}}
+{{< /solution >}}
 
 - De combien de quilles sera alors constitué l'arrangement&nbsp;?
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $10+5=15$
-{{% /solution %}}
+{{< /solution >}}
 
 | Nombre de lignes | Nombre de quilles | Calcul du nombre de quilles |
 |:---:|:---:|:---:|
@@ -131,13 +129,13 @@ Obtient-on directement la réponse&nbsp;?
 Quand faut-il s'arrêter&nbsp;?
 : On sait que `arrangement(1)` = 1. On s'arrête donc lorsque l'on est parvenu à un arrangement à 1 ligne.
 
-{{% note normal %}}
+{{< note normal >}}
 Le raisonnement précédent est **un raisonnement récursif**. On a découpé le problème en deux parties&nbsp;:
 
 - Si l'arrangement comporte une seule ligne, la réponse est&nbsp;: `arrangement(1)` = 1.
 
 - Si l'arrangement comporte $N$ lignes, la réponse est&nbsp;: N + `arrangement(N - 1)`.
-{{% /note %}}
+{{< /note >}}
 
 #### Calcul effectif du nombre de quilles dans un arrangement à 5 lignes
 
@@ -155,14 +153,14 @@ $$
 \end{aligned}
 $$
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Algorithme récursif
 
 Un algorithme est simplement **récursif** s'il s'appelle lui-même pour effectuer son traitement.
 
 *Il est impératif de veiller à ce qu'un algorithme récursif se termine sous peine d'engendrer un processus infini*&nbsp;!
-{{% /note %}}
+{{< /note >}}
 
 #### Implémentation de l'algorithme en Python
 
@@ -201,7 +199,7 @@ $$
 #### Application&nbsp;: calcul de la factorielle de 5
 
 - En prenant exemple sur le calcul effectif du nombre de quilles en fonction du nombre de ligne dans l'arrangement, calculer la valeur de $5!$ en détaillant toutes les étapes.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $$
 \begin{aligned}
   \text{factorielle} (5) & = 5 \times \text{factorielle} (4)\cr
@@ -217,7 +215,7 @@ $$
   & = 120
 \end{aligned}
 $$
-{{% /solution %}}
+{{< /solution >}}
 
 #### Arbre des appels
 
@@ -247,32 +245,32 @@ assert factorielle(5) == 120
 
 ## Définition récursive d'une fonction
 
-{{% note tip %}}
+{{< note tip >}}
 La **définition récursive** d'une fonction doit être formée&nbsp;:
 
 - d'un ou plusieurs **cas de base**, qui ne *doivent contenir aucun appel récursif*&nbsp;;
 - d'un ou plusieurs **appel(s) récursif(s)** au cours desquels *la fonction s'appelle elle-même*.
-{{% /note %}}
+{{< /note >}}
 
 #### Remarques
 
 - Il est impératif que le cas de base soit réalisé à une étape du processus, sous peine d'obtenir une récursion infinie.
 - Les appels récursifs n'apparaissent pas de façon évidente dans le cas de la *récursivité croisée* (cf. exercices).
 
-{{% note info %}}
+{{< note info >}}
 
 #### Ensembles bien fondés
 
 La **récursion** sur les entiers naturels consiste à *transformer un problème sur un entier naturel $n$ en un ou plusieurs problèmes sur des nombres plus petits*. *Comme il n'existe pas de suite infinie strictement décroissante dans l'ensemble des entiers naturels*, la récursion finit par atteindre un *cas de base* comme 0 (ou 1, ou ...) *pour lequel une solution directe au problème est fournie*.
 
 L'ensemble des entiers naturels est dit «&nbsp;bien fondé&nbsp;».
-{{% /note %}}
+{{< /note >}}
 
 ## Récursivité vs itération
 
 La récursivité et l'itération sont deux **paradigmes**[^2] différents ayant le même objectif&nbsp;: **faire effectuer des traitements répétitifs à un ordinateur**.
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Récursivité, Itération
 
@@ -287,25 +285,25 @@ Cet algorithme ne s'appuie généralement pas sur la notion d'affectation (Nous 
 - *Tout problème dont la résolution s'appuie sur un algorithme itératif peut aussi être résolu à l'aide d'un algorithme récursif*.
 
 - Les algorithmes récursifs sont généralement plus simples à comprendre que les algorithmes itératifs correspondant.
-{{% /note %}}
+{{< /note >}}
 
-{{% note warning %}}
+{{< note warning >}}
 *La version récursive d'un algorithme ne dit pas comment atteindre l'état final d'un traitement, elle donne une définition de ce résultat*.
-{{% /note %}}
+{{< /note >}}
 
 #### Exemple
 
 - L'algorithme récursif du calcul de la factorielle d'un nombre définit cette factorielle.
 - L'algorithme itératif indique qu'il faut multiplier 1 par 2, stocker le résultat de ce calcul dans une variable, multiplier le contenu de cette variable par 3, ..., jusqu'à $n$.
 
-{{% note normal %}}
+{{< note normal >}}
 Certains langages informatiques appelés **langages fonctionnels**, ne possèdent *ni instruction d'affectation ni structure itérative*&nbsp;!
 
 Les langages qui privilégient les structures itératives (et l'affectation) sont dits **impératifs**.  
 Python est un langage mutli-paradigme&nbsp;: il permet de programmer de façon **impérative**, **objet** ou **fonctionnelle** (même si les appels récursifs, par exemple, ne sont pas aussi bien optimisés en Python que dans les langages fonctionnels).
-{{% /note %}}
+{{< /note >}}
 
-{{% note warning %}}
+{{< note warning >}}
 
 #### Pourquoi ne pas toujours utiliser la récursivité&nbsp;?
 
@@ -313,17 +311,17 @@ Un algorithme récursif est généralement plus facile à comprendre que l'équi
 
 Généralement, les appels récursifs successifs *nécessitent plus d'espace mémoire et de traitements* --- sachant que *les processeurs ont, eux, un fonctionnement fondamentalement itératif* --- que les processus itératifs.  
 Les **langages fonctionnels** modernes possèdent des compilateurs ou des interpréteurs suffisamment «&nbsp;intelligents&nbsp;» pour palier à ces inconvénients.
-{{% /note %}}
+{{< /note >}}
 
 ## Si l'on devait résumer l'idée générale de la récursivité
 
-{{% note tip %}}
+{{< note tip >}}
 Si un problème est facile à résoudre, le résoudre immédiatement.
 : *C'est le cas de base*.
 
 Si un problème n'est pas facile à résoudre, le découper en problèmes plus petits. Résoudre les plus petits problèmes.
 : *Ce sont les appels récursifs*.
-{{% /note %}}
+{{< /note >}}
 
 ## Exercices du chapitre
 
@@ -331,14 +329,14 @@ Penser à écrire, pour chacune des fonctions ci-dessous, sa spécification ains
 
 Un corrigé partiel se trouve en ligne à cette adresse : {{< remote "https://repl.it/join/qaeylksn-dlatreyte" "https://repl.it/join/qaeylksn-dlatreyte" >}}. Ce corrigé comporte des exemples d'utilisation de l'instruction `assert`.
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 1&nbsp;: Factorielle
 
 Écrire la définition itérative de la fonction factorielle.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def factorielle_iter(n: int) -> int:
@@ -367,17 +365,17 @@ def factorielle_rec(n: int) -> int:
         return n * factorielle_rec(n - 1)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 2&nbsp;: Compte à rebours
 
 - Écrire une fonction récursive qui, à partir d'un argument entier, affiche un compte à rebours.
 - En modifiant seulement la position de la fonction `print`, faire en sorte que le comptage se fasse dans l'ordre croissant.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def compte_a_rebours(n: int) -> None:
@@ -406,16 +404,16 @@ def compte(n: int) -> None:
         return None
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 3&nbsp;: Somme des $N$ premiers entiers
 
 Écrire les versions itérative et récursive d'une fonction qui calcule la somme des $N$ premiers entiers. La tester pour $N = 15$.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def somme_entiers_rec(n: int) -> int:
@@ -444,9 +442,9 @@ def somme_entiers_iter(n: int) -> int:
     return somme
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 4&nbsp;: Multiplication récursive
 
@@ -466,9 +464,9 @@ Exécuter la fonction pour $a = 4$ et $b = 5$ (pour cela, présenter les appels 
 Pour quel appel l'arbre est-il le plus grand&nbsp;?  
 Noter sur quel argument porte la récursion.  
 Que peut-on en conclure&nbsp;?
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def multiplication(a: int, b: int) -> int:
@@ -481,9 +479,9 @@ def multiplication(a: int, b: int) -> int:
         return multiplication(a - 1, b) + b
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 5&nbsp;: Calculs de puissances
 
@@ -509,9 +507,9 @@ $$
 $$
 
 - Comparer les exécutions (avec arbre des appels) des deux fonctions ci-dessus pour $n = 11$ et $x = 2$. Quel est l'arbre le plus court&nbsp;? Que peut-on en conclure&nbsp;?
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Solutions" %}}
+{{< solution "Solutions" >}}
 
 ```python
 def puissance_01(x: float, n: int) -> float:
@@ -546,9 +544,9 @@ def puissance_02(x: float, n: int) -> float:
         return inter * inter * x
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 6&nbsp;: Suite de Fibonacci
 
@@ -565,9 +563,9 @@ Exécuter la fonction pour $n = 5$
 - L'arbre des appels est représenté sur la figure ci-dessous. Expliquer pourquoi cette fonction est très peu efficace.
 
 <img src="/terminales-nsi/chap-1/im-1-3.jpg" width="70%" alt="" />
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def fibonacci(n: int) -> int:
@@ -584,9 +582,9 @@ def fibonacci(n: int) -> int:
         return fibonacci(n - 1) + fibonacci(n - 2)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 7&nbsp;: Formule de Viète
 
@@ -604,9 +602,9 @@ On constate que la partie $s = 2 + \sqrt{2 + \ldots \sqrt{ 2 + \sqrt 2 }  }$ est
 > Cette fonction doit appeler la fonction `calcul_inter`.
 
 3. Depuis la fonction `main`, appeler la fonction `calcul_pi` avec plusieurs valeurs de $k$ (essayer 5, 10, 15). Comparer au résultat retourné par l'attribut `pi` du module `math`.
-{{% /note %}}
+{{< /note >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 8&nbsp;: Plus grand diviseur commun
 
@@ -616,13 +614,13 @@ $$
         \begin{array}{ll}
             m                        & \text{ si } n = 0\cr
             \text{pgcd}(n,m)         & \text{ si } m < n \cr
-            \text{pgcd}(n, m \\, \text{mod}\\, n)  & \text{ sinon }\cr
+            \text{pgcd}(n, m \, \text{mod}\, n)  & \text{ sinon }\cr
         \end{array}
     \right.
 $$
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def pgcd(m: int, n: int) -> int:
@@ -639,9 +637,9 @@ def pgcd(m: int, n: int) -> int:
         return pgcd(n, m % n)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 9&nbsp;: Ackermann-Péter
 
@@ -661,9 +659,9 @@ $$
 
 - La fonction d'Ackermann croît extrêmement rapidement&nbsp;: $A(4,2)$ a déjà $\pu{19729}$ chiffres&nbsp;!
 - La fonction d'Ackermann demandant beaucoup de calculs même pour de petites entrées, elle est parfois utilisée comme programme de test d'une implémentation d'un langage de programmation&nbsp;: en particulier, elle utilise de façon très exigeante la récursivité (cf. [Fonction d'Ackermann, Wikipédia](http://fr.wikipedia.org/wiki/Fonction\_d'Ackermann)).
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def ackermann(m: int, n: int) -> int:
@@ -680,9 +678,9 @@ def ackermann(m: int, n: int) -> int:
         return ackermann(m - 1, ackermann(m, n - 1))
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 10&nbsp;: Récursivité croisée
 
@@ -700,9 +698,9 @@ Ces deux suites ont pour particularité que&nbsp;: $v(n) - u(n) = 1$ pour tout $
 - Écrire un programme qui, à l'aide de fonctions récursives, donne les valeurs de ces deux suites pour un $n$ donnée (tester avec $n=3$) et qui vérifie que la différence entre ces deux valeurs est égale à 1.
 
 - Établir les *arbres des appels*.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def u(n: int) -> int:
@@ -739,9 +737,9 @@ def main():
 main()
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 10&nbsp;: Fonctions mutuellement récursives
 
@@ -752,9 +750,9 @@ La fonction `est_pair` (resp. `est_impair`) retourne `True` si son argument enti
 - $n \in \mathbb{N}$ est pair si $n-1$ est impair.
 - $0$ est pair.
 - $0$ n'est pas impair.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def est_pair(nbre: int) -> bool:
@@ -790,9 +788,9 @@ def main():
 main()
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 11&nbsp;: Conjecture de Syracuse
 
@@ -807,9 +805,9 @@ C'est ce qu'on appelle la suite de Syracuse du nombre 14. Une fois le nombre 1 a
 La **conjecture de Syracuse** (encore appelée conjecture de Collatz, ou conjecture d'Ulam) est l'hypothèse mathématique selon laquelle la suite de Syracuse de n'importe quel entier strictement positif atteint 1.
 
 Écrire la fonction `syracuse` à un paramètre entier qui retourne la longueur de la suite de Syracuse de cet entier pour obtenir 1.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def syracuse_01(n: int) -> int:
@@ -825,4 +823,4 @@ def syracuse_01(n: int) -> int:
         return 1 + syracuse_01(n * 3 + 1)
 ```
 
-{{% /solution %}}
+{{< /solution >}}

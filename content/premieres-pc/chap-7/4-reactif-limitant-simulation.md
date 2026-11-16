@@ -1,16 +1,14 @@
 ---
 title: "Recherche d'un réactif limitant à l'aide d'un programme écrit en Python"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-01-09T21:54:37+04:00
 draft: false
 toc: true
 tags: ["Python", "Mélange initial stœchiométrique", "Tableau d'avancement", "Réactif limitant"]
 categories: ["Premières Spé PC", "Chimie"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 400
 ---
 
 On réalise l'oxydation des ions fer II $\ce{Fe^{2+} (aq)}$ par des ions permanganate $\ce{MnO4^- (aq)}$ en milieu acide.\
@@ -29,13 +27,13 @@ Remarque
 : Calcul de la concentration en ions $\ce{H+}$ à partir des données : $[\ce{H+}] = C^o \cdot 10^{-\mathrm{pH}}$ avec $C^o = \pu{1,00 mol.L-1}$.\
 La notation $[\ce{H+}]$ sera explicitée dans un autre document.
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 - Le programme Python à compléter se trouve à cette {{< remote "adresse" "https://repl.it/@dlatreyte/Simulation-Transformation-Chimique-Eleve-1ere" >}}
 
 - Le corrigé se trouve à cette {{< remote "adresse" "https://repl.it/@dlatreyte/Simulation-transformation-chimique-1ere" >}}
 
-{{% /note %}}
+{{< /note >}}
 
 2. À partir des explications au début du fichier, compléter toutes les lignes (88 à 96) de la partie `# Variables du problème`.
 

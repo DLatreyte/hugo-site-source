@@ -1,38 +1,36 @@
 ---
 title: "Titrage des ions chlorure présents dans une solution de sérum physiologique par suivi conductimétrique"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-10-10T21:32:37+04:00
 draft: false
 toc: true
 tags: ["Tableau d'avancement", "Équivalence", "Conductimétrie", "Titrage", "Conductivité molaire ionique", "Conductivité"]
 categories: ["Chimie", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 600
 ---
 
 ## Documents
 
 ### Solution physiologique
 
-{{% note normal %}}
+{{< note normal >}}
 
 Une **solution physiologique** est un *liquide isotonique* au sang, c’est-à-dire exerçant la même pression osmotique sur les membranes cellulaires que les principaux fluides corporels, en particulier le sang humain. Une telle solution est également nommée liquide physiologique ou, improprement, sérum physiologique (en fait il ne s'agit pas d'un sérum car il ne provient pas directement du sang).
 
-La solution est généralement composée d'eau distillée et de chlorure de sodium ($\ce{NaCl}$) dilué à 9 pour $1\\,000$ (c'est-à-dire une solution à 0,9&nbsp;% de masse/volume de $\ce{NaCl}$, soit $\pu{9 g.L-1}$).
+La solution est généralement composée d'eau distillée et de chlorure de sodium ($\ce{NaCl}$) dilué à 9 pour $1\,000$ (c'est-à-dire une solution à 0,9&nbsp;% de masse/volume de $\ce{NaCl}$, soit $\pu{9 g.L-1}$).
 
 Certaines solutions physiologiques d'usage commun sont commercialement disponibles à diverses concentrations à des fins différentes.
 <div style="text-align: right;">
 <a href="https://fr.wikipedia.org/wiki/Solution_physiologique">Wikipedia</a>
 </div>
 
-{{% /note %}}
+{{< /note >}}
 
 ### La méthode de Mohr : un titrage par précipitation
 
-{{% note normal %}}
+{{< note normal >}}
 
 Lorsqu'on ajoute à une solution contenant des ions chlorure $\ce{ Cl^-(aq) }$ à titrer une solution de nitrate d'argent il se forme un précipité de chlorure d'argent $\ce{ AgCl(s) }$. La solution titrée, incolore au départ, se trouble d'un voile blanc et devient finalement opaque à cause du précipité formé. Ceci se produit jusqu'à ce que tous les ions chlorures aient précipité. *On est alors à l'équivalence* du titrage.
 *Malheureusement, il est impossible de visualiser directement cette équivalence puisque le précipité de chlorure d'argent est présent depuis le début*.
@@ -41,15 +39,15 @@ On peut utiliser  un **indicateur coloré** de présence d'ions argent pour dét
 
 Au cours du dosage, tous les ions $\ce{ Ag^+(aq) }$ réagissent avec les ions chlorure $\ce{ Cl^-(aq) }$ jusqu'au point d'équivalence. Dès l'équivalence franchie, les ions $\ce{ Ag^+(aq) }$ sont en excès et réagissent avec l'ion chromate pour former le précipité rouge. Une lecture du volume au point d'équivalence permet alors de déterminer la concentration en ions chlorure de la solution.
 
-{{% /note %}}
+{{< /note >}}
 
 ### Équivalence d'un titrage
 
-{{% note tip %}}
+{{< note tip >}}
 
 - On appelle **équivalence** d'un titrage le *point du titrage où on change de réactif limitant*.
 - À l'**équivalence** les *réactifs ont été introduits dans les proportions stœchiométriques*.
-{{% /note %}}
+{{< /note >}}
 
 ## Objectif
 
@@ -85,34 +83,34 @@ $\lambda_{\ce{Na^+}} = \pu{5,0e-3 S.m2.mol-1}$ ; $\lambda_{\ce{Cl^-}} = \pu{7,6e
 
 | $V_B$ (mL) | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| $\sigma\\, (\pu{mS.m2.mol-1})$ | .... | .... | .... | .... | .... | .... | .... | .... | .... |
+| $\sigma\, (\pu{mS.m2.mol-1})$ | .... | .... | .... | .... | .... | .... | .... | .... | .... |
 
 | $V_B$ (mL) | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| $\sigma\\, (\pu{mS.m2.mol-1})$ |.... | .... | .... | .... | .... | .... | .... | .... |
+| $\sigma\, (\pu{mS.m2.mol-1})$ |.... | .... | .... | .... | .... | .... | .... | .... |
 
 </center>
 
-{{% solution "Résultats expérimentaux possibles" %}}
+{{< solution "Résultats expérimentaux possibles" >}}
 
 <center>
 
 | $V_B$ (mL) | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| $\sigma\\, (\pu{mS.m2.mol-1})$ | 0,15 | 0,149 | 0,148 | 0,147 | 0,146 | 0,145 | 0,143 | 0,142 | 0,141 |
+| $\sigma\, (\pu{mS.m2.mol-1})$ | 0,15 | 0,149 | 0,148 | 0,147 | 0,146 | 0,145 | 0,143 | 0,142 | 0,141 |
 
 | $V_B$ (mL) | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| $\sigma\\, (\pu{mS.m2.mol-1})$ | 0,159 | 0,177 | 0,193 | 0,209 | 0,228 | 0,245 | 0,261 | 0,277 |
+| $\sigma\, (\pu{mS.m2.mol-1})$ | 0,159 | 0,177 | 0,193 | 0,209 | 0,228 | 0,245 | 0,261 | 0,277 |
 
 </center>
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Exploitation
 
 1. Écrire l'équation de la réaction de titrage.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - Les ions argent $\ce{Ag+}$ constituent le titrant ;
 - Les ions chlorure $\ce{Cl-}$ sont titrés.
@@ -120,29 +118,29 @@ $\lambda_{\ce{Na^+}} = \pu{5,0e-3 S.m2.mol-1}$ ; $\lambda_{\ce{Cl^-}} = \pu{7,6e
 $$
     \ce{Ag+ (aq) + Cl- (aq) -> AgCl (s)}
 $$
-{{% /solution %}}
+{{< /solution >}}
 
 2. Quelles propriétés doit présenter une réaction chimique utilisée pour réaliser un titrage&nbsp;?
-{{% solution "Réponse" %}}
-{{% note tip %}}
+{{< solution "Réponse" >}}
+{{< note tip >}}
 Une réaction chimique utilisée pour réaliser un titrage doit&nbsp;:
 
 - être **rapide**&nbsp;;
 - être **unique** dans le milieu réactionnel (c'est la seule qui doit consommer les titré et titrant)&nbsp;;
 - doit modéliser des **transformations chimiques totales**.
-{{% /note %}}
-{{% /solution %}}
+{{< /note >}}
+{{< /solution >}}
 
 3. Pourquoi la conductivité de la solution n'est-elle pas nulle au début du titrage&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Lorsque le volume d'ions argent versé est nul, la solution est formée d'eau et contient des ions sodium $\ce{Na+}$ et chlorure $\ce{Cl-}$ capables de conduire le courant électrique. La conductivité de cette solution est donc non nulle.
-{{% /solution %}}
+{{< /solution >}}
 
 4. Donner, de façon qualitative, la composition du bécher&nbsp;:
     - avant l'équivalence&nbsp;;
     - à l'équivalence&nbsp;;
     - après l'équivalence.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - **Avant l'équivalence**
 Le titrant (les ions argent $\ce{Ag+}$), est limitant. La solution contient donc de l'eau, le titré (les ions chlorure $\ce{Cl-}$), des ions sodium $\ce{Na+}$, des ions nitrate $\ce{NO3-}$ (introduits en même temps que les ions argent) et du chlorure d'argent $\ce{AgCl}$ (produit de la réaction).
@@ -152,10 +150,10 @@ Le titrant (les ions argent $\ce{Ag+}$) et le titré (les ions chlorure $\ce{Cl-
 
 - **Après l'équivalence**
 Le titrant (les ions argent $\ce{Ag+}$) est désormais en excès et le titré (les ions chlorure $\ce{Cl-}$) ont disparu. La solution contient des ions argent $\ce{Ag+}$, des ions sodium $\ce{Na+}$, des ions nitrate $\ce{NO3-}$ (introduits en même temps que les ions argent) et du chlorure d'argent $\ce{AgCl}$ (produit de la réaction).
-{{% /solution %}}
+{{< /solution >}}
 
 5. Établir un tableau d'avancement pour chacune des phases décrites ci-dessus.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 | État | Avancement | $\ce{Ag+ (aq)}$ | $+$ | $\ce{Cl- (aq)}$ | $\ce{->}$ | $\ce{AgCl}$ |Spectateurs| $\ce{Na+}$ | $\ce{NO3-}$ |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---:| :---: | :---: |
@@ -164,23 +162,23 @@ Le titrant (les ions argent $\ce{Ag+}$) est désormais en excès et le titré (l
 | À l'équivalence | $x_E = n_1 = n_0$ | 0 |  | 0 |  | $n_1 = n_0$ | | $n_1$ | $n_0$ |
 | Après l'équivalence | $x_{ap} = n_1$ | $n_0 - n_1$ |  | 0 |  | $n_1$ | | $n_1$ | $n_0$ |
 
-{{% /solution %}}
+{{< /solution >}}
 
 6. À partir des tableaux d'avancement écrire les expressions des conductivités $\sigma$ de la solution en fonction des concentrations molaires des différentes entités chimiques&nbsp;:
 
 - avant l'équivalence&nbsp;;
 - à l'équivalence&nbsp;;
 - après l'équivalence.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 7. Justifier l'allure de la courbe $\sigma = f(V_B)$.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 8. En déduire la concentration en ions chlorure dans le sérum physiologique.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% /solution %}}
+{{< /solution >}}

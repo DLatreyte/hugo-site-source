@@ -1,17 +1,14 @@
 ---
 title: "Choix énergétiques et impacts sur les sociétés"
 subtitle: "Chapitre 4"
-author: ""
-type: ""
 date: 2021-02-11T05:58:54+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 50
 ---
 
 ## Au programme

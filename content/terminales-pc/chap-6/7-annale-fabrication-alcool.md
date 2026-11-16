@@ -1,16 +1,14 @@
 ---
 title: "Annale : Fabrication d'un alcool"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-11-21T14:54:39+04:00
 draft: false
 toc: true
 tags: ["Tableau d'avancement", "Vitesse volumique", "Temps de demi-réaction", "Conductivité", "Facteurs cinétiques"]
 categories: ["Chimie", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 700
 ---
 
 ## La transformation étudiée

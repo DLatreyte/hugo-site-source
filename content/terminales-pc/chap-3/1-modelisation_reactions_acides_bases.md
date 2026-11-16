@@ -1,116 +1,114 @@
 ---
 title: "Le pH et sa mesure"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-09-28T17:22:22+04:00
 draft: false
 toc: true
 tags: ["pH", "Acide", "Base", "Couple acide/base", "Réaction acide-base", "Schéma de Lewis", "Électronégativité", "Polaire", "Polarisation"]
 categories: ["Chimie", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
 mathjax: true
+weight: 100
 ---
 [^1]: Ceci sera démontré plus tard dans l'année.
 
 ## Acides et bases, définition de Brönsted
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Acide
 
 Un **acide** est une espèce chimique, *ionique* ou *moléculaire*, *susceptible de céder au moins un proton* $\ce{H+}$.
 De *façon formelle*, on peut traduire ce comportement par une demi-équation&nbsp;:
 $$ \ce{AH = A^- + H^+} $$
-{{% /note %}}
+{{< /note >}}
 
 **Remarque&nbsp;:** Noter la *similitude formelle* entre les acides et les réducteurs (cf. cours de première) dont la demi-équation formelle est&nbsp;:
 $$ \ce{ {Red} = {Ox} + n e- } $$
 
-{{% note warning %}}
+{{< note warning >}}
 *Une demi-équation décrit uniquement formellement un comportement*. Elle est insuffisante, seule, pour décrire une réaction chimique.
-{{% /note %}}
+{{< /note >}}
 
 1. L'acide éthanoïque $\ce{CH_3-CO_2H}$ est un acide. Écrire la demi-équation qui traduit ce comportement.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $$\underset{\text{acide éthanoïque}}{\ce{CH_3-CO_2H}} =\underset{\text{ion éthanoate}}{\ce{CH_3-CO_2^-}} + \ce{H^+}$$
-{{% /solution %}}
+{{< /solution >}}
 
 2. Le chlorure d'hydrogène $\ce{HCl}$ est un acide. Écrire la demi-équation qui traduit ce comportement.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $$\underset{\text{chlorure d'hydrogène}}{\ce{HCl}} = \underset{\text{ion chlorure}}{\ce{Cl^-}} + \ce{H^+}$$
-{{% /solution %}}
+{{< /solution >}}
 
 3. L'ion méthylammonium $\ce{CH_3-NH_3^+}$ est un acide. Écrire la demi-équation qui traduit ce comportement.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $$\underset{\text{ion méthylammonium}}{\ce{CH_3-NH_3^+}} = \underset{\text{méthylamine}}{\ce{CH_3-NH_2}} + \ce{H^+}$$
-{{% /solution %}}
+{{< /solution >}}
 
 4. Le dioxyde de carbone dissous $\ce{CO_2,H_2O}$ est un acide. Écrire la demi-équation qui traduit ce comportement.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $$ \underset{\text{dioxyde de carbone dissous}}{\ce{CO_2,H_2O}} = \underset{\text{ion hydrogénocarbonate}}{\ce{HCO_3^-}} + \ce{H^+} $$
-{{% /solution %}}
+{{< /solution >}}
 
 5. L'acide sulfurique $\ce{H_2SO_4}$ est un diacide. Écrire la demi-équation qui traduit ce comportement.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $$ \underset{\text{acide sulfurique}}{\ce{H_2SO_4}} = \underset{\text{ion sulfate}}{\ce{SO_4^{2-}}} + \ce{2H^+} $$
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Base
 
 Une **base** est une espèce chimique, *ionique* ou *moléculaire*, *susceptible de capter au moins un proton* $\ce{H+}$.
 De *façon formelle*, on peut traduire ce comportement par une demi-équation&nbsp;:
 $$ \ce{B + H^+ = BH^+} $$
-{{% /note %}}
+{{< /note >}}
 
 6. L'ammoniac $\ce{NH_3}$ est une base. Écrire la demi-équation qui traduit ce comportement.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $$ \underset{\text{ammoniac}}{\ce{NH_3}} + \ce{H+} = \underset{\text{ion ammonium}}{\ce{NH_4^+}} $$
-{{% /solution %}}
+{{< /solution >}}
 
 7. L'ion hydroxyde $\ce{HO^-}$ est une base. Écrire la demi-équation qui traduit ce comportement.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $$ \underset{\text{ion hydroxyde}}{\ce{HO^-}} + \ce{H+} = \underset{\text{eau}}{\ce{H_2O}} $$
-{{% /solution %}}
+{{< /solution >}}
 
 8. L'ion carbonate $\ce{CO_3^{2-}}$ est une base. Écrire la demi-équation qui traduit ce comportement.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $$ \underset{\text{ion carbonate}}{\ce{CO_3^{2-}}} + \ce{H+} = \underset{\text{ion hydrogénocarbonate}}{\ce{HCO_3^-}} $$
-{{% /solution %}}
+{{< /solution >}}
 
 9. L'ion éthanoate $\ce{CH3-CO2^-}$ est une base. Écrire la demi-équation qui traduit ce comportement.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $$ \underset{\text{ion éthanoate}}{\ce{CH_3-CO_2^-}} + \ce{H^+} = \underset{\text{acide éthanoïque}}{\ce{CH3-CO2H}} $$
-{{% /solution %}}
+{{< /solution >}}
 
 10. La méthylamine $\ce{CH_3-NH_2}$ est une base. Écrire la demi-équation qui traduit ce comportement.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $$ \underset{\text{méthylamine}}{\ce{CH_3-NH_2}} + \ce{H^+} = \underset{\text{ion méthylammonium}}{\ce{CH_3-NH_3^+}} $$
-{{% /solution %}}
+{{< /solution >}}
 
 ## Couple acide/base
 
 - À partir des exemples précédents, on remarque que lorsqu’un *acide cède un proton*, la nouvelle espèce chimique formée est une *base*.
 - De même, lorsqu’une *base capte un proton*, la nouvelle espèce chimique créée est un *acide*.
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Couple acide-base
 
 S’il existe entre un acide et une base *une relation formelle* du type&nbsp;:
 $$ \ce{ {acide} = {base} + H^+ } $$
 on dit que l'acide et la base sont **conjugués**. Ils forment alors un **couple acide/base**.
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 *Une espèce chimique à la fois acide d’un couple et base d’un autre couple* est un **ampholyte**.
 On dit aussi qu’elle est **amphotère**.
 
-{{% /note %}}
+{{< /note >}}
 
 #### Exemple
 
@@ -124,46 +122,46 @@ $$
 $$
 
 11. Donner le couple acide-base de l'acide éthanoïque $\ce{CH_3-CO_2H}$.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $\ce{CH_3-CO_2H / CH_3-CO_2^-}$
-{{% /solution %}}
+{{< /solution >}}
 
 12. Donner le couple acide-base du chlorure d'hydrogène $\ce{HCl}$.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $ \ce{HCl / Cl^-}  $
-{{% /solution %}}
+{{< /solution >}}
 
 13. Donner le couple acide-base de l'ion méthylammonium $\ce{CH_3-NH_3^+}$.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $ \ce{CH_3-NH_3^+ / CH_3-NH_2} $
-{{% /solution %}}
+{{< /solution >}}
 
 14. Donner le couple acide-base du dioxyde de carbone dissous $\ce{CO_2,H_2O}$.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $ \ce{CO_2,H_2O / HCO3^-} $
-{{% /solution %}}
+{{< /solution >}}
 
 15. Donner le couple acide-base de l'ion ammonium $\ce{NH_4^+}$.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $ \ce{NH_4^+ / NH3} $
-{{% /solution %}}
+{{< /solution >}}
 
 16. L'ion oxonium $\ce{H3O^+}$ est un acide. Donner le couple acide-base de l'ion ammonium.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $ \ce{H3O^+ / H_2O} $
-{{% /solution %}}
+{{< /solution >}}
 
 17. L'ion hydroxyde $\ce{OH^-}$ est une base. Donner le couple acide-base auquel appartient l'ion hydroxyde.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $ \ce{H_2O / OH^-} $
-{{% /solution %}}
+{{< /solution >}}
 
 18. Quelle particularité présente l'eau d'un point de vue acido-basique&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 L'eau est un ampholyte.
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Couples de l'eau
 
@@ -171,11 +169,11 @@ L'eau est un ampholyte.
 
 - c'est la base du couple $ \ce{H3O^+ / H2O} $ (ion oxonium / eau)&nbsp;;
 - c'est l'acide du couple $ \ce{H2O / OH^-}$ (eau / ion hydroxyde).
-{{% /note %}}
+{{< /note >}}
 
 ## Réaction acide-base, équation associée
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Action de l’acide éthanoïque sur l’eau
 
@@ -192,16 +190,16 @@ On verse quelques gouttes de BBT dans la solution.
 3. La solution se colore en jaune.
 
 Interpréter chacune des observations.
-{{% /note %}}
+{{< /note >}}
 
 <figure>
 <img src="/terminales-pc/chap-3/chap-3-1-1.jpg" alt="" width="48%" style="float: left;"/>
 <img src="/terminales-pc/chap-3/chap-3-1-2.jpg" alt="" width="50%" />
 </figure>
 
-{{% note warning %}}
+{{< note warning >}}
 *De façon générale, évitez de verser de l’eau dans un acide pur, effectuez l’opération inverse&nbsp;!*
-{{% /note %}}
+{{< /note >}}
 
 #### Interprétation de l'expérience
 
@@ -230,38 +228,38 @@ $$
 \end{array}
 $$
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Réaction acido-basique
 
 Une **réaction acide-base** met en jeu un **transfert de protons** $\ce{H^+}$ entre l’*acide d’un couple et la base d’un second couple*&nbsp;:
 $$ \ce{ HA1 + A2^- <=> A1^- + HA2   } $$
-{{% /note %}}
+{{< /note >}}
 
 19. Le chlorure d'hydrogène, acide du couple $\ce{ HCl / Cl^- }$, réagit avec l'eau. Écrire l'équation de la réaction chimique, sachant qu'il s'agit d'une réaction acide-base.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - L'eau joue ici le rôle de la base, elle appartient donc au couple $\ce{ H3O^+ / H2O }$.
 - $ \ce{HCl + H2O -> Cl^- + H3O^+}  $
-{{% /solution %}}
+{{< /solution >}}
 
 20. L'acide nitreux $\ce{HNO2}$, acide du couple $\ce{HNO2 / NO2^-}$, réagit avec l'ammoniac $\ce{NH3}$, base du couple $\ce{NH4^+ / NH3}$. Écrire l'équation de la réaction chimique entre ces deux entités.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $ \ce{ HNO2 + NH3 -> NO2^- + NH4^+}  $
-{{% /solution %}}
+{{< /solution >}}
 
 21. Les ions oxonium réagissent avec les ions hydroxyde. Écrire l'équation de la réaction chimique entre ces deux entités.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $ \ce{ H3O^+ + OH^- -> 2 H2O}  $
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note warning %}}
+{{< note warning >}}
 La transformation modélisée par la réaction des ions oxonium $\ce{H3O^+}$ avec les ions hydroxyde $\ce{OH^-}$ est **totale** et **exothermique**.
 
 Il faut toujours prendre beaucoup de précautions lorsqu'on mélange des solutions concentrées de cet acide et de cette base (ou plus généralement d'un **acide fort** et d'une **base forte**) car *un mélange trop rapide peut conduire à une ébullition locale et donc à des projections*.
 
 Il ne faut donc **jamais verser brutalement d'eau dans un acide fort concentré**, les projections étant alors acides&nbsp;!
-{{% /note %}}
+{{< /note >}}
 
 ## Définition du pH d'une solution aqueuse
 
@@ -269,7 +267,7 @@ Il ne faut donc **jamais verser brutalement d'eau dans un acide fort concentré*
 
 En 1909, le chimiste danois Sörensen a introduit une grandeur sans unité plus pratique que la concentration en ions $\ce{ H3O^+ }$.
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### pH (potentiel hydrogène)
 
@@ -277,8 +275,8 @@ Pour des solutions diluées ($[ \ce{H3O^+} ] \leqslant \pu{5.0e-2 mol.L-1}$), le
 $$ \ce{pH} = - \log \left( \dfrac{[ \ce{H3O^+} ]}{C_0} \right) $$
 où $C_0$ est une concentration de référence telle que $C_0 = \pu{1,0 mol.L-1}$.  
 Cette relation est équivalente à
-$$ [ \ce{H3O^+} ] = C_0 \\, 10^{- \ce{pH}} $$
-{{% /note %}}
+$$ [ \ce{H3O^+} ] = C_0 \, 10^{- \ce{pH}} $$
+{{< /note >}}
 
 #### Remarques
 
@@ -302,11 +300,11 @@ Pour déterminer le pH d'une solution, on peut utiliser&nbsp;:
 
 ## Pourquoi certaines entités sont-elles capables de céder un proton alors que d'autres entités sont capables de capter un proton&nbsp;?
 
-{{% note tip %}}
+{{< note tip >}}
 On appelle **formule ou schéma de Lewis** la représentation d'une molécule qui *fait apparaître tous les atomes, tous les doublets d'électrons périphériques, qu'ils soient liants ou non liants*.
-{{% /note %}}
+{{< /note >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Acide carboxylique, ion carboxylate
 
@@ -318,9 +316,9 @@ L'acide acétique (nom officiel&nbsp;: acide éthanoïque) est un acide carboxyl
 4. En déduire le schéma de Lewis de l'ion éthanoate.
 5. Donner le schéma de Lewis de l'ion hydroxyde, base du couple eau/ion hydroxyde.
 6. Utiliser les notions d'**électronégativité** et de **polarisation des liaisons** pour expliquer pourquoi l'acide éthanoïque peut par exemple réagir avec les ions hydroxyde (cf. les documents au bas de cette page).
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponses" %}}
+{{< solution "Réponses" >}}
 
 1. <img src="/terminales-pc/chap-3/chap-3-1-4.png" alt="" width="20%" />
 
@@ -359,9 +357,9 @@ L'acide acétique (nom officiel&nbsp;: acide éthanoïque) est un acide carboxyl
 > Acide butanoïque
 <img src="/terminales-pc/chap-3/chap-3-1-15.png" alt="" width="50%" />
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Amine
 
@@ -370,9 +368,9 @@ On parle d'**amine primaire**, **secondaire** ou **tertiaire** selon qu'il y a *
 <div style="text-align: right;">
 <a href="https://fr.wikipedia.org/wiki/Amine_(chimie)" target="blank">Wikipedia</a>
 </div>
-{{% /note %}}
+{{< /note >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Amine
 
@@ -387,9 +385,9 @@ On parle d'**amine primaire**, **secondaire** ou **tertiaire** selon qu'il y a *
 5. Donner la formule de Lewis de l'ion oxonium, acide du couple ion oxonium/eau.
 
 6. Utiliser les notions d'**électronégativité** et de **polarisation des liaisons** pour expliquer pourquoi l'ammoniac peut par exemple réagir avec les ions oxonium (cf. les documents au bas de cette page).
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponses" %}}
+{{< solution "Réponses" >}}
 
 1. <img src="/terminales-pc/chap-3/chap-3-1-9.png" alt="" width="20%" />
 
@@ -432,47 +430,47 @@ On parle d'**amine primaire**, **secondaire** ou **tertiaire** selon qu'il y a *
 > Ion ammonium $\ce{NH4^+}$
 <img src="/terminales-pc/chap-3/chap-3-1-17.png" alt="" width="50%" />
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Électronégativité, polarisation d'une liaison, caractère polaire d'une molécule
 
 - L'**électronégativité** d'un atome est une grandeur physique qui caractérise *sa capacité à attirer les électrons lors de la formation d'une liaison chimique avec un autre élément*.
 - La *différence d'électronégativité* entre ces deux éléments détermine la nature de la liaison covalente : **liaison non polarisée** lorsque la différence d'électronégativité est nulle ou faible, **liaison polarisée** quand la différence d'électronégativité est moyenne, et **ionique** quand la différence d'électronégativité est tellement grande qu'un des atomes a attiré complètement, ou presque, les électrons de la liaison : les atomes sont devenus des ions et portent des charges électriques entières.
 - Une molécule au sein de laquelle au moins une liaison est polarisée **peut être polaire**, c'est à dire *voir le centre d'équilibre des charges positives ne pas coïncider avec le centre d'équilibre des charges négatives*.
-{{% /note %}}
+{{< /note >}}
 
 #### Échelle des électronégativités
 
 Une table des électronégativités se trouve sur [Wikipédia](https://fr.wikipedia.org/wiki/%C3%89lectron%C3%A9gativit%C3%A9).
 
-{{% note warning %}}
+{{< note warning >}}
 La table des électronégativités n'est bien évidemment pas à apprendre !
-{{% /note %}}
+{{< /note >}}
 
 Quelques connaissances peuvent cependant être utiles pour résoudre les exercices :
 
 22. Comment évolue l'électronégativité des élements au sein d'une même période ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 *L'électronégativité augmente lorsqu'on parcourt une période de la gauche vers la droite*.
-{{% /solution %}}
+{{< /solution >}}
 
 23. Comment évolue l'électronégativité des éléments au sein d'une même famille ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 *L'électronégativité diminue lorsqu'on parcourt une famille de haut en bas.*
-{{% /solution %}}
+{{< /solution >}}
 
 24. Quel est l'élément le plus électronégatif ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 L'élément le plus électronégatif est donc le fluor.
 **Rappel :** les gaz rares ne réagissent que très peu. Il n'est donc pas question de parler d'électronégativité en ce qui les concerne, *dans le cas général*.
-{{% /solution %}}
+{{< /solution >}}
 
 25. Que peut penser, du point de vue de l'électronégativité, des atomes d'oxygène et d'azote, comparativement aux atomes de carbone et d'hydrogène (dont on considère qu'ils possède sensiblement la même électronégativité).
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Les électronégativités des atomes d'oxygène et d'azote sont supérieures à celles des atomes de carbone et d'hydrogène. Les liaisons $\ce{O-H}$, $\ce{N-H}$, $\ce{O-C}$ et $\ce{N-C}$ sont polarisées.
-{{% /solution %}}
+{{< /solution >}}
 
 #### Comment déterminer si une molécules est polaire ?
 

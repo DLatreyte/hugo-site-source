@@ -1,17 +1,14 @@
 ---
 title: "Détermination d’une quantité de matière par titrage"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-01-26T17:41:17+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 80
 ---
 
 ## Au programme

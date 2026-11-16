@@ -1,17 +1,14 @@
 ---
 title: "Stratégies de synthèse"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-04-19T11:05:56+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 170
 ---
 
 ## Au programme

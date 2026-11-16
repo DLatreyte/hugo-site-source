@@ -2,15 +2,14 @@
 title: "La mécanique des solides"
 subtitle: "Chapitre 07"
 author: "D. Sivoukhine"
-type: ""
 date: 2020-08-25T22:30:48+04:00
 draft: true
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 9900
 ---
 
 ## §44. Les corps solides en mécanique. Équation du mouvement et d'équilibre des corps solides

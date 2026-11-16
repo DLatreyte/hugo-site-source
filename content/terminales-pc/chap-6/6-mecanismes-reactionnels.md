@@ -1,90 +1,88 @@
 ---
 title: "Introduction aux mécanismes réactionnels"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-11-16T08:54:31+04:00
 draft: false
 toc: true
 tags: []
 categories: ["Chimie", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 600
 ---
 
 ## Rappels : électronégativité d'un atome et polarisation d'une liaison
 
-{{% note tip %}}
+{{< note tip >}}
 **L’électronégativité** est une mesure de la *tendance d’un atome dans une molécule à attirer vers lui les électrons des liaisons covalentes* qu’il contracte avec d’autres atomes.
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 Dans la classification périodique, l'électronégativité augmente de la gauche vers la droite, sur une période, et du bas vers le haut dans une colonne.
-{{% /note %}}
+{{< /note >}}
 
 <img src="/terminales-pc/chap-6/chap-6-6-1.png" alt="" width="" />
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Polarisation d'une liaison
 
 Une liaison entre deux atomes $A$ et $B$ est **polarisée** *si les électronégativités de ces deux atomes sont différentes*.
 La détermination de la polarisation d'une liaison $\ce{A-B}$ se fait en attribuant à l'*atome le plus électronégatif* une **charge partielle négative** $\delta^-$ et à l'*atome le moins électronégatif* une **charge partielle positive** $\delta^+$. *Plus la différence d'électronégativité entre les atomes liés est importante, plus la liaison est polarisée et plus les charges partielles portées par les atomes liés sont élevées*.
-{{% /note %}}
+{{< /note >}}
 
-{{% note warning %}}
+{{< note warning >}}
 Les liaisons $\ce{C-H}$ sont considérées comme non polarisées.
-{{% /note %}}
+{{< /note >}}
 
 ## Sites donneurs ou accepteurs de doublet d'électrons
 
 ### Sites donneurs de doublet d'électrons
 
 1. Donner la formule de Lewis de l'ion hydroxyde.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 <img src="/terminales-pc/chap-6/chap-6-6-2.png" alt="" width="120px" />
-{{% /solution %}}
+{{< /solution >}}
 
 2. L'atome d'oxygène respecte-t-il la règle de l'octet dans l'ion hydroxyde ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 L'atome d'oxygène possède quatre doublets d'électrons périphériques (un doublet liant et trois doublets non liants) dans l'ion hydroxyde. Il respecte donc la règle de l'octet.
-{{% /solution %}}
+{{< /solution >}}
 
 3. Peut-on dire que l'atome d'oxygène constitue une zone riche en électrons, dans l'ion hydroxyde ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 L'atome d'oxygène porte une charge électrique négative. Il forme donc bien une zone de la molécule riche en électrons.
-{{% /solution %}}
+{{< /solution >}}
 
 4. Donner la formule de Lewis de l'eau.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 <img src="/terminales-pc/chap-6/chap-6-6-3.png" alt="" width="120px" />
-{{% /solution %}}
+{{< /solution >}}
 
 5. L'atome d'oxygène respecte-t-il la règle de l'octet dans la molécule d'eau ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 L'atome d'oxygène possède quatre doublets d'électrons périphériques (deux doublets liants et deux doublets non liants) dans la molécule d'eau. Il respecte donc la règle de l'octet.
-{{% /solution %}}
+{{< /solution >}}
 
 6. Peut-on dire que l'atome d'oxygène constitue une zone riche en électrons, dans la molécule d'eau ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 L'atome d'oxygène, plus électronégatif que les atomes d'hydrogène porte une charge négative partielle $2 \delta^-$. Il forme donc bien une zone riche en électrons, dans la molécule.
-{{% /solution %}}
+{{< /solution >}}
 
 7. Donner la formule de Lewis de l'éthène $\ce{C2H4}$.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 <img src="/terminales-pc/chap-6/chap-6-6-4.png" alt="" width="120px" />
-{{% /solution %}}
+{{< /solution >}}
 
 8. Peut-on dire que la liaison double constitue une zone riche en électrons, dans la molécule d'éthène ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 La double liaison, intrinsèquement, constitue une zone riche en électrons.
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note tip %}}
+{{< note tip >}}
 Dans un édifice, un atome porteur de **doublet(s) non liant(s)** ou porteur d'une **charge électrique négative** constitue un **site donneur de doublet d'électrons**.
 Une **liaison multiple** constitue également un site donneur de doublet d'électrons.
-{{% /note %}}
+{{< /note >}}
 
 #### Exemples
 
@@ -93,24 +91,24 @@ Une **liaison multiple** constitue également un site donneur de doublet d'élec
 ### Sites accepteurs de doublet d'électrons
 
 9. L'ion hydrogène possède-t-il un électron ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 L'ion hydrogène ne comporte aucun électron.
-{{% /solution %}}
+{{< /solution >}}
 
 10. Dans la molécule de chlorométhane l'atome de carbone vérifie-t-il la règle de l'octet ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 <img src="/terminales-pc/chap-6/chap-6-6-22.png" alt="" width="20%" />
 L'atome de carbone possède bien quatre doublets (tous liants) ; il vérifie donc la règle de l'octet.
-{{% /solution %}}
+{{< /solution >}}
 
 11. Pourquoi peut-on dire que l'atome de carbone constitue une zone pauvre en électrons dans la molécule ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 L'atome de chlore est beaucoup plus électronégatif que l'atome de carbone. Ce dernier porte donc une charge partielle positive et constitue une zone pauvre en électrons au sein de la molécule.
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note tip %}}
+{{< note tip >}}
 Dans un édifice, un atome porteur d'**une charge électrique positive élémentaire** constitue un **site accepteur de doublet d'électrons**.
-{{% /note %}}
+{{< /note >}}
 
 #### Exemples
 
@@ -122,12 +120,12 @@ Dans un édifice, un atome porteur d'**une charge électrique positive élément
 
 À l'**échelle microscopique**, *le passage des réactifs aux produits peut nécessiter plusieurs réactions, ou étapes*. Ces étapes constituent le **mécanisme réactionnel**. *L'étude de l'interaction entre sites donneur et accepteur de doublet d'électrons permet d'interpréter les étapes d'un mécanisme réactionnel.*
 
-{{% note tip %}}
+{{< note tip >}}
 Lors d'une transformation, l'*ensemble des réactions qui se produisent au niveau microscopique*constitue le **mécanisme réactionnel**.
 Chacune de ces réactions est une étape du mécanisme réactionnel et résulte de l'*interaction entre un site donneur et un site accepteur de doublet d'électrons*.
 Le *mouvement de ce doublet d'électrons peut être représenté par une **flèche courbe**, reliant le site donneur au site accepteur de doublet d'électrons*.
 Ces flèches courbes permettent d'expliquer la formation ou la rupture des liaisons au cours de ces réactions.
-{{% /note %}}
+{{< /note >}}
 
 <img src="/terminales-pc/chap-6/chap-6-6-14.png" alt="" width="30%" />
 
@@ -139,36 +137,36 @@ $$\ce{
 }$$
 
 1. Quel est le groupe caractéristique porté par la molécule $\ce{H3COH}$ ? Quelle est la fonction chimique associée ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - Groupe hydroxyle $\ce{-OH}$.
 - Fonction alcool.
-{{% /solution %}}
+{{< /solution >}}
 
 2. Nommer la molécule $\ce{H3COH}$.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $\ce{H3COH}$ est le méthanol.
-{{% /solution %}}
+{{< /solution >}}
 
 Le mécanisme réactionnel de cette synthèse est :
 <img src="/terminales-pc/chap-6/chap-6-6-15.png" alt="" width="90%" />
 
 3. Quel est le rôle de l'ion hydrogène $\ce{H+}$ ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $\ce{H+}$ est consommé lors de la première étape mais régénéré lors de la dernière, dans la même quantité. Il s'agit donc d'un **catalyseur**.
-{{% /solution %}}
+{{< /solution >}}
 
 4. Lors de l'étape une, repérer les sites donneur et accepteur de doublet d'électrons.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - Méthanol : les doublets non liants de l'oxygène sont donneurs.
 - Ion hydrogène : c'est un accepteur.
-{{% /solution %}}
+{{< /solution >}}
 
 5. Placer les différentes flèches courbes représentant les interactions entre les sites donneurs et les sites accepteurs de doublets d'électrons.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 <img src="/terminales-pc/chap-6/chap-6-6-16.png" alt="" width="90%" />
-{{% /solution %}}
+{{< /solution >}}
 
 ## Exercices
 
@@ -180,43 +178,43 @@ Après lavage, séchage et distillation, une masse $m = \pu{8,22 g}$ d'hexan-2-o
 **Remarque.** Une hydratation est une réaction chimique au cours de laquelle les atomes d'une molécule d'eau viennent se greffer sur les atomes participant à une liaison double au sein d'une molécule. La liaison double est rompue et remplacée par deux liaisons simples.
 
 1. Écrire l'équation de la réaction entre l'eau et l'hex-1-ène. Il se forme de l'hexan-2-ol.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $$\ce{
 C4H9-CH=CH2 + H2O --> C4H9-CH(OH)-CH3
 }$$
-{{% /solution %}}
+{{< /solution >}}
 
 2. Les spectres IR de l'hex-1-ène et du produit obtenu sont donnés ci-dessous. Comment permettent-ils de vérifier que l'alcène de départ a été hydraté ?
 
 <img src="/terminales-pc/chap-6/chap-6-6-18.svg" alt="" width="100%" />
 <img src="/terminales-pc/chap-6/chap-6-6-19.svg" alt="" width="100%" />
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 L’apparition de la bande d’absorption large et forte de la liaison $\ce{O-H}$ entre 3300 et $\pu{3400 cm-1}$, la disparition de la bande d’absorption de la liaison $\ce{Ctri-H}$ vers $\pu{3100 cm-1}$ et de la bande d’absorption de la liaison $\ce{C=C}$ vers $\pu{1650 cm-1}$ permettent de vérifier que l’alcène de départ a été hydraté.
-{{% /solution %}}
+{{< /solution >}}
 
 Le mécanisme réactionnel de l'hydratation de l'hex-1-ène est donné ci-dessous :
 
 <img src="/terminales-pc/chap-6/chap-6-6-20.png" alt="" width="100%" />
 
 3. Identifier les sites donneurs et accepteurs de doublet d'électrons dans les réactifs pour les étapes 1 et 2.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - Dans l’étape (1), le site donneur de doublet d’électrons est la double liaison $\ce{C=C}$. Le site accepteur de doublet d’électrons est l’ion hydrogène $\ce{H+}$ puisqu'il porte une charge positive.
 - Dans l’étape (2), le site donneur de doublet d’électrons est l’atome d’oxygène, car il possède deux doublets non liants (*plus précisément, ce sont les doublets non liants qui sont donneurs*). Le site accepteur de doublet d’électrons est l’atome de carbone porteur d’une charge positive.
-{{% /solution %}}
+{{< /solution >}}
 
 4. Recopier l'équation, puis représenter, par des flèches courbes, le mouvement des doublets d'électrons permettant d'expliquer la formation et la rupture de liaisons observées.
 
 5. Représenter la flèche courbe qui permet d'expliquer la rupture de liaison qui a lieu lors de l'étape (3).
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 <img src="/terminales-pc/chap-6/chap-6-6-21.png" alt="" width="100%" />
-{{% /solution %}}
+{{< /solution >}}
 
 4. Quel est le rôle joué par les ions hydrogène apporté par l’acide sulfurique ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Les ions hydrogène n’apparaissent pas dans le bilan de la réaction, mais interviennent dans le mécanisme réactionnel : ils catalysent la réaction.
-{{% /solution %}}
+{{< /solution >}}
 
 ### D'une odeur âcre à une odeur fruitée
 
@@ -235,9 +233,9 @@ On donne le mécanisme réactionnel associé à la réaction :
 <img src="/terminales-pc/chap-6/chap-6-6-7.png" alt="" width="100%" />
 
 4. Ajouter les flèches courbes modélisant les mouvements d'électrons dans chacune des étapes du mécanisme réactionnel.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 <img src="/terminales-pc/chap-6/chap-6-6-8.png" alt="" width="100%" />
-{{% /solution %}}
+{{< /solution >}}
 
 ### Étude de la synthèse de la lidocaïne
 
@@ -260,9 +258,9 @@ Deux étapes de la synthèse de la lidocaïne sont détaillées ci-dessous :
 4. L'atome de carbone étudié à la question précédente constitue-t-il un site accepteur ou donneur de doublet d'électrons ?
 
 5. Représenter le mouvement des doublets d'électrons à l'aide de flèches courbes au cours de l'étape 2.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 <img src="/terminales-pc/chap-6/chap-6-6-11.png" alt="" width="100%" />
-{{% /solution %}}
+{{< /solution >}}
 
 #### Étude de la cinétique de la synthèse de la lidocaïne
 

@@ -2,15 +2,14 @@
 title: "La gravitation"
 subtitle: "Chapitre 08"
 author: "D. Sivoukhine"
-type: ""
 date: 2020-08-25T22:31:07+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: false
+weight: 9900
 ---
 
 ## §55. Lois de Kepler et loi de la gravitation universelle

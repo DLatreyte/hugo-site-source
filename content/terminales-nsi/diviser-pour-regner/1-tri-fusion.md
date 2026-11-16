@@ -1,16 +1,14 @@
 ---
 title: "Le tri fusion"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-11-18T17:12:24+04:00
 draft: false
 toc: true
 tags: ["Diviser pour régner", "Tri"]
 categories: ["Terminales Spé NSI"]
-image: ""
 solution_est_visible: false
 auto_numbering: true
+weight: 100
 ---
 
 
@@ -28,11 +26,11 @@ Le tri fusion s'appuie sur la méthode **Diviser pour régner** pour trier les $
 
 3. **Combiner :** Reformer la séquence $S$ en combinant, dans l'ordre, les éléments des séquences triées $S_1$ et $S_2$.
 
-{{% note normal %}}
+{{< note normal >}}
 
 - $\left\lfloor \dfrac{n}{2} \right\rfloor$ est la notation mathématique pour l'opération en Python `n // 2`, c'est à dire *le plus grand entier inférieur au résultat de la division de* $n$ *par 2*.
 - $\left\lceil \dfrac{n}{2} \right\rceil$ est la notation mathématique pour l'opération en Python `n // 2 + 1`, c'est à dire pour *le plus petit entier supérieur au résultat de la division de* $n$ *par 2*.
-{{% /note %}}
+{{< /note >}}
 
 Pour bien comprendre la méthode employée, le plus simple est de construire un arbre binaire dans lequel chaque nœud est le résultat d'un appel récursif.
 
@@ -420,9 +418,9 @@ flowchart TD
     class S gras;
 {{< /mermaid >}}
 
-{{% note normal %}}
+{{< note normal >}}
 On peut montrer que la *hauteur de l'arbre des appels récursifs* est voisine (en fonction de la définition choisie pour la hauteur) de $\log_2 (n)$ où $n$ est le nombre d'éléments dans la séquence.
-{{% /note %}}
+{{< /note >}}
 
 ## Implémentation du tri fusion pour un tableau
 
@@ -487,11 +485,11 @@ liste = [randint(1, 400) for i in range(5)]
 
 ---
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 {{< remote "Code Python" "https://repl.it/@dlatreyte/tri-fusion-tableaux" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 ---
 
@@ -500,7 +498,7 @@ liste = [randint(1, 400) for i in range(5)]
 Dans cette section, on cherche à adapter l'algorithme de tri fusion à une liste chaînée.
 
 1. Écrire le code de la classe `Cellule` permettant d'implémenter une liste chaînée. Cette classe sert juste de structure et définit les champs `valeur`, de type `int`, et `suivant`, de type `Cellule`, initialisé à `None`.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 class Cellule:
@@ -513,17 +511,17 @@ class Cellule:
         self.suivant = suivant
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 2. Dans la partie principale du programme, écrire le code qui crée la liste chaînée `[14, 11, 2, 35, 9, 1]`.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 if __name__ == "__main__":
     lst = Cellule(14, Cellule(11, Cellule(2, Cellule(35, Cellule(9, Cellule(1))))))
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 3. Définir le code de la fonction `tri_fusion` dont la spécification est
 
@@ -539,7 +537,7 @@ Cette fonction doit utiliser la fonction `coupe` (définie un peu plus bas), qui
 
 La fonction `tri_fusion` doit mettre en œuvre le principe « Diviser pour régner ».
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def tri_fusion(lst: Cellule) -> Cellule:
@@ -555,7 +553,7 @@ def tri_fusion(lst: Cellule) -> Cellule:
     return fusion(tri_fusion(l1), tri_fusion(l2))
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 4. Définir la fonction `coupe` dont la spécification est
 
@@ -567,7 +565,7 @@ def coupe(lst: Cellule) -> Cellule:
     """
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def coupe(lst: Cellule) -> Cellule:
@@ -625,7 +623,7 @@ def coupe(
             return coupe(lst.suivant, l1, Cellule(lst.valeur, l2), i + 1)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 5. Définir la fonction `fusion` dont la spécification est
 
@@ -639,7 +637,7 @@ def fusion(l1: Cellule, l2: Cellule) -> Cellule:
     """
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def fusion(l1: "Cellule", l2: "Cellule") -> "Cellule":
@@ -658,4 +656,4 @@ def fusion(l1: "Cellule", l2: "Cellule") -> "Cellule":
         return Cellule(l2.valeur, fusion(l1, l2.suivant))
 ```
 
-{{% /solution %}}
+{{< /solution >}}

@@ -1,17 +1,14 @@
 ---
 title: "Études énergétiques en mécanique"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-05-29T16:08:53+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 120
 ---
 
 
@@ -19,7 +16,7 @@ layout: "single"
 
 | Notions et contenus | Capacités exigibles |
 |:----|:----|
-| - Énergie cinétique d’un système modélisé par un point matériel.<br />- Travail d’une force.<br />- Expression du travail dans le cas d'une force constante.<br />- Théorème de l’énergie cinétique.<br />- Forces conservatives. Énergie potentielle. Cas du champ de pesanteur terrestre.<br />- Forces non-conservatives : exemple des frottements.<br />- Énergie mécanique.<br />- Conservation et non conservation de l’énergie mécanique.<br />- Gain ou dissipation d’énergie.  | - Utiliser l’expression de l’énergie cinétique d’un système modélisé par un point matériel.<br />- Utiliser l’expression du travail $W\_{AB}(\vec{F}) = \vec{F}\cdot \vec{AB}$ dans le cas de forces constantes.<br />- Énoncer et exploiter le théorème de l’énergie cinétique.<br />- Établir et utiliser l'expression de l'énergie potentielle de pesanteur pour un système au voisinage de la surface de la Terre.<br />- Calculer le travail d’une force de frottement d’intensité constante dans le cas d’une trajectoire rectiligne.<br />- Identifier des situations de conservation et de non conservation de l’énergie mécanique.<br />- Exploiter la conservation de l’énergie mécanique dans des cas simples : chute libre en l’absence de frottement, oscillations d’un pendule en l’absence de frottement, etc.<br />- Utiliser la variation de l’énergie mécanique pour déterminer le travail des forces non conservatives.<br />- Utiliser un dispositif (smartphone, logiciel de traitement d’images, etc.) pour étudier l’évolution des énergies cinétique, potentielle et mécanique d’un système dans différentes situations : chute d’un corps, rebond sur un support, oscillations d’un pendule, etc.<br />- **Capacité numérique :** Utiliser un langage de programmation pour effectuer le bilan énergétique d’un système en mouvement.<br />- **Capacité mathématique :** Utiliser le produit scalaire de deux vecteurs. |
+| - Énergie cinétique d’un système modélisé par un point matériel.<br />- Travail d’une force.<br />- Expression du travail dans le cas d'une force constante.<br />- Théorème de l’énergie cinétique.<br />- Forces conservatives. Énergie potentielle. Cas du champ de pesanteur terrestre.<br />- Forces non-conservatives : exemple des frottements.<br />- Énergie mécanique.<br />- Conservation et non conservation de l’énergie mécanique.<br />- Gain ou dissipation d’énergie.  | - Utiliser l’expression de l’énergie cinétique d’un système modélisé par un point matériel.<br />- Utiliser l’expression du travail $W_{AB}(\vec{F}) = \vec{F}\cdot \vec{AB}$ dans le cas de forces constantes.<br />- Énoncer et exploiter le théorème de l’énergie cinétique.<br />- Établir et utiliser l'expression de l'énergie potentielle de pesanteur pour un système au voisinage de la surface de la Terre.<br />- Calculer le travail d’une force de frottement d’intensité constante dans le cas d’une trajectoire rectiligne.<br />- Identifier des situations de conservation et de non conservation de l’énergie mécanique.<br />- Exploiter la conservation de l’énergie mécanique dans des cas simples : chute libre en l’absence de frottement, oscillations d’un pendule en l’absence de frottement, etc.<br />- Utiliser la variation de l’énergie mécanique pour déterminer le travail des forces non conservatives.<br />- Utiliser un dispositif (smartphone, logiciel de traitement d’images, etc.) pour étudier l’évolution des énergies cinétique, potentielle et mécanique d’un système dans différentes situations : chute d’un corps, rebond sur un support, oscillations d’un pendule, etc.<br />- **Capacité numérique :** Utiliser un langage de programmation pour effectuer le bilan énergétique d’un système en mouvement.<br />- **Capacité mathématique :** Utiliser le produit scalaire de deux vecteurs. |
 
 ## Documents
 

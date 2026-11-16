@@ -1,26 +1,24 @@
 ---
 title: "Jeu de la vie"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-10-04T04:35:40+04:00
 draft: false
 toc: true
 tags: ["Objet", "Classe", "Attribut", "Méthode", "Instance", "Encapsulation"]
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 500
 ---
 
 > Le but de ce sujet est de réaliser en Python une implémentation du jeu de la vie en utilisant la programmation objet.
 
-{{% note normal %}}
+{{< note normal >}}
 
 Un **automate cellulaire** consiste en une grille régulière de « cellules » contenant chacune un « état » choisi parmi un ensemble fini et qui peut évoluer au cours du temps. L'état d'une cellule au temps $t+1$ est fonction de l'état au temps $t$
  d'un nombre fini de cellules appelé son « voisinage ». À chaque nouvelle unité de temps, les mêmes règles sont appliquées simultanément à toutes les cellules de la grille, produisant une nouvelle « génération » de cellules dépendant entièrement de la génération précédente.
 
-{{% /note %}}
+{{< /note >}}
 Le **jeu de la vie** a été inventé par le mathématicien britannique John H. Conway (1937-2020). C’est un exemple de ce qu’on appelle un automate cellulaire bidimensionnel. Il se déroule sur un tableau rectangulaire $(L \times H)$ de cellules. Une cellule est représentée par ses coordonnées $x$ et $y$ qui vérifient $0 \leqslant x < L$ et $0 \leqslant y < H$.
 
 Une cellule peut être dans deux états : **vivante** ou **morte**. La dynamique du jeu s’exprime par les règles de transition suivantes :
@@ -32,45 +30,45 @@ La notion de « voisinage » dans le jeu de la vie est celle des 8 cases qui peu
 
 Pour implémenter la simulation, on va tout d’abord rechercher une modélisation objet du problème, puis procéder à son implémentation.
 
-{{% note warning %}}
+{{< note warning >}}
 Chaque fonction/méthode devra posséder une spécification.
-{{% /note %}}
+{{< /note >}}
 
 ## Modélisation objet
 
 1. Quelles classes peut-on envisager au premier abord pour implémenter ce problème ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Les classes `Grille` et `Cellule` viennent facilement à l’esprit, on peut penser à une classe `Etat` représentant l’état d’une cellule si l’on veut pousser la modélisation un peu plus loin.
-{{% /solution %}}
+{{< /solution >}}
 
 2. Quelles méthodes pourrait-on imaginer pour chaque classe ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Nous retrouverons ces méthodes dans l’implémentation, mais il faut au moins songer ici aux méthodes qui permettent de récupérer l’état interne des attributs et de les modifier. Il faut aussi penser à la représentation du voisinage d’une cellule et aux méthodes permettant de le modifier ou de le récupérer.
-{{% /solution %}}
+{{< /solution >}}
 
 3. Dans quelle classe pouvons-nous représenter simplement la notion de voisinage d’une cellule ? Et le calculer ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Il peut être commode qu’une `Cellule` connaisse ses voisins, mais une `Grille` est plus à même de calculer les voisinages. On peut donc définir une méthode de calcul de voisinage dans la `Grille` et des méthodes pour affecter ou lire la liste des voisins dans la `Cellule`, ce qui lui permettra de calculer son état futur selon les règles du jeu de la vie.
-{{% /solution %}}
+{{< /solution >}}
 
 4. Une cellule est au bord si $x=0$, $x=L-1$, $y=0$ ou $y=H-1$. Combien de voisins possède une cellule qui n’est pas au bord ?
 Combien de voisins possède une cellule qui est au bord ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Une cellule qui n’est pas au bord possède 8 voisins. Une cellule qui est en bordure en possède 3 dans les angles ou 5 ailleurs sur les bords.
-{{% /solution %}}
+{{< /solution >}}
 
 5. Que pourrions-nous aussi considérer comme voisin de droite de la case en haut et à droite de la grille ? Et comme voisin du haut ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Nous pourrions considérer que le voisin de la cellule en haut et à droite de la grille est la cellule en haut et à gauche. De même le voisin du haut de la case en haut à droite pourrait être la cellule en bas à droite de la grille (grille torique).
-{{% /solution %}}
+{{< /solution >}}
 
 ## Implémentation du jeu
 
-{{% note warning %}}
+{{< note warning >}}
 
 Chaque classe sera définie dans un fichier différent.
 
-{{% /note %}}
+{{< /note >}}
 
 #### La classe `Cellule`
 

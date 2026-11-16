@@ -1,11 +1,19 @@
 baseURL = "https://dlatreyte.github.io/"
+title = "Physique, Chimie et Informatique"
+locale = "fr-FR"
 defaultContentLanguage = "fr"
-title = "Accueil"
-theme = "beautifulhugo"
+theme = "hugo-theme-relearn"
+enableEmoji = true
+
+[outputs]
+  home = ["html", "rss", "print"]
+  section = ["html", "rss", "print"]
+  page = ["html", "rss", "print"]
 
 [markup]
-  defaultMarkdownHandler = "goldmark"
   [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
     [markup.goldmark.extensions]
       definitionList = true
       footnote = true
@@ -14,129 +22,88 @@ theme = "beautifulhugo"
       table = true
       taskList = true
       typographer = true
+      # Les formules $…$, $$…$$, \(…\) et \[…\] sont transmises telles quelles à KaTeX
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [["\\[", "\\]"], ["$$", "$$"]]
+          inline = [["\\(", "\\)"], ["$", "$"]]
     [markup.goldmark.parser]
       autoHeadingID = true
       autoHeadingIDType = "github"
       [markup.goldmark.parser.attribute]
         block = true
         title = true
-    [markup.goldmark.renderer]
-      hardWraps = false
-      unsafe = true
-      xhtml = false
-  # Coloration syntaxique par classes CSS (feuille css/syntax.css du thème)
   [markup.highlight]
-    codeFences = true
-    guessSyntax = true
-    lineNos = true
-    lineNumbersInTable = true
-    lineNoStart = 1
     noClasses = false
-    tabWidth = 4
+    guessSyntax = true
   [markup.tableOfContents]
     startLevel = 2
     endLevel = 3
-    ordered = false
 
 [params]
-  homeTitle = "Physique, Chimie et Informatique"
-  subtitle = "Cours de Physique, de Chimie et d'Informatique pour le secondaire"
-  mainSections = ["post", "posts"]
-  logo = "first_page.jpg"
-  favicon = "img/favicon.ico"
-  dateFormat = "January 2, 2006"
-  commit = false
-  rss = true
-  comments = true
-  readingTime = true
-  wordCount = true
-  useHLJS = false
-  socialShare = true
-  delayDisqus = true
-  showRelatedPosts = true
-  enableEmoji = true
+  # Variantes de couleurs proposées au lecteur (la première est celle par défaut ;
+  # les variantes "auto" suivent le réglage clair/sombre du système)
+  themeVariant = [
+    { identifier = "zen-auto", name = "Zen clair/sombre", auto = ["zen-light", "zen-dark"] },
+    { identifier = "relearn-auto", name = "Relearn clair/sombre", auto = [] },
+    { identifier = "zen-light" },
+    { identifier = "zen-dark" },
+    { identifier = "relearn-light" },
+    { identifier = "relearn-dark" },
+  ]
+  # Menu latéral repliable, sections fermées par défaut sauf celle de la page courante
+  collapsibleMenu = true
+  alwaysopen = false
+  showVisitedLinks = true
+  disableLandingPageButton = true
+  disableGeneratorVersion = true
+  # Les sections masquées du menu (hidden: true) n'apparaissent pas non plus dans la recherche
+  disableSearchHiddenPages = true
 
-  # Auteur et réseaux affichés dans le pied de page
-  [params.author]
-    name = "David Latreyte"
-    website = "https://dlatreyte.github.io"
-    github = "DLatreyte"
-    linkedin = "latreyte-david-917852b2"
+  # Formules : KaTeX intégré à Hugo, au moment du build (chimie \ce et \pu comprises)
+  [params.math.toMath]
+    output = "htmlAndMathml"
+    strict = "ignore"
+    throwOnError = false
+    macros = [
+      ['\dv', '\frac{\mathrm{d}#1}{\mathrm{d}#2}'],
+      ['\pdv', '\frac{\partial #1}{\partial #2}'],
+      ['\abs', '\left\vert #1 \right\vert'],
+      ['\norm', '\left\Vert #1 \right\Vert'],
+    ]
 
-[[menu.main]]
-  name = "Infos"
-  url = "about/infos"
-  weight = 1
+  # Titres par défaut des encadrés {{< note >}} (style du paquet Typst gentle-clues),
+  # utilisés quand l'encadré n'a pas de titre
+  [params.clues.titres]
+    abstract = "Résumé"
+    info = "Info"
+    question = "Question"
+    memo = "À retenir"
+    task = "Exercice"
+    conclusion = "Conclusion"
+    tip = "Conseil"
+    success = "À retenir"
+    warning = "Avertissement"
+    error = "Erreur"
+    example = "Exemple"
+    goal = "Objectif"
+    idea = "Idée"
+    experiment = "Expérience"
+    notify = "Notification"
+    code = "Code"
+    danger = "Danger"
 
-[[menu.main]]
-  name = "Blog"
-  url = ""
-  weight = 2
-
-[[menu.main]]
-  identifier = "cours"
-  name = "Cours"
-  weight = 3
-
-[[menu.main]]
-  parent = "cours"
-  name = "1ère Spé. PC"
-  url = "premieres-pc"
-  weight = 1
-
-#[[menu.main]]
-#  parent = "cours"
-#  name = "1ère Spé. NSI"
-#  url = "premieres-nsi"
-#  weight = 2
-
-[[menu.main]]
-  parent = "cours"
-  name = "Terminale Spé. PC"
-  url = "terminales-pc"
-  weight = 3
-
-[[menu.main]]
-  parent = "cours"
-  name = "Terminale Spé. NSI"
-  url = "terminales-nsi"
-  weight = 4
-
-[[menu.main]]
-  parent = "cours"
-  name = "Terminale Ens. Scientifique"
-  url = "terminales-es"
-  weight = 5
-
-[[menu.main]]
-  parent = "cours"
-  name = "... dans le supérieur"
-  url = "superieur"
-  weight = 6
-
-[[menu.main]]
-  identifier = "culture"
-  name = "Culture"
-  weight = 4
-
-[[menu.main]]
-  parent = "culture"
-  name = "Physique-Chimie"
-  url = "culture"
-  weight = 1
-
-[[menu.main]]
-  parent = "culture"
-  name = "Programmation"
-  url = "programmation"
-  weight = 2
-
-[[menu.main]]
-  name = "Tags"
-  url = "tags"
-  weight = 6
-
-[[menu.main]]
-  name = "Catégories"
-  url = "categories"
-  weight = 6
+# Liens en bas du menu latéral
+[[menu.shortcuts]]
+  name = "<i class='fas fa-fw fa-tags'></i> Mots-clés"
+  pageRef = "/tags"
+  weight = 10
+[[menu.shortcuts]]
+  name = "<i class='fas fa-fw fa-list'></i> Catégories"
+  pageRef = "/categories"
+  weight = 20
+[[menu.shortcuts]]
+  name = "<i class='fab fa-fw fa-github'></i> GitHub"
+  url = "https://github.com/DLatreyte"
+  weight = 30

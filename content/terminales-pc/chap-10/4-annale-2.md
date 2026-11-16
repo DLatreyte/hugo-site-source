@@ -1,16 +1,14 @@
 ---
 title: "Réalisation d'une pile nickel/zinc"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-01-25T21:05:34+04:00
 draft: false
 toc: true
 tags: ["Pile", "Pont salin", "Oxydoréduction", "Transfert direct d'électrons", "Transfert indirect d'électrons", "Capacité d'une pile", "Anode", "Cathode", "Pont salin"]
 categories: ["Chimie", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 400
 ---
 
 
@@ -48,7 +46,7 @@ L'électrode positive de cette pile est l'électrode de nickel.
 
 3. Écrire l'équation de la réaction globale qui intervient lorsque la pile débite.
 
-4. Calculer la valeur du quotient de réaction dans l'état initial $Q\_{r,i}$.\
+4. Calculer la valeur du quotient de réaction dans l'état initial $Q_{r,i}$.\
     Cette valeur est-elle cohérente avec la polarité proposée ?
 
 ## Étude de la pile
@@ -59,13 +57,13 @@ On fait débiter la pile dans un conducteur ohmique.
 
 6. Préciser sur ce schéma le sens de circulation du courant électrique et le sens de déplacement des électrons dans le circuit extérieur.
 
-7. Comment varie la concentration des ions positifs dans chacun des béchers ? En déduire l'évolution du quotient de réaction $Q\_r$.
+7. Comment varie la concentration des ions positifs dans chacun des béchers ? En déduire l'évolution du quotient de réaction $Q_r$.
 
-8. Sachant que la masse des électrodes ne limite pas la transformation, pour quelle raison la pile s'arrêtera-t-elle de débiter ? Quelle est alors la valeur de $Q\_r$ ?
+8. Sachant que la masse des électrodes ne limite pas la transformation, pour quelle raison la pile s'arrêtera-t-elle de débiter ? Quelle est alors la valeur de $Q_r$ ?
 
-9. *La transformation étant considérée comme totale*, calculer la valeur de l'avancement maximal $x\_{max}$ de la réaction.
+9. *La transformation étant considérée comme totale*, calculer la valeur de l'avancement maximal $x_{max}$ de la réaction.
 
-10. Quelle relation existe-t-il entre $x\_{max}$ et la quantité de matière d'électrons qui ont circulé ?\
+10. Quelle relation existe-t-il entre $x_{max}$ et la quantité de matière d'électrons qui ont circulé ?\
     En déduire la quantité totale d'électricité fournie par cette
     pile.
 
@@ -94,6 +92,6 @@ l'électrode de nickel de $\Delta m = \pu{100 mg}$.
 
 ## Corrigé
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 {{< remote "Corrigé au format pdf" "/terminales-pc/chap-10/chap-10-4/chap-10-4-1.pdf" >}}
-{{% /solution %}}
+{{< /solution >}}

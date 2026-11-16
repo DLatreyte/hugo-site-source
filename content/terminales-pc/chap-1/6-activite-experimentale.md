@@ -1,23 +1,21 @@
 ---
 title: "Intensité sonore, niveau d'intensité sonore : activités expérimentales"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-09-14T04:49:07+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 600
 ---
 
 Cette activité expérimentale s'appuie sur l'utilisation du logiciel [Phyphox](https://phyphox.org) qui doit donc être téléchargé sur son téléphone.
 
 ## Étalonnage de l'application
 
-{{% note normal %}}
+{{< note normal >}}
 
 - Dans la partie «&nbsp;Acoustique&nbsp;», sélectionner le module «&nbsp;Intensité sonore&nbsp;»
 - Sélectionner l'onglet «&nbsp;Étalonnage&nbsp;»
@@ -25,13 +23,13 @@ Cette activité expérimentale s'appuie sur l'utilisation du logiciel [Phyphox](
 - Entrer cette valeur dans le champ «&nbsp;Intensité de référence&nbsp;»
 - Lancer une mesure afin de vérifier que la valeur affichée correspond bien à celle indiquée par le sonomètre.
 
-{{% /note %}}
+{{< /note >}}
 
 ## Le niveau d'intensité sonore : une grandeur non linéaire
 
 Cette partie nécessite au minimum trois téléphones : deux premiers téléphones pour émettre des sons et un dernier téléphone pour les mesures de niveau d'intensité sonore.
 
-{{% note normal %}}
+{{< note normal >}}
 
 - **Téléphone 1**
   - Dans la partie «&nbsp;Acoustique&nbsp;», sélectionner le module «&nbsp;Générateur de son&nbsp;»
@@ -60,7 +58,7 @@ Cette partie nécessite au minimum trois téléphones : deux premiers téléphon
 - **Téléphone 3**
   - Mesurer le niveau d'intensité sonore $L_3$ des sons émis par les téléphones 1 et 2
 
-{{% /note %}}
+{{< /note >}}
 
 1. Déterminer la valeur de l'intensité sonore $I_1$ du son émis par le téléphone 1 seul.
 2. Déterminer la valeur de l'intensité sonore $I_2$ du son émis par le téléphone 2 seul.
@@ -71,7 +69,7 @@ Cette partie nécessite au minimum trois téléphones : deux premiers téléphon
 
 Cette activité nécessite l'utilisation de deux téléphones : le premier émet un son, le second mesure le niveau d'intensité sonore du son émis par le premier téléphone.
 
-{{% note normal %}}
+{{< note normal >}}
 
 - **Téléphone 1**
   - Dans la partie «&nbsp;Acoustique&nbsp;», sélectionner le module «&nbsp;Générateur de son&nbsp;»
@@ -85,6 +83,6 @@ Cette activité nécessite l'utilisation de deux téléphones : le premier émet
   - Déplacer le téléphone 2 jusqu'à ce qu'une évolution sensible du niveau sonore apparaisse à l'écran
   - Noter la valeur du niveau sonore et la nouvelle distance entre l'émetteur et le récepteur.
   - Déplacer à nouveau le téléphone 2 et reprendre les mesures de façon à obtenir cinq ou six couples (distance, niveau sonore)
-{{% /note %}}
+{{< /note >}}
 
 1. Tracer, à l'aide du logiciel Graphical Analysis, l'évolution du niveau sonore en fonction la distance du récepteur à la source sonore.

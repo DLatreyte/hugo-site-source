@@ -1,16 +1,14 @@
 ---
 title: "Simulation d'un titrage conductimétrique"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-10-11T20:53:53+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 9900
 ---
 
 ```python

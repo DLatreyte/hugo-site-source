@@ -1,16 +1,14 @@
 ---
 title: "Le rendu de monnaie"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-01-24T01:51:49+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 100
 ---
 
 Un client achète un objet qui coûte 53 euros. Il paye avec un billet de 200 euros. Il faut donc lui rendre 147 euros, par exemple un billet de 100, deux billets de 20, un billet de 5 et une pièce de 2.

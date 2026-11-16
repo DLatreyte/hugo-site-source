@@ -1,17 +1,14 @@
 ---
 title: "Mesures et incertitudes"
 subtitle: "Chapitre 0"
-author: ""
-type: ""
 date: 2020-08-30T11:54:34+04:00
 draft: false
 toc: false
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 10
 ---
 
 | Notions et contenus | Capacités exigibles |

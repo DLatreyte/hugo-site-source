@@ -1,17 +1,14 @@
 ---
 title: "Évolution temporelle d'une transformation nucléaire"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-03-08T10:57:03+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 180
 ---
 
 ## Au programme

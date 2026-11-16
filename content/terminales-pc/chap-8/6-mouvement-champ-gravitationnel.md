@@ -1,17 +1,15 @@
 ---
 title: "Mouvements dans le champ gravitationnel non uniforme"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-12-28T23:21:35+04:00
 draft: false
 toc: true
 tags: ["Deuxième loi de Newton", "Équation différentielle", "Chute libre", "Champ gravitationnel", "Repère de frenet"]
 categories: ["Physique", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
 mathjax: true
+weight: 600
 ---
 
 ## Les lois de Kepler
@@ -22,7 +20,7 @@ mathjax: true
 
 Les deux premières lois furent publiées par Kepler en 1609 et la troisième en 1619. Les lois de Kepler conduisirent Newton à la découverte de la loi de la gravitation universelle.
 
-{{% note tip %}}
+{{< note tip >}}
 
 - **(Loi des trajectoires)** *Chaque planète décrit autour du Soleil une ellipse dont le Soleil occupe un des foyers.*
 
@@ -33,7 +31,7 @@ Les deux premières lois furent publiées par Kepler en 1609 et la troisième en
 $$
     \dfrac{T^2}{a^3} = \text{cste}
 $$
-{{% /note %}}
+{{< /note >}}
 
 <img src="/terminales-pc/chap-8/chap-8-6/chap-8-6-2.png" alt="" width="70%" />
 
@@ -60,9 +58,9 @@ $$
 
 - Cette loi apporte un crédit considérable au système de Copernic.
 
-{{% note warning %}}
+{{< note warning >}}
 La première loi de Kepler n'est cependant pas généralisable à tous les mouvements dans l'espace : certains astres possèdent des mouvements *paraboliques* ou *hyperboliques*.
-{{% /note %}}
+{{< /note >}}
 
 #### Loi des aires
 
@@ -70,9 +68,9 @@ La première loi de Kepler n'est cependant pas généralisable à tous les mouve
 
 - **La vitesse d'une planète sur une trajectoire circulaire est uniforme**.
 
-{{% note normal %}}
+{{< note normal >}}
 On peut montrer que les première et deuxième lois de Kepler imposent à la *force gravitationnelle d'être centripète* (dirigée vers le Soleil).
-{{% /note %}}
+{{< /note >}}
 
 #### Loi des périodes
 
@@ -80,95 +78,95 @@ On peut montrer que les première et deuxième lois de Kepler imposent à la *fo
 
 - *On peut montrer que cette loi constitue un **critère d'appartenance d'un astre au système solaire** : tous les membres du système solaire sans exception, quelle que soit leur trajectoire, valident cette loi.*
 
-{{% note normal %}}
+{{< note normal >}}
 On peut montrer que la troisième loi de Kepler impose à la valeur de la force gravitationnelle d'être en $1 / r^2$, c'est à dire de diminuer avec le carré de la distance au Soleil.
-{{% /note %}}
+{{< /note >}}
 
 ## Champ gravitationnel
 
 ### Force gravitationnelle
 
-{{% note tip %}}
+{{< note tip >}}
 Deux **corps ponctuels** de masses $m_1$ et $m_2$ sont situés en deux points $M_1$ et $M_2$ de l'espace éloignés d'une distance $d$. On modélise l'action qu'exerce le corps de masse $m_1$ sur le corps de masse $m_2$ par la force gravitationnelle introduite par Newton&nbsp;:
 $$
-\vec{F}\_{m_1 / m_2} =
+\vec{F}_{m_1 / m_2} =
 \begin{cases}
     \text{Point d'application : } M_2\cr
     \text{Direction : } \text{droite }  (M_1 M_2)\cr
     \text{Sens : } \text{vers } M_1\cr
-    \text{Valeur : } F\_{m_1 / m_2} = G \dfrac{m_1 m_2}{d^2}
+    \text{Valeur : } F_{m_1 / m_2} = G \dfrac{m_1 m_2}{d^2}
 \end{cases}
 $$
 où $G$ est la *constante de gravitation universelle* : $G = \pu{6,67e-11 N.m2.kg-2}$.
-{{% /note %}}
+{{< /note >}}
 
 <img src="/terminales-pc/chap-8/chap-8-6/chap-8-6-9.png" alt="" width="40%" />
 
-{{% note exercise %}}
+{{< note exercise >}}
 À partir des informations données ci-dessus, donner l'expression vectorielle de la force gravitationnelle en fonction du vecteur unitaire $\vec{u}$.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $$
-\vec{F}\_{m_1 / m_2} = - G \dfrac{m_1 m_2}{d^2}  \vec{u}
+\vec{F}_{m_1 / m_2} = - G \dfrac{m_1 m_2}{d^2}  \vec{u}
 $$
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note tip %}}
+{{< note tip >}}
 
 - *La force gravitationnelle est toujours attractive !*
 
 - La force gravitationnelle introduite par Newton, pour les objets ponctuels, est généralisable à tous les objets à symétrie sphérique de masse.
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Principe des actions réciproques
 
 $$
-\vec{F}\_{m_2 / m_1} = - \vec{F}\_{m_1 / m_2}
+\vec{F}_{m_2 / m_1} = - \vec{F}_{m_1 / m_2}
 $$
-{{% /note %}}
+{{< /note >}}
 
 ### Champ gravitationnel $\vec{\mathcal{G}}$
 
 - Si au point $M_2$ on remplace le corps de masse $m_2$ par un corps de masse $m_3$,
     $$
-    \vec{F}\_{m_1 / m_3} = - G \dfrac{m_1 m_3}{d^2}  \vec{u}
+    \vec{F}_{m_1 / m_3} = - G \dfrac{m_1 m_3}{d^2}  \vec{u}
     $$
 
 - Si au point $M_2$ on remplace le corps de masse $m_3$ par un corps de masse $m_4$,
     $$
-    \vec{F}\_{m_1 / m_4} = - G \dfrac{m_1 m_4}{d^2}  \vec{u}
+    \vec{F}_{m_1 / m_4} = - G \dfrac{m_1 m_4}{d^2}  \vec{u}
     $$
 
-{{% note normal %}}
+{{< note normal >}}
 
-Comme dans les documents [chap. 9,2]({{< ref "./2-mouvement-champ-pesanteur-uniforme" >}}) et [chap. 9,5]({{< ref "./5-mouvement-champ-electrique" >}}), on constate que quelle que soit la masse $m$ qui subit l'action de la masse $m_1$ :
+Comme dans les documents [chap. 9,2]({{% ref "./2-mouvement-champ-pesanteur-uniforme" %}}) et [chap. 9,5]({{% ref "./5-mouvement-champ-electrique" %}}), on constate que quelle que soit la masse $m$ qui subit l'action de la masse $m_1$ :
 $$
-\dfrac{\vec{F}\_{m_1 / m_2}}{m_2} = \dfrac{\vec{F}\_{m_1 / m_3}}{m_3} =
-   \dfrac{\vec{F}\_{m_1 / m_4}}{m_4} = \ldots = - G\\, \dfrac{m_1}{d^2}\\,  \vec{u} =
+\dfrac{\vec{F}_{m_1 / m_2}}{m_2} = \dfrac{\vec{F}_{m_1 / m_3}}{m_3} =
+   \dfrac{\vec{F}_{m_1 / m_4}}{m_4} = \ldots = - G\, \dfrac{m_1}{d^2}\,  \vec{u} =
    \vec{\mathcal{G}} (M_2)
 $$
  $\vec{\mathcal{G}} (M_2)$, force que subirait un corps de masse 1&nbsp;kg placé au point $M_2$, est le champ gravitationnel créé par le corps de masse $m_1$ au point $M_2$.
- {{% /note %}}
+ {{< /note >}}
 
 La présence de la masse $m_1$ au point $M_1$ « communique » à tout point de l'espace la propriété suivante&nbsp;:
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Relation entre la force gravitationnelle et le champ électrique en un point de l'espace
 
 *Toute masse $m$ placée en un point $M$ quelconque de l'espace est soumise à la force*
 $$
-\vec{F} = m\\, \vec{\mathcal{G}} (M)
+\vec{F} = m\, \vec{\mathcal{G}} (M)
 $$
 *où $\vec{\mathcal{G}} (M)$ est le champ gravitationnel créé par la masse $m_1$ au point $M$.*
-{{% /note %}}
+{{< /note >}}
 
-{{% note warning %}}
+{{< note warning >}}
 *Le champ gravitationnel est non uniforme.*
-{{% /note %}}
+{{< /note >}}
 
 ## Étude du mouvement
 
@@ -176,18 +174,18 @@ $$
 
 <img src="/terminales-pc/chap-8/chap-8-6/chap-8-6-10.png" alt="" width="40%" />
 
-{{% note exercise %}}
+{{< note exercise >}}
 Étudier le problème et déterminer l'expression du vecteur accélération de la planète considérée ponctuelle.\
 Caractériser le mouvement de la planète.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - Système = {Planète}
 
 - Interactions&nbsp;:
 
-  - Système - Champ gravitationnel $\vec{\mathcal{G}}$ créé par l'astre $S$&nbsp;: $\vec{F} = m\\, \vec{\mathcal{G}} (M)$
+  - Système - Champ gravitationnel $\vec{\mathcal{G}}$ créé par l'astre $S$&nbsp;: $\vec{F} = m\, \vec{\mathcal{G}} (M)$
 
 - Référentiel = {Héliocentrique}
 
@@ -195,7 +193,7 @@ Caractériser le mouvement de la planète.
 
 - Deuxième loi de Newton&nbsp;:
   $$
-  m\\, \vec{a}_P = m\\, \vec{\mathcal{G}} (M)
+  m\, \vec{a}_P = m\, \vec{\mathcal{G}} (M)
   $$
   ou
   $$
@@ -204,27 +202,27 @@ Caractériser le mouvement de la planète.
 
 - *La planète est en **chute libre** sur le Soleil*.
 
-{{% /solution %}}
+{{< /solution >}}
 
 #### Expression de l'accélération de la planète en fonction du vecteur unitaire $\vec{u}$
 
-{{% note exercise %}}
+{{< note exercise >}}
 Donner l'expression du vecteur accélération en fonction du vecteur unitaire $\vec{u}$ (vecteur unitaire issu de $S$ et dirigé vers $P$, cf. schéma plus haut) et des paramètres du problème.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $$
-    \vec{a}_P = - G\\, \dfrac{M_S}{r^2}\\, \vec{u}
+    \vec{a}_P = - G\, \dfrac{M_S}{r^2}\, \vec{u}
 $$
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note normal %}}
+{{< note normal >}}
 On peut démontrer qu'une telle accélération conduit à des mouvement *elliptiques*, *circulaires*, *paraboliques* ou *elliptiques*.
-{{% /note %}}
+{{< /note >}}
 
-{{% note warning %}}
+{{< note warning >}}
 *Le vecteur accélération n'est jamais uniforme, quelle que soit la trajectoire de la planète.*
-{{% /note %}}
+{{< /note >}}
 
 **Vos connaissances en mathématique ne vous permettent pas de déterminer le vecteur vitesse par intégration de l'accélération puisque cette dernière n'est pas un vecteur constant !** Il faudra apprendre et utiliser le résultat donné dans la prochaine section.
 
@@ -234,9 +232,9 @@ On peut démontrer qu'une telle accélération conduit à des mouvement *ellipti
 
 ### Détermination de l'expression du vecteur vitesse de la planète *dans le cas d'un mouvement circulaire*
 
-{{% note warning %}}
+{{< note warning >}}
 *Dans la suite de ce chapitre nous allons nous limiter aux **mouvements circulaires**, c'est à dire aux mouvement dont la trajectoire est un cercle.*\
-{{% /note %}}
+{{< /note >}}
 
 **Remarque :** *Le centre de la trajectoire d'une planète en orbite circulaire est confondu avec le centre du Soleil.*
 
@@ -244,100 +242,100 @@ On peut démontrer qu'une telle accélération conduit à des mouvement *ellipti
 
 <img src="/terminales-pc/chap-8/chap-8-6/chap-8-6-12.png" alt="" width="40%" />
 
-{{% note tip %}}
+{{< note tip >}}
 
 - *Le repère de Frenet (pour un problème à deux dimensions) est un **repère mobile**, dont l'**origine** est le point mobile $P$ étudié, et la **base** est constituée des vecteurs unitaires $\vec{t}$ et $\vec{n}$ **dans le plan**.*
 
 - *Le vecteur unitaire $\vec{t}$ a pour direction la **droite tangente à la trajectoire au point** $P$ et pour sens le **sens du mouvement** ;*
 
 - *Le vecteur unitaire $\vec{n}$ a pour direction la **droite normale à la droite tangente au point** $P$ (c'est donc la direction du rayon de la trajectoire dans le cas d'un cercle) et est **dirigé vers le centre** de la courbure.*
-{{% /note %}}
+{{< /note >}}
 
 <img src="/terminales-pc/chap-8/chap-8-6/chap-8-6-14.png" alt="" width="40%" />
 
-{{% note tip %}}
+{{< note tip >}}
 Dans le repère de Frenet,
 
 - La vitesse d'une planète s'écrit&nbsp;:
     $$
-        \vec{v} = v\\, \vec{t}
+        \vec{v} = v\, \vec{t}
     $$
 
 - On peut démontrer que l'accélération d'une planète s'écrit&nbsp;:
     $$
-            \vec{a}\_P = \dfrac{\mathrm{d}v}{\mathrm{dt}}\\, \vec{t} + \dfrac{v^2}{r}\\, \vec{n}
+            \vec{a}_P = \dfrac{\mathrm{d}v}{\mathrm{dt}}\, \vec{t} + \dfrac{v^2}{r}\, \vec{n}
     $$ où $r$ est le rayon du cercle.
-{{% /note %}}
+{{< /note >}}
 
 L'expression de l'accélération doit être *admise* et *apprise*, en notant bien que c'est la *valeur de la vitesse* $\vec{v}$ qui intervient dans la dérivée.
 
 #### Expression de la vitesse de la planète
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 Projeter l'expression de la deuxième loi de Newton dans le repère de Frenet.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 On possède désormais deux expressions différentes de l'accélération&nbsp;:
 
 - Résultat de l'écriture de la deuxième loi de Newton :
 $$
-\vec{a}\_P = - G\\, \dfrac{M_S}{r^2}\\, \vec{u}
+\vec{a}_P = - G\, \dfrac{M_S}{r^2}\, \vec{u}
 $$
 que l'on peut aussi écrire, dans la base de Frenet,
 $$
-\vec{a}\_P = G\\, \dfrac{M_S}{r^2}\\, \vec{n}
+\vec{a}_P = G\, \dfrac{M_S}{r^2}\, \vec{n}
 $$
 puisque $\vec{u} = - \vec{n}$.
 - Résultat de l'étude cinématique dans la base de Frenet :
 $$
-\vec{a}_P = \dfrac{\mathrm{d}v}{\mathrm{dt}}\\,
-     \vec{t} + \dfrac{v^2}{r}\\, \vec{n}
+\vec{a}_P = \dfrac{\mathrm{d}v}{\mathrm{dt}}\,
+     \vec{t} + \dfrac{v^2}{r}\, \vec{n}
 $$
 
 - Par identification, on obtient&nbsp;:
 $$
 \begin{cases}
-    \text{Selon } \vec{t} \text{ :} & \dfrac{\mathrm{d}v}{\mathrm{dt}} = 0\\\\
-    \text{Selon } \vec{n} \text{ :} & \dfrac{v^2}{r} = G\\, \dfrac{M_S}{r^2}
+    \text{Selon } \vec{t} \text{ :} & \dfrac{\mathrm{d}v}{\mathrm{dt}} = 0\\
+    \text{Selon } \vec{n} \text{ :} & \dfrac{v^2}{r} = G\, \dfrac{M_S}{r^2}
 \end{cases}
 $$
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 Démontrer que si la trajectoire est un cercle, le mouvement est forcément uniforme.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $$
 \dfrac{\mathrm{d}v}{\mathrm{dt}} = 0 \Leftrightarrow v = \text{cste}
 $$
 *Si le mouvement d'une planète est **circulaire**, alors il est **uniforme**.*
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 Donner l'expression de la valeur de la vitesse de la planète en fonction des paramètres du problème.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 $$\boxed{
-    v = \sqrt{G\\, \dfrac{M_S}{r}}\\
+    v = \sqrt{G\, \dfrac{M_S}{r}}\
 }
 $$
 La vitesse d'une planète est **indépendante de sa masse** (comme pour toute *chute libre*), est *d'autant plus petite que le rayon de son orbite est grand*, et *dépend de la masse du corps attracteur* $M_S$.
-{{% /solution %}}
+{{< /solution >}}
 
 ### Période de révolution de la planète, troisième loi de Kepler
 
-{{% note exercise %}}
+{{< note exercise >}}
 Donner l'expression de la période $T$ de révolution de la planète autour du Soleil.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 La période de révolution $T$ de la planète autour de l'astre attracteur $S$ est la durée nécessaire pour parcourir l'orbite circulaire à la vitesse constante $v$, donc&nbsp;:
 $$
-T = \dfrac{2 \pi r}{v} = \dfrac{2 \pi r}{\sqrt{G\\, \dfrac{M_S}{r}}}
+T = \dfrac{2 \pi r}{v} = \dfrac{2 \pi r}{\sqrt{G\, \dfrac{M_S}{r}}}
 $$
 Finalement
 $$
@@ -347,13 +345,13 @@ $$
 $$
 
 *La période augmente avec la distance de la planète par rapport au corps attracteur.*
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 À partir de l'expression de la période retrouver la troisième loi de Keple, dans le cas des mouvements circulaires.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 $$
 T^2 = 4 \pi^2 \dfrac{r^3}{GM_S}
@@ -366,7 +364,7 @@ $$
 $$
 On retouve la troisième loi de Kepler et on comprend pourquoi elle peut servir de « test d'appartenance du corps au système Solaire »&nbsp;: le rapport est constant pour tous les satellites qui ont pour corps attracteur le corps de masse $M_S$.
 
-{{% /solution %}}
+{{< /solution >}}
 
 ### Satellites géostationnaires
 
@@ -387,11 +385,11 @@ $$
 
 <img src="/terminales-pc/chap-8/chap-8-6/chap-8-6-15.png" alt="" width="40%" />
 
-{{% note exercise %}}
+{{< note exercise >}}
 Démontrer que les satellites géostationnaires ne peuvent se trouver qu'à une altitude bien précise au dessus du niveau du sol.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 On peut écrire&nbsp;: $T^2 = \dfrac{4 \pi^2}{GM_T}  (R_T + h)^3$ puisque la distance entre le centre de la Terre et le satellite est&nbsp;: $r = R_T + h$. Donc&nbsp;:
 $$
@@ -399,7 +397,7 @@ h = \left( \frac{GM_T T^2}{4 \pi^2} \right)^{1 / 3} - R_T
 $$
 **A.N.** $h = \left( \frac{\pu{6,67e-11} \times \pu{5,98e24} \times \pu{86164}^2}{4 \pi^2} \right)^{1 / 3} - \pu{6,38e6} = \pu{3,58e7 m} = \pu{3,58e4 km}$.
 
-{{% /solution %}}
+{{< /solution >}}
 
 #### Conclusion
 

@@ -1,17 +1,14 @@
 ---
 title: "Propriétés des ondes progressives"
 subtitle: "Chapitre 3"
-author: ""
-type: ""
 date: 2021-09-19T11:30:29+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 40
 ---
 
 ## Effet Doppler

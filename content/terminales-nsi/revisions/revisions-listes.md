@@ -1,16 +1,14 @@
 ---
 title: "Revisions sur la structure de liste en Python"
 subtitle: ""
-author: ""
-type: ""
 date: 2023-09-06T06:01:13+04:00
 draft: false
 toc: false
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: false
+weight: 9900
 ---
 
 
@@ -28,7 +26,7 @@ def minmax(liste: list[float]) -> tuple[float]:
     """
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def minmax(liste: list[float]) -> tuple[float]:
@@ -46,7 +44,7 @@ def minmax(liste: list[float]) -> tuple[float]:
     return val_min, val_max
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Exercice 2
 
@@ -63,7 +61,7 @@ def longueur(liste: list[float]) -> int:
     """
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def longueur(liste: list[float]) -> int:
@@ -77,7 +75,7 @@ def longueur(liste: list[float]) -> int:
     return longueur
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Exercice 3
 
@@ -95,7 +93,7 @@ def loto() -> list[int]:
     """
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def loto() -> list[int]:
@@ -112,7 +110,7 @@ def loto() -> list[int]:
     return tirages
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Exercice 4
 
@@ -185,7 +183,7 @@ def distanceN(pt1: Tuple[float], pt2: Tuple[float]) -> float:
     """
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 from math import sqrt
@@ -209,7 +207,7 @@ def distanceN(pt1: tuple[float], pt2: tuple[float]) -> float:
     return sqrt(carre_distance)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Exercice 7
 
@@ -228,7 +226,7 @@ def table_multiplication(n: int) -> list[list[int]]:
     """
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def table_multiplication(n: int) -> list[list[int]]:
@@ -248,4 +246,4 @@ def table_multiplication(n: int) -> list[list[int]]:
     return table
 ```
 
-{{% /solution %}}
+{{< /solution >}}

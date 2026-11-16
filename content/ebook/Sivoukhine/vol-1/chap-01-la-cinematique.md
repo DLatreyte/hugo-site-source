@@ -2,15 +2,14 @@
 title: "La Cinématique"
 subtitle: "Chapitre 01"
 author: "D. Sivoukhine"
-type: ""
 date: 2020-08-25T22:27:19+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: false
+weight: 9900
 ---
 $
 \global\def\dif#1{\dfrac{\mathrm{d} #1}{\mathrm{d} t}}
@@ -52,7 +51,7 @@ référence vers le point considéré. Les coordonnées $x$,
 $y$, $z$ sont les projections du rayon vecteur sur les axes de
 coordonnées. Aussi écrira-t-on
 
-$$ \mathbf{r} = x\\, \mathbf{i} + y\\, \mathbf{j} + z\\, \mathbf{k}$$
+$$ \mathbf{r} = x\, \mathbf{i} + y\, \mathbf{j} + z\, \mathbf{k}$$
 
 où $\mathbf{i}$, $\mathbf{j}$, $\mathbf{k}$ sont des *vecteurs
 unitaires* orientés le long des axes $X$, $Y$, $Z$.
@@ -337,7 +336,7 @@ h = \pu{6,63e-27 erg}  \hspace{1cm} \text{(5.2)}
 $$
 La relation ([5.1](#eq-5-1)) exprime le *principe d'incertitude de Heisenberg* (né en 1901) qui fixe une limite de principe à la précision d’une mesure simultanée de la coordonnée et de l’impulsion d’une particule ; cette limite ne peut être dépassée par aucun perfectionnement des appareils et des procédés de mesure. Il ne s’agit pas ici des erreurs de mesure, car c’est une manifestation de la nature des particules réelles dont les caractéristiques instantanées de mouvement ne se laissent pas déterminer par le procédé classique, c’est-à-dire par des valeurs exactes de leurs coordonnées et impulsions. Les particules ont un comportement plus compliqué que celui des points matériels de la mécanique classique. L’image classique du mouvement suivant des trajectoires continues ne reflète qu’approximativement les lois de la Nature. Les limites de validité de la mécanique classique sont fixées par la relation d’incertitude ([5.1](#eq-5-1)) selon laquelle l’état de mouvement d’une particule ne peut être décrit à un instant donné par des valeurs parfaitement exactes de sa coordonnée et de sa vitesse. Les indéterminations de ces grandeurs doivent satisfaire à la condition <a id="eq-5-3"></a>
 $$
-\delta x \cdot m\\, \delta v \geqslant h \hspace{1cm} \text{(5.3)}
+\delta x \cdot m\, \delta v \geqslant h \hspace{1cm} \text{(5.3)}
 $$
 Pour des corps macroscopiques le procédé de description classique ne saurait être mis en doute. Supposons, par exemple, qu’il s’agisse du mouvement d’une bille ayant une masse $m=\pu{1 g}$. Dans les conditions usuelles la position de la bille peut être déterminée à $\pu{0,1}$ ou $\pu{0,01 mm}$ près. Plus généralement il serait dénué de sens de vouloir préciser la position de la bille avec une précision inférieure à la dimension de l’atome. On posera donc $\delta x = \pu{10^{-8} cm}$. L’application de la relation d’incertitude ([5.1](#eq-5-1)) donne alors
 $$
@@ -345,7 +344,7 @@ $$
 $$
 Comme les quantités $\delta x$ et $\delta v$ sont toutes deux et simultanément très petites, on en conclut que le procédé classique est pratiquement utilisable pour la description du mouvement des corps macroscopiques. Il en va tout autrement avec les phénomènes atomiques qui impliquent des particules de très petites masses et se produisent dans de très petites régions de l’espace. Considérons, par exemple, le mouvement de l’électron dans l’atome d’hydrogène. La masse de l’électron est $m=\pu{9,11e-28 g}$. L’erreur commise dans la détermination de la position de l’électron ne doit pas être supérieure à la dimension de l’atome, donc on doit avoir $\delta x < \pu{10^{-8} cm}$. On tire alors de la relation d’incertitude
 $$
-\delta v > \dfrac{h}{m\\, \delta x} = \dfrac{\pu{6,63e-27}}{\pu{9,11e-28} \times 10^{-8}} \approx \pu{7e8 cm/s}
+\delta v > \dfrac{h}{m\, \delta x} = \dfrac{\pu{6,63e-27}}{\pu{9,11e-28} \times 10^{-8}} \approx \pu{7e8 cm/s}
 $$
 L’incertitude sur la valeur de la vitesse est déjà plus grande que la vitesse de l’électron au sein de l’atome, qui est égale à $\pu{10^8 cm/s}$. Dans cette situation la description classique du mouvement est dénuée de sens.
 
@@ -381,7 +380,7 @@ L’incertitude sur la valeur de la vitesse est déjà plus grande que la vitess
     rapport devienne égal à la dérivée $\dot{x}$. En mathématiques on
     définit la différentielle $dt$ comme un accroissement
     arbitraire de la variable $t$, et la différentielle $dx$ de
-    la fonction $x(t)$ par la relation $dx = \dot{x}\\,dt$. Avec cette
+    la fonction $x(t)$ par la relation $dx = \dot{x}\,dt$. Avec cette
     dernière définition l'assertion que la dérivée est le rapport de
     deux quantités finies $dx$ et $dt$ devient évidente,
     puisque c'est une autre manière d'exprimer une notion. *La notion
@@ -471,7 +470,7 @@ $\rho_{\text{moy}}$ tend vers une limite déterminée $\rho$ qui est la
 densité vraie de la substance au point considéré de l'espace :<a id="eq-6-1"></a>
 
 $$
-\rho = \lim_{\Delta V \rightarrow 0}\\, \dfrac{\Delta m}{\Delta V} = \dfrac{\text{d}m}{\text{d}V}  \hspace{1cm} \text{(6.1)}
+\rho = \lim_{\Delta V \rightarrow 0}\, \dfrac{\Delta m}{\Delta V} = \dfrac{\text{d}m}{\text{d}V}  \hspace{1cm} \text{(6.1)}
 $$
 
 La *densité vraie est donc définie comme la dérivée de la masse par
@@ -519,7 +518,7 @@ petits $\Delta x_{1}, \Delta x_{2}, \ldots, \Delta x_{n}$. La
 longueur de chaque intervalle $\Delta x_{i}$ est multipliée par la
 valeur que prend la fonction $f(x)$ en un point quelconque situé à
 l'intérieur du petit intervalle des valeurs de la variable. Ensuite on
-forme la somme $\sum_{}^{}{f\left( x_{i} \right)\\, \Delta x_{i}}$ et on
+forme la somme $\sum_{}^{}{f\left( x_{i} \right)\, \Delta x_{i}}$ et on
 passe à la limite $n \rightarrow \infty$ en admettant que la longueur de
 chacun des petits intervalles tend vers zéro. Mais en physique, par
 suite d'erreurs de mesure ou de questions de principe (telles que la

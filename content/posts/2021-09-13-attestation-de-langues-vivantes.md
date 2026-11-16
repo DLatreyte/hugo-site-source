@@ -1,16 +1,14 @@
 ---
 title: "Délivrance d'une attestation de Langues Vivantes à la fin du cycle terminal"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-09-13T16:51:14+04:00
 draft: true
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 8
 ---
 
 - [Bulletin officiel du 26 novembre 2020](https://www.education.gouv.fr/bo/20/Hebdo45/MENE2023378A.htm)

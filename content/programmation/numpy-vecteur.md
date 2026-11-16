@@ -1,16 +1,14 @@
 ---
 title: "Utilisation de numpy pour créer et gérer des vecteurs"
 subtitle: ""
-author: ""
-type: ""
 date: 2022-01-03T21:13:39+04:00
 draft: false
 toc: true
 tags: ["Numpy"]
 categories: ["Tutoriel"]
-image: ""
 solution_est_visible: true
 auto_numbering: false
+weight: 9900
 ---
 
 ```python
@@ -126,11 +124,11 @@ print(tab)
 
 ### Création d'un vecteur d'entiers aléatoires
 
-{{% note tip %}}
+{{< note tip >}}
 
 Pour `size` on peut utiliser un nombre à la place du tuple.
 
-{{% /note %}}
+{{< /note >}}
 
 ```python
 tab = np.random.randint(1, high=100, size=(1000,))
@@ -217,12 +215,12 @@ cond = np.array([False, True, False, True])
 print(tab[cond])
 ```
 
-{{% note warning %}}
+{{< note warning >}}
 
 - Si la longueur de `cond` trop petite, les valeurs qui manquent sont égales à `False`.
 - Si la longueur de `cond` trop grande, une exception est levée.
 
-{{% /note %}}
+{{< /note >}}
 
 ### Une opération booléenne sur un vecteur retourne un vecteur de booléens
 
@@ -335,11 +333,11 @@ print(np.cumsum(tab))
 
 ## Calculs entre vecteurs
 
-{{% note warning %}}
+{{< note warning >}}
 
 **Principe :** les calculs se font éléménts par éléments entre les vecteurs
 
-{{% /note %}}
+{{< /note >}}
 
 ```python
 x = np.array([1, 2, 3, 4, 5])

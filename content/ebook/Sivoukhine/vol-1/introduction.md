@@ -2,15 +2,14 @@
 title: "Introduction"
 subtitle: ""
 author: "D. Sivoukhine"
-type: ""
 date: 2020-08-25T22:26:52+04:00
 draft: false
 toc: false
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: false
+weight: 9900
 ---
 
 **1.** Chaque fois que l'on se propose d'étudier un ensemble de phénomènes naturels, il importe de préciser les lois ou les principes fondamentaux permettant d'expliquer les phénomènes connus et de prédire l'existence de phénomènes nouveaux. Cette approche de l'étude des phénomènes naturels est désignée sous le nom de méthode des principes fondamentaux. Cette méthode qui remonte à Newton (1643-1727) devint entre les mains d'Einstein (1879-1955) un extraordinaire instrument de progrès des connaissances.

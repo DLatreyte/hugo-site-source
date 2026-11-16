@@ -1,16 +1,14 @@
 ---
 title: "NUMERIQUE et SCIENCES INFORMATIQUES"
 subtitle: "Partie pratique"
-author: ""
-type: ""
 date: 2022-01-12T07:34:41+04:00
 draft: true
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: false
 auto_numbering: true
+weight: 9900
 ---
 
 ## Exercice 1 (50% des points)
@@ -29,7 +27,7 @@ On utilisera l’algorithme suivant&nbsp;:
 assert tri_selection([1, 52, 6, -9, 12]) == [-9, 1, 6, 12, 52]
 ```
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
 ```python
 from typing import List
@@ -60,7 +58,7 @@ def main():
 main()
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Exercice 2 (50% des points)
 
@@ -101,7 +99,7 @@ def plus_ou_moins():
         print("Perdu ! Le nombre était ", ....)
 ```
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
 ```python
 from random import randint
@@ -126,4 +124,4 @@ def plus_ou_moins():
         print("Perdu ! Le nombre était ", nb_mystere)
 ```
 
-{{% /solution %}}
+{{< /solution >}}

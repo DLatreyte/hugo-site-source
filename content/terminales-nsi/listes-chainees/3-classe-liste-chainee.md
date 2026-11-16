@@ -1,21 +1,19 @@
 ---
 title: "Réalisation d'une classe Liste Chainee"
 subtitle: ""
-author: ""
-type: ""
 date: 2023-11-20T15:50:34+04:00
 draft: false
 toc: true
 tags: ["Liste", "Liste chaînée"]
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 300
 ---
 
 Par transformation des fonctions du document 1 dans ce chapitre en méthodes, écrire le code de la classe `Liste` qui définit le type abstrait « Liste chaînée ».
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 from __future__ import annotations
@@ -154,4 +152,4 @@ class Liste:
         return rep
 ```
 
-{{% /solution %}}
+{{< /solution >}}

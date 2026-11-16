@@ -1,17 +1,15 @@
 ---
 title: "Transferts thermiques : comment modéliser l'évolution de la température d'un solide ?"
 subtitle: ""
-author: ""
-type: ""
 date: 2022-04-10T18:20:41+04:00
 draft: false
 toc: true
 tags: ["Loi de Newton", "Transfert thermique"]
 categories: ["Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
 mathjax: false
+weight: 600
 ---
 
 ## Objectif
@@ -24,7 +22,7 @@ mathjax: false
 
 Pour simplifier le problème on supposera que la cuillère est faite dans un matériau homogène, et que sa température est la même en chacun de ses points. Avec la vieille cuillère en argent, un matériau bien conducteur, nous sommes assez proche de cette situation. Nous supposerons également que le liquide a atteint sa température maximale, qui se situe le plus souvent aux environs de $T_1 = \pu{100°C}$. Le volume de liquide étant supposé important, *l’introduction de la cuillère ne modifiera pas la température du liquide*, et cette dernière sera supposée constante tout au long de l’expérience, comme dans un «&nbsp;thermostat&nbsp;».
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Loi phénoménologique de Newton
 
@@ -32,9 +30,9 @@ Les transferts thermiques entre un corps et le milieu extérieur suivent la loi 
 
 **Remarque :** il est difficile d’obtenir une valeur précise du coefficient de proportionnalité, noté souvent $h$, et appelé **coefficient de transfert de Newton**, car il dépend fortement du milieu (nature, mouvement du liquide, température ...).
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Données
 
@@ -45,32 +43,32 @@ Les transferts thermiques entre un corps et le milieu extérieur suivent la loi 
 - Température initiale de la cuillière : $T_0 = \pu{21 °C}$&nbsp;;
 - Loi de Newton : $\varphi = hS(T^{ext} - T)$. $\varphi$ est une grandeur algébrique.
 
-{{% /note %}}
+{{< /note >}}
 
 - <a href="https://phychim.ac-versailles.fr/IMG/pdf/1-ener-transfert-e_volution-de-t-rectificatif.pdf" target="_blank"> Document de référence pour l'élaboration de cette séance </a>
 
 ## Travail à réaliser
 
 1. Faire un schéma de la situation, en définissant le système.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - Système = {cuillère}
 - Milieu extérieur = {eau chaude}
 
-{{% /solution %}}
+{{< /solution >}}
 
 2. Préciser le sens du transfert thermique entre le système et le liquide.
 En déduire le signe de $\varphi$ donné par l'expression de la loi de Newton.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - La température du milieu extérieur est supérieure à la température du système. L'énergie thermique s'écoule donc du milieu extérieur vers le système.
 - La relation de Newton conduit à $\varphi > 0$, la puissance thermique est *effectivement reçue par le système*.
 
-{{% /solution %}}
+{{< /solution >}}
 
 3. Écrire la relation donnée par le premier principe de la thermodynamique appliqué au système.
 Cette relation doit faire apparaître $m$, $c$, $T$ et $Q$.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - Le premier principe de la thermodynamique s'écrit :
 $$
@@ -90,54 +88,54 @@ $$
 $$
 \Delta U = Q
 $$
-- Comme $\Delta U = m c\\, \Delta T$,
+- Comme $\Delta U = m c\, \Delta T$,
 $$
-m c\\, \Delta T = Q
+m c\, \Delta T = Q
 $$
 
-{{% /solution %}}
+{{< /solution >}}
 
 4. Dériver la relation de la question 3. par rapport au temps.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 **Remarque :** afin de bien comprendre le processus, il est préférable de revenir à la définition de la dérivation.
 
 - Puisque la température est une grandeur qui dépend du temps, la relation obtenue à la question précédente peut s'écrire
 $$
-m c\\, \Delta T = Q \iff mc\\, \left( T(t+ \Delta t) - T(t) \right) = Q
+m c\, \Delta T = Q \iff mc\, \left( T(t+ \Delta t) - T(t) \right) = Q
 $$
 - Si on divise le tout par $\Delta t$, on obtient
 $$
-mc\\, \dfrac{T(t+ \Delta t) - T(t)}{\Delta t} = \dfrac{Q}{\Delta t}
+mc\, \dfrac{T(t+ \Delta t) - T(t)}{\Delta t} = \dfrac{Q}{\Delta t}
 $$
 
 - La température $T$ est supposée continue (hypothèse raisonnable). Il est donc possible de passer à la limite,  
 $$
-mc\\, \lim\limits_{\Delta t \to 0} \dfrac{T(t+ \Delta t) - T(t)}{\Delta t} = \lim\limits_{\Delta t \to 0} \dfrac{Q}{\Delta t}
+mc\, \lim\limits_{\Delta t \to 0} \dfrac{T(t+ \Delta t) - T(t)}{\Delta t} = \lim\limits_{\Delta t \to 0} \dfrac{Q}{\Delta t}
 $$
 ce qui s'écrit
 $$
-mc\\, \dfrac{\mathrm{d}T}{dt} = \dfrac{\mathrm{d}Q}{dt}
+mc\, \dfrac{\mathrm{d}T}{dt} = \dfrac{\mathrm{d}Q}{dt}
 $$
 
-{{% /solution %}}
+{{< /solution >}}
 
 5. Donner la relation qui **définit** la puissance thermique $\varphi$ échangée par le système avec l'extérieur.
 Quelle est son unité ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - $\varphi = \dfrac{\mathrm{d}Q}{dt}$
 - **Unité :** $\pu{J.s-1} = \pu{W}$
 
-{{% /solution %}}
+{{< /solution >}}
 
 6. Introduire la puissance thermique dans la relation de la question 4, puis son expression trouvée à la question 2.
 Comment appelle-t-on la relation finale obtenue.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 $$
-mc\\, \dfrac{\mathrm{d}T}{dt} = \varphi \iff
-mc\\, \dfrac{\mathrm{d}T}{dt} = hS(T_1 - T)
+mc\, \dfrac{\mathrm{d}T}{dt} = \varphi \iff
+mc\, \dfrac{\mathrm{d}T}{dt} = hS(T_1 - T)
 $$
 On peut aussi écrire cette relation
 $$
@@ -145,14 +143,14 @@ $$
 $$
 Il s'agit d'une équation différentielle linéaire du premier ordre à coefficients constants. Cette équation différentielle comporte un second membre.
 
-{{% /solution %}}
+{{< /solution >}}
 
 7. La famille de solutions de l'équation précédente est
 $$
 T = A e^{- \dfrac{t}{\tau}} + B
 $$
 Déterminer l'expression de la solution au problème, c'est à dire les expressions des paramètres $A$, $B$ et $\tau$.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 1. *La famille de solutions doit vérifier l'équation différentielle*
 
@@ -196,19 +194,19 @@ $$
 T = (T_0 - T_1) e^{- \dfrac{t}{\tau}} + T_1
 $$
 La température tend bien asymptotiquement vers $T_1$ pour $t \to \infty$. La température finale de la cuillère est celle de l'eau chaude.
-{{% /solution %}}
+{{< /solution >}}
 
 8. Donner la valeur de $\tau$, temps caractéristique du problème.   Quelle conclusion peut-on tirer à partir de l'évaluation de ce résultat&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - $\tau =\dfrac{mc}{hS} = \dfrac{\pu{70e-3 kg} \times \pu{235 J·kg-1·K-1}}{\pu{3000 W.m-2·K−1} \times \pu{90e-4 m2}} = \pu{0,61 s}$
 
 - On a vu dans le cours que le régime transitoire d'un phénomène qui évolue exponentiellement dure approximativement $5 \tau$, c'est à dire ici 3 secondes. Cette cuillère n'est donc pas utilisable puisque sa température passe de $\pu{21 °C}$ à $\pu{100 °C}$ en 3 secondes.
 
-{{% /solution %}}
+{{< /solution >}}
 
 9. Quelles modifications pourrait-on opérer de façon à rendre la cuillère utilisable&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 Pour augmenter la valeur de $\tau$, on peut choisir un cuillère
 
@@ -217,7 +215,7 @@ Pour augmenter la valeur de $\tau$, on peut choisir un cuillère
 - de surface plus grande ;
 - ....
 
-{{% /solution %}}
+{{< /solution >}}
 
 10. La situation étudiée dans ce document est analogue à la charge d'un dipôle $(R, C)$ soumis à un échelon de tension.
 Compléter le tableau suivant :
@@ -237,7 +235,7 @@ Compléter le tableau suivant :
 
 </center>
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 <center>
 
@@ -254,21 +252,21 @@ Compléter le tableau suivant :
 
 </center>
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Applications
 
 - <a href="https://www.lelivrescolaire.fr/page/16636368?docId=o4OL5F0OfgpSoCEiCFzv8" target="_blank">Yaourt ferme (Livre scolaire)</a>
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 - <a href="https://www.lelivrescolaire.fr/page/16636368?docId=O_H9BsCNhAcyTTWYhtJZR" target="_blank">Température ressentie (Livre scolaire)</a>
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 - <a href="https://www.lelivrescolaire.fr/page/16636368?docId=TKOpO5ea93CqN8jqm7AdX" target="_blank">Bouilloire (Livre scolaire)</a>
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
-{{% /solution %}}
+{{< /solution >}}

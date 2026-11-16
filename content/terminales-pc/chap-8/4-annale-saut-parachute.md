@@ -1,17 +1,15 @@
 ---
 title: "Annale : Saut en parachute"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-12-23T17:45:24+04:00
 draft: false
 toc: true
 tags: ["Deuxième loi de Newton", "Équation différentielle", "Chute libre", "Intégration", "Condition initiale", "Équations horaires", "Énergie cinétique", "Champ de pesanteur", "Champ", "Force de frottement fluide"]
 categories: ["Physique", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
 mathjax: true
+weight: 400
 ---
 
 Le jour d'un baptême de saut en parachute, le moniteur indique les
@@ -64,11 +62,11 @@ identifiées sur la figure 1.
 1. Recopier et compléter le tableau ci-dessous en justifiant brièvement
     l'affectation des équations horaires aux différentes phases :
 
-    1. $z_a (t) = - 50\\, t + \pu{4,0e3}$ ;
+    1. $z_a (t) = - 50\, t + \pu{4,0e3}$ ;
 
-    2. $z_b (t) = - \pu{4,2}\\, t + \pu{1,75e3}$ ;
+    2. $z_b (t) = - \pu{4,2}\, t + \pu{1,75e3}$ ;
 
-    3. $z_c (t) = \pu{6,1}\\, t + \pu{4,6e3}$ ;
+    3. $z_c (t) = \pu{6,1}\, t + \pu{4,6e3}$ ;
 
     4. $z_d (t) = \pu{4,0e3}$
 
@@ -97,7 +95,7 @@ de pesanteur $g$. On considère le critère suivant : la valeur $g (z)$
 reste constante si elle diffère de moins de 1&nbsp;% de sa valeur au niveau
 du sol. L'expression de la valeur du champ de pesanteur $g (z)$ en
 fonction de l'altitude $z$ est la suivante :
-$$g (z) = g_0\\, (1 - \dfrac{2 z}{R_T}) \text{ si } z \ll R_T$$
+$$g (z) = g_0\, (1 - \dfrac{2 z}{R_T}) \text{ si } z \ll R_T$$
 
 3. Peut-on considérer la valeur du champ de pesanteur comme constante
     et égale à $g_0$ tout au long du saut ? Justifier.
@@ -125,10 +123,10 @@ $h_0 = \pu{4000 m}$.
 
 5. Établir que les équations horaires du mouvement du système
     s'écrivent :
-    $$x (t) = v_0\\, t \qquad \text{et} \qquad z (t) = - g_0\\, \dfrac{t^2}{2} + h_0$$
+    $$x (t) = v_0\, t \qquad \text{et} \qquad z (t) = - g_0\, \dfrac{t^2}{2} + h_0$$
 
 6. En déduire que l'équation de la trajectoire $z (x)$ s'écrit :
-    $$z (x) = - g_0\\,  \dfrac{x^2}{2 v_0^2} + h_0$$
+    $$z (x) = - g_0\,  \dfrac{x^2}{2 v_0^2} + h_0$$
 
 7. Le tandem ouvre son parachute à l'altitude $z = \pu{1500 m}$.
     Montrer que, dans le cadre de ce modèle, cette ouverture s'effectue
@@ -166,7 +164,7 @@ fait à vitesse constante. On étudie alors le mouvement dans ces conditions.
 
 11. Déterminer la valeur, notée $F_f$, de la norme de la force $\vec{F_f}$ qui modélise l'action de l'air sur le système {tandem}.
 
-12. L'expression de $F_f$ est donnée par la relation $F_f = k\\, v_z^2$, où $k$ est une constante de l'étude et $v_z$ désigne la coordonnée selon l'axe $(Oz)$ de la vitesse du parachutiste. Montrer que la valeur de la constante $k$ est de $\pu{1,1e2 S.I}$.\
+12. L'expression de $F_f$ est donnée par la relation $F_f = k\, v_z^2$, où $k$ est une constante de l'étude et $v_z$ désigne la coordonnée selon l'axe $(Oz)$ de la vitesse du parachutiste. Montrer que la valeur de la constante $k$ est de $\pu{1,1e2 S.I}$.\
 Préciser l'unité de la constante $k$.
 
 13. Calculer la valeur de l'énergie cinétique du tandem avant l'arrivée au sol.
@@ -176,8 +174,8 @@ Commenter.
 
 ## Corrigé
 
-{{% solution "Réponses" %}}
+{{< solution "Réponses" >}}
 {{< remote "Corrigé au format pdf" "/terminales-pc/chap-8/chap-8-4-4.pdf" >}}
-{{% /solution %}}
+{{< /solution >}}
 
 [^1]: *tandem :* deux personnes associées.

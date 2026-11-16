@@ -1,17 +1,14 @@
 ---
 title: "Les lois de Newton"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-11-27T15:24:29+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 90
 ---
 
 ## Au programme

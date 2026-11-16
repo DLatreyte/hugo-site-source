@@ -1,17 +1,14 @@
 ---
 title: "Conversion de l’énergie stockée dans la matière organique"
 subtitle: ""
-author: ""
-type: ""
 date: 2023-05-22T21:03:50+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 160
 ---
 
 ## Au programme

@@ -1,17 +1,14 @@
 ---
 title: "Applications des lois de Newton"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-12-08T04:40:59+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 100
 ---
 
 ## Mouvements dans des champs de pesanteur ou électriques uniformes
@@ -50,7 +47,7 @@ layout: "single"
 
 - **TP (Python).** *Étude expérimentale d'un mouvement vertical*
     - <a href="/terminales-pc/chap-8/doc-tp1/document.pdf" target=_blanck >Document</a> 
-    - <a href="/terminales-pc/chap-8/doc-tp1/Élèves - Étude énergies.ipynb" target=_blanck >Fichier élève (Jupyterlab)</a> 
+    - <a href="/terminales-pc/chap-8/doc-tp1/Eleves - Etude energies.ipynb" target=_blanck >Fichier élève (Jupyterlab)</a> 
     - <a href="/terminales-pc/chap-8/doc-tp1/BallTossUp.mov" target=_blanck >Vidéo</a> 
     - <a href="/terminales-pc/chap-8/doc-tp1/correction.pdf" target=_blanck >*Correction*</a>
 

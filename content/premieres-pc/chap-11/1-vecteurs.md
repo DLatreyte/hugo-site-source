@@ -1,16 +1,14 @@
 ---
 title: "Les vecteurs en Physique : application au vecteur vitesse"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-03-17T08:33:45+04:00
 draft: false
 toc: true
 tags: ["Vecteur", "Composantes d'un vecteur", "Projection", "Produit scalaire", "Addition de deux vecteurs", "Approximation d'une dérivée", "Tracé de vecteurs vitesses", "Simulation en Python", "Trajectoire"]
 categories: ["Premières Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 100
 ---
 
 
@@ -18,7 +16,7 @@ La mécanique, l'étude du mouvement des objets et des objets à l'origine de ce
 
 ## Vecteurs
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Vecteur
 
@@ -28,15 +26,15 @@ Un **vecteur** est un objet mathématique qui possède trois caractéristiques&n
 - un *sens*&nbsp;;
 - une *norme* (ou *longueur*).
 On peut représenter un vecteur par un segment muni d'une flèche&nbsp;; la longueur du segment étant égale à la norme du vecteur.
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Propriétés des vecteurs
 
 - On peut **sommer deux vecteurs**. *Le résultat est un nouveau vecteur*&nbsp;;
 - On peut **multiplier un vecteur par un scalaire (nombre)**. *Le résultat est un  vecteur*.
-{{% /note %}}
+{{< /note >}}
 
 <div class="row" style=".row::after {
   content: ''; clear: both; display: table;">
@@ -53,30 +51,30 @@ On peut représenter un vecteur par un segment muni d'une flèche&nbsp;; la long
 - {{< remote "Étapes de la construction pour la méthode du parallélogramme" "https://ggbm.at/zgf6xn7b" >}}
 - {{< remote "Étapes de la construction pour la méthode du parallélogramme" "https://ggbm.at/kjcnhtjj" >}}
 
-{{% note warning %}}
+{{< note warning >}}
 La méthode du parallélogramme ne s'applique pas lorsque les deux vecteurs à sommer sont colinéaires.
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 {{< remote "Document au format pdf pour les exercices" "/terminales-pc/chap-7/chap-7-1-12.pdf">}}
-{{% /note %}}
+{{< /note >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 1
 
 Pour chacune des situations présentées ci-dessous, construire les vecteurs $\vec{a} + \vec{b}$, $\vec{a} - \vec{b}$, $2\vec{a} + \vec{b}$, $\dfrac{1}{2}(\vec{a} + \vec{b})$.
-{{% /note %}}
+{{< /note >}}
 
 <img src="/terminales-pc/chap-7/chap-7-1-11.png" alt="" width="100%" />
 
-{{% solution "Solutions" %}}
+{{< solution "Solutions" >}}
 {{< remote "Solution avec Geogebra" "https://www.geogebra.org/m/vue4xavk" >}}
-{{% /solution %}}
+{{< /solution >}}
 
 ## Vecteurs en physique
 
-{{% note tip %}}
+{{< note tip >}}
 En physique, on *modélise* les grandeurs dont la description nécessite la donnée d'une **direction**, d'un **sens**, d'une **valeur** par un vecteur.
 
 Les grandeurs modélisée étant de *différentes natures*, quelques adaptations sont nécessaires par rapport à une utilisation des vecteurs purement mathématique&nbsp;:
@@ -84,13 +82,13 @@ Les grandeurs modélisée étant de *différentes natures*, quelques adaptations
 - Il peut être nécessaire de préciser un **point d'application**&nbsp;;
 - On ne parle plus de *norme ou longueur* d'un vecteur mais de **valeur** car cette dernière est **dimensionnée** (**unités&nbsp;:** *mètre pour un vecteur position*, *mètre par seconde pour un vecteur vitesse*, *newton pour un vecteur force*, etc.).
 - La représentation d'un vecteur nécessite la définition et l'affichage de l'**échelle** utilisée.
-{{% /note %}}
+{{< /note >}}
 
-{{% note warning %}}
+{{< note warning >}}
 **Attention !** *Il est nécessaire de définir une échelle distincte pour chaque type de grandeur représentée.*
-{{% /note %}}
+{{< /note >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 2
 
@@ -103,17 +101,17 @@ On rappelle que le poids est modélisé par un vecteur de direction la verticale
 2. L'objet étant immobile dans le référentiel terrestre *que l'on peut ici considérer galiléen*, la première loi de Newton nous indique qu'il est soumis à un ensemble d'interactions qui se compensent (il est **pseudo-isolé**). On peut traduire cette affirmation par la relation mathématique suivante&nbsp;: $$\overrightarrow{P} + \overrightarrow{R} = \overrightarrow{0}$$
 Déterminer les caractéristiques du vecteur $\overrightarrow{R}$.
 3. Représenter le vecteur $\overrightarrow{R}$ sur le schéma, sachant que son point d'application est le centre de la surface de contact entre l'objet et le sol.
-{{% /note %}}
+{{< /note >}}
 
 <img src="/terminales-pc/chap-7/chap-7-1-3.png" alt="" width="45%" />
 
-{{% solution "Réponses" %}}
+{{< solution "Réponses" >}}
 {{< remote "Solution utilisant Geogebra" "https://www.geogebra.org/m/qu7kumap" >}}
-{{% /solution %}}
+{{< /solution >}}
 
 ## Composantes d'un vecteur
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Projection d'un vecteur sur un axe
 
@@ -151,9 +149,9 @@ a_x &= \vec{a}\cdot\vec{u} \cr
 $$
   </div>
 </div>
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Composantes d'un vecteur
 
@@ -169,34 +167,34 @@ v_y &= v \sin(\theta) \cr
 \right)
 $$
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 3
 
 Trouver la valeur des composantes, dans le repère $(O; \vec{i}, \vec{j})$, d'un vecteur force de valeur $\pu{20 N}$ faisant un angle de $\text{60°}$ avec l'axe $(Ox)$.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 4
 
 Déterminer les composantes de la résultante (somme) des trois forces représentées sur le graphique.
 <img src="/terminales-pc/chap-7/chap-7-1-8.png" alt="" width="45%" />
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Vecteur vitesse à partir de données expérimentales
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Vecteur vitesse
 
@@ -206,7 +204,7 @@ C'est donc un vecteur dont les caractéristiques sont&nbsp;:
 - **Direction&nbsp;:** droite tangente à la trajectoire, à la position du système à la date $t$&nbsp;;
 - **Sens&nbsp;:** celui du mouvement&nbsp;;
 - **Valeur&nbsp;:** $v(t) = \left\Vert \dfrac{\mathrm{d} \overrightarrow{OM} }{ \mathrm{dt} }   \right\Vert$.
-{{% /note %}}
+{{< /note >}}
 
 Lorsque les équations horaires ne sont pas connues --- *c'est le cas pour tous les enregistrement expérimentaux* ---, on ne peut pas déterminer la dérivée de la position et on doit se contenter de **rechercher un vecteur vitesse approché**.
 
@@ -219,7 +217,7 @@ $$\vec{v}(t_i) \approx \dfrac{\overrightarrow{OM_{i+1}} - \overrightarrow{OM_{i}
 
 On montre cependant que
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Détermination du vecteur vitesse à partir de données expérimentales
 
@@ -231,17 +229,17 @@ Les vecteurs $\vec{v}(A_i)$ et $\overrightarrow{A_{i-1}A_{i+1}}$ sont <strong>co
 $$
 v(A_i) \approx \dfrac{A_{i-1}A_{i+1}}{t_{i+1}-t_{i-1}}
 $$
-{{% /note %}}
+{{< /note >}}
 
-{{% note warning %}}
+{{< note warning >}}
 La déduction finale qui a permis de passer de la relation vectorielle à la relation scalaire **n'est valable que parce que les vecteur sont colinéaires et de même sens**. Il faut toujours prendre le temps de la réflexion lors du passage d'une relation vectorielle à une relation scalaire. **La valeur de la somme de deux vecteurs n'est généralement pas égale à la somme des valeurs de chacun des vecteurs !**
-{{% /note %}}
+{{< /note >}}
 
-{{% note warning %}}
+{{< note warning >}}
 L'étude menée dans cette partie n'est pas limitée à la vitesse ! **Elle concerne la dérivation de toute grandeur vectorielle déterminée à partir de données expérimentales**.
-{{% /note %}}
+{{< /note >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 5
 
@@ -261,15 +259,15 @@ $$
 5. Déterminer les caractéristiques du vecteur «&nbsp;variation du vecteur vitesse&nbsp;» $\Delta \vec{v}(A_2)$ au point $A_2$ et le représenter.
 6. Même question au point $A_4$.
 7. Ces deux dernières questions confirment-elles la réponse à la question 4.&nbsp;?
-{{% /note %}}
+{{< /note >}}
 
 <img src="/terminales-pc/chap-7/chap-7-1-10.png" alt="" width="100%" />
 
-{{% solution "Correction" %}}
+{{< solution "Correction" >}}
 {{< remote "Solution sous forme de simulation" "https://www.geogebra.org/m/atg9wdgv" >}}
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 6 : Rotation autour d'un axe fixe à l'aide d'un fil inextensible
 
@@ -279,9 +277,9 @@ Un mobile autoporteur relié à un point fixe $O$ par un fil inextensible, est l
 
 <img src="/premieres-pc/chap-11/chap-11-1/chap-11-1-2.png" alt="" width="60%" />
 
-{{% note warning %}}
+{{< note warning >}}
 {{<remote "Positions du mobile au cours de son mouvement (document à imprimer)" "/premieres-pc/chap-11/chap-11-1/chap-11-1-3.pdf" >}}
-{{% /note %}}
+{{< /note >}}
 
 1. Quelle est la nature de la trajectoire de $G$ ?
 2. Définir le vecteur vitesse $\vec{v}(A_2)$.
@@ -294,29 +292,29 @@ Un mobile autoporteur relié à un point fixe $O$ par un fil inextensible, est l
 9. Au point $A_8$, construire $\Delta \vec{v}(A_8) = \vec{v}(A_9) - \vec{v}(A_7)$ et déterminer $|| \Delta \vec{v}(A_8) ||$ graphiquement.
 10. Tracer, au point $A_8$, la résultante des forces qui agissent sur le mobile. Quelle remarque peut-on formuler ?
 11. Qualifier le mouvement.
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Correction" %}}
+{{< solution "Correction" >}}
 
 {{< remote "Toutes les constructions de l'exercice." "/premieres-pc/chap-11/chap-11-1/chap-11-1-4.pdf">}}
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 7 : Viaduc de Millau
 
 {{% remote "Accès à l'activité" "https://dlatreyte.github.io/jupyter-lite/lab?path=prem-pc%2Fmecanique%2Fviaduc-millau-eleves.ipynb" %}}
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Correction" %}}
+{{< solution "Correction" >}}
 {{< remote "Corrigé en ligne" "https://dlatreyte.github.io/jupyter-lite/lab?path=prem-pc%2Fmecanique%2Fviaduc-millau.ipynb" >}}
-{{% /solution %}}
+{{< /solution >}}
 
 ## Exercice
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 8
 
@@ -326,4 +324,4 @@ Un homme tire une valise reposant sur le sol (horizontal), **à vitesse constant
 2. Après analyse du problème et utilisation du principe de l'inertie, déterminer le poids de la valise puis en déduire sa masse.
 
 **Rappel.** $g=\pu{9,81 m.s-2}$.
-{{% /note %}}
+{{< /note >}}

@@ -1,23 +1,21 @@
 ---
 title: "Le modèle Entités/Associations"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-02-02T05:04:55+04:00
 draft: false
 toc: true
 tags: []
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 200
 ---
 
-{{% note warning %}}
+{{< note warning >}}
 Le modèle Entités/Associations en tant que tel n'est pas au programme. Par contre il me semble utile afin de vous faire comprendre comment on modèle le réel et on parvient au final à un schéma relationnel.
 
 **L'objectif de ce chapitre n'est donc pas la conception de schémas E/A mais plutôt leur compréhension et leur interprétation.**
-{{% /note %}}
+{{< /note >}}
 
 Ce chapitre présente la première étape du processus de modélisation du
 monde réel. On commence par recueillir les informations à intégrer dans
@@ -57,7 +55,7 @@ limitant à la **table** suivante :
 
 > **Table FilmSimple.**
 
-{{% note normal %}}
+{{< note normal >}}
 La conception de cette base soufre de graves défauts :
 
 #### Anomalies lors d'une insertion
@@ -86,14 +84,14 @@ celui de « Pulp Fiction » ?
 Toute destruction d'un enregistrement retire les renseignements sur
 le film *et* sur le réalisateur : supprimer l'entrée de
 « Volte-face » efface tout renseignement sur John Woo.
-{{% /note %}}
+{{< /note >}}
 
 On remarque que *c'est la présence de la même information à plusieurs
 endroits* qui est à l'origine de pratiquement tous les problèmes.
 
 ### Un exemple de structure de base pensée
 
-{{% note normal %}}
+{{< note normal >}}
 Pour éviter les anomalies énumérées ci-dessus, il faut :
 
 1. *Être capable de représenter individuellement les films et les
@@ -106,14 +104,14 @@ Pour éviter les anomalies énumérées ci-dessus, il faut :
 
 3. *Préserver le lien entre les films et les réalisateurs, mais sans
     introduire de redondance.*
-{{% /note %}}
+{{< /note >}}
 
 Les deux premièrs problèmes nécessitent, pour être résolus, d'effectuer
 des choix. Par exemple : *deux films ne peuvent pas avoir le même titre mais deux
 réalisateurs peuvent avoir le même nom*. Afin de pouvoir identifier les
 réalisateurs, on doit alors *leur attribuer un identifiant unique*.
 
-{{% columns %}}
+{{< columns >}}
 
 | **titre**            | annee |
 | :------------------- | :---: |
@@ -132,7 +130,7 @@ réalisateurs, on doit alors *leur attribuer un identifiant unique*.
 | Le Ruban blanc       | 2009  |
 
 > Table des films
-{{% column %}}
+{{< column >}}
 
 | **id** | nom_realisateur | prenom_realisateur | annee_naissance |
 | :----: | :-------------: | :----------------: | :-------------: |
@@ -147,7 +145,7 @@ réalisateurs, on doit alors *leur attribuer un identifiant unique*.
 | 9      | Haneke          | Michael            | 1942            |
 
 > Table des réalisateurs
-{{% endcolumns %}}
+{{< endcolumns >}}
 
 Dans les tables ci-dessus, *les identifiants (ou **clés**) sont
 représentés en gras*.
@@ -161,7 +159,7 @@ Il n'y a maintenant plus de redondance dans la base de données.
 Il n'existe aucun lien entre les deux tables. Comment savoir qui a réalisé « Le Ruban blanc » ?
 
 On ajoute alors un attribut dans la table *Films* :
-{{% columns %}}
+{{< columns >}}
 
 | **titre**            | annee | id_rea |
 | :------------------- | :---: | :---: |
@@ -180,7 +178,7 @@ On ajoute alors un attribut dans la table *Films* :
 | Le Ruban blanc       | 2009  | 9 |
 
 > Table des films
-{{% column %}}
+{{< column >}}
 
 | **id** | nom_realisateur | prenom_realisateur | annee_naissance |
 | :----: | :-------------: | :----------------: | :-------------: |
@@ -195,7 +193,7 @@ On ajoute alors un attribut dans la table *Films* :
 | 9      | Haneke          | Michael            | 1942            |
 
 > Table des réalisateurs
-{{% endcolumns %}}
+{{< endcolumns >}}
 
 Cette représentation est correcte : **la redondance est réduite au minimum**
 puisque seule la clé identifiant un réalisateur apparaît dans deux
@@ -205,17 +203,17 @@ peut vérifier que les anomalies relevées dans la section précédente ont
 disparu : *on sait ce qui identifie un film*, *on sait ce qui identifie un réalisateur* ; *toute modification n'affecte que l'instance visée* ; *on peut détruire l'entrée
 d'un film sans affecter celle de son réalisateur*.
 
-{{% note normal %}}
+{{< note normal >}}
 *La modélisation E/A offre une méthode simple pour parvenir au résultat
 ci-dessus sans avoir à écrire les tables, même dans des cas bien plus
 complexes que celui présenté ici.*
-{{% /note %}}
+{{< /note >}}
 
 ## Le modèle E/A : présentation informelle
 
 <img src="/terminales-nsi/chap-13/chap-13-2/Films.svg" alt="" width="60%" />
 
-{{% note normal %}}
+{{< note normal >}}
 Un schéma E/A réalise une *abstraction* de l'application étudiée, pertinente relativement *aux objectifs visés et choix effectués*. On distingue :
 
 1. des **entités**, représentées par des rectangles, ici *Film*, *Artiste*, *Internaute* et *Pays* ;
@@ -223,14 +221,14 @@ Un schéma E/A réalise une *abstraction* de l'application étudiée, pertinente
 2. des **associations entre entités** représentées par des liens entre ces rectangles
 
 Chaque entité est caractérisée par un ensemble d'*attributs*, parmi lesquels *un ou plusieurs forment l'identifiant unique* (souligné sur la figure ci-dessus).
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 Les **associations** sont caractérisées par des **cardinalités**. La notation « 0,\* » sur le lien *Réalise* du côté de l'entité *Film* signifie qu'un artiste peut réaliser 0 ou plusieurs films. *La
 cardinalité est essentielle même si elle est forcément discutable puisque résultat d'un choix de conception*.
 
 Les **cardinalités** sont notées à l'aide de deux chiffres : celui de droite indique la *cardinalité maximale* (elle vaut généralement 1 ou \*), celui de gauche indique la *cardinalité minimale*.
-{{% /note %}}
+{{< /note >}}
 
 La notation « 0,1 » pour l'association *Réalise* indique que l'on s'autorise à ne pas connaître le réalisateur du film, « 1,1 » entre *Film* et *Pays* indique, au contraire, que l'on doit toujours connaître le pays
 producteur du film.
@@ -241,10 +239,10 @@ Il existe quelques raccourcis :
 
 - La notation « 1 » est équivalente à « 1,1 ».
 
-{{% note normal %}}
+{{< note normal >}}
 *Un schéma E/A est totalement indépendant de tout choix
 d'implémentation. Il n'est pas question de type, de structure de données, d'algorithme, de langage, \... C'est, en théorie, la partie la plus stable d'une application utilisant des bases de données.*
-{{% /note %}}
+{{< /note >}}
 
 ## Le modèle
 
@@ -254,9 +252,9 @@ Le modèle E/A, conçu en 1976, est à la base de la plupart des méthodes de co
 
 La première étape d'une conception consiste à identifier les entités tiles.
 
-{{% note tip %}}
+{{< note tip >}}
 *On désigne par **entité** tout objet identifiable et pertinent pour l'application.*
-{{% /note %}}
+{{< /note >}}
 
 La notion *d'identité* est primordiale, c'est elle qui permet de distinguer les entités les unes des autres, et donc de dire qu'une information est redondante ou qu'elle ne l'est pas. *Il est indispensable de prévoir un moyen technique pour pouvoir effectuer cette distinction entre entités au niveau de la base de données* : on parle
 **d'identifiant** ou de **clé**.
@@ -272,7 +270,7 @@ etc.
 
 Il est maintenant possible de décrire plus précisément les entités par leur type :
 
-{{% note tip %}}
+{{< note tip >}}
 *Le type d'une entité est composé des éléments
 suivants :*
 
@@ -281,11 +279,11 @@ suivants :*
 2. *la liste de ses attributs avec (optionnellement) le domaine où l'attribut prend ses valeurs : les entiers, les chaînes de caractères, \... ;*
 
 3. *l'indication de (ou des) attribut(s) permettant d'identifier l'entité : ils constituent la clé.*
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 *Une **clé** est un sous-ensemble d'attributs minimal d'une entité permettant d'identifier de manière unique cette entité.*
-{{% /note %}}
+{{< /note >}}
 
 Un internaute est caractérisé par plusieurs attributs : son email, son nom, son prénom, \... L'émail constitue une **clé naturelle** puisqu'on ne trouve pas, en principe, deux internautes ayant la même adresse
 électronique. L'identification par nom est impossible, mais on pourrait cependant utiliser la paire $(\text{nom}, \text{prénom})$. Il est cependant conseillé d'éviter d'utiliser une telle structure de clé car elle pose
@@ -294,7 +292,7 @@ des problèmes de performances et complique les manipulations SQL par la suite.
 Il est possible d'avoir plusieurs clés pour un même ensemble d'entités.
 Dans ce cas, on en choisit une comme **clé primaire**, et les autres, comme **clés secondaires**.
 
-{{% note tip %}}
+{{< note tip >}}
 Les caractéristiques d'une clé primaire devraient être :
 
 1. Sa valeur doit apparaître de façon évidente dans le schéma E/A ;
@@ -302,7 +300,7 @@ Les caractéristiques d'une clé primaire devraient être :
 2. On ne doit jamais avoir à ressentir le besoin de modifier cet attribut ;
 
 3. Pour des raisons de performance, sa taille de stockage doit être la plus petite possible.
-{{% /note %}}
+{{< /note >}}
 
 #### Remarque
 
@@ -311,9 +309,9 @@ fallu choisir si l'on avait accepté que deux films aient le même titre ? Il au
 
 ### Associations binaires
 
-{{% note tip %}}
+{{< note tip >}}
 *Une association binaire lie deux entités.*
-{{% /note %}}
+{{< /note >}}
 
 <img src="/terminales-nsi/chap-13/chap-13-2/Association.png" alt="" width="80%" />
 
@@ -325,7 +323,7 @@ On remarque, sur la schéma ci-dessus, que :
 
 L'association, pour être la plus explicite possible, doit donc faire apparaître ces différences.
 
-{{% note tip %}}
+{{< note tip >}}
 *La cardinalité d'une association est une paire $[\min, \max]$ telle que :*
 
 1. *Le symbole $\max$(*cardinalité maximale*) désigne le nombre maximal de fois où une entité peut intervenir dans l'association.*
@@ -333,17 +331,17 @@ L'association, pour être la plus explicite possible, doit donc faire apparaîtr
     *En général, ce nombre est 1 (au plus une fois) ou $n$ (plusieurs fois, nombre indéterminé), noté par le symbole « \* ».*
 
 2. *Le symbole $\min$(cardinalité minimale) désigne le nombre minimal de fois où une entité peut intervenir dans la relation. En général, ce nombre est 1 (au moins une fois) ou 0.*
-{{% /note %}}
+{{< /note >}}
 
 Les cardinalités maximales sont plus importantes que les cardinalités minimales ou, plus précisément, elles s'avèrent plus difficiles à remettre en cause, une fois que le schéma de base est constitué. *Les cardinalités n'expriment pas une vérité absolue, mais des choix de
 conception.*
 
 <img src="/terminales-nsi/chap-13/chap-13-2/Association2.svg" alt="" width="60%" />
 
-{{% note normal %}}
+{{< note normal >}}
 Dans la notation UML, on indique les cardinalités aux deux extrémités d'un lien d'association entre deux types d'entités $T_A$ et $T_B$. *Les cardinalités de $T_A$ sont placées à l'extrémité du liant allant de $T_A$ vers $T_B$ alors que les cardinalités pour $T_B$ sont placées à
 l'extrémité du lien allant de $T_B$ vers $T_A$.*
-{{% /note %}}
+{{< /note >}}
 
 L'association *Réalise* se lit : un réalisateur réalise zéro, un ou plusieurs films ; un film est réalisé par zéro ou au maximum un réalisateur.
 
@@ -360,10 +358,10 @@ peut jouer dans plusieurs films (il existe fort peu de chances qu'il tienne touj
 
 Une association étant définie par un *ensemble* de couples d'entités, on peut donc se demander comment la caractériser.
 
-{{% note tip %}}
+{{< note tip >}}
 *La clé d'une association (binaire) entre un type
 d'entité $E_1$ et un type d'entité $E_2$ est le couple constitué de la clé $c_1$ de $E_1$ et de la clé $c_2$ de $E_2$.*
-{{% /note %}}
+{{< /note >}}
 
 En pratique, cette définition est trop contraignante car on peut vouloir
 autoriser deux entités à être liées plus d'une fois dans une

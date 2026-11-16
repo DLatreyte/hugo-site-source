@@ -1,16 +1,14 @@
 ---
 title: "Théorèmes de l'énergie cinétique et de l'énergie mécanique"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-12-18T14:32:22+04:00
 draft: false
 toc: true
 tags: ["Travail d'une force", "Énergie cinétique", "Énergie mécanique", "Force conservative", "Force de frottement fluide", "Force de frottement solide"]
 categories: ["Physique", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 100
 ---
 
 ## Théorème de l'énergie cinétique

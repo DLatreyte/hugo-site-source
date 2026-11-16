@@ -1,16 +1,14 @@
 ---
 title: "Climat : l’objectif des 2 °C appartient, hélas, au passé"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-11-19T06:42:19+04:00
 draft: false
 toc: true
 tags: []
 categories: ["Terminale Enseignement Scientifique"]
-image: ""
 solution_est_visible: false
 auto_numbering: true
+weight: 500
 ---
 
 ## Document

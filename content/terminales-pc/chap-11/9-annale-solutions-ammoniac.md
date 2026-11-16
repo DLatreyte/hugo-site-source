@@ -1,16 +1,14 @@
 ---
 title: "Propriétés des solutions d'ammoniac"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-02-27T11:27:34+04:00
 draft: false
 toc: true
 tags: ["Constante d'équilibre", "pKa", "pH", "Domaine de prédominance"]
 categories: ["Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 900
 ---
 
 Une solution commerciale $S_0$ d’ammoniac $\ce{NH3 (aq)}$ de concentration $C_0 = \pu{1,1 mol.L-1}$ peut être utilisée, après dilution, comme produit nettoyant (éviers, lavabos, ...) ou comme produit détachant (moquette, tapis, ...).
@@ -89,7 +87,7 @@ Calculer $K$.
 9. Établir le tableau d'avancement de la réaction en faisant apparaître les état initial (avancement nul) et final (avancement $x_f$).
 
 Remarques :
-: - À l’état initial, $[\ce{NH3}]\_i = C_S$ (concentration de la solution $S$).
+: - À l’état initial, $[\ce{NH3}]_i = C_S$ (concentration de la solution $S$).
 
 - Le volume de la solution $U_S$ est supposé constant (la dilution est négligée).
 
@@ -110,6 +108,6 @@ La valeur de la conductivité de la solution diluée $S$ est $\sigma = \pu{8,52e
 
 ## Corrigé
 
-{{% solution "Correction" %}}
+{{< solution "Correction" >}}
 {{< remote "Corrigé au format pdf" "/terminales-pc/chap-11/chap-11-7/chap-11-7-2.pdf" >}}
-{{% /solution %}}
+{{< /solution >}}

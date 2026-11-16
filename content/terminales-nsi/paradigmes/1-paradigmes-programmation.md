@@ -1,47 +1,45 @@
 ---
 title: "Paradigmes de programmation"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-09-21T20:58:45+04:00
 draft: false
 toc: true
 tags: ["Fonctionnelle", "Impérative", "Objet"]
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 100
 ---
 
 ## Langages de programmation
 
-{{% note tip %}}
+{{< note tip >}}
 Un *langage de programmation* a besoin&nbsp;:
 
 - des règles de **grammaire** qui définissent la **syntaxe** des expressions&nbsp;;
 - d'une **sémantique** qui définit le sens des expressions.
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 Un langage peut être&nbsp;:
 
 - **interprété**&nbsp;: un interpréteur *lit et analyse le code **séquentiellement**,* *le traduit en langage machine* et *lance son exécution*.
 - **compilé**&nbsp;: un compilateur *lit et analyse le code* puis *le traduit en langage machine*. Par la suite l'exécutable généré peut être lancé.
 
 **Remarque&nbsp;:** Python un langage interprété mais le code n'est pas directement traduit dans le langage machine de l'ordinateur sur lequel le programme est lancé mais dans le langage machine d'une machine virtuelle (bytecode). Dans un second temps, ce langage machine est interprété par le logiciel.
-{{% /note %}}
+{{< /note >}}
 
-{{% note warning %}}
+{{< note warning >}}
 Un compilateur n'est *pas obligé d'effectuer une lecture séquentielle* du fichier contenant le code&nbsp;; il peut donc davantage l'**analyser** (recherche d'**erreurs de typage** par exemple) et **effectuer des optimisations**.
-{{% /note %}}
+{{< /note >}}
 
 ## Paradigme de programmation
 
-{{% note tip %}}
+{{< note tip >}}
 On appelle **paradigme de programmation** une *façon de se représenter un problème informatique et sa résolution*.
 
 Le paradigme choisi a une très grande influence sur la manière de concevoir un programme, il constitue donc un des critères principaux pour le choix d’un langage.
-{{% /note %}}
+{{< /note >}}
 
 Il existe un grand nombre de paradigmes de programmation, le programme de la NSI se concentre sur la **programmation impérative**, la **programmation fonctionnelle** et la **programmation objet**.
 
@@ -55,13 +53,13 @@ Certains langages sont très liés à certains paradigmes mais la plupart permet
 
 {{< remote "Wikipedia" "https://fr.wikipedia.org/wiki/Programmation_impérative" >}}
 
-{{% note tip %}}
+{{< note tip >}}
 En *programmation impérative* les opérations sont décrites en **séquences d'instructions**, dont **l'ordre est déterminé par le programmeur**, et donc l'objectif est la **modification de l'état de la mémoire** (**variables**).
-{{% /note %}}
+{{< /note >}}
 
 Les «&nbsp;langages impératifs&nbsp;» sont les plus répandus parmi l'ensemble des langages de programmation et sont ceux qui sont les plus proches du fonctionnement des processeurs&nbsp;: *exécuter une suite d'instructions élémentaires*.
 
-{{% note normal %}}
+{{< note normal >}}
 Les instructions de base de ce paradigme sont&nbsp;:
 
 - la **séquence d'instructions**&nbsp;: les instructions sont exécutées les unes après les autres&nbsp;;
@@ -70,11 +68,11 @@ Les instructions de base de ce paradigme sont&nbsp;:
 - la **boucle**&nbsp;: une séquence d'instructions est répétée un certain nombre de fois (boucle `Pour`) ou jusqu'à ce qu'une condition soit réalisée.
 - les **branchements**&nbsp;: la séquence d'instruction est transférée à un autre endroit dans le code.
 De nombreux langages incluent un `goto` permettant de réaliser un branchement ou la possibilité d'écrire des **fonctions** — qui ne sont dans ce cas qu'une suite d'instructions (et donc n'ont aucun sens mathématique).
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 La programmation impérative s'appuie sur le modèle des machines à états, avec une **mémoire centrale** et des **instructions qui modifient son état** grâce à des **affectations** successives. Cela nécessite pour le programmeur d'avoir à tout instant un modèle exact de l'état de la mémoire que le programme modifie.
-{{% /note %}}
+{{< /note >}}
 
 #### Mots clés pour repérer un langage impératif
 
@@ -93,18 +91,18 @@ La programmation impérative s'appuie sur le modèle des machines à états, ave
 
 {{< remote "Wikipedia" "https://fr.wikipedia.org/wiki/Programmation_fonctionnelle" >}}
 
-{{% note tip %}}
+{{< note tip >}}
 En *programmation fonctionnelle* un programme est considéré comme l'**application** (au sens mathématique du terme) d'une **fonction** à l'ensemble des données que le programme doit manipuler. Ce programme donne donc **toujours le même résultat pour les mêmes données** (pas d'effet de bord).
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 - La programmation fonctionnelle s'affranchit de façon radicale des effets de bord en **interdisant toute opération d'affectation**.
 - La manipulation de variables est remplacée par la **composition de fonctions** (boîtes noires imbriquées les unes dans les autres).
 - Les langages purement fonctionnels remplacent les boucles par la **récursivité**.
 - Les langages fonctionnels mettent tous en œuvre une *gestion automatique de l'allocation mémoire*.
 - Dans les langages fonctionnels les fonctions sont des **citoyennes de première classe**&nbsp;: *une fonction peut recevoir une fonction comme argument*, *une fonction peut retourner une fonction*.
-{{% /note %}}
+{{< /note >}}
 
 #### Remarque
 
@@ -128,7 +126,7 @@ En *programmation fonctionnelle* un programme est considéré comme l'**applicat
 
 ## Comparaison des deux styles de programmation
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 1&nbsp;: illustration des différences entre les style impératif et fonctionnel
 
@@ -136,7 +134,7 @@ Définir une fonction qui réalise la somme des nombres d'une liste passée en a
 
 1. En style impératif.
 2. En style fonctionnel.
-{{% /note %}}
+{{< /note >}}
 
 1. **Style impératif**
 {{< highlight py3 "linenos=table" >}}
@@ -178,11 +176,11 @@ def somme(liste: list[float], total: float = 0) -> float:
         return somme(liste[1:], liste[0] + total)
 {{< /highlight >}}
 
-{{% note warning %}}
+{{< note warning >}}
 *L'utilisation de la récursivité, seule, n'implique pas forcément que le paradigme de programmation utilisé est fonctionnel*. Il faut regarder l'ensemble du programme.
-{{% /note %}}
+{{< /note >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 2&nbsp;: un exemple de fonction non pure
 
@@ -195,7 +193,7 @@ def elevation_puissance(n: int) -> float:
     """
 ```
 
-{{% /note %}}
+{{< /note >}}
 
 {{< highlight py3 "linenos=table" >}}
 def elevation_puissance(n: int) -> float:
@@ -209,7 +207,7 @@ def elevation_puissance(n: int) -> float:
 
 Il est évident que deux appels successifs à la fonction `elevation_puissance` avec le même argument (2 par exemple) pourront renvoyer des valeurs différentes puisque celles-ci dépendent de la valeur entrée par l'utilisateur. *Cette fonction n'est pas une fonction pure ; sa définition n'est pas acceptable du point de vue de la programmation fonctionnelle*.
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Exercice 3&nbsp;: illustration d'un effet de bord
 
@@ -217,7 +215,7 @@ Définir une fonction qui élève au carré chaque élément d'une liste.
 
 1. En style impératif (avec effet de bord possible).
 2. En style fonctionnel (sans effet de bord).
-{{% /note %}}
+{{< /note >}}
 
 1. Style impératif avec effet de bord.
 {{< highlight py3 "linenos=table" >}}
@@ -253,17 +251,17 @@ On copie dans un premier temps la liste et on agit sur cette nouvelle liste.
 
 ## Programmation objet
 
-{{% note tip %}}
+{{< note tip >}}
 La **programmation objet** s'inspire du monde réel dans lequel des *objets créés à partir de patrons (ou moules) interagissent les uns avec les autres*.  
 Mettre en œuvre ce paradigme nécessite donc de **modéliser le problème** *par une interaction d'objets dont on définit les caractéristiques*.
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 
 - Un **objet** possède un **état** (des **champs** ou **attributs**) et un **comportement** (des **méthodes**).
 - Une **classe** est un **patron** permettant de fabriquer des objets.
     Une **classe** est aussi la définition d'un **nouveau type** de données.
-{{% /note %}}
+{{< /note >}}
 
 #### Mots clés pour repérer un langage objet
 

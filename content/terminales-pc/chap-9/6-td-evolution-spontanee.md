@@ -1,16 +1,14 @@
 ---
 title: "Les différentes raisons pour lesquelles un système chimique n'évolue pas"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-01-15T15:34:21+04:00
 draft: false
 toc: true
 tags: ["Quotient de réaction", "Constante d'équilibre", "Taux d'avancement final", "Cinétique chimique", "Blocage cinétique"]
 categories: ["Chimie", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 600
 ---
 > Lors de sa constitution, un système chimique peut évoluer ou rester dans l'état initial. L'objectif de ce document est de comprendre que l'absence d'évolution peut correspondre à des situations très diverses.
 

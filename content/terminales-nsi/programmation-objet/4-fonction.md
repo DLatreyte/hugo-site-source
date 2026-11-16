@@ -1,27 +1,25 @@
 ---
 title: "Résoudre un problème grâce aux paradigmes objet et fonctionnel"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-10-01T04:21:17+04:00
 draft: false
 toc: true
 tags: ["Objet", "Classe", "Attribut", "Méthode", "Instance", "Encapsulation", "Fermeture", "Closure"]
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 400
 ---
 
 L'objectif de ce document est d'illustrer une fois encore l'intérêt des différents paradigmes de programmation.
 
 ## Cas d'étude&nbsp;: fonction avec paramètres
 
-On considère l'équation qui traduit le mouvement d'une balle lancée verticalement vers le haut avec une vitesse $\vec{v}_0$ depuis l'origine des altitudes telle que l'écrit un physicien&nbsp;: $$y(t) = -\dfrac{1}{2}g\\, t^2 + v_0\\, t$$
+On considère l'équation qui traduit le mouvement d'une balle lancée verticalement vers le haut avec une vitesse $\vec{v}_0$ depuis l'origine des altitudes telle que l'écrit un physicien&nbsp;: $$y(t) = -\dfrac{1}{2}g\, t^2 + v_0\, t$$
 Ce physicien a donc tendance à considérer que $y$ est une fonction de la variable $t$ et que cette fonction dépend des paramètres $v_0$ et $g$.
 
 1. Comment définir cette fonction en informatique, sachant que $g$ est un paramètre fixe $g=\pu{9,81 m/s2}$ mais que $v_0$ est un paramètre qu'il peut être utile de faire varier&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def y(t: float, v0: float) -> float:
@@ -34,7 +32,7 @@ def y(t: float, v0: float) -> float:
     return -0.5 * g * t**2 + v0 * t
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Problème
 
@@ -60,7 +58,7 @@ def diff(f: Callable, x0: float, h: float = 1e-7) -> float:
     """
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 def diff(f: Callable, x0: float, h: float = 1e-7) -> float:
@@ -72,11 +70,11 @@ def diff(f: Callable, x0: float, h: float = 1e-7) -> float:
     return (f(x0 + h) - f(x0)) / h
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 3. Tester cette fonction en calculant la dérivée de $\cos(x)$ au point $x=0$.
 **Rappel :** $(\cos (0))\rq = -\sin(0) = 0$.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 import math as m
@@ -84,12 +82,12 @@ import math as m
 print(diff(m.cos, 0))
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 4. La fonction `diff` peut-elle être utilisée pour déterminer la dérivée de la fonction `y`&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Non, puisque `diff` ne prend que le nom de la fonction à dériver en argument et pas ses paramètres. `diff` suppose que la fonction `f` est une fonction à une seule variable.
-{{% /solution %}}
+{{< /solution >}}
 
 ## Première (très mauvaise !) solution&nbsp;: utilisation d'une variable globale
 
@@ -108,7 +106,7 @@ def y1(t: float) -> float:
 
 6. Déterminer la valeur de la vitesse de la balle à la date $t=\pu{0,1 s}$ en utilisant la fonction `y1`.
 **Remarque&nbsp;:** $v0 = \pu{3 m/s}$ et la réponse attendue est $v_y = \pu{2,02 m/s}$.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 v0 = 3
@@ -116,20 +114,20 @@ t = 0.1
 print(diff(y1, t))
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 7. Pourquoi est-ce une mauvaise idée que d'utiliser des variables globales&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Une variable globale peut être utilisée et modifiée à plusieurs endroits d'un programme. Il n'est pas toujours facile, lors de l'appel d'une fonction utilisant une variable globale, de savoir exactement quelle est sa valeur.
-{{% /solution %}}
+{{< /solution >}}
 
 ## Deuxième méthode&nbsp;: représenter une fonction par une classe
 
 ### Sans utilisation des méthodes spéciales
 
-{{% note tip %}}
+{{< note tip >}}
 Une **classe** définit un **nouveau type** et est constituée d'**attributs** (variables) et de **méthodes** (fonctions). *Les attributs sont accessibles en lecture et en modification par toutes les méthodes*&nbsp;; ce sont des **variables globale à la classe** !
-{{% /note %}}
+{{< /note >}}
 
 8. Définir la classe `Y1` dont la spécification est
 
@@ -152,7 +150,7 @@ class Y1:
     """
 ```
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 class Y1:
@@ -183,27 +181,27 @@ class Y1:
         return -0.5 * self.g * t**2 + self.v0 * t
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 9. Créer un objet de type `Y1` et vérifier que la valeur de la fonction $y$ à la date $t=\pu{0,1 s}$, lorsque $v_0=\pu{3 m/s}$ est $\pu{0,25 m}$.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 yo = Y1(3)
 print(yo.valeur(0.1))  # ou assert yo.valeur(0.1) == y(0.1, 3)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 10. Déterminer la vitesse de la balle à cet instant.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 yo = Y1(3)
 print(diff(yo.valeur, 0.1))
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ### En utilisant une méthode spéciale
 
@@ -211,7 +209,7 @@ On peut penser que la définition de la classe `Y1` fait trop apparaître le con
 Les classes possèdent cependant, en Python, une méthode spéciale nommée `__call__` appelée automatiquement chaque fois que l'on *utilise un objet comme une fonction*.
 
 11. Définir la classe `Y2` dont le code est proche de celui de `Y1` mais qui redéfinit la méthode `__call__` à la place de définir la méthode `valeur`.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 class Y2:
@@ -237,23 +235,23 @@ class Y2:
         return -0.5 * self.g * t**2 + self.v0 * t
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 12. Déterminer la vitesse de la balle à dans les mêmes conditions qu'à la question 10.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 yo = Y2(3)
 print(yo(0.1))
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Troisième méthode&nbsp;: premiers pas dans le monde fonctionnel
 
-{{% note tip %}}
+{{< note tip >}}
 En **programmation fonctionnelle**, *les fonctions sont des objets de première classe*&nbsp;: *une fonction peut être **passée comme argument** à une autre fonction*, *une fonction peut **retourner une fonction***.
-{{% /note %}}
+{{< /note >}}
 
 Étudier le code suivant
 
@@ -272,47 +270,47 @@ print(y3(0.1))
 ```
 
 13. Qu'attend comme argument la fonction `fixe_param`&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 `fixe_param` possède le paramètre `v0`.
-{{% /solution %}}
+{{< /solution >}}
 
 14. Que sont les variables `v0` et `g` pour la fonction `calcule_y`&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Ce sont des variables externes (non locales). En fait `calcule_y` les considère comme des variables globales (même si elles sont seulement locales à la fonction `fixe_param`). Le dernier point de ce document précise le vocabulaire.
-{{% /solution %}}
+{{< /solution >}}
 
 15. Quel est le type de `y3`&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 `y3` référence une fonction.
-{{% /solution %}}
+{{< /solution >}}
 
 16. Que signifie l'instruction `y3(0.1)`&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 `y3(0.1)` est un appel de fonction. On appelle la fonction référencée par la variable `y3` avec l'argument 0.1.
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note normal %}}
+{{< note normal >}}
 Utiliser le site [Pythontutor](http://pythontutor.com) pour bien comprendre l'effet de chacune des instructions.
-{{% /note %}}
+{{< /note >}}
 
 17. Quelles lignes de code faudrait-il modifier si maintenant la balle est lancée à la vitesse $v_0 = \pu{5 m/s}$ et que l'on cherche toujours sa position à la date $t = \pu{0,1 s}$&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 y5 = fixe_param(5)
 print(y5(0.1))
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 18. Quel est le rôle de la fonction `fixe_param`&nbsp;?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 `fixe_param` enveloppe `calcule_y`, elle permet de réaliser une fermeture (closure).
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note tip %}}
+{{< note tip >}}
 Dans un langage de programmation, une **fermeture** (en anglais&nbsp;: *closure*) est une *fonction accompagnée de son environnement lexical*. L'**environnement lexical** d'une fonction est l'**ensemble des variables non locales qu'elle a capturé**, soit par valeur (c'est-à-dire par copie des valeurs des variables), soit par référence (c'est-à-dire par copie des adresses mémoires des variables). *Une fermeture est donc créée, entre autres, lorsqu'une fonction est définie dans le corps d'une autre fonction et utilise des paramètres ou des variables locales de cette dernière*.
 <div style="text-align: right;">
 <a href="https://fr.wikipedia.org/wiki/Fermeture_(informatique)#Python">Wikipedia</a>
 </div>
-{{% /note %}}
+{{< /note >}}

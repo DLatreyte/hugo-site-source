@@ -1,16 +1,14 @@
 ---
 title: "Dualité ondes-corpuscules"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-05-03T11:55:35+04:00
 draft: false
 toc: true
 tags: []
 categories: ["Physique", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 300
 ---
 
 ## Préhistoire quantique  
@@ -71,7 +69,7 @@ auto_numbering: true
   
 ### Photon
 
-{{% note tip %}}
+{{< note tip >}}
 **Le photon est le quantum d'énergie associé aux ondes électromagnétiques**. Il présente certaines caractéristiques de particule élémentaire.
 
 Un photon,
@@ -81,10 +79,10 @@ Un photon,
 - Peut être *détruit* (phénomène d’**absorption**) ou *créé* (phénomène d’**émission**).  
 - Possède une énergie $E_r$ dépendant de sa fréquence :
 $$
-    E_r = h\\, \nu
+    E_r = h\, \nu
 $$ Expression dans laquelle $h$, la constante de Planck, a pour valeur : $$h=\pu{6.62607004e-34 m2.kg/s}$$
 
-{{% /note %}}
+{{< /note >}}
 
 > **Absorption d'un photon par un système :**
 <img src="/terminales-pc/chap-18/chap-18-3/absorbtion_01.jpg" alt="" width="50%" />  
@@ -96,8 +94,8 @@ $$ Expression dans laquelle $h$, la constante de Planck, a pour valeur : $$h=\pu
   
 ## Niveaux d’énergie des atomes  
 
-{{% note tip %}}
+{{< note tip >}}
 **Au niveau microscopique, toutes les entités possèdent des énergies quantifiées**. Les échanges d'énergie avec la lumière se font par émission ou absorption de photons dont les énergies correspondent aux différences d'énergies entre les niveaux d'énergie.
 
-{{% /note %}}
+{{< /note >}}
 <img src="/terminales-pc/chap-18/chap-18-3/hydrogene.jpg" alt="" width="80%" />

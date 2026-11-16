@@ -1,0 +1,49 @@
+{{- /* Encadré au style du paquet Typst gentle-clues.
+  Usage : {{< note TYPE ["Titre"] >}} ... {{< /note >}}
+  TYPE : les noms de l'ancien site (tip, normal, exercise, warning, important, info)
+         ou ceux de gentle-clues (success, info, notify, warning, danger, error, task, tip, goal, idea, question, example, experiment, conclusion, memo, abstract, code).
+  Sans titre explicite, un titre Markdown (#### Titre) placé en tête du contenu devient le titre de l'encadré ;
+  à défaut, le titre par défaut du type est pris dans hugo.toml ([params.clues.titres]). */ -}}
+{{- $clues := dict
+  "info"       (dict "color" "#04a5e5" "icon" "info")
+  "notify"     (dict "color" "#1e66f5" "icon" "bell")
+  "success"    (dict "color" "#40a02b" "icon" "checkbox")
+  "warning"    (dict "color" "#df8e1d" "icon" "warning")
+  "danger"     (dict "color" "#fe640b" "icon" "danger")
+  "error"      (dict "color" "#d20f39" "icon" "crossmark")
+  "task"       (dict "color" "#8839ef" "icon" "task")
+  "tip"        (dict "color" "#179299" "icon" "tip")
+  "abstract"   (dict "color" "#209fb5" "icon" "abstract")
+  "conclusion" (dict "color" "#dd7878" "icon" "conclusion")
+  "memo"       (dict "color" "#e64553" "icon" "excl")
+  "question"   (dict "color" "#179299" "icon" "questionmark")
+  "example"    (dict "color" "#dc8a78" "icon" "simple-graph")
+  "experiment" (dict "color" "#dc8a78" "icon" "experiment")
+  "goal"       (dict "color" "#e64553" "icon" "flag")
+  "code"       (dict "color" "#7287fd" "icon" "code")
+  "idea"       (dict "color" "#df8e1d" "icon" "lightbulb")
+-}}
+{{- /* noms de l'ancien site -> gentle-clues */ -}}
+{{- $anciens := dict "normal" "info" "exercise" "task" "important" "notify" "tip-ancien" "success" -}}
+{{- $type := .Get 0 | default "normal" -}}
+{{- if eq $type "tip" }}{{ $type = "tip-ancien" }}{{ end -}}
+{{- $nom := index $anciens $type | default $type -}}
+{{- $clue := index $clues $nom | default (index $clues "info") -}}
+{{- $contenu := .InnerDeindent -}}
+{{- $titre := .Get 1 | default "" -}}
+{{- if not $titre -}}
+  {{- with findRESubmatch `^\s*#{1,6}[ \t]+([^\n]+?)[ \t#]*\n` $contenu 1 -}}
+    {{- $titre = index (index . 0) 1 -}}
+    {{- $contenu = replaceRE `^\s*#{1,6}[ \t]+[^\n]+\n` "" $contenu 1 -}}
+  {{- end -}}
+{{- end -}}
+{{- /* sinon, titre par défaut du type (comme gentle-clues) */ -}}
+{{- if not $titre }}{{ $titre = index (site.Params.clues.titres | default dict) $nom | default "" }}{{ end -}}
+<div class="clue clue-{{ $nom }}" style="--accent: {{ $clue.color | safeCSS }}">
+{{- with $titre }}
+  <div class="clue-header"><img class="clue-icon" src="{{ printf "clues/%s.svg" $clue.icon | relURL }}" alt="" aria-hidden="true"><span class="clue-title">{{ . | $.Page.RenderString }}</span></div>
+{{- end }}
+  <div class="clue-body">
+{{ $contenu | emojify | .Page.RenderString (dict "display" "block") }}
+  </div>
+</div>

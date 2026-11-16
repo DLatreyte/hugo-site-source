@@ -1,17 +1,15 @@
 ---
 title: "Revisions sur les strucures de boucle en Python"
 subtitle: ""
-author: ""
-type: ""
 date: 2023-09-06T05:51:48+04:00
 draft: false
 toc: false
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: false
 mathjax: true
+weight: 9900
 ---
 
 # Travail à effectuer  
@@ -32,7 +30,7 @@ def multiplication(a: int) -> str:
     """
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def multiplication(a: int) -> str:
@@ -59,7 +57,7 @@ def multiplication(a: int) -> str:
     return chaine_retour
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Exercice 2
 
@@ -80,7 +78,7 @@ def multiplication_multiple_trois(a: int) -> str:
     """
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def multiplication_multiple_trois(a: int) -> str:
@@ -109,7 +107,7 @@ def multiplication_multiple_trois(a: int) -> str:
     return chaine_retour
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Exercice 3
 
@@ -129,7 +127,7 @@ def multiplication_multiple_sept(a: int) -> str:
     """
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def multiplication_multiple_sept(a: int) -> str:
@@ -153,7 +151,7 @@ def multiplication_multiple_sept(a: int) -> str:
     return chaine_retour
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Exercice 4
 
@@ -171,7 +169,7 @@ def diviseurs(a: int) -> str:
     """
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def diviseurs(a: int) -> str:
@@ -199,7 +197,7 @@ def diviseurs(a: int) -> str:
     return chaine_retour
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Exercice 5
 
@@ -216,7 +214,7 @@ def table_multiplication() -> str:
     """
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def table_multiplication() -> str:
@@ -235,7 +233,7 @@ def table_multiplication() -> str:
     return chaine_retour
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 **Remarque :** Afin de visualiser le résultat sous forme d'un tableau, utiliser l'instruction suivante, **dans la console**, pour tester la fonction :
 
@@ -263,7 +261,7 @@ def plus_grand_plus_petit() -> str:
     """
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def plus_grand_plus_petit() -> str:
@@ -285,13 +283,13 @@ def plus_grand_plus_petit() -> str:
     return f"Min : {valeur_min}, Max : {valeur_max}"
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Exercice 7
 
 Reprendre l'exercice précédent mais en faisant en sorte que le nombre de valeurs demandées à l'utilisateur soit passé en argument à la fonction.
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def plus_grand_plus_petit(nbre_tours: int) -> str:
@@ -312,7 +310,7 @@ def plus_grand_plus_petit(nbre_tours: int) -> str:
     return f"Min : {valeur_min}, Max : {valeur_max}"
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Exercice 8
 
@@ -327,7 +325,7 @@ def moyenne() -> float:
     """
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def moyenne() -> float:
@@ -342,13 +340,13 @@ def moyenne() -> float:
     return total_notes / nbre_notes
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Exercice 9
 
 Modifier le programme précédent de façon à ce que le nombre de notes à prendre en compte soit passé en argument de la fonction.
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def moyenne(nbre_notes: int) -> float:
@@ -362,7 +360,7 @@ def moyenne(nbre_notes: int) -> float:
     return total_notes / nbre_notes
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Exercice 10
 
@@ -370,7 +368,7 @@ Modifier le programme précédent de façon à ce que l'utilisateur n'ait pas à
 
  **Remarque :** la fonction doit afficher le nombre de notes saisies.
 
- {{% solution "Solution" %}}
+ {{< solution "Solution" >}}
 
  ```python
 def moyenne_auto() -> tuple[int, float]:
@@ -392,7 +390,7 @@ def moyenne_auto() -> tuple[int, float]:
     return (nbre_notes, total_notes / nbre_notes)
  ```
 
- {{% /solution %}}
+ {{< /solution >}}
 
 ## Exercice 11
 
@@ -409,7 +407,7 @@ def loto_naif() -> str:
 
 **Remarque.** Normalement, lorsqu'un numéro est tiré, il ne peut pas apparaître à nouveau. On acceptera cependant qu'un même numéro puisse apparaitre plusieurs fois puisqu'on ne connaît pas encore de structure de contrôle qui permet de facilement « stocker » plusieurs valeurs.
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 from random import randint
@@ -428,7 +426,7 @@ def loto_naif() -> str:
     return rep
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Exercice 12
 
@@ -446,7 +444,7 @@ def devine() -> None:
     """
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def devine() -> None:
@@ -469,7 +467,7 @@ def devine() -> None:
     print(f"Nombre de tentatives : {nbre_tentatives}")
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Exercice 13
 
@@ -490,7 +488,7 @@ def alphabet(sens: str) -> str:
     """
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def alphabet(sens: str) -> str:
@@ -513,7 +511,7 @@ def alphabet(sens: str) -> str:
     return rep
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Exercice 14
 
@@ -521,8 +519,8 @@ def alphabet(sens: str) -> str:
 
 $$
 \begin{align*}
-u_1 &= 1 \\\\
-u_2 &= 1  \\\\
+u_1 &= 1 \\
+u_2 &= 1  \\
 u_n &= u_{(n-1)} + u_{(n-2)} \text{ pour } n > 2
 \end{align*}
 $$
@@ -536,7 +534,7 @@ def fibo(n: int) -> str:
     """
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def fibo(n: int) -> str:
@@ -554,4 +552,4 @@ def fibo(n: int) -> str:
     return rep
 ```
 
-{{% /solution %}}
+{{< /solution >}}

@@ -1,14 +1,13 @@
 ---
 title: "Grand oral"
 subtitle: "Modalités de l'épreuve du Grand oral"
-author: ""
-type: ""
 date: 2020-08-19T19:16:14+04:00
 draft: true
 toc: true
 tags: ["Bulletin Officiel", "Grand oral"]
 categories: ["Programme officiel"]
-image: ""
+
+weight: 9900
 ---
 
 ## 1. Définition et objectifs

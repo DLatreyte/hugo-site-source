@@ -1,16 +1,14 @@
 ---
 title: "Le design Culinaire"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-09-15T21:32:22+04:00
 draft: false
 toc: true
 tags: ["Soluté", "Concentration molaire", "Concentration massique", "Beer Lambert", "Dilution", "Couleur", "Absorption"]
 categories: ["Premières Spé PC", "Chimie"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 300
 ---
 
 ## Situation expérimentale sur le site du Livre Scolaire (hors questions)

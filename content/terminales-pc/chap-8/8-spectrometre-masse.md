@@ -1,16 +1,14 @@
 ---
 title: "Annale : Principe de la spectrométrie de masse"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-12-29T17:03:10+04:00
 draft: false
 toc: true
 tags: ["Deuxième loi de Newton", "Accélération", "Intégration", "Repère de Frenet", "Accélération normale", "Rayon de courbure", "Champ électrique", "Force électrique"]
 categories: ["Physique", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 800
 ---
 
 «&nbsp;La spectrométrie de masse est une technique d'analyse permettant notamment d'identifier des molécules organiques et de déterminer leur formule développée. Dans un spectromètre de masse, des ions sont séparés en fonction de leur masse et de leur charge électrique.
@@ -29,7 +27,7 @@ Le principe du spectromètre de masse est illustré dans cet exercice dans le ca
 
 - Ces cations sortent de la fente $F$ avec une vitesse négligeable dans le référentiel terrestre du laboratoire.
 
-- Dans la *chambre d'accélération*, délimitée par les plaques $P$ et $P'$ distantes de $d$ mètres, règne un champ électrostatique uniforme $\vec{E}$, de direction perpendiculaire aux plaques $P$ et $P'$. Les cations sont accélérés et, en $O$, possèdent respectivement des vitesses $\vec{v}\_{01}$ et $\vec{v}\_{02}$.
+- Dans la *chambre d'accélération*, délimitée par les plaques $P$ et $P'$ distantes de $d$ mètres, règne un champ électrostatique uniforme $\vec{E}$, de direction perpendiculaire aux plaques $P$ et $P'$. Les cations sont accélérés et, en $O$, possèdent respectivement des vitesses $\vec{v}_{01}$ et $\vec{v}_{02}$.
 
 - Dans la *chambre de déviation*, on sépare ces ions avant leur entrée dans la *chambre de détection* à l'aide d'un champ magnétique uniforme $\vec{B}$, de direction perpendiculaire au plan de la figure 1.
 
@@ -51,13 +49,13 @@ Pour l'oxygène, seul l'isotope $\ce{^{16} O}$ sera considéré.
 
 3. Démontrer que le poids des cations est négligeable comparé à la force électrique à laquelle ils sont soumis. *On négligera systématiquement le poids des électrons dans le suite de ce problème.*
 
-4. Par application des lois de Newton déterminer les expressions des vitesses $\vec{v}\_{01}$ et $\vec{v}\_{02}$ en fonction de $e$, $U$, $m_1$ ou $m_2$. Détailler le raisonnement.
+4. Par application des lois de Newton déterminer les expressions des vitesses $\vec{v}_{01}$ et $\vec{v}_{02}$ en fonction de $e$, $U$, $m_1$ ou $m_2$. Détailler le raisonnement.
 
 5. Pourquoi l'utilisation de la relativité restreinte ne s'impose-t-elle pas dans ce problème ?
 
 ## Mouvement des cations dans la chambre de déviation
 
-Dans la chambre de déviation les ions subissent une force résultant de l'interaction avec le champ magnétique $\vec{B}$, appelée force de Lorentz $\vec{F}\_L$, *toujours orthogonale au champ $\vec{B}$ et aux vecteurs vitesse $\vec{v}\_{0 i}$ des ions*.
+Dans la chambre de déviation les ions subissent une force résultant de l'interaction avec le champ magnétique $\vec{B}$, appelée force de Lorentz $\vec{F}_L$, *toujours orthogonale au champ $\vec{B}$ et aux vecteurs vitesse $\vec{v}_{0 i}$ des ions*.
 
 Appliquée à un cation $i$ quelconque, elle a pour valeur $F_L = q_i v_i B$ où $q_i$ est la charge du cation, $v_i$ la valeur de sa vitesse et $B$ la valeur du champ magnétique. Dans les conditions de l'expérience, le mouvement des ions s'effectue dans le plan de la figure 1 ; la force de Lorentz est alors *dirigée selon le vecteur $\vec{n}$ de la base de Frenet et orientée dans le même sens que ce vecteur*. Finalement, *le mouvement des ions est circulaire* (de centres $C_i$).
 
@@ -88,6 +86,6 @@ On cherche à déterminer la durée du parcours des fragments ionisés $i$ depui
 
 ## Corrigé
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 {{< remote "Correction au format pdf" "/terminales-pc/chap-8/chap-8-8/chap-8-8-2.pdf" >}}
-{{% /solution %}}
+{{< /solution >}}

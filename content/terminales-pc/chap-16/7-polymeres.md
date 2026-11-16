@@ -1,22 +1,20 @@
 ---
 title: "Les polymères"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-04-26T07:43:08+04:00
 draft: false
 toc: true
 tags: ["Polymères", "Addition", "Élimination"]
 categories: ["Chimie", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 700
 ---
 ## Définitions
 
-{{% note tip %}}
+{{< note tip >}}
 Un **polymère** est une molécule engendrée par la répétition d’une petite unité structurale appelée **monomère**.
-{{% /note %}}
+{{< /note >}}
 
 Le nombre $n$ de monomères que comporte le polymère est son **degré de polymérisation**. Il est très variable. Pour $n=2$, le polymère est un digère ; pour $n=3$, un trimère, etc. Pour de grandes valeurs de $n$, supérieures à la centaine, on a affaire à une **macromolécule**.
 
@@ -95,12 +93,12 @@ Le polymère, formé de maillons $\ce{-CF2-}$ possède des propriétés remarqua
 
 ## Exemple d’une polycondensation
 
-{{% note normal %}}
+{{< note normal >}}
 
 - Une **réaction de condensation** est une *réaction chimique au cours de laquelle deux molécules, ou deux parties d'une même molécule, se combinent pour former une molécule (le condensat) en éliminant une molécule simple (le sous-produit), telle l'eau (le plus souvent), le sulfure d'hydrogène, le méthanol ou l'acide acétique*.
 - Dans le cas d'une **polycondensation**, *les monomères initiaux ne sont pas identiques aux motifs de répétition du polymère final, à cause de la perte des petites molécules dans les étapes de condensation*.
     Les molécules initiales réagissent pour donner de plus grosses molécules qui elles-mêmes pourront réagir et former des chaînes de plus en plus longues.
-{{% /note %}}
+{{< /note >}}
 
 ***Exemple :*** Formation du nylon 6-6 par réaction entre l'acide hexanedioïque et l'hexaméthylènediamine, les deux groupes fonctionnels sont des groupes acide carboxylique et amine.
 
@@ -109,35 +107,35 @@ Le polymère, formé de maillons $\ce{-CF2-}$ possède des propriétés remarqua
 ## Exercices
 
 1. Le 1,2-dichloroéthane élimine par chauffage une molécule de chlorure d’hydrogène. Écrire l’équation de la réaction et nommer le produit supplémentaire.
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 <img src="/terminales-pc/chap-16/chap-16-7/q1.png" alt="" width="70%" />
 L’élimination forme donc du chlorure d’hydrogène et du chloroéthène.
-{{% /solution %}}
+{{< /solution >}}
 
 2. Écrire l’équation de la polymérisation du polyéthylène.
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 <img src="/terminales-pc/chap-16/chap-16-7/q2.png" alt="" width="60%" />
-{{% /solution %}}
+{{< /solution >}}
 
 3. Écrire l’équation de la polymérisation du polypropylène.
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 <img src="/terminales-pc/chap-16/chap-16-7/q3.png" alt="" width="80%" />
-{{% /solution %}}
+{{< /solution >}}
 
 4. Écrire l’équation de la fabrication du monomère du polychlorure de vinyle par addition du chlorure d’hydrogène sur l’acétylène.
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 <img src="/terminales-pc/chap-16/chap-16-7/q4.png" alt="" width="60%" />
-{{% /solution %}}
+{{< /solution >}}
 
 5. Écrire l’équation de la fabrication du monomère du polychlorure de vinyle par addition de dichlore sur l’éthylène, suivie d’une élimination de chlorure d’hydrogène.
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 <img src="/terminales-pc/chap-16/chap-16-7/q5.png" alt="" width="80%" />
-{{% /solution %}}
+{{< /solution >}}
 
 6. Écrire l’équation de la polymérisation du polychlorure de vinyle.
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 <img src="/terminales-pc/chap-16/chap-16-7/q6.png" alt="" width="70%" />
-{{% /solution %}}
+{{< /solution >}}
 
 7. Donner la formule et le nom des produits obtenus au cours des réactions suivantes :
 
@@ -148,7 +146,7 @@ L’élimination forme donc du chlorure d’hydrogène et du chloroéthène.
     5. éthylène + eau → ...
 
     Nommer les produits.
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 <img src="/terminales-pc/chap-16/chap-16-7/q7.png" alt="" width="70%" />
 Les produits sont, dans l’ordre, le 1,2-dichloropropène, le 2-hydroxybut-2-ène, le 2-chlorobut-2-ène, le 2-méthylpentane, l’éthanol.
-{{% /solution %}}
+{{< /solution >}}

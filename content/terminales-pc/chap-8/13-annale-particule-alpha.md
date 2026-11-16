@@ -1,17 +1,15 @@
 ---
 title: "Particule ⍺ dans un champ électrostatique uniforme"
 subtitle: ""
-author: ""
-type: ""
 date: 2022-01-09T19:31:21+04:00
 draft: false
 toc: true
 tags: ["Deuxième loi de Newton", "Équation différentielle", "Intégration", "Condition initiale", "Équations horaires", "Théorème de l'énergie mécanique", "Théorème de l'énergie cinétique", "Champ électrique"]
 categories: ["Physique", "Terminale Spé PC", "Annale"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
 mathjax: true
+weight: 1300
 ---
 
 
@@ -39,8 +37,8 @@ On choisira le repère indiqué sur le schéma. Le référentiel associé sera s
 
 ## Corrigé
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
 {{< remote "Corrigé au format pdf" "/terminales-pc/chap-8/chap-8-13/chap-8-1-13-2.pdf"  >}}
 
-{{% /solution %}}
+{{< /solution >}}

@@ -1,17 +1,14 @@
 ---
 title: "Méthode « Diviser pour régner »"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-11-18T17:11:50+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 170
 ---
 
 ## Au programme

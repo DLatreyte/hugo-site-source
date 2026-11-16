@@ -1,21 +1,19 @@
 ---
 title: "Titrage du diiode dans la Bétadine"
 subtitle: ""
-author: ""
-type: ""
 date: 2022-01-20T15:54:14+04:00
 draft: false
 toc: true
 tags: []
 categories: ["Premières Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 300
 ---
 
 > L'objectif de cette séance est de déterminer la concentration en diiode $\ce{I2}$ de la Bétadine, antiseptique utilisé couramment.
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### La bétadine
 
@@ -26,9 +24,9 @@ auto_numbering: true
 - **Incompatibilités :** Le diiode est un oxydant.
 Chaleur, lumière, inactivé par le thiosulfate de sodium.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Quelques couples redox
 
@@ -38,9 +36,9 @@ Chaleur, lumière, inactivé par le thiosulfate de sodium.
 - $\ce{S4O6^{2−} (aq)/S2O3^{2−}  (aq)}$ ;
 - $\ce{MnO4^− (aq)/Mn^{2+} (aq)}$.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Données
 
@@ -57,18 +55,18 @@ Chaleur, lumière, inactivé par le thiosulfate de sodium.
 - **Indicateur de fin de réaction :** empois d’amidon.
 L'empois d'amidon réagit avec le diiode présent dans une solution. Cette dernière se colore alors en bleu très foncé. En l'absence de diiode cette coloration disparaît.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Calcul d'incertitude : cas d'une mesure obtenue avec un appareil de tolérance connue
 
 Lorsque la mesure est obtenue avec un appareil pour lequel le constructeur indique la tolérance $t$ (notée $\pm t$), l'incertitude liée à la tolérance de cet appareil a pour expression :
 $$
-U = \dfrac{2\\, t}{\sqrt{3}}
+U = \dfrac{2\, t}{\sqrt{3}}
 $$
 
-{{% /note %}}
+{{< /note >}}
 
 1. Choisir, parmi les solutions disponibles, celle qui contient un titrant possible du diiode.
 

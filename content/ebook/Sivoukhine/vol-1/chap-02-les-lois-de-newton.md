@@ -2,15 +2,14 @@
 title: "Les lois de Newton"
 subtitle: "Chapitre 02"
 author: "D. Sivoukhine"
-type: ""
 date: 2020-08-25T22:27:50+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: false
+weight: 9900
 ---
 
 ## §9. La loi d'inertie. Référentiel d'inertie

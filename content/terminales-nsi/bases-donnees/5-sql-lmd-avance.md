@@ -1,16 +1,14 @@
 ---
 title: "Le langage SQL : Le langage de manipulation de données (LMD), Compléments"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-02-09T08:37:37+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 500
 ---
 
 ## Notion de clé d'une relation et dépendance fonctionnelle
@@ -21,24 +19,24 @@ enregistrement par le contenu d'un ou de plusieurs champs. On nomme
 d'*identifier de façon unique un enregistrement.* Une relation peut
 comprendre plusieurs clés possibles ; ce sont les **clés candidates**.
 
-{{% note tip %}}
+{{< note tip >}}
 *On appelle **clé primaire** d'une relation la clé
 minimale parmi toutes les clés candidates de la relation. Une clé
 primaire doit toujours contenir une valeur et celle-ci doit être unique
 pour chacun des enregistrements de la relation*
-{{% /note %}}
+{{< /note >}}
 
 Pour désigner une clé (primaire), il faut donc prendre en compte le «
 sens » des données contenues dans la relation. **Si aucun champ ne peut
 constituer une clé, il est nécessaire d'introduire un champ formel, tel
 qu'un identifiant numérique.**
 
-{{% note tip %}}
+{{< note tip >}}
 *Une **dépendance fonctionnelle** existe entre deux
 ensembles de champs si les valeurs contenues dans l'un des ensembles de
 champs permettent de déterminer les valeurs contenues dans l'autre
 ensemble.*
-{{% /note %}}
+{{< /note >}}
 
 Les dépendances fonctionnelles expriment la relation de hiérarchie qui
 existe entre les champs.
@@ -93,24 +91,24 @@ Si l'on examine les données de la relation, on remarque :
 Tous les champs qui ne font pas partie d'une clé candidate d'une
 relation possèdent des dépendances fonctionnelles avec cette clé.
 
-{{% note tip %}}
+{{< note tip >}}
 *On indique la clé primaire d'un schéma relationnel en soulignant le
 champ, dans le schéma relationnel* : *Relation lecteur(<ins>Numero_carte</ins>, Nom, Age, Ville,
   Etablissement)*
-{{% /note %}}
+{{< /note >}}
 
 ## Jointure de deux relations
 
 ### Qu'est-ce qu'une jointure ?
 
-{{% note tip %}}
+{{< note tip >}}
 *La **jointure** est l'opération fondamentale de l'algèbre relationnelle
 qui permet d'exprimer le sens du lien entre les relations, dans le monde
 réel*. Conformément au programme, on ne présente ici que l'opération de
 ***jointure symétrique***.
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 *Une **jointure** permet d'associer plusieurs
 relations dans une même requête. Le résultat de cette requête est une
 relation de **degré supérieur** aux degrés de chacune des relations de
@@ -118,14 +116,14 @@ départ. L'opération de jointure est **symétrique** et **associative**.*
 
 *La liaison entre les relations s'effectue par le contenu commun d'un
 champ (**champs de jointure**).*
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 Il est bien évidemment possible d'*associer une jointure à une
 projection et une sélection*. *Ces associations doivent être prises en
 compte lors de la détermination du **degré** et de la **cardinalité** de
 la relation finale*.
-{{% /note %}}
+{{< /note >}}
 
 <center>
 
@@ -238,9 +236,9 @@ FROM Lecteur_bis
 JOIN Etablissement ON Lecteur_bis.Num_Etablissement = Etablissement.Num_Etablissement ;
 ```
 
-{{% note warning %}}
+{{< note warning >}}
 On remarque qu'*un champ est défini de façon unique grâce à la concaténation du nom de la relation et de celui du champ*. Si les champs portent des noms différents, il n'est pas nécessaire de préciser de quelle relation ils sont issus.
-{{% /note %}}
+{{< /note >}}
 
 ## Fonctions de calculs
 

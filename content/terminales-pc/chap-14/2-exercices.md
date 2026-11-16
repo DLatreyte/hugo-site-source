@@ -1,16 +1,14 @@
 ---
 title: "Premier principe de la thermodynamique : exercices"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-02-27T19:18:00+04:00
 draft: false
 toc: true
 tags: []
 categories: ["Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 200
 ---
 
 
@@ -25,9 +23,9 @@ Pourtant, lorsque l'on touche un objet en marbre ou un objet en bois placés tou
 
 ## Thermostat
 
-{{% note tip %}}
+{{< note tip >}}
 On appelle thermostat un système de capacité thermique infinie. Un thermostat peut donc fournir de la chaleur sans voir sa température varier.
-{{% /note %}}
+{{< /note >}}
 
 On jette une pierre de masse $m=\pu{10 g}$, à la température $\theta = \pu{25 °C}$ et de capacité thermique massique $c = \pu{835 J.K-1.kg-1}$ dans un lac à la température $\theta' = \pu{12 °C}$.
 
@@ -54,9 +52,9 @@ Données
 - $c(\ce{Al}) = \pu{897 J.K-1.kg-1}$ ;
 - $\rho_{\ce{H2O}} = \pu{1,00 kg.L-1}$.
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 {{< remote "Corrigé au format pdf" "/terminales-pc/chap-14/chap-14-2/chap-14-2-1.pdf" >}}
-{{% /solution %}}
+{{< /solution >}}
 
 ## Calorimétrie
 
@@ -78,15 +76,15 @@ Dans une étuve, on chauffe un bloc de cuivre solide de masse $m_2 = \pu{62,3 g}
 Données:
 : Pour l'eau liquide $c_1 = \pu{4,18 J.g-1.°C-1}$ ; pour le calorimètre et ses accessoires $C_{cal} = \pu{8,5 J.°C-1}$.
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 {{< remote "Corrigé au format pdf" "/terminales-pc/chap-14/chap-14-2/chap-14-2-4.pdf" >}}
-{{% /solution %}}
+{{< /solution >}}
 
 ## Détermination de la capacité thermique massique d'un solide
 
-{{% note normal %}}
+{{< note normal >}}
 Un **calorimètre** constitue un système thermodynamique isolé, ce qui implique qu'il n'y a pas d'échange de matière et d'énergie (travail ou chaleur) avec le milieu extérieur.
-{{% /note %}}
+{{< /note >}}
 
 1. Un calorimètre contient $m_1 = \pu{95 g}$ d'eau à $\theta_1 = \pu{20 °C}$. On ajoute $m_2 = \pu{71 g}$ d'eau à $\theta_2 = \pu{50 °C}$. Quelle est la température d'équilibre $\theta_e$ ?\
 **Remarque :** on néglige la capacité thermique du vase et de ses accessoires.
@@ -112,18 +110,18 @@ Avec un four de puissance $\pu{750 W}$ on chauffe $\pu{500 g}$ d'eau liquide. En
 Donnée :
 : $c(\ce{H2O (liq)}) = \pu{4,18 kJ.kg-1.K-1}$.
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 {{< remote "Corrigé au format pdf" "/terminales-pc/chap-14/chap-14-2/chap-14-2-6.pdf" >}}
-{{% /solution %}}
+{{< /solution >}}
 
 ## Un isolant, la laine de verre
 
-{{% note normal %}}
+{{< note normal >}}
 **Rappel :** On va démontrer dans le doc. 14,3, qu'en régime stationnaire,
 $$
     \varphi = \dfrac{Q}{\Delta t} = \dfrac{\vert T_1 - T_2 \vert}{R_{th}}
 $$
-{{% /note %}}
+{{< /note >}}
 
 On peut utiliser de la laine de verre pour isoler la toiture d'une maison. Plusieurs épaisseurs sont proposées par les fabricants. Paul et Olivia décident de déterminer la résistance thermique $R_{th1}$, d'une surface $S_1 = \pu{1,0 m2}$ d'une laine de verre 1 d'épaisseur $e_1 = \pu{60 mm}$ et la résistance thermique $R_{th2}$, d'une surface $S_2 = \pu{1,5 m2}$ d'une laine de verre 2 d'épaisseur $e_2 = \pu{240 mm}$.\
 Paul mesure un flux thermique de $\pu{10 W}$ lorsque la différence de température entre les deux faces de la laine de verre 1 est de $\pu{15 °C}$.\
@@ -134,7 +132,7 @@ Olivia soumet l'une des faces de la laine de verre 2 à une température $T_A = 
 
 Lorsqu'on parle d'isolation thermique, on indique souvent la valeur de la conductivité thermique $\lambda$ d'un matériau. Cette grandeur est liée à la résistance thermique d'une paroi plane de surface $S$ et d'épaisseur $e$ par :
 $$
-    \lambda = \dfrac{e}{S\\, R_{th}}
+    \lambda = \dfrac{e}{S\, R_{th}}
 $$
 avec $e$ en m, $S$ en $\pu{m2}$ et $R_{th}$ en $\pu{°C.W-1}$.
 
@@ -146,9 +144,9 @@ avec $e$ en m, $S$ en $\pu{m2}$ et $R_{th}$ en $\pu{°C.W-1}$.
 8. Comment le flux thermique évolue-t-il lorsque l'on double l'épaisseur $e$ de laine de verre ?
 9. Quels conseils peut-on donner à un particulier faisant construire sa maison afin de limiter les pertes d'énergie par la toiture ?
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 {{< remote "Corrigé au format pdf" "/terminales-pc/chap-14/chap-14-2/chap-14-2-3.pdf" >}}
-{{% /solution %}}
+{{< /solution >}}
 
 ## Annale : Centrale électronucléaire
 
@@ -182,9 +180,9 @@ Ce circuit de refroidissement a un débit massique de $\pu{4,2e4 kg.s-1}$.
 Donnée :
 : $c(\ce{H2O (liq)}) = \pu{4,18 kJ.kg-1.K-1}$.
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 {{< remote "Corrigé au format pdf" "/terminales-pc/chap-14/chap-14-2/chap-14-2-5.pdf" >}}
-{{% /solution %}}
+{{< /solution >}}
 
 ## Annale : Récupérer de l'énergie gratuite dans la nature
 
@@ -202,9 +200,9 @@ Exprimer le coefficient de performance de la pompe à chaleur en fonction des di
 
 4. Pourquoi l'ADEME encourage-t-elle l'installation de pompes à chaleur ?
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 {{< remote "Corrigé au format pdf" "/terminales-pc/chap-14/chap-14-2/chap-14-2-8.pdf" >}}
-{{% /solution %}}
+{{< /solution >}}
 
 ## Annale : Double ou simple vitrage ?
 
@@ -246,9 +244,9 @@ $$
 
 </center>
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 {{< remote "Corrigé au format pdf" "/terminales-pc/chap-14/chap-14-2/chap-14-2-7.pdf" >}}
-{{% /solution %}}
+{{< /solution >}}
 
 ## Échauffement d'une bille en mouvement dans l'air (Difficile)
 
@@ -269,15 +267,15 @@ Exprimer $\Delta T$ en fonction de $h_0$, $h$, $g$ et $c$.
 Données :
 : $g = \pu{9,81 m.s-2}$ ; $c = \pu{0,4 kJ.kg-1.°C-1}$ ; $v_0 = \pu{10 m.s-1}$ ; $h=\pu{5 m}$.
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 {{< remote "Corrigé au format pdf" "/terminales-pc/chap-14/chap-14-2/chap-14-2-9.pdf" >}}
-{{% /solution %}}
+{{< /solution >}}
 
 ## Équivalence travail - chaleur (difficile)
 
 Une auto de masse $M = \pu{836 kg}$ roule à la vitesse $v = \pu{20 m.s-1}$ (72&nbsp;km/h) et s'arrête brusquement à l'aide de ses quatre freins à disques. En assimilant ces derniers à des cylindres de rayon $R = \pu{10 cm}$, d'épaisseur $e = \pu{1 cm}$, de masse volumique $\rho = \pu{8 g.cm-3}$ et de capacité thermique massique $c = \pu{0,42 J.g-1.K-1}$, calculer leur élévation de température en supposant que toute l'énergie thermique est absorbée par les disques.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 On suppose le système {voiture + environnement} isolé. On a donc :
 $$
@@ -313,11 +311,11 @@ $
 
 Cette élévation de température n'est pas très importante.  
 En fait, si le freinage est brusque, l'élévation l'énergie ne se propage pas dans toute la masse des disques (faute de temps) et, localement, l'élévation de température peut être beaucoup plus importante.
-{{% /solution %}}
+{{< /solution >}}
 
 ## Apport d'énergie thermique par une résistance électrique
 
-Un cylindre fermé horizontal est divisé en deux compartiments $A$ et $B$ de même volume $V_0$ par un piston coulissant librement sans frottement. $A$ et $B$ contiennent chacun une mole de gaz parfait à la pression $P_0$ et à la température $T_0$. On note $c_{V,m}$ la capacité thermique molaire volumique du gaz parfait dans l'enceinte (un gaz parfait n'est pas incompressible mais on peut écrire $\Delta U = n\\, c_{V,m}\\, \Delta T$).\
+Un cylindre fermé horizontal est divisé en deux compartiments $A$ et $B$ de même volume $V_0$ par un piston coulissant librement sans frottement. $A$ et $B$ contiennent chacun une mole de gaz parfait à la pression $P_0$ et à la température $T_0$. On note $c_{V,m}$ la capacité thermique molaire volumique du gaz parfait dans l'enceinte (un gaz parfait n'est pas incompressible mais on peut écrire $\Delta U = n\, c_{V,m}\, \Delta T$).\
 Le piston, la surface latérale du cylindre et la surface de base $S_A$ du compartiment $A$ sont **athermanes** (*ne transmet pas l'énergie thermique*). La surface de base $S_B$ du compartiment $B$ est **diathermane** (*transmet l'énergie thermique*).
 
 Le compartiment $A$ est porté très lentement à la température $T_1$ à l'aide d'une résistance chauffante, le compartiment $B$ reste à $T_0$ par contact thermique avec un thermostat à la température $T_0$.
@@ -331,13 +329,13 @@ La résistance chauffante et le piston sont exclus du système.
 
 3. On montre que le travail reçu par $B$ (travail des forces de pression lorsque le volume de $A$ augmente) a pour expression :
 $$
-    W = R\\, T_0\\, \ln \left( \dfrac{T_0 + T_1}{2\\, T_0} \right)
+    W = R\, T_0\, \ln \left( \dfrac{T_0 + T_1}{2\, T_0} \right)
 $$
 En déduire l'expression du transfert thermique $Q_1$ que reçoit $B$ de la part du thermostat (on exprimera $Q_1$ en fonction de $T_0$, $T_1$ et $R$).\
 Cette énergie thermique est-elle effectivement reçue ou est-elle cédée ?
 
 4. Déterminer l'expression du transfert thermique $Q_2$ que reçoit $A$ de la résistance électrique en fonction de $T_0$, $T_1$, $R$ et $c_{V,m}$.
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 {{< remote "Corrigé au format pdf" "/terminales-pc/chap-14/chap-14-2/chap-14-2-11.pdf" >}}
-{{% /solution %}}
+{{< /solution >}}

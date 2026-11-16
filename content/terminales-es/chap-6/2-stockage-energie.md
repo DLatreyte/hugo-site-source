@@ -1,16 +1,14 @@
 ---
 title: "Stockage de l’énergie"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-01-14T07:03:02+04:00
 draft: false
 toc: true
 tags: []
 categories: ["Terminale Enseignement Scientifique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 200
 ---
 
 > L'objectif de cette activité est de décrire trois moyens utilisés pour stocker l’énergie : la **STEP**, l’**accumulateur** et le **supercondensateur**.
@@ -22,17 +20,17 @@ auto_numbering: true
 ## Exploitation
 
 1. Nommer la forme d’énergie stockée dans chacun des trois systèmes décrits.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - STEP : l’énergie est stockée sous la forme d’énergie mécanique (**énergie potentielle de pesanteur**).
 
 - Accumulateur : l’énergie est stockée sous la forme d’énergie chimique.
 
 - Supercondensateur : l’énergie est stockée sous la forme d’énergie électromagnétique.
-{{% /solution %}}
+{{< /solution >}}
 
 2. Réaliser les chaînes énergétiques liées aux deux fonctionnements de la STEP.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 > Stockage d’énergie dans la STEP :
 <img src="/terminales-es/chap-6/chap-6-2/stockage.png" alt="" width="" />
@@ -40,15 +38,15 @@ auto_numbering: true
 > Déstockage de l'énergie
 <img src="/terminales-es/chap-6/chap-6-2/destockage.png" alt="" width="" />
 
-{{% /solution %}}
+{{< /solution >}}
 
 3. Expliquez en quoi la solution présentée en vidéo n’est pas transposable partout dans le monde.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 4. Lister les avantages et les inconvénients de chacun des dispositifs présentés à l’aide d’une recherche documentaire supplémentaire.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 <center>
 
@@ -59,4 +57,4 @@ auto_numbering: true
 | Supercondensateurs | - Petite taille<br />- Durée de vie importante<br />- Grande puissance énergétique par rapport à un accumulateur | - Coût assez élevé<br />- Quantité d’énergie stockée par unité de masse inférieure à celle d’un accumulateur |
 
 </center>
-{{% /solution %}}
+{{< /solution >}}

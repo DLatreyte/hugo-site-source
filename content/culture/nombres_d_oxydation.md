@@ -1,16 +1,14 @@
 ---
 title: "Les nombres d'oxydation d'un élément"
 subtitle: "1ère S ⎯ Collection Eurin, Gié ⎯ Hachette 1982"
-author: ""
-type: ""
 date: 2022-10-29T13:41:56+04:00
 draft: true
 toc: true
 tags: ["Oxydoréduction", "Nombres d'oxydation"]
 categories: ["Hachette 1982", "Chimie"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 9900
 ---
 
 > Chapitre 15
@@ -30,13 +28,13 @@ Rappelons que le fluor ($\ce{F}$) est l'élément le plus électronégatif. On c
 
 Le nombre d'oxydation (n.o.) d'un élément dans un individu chimique quelconque est un nombre algébrique. noté en chiffres romains, et défini conventionnellement à partir de deux règles.
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Règle 1
 
 Le nombre d'oxydation d'un élément dans un ion monoatomique est égal à sa charge électrique.
 
-{{% /note %}}
+{{< /note >}}
 
 #### Exemples
 
@@ -46,15 +44,15 @@ Le nombre d'oxydation d'un élément dans un ion monoatomique est égal à sa ch
 
 Cette règle trouve évidemment son application dans le cas des ions en solution aqueuse : le nombre d'oxydation comptabilisant les transferts d'électrons dans les réactions d'oxydoréduction en solution aqueuse. Elle trouve également son application dans le cas des cristaux ioniques constitués d'ions monoatomiques.
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Application
 
 Déterminer les n.o. dees éléments constituant les cristaux ioniques suivants : chlorure de sodium ($\ce{NaCl}$), hydrure de sodium ($\ce{NaH}$), alumine ($\ce{Al2O3}$), oxyde magnétique de fer ($\ce{Fe3O4}$Fe3O4).
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponses" %}}
+{{< solution "Réponses" >}}
 
 - *Chlorure de sodium* ($\ce{NaCl}$) : On a vu dans le cours de Seconde qu'il s'agit d'un composé ionique formé d'un réseau d'ions $\ce{Na+}$ et $\ce{ Cl- }$. D'après la règle 1, l'élément chlore, présent sous forme d'ions chlorure, a pour n.o. -I, l'élément sodium a pour n.o. +I.
 
@@ -90,9 +88,9 @@ $$
     4 \times (-2) + 3 x = 0
 $$
 à rapprocher de la formule globale $\ce{ Fe3O4 }$ et analogue à la relation écrite pour $\ce{ Al2O3 }$, par exemple : la somme des nombres d'oxydation multipliés par le nombre des atomes figurant dans la formule chimique est nulle.
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note tip %}}
+{{< note tip >}}
 
 #### Règle 2
 
@@ -103,20 +101,20 @@ La conservation de la charge exige que :
 - dans une molécule, la somme algébrique des nombres d'oxydation, multipliés par les nombres des atomes de l'élément présents dans le molécule, soit nulle ;
 - dans un ion polyatomique, la somme définie précédemment soit égale à la charge algébrique de l'ion.
 
-{{% /note %}}
+{{< /note >}}
 
 Il découle de cette règle que le nombre d'oxydation de l'élément oxygène figurant dans les composés covalents est généralement -II, celui de l'élément hydrogène +I. Dans un corps simple, le nombre d'oxydation de l'élément est zéro.  
 Dans le molécule de dichlore $\ce{ Cl2 }$, par exemple, la répartition des charges électriques est parfaitement symétrique. On ne peut attribuer le doublet de liaison covalente à un atome de chlore plutôt qu'à l'autre. La charge fictive attribuée à chaque atome de chlore est donc nulle, et le nombre d'oxydation attribué à l'élément chlore dans le corps simple sera donc zéro.
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Application 1
 
 Trouver les nombres d'oxydation des divers éléments dans les molécules covalentes suivantes : $\ce{ H2O }$, $\ce{ HCl }$, $\ce{ CO2 }$, $\ce{ CO }$, $\ce{ H2S }$, $\ce{ SO2 }$, $\ce{ H2SO4 }$.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponses" %}}
+{{< solution "Réponses" >}}
 
 - *Molécule* $\ce{ H2O }$ : Les deux électrons appartenant initialement aux atomes d'hydrogène sont attribués à l'atome d'oxygène plus électronégatif. Ces deux électrons confèrent à l'élément oxygène le nombre d'oxydation -II. Si $x$ désigne le nombre d'oxydation des atomes hydrogène, la règle 2 donne :
 $$
@@ -142,17 +140,17 @@ $$
     x + 4 \times (-2) + 2 \times (+1) = 0 \iff x = +6
 $$
 Le nombre d'oxydation du soufre dans le molécule $\ce{ H2SO4 }$ est le même que dans le molécule $\ce{ SO3 }$.
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note exercise %}}
+{{< note exercise >}}
 
 #### Application 2
 
 Trouver les nombres d'oxydation des divers éléments dans les ions polyatomiques covalents suivants : $\ce{ MnO4- }$ (ion permanganate), $\ce{ Cr2O7^2- }$ (ion dichromate), $\ce{ SO4^2- }$ (ion sulfate), $\ce{ HSO4- }$ (ion hydrogénosulfate).
 
-{{% /note %}}
+{{< /note >}}
 
-{{% solution "Réponses" %}}
+{{< solution "Réponses" >}}
 
 - *Ion permanganate* $\ce{ MnO4- }$ : Si $x$ est le nombre d'oxydation de l'élément manganèse, la règle 2 donne :
 $$
@@ -180,12 +178,12 @@ On notera que le nombre d'oxydation de l'élément soufre dans la molécule $\ce
 Les réactions acido-basiques :
 $$
 \begin{aligned}
-\ce{H2SO4 + H2O}\ &\ce{->}\ \ce{HSO4- + H3O+}\\\\
+\ce{H2SO4 + H2O}\ &\ce{->}\ \ce{HSO4- + H3O+}\\
 \ce{HSO4- + H2O}\ &\ce{<=>}\ \ce{SO4^2- + H3O+}
 \end{aligned}
 $$
 ne modifient pas le nombre d'oxydation de l'élément soufre. Plus généralement, on observera qu'**une réaction acido-basique ne modifie pas le nombre d'oxydation de l'élément intervenant dans les diverses espèces acides et basiques**.
-{{% /solution %}}
+{{< /solution >}}
 
 En conclusion, nous noterons que l'attribution d'électrons aux atomes d'un composé covalent en vue de définir les nombres d'oxydation est une opération fictive. Cette opération peut d'ailleurs parfois comporter des diffrcultés. Les nombres d'oxydation ont une certaine utilité, mais il ne faut pas en exagérer la portée. Il s'agit d'une algèbre, d'une comptabilité en partie conventionnelle.
 
@@ -193,22 +191,22 @@ En conclusion, nous noterons que l'attribution d'électrons aux atomes d'un comp
 
 Cette application porte sur l'écriture de l'équation-bilan d'une réaction rédox.
 
-{{% note tip %}}
+{{< note tip >}}
 
 Il résulte de la définition même des nombres d'oxydation que :
 
 - Lorsqu'un élément est réduit, son nombre d'oxydation diminue ;
 - Lorsqu'il est oxydé, son nombre d'oxydation augmente.
 
-{{% /note %}}
+{{< /note >}}
 
 Donc, dans une équation équilibrée du point de vue rédox, la variation du n.o. de l'élément oxydant, multiplié par le coefficient correspondant de l'équation-bilan, est égale, au signe près, à la variation du n.o. de l'élément réducteur, multiplié de la même façon par le coefficient de l'équation-bilan.
 
-{{% note tip %}}
+{{< note tip >}}
 
 La somme des variations des nombres d'oxydation, multipliés par les coefficients correspondants de l'équation-bilan, est nulle.
 
-{{% /note %}}
+{{< /note >}}
 
 Cette règle ne fait que traduire le bilan des échanges électroniques réels ou fictifs lors de la réaction d'oxydoréduction.  
 L'utilisation des n.o. permet donc de trouver les coefficients d'une équation-bilan qui assurent la conservation des charges électriques et la conservation des éléments. Prenons deux exemples :

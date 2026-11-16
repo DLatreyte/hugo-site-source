@@ -1,16 +1,14 @@
 ---
 title: "Etiquetage en composante connexe"
 subtitle: ""
-author: ""
-type: ""
 date: 2023-11-14T19:38:52+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 9900
 ---
 
 ## Introduction

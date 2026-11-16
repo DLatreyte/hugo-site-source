@@ -1,21 +1,19 @@
 ---
 title: "Titrage de l'acide éthanoïque présent dans un vinaigre"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-11-01T07:50:56+04:00
 draft: false
 toc: true
 tags: ["Tableau d'avancement", "Équivalence", "Titrage", "pH-mètre", "Suivi pH-métrique"]
 categories: ["Chimie", "Terminale Spé PC"]
-image: ""
 solution_est_visible: false
 auto_numbering: false
+weight: 1500
 ---
 
 > L'objectif de cette séance est de déterminer la concentration en acide éthanoïque d'un vinaigre à 5°.
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Le vinaigre
 
@@ -26,18 +24,18 @@ Un vinaigre est une solution aqueuse diluée essentiellement constituée d'acide
 
 Remarque
 : *Lors du titrage d'un vinaigre par une base forte, le pH à l'équivalence est entre 8 et 9*.
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Suivi pH_métrique
 
 Lors d'un suivi pH-métrique on mesure le pH de la solution après différents ajouts de titrant. Les volumes de titrant à verser doivent être évalués après un titrage colorimétrique et resserrés le plus possible autour de l'équivalence. Après le saut de pH, il faut poursuivre l'ajout de titrant pendant au moins $\pu{5 mL}$.
 
 *Il est souvent nécessaire d'ajouter de l'eau dans la solution contenant le titré afin de pouvoir bien immerger la sonde du pH mètre*.
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Indicateur coloré
 
@@ -51,7 +49,7 @@ Quelques indicateurs colorés
 - **Hélianthine** : Rouge -- 3,1 -- Orange -- 4,4 -- Jaune
 - **B.B.T.** : Jaune -- 6,0 -- Vert -- 7,6 -- Bleu
 - **Phénolphtaléine** : Incolore -- 8,2 -- Rose pâle -- 10 -- Rose fuchsia
-{{% /note %}}
+{{< /note >}}
 
 ## Matériel à disposition
 

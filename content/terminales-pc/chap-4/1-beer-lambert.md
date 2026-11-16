@@ -1,16 +1,14 @@
 ---
 title: "Détermination de la composition d'une solution colorée, loi de Beer-Lambert"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-10-05T09:38:31+04:00
 draft: false
 toc: true
 tags: ["Soluté", "Concentration molaire", "Concentration massique", "Beer Lambert", "Dilution", "Couleur", "Absorption"]
 categories: ["Chimie", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 100
 ---
 [^2]: On suppose que la dissolution s'effectue sans changement de volume.
 
@@ -23,11 +21,11 @@ Il est assez facile de calculer la concentration massique ou la concentration mo
 
 ### Lumière blanche
 
-{{% note tip %}}
+{{< note tip >}}
 
 - La **lumière blanche** contient toutes les radiations visibles par l'œil.
 - Ces différentes radiations sont caractérisées par leur **longueur d'onde** $\lambda$ et *perçues comme des lumières de couleurs différentes*. *À chaque longueur d'onde correspond une couleur*.
-{{% /note %}}
+{{< /note >}}
 
 <img src="/premieres-pc/chap-2/chap-2-2-1.gif" alt="" width="85%" />
 > Spectre de la lumière blanche
@@ -44,34 +42,34 @@ Il est assez facile de calculer la concentration massique ou la concentration mo
 <img src="/premieres-pc/chap-2/chap-2-2-2.jpg" alt="" width="60%" />
 > L'analyse d'une lumière (ici plutôt rouge) permet de déterminer non seulement quelles radiations la composent mais aussi dans quelles proportions. Cette analyse est effectuée à l'aide d'un **spectrophotomètre**.
 
-{{% note tip %}}
+{{< note tip >}}
 On appelle **couleurs complémentaires** deux couleurs dont la superposition donne une lumière blanche.
-{{% /note %}}
+{{< /note >}}
 
 <img src="/premieres-pc/chap-2/chap-2-2-3.png" alt="" width="40%" />
 
 ### Solution colorée
 
-{{% note tip %}}
+{{< note tip >}}
 Une lumière, dite **incidente**, qui entre en contact avec une solution, peut être **diffusée** ou **absorbée**.
-{{% /note %}}
+{{< /note >}}
 
 <img src="/premieres-pc/chap-2/chap-2-2-4.png" alt="" width="60%" />
 
-{{% note tip %}}
+{{< note tip >}}
 
 - Une solution est colorée si *elle absorbe une partie des radiations de la lumière incidente*.
 - *La solution soustrait à la lumière incidente les couleurs qu’elle absorbe.*
 - La **couleur de la solution** est alors la *couleur complémentaire de la couleur absorbée*.
-{{% /note %}}
+{{< /note >}}
 
 ## Loi de Beer-Lambert
 
 ### Absorbance d'une solution colorée
 
-{{% note tip %}}
+{{< note tip >}}
 L'**absorbance** $A$ d'une solution colorée est *une grandeur **sans unité** qui caractérise l'aptitude des entités chimiques présentes dans la solution à absorber une radiation lumineuse de longueur d'onde $\lambda$ donnée*.
-{{% /note %}}
+{{< /note >}}
 
 <img src="/premieres-pc/chap-2/chap-2-2-5.png" alt="" width="60%" />
 
@@ -85,34 +83,34 @@ Ce qu'il faut retenir, c'est que *l'absorbance fait intervenir une comparaison d
 
 La **loi de Beer-Lambert**, découverte par Pierre Bouguer en 1729, est *une relation empirique reliant l'absorption de la lumière aux propriétés des milieux qu'elle traverse*.
 
-{{% note tip %}}
+{{< note tip >}}
 La **loi de Beer-Lambert** établit une *proportionnalité entre la concentration molaire $C$ d'une entité chimique en solution, l'absorbance $A$ de celle-ci et la longueur $l$ du trajet parcouru par la lumière dans la solution*.
 $$A_λ=ε_λ l C$$
 
 En pratique, on utilise
 $$A_λ=k C$$
 Le coefficient de proportionnalité $k$ a pour unité $\pu{L/mol}$.
-{{% /note %}}
+{{< /note >}}
 
-{{% note warning %}}
+{{< note warning >}}
 La loi de Beer-Lambert n'est cependant valable que sous certaines conditions&nbsp;:
 
 - *la lumière doit être monochromatique*&nbsp;;
 - *les solutions doivent être homogènes*&nbsp;;
 - *la concentration de la solution en soluté doit être faible (inférieure à $\pu{1e-2 mol/L}$)*&nbsp;;
 - *le soluté ne doit pas réagir sous l'action de la lumière incidente*.
-{{% /note %}}
+{{< /note >}}
 
 ## Dosage spectrophotométrique (ou colorimétrique)
 
-{{% note tip %}}
+{{< note tip >}}
 
 - **Doser une solution** consiste à *déterminer la concentration (molaire) d'une espèce chimique en solution*.
 - Un dosage colorimétrique est un type de dosage possible lorsque l'espèce chimique colore la solution et que la loi de Beer-Lambert peut être utilisée.
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 - Il est nécessaire de réaliser, dans un premier temps, une **courbe d'étalonnage** à l'aide d'une **échelle de teinte** dont *les concentrations encadrent la concentration recherchée*.
 - *La longueur d'onde du filtre choisi doit correspondre au rayonnement pour lequel l'absorbance de la solution est maximale*.
-{{% /note %}}
+{{< /note >}}

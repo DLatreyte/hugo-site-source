@@ -1,16 +1,14 @@
 ---
 title: "Exercices du chapitre"
 subtitle: "Livre numérique Le Livre Scolaire"
-author: ""
-type: ""
 date: 2020-10-28T08:01:22+04:00
 draft: false
 toc: true
 tags: ["Ondes", "Période", "Fréquence", "Longueur d'onde", "Onde progressive", "Onde mécanique", "Onde sinusoïdale", "Célérité"]
 categories: ["Physique", "Premières Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 300
 ---
 
 - **Pour s'échauffer :** {{< remote "n° 8, 9, 10" "https://www.lelivrescolaire.fr/page/6862347" >}}
@@ -23,6 +21,6 @@ auto_numbering: true
 
 - **Pour aller plus loin :** {{< remote "n° 32, 34, 36" "https://www.lelivrescolaire.fr/page/6862418" >}}
 
-{{% solution "Solutions" %}}
+{{< solution "Solutions" >}}
 {{% remote "Fichier au format pdf" "/premieres-pc/chap-4/chap-4-3-1.pdf" %}}
-{{% /solution %}}
+{{< /solution >}}

@@ -2,15 +2,14 @@
 title: "Le pH"
 subtitle: ""
 author: "Georges Carpéni"
-type: ""
 date: 2020-10-03T13:08:33+04:00
 draft: false
 toc: true
 tags: ["pH", "Acide", "Base"]
 categories: ["Chimie"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 9900
 ---
 [^1]: En ions-grammes hydrogène par litre de solution, soit le poids en grammes de tous les atomes hydrogènes ionisables présents dans la solution.
 [^2]: Les notations $\pu{0,1 M}$ et $\pu{1 M}$, courantes en chimie, signifient que la solution chlorhydrique contient seulement $1 / 10^e$ de molécule-gramme (mole) d'acide
@@ -106,7 +105,7 @@ solution donnée, avec leurs concentrations respectives.
 ## L'activité $\ce{H+}$
 
 Pour tenir compte de cette composition dans le détail, la thermodynamique
-définit les grandeurs appelées « activité » et « force ionique »[^4]. Sans insister, notons simplement, sur l'exemple des ions hydrogène que, entre la concentration $[ \ce{H+} ]$, définie précédemment, et l'activité, en abrégé $( \ce{H+} )$, il y a la relation $( \ce{H+} ) = f \\, [ \ce{H+} ]$, dans laquelle $f$ représente le « coefficient d'activité »[^5]. Les résultats obtenus précédemment se traduiront donc, en définitive,
+définit les grandeurs appelées « activité » et « force ionique »[^4]. Sans insister, notons simplement, sur l'exemple des ions hydrogène que, entre la concentration $[ \ce{H+} ]$, définie précédemment, et l'activité, en abrégé $( \ce{H+} )$, il y a la relation $( \ce{H+} ) = f \, [ \ce{H+} ]$, dans laquelle $f$ représente le « coefficient d'activité »[^5]. Les résultats obtenus précédemment se traduiront donc, en définitive,
 par la proposition suivante : une solution est d'autant plus acide, que
 l'activité des ions hydrogène libres est plus élevée. Comme, dans la
 pratique, l'activité des ions hydrogène peut varier dans de très larges

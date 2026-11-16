@@ -1,17 +1,14 @@
 ---
 title: "De la structure à l'interprétation des propriétés d'une espèce chimique"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-04-13T20:42:54+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 130
 ---
 
 ## Au programme

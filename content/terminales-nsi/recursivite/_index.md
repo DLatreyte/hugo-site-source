@@ -1,17 +1,14 @@
 ---
 title: "Récursivité"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-09-05T18:33:42+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 50
 ---
 
 ## Au programme

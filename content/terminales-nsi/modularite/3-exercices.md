@@ -1,16 +1,14 @@
 ---
 title: "Exercices"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-09-20T05:12:32+04:00
 draft: false
 toc: true
 tags: ["Modules", "Exceptions", "Assertions"]
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: false
 auto_numbering: true
+weight: 300
 ---
 
 ## Enquêter sur une erreur dans un calcul de $\pi$
@@ -43,7 +41,7 @@ def approxpi(n: int) -> float:
     e. `IndexError`
     f. `NameError`
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```python
 >>> approxpi(1000)
@@ -56,11 +54,11 @@ Traceback (most recent call last):
 ZeroDivisionError: division by zero
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 2. Bien que l’exécution soit interrompue ligne 4, la source de l’erreur est ailleurs  
 Expliquer d’où provient l’erreur et proposer un correctif.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - $k$ ne doit jamais prendre la valeur 0, donc `range` doit commencer à 1.
 - Si on veut que la dernière valeur de la boucle soit $n$, comme l'indique le commentaire dans le code, la borne supérieure doit être égale à $n+1$.
@@ -77,7 +75,7 @@ ou
         s = s + terme(k + 1)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Enquêter sur une erreur de calcul de produit scalaire
 
@@ -143,19 +141,19 @@ IndexError: tuple index out of range
 ```
 
 1. En analysant le `traceback` donné plus haut, indiquer quel est le type d’exception qui a été levée, et sur quelle ligne de code.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - L'exception est de type `IndexError`.
 - Cette exception est levée à la ligne 9 du code.
-{{% /solution %}}
+{{< /solution >}}
 
 2. Sur la ligne en question, qu’est-ce qui pourrait avoir provoqué l’erreur ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 L’exception `IndexError` est levée si on essaie d’accéder à une valeur stockée dans une séquence en utilisant un indice invalide, par exemple si on essaie d’accéder à la quatrième valeur d’une liste, d’un tuple ou d’une chaîne de caractères qui n’en contient que 3. À la ligne 9, l’exception a donc été provoquée par l’accès à `v1[k]` ou par l’accès à `v2[k]`, car l’un des deux vecteurs (ou les deux) n’a pas de case pour la valeur de `k` à ce tour de boucle. Or `k` varie entre `0` et `len(v1)`. On en déduit que c’est le vecteur `v2` qui est trop court : soit `v1` a plus de 3 valeurs (et `v2` en a bien 3), soit `v1` a bien 3 valeurs et il en manque dans `v2`.
-{{% /solution %}}
+{{< /solution >}}
 
 3. Proposer d’ajouter un affichage `print(...)` à un endroit du programme pour essayer de mettre en évidence la nature du problème, puis exécuter à nouveau le code.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Il faut vérifier quelles valeur de `v1` et `v2`.
 
 ```python
@@ -170,10 +168,10 @@ def scalaire(v1: tuple, v2: tuple) -> float:
     return s
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 4. Expliquer l’erreur. Pourquoi ne se produit-elle pas toujours au même moment ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - **Exemple de résultat :**
 
@@ -210,10 +208,10 @@ def random_vect(n: int) -> tuple:
 ```
 
 On constate que si `val` prend la valeur 0 rien n'est ajouté à la liste `v`. On ne peut donc pas être certain de la longueur de `v` puisque le nombre de tour de boucle est lui fixé.
-{{% /solution %}}
+{{< /solution >}}
 
 5. Proposer un correctif.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 La solution consiste à utiliser plutôt une boucle `TantQue` avec un test sur la longueur de la liste générée.
 
 ```python
@@ -230,7 +228,7 @@ def random_vect(n: int) -> tuple:
     return tuple(v)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Calculer la valeur d’un mot : arithmancie
 

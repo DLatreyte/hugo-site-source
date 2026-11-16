@@ -1,16 +1,14 @@
 ---
 title: "Représentation d'un graphe en informatique"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-04-22T04:48:57+04:00
 draft: false
 toc: true
 tags: ["Graphe", "Structure de données"]
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 200
 ---
 
 > Plusieurs modes de représentation peuvent être implémentés pour stocker des graphes : *matrices d’adjacence (ou sommet-sommet), listes des voisins, des successeurs ou des prédécesseurs*. Lors de cette séance nous allons écrire les classes réalisant ces implémentations.
@@ -29,7 +27,7 @@ def __init__(self: GrapheM, mat: List[List[int]]) -> None:
 
 **Remarque :** cette classe possède l'attribut `mat` qui référence la matrice d'adjacence.
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 class GrapheM:
@@ -45,11 +43,11 @@ class GrapheM:
         self.mat = mat
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 2. Ajouter à la classe `GrapheM` une redéfinition de la méthode spéciale `__str__` de façon à ce qu'un appel à la fonction `print` avec comme argument un objet représentant un graphe donne un affichage qui rappelle celui d'une matrice (lignes et colonnes).
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def __str__(self: GrapheM) -> str:
@@ -62,7 +60,7 @@ def __str__(self: GrapheM) -> str:
     return rep
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 3. Écrire le code d'une fonction `main` qui permet de tester l'implémentation de la classe et la représentation du graphe à l'écran.\
 Choisir comme matrices tests
@@ -86,7 +84,7 @@ $$
 Remarque
 : Les sommets du graphe sont représentés par des entiers naturels.
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def main():
@@ -104,7 +102,7 @@ def main():
 main()
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 4. Représenter les deux graphes sur une feuille.
 
@@ -116,7 +114,7 @@ assert graph11.nbre_sommets() == 3
 assert graph21.nbre_sommets() == 4
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 Une matrice sommet-sommet est carrée ; le nombre de lignes est donc égal au nombre de colonnes.
 
 ```python
@@ -127,7 +125,7 @@ def nbre_sommets(self: GrapheM) -> int:
     return len(self.mat)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 6. Écrire le code de la fonction `est_lie` dont la spécification est :
 
@@ -147,7 +145,7 @@ assert graph11.est_lie(0, 1) == True
 assert graph11.est_lie(2, 0) == False
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def est_lie(self: GrapheM, i: int, j: int) -> bool:
@@ -158,13 +156,13 @@ def est_lie(self: GrapheM, i: int, j: int) -> bool:
     return self.mat[i][j] != 0
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 7. Quelle est la particularité de la matrice sommet-sommet d'un graphe non orienté ?
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 La matrice est symétrique par rapport à la diagonale.
-{{% /solution %}}
+{{< /solution >}}
 
 8. Écrire le code de la fonction `est_non_oriente` dont la spécification est
 
@@ -184,7 +182,7 @@ assert graph11.est_non_oriente() == False
 assert graph21.est_non_oriente() == True
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def est_non_oriente(self: GrapheM) -> bool:
@@ -202,7 +200,7 @@ def est_non_oriente(self: GrapheM) -> bool:
     return True
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Liste d'adjacence
 
@@ -220,7 +218,7 @@ def __init__(self: GrapheL, lst: List[List[int]]) -> None:
 
 **Remarque :** cette classe possède l'attribut `lst` qui référence une liste d'adjacence.
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 class GrapheL:
@@ -232,11 +230,11 @@ class GrapheL:
         self.lst = lst
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 10. Ajouter à la classe `GrapheL` une redéfinition de la méthode spéciale `__str__` de façon à ce qu'un appel à la fonction `print` avec comme argument un objet représentant un graphe donne un affichage qui rappelle celui d'une liste de listes.
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def __str__(self: GrapheLV) -> str:
@@ -254,11 +252,11 @@ def __str__(self: GrapheLV) -> str:
     return rep
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 11. Tester le code précédent à l'aide des listes des voisins/successeurs des graphes dont les matrices sommet-sommet sont données dans la première section.
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 lst1 = [[0, 1], [1, 2], [2]]
@@ -271,7 +269,7 @@ print(graph12)
 print(graph22)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 12. Écrire le code de la méthode `nbre_sommets` qui détermine le nombre de sommets du graphe.\
 Jeu de tests :
@@ -281,7 +279,7 @@ assert graph12.nbre_sommets() == 3
 assert graph22.nbre_sommets() == 4
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def nbre_sommets(self: GrapheL) -> int:
@@ -291,7 +289,7 @@ def nbre_sommets(self: GrapheL) -> int:
     return len(self.lst)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 13. Écrire le code de la fonction `est_lie` dont la spécification est :
 
@@ -310,7 +308,7 @@ assert graph12.est_lie(0, 1) == True
 assert graph12.est_lie(2, 0) == False
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def est_lie(self: GrapheL, i: int, j: int) -> bool:
@@ -320,7 +318,7 @@ def est_lie(self: GrapheL, i: int, j: int) -> bool:
     return j in self.lst[i]
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 14. Écrire le code de la fonction `est_non_oriente` dont la spécification est
 
@@ -338,7 +336,7 @@ assert graph12.est_non_oriente() == False
 assert graph22.est_non_oriente() == True
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def est_non_oriente(self: GrapheL) -> bool:
@@ -353,7 +351,7 @@ def est_non_oriente(self: GrapheL) -> bool:
     return True
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Passage d'une représentation à l'autre
 
@@ -375,7 +373,7 @@ graph23 = graph22.lst_to_mat()
 print(graph23)
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def lst_to_mat(self: GrapheL) -> GrapheM:
@@ -398,7 +396,7 @@ def lst_to_mat(self: GrapheL) -> GrapheM:
     return GrapheM(mat)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 16. Ajouter à la classe `GrapheM` la méthode `mat_to_lst` dont la spécification est :
 
@@ -418,7 +416,7 @@ graph24 = graph21.mat_to_lst()
 print(graph24)
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def mat_to_lst(self: GrapheM) -> GrapheL:
@@ -435,7 +433,7 @@ def mat_to_lst(self: GrapheM) -> GrapheL:
     return GrapheL(liste)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Code complet
 

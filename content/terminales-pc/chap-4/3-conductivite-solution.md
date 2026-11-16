@@ -1,38 +1,36 @@
 ---
 title: "Conductimétrie"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-10-10T21:23:43+04:00
 draft: false
 toc: true
 tags: ["Conductimétrie", "Kohlrausch", "Courant électrique", "Conductance", "Conductivité", "Conductivité molaire ionique"]
 categories: ["Chimie", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 300
 ---
 [^1]: En chimie on préfère utiliser la conductance que la résistance.
 [^2]: En réalité il faut faire bien plus d'expériences pour déterminer la dépendance exacte de la conductance envers les différentes grandeurs&nbsp;!
 
 ## Courant électrique
 
-{{% note tip %}}
+{{< note tip >}}
 On appelle **courant électrique** le *déplacement d'ensemble de charges électriques*.
 
 - Dans les **solides**, les charges mobiles sont les *électrons*&nbsp;;
 - Dans les **solutions ionique**, les charges mobiles sont les *ions*.
-{{% /note %}}
+{{< /note >}}
 
-{{% note warning %}}
+{{< note warning >}}
 Les électrons ne peuvent pas se déplacer librement dans les solutions&nbsp;!
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 
 - *À l'extérieur d'un générateur, le courant électrique circule du point de plus haut potentiel électrique (borne $+$ du générateur) vers le point de plus bas potentiel électrique (borne $-$ du générateur)*.
 - Cette circulation correspond à la **circulation des charges positives**.
-{{% /note %}}
+{{< /note >}}
 
 - *Dans un circuit solide, aucune charge positive ne peut se déplacer*. Les **électrons** circulent donc dans le *sens opposé au sens de circulation du courant électrique*.
 - *Toute solution ionique est électriquement neutre*&nbsp;: elle contient donc forcément des **cations** et des **anions**.
@@ -70,34 +68,34 @@ Les paramètres modifiés pour parvenir aux différents résultats[^2], dans la 
 - ceux qui dépendent de la nature de la solution chimique&nbsp;;
 - ceux qui ne dépendent que de la construction de la cellule.
 
-{{% note tip %}}
+{{< note tip >}}
 La conductance $G$ d'une portion de **solution ionique**, de section $S$ et de longueur $L$, peut se mettre sous la forme&nbsp;: $$G = \sigma \cdot \dfrac{S}{L}$$
 
 **Unités :** $G$ en siemens $\pu{S}$, $\sigma$ en siemens par mètre $\pu{S.m-1}$, $S$ en mètre carré $\pu{m2}$, $L$ en mètre $\pu{m}$.
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 - Le quotient $\dfrac{S}{L}$ est une caractéristique de la cellule utilisée. Il est généralement déterminé à la construction de la cellule.
 - La grandeur $\sigma$ est appelée **conductivité** de la solution, elle dépend *de la nature et de la concentration des ions* présents dans la solution et de la *température*.
-{{% /note %}}
+{{< /note >}}
 
 ## Conductivité d'une solution ionique -- Loi de Kohlrausch
 
-{{% note tip %}}
+{{< note tip >}}
 Dans une *solution ionique diluée*, la conductivité $\sigma$ de la solution est **proportionnelle à la concentration en soluté apporté** $C$.
-$$\sigma = \Lambda \\, C$$
+$$\sigma = \Lambda \, C$$
 où $\Lambda$ est la **conductivité molaire** de la solution.  
 **Unité :** $\pu{S.m2.mol-1}$.
-{{% /note %}}
+{{< /note >}}
 
 ## Conductivité molaire ionique
 
-{{% note tip %}}
+{{< note tip >}}
 Dans une *solution ionique diluée* contenant les ions $\ce{M^+}$ et $\ce{X^-}$, dont les concentrations effectives sont notées $[\ce{M^+}]$ et $[\ce{X^-}]$, la conductivité de la solution peut se mettre sous la forme&nbsp:
-$$\sigma = \lambda_{M^+} \\, [\ce{M^+}] + \lambda_{X^-} \\, [\ce{X^-}]$$
+$$\sigma = \lambda_{M^+} \, [\ce{M^+}] + \lambda_{X^-} \, [\ce{X^-}]$$
 Les quantités $\lambda_{\ce{M^+}}$ et $\lambda_{\ce{X^-}}$ sont appelées **conductivités molaires ioniques** des ions $\ce{M^+}$ et $\ce{X^-}$.  
 **Unité :** $\pu{S.m2.mol-1}$.
-{{% /note %}}
+{{< /note >}}
 
 **Remarque :** La conductivité molaire ionique d'un ion ne dépend que de la **température** et de la **nature de l'ion**.

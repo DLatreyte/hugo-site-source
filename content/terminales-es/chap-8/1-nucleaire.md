@@ -1,16 +1,14 @@
 ---
 title: "Le nucléaire comme choix énergétique"
 subtitle: "Chapitre 4,1"
-author: ""
-type: ""
 date: 2021-02-11T06:09:05+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 100
 ---
 
 > Cette activité présente la spécificité du choix du nucléaire pour la production d’électricité en France.

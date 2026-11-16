@@ -1,16 +1,14 @@
 ---
 title: "Détermination de la capacité thermique massique du granite"
 subtitle: ""
-author: ""
-type: ""
 date: 2022-03-06T17:40:40+04:00
 draft: false
 toc: true
 tags: []
 categories: ["Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 500
 ---
 
 On trouve sur la page Wikipedia dédiée au [granite](https://fr.wikipedia.org/wiki/Granite) : « Le granite et ses roches associées forment l'essentiel de la croûte continentale de la planète. C'est un matériau résistant très utilisé en construction, dallage, décoration, sculpture, sous l'appellation granit.\
@@ -19,7 +17,7 @@ De manière plus anecdotique, **le granite peut aussi servir d'alternative aux g
 
 > L'objectif de cette séance est d'essayer de comprendre cette dernière phrase : au-delà de la non modification du goût, quelle caractéristique du granite permet son utilisation en remplacement d'un glaçon ?
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Calorimètre
 
@@ -29,7 +27,7 @@ Le calorimètre est un appareil destiné à mesurer les *échanges de chaleur* (
     <a href="https://fr.wikipedia.org/wiki/Calorimètre">Wikipedia</a>
 </div>
 
-{{% /note %}}
+{{< /note >}}
 
 ## Capacité thermique du calorimètre
 
@@ -49,17 +47,17 @@ Noter $m_1$ la masse de cette « eau froide » et $\theta_1$ sa température.
 
 ### Exploitation
 
-{{% note normal %}}
+{{< note normal >}}
 
 Capacité thermique massique de l'eau : $c_{\text{eau}} = \pu{4,18 J.K-1.g-1}$.
 
-{{% /note %}}
+{{< /note >}}
 
 1. Mettre en œuvre un raisonnement qui permet de déterminer la capacité thermique du calorimètre.
 
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-- Système étudié : $\\{m_1 + m_2 + \text{paroi interne calorimètre} \\}$
+- Système étudié : $\{m_1 + m_2 + \text{paroi interne calorimètre} \}$
 
 - Puisque le système est isolé, $$\Delta U(\text{eau froide}) + \Delta U(\text{eau chaude}) + \Delta U(\text{calorimètre}) = 0$$
 donc
@@ -68,10 +66,10 @@ Finalement
 $$
 C = \dfrac{m_1 c_{\text{eau}} (\theta_3 - \theta_1) + m_2 c_{\text{eau}} (\theta_3 - \theta_2)}{\theta_1 - \theta_3}
 $$
-{{% /solution %}}
+{{< /solution >}}
 
 2. Effectuer le calcul en fonction des résultats des mesures.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - Eau froide : $m_1 = \pu{105,1 g}$, $\theta_1 = \pu{19,0 °C}$ ;
 - Eau chaude : $m_2 = \pu{76,5 g}$, $\theta_2 = \pu{38,5 °C}$ ;
@@ -85,7 +83,7 @@ $$
 C = \pu{72,3 J.°C-1}
 $$
 
-{{% /solution %}}
+{{< /solution >}}
 
 3. Récolter les résultats de tous les groupes et utiliser le programme à [cette adresse](https://dlatreyte.github.io/jupyter-lite/lab?path=incertitude-type-a.ipynb) afin de déterminer la valeur de la capacité thermique $C$ du calorimètre.
 

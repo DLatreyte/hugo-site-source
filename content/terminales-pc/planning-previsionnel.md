@@ -1,16 +1,14 @@
 ---
 title: "Planning Previsionnel"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-08-30T10:00:44+04:00
 draft: true
 toc: false
 tags: []
 categories: ["Terminale Spé PC", "Planning"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 9900
 ---
 
 Ce à quoi ressemblera peut-être l'année jusqu'aux épreuves... Des ajustements seront sûrement nécessaires mais cela vous donnera tout de même une idée du rythme qu'il va falloir être capable de soutenir.

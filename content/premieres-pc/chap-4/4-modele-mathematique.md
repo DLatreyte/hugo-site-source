@@ -1,21 +1,19 @@
 ---
 title: "Simulation d'une onde mécanique"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-11-01T15:10:54+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 400
 ---
 
-{{% note normal %}}
+{{< note normal >}}
 La simulation se trouve à cette {{< remote "adresse" "https://repl.it/@dlatreyte/ondes" >}}
-{{% /note %}}
+{{< /note >}}
 
 1. Lancer l'animation.
 

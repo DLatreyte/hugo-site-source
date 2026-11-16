@@ -1,21 +1,19 @@
 ---
 title: "Le langage SQL : Le langage de manipulation de données (LMD)"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-02-04T04:29:53+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 400
 ---
 
 ## Introduction
 
-{{% note normal %}}
+{{< note normal >}}
 Le langage SQL est composé de différents sous-ensembles :
 
 LMD : Langage de Manipulation des données (DML, Data Manipulation Language)
@@ -26,7 +24,7 @@ LDD : Langage de Définition des Données (DDL, Data Definition Language)
 
 LCD : Langage de Contrôle des Données (DCL, Data Control Language)
 :   *Permet de définir les contraintes d’intégrité, de gérer les accès et les autorisations* (administration). Composé des ordres : `GRANT`, `REVOKE`, `LOCK`. Recouvre les déclencheurs (triggers), procédures cataloguées.
-{{% /note %}}
+{{< /note >}}
 
 Le programme se limite au sous-ensemble **LMD**. Nous serons tout de même obligés d'utiliser l'ordre de création de table `CREATE TABLE`.
 
@@ -41,9 +39,9 @@ Remarque
 
 SQLite est le moteur de base de données le plus utilisé au monde.
 
-{{% note warning %}}
+{{< note warning >}}
 Chaque SGBD possède, en plus du SQL, des commandes propres : {{< remote "section 3 de la documentation officielle" "https://sqlite.org/cli.html" >}} Ces dernières **commencent toujours par un point** en SQLite et **ne devront pas être apprises !**
-{{% /note %}}
+{{< /note >}}
 
 ## Création d'une première base de données
 
@@ -113,9 +111,9 @@ La commande permettant d'intégrer le tuple `("Hanks", "Tom", "Homme", "USA", 64
 INSERT INTO Celebrites VALUES ("Hanks", "Tom", "Homme", "USA", 64);
 ```
 
-{{% note warning %}}
+{{< note warning >}}
 La commande, telle qu'elle est donnée ici, impose le respect de l'ordre des informations dans le tuple.
-{{% /note %}}
+{{< /note >}}
 
 6. Intégrer la commande précédente au fichier `celebrites.sql`. Exécuter cette commande. La sortie fait-elle apparaître le résultat de cette commande ?
 
@@ -138,7 +136,7 @@ Exécuter ces commandes.
 
 Vérifier que le fichier `cinema.sqlite` a bien été créé.
 
-{{% note normal %}}
+{{< note normal >}}
 Désormais, à la prochaine utilisation de la base de données il ne sera plus nécessaire de relancer toute la création de la base de données (ce qui pourrait être très très long dans le cas d'une base conséquente) mais seulement la commande
 
 ```SQL
@@ -146,60 +144,60 @@ Désormais, à la prochaine utilisation de la base de données il ne sera plus n
 ```
 
 au début du fichier `main.sql` (qui ne devra alors plus lire le fichier `celebrites.sql`).
-{{% /note %}}
+{{< /note >}}
 
 ## Premières requêtes : Projection
 
-{{% note warning %}}
+{{< note warning >}}
 Toutes les commandes à venir devront être entrées dans le fichier `main.sql` après la commande de lecture du fichier `celebrites.sql` (ou après la commande de lecture du fichier `cinema.sqlite`).
-{{% /note %}}
+{{< /note >}}
 
 10. La commande `SELECT * FROM Celebrites;` est une requête. Que signifie le caractère `*` dans cette commande ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Le caractère `*` indique que l'on souhaite que la relation retournée par la commande `SELECT` contienne tous les attributs (champs).
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note tip %}}
+{{< note tip >}}
 *Une **projection** consiste à filtrer certains
 attributs d'une relation. Le résultat d'une projection est une relation de
 **degré** inférieur à celui de la relation de départ.*
-{{% /note %}}
+{{< /note >}}
 
 11. Adapter la commande précédente de façon à obtenir tous les noms des acteurs présents dans la base de données.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```SQL
 SELECT Nom 
 FROM Celebrites;
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 12. Adapter la commande précédente de façon à obtenir tous les noms et sexes des acteurs présents dans la base de données.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```SQL
 SELECT Nom, Sexe 
 FROM Celebrites;
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Premières requêtes : Sélection
 
 ### Sélections simples
 
-{{% note tip %}}
+{{< note tip >}}
 *La **sélection** consiste à filtrer des
 enregistrements d'une relation en fonction d'une **condition**. Le
 résultat d'une sélection est une relation de **même degré** mais de
 **cardinalité différente**.*
 
 Une sélection s'effectue en langage SQL à l'aide de la clause `WHERE`.
-{{% /note %}}
+{{< /note >}}
 
 13. Écrire la commande qui retourne toutes les informations relatives aux femmes présentes dans la base de données.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```SQL
 SELECT * 
@@ -207,10 +205,10 @@ FROM Celebrites
 WHERE Sexe = "Femme";
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 14. Adapter la commande précédente de façon à obtenir tous les noms et prénoms des femmes présentes dans la base de données.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```SQL
 SELECT Nom, prenom 
@@ -218,12 +216,12 @@ FROM Celebrites
 WHERE Sexe = "Femme";
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ### Opérateurs de comparaison
 
 15. Quels sont les noms de tous les acteurs (sans distinction de sexe) qui n'ont pas pour pays d'origine les USA.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```SQL
 SELECT Nom
@@ -231,10 +229,10 @@ FROM Celebrites
 WHERE Pays != "USA";
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 16. Quels sont les noms des acteurs (sans distinction de sexe) qui ont plus de 40 ans ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```SQL
 SELECT Nom
@@ -242,10 +240,10 @@ FROM Celebrites
 WHERE Age > 40;
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 17. Quels sont les noms et prénoms des acteurs (sans distinction de sexe) qui ont plus de 40 ans ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```SQL
 SELECT Nom, Prenom
@@ -253,10 +251,10 @@ FROM Celebrites
 WHERE Age > 40;
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 18. Quels sont les noms des acteurs (sans distinction de sexe) qui ont au plus 36 ans ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```SQL
 SELECT Nom
@@ -264,10 +262,10 @@ FROM Celebrites
 WHERE Age <= 36;
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 19. Quels sont les noms des actrices françaises ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```SQL
 SELECT Nom
@@ -275,10 +273,10 @@ FROM Celebrites
 WHERE Sexe = "Femme" AND Pays = "France";
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 20. Quels sont les ages des acteurs américains hommes dont le prénom est Tom ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```SQL
 SELECT Age
@@ -286,10 +284,10 @@ FROM Celebrites
 WHERE Sexe = "Homme" AND Prenom = "Tom" AND Pays = "USA";
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 21. Quels sont les prénoms des acteurs (sans distinction de sexe) australiens ou de plus de 40 ans ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```SQL
 SELECT Prenom
@@ -297,7 +295,7 @@ FROM Celebrites
 WHERE Age > 40 OR Pays = "Australie";
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Exercices d'application
 
@@ -329,18 +327,18 @@ WHERE Age > 40 OR Pays = "Australie";
 
 ## Première requêtes : Ordres SQL
 
-{{% note normal %}}
+{{< note normal >}}
 
 On reprend, dans cette partie, l'étude de la relation `Celebrites`.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 L'opérateur `ORDER BY` est utilisé pour *trier le résultat d'une projection*. Par défaut ce tri s'effectue par *ordre croissant* (lexicographique ou numérique). Pour trier par ordre décroissant, il faut ajouter le mot clé `DESC`, pour trier par ordre croissant on utilise `ASC`.
-{{% /note %}}
+{{< /note >}}
 
 22. Rechercher toutes les informations sur les acteurs, triées par age croissant.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```SQL
 SELECT *
@@ -348,10 +346,10 @@ FROM Celebrites
 ORDER BY Age;
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 23. Rechercher toutes les informations sur les acteurs, triées par pays d'origine (par ordre décroissant).
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```SQL
 SELECT *
@@ -359,10 +357,10 @@ FROM Celebrites
 ORDER BY Pays DESC;
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 24. Rechercher les noms et prénoms des acteurs triés par age et nom croissants.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```SQL
 SELECT Nom, Prénom
@@ -370,10 +368,10 @@ FROM Celebrites
 ORDER BY Age, Nom;
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 25. Rechercher les noms et prénoms des acteurs triés par age décroissant et nom croissant.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```SQL
 SELECT Nom, Prénom
@@ -381,10 +379,10 @@ FROM Celebrites
 ORDER BY Age DESC, Nom ASC;
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 26. Rechercher les ages et sexes des acteurs, triés par age croissant.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```SQL
 SELECT Age, Sexe
@@ -392,14 +390,14 @@ FROM Celebrites
 ORDER BY Age;
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note tip %}}
+{{< note tip >}}
 L'opérateur `BETWEEN` est utilisé pour *sélectionner une valeur numérique dans un intervalle*.
-{{% /note %}}
+{{< /note >}}
 
 27. Écrire une requête qui affiche toutes les informations sur les artistes dont les ages sont compris entre 30 et 60 ans.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```SQL
 SELECT Age, Sexe
@@ -407,22 +405,22 @@ FROM Celebrites
 WHERE Age BETWEEN 30 AND 60;
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 ## Première requêtes : recherche de motifs lors d'une sélection
 
-{{% note normal %}}
+{{< note normal >}}
 
 On reprend, dans cette partie, l'étude de la relation `Celebrites`.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 L'opérateur `LIKE` permet de rechercher un motif lors d'une sélection.
-{{% /note %}}
+{{< /note >}}
 
 28. Rechercher les prénoms des acteurs dont le nom commence par la lettre `j`.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```SQL
 SELECT Prenom
@@ -430,10 +428,10 @@ FROM Celebrites
 WHERE Nom LIKE 'J%';
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 29. Rechercher les noms et prénoms des acteurs dont le sexe commence par la lettre `h`, trié par nom croissant.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```SQL
 SELECT Nom, Prenom
@@ -442,10 +440,10 @@ WHERE Sexe LIKE 'h%'
 ORDER BY Nom;
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 30. Rechercher les noms et prénoms des acteurs dont le prénom se termine par la lettre `t`.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```SQL
 SELECT Nom, Prenom
@@ -453,10 +451,10 @@ FROM Celebrites
 WHERE Prenom LIKE '%t';
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 31. Rechercher les noms et prénoms des acteurs dont le prénom contient la lettre `a`.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```SQL
 SELECT Nom, Prenom
@@ -464,10 +462,10 @@ FROM Celebrites
 WHERE Prenom LIKE '%a%';
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 32. Rechercher les noms et prénoms des acteurs dont le pays d'origine commence par un `a`.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```SQL
 SELECT Nom, Prenom
@@ -475,10 +473,10 @@ FROM Celebrites
 WHERE Pays LIKE 'a%';
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 33. Rechercher les noms et prénoms des acteurs dont le pays d'origine se termine par un `l`.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```SQL
 SELECT Nom, Prenom
@@ -486,10 +484,10 @@ FROM Celebrites
 WHERE Pays LIKE '%l';
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 34. Rechercher les noms et prénoms des acteurs dont le pays d'origine comporte un `a`.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```SQL
 SELECT Nom, Prenom
@@ -497,7 +495,7 @@ FROM Celebrites
 WHERE Pays LIKE '%a%';
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 #### Exercice d'application : base Animaux
 
@@ -519,18 +517,18 @@ WHERE Pays LIKE '%a%';
 
 ## Modification des entrées d'une base de données
 
-{{% note normal %}}
+{{< note normal >}}
 
 On reprend, dans cette partie, l'étude de la relation `Celebrites`.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note tip %}}
+{{< note tip >}}
 L'ordre `UPDATE` permet de modifier un enregistrement dans une table. La clause `WHERE` est utilisée pour sélectionner l'enregistrement.
-{{% /note %}}
+{{< /note >}}
 
 35. Faire en sorte que l'age de l'actrice Margot Robbie soit égal à 29 ans.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```SQL
 UPDATE Celebrites
@@ -538,13 +536,13 @@ SET Age = 29
 WHERE Nom = "Robbie";
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 Vérifier que la modification a bien été effectuée.
 
 36. Modifier le fichier contenant la base de données de façon à ce que la modification, uniquement effectuée en mémoire vive pour l'instant, soit enregistrée de façon permanente.
 
 37. Le vrai nom de Tom Cruise est Thomas Cruise Mapother IV. Modifier l'entrée dans la base de données.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```SQL
 UPDATE Celebrites
@@ -552,21 +550,21 @@ SET Nom = "Cruise Mapother IV", prenom = "Thomas"
 WHERE Nom = "Cruise";
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
-{{% note tip %}}
+{{< note tip >}}
 L'ordre `DELETE` permet de supprimer un enregistrement d'une table. Si aucune clause `WHERE` n'est utilisée, *tous les enregistrements de la table sont supprimés*.
-{{% /note %}}
+{{< /note >}}
 
 38. Supprimer l'acteur Tom Holland de la table Celebrites.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 ```SQL
 DELETE FROM Celebrites
 WHERE Nom = "Holland";
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 #### Exercice d'application : base Superhereos and Villains
 
@@ -596,9 +594,9 @@ WHERE Nom = "Holland";
 
 ## Exercice d'application à partir de données réelles et conséquentes
 
-{{% note normal %}}
+{{< note normal >}}
 Le document de travail se trouve à cette adresse : {{< remote "https://repl.it/@dlatreyte/Indicateurs-lycees-en-France" "https://repl.it/@dlatreyte/Indicateurs-lycees-en-France" >}}
-{{% /note %}}
+{{< /note >}}
 
 La base de donnée contient tous les indicateurs des lycées français présentés sur le site de l’éducation nationale et dont les données sont en accès “libre” sur {{< remote "data.gouv.fr" "https://www.data.gouv.fr/fr/" >}}. La notice descriptive est fournie.
 

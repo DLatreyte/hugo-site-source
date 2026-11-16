@@ -1,17 +1,14 @@
 ---
 title: "Programmation objet"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-09-23T21:06:48+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 80
 ---
 
 ## Au programme

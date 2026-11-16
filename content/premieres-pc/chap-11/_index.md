@@ -1,17 +1,14 @@
 ---
 title: "Mouvement d’un système"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-03-17T08:27:57+04:00
 draft: false
 toc: true
 tags: []
 categories: []
-image: ""
 solution_est_visible: true
 auto_numbering: true
-layout: "single"
+weight: 110
 ---
 
 ## Au programme

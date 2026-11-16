@@ -1,22 +1,20 @@
 ---
 title: "Modélisation des réseaux"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-11-26T06:13:06+04:00
 draft: false
 toc: true
 tags: ["Réseaux", "IP", "Adressage", "TCP", "Ethernet"]
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 100
 ---
 
 
 ## Vocabulaire
 
-{{% note normal %}}
+{{< note normal >}}
 
 - **Réseau :** ensemble d’équipements interconnectés (liaisons mais aussi protocoles).
 
@@ -27,7 +25,7 @@ auto_numbering: true
   - Tous les réseaux internet ne font pas partie de l’Internet.
   - Le WEB (World Wide Web) est seulement une composante de l’Internet.
 
-{{% /note %}}
+{{< /note >}}
 
 ## Structure d'un internet
 
@@ -42,14 +40,14 @@ Chaque type de lien de communication a des caractéristiques propres en termes d
 
 ## Commutation de paquets
 
-{{% note normal %}}
+{{< note normal >}}
 
 La communication entre ordinateurs est basée sur la **commutation de paquets** :
 
 - Les messages sont découpés en paquets de taille limitée ;
 - Chaque paquet est envoyé indépendamment des autres.
 
-{{% /note %}}
+{{< /note >}}
 
 **Remarque :** Nous reviendrons sur la commutation de paquets plus tard.
 
@@ -73,14 +71,14 @@ Imaginons que nous souhaitions envoyer une lettre à un ami. Quelles sont les di
 
 ### Un protocole de communication est un accord entre deux parties sur la manière de communiquer
 
-{{% note normal %}}
+{{< note normal >}}
 
 Un **protocole de communication** définit :
 
 - Le format des messages échangés ;
 - Comment les messages sont échangés.
 
-{{% /note %}}
+{{< /note >}}
 
 ### Qu’est-ce que cela implique pour les réseaux de communications ?
 
@@ -96,11 +94,11 @@ Il est nécessaire de définir :
 
 ## Architecture logique en couches
 
-{{% note normal %}}
+{{< note normal >}}
 
 L'échange d'informations entre deux ordinateurs est un processus complexe. **On décompose la tâche de transmission des données en plusieurs sous-tâches indépendantes**.
 
-{{% /note %}}
+{{< /note >}}
 
 **Remarque :** chaque sous-tâche correspond à une couche dans l'architecture en couches.
 
@@ -121,7 +119,7 @@ L'échange d'informations entre deux ordinateurs est un processus complexe. **On
 
 ### Rôle des couches dans le modèle OSI
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Couche « Physique »
 
@@ -139,17 +137,17 @@ Transmission des **paquets/datagrammes** d'une source vers une destination en pa
 
 Transmission de *bout-en-bout* des **segments**, avec fiabilité et efficacité (contrôle de flux, reprise sur erreur, optimisation).
 
-{{% /note %}}
+{{< /note >}}
 
 ### Encapsulation des protocoles
 
-{{% note normal %}}
+{{< note normal >}}
 
 L'encapsulation, en informatique et spécifiquement pour les réseaux informatiques, est un procédé consistant À inclure les données d'un protocole dans un autre protocole.
 
-{{% /note %}}
+{{< /note >}}
 
-{{% note normal %}}
+{{< note normal >}}
 
 Lors d’une transmission, les données traversent chacune des couches au niveau de la machine émettrice. À chaque couche, une information est ajoutée au paquet de données, il s’agit d’un en-tête, ensemble d’informations qui garanti la transmission. Au niveau de la machine réceptrice, lors du passage dans chaque couche, l’en-tête est lu, puis supprimé. Ainsi À la réception, le message est dans son état originel.
 
@@ -161,7 +159,7 @@ Lors d’une transmission, les données traversent chacune des couches au niveau
 - enfin on parle de **trame** au niveau de la **couche liaison** ;
 - et de **signal** au niveau de la **couche physique**.
 
-{{% /note %}}
+{{< /note >}}
 
 <img src="/terminales-nsi/chap-11/chap-11-1/reseau5.png" alt="" width="110%" />
 
@@ -174,12 +172,12 @@ Lorsque l'on veut établir une communication, il est indispensable de posséder 
 3. la route à suivre pour y parvenir.
 Le nom dit « qui » est l'hôte distant, l'adresse nous dit « où » il se trouve et la route « comment » on y parvient.
 
-{{% note normal %}}
+{{< note normal >}}
 
 Les adresses IP (version 4) sont standardisées sous forme d'un **nombre de 32 bits** (**représenté sous forme de quatre entiers de huit bits, séparés par des points**) qui permet à la fois l'identification de chaque hôte et du réseau auquel il appartient. Le choix des nombres composants une adresse IP n'est pas laissé au hasard, au contraire il fait l'objet d'une attention particulière notamment pour faciliter les **opérations de routage**.  
 Chaque adresse IP contient donc deux informations, une **adresse de réseau** et une **adresse d'hôte**. *La combinaison des deux désigne de manière **unique** une machine et une seule sur l'Internet*.
 
-{{% /note %}}
+{{< /note >}}
 
 **Remarque :** la version IPv4 du protocole IP ne permet plus de définir un nombre d'adresses utilisables suffisant. Cette version est progressivement remplacée par la version IPv6 qui ne sera pas abordée ici.
 
@@ -208,16 +206,16 @@ C'est l'adressage historique, il est toujours utilisé sur les réseaux privés 
   - *tous les bits de la partie hôte à 0 : c'est l'**adresse du réseau**.*
 
 1. Calculer le nombre de réseaux différents que l'on peut définir en fonction des classes.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - Classe A : $2^7 = 128$. Le premier bit est fixé 0, on ne peut donc modifier que les sept bits suivants.
 - Classe B : $2^{14} = 16384$. Les deux premiers bits sont fixés à 10, on ne peut donc modifier que les 14 bits suivants.
 - Classe C : $2^{21} = 209752$. Les trois premiers bits sont fixés à 110, on ne peut donc modifier que les 21 bits suivants.
 
-{{% /solution %}}
+{{< /solution >}}
 
 2. Calculer le nombre d'hôtes pour chaque réseau.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 **Rappel :** Deux configurations sont impossibles pour la partie hôte : tous les bits à 0 (adresse réseau) et tous les bits à 1 (adresse de diffusion).
 
@@ -225,19 +223,19 @@ C'est l'adressage historique, il est toujours utilisé sur les réseaux privés 
 - Classe B : $2^{16} -2 = 65534$
 - Classe C : $2^{8} -2 = 254$
 
-{{% /solution %}}
+{{< /solution >}}
 
 ### Sans classe (CIDR : classless interdomain routing)
 
-{{% note normal %}}
+{{< note normal >}}
 
 - Le nombre de bits utilisés pour la partie réseau est accolé à l'adresse IP : $$192.168.0.0/24$$
 
-{{% /note %}}
+{{< /note >}}
 
 ### Comment différentier les bits utilisés pour la partie réseaux de ceux utilisés pour la partie hôte ?
 
-{{% note normal %}}
+{{< note normal >}}
 
 Un **masque de sous-réseau** est un masque distinguant les bits d'une adresse IPv4 utilisés pour identifier le sous-réseau de ceux utilisés pour identifier l'hôte.
 
@@ -245,18 +243,18 @@ Un **masque de sous-réseau** est un masque distinguant les bits d'une adresse I
 - *L'adresse de l'hôte à l'intérieur du sous-réseau est quant à elle obtenue en appliquant l'opérateur ET entre l'adresse IPv4 et le complément à un du masque*.
 
 *On utilise en pratique des masques constitués (sous leur forme binaire) d'une suite de 1 suivis d'une suite de 0 (il y a donc 32 masques réseau possibles).*
-{{% /note %}}
+{{< /note >}}
 
 3. Déterminer les adresses réseau et hôte à partir de l'adresse 192.168.1.2/24.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
 - **Adresse réseau :** il faut réaliser l'opération : 192.168.1.2 & 255.255.255.0
 
 $$
 \def\arraystretch{1.5}
 \begin{array}{cc}
-    & 11000000.10101000.00000001.00000010 \\\\
-   \text{ET} & 11111111.11111111.11111111.00000000 \\\\ \hline
+    & 11000000.10101000.00000001.00000010 \\
+   \text{ET} & 11111111.11111111.11111111.00000000 \\ \hline
    \text{=} & 11000000.10101000.00000001.00000000
 \end{array}
 $$
@@ -267,11 +265,11 @@ soit 192.168.1.0
 $$
 \def\arraystretch{1.5}
 \begin{array}{cc}
-    & 11000000.10101000.00000001.00000010 \\\\
-   \text{ET} & 00000000.00000000.00000000.11111111 \\\\ \hline
+    & 11000000.10101000.00000001.00000010 \\
+   \text{ET} & 00000000.00000000.00000000.11111111 \\ \hline
    \text{=} & 00000000.00000000.00000000.00000010
 \end{array}
 $$
 soit 0.0.0.2
 
-{{% /solution %}}
+{{< /solution >}}

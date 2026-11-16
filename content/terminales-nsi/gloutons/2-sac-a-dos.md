@@ -1,21 +1,19 @@
 ---
 title: "Le problème du sac à dos"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-01-21T06:41:30+04:00
 draft: false
 toc: true
 tags: ["Sac à dos", "Arbres", "Glouton"]
 categories: ["Terminales Spé NSI", "Informatique"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 200
 ---
 
-{{% note warning %}}
+{{< note warning >}}
 [À lire absolument pour en découvrir plus !](https://interstices.info/le-probleme-du-sac-a-dos/)
-{{% /note %}}
+{{< /note >}}
 
 ## Introduction
 
@@ -42,13 +40,13 @@ Quels objets faut-il sélectionner de façon à ce que la valeur totale, dans le
 <!-- Première partie : stratégie gloutonne -->
 ## Méthode de résolution approchée : stratégie gloutonne
 
-{{% note normal %}}
+{{< note normal >}}
 [Solution](https://repl.it/@dlatreyte/sacados)
-{{% /note %}}
+{{< /note >}}
 
 1. Rappeler ce qu'est une stratégie gloutonne.
-{{% solution "Réponse" %}}
-{{% note tip %}}
+{{< solution "Réponse" >}}
+{{< note tip >}}
 Les algorithmes gloutons forment une catégorie d'algorithmes permettant de parvenir à une solution pour un **problème d'optimisation** qui vise à maximiser/minimiser une quantité (plus court chemin (GPS), plus petite durée d'exécution, meilleure organisation d'un emploi du temps, etc.)
 
 Le principe d'un algorithme glouton est le suivant :
@@ -57,13 +55,13 @@ Le principe d'un algorithme glouton est le suivant :
 - À chaque étape, faire le choix optimal de moindre coût (de meilleur gain).
 
 Le choix effectué à chaque étape n'est jamais remis en cause, ce qui fait que cette stratégie permet d'aboutir rapidement à une solution au problème de départ. C'est en ce sens que l'adjectif greedy (glouton/avare) caractérise cet algorithme : il se termine rapidement (glouton) sans fournir beaucoup d'efforts (avare).
-{{% /note %}}
+{{< /note >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 2. Dans la partie principale du programme, définir la liste objets dont les membres sont des dictionnaires représentant les différents objets du problème.\
     Chacun de ces dictionnaires doit posséder les clés `nom`, `masse`, `valeur` associées aux valeurs.
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 if __name__ == "__main__":
@@ -77,16 +75,16 @@ if __name__ == "__main__":
     ]
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 3. Définir la variable `masse_max` et lui affecter la valeur 40.
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 masse_max = 40
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 Le principe de la stratégie gloutonne consiste à ajouter en priorité les objets « les plus efficaces ». « Plus efficace » ne signifie pas « plus grande valeur » mais « plus grande valeur comparativement à la masse ».
 
@@ -107,22 +105,22 @@ def tri_objets(objets: list[dict]) -> list[dict]:
 ```
 
 4. Quel concept propre à la programmation fonctionnelle la fonction `sorted` met-elle en œuvre ?
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 Une fonction en Python peut être passée comme argument à une autre fonction.
-{{% /solution %}}
+{{< /solution >}}
 
 5. Décrire précisément la structure et le comportement de la fonction `tri_objets`.
 
 6. Affecter, dans la fonction `main`, le résultat de l'appel de la fonction `tri_objets` à la variable `objets`. \
     Afficher à l'écran la liste triée.
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 objets = tri_objets(objets)
 print(f"Objets utilisables : {objets}", end="\n")
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 Remarque.
 : Ne pas oublier d'appeler la fonction main.
@@ -143,7 +141,7 @@ def constrution_sac_a_dos(
     """
 ```
 
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 def constrution_sac_a_dos(
@@ -174,16 +172,16 @@ def constrution_sac_a_dos(
     return (liste_objets, valeur, masse_sac)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 8. Affecter, dans la partie principale du programme, le tuple retourné par la fonction `construction_sac_a_dos` aux variables `sac_a_dos`,`valeur` et `masse_sac`.
-{{% solution "Solution" %}}
+{{< solution "Solution" >}}
 
 ```python
 sac_a_dos, valeur, masse_sac = constrution_sac_a_dos(objets, masse_max)
 ```
 
-{{% /solution %}}
+{{< /solution >}}
 
 9. Afficher le résultat :
 
@@ -224,17 +222,17 @@ V2 --- M((" "))
 Les combinaisons s'obtiennent en parcourant l'arbre du sommet jusqu'à chaque extrémité : on obtient alors un vecteur dont on peut calculer la poids et la valeur. Il suffit alors de retenir celui dont la masse est inférieure à la masse maximale et dont la valeur est alors maximale.
 
 10. Au niveau de chaque nœud à quoi correspond le chemin « gauche » : objet retenu ou objet non retenu ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Objet retenu.
-{{% /solution %}}
+{{< /solution >}}
 
 11. Compléter l'arbre avec l'objet D.
 
 12. Si on implémente un algorithme mettant en œuvre la technique présentée ici, on trouve comme solution $[A,C,F]$. Vérifier que cette solution est meilleure que celle donnée par l'algorithme glouton.\
     Pourquoi cette méthode n'est cependant pas utilisable la plupart du temps ? Quel est le nombre de combinaisons possibles ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 Le nombre de combinaisons est $2^n$ où $n$ est le nombre d'objets. Cette croissance exponentielle rend l'algorithme exact beaucoup trop lent.
-{{% /solution %}}
+{{< /solution >}}
 
 13. Écrire le code de la fonction `masse_sac` dont la spécification est :
 

@@ -1,17 +1,15 @@
 ---
 title: "Recherche numérique de zéros de fonctions"
 subtitle: ""
-author: ""
-type: ""
 date: 2022-02-03T21:28:05+04:00
 draft: false
 toc: true
 tags: ["Méthode de Newton", "Dichotomie"]
 categories: ["Terminales Spé NSI"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
 mathjax: true
+weight: 500
 ---
 
 Dans ce document on introduit une méthode permettant d'évaluer numériquement une solution de l'équation $f (x) = 0$, avec $f$ une fonction de $\mathbb{R}$ dans $\mathbb{R}$ (lorsque la solution existe, bien sur) : la **méthode de dichotomie**.
@@ -23,19 +21,19 @@ Dans ce document on introduit une méthode permettant d'évaluer numériquement 
 
 Le raisonnement à mettre en œuvre s'appuie sur le théorème des valeurs intermédiaires.
 
-{{% note normal %}}
+{{< note normal >}}
 
 #### Théorème des valeurs intermédiaires
 
 Soit $f: [a,b] \to \mathbb{R}$ une fonction continue sur un segment. Si $f(a) \cdot f(b) \leqslant 0$, alors il existe $\ell \in [a, b]$ tel que $f(\ell)=0$.
 
-{{% /note %}}
+{{< /note >}}
 
 <img src="/terminales-nsi/chap-10/chap-10-5/chap-10-5-1.png" alt="" width=100% />
 
 ## Principe de résolution du problème
 
-{{% note normal %}}
+{{< note normal >}}
 
 1. On choisit un intervalle $[a, b]$ dans lequel on pense que la fonction $f$ s'annule *une seule fois* (il peut donc être nécessaire de limiter la largeur de cet intervalle).
 
@@ -48,7 +46,7 @@ On est donc parvenu, à l'issu de cette étape, à définir un intervalle dans l
 
 4. **Étapes suivantes.** On continue à répéter le processus jusqu'à ce que l'intervalle soit de longueur inférieure à une longueur choisie (arbitrairement).
 
-{{% /note %}}
+{{< /note >}}
 
 <img src="/terminales-nsi/chap-10/chap-10-5/chap-10-5-2.png" alt="" width=100% />
 
@@ -168,8 +166,8 @@ L'objectif de cette partie pratique est de mettre en œuvre la méthode de dicho
 
 > Utiliser un algorithme itératif puis un algorithme récursif.
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 
 {{% remote "Corrigé sur Replit" "https://replit.com/@dlatreyte/Recherche-de-zandros#main.py" %}}
 
-{{% /solution %}}
+{{< /solution >}}

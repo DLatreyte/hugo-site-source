@@ -1,16 +1,14 @@
 ---
 title: "BAC 2021 PC : Entrées prépondérantes (décembre 2020)"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-12-05T07:01:57+04:00
 draft: true
 toc: true
 tags: []
 categories: ["Réforme du Bac"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 19
 ---
 
 Pour tenir compte de la situation sanitaire ayant affecté l'année scolaire 2019/2020, les notions et capacités expérimentales identifiées ci-dessous, issues du programme de la classe de terminale défini arrêté du 17 juillet 2019 paru au BOEN spécial n° 8 du 25 juillet 2019, s'ajoutent à celles non évaluées pour la partie pratique de l'épreuve terminale de physique-chimie, définies en annexe de la note de service n° 2020-031 du 11 février 2020&nbsp;:

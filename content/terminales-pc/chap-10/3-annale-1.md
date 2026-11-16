@@ -1,16 +1,14 @@
 ---
 title: "Étude d'une pile électrique"
 subtitle: ""
-author: ""
-type: ""
 date: 2021-01-25T21:05:45+04:00
 draft: false
 toc: true
 tags: ["Pile", "Pont salin", "Oxydoréduction", "Transfert direct d'électrons", "Transfert indirect d'électrons", "Capacité d'une pile", "Anode", "Cathode", "Pont salin"]
 categories: ["Chimie", "Terminale Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 300
 ---
 
 L'objectif de cet exercice est l'étude de la pile cuivre -- argent,
@@ -52,11 +50,11 @@ Afin de déterminer expérimentalement le pôle positif de la pile, on branche e
 
 La constante d'équilibre $K$ de cette réaction vaut $K = \pu{2e15}$.
 
-8. Donner la définition du quotient réaction $Q\_{r}$ (pour un état quelconque du système chimique) de la réaction précédente.
+8. Donner la définition du quotient réaction $Q_{r}$ (pour un état quelconque du système chimique) de la réaction précédente.
 
 9. On utilise, pour réaliser cette pile, des solutions de nitrate
     d'argent et de sulfate de cuivre de même concentration $C = \pu{0,10 mol.L-1}$.
-    Quelle est la valeur initiale $Q\_{r,i}$ du quotient de réaction ? En déduire le sens d'évolution spontanée du système.
+    Quelle est la valeur initiale $Q_{r,i}$ du quotient de réaction ? En déduire le sens d'évolution spontanée du système.
 
 10. Retrouve-t-on, à l'issu de la question précédente, la même position du pôle positif qu'à la question 3. ?
 
@@ -72,6 +70,6 @@ La pile débite un courant électrique d'intensité $\pu{10,0 mA}$ (supposée c
 
 ## Corrigé
 
-{{% solution "Corrigé" %}}
+{{< solution "Corrigé" >}}
 {{< remote "Corrigé au format pdf" "/terminales-pc/chap-10/chap-10-3/chap-10-3-1.pdf" >}}
-{{% /solution %}}
+{{< /solution >}}

@@ -1,27 +1,25 @@
 ---
 title: "Couleur des objets"
 subtitle: ""
-author: ""
-type: ""
 date: 2020-11-08T13:59:35+04:00
 draft: false
 toc: true
 tags: []
 categories: ["Physique", "Premières Spé PC"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 200
 ---
 
 ## Spectre d'une lumière
 
 ### Spectre de couleur d’une lumière
 
-{{% note normal %}}
+{{< note normal >}}
 
 - On appelle spectre de couleur d’une lumière le résultat de l’analyse de cette lumière par un **spectroscope** (ou **spectromètre**).
 
-{{% /note %}}
+{{< /note >}}
 
 - Un spectroscope, composé de prismes, **dévie différemment les différentes radiations de la lumière en fonction de leur longueur d’onde** car l’indice de réfraction d’un milieu transparent homogène est différent pour chacune de ces radiations.
 
@@ -32,9 +30,9 @@ auto_numbering: true
 
 <img src="/premieres-pc/chap-5/chap-5-2-1.png" alt="" width="100%" />
 
-{{% note tip %}}
+{{< note tip >}}
 La lumière blanche est une lumière **polychromatique**, *elle est composée d'une  infinité de radiations (d'ondes électromagnétiques sinusoïdales) de longueurs d’ondes différentes*.
-{{% /note %}}
+{{< /note >}}
 
 ### Spectre de la lumière d’un laser hélium-néon
 
@@ -43,9 +41,9 @@ La lumière blanche est une lumière **polychromatique**, *elle est composée d'
 
 <img src="/premieres-pc/chap-5/chap-5-2-2.png" alt="" width="100%" />
 
-{{% note tip %}}
+{{< note tip >}}
 La lumière du laser hélium-néon est une lumière **monochromatique**, *elle est composée d’une seule radiation*.
-{{% /note %}}
+{{< /note >}}
 
 ### Spectre du magnésium
 
@@ -54,9 +52,9 @@ La lumière du laser hélium-néon est une lumière **monochromatique**, *elle e
 
 <img src="/premieres-pc/chap-5/chap-5-2-3.png" alt="" width="100%" />
 
-{{% note tip %}}
+{{< note tip >}}
 La lumière émise par du magnésium est une lumière **polychromatique**, elle est composée de plusieurs radiations de longueurs d’ondes différentes.
-{{% /note %}}
+{{< /note >}}
 
 ### Distribution spectrale de la lumière
 
@@ -74,21 +72,21 @@ La lumière émise par du magnésium est une lumière **polychromatique**, elle 
 
 <img src="/premieres-pc/chap-5/chap-5-2-5.jpg" alt="" width="80%" />
 
-{{% note tip %}}
+{{< note tip >}}
 La **couleur perçue** d’une lumière est *l’impression visuelle qu’elle nous laisse*. Ce n’est pas une propriété intrinsèque de la lumière.
-{{% /note %}}
+{{< /note >}}
 
 ### Couleur spectrale
 
-{{% note tip %}}
+{{< note tip >}}
 On appelle **couleur spectrale**, la couleur de la radiation monochromatique présente dans le spectre de la lumière blanche, qui laisse la même impression de couleur que la **couleur perçue**.
-{{% /note %}}
+{{< /note >}}
 
-{{% note warning %}}
+{{< note warning >}}
 
 - À toute couleur spectrale correspond une couleur perçue.
 - Toute couleur perçue *ne correspond pas forcément à une couleur spectrale* (le magenta, le marron par exemple).
-{{% /note %}}
+{{< /note >}}
 
 - {{< remote "Animation pour illustrer la notion de couleur perçue" "https://phet.colorado.edu/sims/html/color-vision/latest/color-vision_fr.html" >}}
 
@@ -101,9 +99,9 @@ On appelle **couleur spectrale**, la couleur de la radiation monochromatique pr�
 - Lorsqu’un cône reçoit de la lumière il produit un signal électrochimique en rapport avec la quantité de lumière absorbée.
 - Comme chaque cône est sensible à un large intervalle de longueurs d’ondes qui se chevauchent, toute lumière, même monochromatique, peut exciter plusieurs cônes.
 
-{{% note normal %}}
+{{< note normal >}}
 Une radiation, même monochromatique (couleur spectrale), peut exciter les trois cônes.
-{{% /note %}}
+{{< /note >}}
 
 ### Exemple
 
@@ -133,12 +131,12 @@ Le spectre de gauche est celui d'une lumière polychromatique, formée d'une rad
 - L’expérience montre qu'*on peut reconstituer toutes les couleurs que l’œil peut percevoir grâce à un mélange de **trois couleurs primaires**, dans diverses proportions*.
 - Pour diverses raisons, les trois couleurs primaires choisies pour cette synthèse sont&nbsp;: **rouge (R)**, **vert (V)** et **bleu (B)**.
 
-{{% note tip %}}
+{{< note tip >}}
 
 - Trois couleurs sont mutuellement **primaires** s’il est impossible de reconstituer l’une d'entre elles à partir des deux autres.
 
 - Le mélange de deux couleurs primaires donne une **couleur secondaire**.
-{{% /note %}}
+{{< /note >}}
 
 ### Mélanges de deux couleurs primaires
 
@@ -172,14 +170,14 @@ Le spectre de gauche est celui d'une lumière polychromatique, formée d'une rad
 
 ### Couleurs complémentaires
 
-{{% note tip %}}
+{{< note tip >}}
 Deux couleurs sont **complémentaires** si leur addition donne du blanc.
-{{% /note %}}
+{{< /note >}}
 
 - **Rouge et Cyan sont complémentaires&nbsp;:**
 $$
 \begin{aligned}
-R + \\{ V + B \\} & \longrightarrow \text{blanc}\cr
+R + \{ V + B \} & \longrightarrow \text{blanc}\cr
 R + C & \longrightarrow \text{blanc}
 \end{aligned}
 $$
@@ -188,7 +186,7 @@ $\rArr$
 - **Jaune et Bleu sont complémentaires&nbsp;:**
 $$
 \begin{aligned}
-\\{R +  V\\} + B  & \longrightarrow \text{blanc}\cr
+\{R +  V\} + B  & \longrightarrow \text{blanc}\cr
 J + B & \longrightarrow \text{blanc}
 \end{aligned}
 $$
@@ -196,7 +194,7 @@ $$
 - **Magenta et Vert sont complémentaires&nbsp;:**
 $$
 \begin{aligned}
-\\{R +  B\\} + V  & \longrightarrow \text{blanc}\cr
+\{R +  B\} + V  & \longrightarrow \text{blanc}\cr
 M + V & \longrightarrow \text{blanc}
 \end{aligned}
 $$
@@ -216,9 +214,9 @@ $$
 - Un **filtre coloré** *absorbe certaines couleurs et transmet les autres*&nbsp;: sa couleur est celle de la radiation qu’il laisse passer.
 - Lorsqu'on interpose sur le trajet d'une lumière blanche un filtre coloré, *la lumière transmise est de la même couleur que le filtre*. Le filtre **soustrait à la lumière les couleurs qu'il absorbe**.
 
-{{% note tip %}}
+{{< note tip >}}
 Un filtre coloré réalise la synthèse soustractive des couleurs.
-{{% /note %}}
+{{< /note >}}
 
 ### Quelques Filtres
 
@@ -246,9 +244,9 @@ Lorsque la lumière éclaire un objet,
 
 ### Interaction lumière - matière
 
-{{% note tip %}}
+{{< note tip >}}
 La couleur des objets dépend de la lumière qu’ils **diffusent**.
-{{% /note %}}
+{{< /note >}}
 
 #### Quelle est la couleur d’un objet éclairé par une lumière blanche&nbsp;?
 

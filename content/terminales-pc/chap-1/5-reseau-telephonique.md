@@ -2,15 +2,14 @@
 title: "Utiliser le réseau téléphonique pour surfer sur Internet"
 subtitle: ""
 author: "Hachette, TS"
-type: ""
 date: 2020-09-18T16:43:15+04:00
 draft: false
 toc: true
 tags: ["Absorption", "Atténuation", "Ondes", "Fibre optique"]
 categories: ["Physique", "Terminale Spé PC", "Annale"]
-image: ""
 solution_est_visible: true
 auto_numbering: true
+weight: 500
 ---
 [^1]: La **résistivité** est la capacité d'un matériau à s'opposer à la circulation du courant électrique.
 [^2]: les technologies **xDSL** permettent la propagation de l'information numérique par les câbles téléphoniques. La transmission se fait en utilisant des hautes fréquences inutilisées par le téléphone. L'ADSL utilisée par les particuliers pour Internet fait partie de ces technologies.
@@ -47,32 +46,32 @@ Extrait de H. Kempf, « Le téléphone », La Recherche, n°291, octobre 1996.
 ## Exploitation
 
 1. Sous quelle forme le signal téléphonique est-il transmis dans un câble de cuivre ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 2. Quelles sont les causes de l'atténuation du signal dans un câble de cuivre ?  
 Que doit-on faire pour transmettre un signal sur une longue distance ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 3. L'atténuation dépend-elle de la fréquence du signal ? Quelles conséquences cela peut-il avoir sur les abonnements ADSL ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 4. Sous quelle forme le signal téléphonique est-il transmis dans une fibre optique ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 5. Citer des causes de l'atténuation du signal dans une fibre optique. Quelle distance peut parcourir le signal sans être amplifié ?
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% /solution %}}
+{{< /solution >}}
 
 6. On amplifie le signal dans une fibre quand il reste 1&nbsp;% de la puissance initialement injectée. Évaluer le coefficient d'atténuation du signal dans une fibre optique.
-{{% solution "Réponse" %}}
+{{< solution "Réponse" >}}
 
-{{% /solution %}}
+{{< /solution >}}
