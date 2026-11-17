@@ -1,7 +1,7 @@
 ---
 title: "Les nombres flottants"
 subtitle: "Doc. 4,5"
-date: 2026-11-17T06:00:00+04:00
+date: 2026-11-16T12:00:00+04:00
 draft: false
 toc: true
 tags: ["nombre réel", "flottant", "float", "virgule en base 2", "multiplications successives", "écriture périodique", "arrondi", "égalité de flottants"]
@@ -11,6 +11,7 @@ auto_numbering: true
 weight: 50
 ---
 - {{< remote "Énoncé au format pdf" "/premieres-nsi/chap-4/4-5/4-5-enonce.pdf" >}}
+- {{< remote "Énoncé et réponses au format pdf" "/premieres-nsi/chap-4/4-5/4-5-corrige.pdf" >}}
 
 {{< note goal >}}
 Comprendre pourquoi un ordinateur ne peut écrire la plupart des nombres à virgule que de façon approchée, et en tirer une règle de programmation : ne jamais tester l'égalité de deux flottants.

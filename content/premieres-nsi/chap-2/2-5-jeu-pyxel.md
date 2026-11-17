@@ -6,11 +6,12 @@ draft: false
 toc: true
 tags: ["Pyxel", "fonction", "paramètre", "argument", "valeur renvoyée", "if", "for", "range", "while", "constante", "variable locale", "variable globale", "global", "booléen"]
 categories: ["Informatique", "1ère Spé NSI"]
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: true
 weight: 50
 ---
 - {{< remote "Énoncé au format pdf" "/premieres-nsi/chap-2/2-5/2-5-enonce.pdf" >}}
+- {{< remote "Énoncé et réponses au format pdf" "/premieres-nsi/chap-2/2-5/2-5-corrige.pdf" >}}
 
 {{< note goal >}}
 En construisant pas à pas un petit jeu avec la bibliothèque Pyxel, vous allez réinvestir les fonctions, les instructions conditionnelles et les boucles dans un vrai programme, et découvrir la différence entre variables locales et variables globales.

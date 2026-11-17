@@ -27,14 +27,13 @@ doute au début du 2<sup>ème</sup> siècle, donc sous l'Empire romain,
 mais dans l'Alexandrie grecque.
 
 On attribue à Héron d'Alexandrie plusieurs formules mathématiques
-et une méthode efficace d'extraction de racine carrée,
-c'est-à-dire de résolution de l'équation $x^2 = a$, avec $a$
-positif&nbsp;:
+et une méthode efficace d'extraction de racine carrée&nbsp;: pour un nombre
+$x$ positif, elle calcule le nombre positif $r$ tel que $r^2 = x$&nbsp;:
 
 {{< note normal >}}
 
 1. Choisir une première valeur raisonnable que l'on note $G$.
-2. Améliorer cette valeur en calculant la moyenne des valeurs $G$ et $a/G$.
+2. Améliorer cette valeur en calculant la moyenne des valeurs $G$ et $x/G$.
 3. Vérifier si cette nouvelle valeur convient.
 4. Reprendre l'étape 2 tant que la valeur calculée n'est pas satisfaisante.
 
@@ -46,14 +45,14 @@ Programmer la méthode de Héron en la découpant en petites fonctions, chacune 
 
 Avant de programmer, faisons tourner la méthode à la main, pour voir comment elle se comporte.
 
-**Question.** On cherche la racine carrée de $a = 2$ en partant de $G = 1$. Effectuer deux fois l'étape 2 de la méthode, à la main. Comparer le résultat à la valeur $\sqrt{2} \approx \text{1,41421}$.
+**Question.** On cherche la racine carrée de $x = 2$ en partant de $G = 1$. Effectuer deux fois l'étape 2 de la méthode, à la main. Comparer le résultat à la valeur $\sqrt{2} \approx \text{1,41421}$.
 
 {{< solution "Réponse" >}}
 
 - Première amélioration : la moyenne de $1$ et de $2/1 = 2$ vaut $\text{1,5}$.
 - Deuxième amélioration : la moyenne de $\text{1,5}$ et de $2/\text{1,5} \approx \text{1,33333}$ vaut environ $\text{1,41667}$.
 
-Après deux étapes seulement, le résultat est déjà correct à $\text{0,003}$ près. On comprend pourquoi la méthode marche : si $G$ est trop grand, $a/G$ est trop petit, et inversement. La moyenne des deux tombe entre les deux, plus près de la racine.
+Après deux étapes seulement, le résultat est déjà correct à $\text{0,003}$ près. On comprend pourquoi la méthode marche : si $G$ est trop grand, $x/G$ est trop petit, et inversement. La moyenne des deux tombe entre les deux, plus près de la racine.
 
 {{< /solution >}}
 

@@ -6,11 +6,12 @@ draft: false
 toc: true
 tags: ["type construit", "p-uplet", "tuple", "indice", "len", "non mutable", "concaténation", "affectation multiple", "assertion"]
 categories: ["Informatique", "1ère Spé NSI"]
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: true
 weight: 10
 ---
 - {{< remote "Énoncé au format pdf" "/premieres-nsi/chap-3/3-1/3-1-enonce.pdf" >}}
+- {{< remote "Énoncé et réponses au format pdf" "/premieres-nsi/chap-3/3-1/3-1-corrige.pdf" >}}
 
 {{< note goal >}}
 Regrouper plusieurs valeurs dans un seul objet, le tuple, pour qu'une fonction puisse renvoyer plusieurs résultats à la fois.

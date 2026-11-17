@@ -6,11 +6,12 @@ draft: false
 toc: true
 tags: ["boucle", "itération", "boucle déterministe", "boucle non déterministe", "compteur de boucle", "condition d'arrêt", "boucle infinie", "while", "for", "range", "break", "continue"]
 categories: ["Informatique", "1ère Spé NSI"]
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: true
 weight: 40
 ---
 - {{< remote "Énoncé au format pdf" "/premieres-nsi/chap-2/2-4/2-4-enonce.pdf" >}}
+- {{< remote "Énoncé et réponses au format pdf" "/premieres-nsi/chap-2/2-4/2-4-corrige.pdf" >}}
 
 {{< note goal >}}
 En manipulant les boucles `for` et `while` dans la console et dans Thonny, vous allez apprendre à répéter des instructions un nombre de fois connu ou inconnu à l'avance, et à choisir la structure itérative adaptée à chaque situation.

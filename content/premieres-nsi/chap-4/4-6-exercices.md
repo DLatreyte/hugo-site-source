@@ -1,7 +1,7 @@
 ---
 title: "Exercices"
 subtitle: "Doc. 4,6"
-date: 2026-11-17T06:00:00+04:00
+date: 2026-11-16T12:00:00+04:00
 draft: false
 toc: true
 tags: ["base 2", "base 16", "nombre de bits", "complément à 2", "dépassement de capacité", "table de vérité", "flottant"]
@@ -11,6 +11,7 @@ auto_numbering: true
 weight: 60
 ---
 - {{< remote "Énoncé au format pdf" "/premieres-nsi/chap-4/4-6/4-6-enonce.pdf" >}}
+- {{< remote "Énoncé et réponses au format pdf" "/premieres-nsi/chap-4/4-6/4-6-corrige.pdf" >}}
 
 {{< note goal >}}
 S'entraîner sur toutes les représentations des nombres étudiées dans le chapitre, en choisissant soi-même la méthode adaptée à chaque situation.
@@ -267,7 +268,6 @@ On veut convertir une écriture hexadécimale en entier, sans utiliser `int(...,
 ```python
 CHIFFRES = "0123456789ABCDEF"
 
-
 def valeur_chiffre(c: str) -> int:
     """
     Retourne la valeur du chiffre hexadécimal c,
@@ -304,12 +304,10 @@ def hexa_vers_decimal(hexa: str) -> int:
 ```python
 CHIFFRES = "0123456789ABCDEF"
 
-
 def valeur_chiffre(c: str) -> int:
     for i in range(len(CHIFFRES)):
         if CHIFFRES[i] == c:
             return i
-
 
 def hexa_vers_decimal(hexa: str) -> int:
     n = 0

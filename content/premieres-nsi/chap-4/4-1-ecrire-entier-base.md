@@ -1,7 +1,7 @@
 ---
 title: "Écrire un entier dans une base"
 subtitle: "Doc. 4,1"
-date: 2026-11-17T06:00:00+04:00
+date: 2026-11-16T12:00:00+04:00
 draft: false
 toc: true
 tags: ["bit", "base 10", "base 2", "base 16", "binaire", "hexadécimal", "poids", "divisions successives", "bin", "hex"]
@@ -11,6 +11,7 @@ auto_numbering: true
 weight: 10
 ---
 - {{< remote "Énoncé au format pdf" "/premieres-nsi/chap-4/4-1/4-1-enonce.pdf" >}}
+- {{< remote "Énoncé et réponses au format pdf" "/premieres-nsi/chap-4/4-1/4-1-corrige.pdf" >}}
 
 {{< note goal >}}
 Comprendre comment un ordinateur, qui ne manipule que des 0 et des 1, écrit un nombre entier, et savoir passer de l'écriture en base 10 à l'écriture en base 2 ou en base 16, à la main puis avec Python.
@@ -444,7 +445,6 @@ def decompose_16(n: int) -> str:
 {{< solution "Réponse" >}}
 ```python
 CHIFFRES = "0123456789ABCDEF"
-
 
 def decompose_16(n: int) -> str:
     if n == 0:

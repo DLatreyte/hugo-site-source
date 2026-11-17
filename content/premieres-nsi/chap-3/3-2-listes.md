@@ -6,11 +6,12 @@ draft: false
 toc: true
 tags: ["type construit", "liste", "indice", "mutable", "liste en compréhension", "alias", "effet de bord", "liste de listes", "matrice"]
 categories: ["Informatique", "1ère Spé NSI"]
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: true
 weight: 20
 ---
 - {{< remote "Énoncé au format pdf" "/premieres-nsi/chap-3/3-2/3-2-enonce.pdf" >}}
+- {{< remote "Énoncé et réponses au format pdf" "/premieres-nsi/chap-3/3-2/3-2-corrige.pdf" >}}
 
 {{< note goal >}}
 Ranger des valeurs de même type dans une liste, modifier et parcourir ses éléments, puis construire des listes, y compris des listes de listes.

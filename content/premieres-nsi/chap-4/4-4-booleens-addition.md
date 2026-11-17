@@ -1,7 +1,7 @@
 ---
 title: "Booléens et addition binaire"
 subtitle: "Doc. 4,4"
-date: 2026-11-17T06:00:00+04:00
+date: 2026-11-16T12:00:00+04:00
 draft: false
 toc: true
 tags: ["booléen", "table de vérité", "and", "or", "not", "ou exclusif", "xor", "additionneur", "retenue", "évaluation séquentielle"]
@@ -11,6 +11,7 @@ auto_numbering: true
 weight: 40
 ---
 - {{< remote "Énoncé au format pdf" "/premieres-nsi/chap-4/4-4/4-4-enonce.pdf" >}}
+- {{< remote "Énoncé et réponses au format pdf" "/premieres-nsi/chap-4/4-4/4-4-corrige.pdf" >}}
 
 {{< note goal >}}
 Dresser la table de vérité d'une expression booléenne, découvrir le ou exclusif, et s'en servir pour programmer l'addition binaire de deux octets, comme le fait un circuit du processeur.
@@ -347,7 +348,6 @@ def complement_a_1(bits: str) -> str:
         else:
             resultat = resultat + "0"
     return resultat
-
 
 def complement_a_2(bits: str) -> str:
     return addition(complement_a_1(bits), "00000001")

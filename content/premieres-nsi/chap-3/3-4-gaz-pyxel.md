@@ -6,11 +6,12 @@ draft: false
 toc: true
 tags: ["Pyxel", "simulation", "gaz parfait", "particule", "tuple", "déballage", "fonction qui renvoie un tuple", "liste de tuples", "liste passée en paramètre", "lambda", "liste en compréhension", "parcours par indice", "boucles imbriquées", "rebond", "collision"]
 categories: ["Informatique", "1ère Spé NSI"]
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: true
 weight: 40
 ---
 - {{< remote "Énoncé au format pdf" "/premieres-nsi/chap-3/3-4/3-4-enonce.pdf" >}}
+- {{< remote "Énoncé et réponses au format pdf" "/premieres-nsi/chap-3/3-4/3-4-corrige.pdf" >}}
 
 {{< note goal >}}
 Construire pas à pas avec Pyxel la simulation d'un gaz : chaque particule est un tuple, le gaz est une liste de tuples passée en paramètre aux fonctions.

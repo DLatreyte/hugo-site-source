@@ -6,11 +6,12 @@ draft: false
 toc: true
 tags: ["objet", "message", "méthode", "notation pointée", "liste vide", "append", "pop", "insert", "remove", "None", "effet de bord", "alias", "pile", "file"]
 categories: ["Informatique", "1ère Spé NSI"]
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: true
 weight: 30
 ---
 - {{< remote "Énoncé au format pdf" "/premieres-nsi/chap-3/3-3/3-3-enonce.pdf" >}}
+- {{< remote "Énoncé et réponses au format pdf" "/premieres-nsi/chap-3/3-3/3-3-corrige.pdf" >}}
 
 {{< note goal >}}
 Faire grandir et rétrécir une liste en lui envoyant des messages, en particulier `append` et `pop`, et savoir si un message modifie la liste ou renvoie une valeur.

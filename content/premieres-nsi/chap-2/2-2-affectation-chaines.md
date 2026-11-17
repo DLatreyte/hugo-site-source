@@ -6,11 +6,12 @@ draft: false
 toc: true
 tags: ["variable", "identificateur", "affectation", "opérateur d'affectation", "chaîne de caractères", "f-string", "concaténation", "formatage"]
 categories: ["Informatique", "1ère Spé NSI"]
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: true
 weight: 20
 ---
 - {{< remote "Énoncé au format pdf" "/premieres-nsi/chap-2/2-2/2-2-enonce.pdf" >}}
+- {{< remote "Énoncé et réponses au format pdf" "/premieres-nsi/chap-2/2-2/2-2-corrige.pdf" >}}
 
 {{< note goal >}}
 Manipuler des variables et des chaînes de caractères dans la console Python pour découvrir comment nommer et mettre à jour une information, puis comment l'insérer proprement dans un message.

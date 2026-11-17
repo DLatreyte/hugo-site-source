@@ -1,7 +1,7 @@
 ---
 title: "Combien de bits pour un entier ?"
 subtitle: "Doc. 4,2"
-date: 2026-11-17T06:00:00+04:00
+date: 2026-11-16T12:00:00+04:00
 draft: false
 toc: true
 tags: ["bit", "octet", "8, 16, 32, 64 bits", "puissance de 2", "addition binaire", "retenue", "dépassement de capacité", "décalage", "entiers de taille arbitraire"]
@@ -11,6 +11,7 @@ auto_numbering: true
 weight: 20
 ---
 - {{< remote "Énoncé au format pdf" "/premieres-nsi/chap-4/4-2/4-2-enonce.pdf" >}}
+- {{< remote "Énoncé et réponses au format pdf" "/premieres-nsi/chap-4/4-2/4-2-corrige.pdf" >}}
 
 {{< note goal >}}
 Savoir combien de bits il faut pour écrire un entier, une somme ou un produit, et comprendre ce qui se passe lorsqu'un résultat ne tient plus dans la place que la machine lui a réservée.
@@ -139,7 +140,7 @@ Utiliser deux variables : le nombre de bits `k` et la puissance `2 ** k`. Tant q
 def nb_bits(n: int) -> int:
     assert n >= 1, "n doit être supérieur ou égal à 1"
     k = 1
-    while 2**k <= n:
+    while 2 ** k <= n:
         k += 1
     return k
 ```
