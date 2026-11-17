@@ -84,4 +84,5 @@ span.nolink { color: #dc2626; }
 .etapes .etape-fleche { color: #70aac2; font-size: 1.2rem; line-height: 1; }
 .qcm-choix label { font-weight: normal; font-variation-settings: normal; letter-spacing: normal; }
 /* Pas de bouton « copier » sur le code en ligne des QCM et du schéma en étapes */
-.qcm .copy-to-clipboard-button, .etapes .copy-to-clipboard-button { display: none; }
+.qcm .inline-copy-to-clipboard-button, .etapes .inline-copy-to-clipboard-button { display: none; }
+.qcm code.copy-to-clipboard-code::after, .etapes code.copy-to-clipboard-code::after { content: none; }
