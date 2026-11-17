@@ -1,5 +1,5 @@
 ---
-title: "Revisions sur les strucures de boucle en Python"
+title: "Révisions sur les structures de boucle en Python"
 subtitle: ""
 date: 2023-09-06T05:51:48+04:00
 draft: false
@@ -12,7 +12,26 @@ mathjax: true
 weight: 9900
 ---
 
-# Travail à effectuer  
+{{< note goal >}}
+Revoir les deux structures de boucle de Python, la boucle bornée `for` et la boucle non bornée `while`, en écrivant des fonctions qui construisent une chaîne de caractères, dialoguent avec l'utilisateur ou calculent une suite.
+{{< /note >}}
+
+Commençons par vérifier ce que fait exactement `range`. Sans exécuter le programme suivant, prévoir ce qu'il affiche, puis vérifier.
+
+```python
+total = 0
+for i in range(1, 5):
+    total += i
+print(total)
+```
+
+{{< solution "Réponse" >}}
+
+Le programme affiche 10. `range(1, 5)` produit 1, 2, 3 et 4 : la borne de fin, 5, est exclue. On calcule donc $1 + 2 + 3 + 4 = 10$, et non $1 + 2 + 3 + 4 + 5 = 15$. Cette borne exclue est la source d'erreur la plus fréquente avec `for` : on la retrouvera dans presque tous les exercices.
+
+{{< /solution >}}
+
+# Travail à effectuer
 
 ## Exercice 1
 
@@ -195,9 +214,13 @@ def diviseurs(a: int) -> str:
 
 ## Exercice 5
 
-Écrire une fonction qui retourne une chaîne de caractère formée des 10 premiers termes de la table de multiplication de 1 à 10. Le caractère de passage à la ligne `\n` doit être utilisé afin de séparer les différentes tables (de 2, de 3, etc.).
+Écrire une fonction qui retourne une chaîne de caractères formée des tables de multiplication de 1 à 10, chacune limitée à ses 10 premiers termes. Le caractère de passage à la ligne `\n` doit être utilisé afin de séparer les différentes tables (de 2, de 3, etc.).
 
 **Remarque :** Utiliser deux boucles imbriquées.
+
+{{< note tip "Coup de pouce" >}}
+La boucle extérieure choisit la table (de 1, puis de 2, etc.). La boucle intérieure écrit les 10 termes de cette table. À quel endroit placer le `"\n"` : dans la boucle intérieure, ou juste après elle ?
+{{< /note >}}
 
 La spécification de la fonction est :
 
@@ -326,7 +349,7 @@ def moyenne() -> float:
     Demande 10 notes à l'utilisateur et retourne la moyenne.
     """
     nbre_notes = 10
-    total_notes = 0
+    total_notes = 0.0
     for i in range(nbre_notes):
         note = float(input(f"Entrez la note {i + 1} : "))
         total_notes += note
@@ -346,7 +369,7 @@ def moyenne(nbre_notes: int) -> float:
     """
     Demande nbre_notes notes à l'utilisateur et retourne la moyenne.
     """
-    total_notes = 0
+    total_notes = 0.0
     for i in range(nbre_notes):
         note = float(input(f"Entrez la note {i + 1} : "))
         total_notes += note
@@ -357,9 +380,13 @@ def moyenne(nbre_notes: int) -> float:
 
 ## Exercice 10
 
-Modifier le programme précédent de façon à ce que l'utilisateur n'ait pas à indiquer le nombre de notes qu'il souhaite saisir. Une note négative terminer la saisie.
+Modifier le programme précédent de façon à ce que l'utilisateur n'ait pas à indiquer le nombre de notes qu'il souhaite saisir. Une note négative termine la saisie.
 
-**Remarque :** la fonction doit afficher le nombre de notes saisies.
+**Remarque :** la fonction retourne le nombre de notes saisies et leur moyenne. Si aucune note n'a été saisie, elle retourne `(0, 0.0)`.
+
+{{< note tip "Coup de pouce" >}}
+On ne sait pas combien de notes seront saisies : la boucle est une boucle `while`. Que se passe-t-il si l'utilisateur entre tout de suite une note négative ? Penser à ce cas avant de calculer la moyenne.
+{{< /note >}}
 
 {{< solution "Solution" >}}
 
@@ -368,10 +395,11 @@ def moyenne_auto() -> tuple[int, float]:
     """
     Demande des notes à l'utilisateur tant que ce dernier
     ne rentre pas une note négative.
-    Retourne le nombre de notes et la moyenne.
+    Retourne le nombre de notes et la moyenne, ou (0, 0.0)
+    si aucune note n'a été saisie.
     """
     nbre_notes = 0
-    total_notes = 0
+    total_notes = 0.0
     stop = False
     while not stop:
         note = float(input(f"Entrez la note {nbre_notes + 1} : "))
@@ -380,6 +408,8 @@ def moyenne_auto() -> tuple[int, float]:
         else:
             total_notes += note
             nbre_notes += 1
+    if nbre_notes == 0:
+        return (0, 0.0)
     return (nbre_notes, total_notes / nbre_notes)
 ```
 
@@ -398,7 +428,7 @@ def loto_naif() -> str:
     """
 ```
 
-**Remarque.** Normalement, lorsqu'un numéro est tiré, il ne peut pas apparaître à nouveau. On acceptera cependant qu'un même numéro puisse apparaitre plusieurs fois puisqu'on ne connaît pas encore de structure de contrôle qui permet de facilement « stocker » plusieurs valeurs.
+**Remarque.** Normalement, lorsqu'un numéro est tiré, il ne peut pas apparaître à nouveau. On acceptera cependant qu'un même numéro puisse apparaitre plusieurs fois puisqu'on n'utilise pas encore de structure de données qui permette de « stocker » plusieurs valeurs : ce sera l'objet des révisions sur les listes.
 
 {{< solution "Solution" >}}
 
@@ -426,6 +456,10 @@ def loto_naif() -> str:
 Écrire et exécuter une fonction qui tire au hasard un nombre entier compris entre 1 et 50 et demande à l'utilisateur de le deviner.
   
 Cette fonction doit indiquer à l'utilisateur si sa tentative est trop grande ou trop petite et quitter dès l'instant où il a deviné le nombre en indiquant le nombre de tentatives.
+
+{{< note tip "Coup de pouce" >}}
+La boucle doit continuer tant que le nombre n'est pas trouvé. Une variable booléenne `trouve`, qui vaut `False` au départ, permet d'écrire cette condition. Il faut aussi une variable qui compte les tentatives.
+{{< /note >}}
 
 **Remarque.** La fonction ne doit rien retourner, elle doit utiliser la fonction `print` pour *afficher* à l'écran les informations. Sa spécification est
 
@@ -467,7 +501,7 @@ def devine() -> None:
 
 ## Exercice 13
 
-Écrire et exécuter une fonction qui affiche l'alphabet à l'endroit si elle reçoit l'argument `"croissant"` ou à l'envers si elle reçoit l'argument `"decroissant"`.
+Écrire et exécuter une fonction qui retourne l'alphabet à l'endroit si elle reçoit l'argument `"croissant"` ou à l'envers si elle reçoit l'argument `"decroissant"`.
   
 **Remarque.** On peut obtenir le code décimal d'un caractère à l'aide de la fonction `ord`. À l'opposé, le caractère correspondant à un entier naturel dans la table ASCII est obtenu (si possible) à l'aide de la fonction `chr`.
 
@@ -520,7 +554,7 @@ u_n &= u_{(n-1)} + u_{(n-2)} \text{ pour } n > 2
 \end{align*}
 $$
 
-Cette fonction doit recevoir en argument la valeur de $n$ et retourner la suite de nombres sous forme de chaîne de caractères. Spécification de la fonction :
+Cette fonction doit recevoir en argument la valeur de $n$ et retourner la suite de nombres sous forme de chaîne de caractères. Par exemple, `fibo(8)` retourne `'1 1 2 3 5 8 13 21 '`. Spécification de la fonction :
 
 ```python
 def fibo(n: int) -> str:
@@ -528,6 +562,10 @@ def fibo(n: int) -> str:
     Retourne les n premiers termes de la suite de Fibonacci.
     """
 ```
+
+{{< note tip "Coup de pouce" >}}
+Pour calculer un terme, il faut connaître les deux précédents. Utiliser deux variables `u` et `v` qui contiennent toujours deux termes consécutifs. À chaque tour, comment calculer les deux termes consécutifs suivants à partir de `u` et `v` ? L'affectation multiple `u, v = ..., ...` évite d'écraser une valeur dont on a encore besoin.
+{{< /note >}}
 
 {{< solution "Solution" >}}
 
@@ -545,3 +583,17 @@ def fibo(n: int) -> str:
 ```
 
 {{< /solution >}}
+
+## Bilan
+
+{{< note success "À l'issue de cette activité, je sais…" >}}
+- choisir les arguments de `range` en tenant compte de la borne de fin exclue ;
+- écrire une boucle bornée `for` et une boucle non bornée `while`, et choisir entre les deux ;
+- construire une chaîne de caractères dans une boucle ;
+- imbriquer deux boucles ;
+- utiliser `input` pour lire une valeur et `print` pour afficher un résultat ;
+- tirer un entier au hasard avec `randint` ;
+- calculer les termes d'une suite définie par récurrence, avec une affectation multiple.
+{{< /note >}}
+
+Les révisions continuent avec la structure de liste.

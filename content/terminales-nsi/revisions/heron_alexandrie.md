@@ -34,23 +34,48 @@ positif&nbsp;:
 {{< note normal >}}
 
 1. Choisir une première valeur raisonnable que l'on note $G$.
-2. Améliorer cette valeur en calculant la moyenne des valeurs $G$ et $x/G$.
+2. Améliorer cette valeur en calculant la moyenne des valeurs $G$ et $a/G$.
 3. Vérifier si cette nouvelle valeur convient.
 4. Reprendre l'étape 2 tant que la valeur calculée n'est pas satisfaisante.
 
 {{< /note >}}
 
-> L'objectif de cette activité est de mettre en œuvre cette méthode en Python.
+{{< note goal >}}
+Programmer la méthode de Héron en la découpant en petites fonctions, chacune accompagnée de sa spécification et de ses tests.
+{{< /note >}}
+
+Avant de programmer, faisons tourner la méthode à la main, pour voir comment elle se comporte.
+
+**Question.** On cherche la racine carrée de $a = 2$ en partant de $G = 1$. Effectuer deux fois l'étape 2 de la méthode, à la main. Comparer le résultat à la valeur $\sqrt{2} \approx \text{1,41421}$.
+
+{{< solution "Réponse" >}}
+
+- Première amélioration : la moyenne de $1$ et de $2/1 = 2$ vaut $\text{1,5}$.
+- Deuxième amélioration : la moyenne de $\text{1,5}$ et de $2/\text{1,5} \approx \text{1,33333}$ vaut environ $\text{1,41667}$.
+
+Après deux étapes seulement, le résultat est déjà correct à $\text{0,003}$ près. On comprend pourquoi la méthode marche : si $G$ est trop grand, $a/G$ est trop petit, et inversement. La moyenne des deux tombe entre les deux, plus près de la racine.
+
+{{< /solution >}}
 
 ## Travail à réaliser
 
-Le fichier réponse devra se terminer par les instructions&nbsp; afin de pouvoir y placer les jeux de tests pour les différentes fonctions (on découvrira la signification de cette instruction dans quelques jours).
+Le fichier réponse devra se terminer par l'instruction suivante (on découvrira sa signification dans quelques jours)&nbsp;:
 
 ```python
 if __name__ == "__main__":
+    ...
 ```
 
+Les jeux de tests des questions suivantes sont à placer sous cette instruction, indentés, à la place des points de suspension.
+
 1. Qu'appelle-t-on la **documentation** d'une fonction ? La **spécification** d'une fonction ?
+
+{{< solution "Réponse" >}}
+
+- La **documentation** d'une fonction est le texte placé entre triples guillemets juste sous sa première ligne. Elle explique ce que fait la fonction, ce qu'elle attend et ce qu'elle retourne. Python la conserve : `help(moyenne)` l'affiche dans la console.
+- La **spécification** d'une fonction réunit sa signature (son nom, ses paramètres et leurs types, le type de la valeur retournée) et sa documentation. Elle dit *ce que fait* la fonction, sans dire *comment* elle le fait. Avec la spécification seule, on doit pouvoir utiliser la fonction sans lire son code.
+
+{{< /solution >}}
 
 {{< note warning >}}
 
@@ -133,6 +158,10 @@ def puissance(x: float, n: int) -> float:
 
 Remarque.
 : Il est interdit d'utiliser l'opérateur `**` intégré à Python ou la fonction `pow` du module math.
+
+{{< note tip "Coup de pouce" >}}
+$x^n$ est le produit de $n$ facteurs égaux à $x$. On connaît à l'avance le nombre de multiplications à effectuer : quelle boucle faut-il utiliser ? Quelle valeur donner au résultat avant la première multiplication, pour que `puissance(3, 0)` retourne bien 1 ?
+{{< /note >}}
 
 Ajouter le jeu de test suivant à la fin du fichier :
 
@@ -244,9 +273,17 @@ Ajouter le jeu de test suivant à la fin du fichier :
 
 ```python
 assert test(2, 4) == 2
-assert test(1, 4) == 2.0000000929222947
-assert test(7, 4) == 2.0000000271231317
+assert abs(test(1, 4) - 2) < 0.001
+assert abs(test(7, 4) - 2) < 0.001
 ```
+
+{{< note warning >}}
+La valeur retournée est approchée : `test(1, 4)` vaut `2.0000000929222947`, et non 2. On ne teste donc pas l'égalité de deux flottants avec `==`. On vérifie que leur écart est plus petit qu'une tolérance, ici 0,001. Le premier test peut utiliser `==`, car la valeur de départ 2 est déjà la racine exacte de 4 : la boucle ne s'exécute pas.
+{{< /note >}}
+
+{{< note tip "Coup de pouce" >}}
+On ne sait pas à l'avance combien d'améliorations seront nécessaires : la boucle est une boucle `while`. Elle doit continuer *tant que* l'essai n'est pas suffisamment bon. Quel prédicat, déjà écrit, permet de l'exprimer ?
+{{< /note >}}
 
 {{< solution "Réponse" >}}
 
@@ -277,9 +314,9 @@ def racine_carree(x: float) -> float:
 Ajouter le jeu de test suivant à la fin du fichier :
 
 ```python
-assert racine_carree(4) == 2.0000000929222947
-assert racine_carree(9) == 3.00009155413138
-assert racine_carree(16) == 4.000000636692939
+assert abs(racine_carree(4) - 2) < 0.001
+assert abs(racine_carree(9) - 3) < 0.001
+assert abs(racine_carree(16) - 4) < 0.001
 ```
 
 {{< solution "Réponse" >}}
@@ -299,6 +336,10 @@ def racine_carree(x: float) -> float:
 
 Ajouter l'appel de la fonction `main` à la fin du fichier.
 
+{{< note tip "Coup de pouce" >}}
+Le premier nombre pair de l'intervalle est 2 et le dernier est 100. Quels arguments donner à `range` pour obtenir directement ces nombres, de deux en deux ? Attention : la borne de fin de `range` est exclue.
+{{< /note >}}
+
 {{< solution "Réponse" >}}
 
 ```python
@@ -310,3 +351,14 @@ def main() -> None:
 ```
 
 {{< /solution >}}
+
+## Bilan
+
+{{< note success "À l'issue de cette activité, je sais…" >}}
+- expliquer la différence entre la documentation et la spécification d'une fonction ;
+- écrire une fonction à partir de sa spécification ;
+- écrire une fonction qui utilise des fonctions déjà écrites ;
+- écrire une boucle bornée (`for`) quand le nombre de tours est connu, et une boucle non bornée (`while`) quand il ne l'est pas ;
+- tester une fonction avec `assert` ;
+- comparer deux flottants avec une tolérance plutôt qu'avec `==`.
+{{< /note >}}

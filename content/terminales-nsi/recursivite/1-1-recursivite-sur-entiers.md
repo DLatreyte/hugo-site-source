@@ -33,6 +33,16 @@ La **récursion** est un mécanisme puissant permettant d'exprimer la **répéti
 
 *Ce chapitre traite de la récursion sur les nombres entiers.*
 
+{{< note goal >}}
+Écrire la définition récursive d'une fonction sur les entiers (un cas de base et un appel récursif), la programmer en Python et suivre son exécution à l'aide de l'arbre des appels.
+{{< /note >}}
+
+Avant de commencer, une question à se poser sans calculatrice. On sait que $1 + 2 + \ldots + 99 = 4950$. Combien vaut $1 + 2 + \ldots + 99 + 100$&nbsp;? Faut-il refaire tout le calcul&nbsp;?
+
+{{< solution "Réponse" >}}
+Non&nbsp;: il suffit d'ajouter 100 au résultat connu, soit $4950 + 100 = 5050$. On a exprimé la somme jusqu'à 100 à l'aide de la somme jusqu'à 99. Toute la récursivité tient dans cette idée&nbsp;: résoudre un problème à l'aide de la solution du même problème, en plus petit.
+{{< /solution >}}
+
 ## Rappels sur les fonctions
 
 - {{< remote "Cours de 1ère NSI sur les fonctions" "/premieres-nsi/chap-2/2-1-types-fonctions/" >}}
@@ -73,7 +83,7 @@ Une fonction définie de façon récursive est **calculable**.
 
 On peut exprimer de plusieurs façons la définition de cette fonction&nbsp;:
 
-- Une définition **implicite**&nbsp;: $x^n = \overbrace{x \times x \times \ldots \times x}^{n \text{fois}}$
+- Une définition **implicite**&nbsp;: $x^n = \overbrace{x \times x \times \ldots \times x}^{n \text{ fois}}$
 - Une définition **explicite**[^1]&nbsp;:
 $$
 x^n = \left\lbrace
@@ -84,7 +94,7 @@ x^n = \left\lbrace
     \right.
 $$
 
-La définition implicite présente les mêmes ambiguïtés que dans le cas du calcul de la factorielle d'un entier naturel, tandis que la définition explicite, *qui se réfère elle-aussi à elle-même* et est donc **récursive**, permet de **calculer** la valeur de $x^n$.
+La définition implicite présente les mêmes ambiguïtés que dans le cas du calcul de la factorielle d'un entier naturel, tandis que la définition explicite, *qui se réfère elle aussi à elle-même* et est donc **récursive**, permet de **calculer** la valeur de $x^n$.
 
 ### Mise en œuvre d'un raisonnement récursif&nbsp;: le jeu de Bowling
 
@@ -121,7 +131,7 @@ $10+5=15$
 > Nombre de quilles en fonction du nombre de lignes. La fonction **arrangement** reçoit en argument le nombre de lignes et retourne le nombre de quilles dans un arrangement de ce nombre de lignes.
 
 Combien de quilles contient un arrangement de 11 lignes&nbsp;?
-: On déduit rapidement du tableau ci-dessus que le nombre de quilles est égal à&nbsp;: 11 + `arrangement(10)`, c'est à dire à 11 plus le nombre de quilles présentes dans un arrangement à 10 lignes.
+: On déduit rapidement du tableau ci-dessus que le nombre de quilles est égal à&nbsp;: 11 + `arrangement(10)`, c'est-à-dire à 11 plus le nombre de quilles présentes dans un arrangement à 10 lignes.
 
 Obtient-on directement la réponse&nbsp;?
 : Non, il faut tout d'abord calculer le nombre de quilles dans un arrangement à 10 lignes. Le calcul est facile, c'est&nbsp;: 10  + `arrangement(9)`, etc.
@@ -170,7 +180,7 @@ def arrangement(n: int) -> int:
     Détermination du nombre de quilles dans un
     arrangement à n lignes.
 
-    HYPOTHÈSE : n entier naturel.
+    HYPOTHÈSE : n entier naturel non nul.
     """
     if n == 1:  # cas de base
         return 1
@@ -181,7 +191,7 @@ def arrangement(n: int) -> int:
 assert arrangement(5) == 15
 ```
 
-- {{< remote "Code Python interactif" "http://pythontutor.com/visualize.html#code=def%20arrangement%28n%3A%20int%29%20-%3E%20int%3A%0A%20%20%20%20%22%22%22%0A%20%20%20%20D%C3%A9termination%20du%20nombre%20de%20quilles%20dans%20un%20%0A%20%20%20%20arrangement%20%C3%A0%20n%20lignes.%0A%20%20%20%20%0A%20%20%20%20HYPOTH%C3%88SE%20%3A%20n%20entier%20naturel.%0A%20%20%20%20%22%22%22%0A%20%20%20%20if%20n%20%3D%3D%201%3A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23%20cas%20de%20base%0A%20%20%20%20%20%20%20%20return%201%0A%20%20%20%20else%3A%0A%20%20%20%20%20%20%20%20return%20n%20%2B%20arrangement%28n%20-%201%29%20%20%20%23%20appel%20r%C3%A9cursif%0A%20%20%20%20%20%20%20%20%0Aassert%20arrangement%285%29%20%3D%3D%2015&cumulative=false&heapPrimitives=false&mode=edit&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false" >}}
+- {{< remote "Code Python interactif" "https://pythontutor.com/visualize.html#code=def%20arrangement%28n%3A%20int%29%20-%3E%20int%3A%0A%20%20%20%20%22%22%22%0A%20%20%20%20D%C3%A9termination%20du%20nombre%20de%20quilles%20dans%20un%20%0A%20%20%20%20arrangement%20%C3%A0%20n%20lignes.%0A%20%20%20%20%0A%20%20%20%20HYPOTH%C3%88SE%20%3A%20n%20entier%20naturel.%0A%20%20%20%20%22%22%22%0A%20%20%20%20if%20n%20%3D%3D%201%3A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23%20cas%20de%20base%0A%20%20%20%20%20%20%20%20return%201%0A%20%20%20%20else%3A%0A%20%20%20%20%20%20%20%20return%20n%20%2B%20arrangement%28n%20-%201%29%20%20%20%23%20appel%20r%C3%A9cursif%0A%20%20%20%20%20%20%20%20%0Aassert%20arrangement%285%29%20%3D%3D%2015&cumulative=false&heapPrimitives=false&mode=edit&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false" >}}
 
 ### Retour sur le calcul de la factorielle d'un entier naturel
 
@@ -239,11 +249,11 @@ def factorielle(n: int) -> int:
 
 
 assert factorielle(5) == 120
-````
+```
 
-- {{< remote "Code Python interactif" "http://pythontutor.com/visualize.html#code=def%20factorielle%28n%3A%20int%29%20-%3E%20int%3A%0A%20%20%20%20%22%22%22%20%0A%20%20%20%20D%C3%A9finition%20r%C3%A9cursive%20de%20la%20fonction%20factorielle.%0A%20%20%20%20%0A%20%20%20%20HYPOTH%C3%88SE%20%3A%20n%20entier%20naturel.%0A%20%20%20%20%22%22%22%0A%20%20%20%20if%20n%20%3D%3D%200%3A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23%20cas%20de%20base%0A%20%20%20%20%20%20%20%20return%201%0A%20%20%20%20else%3A%0A%20%20%20%20%20%20%20%20return%20n%20*%20factorielle%28n%20-%201%29%20%20%20%23%20appel%20r%C3%A9cursif%0A%20%20%20%20%20%20%20%20%0Aassert%20factorielle%285%29%20%3D%3D%20120&cumulative=false&heapPrimitives=false&mode=edit&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false" >}}
+- {{< remote "Code Python interactif" "https://pythontutor.com/visualize.html#code=def%20factorielle%28n%3A%20int%29%20-%3E%20int%3A%0A%20%20%20%20%22%22%22%20%0A%20%20%20%20D%C3%A9finition%20r%C3%A9cursive%20de%20la%20fonction%20factorielle.%0A%20%20%20%20%0A%20%20%20%20HYPOTH%C3%88SE%20%3A%20n%20entier%20naturel.%0A%20%20%20%20%22%22%22%0A%20%20%20%20if%20n%20%3D%3D%200%3A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%23%20cas%20de%20base%0A%20%20%20%20%20%20%20%20return%201%0A%20%20%20%20else%3A%0A%20%20%20%20%20%20%20%20return%20n%20*%20factorielle%28n%20-%201%29%20%20%20%23%20appel%20r%C3%A9cursif%0A%20%20%20%20%20%20%20%20%0Aassert%20factorielle%285%29%20%3D%3D%20120&cumulative=false&heapPrimitives=false&mode=edit&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false" >}}
 
-## Définition récursive d'une fonction
+## Structure d'une définition récursive
 
 {{< note tip >}}
 La **définition récursive** d'une fonction doit être formée&nbsp;:
@@ -268,7 +278,7 @@ L'ensemble des entiers naturels est dit «&nbsp;bien fondé&nbsp;».
 
 ## Récursivité vs itération
 
-La récursivité et l'itération sont deux **paradigmes**[^2] différents ayant le même objectif&nbsp;: **faire effectuer des traitements répétitifs à un ordinateur**.
+La récursivité et l'itération sont deux **paradigmes** différents ayant le même objectif&nbsp;: **faire effectuer des traitements répétitifs à un ordinateur**.
 
 {{< note tip >}}
 
@@ -278,13 +288,13 @@ La récursivité et l'itération sont deux **paradigmes**[^2] différents ayant 
 À chaque «&nbsp;tour de boucle&nbsp;» des affectations sont réalisées.
 
 - Un **algorithme récursif définit**, au sens mathématique du terme, le traitement à mettre en œuvre pour parvenir à résoudre le problème.  
-Cet algorithme ne s'appuie généralement pas sur la notion d'affectation (Nous reviendrons sur cette partie lorsque nous parlerons des différents paradigmes de programmation).
+Cet algorithme ne s'appuie généralement pas sur la notion d'affectation (nous reviendrons sur cette partie lorsque nous parlerons des différents paradigmes de programmation).
 
 - *Tout problème dont la résolution s'appuie sur un algorithme récursif peut aussi être résolu à l'aide d'un algorithme itératif* (plus ou moins simplement).
   
 - *Tout problème dont la résolution s'appuie sur un algorithme itératif peut aussi être résolu à l'aide d'un algorithme récursif*.
 
-- Les algorithmes récursifs sont généralement plus simples à comprendre que les algorithmes itératifs correspondant.
+- Les algorithmes récursifs sont généralement plus simples à comprendre que les algorithmes itératifs correspondants.
 {{< /note >}}
 
 {{< note warning >}}
@@ -300,7 +310,7 @@ Cet algorithme ne s'appuie généralement pas sur la notion d'affectation (Nous 
 Certains langages informatiques appelés **langages fonctionnels**, ne possèdent *ni instruction d'affectation ni structure itérative*&nbsp;!
 
 Les langages qui privilégient les structures itératives (et l'affectation) sont dits **impératifs**.  
-Python est un langage mutli-paradigme&nbsp;: il permet de programmer de façon **impérative**, **objet** ou **fonctionnelle** (même si les appels récursifs, par exemple, ne sont pas aussi bien optimisés en Python que dans les langages fonctionnels).
+Python est un langage multi-paradigme&nbsp;: il permet de programmer de façon **impérative**, **objet** ou **fonctionnelle** (même si les appels récursifs, par exemple, ne sont pas aussi bien optimisés en Python que dans les langages fonctionnels).
 {{< /note >}}
 
 {{< note warning >}}
@@ -309,8 +319,8 @@ Python est un langage mutli-paradigme&nbsp;: il permet de programmer de façon *
 
 Un algorithme récursif est généralement plus facile à comprendre que l'équivalent itératif. On peut donc se demander pourquoi on ne privilégie pas toujours les traitements récursifs.
 
-Généralement, les appels récursifs successifs *nécessitent plus d'espace mémoire et de traitements* --- sachant que *les processeurs ont, eux, un fonctionnement fondamentalement itératif* --- que les processus itératifs.  
-Les **langages fonctionnels** modernes possèdent des compilateurs ou des interpréteurs suffisamment «&nbsp;intelligents&nbsp;» pour palier à ces inconvénients.
+Généralement, les appels récursifs successifs *nécessitent plus d'espace mémoire et de traitements* que les processus itératifs (les *processeurs ont, eux, un fonctionnement fondamentalement itératif*). En Python, le nombre d'appels récursifs imbriqués est d'ailleurs limité à 1000 par défaut&nbsp;: au-delà, le programme s'arrête avec l'erreur `RecursionError`.  
+Les **langages fonctionnels** modernes possèdent des compilateurs ou des interpréteurs suffisamment «&nbsp;intelligents&nbsp;» pour pallier ces inconvénients.
 {{< /note >}}
 
 ## Si l'on devait résumer l'idée générale de la récursivité
@@ -327,8 +337,6 @@ Si un problème n'est pas facile à résoudre, le découper en problèmes plus p
 
 Penser à écrire, pour chacune des fonctions ci-dessous, sa spécification ainsi qu'un jeu de tests.
 
-Un corrigé partiel se trouve en ligne à cette adresse : {{< remote "https://repl.it/join/qaeylksn-dlatreyte" "https://repl.it/join/qaeylksn-dlatreyte" >}}. Ce corrigé comporte des exemples d'utilisation de l'instruction `assert`.
-
 {{< note exercise >}}
 
 #### Exercice 1&nbsp;: Factorielle
@@ -342,20 +350,20 @@ Un corrigé partiel se trouve en ligne à cette adresse : {{< remote "https://re
 def factorielle_iter(n: int) -> int:
     """
     Calcule la factorielle de n.
-    Algortihme itératif.
+    Algorithme itératif.
 
     HYPOTHÈSE : n est un entier naturel
     """
     fact = 1
     for i in range(1, n + 1):
-        fact = fact * i
+        fact *= i
     return fact
 
 
 def factorielle_rec(n: int) -> int:
     """
     Calcule la factorielle de n.
-    Algortihme récursif.
+    Algorithme récursif.
 
     HYPOTHÈSE : n est un entier naturel
     """
@@ -384,11 +392,9 @@ def compte_a_rebours(n: int) -> None:
     """
     if n == 0:
         print(n)
-        return None
     else:
         print(n, end=" ")
         compte_a_rebours(n - 1)
-        return None
 
 
 def compte(n: int) -> None:
@@ -397,11 +403,9 @@ def compte(n: int) -> None:
     """
     if n == 0:
         print(n, end=" ")
-        return None
     else:
         compte(n - 1)
         print(n, end=" ")
-        return None
 ```
 
 {{< /solution >}}
@@ -410,7 +414,7 @@ def compte(n: int) -> None:
 
 #### Exercice 3&nbsp;: Somme des $N$ premiers entiers
 
-Écrire les versions itérative et récursive d'une fonction qui calcule la somme des $N$ premiers entiers. La tester pour $N = 15$.
+Écrire les versions itérative et récursive d'une fonction qui calcule la somme des $N$ premiers entiers. La tester pour $N = 15$.
 {{< /note >}}
 
 {{< solution "Solution" >}}
@@ -438,7 +442,7 @@ def somme_entiers_iter(n: int) -> int:
     """
     somme = 0
     for i in range(n + 1):
-        somme = somme + i
+        somme += i
     return somme
 ```
 
@@ -448,7 +452,7 @@ def somme_entiers_iter(n: int) -> int:
 
 #### Exercice 4&nbsp;: Multiplication récursive
 
-Écrire une fonction récursive qui calcule le produit de deux nombres entiers positifs en utilisant des additions.
+Écrire une fonction récursive qui calcule le produit de deux nombres entiers positifs en utilisant des additions.
 
 Le principe est le suivant&nbsp;:
 $$
@@ -479,13 +483,15 @@ def multiplication(a: int, b: int) -> int:
         return multiplication(a - 1, b) + b
 ```
 
+`multiplication(4, 5)` provoque 5 appels (pour $a = 4, 3, 2, 1, 0$) et `multiplication(5, 4)` en provoque 6. La récursion porte sur $a$ seulement&nbsp;: le nombre d'appels vaut $a + 1$, quelle que soit la valeur de $b$. Il vaut donc mieux passer le plus petit des deux nombres en premier argument.
+
 {{< /solution >}}
 
 {{< note exercise >}}
 
 #### Exercice 5&nbsp;: Calculs de puissances
 
-- Écrire une fonction récursive qui calcule $x^n$ sachant que&nbsp;:
+- Écrire une fonction récursive qui calcule $x^n$ sachant que&nbsp;:
 $$
     x^n = \left\lbrace
             \begin{array}{ll}
@@ -495,7 +501,7 @@ $$
         \right.
 $$
 
-- Écrire une fonction récursive qui calcule $x^n$ sachant que&nbsp;:
+- Écrire une fonction récursive qui calcule $x^n$ sachant que&nbsp;:
 $$
     x^n = \left\lbrace
             \begin{array}{ll}
@@ -533,16 +539,18 @@ def puissance_02(x: float, n: int) -> float:
     if n == 0:
         return 1
     elif n % 2 == 0:
-        inter = puissance_02(
-            x, n / 2
-        )  # mise en mémoire du résultat de l'appel récursif
+        # mise en mémoire du résultat de l'appel récursif
+        inter = puissance_02(x, n // 2)
         return inter * inter
     else:
-        inter = puissance_02(
-            x, (n - 1) / 2
-        )  # mise en mémoire du résultat de l'appel récursif
+        # mise en mémoire du résultat de l'appel récursif
+        inter = puissance_02(x, (n - 1) // 2)
         return inter * inter * x
 ```
+
+On utilise la division entière `//`&nbsp;: avec `/`, le deuxième argument deviendrait un flottant (`5.0` au lieu de `5`).
+
+Pour $n = 11$, `puissance_01` provoque 12 appels ($n = 11, 10, \ldots, 0$), alors que `puissance_02` n'en provoque que 5 ($n = 11, 5, 2, 1, 0$). Comme $n$ est divisé par 2 à chaque appel, le nombre d'appels de la seconde fonction augmente très lentement avec $n$&nbsp;: pour $n = 1000$, il y en a 11 au lieu de 1001. C'est l'**exponentiation rapide**.
 
 {{< /solution >}}
 
@@ -550,7 +558,7 @@ def puissance_02(x: float, n: int) -> float:
 
 #### Exercice 6&nbsp;: Suite de Fibonacci
 
-- Écrire une fonction récursive qui calcule le $n^{\text{ième}}$ terme de la «&nbsp;suite de Fibonacci&nbsp;» définie par&nbsp;:
+- Écrire une fonction récursive qui calcule le $n^{\text{ième}}$ terme de la «&nbsp;suite de Fibonacci&nbsp;» définie par&nbsp;:
 $$
 \begin{aligned}
 u_0 & = 0 \cr
@@ -582,6 +590,8 @@ def fibonacci(n: int) -> int:
         return fibonacci(n - 1) + fibonacci(n - 2)
 ```
 
+`fibonacci(5)` retourne 5. L'arbre des appels montre que les mêmes calculs sont refaits plusieurs fois&nbsp;: `fibonacci(3)` est calculé 2 fois, `fibonacci(2)` 3 fois, et l'appel `fibonacci(5)` provoque 15 appels en tout. Ce nombre d'appels augmente aussi vite que la suite elle-même&nbsp;: `fibonacci(30)` en provoque plus de 2,6 millions.
+
 {{< /solution >}}
 
 {{< note exercise >}}
@@ -594,15 +604,68 @@ $$
 $$
 où $k$ est le nombre de racines carrées. Plus la valeur de $k$ est grande, meilleure est l'approximation.
 
-On constate que la partie $s = 2 + \sqrt{2 + \ldots \sqrt{ 2 + \sqrt 2 }  }$ est récursive.
+On note $r_k$ le nombre formé de $k$ racines carrées imbriquées&nbsp;: $r_1 = \sqrt 2$, $r_2 = \sqrt{2 + \sqrt 2}$, $r_3 = \sqrt{2 + \sqrt{2 + \sqrt 2}}$, etc. On pose $r_0 = 0$. On constate que $r_k = \sqrt{2 + r_{k-1}}$&nbsp;: la définition de $r_k$ est récursive. La formule de Viète s'écrit alors $\pi \approx 2^k \sqrt{2 - r_{k-1}}$.
 
-1. Écrire une fonction récursive nommée `calcul_inter`, qui, à partir d'un entier positif $k$, calcule la valeur de la partie $s$.
-2. Écrire une fonction nommée `calcul_pi`, qui, à partir d'un entier positif $k$, calcule la valeur approchée de $\pi$.
+1. Écrire une fonction récursive nommée `calcul_inter`, qui, à partir d'un entier naturel $k$, calcule la valeur de $r_k$.
+2. Écrire une fonction nommée `calcul_pi`, qui, à partir d'un entier $k \geqslant 1$, calcule la valeur approchée de $\pi$.
 
 > Cette fonction doit appeler la fonction `calcul_inter`.
 
 3. Depuis la fonction `main`, appeler la fonction `calcul_pi` avec plusieurs valeurs de $k$ (essayer 5, 10, 15). Comparer au résultat retourné par l'attribut `pi` du module `math`.
+4. Essayer maintenant $k = 20$, $k = 25$ puis $k = 30$. Que constate-t-on&nbsp;? Proposer une explication.
 {{< /note >}}
+
+{{< note tip "Coup de pouce" >}}
+Pour la question 4, calculer `calcul_inter(29)` et le comparer à 2. Combien de chiffres significatifs un flottant conserve-t-il&nbsp;?
+{{< /note >}}
+
+{{< solution "Solution" >}}
+
+```python
+from math import pi, sqrt
+
+
+def calcul_inter(k: int) -> float:
+    """
+    Retourne r_k = sqrt(2 + sqrt(2 + ... + sqrt(2))), nombre formé
+    de k racines carrées imbriquées (r_0 = 0).
+
+    HYPOTHÈSE : k entier naturel.
+    """
+    if k == 0:
+        return 0.0
+    else:
+        return sqrt(2 + calcul_inter(k - 1))
+
+
+def calcul_pi(k: int) -> float:
+    """
+    Retourne la valeur approchée de pi donnée par la formule de Viète
+    avec k racines carrées.
+
+    HYPOTHÈSE : k entier, k >= 1.
+    """
+    return 2**k * sqrt(2 - calcul_inter(k - 1))
+
+
+def main() -> None:
+    """Compare les valeurs approchées de pi à math.pi."""
+    for k in (5, 10, 15, 20, 25, 30):
+        approximation = calcul_pi(k)
+        print(f"k = {k} : {approximation} (écart : {abs(approximation - pi):.1e})")
+
+
+if __name__ == "__main__":
+    main()
+```
+
+| $k$ | 5 | 10 | 15 | 20 | 25 | 30 |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| écart avec $\pi$ | $\pu{1,3e-3}$ | $\pu{1,2e-6}$ | $\pu{8,3e-9}$ | $\pu{3,9e-6}$ | $\pu{2,1e-2}$ | $\pi$ |
+
+L'approximation s'améliore jusqu'à $k = 15$, puis se dégrade&nbsp;: pour $k = 30$, `calcul_pi` retourne 0. Le nombre $r_{k-1}$ est très proche de 2, et un flottant ne conserve qu'environ 16 chiffres significatifs. La différence $2 - r_{k-1}$ perd presque tous ses chiffres exacts, et pour $k = 30$, $r_{29}$ est arrondi à 2 exactement. La formule est juste, mais le calcul en flottants ne l'est plus. Ce n'est pas une erreur de la récursivité.
+
+{{< /solution >}}
 
 {{< note exercise >}}
 
@@ -653,12 +716,12 @@ A(m,n) = \left\lbrace
         \end{array}
     \right.
 $$
-Écrire une fonction qui, à partir de deux arguments $m$ et $n$, calcule $A(m,n)$. La tester avec les valeurs $m=3$, $n=4$.
+Écrire une fonction qui, à partir de deux arguments $m$ et $n$, calcule $A(m,n)$. La tester avec les valeurs $m=3$, $n=4$ (le résultat doit être 125).
 
 #### Remarques
 
 - La fonction d'Ackermann croît extrêmement rapidement&nbsp;: $A(4,2)$ a déjà $\pu{19729}$ chiffres&nbsp;!
-- La fonction d'Ackermann demandant beaucoup de calculs même pour de petites entrées, elle est parfois utilisée comme programme de test d'une implémentation d'un langage de programmation&nbsp;: en particulier, elle utilise de façon très exigeante la récursivité (cf. [Fonction d'Ackermann, Wikipédia](http://fr.wikipedia.org/wiki/Fonction\_d'Ackermann)).
+- La fonction d'Ackermann demandant beaucoup de calculs même pour de petites entrées, elle est parfois utilisée comme programme de test d'une implémentation d'un langage de programmation&nbsp;: en particulier, elle utilise de façon très exigeante la récursivité (cf. [Fonction d'Ackermann, Wikipédia](https://fr.wikipedia.org/wiki/Fonction_d'Ackermann)).
 {{< /note >}}
 
 {{< solution "Solution" >}}
@@ -695,7 +758,7 @@ $$
 $$
 Ces deux suites ont pour particularité que&nbsp;: $v(n) - u(n) = 1$ pour tout $n$.
 
-- Écrire un programme qui, à l'aide de fonctions récursives, donne les valeurs de ces deux suites pour un $n$ donnée (tester avec $n=3$) et qui vérifie que la différence entre ces deux valeurs est égale à 1.
+- Écrire un programme qui, à l'aide de fonctions récursives, donne les valeurs de ces deux suites pour un $n$ donné (tester avec $n=3$) et qui vérifie que la différence entre ces deux valeurs est égale à 1.
 
 - Établir les *arbres des appels*.
 {{< /note >}}
@@ -723,25 +786,26 @@ def v(n: int) -> int:
         return 2 * u(n - 1) + 3 * v(n - 1)
 
 
-def main():
-
+def main() -> None:
+    """Fonction principale."""
     n = int(input("Entrer la valeur de n : "))
-    u_ = u(n)
-    v_ = v(n)
+    u_n = u(n)
+    v_n = v(n)
 
-    print("u({}) = {}".format(n, u_))
-    print("v({}) = {}".format(n, v_))
-    print("v({}) - u({}) = {}".format(v_, u_, v_ - u_))
+    print(f"u({n}) = {u_n}")
+    print(f"v({n}) = {v_n}")
+    print(f"v({n}) - u({n}) = {v_n - u_n}")
 
 
-main()
+if __name__ == "__main__":
+    main()
 ```
 
 {{< /solution >}}
 
 {{< note exercise >}}
 
-#### Exercice 10&nbsp;: Fonctions mutuellement récursives
+#### Exercice 11&nbsp;: Fonctions mutuellement récursives
 
 Le but de cet exercice consiste à écrire les fonctions récursives `est_pair` et `est_impair` *sans utiliser le modulo*.  
 La fonction `est_pair` (resp. `est_impair`) retourne `True` si son argument entier est pair (resp. impair).
@@ -779,20 +843,21 @@ def est_impair(nbre: int) -> bool:
         return est_pair(nbre - 1)
 
 
-def main():
-    """Fonction principale"""
+def main() -> None:
+    """Fonction principale."""
     n = int(input("Entrer le nombre à tester : "))
-    print("Est-il pair ? {}".format(est_pair(n)))
+    print(f"Est-il pair ? {est_pair(n)}")
 
 
-main()
+if __name__ == "__main__":
+    main()
 ```
 
 {{< /solution >}}
 
 {{< note exercise >}}
 
-#### Exercice 11&nbsp;: Conjecture de Syracuse
+#### Exercice 12&nbsp;: Conjecture de Syracuse
 
 On appelle **suite de Syracuse** une suite d'entiers naturels définie de la manière suivante&nbsp;: *On part d'un nombre entier plus grand que zéro. S'il est pair, on le divise par 2&nbsp;; s'il est impair, on le multiplie par 3 et on ajoute 1. En répétant l'opération, on obtient une suite d'entiers positifs dont chacun ne dépend que de son prédécesseur.*
 
@@ -804,23 +869,45 @@ C'est ce qu'on appelle la suite de Syracuse du nombre 14. Une fois le nombre 1 a
 
 La **conjecture de Syracuse** (encore appelée conjecture de Collatz, ou conjecture d'Ulam) est l'hypothèse mathématique selon laquelle la suite de Syracuse de n'importe quel entier strictement positif atteint 1.
 
-Écrire la fonction `syracuse` à un paramètre entier qui retourne la longueur de la suite de Syracuse de cet entier pour obtenir 1.
+Écrire la fonction `syracuse` à un paramètre entier qui retourne le nombre de termes de la suite de Syracuse de cet entier, depuis l'entier de départ jusqu'au premier 1 inclus. Par exemple, `syracuse(14)` retourne 18.
 {{< /note >}}
 
 {{< solution "Solution" >}}
 
 ```python
-def syracuse_01(n: int) -> int:
-    """Retourne la longueur de la suite de Syracuse, c'est à
-    dire le nombre de termes avant que la valeur soit égale à 1.
+def syracuse(n: int) -> int:
+    """
+    Retourne la longueur de la suite de Syracuse de n, c'est-à-dire
+    le nombre de termes depuis n jusqu'au premier 1 inclus.
     Récursivité enveloppée.
+
+    HYPOTHÈSE : n entier strictement positif.
+
+    >>> syracuse(14)
+    18
+    >>> syracuse(1)
+    1
     """
     if n == 1:
         return 1
     elif n % 2 == 0:
-        return 1 + syracuse_01(n / 2)
+        return 1 + syracuse(n // 2)
     else:
-        return 1 + syracuse_01(n * 3 + 1)
+        return 1 + syracuse(n * 3 + 1)
 ```
 
 {{< /solution >}}
+
+## Bilan
+
+{{< note success "À l'issue de ce chapitre, je sais…" >}}
+- écrire la définition récursive d'une fonction sur les entiers, avec un ou plusieurs cas de base et un ou plusieurs appels récursifs ;
+- vérifier que les appels récursifs finissent par atteindre un cas de base ;
+- dérouler à la main l'exécution d'une fonction récursive et dessiner son arbre des appels ;
+- programmer une fonction récursive en Python ;
+- écrire la version itérative d'une fonction récursive, et inversement ;
+- compter les appels provoqués par une fonction récursive, et expliquer pourquoi le calcul récursif naïf de la suite de Fibonacci est très lent ;
+- écrire des fonctions mutuellement récursives.
+{{< /note >}}
+
+Le document suivant applique la récursivité aux chaînes de caractères et aux listes.

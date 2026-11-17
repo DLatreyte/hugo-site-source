@@ -11,12 +11,22 @@ auto_numbering: true
 weight: 103
 ---
 
+{{< note goal >}}
+Écrire les versions itératives et récursives de la recherche séquentielle et de la recherche dichotomique, et justifier leur terminaison, leur correction et leur complexité.
+{{< /note >}}
+
+Avant de commencer&nbsp;: on cherche à deviner un nombre entier compris entre 1 et 100, en posant des questions auxquelles on répond seulement «&nbsp;plus grand&nbsp;», «&nbsp;plus petit&nbsp;» ou «&nbsp;trouvé&nbsp;». Quelle stratégie adopter&nbsp;? Combien de questions faut-il, au maximum, avec cette stratégie&nbsp;?
+
+{{< solution "Réponse" >}}
+On propose à chaque fois le nombre situé au milieu des valeurs encore possibles&nbsp;: chaque réponse élimine la moitié des candidats. Il reste au plus 50 candidats après la première question, 25 après la deuxième, puis 12, 6, 3, 1. Il faut donc au plus 7 questions, alors qu'en proposant les nombres dans l'ordre, il en faudrait jusqu'à 100. C'est l'idée de la recherche dichotomique.
+{{< /solution >}}
+
 ## Recherche d'un élément dans un tableau
 
 La recherche d'éléments dans un tableau a déjà été évoquée en classe de première. Les deux algorithmes mis en œuvre à cette occasion, la **recherche linéaire** et la **recherche dichotomique**, utilisaient des boucles.  
-L'objectif de cette séance est de rapidement revoir ces algorithmes et de mettre en œuvres des algorithmes récursifs de même complexité. Quatre algorithmes de recherche vont donc être implémentés&nbsp;:
+L'objectif de cette séance est de rapidement revoir ces algorithmes et de mettre en œuvre des algorithmes récursifs de même complexité. Cinq algorithmes de recherche vont donc être implémentés&nbsp;:
 
-- *La recherche linéaire itérative*&nbsp;;
+- *La recherche linéaire itérative*, en deux versions&nbsp;;
 - *La recherche linéaire récursive*&nbsp;;
 - *La recherche dichotomique itérative*&nbsp;;
 - *La recherche dichotomique récursive*.
@@ -25,11 +35,8 @@ L'objectif de cette séance est de rapidement revoir ces algorithmes et de mettr
 
 - Implémenter en Python les cinq algorithmes suivants et répondre aux questions.
 {{< note warning >}}
-Penser à donner la **spécification** de chacune des fonctions et écrire une **série des tests** pour chacune d'elles.
+Penser à donner la **spécification** de chacune des fonctions et écrire une **série de tests** pour chacune d'elles.
 {{< /note >}}
-<!--
-- Un corrigé se trouve à cette adresse&nbsp;: {{< remote "https://repl.it/join/azqimfmv-dlatreyte" "https://repl.it/join/azqimfmv-dlatreyte" >}}
--->
 
 ## Recherche séquentielle (ou linéaire)
 
@@ -62,7 +69,9 @@ La **recherche séquentielle (ou linéaire)**  consiste à
 
 1. Décrire le fonctionnement de l'algorithme pour les valeurs `tab = [1, 8, 3, 5, 9]` et `val = 3`.
 {{< solution "Réponse" >}}
+`nb` vaut 5. La boucle examine successivement `tab[0]`, `tab[1]`, …, `tab[4]`. Seul `tab[2]` est égal à 3&nbsp;: `i_val` prend la valeur 2 lors du troisième tour. La boucle continue pourtant jusqu'à `i = 5`&nbsp;: elle effectue 5 tours, puis l'algorithme renvoie 2.
 
+Si la valeur est présente plusieurs fois, `i_val` est modifié à chaque occurrence&nbsp;: l'algorithme renvoie l'indice de la **dernière** occurrence.
 {{< /solution >}}
 
 2. Démontrer que l'algorithme se termine.
@@ -75,11 +84,11 @@ La fonction dont l'expression est $f(i) = nb -i$ est-elle un variant de boucle ?
 - $i$ et $nb$ sont des entiers naturels. De plus la boucle « tourne » tant que $i<nb$.
 $f(i)$ est donc un entier naturel.
 - $f(i_{k+1}) - f(i_k) = nb - i_{k+1} - ( nb - i_{k} ) = i_{k} - i_{k+1}$. Comme
-$i_{k+1} = i_{k} + 1$, $f(i_{k+1}) - f(i_k) = i_{k} - (i_{k} + 1) = -1$. La fonction
-est décroissante.
+$i_{k+1} = i_{k} + 1$, $f(i_{k+1}) - f(i_k) = i_{k} - (i_{k} + 1) = -1$. La valeur
+de $f$ diminue de 1 à chaque tour : elle est strictement décroissante.
 
-$f$ est une fonction qui retourne forcément un entier naturel et qui est décroissante ;
-elle est donc bornée par la valeur 0, c'est un variant de boucle.
+$f$ prend des valeurs entières naturelles et diminue strictement à chaque tour ;
+elle ne peut donc diminuer qu'un nombre fini de fois : c'est un variant de boucle.
 
 L'algorithme se termine.
 {{< /solution >}}
@@ -89,17 +98,18 @@ L'algorithme se termine.
 Pour déterminer qu'un algorithme qui comporte une boucle est correct, il faut trouver
 un invariant de boucle.
 
-On peut par exemple dire que « La valeur recherchée n'est pas présente dans les éléments du tableau d'indices 0 à i-1, où i est l'indice courant. »
+L'algorithme 1 ne s'arrête pas quand il trouve la valeur. Un invariant qui convient est&nbsp;: « `i_val` est l'indice de la dernière occurrence de la valeur recherchée parmi les éléments d'indices 0 à $i - 1$, ou $-1$ si elle n'y figure pas. »
 
-- **Initialisation :** Avant la première itération, $i = 0$, donc l'invariant est vrai trivialement car aucun élément n'a encore été examiné.
-- **Conservation :** À chaque itération, on vérifie si l'élément à l'indice $i$ est la valeur recherchée. Si ce n'est pas le cas, on passe à l'élément suivant $(i + 1)$. Ainsi, on sait que la valeur recherchée n'est pas dans les éléments précédents.
-- **Terminaison :** La boucle se termine soit quand on trouve la valeur (auquel cas l'invariant n'est plus nécessaire), soit quand on a parcouru tout le tableau sans la trouver (auquel cas l'invariant assure que la valeur n'est pas dans le tableau).
+- **Initialisation :** avant la première itération, $i = 0$ : aucun élément n'a été examiné et `i_val` vaut $-1$. L'invariant est vrai.
+- **Conservation :** supposons l'invariant vrai au début d'un tour. Si `tab[i]` est égal à la valeur, `i_val` prend la valeur $i$, qui est bien l'indice de la dernière occurrence parmi les indices 0 à $i$. Sinon, `i_val` ne change pas, et la dernière occurrence parmi les indices 0 à $i$ est la même que parmi les indices 0 à $i - 1$. Dans les deux cas, après `i ⟵ i + 1`, l'invariant est de nouveau vrai.
+- **Conclusion :** la boucle s'arrête quand $i = nb$. L'invariant dit alors que `i_val` est l'indice de la dernière occurrence de la valeur dans tout le tableau, ou $-1$ si elle n'y figure pas. C'est le résultat attendu.
 {{< /solution >}}
 
 4. Démontrer que l'algorithme est en O(N).
 {{< solution "Réponse" >}}
-L'algorithme contient une boucle dont le nombre de tours est, dans le pire des cas,
-égal au nombre d'éléments dans la liste. La complexité est donc linéaire, $O(n)$.
+L'algorithme contient une boucle dont le nombre de tours est toujours
+égal au nombre $n$ d'éléments du tableau, et chaque tour effectue un nombre
+constant d'opérations. La complexité est donc linéaire, $O(n)$.
 {{< /solution >}}
 
 5. Comment pourrait-on améliorer l'efficacité de cet algorithme&nbsp;?
@@ -117,6 +127,7 @@ est bien présente dans la liste.
 **Début**  
 <span style="margin-left: 2em">trouvé ⟵ Faux  </span><br />
 <span style="margin-left: 2em">i ⟵ 0  </span><br />
+<span style="margin-left: 2em">nb ⟵ Longueur(tab)  </span><br />
 <span style="margin-left: 2em">**TantQue** i < nb et (Non trouvé) **Faire**  </span><br />
 <span style="margin-left: 4em">**Si** tab[i] = valeur **Alors**  </span><br />
 <span style="margin-left: 8em">trouvé ⟵ Vrai  </span><br />
@@ -134,7 +145,12 @@ est bien présente dans la liste.
 6. Expliquer pourquoi l'algorithme 2 est plus efficace que l'algorithme 1.
 {{< solution "Réponse" >}}
 On quitte la boucle dès l'instant où la valeur a été trouvée, si elle
-est bien présente dans la liste.
+est bien présente dans la liste. Dans le pire des cas (valeur absente ou en
+dernière position), les deux algorithmes effectuent $n$ tours ; la complexité
+reste en $O(n)$, mais l'algorithme 2 est souvent bien plus rapide.
+
+Attention : l'algorithme 2 renvoie l'indice de la **première** occurrence,
+alors que l'algorithme 1 renvoie celui de la dernière.
 {{< /solution >}}
 
 ### Recherche séquentielle récursive
@@ -161,6 +177,13 @@ est bien présente dans la liste.
 
 7. Décrire le fonctionnement de l'algorithme pour les valeurs `tab = [1, 8, 3, 5, 9]`, `i = 0` et `val = 3`.  
 Établir, en particulier, l'arbre des appels.
+{{< solution "Réponse" >}}
+- `recherche(tab, 3, 0)` : `tab[0]` vaut 1, différent de 3 ; on appelle `recherche(tab, 3, 1)`.
+- `recherche(tab, 3, 1)` : `tab[1]` vaut 8 ; on appelle `recherche(tab, 3, 2)`.
+- `recherche(tab, 3, 2)` : `tab[2]` vaut 3 ; cet appel renvoie 2.
+
+L'arbre des appels est une simple chaîne de trois appels. La valeur 2 remonte ensuite telle quelle jusqu'au premier appel : c'est une récursivité terminale.
+{{< /solution >}}
 
 ## Recherche dichotomique
 
@@ -194,7 +217,7 @@ La division par deux de l'ensemble de données de recherche à chaque appel indi
 <span style="margin-left: 2em">**TantQue**  (gauche <= droite) ET (NON trouvé) **Faire** </span><br />
 <span style="margin-left: 4em">milieu ⟵ (droite + gauche) // 2 </span><br />
 <span style="margin-left: 4em">**Si** tab[milieu] = valeur **Alors**  </span><br />
-<span style="margin-left: 6em">resultat ⟵ milieu  </span><br />
+<span style="margin-left: 6em">résultat ⟵ milieu  </span><br />
 <span style="margin-left: 6em">trouvé ⟵ VRAI  </span><br />
 <span style="margin-left: 4em">**SinonSi** tab[milieu] < valeur **Alors** </span><br />
 <span style="margin-left: 6em">gauche ⟵ milieu + 1  </span><br />
@@ -208,7 +231,13 @@ La division par deux de l'ensemble de données de recherche à chaque appel indi
 
 8. Décrire le fonctionnement de l'algorithme pour les valeurs `tab = [1, 3, 5, 8, 9]` et `val = 3`.
 {{< solution "Réponse" >}}
+| tour | gauche | droite | milieu | `tab[milieu]` | décision |
+|:---:|:---:|:---:|:---:|:---:|:---|
+| 1 | 0 | 4 | 2 | 5 | $5 > 3$ : droite ⟵ 1 |
+| 2 | 0 | 1 | 0 | 1 | $1 < 3$ : gauche ⟵ 1 |
+| 3 | 1 | 1 | 1 | 3 | trouvé : résultat ⟵ 1 |
 
+La boucle s'arrête après 3 tours et l'algorithme renvoie 1.
 {{< /solution >}}
 
 9. Démontrer que l'algorithme se termine.
@@ -224,7 +253,7 @@ Le variant initial est donc $n$, qui est un entier naturel.
 Dans les deux derniers cas, la taille de l'intervalle est réduite de moitié (ou presque).
 Donc, le variant diminue strictement à chaque itération.
 
-Puisque le variant est initialement positif, diminue strictement à chaque itération, et que la boucle se termine quand il atteint 0 ou 1, on peut conclure que l'algorithme se termine toujours en un nombre fini d'étapes.
+Comme $g \leqslant d + 1$ à chaque étape, le variant est un entier naturel. Il diminue strictement à chaque itération, et la boucle s'arrête au plus tard quand il atteint 0 (intervalle vide, $g > d$). L'algorithme se termine donc toujours en un nombre fini d'étapes.
 
 {{< /solution >}}
 
@@ -277,15 +306,7 @@ Conclusion : À la fin de l'algorithme, l'invariant reste valide et garantit que
 {{< solution "Réponse" >}}
 L'algorithme fonctionne en divisant l'intervalle de recherche par 2 à chaque itération. Ainsi, si le tableau contient $n$ éléments, après une itération, la taille de l'intervalle est réduite à $n/2$, puis $n/4$, et ainsi de suite. En général, après $k$ itérations, la taille de l'intervalle est réduite à $n / 2^k$.
 
-L'algorithme se termine lorsque l'intervalle ne contient plus qu'un seul élément, ce qui se produit lorsque :
-$$
-\dfrac{n}{2^k} = 1
-$$
-En résolvant cette équation, on obtient :
-$$
-k = \log_2(n)
-$$
-Cela signifie que l'algorithme effectue au plus $\log_2(n)$ itérations pour un tableau de taille $n$.
+Dans le pire des cas, la boucle continue tant que l'intervalle n'est pas vide. Après $k$ itérations, il contient au plus $n / 2^k$ éléments ; il ne contient plus qu'un élément quand $2^k \geqslant n$, c'est-à-dire pour $k \geqslant \log_2(n)$, et une dernière itération suffit alors à conclure. L'algorithme effectue donc au plus $\lfloor \log_2(n) \rfloor + 1$ itérations : pour $n = 5$, au plus 3 ; pour un million d'éléments, au plus 20. La complexité est en $O(\log_2 n)$.
 {{< /solution >}}
 
 ### Recherche dichotomique récursive
@@ -314,11 +335,182 @@ Cela signifie que l'algorithme effectue au plus $\log_2(n)$ itérations pour un 
 
 12. Décrire le fonctionnement de l'algorithme pour les valeurs `tab = [1, 3, 5, 8, 9]`, `gauche = 0`, `droite = 4`, et `val = 3`.
 {{< solution "Réponse" >}}
+- `recherche(tab, 3, 0, 4)` : milieu vaut 2 et `tab[2]` vaut 5, plus grand que 3 ; on appelle `recherche(tab, 3, 0, 1)`.
+- `recherche(tab, 3, 0, 1)` : milieu vaut 0 et `tab[0]` vaut 1, plus petit que 3 ; on appelle `recherche(tab, 3, 1, 1)`.
+- `recherche(tab, 3, 1, 1)` : milieu vaut 1 et `tab[1]` vaut 3 ; cet appel renvoie 1.
+
+On retrouve exactement les étapes de l'algorithme itératif : chaque tour de boucle est remplacé par un appel récursif.
+{{< /solution >}}
+
+### Programmes Python
+
+{{< solution "Solution" >}}
+
+```python
+def recherche_1(tab: list[int], valeur: int) -> int:
+    """
+    Algorithme 1 : retourne l'indice de la dernière occurrence de valeur
+    dans tab, ou -1 si valeur n'est pas dans tab.
+
+    >>> recherche_1([1, 8, 3, 5, 9], 3)
+    2
+    >>> recherche_1([3, 8, 3], 3)
+    2
+    >>> recherche_1([1, 8, 3, 5, 9], 4)
+    -1
+    """
+    i = 0
+    i_val = -1
+    nb = len(tab)
+    while i < nb:
+        if tab[i] == valeur:
+            i_val = i
+        i += 1
+    return i_val
+
+
+def recherche_2(tab: list[int], valeur: int) -> int:
+    """
+    Algorithme 2 : retourne l'indice de la première occurrence de valeur
+    dans tab, ou -1 si valeur n'est pas dans tab.
+
+    >>> recherche_2([1, 8, 3, 5, 9], 3)
+    2
+    >>> recherche_2([3, 8, 3], 3)
+    0
+    >>> recherche_2([1, 8, 3, 5, 9], 4)
+    -1
+    """
+    trouve = False
+    i = 0
+    nb = len(tab)
+    while i < nb and not trouve:
+        if tab[i] == valeur:
+            trouve = True
+        else:
+            i += 1
+    if trouve:
+        return i
+    else:
+        return -1
+
+
+def recherche_3(tab: list[int], valeur: int, i: int = 0) -> int:
+    """
+    Algorithme 3 (récursif) : retourne l'indice de la première occurrence
+    de valeur dans tab à partir de l'indice i, ou -1.
+
+    >>> recherche_3([1, 8, 3, 5, 9], 3)
+    2
+    >>> recherche_3([1, 8, 3, 5, 9], 4)
+    -1
+    """
+    if i == len(tab):
+        return -1
+    elif tab[i] == valeur:
+        return i
+    else:
+        return recherche_3(tab, valeur, i + 1)
+
+
+def recherche_4(tab: list[int], valeur: int) -> int:
+    """
+    Algorithme 4 (dichotomie itérative) : retourne un indice de valeur
+    dans le tableau trié tab, ou -1 si valeur n'est pas dans tab.
+
+    >>> recherche_4([1, 3, 5, 8, 9], 3)
+    1
+    >>> recherche_4([1, 3, 5, 8, 9], 4)
+    -1
+    """
+    trouve = False
+    resultat = -1
+    gauche = 0
+    droite = len(tab) - 1
+    while gauche <= droite and not trouve:
+        milieu = (gauche + droite) // 2
+        if tab[milieu] == valeur:
+            resultat = milieu
+            trouve = True
+        elif tab[milieu] < valeur:
+            gauche = milieu + 1
+        else:
+            droite = milieu - 1
+    return resultat
+
+
+def recherche_5(tab: list[int], valeur: int, gauche: int, droite: int) -> int:
+    """
+    Algorithme 5 (dichotomie récursive) : retourne un indice de valeur
+    dans tab[gauche..droite] (tableau trié), ou -1.
+
+    >>> recherche_5([1, 3, 5, 8, 9], 3, 0, 4)
+    1
+    >>> recherche_5([1, 3, 5, 8, 9], 4, 0, 4)
+    -1
+    """
+    if gauche > droite:
+        return -1
+    milieu = (gauche + droite) // 2
+    if tab[milieu] == valeur:
+        return milieu
+    elif tab[milieu] < valeur:
+        return recherche_5(tab, valeur, milieu + 1, droite)
+    else:
+        return recherche_5(tab, valeur, gauche, milieu - 1)
+```
 
 {{< /solution >}}
 
 ## Application
 
 {{< note exercise >}}
-Écrire un programme de devinette&nbsp;: l'utilisateur choisit un nombre au hasard (compris entre 1 et 50) et l'ordinateur doit découvrir ce nombre. Faire en sorte que le nombre de tentatives de l'ordinateur lui permette de trouver la bonne valeur à coup sur (choisir de façon pertinente ce nombre).
+Écrire un programme de devinette&nbsp;: l'utilisateur choisit un nombre au hasard (compris entre 1 et 50) et l'ordinateur doit découvrir ce nombre. Faire en sorte que le nombre de tentatives de l'ordinateur lui permette de trouver la bonne valeur à coup sûr (choisir de façon pertinente ce nombre).
+{{< /note >}}
+
+{{< note tip "Coup de pouce" >}}
+L'utilisateur répond à chaque proposition par `+` (le nombre est plus grand), `-` (il est plus petit) ou `=` (trouvé). L'ordinateur garde en mémoire les bornes `gauche` et `droite` des valeurs encore possibles, comme dans l'algorithme 4. Combien de valeurs reste-t-il, au plus, après 1, 2, 3… tentatives&nbsp;?
+{{< /note >}}
+
+{{< solution "Solution" >}}
+
+Après chaque tentative, il reste au plus la moitié des valeurs possibles : 50, puis 25, 12, 6, 3 et 1. Six tentatives suffisent donc toujours ($2^6 = 64 > 50$, alors que $2^5 = 32 < 50$).
+
+```python
+def devinette(minimum: int = 1, maximum: int = 50) -> None:
+    """
+    L'ordinateur devine un nombre choisi par l'utilisateur entre minimum
+    et maximum, par dichotomie. L'utilisateur répond +, - ou =.
+    """
+    gauche, droite = minimum, maximum
+    tentatives = 0
+    while gauche <= droite:
+        milieu = (gauche + droite) // 2
+        tentatives += 1
+        reponse = input(f"Je propose {milieu}. Réponse (+, - ou =) : ")
+        if reponse == "=":
+            print(f"Trouvé en {tentatives} tentative(s) !")
+            return
+        elif reponse == "+":
+            gauche = milieu + 1
+        else:
+            droite = milieu - 1
+    print("Vos réponses sont contradictoires.")
+
+
+if __name__ == "__main__":
+    devinette()
+```
+
+{{< /solution >}}
+
+## Bilan
+
+{{< note success "À l'issue de cette activité, je sais…" >}}
+- programmer la recherche séquentielle et la recherche dichotomique, en version itérative et en version récursive ;
+- dérouler à la main ces algorithmes sur un exemple et établir un arbre des appels ;
+- prouver la terminaison d'une boucle à l'aide d'un variant ;
+- prouver la correction d'une boucle à l'aide d'un invariant ;
+- justifier qu'une recherche séquentielle est en $O(n)$ et qu'une recherche dichotomique est en $O(\log_2 n)$ ;
+- expliquer pourquoi la recherche dichotomique exige un tableau trié.
 {{< /note >}}

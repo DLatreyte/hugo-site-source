@@ -15,13 +15,13 @@ weight: 50
 
 | Contenus | Capacités attendues | Commentaires |
 |:-:|:-:|:-:|
-| Récursivité | - Écrire un programme récursif. <br />- Analyser le fonctionnement d'un programme récursif.   | Des exemples relevant de domaines variés sont à privilégier.   |
+| Récursivité | - Écrire un programme récursif. <br />- Analyser le fonctionnement d'un programme récursif.   | Des exemples relevant de domaines variés sont à privilégier.   |
 
 ## Documents
 
-- **Doc.:** [*Récursivité sur les entiers*](1-1-recursivite-sur-entiers)
+- **Doc. :** [*Récursivité sur les entiers*](1-1-recursivite-sur-entiers)
 
-- **Doc.:** [*Récursivité sur les chaînes de caractères et les listes*](1-2-recursivite-chaines-listes)
+- **Doc. :** [*Récursivité sur les chaînes de caractères et les listes*](1-2-recursivite-chaines-listes)
 
 - **Doc. :** [*Recherche d'un élément dans un tableau : algorithmes itératifs et récursifs*](1-3-recursivite-recherches)
 
