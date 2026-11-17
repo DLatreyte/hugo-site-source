@@ -112,8 +112,7 @@ assert valeur_absolue(-3) == 3
 ```python
 def valeur_absolue(x: float) -> float:
     """
-    Calcule et retourne la valeur absolue du nombre x positif
-    passé en argument.
+    Calcule et retourne la valeur absolue du nombre x passé en argument.
     """
     if x >= 0:
         return x
@@ -151,10 +150,10 @@ def puissance(x: float, n: int) -> float:
     calcule et retourne le résultat de x à la puissance entière n :
     x^n = x . x . x . ... . x (n fois)
     """
-    res = 1
-    for i in range(1, n + 1):
-        res *= x
-    return res
+    resultat: float = 1
+    for _ in range(n):
+        resultat *= x
+    return resultat
 ```
 
 {{< /solution >}}
@@ -207,9 +206,9 @@ Remarque.
 Ajouter le jeu de test suivant à la fin du fichier :
 
 ```python
-assert est_suffisamment_bon(1.9, 4) == False
-assert est_suffisamment_bon(1.999, 4) == False
-assert est_suffisamment_bon(1.9999, 4) == True
+assert not est_suffisamment_bon(1.9, 4)
+assert not est_suffisamment_bon(1.999, 4)
+assert est_suffisamment_bon(1.9999, 4)
 ```
 
 {{< solution "Réponse" >}}
@@ -291,7 +290,7 @@ def racine_carree(x: float) -> float:
     Retourne le résultat de l'appel de la fonction test avec la valeur 1 pour l'argument essai.
     """
 
-    return test(x, 1)
+    return test(1, x)
 ```
 
 {{< /solution >}}
@@ -303,8 +302,11 @@ Ajouter l'appel de la fonction `main` à la fin du fichier.
 {{< solution "Réponse" >}}
 
 ```python
-def main():
-    return [racine_carree(i) for i in range(1, 100) if i % 2 == 0]
+def main() -> None:
+    """
+    Affiche la liste des racines carrées des nombres pairs compris entre 1 et 100.
+    """
+    print([racine_carree(i) for i in range(2, 101, 2)])
 ```
 
 {{< /solution >}}

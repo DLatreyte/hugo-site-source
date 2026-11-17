@@ -45,13 +45,11 @@ def multiplication(a: int) -> str:
     nbre_tours_boucle = 10
 
     # for i in range(1, nbre_tours_boucle + 1):
-    #    chaine_retour += str(a * i)
-    #    chaine_retour += " "
+    #     chaine_retour += f"{a * i} "
 
     i = 1
     while i <= nbre_tours_boucle:
-        chaine_retour += str(a * i)
-        chaine_retour += " "
+        chaine_retour += f"{a * i} "
         i += 1
 
     return chaine_retour
@@ -98,7 +96,6 @@ def multiplication_multiple_trois(a: int) -> str:
     for i in range(1, nbre_tours_boucle + 1):
         resultat_multiplication = a * i
         chaine_retour += str(resultat_multiplication)
-
         if resultat_multiplication % 3 == 0:
             chaine_retour += "*"
 
@@ -146,8 +143,7 @@ def multiplication_multiple_sept(a: int) -> str:
     for i in range(1, nbre_tours_boucle + 1):
         resultat_multiplication = a * i
         if resultat_multiplication % 7 == 0:
-            chaine_retour += str(resultat_multiplication)
-            chaine_retour += " "
+            chaine_retour += f"{resultat_multiplication} "
     return chaine_retour
 ```
 
@@ -181,18 +177,16 @@ def diviseurs(a: int) -> str:
     '18 9 6 3 2 1 '
     """
     chaine_retour = ""
-    diviseur_possible = a
 
+    # diviseur_possible = a
     # while diviseur_possible >= 1:
-    #    if a % diviseur_possible == 0:
-    #        chaine_retour += str(diviseur_possible)
-    #        chaine_retour += " "
-    #    diviseur_possible -= 1
+    #     if a % diviseur_possible == 0:
+    #         chaine_retour += f"{diviseur_possible} "
+    #     diviseur_possible -= 1
 
-    for i in range(a, 0, -1):  # i est diviseur possible
+    for i in range(a, 0, -1):  # i est un diviseur possible
         if a % i == 0:
-            chaine_retour += str(i)
-            chaine_retour += " "
+            chaine_retour += f"{i} "
 
     return chaine_retour
 ```
@@ -207,7 +201,7 @@ def diviseurs(a: int) -> str:
 
 La spécification de la fonction est :
 
-```python3
+```python
 def table_multiplication() -> str:
     """
     Retourne la table de multiplication des nombres de 1 à 10.
@@ -226,8 +220,7 @@ def table_multiplication() -> str:
 
     for i in range(1, nbre_termes + 1):
         for j in range(1, nbre_termes + 1):
-            chaine_retour += str(i * j)
-            chaine_retour += " "
+            chaine_retour += f"{i * j} "
         chaine_retour += "\n"
 
     return chaine_retour
@@ -294,7 +287,7 @@ Reprendre l'exercice précédent mais en faisant en sorte que le nombre de valeu
 ```python
 def plus_grand_plus_petit(nbre_tours: int) -> str:
     """
-    Demande à l'utilisateur d'entrer 10 valeurs et retourne une
+    Demande à l'utilisateur d'entrer nbre_tours valeurs et retourne une
     chaîne de caractères formée des deux valeurs max et min.
     """
     valeur_max = float("-inf")  # Plus petite valeur possible
@@ -351,7 +344,7 @@ Modifier le programme précédent de façon à ce que le nombre de notes à pren
 ```python
 def moyenne(nbre_notes: int) -> float:
     """
-    Demande 10 notes à l'utilisateur et retourne la moyenne.
+    Demande nbre_notes notes à l'utilisateur et retourne la moyenne.
     """
     total_notes = 0
     for i in range(nbre_notes):
@@ -366,11 +359,11 @@ def moyenne(nbre_notes: int) -> float:
 
 Modifier le programme précédent de façon à ce que l'utilisateur n'ait pas à indiquer le nombre de notes qu'il souhaite saisir. Une note négative terminer la saisie.
 
- **Remarque :** la fonction doit afficher le nombre de notes saisies.
+**Remarque :** la fonction doit afficher le nombre de notes saisies.
 
- {{< solution "Solution" >}}
+{{< solution "Solution" >}}
 
- ```python
+```python
 def moyenne_auto() -> tuple[int, float]:
     """
     Demande des notes à l'utilisateur tant que ce dernier
@@ -388,9 +381,9 @@ def moyenne_auto() -> tuple[int, float]:
             total_notes += note
             nbre_notes += 1
     return (nbre_notes, total_notes / nbre_notes)
- ```
+```
 
- {{< /solution >}}
+{{< /solution >}}
 
 ## Exercice 11
 
@@ -420,9 +413,9 @@ def loto_naif() -> str:
     """
     nbre_valeurs = 6
     rep = ""
-    for i in range(nbre_valeurs):
+    for _ in range(nbre_valeurs):
         valeur = randint(1, 49)
-        rep += str(valeur) + " "
+        rep += f"{valeur} "
     return rep
 ```
 
@@ -439,18 +432,21 @@ Cette fonction doit indiquer à l'utilisateur si sa tentative est trop grande ou
 ```python
 def devine() -> None:
     """
-    Déterminer aléatoirement un nombre compris en 1 et 50 et demande à l'utilisateur de le deviner.
-    La fonction affiche des messages qui aident l'utilisateur dans recherche et quitte dès que cette dernière est fructueuse.
+    Détermine aléatoirement un nombre compris entre 1 et 50 et demande à l'utilisateur de le deviner.
+    La fonction affiche des messages qui aident l'utilisateur dans sa recherche et quitte dès que cette dernière est fructueuse.
     """
 ```
 
 {{< solution "Solution" >}}
 
 ```python
+from random import randint
+
+
 def devine() -> None:
     """
-    Déterminer aléatoirement un nombre compris en 1 et 50 et demande à l'utilisateur de le deviner.
-    La fonction affiche des messages qui aident l'utilisateur dans recherche et quitte dès que cette dernière est fructueuse.
+    Détermine aléatoirement un nombre compris entre 1 et 50 et demande à l'utilisateur de le deviner.
+    La fonction affiche des messages qui aident l'utilisateur dans sa recherche et quitte dès que cette dernière est fructueuse.
     """
     nbre_a_deviner = randint(1, 50)
     nbre_tentatives = 0
@@ -500,14 +496,13 @@ def alphabet(sens: str) -> str:
     Code ascii [97; 122]
     """
     if sens == "croissant":
-        debut_code, fin_code, increment, pas = 97, 122, 1, 1
+        debut, fin, pas = ord("a"), ord("z") + 1, 1
     else:
-        debut_code, fin_code, increment, pas = 122, 97, -1, -1
+        debut, fin, pas = ord("z"), ord("a") - 1, -1
 
     rep = ""
-    for i in range(debut_code, fin_code + increment, pas):
-        rep += chr(i)
-
+    for code in range(debut, fin, pas):
+        rep += chr(code)
     return rep
 ```
 
@@ -541,14 +536,11 @@ def fibo(n: int) -> str:
     """
     Retourne les n premiers termes de la suite de Fibonacci.
     """
-    rep = "0 1 "
-    u = 0
-    v = 1
-    for i in range(2, n):
-        z = u + v
-        rep += str(z) + " "
-        u = v
-        v = z
+    rep = ""
+    u, v = 1, 1  # u_1 et u_2
+    for _ in range(n):
+        rep += f"{u} "
+        u, v = v, u + v
     return rep
 ```
 

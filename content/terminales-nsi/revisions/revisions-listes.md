@@ -19,7 +19,7 @@ weight: 9900
 La spécification de la fonction est la suivante :
 
 ```python
-def minmax(liste: list[float]) -> tuple[float]:
+def minmax(liste: list[float]) -> tuple[float, float]:
     """
     Retourne un tuple constitué des valeurs minimale
     et maximale de la liste
@@ -29,18 +29,18 @@ def minmax(liste: list[float]) -> tuple[float]:
 {{< solution "Solution" >}}
 
 ```python
-def minmax(liste: list[float]) -> tuple[float]:
+def minmax(liste: list[float]) -> tuple[float, float]:
     """
     Retourne un tuple constitué des valeurs minimale
     et maximale de la liste
     """
     val_min = liste[0]
     val_max = liste[0]
-    for i in range(1, len(liste) - 1):
-        if liste[i] > val_max:
-            val_max = liste[i]
-        if liste[i] < val_min:
-            val_min = liste[i]
+    for valeur in liste[1:]:
+        if valeur > val_max:
+            val_max = valeur
+        if valeur < val_min:
+            val_min = valeur
     return val_min, val_max
 ```
 
@@ -69,10 +69,10 @@ def longueur(liste: list[float]) -> int:
     Retourne le nombre d'éléments dans la
     liste
     """
-    longueur = 0
-    for i in range(len(liste)):
-        longueur += 1
-    return longueur
+    compteur = 0
+    for _ in liste:
+        compteur += 1
+    return compteur
 ```
 
 {{< /solution >}}
@@ -88,22 +88,25 @@ La spécification de la fonction est la suivante :
 ```python
 def loto() -> list[int]:
     """
-    Simule le tirage du Loto. retourne une liste de 6 entiers compris
-    entre 1 et 49.
+    Simule le tirage du Loto. Retourne une liste de 6 entiers différents
+    compris entre 1 et 49.
     """
 ```
 
 {{< solution "Solution" >}}
 
 ```python
+from random import randint
+
+
 def loto() -> list[int]:
     """
-    Simule le tirage du Loto. retourne une liste de 6 entiers compris
-    entre 1 et 49.
+    Simule le tirage du Loto. Retourne une liste de 6 entiers différents
+    compris entre 1 et 49.
     """
-    tirages = []
+    tirages: list[int] = []
     nbre_valeurs = 6
-    while len(tirages) <= nbre_valeurs:
+    while len(tirages) < nbre_valeurs:
         tirage = randint(1, 49)
         if tirage not in tirages:
             tirages.append(tirage)
@@ -119,7 +122,7 @@ def loto() -> list[int]:
 La signature de la fonction est :
 
 ```python
-def statistiques(notes: List[float]) -> Tuple[float]:
+def statistiques(notes: list[float]) -> tuple[float, float, float, float]:
     """
     Détermine les statistiques des notes reçues
     en argument : moyenne et notes comprises dans
@@ -131,7 +134,7 @@ def statistiques(notes: List[float]) -> Tuple[float]:
 Cette fonction doit utiliser les deux fonctions de signature :
 
 ```python
-def moyenne(liste_notes: List[float]) -> float:
+def moyenne(liste_notes: list[float]) -> float:
     """
     Détermine la moyenne des notes reçues en
     argument dans la liste passée en argument.
@@ -142,11 +145,11 @@ et
 
 ```python
 def nombre_dans_intervalle(
-    liste: List[float], valeur_min: float, valeur_max: float
-) -> float:
+    liste: list[float], valeur_min: float, valeur_max: float
+) -> int:
     """
     Détermine le nombre de valeurs de liste
-    comprises dans l'intervalle [val_min, val_max[.
+    comprises dans l'intervalle [valeur_min, valeur_max[.
     """
 ```
 
@@ -158,7 +161,9 @@ def nombre_dans_intervalle(
 La spécification de la fonction est :
 
 ```python
-def distance(pt1: tuple[float], pt2: tuple[float]) -> float:
+def distance(
+    pt1: tuple[float, float, float], pt2: tuple[float, float, float]
+) -> float:
     """
     Détermine la distance entre les points pt1 et
     pt2.
@@ -174,7 +179,7 @@ Reprendre l'exercice précédent et considérer que les points appartiennent à 
 La spécification de la fonction est :
 
 ```python
-def distanceN(pt1: Tuple[float], pt2: Tuple[float]) -> float:
+def distance_n(pt1: tuple[float, ...], pt2: tuple[float, ...]) -> float:
     """
     Détermine la distance entre les points pt1 et
     pt2.
@@ -189,7 +194,7 @@ def distanceN(pt1: Tuple[float], pt2: Tuple[float]) -> float:
 from math import sqrt
 
 
-def distanceN(pt1: tuple[float], pt2: tuple[float]) -> float:
+def distance_n(pt1: tuple[float, ...], pt2: tuple[float, ...]) -> float:
     """
     Détermine la distance entre les points pt1 et
     pt2.
@@ -198,11 +203,11 @@ def distanceN(pt1: tuple[float], pt2: tuple[float]) -> float:
     correspondent pas.
     """
     if len(pt1) != len(pt2):
-        raise Exception("Les dimensions ne correspondent pas !")
+        raise ValueError("Les dimensions ne correspondent pas !")
 
     carre_distance: float = 0
-    for i in range(len(pt1)):
-        carre_distance += (pt2[i] - pt1[i]) ** 2
+    for x1, x2 in zip(pt1, pt2):
+        carre_distance += (x2 - x1) ** 2
 
     return sqrt(carre_distance)
 ```
@@ -237,9 +242,9 @@ def table_multiplication(n: int) -> list[list[int]]:
     >>> table_multiplication(4)
     [[1, 2, 3, 4], [2, 4, 6, 8], [3, 6, 9, 12], [4, 8, 12, 16]]
     """
-    table = []
+    table: list[list[int]] = []
     for i in range(1, n + 1):
-        ligne = []
+        ligne: list[int] = []
         for j in range(1, n + 1):
             ligne.append(i * j)
         table.append(ligne)
