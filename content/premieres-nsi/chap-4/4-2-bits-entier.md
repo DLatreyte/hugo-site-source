@@ -6,7 +6,7 @@ draft: false
 toc: true
 tags: ["bit", "octet", "8, 16, 32, 64 bits", "puissance de 2", "addition binaire", "retenue", "dépassement de capacité", "décalage", "entiers de taille arbitraire"]
 categories: ["Informatique", "1ère Spé NSI"]
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: true
 weight: 20
 ---
@@ -139,7 +139,7 @@ Utiliser deux variables : le nombre de bits `k` et la puissance `2 ** k`. Tant q
 def nb_bits(n: int) -> int:
     assert n >= 1, "n doit être supérieur ou égal à 1"
     k = 1
-    while 2 ** k <= n:
+    while 2**k <= n:
         k += 1
     return k
 ```

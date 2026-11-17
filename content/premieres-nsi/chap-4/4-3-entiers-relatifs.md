@@ -6,7 +6,7 @@ draft: false
 toc: true
 tags: ["entier relatif", "bit de signe", "bit de poids fort", "complément à 1", "complément à 2", "addition modulaire", "plage de valeurs"]
 categories: ["Informatique", "1ère Spé NSI"]
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: true
 weight: 30
 ---
@@ -232,11 +232,13 @@ def decompose(n: int) -> str:
         n = n // 2
     return bits
 
+
 def octet(n: int) -> str:
     bits = decompose(n)
     while len(bits) < 8:
         bits = "0" + bits
     return bits
+
 
 def recompose(binaire: str) -> int:
     n = 0
@@ -305,7 +307,7 @@ def relatif_vers_octet(n: int) -> str:
     if n >= 0:
         return octet(n)
     else:
-        return octet(2 ** 8 + n)
+        return octet(2**8 + n)
 ```
 Si `n` vaut $-5$, alors `2 ** 8 + n` vaut $256 - 5 = 251$ : on écrit bien $2^8 - x$ avec $x = 5$. Erreur fréquente : écrire `2 ** 8 - n`, qui donne $261$ car `n` est déjà négatif.
 {{< /solution >}}
@@ -338,7 +340,7 @@ Commencer par regarder le bit de poids fort `bits[0]`. S'il vaut `"1"`, l'octet 
 def octet_vers_relatif(bits: str) -> int:
     p = recompose(bits)
     if bits[0] == "1":
-        return p - 2 ** 8
+        return p - 2**8
     else:
         return p
 ```

@@ -6,7 +6,7 @@ draft: false
 toc: true
 tags: ["base 2", "base 16", "nombre de bits", "complément à 2", "dépassement de capacité", "table de vérité", "flottant"]
 categories: ["Informatique", "1ère Spé NSI"]
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: true
 weight: 60
 ---
@@ -267,6 +267,7 @@ On veut convertir une écriture hexadécimale en entier, sans utiliser `int(...,
 ```python
 CHIFFRES = "0123456789ABCDEF"
 
+
 def valeur_chiffre(c: str) -> int:
     """
     Retourne la valeur du chiffre hexadécimal c,
@@ -303,10 +304,12 @@ def hexa_vers_decimal(hexa: str) -> int:
 ```python
 CHIFFRES = "0123456789ABCDEF"
 
+
 def valeur_chiffre(c: str) -> int:
     for i in range(len(CHIFFRES)):
         if CHIFFRES[i] == c:
             return i
+
 
 def hexa_vers_decimal(hexa: str) -> int:
     n = 0

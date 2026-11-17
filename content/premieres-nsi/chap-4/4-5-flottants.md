@@ -6,7 +6,7 @@ draft: false
 toc: true
 tags: ["nombre réel", "flottant", "float", "virgule en base 2", "multiplications successives", "écriture périodique", "arrondi", "égalité de flottants"]
 categories: ["Informatique", "1ère Spé NSI"]
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: true
 weight: 50
 ---

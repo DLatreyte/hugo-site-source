@@ -6,7 +6,7 @@ draft: false
 toc: true
 tags: ["bit", "base 10", "base 2", "base 16", "binaire", "hexadécimal", "poids", "divisions successives", "bin", "hex"]
 categories: ["Informatique", "1ère Spé NSI"]
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: true
 weight: 10
 ---
@@ -444,6 +444,7 @@ def decompose_16(n: int) -> str:
 {{< solution "Réponse" >}}
 ```python
 CHIFFRES = "0123456789ABCDEF"
+
 
 def decompose_16(n: int) -> str:
     if n == 0:

@@ -6,7 +6,7 @@ draft: false
 toc: true
 tags: ["booléen", "table de vérité", "and", "or", "not", "ou exclusif", "xor", "additionneur", "retenue", "évaluation séquentielle"]
 categories: ["Informatique", "1ère Spé NSI"]
-solution_est_visible: false
+solution_est_visible: true
 auto_numbering: true
 weight: 40
 ---
@@ -347,6 +347,7 @@ def complement_a_1(bits: str) -> str:
         else:
             resultat = resultat + "0"
     return resultat
+
 
 def complement_a_2(bits: str) -> str:
     return addition(complement_a_1(bits), "00000001")
