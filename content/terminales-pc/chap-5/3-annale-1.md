@@ -21,48 +21,70 @@ Promis à un grand avenir, les super condensateurs sont des dispositifs de stock
 
 Une première méthode consiste à charger le condensateur à l’aide d’un générateur délivrant un courant d’intensité I constant, selon le montage suivant.
 
-<img src="/terminales-pc/chap-5/chap-5-3-1.png" alt="" width="70%" />
+![](/terminales-pc/chap-5/chap-5-3-1.png?width=70%)
 
 À la date $t = \pu{0 s}$, on ferme l’interrupteur $K$ et on enregistre, à l’aide d’un système informatique, les variations au cours du temps de la tension $u_R$ aux bornes du conducteur ohmique de résistance $R = \pu{20 \Omega}$ et de la tension $u$ aux bornes du condensateur. Après traitement, on obtient les courbes ci-après&nbsp;:
 
-> Graphique&nbsp;: $i$ en fonction du temps.
-<img src="/terminales-pc/chap-5/chap-5-3-2.png" alt="" width="70%" />
+![](/terminales-pc/chap-5/chap-5-3-2.png?width=70%)
 
-> Graphique&nbsp;: $u$ en fonction du temps.
-<img src="/terminales-pc/chap-5/chap-5-3-3.png" alt="" width="70%" />
+> *Graphique&nbsp;: $i$ en fonction du temps.*
 
-1. Montrer que le graphe $i(t)$ est obtenu à partir de l’enregistrement de $u_R(t)$.
+![](/terminales-pc/chap-5/chap-5-3-3.png?width=70%)
 
-2. Utiliser l’un des graphes pour déterminer la relation numérique entre la tension $u$ aux bornes du condensateur et le temps. Justifier le calcul.
+> *Graphique&nbsp;: $u$ en fonction du temps.*
 
-3. En considérant qu’à $t = \pu{0 s}$ le condensateur est déchargé, donner l’expression littérale de la charge $q_A$ portée par l’armature $A$ du condensateur en fonction du temps.
+{{< question >}}
+Montrer que le graphe $i(t)$ est obtenu à partir de l’enregistrement de $u_R(t)$.
+{{< /question >}}
 
-4. Calculer le quotient $\dfrac{q_A}{u}$. Que représente-t-il&nbsp;?
+{{< question >}}
+Utiliser l’un des graphes pour déterminer la relation numérique entre la tension $u$ aux bornes du condensateur et le temps. Justifier le calcul.
+{{< /question >}}
+
+{{< question >}}
+En considérant qu’à $t = \pu{0 s}$ le condensateur est déchargé, donner l’expression littérale de la charge $q_A$ portée par l’armature $A$ du condensateur en fonction du temps.
+{{< /question >}}
+
+{{< question >}}
+Calculer le quotient $\dfrac{q_A}{u}$. Que représente-t-il&nbsp;?
+{{< /question >}}
 
 ## Charge d’un condensateur soumis à un échelon de tension
 
 Une autre manière de déterminer la valeur de la capacité d’un condensateur, consiste à charger ce dernier avec un générateur de tension constante $E = \pu{5,0 V}$ associé à une résistance $R = \pu{20 \Omega}$, en série avec le condensateur selon le schéma suivant&nbsp;:
 
-<img src="/terminales-pc/chap-5/chap-5-3-4.png" alt="" width="55%" />
+![](/terminales-pc/chap-5/chap-5-3-4.png?width=55%)
 
 On ferme l’interrupteur $K$ à $t = \pu{0 s}$, un dispositif informatique (acquisition et traitement) permet d’obtenir les variations de l’intensité dans le circuit et de la tension aux bornes du condensateur au cours du temps. On obtient les deux courbes ci-dessous&nbsp;:
 
-> Graphique&nbsp;: $u$ en fonction du temps.
-<img src="/terminales-pc/chap-5/chap-5-3-5.png" alt="" width="70%" />
+![](/terminales-pc/chap-5/chap-5-3-5.png?width=70%)
 
-> Graphique&nbsp;: $i$ en fonction du temps.
-<img src="/terminales-pc/chap-5/chap-5-3-6.png" alt="" width="70%" />
+> *Graphique&nbsp;: $u$ en fonction du temps.*
 
-5. D’après les graphes, quelles sont les valeurs de $u$ et $i$ lorsque le condensateur est chargé&nbsp;?
+![](/terminales-pc/chap-5/chap-5-3-6.png?width=70%)
 
-6. Rappeler l’expression de la constante de temps $\tau$ du circuit. La déterminer graphiquement en précisant la méthode.
+> *Graphique&nbsp;: $i$ en fonction du temps.*
 
-7. En déduire la valeur de la capacité $C$ du condensateur. Comparer avec la valeur obtenue à la question 4.
+{{< question >}}
+D’après les graphes, quelles sont les valeurs de $u$ et $i$ lorsque le condensateur est chargé&nbsp;?
+{{< /question >}}
 
-8. *En respectant les notations du montage*, montrer que la tension $u$ vérifie l’équation différentielle&nbsp;:
+{{< question >}}
+Rappeler l’expression de la constante de temps $\tau$ du circuit. La déterminer graphiquement en précisant la méthode.
+{{< /question >}}
+
+{{< question >}}
+En déduire la valeur de la capacité $C$ du condensateur. Comparer avec la valeur obtenue à la question 4.
+{{< /question >}}
+
+{{< question >}}
+*En respectant les notations du montage*, montrer que la tension $u$ vérifie l’équation différentielle&nbsp;:
 $$E = RC \, \dfrac{ \mathrm{d} u}{ \mathrm{dt} } + u$$
+{{< /question >}}
 
-9. La solution de cette équation différentielle est de la forme $u(t) = E\, (1 – e^{-t/\tau} )$ où $\tau$ est la constante de temps du circuit. Montrer que pour $t = 5\tau$, le condensateur est quasiment chargé. Le vérifier graphiquement.
+{{< question >}}
+La solution de cette équation différentielle est de la forme $u(t) = E\, (1 – e^{-t/\tau} )$ où $\tau$ est la constante de temps du circuit. Montrer que pour $t = 5\tau$, le condensateur est quasiment chargé. Le vérifier graphiquement.
+{{< /question >}}
 
 ## Correction
 

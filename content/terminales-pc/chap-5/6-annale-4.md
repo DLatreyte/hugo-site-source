@@ -20,39 +20,61 @@ On schématise le fonctionnement de ce dispositif sur le schéma ci-dessous :
 - un conducteur ohmique de résistance $R = \pu{1,00 k\Omega}$ permettant la charge du condensateur de capacité $C = \pu{150 \mu F}$ en plaçant l'interrupteur $K_2$ en position 1 et en fermant l'interrupteur $K_1$&nbsp;;
 - le tube flash qui est déclenché (une fois le condensateur chargé) en basculant l'interrupteur $K_2$ en position 2.
 
-<img src="/terminales-pc/chap-5/chap-5-6-1.pdf" alt="" width="100%" />
+![](/terminales-pc/chap-5/chap-5-6-1.svg?width=100%)
 
-**Remarque.** Énergie électrique stockée par un condensateur&nbsp;: $E_{el} = \dfrac{C u^2}{2} = \dfrac{q^2}{2C}$ si on note $u$ la tension électrique aux bornes du condensateur et $q$ la charge sur l'armature positive du condensateur.
+{{< note info "Remarque" >}}
+Énergie électrique stockée par un condensateur&nbsp;: $E_{el} = \dfrac{C u^2}{2} = \dfrac{q^2}{2C}$ si on note $u$ la tension électrique aux bornes du condensateur et $q$ la charge sur l'armature positive du condensateur.
+{{< /note >}}
 
 ## Charge du condensateur
 
 On charge le condensateur en fermant l'interrupteur $K_1$.
 
-1. On donne l'expression de la constante de temps $\tau = RC$. Vérifier par analyse dimensionnelle l'homogénéité de cette formule.
-2. Calculer numériquement $\tau$.
-3. Calculer l'énergie emmagasinée $E_{el}$ par le condensateur de capacité $C$ une fois la charge terminée à la tension $U_2$.
-4. En calculant l'énergie $E_{el}\rq$ qu'aurait stockée le condensateur s'il avait été chargé directement à l'aide de la pile (tension $U_1$), justifier l'intérêt de charger le condensateur avec une haute tension de 300&nbsp;V.
+{{< question >}}
+On donne l'expression de la constante de temps $\tau = RC$. Vérifier par analyse dimensionnelle l'homogénéité de cette formule.
+{{< /question >}}
+{{< question >}}
+Calculer numériquement $\tau$.
+{{< /question >}}
+{{< question >}}
+Calculer l'énergie emmagasinée $E_{el}$ par le condensateur de capacité $C$ une fois la charge terminée à la tension $U_2$.
+{{< /question >}}
+{{< question >}}
+En calculant l'énergie $E_{el}\rq$ qu'aurait stockée le condensateur s'il avait été chargé directement à l'aide de la pile (tension $U_1$), justifier l'intérêt de charger le condensateur avec une haute tension de 300&nbsp;V.
+{{< /question >}}
 
 ## Décharge du condensateur
 
 En plaçant l'interrupteur inverseur $K_2$ sur la position 2 on provoque le flash grâce à la restitution de l'énergie stockée dans le condensateur.
 On enregistre la tension $u$ aux bornes du condensateur $C$ (voir graphique en annexe).
 
-5. Déterminer graphiquement la constante de temps $\tau'$ correspondant à la décharge en précisant la méthode employée (l'annexe complétée sera rendu avec la copie).
-6. Comparer les constantes de charge $\tau$ et de décharge $\tau'$. Ce constat est-il en accord avec les conditions de fonctionnement du tube flash&nbsp;?
+{{< question >}}
+Déterminer graphiquement la constante de temps $\tau'$ correspondant à la décharge en précisant la méthode employée (l'annexe complétée sera rendu avec la copie).
+{{< /question >}}
+{{< question >}}
+Comparer les constantes de charge $\tau$ et de décharge $\tau'$. Ce constat est-il en accord avec les conditions de fonctionnement du tube flash&nbsp;?
+{{< /question >}}
 
-<img src="/terminales-pc/chap-5/chap-5-6-2.pdf" alt="" width="40%" style="float: right;"/>
+![](/terminales-pc/chap-5/chap-5-6-2.svg?width=40%)
 
-7. On assimilera, après son amorçage, le tube flash à un conducteur ohmique de résistance $r$. À partir du schéma électrique ci-contre montrer que l'équation différentielle de la décharge du condensateur à travers un conducteur ohmique de résistance r est de la forme&nbsp;:
+{{< question >}}
+On assimilera, après son amorçage, le tube flash à un conducteur ohmique de résistance $r$. À partir du schéma électrique ci-contre montrer que l'équation différentielle de la décharge du condensateur à travers un conducteur ohmique de résistance r est de la forme&nbsp;:
 $$\dfrac{\mathrm{d}u}{\mathrm{dt}} + \dfrac{1}{rC} u = 0 $$
+{{< /question >}}
 
-8. Vérifier que la solution est de la forme $u = U_0\, e^{-t / \tau'}$.
-9. Que représente la tension $U_0$ pour le fonctionnement du tube flash&nbsp;?
-10. Déterminer $U_0$. Cette valeur est-elle en accord avec la production de l'éclair&nbsp;?
+{{< question >}}
+Vérifier que la solution est de la forme $u = U_0\, e^{-t / \tau'}$.
+{{< /question >}}
+{{< question >}}
+Que représente la tension $U_0$ pour le fonctionnement du tube flash&nbsp;?
+{{< /question >}}
+{{< question >}}
+Déterminer $U_0$. Cette valeur est-elle en accord avec la production de l'éclair&nbsp;?
+{{< /question >}}
 
 ## Annexe
 
-<img src="/terminales-pc/chap-5/chap-5-6-3.pdf" alt="" width="100%"/>
+![](/terminales-pc/chap-5/chap-5-6-3.svg?width=100%)
 
 ## Corrigé
 

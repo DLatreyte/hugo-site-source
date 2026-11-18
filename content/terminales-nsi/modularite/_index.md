@@ -16,7 +16,7 @@ weight: 60
 | Contenus | Capacités attendues | Commentaires |
 |:-:|:-:|:-:|
 | Modularité  | - Utiliser des API (Application Programming Interface) ou des bibliothèques. <br />- Exploiter leur documentation. <br />- Créer des modules simples et les documenter.  |  |
-| - Mise au point des programmes. <br />- Gestion des bugs. | - Dans la pratique de la programmation, savoir répondre aux causes typiques de bugs : problèmes liés au typage, effets de bord non désirés, débordements dans les tableaux, instruction conditionnelle non exhaustive, choix des inégalités, comparaisons et calculs entre flottants, mauvais nommage des variables, etc.  | On prolonge le travail entrepris en classe de première sur l’utilisation de la spécification, des assertions, de la documentation des programmes et de la construction de jeux de tests. Les élèves apprennent progressivement à anticiper leurs erreurs.  |
+| - Mise au point des programmes. <br />- Gestion des bugs. | - Dans la pratique de la programmation, savoir répondre aux causes typiques de bugs : problèmes liés au typage, effets de bord non désirés, débordements dans les tableaux, instruction conditionnelle non exhaustive, choix des inégalités, comparaisons et calculs entre flottants, mauvais nommage des variables, etc.  | On prolonge le travail entrepris en classe de première sur l’utilisation de la spécification, des assertions, de la documentation des programmes et de la construction de jeux de tests. Les élèves apprennent progressivement à anticiper leurs erreurs.  |
 
 ## Documents
 

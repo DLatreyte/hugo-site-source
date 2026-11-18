@@ -19,12 +19,13 @@ D’après «&nbsp; À la découverte du nanomonde&nbsp;»<br />
 défis CEA et Internet.
 </div>
 
-<img src="/terminales-pc/chap-5/chap-5-4-1.png" alt="" width="70%" />
+![](/terminales-pc/chap-5/chap-5-4-1.png?width=70%)
 
 Nous allons nous intéresser au principe de fonctionnement de ce dispositif. Le peigne mobile et le cadre constituent un condensateur de capacité $C$. Il est branché aux bornes d’une pile de résistance interne $R$ et de force électromotrice $E$. Le circuit est modélisé par le schéma de la **figure 1** ci-dessous.
 
-> Figure 1
-<img src="/terminales-pc/chap-5/chap-5-4-2.png" alt="" width="40%" />
+![](/terminales-pc/chap-5/chap-5-4-2.png?width=40%)
+
+> *Figure 1*
 
 #### Données
 
@@ -38,50 +39,78 @@ Le condensateur est déchargé avant la fermeture de l’interrupteur.
 À l’instant t = 0, on ferme l’interrupteur.
 Les courbes représentant les variations de la tension aux bornes du condensateur et de l’intensité du courant en fonction du temps sont données sur la **figure 2**.
 
-> Figure 2
-<img src="/terminales-pc/chap-5/chap-5-4-3.png" alt="" width="70%" />
+![](/terminales-pc/chap-5/chap-5-4-3.png?width=70%)
 
-1. Sur cette figure, identifier, *en justifiant qualitativement*, la courbe correspondant à la tension et celle correspondant à l’intensité.
+> *Figure 2*
 
-2. Délimiter de façon approximative et qualifier, sur la **figure 2** les deux régimes de fonctionnement du circuit.
+{{< question >}}
+Sur cette figure, identifier, *en justifiant qualitativement*, la courbe correspondant à la tension et celle correspondant à l’intensité.
+{{< /question >}}
 
-3. Déterminer graphiquement la valeur de la constante de temps du dipôle $\tau$.
+{{< question >}}
+Délimiter de façon approximative et qualifier, sur la **figure 2** les deux régimes de fonctionnement du circuit.
+{{< /question >}}
+
+{{< question >}}
+Déterminer graphiquement la valeur de la constante de temps du dipôle $\tau$.
 Comparer cette valeur à la durée d’un choc de l’ordre de $\pu{200 ms}$.
+{{< /question >}}
 
-4. Donner l’expression littérale de cette constante de temps.
+{{< question >}}
+Donner l’expression littérale de cette constante de temps.
 En déduire un ordre de grandeur de la valeur de la résistance $R$.
+{{< /question >}}
 
-5. Déterminer graphiquement sur la **figure 2** les valeurs de la tension aux bornes du condensateur et de l’intensité du courant en régime permanent.
+{{< question >}}
+Déterminer graphiquement sur la **figure 2** les valeurs de la tension aux bornes du condensateur et de l’intensité du courant en régime permanent.
+{{< /question >}}
 
-6. En déduire, en régime permanent, la valeur de la charge $q$ du condensateur définie sur la **figure 1**.
+{{< question >}}
+En déduire, en régime permanent, la valeur de la charge $q$ du condensateur définie sur la **figure 1**.
+{{< /question >}}
 
 ## Déclenchement de l’airbag
 
-7. D’après le texte introductif, comment se nomment les parties de l’accéléromètre correspondant aux armatures mobile et fixe ?
+{{< question >}}
+D’après le texte introductif, comment se nomment les parties de l’accéléromètre correspondant aux armatures mobile et fixe ?
+{{< /question >}}
 
 Le rapprochement des deux armatures provoqué par un choc entraîne une augmentation de la capacité du condensateur (**figure 3**). Il s’agit de comprendre les conséquences de cette variation.
 En tenant compte du fait que la constante de temps est très faible, on considérera que la valeur de la résistance est nulle.
 
-> Figure 3&nbsp;: à gauche situation avant le choc, à droite, situation après le choc
-<img src="/terminales-pc/chap-5/chap-5-4-4.png" alt="" width="60%" />
+![](/terminales-pc/chap-5/chap-5-4-4.png?width=60%)
 
-8. Parmi les deux propositions suivantes donnant l’expression de la capacité $C$ en fonction de la distance $d$ entre les armatures du condensateur, choisir en justifiant celle qui peut convenir&nbsp;:
-    1. $C = k\, d$
-    2. $C = \dfrac{k}{d}$
+> *Figure 3&nbsp;: à gauche situation avant le choc, à droite, situation après le choc*
 
-9. Donner l’expression de la tension aux bornes du condensateur $u_C$ et de la charge $q$ du condensateur avant le choc, en fonction de $E$ (on pourra s’aider d’un schéma du circuit).
+{{< question >}}
+Parmi les deux propositions suivantes donnant l’expression de la capacité $C$ en fonction de la distance $d$ entre les armatures du condensateur, choisir en justifiant celle qui peut convenir&nbsp;:
+1. $C = k\, d$
+2. $C = \dfrac{k}{d}$
+{{< /question >}}
 
-10. Justifier que la tension aux bornes du condensateur n’est pas modifiée par le choc. En déduire que le choc a pour effet de faire augmenter la charge q du condensateur.
+{{< question >}}
+Donner l’expression de la tension aux bornes du condensateur $u_C$ et de la charge $q$ du condensateur avant le choc, en fonction de $E$ (on pourra s’aider d’un schéma du circuit).
+{{< /question >}}
 
-11. Sur le schéma de la figure 3, indiquer le sens de déplacement des électrons dans le circuit engendré par la variation de charge $q$ du condensateur.
+{{< question >}}
+Justifier que la tension aux bornes du condensateur n’est pas modifiée par le choc. En déduire que le choc a pour effet de faire augmenter la charge q du condensateur.
+{{< /question >}}
 
-12. Donner la relation entre l’intensité i du courant et la charge q du condensateur.
+{{< question >}}
+Sur le schéma de la figure 3, indiquer le sens de déplacement des électrons dans le circuit engendré par la variation de charge $q$ du condensateur.
+{{< /question >}}
 
-13. Choisir parmi ces affirmations celle qui convient&nbsp;:
+{{< question >}}
+Donner la relation entre l’intensité i du courant et la charge q du condensateur.
+{{< /question >}}
+
+{{< question >}}
+Choisir parmi ces affirmations celle qui convient&nbsp;:
 Le déclenchement du gonflage de l’airbag est commandé par la détection d’une variation&nbsp;:
-    1. de tension aux bornes du condensateur&nbsp;;
-    2. d’intensité du courant dans le circuit&nbsp;;
-    3. de tension aux bornes du générateur.
+1. de tension aux bornes du condensateur&nbsp;;
+2. d’intensité du courant dans le circuit&nbsp;;
+3. de tension aux bornes du générateur.
+{{< /question >}}
 
 ## Corrigé
 
